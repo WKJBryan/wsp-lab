@@ -2,7 +2,13 @@
 
 Notable changes, bugs, and fixes. Format follows [Keep a Changelog](https://keepachangelog.com/); dates are YYYY-MM-DD.
 
-## [0.1.0] — 2026-11-03
+## [0.2.0] — 2026-11-03
+
+### Added
+- Phase 1 complete: editor repaired an organically collapsed CartPole policy by weight-space edits alone — primary endpoint **371.6** vs baseline **9.4** (pre-registered SUCCESS ≥195 ✅; STRONG ≥475 not reached). Edit: 258/17,410 params (1.5%).
+- Controls (the ones the original never ran): matched-norm random-edit best-of-20 = **9.5** (editor beats it by 362); retrain upper bound 500.0/22.9/500.0 (seed 101 organically collapsed too).
+- Full editor action log with pre-registered budget accounting: `phase1/editor/ledger.md` (512/512 episodes, 8 batches, all pre-logged; 2 hypotheses refuted offline at zero cost).
+- Final measurements harness: `phase1/controls.py`.
 
 ### Added
 - Repo scaffold: uv-managed environment (`pyproject.toml` + `uv.lock`), git conventions, README.
