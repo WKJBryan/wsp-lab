@@ -11,3 +11,4 @@ Notable changes, bugs, and fixes. Format follows [Keep a Changelog](https://keep
 
 ### Fixed
 - #1: system Python had torch 2.6.0+cpu (no CUDA, predates Blackwell sm_120 support) — the uv env pins torch ≥ 2.7 from the cu128 index instead.
+- #4: `phase1/select.py` crashed torch with a hard C++ abort during import — the filename shadowed the stdlib `select` module; with `phase1/` first on `sys.path`, a library's internal `import select` re-entered our file mid-torch-init. Renamed to `pick_target.py` (identical content verified working). Rule going forward: no stdlib-colliding script names.
