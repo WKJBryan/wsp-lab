@@ -1,0 +1,9 @@
+# Issues log
+
+Tracked here until the repo is published, then migrated to GitHub Issues. Status: open / closed / closed-by-design.
+
+| # | Title | Status | Resolution |
+|---|-------|--------|------------|
+| 1 | System torch 2.6.0+cpu cannot use the RTX 5090 (Blackwell sm_120 needs ≥ 2.7, cu128 wheels) | closed | uv env pins torch from the cu128 index (`pyproject.toml`); verified via `torch.cuda.is_available()` after `uv sync` |
+| 2 | Validity: the editor agent also wrote the trainer, so any "corruption" it authored would leak the answer | closed-by-design | Organic failures only — there is no corruption step in the codebase; the editor receives only the checkpoint + evaluator (PROTOCOL.md, Editor rules 1) |
+| 3 | Editor could overfit edits to specific eval episodes | closed-by-design | Disjoint seed ranges: budget evals 800000+, primary endpoint 900000–900255 untouched during editing, controls 910000+ (PROTOCOL.md) |
