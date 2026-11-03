@@ -24,6 +24,7 @@ def evaluate(ckpt_path: str, n_episodes: int = 64, seed_base: int = 800000) -> n
     policy.eval()
     env = gym.make("CartPole-v1")
     returns = []
+    end_causes = {"pole": 0, "cart": 0, "timeout": 0}
     with torch.no_grad():
         for ep in range(n_episodes):
             obs, _ = env.reset(seed=seed_base + ep)
@@ -35,8 +36,21 @@ def evaluate(ckpt_path: str, n_episodes: int = 64, seed_base: int = 800000) -> n
                 total += float(r)
                 done = term or trunc
             returns.append(total)
+            if trunc:
+                end_causes["timeout"] += 1
+            elif abs(obs[0]) > 2.4:
+                end_causes["cart"] += 1
+            else:
+                end_causes["pole"] += 1
     env.close()
-    return np.array(returns)
+    arr = np.array(returns)
+    if n_episodes >= 16:  # report causes only for meaningful batches
+        n = n_episodes
+        print(
+            f"    end causes: pole {end_causes['pole'] * 100 // n}% | "
+            f"cart {end_causes['cart'] * 100 // n}% | timeout {end_causes['timeout'] * 100 // n}%"
+        )
+    return arr
 
 
 if __name__ == "__main__":

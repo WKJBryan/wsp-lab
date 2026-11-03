@@ -15,7 +15,7 @@ The original used one editor (OpenAI gpt-6-astra via Codex CLI) and released [fu
 ## Phases
 
 - [x] Phase 0 — repo, uv environment (torch cu128 for Blackwell), pre-registered protocol
-- [ ] Phase 1 — CartPole: train ~20 REINFORCE policies, select an organic failure, editor repairs it under an evaluation budget
+- [x] Phase 1 — CartPole repair: **9.4 → 371.6** (SUCCESS per protocol; random-edit control 9.5; results: [phase1/results.md](phase1/results.md))
 - [ ] Phase 2 — blind weights-only identification (the "reading" half)
 - [ ] Phase 3 — Qwen3.5-0.8B blind repair: no failure-mode hint, budgeted MATH-500/GSM8K — the condition absent from the original logs
 
