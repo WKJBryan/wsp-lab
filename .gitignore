@@ -1,0 +1,18 @@
+# environment
+.venv/
+__pycache__/
+*.pyc
+
+# large artifacts (phase 3+ model files)
+*.safetensors
+*.gguf
+models/
+hf_cache/
+
+# editor throwaway analysis (keep ledger.md, ignore scratch)
+phase1/editor/scratch/
+phase3/editor/scratch/
+
+# OS noise
+Thumbs.db
+.DS_Store
