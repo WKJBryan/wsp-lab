@@ -43,6 +43,19 @@ before any comparisons were made:
 2. Answer extraction extended: `\boxed{}` first, then last-number fallback (this model answers
    GSM8K in prose without boxes). Applied to all arms; saved generations re-scored, not re-run.
 
+## Addendum 2 (2026-11-04, before the editor session opens — ISSUES #7)
+
+The thinking-mode baseline (16.4% accuracy, **100% cap-hit at 4096**) showed the practice cap
+cannot separate "pathological looping" from "legitimate long thinking," and each pass costs
+~25 min of GPU. Amendments, applied identically to every arm, thresholds unchanged:
+
+1. Uniform token cap **6144** for practice and final arms; practice pass = first **64** of the 128
+   fixed practice problems; generation batch 32 (throughput only, no scoring effect).
+2. Editor budget reduced 10 → **5 passes** — a strict weakening of the editor's resources;
+   success thresholds are untouched.
+3. The 250-problem final fallback is expected to trigger (projected >2 h per full-500 arm);
+   if so it applies to ALL arms and results are labeled `math250`.
+
 ## Controls
 
 - **C1 untouched stock model** (the baseline itself).
