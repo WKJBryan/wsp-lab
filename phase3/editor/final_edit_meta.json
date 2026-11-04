@@ -1,0 +1,5 @@
+{
+ "token_id": 248069,
+ "tensor": "model.language_model.embed_tokens.weight",
+ "delta_fro": 0.05702
+}
