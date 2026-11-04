@@ -2,6 +2,14 @@
 
 Notable changes, bugs, and fixes. Format follows [Keep a Changelog](https://keepachangelog.com/); dates are YYYY-MM-DD.
 
+## [0.3.0] — 2026-11-04
+
+### Added
+- Phase 2 complete (blind weights-only identification, sealed ground truth, guesses committed before reveal):
+  - **P2 feature identification PASS** — both informative-feature subsets exact ({2,3} blobs, {0,1} interact).
+  - **P1 assignment FAIL at 3/5** (bar ≥4): parity↔random swap; post-hoc diagnosis — memorized noise carries the "huge norms + rough function" signature I attributed to overtrained parity (random net memorized 86.5% of 4K random labels).
+  - Verdicts and integrity ordering in `phase2/results.md`.
+
 ## [0.2.0] — 2026-11-03
 
 ### Added
