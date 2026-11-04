@@ -10,7 +10,15 @@ Notable changes, bugs, and fixes. Format follows [Keep a Changelog](https://keep
   - **P1 assignment FAIL at 3/5** (bar ≥4): parity↔random swap; post-hoc diagnosis — memorized noise carries the "huge norms + rough function" signature I attributed to overtrained parity (random net memorized 86.5% of 4K random labels).
   - Verdicts and integrity ordering in `phase2/results.md`.
 
-## [0.2.0] — 2026-11-03
+## [0.4.0] — 2026-11-05
+
+### Added
+- Phase 3 complete (blind no-hint Qwen3.5-0.8B, local RTX 5090, greedy, math250 finals):
+  - **Editor NULL**: +1.6 pts (random-control band ±0); loop pathology discovered blind and cited; exit-token edit characterized to exhaustion (×1.1 no-op → ×3.0 token seizure); declared with 2 passes unspent.
+  - **C3 cross-check: original's published edit transfers partially under our harness — 6.8% → 12.4% (+5.6, PARTIAL bar)**, far below their 7.9 → 48.1 headline (sampled decoding, 32K cap, hint, 50 passes).
+  - New observation: 100% cap-hit under greedy decoding for every arm — thinking never terminates at 6K tokens in this regime.
+
+## [0.3.0] — 2026-11-04
 
 ### Added
 - Phase 1 complete: editor repaired an organically collapsed CartPole policy by weight-space edits alone — primary endpoint **371.6** vs baseline **9.4** (pre-registered SUCCESS ≥195 ✅; STRONG ≥475 not reached). Edit: 258/17,410 params (1.5%).
