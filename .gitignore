@@ -13,8 +13,9 @@ hf_cache/
 phase1/editor/scratch/
 phase3/editor/scratch/
 
-# phase-2 sealed ground truth (unignored + committed only at reveal, after guesses)
-phase2/sealed/
+# phase-2 sealed ground truth — REVEALED after guesses were committed (f2dfc2b);
+# kept ignored only to prevent accidental edits; canonical copy committed at reveal
+
 
 # OS noise
 Thumbs.db

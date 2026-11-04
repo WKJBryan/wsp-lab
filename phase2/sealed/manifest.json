@@ -1,0 +1,57 @@
+{
+  "assignment": {
+    "B": {
+      "task": "cartpole",
+      "sha256": "bf05b4643506e8b2e4755a8f549a44477b99c63bf8f0eead29acc15875607b8d"
+    },
+    "A": {
+      "task": "blobs",
+      "sha256": "4db9308c7f676e38861522a4127a1b2db43cb3d7992c571b9c2d7b2ba1630531"
+    },
+    "D": {
+      "task": "parity",
+      "sha256": "82154bd4af98a75e8542339dd0e5d3125f76e304dc13995b1f09cb5516923835"
+    },
+    "E": {
+      "task": "interact",
+      "sha256": "1724577822fbb33623f2c581eb791363e06f317e270a6cf3768b455c3e64ed43"
+    },
+    "C": {
+      "task": "random",
+      "sha256": "eef1adfd5bda978818903bac7fea6745ef0e012f971c880a94381df98a32e1a7"
+    }
+  },
+  "task_info": {
+    "blobs": {
+      "loss": 0.0001246914907824248,
+      "acc": 1.0,
+      "informative": [
+        2,
+        3
+      ]
+    },
+    "parity": {
+      "loss": 1.621978299226612e-05,
+      "acc": 1.0,
+      "informative": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "interact": {
+      "loss": 0.00034026411594823003,
+      "acc": 1.0,
+      "informative": [
+        0,
+        1
+      ]
+    },
+    "random": {
+      "loss": 0.34815341234207153,
+      "acc": 0.864990234375,
+      "informative": []
+    }
+  }
+}
