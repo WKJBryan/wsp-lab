@@ -1,0 +1,13 @@
+{
+  "assignment": {
+    "A": "blobs",
+    "B": "cartpole",
+    "C": "parity",
+    "D": "random",
+    "E": "interact"
+  },
+  "informative_features": {
+    "blobs": [2, 3],
+    "interact": [0, 1]
+  }
+}
