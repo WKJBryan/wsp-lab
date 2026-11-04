@@ -21,8 +21,8 @@ RUNS = HERE / "runs"
 RUNS.mkdir(exist_ok=True)
 
 PRACTICE_IDS_SEED = 31337
-PRACTICE_N = 128
-BATCH = 16
+PRACTICE_N = 64   # addendum 2: passes use the first 64 of the fixed 128 practice ids
+BATCH = 32
 
 
 def norm_answer(s: str) -> str:
@@ -68,7 +68,7 @@ def main():
     ap.add_argument("--name", default=None)
     args = ap.parse_args()
 
-    cap = args.cap or (4096 if args.arm == "practice" else 6144)
+    cap = args.cap or 6144  # addendum 2: uniform caps
     name = args.name or f"{Path(args.model).name}_{args.arm}_cap{cap}"
 
     problems = load_problems(args.arm)
