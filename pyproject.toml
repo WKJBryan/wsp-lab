@@ -8,6 +8,11 @@ dependencies = [
     "torch>=2.7",
     "gymnasium>=1.0",
     "numpy>=2.0",
+    "transformers>=5.22.1",
+    "datasets>=5.1.0",
+    "accelerate>=1.15.0",
+    "huggingface-hub>=2.4.0",
+    "safetensors>=0.8.0",
 ]
 
 # RTX 5090 is Blackwell (sm_120): needs torch >= 2.7 from the cu128 index.
