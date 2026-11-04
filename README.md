@@ -16,7 +16,7 @@ The original used one editor (OpenAI gpt-6-astra via Codex CLI) and released [fu
 
 - [x] Phase 0 — repo, uv environment (torch cu128 for Blackwell), pre-registered protocol
 - [x] Phase 1 — CartPole repair: **9.4 → 371.6** (SUCCESS per protocol; random-edit control 9.5; results: [phase1/results.md](phase1/results.md))
-- [ ] Phase 2 — blind weights-only identification (the "reading" half)
+- [x] Phase 2 — blind weights-only ID: feature-ID **2/2 exact PASS**; task assignment **3/5 FAIL** (parity↔random swap, diagnosed; results: [phase2/results.md](phase2/results.md))
 - [ ] Phase 3 — Qwen3.5-0.8B blind repair: no failure-mode hint, budgeted MATH-500/GSM8K — the condition absent from the original logs
 
 Results land in `phase1/results.md`, `phase2/results.md`, ... as each phase completes.
