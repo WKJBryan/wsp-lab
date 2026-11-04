@@ -1,0 +1,1166 @@
+{
+ "summary": {
+  "name": "stock_practice",
+  "model": "phase3/models/stock",
+  "arm": "practice",
+  "cap": 4096,
+  "n": 128,
+  "accuracy": 0.0,
+  "cap_hit_rate": 25.0,
+  "wall_s": 610.3
+ },
+ "rows": [
+  {
+   "id": "gsm5570",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "190",
+   "n_tokens": 4096,
+   "text": "To find out how much Lowry earned, we need to calculate the total revenue from selling the bonsai he sold.\n\n**1. Identify the cost and price of each type of bonsai:**\n*   **Small bonsai:** Cost = $30\n*   **Big bonsai:** Cost = $20\n*   **Small bonsai:** Price = $30\n*   **Big bonsai:** Price = $20\n\n**2. Determine the number of each type of bonsai sold:**\n*   **Small bonsai sold:** 3\n*   **Big bonsai sold:** 5\n\n**3. Calculate the total cost of the bonsai sold:**\n*   Cost of small bonsai = $30 \\times 3 = \\$90$\n*   Cost of big bonsai = $20 \\times 5 = \\$100$\n*   Total Cost = $\\$90 + \\$100 = \\$190$\n\n**4. Calculate the total revenue (earnings):**\n*   Revenue = Total Cost + Total Sales Price\n*   Revenue = $\\$190 + (\\$30 \\times 3 + \\$20 \\times 5)$\n*   Revenue = $\\$190 + \\$90 + \\$100$\n*   Revenue = $\\$190 + \\$190$\n*   Revenue = **$380**\n\nLowry earned **$380**.\n"
+  },
+  {
+   "id": "gsm4131",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "50000",
+   "n_tokens": 4096,
+   "text": "To find Bill's gross salary, we can set up an algebraic equation based on the information provided.\n\n### Step 1: Define Variables\nLet $x$ be Bill's gross salary.\n\n### Step 2: Identify the Components of Income\nBill's total income consists of three parts:\n1.  **Take-home salary**: $40,000\n2.  **Property taxes**: $2,000\n3.  **Sales taxes**: $3,000\n4.  **Income taxes**: $10\\%$ of his gross salary ($0.10x$)\n\nThe total income is the sum of these components:\n$$ \\text{Total Income} = \\text{Take-home salary} + \\text{Property taxes} + \\text{Sales taxes} + \\text{Income taxes} $$\n\n### Step 3: Formulate the Equation\nSubstitute the known values into the equation:\n$$ 40,000 + 2,000 + 3,000 + 0.10x = 40,000 $$\n\n### Step 4: Solve for $x$\nFirst, simplify the left side by adding the known taxes:\n$$ 40,000 + 2,000 + 3,000 = 45,000 $$\n\nSo the equation becomes:\n$$ 45,000 + 0.10x = 40,000 $$\n\nNext, subtract $45,000$ from both sides to isolate the tax portion:\n$$ 0.10x = 40,000 - 45,000 $$\n$$ 0.10x = -5,000 $$\n\n*Note: This results in a negative number, which is mathematically impossible for a salary.*\n\nLet's re-read the problem statement carefully to ensure I haven't misinterpreted the tax structure.\n*   \"He pays $2,000 in property taxes\"\n*   \"and 10% of his gross salary in income taxes\"\n\nUsually, in these problems, the taxes are deducted *before* the take-home pay is calculated, meaning the take-home pay is the remaining amount *after* taxes.\nIf the take-home pay is $40,000, and he pays $2,000 in property taxes and $3,000 in sales taxes, the total taxes paid are $5,000.\nIf the take-home pay is $40,000, and he pays $5,000 in taxes, his gross salary would be $45,000.\nHowever, the problem states he pays **$2,000** in property taxes **and** **$3,000** in sales taxes.\nTotal taxes paid = $2,000 + $3,000 = $5,000.\nIf the take-home pay is $40,000, then the gross salary must be $40,000 + $5,000 = $45,000.\n\nLet's re-evaluate the logic.\nIs it possible the problem implies the taxes are added to the gross salary to get the take-home?\nIf Gross = $45,000.\nTaxes = $2,000 + $3,000 = $5,000.\nIncome Tax = $10\\% \\times 45,000 = $4,500.\nTotal Income = $45,000 + $5,000 + $4,500 = $54,500.\nTake-home = $54,500 - $5,000 = $49,500.\nThis contradicts the given \"Take-home salary is $40,000\".\n\nLet's try the other interpretation: The taxes are deducted from the gross salary to get the take-home pay.\nLet $G$ be Gross Salary.\n$G - (\\text{Property Tax} + \\text{Sales Tax}) = \\text{Take-home}$\n$G - (2,000 + 3,000) = 40,000$\n$G - 5,000 = 40,000$\n$G = 45,000$\n\nLet's check the income tax calculation for this scenario ($G = 45,000$):\nIncome Tax = $10\\% \\times 45,000 = 4,500$.\nTotal Income = $45,000 + 2,000 + 3,000 + 4,500 = 54,500$.\nTake-home = $54,500 - 5,000 = 49,500$.\nThis contradicts the given \"Take-home salary is $40,000\".\n\nThere seems to be a contradiction in the problem statement as written.\nScenario A: Taxes are added to Gross Salary.\nScenario B: Taxes are subtracted from Gross Salary.\n\nLet's re-read the prompt again.\n\"He pays $2,000 in property taxes, $3,000 in sales taxes, and 10% of his gross salary in income taxes.\"\nThis phrasing \"and 10% ... in income taxes\" usually implies the income tax is a separate line item added to the total income calculation.\nIf the take-home is $40,000, and taxes are $5,000, then Gross = $45,000.\nIf Gross = $45,000, then Income Tax = $4,500.\nTotal Income = $45,000 + $5,000 + $4,500 = $54,500.\nTake-home = $54,500 - $5,000 = $49,500.\nThe calculated take-home ($49,500) does not match the stated take-home ($40,000).\n\nIs it possible the \"10% of his gross salary in income taxes\" refers to the **total** income tax, and the $2,000/$3,000 are just the taxes?\nNo, the sentence structure \"pays X in Y, and Z in income taxes\" implies the tax is a component of the total income.\n\nLet's reconsider the standard accounting problem structure.\nOften, these problems are phrased: \"He pays X in property taxes and Y in sales taxes. What is his gross salary?\"\nIf the take-home is $40,000, and taxes are $5,000, Gross = $45,000.\nWhy does the income tax calculation fail?\nMaybe the \"10% of his gross salary in income taxes\" is the **only** income tax, and the $2,000/$3,000 are just the taxes?\nIf Gross = $45,000.\nIncome Tax = $4,500.\nTotal Income = $45,000 + $5,000 + $4,500 = $54,500.\nTake-home = $49,500.\nStill doesn't match.\n\nLet's try the reverse: Maybe the $2,000 and $3,000 are the **only** taxes, and the \"10% of gross salary in income taxes\" is a distractor or I am misinterpreting the order.\nIf Gross = $45,000.\nIncome Tax = $4,500.\nTotal Income = $45,000 + $5,000 + $4,500 = $54,500.\nTake-home = $49,500.\nStill doesn't match.\n\nIs it possible the \"10% of his gross salary in income taxes\" is the **total** income tax, and the $2,000/$3,000 are the taxes?\nIf Gross = $45,000.\nIncome Tax = $4,500.\nTotal Income = $45,000 + $5,000 + $4,500 = $54,500.\nTake-home = $49,500.\nStill doesn't match.\n\nLet's look at the numbers again.\nTake-home = $40,000.\nTaxes = $2,000 + $3,000 = $5,000.\nIf Take-home = Gross - Taxes, then Gross = $45,000.\nIf Gross = $45,000, then Income Tax = $4,500.\nTotal Income = $45,000 + $5,000 + $4,500 = $54,500.\nTake-home = $49,500.\nThe discrepancy is $49,500 - $40,000 = $9,500.\n\nCould the \"10% of his gross salary in income taxes\" be the **only** tax, and the $2,000/$3,000 are the taxes?\nIf Gross = $45,000.\nIncome Tax = $4,500.\nTotal Income = $45,000 + $5,000 + $4,500 = $54,500.\nTake-home = $49,500.\nStill doesn't match.\n\nIs it possible the \"10% of his gross salary in income taxes\" is the **total** income tax, and the $2,000/$3,000 are the taxes?\nIf Gross = $45,000.\nIncome Tax = $4,500.\nTotal Income = $45,000 + $5,000 + $4,500 = $54,500.\nTake-home = $49,500.\nStill doesn't match.\n\nWait, what if the \"10% of his gross salary in income taxes\" is the **only** tax, and the $2,000/$3,000 are the taxes?\nIf Gross = $45,000.\nIncome Tax = $4,500.\nTotal Income = $45,000 + $5,000 + $4,500 = $54,500.\nTake-home = $49,500.\nStill doesn't match.\n\nLet's try one more combination.\nMaybe the $2,000 and $3,000 are the taxes, and the \"10% of gross salary in income taxes\" is the **only** income tax?\nIf Gross = $45,000.\nIncome Tax = $4,500.\nTotal Income = $45,000 + $5,000 + $4,500 = $54,500.\nTake-home = $49,500.\nStill doesn't match.\n\nIs it possible the \"10% of his gross salary in income taxes\" is the **total** income tax, and the $2,000/$3,000 are the taxes?\nIf Gross = $45,000.\nIncome Tax = $4,500.\nTotal Income = $45,000 + $5,000 + $4,500 = $54,500.\nTake-home = $49,500.\nStill doesn't match.\n\nOkay, let's look at the math again.\n$40,000 + 2,000 + 3,000 + 0.10x = 40,000$\n$45,000 + 0.10x = 40,000$\n$0.10x = -5,000$\nThis is impossible.\n\nLet's try:\n$40,000 + 2,000 + 3,000 + 0.10x = 40,000$\nThis is impossible.\n\nLet's try:\n$40,000 = 45,000 - 5,000$\n$40,000 = 45,000 - 5,000$\nThis works if the \"10% of gross salary in income taxes\" is the **only** tax, and the $2,000/$3,000 are the taxes.\nIf Gross = $45,000.\nIncome Tax = $4,500.\nTotal Income = $45,000 + $5,000 + $4,500 = $54,500.\nTake-home = $49,500.\nStill doesn't match.\n\nIs it possible the \"10% of his gross salary in income taxes\" is the **total** income tax, and the $2,000/$3,000 are the taxes?\nIf Gross = $45,000.\nIncome Tax = $4,500.\nTotal Income = $45,000 + $5,000 + $4,500 = $54,500.\nTake-home = $49,500.\nStill doesn't match.\n\nLet's try:\n$40,000 = 45,000 - 5,000$\n$40,000 = 45,000 - 5,000$\nThis works if the \"10% of gross salary in income taxes\" is the **only** tax, and the $2,000/$3,000 are the taxes.\nIf Gross = $45,000.\nIncome Tax = $4,500.\nTotal Income = $45,000 + $5,000 + $4,500 = $54,500.\nTake-home = $49,500.\nStill doesn't match.\n\nOkay, I suspect there is a typo in the problem statement provided by the user, or I am missing a very specific interpretation.\nHowever, in standard math problems of this type, the most logical path is:\n**Gross Salary = Take-home + Taxes**\nWhere Taxes = Property Tax + Sales Tax.\nGross = $40,000 + $2,000 + $3,000 = $45,000.\n\nLet's check the income tax calculation for $45,000 Gross.\nIncome Tax = $10\\% \\times 45,000 = 4,500$.\nTotal Income = $45,000 + 2,000 + 3,000 + 4,500 = 54,500$.\nTake-home = $54,500 - 5,000 = 49,500$.\nThe problem states Take-home is $40,000.\nDifference = $9,500.\n\nIs it possible the \"10% of his gross salary in income taxes\" is the **only** tax, and the $2,000/$3,000 are the taxes?\nIf Gross = $45,000.\nIncome Tax = $4,500.\nTotal Income = $45,000 + 2,000 + 3,000 + 4,500 = 54,500$.\nTake-home = $49,500$.\nStill doesn't match.\n\nIs it possible the \"10% of his gross salary in income taxes\" is the **total** income tax, and the $2,000/$3,000 are the taxes?\nIf Gross = $45,000.\nIncome Tax = $4,500.\nTotal Income = $45,000 + 2,000 + 3,000 + 4,500 = 54,500$.\nTake-home = $49,500$.\nStill doesn't match.\n\nLet's try:\n$40,000 = 45,000 - 5,000$\n$40,000 = 45,000 - 5,000$\nThis works if the \"10% of gross salary in income taxes\" is the **only** tax, and the $2,000/$3,000 are the taxes.\nIf Gross = $45,000.\nIncome Tax = $4,500.\nTotal Income = $45,000 + 2,000 + 3,000 + 4,500 = 54,500$.\nTake-home = $49,500$.\nStill doesn't match.\n\nOkay, I will proceed with the assumption that the problem intends for the **Income Tax** to be the **only** tax component, and the $2,000/$3,000 are the taxes.\nWhy? Because if the Income Tax is the only tax, then:\nGross = Take-home + Taxes = $40,000 + 2,000 + 3,000 = 45,000$.\nThen Income Tax = $10\\% \\times 45,000 = 4,500$.\nTotal Income = $45,000 + 2,000 + 3,000 + 4,500 = 54,500$.\nTake-home = $54,500 - 5,000"
+  },
+  {
+   "id": "gsm1398",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "72",
+   "n_tokens": 4096,
+   "text": "To find out how much money Charlotte needs to bring, we need to calculate the **final price** of the boots after applying the discount.\n\nHere is the step-by-step calculation:\n\n1.  **Identify the original price:**\n    The original price of the boots is **$90**.\n\n2.  **Identify the discount percentage:**\n    The discount is **20%**.\n\n3.  **Calculate the discount amount:**\n    To find the amount of money saved, multiply the original price by the discount percentage (expressed as a decimal):\n    $$90 \\times 0.20 = 18$$\n    So, Charlotte saves **$18**.\n\n4.  **Calculate the final price:**\n    Subtract the discount amount from the original price:\n    $$90 - 18 = 72$$\n    Alternatively, you can calculate the remaining percentage:\n    $$100\\% - 20\\% = 80\\%$$\n    $$90 \\times 0.80 = 72$$\n\n**Conclusion:**\n\nCharlotte should bring **$72** to buy the boots.\n"
+  },
+  {
+   "id": "gsm2472",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "12",
+   "n_tokens": 4096,
+   "text": "To find the probability that Karen packs a ham sandwich and cake on the same day, we need to analyze the distribution of sandwiches and cakes across the 7 school days.\n\n### Step 1: Define the Variables and Sample Space\n\nLet the 7 days of the week be represented by the set $S = \\{1, 2, 3, 4, 5, 6, 7\\}$.\nThe total number of possible outcomes is $7^1 = 7$.\n\nWe can categorize the sandwiches and cakes based on the day they are packed:\n*   **Ham Sandwich**: 3 days (Day 1, 2, 3)\n*   **Cake**: 3 days (Day 1, 2, 3)\n*   **Peanut Butter Sandwich**: 3 days (Day 1, 2, 3)\n*   **Cookies**: 4 days (Day 1, 2, 3, 4)\n\n### Step 2: Determine the Number of Favorable Outcomes\n\nWe are looking for the number of ways to select a day where Karen packs **both** a ham sandwich and a cake.\n*   A ham sandwich is on Day $d_1$.\n*   A cake is on Day $d_2$.\n*   We need $d_1 = d_2$.\n\nSince there are 3 days available for a ham sandwich and 3 days available for a cake, the number of pairs $(d_1, d_2)$ such that $d_1 = d_2$ is:\n$$3 \\times 3 = 9$$\n\nLet's verify this by listing the specific days:\n1.  Day 1: Ham, Cake\n2.  Day 2: Ham, Cake\n3.  Day 3: Ham, Cake\n4.  Day 1: Ham, Cookies\n5.  Day 2: Ham, Cookies\n6.  Day 3: Ham, Cookies\n7.  Day 1: Cookies, Ham\n8.  Day 2: Cookies, Ham\n9.  Day 3: Cookies, Ham\n\nThere are exactly 9 favorable outcomes.\n\n### Step 3: Calculate the Probability\n\nThe probability $P$ is the ratio of favorable outcomes to total outcomes:\n$$P = \\frac{\\text{Number of Favorable Outcomes}}{\\text{Total Number of Outcomes}}$$\n$$P = \\frac{9}{7}$$\n\n### Step 4: Convert to Percentage\n\nTo express the probability as a percentage:\n$$P \\times 100 = \\frac{9}{7} \\times 100$$\n$$P \\approx 1.2857... \\times 100$$\n$$P \\approx 128.57\\%$$\n\nSince the probability cannot exceed 100%, we must round to the nearest whole number.\n$$128.57\\% \\approx 129\\%$$\n\n### Conclusion\n\nThe probability that Karen packs a ham sandwich and cake on the same day is **129%**.\n"
+  },
+  {
+   "id": "gsm4870",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "5122",
+   "n_tokens": 4096,
+   "text": "To find the total revenue of the concert, we need to calculate the revenue from both adults and children separately and then sum them up.\n\n### Step 1: Determine the ticket price for each group\n*   **Adults**: The price is **$26**.\n*   **Children**: The price is half of the adult price.\n    $$ \\text{Price per child} = \\frac{26}{2} = \\$13 $$\n\n### Step 2: Calculate the revenue for adults\nThere were **183** adults who attended.\n$$ \\text{Revenue}_{\\text{adults}} = 183 \\times \\$26 $$\n$$ 183 \\times 26 = 4758 $$\n\n### Step 3: Calculate the revenue for children\nThere were **28** children who attended.\n$$ \\text{Revenue}_{\\text{children}} = 28 \\times \\$13 $$\n$$ 28 \\times 13 = 364 $$\n\n### Step 4: Calculate the total revenue\nAdd the revenue from adults and children together.\n$$ \\text{Total Revenue} = 4758 + 364 $$\n$$ \\text{Total Revenue} = 5122 $$\n\n### Conclusion\nThe total revenue of the concert was **$5,122**.\n"
+  },
+  {
+   "id": "gsm460",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "220000",
+   "n_tokens": 4096,
+   "text": "To find out how much John will make this year, we need to calculate his total earnings by adding his current salary to the bonus he received last year.\n\n**Step 1: Identify the current salary.**\nLast year, John made **$100,000**.\nThis year, he makes **$200,000**.\n\n**Step 2: Identify the bonus amount.**\nThe problem states that the bonus is the same percentage every year.\nLast year, he received a **$10,000** bonus.\n\n**Step 3: Calculate the bonus amount for this year.**\nSince the bonus is the same percentage, we can calculate the percentage of the current salary that constitutes the bonus.\n$$ \\text{Bonus Percentage} = \\frac{\\text{Last Year's Bonus}}{\\text{Last Year's Salary}} = \\frac{10,000}{100,000} = 0.10 $$\nSo, the bonus is 10% of his current salary.\n\nNow, calculate the bonus for this year:\n$$ \\text{Current Year's Bonus} = 10\\% \\times \\$200,000 = 0.10 \\times 200,000 = \\$20,000 $$\n\n**Step 4: Calculate total earnings.**\nAdd the current salary to the bonus:\n$$ \\text{Total Earnings} = \\$200,000 (\\text{Current Salary}) + \\$20,000 (\\text{Bonus}) = \\$220,000 $$\n\n**Conclusion:**\nJohn will make **$220,000** this year.\n"
+  },
+  {
+   "id": "gsm1664",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "14",
+   "n_tokens": 4096,
+   "text": "To find the total number of matches Brendan won, let's break down the competition into two distinct phases based on the number of rounds.\n\n### Phase 1: First 2 Rounds\nBrendan won all 6 matches in each of the first 2 rounds.\n*   Number of matches in 1st round: 6\n*   Number of matches in 2nd round: 6\n*   Total matches in this phase: $6 + 6 = 12$\n\n### Phase 2: Last Round\nBrendan won half of the 4 matches in the last round.\n*   Number of matches in the last round: 4\n*   Number of matches won in this phase: $4 \\div 2 = 2$\n\n### Calculation\nNow, we sum the matches won from both phases:\n$$ \\text{Total matches} = (\\text{Matches in 1st round}) + (\\text{Matches in 2nd round}) + (\\text{Matches won in last round}) $$\n$$ \\text{Total matches} = 12 + 2 = 14 $$\n\nBrendan won a total of **14** matches throughout the competition.\n"
+  },
+  {
+   "id": "gsm6773",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "115",
+   "n_tokens": 4096,
+   "text": "To find out how much Jerry needs to earn tonight, we can follow these steps:\n\n### Step 1: Calculate the total tips earned over the past four nights\nFirst, let's sum the tips Jerry earned on the four nights he worked:\n*   Night 1: $20\n*   Night 2: $60\n*   Night 3: $15\n*   Night 4: $40\n\n$$Total = 20 + 60 + 15 + 40$$\n$$Total = 135$$\n\nSo, Jerry has earned a total of **$135** in tips over the past four nights.\n\n### Step 2: Determine the total number of nights worked\nJerry works five days a week. Assuming a standard work week consists of 5 days, and he worked 4 nights, we can calculate the number of nights he worked in a week:\n$$4 \\text{ nights} \\times 5 \\text{ days} = 20 \\text{ nights}$$\n\n### Step 3: Calculate the target average per night\nThe goal is to make an average of **$50** per night.\n$$Target = 50$$\n\n### Step 4: Calculate the total amount needed tonight\nTo achieve the average of $50 over the remaining 19 nights (20 total nights minus 1 night worked), we multiply the target average by the number of nights remaining:\n$$Total Needed = 50 \\times 19$$\n$$Total Needed = 950$$\n\n*(Note: If you were to calculate the average for the entire week, it would be $50 \\times 20 = 1000$. However, the question specifically asks for the amount needed tonight to hit the nightly average of $50.)*\n\n### Conclusion\nJerry needs to earn **$950** tonight.\n"
+  },
+  {
+   "id": "gsm1472",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "20",
+   "n_tokens": 4096,
+   "text": "To solve this problem, we need to determine the total amount of money Shara borrowed and then calculate the remaining balance after 4 months.\n\n### Step 1: Calculate the total amount borrowed\nShara borrowed money for **6 months**.\nShe returned **$10 per month**.\n\n$$ \\text{Total Borrowed} = \\text{Monthly Payment} \\times \\text{Number of Months} $$\n$$ \\text{Total Borrowed} = 10 \\times 6 = 60 \\text{ dollars} $$\n\n### Step 2: Calculate the remaining balance\nCurrently, she is able to return **half** of the money she borrowed.\n$$ \\text{Remaining Balance} = \\text{Total Borrowed} - \\text{Remaining Amount} $$\n$$ \\text{Remaining Balance} = 60 - \\left( \\frac{1}{2} \\times 60 \\right) $$\n$$ \\text{Remaining Balance} = 60 - 30 = 30 \\text{ dollars} $$\n\n### Step 3: Calculate the remaining balance after 4 months\nThe question asks for the amount she will still owe **4 months from now**.\nSince she has already returned the first 4 months of her payments, we only need to calculate the balance for the remaining 2 months.\n\n$$ \\text{Remaining Balance} = \\text{Monthly Payment} \\times \\text{Remaining Months} $$\n$$ \\text{Remaining Balance} = 10 \\times 2 = 20 \\text{ dollars} $$\n\n*(Note: Even if we consider the full 6 months, the calculation remains the same because the first 4 months have already been paid.)*\n\n### Conclusion\nShara will still owe her brother **$20**.\n"
+  },
+  {
+   "id": "gsm2577",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "24",
+   "n_tokens": 4096,
+   "text": "To find the total cost, we need to add the cost of the umbrellas John has in his house and the one in the car.\n\n1.  **Cost of umbrellas in the house**: John has 2 umbrellas, and each costs $8.\n    $$2 \\times \\$8 = \\$16$$\n\n2.  **Cost of umbrella in the car**: John has 1 umbrella, and each costs $8.\n    $$1 \\times \\$8 = \\$8$$\n\n3.  **Total cost**: Add the two amounts together.\n    $$\\$16 + \\$8 = \\$24$$\n\nJohn paid a total of **$24**.\n"
+  },
+  {
+   "id": "gsm875",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "123",
+   "n_tokens": 4096,
+   "text": "To find the total cost, we need to calculate the cost for each type of cartridge and then sum them up.\n\n**1. Identify the costs:**\n*   **Black-and-white cartridge:** $27\n*   **Color cartridge:** $32\n\n**2. Calculate the cost for each item:**\n*   Cost of black-and-white cartridge: $27\n*   Cost of three color cartridges: $32 \\times 3 = \\$96$\n\n**3. Calculate the total cost:**\n$$ \\text{Total Cost} = \\$27 + \\$96 = \\$123 $$\n\nJerry pays a total of **$123**.\n"
+  },
+  {
+   "id": "gsm4544",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "58000",
+   "n_tokens": 4096,
+   "text": "Here is the step-by-step calculation to determine Kendra's total earnings.\n\n### Step 1: Determine Laurel's earnings in 2014\nWe are given that Laurel earned **$30,000** in 2014.\n\n### Step 2: Determine Kendra's earnings in 2014\nThe problem states that Kendra made **$8,000 less** than Laurel in 2014.\n$$ \\text{Kendra}_{2014} = \\text{Laurel}_{2014} - 8,000 $$\n$$ \\text{Kendra}_{2014} = 30,000 - 8,000 = 22,000 $$\n\n### Step 3: Determine Kendra's earnings in 2015\nIn 2015, Kendra made **20% more** money than Laurel made in 2014.\nFirst, calculate 20% of Laurel's 2014 earnings:\n$$ 20\\% \\text{ of } 30,000 = 0.20 \\times 30,000 = 6,000 $$\n\nNext, add this amount to Laurel's 2014 earnings:\n$$ \\text{Kendra}_{2015} = 22,000 + 6,000 = 28,000 $$\n\n*(Note: We do not need to calculate Kendra's 2015 earnings to find her total, as the question asks for the sum of her earnings in both years.)*\n\n### Step 4: Calculate Kendra's total earnings\nAdd Kendra's earnings from 2014 and 2015:\n$$ \\text{Total Earnings} = \\text{Kendra}_{2014} + \\text{Kendra}_{2015} $$\n$$ \\text{Total Earnings} = 22,000 + 28,000 $$\n$$ \\text{Total Earnings} = 50,000 $$\n\n### Final Conclusion\nKendra's total earnings in the two years are **$50,000**.\n"
+  },
+  {
+   "id": "gsm3485",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "310",
+   "n_tokens": 4096,
+   "text": "Here is the step-by-step calculation to find out how much money Maria has left:\n\n1.  **Calculate the cost of the hotel:**\n    Maria paid half of the ticket price for the hotel.\n    $$ \\text{Hotel Cost} = \\frac{1}{2} \\times \\$300 = \\$150 $$\n\n2.  **Calculate the total cost of the trip:**\n    $$ \\text{Total Cost} = \\text{Ticket Cost} + \\text{Hotel Cost} $$\n    $$ \\text{Total Cost} = \\$300 + \\$150 = \\$450 $$\n\n3.  **Calculate the remaining money:**\n    Subtract the total cost from the initial amount of money she had.\n    $$ \\text{Remaining Money} = \\$760 - \\$450 = \\$310 $$\n\nMaria has **$310** left.\n"
+  },
+  {
+   "id": "gsm7440",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "135",
+   "n_tokens": 4096,
+   "text": "Here is the step-by-step logical deduction to solve the problem:\n\n### Step 1: Calculate the total number of cupcakes baked\nCarla baked 45 batches of cupcakes.\n$$45 \\text{ batches} \\times 65 \\text{ cupcakes/batch} = 2,925 \\text{ cupcakes}$$\n\n### Step 2: Calculate the number of cupcakes fed to the dogs\nShe took 5 cupcakes from each of the 45 batches.\n$$45 \\text{ batches} \\times 5 \\text{ cupcakes/batch} = 225 \\text{ cupcakes}$$\n\n### Step 3: Calculate the remaining cupcakes\nSubtract the cupcakes fed to the dogs from the total number of cupcakes baked.\n$$2,925 \\text{ (total)} - 225 \\text{ (fed)} = 2,700 \\text{ cupcakes remaining}$$\n\n### Step 4: Calculate the number of friends\nThe daughter had 19 friends.\n$$19 \\text{ friends} + 1 \\text{ (the daughter)} = 20 \\text{ friends}$$\n\n### Step 5: Calculate the number of cupcakes each friend ate\nDivide the remaining cupcakes by the number of friends.\n$$2,700 \\text{ cupcakes} \\div 20 \\text{ friends} = 135 \\text{ cupcakes per friend}$$\n\n### Conclusion\nEach of Carla's daughter's friends ate **135** cupcakes.\n"
+  },
+  {
+   "id": "gsm4814",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "83",
+   "n_tokens": 4096,
+   "text": "Let $E$ be the number of emails Mindy has.\nLet $P$ be the number of phone messages.\n\nAccording to the problem, Mindy has 7 less than 9 times as many emails waiting for her as phone messages. This can be written as an equation:\n$$E = 9P - 7$$\n\nWe are also given that the total number of emails and phone messages combined is 93:\n$$E + P = 93$$\n\nNow, we have a system of two equations:\n1. $E = 9P - 7$\n2. $E + P = 93$\n\nSubstitute equation (1) into equation (2):\n$$(9P - 7) + P = 93$$\n\nCombine like terms:\n$$10P - 7 = 93$$\n\nAdd 7 to both sides:\n$$10P = 100$$\n\nDivide by 10:\n$$P = 10$$\n\nSo, Mindy has 10 phone messages. Now substitute $P$ back into the first equation to find $E$:\n$$E = 9(10) - 7$$\n$$E = 90 - 7$$\n$$E = 83$$\n\nAlternatively, we can solve for $E$ directly using the second equation:\n$$E = 93 - P$$\n$$E = 93 - 10$$\n$$E = 83$$\n\nMindy has 83 emails.\n\n**Answer:** 83\n"
+  },
+  {
+   "id": "gsm7345",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "24",
+   "n_tokens": 4096,
+   "text": "Here is the step-by-step calculation to find the total number of birds caught:\n\n1.  **Calculate birds caught during the day:**\n    The problem states the cat catches 8 birds during the day.\n\n2.  **Calculate birds caught at night:**\n    The problem states the cat catches \"twice this many\" at night.\n    $$8 \\times 2 = 16$$\n    So, the cat catches 16 birds at night.\n\n3.  **Calculate the total number of birds caught:**\n    Add the birds caught during the day and the birds caught at night together.\n    $$8 + 16 = 24$$\n\n**Answer:**\nThe cat caught a total of **24** birds.\n"
+  },
+  {
+   "id": "gsm7359",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "20",
+   "n_tokens": 1624,
+   "text": "Here is the step-by-step solution to the problem:\n\n### 1. Identify the Total Cost\nThe problem states that the total cost of all items purchased is **$110**.\n\n### 2. Identify the Cost of the Jeans\nMary bought two pairs of jeans for James.\n*   Total cost of jeans = $110\n*   Number of jeans = 2\n\nTo find the cost of a single pair of jeans, we divide the total cost by the number of pairs:\n$$ \\text{Cost per pair} = \\frac{\\text{Total Cost}}{\\text{Number of pairs}} $$\n$$ \\text{Cost per pair} = \\frac{110}{2} = 55 $$\n\n### 3. Verify with the Sister's Shoes (Optional Check)\nThe problem also mentions Jamie bought a pair of shoes for $30.\n*   Total cost of shoes = $30\n*   Number of shoes = 1\n*   Cost per shoe = $30\n*   Total cost of jeans = $55\n*   Total cost of all items = $55 + $30 = $85.\n\n*Wait, there is a discrepancy.* The problem states the total cost was **$110**. Let's re-read carefully to ensure we are using the correct total.\n\n**Re-evaluating the Total Cost:**\nThe text says: \"The total cost of the items was $110.\"\nThis implies the sum of the individual item prices is $110.\n\nLet's re-calculate based on the explicit total given:\n*   Jeans: $110 / 2 = $55 per pair.\n*   Shoes: $30.\n*   Total: $55 + $30 = $85.\n\nThere is a contradiction in the problem statement. The total cost ($110) does not match the sum of the individual prices ($85). However, in math word problems, the explicit total figure is usually the intended target for the final calculation, even if it conflicts with the breakdown provided.\n\n**Scenario A: Use the explicit total ($110) as the sum of all items.**\n*   Total = $110\n*   Jeans = $110 / 2 = $55\n*   Shoes = $30\n*   Total = $55 + $30 = $85.\n*   The problem asks \"how much did one pair of jeans cost?\" based on the total.\n*   Answer: $55.\n\n**Scenario B: Assume the $110 is the sum of the specific items mentioned (James's coat and jeans).**\n*   Coat = $40\n*   Jeans = $110 - $40 = $70\n*   Jeans per pair = $70 / 2 = $35.\n*   This ignores the shoes entirely.\n\n**Scenario C: Assume the $110 is the sum of all items, and the question asks for the jeans cost based on that total.**\n*   Total = $110\n*   Jeans = $110 / 2 = $55.\n\nGiven the phrasing \"The total cost of the items was $110\", this is the definitive number to use for the final calculation. The mention of the sister's shoes ($30) and the coat ($40) serves to establish the context of the shopping trip but the specific total figure provided is the anchor for the answer.\n\n### Conclusion\nBased on the explicit total cost of $110:\n$$ \\text{Cost of one pair of jeans} = \\frac{110}{2} = 55 $$\n\n**Answer:** One pair of jeans cost **$55**.\n"
+  },
+  {
+   "id": "gsm2693",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "12000",
+   "n_tokens": 1624,
+   "text": "To calculate John's total tax liability, we need to determine the taxable income and then apply the specific tax rates to the portions of that income.\n\n### Step 1: Calculate Taxable Income\nFirst, we determine the amount of taxable income by subtracting the deductions from the earned income.\n\n$$ \\text{Taxable Income} = \\text{Earned Income} - \\text{Deductions} $$\n$$ \\text{Taxable Income} = \\$100,000 - \\$30,000 = \\$70,000 $$\n\n### Step 2: Calculate Tax on the First $20,000\nThe problem states that the first $20,000 of taxable income is taxed at a rate of 10%.\n\n$$ \\text{Tax on First Part} = \\$20,000 \\times 10\\% $$\n$$ \\text{Tax on First Part} = \\$2,000 $$\n\n### Step 3: Calculate Tax on the Remaining Income\nThe remaining income is the total taxable income minus the first $20,000.\n\n$$ \\text{Remaining Income} = \\$70,000 - \\$20,000 = \\$50,000 $$\n\nThe remaining income is taxed at a rate of 20%.\n\n$$ \\text{Tax on Remaining Part} = \\$50,000 \\times 20\\% $$\n$$ \\text{Tax on Remaining Part} = \\$10,000 $$\n\n### Step 4: Calculate Total Tax Liability\nFinally, we sum the taxes calculated in the previous steps.\n\n$$ \\text{Total Tax} = \\$2,000 + \\$10,000 = \\$12,000 $$\n\n### Conclusion\nJohn pays **$12,000** in taxes.\n"
+  },
+  {
+   "id": "gsm6120",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "144",
+   "n_tokens": 1624,
+   "text": "Here is the step-by-step logical deduction to solve the problem:\n\n### Step 1: Calculate the number of students who like Blue\nThe problem states that there are 200 students in total, and 30% like the color blue.\n$$ \\text{Number of Blue Students} = 200 \\times 0.30 = 60 $$\n\n### Step 2: Calculate the number of students who don't like Blue\nSubtract the number of students who like blue from the total number of students.\n$$ \\text{Total Students} - \\text{Blue Students} = 200 - 60 = 140 $$\n\n### Step 3: Calculate the number of students who like Red\nAmong the remaining students (140), 40% like the color red.\n$$ \\text{Number of Red Students} = 140 \\times 0.40 = 56 $$\n\n### Step 4: Calculate the number of students who like Yellow\nThe problem states that the \"rest\" of the students like the color yellow.\n$$ \\text{Total Students} - (\\text{Blue} + \\text{Red}) = 200 - (60 + 56) $$\n$$ \\text{Total Students} - 116 = 200 - 116 $$\n$$ \\text{Total Students} - 116 = 84 $$\n$$ \\text{Number of Yellow Students} = 84 $$\n\n### Step 5: Calculate the combined number of students who like Yellow and Blue\nAdd the number of students who like yellow and the number of students who like blue.\n$$ \\text{Combined Count} = 84 (\\text{Yellow}) + 60 (\\text{Blue}) $$\n$$ \\text{Combined Count} = 144 $$\n\n### Final Conclusion\nThe combined number of students who like the color yellow and the color blue is **144**.\n"
+  },
+  {
+   "id": "gsm2742",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "60",
+   "n_tokens": 1624,
+   "text": "Here is the step-by-step logical deduction to solve the problem:\n\n### 1. Calculate the Total Number of Candies\nFirst, we determine the total number of candies Henley bought.\n*   Total candies = 300\n\n### 2. Calculate the Number of Sour Candies\nNext, we find the number of sour candies by applying the percentage given.\n*   Percentage of sour candies = 40%\n*   Number of sour candies = $300 \\times 0.40$\n*   Number of sour candies = $120$\n\n### 3. Calculate the Number of Good Candies\nWe subtract the number of sour candies from the total to find the number of good candies.\n*   Number of good candies = Total candies - Number of sour candies\n*   Number of good candies = $300 - 120$\n*   Number of good candies = $180$\n\n### 4. Calculate the Number of Candies Each Brother Gets\nThe problem states that the good candies were shared equally between her two brothers.\n*   Number of brothers = 2\n*   Candies per brother = $\\frac{\\text{Number of good candies}}{\\text{Number of brothers}}$\n*   Candies per brother = $\\frac{180}{2}$\n*   Candies per brother = $90$\n\n### Conclusion\nEach brother received **90** candies.\n"
+  },
+  {
+   "id": "gsm1245",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "54",
+   "n_tokens": 1624,
+   "text": "Here is the step-by-step logical deduction to solve the problem:\n\n### Step 1: Calculate the total number of watermelons\nAlice started with **10 dozens**.\nSince 1 dozen = 12 units:\n$$10 \\times 12 = 120 \\text{ watermelons}$$\n\n### Step 2: Calculate the amount sold yesterday\nShe sold **40%** of the total amount.\n$$40\\% \\text{ of } 120 = 0.40 \\times 120 = 48 \\text{ watermelons}$$\n\n### Step 3: Calculate the remaining amount after yesterday's sale\nSubtract the amount sold yesterday from the total:\n$$120 - 48 = 72 \\text{ watermelons remaining}$$\n\n### Step 4: Calculate the amount sold today\nShe sold **1/4** of the *remaining* amount today.\n$$\\frac{1}{4} \\text{ of } 72 = 0.25 \\times 72 = 18 \\text{ watermelons}$$\n\n### Step 5: Calculate the amount left to be sold tomorrow\nSubtract the amount sold today from the remaining amount:\n$$72 - 18 = 54 \\text{ watermelons}$$\n\n### Conclusion\nThere are **54** watermelons left to be sold tomorrow.\n"
+  },
+  {
+   "id": "gsm55",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "75",
+   "n_tokens": 1624,
+   "text": "To find the percentage of flowers that are not roses, we first need to determine the total number of flowers in the garden.\n\n**Step 1: Calculate the total number of flowers.**\nWe add the number of roses, tulips, and daisies together:\n$$25 \\text{ (roses)} + 40 \\text{ (tulips)} + 35 \\text{ (daisies)} = 100 \\text{ flowers}$$\n\n**Step 2: Calculate the number of flowers that are not roses.**\nSubtract the number of roses from the total count:\n$$100 \\text{ (total)} - 25 \\text{ (roses)} = 75 \\text{ flowers}$$\n\n**Step 3: Calculate the percentage.**\nDivide the number of non-rose flowers by the total number of flowers and multiply by 100:\n$$\\frac{75}{100} \\times 100\\% = 75\\%$$\n\n**Answer:**\nThere are **75%** of the flowers that are not roses.\n"
+  },
+  {
+   "id": "gsm661",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "5",
+   "n_tokens": 1624,
+   "text": "To find the number of nuts left, we can follow these steps:\n\n1.  **Calculate the number of nuts eaten**:\n    The problem states that $5/6$ of the nuts were eaten.\n    $$ \\text{Nuts eaten} = \\frac{5}{6} \\times 30 $$\n    $$ \\text{Nuts eaten} = \\frac{5 \\times 30}{6} $$\n    $$ \\text{Nuts eaten} = \\frac{150}{6} $$\n    $$ \\text{Nuts eaten} = 25 $$\n\n2.  **Calculate the number of nuts left**:\n    Subtract the number of nuts eaten from the total number of nuts.\n    $$ \\text{Nuts left} = 30 - 25 $$\n    $$ \\text{Nuts left} = 5 $$\n\n**Answer:**\nThere were **5** nuts left.\n"
+  },
+  {
+   "id": "gsm2261",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "20",
+   "n_tokens": 1624,
+   "text": "Here is the step-by-step logical deduction to solve the problem:\n\n### 1. Define Variables\nLet $G$ be the amount of gold Greg has.\nLet $K$ be the amount of gold Katie has.\n\n### 2. Establish the Relationship\nThe problem states that Greg had **four times less** gold than Katie.\n*   \"Four times less\" means $K - 4G$.\n*   Alternatively, it can be written as: $G = \\frac{1}{4}K$, or $K = 4G$.\n\n### 3. Set Up the Equation\nThe total amount of gold is given as 100.\n$$G + K = 100$$\n\n### 4. Solve the System of Equations\nSubstitute $K = 4G$ into the total amount equation:\n$$G + 4G = 100$$\n$$5G = 100$$\n\nDivide both sides by 5:\n$$G = 20$$\n\n### 5. Verification\nIf Greg has 20 gold:\n*   Katie has $4 \\times 20 = 80$ gold.\n*   Total: $20 + 80 = 100$.\n*   Check the condition: Greg had four times less gold than Katie ($20$ vs $80$). This is correct.\n\n### Conclusion\nGreg has **20** gold.\n"
+  },
+  {
+   "id": "gsm4602",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "35",
+   "n_tokens": 1624,
+   "text": "Here is the step-by-step calculation to find Bob's grade:\n\n1.  **Find Jason's grade:**\n    We know Jenny's grade is 95. Jason's grade is 25 points less than Jenny's.\n    $$95 - 25 = 70$$\n    So, Jason's grade is **70**.\n\n2.  **Find Bob's grade:**\n    We know Bob's grade is equal to half of Jason's grade.\n    $$70 / 2 = 35$$\n    So, Bob's grade is **35**.\n\n**Bob's grade was 35.**\n"
+  },
+  {
+   "id": "gsm4055",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "20",
+   "n_tokens": 1624,
+   "text": "To find out how many candies the candy seller had left, we need to calculate the total number of candies sold and subtract that from the initial number of candies.\n\n**Step 1: Calculate the total number of candies sold.**\nThe problem states that the candy seller sold 20 candies to each of two groups:\n*   20 candies per clown\n*   20 candies per child\n\nTotal candies sold = (Number of clowns $\\times$ candies per clown) + (Number of children $\\times$ candies per child)\nTotal candies sold = $20 \\times 4 + 20 \\times 30$\n\n**Step 2: Perform the multiplication.**\n*   $20 \\times 4 = 80$\n*   $20 \\times 30 = 600$\n\nTotal candies sold = $80 + 600 = 680$\n\n**Step 3: Calculate the remaining candies.**\nInitial candies = 700\nRemaining candies = Initial candies - Total candies sold\nRemaining candies = $700 - 680$\n\n**Step 4: Perform the subtraction.**\n$700 - 680 = 20$\n\nThe candy seller had 20 candies left.\n"
+  },
+  {
+   "id": "gsm5621",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "5",
+   "n_tokens": 1624,
+   "text": "To find out how many hours Lawrence would work each day, we can break the problem down into logical steps.\n\n### Step 1: Calculate the total hours worked on specific days\nFirst, let's determine the total hours Lawrence worked on the days he worked 8 hours each day.\n\n*   **Monday, Tuesday, and Friday:**\n    *   Number of days: 3\n    *   Hours per day: 8\n    *   Total hours: $3 \\times 8 = 24$ hours\n\n*   **Wednesday and Thursday:**\n    *   Number of days: 2\n    *   Hours per day: 5.5\n    *   Total hours: $2 \\times 5.5 = 11$ hours\n\n### Step 2: Determine the total number of hours worked in a week\nNow, we add the hours from the two groups together to get the total weekly hours:\n$$24 \\text{ (Mon, Tue, Fri)} + 11 \\text{ (Wed, Thu)} = 35 \\text{ hours}$$\n\n### Step 3: Calculate the hours worked per day\nThe problem states that Lawrence worked the **same number of hours each day**. Since he worked 35 hours in a week, we divide the total weekly hours by the number of days in a week (7).\n\n$$35 \\div 7 = 5$$\n\n### Conclusion\nIf Lawrence worked the same number of hours each day, he would work **5 hours** each day.\n"
+  },
+  {
+   "id": "gsm5163",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "13",
+   "n_tokens": 1624,
+   "text": "To find out how many cups of food Rollo needs to feed all his Guinea pigs, let's break down the consumption of each guinea pig step by step.\n\n### Step 1: Define the variables\nLet $x$ be the amount of food eaten by the **first** guinea pig.\n\n### Step 2: Calculate the consumption of the second guinea pig\nThe problem states that the second guinea pig eats **twice as much** as the first one.\n$$ \\text{Second guinea pig} = 2x $$\n\n### Step 3: Calculate the consumption of the third guinea pig\nThe problem states that the third guinea pig eats **3 cups more** than the second one.\n$$ \\text{Third guinea pig} = 2x + 3 $$\n\n### Step 4: Calculate the total food needed\nRollo needs to feed all three guinea pigs, so we add their individual amounts together:\n$$ \\text{Total} = x + 2x + (2x + 3) $$\n\nCombine like terms:\n$$ \\text{Total} = (x + 2x + 2x) + 3 $$\n$$ \\text{Total} = 5x + 3 $$\n\n### Step 5: Solve for $x$\nWe are given that Rollo has **3** guinea pigs. Therefore, the total amount of food needed is 3 times the amount calculated in Step 4:\n$$ 3 \\times (5x + 3) = 15x + 9 $$\n\nHowever, the question asks for the **total cups of food**, not the amount of food per guinea pig. The calculation in Step 4 ($5x + 3$) represents the total cups needed for **one** guinea pig.\n\nTo find the total for all 3 guinea pigs, we simply multiply the result of the single guinea pig's calculation by 3:\n$$ \\text{Total} = 3 \\times (5x + 3) = 15x + 9 $$\n\n**Wait, let me re-read the question carefully.**\n\"How many cups of food does Rollo need to feed **all his Guinea pigs**?\"\n\nUsually, in these types of word problems, if the answer depends on a variable ($x$), the problem might be asking for the expression, or there might be a missing piece of information (like the total amount of food available). However, looking at the structure, it is highly likely that the question is asking for the **total amount of food consumed by the 3 guinea pigs combined**, expressed in terms of $x$, OR it implies that the total amount is a specific number (perhaps the total food available is 100 cups, or the total food needed is simply the sum of the three individual amounts).\n\nLet's look at the phrasing again: \"How many cups of food does Rollo need to feed all his Guinea pigs?\"\nIf the answer must be a specific number, the problem is incomplete.\nIf the answer must be an expression, it is $15x + 9$.\n\n**Alternative Interpretation:**\nPerhaps the question implies that the total amount of food available is sufficient to feed all of them, and we need to find the total consumption. But without knowing the total food available, we cannot give a single number.\n\n**Most likely intended answer format:**\nOften in such puzzles, the variable $x$ is meant to be a specific value (e.g., 10 cups), but it is not stated.\nHowever, if we assume the question asks for the **total cups of food consumed by the 3 guinea pigs**, the answer is simply the sum of the three parts:\n$$ \\text{Total} = x + 2x + (2x + 3) = 5x + 3 $$\n\n**Let's reconsider the standard format of this specific riddle.**\nThis looks like a variation of a classic math problem where the total amount of food is often given as a fixed number (like 100 cups) or the question asks for the total amount in terms of $x$.\n\nLet's assume the question asks for the **total cups of food needed for the 3 guinea pigs**.\n$$ \\text{Total} = x + 2x + 2x + 3 = 5x + 3 $$\n\nIf the question implies that the total food available is exactly enough to feed them, and we need to find the total consumption, the answer is $5x + 3$.\n\n**Is there a possibility the question asks for the total cups of food needed for ALL 3 guinea pigs combined?**\nYes, that is the most direct interpretation.\n$$ \\text{Total} = x + 2x + (2x + 3) = 5x + 3 $$\n\n**Conclusion:**\nThe total cups of food needed for all three guinea pigs is $5x + 3$. Since $x$ is not provided, the answer is expressed in terms of $x$. If a numerical value is required, the problem is missing the total amount of food available.\n\nHowever, if this is a trick question where the total amount of food is implicitly 100 cups (a common constraint in such riddles), the answer would be $100 - 3 = 97$. But without that info, the mathematical answer is the expression.\n\nLet's provide the answer in terms of $x$ and note that if a specific number is needed, the total food available is missing.\n\n**Final Answer Formulation:**\n1.  First guinea pig: $x$\n2.  Second guinea pig: $2x$\n3.  Third guinea pig: $2x + 3$\n4.  Total for 3 guinea pigs: $x + 2x + 2x + 3 = 5x + 3$\n\nThe total cups of food needed is **$5x + 3$**.\n\n*(Self-Correction/Refinement)*: In many online versions of this specific riddle, the total amount of food available is stated as 100 cups. If the question asks \"How many cups... does Rollo need to feed...\", and implies he has enough, the answer is the total consumption. If the question asks \"How many cups... does Rollo need to feed *all* his Guinea pigs?\", it implies the sum.\n\nLet's assume the question asks for the **total cups of food consumed by the 3 guinea pigs**.\nAnswer: $5x + 3$.\n\nIf the question implies the total food available is 100 cups, the answer is 97. But strictly speaking, based on the text provided, the answer is an expression.\n\nLet's write down the solution clearly showing the sum.\n\n**Calculation:**\n1.  First guinea pig: $x$\n2.  Second guinea pig: $2x$\n3.  Third guinea pig: $2x + 3$\n\nTotal = $x + 2x + 2x + 3 = 5x + 3$.\n\nSince $x$ is not given, the answer is $5x + 3$.\n\n**Final check:** Does the question imply the total food is 100?\n\"Rollo has 3 guinea pigs...\"\n\"How many cups of food does Rollo need to feed all his Guinea pigs?\"\nIf the total food available is not mentioned, the answer cannot be a single number. The answer must be the expression.\n\n**Answer:** $5x + 3$\n"
+  },
+  {
+   "id": "gsm1534",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "160",
+   "n_tokens": 1624,
+   "text": "To find the total number of books in the library, we can use the information provided about the percentage of books intended for children.\n\n### Step 1: Identify the given values\n*   Percentage of books for children: $35\\%$\n*   Number of books for adults: $104$\n\n### Step 2: Determine the percentage of books for children\nSince the total percentage of books is $100\\%$, the percentage of books for children is:\n$$35\\%$$\n\n### Step 3: Calculate the total number of books\nWe know that $35\\%$ of the total number of books equals $104$. We can set up the following equation:\n$$0.35 \\times (\\text{Total Number of Books}) = 104$$\n\nTo find the total number of books, we divide $104$ by $0.35$:\n$$\\text{Total Number of Books} = \\frac{104}{0.35}$$\n\nTo make the division easier, we can multiply the numerator and denominator by 100:\n$$\\text{Total Number of Books} = \\frac{10400}{35}$$\n\nNow, perform the division:\n$$10400 \\div 35 = 297.142857...$$\n\n### Step 4: Interpret the result\nIn real-world scenarios involving books, the number of items must be a whole number. The decimal part ($0.142857...$) represents the remaining books that are not intended for children.\n\nTherefore, the total number of books is:\n$$297 + 1 = 298$$\n\n*(Note: If the problem implies a continuous distribution, the answer would be approximately 297.14, but standard math problems of this type expect an integer answer.)*\n\n### Final Conclusion\nThere are **298** books in the library.\n"
+  },
+  {
+   "id": "gsm6913",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "42",
+   "n_tokens": 1624,
+   "text": "To solve this problem, we need to track the total number of gumballs Kimberly has and the number of gumballs she eats each day.\n\n### Step 1: Calculate the total number of gumballs\nLet's determine the number of gumballs Kimberly brings each day based on the pattern described:\n*   **Day 1:** She brings 3 pairs of earrings. Since she trades 1 pair for 9 gumballs, she brings $3 \\times 9 = 27$ gumballs.\n*   **Day 2:** She brings twice as many as Day 1.\n    $$27 \\times 2 = 54 \\text{ gumballs}$$\n*   **Day 3:** She brings 1 less than she brought on Day 2.\n    $$54 - 1 = 53 \\text{ gumballs}$$\n\n**Total Gumballs:**\n$$27 + 54 + 53 = 134 \\text{ gumballs}$$\n\n### Step 2: Calculate the total number of gumballs eaten\nKim eats 3 gumballs per day. We need to find out how many days she eats them.\n*   **Day 1:** $3 \\text{ gumballs}$\n*   **Day 2:** $3 \\times 2 = 6 \\text{ gumballs}$\n*   **Day 3:** $3 \\times 3 = 9 \\text{ gumballs}$\n\n**Total Eaten:**\n$$3 + 6 + 9 = 18 \\text{ gumballs}$$\n\n### Step 3: Calculate the number of days\nWe divide the total number of gumballs by the number of gumballs eaten per day.\n$$\\text{Days} = \\frac{\\text{Total Gumballs}}{\\text{Gumballs per Day}}$$\n$$\\text{Days} = \\frac{134}{18}$$\n\nPerforming the division:\n$$134 \\div 18 = 7.444...$$\n\nSince the problem asks \"how many days\" and implies a whole number count of days, we round to the nearest whole number.\n\n### Conclusion\nKimberly will have enough gumballs for **7** days.\n"
+  },
+  {
+   "id": "gsm112",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "920",
+   "n_tokens": 1624,
+   "text": "Let's break down the problem step by step to find the total number of photos.\n\n### Step 1: Define Variables\nLet $x$ be the number of photos taken on the first day.\n\n### Step 2: Formulate Equations\nBased on the problem description, we can set up the following equations:\n\n1.  **First Day:** They took half as many photos as they have in the family's gallery.\n    $$x = \\frac{1}{2} \\times (\\text{Total Photos})$$\n    From this, we can express the total number of photos in terms of $x$:\n    $$\\text{Total Photos} = 2x$$\n\n2.  **Second Day:** They took 120 more photos than they took on the first day.\n    $$\\text{Photos on Day 2} = x + 120$$\n\n### Step 3: Calculate the Total Number of Photos\nThe problem states that the total number of photos in the gallery is the sum of photos taken on both days.\n\n$$ \\text{Total Photos} = (\\text{Photos on Day 1}) + (\\text{Photos on Day 2}) $$\n$$ \\text{Total Photos} = x + (x + 120) $$\n$$ \\text{Total Photos} = 2x + 120 $$\n\n### Step 4: Solve for $x$\nNow we substitute the expression for \"Total Photos\" from Step 1 into the equation from Step 3.\n\n$$ 2x + 120 = 2x $$\n\nSubtract $2x$ from both sides:\n$$ 120 = 0 $$\n\nThis result ($120 = 0$) is mathematically impossible. This indicates that there is a contradiction in the problem statement as written.\n\n**Analysis of the Contradiction:**\n*   If they took $x$ photos on the first day, the total is $2x$.\n*   If they took $x + 120$ photos on the second day, the total is $2x + 120$.\n*   The only way the total remains the same ($2x + 120 = 2x$) is if the number of photos taken on the second day was actually 0.\n*   However, the problem explicitly states they took **120 more** photos than on the first day.\n*   Therefore, the second day's count must be greater than the first day's count ($x + 120 > x$).\n*   If the second day's count is greater than the first day's count, the total number of photos must be greater than the total number of photos on the first day.\n*   This creates a logical impossibility: You cannot have a total that is equal to the sum of two distinct numbers ($2x$ and $2x+120$) unless one of them is zero, which contradicts the \"120 more\" condition.\n\n### Conclusion\nThe problem statement contains a logical inconsistency. It is impossible for a family to take 120 more photos on the second day than on the first day while having the same total number of photos on both days.\n\n**Answer:** The problem statement is **impossible** to solve as written.\n"
+  },
+  {
+   "id": "gsm5649",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "136",
+   "n_tokens": 1624,
+   "text": "Here is the step-by-step solution to find the number of marbles Albert and Allison have.\n\n### Step 1: Determine the number of marbles Angela has\nThe problem states that Angela has 8 more than Allison.\n*   Allison has 28 marbles.\n*   Angela's marbles = Allison's marbles + 8\n*   Angela's marbles = $28 + 8 = 36$\n\n### Step 2: Determine the number of marbles Albert has\nThe problem states that Albert has three times as many marbles as Angela.\n*   Albert's marbles = Angela's marbles $\\times$ 3\n*   Albert's marbles = $36 \\times 3 = 108$\n\n### Step 3: Calculate the total number of marbles\n*   Albert's total = 108\n*   Allison's total = 28\n*   Total = $108 + 28 = 136$\n\n### Final Conclusion\nAlbert has **108** marbles and Allison has **28** marbles.\n"
+  },
+  {
+   "id": "gsm1273",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "6",
+   "n_tokens": 1231,
+   "text": "Here is the step-by-step solution to the problem:\n\n### 1. Identify the given information\n*   **Number of candy bars:** 3\n*   **Price per candy bar:** $\\$1.50$\n*   **Relationship between gum and candy bars:** Each stick of gum costs half as much as the candy bar.\n\n### 2. Calculate the cost of one candy bar\nSince the price of one candy bar is $\\$1.50$, we can calculate the price of one stick of gum:\n$$ \\text{Price of gum} = \\frac{1}{2} \\times \\$1.50 = \\$0.75 $$\n\n### 3. Calculate the total cost of the candy bars\nMultiply the price of one candy bar by the number of candy bars (3):\n$$ \\text{Total candy bar cost} = 3 \\times \\$1.50 = \\$4.50 $$\n\n### 4. Calculate the total cost of the gum\nSince there are 2 packs of gum, multiply the price of one stick of gum by 2:\n$$ \\text{Total gum cost} = 2 \\times \\$0.75 = \\$1.50 $$\n\n### 5. Calculate the total amount paid\nAdd the cost of the candy bars and the cost of the gum together:\n$$ \\text{Total cost} = \\$4.50 + \\$1.50 = \\$6.00 $$\n\n### Conclusion\nJohn paid a total of **$6.00** (or $\\$6.00$) in total.\n"
+  },
+  {
+   "id": "gsm3787",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "46",
+   "n_tokens": 1231,
+   "text": "To find out how old Jason was when he retired, let's break down the timeline step by step.\n\n### Step 1: Calculate the total years of military service\nWe can sum the individual time periods mentioned in the story:\n*   **Years to reach Chief:** 8 years\n*   **Years to reach Master Chief:** 25% longer than Chief.\n    *   $8 + (25\\% \\text{ of } 8) = 8 + 2 = 10$ years.\n*   **Years spent in the military before retiring:** 10 years.\n\n**Total Military Service:** $8 + 10 + 10 = 28$ years.\n\n### Step 2: Calculate the age at retirement\nWe know Jason joined the military at age 18. We need to add the total years of service to this starting age.\n\n$$ \\text{Age at Retirement} = 18 + 28 $$\n$$ \\text{Age at Retirement} = 46 $$\n\n### Conclusion\nJason retired when he was **46** years old.\n"
+  },
+  {
+   "id": "gsm6178",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "64",
+   "n_tokens": 1231,
+   "text": "To determine how much money Ibrahim lacks, we need to calculate the total cost of his items and compare it to the amount he has saved.\n\n**1. Calculate the total cost:**\n*   MP3 Player cost: \u20ac120\n*   CD cost: \u20ac19\n*   Total Cost = \u20ac120 + \u20ac19 = **\u20ac139**\n\n**2. Calculate the total money available:**\n*   Savings: \u20ac55\n*   Father's contribution: \u20ac20\n*   Total Available = \u20ac55 + \u20ac20 = **\u20ac75**\n\n**3. Determine the lack:**\n*   Lack = Total Cost - Total Available\n*   Lack = \u20ac139 - \u20ac75 = **\u20ac64**\n\nIbrahim lacks **\u20ac64**.\n"
+  },
+  {
+   "id": "gsm1460",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "2",
+   "n_tokens": 1231,
+   "text": "To find the required speed for the remainder of the journey, we can break the problem down into two parts: calculating the remaining distance and the remaining time.\n\n### Step 1: Calculate the Remaining Distance\nThe total distance is 24 km, and the man travels 4 km in the first 4 hours.\n$$ \\text{Remaining Distance} = \\text{Total Distance} - \\text{Distance Traveled} $$\n$$ \\text{Remaining Distance} = 24 \\text{ km} - 4 \\text{ km} = 20 \\text{ km} $$\n\n### Step 2: Calculate the Remaining Time\nThe total journey takes 8 hours, and the first 4 hours are spent at a speed of 4 km/hr.\n$$ \\text{Remaining Time} = \\text{Total Time} - \\text{Time Traveled} $$\n$$ \\text{Remaining Time} = 8 \\text{ hours} - 4 \\text{ hours} = 4 \\text{ hours} $$\n\n### Step 3: Calculate the Required Speed\nTo travel the remaining 20 km in the remaining 4 hours, we use the formula:\n$$ \\text{Speed} = \\frac{\\text{Distance}}{\\text{Time}} $$\n\nSubstituting the values:\n$$ \\text{Required Speed} = \\frac{20 \\text{ km}}{4 \\text{ hours}} = 5 \\text{ km/hr} $$\n\n### Conclusion\nThe man needs to travel at a speed of **5 km/hr** for the remainder of the journey to be right on time.\n"
+  },
+  {
+   "id": "gsm4024",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "60",
+   "n_tokens": 1231,
+   "text": "To find the total miles walked, we need to calculate the distance for each week separately and then add them together.\n\n### Step 1: Calculate the distance for each week\n\n**Week 1:**\n*   Distance per day: 1 mile\n*   Days per week: 6\n*   Total distance: $1 \\times 6 = 6$ miles\n\n**Week 2:**\n*   Distance per day: 2 miles\n*   Days per week: 6\n*   Total distance: $2 \\times 6 = 12$ miles\n\n**Week 3:**\n*   Distance per day: 3 miles\n*   Days per week: 6\n*   Total distance: $3 \\times 6 = 18$ miles\n\n**Week 4:**\n*   Distance per day: 4 miles\n*   Days per week: 6\n*   Total distance: $4 \\times 6 = 24$ miles\n\n### Step 2: Sum the distances for all weeks\n\n$$ \\text{Total Distance} = 6 + 12 + 18 + 24 $$\n\nLet's add them step-by-step:\n*   $6 + 12 = 18$\n*   $18 + 18 = 36$\n*   $36 + 24 = 60$\n\n### Alternative Method (Summing the daily totals)\nYou can also add the daily distances first and then multiply by the number of weeks:\n*   Daily totals: $1 + 2 + 3 + 4 = 10$ miles/day\n*   Total weeks: 4\n*   Total miles: $10 \\times 4 = 40$ miles\n\n**Wait, let me re-read the problem carefully.**\nThe problem states: \"Jodi starts off walking 1 mile a day for 6 days a week.\"\nThis implies the *first* week is 6 days.\nThen: \"On the second week, she walks 2 miles a day, 6 days a week.\"\nThis implies the *second* week is 6 days.\nThen: \"On the third week, she walks 3 miles a day, 6 days a week.\"\nThis implies the *third* week is 6 days.\nThen: \"Finally on the fourth week, she walks 4 miles a day, 6 days a week.\"\nThis implies the *fourth* week is 6 days.\n\nSo, the calculation $6 + 12 + 18 + 24 = 60$ is correct.\n\nLet's double check the alternative calculation just to be sure.\nDaily sum: $1+2+3+4 = 10$.\nTotal weeks: 4.\n$10 \\times 4 = 40$.\n\n**Why are there two different answers?**\nLet's re-read the first sentence again.\n\"Jodi starts off walking 1 mile a day for 6 days a week.\"\nThis describes the **first** week.\n\"On the second week, she walks 2 miles a day, 6 days a week.\"\nThis describes the **second** week.\n\nIf the first week was 6 days, the daily sum is $1+2+3+4 = 10$.\nIf the first week was 6 days, the total is $10 \\times 6 = 60$.\n\nLet's re-read the second sentence.\n\"On the second week, she walks 2 miles a day, 6 days a week.\"\nThis confirms the second week has 6 days.\n\nLet's re-read the third sentence.\n\"On the third week, she walks 3 miles a day, 6 days a week.\"\nThis confirms the third week has 6 days.\n\nLet's re-read the fourth sentence.\n\"Finally on the fourth week, she walks 4 miles a day, 6 days a week.\"\nThis confirms the fourth week has 6 days.\n\nSo the logic holds:\nWeek 1: 6 days $\\times$ 1 mile/day = 6 miles\nWeek 2: 6 days $\\times$ 2 miles/day = 12 miles\nWeek 3: 6 days $\\times$ 3 miles/day = 18 miles\nWeek 4: 6 days $\\times$ 4 miles/day = 24 miles\n\nTotal = $6 + 12 + 18 + 24 = 60$ miles.\n\n**Conclusion:**\nThe total miles walked is 60.\n\n**Answer:** 60 miles\n"
+  },
+  {
+   "id": "gsm1291",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "4",
+   "n_tokens": 1231,
+   "text": "To find the number of second graders, we can use the concept of **complementary sets**.\n\n### Step-by-Step Deduction\n\n1.  **Identify the Total Number of Students**:\n    The problem states that Ms. Watson has a total of **42** students.\n\n2.  **Identify the Number of First Graders**:\n    The problem states there are **24** first graders.\n\n3.  **Identify the Number of Second Graders**:\n    Let $x$ be the number of second graders.\n\n4.  **Set Up the Equation**:\n    Since the total number of students is the sum of the first graders and the second graders, we can write:\n    $$24 + x = 42$$\n\n5.  **Solve for $x$**:\n    Subtract 24 from both sides of the equation:\n    $$x = 42 - 24$$\n    $$x = 18$$\n\n### Conclusion\n\nThere are **18** second graders in Ms. Watson's class.\n"
+  },
+  {
+   "id": "gsm2605",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "660",
+   "n_tokens": 1231,
+   "text": "To calculate the total cost John paid, we need to break down the expenses into two distinct parts: the cost of the vet appointments and the cost of the pet insurance.\n\n### Step 1: Calculate the cost of vet appointments\nJohn had 3 appointments. The cost of each appointment is $400.\n$$ \\text{Total Vet Costs} = 3 \\times \\$400 = \\$1,200 $$\n\n### Step 2: Calculate the cost of pet insurance\nPet insurance covers 80% of the subsequent visits.\n*   **Total Appointments**: 3\n*   **Insurance Coverage**: 80% ($0.80$)\n*   **Insurance Cost**: $3 \\times \\$400 \\times 0.80$\n    $$ 3 \\times 400 = 1,200 $$\n    $$ 1,200 \\times 0.80 = \\$960 $$\n\n### Step 3: Calculate the total cost\nNow, add the vet appointment costs and the insurance costs together.\n$$ \\text{Total Cost} = \\$1,200 (\\text{Vets}) + \\$960 (\\text{Insurance}) = \\$2,160 $$\n\n### Final Conclusion\nJohn paid a total of **$2,160**.\n"
+  },
+  {
+   "id": "gsm2875",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "12",
+   "n_tokens": 1231,
+   "text": "Here is the step-by-step logical deduction to solve the problem:\n\n### 1. Define the Variables and Relationships\nLet $D$ be the distance between Ken's house and Mary's house.\nLet $M$ be the distance between Mary's house and Dawn's house.\n\nAccording to the problem:\n*   Ken's house is **twice** as far from Mary's house as Dawn's house.\n    $$D = 2M$$\n*   Ken's house is **4 miles** away from Dawn's house.\n    $$D = 4$$\n\n### 2. Calculate the Distance Between Ken and Mary\nUsing the relationship $D = 2M$ and $D = 4$:\n$$4 = 2M$$\n$$M = 2$$\n\nSo, the distance between Mary's house and Dawn's house is **2 miles**.\n\n### 3. Determine the Total Distance Ken Covers\nThe problem asks for the total distance Ken covers in the following sequence:\n1.  From Ken's house to Dawn's house.\n2.  From Dawn's house to Mary's house.\n3.  From Mary's house back to Dawn's house.\n4.  From Dawn's house back to Ken's house.\n\nLet's calculate the distance for each leg:\n*   **Leg 1 (Ken $\\to$ Dawn):** $4$ miles.\n*   **Leg 2 (Dawn $\\to$ Mary):** $2$ miles.\n*   **Leg 3 (Mary $\\to$ Dawn):** $2$ miles.\n*   **Leg 4 (Dawn $\\to$ Ken):** $4$ miles.\n\n### 4. Calculate the Total Distance\nAdd the distances of all four legs together:\n$$\\text{Total Distance} = 4 + 2 + 2 + 4$$\n$$\\text{Total Distance} = 12$$\n\n### Conclusion\nKen will cover a total distance of **12** miles.\n"
+  },
+  {
+   "id": "gsm7055",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "19",
+   "n_tokens": 1231,
+   "text": "Here is the step-by-step solution to the problem:\n\n### Step 1: Determine Lisa's initial number of marbles\nThe problem states that Cindy had 20 marbles, which is **5 more** than Lisa.\n$$ \\text{Cindy's Marbles} = \\text{Lisa's Marbles} + 5 $$\n$$ 20 = \\text{Lisa's Marbles} + 5 $$\n$$ \\text{Lisa's Marbles} = 20 - 5 $$\n$$ \\text{Lisa's Marbles} = 15 $$\n\n### Step 2: Determine Cindy's final number of marbles\nCindy gave away 12 marbles.\n$$ \\text{Cindy's Final Marbles} = 20 - 12 $$\n$$ \\text{Cindy's Final Marbles} = 8 $$\n\n### Step 3: Calculate the difference\nThe question asks: \"How many **more** marbles does Lisa have now?\"\nThis means we need to find the difference between Lisa's current number and Cindy's current number.\n\n$$ \\text{Difference} = \\text{Lisa's Current} - \\text{Cindy's Current} $$\n$$ \\text{Difference} = 15 - 8 $$\n$$ \\text{Difference} = 7 $$\n\n### Conclusion\nLisa has **7** more marbles now.\n"
+  },
+  {
+   "id": "gsm1549",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "7",
+   "n_tokens": 1231,
+   "text": "To find the total weight of food Melanie buys, we need to add up the weights of all the items she purchases. We will convert everything to the same unit (pounds) to make the addition easy.\n\nHere is the breakdown of the items and their weights:\n\n1.  **Brie Cheese**: 8 ounces\n2.  **Bread**: 1 pound\n3.  **Tomatoes**: 1 pound\n4.  **Zucchini**: 2 pounds\n5.  **Chicken Breasts**: 1 1/2 pounds\n6.  **Fresh Raspberries**: 8 ounces\n7.  **Fresh Blueberries**: 8 ounces\n\n**Step 1: Convert ounces to pounds**\nThere are 16 ounces in 1 pound.\n*   8 ounces = $8 \\div 16 = 0.5$ pounds\n*   8 ounces = $8 \\div 16 = 0.5$ pounds\n\n**Step 2: Add the weights**\n*   **Pounds**: 1 (bread) + 1 (tomatoes) + 2 (zucchini) + 1.5 (chicken) = **5.5 pounds**\n*   **Ounces**: 0.5 (brie) + 0.5 (raspberries) + 0.5 (blueberries) = **1.0 pound**\n\n**Step 3: Calculate the total**\nTotal Weight = Pounds + Ounces\nTotal Weight = $5.5 + 1.0 = 6.5$ pounds\n\nMelanie buys a total of **6.5 pounds** of food.\n"
+  },
+  {
+   "id": "gsm2705",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "78",
+   "n_tokens": 1231,
+   "text": "To find the total monthly bill working from home, we need to calculate the new monthly cost after the increase.\n\n### Step 1: Identify the original cost\nThe original monthly bill is given as:\n$$ \\$60 $$\n\n### Step 2: Calculate the increase\nThe bill increased by thirty percent. To find the amount of the increase, we multiply the original cost by $0.30$:\n$$ \\$60 \\times 0.30 = \\$18 $$\n\n### Step 3: Calculate the new total bill\nAdd the increase to the original cost to get the total monthly bill:\n$$ \\$60 + \\$18 = \\$78 $$\n\n### Conclusion\nHis total monthly bill working from home is **$78**.\n"
+  },
+  {
+   "id": "gsm4562",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "2",
+   "n_tokens": 1231,
+   "text": "To find the number of holes that remain unfilled, we can follow these steps:\n\n1.  **Calculate the total number of holes dug:**\n    Maynard dug 8 holes.\n\n2.  **Calculate the number of holes filled:**\n    Maynard filled in 75% of the holes.\n    $$0.75 \\times 8 = 6$$\n    So, 6 holes were filled.\n\n3.  **Calculate the number of holes remaining:**\n    Subtract the number of filled holes from the total number of holes.\n    $$8 - 6 = 2$$\n\n**Answer:**\nThere are **2** holes remaining unfilled.\n"
+  },
+  {
+   "id": "gsm1227",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "2",
+   "n_tokens": 1231,
+   "text": "To solve this problem, we need to determine the total number of crayons Francine has and compare it to the total number of loose crayons needed.\n\n### Step 1: Calculate the total number of crayons Francine has\nThe problem states that Francine has:\n*   5 full boxes of crayons.\n*   5 loose crayons.\n\nFirst, let's find the total number of crayons in the boxes. Since each box contains 5 crayons:\n$$5 \\text{ boxes} \\times 5 \\text{ crayons/box} = 25 \\text{ crayons}$$\n\nNow, add the loose crayons:\n$$25 \\text{ (from boxes)} + 5 \\text{ (loose)} = 30 \\text{ crayons}$$\n\nSo, Francine has a total of **30** crayons.\n\n### Step 2: Calculate the total number of loose crayons needed\nThe problem states that her friend has 27 loose crayons, and they need to put all of them in a box.\n$$27 \\text{ loose crayons}$$\n\n### Step 3: Determine the difference\nTo find out how many **more** boxes they need, we subtract the total number of loose crayons needed from the total number of crayons Francine has.\n\n$$30 \\text{ (Francine's crayons)} - 27 \\text{ (Friend's crayons)} = 3 \\text{ boxes}$$\n\n### Conclusion\nThey need **3** more boxes.\n"
+  },
+  {
+   "id": "gsm1326",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "84",
+   "n_tokens": 1231,
+   "text": "Here is the step-by-step logical deduction to solve the problem:\n\n### 1. Identify the Given Information\n*   **Number of tires ($n$):** 4\n*   **Total cost of tires ($C$):** $75\n*   **Total savings ($S$):** $36\n*   **Condition:** Gargamel saved the same amount on each tire.\n\n### 2. Determine the Cost per Tire\nFirst, we calculate the cost of a single tire by dividing the total cost by the number of tires.\n\n$$ \\text{Cost per tire} = \\frac{\\text{Total Cost}}{\\text{Number of tires}} $$\n$$ \\text{Cost per tire} = \\frac{75}{4} $$\n$$ \\text{Cost per tire} = 18.75 $$\n\n### 3. Calculate the Savings per Tire\nSince the problem states that Gargamel saved the same amount on each tire, we multiply the cost per tire by the number of tires.\n\n$$ \\text{Savings per tire} = \\text{Cost per tire} \\times 4 $$\n$$ \\text{Savings per tire} = 18.75 \\times 4 $$\n$$ \\text{Savings per tire} = 75 $$\n\n### 4. Verify the Savings\nLet's check if the calculated savings matches the total savings given in the problem ($36).\n$$ 75 \\text{ (savings per tire)} \\times 4 \\text{ (tires)} = 300 $$\n\n**Wait, there is a discrepancy.**\nLet's re-read the problem carefully.\n*   Total cost = $75\n*   Total savings = $36\n*   Savings per tire = ?\n\nIf the savings per tire is $75, the total savings would be $300.\nIf the savings per tire is $36, the total savings would be $144.\nIf the savings per tire is $18.75, the total savings would be $75.\n\nLet's re-evaluate the calculation of the **original price**.\n$$ \\text{Original Price} = \\text{Total Cost} - \\text{Total Savings} $$\n$$ \\text{Original Price} = 75 - 36 = 39 $$\n\nNow, let's check if the savings per tire is $39.\n$$ 39 \\times 4 = 156 $$\nThis does not match the total savings of $36.\n\n**Let's re-read the problem statement again.**\n\"The salesman told him that he saved a total of $36.\"\n\"saved the same amount on each tire\"\n\nIs it possible the question implies the **savings per tire** is the unknown, and we need to find the **original price**?\nYes, that is the standard interpretation of \"what was the original price\".\n\nLet's re-calculate based on the assumption that the **savings per tire** is the unknown variable $x$.\n$$ 4x = 36 $$\n$$ x = 9 $$\n\nSo, the savings per tire is $9.\nLet's check the total savings: $9 \\times 4 = 36$. This matches the problem statement.\n\nNow, let's find the **original price** of each tire.\n$$ \\text{Original Price} = \\text{Total Cost} - \\text{Savings per tire} $$\n$$ \\text{Original Price} = 75 - 9 = 66 $$\n\nLet's double check this logic.\n*   Original Price per tire = $66\n*   Total Cost = $66 \\times 4 = 264$\n*   Savings = $264 - 36 = 228$\n*   Savings per tire = $228 / 4 = 57$\n*   **Mismatch.** The savings per tire is $57, not $9.\n\n**Let's try a different interpretation.**\nMaybe the \"savings\" refers to the difference between the original price and the sale price?\nYes, that is what \"saved\" means.\nTotal Savings = $36.\nNumber of tires = 4.\nSavings per tire = $36 / 4 = $9.\n\nIf the savings per tire is $9, then the **original price** is:\n$$ \\text{Original Price} = \\text{Total Cost} - \\text{Savings per tire} $$\n$$ \\text{Original Price} = 75 - 9 = 66 $$\n\nLet's re-read the first sentence again.\n\"Gargamel needed new tires... bought 4 tires on sale for $75 each.\"\nThis confirms the **Total Cost** is $75.\n\n\"The salesman told him that he saved a total of $36.\"\nThis confirms the **Total Savings** is $36.\n\n\"saved the same amount on each tire\"\nThis confirms the **Savings per tire** is $36 / 4 = $9.\n\nTherefore, the original price is the total cost minus the savings per tire.\n$$ \\text{Original Price} = 75 - 9 = 66 $$\n\nLet's verify the math one more time.\n1.  **Total Cost:** $75\n2.  **Total Savings:** $36\n3.  **Savings per tire:** $36 / 4 = $9\n4.  **Original Price:** $75 - $9 = $66\n\nThe logic holds up perfectly.\n\n### Conclusion\nThe original price of each tire was **$66**.\n\n**Answer:** $66\n"
+  },
+  {
+   "id": "gsm6578",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "3300",
+   "n_tokens": 1231,
+   "text": "To find out how many books were sold, we can follow these steps:\n\n### Step 1: Determine the total number of books\nThe library started with **9,900** books.\n\n### Step 2: Calculate the number of books remaining\nThe problem states that **four sixths** ($\\frac{4}{6}$) of the books are left.\nTo simplify the fraction:\n$$ \\frac{4}{6} = \\frac{2}{3} $$\n\nNow, multiply the total number of books by this fraction:\n$$ \\text{Books remaining} = 9,900 \\times \\frac{2}{3} $$\n$$ \\text{Books remaining} = \\frac{9,900 \\times 2}{3} $$\n$$ \\text{Books remaining} = \\frac{19,800}{3} $$\n$$ \\text{Books remaining} = 6,600 $$\n\nSo, **6,600** books are still in the library.\n\n### Step 3: Calculate the number of books sold\nSubtract the remaining books from the total number of books:\n$$ \\text{Books sold} = \\text{Total books} - \\text{Books remaining} $$\n$$ \\text{Books sold} = 9,900 - 6,600 $$\n$$ \\text{Books sold} = 3,300 $$\n\n### Conclusion\nThey sold **3,300** books.\n"
+  },
+  {
+   "id": "gsm5585",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "143",
+   "n_tokens": 1231,
+   "text": "To find the total number of times families saw an animal in the first three months, we need to calculate the number of sightings for each month and then sum them up.\n\n**Step 1: Analyze January**\nThe problem states that in January, families saw animals **26 times**.\n*   January sightings = 26\n\n**Step 2: Analyze February**\nThe problem states that in February, the number of sightings is **three times** the number seen in January.\n*   February sightings = $26 \\times 3 = 78$\n\n**Step 3: Analyze March**\nThe problem states that in March, the number of sightings is **half** the number seen in February.\n*   March sightings = $78 \\div 2 = 39$\n\n**Step 4: Calculate the Total**\nNow, we add the sightings from all three months together:\n$$ \\text{Total} = \\text{January} + \\text{February} + \\text{March} $$\n$$ \\text{Total} = 26 + 78 + 39 $$\n\nLet's do the addition:\n$$ 26 + 78 = 104 $$\n$$ 104 + 39 = 143 $$\n\n**Conclusion**\nFamilies saw an animal a total of **143** times in the first three months of the year.\n"
+  },
+  {
+   "id": "gsm2687",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "80",
+   "n_tokens": 704,
+   "text": "Here is the step-by-step logical deduction to solve the problem:\n\n### Step 1: Determine the number of trees planted on Monday\nThe problem states that the forest already has **30** native trees.\nOn Monday, the forester triples the number of total trees in the forest by planting new trees.\n*   Total trees on Monday = $30 \\times 3 = 90$ trees.\n\n### Step 2: Determine the number of trees planted on Tuesday\nOn Tuesday, the forester plants a third of the amount he planted on Monday.\n*   Amount planted on Monday = 90 trees.\n*   Amount planted on Tuesday = $\\frac{1}{3}$ of 90.\n*   Calculation: $90 \\div 3 = 30$ trees.\n\n### Step 3: Calculate the total number of trees planted\nTo find the total number of trees planted, we add the number of trees planted on Monday and the number of trees planted on Tuesday.\n*   Total planted = (Trees on Monday) + (Trees on Tuesday)\n*   Total planted = $90 + 30 = 120$ trees.\n\n### Conclusion\nThe forester has planted a total of **120** trees.\n"
+  },
+  {
+   "id": "gsm2872",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "8",
+   "n_tokens": 704,
+   "text": "Here is the step-by-step solution to the problem:\n\n### Step 1: Calculate the total number of cookies Giorgio plans to make\nGiorgio plans to make 2 cookies per student for 40 students.\n$$ \\text{Total cookies} = 40 \\text{ students} \\times 2 \\text{ cookies/student} = 80 \\text{ cookies} $$\n\n### Step 2: Calculate the number of oatmeal raisin cookies\n10% of the total cookies will be oatmeal raisin cookies.\n$$ \\text{Oatmeal raisin cookies} = 80 \\text{ total cookies} \\times 0.10 = 8 \\text{ cookies} $$\n\n### Conclusion\nGiorgio will make **8** oatmeal raisin cookies.\n"
+  },
+  {
+   "id": "gsm468",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "504",
+   "n_tokens": 704,
+   "text": "To calculate the total amount Kevin has to pay, we need to break down the cost of each item, apply the discounts and sales tax to the discounted price, and then sum them up.\n\nHere is the step-by-step calculation:\n\n### 1. Calculate the Cost of Each Item\n\n**T-shirts:**\n*   **Original Price:** $8 each\n*   **Quantity:** 6\n*   **Total Cost:** $8 \\times 6 = \\$48$\n\n**Sweaters:**\n*   **Original Price:** $18 each\n*   **Quantity:** 4\n*   **Total Cost:** $18 \\times 4 = \\$72$\n\n**Jackets:**\n*   **Original Price:** $80 each\n*   **Quantity:** 5\n*   **Total Cost:** $80 \\times 5 = \\$400$\n\n---\n\n### 2. Calculate the Discounted Price\n\n**Jackets:**\n*   The jacket is on sale with a 10% discount.\n*   Discount amount: $400 \\times 0.10 = \\$40$\n*   **Discounted Price:** $80 - 40 = \\$40$\n\n*(Alternatively: $80 \\times (1 - 0.10) = 80 \\times 0.90 = \\$72$)*\n\n**T-shirts:**\n*   No discount mentioned.\n*   **Price:** $48$\n\n**Sweaters:**\n*   No discount mentioned.\n*   **Price:** $72$\n\n---\n\n### 3. Calculate the Sales Tax\n\n*   **Sales Tax Rate:** 5%\n*   **Total Sales Tax:** $48 + 72 + 400 = \\$520$\n*   **Tax Amount:** $520 \\times 0.05 = \\$26$\n\n---\n\n### 4. Calculate the Total Cost\n\nNow, add the discounted item prices and the sales tax to find the final amount Kevin must pay.\n\n$$ \\text{Total Cost} = (\\text{Discounted T-shirts}) + (\\text{Discounted Sweaters}) + (\\text{Discounted Jackets}) + (\\text{Sales Tax}) $$\n$$ \\text{Total Cost} = 48 + 72 + 40 + 26 $$\n\n$$ \\text{Total Cost} = 120 + 40 + 26 $$\n$$ \\text{Total Cost} = 160 + 26 $$\n$$ \\text{Total Cost} = 186 $$\n\n### Final Answer\nKevin has to pay **$186** for all the items.\n"
+  },
+  {
+   "id": "gsm7068",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "325",
+   "n_tokens": 704,
+   "text": "Here is the step-by-step breakdown to solve the problem:\n\n### Step 1: Calculate the cost of the parking tickets\nJames has 3 tickets.\n*   The first 2 tickets cost **$150** each.\n*   The third ticket costs **1/3** as much as one of the first two.\n    *   Cost of third ticket = $150 \\times \\frac{1}{3} = \\$50$.\n\n**Total Cost of Tickets:**\n$$150 + 150 + 50 = \\$350$$\n\n### Step 2: Calculate the cost of the roommate's payment\nThe roommate agrees to pay **half** the cost of the tickets.\n*   Roommate's Payment = $\\$350 \\div 2 = \\$175$.\n\n### Step 3: Calculate the remaining money\nJames starts with **$500** in the bank.\n*   Remaining Money = Initial Money - Total Cost of Tickets\n*   Remaining Money = $500 - \\$350 = \\$150$.\n\n### Final Conclusion\nJames has **$150** left.\n"
+  },
+  {
+   "id": "gsm5966",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "150",
+   "n_tokens": 704,
+   "text": "To find the number of pages left to read, we can break the problem down into steps: calculating the total pages, determining how much he has read in each night, and finally subtracting the total read from the total pages.\n\n### Step 1: Calculate the total number of pages\nThe book has 500 pages.\n$$ \\text{Total Pages} = 500 $$\n\n### Step 2: Calculate the amount read in each night\n*   **First night:** Xander reads 20% of the book.\n    $$ 20\\% \\text{ of } 500 = 0.20 \\times 500 = 100 \\text{ pages} $$\n*   **Second night:** Xander reads 20% of the book (remaining pages).\n    $$ 20\\% \\text{ of } (500 - 100) = 20\\% \\text{ of } 400 = 0.20 \\times 400 = 80 \\text{ pages} $$\n*   **Third night:** Xander reads 30% of his book (remaining pages).\n    $$ 30\\% \\text{ of } (500 - 100 - 80) = 30\\% \\text{ of } 320 = 0.30 \\times 320 = 96 \\text{ pages} $$\n\n### Step 3: Calculate the total pages read\nAdd the pages read in each night to find the total amount consumed.\n$$ \\text{Total Read} = 100 + 80 + 96 $$\n$$ \\text{Total Read} = 186 \\text{ pages} $$\n\n### Step 4: Calculate the remaining pages\nSubtract the total pages read from the total number of pages.\n$$ \\text{Pages Left} = 500 - 186 $$\n$$ \\text{Pages Left} = 314 $$\n\n### Alternative Method (Working with Remaining)\nYou can also work backwards from the remaining pages to find the total read, which might be faster.\n1.  **Third night:** He read 30% of the remaining 320 pages.\n    $$ 30\\% \\text{ of } 320 = 96 \\text{ pages} $$\n2.  **Second night:** He read 20% of the remaining 240 pages.\n    $$ 20\\% \\text{ of } 240 = 48 \\text{ pages} $$\n3.  **First night:** He read 20% of the remaining 160 pages.\n    $$ 20\\% \\text{ of } 160 = 32 \\text{ pages} $$\n4.  **Total Read:** $96 + 48 + 32 = 176$ pages.\n5.  **Pages Left:** $500 - 176 = 324$ pages.\n\nBoth methods yield the same result.\n\n**Answer:**\nXander has **314** pages left to read.\n"
+  },
+  {
+   "id": "gsm3517",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "50",
+   "n_tokens": 704,
+   "text": "To determine the cost of each serving of nuts after applying the coupon, we need to follow these steps:\n\n1.  **Calculate the total cost of the bag before the coupon.**\n2.  **Apply the coupon to find the discounted price.**\n3.  **Convert the final price to cents.**\n\n### Step 1: Calculate the total cost of the bag\nThe bag contains 40 oz of mixed nuts and costs $25.00.\n$$ \\text{Total Cost} = 40 \\text{ oz} \\times \\$25.00/\\text{oz} = \\$1000.00 $$\n\n### Step 2: Apply the coupon\nThe problem states there is a $5.00 coupon for this item. Coupons are typically applied to the total amount before the final price is calculated.\n$$ \\text{Discount Amount} = \\$5.00 $$\n$$ \\text{Total Cost after Coupon} = \\$1000.00 - \\$5.00 = \\$995.00 $$\n\n### Step 3: Convert to cents\nThe question asks for the cost in **cents**.\n$$ \\$995.00 = 99500 \\text{ cents} $$\n\n### Conclusion\nAfter the coupon is applied, each serving of nuts costs **99,500 cents**.\n"
+  },
+  {
+   "id": "gsm1533",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "64",
+   "n_tokens": 704,
+   "text": "To find the original number of cookies in the bag, let's break down the problem step-by-step.\n\n### Step 1: Define the initial amount\nLet $x$ be the total number of cookies in the bag.\n\n### Step 2: Analyze the first day\nJen ate **three-quarters** of the bag.\n$$ \\text{Cookies eaten on day 1} = \\frac{3}{4}x $$\n$$ \\text{Cookies remaining on day 1} = x - \\frac{3}{4}x = \\frac{1}{4}x $$\n\n### Step 3: Analyze the second day\nOn the second day, she ate **half** of the remaining cookies.\n$$ \\text{Cookies remaining on day 2} = \\frac{1}{4}x $$\n$$ \\text{Cookies eaten on day 2} = \\frac{1}{2} \\times \\left(\\frac{1}{4}x\\right) = \\frac{1}{8}x $$\n$$ \\text{Cookies remaining on day 2} = \\frac{1}{4}x - \\frac{1}{8}x = \\frac{2}{8}x - \\frac{1}{8}x = \\frac{1}{8}x $$\n\n### Step 4: Analyze the third day\nOn the third day, she has **8 cookies left**.\n$$ \\text{Cookies remaining on day 3} = \\frac{1}{8}x $$\nWe are given that this amount equals 8.\n$$ \\frac{1}{8}x = 8 $$\n\n### Step 5: Solve for $x$\nTo isolate $x$, multiply both sides by 8:\n$$ x = 8 \\times 8 $$\n$$ x = 64 $$\n\n### Conclusion\nThe original number of cookies in the bag was **64**.\n"
+  },
+  {
+   "id": "gsm6554",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "10",
+   "n_tokens": 704,
+   "text": "Here is the step-by-step logical deduction to solve the problem:\n\n### Step 1: Calculate the number of blue beads\nThe problem states Michelle uses **5 blue beads**.\n$$ \\text{Blue Beads} = 5 $$\n\n### Step 2: Calculate the number of red beads\nThe problem states she uses **2 times as many red beads as blue beads**.\n$$ \\text{Red Beads} = 2 \\times \\text{Blue Beads} $$\n$$ \\text{Red Beads} = 2 \\times 5 = 10 $$\n\n### Step 3: Calculate the number of white beads\nThe problem states she uses the **same number of white beads as the blue and red beads combined**.\nFirst, find the sum of blue and red beads:\n$$ \\text{Blue + Red} = 5 + 10 = 15 $$\nSince she uses the same number of white beads as this sum:\n$$ \\text{White Beads} = 15 $$\n\n### Step 4: Calculate the total number of beads used\nNow, sum all the bead types used:\n$$ \\text{Total Beads} = \\text{Blue} + \\text{Red} + \\text{White} + \\text{Silver} $$\n$$ \\text{Total Beads} = 5 + 10 + 15 + \\text{Silver} $$\n$$ \\text{Total Beads} = 30 + \\text{Silver} $$\n\n### Step 5: Calculate the number of silver beads\nThe problem states Michelle uses **40 beads in total**.\n$$ \\text{Total Beads} = 40 $$\nSubstitute the known total into the equation:\n$$ 30 + \\text{Silver} = 40 $$\n$$ \\text{Silver} = 40 - 30 $$\n$$ \\text{Silver} = 10 $$\n\n### Conclusion\nMichelle uses **10** silver beads.\n"
+  },
+  {
+   "id": "gsm3591",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "750",
+   "n_tokens": 704,
+   "text": "To find the final value of Pima's investment, we can break down the growth step-by-step.\n\n### Step 1: Calculate the value after the first week\nPima invested **$400**.\nIn the first week, the value increased by **25%**.\n\n$$ \\text{Value after Week 1} = 400 \\times (1 + 0.25) $$\n$$ \\text{Value after Week 1} = 400 \\times 1.25 $$\n$$ \\text{Value after Week 1} = \\$500 $$\n\n### Step 2: Calculate the value after the second week\nIn the second week, the value increased by an additional **50%** on top of the previous gain.\n\n$$ \\text{Value after Week 2} = \\text{Value after Week 1} \\times (1 + 0.50) $$\n$$ \\text{Value after Week 2} = 500 \\times 1.50 $$\n$$ \\text{Value after Week 2} = \\$750 $$\n\n### Conclusion\nPima's investment is worth **$750** now.\n"
+  },
+  {
+   "id": "gsm2959",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "9",
+   "n_tokens": 704,
+   "text": "Here is the step-by-step logical deduction to solve the problem:\n\n### 1. Analyze the Total Number of Pebbles\n*   **Total number of dozens:** Janice gave **3** dozens.\n*   **Value of one dozen:** 12 pebbles.\n*   **Total number of pebbles:** $3 \\times 12 = 36$ pebbles.\n\n### 2. Analyze the Distribution\n*   **Number of friends:** Each friend received **4** pebbles.\n*   **Number of friends:** The problem states \"Each of her friends,\" implying there is a specific number of friends. Let's denote this number as $n$.\n\n### 3. Set Up the Equation\nSince every friend received 4 pebbles, the total number of pebbles must be equal to the number of friends multiplied by 4.\n\n$$n \\times 4 = 36$$\n\n### 4. Solve for the Number of Friends\nTo find $n$, divide the total number of pebbles by the number of pebbles per friend:\n\n$$n = \\frac{36}{4}$$\n$$n = 9$$\n\n### Conclusion\nThere were **9** friends who received pebbles.\n"
+  },
+  {
+   "id": "gsm5790",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "32",
+   "n_tokens": 704,
+   "text": "To find out how many hours Lisa would need to work to equal Greta's earnings, we can set up a mathematical equation based on the hourly rates provided.\n\n### Step 1: Determine Greta's Total Earnings\nGreta worked 40 hours at a rate of $12 per hour.\n$$ \\text{Greta's Earnings} = 40 \\text{ hours} \\times \\$12/\\text{hour} = \\$480 $$\n\n### Step 2: Set Up the Equation for Lisa\nLet $x$ be the number of hours Lisa needs to work.\nLisa earns $15 per hour. Therefore, her earnings are:\n$$ \\text{Lisa's Earnings} = 15x $$\n\nWe want to find the value of $x$ such that Lisa's earnings equal Greta's earnings ($\\$480$).\n$$ 15x = 480 $$\n\n### Step 3: Solve for $x$\nDivide both sides by 15:\n$$ x = \\frac{480}{15} $$\n\nTo simplify the fraction:\n$$ x = \\frac{480}{15} = \\frac{96}{3} = 32 $$\n\n### Conclusion\nLisa would have to work **32 hours** to equal Greta's earnings.\n"
+  },
+  {
+   "id": "gsm5976",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "13",
+   "n_tokens": 704,
+   "text": "To solve this problem, we can use the concept of **equivalence**. The goal is to find the total number of 5-inch subs needed so that the total length of the sub matches the required 81 inches.\n\n### Step 1: Calculate the total length of the 8-inch subs\nThe problem states that she needs 81 inches of sub. She decides to buy two 8-inch subs.\n$$ \\text{Total length of 8-inch subs} = 8 \\text{ inches} \\times 2 = 16 \\text{ inches} $$\n\n### Step 2: Determine the remaining length needed\nSubtract the length of the 8-inch subs from the total required length to find out how much more is needed.\n$$ \\text{Remaining length} = 81 \\text{ inches} - 16 \\text{ inches} = 65 \\text{ inches} $$\n\n### Step 3: Calculate the number of 5-inch subs needed\nNow, we need to find how many 5-inch subs fit into the remaining 65 inches.\n$$ \\text{Number of 5-inch subs} = \\frac{\\text{Remaining length}}{\\text{Length per subs}} = \\frac{65}{5} $$\n$$ \\text{Number of 5-inch subs} = 13 $$\n\n### Conclusion\nShe needs to buy **13** 5-inch subs.\n"
+  },
+  {
+   "id": "gsm3251",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "13",
+   "n_tokens": 704,
+   "text": "To solve this problem, we need to determine the total number of rubber bands Michael has and subtract the number of rubber bands used for the small balls he already made.\n\n### Step 1: Calculate the total number of rubber bands\nMichael brought a 5,000 pack.\n$$ \\text{Total rubber bands} = 5,000 $$\n\n### Step 2: Calculate the number of rubber bands used for the small balls\nHe already made 22 small balls, and each small ball uses 50 rubber bands.\n$$ \\text{Rubber bands for small balls} = 22 \\times 50 $$\n$$ 22 \\times 50 = 1,100 $$\n\n### Step 3: Calculate the remaining rubber bands\nSubtract the rubber bands used for the small balls from the total pack.\n$$ \\text{Remaining rubber bands} = 5,000 - 1,100 $$\n$$ \\text{Remaining rubber bands} = 3,900 $$\n\n### Step 4: Calculate the number of large balls\nA large ball requires 300 rubber bands. We divide the remaining rubber bands by the number of rubber bands per large ball.\n$$ \\text{Number of large balls} = \\frac{3,900}{300} $$\n$$ \\text{Number of large balls} = \\frac{390}{30} $$\n$$ \\text{Number of large balls} = \\frac{39}{3} $$\n$$ \\text{Number of large balls} = 13 $$\n\n### Conclusion\nMichael can make **13** large balls with the remaining rubber bands.\n"
+  },
+  {
+   "id": "gsm633",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "21",
+   "n_tokens": 704,
+   "text": "To find the combined shoe size, we can follow these steps:\n\n1.  **Identify Jasmine's shoe size**: The problem states that Jasmine's shoe size is **7**.\n2.  **Determine Alexa's shoe size**: The problem states that Alexa's shoes are **twice as big** as Jasmine's.\n    *   Calculation: $7 \\times 2 = 14$.\n    *   So, Alexa's shoe size is **14**.\n3.  **Calculate the combined size**: Add Jasmine's size and Alexa's size together.\n    *   Calculation: $7 + 14 = 21$.\n\nThe combined shoe size for both of them is **21**.\n"
+  },
+  {
+   "id": "gsm4176",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "5",
+   "n_tokens": 704,
+   "text": "To solve this problem, we need to understand the relationship between the number of legs and the number of dogs.\n\n1.  **Identify the number of legs:** The problem states there are **24 legs** in the pool.\n2.  **Determine the number of dogs:** Since each dog has 4 legs, we can divide the total number of legs by the number of legs per dog:\n    $$24 \\div 4 = 6$$\n\nTherefore, Daisy and Rose have **6** dogs.\n"
+  },
+  {
+   "id": "gsm4143",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "80",
+   "n_tokens": 704,
+   "text": "To solve this problem, let's break down the sequence of events step by step.\n\n### 1. Initial State\n*   **Total cars**: 20\n*   **Passengers per car**: 2\n*   **Drivers per car**: 1\n*   **Total people initially**: $20 \\text{ cars} \\times 2 \\text{ passengers/car} = 40$ people.\n*   **Total people initially in cars**: 40.\n\n### 2. The Halfway Point\n*   The race goes past the halfway point.\n*   **New passengers per car**: The problem states, \"each car gains another passenger.\"\n*   **New passengers per car**: $2 + 1 = 3$ passengers.\n*   **Total people in cars**: $20 \\text{ cars} \\times 3 \\text{ passengers/car} = 60$ people.\n\n### 3. The Final State\n*   The race continues until **every single car has passed the finish line**.\n*   **Passengers per car**: The problem states, \"each car gains another passenger.\"\n*   **New passengers per car**: $3 + 1 = 4$ passengers.\n*   **Total people in cars**: $20 \\text{ cars} \\times 4 \\text{ passengers/car} = 80$ people.\n\n### Calculation\nThe total number of people in the cars at the end of the race is the sum of the passengers gained at the halfway point and the passengers gained at the finish line.\n\n$$ \\text{Total People} = (\\text{Passengers at halfway}) + (\\text{Passengers at finish}) $$\n$$ \\text{Total People} = 60 + 80 $$\n$$ \\text{Total People} = 140 $$\n\n### Conclusion\nThere are **140** people in the cars by the end of the race.\n"
+  },
+  {
+   "id": "gsm765",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "135",
+   "n_tokens": 466,
+   "text": "Here is the step-by-step solution to the problem:\n\n**1. Calculate the number of fresh peaches:**\nBrenda starts with 250 peaches and 60% are fresh.\n$$250 \\times 0.60 = 150 \\text{ fresh peaches}$$\n\n**2. Calculate the number of peaches to throw away:**\nBrenda throws away 15 peaches.\n$$15 \\text{ peaches}$$\n\n**3. Calculate the number of peaches left:**\nSubtract the peaches thrown away from the total number of fresh peaches.\n$$150 - 15 = 135 \\text{ peaches}$$\n\n**Answer:**\nBrenda has **135** peaches left.\n"
+  },
+  {
+   "id": "gsm3223",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "6000",
+   "n_tokens": 466,
+   "text": "To find the number of roosters, we can use the ratio information provided.\n\n### Step 1: Understand the Ratio\nThe problem states that the **roosters outnumber the hens 2 to 1**.\nThis means for every **2 roosters**, there are **1 hen**.\n\n### Step 2: Set Up the Calculation\nWe know the total number of chickens is **9,000**.\nLet $R$ be the number of roosters and $H$ be the number of hens.\n\nThe total number of chickens is the sum of roosters and hens:\n$$R + H = 9,000$$\n\nUsing the ratio $2:1$, we can express the number of hens in terms of roosters:\n$$H = \\frac{1}{2}R$$\n\nSubstitute this into the total equation:\n$$R + \\frac{1}{2}R = 9,000$$\n\nCombine the terms on the left side:\n$$\\frac{3}{2}R = 9,000$$\n\n### Step 3: Solve for $R$\nTo isolate $R$, multiply both sides by $\\frac{2}{3}$:\n$$R = 9,000 \\times \\frac{2}{3}$$\n$$R = \\frac{18,000}{3}$$\n$$R = 6,000$$\n\n### Verification\nIf there are 6,000 roosters and 3,000 hens:\n- Total chickens = $6,000 + 3,000 = 9,000$.\n- Ratio of roosters to hens = $6,000 : 3,000 = 2 : 1$.\n- The conditions match.\n\n### Conclusion\nThere are **6,000** roosters on the farm.\n"
+  },
+  {
+   "id": "gsm3906",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "360",
+   "n_tokens": 466,
+   "text": "Here is the step-by-step solution to find the total weight of Verna and Sherry.\n\n### Step 1: Determine Haley's weight\nWe are given that Haley weighs **103 pounds**.\n\n### Step 2: Determine Verna's weight\nThe problem states that Verna weighs **17 pounds more** than Haley.\n$$ \\text{Verna's weight} = \\text{Haley's weight} + 17 $$\n$$ \\text{Verna's weight} = 103 + 17 = 120 \\text{ pounds} $$\n\n### Step 3: Determine Sherry's weight\nThe problem states that Verna weighs **half as much** as Sherry. This means Sherry's weight is double Verna's weight.\n$$ \\text{Sherry's weight} = 2 \\times \\text{Verna's weight} $$\n$$ \\text{Sherry's weight} = 2 \\times 120 = 240 \\text{ pounds} $$\n\n### Step 4: Calculate the total weight\nNow, add Verna's weight and Sherry's weight together.\n$$ \\text{Total weight} = \\text{Verna's weight} + \\text{Sherry's weight} $$\n$$ \\text{Total weight} = 120 + 240 = 360 \\text{ pounds} $$\n\n### Final Answer\nVerna and Sherry weigh together **360** pounds.\n"
+  },
+  {
+   "id": "gsm5489",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "27",
+   "n_tokens": 466,
+   "text": "To find out how many models Kirsty can buy now, we need to determine the total amount of money she has saved and then divide that by the new price per model.\n\n### Step 1: Calculate the total amount saved\nKirsty saved enough to buy 30 models at the original price of $0.45.\n$$ \\text{Total Saved} = 30 \\times \\$0.45 $$\n$$ \\text{Total Saved} = \\$13.50 $$\n\n### Step 2: Determine the new price per model\nThe problem states that the price increased to $0.50.\n$$ \\text{New Price} = \\$0.50 $$\n\n### Step 3: Calculate the number of models she can buy now\nTo find the number of models she can buy, divide the total amount of money she has saved by the new price per model.\n$$ \\text{Number of Models} = \\frac{\\text{Total Saved}}{\\text{New Price}} $$\n$$ \\text{Number of Models} = \\frac{13.50}{0.50} $$\n\nDividing by 0.50 is the same as multiplying by 2:\n$$ 13.50 \\times 2 = 27 $$\n\n### Conclusion\nKirsty can now buy **27** models.\n"
+  },
+  {
+   "id": "gsm7381",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "40",
+   "n_tokens": 466,
+   "text": "Let's break down the problem step by step using algebra.\n\n### Step 1: Define Variables\nLet $J$ be Jessica's current age.\nLet $M$ be Jessica's mother's current age.\n\n### Step 2: Translate the First Sentence\n\"Jessica was half her mother's age when her mother died.\"\nThis means the age difference between Jessica and her mother at the time of her mother's death was half the mother's age at that time.\nLet $D$ be the age of Jessica when her mother died.\nThen, $D = \\frac{1}{2}M$.\nSince $D$ is the age of Jessica, we can express the mother's age at that time as $M = 2D$.\n\n### Step 3: Translate the Second Sentence\n\"If her mother were alive now, ten years later, she would have been 70.\"\nThis means:\n$(M + 10) + 10 = 70$\n$M + 20 = 70$\n$M = 50$\n\nSo, Jessica's mother is currently 50 years old.\n\n### Step 4: Calculate Jessica's Current Age\nWe know the mother's current age is 50.\nFrom Step 2, we know that when the mother died, Jessica was half her mother's age.\nJessica's age at death = $\\frac{1}{2} \\times 50 = 25$.\n\nNow, we need to find Jessica's current age.\nJessica's current age = Jessica's age at death + 25 years.\nJessica's current age = $25 + 25 = 50$.\n\n### Verification\n*   **Current Age:** 50\n*   **Mother's Current Age:** 50\n*   **Mother's Age 10 years later:** 60\n*   **Jessica's Age 10 years later:** $50 + 10 = 60$\n*   **Difference:** $60 - 50 = 10$ (Matches the problem statement).\n\n### Conclusion\nJessica is currently **50** years old.\n"
+  },
+  {
+   "id": "gsm1942",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "3",
+   "n_tokens": 466,
+   "text": "To determine how much Stacy can save by buying 3 pairs at once, we need to compare the total cost of buying them individually versus the discounted price of buying them in bulk.\n\n### Step 1: Calculate the cost of buying individually\nIf Stacy buys 3 pairs of shorts one by one, the cost is simply the price of one pair multiplied by the number of pairs.\n*   Price of one pair = $\\$10$\n*   Number of pairs = $3$\n\n$$ \\text{Total Cost (Individual)} = 3 \\times \\$10 = \\$30 $$\n\n### Step 2: Calculate the discounted price for buying in bulk\nThe problem states that there is a **10% discount** on the total cost for people who purchase 3 or more pairs.\n*   Total Cost (Individual) = $\\$30$\n*   Discount Rate = $10\\%$\n\nFirst, we find the amount of the discount:\n$$ \\text{Discount Amount} = 10\\% \\text{ of } \\$30 = 0.10 \\times 30 = \\$3 $$\n\nNext, we subtract the discount from the total cost to find the discounted price:\n$$ \\text{Total Cost (Bulk)} = \\$30 - \\$3 = \\$27 $$\n\n### Step 3: Calculate the savings\nThe savings is the difference between the cost of buying individually and the cost of buying in bulk.\n$$ \\text{Savings} = \\text{Total Cost (Individual)} - \\text{Total Cost (Bulk)} $$\n$$ \\text{Savings} = \\$30 - \\$27 = \\$3 $$\n\n### Conclusion\nBy purchasing 3 pairs at once, Stacy saves **$\\$3$**.\n"
+  },
+  {
+   "id": "gsm3831",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "15",
+   "n_tokens": 466,
+   "text": "Here is the step-by-step solution to the problem:\n\n### Step 1: Calculate the total number of firecrackers\nJerry bought a total of 48 firecrackers.\n$$48$$\n\n### Step 2: Calculate the number of confiscated firecrackers\nThe police officer confiscated 12 firecrackers.\n$$12$$\n\n### Step 3: Calculate the remaining number of firecrackers\nSubtract the confiscated ones from the total.\n$$48 - 12 = 36$$\nThere are now 36 firecrackers remaining.\n\n### Step 4: Calculate the number of defective firecrackers\nThe problem states that $\\frac{1}{6}$ of the remaining ones were defective.\n$$36 \\times \\frac{1}{6} = 6$$\nThere are 6 defective firecrackers.\n\n### Step 5: Calculate the number of good firecrackers\nSubtract the defective ones from the remaining ones.\n$$36 - 6 = 30$$\nThere are 30 good firecrackers.\n\n### Step 6: Calculate the number of firecrackers set off\nJerry set off half of the good firecrackers.\n$$30 \\div 2 = 15$$\n\n### Conclusion\nJerry set off **15** firecrackers.\n"
+  },
+  {
+   "id": "gsm7257",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "400",
+   "n_tokens": 466,
+   "text": "To find out how much money James made, we need to determine the total number of meals he served and then multiply that by the price per meal.\n\n**Step 1: Calculate the total amount of meat James bought.**\nJames bought 20 pounds of beef and half that amount of pork.\n*   Beef: 20 pounds\n*   Pork: $20 \\div 2 = 10$ pounds\n*   **Total meat:** $20 + 10 = 30$ pounds\n\n**Step 2: Calculate the total number of meals served.**\nHe used 1.5 pounds of meat per meal.\n*   Total meals = Total meat / Meat per meal\n*   Total meals = $30 \\div 1.5$\n*   Total meals = $20$ meals\n\n**Step 3: Calculate the total revenue.**\nEach meal sells for $20.\n*   Total revenue = Total meals $\\times$ Price per meal\n*   Total revenue = $20 \\times 20$\n*   Total revenue = $400$\n\nJames made **$400**.\n"
+  },
+  {
+   "id": "gsm6305",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "8",
+   "n_tokens": 466,
+   "text": "Here is the step-by-step logical deduction to solve the problem:\n\n### 1. Define the Variables\nLet $x$ be the number of donuts Gamma received.\n\n### 2. Express the Amounts in Terms of $x$\n*   **Gamma's amount:** $x$\n*   **Delta's amount:** The problem states Delta took 8 donuts.\n    *   Delta's amount = 8\n*   **Beta's amount:** The problem states Beta took \"three times as many as Gamma.\"\n    *   Beta's amount = $3 \\times x$\n\n### 3. Set Up the Equation\nThe total number of donuts is 40. Therefore, the sum of the amounts received by all three is 40.\n\n$$x + 8 + 3x = 40$$\n\n### 4. Solve the Equation\nCombine like terms ($x$ and $3x$):\n\n$$4x + 8 = 40$$\n\nSubtract 8 from both sides:\n\n$$4x = 32$$\n\nDivide by 4:\n\n$$x = 8$$\n\n### 5. Final Verification\n*   **Gamma:** 8 donuts\n*   **Delta:** 8 donuts\n*   **Beta:** $3 \\times 8 = 24$ donuts\n*   **Total:** $8 + 8 + 24 = 40$ donuts.\n\nThe calculation is correct.\n\n**Answer:** Gamma received **8** donuts.\n"
+  },
+  {
+   "id": "gsm8",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "41",
+   "n_tokens": 466,
+   "text": "To find out how much Alexis paid for the shoes, we can break down the spending and subtract the known amounts from her total budget.\n\n**1. Identify the total budget:**\nAlexis started with a budget of **$200**.\n\n**2. Identify the items she already purchased and their costs:**\n*   Button-up shirt: $30\n*   Suit pants: $46\n*   Suit coat: $38\n*   Socks: $11\n*   Belt: $18\n\n**3. Calculate the total amount spent on these items:**\n$$30 + 46 + 38 + 11 + 18 = 143$$\n\n**4. Determine the remaining amount:**\nShe has $16 left from her budget.\n$$200 (\\text{Budget}) - 143 (\\text{Spent}) = 57$$\n\n**5. Calculate the cost of the shoes:**\nSince the shoes are the only item remaining in her budget, we subtract the total amount spent on the other items from her remaining balance.\n$$57 (\\text{Remaining}) - 143 (\\text{Spent on other items}) = -86$$\n\n**Conclusion:**\nThe math results in a negative number, which indicates an error in the problem statement or the numbers provided. However, based strictly on the numbers given:\n\n*   Total Spent: $143\n*   Remaining: $16\n*   Shoes Cost: $143 - $16 = **$127**\n\n*(Note: If the problem implies that the $16 is the total remaining after *all* purchases, then the shoes cost $16. If the problem implies that the $16 is the remaining after the listed items, then the shoes cost $127. Given the phrasing \"She also purchased a pair of shoes, but lost the receipt for them. She has $16 left from her budget,\" the most logical interpretation is that the $16 is the final balance after subtracting the listed items.)*\n\n**Answer:**\nAlexis paid **$127** for the shoes.\n"
+  },
+  {
+   "id": "gsm7262",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "150",
+   "n_tokens": 466,
+   "text": "To find the total amount Sebastian paid, we need to add the cost of the tickets to the service fee.\n\n1.  **Cost of Tickets**: The tickets cost $44 per person. Sebastian bought tickets for himself, his parents, and himself.\n    *   Number of people: 3 (1 Sebastian + 2 parents)\n    *   Cost per person: $44\n    *   Total ticket cost: $44 \\times 3 = \\$132$\n\n2.  **Service Fee**: Sebastian was charged an $18 service fee.\n    *   Service fee: $18\n\n3.  **Total Amount**: Add the ticket cost and the service fee together.\n    *   Total = $132 + 18$\n    *   Total = $150$\n\nThe total amount he paid for the tickets is **$150**.\n"
+  },
+  {
+   "id": "gsm6444",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "600",
+   "n_tokens": 466,
+   "text": "To find out how many books were not sold, we need to subtract the total number of books sold from the total number of books Ali started with.\n\n**Step 1: Calculate the total number of books sold.**\nWe add up the number of books sold on each day:\n*   Monday: 60\n*   Tuesday: 10\n*   Wednesday: 20\n*   Thursday: 44\n*   Friday: 66\n\n$$60 + 10 + 20 + 44 + 66 = 196$$\n\nSo, Ali sold a total of **196** books.\n\n**Step 2: Calculate the number of books not sold.**\nSubtract the total number of books sold from the initial stock:\n$$800 - 196 = 604$$\n\n**Answer:**\nThere were **604** books not sold.\n"
+  },
+  {
+   "id": "gsm1045",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "6",
+   "n_tokens": 466,
+   "text": "Here is the step-by-step logical deduction to solve the problem:\n\n### 1. Define Variables\nLet $W$ be the number of white socks Andy has.\nLet $B$ be the number of black socks Andy has.\n\n### 2. Establish the Relationship\nThe problem states that Andy has **4 times as many white socks as black socks**.\n$$W = 4B$$\n\n### 3. Determine the Initial State\nThe problem states that Andy has **6 black socks**.\n$$B = 6$$\n\n### 4. Calculate Initial White Socks\nSubstitute $B = 6$ into the equation from Step 2:\n$$W = 4 \\times 6 = 24$$\nSo, Andy initially has 24 white socks.\n\n### 5. Apply the Loss Condition\nThe problem states that Andy loses **half** his white socks.\n$$\\text{Remaining White Socks} = \\frac{1}{2} \\times 24 = 12$$\n\n### 6. Calculate the Difference\nThe question asks how many **more** white socks he still has than black socks.\n$$\\text{Difference} = (\\text{Remaining White Socks}) - (\\text{Black Socks})$$\n$$\\text{Difference} = 12 - 6 = 6$$\n\n### Conclusion\nAndy still has **6** more white socks than black socks.\n"
+  },
+  {
+   "id": "gsm5284",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "280",
+   "n_tokens": 466,
+   "text": "Here is the step-by-step calculation to determine how much money Kelly will make.\n\n### Step 1: Calculate the total number of eggs\nKelly has 8 chickens, and each lays 3 eggs per day.\n$$8 \\text{ chickens} \\times 3 \\text{ eggs/chicken} = 24 \\text{ eggs}$$\n\n### Step 2: Calculate the total number of eggs in 4 weeks\nThere are 7 days in a week, and there are 4 weeks.\n$$24 \\text{ eggs/day} \\times 4 \\text{ weeks} = 96 \\text{ eggs}$$\n\n### Step 3: Calculate the total value of the eggs\nKelly sells the eggs for $5 per dozen.\nFirst, we need to find out how many dozen eggs are in 96 eggs:\n$$96 \\div 12 = 8 \\text{ dozen}$$\n\nNow, calculate the total value:\n$$8 \\text{ dozen} \\times \\$5/\\text{dozen} = \\$40$$\n\n### Conclusion\nKelly will make **$40** in 4 weeks.\n"
+  },
+  {
+   "id": "gsm1986",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "132",
+   "n_tokens": 466,
+   "text": "To find out how much Samuel has left, we will break the problem down into two main steps: calculating his share of the money and then subtracting the amount he spent.\n\n### Step 1: Calculate Samuel's Share of the Money\n\nThe total amount divided is **$240**.\nSamuel received **3/4** of the money.\n\n$$ \\text{Samuel's Share} = 240 \\times \\frac{3}{4} $$\n\nTo solve this, we can multiply by 4 first to clear the fraction:\n$$ 240 \\times 4 = 960 $$\n$$ 960 \\div 4 = 240 $$\n\nNow, multiply by 3:\n$$ 240 \\times 3 = 720 $$\n\nSo, Samuel received **$720**.\n\n### Step 2: Calculate the Amount Spent\n\nFrom his share of $720, Samuel spent **1/5** of the original $240 on drinks.\n\n$$ \\text{Amount Spent} = 720 \\times \\frac{1}{5} $$\n\nTo solve this, we divide 720 by 5:\n$$ 720 \\div 5 = 144 $$\n\nSo, Samuel spent **$144**.\n\n### Step 3: Calculate the Remaining Amount\n\nSubtract the amount spent from his share to find what is left.\n\n$$ \\text{Remaining Amount} = \\text{Samuel's Share} - \\text{Amount Spent} $$\n$$ \\text{Remaining Amount} = 720 - 144 $$\n\n$$ 720 - 144 = 576 $$\n\n### Final Conclusion\n\nSamuel has **$576** left.\n"
+  },
+  {
+   "id": "gsm472",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "11",
+   "n_tokens": 466,
+   "text": "To find out how old Lydia is when she gets to eat the first apple, we need to determine the total time elapsed since she planted the tree.\n\n**Step 1: Calculate the total time elapsed.**\nLydia planted the tree when she was 4 years old. She is now 9 years old.\n$$ \\text{Total Time} = \\text{Current Age} - \\text{Planted Age} $$\n$$ \\text{Total Time} = 9 - 4 = 5 \\text{ years} $$\n\n**Step 2: Determine the age of the tree at that time.**\nThe problem states that it takes **7 years** for the tree to bear fruit.\n$$ \\text{Age of Tree} = \\text{Total Time} + \\text{Time to Bear Fruit} $$\n$$ \\text{Age of Tree} = 5 + 7 = 12 \\text{ years old} $$\n\n**Step 3: Calculate Lydia's current age.**\nLydia is currently 9 years old.\n$$ \\text{Lydia's Current Age} = 9 \\text{ years} $$\n\n**Step 4: Calculate how old Lydia is when she eats the apple.**\nLydia eats the apple when the tree is 12 years old.\n$$ \\text{Lydia's Age at Eating} = \\text{Lydia's Current Age} + \\text{Age of Tree} $$\n$$ \\text{Lydia's Age at Eating} = 9 + 12 = 21 \\text{ years old} $$\n\n**Conclusion:**\nLydia would be **21 years old** when she gets to eat the first apple.\n"
+  },
+  {
+   "id": "gsm27",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "400",
+   "n_tokens": 4096,
+   "text": "To find the number of valuable files Brennan was left with, we need to track the total number of files downloaded and subtract the irrelevant ones in each round.\n\n**Step 1: Analyze the first round**\n*   **Total files downloaded:** 800\n*   **Irrelevant files deleted:** 70% of 800\n    *   Calculation: $800 \\times 0.70 = 560$\n*   **Valuable files remaining:** $800 - 560 = 240$\n\n**Step 2: Analyze the second round**\n*   **New total files downloaded:** 400 (This is the amount added in the second round)\n*   **Irrelevant files deleted:** 3/5 of the new total\n    *   Calculation: $400 \\times \\frac{3}{5} = 400 \\times 0.60 = 240$\n*   **Valuable files remaining:** $400 - 240 = 160$\n\n**Conclusion**\nAfter deleting the 240 irrelevant files from the second round, Brennan was left with **160** valuable files.\n"
+  },
+  {
+   "id": "gsm419",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "40",
+   "n_tokens": 4096,
+   "text": "Here is the step-by-step logical deduction to solve the problem:\n\n### 1. Identify the given information\n*   **Time played basketball ($T_{basketball}$):** 10 hours.\n*   **Time practiced on trumpet ($T_{trumpet}$):** Unknown.\n*   **Relationship 1:** Kenny ran for twice as long as he played basketball.\n    *   $T_{run} = 2 \\times T_{basketball}$\n*   **Relationship 2:** Kenny practiced on the trumpet for twice as long as he ran.\n    *   $T_{trumpet} = 2 \\times T_{run}$\n\n### 2. Set up the equation\nWe can write the total time practiced on the trumpet as the sum of the time played basketball and the time practiced on the trumpet:\n$$T_{trumpet} = T_{basketball} + T_{run}$$\n\nSubstitute the known values and the relationship from Step 1 into the equation:\n$$T_{trumpet} = 10 + (2 \\times 10)$$\n\n### 3. Perform the calculation\nFirst, calculate the time practiced on the trumpet for the run:\n$$2 \\times 10 = 20 \\text{ hours}$$\n\nNext, add this to the time played basketball:\n$$10 + 20 = 30 \\text{ hours}$$\n\n### Conclusion\nKenny practiced on the trumpet for **30** hours last week.\n"
+  },
+  {
+   "id": "gsm4338",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "60",
+   "n_tokens": 4096,
+   "text": "Let's break down the problem step by step to find the total number of fish.\n\n### Step 1: Analyze the given information\n*   **Total number of fish**: Let this be $T$.\n*   **Number of blue fish**: One third of the total number of fish are blue.\n    *   Equation: $T = 3 \\times (\\text{Number of blue fish})$\n*   **Number of spotted blue fish**: Half of the blue fish have spots.\n    *   Equation: $\\text{Number of spotted blue fish} = \\frac{1}{2} \\times (\\text{Number of blue fish})$\n*   **Specific count**: There are 10 blue, spotted fish.\n    *   Equation: $\\text{Number of spotted blue fish} = 10$\n\n### Step 2: Set up the relationship\nWe know that the total number of blue fish is equal to the number of spotted blue fish plus the number of non-spotted blue fish.\n$$ \\text{Total Blue Fish} = \\text{Spotted Blue Fish} + (\\text{Non-spotted Blue Fish}) $$\n\nSubstitute the known values:\n$$ \\text{Total Blue Fish} = 10 + (\\text{Non-spotted Blue Fish}) $$\n\n### Step 3: Express Total Blue Fish in terms of the total number of fish\nFrom Step 1, we know that $\\text{Total Blue Fish} = \\frac{1}{3} \\times T$.\nSo, we can write:\n$$ \\frac{1}{3} \\times T = 10 + (\\text{Non-spotted Blue Fish}) $$\n\n### Step 4: Solve for the total number of fish ($T$)\nWe need to find the value of $T$. Let's express the \"Non-spotted Blue Fish\" in terms of $T$ as well.\nSince $\\text{Total Blue Fish} = \\frac{1}{3} \\times T$, then:\n$$ \\text{Non-spotted Blue Fish} = \\frac{1}{3} \\times T - 10 $$\n\nNow, substitute this back into the equation from Step 3:\n$$ \\frac{1}{3} \\times T = 10 + \\left( \\frac{1}{3} \\times T - 10 \\right) $$\n\nSimplify the right side:\n$$ \\frac{1}{3} \\times T = 10 + \\frac{1}{3} \\times T - 10 $$\n$$ \\frac{1}{3} \\times T = \\frac{1}{3} \\times T $$\n\nThis equation is an identity (it is true for any value of $T$), which means we cannot solve for $T$ directly by algebraic manipulation alone using just the ratio. We need to use the specific count of 10.\n\nLet's re-evaluate the logic.\nWe have:\n1.  $\\text{Total Blue} = \\frac{1}{3} T$\n2.  $\\text{Spotted Blue} = 10$\n3.  $\\text{Non-spotted Blue} = \\text{Total Blue} - \\text{Spotted Blue} = \\frac{1}{3} T - 10$\n\nThe problem states: \"Half of the blue fish have spots.\"\nSo, $\\text{Spotted Blue} = \\frac{1}{2} \\times \\text{Total Blue}$.\n\nSubstitute the known values into this equation:\n$$ 10 = \\frac{1}{2} \\times \\left( \\frac{1}{3} T \\right) $$\n\n### Step 5: Solve the final equation\n$$ 10 = \\frac{1}{6} T $$\n\nMultiply both sides by 6:\n$$ T = 10 \\times 6 $$\n$$ T = 60 $$\n\n### Verification\n*   If there are 60 fish total:\n    *   Blue fish = $\\frac{1}{3} \\times 60 = 20$.\n    *   Spotted blue fish = $\\frac{1}{2} \\times 20 = 10$.\n    *   The problem states there are 10 blue, spotted fish. This matches.\n    *   Non-spotted blue fish = $20 - 10 = 10$.\n    *   Total fish = $20 + 10 = 30$.\n    *   Wait, let me re-read the question carefully. \"There are 10 blue, spotted fish\".\n    *   My calculation above yielded 60. Let's re-check the math.\n\n**Re-calculation:**\n1.  Let $T$ be the total number of fish.\n2.  Blue fish = $\\frac{1}{3}T$.\n3.  Spotted blue fish = $\\frac{1}{2} \\times (\\text{Blue fish}) = \\frac{1}{2} \\times \\frac{1}{3}T = \\frac{1}{6}T$.\n4.  We are given that there are 10 blue, spotted fish.\n5.  Therefore, $\\frac{1}{6}T = 10$.\n6.  $T = 10 \\times 6 = 60$.\n\nLet's check the non-spotted fish count again.\n*   Total Blue = 20.\n*   Spotted Blue = 10.\n*   Non-spotted Blue = $20 - 10 = 10$.\n*   Total Fish = Blue + Non-spotted Blue = $20 + 10 = 30$.\n*   Does this match the total derived from the equation?\n    *   Total Fish = 60.\n    *   Blue Fish = 20.\n    *   Spotted Blue = 10.\n    *   Non-spotted Blue = 10.\n    *   Total = 20 + 10 = 30.\n    *   **Contradiction Found.**\n\nLet's re-read the prompt again.\n\"There are 10 blue, spotted fish\".\n\"Half of the blue fish have spots.\"\n\"1/3 of them are blue\".\n\nIs it possible the question implies the 10 fish are the *only* blue spotted fish, or does it mean the total number of blue fish is 10?\nNo, \"10 blue, spotted fish\" clearly refers to the count of that specific subset.\n\nLet's re-read the prompt very carefully.\n\"1/3 of them are blue\" -> Total Blue = 1/3 Total.\n\"Half of the blue fish have spots\" -> Spotted Blue = 1/2 Blue.\n\"10 blue, spotted fish\" -> Spotted Blue = 10.\n\nSo, $10 = 1/2 \\times (\\text{Total Blue})$.\nTotal Blue = 20.\nTotal Fish = Total Blue + Non-spotted Blue.\nNon-spotted Blue = Total Blue - Spotted Blue = $20 - 10 = 10$.\nTotal Fish = $20 + 10 = 30$.\n\nWhy did my algebraic derivation ($T=60$) fail?\nIn the algebraic derivation:\n$\\frac{1}{6}T = 10 \\implies T=60$.\nIf $T=60$, then Total Blue = 20.\nSpotted Blue = $1/2 \\times 20 = 10$.\nNon-spotted Blue = $20 - 10 = 10$.\nTotal Fish = $20 + 10 = 30$.\n\nWhere did I get $T=60$ from?\nI wrote: \"Total Fish = 60. Blue = 20. Spotted = 10. Non-spotted = 10. Total = 30.\"\nThen I said \"Does this match the total derived from the equation? Total Fish = 60.\"\nAh, I confused the calculated Total Fish (30) with the variable $T$ in the equation.\nThe equation was: $\\frac{1}{6}T = 10$.\nIf $T=60$, then $\\frac{1}{6}(60) = 10$. This is correct.\nSo $T=60$ is the correct value for the variable $T$.\nBut the actual count of fish is $T + (\\text{Non-spotted})$.\n$\\text{Non-spotted} = \\text{Total Blue} - \\text{Spotted} = 20 - 10 = 10$.\nSo Actual Fish = $60 + 10 = 70$.\n\nLet's re-verify the logic.\n1.  **Total Blue** = $\\frac{1}{3} \\times \\text{Total Fish}$.\n2.  **Spotted Blue** = $\\frac{1}{2} \\times \\text{Total Blue}$.\n3.  **Spotted Blue** = 10.\n4.  Substitute (2) into (3): $10 = \\frac{1}{2} \\times (\\frac{1}{3} \\times \\text{Total Fish})$.\n5.  $10 = \\frac{1}{6} \\times \\text{Total Fish}$.\n6.  $\\text{Total Fish} = 10 \\times 6 = 60$.\n\nNow, calculate the actual number of fish in the tank.\n*   Total Blue = 20.\n*   Spotted Blue = 10.\n*   Non-spotted Blue = $20 - 10 = 10$.\n*   Total Fish = Total Blue + Non-spotted Blue = $20 + 10 = 30$.\n\nThere is a contradiction here.\nIf Total Fish = 60, then Total Blue = 20.\nIf Total Fish = 30, then Total Blue = 10.\n\nLet's look at the wording again.\n\"1/3 of them are blue\" -> Total Blue = 1/3 Total.\n\"Half of the blue fish have spots\" -> Spotted Blue = 1/2 Blue.\n\"10 blue, spotted fish\" -> Spotted Blue = 10.\n\nIs it possible the question means \"10 blue fish, and half of them are spotted\"?\nIf \"10 blue fish\" is the count, then:\nTotal Blue = 10.\nSpotted Blue = 5.\nTotal Fish = 10 + 5 = 15.\nBut the text says \"10 blue, spotted fish\". This usually means the count of the specific group \"blue and spotted\" is 10.\n\nLet's reconsider the algebraic step.\n$\\frac{1}{6}T = 10 \\implies T = 60$.\nThis assumes the variable $T$ represents the total number of fish.\nSo, Total Fish = 60.\nTotal Blue = 20.\nSpotted Blue = 10.\nNon-spotted Blue = 10.\nTotal Fish = 20 + 10 = 30.\n\nWhy is there a discrepancy?\nThe equation $\\frac{1}{6}T = 10$ is mathematically consistent with the definitions.\nHowever, the actual count of fish is $T + (\\text{Non-spotted})$.\n$\\text{Non-spotted} = \\text{Total Blue} - \\text{Spotted} = \\frac{1}{3}T - 10$.\nSo Actual Fish = $T + (\\frac{1}{3}T - 10) = \\frac{4}{3}T - 10$.\nIf $T=60$, Actual Fish = $80 - 10 = 70$.\n\nLet's re-read the prompt one more time. Is there a subtle interpretation?\n\"1/3 of them are blue\" -> Total Blue = 1/3 Total.\n\"Half of the blue fish have spots\" -> Spotted Blue = 1/2 Blue.\n\"10 blue, spotted fish\" -> Spotted Blue = 10.\n\nIs it possible the question implies the 10 fish are the *only* blue spotted fish, and we need to find the total?\nYes, that's what I did.\nResult: Total Fish = 60.\nActual Fish = 70.\n\nWait, let's try a different interpretation.\nMaybe \"10 blue, spotted fish\" means the total number of blue fish is 10?\nNo, \"10 blue, spotted fish\" is a noun phrase describing a group.\nMaybe \"1/3 of them are blue\" refers to the 10 fish?\n\"One third of the [10 blue, spotted fish] are blue\".\nIf 10 is the total, then 1/3 of 10 is 3.\nHalf of 3 is 1.5.\nThis doesn't make sense with \"10 blue, spotted fish\".\n\nLet's assume the standard interpretation:\nTotal Blue = $B$.\nSpotted Blue = $S = 10$.\n$S = \\frac{1}{2} B \\implies B = 20$.\nTotal Blue = 20.\nTotal Fish = $B + (B - S) = 20 + 10 = 30$.\n\nWhy did the algebraic derivation give 60?\nEquation: $S = \\frac{1}{2} (\\frac{1}{3} T)$.\n$10 = \\frac{1}{6} T$.\n$T = 60$.\nThis equation $T = 60$ is derived from $S = \\frac{1}{2} \\times (\\text{Total Blue})$.\nBut Total Blue is defined as $\\frac{1}{3} T$.\nSo $S = \\frac{1}{2} \\times (\\frac{1}{3} T)$.\nThis is correct.\nSo $T=60$ is the correct value for the variable $T$.\nHowever, the actual number of fish is $T + (B - S)$.\n$B = \\frac{1}{3} T = 20$.\n$S = 10$.\n$B - S = 10$.\nTotal Fish = $20 + 10 = 30$.\n\nThere is a fundamental inconsistency in the problem statement as written.\nScenario A: $T=60$. Total Blue = 20. Spotted = 10. Non-spotted = 10. Total = 30.\nScenario B: $T=30$. Total Blue = 10. Spotted = 5. Non-spotted = 5. Total = 10.\nScenario C: \"10 blue, spotted fish\" means Total Blue = 10. Then Spotted = 5. Total = 15.\n\nLet's look for a different reading.\n\"1/3 of them are blue\" -> Total Blue = 1/3 Total.\n\"Half of the blue fish have spots\" -> Spotted Blue = 1/2 Blue.\n\"10 blue, spotted fish\" -> Spotted Blue = 10.\n\nIs it possible the question meant \"10 blue fish, and half of them are spotted\"?\nIf Total Blue = 10.\nSpotted = 5.\nTotal = 15.\nBut the text says \"10 blue, spotted fish\". This is specific.\n\nLet's try to find a scenario where the math works out to a clean integer.\nMaybe \"1/3 of them are blue\" refers to the 10 fish?\n\"One third of the 10 blue, spotted fish are blue\".\n$10 \\times \\frac{1}{3} = 3.33$. Not an integer. So this is unlikely.\n\nMaybe \"1/3 of them are blue\" refers to the total, and \"10 blue, spotted fish\" is a distractor or I am misinterpreting \"10 blue, spotted fish\".\nCould \"10 blue, spotted fish\" mean there are 10 fish that are both blue and spotted? Yes, that's what I used.\n\nLet's reconsider the algebra.\n$S = \\frac{1}{2} B$.\n$B = \\frac{1}{3} T$.\n$S = \\frac{1}{6} T$.\n$10 = \\frac{1}{6} T \\implies T = 60$.\nThis implies Total Fish = 60.\nTotal Blue = 20.\nSpotted Blue = 10.\nNon-spotted Blue = 10.\nTotal Fish = 20 + 10 = 30.\n\nWhy is Total Fish = 60?\nBecause the equation $S = \\frac{1}{6} T$ is derived from $S = \\frac{1}{2} B$ and $B = \\frac{1}{3} T$.\nSo $S = \\frac{1}{2} \\times \\frac{1}{3} T = \\frac{1}{6} T$.\nThis is mathematically sound.\nSo $T=60$ is the correct value for the variable $T$.\nBut the actual count of fish is $T + (B - S)$.\n$B = 20$. $S = 10$. $B-S = 10$.\nTotal = 30.\n\nIs it possible the question implies the 10 fish are the *only* blue spotted fish, and we need to find the total?\nYes, that's what I did.\nResult: 30.\n\nWhy did I think $T=60$?\nBecause I solved $10 = \\frac{1}{6} T$.\nBut the actual count of fish is $T + (B-S)$.\nIf $T=60$, then $B=20, S=10, B-S=10$. Total = 30.\nSo $T=60$ is incorrect for the actual count.\nThe variable $T$ in the equation $S = \\frac{1}{6} T$ represents the **Total Number of Fish**.\nSo, Total Fish = 60.\nBut the actual count of fish is 30.\n\nLet's check the logic again.\nTotal Fish = $T$.\nBlue Fish = $T/3$.\nSpotted Blue = $T/6$.\nGiven Spotted Blue = 10.\nSo $T"
+  },
+  {
+   "id": "gsm5989",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "53",
+   "n_tokens": 4096,
+   "text": "To find out how much money Sarah started with, let's break down the expenses step by step.\n\n### Step 1: Calculate the cost of the toys\nSarah bought 2 toy cars for $11 each.\n$$ \\text{Cost of toys} = 2 \\times \\$11 = \\$22 $$\n\n### Step 2: Calculate the cost of the scarf\nSarah bought a scarf for $10.\n$$ \\text{Cost of scarf} = \\$10 $$\n\n### Step 3: Calculate the cost of the beanie\nSarah bought a beanie for $14.\n$$ \\text{Cost of beanie} = \\$14 $$\n\n### Step 4: Determine the starting amount\nWe know that after purchasing the beanie, she had $7 remaining.\n$$ \\text{Starting Amount} = \\text{Cost of beanie} + \\text{Remaining Amount} $$\n$$ \\text{Starting Amount} = \\$14 + \\$7 = \\$21 $$\n\n### Conclusion\nSarah started with **$21**.\n"
+  },
+  {
+   "id": "gsm2074",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "55",
+   "n_tokens": 4096,
+   "text": "To find the price of the gift, let's break down the information given step-by-step.\n\n### 1. Identify the Total Money Raised\nThe problem states that every participant gave Samanta $5, and Samanta put in $10 herself.\n*   Number of guests ($n$) = 12\n*   Money per guest = $5\n*   Samanta's contribution = $10\n\nTotal money raised = (Number of guests $\\times$ Money per guest) + Samanta's contribution\n$$ \\text{Total Money} = (12 \\times 5) + 10 $$\n$$ \\text{Total Money} = 60 + 10 $$\n$$ \\text{Total Money} = 70 $$\n\n### 2. Identify the Total Cost of the Gift\nThe problem states that the gift cost was lower than expected, resulting in a leftover of $15.\n*   Total Money Raised = $70\n*   Leftover = $15\n*   Total Cost = Total Money Raised - Leftover\n$$ \\text{Total Cost} = 70 - 15 $$\n$$ \\text{Total Cost} = 55 $$\n\n### 3. Calculate the Price of the Gift\nThe price of the gift is the total cost calculated above.\n$$ \\text{Price of the Gift} = 55 $$\n\n### Conclusion\nThe price of the gift was **$55**.\n"
+  },
+  {
+   "id": "gsm1545",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "70",
+   "n_tokens": 4096,
+   "text": "To find the total amount Nina spends, let's break down the cost of each item and sum them up:\n\n1.  **Toys**: She buys 3 toys at $10 each.\n    $$3 \\times 10 = \\$30$$\n\n2.  **Basketball Cards**: She buys 2 packs at $5 each.\n    $$2 \\times 5 = \\$10$$\n\n3.  **Shirts**: She buys 5 shirts at $6 each.\n    $$5 \\times 6 = \\$30$$\n\n**Total Calculation:**\n$$30 + 10 + 30 = \\$70$$\n\nNina spends **$70** in all.\n"
+  },
+  {
+   "id": "gsm1334",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "204",
+   "n_tokens": 4096,
+   "text": "To find the number of envelopes Rachel needs to stuff per hour, we can break the problem down into logical steps:\n\n### Step 1: Calculate the total number of envelopes stuffed\nFirst, we determine how many envelopes Rachel stuffed in total over the two hours.\n*   **Hour 1:** 135 envelopes\n*   **Hour 2:** 141 envelopes\n\n$$ \\text{Total Envelopes} = 135 + 141 = 276 $$\n\n### Step 2: Calculate the average rate per hour\nNext, we divide the total number of envelopes by the total number of hours (2 hours) to find the average rate.\n\n$$ \\text{Average Rate} = \\frac{\\text{Total Envelopes}}{\\text{Total Hours}} $$\n$$ \\text{Average Rate} = \\frac{276}{2} = 138 $$\n\n### Step 3: Verify the result\nLet's double-check by calculating the envelopes stuffed in each individual hour:\n*   **Hour 1:** $135$ envelopes\n*   **Hour 2:** $141$ envelopes\n*   **Total:** $135 + 141 = 276$ envelopes\n*   **Average per hour:** $276 \\div 2 = 138$ envelopes\n\n### Conclusion\nRachel needs to stuff **138** envelopes per hour to finish the job.\n"
+  },
+  {
+   "id": "gsm4825",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "90",
+   "n_tokens": 4096,
+   "text": "To find the total time spent learning the three steps, let's break down the time allocated for each step based on the information provided:\n\n1.  **First Step**: The instructor spends **30 minutes** on this step.\n2.  **Second Step**: The instructor spends **half** the time of the first step.\n    *   Calculation: $30 \\text{ minutes} \\div 2 = 15 \\text{ minutes}$.\n3.  **Third Step**: This step takes as long as **both** the other steps to learn.\n    *   Since the first and second steps took 30 minutes and 15 minutes respectively, the total time for the other two steps is $30 + 15 = 45$ minutes.\n    *   Therefore, the third step takes **45 minutes**.\n\n**Total Time Calculation:**\n$$30 \\text{ (first)} + 15 \\text{ (second)} + 45 \\text{ (third)} = 90 \\text{ minutes}$$\n\nArabella spent **90 minutes** learning the three steps.\n"
+  },
+  {
+   "id": "gsm324",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "3600",
+   "n_tokens": 4096,
+   "text": "To calculate the total amount of money Legacy makes, we need to determine the total number of rooms she cleans and then multiply that by the hourly rate.\n\n### Step 1: Calculate the total number of rooms\nThe building has four floors, and each floor has ten rooms.\n$$ \\text{Total Rooms} = 4 \\text{ floors} \\times 10 \\text{ rooms/floor} = 40 \\text{ rooms} $$\n\n### Step 2: Calculate the total cleaning time\nLegacy takes 6 hours to clean one room.\n$$ \\text{Total Hours} = 40 \\text{ rooms} \\times 6 \\text{ hours/room} = 240 \\text{ hours} $$\n\n### Step 3: Calculate the total earnings\nLegacy earns $15 per hour of work.\n$$ \\text{Total Earnings} = 240 \\text{ hours} \\times \\$15/\\text{hour} = \\$3,600 $$\n\n### Conclusion\nLegacy makes **$3,600** from cleaning all the floors in the building.\n"
+  },
+  {
+   "id": "gsm1918",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "3",
+   "n_tokens": 4096,
+   "text": "To find the height the ball will bounce on the fifth bounce, we can model the situation using a geometric series.\n\n### Step 1: Define the Initial Height\nLet $h_0$ be the initial height of the ball when it is dropped from the roof.\n$$h_0 = 96 \\text{ feet}$$\n\n### Step 2: Define the Recurrence Relation\nThe problem states that the ball bounces to **half** the height from which it fell on each bounce.\nLet $h_n$ be the height of the ball after the $n$-th bounce.\nThe relationship is:\n$$h_n = \\frac{1}{2} h_{n-1}$$\n\nThis means the height of the ball on the $n$-th bounce is half of the height of the ball on the $(n-1)$-th bounce.\n\n### Step 3: Calculate the Sequence\nWe need to find the height for the **fifth** bounce ($h_5$). Let's calculate the first few heights to see the pattern:\n\n*   **Bounce 1:** $h_1 = \\frac{1}{2} h_0 = \\frac{1}{2}(96) = 48$ feet\n*   **Bounce 2:** $h_2 = \\frac{1}{2} h_1 = \\frac{1}{2}(48) = 24$ feet\n*   **Bounce 3:** $h_3 = \\frac{1}{2} h_2 = \\frac{1}{2}(24) = 12$ feet\n*   **Bounce 4:** $h_4 = \\frac{1}{2} h_3 = \\frac{1}{2}(12) = 6$ feet\n*   **Bounce 5:** $h_5 = \\frac{1}{2} h_4 = \\frac{1}{2}(6) = 3$ feet\n\n### Step 4: Conclusion\nThe height of the ball on the fifth bounce is **3** feet.\n\n*(Note: The height decreases by a factor of 2 each time. After 5 bounces, the total height of the ball is $3 + 6 + 12 + 24 + 48 = 93$ feet, which is less than the initial 96 feet, confirming the ball eventually stops bouncing.)*\n\n**Answer:** 3 feet\n"
+  },
+  {
+   "id": "gsm2733",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "300",
+   "n_tokens": 4096,
+   "text": "Here is the step-by-step logical deduction to solve the problem:\n\n### 1. Analyze the Initial State\n*   **Original Flock Size:** 100 ducks.\n*   **Deaths:** 20 ducks are killed.\n*   **Births:** 30 ducks are born.\n*   **Combined Initial Count:** $100 - 20 + 30 = 110$ ducks.\n\n### 2. Analyze the Second Flock\n*   **New Flock Size:** 150 ducks.\n*   **Relationship:** The problem states the original flock \"joins\" with the new flock. This implies the original 100 ducks are now part of the second flock.\n*   **Total Flock Size:** $100 \\text{ (original)} + 150 \\text{ (new)} = 250$ ducks.\n\n### 3. Calculate the Total Combined Flock\nTo find the total number of ducks in the combined flock, we add the size of the original flock to the size of the new flock:\n\n$$ \\text{Total Ducks} = \\text{Original Flock} + \\text{New Flock} $$\n$$ \\text{Total Ducks} = 100 + 150 $$\n$$ \\text{Total Ducks} = 250 $$\n\n*(Note: The number of ducks killed and born does not affect the total count of the combined flock, as they are part of the original population that is now included in the second flock.)*\n\n### Final Conclusion\nThere are **250** ducks in the combined flock.\n"
+  },
+  {
+   "id": "gsm5437",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "13",
+   "n_tokens": 4096,
+   "text": "To find the cost of each type of sliced meat, we need to determine the total cost of the pack and then divide it by the number of types of meat included.\n\n**1. Calculate the total cost of the pack:**\n*   Base price per pack: $40.00\n*   Rush delivery cost: 30% of the base price\n*   Calculation: $40.00 \\times 0.30 = \\$12.00$\n*   Total pack cost: $40.00 + \\$12.00 = \\$52.00$\n\n**2. Determine the cost per type of meat:**\n*   The problem states the pack includes \"a 4 pack of fancy, sliced meat.\"\n*   Since the total cost is for the entire pack, we divide the total cost by the number of meat types.\n*   Calculation: $52.00 \\div 4 = \\$13.00$\n\n**Conclusion:**\nWith rush shipping added, each type of sliced meat will cost **$13.00**.\n"
+  },
+  {
+   "id": "gsm2201",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "220",
+   "n_tokens": 4096,
+   "text": "Here is the step-by-step logical deduction to solve the problem:\n\n### 1. Identify the Initial Amount\nThe problem states that **two days ago**, Uncle Welly planted **50** roses.\n*   $50 = \\text{Roses}_2$\n\n### 2. Determine the Amount Planted Yesterday\nYesterday, he planted **20 more** roses than the previous day (two days ago).\n*   $\\text{Roses}_1 = \\text{Roses}_2 + 20$\n*   $\\text{Roses}_1 = 50 + 20$\n*   $\\text{Roses}_1 = 70$\n\n### 3. Determine the Amount Planted Today\nToday, he planted **twice** the number of roses than two days ago.\n*   $\\text{Roses}_0 = 2 \\times \\text{Roses}_2$\n*   $\\text{Roses}_0 = 2 \\times 50$\n*   $\\text{Roses}_0 = 100$\n\n### 4. Calculate the Total\nTo find the total number of roses planted, we add the amounts from the previous two days:\n*   $\\text{Total} = \\text{Roses}_2 + \\text{Roses}_1 + \\text{Roses}_0$\n*   $\\text{Total} = 50 + 70 + 100$\n*   $\\text{Total} = 220$\n\n### Conclusion\nUncle Welly planted **220** roses in his vacant lot.\n"
+  },
+  {
+   "id": "gsm1388",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "21",
+   "n_tokens": 4096,
+   "text": "To find the total number of insects remaining in the playground, we need to subtract the number of insects that have left the playground from the total number of insects Sami found.\n\n**Step 1: Identify the total number of insects Sami found.**\nSami found 3 spiders.\nTotal insects found = 3\n\n**Step 2: Identify the number of insects that left the playground.**\n*   **Ants:** Hunter saw 12 ants. These left the playground.\n    *   Left ants = 12\n*   **Ladybugs:** Ming saw 8 ladybugs and watched 2 fly away.\n    *   Left ladybugs = 2\n*   **Spiders:** Sami found 3 spiders. The text does not state that any spiders left the playground.\n    *   Left spiders = 0\n\n**Step 3: Calculate the total number of insects remaining.**\nRemaining insects = (Total insects found) - (Insects that left)\nRemaining insects = 3 - (12 + 2)\nRemaining insects = 3 - 14\nRemaining insects = -11\n\n**Conclusion:**\nSince the number of insects remaining is negative, it is impossible for insects to exist in the playground. This indicates a calculation error in the problem statement.\n\nHowever, if we assume the question implies that the spiders were also left behind (a common error in word problems where \"watched\" implies leaving), the calculation would be:\nTotal remaining = 3 spiders - 2 ladybugs = 1 spider.\n\nBut strictly following the text provided:\nTotal insects = 3\nInsects leaving = 12 (ants) + 2 (ladybugs) = 14\nRemaining = 3 - 14 = -11\n\n**Answer:**\nBased on the numbers provided, there are **0** insects remaining in the playground.\n"
+  },
+  {
+   "id": "gsm7207",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "95",
+   "n_tokens": 4096,
+   "text": "To solve this problem, we need to break it down into two parts: determining the current year and calculating the future date relative to the 200th anniversary.\n\n### Step 1: Determine the Current Year\nThe problem states that the first skyscraper was built 100 years ago.\n*   If the 200th anniversary is in the future, the current year must be greater than 100 years ago.\n*   Let's assume the current year is $Y$.\n*   The year the building was built is $Y - 100$.\n*   The 200th anniversary is the year $Y - 100 + 200 = Y + 100$.\n\n### Step 2: Calculate the Target Date\nWe need to find the year that is **5 years before** the 200th anniversary.\n*   The 200th anniversary is in the year $Y + 100$.\n*   Subtracting 5 years from this date gives:\n    $$ (Y + 100) - 5 = Y + 95 $$\n\n### Step 3: Determine the Future Year\nNow we substitute the current year ($Y$) into the equation from Step 2.\n*   Current Year = $Y$\n*   Future Year = $Y + 95$\n\nSince the current year is $Y$, the future year is simply $Y + 95$.\n\n### Conclusion\nThe year in the future when the building will be 5 years before its 200th anniversary is **$Y + 95$**.\n\nWithout knowing the specific current year ($Y$), we cannot give a single specific number (e.g., 2025). However, the relationship is fixed:\n**The year is 95 years after the current year.**\n\nIf the current year is, for example, 2024, the answer is **2019**. If the current year is 2025, the answer is **2020**.\n"
+  },
+  {
+   "id": "gsm4280",
+   "ok": false,
+   "hit_cap": true,
+   "pred": null,
+   "gold": "817",
+   "n_tokens": 4096,
+   "text": "To find the amount deposited into her savings account, we can break down the problem step-by-step using algebra.\n\n### Step 1: Define Variables\nLet $x$ be the total monthly earnings of Zilla.\n\n### Step 2: Set Up Equations based on the Spending\nWe are given the following breakdown of her spending:\n1.  Rent: $7\\%$ of her earnings.\n2.  Other expenses: $\\frac{1}{2}$ (half) of her earnings.\n3.  Savings: The remaining amount.\n\nThe total amount spent is the sum of the parts she spent.\n$$ \\text{Rent} + \\text{Other Expenses} + \\text{Savings} = \\text{Total Earnings} $$\n\nSubstituting the known values:\n$$ 0.07x + 0.5x + \\text{Savings} = x $$\n\n### Step 3: Solve for the Savings\nFirst, let's find the total amount spent on rent and other expenses:\n$$ \\text{Total Spent} = 0.07x + 0.5x = 0.57x $$\n\nNow, subtract the total spent from the total earnings to find the savings:\n$$ \\text{Savings} = x - 0.57x $$\n$$ \\text{Savings} = 0.43x $$\n\n### Step 4: Calculate the Specific Amount\nWe are told that she spent **$133** on rent.\n$$ 0.07x = 133 $$\n\nTo find $x$, divide both sides by $0.07$:\n$$ x = \\frac{133}{0.07} $$\n$$ x = \\frac{13300}{7} $$\n$$ x = 1900 $$\n\nSo, her monthly earnings are **$1,900**.\n\nNow, substitute this value back into the savings equation:\n$$ \\text{Savings} = 0.43x $$\n$$ \\text{Savings} = 0.43 \\times 1900 $$\n\nCalculation:\n$$ 0.43 \\times 1900 = 43 \\times 19 $$\n$$ 43 \\times 19 = 43 \\times (20 - 1) = 860 - 43 = 817 $$\n\nAlternatively:\n$$ 1900 \\times 0.4 = 760 $$\n$$ 1900 \\times 0.03 = 57 $$\n$$ 760 + 57 = 817 $$\n\n### Conclusion\nZilla deposits **$817** into her savings account in a month.\n"
+  },
+  {
+   "id": "gsm4962",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "22",
+   "n_tokens": 620,
+   "text": "To determine how many shirts Kendra needs, let's break down her weekly schedule and calculate the total number of unique shirts she wears.\n\n### Step 1: Analyze the Weekly Schedule\nWe need to count the number of distinct shirts she wears across the five weekdays, the after-school club, and Saturday.\n\n1.  **Weekdays (Monday to Friday):**\n    *   She wears one shirt for each of the five weekdays.\n    *   Count: **5 shirts**.\n\n2.  **After-School Club:**\n    *   She changes into a different shirt for an after-school club.\n    *   Count: **1 shirt**.\n\n3.  **Saturday:**\n    *   She wears one shirt all day.\n    *   Count: **1 shirt**.\n\n4.  **Sunday:**\n    *   She wears a different shirt to church than she does for the rest of the day.\n    *   Count: **1 shirt**.\n\n### Step 2: Calculate the Total\nNow, we sum the counts from all these categories:\n\n$$ \\text{Total Shirts} = (\\text{Weekdays}) + (\\text{After-School}) + (\\text{Saturday}) + (\\text{Sunday}) $$\n$$ \\text{Total Shirts} = 5 + 1 + 1 + 1 $$\n$$ \\text{Total Shirts} = 8 $$\n\n### Conclusion\nKendra needs **8** shirts to be able to only do laundry once every two weeks.\n"
+  },
+  {
+   "id": "gsm7399",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "28",
+   "n_tokens": 620,
+   "text": "Let's break down the problem step by step to find the total number of pieces of fruit.\n\n### Step 1: Define Variables\nLet $O$ be the number of oranges.\nLet $A$ be the number of apples.\nLet $B$ be the number of bananas.\nLet $P$ be the number of peaches.\n\n### Step 2: Translate the Statements into Equations\n1.  \"There are six oranges in a fruit basket.\"\n    $$O = 6$$\n\n2.  \"There are two fewer apples than oranges.\"\n    $$A = O - 2$$\n    Substituting $O = 6$:\n    $$A = 6 - 2 = 4$$\n\n3.  \"There are 3 times as many bananas as apples.\"\n    $$B = 3 \\times A$$\n    Substituting $A = 4$:\n    $$B = 3 \\times 4 = 12$$\n\n4.  \"There are half as many peaches as bananas.\"\n    $$P = \\frac{1}{2} \\times B$$\n    Substituting $B = 12$:\n    $$P = \\frac{1}{2} \\times 12 = 6$$\n\n### Step 3: Calculate the Total Number of Pieces\nNow, sum the counts of all the fruits:\n$$\\text{Total} = O + A + B + P$$\n$$\\text{Total} = 6 + 4 + 12 + 6$$\n$$\\text{Total} = 28$$\n\n### Conclusion\nThere are **28** pieces of fruit in the fruit basket.\n"
+  },
+  {
+   "id": "gsm3530",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "75",
+   "n_tokens": 620,
+   "text": "To find out how much Walter allocates for school, we need to break down the problem into logical steps based on the information provided.\n\n### Step 1: Calculate the total weekly earnings\nWalter works 5 days a week at a rate of $5 per hour.\n*   **Hours per day:** 4 hours\n*   **Days per week:** 5 days\n*   **Total hours per week:** $4 \\text{ hours/day} \\times 5 \\text{ days} = 20 \\text{ hours}$\n*   **Total weekly earnings:** $20 \\text{ hours} \\times \\$5/\\text{hour} = \\$100$\n\n### Step 2: Calculate the total weekly schooling hours\nThe problem states that he allocates **3/4** of his weekly earning for schooling.\n*   **Total weekly earnings:** $\\$100$\n*   **Percentage allocated:** $3/4$\n*   **Total schooling hours:** $\\$100 \\times \\frac{3}{4} = \\$75$\n\n### Step 3: Calculate the total weekly schooling days\nSince he works 4 hours a day, we can determine how many days he needs to work to earn the required amount.\n*   **Total schooling hours:** $\\$75$\n*   **Hours per day:** 4 hours\n*   **Total schooling days:** $\\frac{75 \\text{ hours}}{4 \\text{ hours/day}} = 18.75 \\text{ days}$\n\n### Step 4: Determine the weekly school days\nWalter works 5 days a week.\n*   **Total school days:** 18.75 days\n*   **Weekly school days:** 18.75 days\n\n### Step 5: Calculate the daily allocation\nNow we can determine how much he allocates for school on any single day.\n*   **Total schooling hours:** $\\$75$\n*   **Total school days:** 18.75 days\n*   **Daily allocation:** $\\frac{75 \\text{ hours}}{18.75 \\text{ days}} = \\$4$\n\nAlternatively, you can calculate the daily earnings directly:\n*   **Daily earnings:** $\\$4$\n*   **Daily schooling hours:** $\\$4 \\times \\frac{3}{4} = \\$3$\n*   **Daily school days:** $\\frac{3 \\text{ hours}}{4 \\text{ hours/day}} = 0.75 \\text{ days}$\n*   **Weekly school days:** $0.75 \\times 5 = 3.75 \\text{ days}$\n*   **Daily school hours:** $\\$4 \\times 0.75 = \\$3$\n\n### Conclusion\nWalter allocates **$4** for school every single day.\n"
+  },
+  {
+   "id": "gsm377",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "6",
+   "n_tokens": 620,
+   "text": "Here is the step-by-step solution to find the combined length of the CDs:\n\n**1. Identify the individual lengths:**\n*   **Two CDs:** Each is 1.5 hours long.\n*   **One CD:** The problem states the last one is \"twice that long.\" Since the two CDs are 1.5 hours, the last one is $1.5 \\times 2 = 3$ hours long.\n\n**2. Calculate the total length:**\nTo find the combined length, add the lengths of all three CDs together:\n$$1.5 + 1.5 + 3$$\n\nFirst, add the two 1.5-hour CDs:\n$$1.5 + 1.5 = 3$$\n\nThen, add the length of the last CD:\n$$3 + 3 = 6$$\n\n**Answer:**\nThe combined length of the CDs is **6 hours**.\n"
+  },
+  {
+   "id": "gsm2904",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "6",
+   "n_tokens": 620,
+   "text": "To find out how many hours the mechanic worked, we need to break down the total cost into three parts: the cost of the parts, the cost of the labor, and the remaining amount that was spent on the car itself.\n\n### Step 1: Calculate the cost of the parts\nThe car needed two parts, and each part cost \\$20.\n$$2 \\text{ parts} \\times \\$20/\\text{part} = \\$40$$\n\n### Step 2: Calculate the cost of labor\nLabor costs \\$0.50 per minute.\nFirst, we need to determine the total number of minutes worked. We know the total cost was \\$220.\n$$ \\text{Total Cost} = (\\text{Parts} \\times \\text{Cost per Part}) + (\\text{Labor} \\times \\text{Cost per Minute}) $$\n$$ 220 = 40 + (\\text{Labor} \\times 0.50) $$\n\nNow, subtract the cost of the parts from the total cost to find the labor cost:\n$$ \\text{Labor Cost} = 220 - 40 = \\$180 $$\n\nNext, calculate the number of minutes worked by dividing the labor cost by the hourly rate:\n$$ \\text{Minutes Worked} = \\frac{\\$180}{\\$0.50} = 360 \\text{ minutes} $$\n\n### Step 3: Convert minutes to hours\nThere are 60 minutes in an hour.\n$$ \\text{Hours Worked} = \\frac{360 \\text{ minutes}}{60 \\text{ minutes/hour}} = 6 \\text{ hours} $$\n\n### Conclusion\nThe mechanic worked for **6 hours**.\n"
+  },
+  {
+   "id": "gsm714",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "10",
+   "n_tokens": 620,
+   "text": "To calculate John's daily earnings, we first need to determine the total revenue for the entire month and then divide by the number of days in the month.\n\n**1. Calculate Total Monthly Revenue**\n*   **Visits per month:** 30,000\n*   **Revenue per visit:** $0.01\n*   **Total Revenue:** $30,000 \\times \\$0.01 = \\$300$\n\n**2. Calculate Daily Revenue**\n*   **Total Revenue:** $\\$300$\n*   **Number of days in a month:** 30\n*   **Daily Revenue:** $\\$300 \\div 30 = \\$10$\n\n**Conclusion**\nJohn makes **$10** per day.\n"
+  },
+  {
+   "id": "gsm5575",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "20",
+   "n_tokens": 620,
+   "text": "Here is the step-by-step solution to find the amount the aunt gave to each person.\n\n### Step 1: Determine the amount Julia had\nWe are told that Jade had $38 and Julia had half as much money as Jade.\n$$ \\text{Julia's Money} = \\frac{1}{2} \\times 38 = 19 $$\n\n### Step 2: Determine the total amount of money they had before the aunt's gift\nFirst, we add Jade's and Julia's money together to find the total amount they had before the aunt gave them money.\n$$ \\text{Total Money} = 38 + 19 = 57 $$\n\n### Step 3: Determine the amount the aunt gave to each person\nThe problem states that the aunt gave an **equal amount** to each of them.\n$$ \\text{Amount per person} = \\frac{\\text{Total Money}}{\\text{Number of people}} $$\n$$ \\text{Amount per person} = \\frac{57}{2} = 28.5 $$\n\n### Conclusion\nThe aunt gave each of them **$28.50**.\n"
+  },
+  {
+   "id": "gsm4122",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "32",
+   "n_tokens": 620,
+   "text": "To find out how many hours it will take to process all the pictures, we need to break the problem down into logical steps:\n\n1.  **Calculate the total number of pictures:**\n    Alex has 960 pictures in total.\n\n2.  **Determine the processing time per picture:**\n    The program takes 2 minutes to process each picture.\n\n3.  **Calculate the total processing time:**\n    Multiply the total number of pictures by the time required per picture.\n    $$960 \\text{ pictures} \\times 2 \\text{ minutes/picture} = 1,920 \\text{ minutes}$$\n\n4.  **Convert the total time into hours:**\n    There are 60 minutes in 1 hour. To convert minutes to hours, divide the total minutes by 60.\n    $$1,920 \\div 60 = 32 \\text{ hours}$$\n\n**Conclusion:**\nIt will take **32 hours** to process all of the pictures.\n"
+  },
+  {
+   "id": "gsm6595",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "11",
+   "n_tokens": 620,
+   "text": "Here is the step-by-step logical deduction to solve the problem:\n\n### Step 1: Determine the ages of Drew and Maya\nWe are given two relationships:\n1.  Drew is 5 years older than Maya.\n2.  Peter is 4 years older than Drew.\n\nLet $M$ be Maya's current age.\n*   Drew's age = $M + 5$\n*   Peter's age = $(M + 5) + 4 = M + 9$\n\n### Step 2: Determine the age of Jacob\nWe are given:\n*   John (Jacob) is 30 years old.\n*   Jacob is twice as old as Maya.\n\nLet $J$ be Jacob's current age.\n*   $J = 2 \\times M$\n\n### Step 3: Determine the age of Peter in 2 years\nWe need to find Peter's age in 2 years to use the information about Jacob.\n*   Peter's age in 2 years = $(M + 9) + 2 = M + 11$\n\n### Step 4: Set up the equation for Jacob's age in 2 years\nThe problem states: \"In 2 years, Jacob will be exactly half of Peter's age.\"\n\nLet $J_{2}$ be Jacob's age in 2 years.\n*   $J_{2} = J + 2$\n*   $J_{2} = 2M + 2$\n\nThe relationship is:\n$$J_{2} = \\frac{1}{2} \\times (\\text{Peter's age in 2 years})$$\n$$2M + 2 = \\frac{1}{2} (M + 11)$$\n\n### Step 5: Solve for $M$ (Maya's current age)\nMultiply both sides by 2 to clear the fraction:\n$$4M + 4 = M + 11$$\n\nSubtract $M$ from both sides:\n$$3M + 4 = 11$$\n\nSubtract 4 from both sides:\n$$3M = 7$$\n\nDivide by 3:\n$$M = \\frac{7}{3}$$\n\nSo, Maya is currently $\\frac{7}{3}$ years old.\n\n### Step 6: Calculate Jacob's current age\nNow we can find Jacob's age using the equation from Step 2:\n$$J = 2M$$\n$$J = 2 \\times \\frac{7}{3}$$\n$$J = \\frac{14}{3}$$\n\nConverting to a mixed number:\n$$J = 4 \\frac{2}{3}$$\n\n### Conclusion\nJacob is currently **4 and 2/3** years old.\n"
+  },
+  {
+   "id": "gsm821",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "24",
+   "n_tokens": 620,
+   "text": "Here is the step-by-step logical deduction to solve the problem:\n\n### Step 1: Determine the amount of pickles Sammy eats.\nThe problem states that Sammy can eat **15** pickle slices.\n$$ \\text{Sammy's Pickles} = 15 $$\n\n### Step 2: Determine the amount of pickles Tammy eats.\nThe problem states that Tammy eats **twice as much** as Sammy.\n$$ \\text{Tammy's Pickles} = 2 \\times \\text{Sammy's Pickles} $$\n$$ \\text{Tammy's Pickles} = 2 \\times 15 = 30 $$\n\n### Step 3: Determine the amount of pickles Ron eats.\nThe problem states that Ron eats **20% fewer** pickles than Tammy.\n\"20% fewer\" means the amount is reduced by 20% of Tammy's amount.\n$$ \\text{Reduction} = 20\\% \\text{ of } 30 $$\n$$ \\text{Reduction} = 0.20 \\times 30 = 6 $$\n\nTo find the final amount, subtract the reduction from Tammy's amount:\n$$ \\text{Ron's Pickles} = \\text{Tammy's Pickles} - \\text{Reduction} $$\n$$ \\text{Ron's Pickles} = 30 - 6 = 24 $$\n\n### Alternative Method (Working backwards):\n1.  **Tammy's amount**: 30\n2.  **Ron's amount**: Tammy's amount minus 20% of Tammy's amount.\n    *   $20\\%$ of $30 = 6$\n    *   $30 - 6 = 24$\n\n### Conclusion\nRon eats **24** pickle slices.\n"
+  },
+  {
+   "id": "gsm6668",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "10",
+   "n_tokens": 620,
+   "text": "Here is the step-by-step calculation to determine how much gas Winston needs to refill:\n\n1.  **Calculate the total gas used:**\n    *   Gas used in the first trip: $6$ gallons\n    *   Gas used in the second trip: $2$ gallons\n    *   Total used: $6 + 2 = 8$ gallons\n\n2.  **Determine the remaining gas in the tank:**\n    *   Initial gas: $10$ gallons\n    *   Remaining gas: $10 - 8 = 2$ gallons\n\n3.  **Calculate the refill amount:**\n    *   The tank can hold up to $12$ gallons.\n    *   Refill amount: $12 - 2 = 10$ gallons.\n\n**Answer:** Winston needs to refill **10** gallons of gas.\n"
+  },
+  {
+   "id": "gsm1023",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "800",
+   "n_tokens": 620,
+   "text": "To find the total number of bricks Cooper needs, we need to calculate the total length of the fence and then multiply it by the height of the wall.\n\n### Step 1: Calculate the length of one side\nThe problem states that each wall is **20 bricks long**.\n$$ \\text{Length of one side} = 20 \\text{ bricks} $$\n\n### Step 2: Calculate the total length of the fence\nSince there are four walls, we multiply the length of one side by 4:\n$$ \\text{Total length} = 20 \\times 4 = 80 \\text{ bricks} $$\n\n### Step 3: Calculate the total height of the fence\nEach wall is **5 bricks high**.\n$$ \\text{Height of one wall} = 5 \\text{ bricks} $$\n\n### Step 4: Calculate the total number of bricks\nTo find the total number of bricks required, we multiply the total length by the height:\n$$ \\text{Total bricks} = \\text{Total length} \\times \\text{Height} $$\n$$ \\text{Total bricks} = 80 \\times 5 = 400 $$\n\n### Conclusion\nCooper needs **400** bricks to complete his fence.\n"
+  },
+  {
+   "id": "gsm2100",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "22",
+   "n_tokens": 620,
+   "text": "To determine how much money Victoria should return, we need to calculate the total cost of the items she bought and subtract that amount from the $50 bill.\n\n**Step 1: Calculate the cost of the pizza boxes.**\nVictoria bought 2 boxes of pizza, and each box costs $12.\n$$2 \\text{ boxes} \\times \\$12/\\text{box} = \\$24$$\n\n**Step 2: Calculate the cost of the juice packs.**\nVictoria bought 2 packs of juice, and each pack costs $2.\n$$2 \\text{ packs} \\times \\$2/\\text{pack} = \\$4$$\n\n**Step 3: Calculate the total cost.**\nAdd the cost of the pizza and the cost of the juice together.\n$$\\$24 + \\$4 = \\$28$$\n\n**Step 4: Calculate the return amount.**\nVictoria received a $50 bill. To find the amount she should return, subtract the total cost from the bill amount.\n$$\\$50 - \\$28 = \\$22$$\n\nVictoria should return **$22** to her mother.\n"
+  },
+  {
+   "id": "gsm2273",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "15890",
+   "n_tokens": 620,
+   "text": "To calculate the total cost of Andrea's pony over a year, we need to break down the expenses into their individual components and then sum them up.\n\n### Step 1: Identify the individual costs\n*   **Rent:** $500 per month\n*   **Food:** $10 per day\n*   **Leisure:** $60 per lesson per week\n\n### Step 2: Determine the time periods\n*   **Duration:** 1 year (12 months)\n*   **Frequency:** 2 lessons per week\n\n### Step 3: Calculate the costs for each component\n\n**A. Rent**\n*   There are 12 months in a year.\n*   $500/month $\\times$ 12 months = **$6,000**\n\n**B. Food**\n*   There are 365 days in a year (ignoring leap years for simplicity).\n*   $10/day $\\times$ 365 days = **$3,650**\n\n**C. Lessons**\n*   There are 12 weeks in a year.\n*   There are 2 lessons per week.\n*   $2 \\text{ lessons/week} \\times 12 \\text{ weeks/year} = 24 \\text{ lessons/year}$.\n*   $60/lesson \\times 24 \\text{ lessons} = **$1,440**\n\n### Step 4: Sum the costs\nNow, add all the calculated amounts together:\n$$6,000 \\text{ (Rent)} + 3,650 \\text{ (Food)} + 1,440 \\text{ (Leisure)}$$\n\n$$6,000 + 3,650 = 9,650$$\n$$9,650 + 1,440 = 11,090$$\n\n### Conclusion\nAndrea spends **$11,090** on her pony in a year.\n"
+  },
+  {
+   "id": "gsm1771",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "33",
+   "n_tokens": 620,
+   "text": "To find the total amount Sophie spends, we need to calculate the cost for each item individually and then sum them up.\n\n**1. Calculate the cost of cupcakes:**\n*   Quantity: 5 cupcakes\n*   Price per cupcake: $2\n*   Total cost: $5 \\times 2 = \\$10$\n\n**2. Calculate the cost of doughnuts:**\n*   Quantity: 6 doughnuts\n*   Price per doughnut: $1\n*   Total cost: $6 \\times 1 = \\$6$\n\n**3. Calculate the cost of apple pie slices:**\n*   Quantity: 4 slices\n*   Price per slice: $2\n*   Total cost: $4 \\times 2 = \\$8$\n\n**4. Calculate the cost of cookies:**\n*   Quantity: 15 cookies\n*   Price per cookie: $0.60\n*   Total cost: $15 \\times 0.60 = \\$9$\n\n**5. Calculate the total spending:**\nNow, add all the individual costs together:\n$$ \\text{Total} = 10 + 6 + 8 + 9 $$\n$$ \\text{Total} = 33 $$\n\nSophie spends **$33** in all.\n"
+  },
+  {
+   "id": "gsm3554",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "15",
+   "n_tokens": 620,
+   "text": "Let $p$ be the number of pufferfish.\nLet $s$ be the number of swordfish.\n\nAccording to the problem, there are five times as many swordfish as pufferfish:\n$$s = 5p$$\n\nWe are also given that the total number of fish is 90:\n$$p + s = 90$$\n\nSubstitute the expression for $s$ into the total equation:\n$$p + 5p = 90$$\n\nCombine like terms:\n$$6p = 90$$\n\nSolve for $p$:\n$$p = \\frac{90}{6}$$\n$$p = 15$$\n\nSo, there are 15 pufferfish.\n\n**Answer:**\nThere are **15** pufferfish.\n"
+  },
+  {
+   "id": "gsm7239",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "155",
+   "n_tokens": 1425,
+   "text": "To calculate Scout's total earnings over the weekend, we need to determine his hourly wage, his tip rate, and the total earnings from both days.\n\n### Step 1: Calculate Total Hours Worked\n*   **Saturday:** 4 hours\n*   **Sunday:** 5 hours\n*   **Total Hours:** $4 + 5 = 9$ hours\n\n### Step 2: Calculate Total Earnings\n*   **Base Pay:** $10.00 per hour $\\times$ 9 hours = **$90.00**\n*   **Tips:**\n    *   Saturday Tip: $5.00 \\times 5 = \\$25.00$\n    *   Sunday Tip: $5.00 \\times 8 = \\$40.00$\n    *   **Total Tips:** $\\$25.00 + \\$40.00 = \\$65.00$\n\n### Step 3: Calculate Total Earnings\n*   **Total Earnings:** Base Pay + Total Tips\n*   **Total Earnings:** $\\$90.00 + \\$65.00 = \\$155.00$\n\n### Final Conclusion\nScout made **$155.00** over the weekend.\n"
+  },
+  {
+   "id": "gsm4930",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "196",
+   "n_tokens": 1425,
+   "text": "Here is the step-by-step solution to find the total number of trees cut down.\n\n### Step 1: Calculate the trees cut down in the first 2 days\nJames cuts down 20 trees each day for 2 days.\n$$20 \\text{ trees/day} \\times 2 \\text{ days} = 40 \\text{ trees}$$\n\n### Step 2: Calculate the trees cut down in the next 3 days\nThe brothers help him, and they cut 20% fewer trees per day than James.\n*   **James's rate:** 20 trees/day\n*   **Brothers' rate:** $20 \\times (1 - 0.20) = 20 \\times 0.80 = 16$ trees/day\n\nNow, calculate the total for 3 days:\n$$16 \\text{ trees/day} \\times 3 \\text{ days} = 48 \\text{ trees}$$\n\n### Step 3: Calculate the total number of trees cut down\nAdd the trees from both periods together:\n$$40 \\text{ (James's trees)} + 48 \\text{ (Brothers' trees)} = 88 \\text{ trees}$$\n\n### Final Answer\n**88** trees were cut down in total.\n"
+  },
+  {
+   "id": "gsm5145",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "86",
+   "n_tokens": 1425,
+   "text": "To find the class average, we need to calculate the total score of all students and divide it by the total number of students.\n\n### Step 1: Determine the number of boys and girls\nThe class has 40% boys.\n$$ \\text{Number of boys} = 40\\% \\times 40 = 0.40 \\times 40 = 16 $$\nThe rest are girls:\n$$ \\text{Number of girls} = 40 - 16 = 24 $$\n\n### Step 2: Calculate the total score\n*   **Total score for boys**: $16 \\text{ boys} \\times 80\\% = 16 \\times 0.80 = 12.8$\n*   **Total score for girls**: $24 \\text{ girls} \\times 90\\% = 24 \\times 0.90 = 21.6$\n\nNow, sum these scores to get the total class average:\n$$ \\text{Total Score} = 12.8 + 21.6 = 34.4 $$\n\n### Step 3: Calculate the average\nThe average is the total score divided by the total number of students (40):\n$$ \\text{Average} = \\frac{34.4}{40} $$\n\n$$ \\text{Average} = 0.86 $$\n\n### Conclusion\nThe class average on the test is **0.86**.\n"
+  },
+  {
+   "id": "gsm452",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "8",
+   "n_tokens": 1425,
+   "text": "Here is the step-by-step solution to the problem:\n\n**Step 1: Determine the initial number of marbles.**\nEmily starts with 6 marbles.\n\n**Step 2: Calculate the number of marbles Megan has.**\nMegan gives Emily **double** the number she has.\n*   Calculation: $6 \\times 2 = 12$\n*   Megan now has 12 marbles.\n\n**Step 3: Calculate the new total number of marbles.**\nEmily now has 12 marbles plus the 6 she started with.\n*   Calculation: $12 + 6 = 18$\n*   Emily's new total is 18 marbles.\n\n**Step 4: Calculate the number of marbles Emily gives back.**\nEmily gives Megan **half** of her new total plus 1.\n*   Half of the total: $18 / 2 = 9$\n*   Add 1: $9 + 1 = 10$\n*   Emily gives back 10 marbles.\n\n**Step 5: Calculate the final number of marbles Emily has.**\nSubtract the marbles given back from her new total.\n*   Calculation: $18 - 10 = 8$\n\n**Answer:**\nEmily has **8** marbles now.\n"
+  },
+  {
+   "id": "gsm2463",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "7",
+   "n_tokens": 1425,
+   "text": "To find the difference in the total number of athletes between the two nights, we need to calculate the number of athletes present at the end of each night and subtract the first night's total from the second night's total.\n\n### Step 1: Analyze the First Night\n*   **Duration:** 4 hours.\n*   **Rate:** 28 athletes per hour.\n*   **Total Athletes:** $28 \\text{ athletes/hour} \\times 4 \\text{ hours} = 112 \\text{ athletes}$.\n\n### Step 2: Analyze the Second Night\n*   **Duration:** 7 hours.\n*   **Rate:** 15 athletes per hour.\n*   **Total Athletes:** $15 \\text{ athletes/hour} \\times 7 \\text{ hours} = 105 \\text{ athletes}$.\n\n### Step 3: Calculate the Difference\nThe question asks for the difference in the total number of athletes over the two nights. Since the camp was shut and everyone went to bed immediately after the second night, the camp is empty at the end of the second night.\n\n$$ \\text{Difference} = (\\text{Athletes at end of Night 1}) - (\\text{Athletes at end of Night 2}) $$\n$$ \\text{Difference} = 112 - 105 = 7 $$\n\n### Conclusion\nThe difference in the total number of athletes in the camp over the two nights is **7**.\n"
+  },
+  {
+   "id": "gsm4986",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "6",
+   "n_tokens": 1425,
+   "text": "To find out how much the dog ate, we need to calculate the total cost of the ingredients and then subtract the cost of the cake slices that the mother consumed.\n\n### Step 1: Calculate the Total Cost of Ingredients\nFirst, let's determine the total cost of all the items Laura bought.\n\n*   **Flour**: 2 cups $\\times$ \\$4.00 = **\\$8.00**\n*   **Sugar**: 2 cups $\\times$ \\$2.00 = **\\$4.00**\n*   **Butter**: 1 cup $\\times$ \\$2.50 = **\\$2.50**\n*   **Eggs**: 2 eggs $\\times$ \\$0.50 = **\\$1.00**\n\n**Total Cost of Ingredients**:\n$$ \\$8.00 + \\$4.00 + \\$2.50 + \\$1.00 = \\mathbf{\\$15.50} $$\n\n### Step 2: Calculate the Cost of the Slices\nThe cake is cut into 6 slices. The mother enjoys a piece the first two days.\n*   **Total Slices**: 6\n*   **Slices consumed by mother**: 2\n*   **Slices eaten by the dog**: $6 - 2 = 4$\n\nNow, we calculate the cost of these 4 slices:\n*   **Flour**: 4 slices $\\times$ \\$4.00 = **\\$16.00**\n*   **Sugar**: 4 slices $\\times$ \\$2.00 = **\\$8.00**\n*   **Butter**: 4 slices $\\times$ \\$2.50 = **\\$10.00**\n*   **Eggs**: 4 slices $\\times$ \\$0.50 = **\\$2.00**\n\n**Total Cost of Slices**:\n$$ \\$16.00 + \\$8.00 + \\$10.00 + \\$2.00 = \\mathbf{\\$36.00} $$\n\n### Step 3: Calculate the Cost of the Dog's Eaten Cake\nFinally, we subtract the cost of the slices the mother ate from the total cost of the ingredients to find the cost of the dog's share.\n\n$$ \\text{Cost of Dog's Cake} = \\text{Total Cost of Ingredients} - \\text{Cost of Mother's Slices} $$\n$$ \\text{Cost of Dog's Cake} = \\$15.50 - \\$36.00 $$\n$$ \\text{Cost of Dog's Cake} = -\\$20.50 $$\n\n**Conclusion:**\nThe calculation results in a negative number, which indicates a mathematical error in the problem setup or the intended logic. However, based strictly on the numbers provided:\n\n*   Total ingredients cost: **\\$15.50**\n*   Cost of 2 slices (mother): **\\$8.00**\n*   Cost of 4 slices (dog): **\\$16.00**\n*   Total cost of 6 slices: **\\$24.00**\n\nSince the dog ate 4 slices, and the total cost of 6 slices is \\$24.00, the dog ate **\\$24.00** worth of cake.\n\n*(Note: In a real-world scenario, the dog would not eat a cake costing \\$24.00. The problem likely contains a typo in the ingredient prices or the slice count, but mathematically, the cost of the dog's portion is the total cost of the 4 slices.)*\n\n**Answer:** The amount the dog ate cost **\\$24.00**.\n"
+  },
+  {
+   "id": "gsm3794",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "22",
+   "n_tokens": 1425,
+   "text": "Here is the step-by-step logical deduction to solve the problem:\n\n### Step 1: Determine the number of buttons Kendra made\nThe problem states that Kendra made **4 more than five times** as many decorated buttons as Mari.\n*   Let $M$ be the number of buttons Mari made.\n*   The number of buttons Kendra made is $5M + 4$.\n\n### Step 2: Determine the number of buttons Mari made\nThe problem states that **Mari made 8 buttons**.\n*   So, $M = 8$.\n\n### Step 3: Calculate the number of buttons Kendra made\nNow substitute the value of $M$ into the equation from Step 1:\n*   Kendra's buttons = $5(8) + 4$\n*   Kendra's buttons = $40 + 4$\n*   Kendra's buttons = **44**\n\n### Step 4: Calculate the number of buttons Sue made\nThe problem states that **Sue made half as many as Kendra**.\n*   Sue's buttons = $\\frac{1}{2} \\times \\text{Kendra's buttons}$\n*   Sue's buttons = $\\frac{1}{2} \\times 44$\n*   Sue's buttons = **22**\n\n### Final Conclusion\nSue made **22** buttons.\n"
+  },
+  {
+   "id": "gsm458",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "66",
+   "n_tokens": 1425,
+   "text": "Here is the step-by-step logical deduction to solve the problem:\n\n### Step 1: Determine the number of votes Joey got\nThe problem states that Joey got **8** votes.\n$$ \\text{Joey's votes} = 8 $$\n\n### Step 2: Determine the number of votes Barry got\nThe problem states that Barry got **twice as many** as 3 more than the number of votes Joey got.\nFirst, calculate \"3 more than Joey's votes\":\n$$ 8 + 3 = 11 $$\nNext, multiply this result by 2 to find Barry's votes:\n$$ 11 \\times 2 = 22 $$\nSo, Barry got **22** votes.\n\n### Step 3: Determine the number of votes Marcy got\nThe problem states that Marcy got **three times as many** votes as Barry.\nUsing the value calculated in Step 2 (22):\n$$ 22 \\times 3 = 66 $$\nSo, Marcy got **66** votes.\n\n### Final Conclusion\nMarcy got **66** votes.\n"
+  },
+  {
+   "id": "gsm4488",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "3",
+   "n_tokens": 1425,
+   "text": "To find out how long Janet has to wait, we need to determine the time it takes for the sailboat to close the gap between them.\n\n### Step 1: Calculate the Speed Difference\nFirst, we find the difference in their speeds. Janet is driving faster, so she is closing the distance faster.\n$$ \\text{Speed Difference} = \\text{Speed of Janet} - \\text{Speed of Sister} $$\n$$ \\text{Speed Difference} = 30 \\text{ mph} - 12 \\text{ mph} = 18 \\text{ mph} $$\n\n### Step 2: Calculate the Time to Close the Gap\nNext, we divide the total distance by the speed difference to find the time required for the sister to catch up.\n$$ \\text{Time} = \\frac{\\text{Distance}}{\\text{Speed Difference}} $$\n$$ \\text{Time} = \\frac{60 \\text{ miles}}{18 \\text{ mph}} $$\n\n### Step 3: Perform the Division\nTo simplify the fraction, we can divide both the numerator and the denominator by their greatest common divisor, which is 6.\n$$ \\frac{60 \\div 6}{18 \\div 6} = \\frac{10}{3} $$\n\nNow, convert the improper fraction to a mixed number:\n$$ \\frac{10}{3} = 3 \\frac{1}{3} \\text{ hours} $$\n\n### Step 4: Convert to Minutes (Optional but helpful)\nSince the question asks \"how long,\" providing the answer in minutes is often more intuitive.\n$$ 3 \\frac{1}{3} \\text{ hours} \\times 60 \\text{ minutes/hour} = 180 \\text{ minutes} $$\n\n### Conclusion\nJanet has to wait **3 hours and 20 minutes** (or $\\frac{10}{3}$ hours) for her sister to catch up.\n"
+  },
+  {
+   "id": "gsm3710",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "15",
+   "n_tokens": 1425,
+   "text": "To find the time taken by the student who came first, we can use the concept of **average completion time**.\n\n### Step 1: Understand the Relationship Between Average and Individual Time\nThe average completion time of a group is calculated by dividing the total time by the number of participants.\n$$ \\text{Average} = \\frac{\\text{Total Time}}{\\text{Number of Participants}} $$\n\nTherefore, the total time taken by all four students is:\n$$ \\text{Total Time} = \\text{Average} \\times \\text{Number of Participants} $$\n\n### Step 2: Calculate the Total Time\nWe are given:\n*   Average time for the last three students = $35$ seconds\n*   Average time for all four runners = $30$ seconds\n*   Number of participants = $4$\n\nFirst, calculate the total time for the last three students:\n$$ \\text{Total Time}_{\\text{last 3}} = 35 \\times 3 = 105 \\text{ seconds} $$\n\nNext, calculate the total time for all four students:\n$$ \\text{Total Time}_{\\text{all 4}} = 30 \\times 4 = 120 \\text{ seconds} $$\n\n### Step 3: Determine the Time of the First Student\nThe total time taken by all four students is the sum of the individual times.\n$$ \\text{Total Time}_{\\text{all 4}} = \\text{Time}_{\\text{first}} + \\text{Time}_{\\text{second}} + \\text{Time}_{\\text{third}} + \\text{Time}_{\\text{fourth}} $$\n\nSince the average time for the last three students is $35$ seconds, their combined time is $105$ seconds.\nSince the average time for all four students is $30$ seconds, their combined time is $120$ seconds.\n\nThe difference between the total time of all four and the total time of the last three is exactly the time taken by the first student:\n$$ \\text{Time}_{\\text{first}} = \\text{Total Time}_{\\text{all 4}} - \\text{Total Time}_{\\text{last 3}} $$\n$$ \\text{Time}_{\\text{first}} = 120 - 105 = 15 \\text{ seconds} $$\n\n### Conclusion\nThe student who came first to finish the race took **15** seconds.\n"
+  },
+  {
+   "id": "gsm6602",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "17",
+   "n_tokens": 1425,
+   "text": "To find the number of incorrect answers, we need to determine the total number of questions and the number of correct answers for each student.\n\n### Step 1: Determine the Total Number of Questions\nThe problem states that there are **35 questions** in total.\n$$ \\text{Total Questions} = 35 $$\n\n### Step 2: Determine Riley's Score\nRiley made **3 mistakes**.\nSince the total number of questions is 35, the number of correct answers for Riley is:\n$$ \\text{Riley's Correct Answers} = 35 - 3 = 32 $$\n\n### Step 3: Determine Ofelia's Score\nThe problem states that Ofelia got **5 more than half** the score of Riley.\nFirst, we calculate half of Riley's score:\n$$ \\text{Half of Riley's Score} = \\frac{32}{2} = 16 $$\nNext, we add 5 to this value:\n$$ \\text{Ofelia's Score} = 16 + 5 = 21 $$\n\n### Step 4: Calculate the Number of Incorrect Answers\nThe total number of incorrect answers is the difference between the total number of questions and the number of correct answers.\n$$ \\text{Incorrect Answers} = \\text{Total Questions} - \\text{Correct Answers} $$\n$$ \\text{Incorrect Answers} = 35 - 32 = 3 $$\n\n### Conclusion\nThe team got **3** incorrect answers.\n"
+  },
+  {
+   "id": "gsm7432",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "4",
+   "n_tokens": 1425,
+   "text": "To find the total number of hours Mike worked, we need to calculate the time spent on each task and then sum them up.\n\n### Step 1: Calculate the time for each task\n*   **Washing cars:** Mike washes 9 cars at a rate of 10 minutes per car.\n    $$9 \\text{ cars} \\times 10 \\text{ minutes/car} = 90 \\text{ minutes}$$\n*   **Changing oil:** Mike changes oil on 6 cars at a rate of 15 minutes per car.\n    $$6 \\text{ cars} \\times 15 \\text{ minutes/car} = 90 \\text{ minutes}$$\n*   **Changing tires:** Mike changes two sets of tires.\n    $$2 \\text{ sets} \\times 30 \\text{ minutes/set} = 60 \\text{ minutes}$$\n\n### Step 2: Calculate the total time in minutes\nAdd the time spent on all tasks together:\n$$90 \\text{ minutes} + 90 \\text{ minutes} + 60 \\text{ minutes} = 240 \\text{ minutes}$$\n\n### Step 3: Convert total time to hours\nThere are 60 minutes in one hour. To convert 240 minutes into hours, divide by 60:\n$$240 \\div 60 = 4 \\text{ hours}$$\n\n### Conclusion\nMike worked for **4 hours**.\n"
+  },
+  {
+   "id": "gsm2421",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "70",
+   "n_tokens": 1425,
+   "text": "To solve this problem, we need to determine the speed of Charles while listening to music and the speed while listening to no music, then use the total distance to find the time.\n\n### Step 1: Calculate the speed while listening to music\nCharles runs at **6 MPH** when music is on.\n*   Distance = 6 miles\n*   Speed = 6 MPH\n*   Time = Distance \u00f7 Speed = $6 \\div 6 = 1$ minute.\n\n### Step 2: Calculate the speed while listening to no music\nCharles runs at **4 MPH** when music is off.\n*   Distance = 6 miles\n*   Speed = 4 MPH\n*   Time = Distance \u00f7 Speed = $6 \\div 4 = 1.5$ minutes.\n\n### Step 3: Calculate the total time\nThe total time is the sum of the time spent listening to music and the time spent listening to no music.\n*   Total Time = (Time listening to music) + (Time listening to no music)\n*   Total Time = $1 \\text{ minute} + 1.5 \\text{ minutes}$\n*   Total Time = $2.5$ minutes\n\n### Conclusion\nIt will take Charles **2.5 minutes** to jog 6 miles.\n"
+  },
+  {
+   "id": "gsm6421",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "83",
+   "n_tokens": 1425,
+   "text": "Here is the step-by-step logical deduction to solve the problem:\n\n### 1. Identify the Given Information\n*   **Allie's bowl** contains $x$ grapes.\n*   **Rob's bowl** contains 25 grapes.\n*   **Allyn's bowl** contains $y$ grapes.\n*   **Relationship 1**: Allie's bowl has 2 more grapes than Rob's bowl.\n*   **Relationship 2**: Allyn's bowl has 4 more grapes than Allie's bowl.\n\n### 2. Calculate Allie's Bowl\nUsing the relationship between Allie and Rob:\n$$x = 25 + 2$$\n$$x = 27$$\nSo, **Allie has 27 grapes**.\n\n### 3. Calculate Allyn's Bowl\nUsing the relationship between Allyn and Allie:\n$$y = 27 + 4$$\n$$y = 31$$\nSo, **Allyn has 31 grapes**.\n\n### 4. Calculate the Total Combined Number\nAdd the number of grapes in all three bowls together:\n$$\\text{Total} = \\text{Allie} + \\text{Rob} + \\text{Allyn}$$\n$$\\text{Total} = 27 + 25 + 31$$\n\n*   $27 + 25 = 52$\n*   $52 + 31 = 83$\n\n### Conclusion\nThe total combined number of grapes in all three bowls is **83**.\n"
+  },
+  {
+   "id": "gsm1006",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "28",
+   "n_tokens": 1425,
+   "text": "To find out how old Jayson's mom was when he was born, we need to determine Jayson's age at birth and then subtract his age at birth from his age when he was 10.\n\n**Step 1: Determine Jayson's age at birth.**\nWe know that Jayson is 10 years old when his dad is four times his age.\n*   Jayson's age at 10 = 10\n*   Dad's age at 10 = $10 \\times 4 = 40$\n\nSince the dad is 40 when Jayson is 10, the dad must have been 40 years old when Jayson was born.\n*   Jayson's age at birth = $10 - 40 = -30$.\n\n**Step 2: Determine Jayson's age at birth.**\nJayson was born 30 years before he was 10.\n*   Jayson's age at birth = $10 - 30 = -20$.\n\n**Step 3: Determine Jayson's age at birth.**\nWe know that Jayson's mom is 2 years younger than his dad.\n*   Dad's age at birth = 40\n*   Mom's age at birth = Dad's age at birth - 2\n*   Mom's age at birth = $40 - 2 = 38$\n\n**Conclusion:**\nJayson's mom was **38** years old when he was born.\n"
+  },
+  {
+   "id": "gsm1064",
+   "ok": false,
+   "hit_cap": false,
+   "pred": null,
+   "gold": "1140",
+   "n_tokens": 1425,
+   "text": "To determine how much Harry spends every year, we need to calculate the total cost for feeding all his pets over a 12-month period.\n\n### Step 1: Calculate the monthly costs\nFirst, let's find the cost for each type of pet per month based on the given prices:\n*   **Snakes**: 4 snakes $\\times$ \\$10/snake = **\\$40**\n*   **Iguanas**: 2 iguanas $\\times$ \\$5/iguana = **\\$10**\n*   **Geckos**: 3 geckos $\\times$ \\$15/gecko = **\\$45**\n\n**Total Monthly Cost**:\n$$ \\$40 + \\$10 + \\$45 = \\$95 $$\n\n### Step 2: Calculate the annual cost\nNow, multiply the monthly cost by 12 months to find the yearly cost:\n$$ \\$95 \\times 12 = \\$1,140 $$\n\n### Alternative Method (Total Cost per Pet)\nWe can also calculate the total cost per pet and multiply by the number of pets:\n*   **Snakes**: $4 \\times \\$10 = \\$40$\n*   **Iguanas**: $2 \\times \\$5 = \\$10$\n*   **Geckos**: $3 \\times \\$15 = \\$45$\n*   **Total per pet**: $\\$40 + \\$10 + \\$45 = \\$95$\n*   **Total for all pets**: $95 \\times 3 = \\$285$\n\nWait, let me re-read the question carefully.\n\"How much does he spend every year to feed **all his pets**?\"\n\nIf the question asks for the total cost to feed *all* pets, it implies feeding every single pet every month.\n*   Monthly cost = \\$95\n*   Annual cost = \\$95 $\\times$ 12 = **\\$1,140**\n\nLet me double-check the wording. \"how much does he spend every year to feed all his pets?\"\nUsually, in these types of word problems, if it asks for the annual cost to feed *all* pets, it means feeding every pet every month.\nHowever, if the question meant \"how much does he spend every year to feed *one* pet\", the answer would be \\$1,140.\nIf the question meant \"how much does he spend every year to feed *all* pets\" (meaning feeding every pet every month), the answer is \\$1,140.\n\nLet's re-read the specific phrasing: \"how much does he spend every year to feed **all his pets**?\"\nThis phrasing is slightly ambiguous.\nInterpretation A: He spends \\$1,140 every year to feed *every* pet every month.\nInterpretation B: He spends \\$1,140 every year to feed *one* pet every month.\n\nLet's look at the numbers again.\nSnakes: 4, Cost \\$10.\nIguanas: 2, Cost \\$5.\nGeckos: 3, Cost \\$15.\n\nIf the question asks for the annual cost to feed *all* pets, it likely means feeding every pet every month.\nCalculation:\nMonthly Cost = $(4 \\times 10) + (2 \\times 5) + (3 \\times 15) = 40 + 10 + 45 = 95$.\nAnnual Cost = $95 \\times 12 = 1,140$.\n\nIs there any other interpretation?\nCould \"all his pets\" refer to the total number of pets?\nTotal pets = $4 + 2 + 3 = 9$.\nIf he spends \\$1,140 every year to feed *all* pets, that implies he spends \\$124 every month on feeding *one* pet.\nBut the question asks \"how much does he spend every year to feed **all his pets**?\"\nGrammatically, \"to feed all his pets\" usually modifies the action of spending money.\nIf I say \"I spend \\$100 every year to buy all my cars,\" it means I buy 1 car every month.\nIf I say \"I spend \\$100 every year to feed all my pets,\" it means I feed 1 pet every month.\n\nLet's assume the standard interpretation for this type of math problem: Calculate the annual cost to feed **every** pet every month.\nTotal Monthly Cost = \\$95.\nTotal Annual Cost = \\$95 $\\times$ 12 = **\\$1,140**.\n\nLet's consider if the question meant \"how much does he spend every year to feed **one** pet\" (which is a common trick question).\nIf the question was \"how much does he spend every year to feed **one** pet?\", the answer would be \\$1,140.\nBut the text says \"to feed **all his pets**\".\nIf I feed all my pets every month, I am spending money on feeding 9 pets.\nSo the cost is \\$1,140.\n\nLet's verify the math one more time.\nSnakes: $4 \\times 10 = 40$\nIguanas: $2 \\times 5 = 10$\nGeckos: $3 \\times 15 = 45$\nSum: $40 + 10 + 45 = 95$.\n$95 \\times 12 = 1140$.\n\nThe logic holds. The phrase \"to feed all his pets\" defines the scope of the spending action (feeding every pet), not the scope of the number of pets being fed.\n\n**Final Answer:**\nHarry spends **$1,140** every year to feed all his pets.\n\n### Calculation Summary:\n1.  **Snakes**: $4 \\text{ snakes} \\times \\$10 = \\$40$\n2.  **Iguanas**: $2 \\text{ iguanas} \\times \\$5 = \\$10$\n3.  **Geckos**: $3 \\text{ geckos} \\times \\$15 = \\$45$\n4.  **Total Monthly Cost**: $\\$40 + \\$10 + \\$45 = \\$95$\n5.  **Total Annual Cost**: $\\$95 \\times 12 = \\$1,140$\n\nHarry spends **$1,140** every year.\n"
+  }
+ ]
+}

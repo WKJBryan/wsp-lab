@@ -37,9 +37,13 @@ def norm_answer(s: str) -> str:
 
 def extract_boxed(text: str) -> str | None:
     matches = re.findall(r"\\boxed\{([^{}]*(?:\{[^{}]*\}[^{}]*)*)\}", text)
-    if not matches:
-        return None
-    return matches[-1]
+    if matches:
+        return matches[-1]
+    # fallback: last number in the generation (GSM8K-style answers; equal for all arms)
+    nums = re.findall(r"-?\$?\d[\d,]*(?:\.\d+)?%?", text)
+    if nums:
+        return nums[-1].replace("$", "").replace(",", "").replace("%", "")
+    return None
 
 
 def load_problems(arm: str):
@@ -82,7 +86,12 @@ def main():
     for b in range(0, len(problems), BATCH):
         chunk = problems[b : b + BATCH]
         prompts = [
-            tok.apply_chat_template([{"role": "user", "content": p["q"]}], tokenize=False, add_generation_prompt=True)
+            tok.apply_chat_template(
+                [{"role": "user", "content": p["q"]}],
+                tokenize=False,
+                add_generation_prompt=True,
+                enable_thinking=True,  # harness addendum (ISSUES #6): template default disables thinking
+            )
             for p in chunk
         ]
         enc = tok(prompts, return_tensors="pt", padding=True).to("cuda")

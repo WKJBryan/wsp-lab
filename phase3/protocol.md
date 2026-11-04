@@ -31,6 +31,18 @@ Can a different agentic editor (ZCode / GLM-5.3), given only a stock Qwen3.5-0.8
 - **NULL:** < +5.0 points, or >1% of weights touched.
 - Loop-rate (fraction of final generations hitting the token cap) reported for every arm.
 
+## Addendum (2026-11-04, before any arm comparison — harness fixes, ISSUES #6)
+
+The first stock baseline run revealed two harness-side issues, fixed identically for every arm
+before any comparisons were made:
+
+1. The tokenizer's chat template **defaults thinking off** (renders an empty `<think>` block).
+   All arms now generate with `enable_thinking=True` — the model's advertised mode and the
+   original's setting. The void no-thinking baseline (0/128 boxed-extraction, 25% cap-hits)
+   is kept on disk for the record.
+2. Answer extraction extended: `\boxed{}` first, then last-number fallback (this model answers
+   GSM8K in prose without boxes). Applied to all arms; saved generations re-scored, not re-run.
+
 ## Controls
 
 - **C1 untouched stock model** (the baseline itself).
