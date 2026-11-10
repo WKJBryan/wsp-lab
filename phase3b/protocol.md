@@ -22,7 +22,8 @@ verdict stands — the editor failure was real in every regime).
   Reason: single RTX 5090 wall-time; the original's baseline hit 32K on 93% of generations and
   we cannot afford 2 × ~8M+ worst-case tokens twice. Cap-hit rates are reported so the
   truncation effect is visible, never laundered into scores.
-- 1 sample per problem, all 500 MATH-500 problems, batch 32.
+- 1 sample per problem, all 500 MATH-500 problems, batch 12 (throughput-only; batch 32 OOM'd
+  on a 32 GB 5090 at the 16,384-token KV cache — batch size has no scoring effect).
 - **Scoring: last `\boxed{}` only, checked by math-verify (symbolic equivalence). No fallback
   extraction. Truncated generation with no boxed answer = incorrect.** (Phase 3a's
   last-number fallback inflated looping arms — arXiv:2605.07686.)
