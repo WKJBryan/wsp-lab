@@ -19,7 +19,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, LogitsProcessor
 HERE = Path(__file__).resolve().parent
 RUNS = HERE / "runs"
 RUNS.mkdir(exist_ok=True)
-BATCH = 32
+BATCH = 12  # throughput-only knob (protocol cap unchanged); 32 OOM'd at 16K-token KV cache
 CAP = 16384
 SEED = 20261105
 
