@@ -1,5 +1,16 @@
 # Phase 3 results — blind (no-hint) Qwen3.5-0.8B repair attempt
 
+> ## ⚠️ CORRECTION NOTICE (2026-11-10, ISSUES #8)
+> The numbers below were produced under **greedy decoding with a 6,144-token cap** — a regime
+> Qwen's model card explicitly prohibits ("DO NOT use greedy decoding … endless repetitions";
+> this exact model is flagged loop-prone, with presence-penalty 1.5 and a 32K budget prescribed).
+> Under these settings *no* arm could terminate thinking (100% cap-hit everywhere), so this run
+> measured loop behavior, not capability, and the "far below their 48.1" framing of C3 is
+> **unfair to the original's edit**: an independent group (openwsp) ran the same published edit
+> under the blog's settings and got **50.6%**. The last-number fallback also inflates scores of
+> looping arms (arXiv:2605.07686). Keep this file as the record of the flawed run; the corrected
+> experiment is `phase3b/` (sampled decoding per the original protocol, boxed-only scoring).
+
 **Date:** 2026-11-04/05 · **Protocol:** `phase3/protocol.md` + addenda 1–2 (all committed before the arms ran)
 **Hardware:** one RTX 5090, fully local · **Final arm:** math250 (pre-registered fallback; projected >2 h per full-500 arm), greedy decoding, cap 6144, identical settings for every arm.
 
