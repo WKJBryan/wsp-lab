@@ -10,6 +10,8 @@ import re
 import sys
 import time
 
+sys.set_int_max_str_digits(0)  # vLLM 0.33 kv-cache path can str() huge ints on py3.12
+
 from vllm import LLM, SamplingParams
 
 sys.path.insert(0, "/home/bladless/wsp3c")
