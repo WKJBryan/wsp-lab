@@ -27,6 +27,8 @@ def canonical(s: str) -> str:
 def to_number(s: str):
     """Exact numeric parse: ints, decimals, simple fractions a/b, \\frac{a}{b}."""
     s = canonical(s)
+    if len(s) > 50:  # guard: absurd digit strings (e.g. degenerate 0000... loops)
+        return None
     m = re.fullmatch(r"-?\d+", s)
     if m:
         return Fraction(int(s))
