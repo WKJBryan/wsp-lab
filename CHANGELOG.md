@@ -10,6 +10,12 @@ Notable changes, bugs, and fixes. Format follows [Keep a Changelog](https://keep
   - **P1 assignment FAIL at 3/5** (bar ≥4): parity↔random swap; post-hoc diagnosis — memorized noise carries the "huge norms + rough function" signature I attributed to overtrained parity (random net memorized 86.5% of 4K random labels).
   - Verdicts and integrity ordering in `phase2/results.md`.
 
+## [0.5.0] — 2026-11-12
+
+### Added
+- Phase 3b (corrected-decoding cross-check): **VOID locally** — the model loops to the cap under every decoding this transformers-on-Windows stack produces (pilot: 8/8 runs non-terminating at 32,768 tokens with repetition tails, penalty on AND off). Scorer replaced (`phase3b/scorer.py`, 11/11 sanity) after math-verify proved broken on this platform. Verdict on the original's claim rests with concordant third-party vLLM replications (50.6 / 51.0 / 61.7%).
+- Full forensics in `phase3b/results.md`; ISSUES #8 (greedy-decode error, user-initiated) and #9 (stack-level non-termination) documented with costs (~44 GPU-hours).
+
 ## [0.4.0] — 2026-11-05
 
 ### Added
