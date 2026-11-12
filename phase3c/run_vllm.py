@@ -61,6 +61,7 @@ def main():
     )
 
     rows, correct, capped = [], 0, 0
+    texts = {}
     for p, o in zip(problems, outs):
         text = o.outputs[0].text
         n_tok = len(o.outputs[0].token_ids)
@@ -70,7 +71,8 @@ def main():
         correct += ok
         capped += finish == "length"
         rows.append(dict(id=p["id"], ok=ok, finish=finish, boxed=boxed, gold=p["gold"],
-                         n_tokens=n_tok))
+                         n_tokens=n_tok, closed="</think>" in text))
+        texts[p["id"]] = text
         if args.probe:
             closed = "</think>" in text
             print(f"\n=== {p['id']}: tokens={n_tok} finish={finish} closed={closed} boxed={boxed!r}")
@@ -90,6 +92,7 @@ def main():
     print(json.dumps(summary))
     out = Path(args.out) if args.out else Path(f"{args.name}.json")
     out.write_text(json.dumps(dict(summary=summary, rows=rows), indent=1))
+    Path(str(out).replace(".json", "_texts.json")).write_text(json.dumps(texts, indent=1))
 
 
 if __name__ == "__main__":
