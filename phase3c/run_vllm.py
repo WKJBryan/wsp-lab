@@ -34,6 +34,8 @@ def main():
     ap.add_argument("--problems", default="problems.json")
     ap.add_argument("--scorer", default="scorer.py")
     ap.add_argument("--out", default=None)
+    ap.add_argument("--gmu", type=float, default=0.92,
+                    help="gpu_memory_utilization (lower when desktop apps hold VRAM)")
     args = ap.parse_args()
 
     sys.path.insert(0, str(Path(args.scorer).resolve().parent))
@@ -44,7 +46,7 @@ def main():
     llm = LLM(
         model=args.model,
         max_model_len=40000,
-        gpu_memory_utilization=0.92,
+        gpu_memory_utilization=args.gmu,
         enforce_eager=False,
     )
     sp = SamplingParams(
