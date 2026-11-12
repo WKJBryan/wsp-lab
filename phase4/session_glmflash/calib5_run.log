@@ -1,0 +1,27 @@
+loading model...
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:  40%|████      | 128/320 [00:00<00:00, 1271.02it/s]Loading weights:  80%|████████  | 256/320 [00:00<00:00, 1264.34it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 1572.98it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+==========================================================================================
+COMBO c1.35_comma.50_end1.15
+  gsm5570   gold=190      pred=190        ok=True closed=True stop=True ntok= 670 commas=0
+    POST-TAIL: 'i} = \\$90$$\\n\\n2.  **Calculate earnings from big bonsai:**\\n    $$5 \\text{ big bonsai} \\times \\$20/\\text{bonai} = \\$100$$\\n\\n3.  **Add the two amounts together:**\\n    $$\\$90 + \\$100 = \\$190$$\\n\\n**Lowry earned $190.**<|im_end|>'
+  gsm4131   gold=50000    pred=5          ok=False closed=True stop=False ntok=1200 commas=1
+    POST-TAIL: ' amounts ($2000 + 3000$):\\n$$40000 = G - 5000 - 0.10G$$\\n\\nCombine the $G$ terms:\\n$$40000 = 0.90G - 5000$$\\n\\n**4. Solve for $G$:**\\nAdd 5000 to both sides:\\n$$45000 = 0.90G$$\\n\\nDivide by 0.90:\\n$$G = \\frac{45000}{0.90}$$\\n$$G = 5'
+  gsm1398   gold=72       pred=None       ok=False closed=False stop=False ntok=1200 commas=5
+  gsm2472   gold=12       pred=None       ok=False closed=False stop=False ntok=1200 commas=11
+  SUMMARY c1.35_comma.50_end1.15: acc=1/4 closed=2/4 stopped=1/4
+==========================================================================================
+COMBO c1.55_comma.50_end1.15
+  gsm5570   gold=190      pred=190        ok=True closed=True stop=True ntok= 111 commas=0
+    POST-TAIL: 'er tree\\n</think>\\n\\nLowry sold **3 small bonsai** and **5 big bonsai**.\\n\\n*   **Total cost of small bonsai:** $30 \\times 3 = \\$90$\\n*   **Cost of big bonsai:** $20 \\times 5 = \\$100$\\n</think>\\n\\nLowry earned **$190**.<|im_end|>'
+  gsm4131   gold=50000    pred=40000      ok=False closed=True stop=True ntok= 940 commas=0
+    POST-TAIL: "0 = 0.90G$$\\n</think>\\n\\nBill's gross salary is **$50000**.\\n\\nHere is the breakdown:\\n*   Total expenses: $2000 (property) + $3000 (sales) + $5000 (income tax) = $10000\\n*   Take-home salary: $50000 - $10000 = $40000<|im_end|>"
+  gsm1398   gold=72       pred=72**       ok=False closed=True stop=True ntok= 483 commas=1
+    POST-TAIL: 'breakdown:\\n\\n1.  **Calculate the discount amount:**\\n    20% of $90 is $18 ($90 \\times 0.20 = 18$).\\n\\n2.  **Calculate the final price:**\\n    Subtract the discount from the original price ($90 - 18 = 72$).\\n\\n**$72**<|im_end|>'
+  gsm2472   gold=12       pred=Sandwich   ok=False closed=True stop=False ntok=1200 commas=8
+    POST-TAIL: 'nalyze the Distribution of Sandwiches:**\\n*   **Sandwiches:** She packs 2 sandwiches on the 2 randomly chosen days of the week.\\n*   **Ham Sandwich:** She packs 3 ham sandwiches on the 3 randomly chosen days of the week.\\n\\n'
+  SUMMARY c1.55_comma.50_end1.15: acc=1/4 closed=4/4 stopped=3/4
+rows restored
