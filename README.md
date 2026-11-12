@@ -18,6 +18,7 @@ The original used one editor (OpenAI gpt-6-astra via Codex CLI) and released [fu
 - [x] Phase 1 — CartPole repair: **9.4 → 371.6** (SUCCESS per protocol; random-edit control 9.5; results: [phase1/results.md](phase1/results.md))
 - [x] Phase 2 — blind weights-only ID: feature-ID **2/2 exact PASS**; task assignment **3/5 FAIL** (parity↔random swap, diagnosed; results: [phase2/results.md](phase2/results.md))
 - [x] Phase 3 — blind no-hint Qwen3.5-0.8B on one RTX 5090: editor **NULL** (+1.6, noise band; loops found blind, repair failed: no-op→seizure dose-response); original's published edit cross-check **6.8% → 12.4%** (+5.6, PARTIAL — far below their 48.1% headline under their settings; results: [phase3/results.md](phase3/results.md))
+- [x] Phase 3b — corrected decoding (user-initiated): **VOID locally** — the model non-terminates under every decoding our transformers-on-Windows stack can produce (8/8 pilot runs loop to 32,768 with repetition tails, penalty on and off); scorer replaced after math-verify broke on this platform; the original's edit transfers per concordant third-party vLLM replications (50.6/51.0/61.7%) — see [phase3b/results.md](phase3b/results.md) and ISSUES #8–9
 
 Results land in `phase1/results.md`, `phase2/results.md`, ... as each phase completes.
 
