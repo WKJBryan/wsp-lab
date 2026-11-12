@@ -1,0 +1,11 @@
+{
+ "factor": 1.25,
+ "tensors": {
+  "model.language_model.layers.15.mlp.down_proj.weight": {
+   "fro_delta": 2.186
+  },
+  "model.language_model.layers.19.mlp.down_proj.weight": {
+   "fro_delta": 1.7484
+  }
+ }
+}
