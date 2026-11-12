@@ -9,6 +9,10 @@ __pycache__/
 models/
 hf_cache/
 
+# phase-5+ candidate model dirs (rebuild via phase5/build_dose.py etc.)
+phase5/cands/
+
+
 # editor throwaway analysis (keep ledger.md, ignore scratch)
 phase1/editor/scratch/
 phase3/editor/scratch/
