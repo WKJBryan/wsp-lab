@@ -1,0 +1,47 @@
+{
+ "summary": {
+  "name": "probe_stock",
+  "model": "/home/bladless/wsp3c/stock",
+  "engine": "vllm",
+  "cap": 32768,
+  "n": 4,
+  "accuracy": 0.0,
+  "cap_hit_rate": 25.0,
+  "mean_tokens": 12774.0,
+  "wall_s": 77.1
+ },
+ "rows": [
+  {
+   "id": "m0",
+   "ok": false,
+   "finish": "stop",
+   "boxed": null,
+   "gold": "\\left( 3, \\frac{\\pi}{2} \\right)",
+   "n_tokens": 7023
+  },
+  {
+   "id": "m1",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "p - q",
+   "n_tokens": 32768
+  },
+  {
+   "id": "m2",
+   "ok": false,
+   "finish": "stop",
+   "boxed": null,
+   "gold": "\\frac{14}{3}",
+   "n_tokens": 8356
+  },
+  {
+   "id": "m3",
+   "ok": false,
+   "finish": "stop",
+   "boxed": null,
+   "gold": "9",
+   "n_tokens": 2948
+  }
+ ]
+}

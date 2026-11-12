@@ -10,6 +10,13 @@ Notable changes, bugs, and fixes. Format follows [Keep a Changelog](https://keep
   - **P1 assignment FAIL at 3/5** (bar ≥4): parity↔random swap; post-hoc diagnosis — memorized noise carries the "huge norms + rough function" signature I attributed to overtrained parity (random net memorized 86.5% of 4K random labels).
   - Verdicts and integrity ordering in `phase2/results.md`.
 
+## [0.6.0] — 2026-11-12
+
+### Added
+- **Phase 3c: the original's weight edit TRANSFERS on local hardware — 6.0% → 39.4% MATH-500** (pre-registered TRANSFERS bar +10; terminations 9% → 83%). vLLM 0.33 under WSL2, full 32K budget, both arms 500 problems in ~80 min total. Anchors: stock 6.0/90.6% cap ≈ Toledo 7.8/93.1 ✓.
+- Engine diagnosis PROVEN (probe: 3/4 terminate on vLLM vs 0/8 on fallback kernels) — closes #9. Format-aware extraction closes #10 (prose answers; boxed-only scored 0.0/0.4 raw).
+- WSL2 setup documented: CUDA toolkit 12.8 + ninja + build-essential required for flashinfer JIT.
+
 ## [0.5.0] — 2026-11-12
 
 ### Added
