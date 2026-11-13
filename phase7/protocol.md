@@ -125,3 +125,29 @@ fixed order, one retry only for engine failure). "Works" := closed ≥ 38.8% (st
 | 8–9 | `origcols_rand_s1`, `_s2`: the ORIGINAL edit's 64 columns and amplitudes at L15/L19, random direction ⟂ u | **R5 (open question):** my guess — at least one of two works, i.e. the published direction is not required. Both do nothing → the published direction matters |
 
 All at pass_index 1 unless stated. Practice scale only (n = 64, SE ≈ 6 per arm).
+
+## Addendum 3 — site versus direction (written BEFORE any pass, 2026-11-13)
+
+Finding 16 left two things tangled: WHERE the push is made (the L10+L14 loop neurons, or the
+published edit's columns at L15+L19) and WHICH WAY it points (our mapped direction d, or the
+published direction u). Known cells: d at L10+L14 does nothing (23.4% closed); u at L15+L19
+works (57.8%). This batch fills the other two cells.
+
+Budget: **2 practice passes**, same harness and rules (64 GSM8K practice problems, cap 8192,
+pass_index 1, no offline generation, fixed order, one retry only for engine failure).
+"Works" := closed ≥ 38.8%; "does nothing" := closed ≤ 28.8% (stock 18.8%).
+
+| pass | arm | prediction (fixed now) |
+|---|---|---|
+| 1 | `origcols_d`: the published edit's 64 columns and amplitudes at L15/L19, direction = our mapped d of that layer (`--orig-cols --mapped-dir`) | **S1:** works. d there is 0.71–0.74 aligned with u, so most of the published push survives |
+| 2 | `u_on_loop`: the L10+L14 loop neurons and amplitudes of the first-batch brake, direction = published u15 at L10 and u19 at L14 (`--u-dirs 15,19`) | **S2 (a guess):** does not work (closed < 38.8%). u is 0.4–0.6 aligned with d at those floors, and d fails there |
+
+How the four outcomes will be read (fixed now):
+
+- S1 works, S2 does not: the SITE decides — loop-like directions work at L15+L19 and not at L10+L14.
+- S1 does not, S2 works: the DIRECTION u decides, wherever it is applied; our d is not a substitute.
+- Both work: u-like directions work at both sites; d fails at L10+L14 for a reason specific to d there.
+- Neither works: u works only on its own columns — an interaction, nothing portable.
+
+"In between" (28.8–38.8%) on either arm is recorded as inconclusive for that cell, not rounded
+to a side. Two cells, n = 64 each: this can point, it cannot settle.
