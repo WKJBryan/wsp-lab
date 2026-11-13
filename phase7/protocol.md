@@ -175,3 +175,31 @@ Reading, fixed now:
 - Does nothing: the informative outcome — u needs its d-part, so it is the combination, not
   either piece, that works there.
 - In between: inconclusive, recorded as such.
+
+## Addendum 5 — confirming `uperp_on_loop` (written BEFORE any run, 2026-11-13)
+
+`uperp_on_loop` (the map's L10+L14 loop neurons and amplitudes; direction = published u with
+its component along the mapped d removed) closed 62.5% / 43.8% accuracy on one practice pass.
+Two runs, both made regardless of each other's outcome, in this order, no re-runs for a better
+number (one retry only for engine failure):
+
+| run | what | prediction (fixed now) |
+|---|---|---|
+| 1 | practice pass at pass_index 2 (same model, new sampling seed; harness as before) | **U1:** works (closed ≥ 38.8%). ≤ 28.8% → the first run was sampling luck |
+| 2 | MATH-500 final: `phase3c/run_vllm.py` unchanged (500 problems, 1 sample, cap 32768, seed 20261105), then `phase3c/rescore.py` unchanged | **U2:** rescored accuracy ≥ 16.0% (the repo's SUCCESS bar, stock 6.0 + 10). My point guess: 20–35%, i.e. BELOW the published edit |
+
+Fixed readings for run 2 (rescored accuracy; references on the same harness: stock 6.0%,
+random-edit control 2.2%, GLM-Flash 25.2%, mimo 27.8%, published edit 39.4%):
+
+- < 16.0%: FAIL — the practice result does not transfer.
+- 16.0–33.1%: SUCCESS, below the published edit.
+- ≥ 33.2% (within 2 SE of a difference from 39.4%): SUCCESS, level with the published edit.
+
+Caveats fixed in advance:
+
+1. This is NOT a repair found from our map alone: the neurons and amplitudes are the map's,
+   the direction is derived from the published edit's u.
+2. The loop neurons were selected from the stock model's activations on its own MATH-500
+   generations — the same problems as this final. No answers or scores were used, but the
+   final is not independent of that selection. (The practice passes are: GSM8K.)
+3. One sample per problem, n = 500: SE ≈ 2.2 points at 40%.
