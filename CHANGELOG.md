@@ -10,6 +10,14 @@ Notable changes, bugs, and fixes. Format follows [Keep a Changelog](https://keep
   - **P1 assignment FAIL at 3/5** (bar ≥4): parity↔random swap; post-hoc diagnosis — memorized noise carries the "huge norms + rough function" signature I attributed to overtrained parity (random net memorized 86.5% of 4K random labels).
   - Verdicts and integrity ordering in `phase2/results.md`.
 
+## [0.7.0] — 2026-11-13
+
+### Added
+- **Phase 5 complete: NULL on finals with a measured trade-off.** Practice dose curve peaked at 1.75× (50.0% GSM8K practice, stuck 53→25%) but finals (MATH-500 ×4) reversed it: dose 1.0 = 38.2% vs 1.75× = 35.4% — the loop direction also carries legitimate hard-problem reasoning; the original's dose is well-balanced. GSM8K-practice confound documented.
+- Edit anatomy (free): exactly 131,072 values, rank-1 per layer, one direction at two depths (cos 0.849); ISSUES #14 corrects our earlier 56× miscount — the original's release matches their claim.
+- Harness forensics #13/#15: 2,000-in-flight token soup (probe-cleared n=4/depth; concurrency suspect), engine memory races, vLLM/py3.12 int-str crash class, missing `__main__` guard crash class.
+- Phase 7 atlas part 1: loop direction written diffusely (no layer hotspot); original's 64 columns NOT weight-aligned (activation-chosen); L23 strongest attention-side writer (matches openwsp's independent pick); token map suggestive.
+
 ## [0.6.0] — 2026-11-12
 
 ### Added
