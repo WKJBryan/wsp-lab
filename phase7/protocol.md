@@ -34,3 +34,25 @@ a committed script.
 - Plots: matplotlib, committed PNGs, scripts committed; no hand-drawn claims.
 - Language: every mapped structure gets coordinates (layer, column ids), an effect size,
   and a confidence label (measured / inferred / speculative).
+
+## Addendum — part 2 (activation probe) analysis plan, written BEFORE probing (2026-11-13)
+
+Lists: `phase7/sets.json`, built by `build_sets.py` (definitions in its docstring) — 80 stuck,
+47 clean, 60 deep-control generations, alternating fit / held-out halves.
+Probe: `probe_activations.py` (stock model, forward passes only). Stack validity checked first:
+27,000 of 27,000 saved vLLM-sampled tokens fall inside this stack's top-20, to 9,000-token depth.
+
+Fixed analyses (u15, u19 = residual directions of the original edit; chance |cos| ≈ 0.03):
+
+- **A1 loop direction.** Per layer, d = mean(loop) − mean(pre), fit on half 0. Report cos(d, u15),
+  cos(d, u19), and held-out AUC of the projection for loop-vs-pre and loop-vs-deep.
+- **A2 edited-column test (atlas Finding 2).** Per-neuron effect size loop-vs-pre at L15 / L19.
+  Chance overlap of the top-64 neurons with the 64 edited columns is 1.14.
+- **A3 selectivity of the original edit.** Drive s(t) = Σ a_j·act_j over the edited columns:
+  loop vs pre vs clean vs deep, plus the onset-aligned mean curve.
+- **A4 foreseeability (exploratory).** pre (to-be-stuck) vs clean at positions < 1500.
+  Confounded by problem difficulty; reported as a lead, not a claim.
+
+Reading rules, fixed now: held-out AUC ≥ 0.75 "separates", 0.60–0.75 "weak", < 0.60 "does not".
+Top-64 overlap ≥ 8 "coincide", ≤ 3 "do not coincide". No causal claims from this part —
+causal spot-checks stay with deliverable 3.
