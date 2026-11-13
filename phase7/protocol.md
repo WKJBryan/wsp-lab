@@ -249,3 +249,31 @@ worse, weak evidence the unit's activity protects against loops (stock is alread
 floor, so this direction is poorly measured). ≥ 38.8% → works; ONLY then, two more passes:
 the same arm at pass_index 2, and the part-B control unit zeroed (`hub19_ctrl_zero`).
 In between → inconclusive, recorded as such.
+
+## Addendum 7 — reading jobs without the fixed opening tokens (written BEFORE any run, 2026-11-14)
+
+Finding 21: L14 unit 46 fires ≈ 75 on the first token of every prompt and ≈ 0.11 elsewhere, so
+its per-question average is ≈ 75 / prompt length and its "light" tracks question length. Known
+before any run: every prompt opens with the same 3 template tokens (`<|im_start|>`, `user`,
+newline) and prompts are 18–841 tokens long (median 60); length differs by job (d of token count:
+Hard question +0.50, Geometry +0.50, Number Theory −0.59, Algebra −0.44, Precalculus +0.32,
+Prealgebra +0.21, Counting & Probability +0.19, Intermediate Algebra −0.04). Part 3 already
+length-controlled the residual-stream decoding (Finding 11); the per-unit light map was not.
+
+Re-measurement (stock model, forward passes, same 500 prompts, same code path):
+`probe_questions.py --no-prefix` averages every unit and the residual stream over all positions
+EXCEPT the 3 shared opening tokens → `probe_out/questions_noprefix.npz`. `remeasure_reading.py`
+compares, per job: lights at |d| ≥ 0.8 before / after, how many of the old lights stay lit, and
+the correlation of d. A second, conservative variant also regresses prompt length (linear + log,
+the part-3 control) out of every unit before computing d.
+
+| # | prediction (fixed now) |
+|---|---|
+| **R1** | L14 unit 46 drops below |d| = 0.5 on Hard question, Number Theory, Geometry and Precalculus |
+| **R2** | The map mostly survives: for each of the 8 reading jobs ≥ 90% of the old lights stay lit and d before vs after correlates ≥ 0.98 (the opening is 3 identical tokens of a median 60, so only spike units should move) |
+| **R3** | With length also regressed out: Hard question keeps < 60% of its lights; Geometry and Number Theory keep ≥ 70% |
+
+Fixed in advance: the light map, wires and page switch to the no-opening measurement whatever
+the outcome (it is the cleaner measurement). The length-regressed variant is reported, not
+adopted: difficulty and length are genuinely related, so it removes real signal too. R2 failing
+means the reading half of the map was materially a length map and Findings 12-13 need re-reading.
