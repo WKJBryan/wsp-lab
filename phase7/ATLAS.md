@@ -144,10 +144,31 @@ loop more". Finding 9's early-warning lead therefore still needs the same-proble
 - Nearest-centroid and mean-difference readouts are simple on purpose; a stronger probe would
   score higher. Correlational, like part 2.
 
+## Part 4 — causal spot-checks on the loop band (2026-11-13)
+
+Predictions committed first (`97af18a`); 6 of 6 practice passes; full table and verdicts in
+`causal/results.md`.
+
+## Finding 15 — the mapped direction is NOT the lever; a loop-gated kick is [measured, n = 64, one draw]
+
+A brake built from the map alone (64 loop-active neurons each at L10 and L14, subtracting d
+when they fire) moved thinking-closed from 18.8% to 23.4% — **prediction H1 REFUTED**
+(needed +20). The control with the SAME neurons and amplitudes but a RANDOM direction ⟂ d
+reached **51.6% closed / 32.8% accuracy** (stock 18.8 / 12.5; original edit 56.2 / 39.1 on
+this set). Doses 0.5× and 2.0× of the d-brake: no effect either.
+
+The random directions are not accidentally meaningful (|cos| with u15/u19 ≤ 0.04). They are,
+relative to natural variation, a far larger kick: ≈ 27–30 SD vs ≈ 9–11 SD along d.
+
+Reading [inferred]: the map locates WHEN to act (loop-gated neurons), not WHAT to write.
+Finding 5's direction may be a readout of repetition rather than its cause. Whether the
+ORIGINAL edit's direction matters is now an open, testable question (same columns, random
+direction — never run by anyone).
+
 ## Next
 
-- Causal spot-checks (deliverable 3): ablate d at L10–L14 vs L15/L19; zero the standing push
-  of Finding 7 (drive outside loops) while keeping the in-loop push.
+- Replicate Finding 15: more random seeds; random neurons as a gating control; a
+  variance-matched d-vs-random comparison; the original edit's columns with a random direction.
 - Difficulty-controlled foreseeability: phase-5 finals have 4 samples per problem with mixed
   outcomes — same problem, stuck vs clean.
 - Question types beyond MATH-500: prompts from other task families (code, plain QA, instruction
