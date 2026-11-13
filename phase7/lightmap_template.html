@@ -54,6 +54,17 @@ p { margin: 0; }
 select, input[type="range"] { accent-color: var(--a); font: inherit; }
 select { color: var(--ink); background: var(--surface); border: 1px solid var(--axis); border-radius: 6px; padding: 5px 8px; max-width: 100%; }
 :focus-visible { outline: 2px solid var(--a); outline-offset: 2px; }
+.hints { display: flex; flex-direction: column; gap: 6px; color: var(--ink-2); font-size: 13px; max-width: 78ch; }
+.hints b { color: var(--ink); font-weight: 500; }
+
+.through { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.through p { color: var(--ink-2); font-size: 13px; max-width: 78ch; }
+.tower { display: grid; grid-template-columns: clamp(76px, 20%, 170px) repeat(24, minmax(0, 1fr)) 44px; gap: 3px 2px; align-items: center; max-width: 860px; font-size: 12px; line-height: 1.2; color: var(--ink-2); }
+.tower span { min-width: 0; overflow-wrap: anywhere; }
+.tower i { align-self: stretch; min-height: 18px; border-radius: 2px; }
+.tower .ax { grid-column: 2 / span 24; display: flex; justify-content: space-between; font: 400 10px/1.2 var(--mono); color: var(--muted); }
+.tower .n { text-align: right; font: 400 11px/1.2 var(--mono); font-variant-numeric: tabular-nums; }
+.tower .on { color: var(--ink); font-weight: 600; }
 
 .summary { font: 500 17px/1.4 var(--display); max-width: 70ch; text-wrap: balance; }
 .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: center; color: var(--ink-2); font-size: 13px; }
@@ -112,9 +123,24 @@ th:first-child, td:first-child { text-align: left; }
       <label for="tidy"><input type="checkbox" id="tidy" checked> Tidy: group each floor's lights by favourite job</label>
       <label for="marks"><input type="checkbox" id="marks"> Outline the units that were edited</label>
     </div>
+    <div class="hints">
+      <p><b>Strength</b> is how big the difference is, not how sure we are of it (so it is not a confidence interval). <span id="thr-hint"></span> Slide right for fewer, stronger lights; slide left to let weaker ones in.</p>
+      <p><b>Tidy</b> only moves dots around; no number changes. A unit's seat on its floor is arbitrary, so tidy seats units with the same favourite job (the job they react to most) next to each other: loop first, then each subject, then hard question, then units with no favourite. The same seat on two floors is still not the same unit.</p>
+    </div>
   </section>
 
   <p class="summary" id="summary" aria-live="polite"></p>
+
+  <section class="through" aria-labelledby="tower-h">
+    <h2 id="tower-h">Through the tower: every job on every floor</h2>
+    <p>Each row is one job, read from floor 0 on the left (reads the words) to the last floor on the right (about to speak). The colour of a square shows how many lights are on at that floor. Each row is shaded against its own busiest floor, so use the squares to see where in the tower a job lives and the totals to see how big it is.</p>
+    <div class="tower" id="tower" role="img" aria-label="Lights on for every job at every floor. The same numbers are in the table further down."></div>
+    <div class="legend">
+      <span>fewer lights <i class="sw" style="background:var(--r1)"></i><i class="sw" style="background:var(--r2)"></i><i class="sw" style="background:var(--r3)"></i><i class="sw" style="background:var(--r4)"></i><i class="sw" style="background:var(--r5)"></i> more lights</span>
+      <span><i class="sw" style="background:var(--off)"></i>none</span>
+    </div>
+  </section>
+
   <div class="legend" id="legend"></div>
 
   <div class="layout">
@@ -132,10 +158,10 @@ th:first-child, td:first-child { text-align: left; }
   </details>
 
   <section class="notes">
-    <div><h2>What a light means</h2><p>Brightness is an effect size (Cohen's d): how far the unit's activity during the job sits from its activity otherwise, in units of its usual spread. 0.8 is the conventional line for a large difference. Hover a dot for its number and whether the unit gets busier or quieter.</p></div>
+    <div><h2>What a light means</h2><p>Brightness is an effect size (Cohen's d): how far the unit's activity during the job sits from its activity otherwise, in units of its usual spread. 0.8 is the conventional line for a large difference. It measures size, not certainty, so it is not a confidence interval. Hover a dot for its number and whether the unit gets busier or quieter.</p></div>
     <div><h2>Where the numbers come from</h2><p>"Stuck in a loop" compares the model while it repeats itself with the same answers before the repeating began (80 saved answers). The seven subjects and "Hard question" compare the model while it reads 500 maths questions.</p></div>
-    <div><h2>Tidy mode</h2><p>The order of units inside a floor has no meaning, so tidy mode sorts each floor by the job a unit responds to most. Loop units come first, then each subject, then difficulty, then units with no strong favourite. Untick it to see the raw order.</p></div>
-    <div><h2>What this cannot tell you</h2><p>Lights show what goes together, not what causes what. In a first test, erasing the "stuck" pattern did not unstick the model, while a random push triggered by the loop lights did. Every question here is maths, so "job" is a narrow idea.</p></div>
+    <div><h2>Tidy mode</h2><p>The order of units inside a floor has no meaning, so tidy mode sorts each floor by the job a unit responds to most. Loop units come first, then each subject, then difficulty, then units with no strong favourite. Favourites are fixed at strength 0.8, so the seating does not move when you drag the slider. Seats do not line up between floors: unit 17 on one floor has nothing to do with unit 17 on the next. Untick it to see the raw order.</p></div>
+    <div><h2>What this cannot tell you</h2><p>Lights show what goes together, not what causes what. Nothing here shows which lights on one floor feed which lights on the next; across floors you can only compare how many are on. In a first test, erasing the "stuck" pattern did not unstick the model, while a random push triggered by the loop lights did. Every question here is maths, so "job" is a narrow idea.</p></div>
   </section>
 </main>
 <div class="tip" id="tip" hidden></div>
@@ -238,15 +264,30 @@ th:first-child, td:first-child { text-align: left; }
     readTokens();
     document.querySelectorAll("#jobs button").forEach((b, j) => b.setAttribute("aria-pressed", j === state.job));
     $("thr-out").textContent = state.thr.toFixed(1);
-    const cA = counts(state.job), cB = state.cmp >= 0 ? counts(state.cmp) : null;
+    $("thr-hint").textContent = "At " + state.thr.toFixed(1) + " a unit lights up only if it is " + (state.thr < 0.8 ? "a little" : state.thr < 1.5 ? "clearly" : "much") + " busier or quieter than usual during the job.";
+    const cA = counts(state.job), cB = state.cmp >= 0 ? counts(state.cmp) : null, both = new Array(L).fill(0);
     const totA = cA.reduce((s, v) => s + v, 0), nameA = DATA.jobs[state.job];
     let text = nameA + ": " + fmt(totA) + " of " + fmt(L * N) + " lights are on. Busiest floors: " + top3(cA) + ".";
     if (cB) {
       let shared = 0, expect = 0;
-      for (let l = 0; l < L; l++) { for (let n = 0; n < N; n++) if (lit(state.job, l, n) && lit(state.cmp, l, n)) shared++; expect += cA[l] * cB[l] / N; }
+      for (let l = 0; l < L; l++) { for (let n = 0; n < N; n++) if (lit(state.job, l, n) && lit(state.cmp, l, n)) { shared++; both[l]++; } expect += cA[l] * cB[l] / N; }
       text += " " + DATA.jobs[state.cmp] + ": " + fmt(cB.reduce((s, v) => s + v, 0)) + " on, busiest floors " + top3(cB) + ". Lights shared by both: " + fmt(shared) + " (about " + fmt(Math.round(expect)) + " expected if the two jobs were unrelated).";
     }
     $("summary").textContent = text;
+
+    // through the tower: one row per job, one square per floor, each row shaded against its own busiest floor
+    const all = DATA.jobs.map((_, j) => counts(j)), tower = $("tower"); tower.replaceChildren();
+    const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+    const ax = el("span", "ax"); ax.append(el("span", "", "floor 0"), el("span", "", "floor " + (L - 1)));
+    tower.append(el("span"), ax, el("span", "n", "total"));
+    const rows = all.map((c, j) => [DATA.jobs[j], c, j === state.job || j === state.cmp]);
+    if (cB) rows.push(["On for both", both, true]);
+    rows.forEach(([name, c, on]) => {
+      const top = Math.max(1, ...c);
+      tower.appendChild(el("span", on ? "on" : "", name));
+      c.forEach((v, l) => { const d = el("i"); d.style.background = v ? "var(--r" + Math.min(5, 1 + Math.floor(v / top * 5)) + ")" : "var(--off)"; d.title = "Floor " + l + " · " + name + ": " + fmt(v) + " lights on"; tower.appendChild(d); });
+      tower.appendChild(el("span", "n", fmt(c.reduce((s, v) => s + v, 0))));
+    });
 
     const leg = $("legend"); leg.replaceChildren();
     const sw = (col, label) => { const s = document.createElement("span"), b = document.createElement("i"); b.className = "sw"; b.style.background = col; s.append(b, document.createTextNode(label)); leg.appendChild(s); };
@@ -271,7 +312,7 @@ th:first-child, td:first-child { text-align: left; }
     }
 
     const table = $("table"); table.replaceChildren();
-    const all = DATA.jobs.map((_, j) => counts(j)), hr = table.insertRow();
+    const hr = table.insertRow();
     ["Floor", ...DATA.jobs].forEach(t => { const th = document.createElement("th"); th.textContent = t; hr.appendChild(th); });
     for (let l = 0; l < L; l++) { const r = table.insertRow(); r.insertCell().textContent = l; all.forEach(c => r.insertCell().textContent = fmt(c[l])); }
   }

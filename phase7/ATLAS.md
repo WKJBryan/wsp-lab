@@ -198,6 +198,18 @@ Predictions committed first (`8dc3a17`); table in `causal/results.md`.
 Unreconciled: random directions unrelated to u work at L10+L14 (3 of 4) and not at L15+L19
 (0 of 2). One cell each for the new arms, n = 64, practice set only.
 
+## Finding 18 — on the map's neurons, the part of u that is NOT the loop direction works best [measured, 1 pass; comparison suggestive]
+
+Prediction committed first (`898dadd`). Same L10+L14 loop neurons and amplitudes throughout:
+d → 23.4% closed; u → 48.4%; **u with its d-part removed → 62.5% closed / 43.8% accuracy**
+(published edit at its own site: 57.8 / 43.8; stock 18.8 / 12.5). Pre-registered T1 ("works")
+confirmed, with the pre-stated caveat that most pushes ⟂ d work at this site (random: 3 of 4).
+
+[suggestive] Removing the d-part raised the closed rate by 14 points (≈ 1.7 SE) and the arm
+beats all four random draws. Reading: subtracting the direction that MARKS loops (Finding 5)
+does not repair them and may get in the way; the effective push lies off that axis. One draw,
+n = 64 — a candidate for a seed repeat and a MATH-500 final, not a claim.
+
 ## Next
 
 - What separates u from d: apply the part of u that is not along d on its own; more random

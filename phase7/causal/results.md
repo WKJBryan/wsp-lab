@@ -182,3 +182,51 @@ that works", not as the explanation of which directions work.
 - More random draws at both sites (hit rate), and random directions at L15+L19 on the
   map's loop neurons of those floors rather than the published columns.
 - Anything at MATH-500 scale.
+
+---
+
+# What u has that d lacks (addendum 4)
+
+**Prediction:** `phase7/protocol.md` addendum 4, committed `898dadd` before the pass ·
+**Budget:** 1 of 1 pass, no retry · same harness, pass_index 1. Model checked against
+`u_on_loop`: identical columns and amplitudes; direction = u with its component along d
+removed, not renormalised (Frobenius norm 0.88 / 0.86 of `u_on_loop`, cos with d = 0).
+
+| arm (all on the L10+L14 loop neurons, same amplitudes) | closed | accuracy | cap-hit |
+|---|---|---|---|
+| d — the mapped loop direction | 23.4% | 20.3% | 76.6% |
+| u — published direction (≈ half d, half the rest) | 48.4% | 32.8% | 57.8% |
+| **u with its d-part removed** (`uperp_on_loop`, new) | **62.5%** | **43.8%** | 48.4% |
+| random directions ⟂ d (four draws) | 51.6, 43.8, 39.1, 17.2 | 32.8, 29.7, 26.6, 12.5 | |
+| reference: published edit at its own site (L15+L19) | 57.8% | 43.8% | |
+| reference: stock | 18.8% | 12.5% | 82.8% |
+
+## Verdict
+
+- **T1 confirmed: works.** u does not need its d-part on these neurons.
+- The caveat fixed in advance applies: most pushes ⟂ d work here, so "works" alone does not
+  show u is special at this site.
+- Beyond the pre-registered rule [suggestive, one draw each]: this is the highest closed rate
+  of any arm in phase 7, level with the published edit (62.5 / 43.8 vs 57.8 / 43.8), from
+  neurons chosen by our map at L10+L14. Removing the d-part RAISED closed by 14 points over
+  full u (≈ 1.7 SE of a difference) and it is above all four random draws. That pattern —
+  d: nothing, u: 48, u minus d: 62 — suggests the d-part is at best dead weight; it is not
+  established at n = 64.
+
+## What now stands (phase 7 causal, all batches)
+
+1. WHERE: the loop-active neurons the map finds are a valid site (random neurons: nothing).
+2. WHICH WAY: the mapped loop direction d is not the lever at L10+L14, and subtracting it may
+   even work against the repair. What works there is off the d axis — the non-d part of u
+   best, most random directions too.
+3. At L15+L19 on the published columns the picture differs: u works, d works weakly, random
+   directions do not. Not reconciled with point 2.
+4. All of it is practice-set evidence, one run per arm.
+
+## Not run
+
+- A repeat of `uperp_on_loop` on a new sampling seed, and a MATH-500 final for it — the
+  natural next step if this is to become a claim (it is a candidate repair found from the
+  map's neurons plus the published direction, not from the map alone).
+- The mirror arm at L15+L19 (the part of d that is not along u, on the published columns).
+- More random draws at both sites.

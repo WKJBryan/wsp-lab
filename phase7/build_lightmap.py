@@ -45,7 +45,12 @@ for s in sorted(set(subject)):
     jobs.append((s, cohen(Q[subject == s], Q[subject != s])))
 jobs.append(("Hard question", cohen(Q[level >= 4], Q[level <= 2])))
 
-packed = np.stack([np.clip(np.rint(d * SCALE), -127, 127).astype(np.int8) for _, d in jobs])  # (9, 24, 3584)
+# trunc, not rint: a unit at 0.79 must not count as "on" at the 0.8 slider step
+packed = np.stack([np.clip(np.trunc(d.astype(np.float64) * SCALE), -127, 127).astype(np.int8) for _, d in jobs])  # (9, 24, 3584)
+for q, (name, d) in zip(packed, jobs):  # self-check: page counts (|int8| >= thr*40) equal the true counts at every slider step
+    for t in range(5, 21):
+        page, true = int((np.abs(q.astype(int)) >= t * SCALE // 10).sum()), int((np.abs(d.astype(np.float64)) >= t / 10).sum())
+        assert page == true, (name, t / 10, page, true)
 ED = np.load(PO / "edit.npz")
 brake = json.loads((HERE / "causal" / "brake_d100.json").read_text())["per_layer"]
 data = dict(
