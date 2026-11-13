@@ -277,3 +277,42 @@ Fixed in advance: the light map, wires and page switch to the no-opening measure
 the outcome (it is the cleaner measurement). The length-regressed variant is reported, not
 adopted: difficulty and length are genuinely related, so it removes real signal too. R2 failing
 means the reading half of the map was materially a length map and Findings 12-13 need re-reading.
+
+## Addendum 8 — pruning: are the loud-but-empty units waste, and how many quiet units can go? (written BEFORE any pruning run, 2026-11-14)
+
+Known before any pruning run, from `scan_positions.py` (activity scan only, no pruning):
+"loud but empty" := |activation on token 0| >= 5 AND >= 50x the unit's usual |activation| on
+every later position. Exactly two units qualify: L14 unit 46 (-75.0 vs 0.13) and L3 unit 0
+(-8.5 vs 0.16). There are NO silent units: the quietest unit still has a per-position SD of
+0.02 and none has max |activation| < 0.05. Also known: holding L14 u46 at its mean (which
+removes the spike) moved the lights above it only modestly (Finding 21).
+
+**Damage meter (forward passes, stock model, `prune_check.py`).** Text: the 47 "clean" stock
+generations of `sets.json`, first 1,500 generated tokens each, teacher-forced. A unit is pruned
+by zeroing its activation at every position (identical to zeroing its down_proj column).
+Reported per arm: mean next-token loss, and the share of positions where the pruned model picks
+the same next token as the unpruned one. "Size" of a unit := per-position SD x column norm.
+Arms: the two spike units; two ordinary units on the same floors (median size); the smallest
+5% / 20% / 50% of all units by size; a random 5% / 20% / 50%. The 128 columns the published
+edit touches are never pruned.
+
+**Generation (practice passes, harness and rules as in every earlier addendum).** Base = the
+published-edit model, because it is the one that works (57.8% closed / 43.8% accuracy on
+practice; stock loops 81% of the time and cannot show damage).
+Pass 1 `orig_prune_spike`: published edit + the two spike columns zeroed.
+Pass 2 `orig_prune_quiet`: published edit + the smallest-X% columns zeroed, X = the largest of
+5 / 20 / 50 whose damage-meter same-token share is >= 95% (5 if none).
+Conditional pass 3: if pass 1 falls to <= 28.8% closed, the matched control (two ordinary units).
+
+| # | prediction (fixed now) |
+|---|---|
+| **S1** | The spike units are not free: zeroing them changes the next token at >= 10x as many positions as zeroing the two ordinary units |
+| **S2** | ...but not vital: `orig_prune_spike` still works (closed >= 38.8%) |
+| **Q1** | Smallest-first beats random at every dose (higher same-token share), and the smallest 5% keeps >= 97% of next tokens |
+| **Q2** | The smallest 50% does heavy damage (< 80% same token) |
+| **Q3** | `orig_prune_quiet` still works (closed >= 38.8%) |
+
+Readings: S1 false and S2 true -> the loud units are waste and can simply be removed. S1 true
+and S2 true -> they do something small and removable. S2 false -> they are load-bearing
+anchors, the opposite of waste. Q1-Q3 say how much of the model is removable by the simplest
+rule; anything that survives is a candidate for "labelled as not needed for maths".
