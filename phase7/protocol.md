@@ -56,3 +56,54 @@ Fixed analyses (u15, u19 = residual directions of the original edit; chance |cos
 Reading rules, fixed now: held-out AUC ≥ 0.75 "separates", 0.60–0.75 "weak", < 0.60 "does not".
 Top-64 overlap ≥ 8 "coincide", ≤ 3 "do not coincide". No causal claims from this part —
 causal spot-checks stay with deliverable 3.
+
+## Addendum — part 3 (question-type map) analysis plan, written BEFORE probing (2026-11-13)
+
+What lights up while the stock model READS different questions (no generation, so outcome
+cannot leak in). All 500 MATH-500 prompts; labels = dataset `subject` (7) and `level` (1–5)
+from `phase3/data/math500` (order verified 500/500 against `phase3c/problems.json`).
+Alternating fit / held-out halves. Readouts: `last` (final prompt token, just before
+thinking starts — identical embedding for every prompt, so layer −1 is a built-in chance
+control) and `mean` (mean over prompt tokens — its embedding layer is the lexical,
+bag-of-words baseline). Script: `probe_questions.py`. Not git-committed before probing
+(working tree shared with another session); ordering rests on this dated note.
+
+- **Q1 subject.** Nearest-centroid classifier per layer, fit on half 0, accuracy on half 1.
+  Majority baseline 24.8%. "Decodable" ≥ 50%. "Model-added" = best layer beats the `mean`
+  embedding-layer accuracy by ≥ 10 points.
+- **Q2 difficulty.** Direction = mean(level 4–5) − mean(level 1–2), fit on half 0; held-out AUC
+  of level 4–5 vs level 1–2. Same 0.75 / 0.60 reading rules as part 2.
+- **Q3 neurons.** η² (variance explained by subject) per MLP neuron, `mean` readout;
+  per-layer count with η² > 0.3; split-half reliability.
+- **Q4 relation to the loop map.** (a) cos(loop direction d from part 2, difficulty direction)
+  per layer: |cos| ≥ 0.2 "related", < 0.1 "unrelated". (b) Does the question-reading
+  difficulty projection predict which problems the ORIGINAL-EDIT model later loops on
+  (81 stuck vs 367 clean, phase 3c)? Held-out AUC, with dataset level alone as the comparator.
+  (c) Top-64 loop neurons vs top-64 subject neurons per layer; chance overlap 1.14.
+
+## Addendum — deliverable 3, causal spot-checks on the loop band (written BEFORE any pass, 2026-11-13)
+
+Question: does the map PREDICT? Build a loop brake from our activation map alone (no use of
+the original edit's columns or direction) in the upstream band (atlas Finding 8) and see
+whether the stock model stops looping. Builder: `build_brake.py` (64 neurons per layer at
+L10 and L14, direction d from part 2, in-loop push = 1.5 × the loop–pre residual gap × dose).
+
+Budget: the dedicated allowance of **6 practice passes**, and no other generation of any kind
+(no offline tuning — ISSUES #12). Harness: `phase5/eval_pass5.py`, unchanged — 64 GSM8K
+practice problems (disjoint from the MATH-500 generations the map was fit on), cap 8192,
+pass_index 1 for every arm. Primary metric: `closed_rate` (thinking closes). n = 64, so one
+arm has SE ≈ 6 points and a difference SE ≈ 8.
+
+| pass | arm | prediction (fixed now) |
+|---|---|---|
+| 1 | stock | closed 10–30% (phase 4 measured 18.8%) |
+| 2 | brake, dose 1.0 | **H1:** closed ≥ stock + 20 → CONFIRMED; < stock + 10 → REFUTED; else INCONCLUSIVE |
+| 3 | same neurons + amplitudes, random direction ⟂ d | **H2:** within ±10 of stock → direction-specific; ≥ stock + 20 → H1 is not about d |
+| 4 | brake, dose 0.5 | **H3:** closed between stock and the dose-1.0 arm (±6 tolerance) |
+| 5 | brake, dose 2.0 | **H3:** ≥ dose 1.0 − 6, OR a cliff (accuracy below stock / degenerate tails) — both recorded, neither refutes |
+| 6 | selective brake (zero standing push on clean thinking), dose 1.0 | **H4 (exploratory):** closed within 10 of pass 2 and accuracy ≥ pass 2 |
+
+Order fixed as listed; no arm is added, dropped or re-run for a better number. A pass that
+dies for engine reasons (GPU held by another process, crash) is re-run once and logged.
+Accuracy, cap-hit, mean tokens and stuck-sample tails are recorded for every arm.
+These are practice-scale checks: a CONFIRMED here licenses a MATH-500 final, not a claim.
