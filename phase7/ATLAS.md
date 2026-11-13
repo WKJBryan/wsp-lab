@@ -160,15 +160,31 @@ this set). Doses 0.5× and 2.0× of the d-brake: no effect either.
 The random directions are not accidentally meaningful (|cos| with u15/u19 ≤ 0.04). They are,
 relative to natural variation, a far larger kick: ≈ 27–30 SD vs ≈ 9–11 SD along d.
 
-Reading [inferred]: the map locates WHEN to act (loop-gated neurons), not WHAT to write.
-Finding 5's direction may be a readout of repetition rather than its cause. Whether the
-ORIGINAL edit's direction matters is now an open, testable question (same columns, random
-direction — never run by anyone).
+Reading at the time [inferred, superseded by Finding 16]: the map locates WHEN to act
+(loop-gated neurons), not WHAT to write. Finding 5's direction may be a readout of repetition
+rather than its cause.
+
+## Finding 16 — replication: gating and size matter; direction matters too, just not the mapped one [measured, 9 passes]
+
+Predictions committed first (`190cf5a`); table in `causal/results.md`.
+
+- Finding 15 REPLICATES: 3 of 4 random directions on the L10+L14 loop neurons work
+  (51.6 / 43.8 / 39.1% closed; one gives 17.2); a new sampling seed gives 43.8.
+- The loop neurons are needed: same amplitudes on random neurons → 23.4% (nothing).
+- Size is needed: the first random direction at one-third size → 28.1% (nothing).
+- Finding 15's reading was TOO STRONG. On the published edit's own columns, the published
+  direction gives 57.8% but two random directions give 25.0 / 29.7. My pre-registered guess
+  ("at least one works") was wrong: there, direction matters.
+
+Unreconciled: at L10+L14 the mapped direction fails and most random ones work; at L15+L19
+the published direction works and random ones do not. With 4 and 2 draws this cannot be
+called a site effect. The arms that would separate site from direction (d on the published
+columns; u on the L10+L14 neurons) have not been run.
 
 ## Next
 
-- Replicate Finding 15: more random seeds; random neurons as a gating control; a
-  variance-matched d-vs-random comparison; the original edit's columns with a random direction.
+- Separate site from direction: mapped d on the published columns; published u on the
+  L10+L14 loop neurons; enough random draws at both sites to estimate a hit rate.
 - Difficulty-controlled foreseeability: phase-5 finals have 4 samples per problem with mixed
   outcomes — same problem, stuck vs clean.
 - Question types beyond MATH-500: prompts from other task families (code, plain QA, instruction

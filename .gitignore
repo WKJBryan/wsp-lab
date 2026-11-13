@@ -30,3 +30,6 @@ phase7/probe_out/
 
 # phase-7 causal-check candidate models (rebuild via phase7/build_brake.py)
 phase7/cands/
+
+# generated page (rebuild via phase7/build_lightmap.py)
+phase7/lightmap.html
