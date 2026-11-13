@@ -10,6 +10,13 @@ Notable changes, bugs, and fixes. Format follows [Keep a Changelog](https://keep
   - **P1 assignment FAIL at 3/5** (bar ≥4): parity↔random swap; post-hoc diagnosis — memorized noise carries the "huge norms + rough function" signature I attributed to overtrained parity (random net memorized 86.5% of 4K random labels).
   - Verdicts and integrity ordering in `phase2/results.md`.
 
+## [0.8.0] — 2026-11-13
+
+### Added
+- **Phase 4 complete — cross-editor blind surgery (main-agent session):** GLM-5.3-Flash (blind, 6 passes) repaired the loop pathology: **6.0% → 25.2% MATH-500** (pre-registered SUCCESS ≥16.0) via a byte-verified 3-row rescale (`</think>` ×1.55, comma ×0.5, `im_end` ×1.15); C2 matched-random control 2.2% — content, not magnitude. mimo-v2.6-flash: competent inspection (independently caught the harness bug; baseline matched GLM pass-1 exactly — determinism cross-check) but **no edit attempted** across three continuations; long-horizon agency is the cross-editor difference.
+- ISSUES #11 closed in full: duplicate-keyword evaluator bug shipped twice, caught twice by editor models; author's ast.parse check was insufficient (py_compile decides — repeated kwargs pass ast.parse). Repo file compiler-verified.
+- phase3b edit-size claim corrected per ISSUES #14, independently re-verified (64 cols/tensor, ≈130.2K values, rest bit-identical — the original's release matches their claim).
+
 ## [0.7.0] — 2026-11-13
 
 ### Added
