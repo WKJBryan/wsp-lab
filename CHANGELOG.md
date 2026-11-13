@@ -10,6 +10,11 @@ Notable changes, bugs, and fixes. Format follows [Keep a Changelog](https://keep
   - **P1 assignment FAIL at 3/5** (bar ≥4): parity↔random swap; post-hoc diagnosis — memorized noise carries the "huge norms + rough function" signature I attributed to overtrained parity (random net memorized 86.5% of 4K random labels).
   - Verdicts and integrity ordering in `phase2/results.md`.
 
+## [0.9.0] — 2026-11-13
+
+### Added
+- **Phase 4b/4c: three-editor convergence — all blind arms succeed.** mimo-v2.6-flash retry (step-driven harness): **27.8%** MATH-500 via single-row ×1.5 edit; mimo-v2.6-pro (user-requested arm): **27.8%** (mathematically identical edit, bf16-rounding-different bytes, identical score). With GLM-Flash's 25.2%, **three independent blind editors converged on the same weight row (248069, the </think> embedding) at near-identical doses** — the strongest evidence yet that blind weight-space repair is real and the target fundamental. Harness findings: session format (one-ask vs step-driven) gates mimo performance; typed structured-submit replaced by plain replies after two session deaths; baseline determinism proven byte-identical across all editors.
+
 ## [0.8.0] — 2026-11-13
 
 ### Added

@@ -1,8 +1,45 @@
 # Phase 4 results — external editor models, blind, on the working stack
 
-**Date:** 2026-11-12/13 · **Protocol:** `phase4/protocol.md` (committed `a53977a`, before either session)
+**Date:** 2026-11-12/13 · **Protocol:** `phase4/protocol.md` (committed `a53977a`, before any session)
 **Engine:** vLLM 0.33 under WSL2 (phase-3c stack) · **Editors:** host-configured models via dynamic-workflow
 subagents, per the user's instruction ("spawn subagent to be able to use it").
+
+> **Updated 2026-11-13 (evening) with phases 4b/4c** (user-requested mimo retry + mimo-pro arm):
+> see "The convergence result" below — three blind editors have now succeeded, all converging on
+> the same single weight row. The mimo-flash "no edit attempted" verdict below stands as recorded
+> for the ONE-ASK format; the step-driven retry (4b) unlocked the same model.
+
+## Final capability matrix (identical harness, engine, decoding, scorer; final = full MATH-500)
+
+| Arm | Tier | Session format | Passes used | MATH-500 | Verdict |
+|---|---|---|---|---|---|
+| Stock | — | — | — | **6.0%** | baseline |
+| C2 random noise (matched norm, same rows) | — | — | — | **2.2%** | control |
+| **GLM-5.3-Flash** | flash | one ask, self-directed | 6 | **25.2%** | ✅ SUCCESS (bar ≥16.0) |
+| mimo-v2.6-flash (arm 1) | flash | one ask + continuations | 1 | — | ❌ no edit attempted |
+| **mimo-v2.6-flash (retry, 4b)** | flash | step-driven, 5 asks | 7 | **27.8%** | ✅ SUCCESS |
+| **mimo-v2.6-pro (4c)** | pro | step-driven, 5 asks | 7 | **27.8%** | ✅ SUCCESS |
+| Original's editor (hinted; published edit) | — | 50 passes | — | 39.4% | reference |
+
+**The convergence result (the headline):** GLM-5.3-Flash (×1.5503), mimo-v2.6-flash (×1.50), and
+mimo-v2.6-pro (×1.50) — three independent blind sessions, two model families, two tiers — all
+localized the same single row of the 873M-parameter model (the `</think>` tied-embedding row,
+248069) and chose near-identical multiplicative doses. GLM additionally rescaled comma (×0.5)
+and `im_end` (×1.15) rows; both mimo arms converged on the single-row edit alone. All three
+measured the same sharp dose ceiling (GLM: ×3.0 seizure; mimo-pro: ×2.0 collapse to 10.9% with
+token spam). The mimo-flash and mimo-pro candidates differ only by bf16 rounding (mathematically
+identical edits) and score identically.
+
+**Harness format matters as much as model choice:** mimo-flash failed under the one-ask marathon
+format but succeeded under step-driven asks; the typed structured-report mechanism was a recurring
+mimo failure point (two sessions died on it) and was replaced by plain-text replies in 4c.
+Determinism is proven: all three editors' baseline pass 1 returned byte-identical statistics.
+
+---
+
+## Original phase-4 record (arms as first run)
+
+
 
 ## The question
 
