@@ -316,3 +316,41 @@ Readings: S1 false and S2 true -> the loud units are waste and can simply be rem
 and S2 true -> they do something small and removable. S2 false -> they are load-bearing
 anchors, the opposite of waste. Q1-Q3 say how much of the model is removable by the simplest
 rule; anything that survives is a candidate for "labelled as not needed for maths".
+
+## Addendum 9 — knockout test of the subject labels (written BEFORE any run, 2026-11-14)
+
+Question: if the units tagged for a subject are removed, does that subject get worse, and more
+than the other subjects do? Forward passes only, stock model, `knockout_subjects.py`.
+
+To keep the test from grading its own homework, the 500 problems are split by index:
+even-index problems choose the units, odd-index problems are the test.
+
+- **Units to knock out, per subject (7 subjects):** on the even half, d of every unit for
+  "this subject vs the other six" while reading, prompt length regressed out (as in the labels).
+  Score = d x sign of the unit's average activation, so a high score means the unit is MORE
+  active in size on that subject. The 1,000 highest-scoring units (1.2% of all units) are
+  zeroed at every position.
+- **Control, per subject:** the same number of units on each floor, drawn at random from the
+  units not in that knockout set.
+- **Readout:** the stock model's own saved answers to the odd-half problems, first 300
+  generated tokens each, teacher-forced. Per subject of the question: extra next-token loss
+  caused by the knockout (pruned minus unpruned). "Own" = extra loss on the knocked-out
+  subject's text; "others" = mean extra loss over the other six subjects' text.
+  Selectivity = own / others.
+
+Known in advance and stated as a limit: a unit that is more active on geometry text removes
+more when zeroed on geometry text, so some selectivity is built in. That is still what "this
+unit is used for geometry" means, but it is not evidence of a dedicated geometry mechanism.
+Also: the labels come from reading the question, the readout is the model writing its answer.
+
+| # | prediction (fixed now) |
+|---|---|
+| **K1** | Geometry: knocking out its units hurts geometry text more than the other subjects (selectivity > 1) and more selectively than its control (control selectivity within 0.8-1.25) |
+| **K2** | The same holds for at least 5 of the 7 subjects |
+| **K3** | For at least 4 of the 7 subjects, its own knockout is the most damaging of the seven knockouts on its own text |
+| **K4** | The effect is modest: median selectivity across subjects between 1.1 and 2 |
+
+Readings: K1-K3 hold -> the subject labels are causal in the weak sense (remove them and that
+subject suffers most), and can be promoted from "goes with" to "used for". K1/K2 fail -> the
+labels are readouts of what the question is about, not parts the model leans on for it; they
+stay "goes with". Either way no generation run is made in this addendum.
