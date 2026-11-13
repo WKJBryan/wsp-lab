@@ -107,3 +107,21 @@ Order fixed as listed; no arm is added, dropped or re-run for a better number. A
 dies for engine reasons (GPU held by another process, crash) is re-run once and logged.
 Accuracy, cap-hit, mean tokens and stuck-sample tails are recorded for every arm.
 These are practice-scale checks: a CONFIRMED here licenses a MATH-500 final, not a claim.
+
+## Addendum 2 — replication of Finding 15 (written BEFORE any pass, 2026-11-13)
+
+Finding 15 (random-direction control closed 51.6% vs stock 18.8%) rests on one direction draw.
+Budget: **9 practice passes**, same harness and rules as the first batch (no offline generation,
+fixed order, one retry only for engine failure). "Works" := closed ≥ 38.8% (stock + 20);
+"does nothing" := closed ≤ 28.8% (stock + 10). Builder flags in `build_brake.py`.
+
+| pass | arm | prediction (fixed now) |
+|---|---|---|
+| 1–3 | `rand_s2`, `rand_s3`, `rand_s4`: first-batch neurons + amplitudes, three NEW random directions | **R1:** REPLICATED if ≥ 2 of 3 work; FLUKE if ≤ 1 of 3 works |
+| 4 | `brake_rand` again at pass_index 2 (same model as first-batch pass 3, new sampling seed) | **R2:** works; if it does nothing, pass 3 was sampling luck |
+| 5 | `rand_lo`: random direction at dose 0.33 (≈ 9–10 SD, the size of the d-brake's push) | **R3 (kick size):** does nothing. If it works, size is not the explanation |
+| 6 | `randneur`: same amplitudes on 64 random NON-loop neurons, random direction | **R4 (gating):** does nothing. If it works, the loop neurons are not needed either |
+| 7 | `orig`: the original published edit, pass_index 1 | reference: closed 45–65% (phase 5 measured 56.2%) |
+| 8–9 | `origcols_rand_s1`, `_s2`: the ORIGINAL edit's 64 columns and amplitudes at L15/L19, random direction ⟂ u | **R5 (open question):** my guess — at least one of two works, i.e. the published direction is not required. Both do nothing → the published direction matters |
+
+All at pass_index 1 unless stated. Practice scale only (n = 64, SE ≈ 6 per arm).

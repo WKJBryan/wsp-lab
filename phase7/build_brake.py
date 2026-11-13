@@ -35,8 +35,14 @@ ap.add_argument("--layers", default="10,14")
 ap.add_argument("--dose", type=float, default=1.0)
 ap.add_argument("--random", action="store_true")
 ap.add_argument("--selective", action="store_true")
+# replication arms (protocol addendum 2): defaults reproduce the first batch exactly
+ap.add_argument("--seed", type=int, default=1, help="seed of the random direction / random neurons")
+ap.add_argument("--random-neurons", action="store_true", help="same amplitudes on 64 random non-loop neurons")
+ap.add_argument("--orig-cols", action="store_true",
+                help="use the ORIGINAL edit's columns and amplitudes at L15/L19 (direction u unless --random)")
 args = ap.parse_args()
-layers = [int(x) for x in args.layers.split(",")]
+layers = [15, 19] if args.orig_cols else [int(x) for x in args.layers.split(",")]
+ED = np.load(PO / "edit.npz")
 
 R, NZ = np.load(PO / "resid.npz"), np.load(PO / "neurons.npz")
 
@@ -50,7 +56,8 @@ def neuron_stats(region):
 
 means = {r: neuron_stats(r) for r in ("loop", "pre", "clean", "deep")}
 plan, meta = {}, dict(name=args.name, layers=layers, dose=args.dose, random=args.random,
-                      selective=args.selective, ncol=NCOL, gain=GAIN, per_layer={})
+                      selective=args.selective, seed=args.seed, random_neurons=args.random_neurons,
+                      orig_cols=args.orig_cols, ncol=NCOL, gain=GAIN, per_layer={})
 for L in layers:
     g = R["resid_loop"][:, L + 1].astype(np.float64).mean(0) - R["resid_pre"][:, L + 1].astype(np.float64).mean(0)
     gap, d = np.linalg.norm(g), g / np.linalg.norm(g)
@@ -63,13 +70,19 @@ for L in layers:
         mc = means["clean"][0][L][cols]
         a = a - (a @ mc) / (mc @ mc) * mc
     a = a * (-GAIN * gap * args.dose) / (a @ delta_act)
+    if args.random_neurons:  # same amplitude vector, on neurons that are NOT the loop-active ones
+        pool = np.setdiff1d(np.arange(len(cohen)), cols)
+        cols = np.sort(np.random.default_rng(5000 * args.seed + L).choice(pool, NCOL, replace=False))
+    if args.orig_cols:
+        cols, a, d = ED[f"cols{L}"], ED[f"a{L}"].astype(np.float64) * args.dose, ED[f"u{L}"].astype(np.float64)
     direction = d
     if args.random:
-        r = np.random.default_rng(1000 + L).standard_normal(1024)
+        r = np.random.default_rng(1000 * args.seed + L).standard_normal(1024)
         r -= (r @ d) * d
         direction = r / np.linalg.norm(r)
     drive = {reg: round(float(a @ means[reg][0][L][cols]), 3) for reg in means}
-    assert abs((drive["loop"] - drive["pre"]) + GAIN * gap * args.dose) < 0.02 * GAIN * gap * args.dose + 0.01
+    if not (args.random_neurons or args.orig_cols):
+        assert abs((drive["loop"] - drive["pre"]) + GAIN * gap * args.dose) < 0.02 * GAIN * gap * args.dose + 0.01
     plan[L] = (cols, np.outer(direction, a))
     meta["per_layer"][f"L{L}"] = dict(resid_gap=round(float(gap), 3), cols=cols.tolist(),
                                       a=[round(float(x), 5) for x in a], drive=drive,
