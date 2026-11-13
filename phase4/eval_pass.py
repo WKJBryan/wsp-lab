@@ -22,6 +22,14 @@ SEED = 20261105
 MAX_PASSES = 10
 
 
+def gpu_free_mib() -> int:
+    try:
+        out = os.popen("nvidia-smi --query-gpu=memory.free --format=csv,noheader,nounits").read()
+        return int(out.splitlines()[0].strip())
+    except Exception:
+        return 1 << 30  # if the query fails, don't block the pass
+
+
 def spend_pass(hypothesis: str) -> int:
     cnt_file = "eval_counter.txt"
     n = 0
@@ -30,6 +38,10 @@ def spend_pass(hypothesis: str) -> int:
     if n >= MAX_PASSES:
         print(json.dumps(dict(error=f"budget exhausted: {n}/{MAX_PASSES} passes spent")))
         sys.exit(1)
+    if gpu_free_mib() < 27000:
+        # refuse WITHOUT charging: another process holds the GPU; retry later
+        print(json.dumps(dict(error="GPU busy (another process holds VRAM); pass not charged, retry shortly")))
+        sys.exit(2)
     open(cnt_file, "w").write(str(n + 1))
     with open("ledger.md", "a") as f:
         f.write(
