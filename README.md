@@ -21,6 +21,7 @@ The original used one editor (OpenAI gpt-6-astra via Codex CLI) and released [fu
 - [x] Phase 3b — corrected decoding (user-initiated): **VOID locally** — the model non-terminates under every decoding our transformers-on-Windows stack can produce (8/8 pilot runs loop to 32,768 with repetition tails, penalty on and off); scorer replaced after math-verify broke on this platform; the original's edit transfers per concordant third-party vLLM replications (50.6/51.0/61.7%) — see [phase3b/results.md](phase3b/results.md) and ISSUES #8–9
 - [x] Phase 3c — vLLM under WSL2, full 32K budget: **the original's edit TRANSFERS on local hardware — 6.0% → 39.4%** (terminations 9% → 83%; engine diagnosis proven by probe; closes the arc of user-initiated corrections) — [phase3c/results.md](phase3c/results.md)
 - [x] Phase 4 (+4b/4c) — external editors, blind: **GLM-5.3-Flash 25.2%, mimo-v2.6-flash 27.8%, mimo-v2.6-pro 27.8%** — three blind editors, two families, converging on the same single weight row (C2 random control 2.2%; original's hinted editor 39.4%) — [phase4/results.md](phase4/results.md)
+- [ ] Phase 8 — the missing baselines (pre-registered, not run): stock with thinking off under Qwen's card settings, a decoding-only `</think>` logit-bias control, budget forcing, the single-row edit split into its output and input halves, and accuracy on finished answers — [phase8/protocol.md](phase8/protocol.md)
 
 Results land in `phase1/results.md`, `phase2/results.md`, ... as each phase completes.
 
