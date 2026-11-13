@@ -28,3 +28,7 @@
 2026-11-13T17:55:49+08:00 done origcols_rand_s1
 2026-11-13T17:56:10+08:00 start origcols_rand_s2 pass_index 1 try 1
 2026-11-13T17:58:25+08:00 done origcols_rand_s2
+2026-11-13T19:36:28+08:00 start origcols_d pass_index 1 try 1
+2026-11-13T19:39:12+08:00 done origcols_d
+2026-11-13T19:39:32+08:00 start u_on_loop pass_index 1 try 1
+2026-11-13T19:42:19+08:00 done u_on_loop

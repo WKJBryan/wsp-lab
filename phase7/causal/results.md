@@ -111,3 +111,74 @@ at L10+L14, and some arbitrary ones are.
   — the two arms that would separate "site" from "direction".
 - More random directions at both sites (enough draws to estimate a hit rate).
 - Anything at MATH-500 scale.
+
+---
+
+# Site versus direction (addendum 3)
+
+**Predictions:** `phase7/protocol.md` addendum 3, committed `8dc3a17` before any pass ·
+**Budget:** 2 of 2 passes, no retries · same harness, pass_index 1. Both models were checked
+against the arms they pair with: identical columns, amplitudes and Frobenius norm; only the
+direction differs (`origcols_d` vs `origcols_rand_s1`; `u_on_loop` vs `brake_d100`).
+
+| pass | arm | closed | accuracy | reading |
+|---|---|---|---|---|
+| 1 | `origcols_d` — published columns + amplitudes (L15/L19), our mapped direction d | 40.6% | 26.6% | works (1.8 above the line) |
+| 2 | `u_on_loop` — L10+L14 loop neurons + brake amplitudes, published u15 / u19 | 48.4% | 32.8% | works |
+
+The full site × direction table, closed % (stock 18.8):
+
+| direction | L10+L14 loop neurons | L15+L19 published columns |
+|---|---|---|
+| published u | **48.4** (new) | 57.8 |
+| our mapped d | 23.4 (also 20.3 / 18.8 at other doses) | **40.6** (new) |
+| random | 51.6, 43.8, 39.1, 17.2 | 25.0, 29.7 |
+
+## Verdicts
+
+- **S1 confirmed, narrowly.** d on the published columns works by the rule (40.6 ≥ 38.8), but
+  it is 17 points below u on the same columns (57.8) — about 2 SE of a difference. d is a
+  weaker stand-in for u there (cos 0.71 / 0.74), not an equal.
+- **S2: my guess was WRONG.** u works on the L10+L14 loop neurons (48.4%), where d on the same
+  neurons at the same size does nothing. cos(u, d) there is 0.48 (L10) / 0.51 (L14).
+- By the reading fixed in advance ("both work"): u-like directions work at both sites; d fails
+  at L10+L14 for a reason specific to d there.
+
+## What now stands
+
+1. The published direction u is PORTABLE: it works on its own columns and on the loop
+   neurons our map picked four to five floors earlier. u is the only direction that works
+   at both sites.
+2. Our mapped direction d is not the lever. It works only where it is mostly u (L15/L19),
+   and less well than u.
+3. The loop neurons from the map are a valid place to act: with u they give 48.4%, within
+   noise of the published edit's 57.8% (difference SE ≈ 8).
+4. Still unreconciled: random directions work at L10+L14 (3 of 4) and not at L15+L19
+   (0 of 2), and they are unrelated to u (|cos| ≤ 0.04). So u is not the ONLY thing that
+   works at L10+L14.
+
+## Free check — the "size of the kick" account is dead (saved activations, no generation)
+
+Computed after the predictions were committed. In-loop push divided by the clean-thinking SD
+of the residual along the push direction:
+
+| arm | L10 / L15 | L14 / L19 | outcome |
+|---|---|---|---|
+| d on loop neurons | 10.8 SD | 8.5 SD | nothing |
+| u on loop neurons | 9.6 SD | 8.1 SD | works |
+| random s1 on loop neurons | 30.6 SD | 27.2 SD | works |
+| random s2 on loop neurons | 29.4 SD | 26.8 SD | nothing |
+| published u on published columns | 5.6 SD | 4.7 SD | works |
+| d on published columns | 5.7 SD | 4.5 SD | works (weakly) |
+| random s1 on published columns | 22.1 SD | 19.2 SD | nothing |
+
+Size relative to natural variation does not sort working from failing arms (5 SD works,
+29 SD fails). R3 (one-third size fails) still holds as "needs enough size along a direction
+that works", not as the explanation of which directions work.
+
+## Not run
+
+- What separates u from d: the part of u that is not along d, applied alone.
+- More random draws at both sites (hit rate), and random directions at L15+L19 on the
+  map's loop neurons of those floors rather than the published columns.
+- Anything at MATH-500 scale.

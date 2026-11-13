@@ -181,10 +181,27 @@ the published direction works and random ones do not. With 4 and 2 draws this ca
 called a site effect. The arms that would separate site from direction (d on the published
 columns; u on the L10+L14 neurons) have not been run.
 
+## Finding 17 — the published direction is portable; the mapped one is not the lever [measured, 2 passes]
+
+Predictions committed first (`8dc3a17`); table in `causal/results.md`.
+
+- u on the L10+L14 loop neurons (the map's neurons and amplitudes): **48.4% closed** — works,
+  where d on the same neurons at the same size gives 23.4%. My pre-registered guess was wrong.
+- d on the published columns at L15/L19: **40.6%** — works by the rule, but 17 points under
+  u there (57.8%). d is 0.71–0.74 aligned with u at those floors, 0.48–0.51 at L10/L14.
+- So u is the one direction that works at both sites; d works only to the extent it is u.
+  Finding 5 stands as description (d marks loops) — d is a blurred copy of the lever, not it.
+- The map's NEURONS are a good place to act (48.4% vs 57.8%, within noise at n = 64).
+- The "large out-of-distribution kick" account (Finding 15) is dead: working pushes range
+  from 5 to 30 SD of natural variation, failing ones from 9 to 29 SD.
+
+Unreconciled: random directions unrelated to u work at L10+L14 (3 of 4) and not at L15+L19
+(0 of 2). One cell each for the new arms, n = 64, practice set only.
+
 ## Next
 
-- Separate site from direction: mapped d on the published columns; published u on the
-  L10+L14 loop neurons; enough random draws at both sites to estimate a hit rate.
+- What separates u from d: apply the part of u that is not along d on its own; more random
+  draws at both sites to estimate a hit rate.
 - Difficulty-controlled foreseeability: phase-5 finals have 4 samples per problem with mixed
   outcomes — same problem, stuck vs clean.
 - Question types beyond MATH-500: prompts from other task families (code, plain QA, instruction
