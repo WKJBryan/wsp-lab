@@ -37,10 +37,120 @@ amplifying −v overlaps the semantics of offering-another-way-to-continue — p
 "Wait, but let me reconsider…" attractor region. Alignments are weak (|a| ≤ 0.10), so this
 is a hypothesis, not a claim. Tied lm_head means the same map covers output logits.
 
-## Next (needs GPU, queued behind phase-5 finals)
+## Part 2 — activation probe (2026-11-13)
 
-- Activation probing on stuck-vs-clean generations: which neurons actually fire differently
-  (the "light up" map), overlaid on Finding 1's geometry — the key test of Finding 2's
-  activation-vs-geometry distinction.
+Stock model, forward passes only, over saved phase-3c generations. Lists (`sets.json`), probe
+script and analysis plan were committed before probing (`b157803`; protocol addendum A1–A4).
+8,544 positions from 187 generations: `loop` (in sustained repetition), `pre` (same
+generations, before onset), `clean` (stock generations that finished), `deep` (depth-matched
+non-looping control). Directions fit on half the generations, scored on the other half.
+Numbers: `atlas_activation.json`. u15 / u19 = residual directions of the original edit.
+
+Loop onset itself [measured, `build_sets.py` definition]: stock median 6,500 tokens
+(p10 3,000 / p90 11,250); under the original edit 13,250. Stock's clean thinking has median
+length 3,747 — clean generations are the ones that finish before the loop would begin.
+
+## Finding 5 — the activation-side loop direction is the edit's direction [measured, held-out]
+
+d = mean(loop) − mean(pre) per layer. cos(d, u15) = **0.71** after L15, cos(d, u19) = **0.74**
+after L19 (chance 0.03); 0.4–0.6 at every layer from L1 on, ~0 at the embeddings. Held-out AUC
+of the projection: loop-vs-pre and loop-vs-deep **0.97–0.99** from L2 onward (pre-registered
+"separates" ≥ 0.75); the authors' own u15 separates equally well (0.98). 40/40 held-out
+generations have higher projection in-loop than pre-loop. `fig_a1_layers.png`.
+
+## Finding 6 — the edited columns ARE the differentially-active neurons [measured]
+
+Resolves Finding 2: the 64 edited columns overlap the top-64 loop-vs-pre neurons **20 of 64 at
+L15** and **9 of 64 at L19** (chance 1.14; pre-registered "coincide" ≥ 8). Median edited column
+sits at the 94.5th (L15) / 73rd (L19) percentile of effect size. The authors' selection was
+activation-driven, as inferred. 92% of edited columns have amplitude sign opposite to their
+loop-vs-pre shift: neurons that fire more in loops subtract u. `fig_a2_neurons.png`.
+
+## Finding 7 — the original edit is a state-dependent brake [measured]
+
+Drive s(t) = Σ a_j·act_j (the push the edit adds along u at each token): L15 **−2.32 in loops
+vs −0.56 pre / −0.41 clean / −0.55 deep**; L19 **−3.53 vs −0.66 / −0.63 / −0.75**. AUC
+loop-vs-anything ≤ 0.05 (i.e. ≥ 0.95 separation). Aligned to onset, the drive is nearly flat
+for 2,000 tokens, then doubles within 250 tokens of onset and keeps growing. `fig_a3_onset.png`.
+Not perfectly selective: outside loops the push is still ≈ 1 SD of the residual along u
+(0.41 vs SD 0.43 at L15). [inferred] That standing push is a candidate for the phase-5
+trade-off (more dose → worse hard-problem answers). Untested.
+
+## Finding 8 — the strongest differential neurons sit upstream, in L10–L14 [measured]
+
+Neurons with |Cohen's d| > 0.8 (loop vs pre): 441 in L10, 396 in L11, 340 in L12, 309 in L13,
+435 in L14, vs 233 in L15 and 67 in L19; < 25 in L0–L5. Split-half reliability r ≈ 0.98.
+Finding 1 (weight-side: no hotspot) does not hold activation-side: there is a mid-depth band.
+
+## Finding 9 — to-be-stuck generations are distinguishable early [exploratory, confounded]
+
+Within the first 1,500 tokens, held-out AUC to-be-stuck vs clean = 0.83 (positions) / 0.89
+(generations, n = 40 vs 23) at L13. Problem difficulty is NOT controlled (clean stock problems
+are easier), so this may read "hard problem", not "will loop". A lead only.
+
+## Limits of part 2
+
+- Correlational. The direction marks "this context is repeating"; that it also DRIVES the loop
+  rests on the edit's measured effect (phase 3c), not on this probe.
+- `deep` text was written by the edited model and read by stock.
+- One model (stock 0.8B), one benchmark, 12-gram onset definition.
+
+## Part 3 — question-type map (2026-11-13)
+
+Stock model reading all 500 MATH-500 prompts (no generation). Plan Q1–Q4 written in the
+protocol addendum before probing (dated note, not a commit). Fit on half, scored on the other
+half. Numbers: `atlas_questions.json`. Script: `probe_questions.py`.
+
+## Finding 10 — subject is readable, modestly [measured, held-out]
+
+Nearest-centroid accuracy over 7 subjects (chance 24%): **54%** at the last prompt token
+(after L22; 24% at the embedding control, as designed) and **62%** averaged over prompt tokens
+(after L5) vs 43% for the lexical embedding baseline — pre-registered "decodable" and
+"model-added" both met. Uneven: Intermediate Algebra 80%, Geometry / Precalculus / Counting
+36–37% at the last token. `fig_q1_decoding.png`.
+
+## Finding 11 — the main axis of the question map is difficulty, partly length [measured + post-hoc control]
+
+Hard (level 4–5) vs easy (level 1–2): held-out AUC **0.84** after L12 at the last token —
+"separates". The top principal component of the question map orders questions easy → hard.
+POST-HOC control (not in the plan): prompt length alone gives AUC 0.73; with length regressed
+out the activation AUC is **0.77** (still ≥ 0.75 from L9 on). So a real difficulty signal
+remains, smaller than the raw number.
+
+## Finding 12 — subject-selective neurons live late, L16–L22 [measured]
+
+Neurons with η² > 0.3 for subject: 169–314 per layer in L16–L22, 6–24 in L7–L11 (split-half
+r 0.72–0.84). The strongest ones mostly split advanced topics (Intermediate Algebra,
+Precalculus) from the rest. `fig_q2_neurons.png`.
+
+## Finding 13 — the loop circuit and the question-type circuit are different places [measured]
+
+- Neurons: top-64 loop neurons vs top-64 subject neurons overlap **0–3 per layer** (chance
+  1.14). Loop band L10–L14 (Finding 8); subject band L16–L22 (Finding 12).
+- Directions: |cos(loop direction, difficulty direction)| ≤ 0.14 at the last token (< 0.1 at
+  most layers; 0.10–0.14 at L15–L19) — largely "unrelated" by the pre-registered rule.
+  With the mean-token readout it is 0.1–0.2: in between, not settled.
+
+## Finding 14 — question-reading activity predicts later looping only weakly [measured]
+
+Which problems the original-edit model loops on (81 stuck vs 367 clean): held-out AUC from
+the difficulty projection 0.76–0.78 raw, **0.72 with length regressed out** ("weak") — vs
+dataset level alone 0.69 and prompt length alone 0.68. Little beyond "hard, long problems
+loop more". Finding 9's early-warning lead therefore still needs the same-problem test.
+
+## Limits of part 3
+
+- All questions are maths; "subject" here is a narrow notion of question type.
+- Nearest-centroid and mean-difference readouts are simple on purpose; a stronger probe would
+  score higher. Correlational, like part 2.
+
+## Next
+
+- Causal spot-checks (deliverable 3): ablate d at L10–L14 vs L15/L19; zero the standing push
+  of Finding 7 (drive outside loops) while keeping the in-loop push.
+- Difficulty-controlled foreseeability: phase-5 finals have 4 samples per problem with mixed
+  outcomes — same problem, stuck vs clean.
+- Question types beyond MATH-500: prompts from other task families (code, plain QA, instruction
+  following), length-matched — the within-maths map (part 3) is mostly an easy/hard axis.
 - Generation-time token probe: which tokens' logits move when v is perturbed ±.
-- Causal spot-checks on Findings 3 & 4 per protocol.
+- Where the embedding-row edits (GLM-Flash, mimo) sit relative to d.
