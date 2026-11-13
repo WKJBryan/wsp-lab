@@ -31,5 +31,17 @@ Budget used: 4 of 12.
 
 | # | candidate | hypothesis | result |
 |---|-----------|------------|--------|
-| 4 | dose 1.75 | Curve still rising at 1.5; find the shoulder | _pending_ |
-| 5 | dose 2.0 | Curve upper region; watch for the cliff (accuracy turn / gibberish samples) | _pending_ |
+| 4 | dose 1.75 | Curve still rising at 1.5; find the shoulder | acc **50.0**, stuck 25.0, closed 75.0 — practice peak |
+| 5 | dose 2.0 | Curve upper region; watch for the cliff | acc **45.3**, stuck 39.1 — cliff onset confirmed |
+
+## Session close (2026-11-13)
+
+- Finals (500 MATH-500 × 4 samples each, `final_vllm2.py`): dose 1.0 = **38.2%** / 26.6% stuck;
+  dose 1.75 = **35.4%** / 21.9% stuck. Pre-registered verdict: **NULL** (−2.8, not +5).
+- The practice peak was a GSM8K-practice confound: harder problems need the direction for
+  real reasoning. More suppression ⇒ more termination but worse answers on hard math.
+- Attempt #1 of the finals was void (engine memory race + 2,000-in-flight token soup —
+  ISSUES #13; probe exonerated n=4 and depth); v2 protocol (4 sequential n=1 passes,
+  no prefix caching) ran clean with per-pass sanity tails.
+- Budget used: 6 of 12 practice passes. Phase 6 inherits: dose axis dead on MATH-500;
+  selective suppression (not more suppression) is the new target.
