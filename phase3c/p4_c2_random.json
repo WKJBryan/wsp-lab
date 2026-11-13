@@ -1,0 +1,4515 @@
+{
+ "summary": {
+  "name": "p4_c2_random",
+  "model": "/home/bladless/wsp3c/p4_c2_random",
+  "engine": "vllm",
+  "cap": 32768,
+  "n": 500,
+  "accuracy": 0.0,
+  "cap_hit_rate": 95.8,
+  "mean_tokens": 31639.0,
+  "wall_s": 3044.6
+ },
+ "rows": [
+  {
+   "id": "m0",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\left( 3, \\frac{\\pi}{2} \\right)",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m1",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "p - q",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m2",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{14}{3}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m3",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "9",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m4",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\text{Evelyn}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m5",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "42",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m6",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "27",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m7",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "90^\\circ",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m8",
+   "ok": false,
+   "finish": "stop",
+   "boxed": null,
+   "gold": "3\\sqrt{13}",
+   "n_tokens": 6586,
+   "closed": true
+  },
+  {
+   "id": "m9",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "4",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m10",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "2220",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m11",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{3}{56}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m12",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "284",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m13",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "5",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m14",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\sqrt{51}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m15",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "6 - 5i",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m16",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "-50",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m17",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\pi",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m18",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "28",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m19",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "3",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m20",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "6+9i",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m21",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "13535",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m22",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "5",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m23",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "x=5",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m24",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "10",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m25",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1,-2",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m26",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "144",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m27",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "78",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m28",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "-2 + 7i",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m29",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "225",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m30",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "52_8",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m31",
+   "ok": false,
+   "finish": "stop",
+   "boxed": null,
+   "gold": "11\\sqrt2",
+   "n_tokens": 1876,
+   "closed": true
+  },
+  {
+   "id": "m32",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "720",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m33",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{243}{625}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m34",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "-125",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m35",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "3",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m36",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "3, 5, 7",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m37",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "72",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m38",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "2000",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m39",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "23",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m40",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "12",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m41",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "17",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m42",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "4",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m43",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "70 \\sqrt{2}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m44",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1.25",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m45",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "2",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m46",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "6",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m47",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "5",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m48",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{3}{2}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m49",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "83",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m50",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "203",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m51",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "x^5 - x^4 + x^3 - x^2 + x - 1",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m52",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "12",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m53",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "-\\frac{\\pi}{6}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m54",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "0.15",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m55",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "3",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m56",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "11",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m57",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "16",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m58",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "9901",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m59",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "5",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m60",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "(6,31,-1)",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m61",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "-256",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m62",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "4",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m63",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "10",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m64",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{35}{64}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m65",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m66",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "x^3+3x-6",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m67",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "10",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m68",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "46",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m69",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "-1",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m70",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "40_9",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m71",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "2516_8",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m72",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "3",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m73",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{3\\sqrt{3}}{4}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m74",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\cot x",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m75",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{11}{36}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m76",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "0",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m77",
+   "ok": false,
+   "finish": "stop",
+   "boxed": null,
+   "gold": "4",
+   "n_tokens": 804,
+   "closed": true
+  },
+  {
+   "id": "m78",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "(-2,1)",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m79",
+   "ok": false,
+   "finish": "stop",
+   "boxed": null,
+   "gold": "2",
+   "n_tokens": 3234,
+   "closed": true
+  },
+  {
+   "id": "m80",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "501",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m81",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "3",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m82",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{3}{2}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m83",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "2",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m84",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "-1",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m85",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\sqrt{5}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m86",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "240",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m87",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m88",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "2",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m89",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "21",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m90",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{3}{2}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m91",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m92",
+   "ok": false,
+   "finish": "stop",
+   "boxed": null,
+   "gold": "\\frac{448}{15625}",
+   "n_tokens": 15155,
+   "closed": true
+  },
+  {
+   "id": "m93",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "33",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m94",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "80",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m95",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "-4",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m96",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1 \\pm \\sqrt{19}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m97",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\text{east}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m98",
+   "ok": false,
+   "finish": "stop",
+   "boxed": null,
+   "gold": "2k+2",
+   "n_tokens": 4774,
+   "closed": true
+  },
+  {
+   "id": "m99",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\begin{pmatrix} -1/3 \\\\ 2/3 \\\\ 5/3 \\end{pmatrix}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m100",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "145^\\circ",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m101",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "850",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m102",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "(a+5)(b+2)",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m103",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "(3,4]",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m104",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "40",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m105",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "29",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m106",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac43",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m107",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "9",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m108",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "2",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m109",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "120^\\circ",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m110",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "504",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m111",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "210",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m112",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "13",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m113",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "8000",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m114",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "-5",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m115",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1260",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m116",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "2",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m117",
+   "ok": false,
+   "finish": "stop",
+   "boxed": null,
+   "gold": "3",
+   "n_tokens": 5111,
+   "closed": true
+  },
+  {
+   "id": "m118",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "81",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m119",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "-9",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m120",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\text{even}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m121",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "6",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m122",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "9",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m123",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "8",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m124",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{11}{2}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m125",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "-3",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m126",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1+274i",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m127",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "4210_{5}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m128",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "36",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m129",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{3840}{289}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m130",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "13",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m131",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "8",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m132",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "4",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m133",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "120",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m134",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "16",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m135",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "9",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m136",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "64",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m137",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "204_5",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m138",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{1}{3}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m139",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m140",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "13",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m141",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "2",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m142",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "28800",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m143",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "3 \\sqrt{5}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m144",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "(15,-29)",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m145",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "-2",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m146",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{\\sqrt{3}}{3}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m147",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "16",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m148",
+   "ok": false,
+   "finish": "stop",
+   "boxed": null,
+   "gold": "11",
+   "n_tokens": 4867,
+   "closed": true
+  },
+  {
+   "id": "m149",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "49",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m150",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m151",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "144",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m152",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "8",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m153",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{2}{21}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m154",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "2\\sqrt{113}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m155",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{1}{4}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m156",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "30^\\circ",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m157",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac65",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m158",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "2107",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m159",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "3.21",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m160",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "18",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m161",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "6",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m162",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\dfrac{17}{50}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m163",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "-\\frac{35}{9}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m164",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "-\\sqrt{3}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m165",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{4}{9}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m166",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{270}7\\text{ degrees}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m167",
+   "ok": false,
+   "finish": "stop",
+   "boxed": null,
+   "gold": "65",
+   "n_tokens": 4941,
+   "closed": true
+  },
+  {
+   "id": "m168",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "19",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m169",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "12",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m170",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1736",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m171",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{13}{15}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m172",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "350",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m173",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "4",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m174",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "2",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m175",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "3",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m176",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": ".0000672",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m177",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "30^\\circ",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m178",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "60",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m179",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "5x - 7y + 11z + 4 = 0",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m180",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "3",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m181",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{\\sqrt{3}}{3}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m182",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1251",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m183",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "23",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m184",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "(2,\\infty)",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m185",
+   "ok": false,
+   "finish": "stop",
+   "boxed": null,
+   "gold": "1",
+   "n_tokens": 2609,
+   "closed": true
+  },
+  {
+   "id": "m186",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "7",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m187",
+   "ok": false,
+   "finish": "stop",
+   "boxed": null,
+   "gold": "7",
+   "n_tokens": 6018,
+   "closed": true
+  },
+  {
+   "id": "m188",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "6",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m189",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "160",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m190",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{13}{18}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m191",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "0",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m192",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "30",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m193",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "4",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m194",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{1}{4}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m195",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "24",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m196",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1600",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m197",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "6",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m198",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "10,\\!080",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m199",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "17",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m200",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "40",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m201",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "66",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m202",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{2}{3}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m203",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "12",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m204",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "0",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m205",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\begin{pmatrix} -2 \\\\ -14 \\\\ -7 \\end{pmatrix}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m206",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\left( \\frac{3}{2}, -13 \\right)",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m207",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "28",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m208",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m209",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "16",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m210",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "10",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m211",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "5",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m212",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "56",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m213",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "2",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m214",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "110",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m215",
+   "ok": false,
+   "finish": "stop",
+   "boxed": null,
+   "gold": "2",
+   "n_tokens": 8845,
+   "closed": true
+  },
+  {
+   "id": "m216",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "6",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m217",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "11,\\! 111,\\! 111,\\! 100",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m218",
+   "ok": false,
+   "finish": "stop",
+   "boxed": null,
+   "gold": "(-1,6)",
+   "n_tokens": 1137,
+   "closed": true
+  },
+  {
+   "id": "m219",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{1}{2}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m220",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{16}{27}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m221",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "900",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m222",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "54",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m223",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "14",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m224",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{9}{256}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m225",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "11",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m226",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "3",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m227",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\text{(C)}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m228",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "288 \\pi",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m229",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "90",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m230",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{16}{5}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m231",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "10",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m232",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{1997}{2}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m233",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "30^\\circ",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m234",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "34",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m235",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac 59",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m236",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "12",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m237",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "22",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m238",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "-4",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m239",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "16",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m240",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "116",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m241",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "17",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m242",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\$32,\\!348",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m243",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "3",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m244",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "8",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m245",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "-13x+3",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m246",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "8",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m247",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{10}{11}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m248",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\begin{pmatrix} -1 & 0 \\\\ 0 & -1 \\end{pmatrix}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m249",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "17",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m250",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "13",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m251",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "540",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m252",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "81",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m253",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{1}{8}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m254",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "28",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m255",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\text{(E)}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m256",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{8}{21}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m257",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "864 \\mbox{ inches}^2",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m258",
+   "ok": false,
+   "finish": "stop",
+   "boxed": null,
+   "gold": "16",
+   "n_tokens": 8912,
+   "closed": true
+  },
+  {
+   "id": "m259",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "22",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m260",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "120^\\circ",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m261",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "76^\\circ",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m262",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "4",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m263",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "15",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m264",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1\\frac{4}{5}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m265",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "4005",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m266",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\dfrac{33}{100}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m267",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "180^\\circ",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m268",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m269",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "6",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m270",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "10",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m271",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "333",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m272",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1030",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m273",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1250",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m274",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "18+2\\pi",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m275",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "7",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m276",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "11",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m277",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\sqrt{53}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m278",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "255",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m279",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "7\\pi",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m280",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "8",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m281",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "36^\\circ",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m282",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "129",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m283",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m284",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "3 \\pm 2 \\sqrt{2}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m285",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "440",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m286",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{17}{21}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m287",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "36",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m288",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "7",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m289",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "16",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m290",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "4",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m291",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "63",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m292",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "898",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m293",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\left(\\frac{3}{5},\\frac{8}{3}\\right]",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m294",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "58",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m295",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "11",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m296",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\text{(B)}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m297",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "103",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m298",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\begin{pmatrix} -18 \\\\ -49 \\\\ 96 \\end{pmatrix}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m299",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "63",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m300",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "12",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m301",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "5.4 \\text{ cents}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m302",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "5",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m303",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "28",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m304",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "9",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m305",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac9{19}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m306",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "6",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m307",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "(-\\infty, 0]",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m308",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1+2\\sqrt{3}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m309",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "14",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m310",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "49",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m311",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "3",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m312",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "(5,\\infty)",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m313",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "12\\pi",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m314",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "(2,4)",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m315",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "41",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m316",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "12",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m317",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "0",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m318",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{11+9a}{20}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m319",
+   "ok": false,
+   "finish": "stop",
+   "boxed": null,
+   "gold": "-128",
+   "n_tokens": 5716,
+   "closed": true
+  },
+  {
+   "id": "m320",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "-\\frac{24}{25}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m321",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "10",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m322",
+   "ok": false,
+   "finish": "stop",
+   "boxed": null,
+   "gold": "-1",
+   "n_tokens": 2523,
+   "closed": true
+  },
+  {
+   "id": "m323",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{1}{3}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m324",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "120",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m325",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "4",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m326",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{9}{100}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m327",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "15",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m328",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "3",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m329",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "4",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m330",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1940",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m331",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{13}{6}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m332",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "2",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m333",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "3",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m334",
+   "ok": false,
+   "finish": "stop",
+   "boxed": null,
+   "gold": "-120",
+   "n_tokens": 21085,
+   "closed": true
+  },
+  {
+   "id": "m335",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "3",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m336",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "26000",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m337",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "6",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m338",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "4343_6",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m339",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "2k",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m340",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "55^\\circ",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m341",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "-2",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m342",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "2",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m343",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "58,500",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m344",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "5",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m345",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m346",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "66",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m347",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "6r^2-4r-24",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m348",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "4495",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m349",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "10080",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m350",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "4",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m351",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{1}{16}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m352",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "11 \\sqrt{5} + 11",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m353",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "480",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m354",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "81",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m355",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "100",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m356",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "(-\\sqrt{3}, \\sqrt{3})",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m357",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "4",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m358",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\text{ellipse}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m359",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "6",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m360",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{7}{4}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m361",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "16 \\sqrt{3}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m362",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac14",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m363",
+   "ok": false,
+   "finish": "stop",
+   "boxed": null,
+   "gold": "2",
+   "n_tokens": 5698,
+   "closed": true
+  },
+  {
+   "id": "m364",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "(1,-16,-4,43)",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m365",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "8",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m366",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "4",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m367",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m368",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "31",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m369",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "21",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m370",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "-41",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m371",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "17",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m372",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "90^\\circ",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m373",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1+2i",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m374",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "4",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m375",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "25",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m376",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "(8,-2)",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m377",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "6",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m378",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "3",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m379",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "12",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m380",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "(0,9) \\cup (9,36)",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m381",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{1}{2}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m382",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{20000}{\\pi}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m383",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "x \\in [-2,7]",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m384",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "15x - 80",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m385",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "22",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m386",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "11",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m387",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "18",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m388",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{11}{2}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m389",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{\\sqrt{21}}{5}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m390",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "12",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m391",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "0",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m392",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\sqrt{66}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m393",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac 34",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m394",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "-\\frac{3}{8}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m395",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "4",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m396",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "2",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m397",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "23",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m398",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\text{Navin}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m399",
+   "ok": false,
+   "finish": "stop",
+   "boxed": null,
+   "gold": "326.5",
+   "n_tokens": 1504,
+   "closed": true
+  },
+  {
+   "id": "m400",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{14}{3}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m401",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{13}{4}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m402",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1 - 12i",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m403",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "3",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m404",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "3",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m405",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "60",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m406",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "0",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m407",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "9",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m408",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\begin{pmatrix} 1/5 \\\\ -18/5 \\end{pmatrix}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m409",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "2 \\sqrt{5}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m410",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "6",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m411",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "60",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m412",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "406",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m413",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "5r^5",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m414",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "10",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m415",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "9",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m416",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{1}{8}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m417",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "-2",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m418",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "2\\sqrt{5}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m419",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\begin{pmatrix} -7 \\\\ 16 \\\\ 5 \\end{pmatrix}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m420",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\begin{pmatrix} 16/49 \\\\ 48/49 \\\\ 24/49 \\end{pmatrix}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m421",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "27",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m422",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\{1\\pm\\sqrt{5},-2\\}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m423",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1440",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m424",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "600",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m425",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "3R^2",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m426",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "6\\sqrt{2}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m427",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "29",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m428",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "64",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m429",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "50",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m430",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "4.5",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m431",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\left[ \\frac{\\pi^2}{8}, \\frac{5 \\pi^2}{4} \\right]",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m432",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "331",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m433",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": ".35625",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m434",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "32",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m435",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "(-\\infty, 2) \\cup (3, \\infty)",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m436",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "4",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m437",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "3",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m438",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "4",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m439",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + x^2 + x + 1",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m440",
+   "ok": false,
+   "finish": "stop",
+   "boxed": null,
+   "gold": "14",
+   "n_tokens": 5566,
+   "closed": true
+  },
+  {
+   "id": "m441",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "550",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m442",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "256",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m443",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "45",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m444",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{1}{2}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m445",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "15",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m446",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "8",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m447",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "9",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m448",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "44",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m449",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "47",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m450",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "64",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m451",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{639}{40}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m452",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "143",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m453",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "10",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m454",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "y = 2x + 3",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m455",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "6",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m456",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "-2,1",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m457",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "0",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m458",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "41",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m459",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\$18.90",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m460",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "75^\\circ",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m461",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "12",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m462",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "59",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m463",
+   "ok": false,
+   "finish": "stop",
+   "boxed": null,
+   "gold": "2",
+   "n_tokens": 6544,
+   "closed": true
+  },
+  {
+   "id": "m464",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "9",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m465",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "121",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m466",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "8 \\pi",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m467",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "15\\mbox{ cm}^2",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m468",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "8",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m469",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "25",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m470",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "27648",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m471",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "84",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m472",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "137 \\frac{1}{2}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m473",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "7",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m474",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "3",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m475",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "29",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m476",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "200",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m477",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "2",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m478",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{2}{1005}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m479",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "2",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m480",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "1",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m481",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "8n^2 + 4n + 1",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m482",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "202",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m483",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{8}{15}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m484",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "10",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m485",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "13",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m486",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "216",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m487",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "2",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m488",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\$36",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m489",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "15",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m490",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "14",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m491",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "64",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m492",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "y = -2x",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m493",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "20",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m494",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{1}{4}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m495",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "(2,12) \\cup (12,102)",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m496",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{5}{13}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m497",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "\\frac{7}{2}",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m498",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "-1",
+   "n_tokens": 32768,
+   "closed": false
+  },
+  {
+   "id": "m499",
+   "ok": false,
+   "finish": "length",
+   "boxed": null,
+   "gold": "106^\\circ",
+   "n_tokens": 32768,
+   "closed": false
+  }
+ ]
+}
