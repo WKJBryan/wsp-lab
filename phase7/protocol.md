@@ -203,3 +203,49 @@ Caveats fixed in advance:
    generations — the same problems as this final. No answers or scores were used, but the
    final is not independent of that selection. (The practice passes are: GSM8K.)
 3. One sample per problem, n = 500: SE ≈ 2.2 points at 40%.
+
+## Addendum 6 — testing the hub units (written BEFORE any run, 2026-11-13)
+
+Finding 20: a few source units carry most of the strong direct wires — L14 unit 46 (460 of the
+600 strongest "Hard question" wires; also Number Theory 265, Geometry 239, Precalculus 203),
+L5 unit 1087 (532 of 600 for Counting & Probability), L19 unit 11 (173 of 600 for the loop
+job). Known before any run: each is the largest or near-largest job shift on its floor
+(L14 u46 and L19 u11 are rank 1 of 3584), so hub status is partly by construction; L19 u11 gets
+QUIETER in loops (d = −2.74), it does not fire in them.
+
+Stock model throughout. `phase7/test_hubs.py`, forward passes only for parts A and B.
+
+**A. Reading (L14 u46, L5 u1087).** Re-read the 500 MATH-500 prompts with the unit held at its
+own all-position mean (so it no longer differs between question types), recompute every unit's
+d for the jobs where the unit is a hub, compare with the unclamped baseline from the same script.
+**B. Loop replay (L19 u11).** Replay the 80 saved generations of `sets.json` (teacher-forced,
+same positions as part 2) with the unit held at its before-the-loop mean; recompute the loop d.
+For A and B the wire prediction for a target is Δd = −(its wire contribution in `wires.json`).
+Control for each: the same clamp on the unit of the same floor with the closest activation SD
+that is the source of no shipped wire.
+
+| # | prediction (fixed now) |
+|---|---|
+| **H1** | Targets move the way the wire says, weakly: for each hub and job, measured Δd has the predicted sign for ≥ 65% of its wire targets and the median measured/predicted ratio lies in 0.1–0.8 (the nudge check gave 81% and 0.30) |
+| **H2** | The job's light pattern does not depend on the hub: on the floors above it, d before vs after correlates ≥ 0.95 and the number of lights on at 0.8 changes by < 10% |
+| **H3** | Clamping the hub changes the pattern more than clamping its control (larger mean absolute Δd above the floor), i.e. the hub is not just any loud unit |
+
+Readings: H1 and H2 both hold → hubs are loud units whose cables are real but which do not
+carry the pattern (consistent with Finding 20). H2 fails for a hub → that unit is a real
+switch for that job and is worth a wire-by-wire follow-up. H1 fails → the wire numbers do not
+describe even their strongest source and the wires view should say so.
+
+**C. Loop rate (L19 u11): 1 practice pass**, harness and rules as in every earlier addendum
+(pass_index 1, no offline generation, one retry only for engine failure). Arm `hub19_zero`:
+down_proj column 11 of L19 set to zero (`build_brake.py --zero-unit 19:11`). Zeroing is the only
+"off" a weight edit allows; it also removes the unit's average output, not only its loop shift.
+
+| pass | arm | prediction (fixed now) |
+|---|---|---|
+| 1 | `hub19_zero` | **H4:** does not repair — closed ≤ 28.8% (stock 18.8%) |
+
+Readings: ≤ 28.8% and ≥ 9.4% (6 of 64) → no detectable effect on looping. < 9.4% → looping got
+worse, weak evidence the unit's activity protects against loops (stock is already near the
+floor, so this direction is poorly measured). ≥ 38.8% → works; ONLY then, two more passes:
+the same arm at pass_index 2, and the part-B control unit zeroed (`hub19_ctrl_zero`).
+In between → inconclusive, recorded as such.
