@@ -151,3 +151,27 @@ How the four outcomes will be read (fixed now):
 
 "In between" (28.8–38.8%) on either arm is recorded as inconclusive for that cell, not rounded
 to a side. Two cells, n = 64 each: this can point, it cannot settle.
+
+## Addendum 4 — what u has that d lacks (written BEFORE any pass, 2026-11-13)
+
+On the SAME L10+L14 loop neurons and amplitudes, the published direction u works (48.4% closed)
+and our mapped direction d does nothing (23.4%). u there is about half d (cos 0.48 at L10,
+0.51 at L14) and the rest something else. This pass applies only "the rest".
+
+Budget: **1 practice pass**, same harness and rules (pass_index 1, no offline generation, one
+retry only for engine failure). "Works" := closed ≥ 38.8%; "does nothing" := closed ≤ 28.8%.
+
+| pass | arm | prediction (fixed now) |
+|---|---|---|
+| 1 | `uperp_on_loop`: the `u_on_loop` edit with its component along d removed, NOT renormalised (`--u-dirs 15,19 --minus-d`); push size ≈ 0.87 of `u_on_loop` | **T1:** works |
+
+Reading, fixed now:
+
+- Works: u does not need its d-part at this site; what makes u work lies outside the loop
+  direction we mapped. CAVEAT fixed in advance: 3 of 4 random directions ⟂ d also work on these
+  neurons, so "works" is the expected outcome on base rate alone and does NOT show that u is
+  special at L10+L14. It would only complete the picture "at L10+L14, most pushes off the d
+  axis work; pushes along d do not".
+- Does nothing: the informative outcome — u needs its d-part, so it is the combination, not
+  either piece, that works there.
+- In between: inconclusive, recorded as such.

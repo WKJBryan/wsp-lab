@@ -43,6 +43,8 @@ ap.add_argument("--orig-cols", action="store_true",
 # site-vs-direction arms (protocol addendum 3): defaults leave earlier batches unchanged
 ap.add_argument("--mapped-dir", action="store_true", help="with --orig-cols: push along the MAPPED direction d, not u")
 ap.add_argument("--u-dirs", default="", help="push along the original edit's u of these layers, one per --layers entry (e.g. 15,19)")
+ap.add_argument("--minus-d", action="store_true",
+                help="addendum 4: remove the push's component along the mapped d (NOT renormalised)")
 args = ap.parse_args()
 layers = [15, 19] if args.orig_cols else [int(x) for x in args.layers.split(",")]
 ED = np.load(PO / "edit.npz")
@@ -61,6 +63,7 @@ means = {r: neuron_stats(r) for r in ("loop", "pre", "clean", "deep")}
 plan, meta = {}, dict(name=args.name, layers=layers, dose=args.dose, random=args.random,
                       selective=args.selective, seed=args.seed, random_neurons=args.random_neurons,
                       orig_cols=args.orig_cols, mapped_dir=args.mapped_dir, u_dirs=args.u_dirs,
+                      minus_d=args.minus_d,
                       ncol=NCOL, gain=GAIN, per_layer={})
 for L in layers:
     g = R["resid_loop"][:, L + 1].astype(np.float64).mean(0) - R["resid_pre"][:, L + 1].astype(np.float64).mean(0)
@@ -85,6 +88,8 @@ for L in layers:
     if args.u_dirs:
         direction = ED[f"u{args.u_dirs.split(',')[layers.index(L)]}"].astype(np.float64)
         direction = direction / np.linalg.norm(direction)
+    if args.minus_d:
+        direction = direction - (direction @ d) * d
     if args.random:
         r = np.random.default_rng(1000 * args.seed + L).standard_normal(1024)
         r -= (r @ d) * d
@@ -96,7 +101,8 @@ for L in layers:
     meta["per_layer"][f"L{L}"] = dict(resid_gap=round(float(gap), 3), cols=cols.tolist(),
                                       a=[round(float(x), 5) for x in a], drive=drive,
                                       fro=round(float(np.linalg.norm(plan[L][1])), 4),
-                                      cos_dir_d=round(float(direction @ d), 4))
+                                      cos_dir_d=round(float(direction @ d), 4),
+                                      dir_norm=round(float(np.linalg.norm(direction)), 4))
 
 out = Path(args.out)
 if out.exists():
