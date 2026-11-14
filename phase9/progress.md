@@ -38,3 +38,18 @@
   signature — possible repo read outside sandbox; nothing was applied and no extra pass was
   spent, so no measurement was affected. Sandbox-only rule remains soft-boundary + audit.
 - Baseline comparison for this condition is therefore not applicable (no candidate produced).
+
+## Condition 3 — mimo-pro-team — **NULL: degenerate session, no edit** (2026-11-14)
+
+- Ground truth: 1/10 passes (baseline), model pristine, no strays.
+- Worse than c2: analysts returned planning monologues; critique truncated; **judge and
+  executor returned empty strings** — the same session-end-without-output failure family as
+  the phase-4 typed deaths, now in plain-text form.
+- Verdict on the mimo team conditions (c2, c3): the multi-role long-ask format is incompatible
+  with both mimo tiers in this harness, while identical scripts ran end-to-end on GLM-5.3-Flash.
+  Reinforces the phase-4 finding: **session format dominates model tier.** mimo models succeed
+  on short self-contained asks (4b/4c) and fail when asks carry long interpolated role context.
+- Consequence for remaining conditions: c4 (glm5.3 team) + c5 (glm5.3 single) proceed as
+  planned; c6 (mixed) keeps all four models but assigns producer-critical roles (judge,
+  executor) to GLM-family models with mimo on analyst/red-team seats (disclosed assignment);
+  c7 (interleaved) stays GLM-5.3-Flash.
