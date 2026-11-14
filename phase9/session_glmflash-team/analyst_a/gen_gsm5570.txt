@@ -1,0 +1,62 @@
+Here's a thinking process that leads to the solution:
+
+1.  **Analyze the Request:**
+    *   **Item 1:** Small bonsai.
+    *   **Cost of Small bonsai:** $30.
+    *   **Item 2:** Big bonsai.
+    *   **Cost of Big bonsai:** $20.
+    *   **Quantity Sold:** 3 small bonsai, 5 big bonsai.
+    *   **Goal:** Calculate the total earnings.
+
+2.  **Identify the Mathematical Operation:**
+    *   Total Earnings = (Number of Small Bonsai $\times$ Cost per Small Bonsai) + (Number of Big Bonsai $\times$ Cost per Big Bonsai).
+
+3.  **Perform the Calculation:**
+    *   *Small Bonsai:* 3 $\times$ $30 = $90.
+    *   *Big Bonsai:* 5 $\times$ $20 = $100.
+    *   *Total:* $90 + $100 = $190.
+
+4.  **Format the Output:**
+    *   State the individual costs.
+    *   State the quantities sold.
+    *   Show the multiplication.
+    *   Sum the results.
+    *   Provide the final answer clearly.
+
+5.  **Drafting the Response:**
+    *   *Step 1:* Calculate earnings from small bonsai.
+        *   3 small bonsai $\times$ $30 = $90.
+    *   *Step 2:* Calculate earnings from big bonsai.
+        *   5 big bonsai $\times$ $20 = $100.
+    *   *Step 3:* Add them together.
+        *   $90 + $100 = $190.
+    *   *Conclusion:* He earned $190.
+
+6.  **Review against constraints:**
+    *   Did I answer the specific question? Yes.
+    *   Is the math correct? Yes.
+    *   Is the language appropriate? Yes.
+
+7.  **Final Polish:** (Self-correction: Ensure the distinction between "cost" and "price" is clear, though in this context they are the same).
+
+    *   *Draft:*
+        To find out how much he earned, we need to multiply the number of bonsai sold by the price of each type.
+        Small bonsai: 3 * $30 = $90.
+        Big bonsai: 5 * $20 = $100.
+        Total: $90 + $100 = $190.
+
+    *   *Final Output Generation:* (Matches the thought process above).
+</think>
+
+Here is the step-by-step calculation:
+
+1.  **Small Bonsai:**
+    3 small bonsai $\times$ $30 = $90
+
+2.  **Big Bonsai:**
+    5 big bonsai $\times$ $20 = $100
+
+3.  **Total Earnings:**
+    $90 + $100 = $190
+
+He earned **$190**.<|im_end|>

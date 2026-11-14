@@ -1,0 +1,39 @@
+Here's my thought process for solving this problem:
+
+1.  **Analyze the Request:**
+    *   **Subject:** Lowry selling bonsai.
+    *   **Items Sold:** 3 small, 5 big.
+    *   **Costs (Price):** Small = $30, Big = $20.
+    *   **Goal:** Calculate the total earnings.
+
+2.  **Identify the Variables and Constants:**
+    *   Cost of a small bonsai ($C_{small}$) = $30
+    *   Cost of a big bonsai ($C_{big}$) = $20
+    *   Quantity of small bonsai ($Q_{small}$) = 3
+    *   Quantity of big bonsai ($Q_{big}$) = 5
+
+3.  **Determine the Mathematical Approach:**
+    *   I need to calculate the total value based on the quantity sold.
+    *   Method 1: Sum of costs per item multiplied by quantity.
+        *   Total Earnings = (Small cost $\times$ Count Small) + (Big cost $\times$ Count Big).
+    *   Calculation:
+        *   Small portion: $30 \times 3$
+        *   Big portion: $20 \times 5$
+</think>
+
+Here is the step-by-step solution:
+
+**1. Calculate the earnings from the small bonsai:**
+*   Price of one small bonsai: \$30
+*   Number of small bonsai sold: 3
+*   Total earnings from small bonsai = $30 \times 3 = \$90$
+
+**2. Calculate the earnings from the big bonsai:**
+*   Price of one big bonsai: \$20
+*   Number of big bonsai sold: 5
+*   Total earnings from big bonsai = $20 \times 5 = \$100$
+
+**3. Add the totals together:**
+*   Total earnings = \$90 + \$100 = \$190
+
+Lowry earned **$190**.<|im_end|>
