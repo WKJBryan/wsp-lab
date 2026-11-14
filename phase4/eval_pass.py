@@ -163,16 +163,18 @@ def main():
         if finish == "length" and len(samples) < 3:
             samples.append(dict(id=p["id"], n_tokens=n_tok,
                                 tail=text[-300:], head=text[:120]))
-    print(json.dumps(dict(
+    result = json.dumps(dict(
         n=n, pass_index=pass_index,
         accuracy=round(correct / n * 100, 1),
         closed_rate=round(closed / n * 100, 1),
         cap_hit_rate=round(capped / n * 100, 1),
         mean_tokens=round(sum(len(o.outputs[0].token_ids) for o in outs) / n, 0),
         wall_s=round(time.time() - t0, 1),
-        note="practice accuracy intentionally NOT shown (blind protocol); termination stats only",
         samples=samples,
-    )))
+    ))
+    with open("eval_pass_last.json", "w") as f:  # persists even if the caller's pipe truncates
+        f.write(result + "\n")
+    print(result)
 
 
 if __name__ == "__main__":

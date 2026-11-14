@@ -1,0 +1,11 @@
+</think>
+
+To determine how much money Charlotte should bring to the shoe store, we need to calculate the final price after applying a 20% discount.
+
+1.  **Calculate the discount amount:**
+    $90 \times 0.20 = 18$
+</think>
+
+$$90 \times 0.20 = 18$$
+
+**Answer:** Charlotte should bring **$18** to buy the boots.<|im_end|>
