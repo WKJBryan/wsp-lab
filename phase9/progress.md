@@ -53,3 +53,14 @@
   planned; c6 (mixed) keeps all four models but assigns producer-critical roles (judge,
   executor) to GLM-family models with mimo on analyst/red-team seats (disclosed assignment);
   c7 (interleaved) stays GLM-5.3-Flash.
+
+## Condition 4 — glm5.3-team — **24.4%** (2026-11-14; verdict vs c5 pending)
+
+- Session: superb (2/10 passes — most efficient ever; single edit pass, no bracketing needed).
+  Byte-verified: untied lm_head, row 248069 ×1.3516, flags/index fixed.
+- Committee SYNTHESIS: A's target+dose on B's untie machinery (red-team falsified B's
+  contamination claim at ×1.35 — it held only at ×2; judge merged correctly).
+- Practice 12.5→48.4 / closed 18.8→78.1. Final: **24.4%**, cap-hit 62.8%, mean 22,815.
+- Note: the derived dose bracket [1.30,1.40] (from measured step-0 spike margins, s_crit 1.535)
+  sits BELOW the loners' empirically-safe ×1.5 — theoretical caution cost a few points again,
+  though far less than c1's additive-dose collapse. HELPS/NEUTRAL/HURTS awaits c5.
