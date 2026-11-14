@@ -78,3 +78,16 @@
 
 mimo-v2.6-flash 27.8 = mimo-v2.6-pro 27.8 > GLM-5.3-Flash 25.2 > GLM-5.3 23.0 (stock 6.0;
 random control 2.2). Tier/family does not buy score — if anything, inverse.
+
+## Condition 6 — mixed-team — **23.6% — NEUTRAL** (2026-11-14)
+
+- Roles: observer GLM-5.3-Flash, analyst-A mimo-v2.6-pro, analyst-B GLM-5.3, red-team
+  mimo-v2.6-flash, judge GLM-5.3-Flash, executor GLM-5.3. Session: 3/10 passes (most frugal
+  team). Byte-verified: TIED row 248069 ×1.3516, everything else pristine.
+- Process highlight: mimo-flash — twice-failed as whole-session runner — delivered the BEST
+  red-team of the phase (refuted mimo-pro's ×3.5 by direct simulation: 64/64 instant-close +
+  exit-spam; caught analyst-A's wrong-state measurement; corrected penalty math vs vLLM source).
+  Focused-seat hypothesis confirmed: small models fail at HOLDING sessions, not at the work.
+- Final 23.6% / cap 63.4 / mean 22,885. Fifth independent convergence on row 248069.
+- Committee pattern now 5-for-5: functioning committees 23.0–24.4 regardless of composition;
+  loners 23.0–27.8 (best: flash-tier, crude ×1.5). Deliberation never beats the loner.
