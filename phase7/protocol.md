@@ -354,3 +354,48 @@ Readings: K1-K3 hold -> the subject labels are causal in the weak sense (remove 
 subject suffers most), and can be promoted from "goes with" to "used for". K1/K2 fail -> the
 labels are readouts of what the question is about, not parts the model leans on for it; they
 stay "goes with". Either way no generation run is made in this addendum.
+
+## Addendum 10 — stacking the map's repair on the published edit (written BEFORE any run, 2026-11-14)
+
+Question: does the published edit (L15+L19) plus the map's repair `uperp_on_loop` (L10+L14 loop
+neurons and amplitudes, direction = published u minus its component along the mapped d) beat the
+published edit alone on MATH-500? Grounds: the published edit still cap-hits 26.4% of problems;
+`uperp_on_loop` alone got 30 problems right that the published edit got wrong (addendum 5); the
+two edits touch different floors; "both sites at once" was never run.
+
+**Step 0 — free check, no generation.** In the published edit's saved MATH-500 answers
+(`phase3c/p3c_c3_original*`), count the cap-hit answers (finish = length) that are repeating
+loops by the repo's detector (`build_sets.onset_of`: 12-gram repeats above 50% in four
+consecutive 250-token bins). STOP RULE: fewer than 25% loops -> a second loop repair has
+nothing to fix; no model is built and the addendum ends there.
+
+**Models** (`build_brake.py --base phase3/models/c3_original_edit --u-dirs 15,19 --minus-d`):
+`stack_full` (dose 1.0, i.e. exactly `uperp_on_loop`'s change added to the published edit) and
+`stack_half` (dose 0.5). Checked on disk: model minus published edit equals `uperp_on_loop`
+minus stock (times the dose), nothing else differs.
+
+**Runs, in this order, each once, one retry only for engine failure:**
+
+1. practice pass `stack_full`, then `stack_half` (pass_index 1, harness unchanged). Gate: a
+   model goes to the final unless closed < 38.8%. The practice pass is NOT used to rank them.
+2. MATH-500 final for each model that passed, `stack_full` first: `phase3c/run_vllm.py` and
+   `phase3c/rescore.py` unchanged (500 problems, 1 sample, cap 32768, seed 20261105).
+
+**Readout (rescored, paired with the published edit on the same 500 problems):** b = problems
+only the stacked model gets right, c = only the published edit. Difference = (b - c) / 500,
+SE = sqrt(b + c) / 500. WIN: difference > +2 SE. LOSS: difference < -2 SE. Otherwise: no real
+difference.
+
+| # | prediction (fixed now) |
+|---|---|
+| **V0** | At least 60% of the published edit's cap-hit answers are loops |
+| **V1** | Both models pass the practice gate |
+| **V2** | `stack_full`: not a WIN; rescored accuracy between 33% and 42% |
+| **V3** | `stack_half`: accuracy between 38% and 44%, at or above `stack_full` |
+| **V4** | My chance that either model is a WIN: about 1 in 4 |
+
+Caveats fixed in advance: (1) two models are compared on the same 500 problems that judge
+them and no correction is made for picking the better one, so a WIN by a hair is weak; (2) the
+loop neurons were chosen from stock's activity on these same problems (no answers used), as in
+addendum 5; (3) one sample per problem; (4) a WIN is a better loop repair found with the map's
+neurons, not a repair from the map alone (the direction is the published edit's).
