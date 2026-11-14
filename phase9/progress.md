@@ -64,3 +64,17 @@
 - Note: the derived dose bracket [1.30,1.40] (from measured step-0 spike margins, s_crit 1.535)
   sits BELOW the loners' empirically-safe ×1.5 — theoretical caution cost a few points again,
   though far less than c1's additive-dose collapse. HELPS/NEUTRAL/HURTS awaits c5.
+
+## Condition 5 — glm5.3-single — **23.0%** (2026-11-14) → **c4 verdict: NEUTRAL (+1.4)**
+
+- Session: 7/10 passes; most sophisticated edit of the project (byte-verified: untied head,
+  ridge-LS conditional exit-boost ‖Δ‖=0.56 + 5 format-row scalings ×0.1–0.4).
+- Final: 23.0%, cap-hit 63.0%, mean 21,977. Practice ~57 halved at finals, as with every arm.
+- c4 vs c5: 24.4 vs 23.0 = NEUTRAL (within ±4.4). Prediction on record held.
+- Notable: the BIGGEST model is the WEAKEST loner (23.0 vs flash-tier 25.2/27.8/27.8) — its
+  conditional-boost machinery out-engineered the crude rescale but did not out-score it.
+
+## Solo blind-surgery leaderboard (all loners, identical rules)
+
+mimo-v2.6-flash 27.8 = mimo-v2.6-pro 27.8 > GLM-5.3-Flash 25.2 > GLM-5.3 23.0 (stock 6.0;
+random control 2.2). Tier/family does not buy score — if anything, inverse.
