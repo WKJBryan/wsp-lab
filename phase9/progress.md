@@ -25,3 +25,16 @@
 - Post-condition-1 fixes (disclosed, no behavior change): eval_pass.py now tees its JSON to
   `eval_pass_last.json` (three sessions have lost outputs to pipes); stale "accuracy
   intentionally NOT shown" note removed (contradicted its own output; flagged by the observer).
+
+## Condition 2 — mimo-flash-team — **NULL: degenerate session, no edit attempted** (2026-11-14)
+
+- Ground truth: 1/10 passes (baseline only), model md5-pristine, no edit applied.
+- Every role returned fragments/leaked chain-of-thought instead of deliverables; the judge's
+  "verdict" was internal monologue; the executor reported a garbled spec and executed nothing.
+- Cross-format pattern (now 2 data points): mimo-flash succeeds on SHORT single-constraint
+  steps (phase 4b: 27.8%) and disintegrates on long multi-role asks (phase 4 arm 1, and here).
+  The bottleneck is long-ask discipline, not surgical capability.
+- Suspected (unproven, zero experimental impact): executor quoted GLM-phase-4's apply_edit.py
+  signature — possible repo read outside sandbox; nothing was applied and no extra pass was
+  spent, so no measurement was affected. Sandbox-only rule remains soft-boundary + audit.
+- Baseline comparison for this condition is therefore not applicable (no candidate produced).
