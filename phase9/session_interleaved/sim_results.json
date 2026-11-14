@@ -1,0 +1,52 @@
+{
+ "0.0|gsm5570": {
+  "fire": null,
+  "n_postfire": 0,
+  "spam": 0
+ },
+ "0.005|gsm5570": {
+  "fire": null,
+  "n_postfire": 0,
+  "spam": 0
+ },
+ "0.005|gsm4131": {
+  "fire": null,
+  "n_postfire": 0,
+  "spam": 0
+ },
+ "0.005|gsm1664": {
+  "fire": null,
+  "n_postfire": 0,
+  "spam": 0
+ },
+ "0.01|gsm5570": {
+  "fire": null,
+  "n_postfire": 0,
+  "spam": 0
+ },
+ "0.01|gsm4131": {
+  "fire": null,
+  "n_postfire": 0,
+  "spam": 0
+ },
+ "0.01|gsm1664": {
+  "fire": null,
+  "n_postfire": 0,
+  "spam": 0
+ },
+ "0.02|gsm5570": {
+  "fire": 313,
+  "n_postfire": 130,
+  "spam": 0
+ },
+ "0.02|gsm4131": {
+  "fire": 1394,
+  "n_postfire": 205,
+  "spam": 0
+ },
+ "0.02|gsm1664": {
+  "fire": null,
+  "n_postfire": 0,
+  "spam": 0
+ }
+}
