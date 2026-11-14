@@ -1,0 +1,436 @@
+{
+ "lit": 0.8,
+ "jobs": {
+  "Algebra": {
+   "lit_before": 177,
+   "lit_after": 181,
+   "stay_lit": 165,
+   "newly_lit": 16,
+   "r_before_after": 0.9918,
+   "lit_length_regressed": 36,
+   "stay_lit_length_regressed": 31,
+   "after_stay_length_regressed": 32,
+   "lit05_after": 5855,
+   "lit05_length_regressed": 2481,
+   "max_abs_d_after": 1.087,
+   "max_abs_d_length_regressed": 1.025,
+   "median_kept_by_lit_units": 0.83,
+   "shrink_if_job_only": 0.96,
+   "L14_u46": [
+    -0.428,
+    0.517,
+    0.207
+   ],
+   "biggest_drops": [
+    [
+     23,
+     23,
+     0.37,
+     -0.03
+    ],
+    [
+     4,
+     50,
+     0.46,
+     0.13
+    ],
+    [
+     0,
+     928,
+     -0.38,
+     -0.05
+    ],
+    [
+     0,
+     957,
+     0.39,
+     0.08
+    ],
+    [
+     0,
+     715,
+     0.35,
+     0.07
+    ]
+   ]
+  },
+  "Counting & Probability": {
+   "lit_before": 14777,
+   "lit_after": 14990,
+   "stay_lit": 14599,
+   "newly_lit": 391,
+   "r_before_after": 0.9997,
+   "lit_length_regressed": 17064,
+   "stay_lit_length_regressed": 13816,
+   "after_stay_length_regressed": 14025,
+   "lit05_after": 34702,
+   "lit05_length_regressed": 37337,
+   "max_abs_d_after": 2.371,
+   "max_abs_d_length_regressed": 2.319,
+   "median_kept_by_lit_units": 1.011,
+   "shrink_if_job_only": 1.0,
+   "L14_u46": [
+    0.017,
+    0.072,
+    0.293
+   ],
+   "biggest_drops": [
+    [
+     22,
+     1056,
+     0.68,
+     0.46
+    ],
+    [
+     23,
+     2509,
+     0.73,
+     0.52
+    ],
+    [
+     8,
+     551,
+     -0.92,
+     -0.72
+    ],
+    [
+     7,
+     1353,
+     -0.85,
+     -0.7
+    ],
+    [
+     23,
+     2156,
+     -1.01,
+     -0.87
+    ]
+   ]
+  },
+  "Geometry": {
+   "lit_before": 13687,
+   "lit_after": 13556,
+   "stay_lit": 13036,
+   "newly_lit": 520,
+   "r_before_after": 0.9963,
+   "lit_length_regressed": 10271,
+   "stay_lit_length_regressed": 8886,
+   "after_stay_length_regressed": 8925,
+   "lit05_after": 32325,
+   "lit05_length_regressed": 28152,
+   "max_abs_d_after": 2.715,
+   "max_abs_d_length_regressed": 2.377,
+   "median_kept_by_lit_units": 0.863,
+   "shrink_if_job_only": 0.969,
+   "L14_u46": [
+    0.637,
+    -0.172,
+    0.412
+   ],
+   "biggest_drops": [
+    [
+     23,
+     23,
+     -0.67,
+     -0.1
+    ],
+    [
+     15,
+     729,
+     -0.6,
+     -0.09
+    ],
+    [
+     14,
+     46,
+     0.64,
+     -0.17
+    ],
+    [
+     22,
+     2661,
+     -1.12,
+     -0.67
+    ],
+    [
+     12,
+     408,
+     0.64,
+     0.2
+    ]
+   ]
+  },
+  "Intermediate Algebra": {
+   "lit_before": 8953,
+   "lit_after": 8752,
+   "stay_lit": 8434,
+   "newly_lit": 318,
+   "r_before_after": 0.9978,
+   "lit_length_regressed": 8467,
+   "stay_lit_length_regressed": 7262,
+   "after_stay_length_regressed": 7216,
+   "lit05_after": 27036,
+   "lit05_length_regressed": 26968,
+   "max_abs_d_after": 1.758,
+   "max_abs_d_length_regressed": 1.68,
+   "median_kept_by_lit_units": 0.955,
+   "shrink_if_job_only": 0.991,
+   "L14_u46": [
+    0.384,
+    -0.592,
+    -0.658
+   ],
+   "biggest_drops": [
+    [
+     0,
+     695,
+     0.54,
+     0.08
+    ],
+    [
+     3,
+     0,
+     0.44,
+     0.03
+    ],
+    [
+     7,
+     41,
+     -0.39,
+     0.01
+    ],
+    [
+     21,
+     3412,
+     -1.0,
+     -0.67
+    ],
+    [
+     0,
+     861,
+     -0.71,
+     -0.43
+    ]
+   ]
+  },
+  "Number Theory": {
+   "lit_before": 6920,
+   "lit_after": 6924,
+   "stay_lit": 6429,
+   "newly_lit": 495,
+   "r_before_after": 0.9927,
+   "lit_length_regressed": 3815,
+   "stay_lit_length_regressed": 3209,
+   "after_stay_length_regressed": 3258,
+   "lit05_after": 23867,
+   "lit05_length_regressed": 17064,
+   "max_abs_d_after": 2.041,
+   "max_abs_d_length_regressed": 2.022,
+   "median_kept_by_lit_units": 0.816,
+   "shrink_if_job_only": 0.955,
+   "L14_u46": [
+    -0.658,
+    0.765,
+    0.328
+   ],
+   "biggest_drops": [
+    [
+     22,
+     2933,
+     -0.63,
+     -0.11
+    ],
+    [
+     15,
+     512,
+     0.52,
+     0.07
+    ],
+    [
+     18,
+     1386,
+     -0.48,
+     -0.04
+    ],
+    [
+     0,
+     411,
+     0.77,
+     0.35
+    ],
+    [
+     21,
+     3537,
+     0.51,
+     0.1
+    ]
+   ]
+  },
+  "Prealgebra": {
+   "lit_before": 1857,
+   "lit_after": 1753,
+   "stay_lit": 1695,
+   "newly_lit": 58,
+   "r_before_after": 0.9994,
+   "lit_length_regressed": 1409,
+   "stay_lit_length_regressed": 1221,
+   "after_stay_length_regressed": 1224,
+   "lit05_after": 14099,
+   "lit05_length_regressed": 14125,
+   "max_abs_d_after": 1.322,
+   "max_abs_d_length_regressed": 1.229,
+   "median_kept_by_lit_units": 0.944,
+   "shrink_if_job_only": 0.999,
+   "L14_u46": [
+    -0.062,
+    0.045,
+    0.232
+   ],
+   "biggest_drops": [
+    [
+     21,
+     3412,
+     0.63,
+     0.48
+    ],
+    [
+     8,
+     551,
+     -0.43,
+     -0.28
+    ],
+    [
+     11,
+     3427,
+     -0.48,
+     -0.36
+    ],
+    [
+     1,
+     2830,
+     0.46,
+     0.33
+    ],
+    [
+     12,
+     964,
+     0.79,
+     0.67
+    ]
+   ]
+  },
+  "Precalculus": {
+   "lit_before": 8555,
+   "lit_after": 8322,
+   "stay_lit": 7869,
+   "newly_lit": 453,
+   "r_before_after": 0.9942,
+   "lit_length_regressed": 6140,
+   "stay_lit_length_regressed": 4899,
+   "after_stay_length_regressed": 4916,
+   "lit05_after": 26190,
+   "lit05_length_regressed": 22818,
+   "max_abs_d_after": 1.853,
+   "max_abs_d_length_regressed": 1.697,
+   "median_kept_by_lit_units": 0.864,
+   "shrink_if_job_only": 0.967,
+   "L14_u46": [
+    0.687,
+    -0.776,
+    -0.558
+   ],
+   "biggest_drops": [
+    [
+     0,
+     695,
+     0.96,
+     0.22
+    ],
+    [
+     3,
+     0,
+     0.83,
+     0.21
+    ],
+    [
+     22,
+     1312,
+     -0.65,
+     -0.16
+    ],
+    [
+     22,
+     2933,
+     0.72,
+     0.23
+    ],
+    [
+     23,
+     23,
+     -0.56,
+     0.09
+    ]
+   ]
+  },
+  "Hard question": {
+   "lit_before": 289,
+   "lit_after": 200,
+   "stay_lit": 181,
+   "newly_lit": 19,
+   "r_before_after": 0.969,
+   "lit_length_regressed": 0,
+   "stay_lit_length_regressed": 0,
+   "after_stay_length_regressed": 0,
+   "lit05_after": 5172,
+   "lit05_length_regressed": 606,
+   "max_abs_d_after": 1.173,
+   "max_abs_d_length_regressed": 0.763,
+   "median_kept_by_lit_units": 0.465,
+   "shrink_if_job_only": 0.871,
+   "L14_u46": [
+    0.882,
+    -0.54,
+    -0.043
+   ],
+   "biggest_drops": [
+    [
+     23,
+     47,
+     -0.77,
+     -0.04
+    ],
+    [
+     22,
+     1287,
+     -0.72,
+     -0.0
+    ],
+    [
+     22,
+     2933,
+     0.86,
+     0.15
+    ],
+    [
+     0,
+     411,
+     -0.79,
+     -0.1
+    ],
+    [
+     0,
+     928,
+     0.73,
+     0.05
+    ]
+   ]
+  }
+ },
+ "total": {
+  "before": 55215,
+  "after": 54678,
+  "stay": 52408,
+  "length": 47202,
+  "stay_length": 39324
+ }
+}

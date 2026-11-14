@@ -45,8 +45,14 @@ ap.add_argument("--mapped-dir", action="store_true", help="with --orig-cols: pus
 ap.add_argument("--u-dirs", default="", help="push along the original edit's u of these layers, one per --layers entry (e.g. 15,19)")
 ap.add_argument("--minus-d", action="store_true",
                 help="addendum 4: remove the push's component along the mapped d (NOT renormalised)")
+# hub test (protocol addendum 6): nothing else of the brake is applied
+ap.add_argument("--zero-unit", default="", help="switch one unit off, 'layer:unit': its down_proj column is set to zero")
+# stacking (protocol addendum 10): add the brake to a model that already carries another edit
+ap.add_argument("--base", default=str(STOCK), help="model directory the brake is added to (default: stock)")
 args = ap.parse_args()
 layers = [15, 19] if args.orig_cols else [int(x) for x in args.layers.split(",")]
+if args.zero_unit:
+    layers = [int(args.zero_unit.split(":")[0])]
 ED = np.load(PO / "edit.npz")
 
 R, NZ = np.load(PO / "resid.npz"), np.load(PO / "neurons.npz")
@@ -63,7 +69,7 @@ means = {r: neuron_stats(r) for r in ("loop", "pre", "clean", "deep")}
 plan, meta = {}, dict(name=args.name, layers=layers, dose=args.dose, random=args.random,
                       selective=args.selective, seed=args.seed, random_neurons=args.random_neurons,
                       orig_cols=args.orig_cols, mapped_dir=args.mapped_dir, u_dirs=args.u_dirs,
-                      minus_d=args.minus_d,
+                      minus_d=args.minus_d, zero_unit=args.zero_unit, base=Path(args.base).name,
                       ncol=NCOL, gain=GAIN, per_layer={})
 for L in layers:
     g = R["resid_loop"][:, L + 1].astype(np.float64).mean(0) - R["resid_pre"][:, L + 1].astype(np.float64).mean(0)
@@ -94,8 +100,12 @@ for L in layers:
         r = np.random.default_rng(1000 * args.seed + L).standard_normal(1024)
         r -= (r @ d) * d
         direction = r / np.linalg.norm(r)
+    if args.zero_unit:  # W[:, unit] += -1 * W[:, unit]
+        cols, a = np.array([int(args.zero_unit.split(":")[1])]), np.array([-1.0])
+        direction = load_file(str(sorted(STOCK.glob("*.safetensors"))[0]))[
+            f"model.language_model.layers.{L}.mlp.down_proj.weight"][:, cols[0]].double().numpy()
     drive = {reg: round(float(a @ means[reg][0][L][cols]), 3) for reg in means}
-    if not (args.random_neurons or args.orig_cols):
+    if not (args.random_neurons or args.orig_cols or args.zero_unit):
         assert abs((drive["loop"] - drive["pre"]) + GAIN * gap * args.dose) < 0.02 * GAIN * gap * args.dose + 0.01
     plan[L] = (cols, np.outer(direction, a))
     meta["per_layer"][f"L{L}"] = dict(resid_gap=round(float(gap), 3), cols=cols.tolist(),
@@ -107,7 +117,7 @@ for L in layers:
 out = Path(args.out)
 if out.exists():
     shutil.rmtree(out)
-shutil.copytree(STOCK, out, ignore=shutil.ignore_patterns(".cache"))
+shutil.copytree(args.base, out, ignore=shutil.ignore_patterns(".cache"))
 sf = sorted(out.glob("*.safetensors"))[0]
 ts = load_file(str(sf))
 stock = {}

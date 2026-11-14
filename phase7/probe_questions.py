@@ -8,9 +8,12 @@ Outputs: phase7/atlas_questions.json, fig_q1_decoding.png, fig_q2_neurons.png
          (raw activations cached in phase7/probe_out/questions.npz, git-ignored)
 
 Usage: uv run python phase7/probe_questions.py
+       uv run python phase7/probe_questions.py --no-prefix   # protocol addendum 7: averages leave out the 3 opening
+                                                             # template tokens every prompt shares; outputs get _noprefix
 """
 
 import json
+import sys
 from pathlib import Path
 
 import matplotlib
@@ -21,7 +24,8 @@ import numpy as np
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 OUT = HERE / "probe_out"
-CACHE = OUT / "questions.npz"
+SKIP, TAG = (3, "_noprefix") if "--no-prefix" in sys.argv else (0, "")
+CACHE = OUT / f"questions{TAG}.npz"
 r3 = lambda x: round(float(x), 3)
 
 
@@ -37,16 +41,19 @@ def probe():
     assert sorted(down) == list(range(24))
     cur = {}
     for L, m in down.items():
-        m.register_forward_pre_hook(lambda _, inp, L=L: cur.__setitem__(L, inp[0][0].float().mean(0)))
+        m.register_forward_pre_hook(lambda _, inp, L=L: cur.__setitem__(L, inp[0][0][SKIP:].float().mean(0)))
     problems = json.loads((ROOT / "phase3c" / "problems.json").read_text(encoding="utf-8"))
-    last, mean, neur = [], [], []
+    last, mean, neur, opening = [], [], [], None
     for p in problems:
         prompt = tok.apply_chat_template([{"role": "user", "content": p["q"]}], tokenize=False,
                                          add_generation_prompt=True, enable_thinking=True)
+        ids = tok(prompt, return_tensors="pt").input_ids
+        opening = opening or ids[0, :3].tolist()
+        assert ids[0, :3].tolist() == opening, "prompts do not share their first 3 tokens"
         with torch.no_grad():
-            hs = model(tok(prompt, return_tensors="pt").input_ids.to("cuda"), output_hidden_states=True).hidden_states
+            hs = model(ids.to("cuda"), output_hidden_states=True).hidden_states
         last.append(torch.stack([h[0, -1].float() for h in hs]).cpu().numpy())
-        mean.append(torch.stack([h[0].float().mean(0) for h in hs]).cpu().numpy())
+        mean.append(torch.stack([h[0, SKIP:].float().mean(0) for h in hs]).cpu().numpy())
         neur.append(torch.stack([cur[L] for L in range(24)]).cpu().numpy())
     OUT.mkdir(exist_ok=True)
     np.savez(CACHE, last=np.array(last, np.float32), mean=np.array(mean, np.float32), neurons=np.array(neur, np.float16))
@@ -169,7 +176,7 @@ def main():
     print("POST-HOC length control:", {k: v for k, v in ctl.items() if k != "by_layer"})
     for k in ("difficulty_auc", "stuck_auc", "subject_accuracy"):
         print(f"   length-regressed {k}:", [r[k] for r in ctl["by_layer"]])
-    (HERE / "atlas_questions.json").write_text(json.dumps(res, indent=1))
+    (HERE / f"atlas_questions{TAG}.json").write_text(json.dumps(res, indent=1))
 
     # ---------- plots ----------
     lay = list(range(-1, 24))
@@ -190,7 +197,7 @@ def main():
     ax[1].legend(fontsize=7)
     sc = ax[2].scatter(pc[:, 0], pc[:, 1], s=9, c=level, cmap="viridis")
     ax[2].set(title="Same map, coloured by difficulty level", xlabel="PC1", ylabel="PC2"); fig.colorbar(sc, ax=ax[2])
-    fig.tight_layout(); fig.savefig(HERE / "fig_q1_decoding.png", dpi=130); plt.close(fig)
+    fig.tight_layout(); fig.savefig(HERE / f"fig_q1_decoding{TAG}.png", dpi=130); plt.close(fig)
 
     fig, ax = plt.subplots(1, 2, figsize=(13, 4.5))
     ax[0].bar(range(24), [r["n_eta2_gt_0p3"] for r in res["Q3_neurons"]])
@@ -203,7 +210,7 @@ def main():
     im = ax[1].imshow(m[:, order], aspect="auto", cmap="RdBu_r", vmin=-2.5, vmax=2.5)
     ax[1].set(yticks=range(len(subjects)), yticklabels=subjects, xlabel=f"top 40 subject-selective neurons in L{Lb}",
               title="Which subject lights up which neuron (z-scored mean activation)")
-    fig.colorbar(im, ax=ax[1]); fig.tight_layout(); fig.savefig(HERE / "fig_q2_neurons.png", dpi=130); plt.close(fig)
+    fig.colorbar(im, ax=ax[1]); fig.tight_layout(); fig.savefig(HERE / f"fig_q2_neurons{TAG}.png", dpi=130); plt.close(fig)
 
     # ---------- console ----------
     print("majority baseline", res["majority_baseline"])

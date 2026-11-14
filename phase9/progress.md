@@ -91,3 +91,12 @@ random control 2.2). Tier/family does not buy score — if anything, inverse.
 - Final 23.6% / cap 63.4 / mean 22,885. Fifth independent convergence on row 248069.
 - Committee pattern now 5-for-5: functioning committees 23.0–24.4 regardless of composition;
   loners 23.0–27.8 (best: flash-tier, crude ×1.5). Deliberation never beats the loner.
+
+## Condition 7 — interleaved-team — **9.0% — HURTS** (2026-11-15)
+
+- Session: 3/10 passes (cheapest, tied c6); novel mechanism byte-verified: uniform +0.02 on all
+  1024 elements of row 248069 (depth-gated via hidden-state sum sign). Critic's pre-registered
+  escalation gate REFUSED α=0.03 after free sims showed it burning correct answers — disciplined.
+- Final: 9.0% / cap 87.8 / mean 29,199 — the conservative dose collapsed at MATH-500 scale,
+  same failure mode as c1. Pass-economy prediction CONFIRMED; score prediction (HURTS) confirmed.
+- Phase 9 closed: 0/5 functioning committees beat their loner. See results.md.

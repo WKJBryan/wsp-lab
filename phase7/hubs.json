@@ -1,0 +1,260 @@
+{
+ "L14u46 | Hard question": {
+  "hub": [
+   14,
+   46
+  ],
+  "control": [
+   14,
+   85
+  ],
+  "clamp_value": -1.0316,
+  "sd_hub": 8.2155,
+  "sd_control": 0.5613,
+  "d_hub": 0.882,
+  "d_hub_clamped": 0.0,
+  "wires": {
+   "targets": 460,
+   "same_direction": 255,
+   "median_measured_over_predicted": 0.025,
+   "quartiles": [
+    -0.125,
+    0.166
+   ],
+   "pearson_r": -0.018,
+   "mean_abs_predicted": 0.164,
+   "mean_abs_measured": 0.033
+  },
+  "hub_clamped": {
+   "pattern_r": 0.9839,
+   "lit_before": 137,
+   "lit_after": 125,
+   "went_dark": 34,
+   "newly_lit": 22,
+   "mean_abs_change": 0.0359
+  },
+  "control_clamped": {
+   "pattern_r": 0.9999,
+   "lit_before": 137,
+   "lit_after": 139,
+   "went_dark": 1,
+   "newly_lit": 3,
+   "mean_abs_change": 0.0021
+  }
+ },
+ "L14u46 | Number Theory": {
+  "hub": [
+   14,
+   46
+  ],
+  "control": [
+   14,
+   85
+  ],
+  "clamp_value": -1.0316,
+  "sd_hub": 8.2155,
+  "sd_control": 0.5613,
+  "d_hub": -0.658,
+  "d_hub_clamped": 0.0,
+  "wires": {
+   "targets": 265,
+   "same_direction": 132,
+   "median_measured_over_predicted": -0.001,
+   "quartiles": [
+    -0.117,
+    0.149
+   ],
+   "pearson_r": 0.026,
+   "mean_abs_predicted": 0.235,
+   "mean_abs_measured": 0.042
+  },
+  "hub_clamped": {
+   "pattern_r": 0.9948,
+   "lit_before": 3766,
+   "lit_after": 3749,
+   "went_dark": 293,
+   "newly_lit": 276,
+   "mean_abs_change": 0.038
+  },
+  "control_clamped": {
+   "pattern_r": 0.9999,
+   "lit_before": 3766,
+   "lit_after": 3780,
+   "went_dark": 24,
+   "newly_lit": 38,
+   "mean_abs_change": 0.0044
+  }
+ },
+ "L14u46 | Geometry": {
+  "hub": [
+   14,
+   46
+  ],
+  "control": [
+   14,
+   85
+  ],
+  "clamp_value": -1.0316,
+  "sd_hub": 8.2155,
+  "sd_control": 0.5613,
+  "d_hub": 0.637,
+  "d_hub_clamped": 0.0,
+  "wires": {
+   "targets": 239,
+   "same_direction": 116,
+   "median_measured_over_predicted": -0.011,
+   "quartiles": [
+    -0.19,
+    0.155
+   ],
+   "pearson_r": -0.186,
+   "mean_abs_predicted": 0.235,
+   "mean_abs_measured": 0.052
+  },
+  "hub_clamped": {
+   "pattern_r": 0.9963,
+   "lit_before": 6856,
+   "lit_after": 6790,
+   "went_dark": 401,
+   "newly_lit": 335,
+   "mean_abs_change": 0.0399
+  },
+  "control_clamped": {
+   "pattern_r": 1.0,
+   "lit_before": 6856,
+   "lit_after": 6863,
+   "went_dark": 37,
+   "newly_lit": 44,
+   "mean_abs_change": 0.0039
+  }
+ },
+ "L14u46 | Precalculus": {
+  "hub": [
+   14,
+   46
+  ],
+  "control": [
+   14,
+   85
+  ],
+  "clamp_value": -1.0316,
+  "sd_hub": 8.2155,
+  "sd_control": 0.5613,
+  "d_hub": 0.687,
+  "d_hub_clamped": 0.0,
+  "wires": {
+   "targets": 203,
+   "same_direction": 123,
+   "median_measured_over_predicted": 0.055,
+   "quartiles": [
+    -0.12,
+    0.235
+   ],
+   "pearson_r": 0.168,
+   "mean_abs_predicted": 0.235,
+   "mean_abs_measured": 0.049
+  },
+  "hub_clamped": {
+   "pattern_r": 0.9954,
+   "lit_before": 4803,
+   "lit_after": 4832,
+   "went_dark": 296,
+   "newly_lit": 325,
+   "mean_abs_change": 0.0383
+  },
+  "control_clamped": {
+   "pattern_r": 0.9999,
+   "lit_before": 4803,
+   "lit_after": 4804,
+   "went_dark": 38,
+   "newly_lit": 39,
+   "mean_abs_change": 0.0041
+  }
+ },
+ "L5u1087 | Counting & Probability": {
+  "hub": [
+   5,
+   1087
+  ],
+  "control": [
+   5,
+   2
+  ],
+  "clamp_value": 0.016,
+  "sd_hub": 0.1521,
+  "sd_control": 0.1487,
+  "d_hub": 1.565,
+  "d_hub_clamped": 0.0,
+  "wires": {
+   "targets": 532,
+   "same_direction": 454,
+   "median_measured_over_predicted": 0.189,
+   "quartiles": [
+    0.071,
+    0.44
+   ],
+   "pearson_r": 0.653,
+   "mean_abs_predicted": 0.427,
+   "mean_abs_measured": 0.133
+  },
+  "hub_clamped": {
+   "pattern_r": 0.9932,
+   "lit_before": 12097,
+   "lit_after": 11495,
+   "went_dark": 1074,
+   "newly_lit": 472,
+   "mean_abs_change": 0.0428
+  },
+  "control_clamped": {
+   "pattern_r": 0.9999,
+   "lit_before": 12097,
+   "lit_after": 12073,
+   "went_dark": 100,
+   "newly_lit": 76,
+   "mean_abs_change": 0.0047
+  }
+ },
+ "L19u11 | Stuck in a loop": {
+  "hub": [
+   19,
+   11
+  ],
+  "control": [
+   19,
+   132
+  ],
+  "clamp_value": -0.3017,
+  "sd_hub": 0.9738,
+  "sd_control": 0.9765,
+  "d_hub": -2.743,
+  "d_hub_clamped": 0.0,
+  "wires": {
+   "targets": 173,
+   "same_direction": 160,
+   "median_measured_over_predicted": 0.679,
+   "quartiles": [
+    0.318,
+    0.91
+   ],
+   "pearson_r": 0.837,
+   "mean_abs_predicted": 0.338,
+   "mean_abs_measured": 0.205
+  },
+  "hub_clamped": {
+   "pattern_r": 0.9552,
+   "lit_before": 496,
+   "lit_after": 420,
+   "went_dark": 149,
+   "newly_lit": 73,
+   "mean_abs_change": 0.0811
+  },
+  "control_clamped": {
+   "pattern_r": 0.9997,
+   "lit_before": 496,
+   "lit_after": 493,
+   "went_dark": 10,
+   "newly_lit": 7,
+   "mean_abs_change": 0.0051
+  }
+ }
+}

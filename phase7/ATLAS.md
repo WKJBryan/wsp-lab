@@ -210,8 +210,207 @@ beats all four random draws. Reading: subtracting the direction that MARKS loops
 does not repair them and may get in the way; the effective push lies off that axis. One draw,
 n = 64 — a candidate for a seed repeat and a MATH-500 final, not a claim.
 
+## Finding 19 — the map's neurons carry a real repair: 26.2% on MATH-500 [measured, final, n = 500]
+
+Predictions committed first (`8a0296b`). `uperp_on_loop` (Finding 18) repeated on a new
+sampling seed: 76.6% closed / 40.6% accuracy on practice — not luck. MATH-500 final, same
+harness and rescorer as every other final: **131 / 500 = 26.2%** (95% CI 22.5–30.2) vs stock
+6.0%, random control 2.2%, blind LLM editors 25.2 / 27.8%, published edit 39.4%. Pre-registered
+verdict: SUCCESS, below the published edit (paired difference −13.2 points, SE 2.2).
+
+- The loop-active neurons found by the activation map at L10+L14 are a working repair site on
+  the real benchmark, not only on practice problems.
+- Practice passes overstated it (they put this arm level with the published edit). Practice
+  separates "works" from "does nothing"; it does not rank working edits.
+- Not a from-the-map-alone repair: the direction is derived from the published edit, and the
+  neurons were selected from stock's activity on these same problems (no answers used).
+
+## Finding 20 — direct MLP-to-MLP "wires" are real one at a time, but explain little of which units light up [measured, descriptive; no predictions made]
+
+`build_wires.py` → `wires.json`, drawn in the light map's 3D view. A wire is the DIRECT path
+only: unit i's down_proj column, read by unit j on a later floor through its RMSNorm and
+gate/up weights, linearised at the stock model's operating point while reading the 500 prompts
+(41,152 positions). All 276 floor pairs × 3584² unit pairs computed; contribution of a wire to
+a job = wire × job shift of the source / job SD of the target (Cohen's d units); the 600
+strongest per job are kept (both ends lit at |d| ≥ 0.5).
+
+- Formula checks pass on all 24 floors (this model's RMSNorm is (1 + w)·x/rms; a unit is
+  silu(gate)·up).
+- One wire at a time: raising the source unit by 1 SD in a real forward pass moved the target
+  the predicted way for **96 of 118** top wires (81%), but the measured change was a median
+  **0.30×** the direct prediction (quartiles 0.08–1.0; r = 0.48). Picking the largest
+  predictions inflates them, and later layers partly cancel the push.
+- All wires together: summed over every lower floor they do not reproduce which units light
+  up — **r = 0.02–0.23** across the nine jobs (lit units). The same first-order read-out
+  applied to EVERYTHING the unit reads (measured residual shift: embeddings + attention +
+  lower MLPs) reaches r = 0.41–0.49. So the linear picture is itself only moderate, and inside
+  it the MLP-to-MLP part is small (r between the two predictions 0.06–0.10).
+- Why: each floor's MLP write is most of that floor's change to the stream (cos 0.4–0.95), yet
+  the cumulative MLP write is nearly orthogonal to the net stream shift at mid floors
+  (cos ≈ 0.01 at L10 for Algebra and Hard question) — the embedding/attention part offsets it.
+- Loop job: the summed wires line up with the pattern only near the top (r 0.20–0.36 on
+  L18–L21, ≈ 0 below).
+- Hubs: a few source units carry most strong wires — L14 unit 46 is the source of 460 of the
+  600 strongest "Hard question" wires (265 / 239 / 203 for Number Theory / Geometry /
+  Precalculus); L5 unit 1087 of 532 for Counting & Probability; L19 unit 11 of 173 for the loop.
+  Partly by construction: a unit with a large job shift scales all its wires.
+- The map's L10/L14 brake units do not feed the published L15/L19 columns by direct wire
+  (contributed d ≤ 0.02; those columns barely move in loops, mean d 0.03–0.04).
+
+Caveats: one operating point (reading) for every job, including the loop job, which was
+measured while generating; RMSNorm's projection term ignored; no path through attention is
+traced; the nudge test used 8 prompts and only each job's 15 strongest wires.
+
+## Finding 21 — the hubs, tested: one real switch that is not a lever, one artefact of size, one weak [measured; forward passes + 1 practice pass]
+
+Predictions committed first (`6cabd32`); tables in `causal/results.md`. Each hub was held at one
+constant at every position and every unit's d recomputed (`test_hubs.py` → `hubs.json`).
+
+- **L19 unit 11 (loop).** Its wires hold up: 160 of 173 targets moved the predicted way at
+  0.68× the predicted size (r 0.84). Holding it at its before-the-loop level in replay turns
+  off 149 of the 496 loop lights on floors 20–23 (pre-registered H2 "the pattern does not
+  depend on the hub" FAILED for it). But zeroing its column and generating leaves looping
+  unchanged: 26.6% closed vs stock 18.8% (H4 confirmed, within noise). A switch for the loop
+  lights above it, not a lever on the loop. It reaches none of the 3,186 loop lights at or
+  below floor 19.
+- **L14 unit 46 (Hard question, Number Theory, Geometry, Precalculus).** Its wires are noise:
+  49–61% of targets the predicted way, median size 0.00–0.06× (H1 FAILED). The unit is a first-token spike: |activation| ≈ 75 on
+  the first token of every prompt and ≈ 0.11 elsewhere (SD 8.2; next-loudest unit on the floor
+  0.56, floor median 0.06). Its per-question average is therefore ≈ 75 / prompt length, so its
+  "Hard question" light is a PROMPT-LENGTH artefact, and its size inflates every wire it sends.
+  [risk for part 3] The reading jobs average over all positions including the first, so other
+  first-token units may be lit for the same reason; not yet counted.
+- **L5 unit 1087 (Counting & Probability).** Wires real but weak (85% the predicted way,
+  0.19×); the pattern survives without it (r 0.993).
+- Correction: the addendum described L19 unit 11 as "quieter" in loops; its activation is
+  negative and grows from −0.30 to −2.97. Negative d means "number went down", not "less active".
+
+## Finding 22 — the subject lights are mostly real; the "Hard question" lights are mostly question length [measured; forward passes]
+
+Predictions committed first (`bfaf4e7`); `probe_questions.py --no-prefix`, `remeasure_reading.py`
+→ `reading_remeasure.json`. Every prompt opens with the same 3 template tokens; the reading
+jobs were re-measured with those left out of every average, and again with prompt length
+(linear + log) regressed out of every unit. A unit that tracked the job and not length would
+keep 87–100% of its d under that regression (1 − r² of job label on log length).
+
+| job | lights at 0.8: all positions → no opening | old lights still lit | lit units keep (median) | job-only unit would keep | lights left under length control |
+|---|---|---|---|---|---|
+| Hard question | 289 → 200 | 62.6% | **46%** | 87% | **0** of 200 (strongest 0.76; at 0.5: 5,172 → 606) |
+| Algebra | 177 → 181 | 93.2% | 83% | 96% | 32 of 181 |
+| Number Theory | 6,920 → 6,924 | 92.9% | 82% | 96% | 3,258 of 6,924 |
+| Geometry | 13,687 → 13,556 | 95.2% | 86% | 97% | 8,925 of 13,556 |
+| Precalculus | 8,555 → 8,322 | 92.0% | 86% | 97% | 4,916 of 8,322 |
+| Prealgebra | 1,857 → 1,753 | 91.3% | 94% | 100% | 1,224 of 1,753 |
+| Intermediate Algebra | 8,953 → 8,752 | 94.2% | 96% | 99% | 7,216 of 8,752 |
+| Counting & Probability | 14,777 → 14,990 | 98.8% | 101% | 100% | 14,025 of 14,990 |
+
+- **R1 (L14 unit 46 drops out) FAILED on 3 of 4 jobs.** Without the opening its d does not
+  vanish, it flips sign: Hard question +0.88 → −0.54, Number Theory −0.66 → +0.77, Precalculus
+  +0.69 → −0.78 (Geometry +0.64 → −0.17). Its other tokens track length too, the other way.
+- **R2 (≥ 90% of lights stay, r ≥ 0.98) holds for all seven subjects** (91–99%, r 0.992–0.9997)
+  **and FAILS for Hard question** (62.6%, r 0.969).
+- **R3**: Hard question keeps none of its lights under length control (predicted < 60%: holds);
+  Geometry keeps 64.9% and Number Theory 46.4% of the old lights (predicted ≥ 70%: fails).
+- Reading: the difficulty "job" at unit level is mostly a length map — hard questions are 64%
+  longer (99 vs 60 tokens) and its units lose half their effect once length is accounted for.
+  The subjects are real with a length component, largest for the short-question subjects
+  (Number Theory, Algebra) and the long one (Geometry); Counting & Probability has none.
+  This matches Finding 11's "difficulty, partly length", now at the level of single units.
+- Part 3 re-run on the no-opening data: last-token decoding identical (subject 0.54, difficulty
+  AUC 0.841); mean-pooled 0.62 → 0.624 and 0.775 → 0.763; subject-selective neuron counts within
+  a few per floor (L21: 314 → 309). Findings 10–13 stand as far as the opening tokens go.
+- The light map, wires and page now use the no-opening measurement. Rebuilt wires: the L14
+  unit 46 hub is gone from all four jobs, and the nudge check improves to 105 of 122 the
+  predicted way at 0.47× (was 96 of 118 at 0.30×, r 0.48 → 0.79). Finding 21's hub numbers
+  were measured on the old wire lists.
+
+## Finding 23 — there is almost nothing empty to prune; the two loud units are removable [measured; forward passes + 2 practice passes]
+
+Predictions committed first (`d72262a`); tables in `causal/results.md`.
+
+- Loud-but-empty units (huge on token 0, quiet elsewhere): **2 of 86,016** — L14 unit 46 and
+  L3 unit 0. Silent units: **none** (quietest per-position SD 0.02).
+- Zeroing the two loud units changes 1.09% of next tokens (two ordinary units: 0.48%) and the
+  published-edit model still works without them: 64.1% closed / 50.0% accuracy on practice
+  (reference 57.8 / 43.8). Waste, and removable — but two units.
+- Smallest-first pruning (size = activity SD x column norm) beats random at every dose, yet
+  is never free: 5% removed → 94.3% of next tokens unchanged, 20% → 86.6%, 50% → 69.2%.
+  With the smallest 5% (4,294 units) gone the published-edit model still closes 62.5%
+  (accuracy 34.4%, 9 points down, about one SE at n = 64).
+- So the model is not carrying dead weight; pruning is a way to TEST labels (knock a labelled
+  group out, see what breaks), not yet a way to shrink it.
+
+## First labels for every unit [descriptive]
+
+`label_units.py` → `labels.csv` (one row per unit), `labels_summary.json`. A tag needs
+|d| >= 0.8 (subjects: with prompt length regressed out) or |r| >= 0.5 with log prompt length.
+
+| tag | units | busiest floors |
+|---|---|---|
+| subject (any of the 7) | 34,349 | 20, 21, 19 |
+| question length | 6,351 | 14, 23, 13 |
+| loop marker | 3,682 | 10, 14, 11 |
+| edited by authors / used in our repair | 128 / 128 | 15, 19 / 10, 14 |
+| first-word spike | 2 | 3, 14 |
+| no label yet | 45,526 (52.9%) | |
+
+Overlaps: 1,317 loop markers are also subject units; 2,126 subject units also track length;
+10,122 units carry two or more subjects. Per subject: Counting & Probability 17,064, Geometry
+10,271, Intermediate Algebra 8,467, Precalculus 6,140, Number Theory 3,815, Prealgebra 1,409,
+Algebra 36. No unit earns a "hard question" tag (Finding 22). These are correlational labels
+inside maths questions only; none is confirmed by a knockout yet.
+
+## Finding 24 — knockout: three subject labels hold up as "used for", four stay "goes with" [measured, held-out half; forward passes]
+
+Predictions committed first (`b96374e`); table in `causal/results.md`. Units chosen on the
+even-index problems (each subject's 1,000 most-more-active units), tested on the stock model's
+answers to the odd-index problems; selectivity = extra loss on the knocked-out subject's text
+over the mean on the other six; control = same count of random units per floor.
+
+- **Number Theory 1.53, Geometry 1.47, Intermediate Algebra 1.37** (90% ranges all above 1.19;
+  controls 0.96–1.02): removing the tagged units hurts that subject more. K1 holds.
+- Counting & Probability 1.43 but its control is 1.34 (its text is fragile to any removal);
+  Prealgebra 1.04, Precalculus 0.99, Algebra 0.96: no selectivity. K2 (5 of 7) and K3 fail.
+- It is a tilt, not a module: Geometry's knockout costs geometry text +7% loss and every other
+  subject +5%. Most of what subject-tagged units do is shared across maths.
+- Labels: Number Theory, Geometry, Intermediate Algebra → "used for (weakly)"; the other four
+  subject tags, and every other tag, remain "goes with".
+
+## Light map now uses length-controlled reading jobs [descriptive; 2026-11-14]
+
+`jobs.job_stats()` regresses prompt length (linear + log) out of the seven subjects and "Hard
+question" before computing d, so a subject light on the page is exactly a `subject: X` label
+(asserted in `build_lightmap.py`); hover shows every label and which passed the knockout.
+Lights at 0.8: Algebra 36, C&P 17,064, Geometry 10,271, Intermediate Algebra 8,467, Number
+Theory 3,815, Prealgebra 1,409, Precalculus 6,140, Hard question 0. Wires rebuilt on the same
+numbers: nudge check 113 of 127 same direction, r 0.93, median measured/predicted 0.63 (was
+105 of 122, r 0.785, 0.47). The reading-job hub tests in `hubs.json` were run on the old wire
+lists and are no longer shown; the loop job is unchanged.
+
+## Finding 25 — stacking the map's repair on the published edit does not help; at full strength it breaks the model [measured, 2 finals, n = 500]
+
+Predictions committed first (`d146c4c`); full tables in `causal/results.md`. Reason to try:
+94.7% of the published edit's capped answers (125 of 132) are still loops, and the map's
+L10+L14 neurons are a working repair site on their own (Finding 19).
+
+- `stack_half` (published edit + half the `uperp_on_loop` change): **37.0%** vs 39.4%, paired
+  difference −2.4 points, SE 2.1 — no difference. Loops unchanged (121 vs 125).
+- `stack_full` (full change): **4.4%**, paired difference −35.0 points — LOSS. Not loops: 453
+  of 500 answers decay into word fragments partway through.
+- Both passed the practice gate (closed 62.5% and 56.2%); practice gave `stack_full` 40.6%
+  accuracy and no warning. Short practice answers do not reveal damage that grows with length.
+- Reading: the L10+L14 repair is not a second, independent brake. Its direction is the
+  published edit's, so stacking is more of the same push; the loops that remain after the
+  published edit are not reached by it.
+
 ## Next
 
+- L19 unit 11: what makes it fire in loops (its own inputs), since it sits upstream of a third
+  of the top-floor loop lights.
+- A length-matched difficulty contrast (hard vs easy questions of the same token count), or the
+  light map rebuilt on length-controlled d: the "Hard question" job as it stands is mostly length.
+- Findings 12–13 (subject-selective neurons, loop vs question circuits) under length control;
+  they are unchanged by dropping the opening tokens but were never length-controlled per unit.
 - What separates u from d: apply the part of u that is not along d on its own; more random
   draws at both sites to estimate a hit rate.
 - Difficulty-controlled foreseeability: phase-5 finals have 4 samples per problem with mixed
