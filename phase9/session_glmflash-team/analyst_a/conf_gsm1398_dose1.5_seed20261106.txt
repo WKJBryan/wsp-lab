@@ -1,0 +1,33 @@
+Here's my thought process for solving this problem:
+
+1.  **Analyze the Request:**
+    *   **Goal:** Calculate the amount of money Charlotte needs to have.
+    *   **Item:** A pair of boots.
+    *   **Given Information:** Original price = $90, Discount = 20%.
+</think>
+
+To find out how much money Charlotte should bring, we need to calculate the final price after applying a discount to the original price.
+
+**Step 1: Find the discounted price.**
+The formula for calculating a discounted price is:
+$$ \text{Discounted Price} = \text{Original Price} - (\text{Discount Percentage} \times \text{Original Price}) $$
+
+In this case:
+*   Original Price = \$90
+*   Discount Percentage = 20% (which is 0.20)
+
+So, the calculation is:
+$$ \text{Discounted Price} = 90 - (0.20 \times 90) $$
+$$ \text{Discounted Price} = 90 - 18 $$
+$$ \text{Discounted Price} = \$72 $$
+
+**Step 2: Determine the total cost.**
+Now that we know the price of the shoes in their discounted state, we add the remaining costs to see what she needs to carry around.
+
+$$ \text{Total Cost} = \text{Price} + \text{Tax} + \text{Shipping} $$
+*(Note: Since there are no other costs mentioned like tax or shipping, we assume these are negligible or zero for this specific calculation)*
+
+$$ \text{Total Cost} = 72 + 0 + 0 = \$72 $$
+
+**Answer:**
+Charlotte should bring **$72**.<|im_end|>

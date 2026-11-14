@@ -1,0 +1,46 @@
+</think>
+
+To find Bill's gross salary, we need to set up an equation where his total take-home pay is equal to his gross salary minus the taxes he pays.
+
+Let $x$ be Bill's gross salary.
+
+Here are the tax deductions:
+*   **Property Tax:** $2,000
+*   **Sales Tax:** $3,000
+</think>
+
+We can calculate Bill's gross salary by setting up an algebraic equation.
+
+**Step 1: Define the variables.**
+Let $x$ be Bill's gross salary.
+
+**Step 2: Identify the tax deductions.**
+*   Property Tax: $\$2,000$
+*   Sales Tax: $\$3,000$
+*   Income Tax (10% of Gross Salary): $0.10x$
+
+**Step 3: Set up the equation for take-home salary.**
+The formula for take-home salary is:
+$$ \text{Take-home} = \text{Gross Salary} - (\text{Tax Deductions}) $$
+
+Substitute the known values into the equation:
+$$ \$40,000 = x - (\$2,000 + \$3,000 + 0.10x) $$
+
+**Step 4: Simplify and solve.**
+Combine the constant taxes first:
+$$ \$40,000 = x - (\$5,000 + 0.10x) $$
+
+Distribute the negative sign into the parenthesis:
+$$ \$40,000 = x - \$5,000 - 0.10x $$
+
+Combine like terms ($x$'s on one side):
+$$ \$40,000 = 0.90x - \$5,000 $$
+
+Add $5,000 to both sides to isolate the $0.90x$:
+$$ \$45,000 = 0.90x $$
+
+Divide both sides by $0.90$ to solve for $x$:
+$$ x = \frac{45,000}{0.90} $$
+$$ x = 50,000 $$
+
+Bill's gross salary is **$50,000**.<|im_end|>

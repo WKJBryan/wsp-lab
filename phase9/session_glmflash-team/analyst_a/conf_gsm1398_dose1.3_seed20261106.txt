@@ -1,0 +1,45 @@
+Here's my thought process for solving this problem:
+
+1.  **Analyze the Request:**
+    *   **Goal:** Calculate the amount of money Charlotte needs to have.
+    *   **Item:** A pair of boots.
+    *   **Given Information:** Original price = $90, Discount = 20%.
+    *   **Implicit Need:** The discount is a percentage of the *original* price.
+
+2.  **Determine the Calculation Method:**
+    *   *Step 1:* Find the discounted price. This involves subtracting the discount amount from the original price or multiplying by (1 - discount rate).
+    *   *Step 2:* Compare the result with the original cost to see if the user wants the cost of the shoes or the cost after the discount. Usually, in these scenarios, the question asks "How much money should she bring?" which implies the total cost (Price - Discount) OR it could be asking for the *total* cost including tax? No, usually it's just the final cost.
+    *   *Alternative Interpretation:* Sometimes "discount" refers to the value she gets back. But standard math problems assume the "amount needed to buy" is the Final Price. Let's check the wording again. "How much money should Charlotte bring...". If I buy something for $90 and get a 20% off, the bill comes out to $X$. She needs to pay X.
+    *   *Refinement:* Wait, let me double-check the logic. Does the user mean she pays the full price? Or does she pay the *discounted* price? In real life, you might think "I need $90" but if I get a 20% discount, maybe I'm paying less? Or maybe I'm paying the full price? Let's look at the phrasing carefully: "If the original price is $90 and there is a discount of 20%." This implies the cost *before* the discount was $90, and the cost *after* the discount is what we calculate.
+
+    *   *Wait, re-reading the prompt:* "Charlotte needs to know how much money to have with her when she goes to the shoe store."
+        *   Scenario A: She buys the item. She has to pay the price.
+        *   Scenario B: She buys the item. She gets a discount. She pays the discount.
+        *   Scenario C: The discount is on the *price*.
+        *   Standard interpretation: You pay the reduced price. So, $90 \times (1 - 0.20)$.
+        *   *Self-Correction/Check:* Actually, looking at similar riddles/math problems, sometimes they imply the discount applies to the *total* cost before she buys it.
+        *   Let's stick to the most logical financial interpretation:
+            1.  Calculate the sale price.
+            2.  Subtract the discount from the sale price to find the actual cash needed.
+
+    *   *Let's check the math:*
+        *   Original: $90
+        *   Discount: 20% of $90
+        *   Discount Amount: $0.20 \times 90 = 18$
+        *   Sale Price: $90 - 18 = 72$
+        *   Alternatively: $90 \times 0.8 = 72$
+        *   *Wait, is that right?* If the price is $90 and she gets a 20% discount, does she pay $90 - 18 = 72$? Yes.
+        *   *But wait...* What if the question is asking for the *total* cost? "How much money should she have..." implies the total cost (sale price).
+        *   *However*, let me consider if "discount" means she gets the money back.
+            *   If she buys a $90 shirt and gets a 20% off, she pays $90.
+            *   If she buys a $90 shirt and gets a 20% off, she pays $72.
+            *   If the prompt meant "She pays $90", then she doesn't need to know the discount.
+            *   Let's look at the wording again. "How much money should Charlotte bring to buy a pair of boots...".
+            *   Usually, if someone says "I have $90 and I want to buy an item, and there is a 20% discount", it implies the item costs $90 originally, and the sale price is calculated as $90 * (1 - 0.20) = 72$.
+            *   *Wait, is it possible the user made a typo and meant "What is the discount amount"?* No, the prompt is specific about the purchase goal.
+            *   *Is it possible the user meant "The original price is $90" meaning the price is $90 and the discount is applied to the original price?*
+            *   *Let's look for context clues.* "How much money should Charlotte bring".
+            *   If the answer is simply the sale price ($72), it feels too simple.
+            *   Maybe the discount is applied to the *total* cost? No, that would be weird.
+            *   Let's reconsider the phrase "original price". Usually, "original price" = Pre-discount price.
+            *   So, $P_{new} = P_{old} - (P_{old} \
