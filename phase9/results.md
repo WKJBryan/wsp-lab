@@ -17,6 +17,14 @@ random-edit control 2.2%.
 | 5 | glm5.3-single | step-driven loner | 7 | ~57 | **23.0%** | (baseline for c4) |
 | 6 | mixed-team | 4 models, 6 roles (waterfall) | 3 | 54.7 | **23.6%** | ⚪ NEUTRAL (vs best single 27.8) |
 | 7 | interleaved-team | surgeon+critic live loop (GLM-Flash) | 3 | 28.1 | **9.0%** | ❌ **HURTS** (vs 25.2) |
+| 8 | mimo-flash-team, format-corrected | short-ask 6-role | 3 | 17.2 | **5.8%** | ❌ **HURTS** (vs 27.8) |
+| 9 | mimo-pro-team, format-corrected | short-ask 6-role | 2 | — | no edit | ❌ NULL — cascade contamination |
+
+**Format-retry addendum (c8/c9, user-directed):** the corrected short-ask format rescued the
+mimo-flash committee (complete session, vs zero output before) but not mimo-pro (analyst
+monologues contaminate downstream asks — a cascade the format cannot fix). Final committee
+tally: **0 of 7 functioning-or-attempted committees beat their loner**; under-dosing appeared
+in every committee that shipped an edit, across model, family, tier, and format.
 
 Reference: loners under identical rules — mimo-flash 27.8 = mimo-pro 27.8 > GLM-flash 25.2 >
 GLM-5.3 23.0; original's hinted editor 39.4.
