@@ -61,3 +61,15 @@ MATH-500 via the phase-3c protocol (500 problems, 32K, 1 sample, `phase3c/rescor
 - Conditions 6–7: compared descriptively against all singles and the best single.
 - Secondary: passes spent, edit anatomy (site/dose vs the phase-4 convergence), and whether
   the red-team PREDICTED the dose cliff before any pass was spent on it (qualitative).
+
+## Addendum (2026-11-15, before c8 runs): format-corrected retries of c2/c3
+
+Conditions c2/c3 failed with NO EDIT because the 6-role waterfall format breaks both mimo tiers
+(long interpolated evidence, marathon asks — 4 documented session deaths). The format fix is
+known from phases 4b/4c (mimo's proven recipe): SHORT asks, ONE instruction per ask, compact
+evidence digests (≤600 chars), hard output caps (≤10 lines), executor split into micro-steps.
+
+- **c8 = mimo-flash-team-retry** (same blind rules, 10 passes, same final; baseline 27.8)
+- **c9 = mimo-pro-team-retry** (same; baseline 27.8)
+- HELPS ≥ 32.2 / NEUTRAL ±4.4 / HURTS ≤ 23.4, as always.
+- These complete the 2×2 format×model matrix for mimo: {marathon-ask, step-driven} × {team, solo}.
