@@ -100,3 +100,13 @@ random control 2.2). Tier/family does not buy score — if anything, inverse.
 - Final: 9.0% / cap 87.8 / mean 29,199 — the conservative dose collapsed at MATH-500 scale,
   same failure mode as c1. Pass-economy prediction CONFIRMED; score prediction (HURTS) confirmed.
 - Phase 9 closed: 0/5 functioning committees beat their loner. See results.md.
+
+## Condition 8 — mimo-flash-team, format-corrected — **5.8% — HURTS** (2026-11-15)
+
+- FORMAT FIX WORKED: complete committee session end-to-end (6/7 asks clean; 1 empty analyst
+  recovered by red-team), vs zero output in c2. Recipe confirmed: short asks, one instruction,
+  hard output caps, executor micro-steps.
+- But the committee disease remains: shipped the smallest dose of the phase (additive
+  ‖Δ‖=0.063 on rows 248069+4087); practice 17.2% (loner same model: ~57.8); final 5.8% ≈ stock.
+- Red-team again excellent (wrong-exit-token catch with cited lines, tokenizer probe, dose
+  ceiling). Under-dosing is DELIBERATION-caused, format eliminated as confound.
