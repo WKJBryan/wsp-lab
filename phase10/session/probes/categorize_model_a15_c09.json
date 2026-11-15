@@ -1,0 +1,642 @@
+[
+ {
+  "id": "gsm5570",
+  "gold": "190",
+  "pred": "190",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "s 30 = \\$90$$ |  | **2. Revenue from Big Bonsai:** | There were 5 big bonsai sold at $20 each. | $$5 \\times 20 = \\$100$$ |  | **3. Total Earnings:** | Now, add the two amounts together: | $$\\$90 + \\$100 = \\$190$$ |  | Lowry earned **$190**.",
+  "ntok": 410
+ },
+ {
+  "id": "gsm4131",
+  "gold": "50000",
+  "pred": "\\50,000",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "G = \\$45,000$$ |     $$Gross Salary (1 - 0.10) \\times G = \\$45,000$$ |     $$0.90 \\times G = \\$45,000$$ |     $$Gross Salary = \\$45,000 / 0.90$$ |     $$Gross Salary = \\$50,000$$ |  | **Answer:** | Bill's gross salary is **\\$50,000**.",
+  "ntok": 3446
+ },
+ {
+  "id": "gsm1398",
+  "gold": "72",
+  "pred": "72",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "Discount Amount} = \\$90 \\times 0.20 = \\$18 $$ | 4.  **Subtract the discount from the original price:** |     $$ \\text{Total Cost} = \\$90 - \\$18 = \\$72 $$ |  | **Answer:** | Charlotte should bring **$72** with her to buy the boots.",
+  "ntok": 266
+ },
+ {
+  "id": "gsm2472",
+  "gold": "12",
+  "pred": "0",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": " has ham sandwich. |    - 1 day has ham sandwich. |    - 1 day has ham sandwich. |    - 1 day has ham sandwich. |    - 1 day has ham sandwich. |    - 1 day has ham sandwich. |    - 1 day has ham sandwich. |    - 1 day has ham sandwich",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm4870",
+  "gold": "5122",
+  "pred": "5122",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": " = \\$4758$$ |  | **3. Calculate Revenue for Children:** | $$28 \\text{ children} \\times \\$13/\\text{child} = \\$364$$ |  | **4. Add the revenues together:** | $$\\$4758 + \\$364 = \\$5122$$ |  | The total revenue of the concert was **$5122**.",
+  "ntok": 451
+ },
+ {
+  "id": "gsm460",
+  "gold": "220000",
+  "pred": "220,000",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "ome for this year.** | Total Income = Total Pay + Bonus | $$Total\\_Income = 200,000 + 20,000$$ | $$Total\\_Income = \\$220,000$$ |  | </think> |  | John will make **$220,000** this year when adding both his total pay and bonus together.",
+  "ntok": 640
+ },
+ {
+  "id": "gsm1664",
+  "gold": "14",
+  "pred": "24",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "Wins = 6. | Round 4: 4 matches. Wins = 2. | Round 5: 6 matches. Wins = 6. | Round 6: 4 matches. Wins = 2. |  | Total matches won = $6 + 2 + 6 + 2 + 6 + 2 = 24$. |  | **Final Answer:** | Brendan won 24 matches throughout the competition.",
+  "ntok": 5327
+ },
+ {
+  "id": "gsm6773",
+  "gold": "115",
+  "pred": "65",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "eeded:** |     Subtract the current total earnings from the required total to find what Jerry needs to earn tonight: |     $$\\$200 - \\$135 = \\$65$$ |  | Jerry needs to earn **$65** tonight to achieve an average of $50 per night.",
+  "ntok": 1559
+ },
+ {
+  "id": "gsm1472",
+  "gold": "20",
+  "pred": "40",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": " assume the standard scenario where the question is asking for the *remaining* principal balance relative to the full loan: |  | **Answer:** | She will still owe **$\\frac{1}{2}$** of the original principal amount plus **$40**.",
+  "ntok": 877
+ },
+ {
+  "id": "gsm2577",
+  "gold": "24",
+  "pred": "24",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "** | *   Cost per umbrella: $8 each. |  | **Step 3: Calculate the total cost.** | *   Total cost = (Number of umbrellas) $\\times$ (Cost per umbrella) | *   Total cost = $3 \\times 8$ | *   Total cost = $24$ |  | John paid a total of $24.",
+  "ntok": 228
+ },
+ {
+  "id": "gsm875",
+  "gold": "123",
+  "pred": "123",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "*   Price: $27 | *   Total: $27 |  | **2. Calculate the cost of color cartridges:** | *   Quantity: 3 | *   Price: $32 | *   Total: $32 \\times 3 = \\$96$ |  | **3. Add the two totals together:** | *   $27 + $96 = $123 |  | Jerry pays **$123**.",
+  "ntok": 741
+ },
+ {
+  "id": "gsm4544",
+  "gold": "58000",
+  "pred": "different",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "two years (2014 and 2015). | $$\\text{Total Earnings} = K_{2014} + K_{2015}$$ | $$\\text{Total Earnings} = 22000 + 36000$$ | $$\\text{Total Earnings} = 58000$$ |  | **Answer:** | Kendra's total earnings in the two years are **$58000**.",
+  "ntok": 4935
+ },
+ {
+  "id": "gsm3485",
+  "gold": "310",
+  "pred": "310",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": " |  | Maria started with **$760**. | She spent $300 on the ticket. | She paid half of that ($150) for the hotel. | To find how much money she has left: |  | $$760 - 300 - 150 = 310$$ |  | She ends up with **$310**.",
+  "ntok": 80
+ },
+ {
+  "id": "gsm7440",
+  "gold": "135",
+  "pred": "135",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": " \\frac{\\text{Remaining Cupcakes}}{\\text{Total Friends}} $$ |  | $$ \\text{Cupcakes per Friend} = \\frac{2700}{20} $$ |  | $$ \\text{Cupcakes per Friend} = 135 $$ |  | **Answer:** Each of Carla's daughter's friends ate **135** cupcakes.",
+  "ntok": 526
+ },
+ {
+  "id": "gsm4814",
+  "gold": "83",
+  "pred": "83",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "s: | $10x = 100$ |  | Divide by 10: | $x = 10$ |  | This means there are 10 phone messages. | Now we find the number of emails using the equation above: | $9(10) - 7 = 90 - 7 = 83$ |  | So, she has 83 emails. |  | **Answer:** She has 83 emails.",
+  "ntok": 326
+ },
+ {
+  "id": "gsm7345",
+  "gold": "24",
+  "pred": "24",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "hes 16 birds at night. |  | 3.  **Calculate the total number of birds caught:** |     Add the birds caught during the day and those caught at night together. |     $$8 + 16 = 24$$ |  | There are **24** birds the cat caught in total.",
+  "ntok": 481
+ },
+ {
+  "id": "gsm7359",
+  "gold": "20",
+  "pred": "40",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": ", add the known costs together to find out how much is left over. | $$ 110 - 40 - 30 = 2J $$ | $$ 80 = 2J $$ |  | Next, divide by 2 to isolate $J$. | $$ J = \\frac{80}{2} $$ | $$ J = 40 $$ |  | **Answer:** | One pair of jeans cost **$40**.",
+  "ntok": 395
+ },
+ {
+  "id": "gsm2693",
+  "gold": "12000",
+  "pred": "\\12,000",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "ion: |     $$ \\$50,000 \\times 0.20 = \\$10,000 $$ |  | ### Final Calculation | Now, add the taxes for both parts together: |  | $$ \\text{Total Tax} = \\$2,000 + \\$10,000 = \\$12,000 $$ |  | ### Conclusion | John pays **$\\$12,000$** in taxes.",
+  "ntok": 511
+ },
+ {
+  "id": "gsm6120",
+  "gold": "144",
+  "pred": "144",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "udents who like Yellow and Blue.** | $$ \\text{Total} = \\text{Blue} + \\text{Yellow} $$ | $$ \\text{Total} = 60 + 84 = 144 $$ |  | **Answer:** | The combined number of students who like the color yellow and the color blue is **144**.",
+  "ntok": 6228
+ },
+ {
+  "id": "gsm2742",
+  "gold": "60",
+  "pred": "90",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "e 2 brothers, and they share the good candies equally. | $$ \\text{Candies per brother} = \\frac{\\text{Good Candies}}{2} $$ | $$ \\text{Candies per brother} = \\frac{180}{2} = 90 $$ |  | **Answer:** | Each brother gets **90** candies.",
+  "ntok": 337
+ },
+ {
+  "id": "gsm1245",
+  "gold": "54",
+  "pred": "54",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "}.$$ |  | 5.  **Calculate the amount left to be sold tomorrow:** |     Subtract the amount sold today from the remaining amount. |     $$72 - 18 = 54 \\text{ watermelons}.$$ |  | There are **54** watermelons left to be sold tomorrow.",
+  "ntok": 4210
+ },
+ {
+  "id": "gsm55",
+  "gold": "75",
+  "pred": "75%",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "umber of flowers is 100 and there are 25 roses: |     $$100 - 25 = 75$$ |  | 3.  **Calculate the percentage.** |     To find the percentage of flowers that are not roses: |     $$\\frac{75}{100} \\times 100 = 75\\%$$ |  | **Answer:** 75%",
+  "ntok": 1190
+ },
+ {
+  "id": "gsm661",
+  "gold": "5",
+  "pred": "5",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "You have 30 nuts, and $5/6$ of them were eaten. | $$30 \\times \\frac{5}{6} = \\frac{150}{6} = 25$$ | So, **25 nuts** were eaten. |  | **Step 2: Subtract the eaten nuts from the total.** | $$30 - 25 = 5$$ |  | There were **5** nuts left.",
+  "ntok": 511
+ },
+ {
+  "id": "gsm2261",
+  "gold": "20",
+  "pred": "20",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "g + Katie$$ | $$Total = x + 4x$$ | $$Total = 5x$$ |  | **Step 3: Solve for the unknown.** | We know the total amount is 100. | $$5x = 100$$ | Divide both sides by 5: | $$x = 20$$ |  | So, Greg has 20 gold. |  | **Answer:** | Greg has **20** gold.",
+  "ntok": 664
+ },
+ {
+  "id": "gsm4602",
+  "gold": "35",
+  "pred": "35",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": " grade = $95 - 25 = 70$ |  | 2.  **Find Bob's grade:** The problem states that Bob's grade was equal to half of Jason's grade. |     *   Bob's grade = $\\frac{1}{2} \\times 70$ |     *   Bob's grade = $35$ |  | **Bob's grade was 35.**",
+  "ntok": 659
+ },
+ {
+  "id": "gsm4055",
+  "gold": "20",
+  "pred": "20",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "tal Candies Sold = $34 \\text{ people} \\times 20 \\text{ candies/person} = 680 \\text{ candies}$ | *   Remaining Candies = $700 \\text{ initial} - 680 \\text{ sold} = 20 \\text{ candies}$ |  | **Answer:** | He had **20** candies left.",
+  "ntok": 1365
+ },
+ {
+  "id": "gsm5621",
+  "gold": "5",
+  "pred": "35",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "(\\text{Thursday}) + 8 (\\text{Friday}) = 35 \\text{ hours}$$ |  | Therefore, if he worked the same number of hours each day (on Monday and Tuesday being the standard 8-hour days), the total hours he could work is **35 hours**.",
+  "ntok": 1849
+ },
+ {
+  "id": "gsm5163",
+  "gold": "13",
+  "pred": "13",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "ea pig eats 3 cups more than the second one. | *   Calculation: $4 + 3 = 7$ cups | *   Amount: 7 cups |  | **Total:** | Now we add the amounts for all three guinea pigs: | $$2 + 4 + 7 = 13$$ |  | Rollo needs to feed him 13 cups of food.",
+  "ntok": 780
+ },
+ {
+  "id": "gsm1534",
+  "gold": "160",
+  "pred": "160",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "om both sides: |     $$ 0.65x = 104 $$ |  | 2.  Divide by $0.65$: |     $$ x = \\frac{104}{0.65} $$ |  | 3.  Simplify the fraction: |     $$ x = \\frac{10400}{65} $$ |     $$ x = 160 $$ |  | **Answer:** | There are **160** books in the library.",
+  "ntok": 2650
+ },
+ {
+  "id": "gsm6913",
+  "gold": "42",
+  "pred": "42",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "). At 9 gumballs per pair, this totals **45 gumballs**. |  | The total number of gumballs available is $27 + 54 + 45 = 126$. |  | Since Kim eats 3 gumballs a day: | $$ \\frac{126}{3} = 42 $$ |  | The gumballs will last for **42 days**.",
+  "ntok": 3551
+ },
+ {
+  "id": "gsm112",
+  "gold": "920",
+  "pred": "520",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "the total number of photos in the gallery after both days of taking photos, we add the photos taken on the first and second days. |     $$200 + 320 = 520$$ |  | **Answer:** | The total number of photos in the gallery is **520**.",
+  "ntok": 544
+ },
+ {
+  "id": "gsm5649",
+  "gold": "136",
+  "pred": "28",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": " marbles. |  | 3.  **Find Albert's marbles:** |     Albert has three times as many marbles as Angela. |     $3 \\times 36 = \\mathbf{108}$ marbles. |  | **Final Answer:** | *   **Albert has 108 marbles.** | *   **Allison has 28 marbles.**",
+  "ntok": 807
+ },
+ {
+  "id": "gsm1273",
+  "gold": "6",
+  "pred": "6.00",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "   $$ \\$0.75 \\times 2 = \\$1.50 $$ | *   **Candy Bars:** John bought 3 bars. |     $$ \\$1.50 \\times 3 = \\$4.50 $$ |  | **Total Cost:** | $$ \\$1.50 (\\text{gum}) + \\$4.50 (\\text{candy bars}) = \\$6.00 $$ |  | John paid **$6.00** in total.",
+  "ntok": 496
+ },
+ {
+  "id": "gsm3787",
+  "gold": "46",
+  "pred": "46",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "Start: 18. | Service 1: 8 years. | Service 2: 25% longer than 8 years = $10$ years. | Service 3: 10 years. |  | Total Years = $8 + 10 + 10 = 28$. | Total Age = $18 + 28 = 46$. |  | **Answer:** Jason was **46** years old when he retired.",
+  "ntok": 1343
+ },
+ {
+  "id": "gsm6178",
+  "gold": "64",
+  "pred": "different",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "e: \u20ac55 + \u20ac20 = **\u20ac75** |  | 3.  **Calculate the amount Ibrahim lacks:** |     *   To find the lack, subtract the total available money from the total cost. |     *   Lack = \u20ac139 - \u20ac75 = **\u20ac64** |  | Therefore, Ibrahim lacks **\u20ac64**.",
+  "ntok": 3878
+ },
+ {
+  "id": "gsm1460",
+  "gold": "2",
+  "pred": "5",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": " \\text{ km} = v \\times 4 \\text{ hours}$$ |  | Solving for $v$: | $$v = \\frac{20}{4}$$ | $$v = 5 \\text{ km/hr}$$ |  | **Answer:** | The man needs to travel at a speed of **5 km/hr** for the remainder of the journey to be right on time.",
+  "ntok": 415
+ },
+ {
+  "id": "gsm4024",
+  "gold": "60",
+  "pred": "60",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "{ days} = 12 \\text{ miles}$ | *   **Week 3:** $3 \\text{ miles} \\times 6 \\text{ days} = 18 \\text{ miles}$ | *   **Week 4:** $4 \\text{ miles} \\times 6 \\text{ days} = 24 \\text{ miles}$ |  | **Total:** $6 + 12 + 18 + 24 = 60$ miles.",
+  "ntok": 331
+ },
+ {
+  "id": "gsm1291",
+  "gold": "4",
+  "pred": "4",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": " | **Kindergartners:** 14 | **First Graders:** 24 |  | To find the number of second graders, subtract the known group sizes from the total count: |  | $$42 - (14 + 24) = 4$$ |  | So, there are **4** second graders in Ms. Watson's class.",
+  "ntok": 760
+ },
+ {
+  "id": "gsm2605",
+  "gold": "660",
+  "pred": "1940",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "he premium paid directly for the policy rather than an additional out-of-pocket payment for the insurance coverage itself. In either case, the calculation remains consistent.) |  | **Answer:** John paid a total of **$1940**.",
+  "ntok": 5598
+ },
+ {
+  "id": "gsm2875",
+  "gold": "12",
+  "pred": "12",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "te the total distance:** |     Summing the lengths of all four legs of the journey: |     $$Total = KD + MD + MD + KD$$ |     $$Total = 4 + 2 + 2 + 4$$ |     $$Total = 12 \\text{ miles}$$ |  | **Answer:** | Ken will cover **12** miles.",
+  "ntok": 4777
+ },
+ {
+  "id": "gsm7055",
+  "gold": "19",
+  "pred": "27",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": " transferred them to the other girl), the calculation holds. |  |     **Calculation:** |     Lisa starts with 15. |     Cindy gives 12 marbles. |     Lisa ends up with $15 + 12 = 27$. |  |     **Answer:** Lisa has **27** more marbles.",
+  "ntok": 2061
+ },
+ {
+  "id": "gsm1549",
+  "gold": "7",
+  "pred": "5",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "berries)} + 0.5 \\text{ (Blueberries)}$$ |  | Let's group the integers and decimals: | *   Integers: $1 + 1 + 2 = 4$ | *   Decimals: $0.5 + 0.5 = 1$ | *   Mixed: $4 + 1 = 5$ |  | $$5 \\text{ pounds}$$ |  | Melanie buys **5 pounds** of food.",
+  "ntok": 526
+ },
+ {
+  "id": "gsm2705",
+  "gold": "78",
+  "pred": "78",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "text{Total Monthly Bill} = \\text{Original Bill} + \\text{Increase} $$ | $$ \\text{Total Monthly Bill} = 60 + 18 $$ | $$ \\text{Total Monthly Bill} = 78 $$ |  | **Answer:** | Maximoff's total monthly bill working from home is **$78**.",
+  "ntok": 364
+ },
+ {
+  "id": "gsm4562",
+  "gold": "2",
+  "pred": "2",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "oles remaining:** Total holes - Holes filled |  | $$ \\text{Holes remaining} = 8 - (0.75 \\times 8) $$ | $$ \\text{Holes remaining} = 8 - 6 $$ | $$ \\text{Holes remaining} = 2 $$ |  | Therefore, there are **2** holes remaining unfilled.",
+  "ntok": 209
+ },
+ {
+  "id": "gsm1227",
+  "gold": "2",
+  "pred": "27",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": " **Conclusion:** |     *   Francine has 5 full boxes of crayons. |     *   She needs 32 boxes to hold all loose crayons. |     *   Therefore, she needs **32 - 5 = 27** more boxes. |  | **Answer:** Francine needs **27** more boxes.",
+  "ntok": 3321
+ },
+ {
+  "id": "gsm1326",
+  "gold": "84",
+  "pred": "9",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "er of Tires}) $$ |  | Substituting the known values into the equation: | $$ \\$36 = p \\times 4 $$ |  | To find $p$, divide both sides by 4: | $$ p = \\frac{36}{4} $$ | $$ p = 9 $$ |  | **Answer:** | The original price of each tire was **$9**.",
+  "ntok": 341
+ },
+ {
+  "id": "gsm6578",
+  "gold": "3300",
+  "pred": "3300",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "approx 66.67\\%$. |  | *   Calculate the remaining books: |     *   $9900 \\times (2/3) = 6600$ books remaining. |  | *   Calculate the number of books sold: |     *   $9900 - 6600 = 3300$ books. |  | **Answer:** They sold **3300** books.",
+  "ntok": 2100
+ },
+ {
+  "id": "gsm5585",
+  "gold": "143",
+  "pred": "143",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "ee animals half as many times as they were seen in February ($78 \\div 2 = 39$ times). |  | **Total Count:** | $$26 + 78 + 39 = 143$$ |  | There were **143** total times families saw an animal in the first three months of the year.",
+  "ntok": 435
+ },
+ {
+  "id": "gsm2687",
+  "gold": "80",
+  "pred": "120?",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ation. | \"On Monday he triples the number of total trees in the forest by planting new trees.\" | Maybe \"triples\" means he doubles the number of total trees? No. | Maybe \"triples\" means he adds 2/3 of the total? No. | Maybe \"trip",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm2872",
+  "gold": "8",
+  "pred": "8",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "2 \\text{ (cookies/student)} = 8 \\text{ cookies}$$ |  | *(Alternatively, you can multiply the percentage by the total number of cookies: $8 \\text{ cookies}$)* |  | **Final Answer:** | Giorgio will make **8** oatmeal raisin cookies.",
+  "ntok": 396
+ },
+ {
+  "id": "gsm468",
+  "gold": "504",
+  "pred": "504",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "the total tax:** | *   Sales tax is 5% of the subtotal ($480). | *   $5\\% \\text{ of } \\$480 = 0.05 \\times 480 = \\$24$. |  | **5. Final Total:** | *   $480 (\\text{Subtotal}) + \\$24 (\\text{Tax}) = \\$504$. |  | Kevin has to pay **$504**.",
+  "ntok": 1185
+ },
+ {
+  "id": "gsm7068",
+  "gold": "325",
+  "pred": "125",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "$50 (Ticket 3) = **$350**. | *   He paid $25 (Roommate). |  | $$ \\text{Remaining Balance} = \\$500 - \\$350 - \\$25 $$ | $$ \\text{Remaining Balance} = \\$150 - \\$25 $$ | $$ \\text{Remaining Balance} = \\$125 $$ |  | James has **$125** left.",
+  "ntok": 1350
+ },
+ {
+  "id": "gsm5966",
+  "gold": "150",
+  "pred": "224",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": " I read 20% of the book (100). | This sums to 350. | Remaining: 150. |  | Wait. | If I read 20% of the book (100) on the first night. | I have 400 left. | If I read 20% of the book (100) on the second night. | I have 300 left. | If I read",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm3517",
+  "gold": "50",
+  "pred": "No",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "per serving} = \\frac{\\$20.00}{40 \\text{ servings}} = \\$0.50 $$ |  | Converting to cents: | $$ \\$0.50 = \\$50 \\text{ cents} $$ |  | **Answer:** | Each serving of nuts will cost **$50.00** (or **50 cents**) after the coupon is applied.",
+  "ntok": 2939
+ },
+ {
+  "id": "gsm1533",
+  "gold": "64",
+  "pred": "64",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "culation above ($\\frac{1}{8}x$), we equate the remaining amount to 8. | *   $\\frac{1}{8}x = 8$ | *   Multiply both sides by 8: |     $$x = 8 \\times 8$$ |     $$x = 64$$ |  | **Answer:** | There were **64** cookies in the bag to start.",
+  "ntok": 1553
+ },
+ {
+  "id": "gsm6554",
+  "gold": "10",
+  "pred": "10",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": " Total beads = $30$ |  | **Step 5: Calculate the number of Silver beads.** | There are a total of 40 beads. We already know there are 30. | *   Silver beads = $40 - 30$ | *   Silver beads = $10$ |  | Michelle uses **10** silver beads.",
+  "ntok": 437
+ },
+ {
+  "id": "gsm3591",
+  "gold": "750",
+  "pred": "750",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "text{after Week 2}} = \\$500 \\times (1 + 0.50) $$ | $$ \\text{Value}_{\\text{after Week 2}} = \\$500 \\times 1.50 $$ | $$ \\text{Value}_{\\text{after Week 2}} = \\$750 $$ |  | **Final Answer:** | Her investment will be worth **$750** now.",
+  "ntok": 888
+ },
+ {
+  "id": "gsm2959",
+  "gold": "9",
+  "pred": "9",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "rmation provided: |  | 1.  **\"Three dozens\"** usually refers to $3 \\times 12 = 36$ pebbles. | 2.  Each friend received **4** pebbles. | 3.  To find the number of friends who received pebbles: |     $$36 \\div 4 = 9$$ |  | **Answer: 9**",
+  "ntok": 2702
+ },
+ {
+  "id": "gsm5790",
+  "gold": "32",
+  "pred": "32",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "tion: $\\text{Hours}_{\\text{Lisa}} \\times \\$15 = \\$480$. | *   $\\text{Hours}_{\\text{Lisa}} = \\$480 / \\$15$. | *   $\\text{Hours}_{\\text{Lisa}} = 32$. |  | **Answer:** | Lisa would have to work **32 hours** to equal Greta's earnings.",
+  "ntok": 449
+ },
+ {
+  "id": "gsm5976",
+  "gold": "13",
+  "pred": "13",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "ought: | $$5x + 16 = 81$$ |  | Next, subtract 16 from both sides to isolate $5x$: | $$5x = 81 - 16$$ | $$5x = 65$$ |  | Finally, divide by 5 to solve for $x$: | $$x = 65 / 5$$ | $$x = 13$$ |  | **Answer:** | She needs to buy **13** 5-inch subs.",
+  "ntok": 1480
+ },
+ {
+  "id": "gsm3251",
+  "gold": "13",
+  "pred": "13",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "e ball requires 300 rubber bands. To find the maximum number of balls he can make: | $$3900 \\div 300 = 13$$ |  | There are exactly 13 full sets of large balls that can be made. |  | **Answer:** | Michael can make **13** large balls.",
+  "ntok": 374
+ },
+ {
+  "id": "gsm633",
+  "gold": "21",
+  "pred": "21",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "'s shoe sizes together. |     $$\\text{Combined Size} = \\text{Jasmine} + \\text{Alexa}$$ |     $$\\text{Combined Size} = 7 + 14$$ |     $$\\text{Combined Size} = 21$$ |  | **Answer:** | The combined shoe size for both of them is **21**.",
+  "ntok": 433
+ },
+ {
+  "id": "gsm4176",
+  "gold": "5",
+  "pred": "24",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "s.** |  | Here is the breakdown: | *   One dog has 4 legs. | *   Two dogs would have 8 legs. | *   Three dogs would have 12 legs. | *   Four dogs would have 16 legs. | *   Five dogs would have 20 legs. | *   Six dogs would have 24 legs.",
+  "ntok": 308
+ },
+ {
+  "id": "gsm4143",
+  "gold": "80",
+  "pred": "20",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "sed on the standard interpretation of this type of riddle\u2014where cars move forward from start to finish\u2014the number of cars equals the number of people because each car passes the finish line exactly once.) |  | **Answer:** 20",
+  "ntok": 2870
+ }
+]

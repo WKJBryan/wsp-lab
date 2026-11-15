@@ -1,0 +1,642 @@
+[
+ {
+  "id": "gsm5570",
+  "gold": "190",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm4131",
+  "gold": "50000",
+  "pred": "350,000",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": " + (0.10x)$$ |  | 2.  Subtract $5,000$ from both sides to isolate the tax portion: |     $$35,000 = 0.10x$$ |  | 3.  Divide by $0.10$ to solve for $x$: |     $$x = \\frac{35,000}{0.10}$$ | </think> |  | Bill's gross salary is **$350,000**.",
+  "ntok": 317
+ },
+ {
+  "id": "gsm1398",
+  "gold": "72",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm2472",
+  "gold": "12",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm4870",
+  "gold": "5122",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm460",
+  "gold": "220000",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm1664",
+  "gold": "14",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm6773",
+  "gold": "115",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm1472",
+  "gold": "20",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm2577",
+  "gold": "24",
+  "pred": "24",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "ly the price per umbrella by the number of umbrellas he has: |  | $$2 \\text{ umbrellas} \\times \\$8/\\text{umbrella} = \\$16$$ |  | He also bought a third umbrella in the car for an additional **$8**. |  | **Total:** $16 + $8 = **$24**",
+  "ntok": 145
+ },
+ {
+  "id": "gsm875",
+  "gold": "123",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm4544",
+  "gold": "58000",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm3485",
+  "gold": "310",
+  "pred": "310",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": ":** $760 | </think> |  | Maria started with **$760**. She spent **$300** on the ticket and **half of that** ($300 / 2 = $150) for the hotel. |  | To find out how much she has left: | $$760 - 300 - 150 = 310$$ |  | She has **$310** left.",
+  "ntok": 126
+ },
+ {
+  "id": "gsm7440",
+  "gold": "135",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm4814",
+  "gold": "83",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm7345",
+  "gold": "24",
+  "pred": "24",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "k> |  | The cat catches **8** birds during the day and **twice this amount** (which is $8 \\times 2 = 16$) at night. |  | To find the total, add these two amounts together: | $$8 + 16 = 24$$ |  | The cat caught a total of **24** birds.",
+  "ntok": 148
+ },
+ {
+  "id": "gsm7359",
+  "gold": "20",
+  "pred": "20",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "oes)} = \\$40$$ |  | 3.  **Determine the cost of the two pairs of jeans:** |     Since the total cost for the jeans is $40 and there are two pairs, divide the total by 2: |     $$\\$40 / 2 = \\$20$$ |  | One pair of jeans cost **$20**.",
+  "ntok": 383
+ },
+ {
+  "id": "gsm2693",
+  "gold": "12000",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm6120",
+  "gold": "144",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm2742",
+  "gold": "60",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm1245",
+  "gold": "54",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm55",
+  "gold": "75",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm661",
+  "gold": "5",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm2261",
+  "gold": "20",
+  "pred": "80",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "nd $K$: |  | $$K = 20$$ |  | Now, substitute $K$ back into the expression for $G$: |  | $$G = 4 \\times 20$$ | $$G = 80$$ |  | Alternatively, using the total: | Since Katie has 20, Greg has $100 - 20 = 80$. |  | **Answer:** | Greg has **80** gold.",
+  "ntok": 293
+ },
+ {
+  "id": "gsm4602",
+  "gold": "35",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm4055",
+  "gold": "20",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm5621",
+  "gold": "5",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm5163",
+  "gold": "13",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm1534",
+  "gold": "160",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm6913",
+  "gold": "42",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm112",
+  "gold": "920",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm5649",
+  "gold": "136",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm1273",
+  "gold": "6",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm3787",
+  "gold": "46",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm6178",
+  "gold": "64",
+  "pred": "\u20ac119",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "alculate the Total Cost | *   **MP3 Player:** \u20ac120 | *   **CD:** \u20ac19 | </think> |  | **Total Cost:** \u20ac120 + \u20ac19 = **\u20ac139** |  | **Amount Received:** \u20ac20 (from the father) |  | **Difference:** \u20ac139 - \u20ac20 = **\u20ac119** |  | Ibrahim lacks **\u20ac119**.",
+  "ntok": 123
+ },
+ {
+  "id": "gsm1460",
+  "gold": "2",
+  "pred": "2",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "ed} = \\frac{\\text{Distance}}{\\text{Time}}$: | $$ \\text{Required Speed} = \\frac{8 \\text{ km}}{4 \\text{ hr}} = 2 \\text{ km/hr} $$ |  | </think> |  | The man needs to travel at a speed of **2 km/hr** for the remainder of the journey.",
+  "ntok": 742
+ },
+ {
+  "id": "gsm4024",
+  "gold": "60",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm1291",
+  "gold": "4",
+  "pred": "4",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "p an equation: | $$38 + x = 42$$ |  | ### Step 2: Solve for the Unknown | Now, we subtract 38 from both sides of the equation to isolate $x$: | $$x = 42 - 38$$ | $$x = 4$$ |  | ### Conclusion | Ms. Watson's class has **4** second graders.",
+  "ntok": 240
+ },
+ {
+  "id": "gsm2605",
+  "gold": "660",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm2875",
+  "gold": "12",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm7055",
+  "gold": "19",
+  "pred": "8",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "out how many marbles Lisa had initially:** |     *   Cindy has 20 marbles. | </think></think> |  | Based on the information provided: |  | *   **Cindy's initial count:** 20 marbles. | </think></think> |  | **Lisa has 8 more marbles now.**",
+  "ntok": 84
+ },
+ {
+  "id": "gsm1549",
+  "gold": "7",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm2705",
+  "gold": "78",
+  "pred": "108",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "eased by thirty percent ($30\\%$). | </think> |  | To find the total monthly bill working from home, you can use the following calculation: |  | *   Original bill: $60 | </think> |  | The total monthly bill working from home is **$108**.",
+  "ntok": 202
+ },
+ {
+  "id": "gsm4562",
+  "gold": "2",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm1227",
+  "gold": "2",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm1326",
+  "gold": "84",
+  "pred": "think",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "  **Find the Average Savings per Tire:** Since the savings were the same for all tires, divide the total savings by the number of tires. |     $$ \\$36 \\div 4 = \\$9 $$ |  | Therefore, the original price of each tire was **$9**.",
+  "ntok": 416
+ },
+ {
+  "id": "gsm6578",
+  "gold": "3300",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm5585",
+  "gold": "143",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm2687",
+  "gold": "80",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm2872",
+  "gold": "8",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm468",
+  "gold": "504",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm7068",
+  "gold": "325",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm5966",
+  "gold": "150",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm3517",
+  "gold": "50",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm1533",
+  "gold": "64",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm6554",
+  "gold": "10",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm3591",
+  "gold": "750",
+  "pred": "750",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "ditional **50%** *on top of* the previous gain (the $500). | $$ \\text{Second Week Gain} = 500 \\times 0.50 = 250 $$ | $$ \\text{Final Investment Value} = 500 + 250 = \\$750 $$ |  | </think> |  | Pima's investment worth now is **$750**.",
+  "ntok": 225
+ },
+ {
+  "id": "gsm2959",
+  "gold": "9",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm5790",
+  "gold": "32",
+  "pred": "32",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "ual Greta's earnings, Lisa must earn the same amount ($480). Since she earns $15 per hour, we divide her total earnings by her hourly rate. | $$ \\frac{\\$480}{\\$15} = 32 $$ |  | **Answer:** | Lisa would have to work **32 hours**.",
+  "ntok": 403
+ },
+ {
+  "id": "gsm5976",
+  "gold": "13",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ },
+ {
+  "id": "gsm3251",
+  "gold": "13",
+  "pred": "13",
+  "ok": true,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "alls possible:** |     Each large ball requires 300 rubber bands. Divide the remaining amount by the requirement per ball: |     $$ 3,900 \\div 300 = 13 $$ |  | Michael can make **13** large balls with the remaining rubber bands.",
+  "ntok": 365
+ },
+ {
+  "id": "gsm633",
+  "gold": "21",
+  "pred": "14",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": " shoe size for both Jasmine and Alexa, we need to determine how big their shoes are together based on the information provided. |  | *   **Jasmine's shoe size:** 7 | </think> |  | The combined shoe size for both of them is **14**.",
+  "ntok": 108
+ },
+ {
+  "id": "gsm4176",
+  "gold": "5",
+  "pred": "6",
+  "ok": false,
+  "capped": false,
+  "think_has_boxed": false,
+  "post_answer": "*Understand the relationship:** Each dog has 4 legs. | </think> |  | **3 Dogs** |  | Here is the step-by-step calculation: | *   Total legs = $24$ | </think> |  | There are **3** dogs in the pool. |  | Here is the math: | $$ \\frac{24}{4} = 6 $$",
+  "ntok": 101
+ },
+ {
+  "id": "gsm4143",
+  "gold": "80",
+  "pred": "think",
+  "ok": false,
+  "capped": true,
+  "think_has_boxed": false,
+  "post_answer": "ink></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think></think>",
+  "ntok": 8192
+ }
+]
