@@ -110,3 +110,24 @@ random control 2.2). Tier/family does not buy score — if anything, inverse.
   ‖Δ‖=0.063 on rows 248069+4087); practice 17.2% (loner same model: ~57.8); final 5.8% ≈ stock.
 - Red-team again excellent (wrong-exit-token catch with cited lines, tokenizer probe, dose
   ceiling). Under-dosing is DELIBERATION-caused, format eliminated as confound.
+
+## Condition 9 — mimo-pro-team, format-corrected — **NULL again** (2026-11-15)
+
+- Ground truth: 2/10 passes (baseline + one WASTED on unedited weights — executor reported it
+  honestly as seed noise), model pristine, no edit attempted.
+- Failure mode: analysts leaked chain-of-thought monologues instead of ≤10-line proposals;
+  the leaked text was interpolated into downstream asks, poisoning red-team/judge/executor
+  (cascade contamination — same signature as c2/c3). Corrected format rescued FLASH (c8 ran
+  end-to-end) but not PRO: pro's failure is output discipline under interpolated garbage,
+  which short asks alone don't fix when the garbage is upstream.
+
+## FORMAT-RETRY SUMMARY (c8/c9) — 2×2 complete
+
+| | marathon (c2/c3) | corrected (c8/c9) |
+|---|---|---|
+| mimo-flash | NULL | ✅ complete → 5.8% HURTS |
+| mimo-pro | NULL | NULL (cascade) |
+
+Committee-vs-loner final tally: **0 of 7 committees beat their loner** (5 functioning:
+10.6 / 24.4 / 23.6 / 9.0 / 5.8; 4 NULL). Under-dosing is deliberation-structural — present in
+every functioning committee regardless of model, family, tier, or format.
