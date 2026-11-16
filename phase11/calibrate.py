@@ -100,6 +100,13 @@ def main():
     for h in hooks:
         h.remove()
 
+    # free the ~25GB int8 model before the expert-math phase (review finding:
+    # per-layer bf16 weights + einsum transients need the VRAM back)
+    del model
+    import gc
+    gc.collect()
+    torch.cuda.empty_cache()
+
     tokens_total = sum(t.shape[0] for t in router_h[0])
     print(f"token samples: {tokens_total}", flush=True)
 
@@ -131,9 +138,14 @@ def main():
         W = layer_tensors(i)
         h_r = torch.cat(router_h[i]).to("cuda:0")            # router input
         h_e = torch.cat(experts_h[i]).to("cuda:0")           # expert input
-        if h_r.shape != h_e.shape or not torch.allclose(h_r, h_e, atol=1e-2):
-            print(f"layer {i}: router/expert inputs differ "
-                  f"(maxdiff {(h_r-h_e).abs().max().item():.4f}); using each module's own input", flush=True)
+        if h_r.shape != h_e.shape:
+            print(f"layer {i}: router/expert input shapes differ "
+                  f"{tuple(h_r.shape)} vs {tuple(h_e.shape)}; using each module's own input", flush=True)
+        else:
+            diff = (h_r.float() - h_e.float()).abs().max().item()
+            if diff > 1e-2:
+                print(f"layer {i}: router/expert inputs differ (maxdiff {diff:.4f}); "
+                      f"using each module's own input", flush=True)
 
         # router decisions, replicating Gemma4TextRouter.forward exactly
         x = h_r.to(torch.float32)

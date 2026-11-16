@@ -68,6 +68,7 @@ def main():
     for shard in shards:
         with safe_open(src / shard, framework="pt", device="cpu") as f:
             for key in f.keys():
+                assert key not in out_tensors, f"duplicate tensor across shards: {key}"
                 t = f.get_tensor(key)
                 params_before += t.numel()
                 m = re.search(r"language_model\.layers\.(\d+)\.", key)
@@ -81,6 +82,11 @@ def main():
                 params_after += t.numel()
                 out_tensors[key] = t.contiguous()
         print(f"processed {shard} ({len(out_tensors)} tensors so far)", flush=True)
+
+    # coverage: every tensor in the index must exist in the output, no more, no less
+    assert set(out_tensors) == set(index), (
+        f"coverage mismatch: missing={set(index) - set(out_tensors)} "
+        f"extra={set(out_tensors) - set(index)}")
 
     save_file(out_tensors, str(dst / "model.safetensors"),
               metadata={"format": "pt"})
