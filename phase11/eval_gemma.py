@@ -18,7 +18,10 @@ import json
 import sys
 from pathlib import Path
 
-CAP = 32768
+CAP = 8192  # Amendment #1 (2026-11-16): 32768 -> 8192, identical for every arm.
+            # Reason: A0 fp8 weights + one 34K-token KV sequence (3.97 GiB) exceed
+            # 32 GB VRAM; vLLM 0.33 cpu_offload is broken for Gemma4 (meta-tensor
+            # bug). Healthy solutions run 1-3K tokens; the wound loops at any cap.
 SEED = 20261116
 
 HERE = Path(__file__).resolve().parent
@@ -62,7 +65,8 @@ def main():
     ap.add_argument("--fp8", action="store_true", help="on-the-fly fp8 (A0 reference arm)")
     ap.add_argument("--moe-backend", default="triton",
                     help="force MoE kernel backend (WSL lacks nvcc for flashinfer JIT)")
-    ap.add_argument("--max-model-len", type=int, default=40000)
+    ap.add_argument("--max-model-len", type=int, default=None,
+                    help="default: CAP + 700")
     ap.add_argument("--enforce-eager", action="store_true",
                     help="drop CUDA graphs to free VRAM (reference arm)")
     ap.add_argument("--cpu-offload-gb", type=float, default=0.0,
@@ -81,10 +85,12 @@ def main():
         for p in problems
     ]
 
-    llm = LLM(model=args.model, max_model_len=args.max_model_len,
+    max_len = args.max_model_len or (CAP + 700)
+    llm = LLM(model=args.model, max_model_len=max_len,
               gpu_memory_utilization=args.gmu,
               moe_backend=args.moe_backend,
               enforce_eager=args.enforce_eager,
+              max_num_batched_tokens=2048,
               cpu_offload_gb=args.cpu_offload_gb if args.cpu_offload_gb > 0 else None,
               quantization="fp8" if args.fp8 else None)
     sp = SamplingParams(temperature=1.0, top_p=0.95, top_k=64,

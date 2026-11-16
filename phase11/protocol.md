@@ -39,6 +39,15 @@ has measured how expert-pruning damage decomposes into weight-edit-repairable vs
   (500 problems, 32K cap, 1 sample, phase-3c rescore extraction), phase-3c harness (vLLM
   0.33.0 in WSL2, arch support verified 2026-11-16).
 
+## Amendment #1 (2026-11-16, before any arm completed at 32K)
+
+Generation cap 32768 → **8192 for every arm identically**. Reason: the A0 fp8 weights
+(26 GB) plus the KV cache of a single 34K-token sequence (3.97 GiB, measured) exceed
+the RTX 5090's 32 GB; vLLM 0.33's cpu_offload path crashes on Gemma4 (meta-tensor
+bug, `uva.py:114`). Healthy Gemma-4 math solutions terminate in ~1-3K tokens, so 8K
+preserves the wound-vs-healthy distinction; the wound loops at any cap. Applied
+before the first complete A0/A1 baseline pair; A1's 32K pilot (4.7%) is superseded.
+
 ## Pre-registered endpoints
 
 - **Primary** (final MATH-500 accuracy):
