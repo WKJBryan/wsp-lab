@@ -54,7 +54,7 @@ def main():
     for i, row in enumerate(cal["impact"]):
         idx = sorted(sorted(range(n_experts), key=lambda e: -row[e])[: args.keep])
         keep.append(idx)
-        freq_top = sorted(range(n_experts), key=lambda e: -cal["top8_frequency"][i])[: args.keep]
+        freq_top = sorted(range(n_experts), key=lambda e: -cal["top8_frequency"][i][e])[: args.keep]
         if sorted(freq_top) == idx:
             print(f"layer {i}: impact top-{args.keep} == frequency top-{args.keep} {idx}")
     print("keep sets (impact, ascending):")
