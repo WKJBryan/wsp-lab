@@ -60,6 +60,8 @@ def main():
     ap.add_argument("--n", type=int, default=500)
     ap.add_argument("--gmu", type=float, default=0.92)
     ap.add_argument("--fp8", action="store_true", help="on-the-fly fp8 (A0 reference arm)")
+    ap.add_argument("--moe-backend", default="triton",
+                    help="force MoE kernel backend (WSL lacks nvcc for flashinfer JIT)")
     args = ap.parse_args()
 
     from vllm import LLM, SamplingParams
@@ -76,6 +78,7 @@ def main():
 
     llm = LLM(model=args.model, max_model_len=40000,
               gpu_memory_utilization=args.gmu,
+              moe_backend=args.moe_backend,
               quantization="fp8" if args.fp8 else None)
     sp = SamplingParams(temperature=1.0, top_p=0.95, top_k=64,
                         max_tokens=CAP, seed=SEED)
