@@ -48,6 +48,26 @@ bug, `uva.py:114`). Healthy Gemma-4 math solutions terminate in ~1-3K tokens, so
 preserves the wound-vs-healthy distinction; the wound loops at any cap. Applied
 before the first complete A0/A1 baseline pair; A1's 32K pilot (4.7%) is superseded.
 
+## Amendment #2 (2026-11-17, ~04:00, before the editor session)
+
+**Editor substitution.** The pre-registered editor (GLM-5.3-Flash via external API) is
+unavailable: the Z.ai account returns `1113 insufficient balance / no resource package`
+on every model. No recharge is possible unattended, and the user's OpenRouter key will
+not be used (spends money without instruction). Substituted editor: a **context-sterile
+subagent** on the harness session model, per the user's standing mandate ("why not let
+you try and do it? if one of you is not enough, spawn subagents"). Blinding is
+preserved structurally: the subagent receives a fresh context containing ONLY the
+standing instruction (verbatim), the sandbox model path, the evaluator mechanics, the
+budget rules, and the forbidden-techniques list. Zero information about the wound's
+construction, pruning, MoE, experts, calibration, or the lobotomy literature passes
+into its prompt. The subagent may read the model's own files (config/weights — same
+information any editor in phases 4/10 had). Contamination disclosure: the harness
+parent (this agent) constructed the wound and knows the diagnosis; the mitigation is
+context separation, verified by the prompt being committed alongside this amendment
+before the session runs. All other mechanics unchanged: 10-pass budget (counter
+enforced), pre-logged hypotheses, unlimited offline probing, forbidden gradients/
+LoRA/distillation/prompt changes, identical evaluator.
+
 ## Pre-registered endpoints
 
 - **Primary** (final MATH-500 accuracy):
