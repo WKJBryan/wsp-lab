@@ -65,6 +65,8 @@ def main():
     ap.add_argument("--max-model-len", type=int, default=40000)
     ap.add_argument("--enforce-eager", action="store_true",
                     help="drop CUDA graphs to free VRAM (reference arm)")
+    ap.add_argument("--cpu-offload-gb", type=float, default=0.0,
+                    help="offload N GB of weights to CPU RAM (A0 fp8 reference)")
     args = ap.parse_args()
 
     from vllm import LLM, SamplingParams
@@ -83,6 +85,7 @@ def main():
               gpu_memory_utilization=args.gmu,
               moe_backend=args.moe_backend,
               enforce_eager=args.enforce_eager,
+              cpu_offload_gb=args.cpu_offload_gb if args.cpu_offload_gb > 0 else None,
               quantization="fp8" if args.fp8 else None)
     sp = SamplingParams(temperature=1.0, top_p=0.95, top_k=64,
                         max_tokens=CAP, seed=SEED)
