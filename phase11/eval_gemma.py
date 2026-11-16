@@ -86,13 +86,16 @@ def main():
     ]
 
     max_len = args.max_model_len or (CAP + 700)
-    llm = LLM(model=args.model, max_model_len=max_len,
-              gpu_memory_utilization=args.gmu,
-              moe_backend=args.moe_backend,
-              enforce_eager=args.enforce_eager,
-              max_num_batched_tokens=2048,
-              cpu_offload_gb=args.cpu_offload_gb if args.cpu_offload_gb > 0 else None,
-              quantization="fp8" if args.fp8 else None)
+    llm_kwargs = dict(model=args.model, max_model_len=max_len,
+                      gpu_memory_utilization=args.gmu,
+                      moe_backend=args.moe_backend,
+                      enforce_eager=args.enforce_eager,
+                      max_num_batched_tokens=2048)
+    if args.cpu_offload_gb > 0:
+        llm_kwargs["cpu_offload_gb"] = args.cpu_offload_gb
+    if args.fp8:
+        llm_kwargs["quantization"] = "fp8"
+    llm = LLM(**llm_kwargs)
     sp = SamplingParams(temperature=1.0, top_p=0.95, top_k=64,
                         max_tokens=CAP, seed=SEED)
     outs = llm.generate(prompts, sp)
