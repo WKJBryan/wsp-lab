@@ -169,9 +169,9 @@ def main():
             gu = W["gate_up"][s:e]                                    # [E',1408,H]
             dn = W["down"][s:e]                                       # [E',H,704]
             hs = h_e.unsqueeze(0)                                     # [1,T,H]
-            g, u = torch.einsum("eih,nth->eit", gu, hs).chunk(2, dim=-1)
+            g, u = torch.einsum("eih,nth->eti", gu, hs).chunk(2, dim=-1)
             y = act(g) * u                                            # [E',T,704]
-            out = torch.einsum("eoi,eit->eot", dn, y)                 # [E',T,H]
+            out = torch.einsum("eoi,eit->eto", dn, y)                 # [E',T,H]
             norms = out.float().norm(dim=-1)                          # [E',T]
             contrib_sum[s:e] = (norms * w_full[:, s:e].t()).sum(1)
         impact[i] = (contrib_sum / h_e.shape[0]).tolist()
