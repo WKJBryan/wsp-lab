@@ -124,6 +124,17 @@ def main():
     freq = [[0] * n_experts for _ in range(n_layers)]
     act = lambda x: torch.nn.functional.gelu(x, approximate="tanh")  # gelu_pytorch_tanh
 
+    # axis smoke-test on synthetic tensors — fails in ms, not after model load
+    _gu = torch.randn(4, 2 * inter, hidden)
+    _dn = torch.randn(4, hidden, inter)
+    _hs = torch.randn(1, 7, hidden)
+    _g, _u = torch.einsum("eih,nth->eti", _gu, _hs).chunk(2, dim=-1)
+    assert _g.shape == (4, 7, inter), _g.shape
+    _y = act(_g) * _u
+    _out = torch.einsum("eoi,eti->eto", _dn, _y)
+    assert _out.shape == (4, 7, hidden), _out.shape
+    del _gu, _dn, _hs, _g, _u, _y, _out
+
     def layer_tensors(i):
         p = f"model.language_model.layers.{i}."
         return {
@@ -171,7 +182,7 @@ def main():
             hs = h_e.unsqueeze(0)                                     # [1,T,H]
             g, u = torch.einsum("eih,nth->eti", gu, hs).chunk(2, dim=-1)
             y = act(g) * u                                            # [E',T,704]
-            out = torch.einsum("eoi,eit->eto", dn, y)                 # [E',T,H]
+            out = torch.einsum("eoi,eti->eto", dn, y)                 # [E',T,H]
             norms = out.float().norm(dim=-1)                          # [E',T]
             contrib_sum[s:e] = (norms * w_full[:, s:e].t()).sum(1)
         impact[i] = (contrib_sum / h_e.shape[0]).tolist()
