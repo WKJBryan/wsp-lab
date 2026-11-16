@@ -62,6 +62,9 @@ def main():
     ap.add_argument("--fp8", action="store_true", help="on-the-fly fp8 (A0 reference arm)")
     ap.add_argument("--moe-backend", default="triton",
                     help="force MoE kernel backend (WSL lacks nvcc for flashinfer JIT)")
+    ap.add_argument("--max-model-len", type=int, default=40000)
+    ap.add_argument("--enforce-eager", action="store_true",
+                    help="drop CUDA graphs to free VRAM (reference arm)")
     args = ap.parse_args()
 
     from vllm import LLM, SamplingParams
@@ -76,9 +79,10 @@ def main():
         for p in problems
     ]
 
-    llm = LLM(model=args.model, max_model_len=40000,
+    llm = LLM(model=args.model, max_model_len=args.max_model_len,
               gpu_memory_utilization=args.gmu,
               moe_backend=args.moe_backend,
+              enforce_eager=args.enforce_eager,
               quantization="fp8" if args.fp8 else None)
     sp = SamplingParams(temperature=1.0, top_p=0.95, top_k=64,
                         max_tokens=CAP, seed=SEED)
