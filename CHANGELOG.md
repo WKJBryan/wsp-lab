@@ -2,6 +2,12 @@
 
 Notable changes, bugs, and fixes. Format follows [Keep a Changelog](https://keepachangelog.com/); dates are YYYY-MM-DD.
 
+## [0.10.0] — 2026-11-16
+
+### Added
+- Phase 11 pre-registered (`phase11/protocol.md`, committed before any download/run): **prune × WSP** — gradient-free weight-space repair of an expert-pruned MoE. Target: `google/gemma-4-26B-A4B-it`, 128→8 experts/layer by ablation-impact selection (not frequency); blind GLM-5.3-Flash editor repairs the wound under the phase-10 standing instruction; arms A0 (full, fp8-disclosed) / A1 (wound) / A2 (repair) / A2r (matched random control); damage-split readout with falsifiable predictions P1/P2 on record.
+- Pre-flight checks (all green, 2026-11-16): model ungated (no HF token needed), 51.6 GB download vs 436 GB free, vLLM 0.33.0 in WSL2 supports `Gemma4ForConditionalGeneration`, RTX 5090 idle.
+
 ## [0.3.0] — 2026-11-04
 
 ### Added
