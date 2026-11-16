@@ -90,7 +90,8 @@ def main():
                       gpu_memory_utilization=args.gmu,
                       moe_backend=args.moe_backend,
                       enforce_eager=args.enforce_eager,
-                      max_num_batched_tokens=2048)
+                      max_num_batched_tokens=3072,
+                      limit_mm_per_prompt={"image": 0, "video": 0, "audio": 0})
     if args.cpu_offload_gb > 0:
         llm_kwargs["cpu_offload_gb"] = args.cpu_offload_gb
     if args.fp8:
