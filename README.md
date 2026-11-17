@@ -40,7 +40,7 @@ And at small scale (phase 1): a blind agent-editor repaired an organically broke
 | [8](phase8/protocol.md) | The missing baselines (thinking-off stock, decode-time bias control…) | pre-registered — see protocol |
 | [9](phase9/results.md) | Do *teams* (look/discuss/red-team/judge/execute) beat a lone editor? | ❌ **0 of 7 committees beat their loner**, in any format, family, or mixture — committees systematically under-dose |
 | [10](phase10/results.md) | The field's first **no-hint full-budget** run (50 passes) | 27.4% using only **6 passes** — budget is not the constraint; knowledge is |
-| [11](phase11/protocol.md) | **Prune × WSP**: gradient-free repair of an expert-pruned MoE (Gemma-4 26B-A4B, 128→8 experts) | 🔬 pre-registered 2026-11-16 — running |
+| [11](phase11/results.md) | **Prune × WSP**: gradient-free repair of an expert-pruned MoE (Gemma-4 26B-A4B, 128→8 experts) | ❌ NULL repair (58.4% → 1.0%; editor restored original) — but the damage **decomposition is measured**: termination repairable by one edit class (cap-hit 98→42%), deleted knowledge not (0/21 arithmetic); provenance undetectable blind |
 
 (Phases 5–8 are the work of a second agent session sharing this repo; phases 1–4, 9, 10 by the primary. Same harness, same rules, one timeline in git.)
 

@@ -2,6 +2,19 @@
 
 Notable changes, bugs, and fixes. Format follows [Keep a Changelog](https://keepachangelog.com/); dates are YYYY-MM-DD.
 
+## [0.11.0] — 2026-11-17
+
+### Added
+- Phase 11 complete — **prune × WSP, the field's unclaimed intersection, now measured**: Gemma-4 26B-A4B pruned 128→8 experts/layer by ablation impact (25.81B → 4.39B params, 8.8 GB), blind context-sterile editor (Amendment #2) attempted gradient-free repair under the phase-10 verbatim instruction.
+- **Finals (full MATH-500):** A0 full 58.4% / 0.2% cap-hit · A1 wound 1.0% / 98.0% · A2 = A1 (editor restored original; 5/10 passes) — verdict NULL per pre-registered thresholds.
+- **Damage decomposition measured** (the phase's scientific payload): termination mechanism repairable by one embedding-row edit class (cap-hit 98.4→42%, length 8,183→4,498, accuracy unchanged); deleted knowledge unrecoverable (0/21 teacher-forced arithmetic, NLL 13–19 on clean text) — "format shell."
+- **Provenance undetectable blind:** the editor exhaustively lesioned the MoE structure and concluded weights were "as trained" — phase-2's provenance blindness replicates at 4.4B scale.
+- **Selection divergence quantified:** impact vs frequency top-8 overlap 4.8/8, 0/30 layers exact.
+- ROADMAP.md: north-star ladder (P11 repair → P12 cross-architecture atlas C1–C3 → P13 zero-search transfer), Phase 11 marked complete with the Qwen-vs-Gemma same-symptom/different-cause framing for Phase 12.
+
+### Fixed
+- WSL/infrastructure battle log (all committed with evidence): 49.9GB mmap ENOMEM → resharder; einsum output-subscript axis bugs ×2 + synthetic smoke test; cpu_offload_gb=None pydantic rejection; mm-encoder budget (limit_mm_per_prompt=0); pkill self-match killing its own wrapper; shell-variable quoting in wsl.exe wrappers (twice); pipeline exit-code masking (grep without pipefail).
+
 ## [0.10.0] — 2026-11-16
 
 ### Added

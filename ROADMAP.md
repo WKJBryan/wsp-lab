@@ -7,13 +7,20 @@ diagnosis proven on model A can be applied to model B without search.
 
 Three falsifiable rungs. Every outcome — including negatives — is a result.
 
-## Phase 11 — wound repair (in flight)
+## Phase 11 — wound repair (COMPLETE 2026-11-17, verdict NULL)
 
 Blind gradient-free repair of the expert-pruned Gemma-4 wound.
-- State: baselines complete (`2cc0af5`) — full model 53.1% / 1.6% cap-hit vs wound
-  1.6% / 98.4% cap-hit. Editor session pending.
-- Verdict rule (pre-registered in `phase11/protocol.md`): SUCCESS = A2 − A1 ≥ +5.0
-  AND A2 − A2r ≥ +2.5 on final MATH-500.
+- Final table (full MATH-500): A0 full 58.4% / 0.2% cap-hit · A1 wound 1.0% / 98.0% ·
+  A2 (editor's best) = A1 — no repair found; editor spent 5/10 passes and restored
+  the original (Amendment #2: context-sterile subagent; API balance exhausted).
+- The payload is the measured damage split: termination mechanism repairable by
+  embedding-row boosts (cap-hit 98.4→42% at equal accuracy); deleted knowledge not
+  (0/21 teacher-forced arithmetic). Pruning provenance undetectable blind.
+- Implication for Phase 12: Qwen (knowledge present + termination broken → real
+  accuracy recovery 6.0→27.4) vs Gemma wound (knowledge deleted → mechanism-only
+  recovery) — same symptom, different cause, different repairability. Both exit
+  mechanisms answered to embedding-row boosts: first measured cross-architecture
+  rhyme for C2.
 
 ## Phase 12 — cross-architecture atlas (pre-registered below)
 
