@@ -224,7 +224,7 @@ def main():
                     exps.reshape(-1, exps.shape[-1]).norm(dim=1).clamp_min(1e-8)
             a = torch.cat([a_dense, a_exp])
         else:
-            pfx = f"model.layers.{li}."
+            pfx = f"model.language_model.layers.{li}."  # qwen3.5 multimodal layout
             dense = orig_tensor(pfx + "mlp.down_proj.weight").float()
             d = ds[li].cpu()
             a = (dense.t() @ d).abs() / dense.t().norm(dim=1).clamp_min(1e-8)
