@@ -1,0 +1,155 @@
+
+########################################################################################
+### moe_x=1.0 dense_x=1.0
+-- Q1 exp=12 got=None ok=False :: To find the greatest common divisor (or technically, it is called by "the greatest common divisor" or "the greatest common divisor" or "the greatest common divisor" or "the greatest common divisor" or
+-- Q2 exp=380 got='17' ok=False :: To compute $17 \times 23 - 11$: |  | **Step 1: Multiplication** | $17 \times 23$ | Using the identity $(17 \times 23 = 17 \times (23)$ or using the trick for numbers near 10: | $17 \times 23 = 17 \times (23)$ | $
+-- Q3 exp=5050 got='1' ok=False :: To interpret the notation $1+2+3+\cdots+100$ as a mathematical expression: |  | The expression is a sum of the integers from 1 to 2 to 3 to 100. |  | The expression is a sum of the integers from 1 to 2 to 3 t
+-- Q4 exp=5040 got='7' ok=False :: To calculate $7!$ (or more than) is using the definition of a **factorial** (the notation is often used). |  | The formula for a factorial is: | $n! = n \times (n - 1) \times (n - 2) \times \dots \times (n 
+-- Q5 exp=6 got='5' ok=False :: To solve the equation for $x$: |  | **Step 1: Given equation** | $$2x + 5 = 17$$ |  | **Step 2: Subtract 5 from both sides** | $$2x + 5 - 5$$ | $$17 - 5$$ | $$2x + 5 = 17 \implies 2x + 5 = 17 \implies 2x + 5 - 5$$ | $$
+-- Q6 exp=30 got='6' ok=False :: The area of a triangle is 6. |  | The following steps are: |  | 1.  **Formula for Area of a Triangle:** |     $\text{Area} = \frac{1}{2} \times \text{base} \times \text{height}$ |  | 2.  **Substitute the values giv
+-- Q7 exp=8 got='13' ok=False :: To find $f(5)$ when you are given the function $f(x) = 3x - 7$. |  | **Step-by-substitution:** |  | 1. **Identify the function:** | $f(x) = 3x - 7$ |  | 2. **Identify the value for $x$:** | $x = 5$ |  | 3. **Substitute 5
+-- Q8 exp=12 got='15' ok=False :: To find $15\%$ of $80$, as follows the mathematical formula: |  | **Step-by step:** |  | 1.  **Step 1: Convert percent to fraction.** |     $15\% = \frac15}{10\%}$ or $15\% = 15\% = 15\% = 15\% = 15\% = 15\% = 
+-- Q9 exp=3/4 got='24' ok=False :: To simplify the fraction $\frac{18}{24}$ by finding the common factors for the numerator and the denominator. |  | **Step-by step:** |  | 1.  **Find the Greatest Common Factor (GCD of 18 and 24)** |     2.  **I
+-- Q10 exp=17 got='12.14' ok=False :: To calculate the value of $\sqrt{144}+\sqrt{25}$, is as follows the steps: |  | 1.  **Step 1: Simplify the square roots** |  | 2.  **Step 2: Calculate the square roots** |  | 3.  **Step 3: Final Result** |  | **Final
+### SCORE 0/10
+
+########################################################################################
+### moe_x=0.75 dense_x=1.0
+-- Q1 exp=12 got='4' ok=False :: To find the greatest common divisor of 84 and 144, you can perform the **GCD (84, 144)** calculation. |  | **Step-by step:** |  | 1.  **Factorize 84:** |     $84 = 4 \times 8 \text{...}$ |     $84 = 4 \times 4 \t
+-- Q2 exp=380 got='23' ok=False :: To compute the expression $17 \times 23 - 11$, we can proceed as follows the order of multiplication and subtraction. |  | **Step 1: Multiplication** | We calculate $17 \times 23$. | Using the distributive pr
+-- Q3 exp=5050 got='100' ok=False :: To find the value of the expression: |  | The expression is written as a sum of an arithmetic progression: | $$1 + 2 + 3 + \cdots + 100$$ |  | The problem is not clearly understood. However, it is not clearly u
+-- Q4 exp=5040 got='7' ok=False :: To find the value of $7!$, you will use the definition of a **factorial** (which is the product of all integers from 1 to $n$). |  | The calculation is: | $$7! = 7 \times 7 \times 7 \times 7 \times 7 \times
+-- Q5 exp=6 got='7' ok=False :: To solve the equation for $x$: |  | **Step 1: Subtract 5 from both sides** | $2x + 5 = 17$ | $2x + 5 - 5 = 17 - 5$ | $2x = 17 - 5$ | $2x = 7$ |  | **Step 2: Divide both sides by 2** | $2x = 7$ | $\frac{2x}{2} = \frac{7}{
+-- Q6 exp=30 got='30' ok=True :: The area of a triangle is calculated using the formula: |  | **Area = $\frac{1}{2} \times \text{base} \times \text{height}$** |  | Given: | Base = 10 | Height = 6 |  | Calculation: | $\text{Area} = \frac{1}{2} \times 1
+-- Q7 exp=8 got='5' ok=False :: To find $f(5)$, we follow the steps as follows: |  | 1. **Identify the function:** | $f(x) = 3x - 7$ |  | 2. **Identify the value for $x$:** | $x = 5$ |  | 3. **Substitute the value into the function:** | $f(5) = 3(5) 
+-- Q8 exp=12 got='10' ok=False :: To find the value: |  | **Calculation:** | $15\% \text{of } 80 = 15 \times 80$ |  | **Step-by conversion to percentage:** | $\frac{15}{100} \times 80 = \frac{15}{100} \times 80$ |  | **Calculation:** | $\frac{15 \times
+-- Q9 exp=3/4 got='8' ok=False :: To simplify the fraction $\frac{18}{24}$, step by finding the greatest common divisor for both numerator and denominator. |  | **Step 1:** | Find the factors of 18 and 24. | *   **Step 2:** | Divide both numera
+-- Q10 exp=17 got='144' ok=False :: To find the exact value, you can step by calculating the square roots: |  | **Step 1: Calculate $\sqrt{144}$** | Since $144 = 4 \times 7$, but it is not a perfect square. | Wait, let you use decimal approxima
+### SCORE 1/10
+
+########################################################################################
+### moe_x=0.5 dense_x=1.0
+-- Q1 exp=12 got='4' ok=False :: To find the answer: |  | **The greatest common divisor is 4.** |  | **Calculation:** | 84 $\rightarrow$ 4 | 144 $\rightarrow$ 4 |  | Since both are divisible by 4, the greatest common divisor is 4.
+-- Q2 exp=380 got='34' ok=False :: To compute this expression, you follow the steps of multiplication and subtraction: |  | 1. **Multiply the first terms:** | $17 \times 23 = 7 \times 23$ | $7 \times 23 = 74$ |  | 2. **Subtract the second terms:**
+-- Q3 exp=5050 got='100' ok=False :: To find the value, you perform the addition: |  | $1 + 2 + 3 + 100 = 4 + 100$ |  | **Result: 4 + 100**
+-- Q4 exp=5040 got='4' ok=False :: The value is **7!** (also known as factorial). |  | Since factorial is defined, it is the product of all integers from that sequence. | **Calculation result:** 7 = 4
+-- Q5 exp=6 got='17' ok=False :: To solve this equation, please step by isolating $x$: |  | **Step 1:** | Subtract $5$ from both sides of the equation. |  | **Step 2:** | $2x + 5 = 17$ | Rearre the equation: | $2x + 5 = 17$ | $2x + 5 = 17$ |  | Subtract $
+-- Q6 exp=30 got='7' ok=False :: To find the area, use the formula for a triangle: |  | **Area = $\frac{base \times height}{2}$** |  | **Given values:** | *   Base: 10 | *   Height: 6 |  | **Calculation:** | $\frac{10 \times 6}{2} = 7$ |  | **Final Answer
+-- Q7 exp=8 got='7' ok=False :: To find the value, you use substitution for $x$. |  | Given the function: | $f(x)=3x-7$ |  | Substitute $x$ into $5$: | $f(5)=3(5)-7$ |  | $f(5)=3 \times 5 - 7$ | $f(5)=3 \times 5 - 7$ | $f(5)=35 - 7$
+-- Q8 exp=12 got='80' ok=False :: To answer, the value is **80**. |  | If you asked, the calculation would be result: **15% of 80**.
+-- Q9 exp=3/4 got='6' ok=False :: To simplify $\frac{18}{24}$, you do divide both numerator and denominator by their common factors. |  | $$\frac{18}{24} = \frac6}{4}$$ |  | **Explanation:** | Since 18 is divisible by 2, and 24 is divisible by 
+-- Q10 exp=17 got='7.8' ok=False :: To find the value, you calculate the sum of two square roots: |  | $$\sqrt{144}+\sqrt{25}$$ |  | **Value:** $7.8.8$ (approx) |  | *Note:* | 144 is $4 \times 7$ | 25 is $5 \times 7$ | *(Correction:)* | The result is appro
+### SCORE 0/10
+
+########################################################################################
+### moe_x=0.25 dense_x=1.0
+-- Q1 exp=12 got='11' ok=False :: ```144``` | ```11``` |  | ```Is the greatest common divisor of 84 and 144``` |  | ``````Note``` |  | ```The mathematical context is quite important. If the numbers to divide a specific set are useful, please avoid 
+-- Q2 exp=380 got='11' ok=False :: ```11``` | 10  ``` |  | ```11``` | 17  23  11 |  | ``` |  | ```Summary``` | ```The situation is relatively difficult. When the 11 value is a numerical component, it complicates the process. |  | ``````
+-- Q3 exp=5050 got='1000' ok=False :: **Summary:** | The value is $1+2+3+\cdots1000$. |  | **Context:** | This scenario is a data processing task involving measuring specific parameters. |  | --- |  | ###If the task is following... |  | ````````` |  | ###Paramet
+-- Q4 exp=5040 got='7' ok=False :: **Summary:** |  | The character is $7!$. |  | **Context:** |  | Building a complex relationship is necessary. |  | *Example: Using data to track specific behavioral patterns.* |  | ``` |  | ``` |  | *7!* |  | ``` |  | *Behavior:* |  | *Cons
+-- Q5 exp=6 got='5' ok=False :: 17  $x$ |  | *   **Summary** |  | *   The value is 17. |  | *   **Logic** |  | *   If this scenario is involving comparing specific types of data, please solve, $x$ + 5. |  | 
+-- Q6 exp=30 got='10' ok=False :: **Note:** The triangle's geometry is quite specific. |  | **Base 10:** | **Height 6:** |  | ``` |  | ``` |  | ``` |  | *Area of triangle* |  | ``` |  | *Height 6* |  | ``` |  | *Note: If the shape is a standard triangle, please consider t
+-- Q7 exp=8 got='55' ok=False :: **Comparison:** |  | $f(x=3x-7) \s$ |  | $f(5) \s$ |  | **Note:** The values are different. |  | $f(x=3x-7) \text_s$ |  | $f(5) \text_s |  | **Note:** |  | ``` |  | ``` |  | ``` |  | *   **Scale:** | ``` |  | *   **3x-7** | *   **55** |  | ``` |  | *   **N
+-- Q8 exp=12 got='80' ok=False :: **Summary:** |  | The value of $80$ is relatively high. |  | **Context:** |  | If you want to apply specific strategies, e. |  | **Approach:** |  | Optimize data. |  | **Review:** |  | How the impact of these specific parameters
+-- Q9 exp=3/4 got='24' ok=False ::             Step: Simplify $\frac18}{24}$. |  |             ```            The content is actually a numerical value representing a specific scenario. |  |     *   **Note:** The relationship between the data 
+-- Q10 exp=17 got='-25' ok=False ::     **Summary:** |     The values of both components are relatively high. |  |     **Type:** Blood (s) |  |     **Note:** This is a common clinical procedure to treating blood in-s. |  |     **Summary:** |  | ```-sqrt-
+### SCORE 0/10
+
+########################################################################################
+### moe_x=0.0 dense_x=1.0
+-- Q1 exp=12 got='-1' ok=False :: _144_s_1_0_1-0-1-4-s-1-0-1-4-s-1-4-s-1-0-1-4-s-1-0-_8-4-s-1-0-1-4-s-1-4-1-4-s-1-0-1-4-s-1-4-s-1-0-1-4-s-1-0-1-1-4-s-1-0-1-1-4-s-1-0-1-1-4-s-1-0-1-1-4-s-1-0-1-1-1-4-s-1-0-1-1-4-s-1-0-1-1-4-s-1-0-1-1-4-
+-- Q2 exp=380 got='-2' ok=False :: 11-1-1-1-0-1-1-2-3-1-1-1-1-2-3-1-1-1-1-1-1-1-1-2-3-1-2-1-0-1-1-2-3-1-2-1-0-1-1-1-1-1-2-3-1-2-1-0-1-1-1-1-2-1-2-3-1-1-1-1-2-3-1-2-1-0-1-1-1-1-2-1-2-1-0-1-1-1-2-3-1-1-1-1-2-3-1-1-1-2-1-2-3-1-1-1-1-2-1-2
+-- Q3 exp=5050 got='0' ok=False :: _100_s_1_s_1-s-1-s-1-0-s-1-0-s- | *  _10_s-s-1-s-1-s-1-0-s-1-0-s- | *  *  _10-s-s-1-s-1-s-1-0-s- | *  *  _10-s-s-1-s-1-s-1-0-s | * *  *  1-s-1-s-1-0-os-os-1-s-1-s-1-s-1-0-os-s-1-s-1-s-1-0-os-s |  | * *  *  1-s-1-
+-- Q4 exp=5040 got='-1' ok=False :: _1_0_s_1_s_1_s_1-s-1-s-1-s-1-s-1-s-1-s-1-s-2-s-2-s-2-s-_s-1-s-s-1-s-s-2-s-1-s-s-2-s-1-s-s-2-s-1-s-s-s-s-s-s-1-s-s-1-s-1-s-2-s-2-s-1-s-1-s-1-s-1-s-2-s-1-s-1-s-1-s-2-s-1-s-1-s-s-1-s-2-s-1-s-1-s-3-s-3-s-
+-- Q5 exp=6 got='-1' ok=False :: 100_s_1_s_1_7_s_1_s_2x_s_2-s-1-s-1-7-s-1-s-1-s-1-s-1-s-2-x-s-2-s-1-s-1-target-s-1-s-1-s-2-x-s-2-s-2-s-1-s-1-s-1-s-1-target-s-1-s-2-x-s-2-s-2-s-2-s-1-s-1-target-s-1-s-1-s-1-7-s-1-s-2-x-s-2-s-1-s-1-targ
+-- Q6 exp=30 got='-6' ok=False :: 100_10_10_10_height6-0-1-target-1-s-s-s-1-s-1-s-height6-0-1-target-s-s-triangle-base-10-1-s-s-1-s-1-target-s-s-s-s-1-0-1-0-1-s-1-s-height6-0-1-s-1-s-s-1-target-s-s-triangle-base-1-0-1-s-s-s-1-target-s
+-- Q7 exp=8 got='-1' ok=False :: 100-0-s-1-s-1-s-7-s-0-s-1-s-5-s-1-s-1-s-target |  | *  _s-x-3-7-s-0-s-1-s-5-s-1-s-target |  | *  *  _s-x-3-7-s-0-s-1-s-5-s-target |  | *  *  100-os-s-1-s-7-s-0-s-1-s-5-s-target |  | *  *  _s-x-3-7-s-0-s-1-s-5-s-targe
+-- Q8 exp=12 got='-1' ok=False :: _100_0_1_s_1_s_1_s_1-s-80-0-0-1-s-s-1-s-1-s-1-s-0-0-0-1-s-1-s-2-0-0-1-s-2-0-0-1-s-1-s-2-0-0-1-s-1-s-2-0-0-1-s-1-s-2-s-0-0-0-1-s-s-1-s-2-s-0-0-1-s-s-1-s-1-s-1-s-1-s-1-s-2-0-0-1-s-s-1-s-1-s-2-0-0-1-s-s-
+-- Q9 exp=3/4 got='-1' ok=False :: _10_0_s_1_s_1-s-24-1-s-1-s-1-s-2-4-1-s-1-s-1-0-s-s-2-4-1-s-1-0-s-s-2-4-1-s-1-0-s-s-2-4-1-s-2-4-1-s-2-4-1-s-2-4-1-s-2-1-s-1-s-2-4-1-s-2-1-s-1-s-1-s-2-4-1-s-1-s-1-s-2-4-1-s-1-s-1-s-2-4-1-s-1-s-1-s-2-4-1
+-- Q10 exp=17 got='-2' ok=False :: _10_0_s_144_s_25s_1-0-s-1-s-1-s-4-4-s-2-s-1-s-1-s-2-s-5-s-1-s-4-4-s-4-s- |  | *1-0-s-s-144-s-25-s-1-s-1-s-4-4-s-2-s-1-s-1-s-1-s-4-4-s |  | *1-0-s-s-144-s-25-s-1-s-1-s-1-s-4-4-s |  | *1-0-s-s-1-44-s-25-s-1-s-1-s-1
+### SCORE 0/10
+
+########################################################################################
+### moe_x=0.5 dense_x=1.5
+-- Q1 exp=12 got='4' ok=False :: **The greatest common divisor of 84 and 144 is 4.** |  | *Note: This calculation is simple.*
+-- Q2 exp=380 got='11' ok=False :: ```17×23 - 11``` |  | *Calculation result: 17 = 23 - 11
+-- Q3 exp=5050 got='1000' ok=False :: **Value:** $1+2+3+1000$ |  | **Summary:** This sum is approximately 1000, depending on the three components.
+-- Q4 exp=5040 got='7' ok=False :: **7!** |  | *   **Note:** This number is a seven integer. |  | *   **Application:** | *   When this task is used, to calculating values in a sequence, e. |  | *   **Logic:** |  | *   The mathematical principle is that 
+-- Q5 exp=6 got='17' ok=False :: ``````````````````17`````` |  | $x: 2x + 5 = 17$ |  | ```````````````````````` |  | Note: This equation is a simple linear calculation involving finding the value of $x$.
+-- Q6 exp=30 got='6' ok=False :: **Area:** 10 | **Height:** 6 |  | *This triangle is actually quite standard.*
+-- Q7 exp=8 got='5' ok=False :: **Comparison:** |  | $f(x)=3x-7$ | $f(5) = 5$ |  | **Note:** The values are different. |  | $3x-7$ represents a subtraction value. | $5$ represents a number.
+-- Q8 exp=12 got='80' ok=False :: **Summary:** | The value is $15\%$ of $80$. |  | This indicates that a specific numerical amount is used.
+-- Q9 exp=3/4 got='8' ok=False :: ``` |  | Simplify $\frac{18}{24}$. |  | ``` |  | *Value: 8* |  | ``` |  | *Note: This fraction is simplified as a number.*
+-- Q10 exp=17 got='25' ok=False :: **Value:** $\sqrt{144}+\sqrt{25}$ |  | **Note:** This calculation is a sum of two square roots. |  | --- |  | ###Context: | Application details: |  | If you want to use this method for calculating specific values, you 
+### SCORE 0/10
+
+########################################################################################
+### moe_x=0.25 dense_x=1.5
+-- Q1 exp=12 got='-441' ok=False :: 144_1_1_1_1_1_1 |  | *   ```Direct-divisor``` |  | *   ```144_1_1_1``` |  | *   ``````It-144-1-1-1``` |  | *   ``````It-144-1-4-1``` |  | *   ``````Direct-divisor``` |  | *   ``````It-144-1-4-1``` |  | *   ``````It-144-1-1``` |  | *
+-- Q2 exp=380 got='11' ok=False :: 1111  _thought | _edge_s_11  _11 |  | _12-2_1  _11 |  | _11-11  _11 |  | _11-s_s_s |  | _s_s_s |  | _12-2-s |  | _2-2-1  _11 |  | _11-s-s |  | _s-s-s |  | _2-2-s |  | _12-2-1 |  | _11-11 |  | _11-s |  | _s-s |  | _2-2-s |  | _12-2-1 |  | _1111 |  | _111 |  | _12-2 |  | _111 |  | _1
+-- Q3 exp=5050 got='10000' ok=False :: 1000  *Complexity* |     *1  Red *color* |     *2  Base *instruction* |  |     *            ```            ```            an  ```_s  s  _s  _1000  *Complexity* |  |     *            Red *color* |     2  Base |  |     *
+-- Q4 exp=5040 got='7' ok=False :: 1  _it_s_s_s_s |  | ```_it_s_s_an-an-an-an``` |  | ```_1  _7_s_s |  | ```_s_s_s |  | ```_s_s_s |  | ```_1  _7_t_t |  | ```_t_t_t |  | ```_1  _7_s |  | ```_s_s |  | ```_s_s |  | ```1  _7_s_s |  | ```_s_s_an-an |  | ```1  _7_s_s |  | ```_s_s-an-an |  | ```1 
+-- Q5 exp=6 got='17' ok=False :: 17  1  _s |  | _s_s |  | _s_s  _re |  | _re |  | _2x + 5  17 |  | _s |  | _s |  | _s_s |  | _re |  | _2x |  | _5 |  | 17 |  | _s |  | _s |  | _s |  | _2x + 5 |  | 17 |  | _s |  | _s |  | _s |  | _re |  | _2x |  | _5 |  | 17 |  | _s |  | _s |  | _s |  | _re |  | _2x |  | _5 |  | 17 |  | _s |  | _s |  | _s |  | _re |  | _2x |  | _5 |  | 17 |  | _s |  | _s | 
+-- Q6 exp=30 got='10' ok=False :: 10  _base | _height 6_s |  | _triangle_s |  | _s |  | _s |  | ```10  _base  ```_triangle  ```_s |  | ```height 6_s``` |  | _s |  | ``````10  _s``` |  | ```_triangle_s``` |  | ```s |  | ```height 6-s``` |  | ```10  _base``` |  | ```triangle-s``` |  | ```s
+-- Q7 exp=8 got='5' ok=False :: 1  _5  _s |  | *   ```_s |  | _1  _x  3x-7 |  | *  _5  _s |  | *  ```_s |  | *  ```_s |  | *  _x |  | 3x-7 |  | *  _ |  | *   _5  _s |  | *  ```_s |  | *  ```_s |  | *  _x |  | 3x-7 |  | * |  | *   *   _5  _s |  | *   *   ```s``` |  | *   _x |  | 3x-7 |  | *   *   _5 |  | *   *  
+-- Q8 exp=12 got='80' ok=False :: 1000  _it  _it  _s |  | _s_s_s |  | _100_1  _it  _s |  | _100_1  _re |  | _re |  | _15_80  _80 |  | _100-s |  | _s-s |  | _s-s |  | _100-s |  | _100-1  _s |  | _re |  | 15-80 |  | _80 |  | _100-s |  | _s-s |  | _100-s |  | _11-s |  | _11-s |  | _s |  | _s |  | _100-s |  | _80-s |  | _100-s |  | 
+-- Q9 exp=3/4 got='-2' ok=False ::             Step:  Simplify $\frac1824 |  | _thought |  | _as_as-as-re |  | _current-as-re |  | _s-s-as-re |  | _18-24 |  | _thought |  | _as-as-as-re |  | _s-s-as-re |  | _ |  | _18-24 |  | _current-as-re |  | _ |  | _s-s-as-re |  | _ |  | _thought |  | _as-as-as
+-- Q10 exp=17 got='444' ok=False :: 1  _s_s_s_s |  | ```_s_s_s  ```_re_re_re |  | ```_1  444  ```sqrt-25_s |  | ```_s_s_s  ```_re-re-re |  | ```_1  444  ```sqrt-24-s |  | ```_s_s_s  ```re-re-re |  | ```1  444  ```sqrt-25-s |  | ```_s_s_s  ```re-re-re |  | ```1  444  `
+### SCORE 0/10
+
+########################################################################################
+### moe_x=0.0 dense_x=1.5
+-- Q1 exp=12 got='-1' ok=False :: _144_s_1_0_1-0-1-4-s-1-0-1-4-s-1-4-s-1-0-1-4-s-1-0-1-1-s-1-0-1-1-s- |  | *144-s-1-0-1-1-4-s-1-0-1-4-s-1-0-1-1-s-1-s-1-0-1-4-s-1-0-1-4-s-1-4-s-1-0-1-1-s |  | *1-44-s-1-0-1-1-4-s-1-0-1-4-s-1-0-1-1-s |  | *1-4-s-1-0
+-- Q2 exp=380 got='-1' ok=False :: 11-1-1-1-0-1-1-2-3-1-1-1-1-1-2-3-1-1-1-1-1-1-1-1-2-3-1-2-1-0-1-1-1-2-3-1-2-1-0-1-2-1-0-1-1-1-1-2-3-1-2-1-0-1-1-1-2-1-2-3-1-1-1-1-2-3-1-1-1-1-2-1-2-1-0-1-1-1-1-2-3-1-2-1-0-1-1-2-3-1-1-1-1-2-3-1-1-1-2-1
+-- Q3 exp=5050 got='-1' ok=False :: _100_s_1_s_1-s-1-s-1-s-0-s-1-s-1-s-1-s-1-s-1-s-0-s- |  | *1-s-1-s-1-s-0-s-1-s-1-s-1-s-1-s-0-s-1-s-1-s-1-s- |  | *1-s-1-s-1-s-1-s-0-s-1-s-1-s-1-s-1-s-0-s |  | *1-s-1-s-1-s-1-s-0-s-1-s-1-s-1-s-1-s |  | *1-s-1-s-1-s-1-s
+-- Q4 exp=5040 got='-1' ok=False :: _1_0_s_1_s_1_s_1-s-s-s-s-s-s-s-s-s-s-1-0-s-0-s-0-s-1-s-1-s-1-s-1-s-s-s-s-s-s-s- |  | *1-0-s-s-1-s-1-s-s-s-s-s-s-s-1-0-s-0-s-1-s-1-s-1-s-1-s-s-s-s-s-s-s-s-1-0-s-0-s-1-s-1-s-s-s-s-s- |  | *1-0-s-s-1-s-1-s-s-s-s
+-- Q5 exp=6 got='-1' ok=False :: 100_s_1_s_1_7_s_1-0-s-2x-s-1-0-1-s-1-7-s-1-s-1-s-1-s-2-x-s-2-s-1-0-s-1-s-1-7-s-1-0-s-2-x-s-2-s-1-s-1-s-1-s-1-s-1-7-s-1-0-s-2-x-s-2-s-1-s-1-s-1-s-1-s-1-7-s-1-0-s-2-x-s-2-s-1-s-1-s-1-s-1-s-2-x-s-2-s-1-7
+-- Q6 exp=30 got='0' ok=False :: 100_10_10_10_height6-0-1-target-1-s-s-s-1-s-1-s-1-0-1-s-1-target-6-s-1-s-1-0-1-s-1-target-6-s-0-1-s-1-target-6-s-0-1-1-s-1-s-2-s-1-s-2-s-1-0-1-0-1-s-2-s-1-0-1-s-1-s-2-s-2-1-s-1-s-1-target-6-s-1-s-1-s-
+-- Q7 exp=8 got='-1' ok=False :: 100-0-1-s-0-7-s-1-s-1-s-1-s-1-s-1-s-1-0-s-1-s-1-0-s- |  | *10-0-1-s-0-7-s-1-s-1-s-2-s-1-s-2-s-1-s-1-s-1-s-0-s-1-s-2-s-1-s-2-s-2-s-1-s-1-s-1-s-1-s-2-s-1-0-s-1-s-1-s-2-s-2-s-1-s-1-s-3-x-7-s-1-s-1-s-2-s-1-s-
+-- Q8 exp=12 got='0' ok=False :: _100_s_1_0_s_800_s_1__s_1-s-s-1-s-1-s-1-s-0-s-80-s-1-s-1-s-1-s-2-s-0-s-8-0-s-1-s-2-s-0-s-1-s-1-s-2-s-0-s-1-s-1-s-2-s-0-s-1-s-1-s-2-s-0-s-1-s-1-s-2-s-0-s-8-0-s-1-s-1-s-1-s-1-s-1-s-2-s-0-s-1-s-1-s-2-s-1
+-- Q9 exp=3/4 got='1' ok=False :: _10_0_s_1_s_1-s-2-4-s-1-s-1-s-1-s-2-4-s-1-out-s-1-s-2-4-s-1-out-s-1-s-2-4-s- |  | *1-0-s-s-1-s-2-4-s-1-out-s-1-s-2-4-s-1-out-s-1-s-2-4-s-1-s-1-s-2-4-s-1-out-s-1-s-2-4-s |  | *1-0-s-s-1-s-2-4-s-1-out-s-1-s-2-4
+-- Q10 exp=17 got='-2' ok=False :: _10_0_s_144_s_25s_1-0-s-1-s-1-s-4-4-s-2-s-1-s-1-s-2-s-5-s-1-s-4-4-s-4-s- |  | *1-0-s-s-144-s-25-s-1-s-1-s-4-4-s-2-s-1-s-1-s-1-s-4-4-s |  | *1-0-s-s-144-s-25-s-1-s-1-s-1-s-4-4-s |  | *1-0-s-s-1-44-s-25-s-1-s-1-s-1
+### SCORE 0/10
+
+########################################################################################
+### moe_x=0.25 dense_x=2.0
+-- Q1 exp=12 got='-1' ok=False :: 144-14-10-1-1-1-1-1-1-1-1-1-1-1-1-1-1-4-1-1-1-1-1-1-1-1-2-1-1-2-1-1-2-1-1-4-1-1-2-1-1-2-1-1-2-1-1-2-1-1-4-1-2-1-1-1-4-1-2-1-1-1-1-4-1-2-1-1-1-4-1-2-1-1-1-1-4-1-2-1-1-1-4-1-2-1-1-1-1-4-1-2-1-1-1-4-1-2-
+-- Q2 exp=380 got='1' ok=False :: 1111.  _11.  _11.  _23.  _11.  _11.  _11.  _20.  _10.  _10.  _23.  _11.  _20.  _10. |  |     *111.  _23.  _11.  _1.  _20.  _0.  _11.  _23.  _11.  _20. |  |     *111.  _23.  _11.  _1.  _20.  _0. |  |     *10.  _10
+-- Q3 exp=5050 got='-1' ok=False :: 1000  # |  | ```1000  # |  | ```Step-1  # |  | ```Rel-100-10  # |  | ```            #            #100-10  #1-2-3-10-1 |  | ```            ```Step-1  #            #Rel-100-10-1-1-2-3-10``` |  | ```            #100-10  # |  | ``` 
+-- Q4 exp=5040 got='-1' ok=False :: _1_s_s_s_1_s_1_1_1_1_1-1-1-1-1-1-1-1-2-2-1-2-1-1-s-s-s-1-s-s-1-s-2-1-s-1-s-2-1-1-s-2-s-1-2-1-s-1-2-s- |  | _1-s-s-s-1-1-1-1-1-2-2-1-2-1-s-s-s-1-s-2-1-1-s-2-1-1-s-s-s-1-s |  | *1-1-1-1-2-2-1-2-1-s-s-s-1-1-1-2-
+-- Q5 exp=6 got='2' ok=False :: 17  17  _s |  | _s_s_s |  | _s_re_re |  | _re_re |  | _17_s |  | _s_s |  | _s_s |  | _17_s |  | _17-re |  | _re |  | _re |  | _1_s |  | _s |  | _17-s |  | _7-re |  | _re |  | _re |  | _1-s |  | _s |  | _17-s |  | _7-re |  | _ |  | _re |  | _s |  | _s |  | 17-s |  | _s |  | _s |  | _s |  | _17-re |  | _re |  | _re |  | _1-s |  | _s
+-- Q6 exp=30 got='6' ok=False :: 10_10_10  _triangle  _base 10  _height 6 |  | *            ```10_1_1  _s  _s  _s  _re  _t |  | *            ```height 6  _s  _re  _t``` |  | *            ```triangle  _base 10  _height 6``` |  | *            *       
+-- Q7 exp=8 got='5' ok=False :: 1  _5_s_s_1  _s_7_t |  | *Target *s-7* |  | *Thinking *how-the approach is useful* |  | *If $f(5$s) is actually1, 1-s-7-t |  | * |  | *Target *s-7* |  | * |  | *Thinking *how-the approach is useful* |  | *1-5-s-s-1 |  | * |  | *If $f(5s) is
+-- Q8 exp=12 got='-1' ok=False :: 10_10_1_1_1_1_1_1-1-1-1-1-1-1-1-1-1-2-1-2-1-2-1-1-2-1-1-1-1-1-1-1-1-1-1-2-1-1-2-1- |  | 10-10-1-1-1-1-2-1-2-1-1-2-1-1-2-1-1-1-1-1-1-1-1-1-2-1-2-1-1-2-1-1-1-1-2-1-1-2-1-1-1-1- |  | 1-1-1-1-1-1-2-1-2-1-1-1-2-1-
+-- Q9 exp=3/4 got='1' ok=False :: _18_24_1  _1  _1  _1  _1  _1  _1  _1  _1  _1  _2  _4  _1  _1  _2  _4  _1  _1  _2  _1  _1  _1  _2 |  | _1  _1  _1  _1  _2  _4  _1  _1  _2  _4  _1  _1  _2  _1 |  | _1  _1  _1  _2  _4  _1  _1  _2  _4  _1  _1 |  | _1
+-- Q10 exp=17 got='-444' ok=False :: _Step-re_s |  | ```_re_s hands  ```_s  _2_re_s |  | ```-re-s |  | ```-sqrt-444  ```-444 |  | ```-Step-re-s |  | ```-re-s hands  ```-s  2 |  | ```-re-s |  | ```-sqrt-25  ```-25 |  | ```-Step-re-s |  | ```-re-s |  | ```-444  ```-444 |  | ```-Step
+### SCORE 0/10
+
+########################################################################################
+### moe_x=0.0 dense_x=2.0
+-- Q1 exp=12 got='-1' ok=False :: _144_s_1_0_1-0-1-4-s-1-0-1-4-s-1-4-s-1-0-1-4-s-1-0-_8-4-s-1-0-1-4-s-1-4-1-4-s-1-0-1-4-s-1-4-s-1-0-1-4-s-1-0-1-1-4-s-1-0-1-1-4-s-1-0-1-1-4-s-1-0-1-1-4-s-1-0-1-1-1-4-s-1-0-1-1-4-s-1-0-1-1-4-s-1-0-1-1-4-
+-- Q2 exp=380 got='-1' ok=False :: 11-1-1-1-0-1-1-2-3-1-1-1-1-2-3-1-1-1-1-1-1-1-1-1-2-3-1-2-1-0-1-1-2-3-1-2-1-0-1-1-1-1-1-2-3-1-2-1-0-1-1-1-1-2-3-1-2-1-0-1-1-1-2-3-2-1-0-1-1-1-1-2-3-2-1-0-1-1-1-1-2-3-2-1-0-1-1-1-1-2-3-2-1-1-1-1-1-1-2-3
+-- Q3 exp=5050 got='-1' ok=False :: _100_s_1_s_1-s-1-s-1-s-0-s-1-s-1-s-1-s-1-s-1-s-0-s- |  | *1-s-1-s-1-s-0-s-1-s-1-s-1-s-1-s-0-s-1-s-1-s-1-s-1-s-2-s-1-s-1-s-2-s-1-s-1-s-2-s- |  | *1-s-1-s-1-s-0-s-1-s-1-s-2-s-1-s-2-s-1-s-1-s-2-s-1-s-1-s-2-s-1-s
+-- Q4 exp=5040 got='-3' ok=False :: _1_0_s_1_s_1_s_1-s-1-s-1-s-1-s-1-s-1-s-1-s-2-s-2-s-2-s-_s-1-s-1-s-1-s-2-s-1-s-2-s-1-s-2-s-1-s-1-s-2-s-2-s-1-s-1-s-1-s-2-s-1-s-1-s-1-s-3-s-3-s-3-s-3-s-3-s-3-s-1-s-1-s-1-s-3-s-3-s-2-s-1-s-1-s-1-s-2-s-2-
+-- Q5 exp=6 got='0' ok=False :: 100_s_1_s_1_7_s_1-0-s-2x-s-1-0-s-1-7-s-1-s-1-s-1-s-2-x-s-2-s-1-0-s-1-s-7-s-1-0-s-1-s-1-s-2-x-s-2-s-1-0-s-s-1-s-1-7-s-1-0-s-2-x-s-1-0-s-1-7-s-1-s-1-s-1-s-2-x-s-2-s-1-0-s-s-1-s-1-7-s-1-0-s-2-x-s-1-0-s-1
+-- Q6 exp=30 got='0' ok=False :: 100_10_10_10_height6-0-1-target-1-s-s-s-1-s-1-s-1-0-1-s-triangle-base-1-0-1-s-height-6-0-1-target-s-s-s-1-s- |  | 100-1-1-0-1-s-s-s-1-s-1-target-s-s-triangle-base-1-0-1-s-height-6-0-1-target-s-s-s-s-1-s-s
+-- Q7 exp=8 got='-7' ok=False :: 100-0-s-1-s-1-s-7-s-0-s-1-s-5-s-1-s-1-s-target |  | *  _s-x-3-7-s-0-s-1-s-5-s-1-s-target |  | *  *  _s-x-3-7-s-7-s-0-s-1-s-5-s-target |  | *  *  _s-x-3-0-s-1-s-s-7-s-0-s-1-s-5-s-target |  | *  *  _s-x-3-0-s-1-s-s-7-s
+-- Q8 exp=12 got='0' ok=False :: _100_0_1_s_1_s_1_s_1-s-80-0-0-1-s-s-1-s-1-s-1-s-0-0-0-1-s-1-s-2-0-0-1-s-2-0-0-1-s-1-s-2-0-0-1-s-1-s-2-0-0-1-s-1-s-2-s-2-0-0-0-1-s-s-1-s-2-s-2-0-0-1-s-s-1-s-1-s-1-s-1-s-0-0-1-s-1-s-1-s-2-0-0-0-1-s-s-1-
+-- Q9 exp=3/4 got='-2' ok=False :: _10_0_s_1_s_1-s-24-1-s-1-s-1-s-2-4-1-s-1-s-1-0-s-s-2-4-1-s-1-0-s-s-2-4-1-s-1-0-s-s-2-4-1-s-2-4-1-s-2-4-1-s-2-4-1-s-1-s-2-4-1-s-1-s-2-4-1-s-1-0-s-s-1-s-2-4-1-s-1-s-2-4-1-s-1-s-2-4-1-s-1-0-s-s-1-s-2-4-1
+-- Q10 exp=17 got='-144' ok=False :: _10_0_s_144_s_25s_1-0-s-1-s-1-s-4-4-s-2-s-1-s-1-s-2-s-5-s-1-s-4-4-s-4-s- |  | *1-0-s-s-144-s-25-s-1-s-1-s-4-4-s-2-s-1-s-1-s-1-s-4-4-s |  | *1-0-s-s-144-s-25-s-1-s-1-s-1-s-4-4-s |  | *1-0-s-s-1-44-s-25-s-1-s-1-s-1
+### SCORE 0/10
+
+########################################################################################
+### moe_x=1.5 dense_x=1.0
+-- Q1 exp=12 got=None ok=False :: To premise | To prove: |  | To be the way is the way is the way is the way is the way is the way is the way is the way is the way is the way is the way is the way is the way is the way is the way is the way
+-- Q2 exp=380 got='11' ok=False :: It implies that: | $17 \times 23 - 11$ | Wait the userwidya-thought | To compute $17 \times 23 - 11$ is equivalent to the following-thought | The following-thought |  | thought |  | thought |  |  |  |  | --thought | thought |  |  |  |  | 
+-- Q3 exp=5050 got=None ok=False :: icodthought | thought | thought | thought |  | thought | thought |  | thought |  | thought |  | thought | thought | thought |  | thought |  | thought | thought | thought | thought | thought | thought | thought | thought | thought | thought | thought | though
+-- Q4 exp=5040 got=None ok=False :: To the notation for the factarm fact of the fact of the fact of the fact of the fact of the fact of the fact of the fact of the fact of the fact of the fact of the fact of the fact of the fact of the 
+-- Q5 exp=6 got=None ok=False :: To itermerda despekan m# | In algebras to solve for $x$ as $x$ is $x$ is $x$ is $x$ is $x$ is $x$ is $x$ is $x$ is $x$ is $x$ is $x$ is $x$ is $x$ is $x$ is $x$ is $x$ is $x$ is $x$ is $x$ is $x$ is $x$
+-- Q6 exp=30 got=None ok=False :: thought | t{thought | ed paste a <thought | ed up a <textext | end up a <text | end up a <text | end up a <text | end up a <text | end up a <text | end up a <text | end up a <text | end up a <text | end up a <text | end up a <
+-- Q7 exp=8 got='5' ok=False :: UndMatch | $f(5)$ |  | To find the value of $f(5)$ when $f(x) = 3x$ and $f(x) = 7$ |  | The value of $f(5)$ |  | To find the value of $f(5)$ |  | To find the value of $f(5)$ |  | To find the value of $f(5)$ |  | To find the va
+-- Q8 exp=12 got=None ok=False :: To express the mathematical notation as: |  | To express the mathematical notation as: |  |  is the mathematical notation as: |  | To express the mathematical notation as: |  |  is the mathematical notation as: |  |  is 
+-- Q9 exp=3/4 got=None ok=False :: To interpret the questioning the request: the user's | The user's | The user's | s | The user's | The user's | The user's | The user's | The user's | The user's | The user's | The user's | The user's | The user's | The user's | Th
+-- Q10 exp=17 got='25' ok=False :: The expression $\sqrt{144}+\text{itastvertextast]{25}}$ is a mathematical-style-style-style-style-style-style-style-style-style-style-style-style-style-style-style-style-style-style-style-style-style-
+### SCORE 0/10
+restored

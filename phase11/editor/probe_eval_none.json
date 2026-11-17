@@ -1,0 +1,191 @@
+{
+ "summary": {
+  "edit": "none",
+  "accuracy": 5.0,
+  "answered": 100.0,
+  "cap_hit": 95.0,
+  "mean_tok": 7793.75
+ },
+ "rows": [
+  {
+   "q": "What is the greatest common divisor of 84 and 144?",
+   "exp": "12",
+   "got": "144",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "reat Common Divizer** (of 84 and 144) is actually by finding the **Great Common Divizer** (of 84 and 144) is actually by"
+  },
+  {
+   "q": "Compute $17\\times 23 - 11$.",
+   "exp": "380",
+   "got": "-11",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "by step-by step-by step-by step-by step-by step-by step-by step-by step-by step-by step-by step-by step-by step-by step-"
+  },
+  {
+   "q": "What is $1+2+3+\\cdots+100$?",
+   "exp": "5050",
+   "got": "100",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "-llllll-llllllllllllllllllllllllllllllllllllllllll-llllll-llllllllllllllllllllllllllllllllllll-llllll-llllllllllllllllll"
+  },
+  {
+   "q": "What is $7!$?",
+   "exp": "5040",
+   "got": "7",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "To calculate $7!$ (more)\n\nTo calculate $7!$ (more)\n\nTo calculate $7!$ (more)\n\nTo calculate $7!$ (more)\n\nTo calculate $7!"
+  },
+  {
+   "q": "Solve for $x$: $2x + 5 = 17$.",
+   "exp": "6",
+   "got": "17",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "of the equation**\n\n---\n\n**Step 2: Divide both sides of the equation by 2**\n\n---\n\n**Step 1: Subtract 5 from both sides of"
+  },
+  {
+   "q": "What is the area of a triangle with base 10 and he",
+   "exp": "30",
+   "got": "10",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "and height 6 is 20.**\n\n**The area of a triangle with base 10 and height 6 is 20.**\n\n**The area of a triangle with base 1"
+  },
+  {
+   "q": "If $f(x)=3x-7$, what is $f(5)$?",
+   "exp": "8",
+   "got": "3",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "x$ as $x$ as $x$ as $x$ as $x$ as $x$ as $x$ as $x$ as $x$ as $x$ as $x$ as $x$ as $x$ as $x$ as $x$ as $x$ as $_x$ as $"
+  },
+  {
+   "q": "What is $15\\%$ of $80$?",
+   "exp": "12",
+   "got": "16",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "$15\\% \\text{of} 80 = 15 \\times 80$\n\n**16. Final result:**\nThe final result is:\n$15\\% \\text{of} 80 = 15 \\times 80$\n\n**26."
+  },
+  {
+   "q": "Simplify $\\frac{18}{24}$.",
+   "exp": "0.75",
+   "got": "24",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "de the Numer and Denem by the GCD (24 and 18)**\n\n**Step 2: Divide the Numer and Denem by the GCD (24 and 18)**\n\n**Step 3"
+  },
+  {
+   "q": "What is $\\sqrt{144}+\\sqrt{25}$?",
+   "exp": "17",
+   "got": "25",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": " approximately:\n  **4.31**\n\n---\n\n**Final Result:**\n\nThe result is approximately:\n  **4.31**\n\n---\n\n**Final Result:**\n\nThe"
+  },
+  {
+   "q": "Find the remainder when $7^{9}$ is divided by 13.",
+   "exp": "6",
+   "got": "9",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "re):**\n\n**Step-by the modular exponentiation theory ( or more):**\n\n**Step-by the modular exponentiation theory ( or more"
+  },
+  {
+   "q": "If $3x - 4 = 11$, find $x^2$.",
+   "exp": "25",
+   "got": "11",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "thought-thought-thought-thought-thought-thought-thought-thought-thought-thought-thought-thought-thought-thought-thought-"
+  },
+  {
+   "q": "What is the slope of the line through $(1,2)$ and ",
+   "exp": "2",
+   "got": "-1",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": " for Slope ($m$)\n*    $ m = \\frac{10 - 2}{5 - 1}$\n\n### 23. Formula for Slope ($m)$\n*    $ m = \\frac{10 - 2}{5 - 1}$\n\n###"
+  },
+  {
+   "q": "Compute $\\binom{7}{3}$.",
+   "exp": "35",
+   "got": "3",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": ":\n$$\\binom{n}{k}P = \\frac{n!}{k!}$$\n\nThe formula for combinations is:\n$$\\binom{n}{k}P = \\frac{n!}{k!}$$\n\nThe formula for"
+  },
+  {
+   "q": "What is the least common multiple of 12 and 18?",
+   "exp": "36",
+   "got": "64",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "he **least common multiple** of 12 and 18 is **64**.\n\nThe **least common multiple** of 12 and 18 is **64**.\n\nThe **least"
+  },
+  {
+   "q": "A fair coin is flipped 3 times. What is the probab",
+   "exp": "0.375",
+   "got": "0.375",
+   "ok": true,
+   "finish": "stop",
+   "ntok": 227,
+   "tail": "l Answer:**\nThe probability of exactly 2 heads is $3/8$.\n\n**Final Answer:**\nThe probability of exactly 2 heads is $3/8$."
+  },
+  {
+   "q": "What is $2^{10}$?",
+   "exp": "1024",
+   "got": "2",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "mes 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times"
+  },
+  {
+   "q": "Solve for $y$: $y/3 + 2 = 7$.",
+   "exp": "15",
+   "got": "2",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "ct 2 from both sides of the equation**\n\n**Step 2: Divide both sides of the equation by the coefficient of $y$**\n\n**Step "
+  },
+  {
+   "q": "What is the sum of the interior angles of a pentag",
+   "exp": "540",
+   "got": "7",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": " let let let let let let let let let let let let let let let let let let let let let let let let let let let let let let"
+  },
+  {
+   "q": "If a rectangle has perimeter 30 and width 5, what ",
+   "exp": "50",
+   "got": "38",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "area (step):**\n*   $A = less$\n\n**37. Calculate the area (step):**\n*   $A = 55$\n\n**38. Calculate the area (step):**\n*   $"
+  }
+ ]
+}

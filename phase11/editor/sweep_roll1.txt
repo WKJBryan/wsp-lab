@@ -1,0 +1,82 @@
+per-head max attention prob of last query (per layer): min/mean/max over heads
+L0  min=0.167 mean=0.568 max=0.988  n_heads>0.5: 8
+L1  min=0.130 mean=0.342 max=0.887  n_heads>0.5: 3
+L2  min=0.101 mean=0.241 max=0.516  n_heads>0.5: 1
+L3  min=0.086 mean=0.339 max=0.809  n_heads>0.5: 4
+L4  min=0.091 mean=0.352 max=0.883  n_heads>0.5: 3
+L5  min=0.133 mean=0.371 max=0.602  n_heads>0.5: 4
+L6  min=0.132 mean=0.333 max=0.746  n_heads>0.5: 5
+L7  min=0.118 mean=0.403 max=0.828  n_heads>0.5: 4
+L8  min=0.104 mean=0.333 max=0.828  n_heads>0.5: 2
+L9  min=0.092 mean=0.253 max=0.484  n_heads>0.5: 0
+L10 min=0.201 mean=0.401 max=0.621  n_heads>0.5: 3
+L11 min=0.124 mean=0.279 max=0.793  n_heads>0.5: 2
+L12 min=0.093 mean=0.342 max=0.875  n_heads>0.5: 4
+L13 min=0.117 mean=0.228 max=0.428  n_heads>0.5: 0
+L14 min=0.112 mean=0.262 max=0.412  n_heads>0.5: 0
+L15 min=0.102 mean=0.296 max=0.559  n_heads>0.5: 1
+L16 min=0.176 mean=0.321 max=0.574  n_heads>0.5: 2
+L17 min=0.089 mean=0.415 max=0.684  n_heads>0.5: 4
+L18 min=0.131 mean=0.364 max=0.645  n_heads>0.5: 2
+L19 min=0.161 mean=0.347 max=0.629  n_heads>0.5: 3
+L20 min=0.149 mean=0.352 max=0.598  n_heads>0.5: 2
+L21 min=0.202 mean=0.416 max=0.715  n_heads>0.5: 3
+L22 min=0.199 mean=0.441 max=0.895  n_heads>0.5: 4
+L23 min=0.142 mean=0.297 max=0.482  n_heads>0.5: 0
+L24 min=0.303 mean=0.527 max=0.914  n_heads>0.5: 7
+L25 min=0.268 mean=0.426 max=0.637  n_heads>0.5: 4
+L26 min=0.187 mean=0.497 max=0.863  n_heads>0.5: 8
+L27 min=0.230 mean=0.522 max=0.836  n_heads>0.5: 6
+L28 min=0.198 mean=0.397 max=0.805  n_heads>0.5: 3
+L29 min=0.154 mean=0.380 max=0.922  n_heads>0.5: 3
+
+##########################################################################################
+### roll mode=both shift_q=128 shift_k=128
+-- Q1 loop=0.000 prefill_top1='If' p=0.157
+   If de own- much- much own own]- much own--- much로 own--af:---it-it  tens-it------it-y-it---y-it(---y-y-it-----------------------------------------------−------------------------------------------
+-- Q2 loop=0.000 prefill_top1='Para' p=0.087
+   Para de- much- much- much---- much: much:-t-t own---it-t-ass-----------a_---a-----t-----t(-------------------------------------------------------------------------------------------
+
+##########################################################################################
+### roll mode=both shift_q=1 shift_k=1
+-- Q1 loop=0.156 prefill_top1='-' p=0.901
+   --1�-    10Colin AdWords chếtлосcalo Calaiscale야基础上7'-10'- |  | 1-1'sBmAfrique...' |  | Ahucosoli Reddy Hobson malah abh}}}} |  | 'Mashi%:- |  | '1'-1%: |  | '-- |  | ''---- |  | '-- |  | ''-- |  | ''---'-- |  | '--'-' |  | '-- |  | ''-- |  | '-- |  | '-- |  | '-- |  | '-- |  | '--- |  | '-' |  | '-- |  | '-- |  | '-- |  | '-- |  | '-- |  | '-- |  | '
+-- Q2 loop=0.008 prefill_top1='-' p=0.825
+   -5% | -10%... |  | Since-- |  | 'Mappingsof Verdunpst7.$$ |  | _ | -1 way fes |  | - |  | ' | - |  |  |  | ' | - |  | 으로}; |  | '-1'-'2'-'... |  | -- |  | - |  | $1'-1\%$- |  | 'No Madsenchr |  | -- |  | $1'-1$:- |  | - |  | - |  | $1$ |  | --- |  | No Madsenbach Kassel Johanssoncalo |  | --- |  | No' |  | - |  | $1$-’ |  | - |  | No'-’ |  | - |  | No' |  | - |  | $1'-- |  | $2'-’ |  | -- |  | No'-
+
+##########################################################################################
+### roll mode=both shift_q=2 shift_k=2
+-- Q1 loop=0.000 prefill_top1='**' p=0.144
+   **Step----e-er-er- | -X-Y-p(-z--t) $\text{--p}"), | - (\text--p-f-x-y) |  | $Value-Value-Result-Value-Point-Value$ |  | Note ability own-point EXIT-------- | - $x$ |  | If--@-Value-Value CONTENT-- | - | $Value-Value$ |  | Could's-Value CONTENT- |  | $Value$ |  | As {로-По-ф-а-х-ш-}(\text--?_-...) |  | $Value$ |  | $x$ |  | $x$ |  | $
+-- Q2 loop=0.000 prefill_top1='$' p=0.351
+   $X-1------1-5-A-p---t-=\text-p$ |  | (I-f-p.xi.cz-p-t.y.p.f-pric----pric-p.el-side-side-value LENGTH----p.ch-value LENGTH---p.ch-value LENGTH-valuecakes-value-integral LENGTH-value-p.ch-integral LENGTH-p.ch든-ch-side-ch-side-p.ch LENGTH-value LENGTH-ch-side LENGTH-value-ch-value LENGTH-value-ch---p-m. |  | (
+
+##########################################################################################
+### roll mode=q shift_q=128 shift_k=0
+-- Q1 loop=0.556 prefill_top1='2' p=0.349
+   2222222.2.2.2.2.2.22222. This22.22. This2222.2222222.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.g.g1.2.2.2.2.2.2.2.2.2.g.2.2.2.2.2.2.2.2.2.g. | 1.g.g.g.2.2.2.g.2.2.2.g
+-- Q2 loop=0.169 prefill_top1='Is' p=0.187
+   Is+2$Is2$Is2$Is2$Is2$Is2$Is=Is2\text=Is2\\2Is2\text=Is=2\\2=Is=Is2\text=Is=Is=Is2=Is=Is+Is2=Is2\\2\\2Is2\\2Is=2Is=Is=Is=Is=Is=Is2Is2\text=Is2Is=Is2\\2\\2\\2\\2\\2\\2\\2Is=Is=2\\2\\2\\2=Is=2\\2\text=2\text\text\text\text\text\text\text\text\
+
+##########################################################################################
+### roll mode=k shift_q=128 shift_k=0
+-- Q1 loop=0.486 prefill_top1='To' p=0.995
+   To compute $17 \times 23 - 11$: |  | **Step 1: Multiplication** | $17 \times 23$ | Using the identity $(17 \times 23 = 17 \times (23)$ or using the trick for numbers near 10: | $17 \times 23 = 17 \times (23)$ | $17 \times 23 = 17 \times (23)$ | $17 \times 23 = 17 \times (23)$ | $17 \times 23 = 17 \times (23)$ | $17 \times 2
+-- Q2 loop=0.676 prefill_top1='To' p=0.959
+   To interpret the notation $1+2+3+\cdots+100$ as a mathematical expression: |  | The expression is a sum of the integers from 1 to 2 to 3 to 100. |  | The expression is a sum of the integers from 1 to 2 to 3 to 100. |  | The expression is a sum of the integers from 1 to 2 to 3 to 100. |  | The expression is a sum of the integers from 1 to 2 to 3 to 100. |  | The expression is a sum of the integers from 1 to 2 to 3 to 
+
+##########################################################################################
+### roll mode=both shift_q=1 shift_k=-1
+-- Q1 loop=0.274 prefill_top1=' way' p=0.647
+    way\나요 way�� way way way way way way way way way way way way way way way way way way way way way way way way way way way way way way way way way way way way way-...$$$$...:...$$$$...$...$...$...$...$...$...$...$$$...$$$$$$$$$$$$$...$$$...$...$?$PA:?$?$$...$...$...$PAYK]......$ePAYK<ePAPS-?$PAYKACL\cdot[-?$PAYK<ePAWPAYK<e[-?$e
+-- Q2 loop=0.000 prefill_top1=' way' p=0.912
+    way way way]-1 way worldset] way]-1-- way- way- way actuallyen** way]-**"-** way way- way-1-1- way- way] way-**- way- way- way--- way] way] way way way] way] way] much] much] way-- way-?]-?]-?-?-?-?-?]-?]-?]] much] much]*]]]]]]]]]]]]]]$]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+##########################################################################################
+### roll mode=both shift_q=127 shift_k=127
+-- Q1 loop=0.000 prefill_top1='-' p=0.535
+   -10pto-edge-Edge-10-Edge-TipcappedURDEeee-10-Numberngramzitually ultravioletstatistical adenos Zamorastatisticaldato📚AdapUTSpioERKUREhUNDUNDOMะempêTREUND"#Datasetpio서는-einterpolate adenosannotDEPCAG  ejacksonannot📚데adaptersstatisticalstatisticsprometheusstatisticalstatisticalquantile tribulationsjacksondisamb"#TAB📚서는-astatisticalstatisticalstatisticalstatisticalstatisticalstatisticalstatisticsprom
+-- Q2 loop=0.041 prefill_top1='$' p=0.096
+   $10p{e-10ppcokö-3-10ppppAngelo BotsinterpolatecitaAdapś�Alone assemblagesÜRUNDORÉ-e{e-10pdeprecated assemblagesndastatisticalstatistical{-10-e{e{-10-10-as-e{-as-e�statisticstutorialstatisticsannotatestatisticalstatisticalannotate adenosannotDEPERKDEPERKERKERK😜Applications-10-10-10-10-10-###Dataset ownstatistical 싶certificationtestersstatisticalstatisticalstatisticalannotatestatisticalstatistical 싶
+
+restored original weights

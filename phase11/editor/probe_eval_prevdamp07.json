@@ -1,0 +1,191 @@
+{
+ "summary": {
+  "edit": "prevdamp07",
+  "accuracy": 0.0,
+  "answered": 95.0,
+  "cap_hit": 90.0,
+  "mean_tok": 7395.7
+ },
+ "rows": [
+  {
+   "q": "What is the greatest common divisor of 84 and 144?",
+   "exp": "12",
+   "got": "23",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "**\n\n**Step 17: Answer.**\n\n**Step 18: Answer.**\n\n**Step 21: Answer.**\n\n**Step 22: Answer.**\n\n**Step 23: Answer.**\n\n**Step"
+  },
+  {
+   "q": "Compute $17\\times 23 - 11$.",
+   "exp": "380",
+   "got": "1",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "tep 3: Subtract the product from 11**\n\n**Final Answer:**\n\n1.  **Step 1: Calculate the product $17 \\times 23$**\n\n**Step 4"
+  },
+  {
+   "q": "What is $1+2+3+\\cdots+100$?",
+   "exp": "5050",
+   "got": "2",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": " of the arithmetic progression:\n\nThe sum of the arithmetic progression:\n\nThe sum of the arithmetic progression:\n\nThe sum"
+  },
+  {
+   "q": "What is $7!$?",
+   "exp": "5040",
+   "got": "1",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1$**\n\n---\n\n**$7! = 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1$"
+  },
+  {
+   "q": "Solve for $x$: $2x + 5 = 17$.",
+   "exp": "6",
+   "got": "2",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "Divide both sides of the equation.**\n\n**Final Answer:**\n$x = 8$\n\n**Step 1: Subtract 5 from both sides of the equation.**"
+  },
+  {
+   "q": "What is the area of a triangle with base 10 and he",
+   "exp": "30",
+   "got": "0.5",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "/2 \u00d7 10 \u00d7 6) = (1/2 \u00d7 10 \u00d7 6) = (1/2 \u00d7 10 \u00d7 6) = (1/2 \u00d7 10 \u00d7 6) = (1/2 \u00d7 map) = (1/2 \u00d7 10 \u00d7 6) = (1/2 \u00d7 10 \u00d7 6) = (1/2 \u00d7"
+  },
+  {
+   "q": "If $f(x)=3x-7$, what is $f(5)$?",
+   "exp": "8",
+   "got": "1",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "-**\n\n**_-**\n\n**_-**\n\n**_-**\n\n**_-**\n\n**_-**\n\n**_-**\n\n**_-**\n\n**_-**\n\n**_-**\n\n**_-**\n\n**_-**\n\n**_-**\n\n**_-**\n\n**_-**\n\n**_"
+  },
+  {
+   "q": "What is $15\\%$ of $80$?",
+   "exp": "12",
+   "got": "15",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 178,
+   "tail": "\n\n**4. Calculate the final value:**\n$$15 \\times 80 = 300$$\n$$300 \\div 100 = 15$$\n\n**Result:**\n$$15\\% \\text{of} 80 = 15$$"
+  },
+  {
+   "q": "Simplify $\\frac{18}{24}$.",
+   "exp": "0.75",
+   "got": "3",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "Answer: $\\frac{1}{3}$**\n\n**Final Answer: $\\frac{1}{3}$**\n\n**Final Answer: $\\frac{1}{3}$**\n\n**Final Answer: $\\frac{1}{3}$"
+  },
+  {
+   "q": "What is $\\sqrt{144}+\\sqrt{25}$?",
+   "exp": "17",
+   "got": "5",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": " + 5$\n\n$\\sqrt{144} + \\sqrt{25} \\approx 13.38... + 5$\n\n$\\sqrt{144} + \\sqrt{25} \\approx 13.38... + 5$\n\n$\\sqrt{144} + \\sqrt"
+  },
+  {
+   "q": "Find the remainder when $7^{9}$ is divided by 13.",
+   "exp": "6",
+   "got": "13",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": " Final Answer**\n\n27.  **Step 27: Final Answer**\n\n28.  **Step 28: Final Answer**\n\n29.  **Step 29: Final Answer**\n\n30.  **"
+  },
+  {
+   "q": "If $3x - 4 = 11$, find $x^2$.",
+   "exp": "25",
+   "got": "4",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "eld 1**\n\n**Step 1/field 1**\n\n**Step 1/field 1**\n\n**Step 1/field 1**\n\n**Step manask question:**\n\n**Step 1:**\n\n**Step 2:**"
+  },
+  {
+   "q": "What is the slope of the line through $(1,2)$ and ",
+   "exp": "2",
+   "got": "10",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "Apply-**\n\n**12. Apply-**\n\n**13. Apply-**\n\n**21. Apply-**\n\n**24. Apply-**\n\n**25. Apply-**\n\n**26. Apply-**\n\n**27. Apply-**"
+  },
+  {
+   "q": "Compute $\\binom{7}{3}$.",
+   "exp": "35",
+   "got": "3",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "a for combinations is:\n$$\\binom{n}{k} = \\text{definition for combinations}$$\n\nThe formula for combinations is:\n$$\\binom{"
+  },
+  {
+   "q": "What is the least common multiple of 12 and 18?",
+   "exp": "36",
+   "got": null,
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "Least Common Multiple** is the **Least Common Multiple** is the **Least Common Multiple** is the **Least Common Multiple"
+  },
+  {
+   "q": "A fair coin is flipped 3 times. What is the probab",
+   "exp": "0.375",
+   "got": "8",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": " as a fraction).\n\n**34. Final Result:**\nTo express the result as a fraction (less as a fraction).\n\n**35. Final Result:**"
+  },
+  {
+   "q": "What is $2^{10}$?",
+   "exp": "1024",
+   "got": "2484",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "l answer:)\n\nWait, there is the final answer:\n\n**$2^{10} = 2484$** (Wait, there is the final answer:)\n\nWait, there is the"
+  },
+  {
+   "q": "Solve for $y$: $y/3 + 2 = 7$.",
+   "exp": "15",
+   "got": "7",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "**\n\n**Step mass**\n\n**Step mass**\n\n**Step mass**\n\n**Step mass**\n\n**Step mass**\n\n**Step mass**\n\n**Step mass**\n\n**Step mass"
+  },
+  {
+   "q": "What is the sum of the interior angles of a pentag",
+   "exp": "540",
+   "got": "700",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "or angles of a pentagon is 700 degrees.**\n\n**Wait, I want to be a correct answer.**\n\n**The sum of the interior angles of"
+  },
+  {
+   "q": "If a rectangle has perimeter 30 and width 5, what ",
+   "exp": "50",
+   "got": "30",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 280,
+   "tail": "wer:**\n*   **$Area = 30$**\n\n**Step 5: Find the area (step)**\n\n*   **$Area = 30$**\n\n**Final Answer:**\n*   **$Area = 30$**"
+  }
+ ]
+}

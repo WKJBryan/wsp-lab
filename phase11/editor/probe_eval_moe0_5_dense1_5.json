@@ -1,0 +1,191 @@
+{
+ "summary": {
+  "edit": "moe0.5_dense1.5",
+  "accuracy": 0.0,
+  "answered": 95.0,
+  "cap_hit": 0.0,
+  "mean_tok": 36.2
+ },
+ "rows": [
+  {
+   "q": "What is the greatest common divisor of 84 and 144?",
+   "exp": "12",
+   "got": "144",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 39,
+   "tail": "**Theorem:**\n*The greatest common divisor of 84 and 144 is found.\n\n**Summary:**\nThe numbers are 84 and 144."
+  },
+  {
+   "q": "Compute $17\\times 23 - 11$.",
+   "exp": "380",
+   "got": "11",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 35,
+   "tail": "```17\u00d723 - 11```\n\n*Calculation:\n*Result: 11\n\n```17\u00d723 - 11```"
+  },
+  {
+   "q": "What is $1+2+3+\\cdots+100$?",
+   "exp": "5050",
+   "got": "100",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 39,
+   "tail": "**Value:** $1+2+3+\\cdots100$\n\n**Note:** This number is a sum of three integers, combined with a $100$ value."
+  },
+  {
+   "q": "What is $7!$?",
+   "exp": "5040",
+   "got": "7",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 53,
+   "tail": "t:**\n\nIf you want to explain, the logic is how we treat integer values when calculating complex mathematical structures."
+  },
+  {
+   "q": "Solve for $x$: $2x + 5 = 17$.",
+   "exp": "6",
+   "got": "17",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 36,
+   "tail": "**Solution:** $2x + 5 = 17$\n\n**Note:** This equation is a linear calculation, where the value of $x$ is determined."
+  },
+  {
+   "q": "What is the area of a triangle with base 10 and he",
+   "exp": "30",
+   "got": "6",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 32,
+   "tail": " a triangle:** 10\n**Height of a triangle:** 6\n\n*This description clarifies that a triangle is given specific dimensions."
+  },
+  {
+   "q": "If $f(x)=3x-7$, what is $f(5)$?",
+   "exp": "8",
+   "got": "5",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 48,
+   "tail": "Comparison:**\n\n$f(x)=3x-7$\n$f(5)=5$\n\n**Note:** The values are different. 3 is the subtraction of 7, and 5 is the number."
+  },
+  {
+   "q": "What is $15\\%$ of $80$?",
+   "exp": "12",
+   "got": "15",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 38,
+   "tail": "\n*Context: This situation implies that a specific percentage of savings or adjustment applied to a business transaction."
+  },
+  {
+   "q": "Simplify $\\frac{18}{24}$.",
+   "exp": "0.75",
+   "got": "24",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 34,
+   "tail": "**Step**\n\nSimplify $\\frac18}{24}$.\n\n---\n\n**Value**\n\n24\n\n---\n\n**Result**\n\n18\n\n---"
+  },
+  {
+   "q": "What is $\\sqrt{144}+\\sqrt{25}$?",
+   "exp": "17",
+   "got": "25",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 26,
+   "tail": "**Note:** The calculation is actually summing two square roots.\n\n**Value:** $44$\n$25$"
+  },
+  {
+   "q": "Find the remainder when $7^{9}$ is divided by 13.",
+   "exp": "6",
+   "got": "9",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 19,
+   "tail": "13 $\\divide$ $7^{9}$\n\nRemainder: **7**\n\n```"
+  },
+  {
+   "q": "If $3x - 4 = 11$, find $x^2$.",
+   "exp": "25",
+   "got": "2",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 43,
+   "tail": "  **Find $x^2$**\n\nSince the equation provided, $3x - 4 = 11$, you find the result:\n\n**$x^2$**\n\n---\n\n"
+  },
+  {
+   "q": "What is the slope of the line through $(1,2)$ and ",
+   "exp": "2",
+   "got": "5",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 20,
+   "tail": "**Slope:** $2$\n**Values:** $1$ and $5$\n\n```"
+  },
+  {
+   "q": "Compute $\\binom{7}{3}$.",
+   "exp": "35",
+   "got": "3",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 36,
+   "tail": "Calculation:** $\\binom{7}{3}$\n\n---\n\n**Result:** 7\n\n3\n\n---\n\n**Note:** This binomial number is representing three items.\n\n"
+  },
+  {
+   "q": "What is the least common multiple of 12 and 18?",
+   "exp": "36",
+   "got": "1",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 23,
+   "tail": "**Note:**\n\nThe numbers are indeed comparing their values.\n\n12 = 18\n1."
+  },
+  {
+   "q": "A fair coin is flipped 3 times. What is the probab",
+   "exp": "0.375",
+   "got": "3",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 33,
+   "tail": "oin logic is applied, because the movement is discontinuous.\n\n**Probability:**\n2 heads\n\n**Fraction:**\n\n3 times flipped\n\n"
+  },
+  {
+   "q": "What is $2^{10}$?",
+   "exp": "1024",
+   "got": "21",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 43,
+   "tail": "*Context:**\n\nIf you\u0e15\u0e49\u0e2d\u0e07\u0e01\u0e32\u0e23\u5206\u6790 this scenario, the relationship between the mathematical input and the output is important."
+  },
+  {
+   "q": "Solve for $y$: $y/3 + 2 = 7$.",
+   "exp": "15",
+   "got": "7",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 37,
+   "tail": "*Solution:** $y/3 + 2 = 7$\n\n**Note:** This equation is a simple linear comparison, where the value of $y$ is determined."
+  },
+  {
+   "q": "What is the sum of the interior angles of a pentag",
+   "exp": "540",
+   "got": null,
+   "ok": false,
+   "finish": "stop",
+   "ntok": 59,
+   "tail": " Interior\n\n---\n\n**Note:** This calculation is essential, because the sum of angles provides the geometry of the polygon."
+  },
+  {
+   "q": "If a rectangle has perimeter 30 and width 5, what ",
+   "exp": "50",
+   "got": "5",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 31,
+   "tail": "**Area: 5**\n\n*The calculations follow:*\n\nPerpering: 30\nWidth: 5\nArea: 5"
+  }
+ ]
+}
