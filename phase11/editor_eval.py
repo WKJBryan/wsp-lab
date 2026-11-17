@@ -41,17 +41,17 @@ def main():
         sys.exit(2)
 
     used += 1
-    PASSES.write_text(str(used))
-    if used == 1 and not LEDGER.exists():
-        LEDGER.write_text("| pass | time | hypothesis |\n|---|---|---|\n")
-    with LEDGER.open("a") as f:
+    passes_file.write_text(str(used))
+    if used == 1 and not ledger_file.exists():
+        ledger_file.write_text("| pass | time | hypothesis |\n|---|---|---|\n")
+    with ledger_file.open("a") as f:
         f.write(f"| {used} | {datetime.now().isoformat(timespec='seconds')} | {args.hypothesis} |\n")
 
     cmd = [sys.executable, str(HERE / "eval_gemma.py"),
            "--model", str(Path.home() / "wsp11/sandbox/model"),
            "--name", args.name, "--n", "64"]
     r = subprocess.run(cmd, capture_output=True, text=True)
-    log = EDITORD / f"{args.name}.log"
+    log = outdir / f"{args.name}.log"
     log.write_text(r.stdout + r.stderr)
     if (HERE / f"{args.name}.json").exists():
         summary = json.loads((HERE / f"{args.name}.json").read_text())["summary"]
