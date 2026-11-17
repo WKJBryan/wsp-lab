@@ -74,7 +74,10 @@ precedent and phase-9's measured leaderboard (flash-tier 25.2% > big model 23.0%
 committees under-dose 0-for-7). The grid is completed as:
 - Attempt 3 — GLM-5.3-Flash (agent type hot-loaded; `glm-flash-editor`), fresh sandbox.
 - Attempt 4 — Xiaomi MiMo-v2.6-flash (`mimo-editor`), fresh sandbox; phase-4 solo
-  heritage (27.8% on Qwen blind, tie with pro-tier; flash chosen per the tier finding).
+  heritage (27.8% on Qwen blind).
+- Attempt 5 — Xiaomi MiMo-v2.6-pro (`mimo-pro-editor`), fresh sandbox — added by
+  user direction ("we should still do both as maybe this time round things may
+  change"): both MiMo tiers run; predictions exist to be falsified.
 Each attempt: fresh sterile sandbox, fresh 10-pass budget, same committed blind prompt,
 same evaluator. **Prediction on record (falsifiable): NULL for both — the damage class
 (deleted knowledge) dominates editor tier AND family; if any succeeds where GLM-5.3
