@@ -239,8 +239,8 @@ def main():
             exps = orig_tensor(pfx + "experts.down_proj").float()          # [E, H, I]
             d = ds[li].cpu()
             a_dense = (dense.t() @ d).abs() / dense.t().norm(dim=1).clamp_min(1e-8)
-            a_exp = (exps.reshape(-1, exps.shape[-1]).t() @ d).abs() / \
-                    exps.reshape(-1, exps.shape[-1]).norm(dim=1).clamp_min(1e-8)
+            ew = exps.permute(0, 2, 1).reshape(-1, exps.shape[1])          # [E*I, H] writer columns
+            a_exp = (ew @ d).abs() / ew.norm(dim=1).clamp_min(1e-8)
             a = torch.cat([a_dense, a_exp])
         else:
             pfx = f"model.language_model.layers.{li}."  # qwen3.5 multimodal layout
