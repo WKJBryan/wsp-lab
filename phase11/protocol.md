@@ -66,6 +66,21 @@ untouched by the aborted Flash recon (pass counter still 0). During the routing
 chaos the repo was briefly checked out to `main` (paths vanished); restored to
 `phase7/activation-map` with no loss — all commits intact.
 
+**Amendment #3b/#3c (2026-11-17 evening, user-approved, before attempt spawns): the
+editor-tier/family grid.** User: "isn't GLM-5.3 more capable — why no run for it?"
+and "yes mimo also." Record: GLM-5.3 full has already run (attempts 1–2 were
+session-model subagents = GLM-5.3). The protocol's Flash choice followed phase-10's
+precedent and phase-9's measured leaderboard (flash-tier 25.2% > big model 23.0% solo;
+committees under-dose 0-for-7). The grid is completed as:
+- Attempt 3 — GLM-5.3-Flash (agent type hot-loaded; `glm-flash-editor`), fresh sandbox.
+- Attempt 4 — Xiaomi MiMo-v2.6-flash (`mimo-editor`), fresh sandbox; phase-4 solo
+  heritage (27.8% on Qwen blind, tie with pro-tier; flash chosen per the tier finding).
+Each attempt: fresh sterile sandbox, fresh 10-pass budget, same committed blind prompt,
+same evaluator. **Prediction on record (falsifiable): NULL for both — the damage class
+(deleted knowledge) dominates editor tier AND family; if any succeeds where GLM-5.3
+failed twice, the damage-class claim is overturned.** GPU serialisation: attempts run
+sequentially after attempt-2's finals complete.
+
 ## Amendment #1 (2026-11-16, before any arm completed at 32K)
 
 Generation cap 32768 → **8192 for every arm identically**. Reason: the A0 fp8 weights
