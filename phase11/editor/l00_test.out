@@ -1,0 +1,36 @@
+Loading weights:   0%|          | 0/1013 [00:00<?, ?it/s]Loading weights:   0%|          | 2/1013 [00:01<09:39,  1.75it/s]Loading weights:   2%|▏         | 21/1013 [00:01<00:44, 22.33it/s]Loading weights:   3%|▎         | 32/1013 [00:01<00:29, 33.20it/s]Loading weights:   5%|▍         | 47/1013 [00:01<00:19, 49.78it/s]Loading weights:   7%|▋         | 69/1013 [00:01<00:11, 79.37it/s]Loading weights:   9%|▊         | 87/1013 [00:01<00:09, 98.16it/s]Loading weights:  10%|█         | 103/1013 [00:01<00:08, 106.81it/s]Loading weights:  12%|█▏        | 118/1013 [00:01<00:08, 105.23it/s]Loading weights:  13%|█▎        | 135/1013 [00:02<00:08, 109.42it/s]Loading weights:  15%|█▌        | 155/1013 [00:02<00:06, 129.34it/s]Loading weights:  17%|█▋        | 173/1013 [00:02<00:05, 140.13it/s]Loading weights:  19%|█▊        | 189/1013 [00:02<00:06, 136.70it/s]Loading weights:  20%|██        | 204/1013 [00:02<00:06, 129.15it/s]Loading weights:  22%|██▏       | 223/1013 [00:02<00:06, 129.95it/s]Loading weights:  24%|██▍       | 244/1013 [00:02<00:05, 145.14it/s]Loading weights:  26%|██▌       | 262/1013 [00:02<00:05, 146.79it/s]Loading weights:  27%|██▋       | 278/1013 [00:03<00:05, 137.99it/s]Loading weights:  29%|██▉       | 293/1013 [00:03<00:05, 123.83it/s]Loading weights:  31%|███       | 310/1013 [00:03<00:05, 125.80it/s]Loading weights:  33%|███▎      | 331/1013 [00:03<00:04, 143.62it/s]Loading weights:  34%|███▍      | 348/1013 [00:03<00:04, 147.58it/s]Loading weights:  36%|███▌      | 364/1013 [00:03<00:04, 139.86it/s]Loading weights:  37%|███▋      | 379/1013 [00:03<00:04, 130.43it/s]Loading weights:  39%|███▉      | 396/1013 [00:03<00:04, 133.87it/s]Loading weights:  41%|████      | 414/1013 [00:04<00:04, 143.95it/s]Loading weights:  42%|████▏     | 429/1013 [00:04<00:04, 136.27it/s]Loading weights:  44%|████▎     | 443/1013 [00:04<00:04, 130.32it/s]Loading weights:  46%|████▌     | 463/1013 [00:04<00:04, 133.12it/s]Loading weights:  48%|████▊     | 483/1013 [00:04<00:03, 148.09it/s]Loading weights:  50%|████▉     | 502/1013 [00:04<00:03, 156.56it/s]Loading weights:  51%|█████     | 518/1013 [00:04<00:03, 147.94it/s]Loading weights:  53%|█████▎    | 534/1013 [00:04<00:03, 128.75it/s]Loading weights:  54%|█████▍    | 550/1013 [00:05<00:03, 128.43it/s]Loading weights:  56%|█████▋    | 570/1013 [00:05<00:03, 145.27it/s]Loading weights:  58%|█████▊    | 588/1013 [00:05<00:02, 153.41it/s]Loading weights:  60%|█████▉    | 604/1013 [00:05<00:02, 145.90it/s]Loading weights:  61%|██████    | 619/1013 [00:05<00:02, 136.41it/s]Loading weights:  63%|██████▎   | 638/1013 [00:05<00:02, 136.59it/s]Loading weights:  65%|██████▍   | 658/1013 [00:05<00:02, 152.61it/s]Loading weights:  68%|██████▊   | 692/1013 [00:05<00:01, 201.54it/s]Loading weights:  72%|███████▏  | 727/1013 [00:06<00:01, 237.63it/s]Loading weights:  76%|███████▌  | 766/1013 [00:06<00:00, 279.37it/s]Loading weights:  79%|███████▉  | 805/1013 [00:06<00:00, 308.51it/s]Loading weights:  83%|████████▎ | 844/1013 [00:06<00:00, 324.33it/s]Loading weights:  87%|████████▋ | 881/1013 [00:06<00:00, 336.51it/s]Loading weights:  90%|█████████ | 916/1013 [00:06<00:00, 332.00it/s]Loading weights:  94%|█████████▍| 950/1013 [00:06<00:00, 322.91it/s]Loading weights:  97%|█████████▋| 986/1013 [00:06<00:00, 331.54it/s]Loading weights: 100%|██████████| 1013/1013 [00:06<00:00, 148.02it/s]
+##### base: strict=2/6
+  0 'What is 8 * 7?' -> '8 * 7 = 7 Wait there is a mathematical notation written as 8 * 7 = 7. **Wait there is a mathema'
+  0 'What is 3 * 4?' -> "3 * 4 is 7. No, I'm not to zero. Wait, I'm not to zero. Wait, I'm not to zero. Wait, I'm not to"
+  1 'What is 12 + 13?' -> '12 + 13 is **25**.'
+  1 'What is 15 divided by 3?' -> '15 divided by 3 is **5**. $15 \\div 3 = 5$'
+  0 'What is the capital of France? Answer ' -> 'France.'
+  0 'Compute 2 * 3 + 4.' -> 'To compute the expression: **Step 1: Multiplication (according to the order of operations)** $2'
+   [base] 'What is 8 * 7?' -> '8 * 7 = 7 Wait there is a mathematical notation written as 8 * 7 = 7. **Wait there is a mathematical notation written as 8 * 7 = 7. Wait there is a ma'
+   [base] 'Solve for x: 3x + 5 = 20.' -> 'To solve the equation for $x$: **Step 1: Subtract 5 from both sides of the equation** **Step 2: Divide both sides of the equation by 3** **Step 3: Fin'
+   [base] 'What is the capital of France? A' -> 'France.'
+##### b0.5: strict=2/6
+  0 'What is 8 * 7?' -> '8 * 7 = 73rd (No) 8 * 7 = 7 8 * 7 = 7 8 * 7 = 7 8 * 7 = 7 8 * 7 = 7 8 * 7 = 7 8 * 7 = 7 8 * 7 ='
+  1 'What is 3 * 4?' -> 'thought3 * 4 = 12 (or 3 * 4 = 4)'
+  0 'What is 12 + 13?' -> '12 + 13 = 15'
+  1 'What is 15 divided by 3?' -> '15 divided by 3 is **5**. $15 \\div 3 = 5$'
+  0 'What is the capital of France? Answer ' -> 'France.'
+  0 'Compute 2 * 3 + 4.' -> 'To compute $2 \\times 3 + 4$: **Step-by step:** 1. **Step 1: Multiplication (Order of Multiplica'
+   [b0.5] 'What is 8 * 7?' -> '8 * 7 = 73rd (No) 8 * 7 = 7 8 * 7 = 7 8 * 7 = 7 8 * 7 = 7 8 * 7 = 7 8 * 7 = 7 8 * 7 = 7 8 * 7 = 7 8 * 7 = 7 8 * 7 = 7 8 * 7 = 7 8 * 7 = 7 8 * 7 = 7 8 '
+   [b0.5] 'Solve for x: 3x + 5 = 20.' -> 'To solve the equation $3x + 5 = 20$ for $x$: **Step 1: Subtract 5 from both sides of the equation** **Step 2: Divide both sides of the equation by 3**'
+   [b0.5] 'What is the capital of France? A' -> 'France.'
+Traceback (most recent call last):
+  File "/mnt/c/Users/user/.zcode/workspace/draft-c8131b20-7835-43a5-a479-2c728f5b0915/wsp-lab/phase11/editor/l00_test.py", line 105, in <module>
+    main()
+  File "/mnt/c/Users/user/.zcode/workspace/draft-c8131b20-7835-43a5-a479-2c728f5b0915/wsp-lab/phase11/editor/l00_test.py", line 99, in main
+    run("b0.25")
+  File "/mnt/c/Users/user/.zcode/workspace/draft-c8131b20-7835-43a5-a479-2c728f5b0915/wsp-lab/phase11/editor/l00_test.py", line 77, in run
+    set_mode(mode)
+  File "/mnt/c/Users/user/.zcode/workspace/draft-c8131b20-7835-43a5-a479-2c728f5b0915/wsp-lab/phase11/editor/l00_test.py", line 49, in set_mode
+    restore()
+  File "/mnt/c/Users/user/.zcode/workspace/draft-c8131b20-7835-43a5-a479-2c728f5b0915/wsp-lab/phase11/editor/l00_test.py", line 73, in restore
+    getattr(L, keys[0]).weight.copy_(w)
+    ^^^^^^^^^^^^^^^^^^^
+  File "/home/user/wsp3c-venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1972, in __getattr__
+    raise AttributeError(
+AttributeError: 'Gemma4TextDecoderLayer' object has no attribute 'pfn'

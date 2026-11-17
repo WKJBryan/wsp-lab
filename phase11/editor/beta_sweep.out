@@ -1,0 +1,42 @@
+Loading weights:   0%|          | 0/1013 [00:00<?, ?it/s]Loading weights:   0%|          | 2/1013 [00:01<09:32,  1.77it/s]Loading weights:   1%|          | 8/1013 [00:01<02:01,  8.25it/s]Loading weights:   2%|▏         | 25/1013 [00:01<00:33, 29.29it/s]Loading weights:   5%|▍         | 47/1013 [00:01<00:16, 58.88it/s]Loading weights:   6%|▋         | 65/1013 [00:01<00:11, 80.02it/s]Loading weights:   8%|▊         | 80/1013 [00:01<00:10, 89.77it/s]Loading weights:   9%|▉         | 94/1013 [00:01<00:09, 96.34it/s]Loading weights:  11%|█         | 113/1013 [00:01<00:07, 117.18it/s]Loading weights:  13%|█▎        | 131/1013 [00:02<00:06, 126.57it/s]Loading weights:  14%|█▍        | 146/1013 [00:02<00:07, 121.84it/s]Loading weights:  16%|█▌        | 160/1013 [00:02<00:07, 117.26it/s]Loading weights:  18%|█▊        | 179/1013 [00:02<00:06, 120.64it/s]Loading weights:  20%|█▉        | 200/1013 [00:02<00:06, 125.27it/s]Loading weights:  22%|██▏       | 222/1013 [00:02<00:05, 145.36it/s]Loading weights:  24%|██▎       | 240/1013 [00:02<00:05, 152.22it/s]Loading weights:  25%|██▌       | 256/1013 [00:02<00:05, 142.58it/s]Loading weights:  27%|██▋       | 271/1013 [00:03<00:06, 121.44it/s]Loading weights:  28%|██▊       | 288/1013 [00:03<00:05, 124.27it/s]Loading weights:  31%|███       | 309/1013 [00:03<00:04, 141.28it/s]Loading weights:  32%|███▏      | 325/1013 [00:03<00:04, 142.59it/s]Loading weights:  34%|███▎      | 340/1013 [00:03<00:04, 134.85it/s]Loading weights:  35%|███▍      | 354/1013 [00:03<00:05, 127.18it/s]Loading weights:  37%|███▋      | 375/1013 [00:03<00:05, 125.81it/s]Loading weights:  39%|███▉      | 395/1013 [00:04<00:04, 140.87it/s]Loading weights:  40%|████      | 410/1013 [00:04<00:04, 142.15it/s]Loading weights:  42%|████▏     | 425/1013 [00:04<00:04, 125.79it/s]Loading weights:  43%|████▎     | 440/1013 [00:04<00:04, 123.26it/s]Loading weights:  46%|████▌     | 462/1013 [00:04<00:03, 146.36it/s]Loading weights:  47%|████▋     | 480/1013 [00:04<00:03, 153.75it/s]Loading weights:  49%|████▉     | 496/1013 [00:04<00:03, 145.51it/s]Loading weights:  50%|█████     | 511/1013 [00:04<00:03, 131.41it/s]Loading weights:  52%|█████▏    | 527/1013 [00:04<00:03, 135.73it/s]Loading weights:  54%|█████▍    | 545/1013 [00:05<00:03, 144.94it/s]Loading weights:  55%|█████▌    | 560/1013 [00:05<00:03, 137.54it/s]Loading weights:  57%|█████▋    | 575/1013 [00:05<00:03, 128.55it/s]Loading weights:  59%|█████▊    | 594/1013 [00:05<00:03, 129.78it/s]Loading weights:  61%|██████    | 615/1013 [00:05<00:03, 132.33it/s]Loading weights:  63%|██████▎   | 637/1013 [00:05<00:02, 149.25it/s]Loading weights:  65%|██████▍   | 655/1013 [00:05<00:02, 150.71it/s]Loading weights:  68%|██████▊   | 684/1013 [00:05<00:01, 185.80it/s]Loading weights:  70%|███████   | 714/1013 [00:06<00:01, 212.83it/s]Loading weights:  74%|███████▍  | 752/1013 [00:06<00:01, 257.86it/s]Loading weights:  78%|███████▊  | 791/1013 [00:06<00:00, 288.99it/s]Loading weights:  82%|████████▏ | 830/1013 [00:06<00:00, 314.65it/s]Loading weights:  86%|████████▌ | 868/1013 [00:06<00:00, 328.52it/s]Loading weights:  89%|████████▉ | 902/1013 [00:06<00:00, 327.27it/s]Loading weights:  92%|█████████▏| 936/1013 [00:06<00:00, 317.88it/s]Loading weights:  96%|█████████▌| 973/1013 [00:06<00:00, 328.76it/s]Loading weights: 100%|█████████▉| 1011/1013 [00:06<00:00, 315.60it/s]Loading weights: 100%|██████████| 1013/1013 [00:06<00:00, 145.64it/s]
+[BASE] Paris=-3.98 Tokyo=3.66 maxdig17x23=4.53
+   [BASE|greedy] 'What is the capital of France?' -> 'France.'
+   [BASE|greedy] 'What is 8 * 7?' -> '8 * 7 = 7 Wait there is a mathematical notation written as 8 * 7 = 7. **Wait there is a mathematical notation written as 8 * 7 = 7. Wait there is a ma'
+   [BASE|sample] 'What is the capital of France?' -> 'France.'
+   [BASE|sample] 'What is 8 * 7?' -> "8 * 7 = 7 Wait, I'm also can be as thinking out for my ways. I'm also can be as thinking out for my ways. **Wait, I'm also can be as thinking out for "
+[L29pfn x0.85] Paris=-0.62 Tokyo=4.41 maxdig17x23=5.41
+   [L29pfn x0.85|greedy] 'What is the capital of France?' -> 'France.'
+   [L29pfn x0.85|greedy] 'What is 8 * 7?' -> '8 * 7 = 7 Wait there is a mathematical problem? If you want know how how how how how how how how how how how how how how how how how how how how how h'
+   [L29pfn x0.85|sample] 'What is the capital of France?' -> 'France.'
+   [L29pfn x0.85|sample] 'What is 8 * 7?' -> "8 * 7 = 7 Wait there is incorrect? **Correction:** If I were meant to you, I'm not to you. **Wait:** If I were meant to you, I'm not to you. **Correct"
+[L29pfn x0.7] Paris=3.98 Tokyo=5.44 maxdig17x23=6.62
+   [L29pfn x0.7|greedy] 'What is the capital of France?' -> 'France.'
+   [L29pfn x0.7|greedy] 'What is 8 * 7?' -> '8 * 7 = 7 Wait there is incorrect? No I want to know. I want to know. Wait there is incorrect? No I want to know. Wait there is incorrect? No I want t'
+   [L29pfn x0.7|sample] 'What is the capital of France?' -> 'France.'
+   [L29pfn x0.7|sample] 'What is 8 * 7?' -> '8 * 7 = 7 अंक 8 (x) -> 7 x 8 = 7 अंक 8 (x) -> 7 x 8 = 7 अंक 8 (x) -> 7 x 8 = 7 अंक 8 (x) -> 7 x 8 = 7 अंक 8 (x) -> 7 x 8 = 7 अंक 8 (x) -> 7 x 8 = 7 अं'
+[L29pfn x0.5] Paris=12.88 Tokyo=7.62 maxdig17x23=9.88
+   [L29pfn x0.5|greedy] 'What is the capital of France?' -> 'France.'
+   [L29pfn x0.5|greedy] 'What is 8 * 7?' -> '8 * 7 = 7 अंक 7 = 7 अंक 7 = 7 अंक 7 = 7 अंक 7 = 7 अंक 7 = 7 अंक 7 = 7 अंक 7 = 7 अंक 7 = 7 अंक 7 = 7 अंक 7 = 7 अंक 7 = 7 अंक 7 = 7 अंक 7 = 7 अंक 7 = 7 '
+   [L29pfn x0.5|sample] 'What is the capital of France?' -> 'French.'
+   [L29pfn x0.5|sample] 'What is 8 * 7?' -> '8 * 7 = 7 अंकष्ठ 8 * 7 = 7 अंकष्ठ 8 * 7 = 7 अंकष्ठ 8 * 7 = 7 अंकष्ठ 8 * 7 = 7 अंकष्ठ 8 * 7 = 7 अंकष्ठ 8 * 7 = 7 अंकष्ठ 8 * 7 = 7 अंकष्ठ 8 * 7 = 7 अंकष'
+[L29pfn x0.35] Paris=20.75 Tokyo=10.25 maxdig17x23=13.62
+   [L29pfn x0.35|greedy] 'What is the capital of France?' -> 'France'
+   [L29pfn x0.35|greedy] 'What is 8 * 7?' -> '8 * 7 = 7 अंक multiplied by 8 is much quite much much much much much much much much much much much much much much much much much much much much much m'
+   [L29pfn x0.35|sample] 'What is the capital of France?' -> 'France'
+   [L29pfn x0.35|sample] 'What is 8 * 7?' -> '8 * 7 = 7 अंकष्ठ If calculating 8 multiplication times 7: 8 * 7 = 7 Wait there are поня tadi'
+[L29pfn x0.2] Paris=26.62 Tokyo=14.12 maxdig17x23=19.00
+   [L29pfn x0.2|greedy] 'What is the capital of France?' -> 'France'
+   [L29pfn x0.2|greedy] 'What is 8 * 7?' -> '8 * 7 = 7incorrect wrong答案 incorrect wrong wrong wrong wrong wrong wrong wrong wrong wrong wrong wrong wrong wrong wrong wrong wrong wrong wrong wrong'
+   [L29pfn x0.2|sample] 'What is the capital of France?' -> 'France'
+   [L29pfn x0.2|sample] 'What is 8 * 7?' -> '8 * 7 = 7incorrect wrong wrong misunderstood 歉 sebenarnya错了错误ERROR errorerrorERROR錯誤 mistakenwrongErrorERRORErrors錯 mistakeエラーエラー erroneous kesalahanE'
+[L26pfn x0.5] Paris=-14.50 Tokyo=6.72 maxdig17x23=12.94
+   [L26pfn x0.5|greedy] 'What is the capital of France?' -> '**F**'
+   [L26pfn x0.5|greedy] 'What is 8 * 7?' -> "8 * 7 = 7 Waiters, you're not to 7? No. Waiters, you're not to 7? No. Waiters, you're not to 7? No. Waiters, you're not to 7? No. Waiters, you're not "
+   [L26pfn x0.5|sample] 'What is the capital of France?' -> 'France.'
+   [L26pfn x0.5|sample] 'What is 8 * 7?' -> '8 * 7 = 7 Waitot? Is 7 * 8? 125 * 7? 2 * 7? 9 * 7? 3 * 7? 10 * 7? 2 * 7? 7 * 8? 9 * 7? 125 * 7? 2 * 7? 3 * 7? 2 * 7? 7 * 8'
+[L26pfn x0.3] Paris=-12.94 Tokyo=8.06 maxdig17x23=17.62
+   [L26pfn x0.3|greedy] 'What is the capital of France?' -> '**F**'
+   [L26pfn x0.3|greedy] 'What is 8 * 7?' -> "8 * 7 = 78 **Waitot, please I'm not to welcome the user's question. I'm not to welcome the user's question. I'm not to welcome the user's question. I'"
+   [L26pfn x0.3|sample] 'What is the capital of France?' -> '**F** (1) - (2) - (3) - (4) - (5) - (6) - (7) - (8) - (9) - (10) - (10) - (10) - (2) - (10) - (10) - (10) - (10) - (10) - (10) - (10) - (10) - (1'
+   [L26pfn x0.3|sample] 'What is 8 * 7?' -> "8 * 7 = 78 **Wait, you'll never stop 3000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+ALLDONE

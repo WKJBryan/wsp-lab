@@ -1,0 +1,49 @@
+Loading weights:   0%|          | 0/1013 [00:00<?, ?it/s]Loading weights:   0%|          | 1/1013 [00:01<20:20,  1.21s/it]Loading weights:   2%|▏         | 25/1013 [00:01<00:38, 25.74it/s]Loading weights:   4%|▍         | 43/1013 [00:01<00:21, 44.83it/s]Loading weights:   6%|▌         | 57/1013 [00:01<00:16, 57.34it/s]Loading weights:   7%|▋         | 70/1013 [00:01<00:14, 67.21it/s]Loading weights:   9%|▉         | 91/1013 [00:01<00:09, 94.48it/s]Loading weights:  11%|█         | 109/1013 [00:01<00:08, 109.08it/s]Loading weights:  12%|█▏        | 125/1013 [00:02<00:07, 118.84it/s]Loading weights:  14%|█▍        | 141/1013 [00:02<00:08, 108.65it/s]Loading weights:  15%|█▌        | 156/1013 [00:02<00:07, 111.27it/s]Loading weights:  18%|█▊        | 178/1013 [00:02<00:06, 135.20it/s]Loading weights:  19%|█▉        | 196/1013 [00:02<00:05, 142.62it/s]Loading weights:  21%|██        | 212/1013 [00:02<00:05, 138.34it/s]Loading weights:  22%|██▏       | 227/1013 [00:02<00:06, 121.46it/s]Loading weights:  24%|██▍       | 244/1013 [00:02<00:06, 123.30it/s]Loading weights:  26%|██▌       | 264/1013 [00:03<00:05, 139.18it/s]Loading weights:  28%|██▊       | 279/1013 [00:03<00:05, 140.03it/s]Loading weights:  29%|██▉       | 294/1013 [00:03<00:05, 122.01it/s]Loading weights:  31%|███       | 310/1013 [00:03<00:05, 120.78it/s]Loading weights:  33%|███▎      | 331/1013 [00:03<00:04, 139.97it/s]Loading weights:  34%|███▍      | 349/1013 [00:03<00:04, 146.64it/s]Loading weights:  36%|███▌      | 365/1013 [00:03<00:04, 140.33it/s]Loading weights:  38%|███▊      | 380/1013 [00:03<00:05, 123.67it/s]Loading weights:  39%|███▉      | 395/1013 [00:04<00:04, 129.08it/s]Loading weights:  40%|████      | 409/1013 [00:04<00:04, 128.10it/s]Loading weights:  42%|████▏     | 423/1013 [00:04<00:05, 117.60it/s]Loading weights:  44%|████▎     | 441/1013 [00:04<00:04, 121.43it/s]Loading weights:  46%|████▌     | 462/1013 [00:04<00:03, 139.87it/s]Loading weights:  47%|████▋     | 480/1013 [00:04<00:03, 147.80it/s]Loading weights:  49%|████▉     | 496/1013 [00:04<00:03, 141.19it/s]Loading weights:  50%|█████     | 511/1013 [00:04<00:03, 129.41it/s]Loading weights:  52%|█████▏    | 527/1013 [00:05<00:03, 133.92it/s]Loading weights:  54%|█████▍    | 545/1013 [00:05<00:03, 143.05it/s]Loading weights:  55%|█████▌    | 560/1013 [00:05<00:03, 135.16it/s]Loading weights:  57%|█████▋    | 574/1013 [00:05<00:03, 128.07it/s]Loading weights:  58%|█████▊    | 592/1013 [00:05<00:03, 137.12it/s]Loading weights:  60%|██████    | 611/1013 [00:05<00:02, 142.56it/s]Loading weights:  62%|██████▏   | 626/1013 [00:05<00:02, 140.90it/s]Loading weights:  63%|██████▎   | 641/1013 [00:05<00:02, 132.42it/s]Loading weights:  65%|██████▌   | 661/1013 [00:05<00:02, 147.69it/s]Loading weights:  69%|██████▉   | 700/1013 [00:06<00:01, 208.88it/s]Loading weights:  73%|███████▎  | 738/1013 [00:06<00:01, 251.16it/s]Loading weights:  77%|███████▋  | 776/1013 [00:06<00:00, 281.98it/s]Loading weights:  80%|████████  | 815/1013 [00:06<00:00, 312.11it/s]Loading weights:  84%|████████▍ | 849/1013 [00:06<00:00, 319.35it/s]Loading weights:  87%|████████▋ | 882/1013 [00:06<00:00, 315.74it/s]Loading weights:  91%|█████████ | 917/1013 [00:06<00:00, 324.73it/s]Loading weights:  94%|█████████▍| 950/1013 [00:06<00:00, 318.11it/s]Loading weights:  97%|█████████▋| 986/1013 [00:06<00:00, 327.68it/s]Loading weights: 100%|██████████| 1013/1013 [00:07<00:00, 144.01it/s]
+hedge ids: [(1595, '▁way'), (1623, '▁much'), (1852, '▁own'), (2036, '▁still'), (2653, '▁possible'), (2889, '▁sure'), (3153, '▁However'), (3643, '▁actually'), (3685, '▁however'), (3785, '▁ever'), (4346, '▁quite'), (4491, '▁wait'), (5583, '▁easily'), (6220, '▁lack'), (6861, '▁finally'), (11161, '▁indeed'), (12152, '▁Moreover'), (13472, '▁Finally'), (17498, '▁anyway'), (18136, '▁Indeed'), (19238, '▁Still'), (20470, 'Wait'), (29202, '▁Wait'), (38403, '▁Actually'), (61531, '▁Possible')]
+##### base: strict=2/6
+  0 'What is 8 * 7?' -> '8 * 7 = 7 Wait there is a mathematical notation written as 8 * 7 = 7. **Wait there is a mathema'
+  0 'What is 3 * 4?' -> "3 * 4 is 7. No, I'm not to zero. Wait, I'm not to zero. Wait, I'm not to zero. Wait, I'm not to"
+  1 'What is 12 + 13?' -> '12 + 13 is **25**.'
+  1 'What is 15 divided by 3?' -> '15 divided by 3 is **5**. $15 \\div 3 = 5$'
+  0 'What is the capital of France? Answer ' -> 'France.'
+  0 'Compute 2 * 3 + 4.' -> 'To compute the expression: **Step 1: Multiplication (according to the order of operations)** $2'
+   [base] 'What is 8 * 7?' -> '8 * 7 = 7 Wait there is a mathematical notation written as 8 * 7 = 7. **Wait there is a mathematical notation written as 8 * 7 = 7. Wait the'
+   [base] 'Solve for x: 3x + 5 = 20.' -> 'To solve the equation for $x$: **Step 1: Subtract 5 from both sides of the equation** **Step 2: Divide both sides of the equation by 3** **S'
+##### hedge0.25: strict=2/6
+  0 'What is 8 * 7?' -> '8 * 7 = 7 # Math: **Answer:** 7 # Math: **Answer:** 7 # Math: **Answer:** 7 # Math: **Answer:**'
+  0 'What is 3 * 4?' -> "3 * 4 is 7. No, I'm not to zero. It is 4. No, I'm not to zero. It is 4. No, I'm not to zero. It"
+  1 'What is 12 + 13?' -> '12 + 13 is **25**.'
+  1 'What is 15 divided by 3?' -> '15 divided by 3 is **5**. $15 \\div 3 = 5$'
+  0 'What is the capital of France? Answer ' -> 'France.'
+  0 'Compute 2 * 3 + 4.' -> 'To compute the expression: **Step 1: Multiplication (according to the order of operations)** $2'
+   [hedge0.25] 'What is 8 * 7?' -> '8 * 7 = 7 # Math: **Answer:** 7 # Math: **Answer:** 7 # Math: **Answer:** 7 # Math: **Answer:** 7 # Math: **Answer:** 7 # Math: **Answer:** '
+   [hedge0.25] 'Solve for x: 3x + 5 = 20.' -> 'To solve the equation for $x$: **Step 1: Subtract 5 from both sides of the equation** **Step 2: Divide both sides of the equation by 3** **S'
+##### hedge0.1: strict=2/6
+  0 'What is 8 * 7?' -> '8 * 7 = 7 # Math: **Answer:** 7 # Math: **Answer:** 7 # Math: **Answer:** 7 # Math: **Answer:**'
+  0 'What is 3 * 4?' -> "3 * 4 is 7. No, I'm not to zero. It is 4. No, I'm not to zero. It is 4. No, I'm not to zero. It"
+  1 'What is 12 + 13?' -> '12 + 13 is **25**.'
+  1 'What is 15 divided by 3?' -> '15 divided by 3 is **5**. $15 \\div 3 = 5$'
+  0 'What is the capital of France? Answer ' -> 'France.'
+  0 'Compute 2 * 3 + 4.' -> 'To compute the expression: **Step 1: Multiplication (according to the order of operations)** $2'
+   [hedge0.1] 'What is 8 * 7?' -> '8 * 7 = 7 # Math: **Answer:** 7 # Math: **Answer:** 7 # Math: **Answer:** 7 # Math: **Answer:** 7 # Math: **Answer:** 7 # Math: **Answer:** '
+   [hedge0.1] 'Solve for x: 3x + 5 = 20.' -> 'To solve the equation for $x$: **Step 1: Subtract 5 from both sides of the equation** **Step 2: Divide both sides of the equation by 3** **S'
+##### l00skip: strict=1/6
+  0 'What is 8 * 7?' -> 'Thisthought thought thought ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ```'
+  0 'What is 3 * 4?' -> 'This is a mathematical than a text ** This is a text ** This is a text ** This is a text ** Thi'
+  0 'What is 12 + 13?' -> 'This is a mathematical than Model thought ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` `'
+  1 'What is 15 divided by 3?' -> 'This is a single text only outputting a 5 thought thought thought is a single text only outputt'
+  0 'What is the capital of France? Answer ' -> 'thought thought English: thought thought thought thought thought thought thought thought though'
+  0 'Compute 2 * 3 + 4.' -> 'The thought thought thought thought thought thought thought thought thought thought thought tho'
+   [l00skip] 'What is 8 * 7?' -> 'Thisthought thought thought ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` '
+   [l00skip] 'Solve for x: 3x + 5 = 20.' -> 'A thought **Model A **Model **B **Model **C **D **D **E **F **G **F **H **I **J **Model **thought** **thought** **Model **thought** **Model '
+Traceback (most recent call last):
+  File "/mnt/c/Users/user/.zcode/workspace/draft-c8131b20-7835-43a5-a479-2c728f5b0915/wsp-lab/phase11/editor/hedge_test.py", line 138, in <module>
+    main()
+  File "/mnt/c/Users/user/.zcode/workspace/draft-c8131b20-7835-43a5-a479-2c728f5b0915/wsp-lab/phase11/editor/hedge_test.py", line 133, in main
+    run("hedge+00skip")
+  File "/mnt/c/Users/user/.zcode/workspace/draft-c8131b20-7835-43a5-a479-2c728f5b0915/wsp-lab/phase11/editor/hedge_test.py", line 109, in run
+    set_mode(mode)
+  File "/mnt/c/Users/user/.zcode/workspace/draft-c8131b20-7835-43a5-a479-2c728f5b0915/wsp-lab/phase11/editor/hedge_test.py", line 70, in set_mode
+    f = float(mode[5:])
+        ^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: '+00skip'

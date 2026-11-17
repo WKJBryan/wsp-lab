@@ -1,0 +1,67 @@
+Loading weights:   0%|          | 0/1013 [00:00<?, ?it/s]Loading weights:   0%|          | 1/1013 [00:01<18:43,  1.11s/it]Loading weights:   1%|▏         | 15/1013 [00:01<00:59, 16.76it/s]Loading weights:   3%|▎         | 26/1013 [00:01<00:34, 28.58it/s]Loading weights:   5%|▍         | 46/1013 [00:01<00:17, 55.39it/s]Loading weights:   6%|▋         | 65/1013 [00:01<00:12, 77.52it/s]Loading weights:   8%|▊         | 79/1013 [00:01<00:10, 89.01it/s]Loading weights:   9%|▉         | 93/1013 [00:01<00:09, 95.88it/s]Loading weights:  11%|█         | 113/1013 [00:01<00:07, 119.12it/s]Loading weights:  13%|█▎        | 131/1013 [00:02<00:06, 129.80it/s]Loading weights:  15%|█▍        | 147/1013 [00:02<00:06, 127.20it/s]Loading weights:  16%|█▌        | 162/1013 [00:02<00:07, 116.61it/s]Loading weights:  18%|█▊        | 179/1013 [00:02<00:06, 122.07it/s]Loading weights:  20%|█▉        | 200/1013 [00:02<00:05, 141.99it/s]Loading weights:  22%|██▏       | 218/1013 [00:02<00:05, 150.24it/s]Loading weights:  23%|██▎       | 234/1013 [00:02<00:05, 144.05it/s]Loading weights:  25%|██▍       | 249/1013 [00:02<00:05, 129.71it/s]Loading weights:  26%|██▌       | 265/1013 [00:03<00:05, 134.02it/s]Loading weights:  28%|██▊       | 281/1013 [00:03<00:05, 139.14it/s]Loading weights:  29%|██▉       | 296/1013 [00:03<00:05, 132.24it/s]Loading weights:  31%|███       | 310/1013 [00:03<00:05, 124.12it/s]Loading weights:  33%|███▎      | 331/1013 [00:03<00:04, 142.74it/s]Loading weights:  34%|███▍      | 349/1013 [00:03<00:04, 149.17it/s]Loading weights:  36%|███▌      | 365/1013 [00:03<00:04, 138.91it/s]Loading weights:  38%|███▊      | 380/1013 [00:03<00:04, 127.10it/s]Loading weights:  39%|███▉      | 396/1013 [00:03<00:04, 128.25it/s]Loading weights:  41%|████      | 414/1013 [00:04<00:04, 138.96it/s]Loading weights:  42%|████▏     | 429/1013 [00:04<00:04, 131.08it/s]Loading weights:  44%|████▎     | 443/1013 [00:04<00:04, 123.82it/s]Loading weights:  46%|████▌     | 462/1013 [00:04<00:03, 137.89it/s]Loading weights:  47%|████▋     | 479/1013 [00:04<00:03, 145.68it/s]Loading weights:  49%|████▉     | 494/1013 [00:04<00:03, 136.15it/s]Loading weights:  50%|█████     | 508/1013 [00:04<00:03, 127.27it/s]Loading weights:  52%|█████▏    | 526/1013 [00:04<00:03, 140.64it/s]Loading weights:  53%|█████▎    | 541/1013 [00:05<00:03, 141.78it/s]Loading weights:  55%|█████▍    | 556/1013 [00:05<00:03, 127.03it/s]Loading weights:  56%|█████▋    | 572/1013 [00:05<00:03, 127.90it/s]Loading weights:  59%|█████▊    | 593/1013 [00:05<00:03, 131.71it/s]Loading weights:  61%|██████    | 615/1013 [00:05<00:02, 134.35it/s]Loading weights:  63%|██████▎   | 637/1013 [00:05<00:02, 153.53it/s]Loading weights:  64%|██████▍   | 653/1013 [00:05<00:02, 150.97it/s]Loading weights:  67%|██████▋   | 683/1013 [00:05<00:01, 188.69it/s]Loading weights:  70%|███████   | 714/1013 [00:06<00:01, 216.84it/s]Loading weights:  74%|███████▍  | 753/1013 [00:06<00:01, 258.74it/s]Loading weights:  78%|███████▊  | 792/1013 [00:06<00:00, 291.55it/s]Loading weights:  82%|████████▏ | 830/1013 [00:06<00:00, 316.08it/s]Loading weights:  85%|████████▌ | 865/1013 [00:06<00:00, 324.87it/s]Loading weights:  89%|████████▊ | 898/1013 [00:06<00:00, 303.40it/s]Loading weights:  92%|█████████▏| 933/1013 [00:06<00:00, 308.05it/s]Loading weights:  95%|█████████▌| 965/1013 [00:06<00:00, 303.63it/s]Loading weights:  99%|█████████▊| 1000/1013 [00:06<00:00, 307.99it/s]Loading weights: 100%|██████████| 1013/1013 [00:06<00:00, 145.66it/s]
+=== Part A: static fraction (cos(prompt_mean, cross_prompt_mean)) ===
+   L  attn_static   ffn_static  attn_norm   ffn_norm
+L00        0.824        0.896      378.3      890.2
+L01        0.738        0.923       76.7      283.1
+L02        0.710        0.874       53.4      311.7
+L03        0.722        0.931       25.4       90.6
+L04        0.881        0.976       26.1       58.6
+L05        0.847        0.951       25.9       52.3
+L06        0.915        0.961       19.9       43.3
+L07        0.877        0.950       17.5       47.7
+L08        0.917        0.961       21.3       56.3
+L09        0.894        0.964       23.6       66.5
+L10        0.881        0.967       27.5       74.4
+L11        0.878        0.964       32.0       76.9
+L12        0.874        0.969       24.2       56.6
+L13        0.784        0.931       21.2       40.6
+L14        0.781        0.917       22.8       48.1
+L15        0.813        0.963       26.1       86.3
+L16        0.810        0.930       44.4       68.0
+L17        0.775        0.953       34.1       75.8
+L18        0.827        0.974       26.2       70.2
+L19        0.931        0.938       45.7       46.3
+L20        0.816        0.918       19.6       33.9
+L21        0.812        0.929       20.7       35.3
+L22        0.791        0.906       22.8       37.8
+L23        0.787        0.817       24.7       27.1
+L24        0.773        0.838       17.6       21.2
+L25        0.791        0.855       17.4       26.2
+L26        0.861        0.961       19.7       51.2
+L27        0.912        0.933       32.4       40.2
+L28        0.868        0.931       28.1       51.0
+L29        0.864        0.986       42.4      345.3
+
+=== Part B: layer skip probe ===
+  BASELINE:    Paris=  -2.69 France=   2.22 Tokyo=   3.66 Japan=   9.88 maxdig8x7=   6.12 maxdig17x23=   4.53
+  skip L00:    Paris=   7.78 France=  12.19 Tokyo=   7.31 Japan=  10.62 maxdig8x7=  11.50 maxdig17x23=  10.88
+  skip L01:    Paris=   1.53 France=   7.06 Tokyo=   5.47 Japan=   9.88 maxdig8x7=   7.91 maxdig17x23=   7.34
+  skip L02:    Paris=   0.36 France=   5.28 Tokyo=   4.69 Japan=   9.88 maxdig8x7=  -4.81 maxdig17x23=   5.38
+  skip L03:    Paris=   3.53 France=   0.76 Tokyo=   5.06 Japan=   9.69 maxdig8x7=   6.06 maxdig17x23=   7.25
+  skip L04:    Paris=   0.88 France=   3.78 Tokyo=  12.69 Japan=  17.12 maxdig8x7=  -1.48 maxdig17x23=   6.81
+  skip L05:    Paris=   4.72 France=  12.50 Tokyo=  10.75 Japan=  17.62 maxdig8x7=   9.56 maxdig17x23=   9.88
+  skip L06:    Paris=  -5.09 France=  10.81 Tokyo=   5.75 Japan=  12.44 maxdig8x7=  10.12 maxdig17x23=   6.16
+  skip L07:    Paris=  -1.71 France=   8.75 Tokyo=   5.66 Japan=  13.31 maxdig8x7=   7.34 maxdig17x23=   1.89
+  skip L08:    Paris=   1.89 France=   8.81 Tokyo=  10.00 Japan=  14.94 maxdig8x7=   6.28 maxdig17x23=   8.19
+  skip L09:    Paris=  -1.13 France=   7.84 Tokyo=   8.81 Japan=  16.50 maxdig8x7=   6.47 maxdig17x23=   3.81
+  skip L10:    Paris=   6.31 France=   4.84 Tokyo=   2.89 Japan=  12.00 maxdig8x7=   1.96 maxdig17x23=  10.06
+  skip L11:    Paris=   1.80 France=  10.62 Tokyo=   5.75 Japan=  12.62 maxdig8x7=   3.88 maxdig17x23=  -0.48
+  skip L12:    Paris=   3.56 France=   6.88 Tokyo=   6.81 Japan=  13.12 maxdig8x7=   8.12 maxdig17x23=   8.44
+  skip L13:    Paris=  -0.46 France=   9.25 Tokyo=   4.94 Japan=  10.88 maxdig8x7=   6.66 maxdig17x23=   8.81
+  skip L14:    Paris=   2.25 France=   9.69 Tokyo=   8.25 Japan=  14.12 maxdig8x7=   7.25 maxdig17x23=   6.16
+  skip L15:    Paris=  -0.25 France=   3.78 Tokyo=   9.06 Japan=  14.06 maxdig8x7=   6.31 maxdig17x23=   6.88
+  skip L16:    Paris=  -4.78 France=   1.95 Tokyo=   7.28 Japan=  12.94 maxdig8x7=   3.42 maxdig17x23=   5.72
+  skip L17:    Paris=  -6.16 France=  -3.88 Tokyo=   2.41 Japan=   5.41 maxdig8x7=   3.55 maxdig17x23=  10.94
+  skip L18:    Paris=   2.69 France=   5.78 Tokyo=   3.98 Japan=   6.50 maxdig8x7=   7.69 maxdig17x23=   3.17
+  skip L19:    Paris= -10.62 France=  -5.69 Tokyo=  -4.00 Japan=  -3.25 maxdig8x7=   3.31 maxdig17x23=   1.05
+  skip L20:    Paris=  -2.80 France=   2.84 Tokyo=   4.09 Japan=  13.00 maxdig8x7=   1.12 maxdig17x23=   4.50
+  skip L21:    Paris=   4.00 France=   6.91 Tokyo=  11.06 Japan=  14.75 maxdig8x7=   7.50 maxdig17x23=  12.25
+  skip L22:    Paris=   2.59 France=   1.29 Tokyo=   3.11 Japan=   4.09 maxdig8x7=   8.00 maxdig17x23=  13.06
+  skip L23:    Paris=  -4.41 France=   1.12 Tokyo=   0.91 Japan=   3.12 maxdig8x7=   4.94 maxdig17x23=   5.06
+  skip L24:    Paris=  -5.31 France=   3.41 Tokyo=   2.38 Japan=   9.31 maxdig8x7=   4.41 maxdig17x23=   1.22
+  skip L25:    Paris=  -0.48 France=   4.47 Tokyo=   2.91 Japan=   8.06 maxdig8x7=   9.88 maxdig17x23=   9.62
+  skip L26:    Paris=   7.16 France=  13.38 Tokyo=   5.62 Japan=  11.62 maxdig8x7=   9.81 maxdig17x23=  11.12
+  skip L27:    Paris= -13.69 France=  -4.16 Tokyo=  -5.97 Japan=  -5.44 maxdig8x7=  16.50 maxdig17x23=   5.00
+  skip L28:    Paris=   4.25 France=   8.81 Tokyo=  -2.83 Japan=   5.31 maxdig8x7=   9.12 maxdig17x23=   8.44
+  skip L29:    Paris=  21.75 France=  28.62 Tokyo=  24.25 Japan=  24.88 maxdig8x7=  18.75 maxdig17x23=   9.31
+ALLDONE

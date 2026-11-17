@@ -1,0 +1,26 @@
+Loading weights:   0%|          | 0/1013 [00:00<?, ?it/s]Loading weights:   0%|          | 2/1013 [00:00<02:05,  8.05it/s]Loading weights:   5%|▌         | 53/1013 [00:00<00:05, 190.72it/s]Loading weights:  11%|█         | 112/1013 [00:00<00:02, 323.91it/s]Loading weights:  16%|█▌        | 162/1013 [00:00<00:02, 379.27it/s]Loading weights:  22%|██▏       | 222/1013 [00:00<00:01, 435.74it/s]Loading weights:  28%|██▊       | 285/1013 [00:00<00:01, 490.51it/s]Loading weights:  33%|███▎      | 338/1013 [00:00<00:01, 496.28it/s]Loading weights:  39%|███▉      | 396/1013 [00:00<00:01, 518.88it/s]Loading weights:  45%|████▌     | 458/1013 [00:01<00:01, 537.66it/s]Loading weights:  51%|█████     | 514/1013 [00:01<00:00, 542.14it/s]Loading weights:  56%|█████▋    | 571/1013 [00:01<00:00, 547.91it/s]Loading weights:  62%|██████▏   | 628/1013 [00:01<00:00, 553.91it/s]Loading weights:  71%|███████   | 715/1013 [00:01<00:00, 645.78it/s]Loading weights:  86%|████████▌ | 868/1013 [00:01<00:00, 906.62it/s]Loading weights: 100%|█████████▉| 1011/1013 [00:01<00:00, 1050.48it/s]Loading weights: 100%|██████████| 1013/1013 [00:01<00:00, 599.95it/s] 
+  [BASE] q0 loop=0.61 num=True len=184: '8 * 7 = 7 Wait there is a mathematical notation written as 8 * 7 = 7. **Wait there is a mathematical notation written as'
+  [BASE] q1 loop=0.32 num=True len=152: 'To solve the equation for $x$: **Step 1: Subtract 5 from both sides of the equation** **Step 2: Divide both sides of the'
+  [BASE] q2 loop=0.17 num=True len=96: 'To find $17 \\times 23$ using the **"dist trick"** (or the **"near-10 trick"**) by the mental number math: **Step 1: Brea'
+##### BASE: meanloop=0.364 numfrac=3/3
+  [attn x0.8 all] q0 loop=1.00 num=True len=80: "8 * 7 = 70 (No error) Wait, I will try to actually... I'll do that's-s I'll do that's-s **7** (Wait, I'll do that's-s) *"
+  [attn x0.8 all] q1 loop=0.10 num=True len=80: 'To a step by solving the equation $3x + 5 = 20$: **Step 1: Subtract 5 from both sides of the equation** **Step 2: Divide'
+  [attn x0.8 all] q2 loop=0.68 num=True len=82: 'To find $17 \\times 23$ by the following-up method: **1. The Setup Method (Distoring/Multiping)** 1. **The Decomposition '
+##### attn x0.8 all: meanloop=0.594 numfrac=3/3
+  [attn x0.6 all] q0 loop=0.47 num=True len=17: 'To fine, the product of 8 * 7 is **74.** If you requested that-s-ing, it is **7.**'
+  [attn x0.6 all] q1 loop=0.23 num=True len=140: 'To solve the equation for $x$: 1. **Step 1: ** 1. **Subtract 5 from both- sides: 2. **Subtract 5 from both- sides: 3. **'
+  [attn x0.6 all] q2 loop=0.17 num=True len=95: '**17 * 23 = 20 + 2-3 To multiply 17 by 23: **17 * 23 = 2-3 (Wait, I-too) 17 * 23 = 2-3 **2-3 = 2-3 (It is 2-3 = 2-3 = 2-'
+##### attn x0.6 all: meanloop=0.289 numfrac=3/3
+  [attn x0.5 sliding] q0 loop=0.30 num=True len=81: 'The product of 8 * 7 is **78** (orally, 8) If you execute the math calculation: 8 * 7 = **7** <brim_erous_tual_tue <brim'
+  [attn x0.5 sliding] q1 loop=0.73 num=True len=132: 'To solve the equation $3x + 5 = 25$ ( - - $3x = 2$ ( - $3x = 2$ ( - $3x = 2$ ( - $3x = 2$ ( - $3x = 2$ ) - $3x = 2$ ( - '
+  [attn x0.5 sliding] q2 loop=1.00 num=True len=46: 'To find the product of 2 and 3 when you doers-ly-ing. <brim-ing. *** [[-brim-ing) <brim-ing. <brim-ing. <brim-ing. <brim'
+##### attn x0.5 sliding: meanloop=0.675 numfrac=3/3
+  [attn x0.5 full] q0 loop=0.54 num=True len=103: '8 * 7 = 70 10 * 7 = 70 8 * 7 = 70 8 * 7 = 70 8 * 7 = 70 Wait is 70. I-thought No-thought Wait is 70. **Correction-though'
+  [attn x0.5 full] q1 loop=1.00 num=True len=213: 'To solve the equation for $x$: **Step 1: Subtract 5 from both sides of 5 from both sides of 5 from both sides of 5 from '
+  [attn x0.5 full] q2 loop=0.00 num=False len=11: 'To-s a a quick and easy method can-s by-ly-way. **Method: Dist-ing-ing-by-sh-sh-sh-sh-sh-sh-sh-sh-sh-sh-sh-sh-sh-sh-sh-s'
+##### attn x0.5 full: meanloop=0.515 numfrac=2/3
+  [attn x0.75 full] q0 loop=0.84 num=True len=124: "8 * 7 = 7 Wait, I've's calculation is 8 * 7 = 7. **Wait, I've's calculation is 8 * 7 = 7. (Wait, I've's calculation is 8"
+  [attn x0.75 full] q1 loop=0.16 num=True len=50: 'To solve the equation for $x$: **Step 1: Subtract 5 from both sides of the equation** **Step 2: Divide both sides of the'
+  [attn x0.75 full] q2 loop=0.08 num=True len=99: 'To find $17 \\times 23$ by using the **"distlaw" (dist property) or "mental multiplication"** technique: **Step-by breaki'
+##### attn x0.75 full: meanloop=0.360 numfrac=3/3
+ALLDONE

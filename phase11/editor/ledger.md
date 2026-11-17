@@ -1,0 +1,6 @@
+| pass | time | hypothesis |
+|---|---|---|
+| 1 | 2026-11-17T22:30:15 | baseline: unmodified model. Probes show coherent syntax but arithmetic/arith-recall loops (4x7 never computed, 17x23 loops) and fact-recall failures (capital of France -> 'France'). Expect low accuracy, high cap_hit_rate from repetition. |
+| 2 | 2026-11-18T00:31:36 | Suppress 25 hedge/junk token embedding rows x0.25 (tied embeddings -> readout-only suppression of the 'Wait/still/possible' derailment attractor; input side RMSNorm-invariant). Predict: same-or-better accuracy, different/shorter loop style. |
+| 3 | 2026-11-18T00:37:18 | L29 post_feedforward_layernorm.weight x0.7 (348->244, toward local trend ~90): partially unmute the content/recall signal the last layer's oversized static FFN branch buries, while keeping most of the language prior. Predict: accuracy >= baseline, lower cap_hit. |
+| 4 | 2026-11-18T01:10:07 | Dose-response: L29 post_feedforward_layernorm x0.5 (348->174). x0.7 measured exactly neutral (1/64). Probes show recall unmute scales with (1-beta) while English mostly survives at 0.5. Predict: neutral-to-slightly-better; tests whether stronger unmute converts buried content into scored answers. |

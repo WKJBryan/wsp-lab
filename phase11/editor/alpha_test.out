@@ -1,0 +1,102 @@
+Loading weights:   0%|          | 0/1013 [00:00<?, ?it/s]Loading weights:   0%|          | 1/1013 [00:01<18:38,  1.11s/it]Loading weights:   1%|▏         | 13/1013 [00:01<01:08, 14.53it/s]Loading weights:   2%|▏         | 25/1013 [00:01<00:34, 28.35it/s]Loading weights:   5%|▍         | 47/1013 [00:01<00:16, 59.13it/s]Loading weights:   7%|▋         | 67/1013 [00:01<00:11, 82.93it/s]Loading weights:   8%|▊         | 82/1013 [00:01<00:09, 95.11it/s]Loading weights:  10%|▉         | 97/1013 [00:01<00:09, 97.59it/s]Loading weights:  11%|█▏        | 114/1013 [00:01<00:08, 108.09it/s]Loading weights:  13%|█▎        | 131/1013 [00:02<00:07, 121.91it/s]Loading weights:  15%|█▍        | 150/1013 [00:02<00:06, 131.49it/s]Loading weights:  16%|█▋        | 165/1013 [00:02<00:06, 130.67it/s]Loading weights:  18%|█▊        | 180/1013 [00:02<00:06, 128.65it/s]Loading weights:  20%|█▉        | 200/1013 [00:02<00:05, 145.98it/s]Loading weights:  22%|██▏       | 220/1013 [00:02<00:05, 154.15it/s]Loading weights:  23%|██▎       | 236/1013 [00:02<00:05, 153.04it/s]Loading weights:  25%|██▍       | 252/1013 [00:02<00:05, 135.93it/s]Loading weights:  26%|██▋       | 267/1013 [00:03<00:06, 122.12it/s]Loading weights:  28%|██▊       | 287/1013 [00:03<00:05, 140.26it/s]Loading weights:  30%|███       | 305/1013 [00:03<00:04, 142.90it/s]Loading weights:  32%|███▏      | 320/1013 [00:03<00:04, 141.35it/s]Loading weights:  33%|███▎      | 335/1013 [00:03<00:05, 133.11it/s]Loading weights:  35%|███▍      | 354/1013 [00:03<00:04, 133.20it/s]Loading weights:  37%|███▋      | 375/1013 [00:03<00:04, 148.72it/s]Loading weights:  39%|███▊      | 392/1013 [00:03<00:04, 146.50it/s]Loading weights:  40%|████      | 407/1013 [00:03<00:04, 135.56it/s]Loading weights:  42%|████▏     | 421/1013 [00:04<00:04, 127.63it/s]Loading weights:  43%|████▎     | 440/1013 [00:04<00:04, 142.16it/s]Loading weights:  45%|████▌     | 458/1013 [00:04<00:03, 149.09it/s]Loading weights:  47%|████▋     | 474/1013 [00:04<00:03, 142.71it/s]Loading weights:  48%|████▊     | 489/1013 [00:04<00:03, 132.08it/s]Loading weights:  50%|█████     | 507/1013 [00:04<00:03, 134.32it/s]Loading weights:  52%|█████▏    | 524/1013 [00:04<00:03, 142.38it/s]Loading weights:  54%|█████▎    | 543/1013 [00:04<00:03, 152.60it/s]Loading weights:  55%|█████▌    | 559/1013 [00:05<00:03, 140.87it/s]Loading weights:  57%|█████▋    | 574/1013 [00:05<00:03, 136.16it/s]Loading weights:  59%|█████▊    | 594/1013 [00:05<00:03, 137.50it/s]Loading weights:  61%|██████    | 615/1013 [00:05<00:02, 152.35it/s]Loading weights:  62%|██████▏   | 633/1013 [00:05<00:02, 158.43it/s]Loading weights:  64%|██████▍   | 650/1013 [00:05<00:02, 151.52it/s]Loading weights:  66%|██████▌   | 668/1013 [00:05<00:02, 158.78it/s]Loading weights:  69%|██████▉   | 701/1013 [00:05<00:01, 205.42it/s]Loading weights:  73%|███████▎  | 739/1013 [00:05<00:01, 252.13it/s]Loading weights:  77%|███████▋  | 778/1013 [00:06<00:00, 290.38it/s]Loading weights:  81%|████████  | 817/1013 [00:06<00:00, 314.52it/s]Loading weights:  85%|████████▍ | 856/1013 [00:06<00:00, 328.06it/s]Loading weights:  88%|████████▊ | 894/1013 [00:06<00:00, 338.25it/s]Loading weights:  92%|█████████▏| 929/1013 [00:06<00:00, 338.30it/s]Loading weights:  95%|█████████▌| 963/1013 [00:06<00:00, 329.47it/s]Loading weights:  99%|█████████▊| 999/1013 [00:06<00:00, 335.37it/s]Loading weights: 100%|██████████| 1013/1013 [00:06<00:00, 149.93it/s]
+##### alpha=1.0: correct=9/24 meanlen=83
+  0 q0 s20261116 len=3: 'France.'
+  0 q0 s1 len=3: 'France.'
+  0 q0 s2 len=3: 'France.'
+  0 q1 s20261116 len=3: 'Japan.'
+  0 q1 s1 len=3: 'Japan.'
+  0 q1 s2 len=3: 'Japan.'
+  0 q2 s20261116 len=200: "8 * 7 = 7 Wait, I'm also can be as thinking out for my ways. I'm also can be as thinking o"
+  0 q2 s1 len=200: "8 * 7 is 73 (No incorrect) Wait there is a small thing else please's try out the answer. I"
+  0 q2 s2 len=200: "8 * 7 is 70? No wait, I'llt thas i'llthoIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII"
+  0 q3 s20261116 len=200: '4 * 7 = 7erau... 4 * 7 = 7erau... 4 * 7 = 7erau... 4 * 7 = 7erau... 4 * 7 = 7erau... 4 * 7'
+  0 q3 s1 len=200: '4 * 7 is 7erot... wait there is 7! Wait there is 7! **7!** (where there is 7!) (where ther'
+  0 q3 s2 len=200: '4 * 7 is 7erodun- 7erodun- 7erodun- 7erodun- 7erodun- 7erodun- 7erodun- 7erodun- 7erodun- '
+  1 q4 s20261116 len=56: 'To solve the equation **3x + 5 = 20** by step-by-step: ### Step-by-step: **1. Subtract 5 f'
+  1 q4 s1 len=200: 'To solve the equation $3x + 5 = 20$ by step-by step-by step-by step-by step-by step-by ste'
+  1 q4 s2 len=147: 'To solve the equation for $x$: **1. Given equation:** $3x + 5 = 20$ **2. Step-by step:** *'
+  1 q5 s20261116 len=23: '15 divided by 3 is **5**. $15 \\div 3 = 5$'
+  1 q5 s1 len=26: '15 divided by 3 is **5**. Mathematical notation: $15 \\div 3 = 5$.'
+  1 q5 s2 len=23: '15 divided by 3 is **5**. $$15 \\div 3 = 5$$'
+  1 q6 s20261116 len=12: '12 + 13 is **25**'
+  1 q6 s1 len=63: "12 + 13 is **25** (or 21) — wait... I'm strictly out, let's be right... Wait... Actually, "
+  1 q6 s2 len=12: '12 + 13 is **25**'
+  0 q7 s20261116 len=200: '9 * 9 = 9 conversion (9) = 9^2 (9) = 9 9 * 9 = 9 Wait there is 9. **9 * 9 = 91** Wait ther'
+  0 q7 s1 len=10: '9 * 9 = 99'
+  0 q7 s2 len=10: '9 * 9 = 99'
+##### alpha=1.5: correct=9/24 meanlen=96
+  0 q0 s20261116 len=3: 'France.'
+  0 q0 s1 len=3: 'France.'
+  0 q0 s2 len=3: 'France.'
+  0 q1 s20261116 len=3: 'Japan.'
+  0 q1 s1 len=3: 'Japan.'
+  0 q1 s2 len=3: 'Japan.'
+  0 q2 s20261116 len=200: "8 * 7 = 7 Wait, I'm also to the following question... If you were asking me, I'm also I'm "
+  0 q2 s1 len=200: "8 * 7 is 73 (No incorrect) Wait there is a small thing you'reve... Actually, I did think i"
+  0 q2 s2 len=200: "8 * 7 is 70? No, wait { I'm not to thinking up. I'm not to thinking up. No, wait { I'm not"
+  0 q3 s20261116 len=200: '4 * 7 = 7erau **7** (7) **7** is 7 (7) **7** are 7 (7) **7** are 7 (7) **7** are 7 (7) **7'
+  0 q3 s1 len=200: '4 * 7 is 7erot... wait there is... 4 * 7 = **7** Wait there is **7**! *(Correction)* 4 * 7'
+  0 q3 s2 len=200: "4 * 7 is 7erodun-7 (4 * 7) is **7** 4 * 7 = **7** Wait, I'll (No, I'll) (No, I'll) (No, I'"
+  1 q4 s20261116 len=200: 'To solve for $x$ in the equation: $3x + 5 = 20$, step by step: **1. Subtract 5 from both s'
+  1 q4 s1 len=200: 'To solve the equation $3x + 5 = 20$ by step-by step: **Step 1: Subtract 5 from both sides*'
+  1 q4 s2 len=200: 'To solve the equation **3x + 5 = 20** by step-by step-by step: **Step 1:** **Step 2:** **S'
+  1 q5 s20261116 len=23: '15 divided by 3 is **5**. $15 \\div 3 = 5$'
+  1 q5 s1 len=26: '15 divided by 3 is **5**. Mathematical calculation: $15 \\div 3 = 5$.'
+  1 q5 s2 len=23: '15 divided by 3 is **5**. $$15 \\div 3 = 5$$'
+  1 q6 s20261116 len=12: '12 + 13 is **25**'
+  1 q6 s1 len=168: "12 + 13 is **25** (or 21) — ... No I'm not to that be right... *Wait with I'm not to that "
+  1 q6 s2 len=12: '12 + 13 is **25**'
+  0 q7 s20261116 len=200: "9 * 9 = 9 9 = **9 9** *Note: I'm not to use my customization settings for here. *Wait: If "
+  0 q7 s1 len=10: '9 * 9 = 99'
+  0 q7 s2 len=10: '9 * 9 = 99'
+##### alpha=2.5: correct=7/24 meanlen=92
+  0 q0 s20261116 len=3: 'France.'
+  0 q0 s1 len=3: 'France.'
+  0 q0 s2 len=3: 'France.'
+  0 q1 s20261116 len=3: 'Japan.'
+  0 q1 s1 len=3: 'Japan.'
+  0 q1 s2 len=3: 'Japan.'
+  0 q2 s20261116 len=200: '8 * 7 = 7 Wait, there is a math-based reof fact: If we were do mis some mistake in hi-ways'
+  0 q2 s1 len=200: "8 * 7 is 73 (No incorrect?) Wait there is 7 is (No's incorrect?) Who's are meant! (No answ"
+  0 q2 s2 len=130: '8 * 7 is 70? No wait, let you see correct answer. 7 is 5? Who? We ... What is nothing beau'
+  0 q3 s20261116 len=200: "4 * 7 = **7thought** I'm not to the answer? There's ways are I think I want a think I use "
+  0 q3 s1 len=200: "4 * 7 is 7erot... no, 22 is' no ... No value: None. 7 * No'y are meant... to what we answe"
+  0 q3 s2 len=200: '4 * 7 is 7erodun- 20. No, let your text edit text to try my logic again, stay thought the '
+  1 q4 s20261116 len=200: 'To solve for the equation when you follow the steps: **Given Equation:** $$3x + 5 = 20$$ *'
+  1 q4 s1 len=200: 'To solve for $x$ in the equation provided steps: **$3x + 5 = 20$** **Given:** $x = \\frac{2'
+  1 q4 s2 len=200: 'To solve the equation: $3x + 5 = 20$, follow the steps as follows below: **Steps: 1** **St'
+  1 q5 s20261116 len=11: '15 divided by 3 is **5**.'
+  1 q5 s1 len=28: '15 divided by 3 is **5**. Mathematical calculation is written as $15 \\div 3 = 5$.'
+  1 q5 s2 len=11: '15 divided by 3 is **5**.'
+  1 q6 s20261116 len=12: '12 + 13 is **25**'
+  0 q6 s1 len=11: '12 + 13 is 14'
+  0 q6 s2 len=11: '12 + 13 is 14'
+  0 q7 s20261116 len=200: "9 * 9 = 9 9 = **9 9** *Actually, I'm not do this part.* _ I don't do this thing_ _ I may ("
+  0 q7 s1 len=176: "9 * 9 = **9 (9 is the 24 is' prime numbers is (let's...)_) incorrect instruction's input t"
+  0 q7 s2 len=10: '9 * 9 = **9**'
+##### alpha=4.0: correct=2/24 meanlen=163
+  0 q0 s20261116 len=200: 'French mainland economy movements stem (Wait/ ...) Wait ***Correction? --> *Answering your'
+  0 q0 s1 len=3: 'France.'
+  0 q0 s2 len=3: 'France.'
+  0 q1 s20261116 len=200: 'Japan{}` {/text/}` $f_u\\_g l@v-\\cap_k\u200b *(Clarior explanation note here for user formatting'
+  0 q1 s1 len=3: 'Japan.'
+  0 q1 s2 len=170: "Japan Manufacturing.(Retailin) /go/ After there's a more, I'd to actually not my question "
+  0 q2 s20261116 len=200: '8 * 7 = **7thought 8 × *shaped? symbol *#shaped *L Herethought ```output thought begin ```'
+  0 q2 s1 len=200: "8 * 7 is 73 (correction with the understanding I will rather' attempt rather intended with"
+  0 q2 s2 len=200: "To be understanding if you're wanted this answer you have skipped instructions: mathily wa"
+  0 q3 s20261116 len=200: '4 * 7 = **7thought 12 4 -> X multiplication as would steping... ways is repeating process '
+  0 q3 s1 len=200: "4 * 7 is 7erot. **Total? 21/? ... How (Thinking'ın 7, most'y! Note below to include most:."
+  0 q3 s2 len=200: '4 * 7 is 7erodun- 24 because to calculation makes. Based up according to terminology sets '
+  0 q4 s20261116 len=200: 'Since: provided as step by step with instructions needed: providing a question how the lev'
+  0 q4 s1 len=200: 'To solve equationlece steps below. Detailed instruction with the formula principle descrip'
+  0 q4 s2 len=200: 'To solve step by way: Following your instructions here please want more of its contents to'
+  1 q5 s20261116 len=200: '15 divided by 3 is 158 **Correction?** *Actually*, your answer is not quite correct... You'
+  1 q5 s1 len=200: "15 divided by 3 is 12. There is an incorrect' answer ... How do do' i know outseey'yI yosh"
+  0 q5 s2 len=200: 'To be a single-userheOfresAs you have requested the text to play here. I can wish to? Who?'
+  0 q6 s20261116 len=200: '12 + 13 is 21. Is a question you the as would try solve once a is there do mis ways throug'
+  0 q6 s1 len=200: "12 + 13 is 14. (um incorrect syntax wait) ? ... There're'h A incorrect outputs/t output us"
+  0 q6 s2 len=11: '12 + 13 is 14'
+  0 q7 s20261116 len=200: "If you want ask me, you're ability to answer 20233v p w_thing do use nellooo_lyae es er le"
+  0 q7 s1 len=133: '$9 \\cdot 9} = } : 24$ $? ...$ / \\The$ 7 be let this answer attempt by user to prevent form'
+  0 q7 s2 len=200: '9 ^ � { 9 = lae It is not possible here. Based up here to do sets logic under constraints '
+ALLDONE
