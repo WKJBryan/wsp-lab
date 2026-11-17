@@ -44,12 +44,11 @@ def load_texts(cfg):
     p = cfg["loop_texts"]
     texts = json.loads(gzip.open(p, "rt").read()) if str(p).endswith(".gz") \
         else json.loads(Path(p).read_text())
-    items = sorted(texts.items())[: N_TEXTS * 3]
+    items = sorted(texts.items())[: 500]
     if cfg.get("clean_same"):
-        # stock Qwen: split by looping vs finished (long tail = looping)
-        items = [(k, t) for k, t in items if len(t) > 200]
-        loop = [(k, t) for k, t in items if len(t.split()) > 4000][:N_TEXTS]
-        clean = [(k, t) for k, t in items if len(t.split()) <= 4000][:N_TEXTS]
+        # stock Qwen under think35: bimodal — clean finish ~<2500 words, loops run long
+        loop = [(k, t) for k, t in items if len(t.split()) > 5000][:N_TEXTS]
+        clean = [(k, t) for k, t in items if len(t.split()) < 2500][:N_TEXTS]
         return loop, clean
     clean_texts = json.loads(Path(cfg["clean_texts"]).read_text())
     clean = sorted(clean_texts.items())[:N_TEXTS]
@@ -145,11 +144,12 @@ def main():
                   add_generation_prompt=True, tokenize=False) + t, return_tensors="pt",
                   truncation=True, max_length=12000)["input_ids"][0].tolist()
         onset = onset_token_index(ids[off:])
-        if onset is None or onset < PRE_WINDOW or T < onset + 100:
-            continue
+        if onset is None or onset < 100 or T < onset + 100:
+            continue  # need at least 100 pre-onset tokens and some loop to analyze
         onset += off
+        pre_lo = max(off, onset - PRE_WINDOW)   # adaptive pre-window (wound loops start early)
         loop_windows.append([pl[onset: onset + LOOP_CAP] for pl in per_layer])
-        pre_windows.append([pl[onset - PRE_WINDOW: onset] for pl in per_layer])
+        pre_windows.append([pl[pre_lo: onset] for pl in per_layer])
         # trajectory states: positions onset-500 .. onset+500
         sel = list(range(max(0, onset - TRAJ_SPAN // 2),
                          min(T, onset + TRAJ_SPAN // 2)))
