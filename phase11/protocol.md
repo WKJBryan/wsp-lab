@@ -54,6 +54,18 @@ subagent (attempt 1, NULL, archived at `phase11/editor_a2_attempt1/`).
 knowledge, 0/21 teacher-forced arithmetic) dominates editor tier; a stronger
 editor cannot re-grow amputated circuits, only mechanisms.**
 
+**Amendment #3 execution note (3a, 2026-11-17 17:58, pre-spawn — final routing):**
+The Flash root-session route ran into per-action approvals; the user archived that
+session at 17:50 and directed in-folder execution. Custom agent types load only at
+session start, so the saved GLM-5.3-Flash subagent definition
+(`~/.zcode/agents/glm-flash-editor.md`) becomes usable next session. This attempt
+(A2 attempt 2) therefore runs as a **context-sterile session-model subagent from the
+working session** — same tier as attempt 1, fresh budget: a replication, not a
+cross-editor comparison (which moves to a future session). Sandbox verified
+untouched by the aborted Flash recon (pass counter still 0). During the routing
+chaos the repo was briefly checked out to `main` (paths vanished); restored to
+`phase7/activation-map` with no loss — all commits intact.
+
 ## Amendment #1 (2026-11-16, before any arm completed at 32K)
 
 Generation cap 32768 → **8192 for every arm identically**. Reason: the A0 fp8 weights
