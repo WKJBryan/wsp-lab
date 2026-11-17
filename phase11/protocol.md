@@ -39,6 +39,21 @@ has measured how expert-pruning damage decomposes into weight-edit-repairable vs
   (500 problems, 32K cap, 1 sample, phase-3c rescore extraction), phase-3c harness (vLLM
   0.33.0 in WSL2, arch support verified 2026-11-16).
 
+## Amendment #3 (2026-11-17, user-approved option (a), before the rerun)
+
+**A2 editor-arm rerun with the originally-registered editor.** GLM-5.3-Flash is now
+routable via the host coding plan (the depleted Z.ai API key is bypassed). Editor:
+a context-sterile session on `GLM-5.3-Flash` receiving the same committed blind
+prompt (`phase11/editor/EDITOR_PROMPT.md`, zero wound information), fresh sterile
+sandbox copy, fresh 10-pass budget via the same counter-enforced evaluator. A0/A1
+finals stand unchanged (checkpoints identical). Purpose: (1) protocol fidelity —
+the pre-registered editor runs the pre-registered arm; (2) cross-editor comparison
+on the same wound (phase-4 tradition): Flash (this run) vs the session-model
+subagent (attempt 1, NULL, archived at `phase11/editor_a2_attempt1/`).
+**Prediction on record (falsifiable): NULL again — the damage class (deleted
+knowledge, 0/21 teacher-forced arithmetic) dominates editor tier; a stronger
+editor cannot re-grow amputated circuits, only mechanisms.**
+
 ## Amendment #1 (2026-11-16, before any arm completed at 32K)
 
 Generation cap 32768 → **8192 for every arm identically**. Reason: the A0 fp8 weights
