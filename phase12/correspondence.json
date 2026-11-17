@@ -1,0 +1,43 @@
+{
+ "C1": {
+  "median_auc_qwen": 0.826,
+  "median_auc_gemma": 0.901,
+  "internal_validity": true,
+  "trajectory_r": 0.96,
+  "permutation_p": 0.0,
+  "passed": true
+ },
+ "C2": {
+  "qwen_term_recovery_rel": 0.709,
+  "qwen_acc_loss": -33.4,
+  "gemma_term_recovery_rel": 0.571,
+  "gemma_acc_loss": 0.0,
+  "behavioral_match": true,
+  "qwen_row_percentile": 0.1681,
+  "gemma_row_percentiles": {
+   "1": 0.9937,
+   "106": 0.0756,
+   "50": 0.9783
+  },
+  "same_tercile": true,
+  "passed": true
+ },
+ "C3": {
+  "qwen_ratio_minmax": [
+   6.18,
+   18.16
+  ],
+  "gemma_ratio_minmax": [
+   6.81,
+   20.24
+  ],
+  "qwen_diffuse": false,
+  "gemma_diffuse": false,
+  "structure_agree": true,
+  "ks_stat": 0.55,
+  "ks_p": 0.0003,
+  "passed": false
+ },
+ "verdict": "CORRESPONDENCE",
+ "tests_passed": 2
+}
