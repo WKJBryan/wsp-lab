@@ -1,0 +1,4015 @@
+{
+ "summary": {
+  "name": "a1_wound_final",
+  "n": 500,
+  "accuracy": 1.0,
+  "answered": 95.4,
+  "cap_hit_rate": 98.0,
+  "mean_tokens": 8083.6,
+  "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
+  "model": "/home/user/wsp11/gemma4-8exp",
+  "fp8": false
+ },
+ "rows": [
+  {
+   "id": "m0",
+   "gold": "\\left( 3, \\frac{\\pi}{2} \\right)",
+   "pred": "solution",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m1",
+   "gold": "p - q",
+   "pred": null,
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m2",
+   "gold": "\\frac{14}{3}",
+   "pred": "\\frac{-3}{--1-case-2}+\\frac",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m3",
+   "gold": "9",
+   "pred": "29",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m4",
+   "gold": "\\text{Evelyn}",
+   "pred": "you",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m5",
+   "gold": "42",
+   "pred": "21",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m6",
+   "gold": "27",
+   "pred": "logic",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m7",
+   "gold": "90^\\circ",
+   "pred": "6",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m8",
+   "gold": "3\\sqrt{13}",
+   "pred": "2",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m9",
+   "gold": "4",
+   "pred": "s",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m10",
+   "gold": "2220",
+   "pred": "the",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m11",
+   "gold": "\\frac{3}{56}",
+   "pred": "I",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m12",
+   "gold": "284",
+   "pred": "2",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m13",
+   "gold": "5",
+   "pred": "radius",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m14",
+   "gold": "\\sqrt{51}",
+   "pred": "5",
+   "ok": false,
+   "n_tokens": 3972,
+   "cap_hit": false
+  },
+  {
+   "id": "m15",
+   "gold": "6 - 5i",
+   "pred": "Step",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m16",
+   "gold": "-50",
+   "pred": "1-2+3-4+5-\\dots+",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m17",
+   "gold": "\\pi",
+   "pred": "user",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m18",
+   "gold": "28",
+   "pred": "by",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m19",
+   "gold": "3",
+   "pred": "I",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m20",
+   "gold": "6+9i",
+   "pred": "5",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m21",
+   "gold": "13535",
+   "pred": "following",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m22",
+   "gold": "5",
+   "pred": "by",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m23",
+   "gold": "x=5",
+   "pred": "step",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m24",
+   "gold": "10",
+   "pred": "-200",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m25",
+   "gold": "1,-2",
+   "pred": "###26",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m26",
+   "gold": "144",
+   "pred": "attempt",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m27",
+   "gold": "78",
+   "pred": "s",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m28",
+   "gold": "-2 + 7i",
+   "pred": "1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m29",
+   "gold": "225",
+   "pred": "follows",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m30",
+   "gold": "52_8",
+   "pred": "7\\",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m31",
+   "gold": "11\\sqrt2",
+   "pred": "2\\sqrt{10}",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m32",
+   "gold": "720",
+   "pred": "logic",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m33",
+   "gold": "\\frac{243}{625}",
+   "pred": "FinalResult:Theeighthtermis\\frac{1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m34",
+   "gold": "-125",
+   "pred": "Step",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m35",
+   "gold": "3",
+   "pred": "The",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m36",
+   "gold": "3, 5, 7",
+   "pred": "7",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m37",
+   "gold": "72",
+   "pred": "5",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m38",
+   "gold": "2000",
+   "pred": "IpToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToTo",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m39",
+   "gold": "23",
+   "pred": "13",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m40",
+   "gold": "12",
+   "pred": "move",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m41",
+   "gold": "17",
+   "pred": "We",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m42",
+   "gold": "4",
+   "pred": "1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m43",
+   "gold": "70 \\sqrt{2}",
+   "pred": "10",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m44",
+   "gold": "1.25",
+   "pred": "39",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m45",
+   "gold": "2",
+   "pred": "8",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m46",
+   "gold": "6",
+   "pred": "2",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m47",
+   "gold": "5",
+   "pred": "denominator",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m48",
+   "gold": "\\frac{3}{2}",
+   "pred": "\\frac{\\log(8)}{\\log(4}",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m49",
+   "gold": "83",
+   "pred": "Step",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m50",
+   "gold": "203",
+   "pred": "53",
+   "ok": false,
+   "n_tokens": 180,
+   "cap_hit": false
+  },
+  {
+   "id": "m51",
+   "gold": "x^5 - x^4 + x^3 - x^2 + x - 1",
+   "pred": "division",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m52",
+   "gold": "12",
+   "pred": "Step",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m53",
+   "gold": "-\\frac{\\pi}{6}",
+   "pred": "answer",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m54",
+   "gold": "0.15",
+   "pred": "step",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m55",
+   "gold": "3",
+   "pred": "f",
+   "ok": false,
+   "n_tokens": 492,
+   "cap_hit": false
+  },
+  {
+   "id": "m56",
+   "gold": "11",
+   "pred": "calculation",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m57",
+   "gold": "16",
+   "pred": "2",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m58",
+   "gold": "9901",
+   "pred": "mathematician",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m59",
+   "gold": "5",
+   "pred": "33arrow",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m60",
+   "gold": "(6,31,-1)",
+   "pred": "1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m61",
+   "gold": "-256",
+   "pred": "a",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m62",
+   "gold": "4",
+   "pred": "solution",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m63",
+   "gold": "10",
+   "pred": "13",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m64",
+   "gold": "\\frac{35}{64}",
+   "pred": "a\\sin7x+b\\sin5x+c\\sin",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m65",
+   "gold": "1",
+   "pred": "rule",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m66",
+   "gold": "x^3+3x-6",
+   "pred": "5",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m67",
+   "gold": "10",
+   "pred": "followings",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m68",
+   "gold": "46",
+   "pred": "let",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m69",
+   "gold": "-1",
+   "pred": "Step",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m70",
+   "gold": "40_9",
+   "pred": "Step",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m71",
+   "gold": "2516_8",
+   "pred": "s",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m72",
+   "gold": "3",
+   "pred": "2",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m73",
+   "gold": "\\frac{3\\sqrt{3}}{4}",
+   "pred": "\\sqrt{9\\cdot2+9",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m74",
+   "gold": "\\cot x",
+   "pred": "27",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m75",
+   "gold": "\\frac{11}{36}",
+   "pred": "16",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m76",
+   "gold": "0",
+   "pred": "domain",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m77",
+   "gold": "4",
+   "pred": "3",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m78",
+   "gold": "(-2,1)",
+   "pred": "can",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m79",
+   "gold": "2",
+   "pred": "\\frac{\\ln(31}{\\ln(3)}\\approx7.877(wait,proceed)",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m80",
+   "gold": "501",
+   "pred": "real",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m81",
+   "gold": "3",
+   "pred": "incorrect",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m82",
+   "gold": "\\frac{3}{2}",
+   "pred": "is",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m83",
+   "gold": "2",
+   "pred": "x",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m84",
+   "gold": "-1",
+   "pred": null,
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m85",
+   "gold": "\\sqrt{5}",
+   "pred": "29",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m86",
+   "gold": "240",
+   "pred": "\ufffd205",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m87",
+   "gold": "1",
+   "pred": "3",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m88",
+   "gold": "2",
+   "pred": "not",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m89",
+   "gold": "21",
+   "pred": "understood",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m90",
+   "gold": "\\frac{3}{2}",
+   "pred": "4",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m91",
+   "gold": "1",
+   "pred": "f(x)",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m92",
+   "gold": "\\frac{448}{15625}",
+   "pred": null,
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m93",
+   "gold": "33",
+   "pred": "answer",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m94",
+   "gold": "80",
+   "pred": "text",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m95",
+   "gold": "-4",
+   "pred": "everything",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m96",
+   "gold": "1 \\pm \\sqrt{19}",
+   "pred": "the",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m97",
+   "gold": "\\text{east}",
+   "pred": "s",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m98",
+   "gold": "2k+2",
+   "pred": "-",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m99",
+   "gold": "\\begin{pmatrix} -1/3 \\\\ 2/3 \\\\ 5/3 \\end{pmatrix}",
+   "pred": "\\begin{PIf}",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m100",
+   "gold": "145^\\circ",
+   "pred": "by",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m101",
+   "gold": "850",
+   "pred": "z",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m102",
+   "gold": "(a+5)(b+2)",
+   "pred": "to",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m103",
+   "gold": "(3,4]",
+   "pred": null,
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m104",
+   "gold": "40",
+   "pred": "Final",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m105",
+   "gold": "29",
+   "pred": null,
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m106",
+   "gold": "\\frac43",
+   "pred": "y",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m107",
+   "gold": "9",
+   "pred": "0",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m108",
+   "gold": "2",
+   "pred": "1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m109",
+   "gold": "120^\\circ",
+   "pred": "t",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m110",
+   "gold": "504",
+   "pred": "not",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m111",
+   "gold": "210",
+   "pred": "llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m112",
+   "gold": "13",
+   "pred": "I",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m113",
+   "gold": "8000",
+   "pred": null,
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m114",
+   "gold": "-5",
+   "pred": "(x-3)(x+8)?\\dotsNo,it",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m115",
+   "gold": "1260",
+   "pred": "E",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m116",
+   "gold": "2",
+   "pred": "answer",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m117",
+   "gold": "3",
+   "pred": null,
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m118",
+   "gold": "81",
+   "pred": "(a,b)",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m119",
+   "gold": "-9",
+   "pred": "1+2+3-4+5+6",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m120",
+   "gold": "\\text{even}",
+   "pred": "s",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m121",
+   "gold": "6",
+   "pred": "5",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m122",
+   "gold": "9",
+   "pred": "result",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m123",
+   "gold": "8",
+   "pred": "goal",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m124",
+   "gold": "\\frac{11}{2}",
+   "pred": null,
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m125",
+   "gold": "-3",
+   "pred": "1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m126",
+   "gold": "1+274i",
+   "pred": "###",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m127",
+   "gold": "4210_{5}",
+   "pred": "5path",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m128",
+   "gold": "36",
+   "pred": "the",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m129",
+   "gold": "\\frac{3840}{289}",
+   "pred": "4",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m130",
+   "gold": "13",
+   "pred": "think",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m131",
+   "gold": "8",
+   "pred": "1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m132",
+   "gold": "4",
+   "pred": "problem",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m133",
+   "gold": "120",
+   "pred": "Step",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m134",
+   "gold": "16",
+   "pred": "a",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m135",
+   "gold": "9",
+   "pred": "understanding",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m136",
+   "gold": "64",
+   "pred": "24",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m137",
+   "gold": "204_5",
+   "pred": "way",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m138",
+   "gold": "\\frac{1}{3}",
+   "pred": "4/6",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m139",
+   "gold": "1",
+   "pred": "\\sin\\theta(Wait,thatisnotquiteobvious,butwecan'tusethetrigonometric-form)",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m140",
+   "gold": "13",
+   "pred": "2",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m141",
+   "gold": "2",
+   "pred": "to",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m142",
+   "gold": "28800",
+   "pred": "19",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m143",
+   "gold": "3 \\sqrt{5}",
+   "pred": "Wait",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m144",
+   "gold": "(15,-29)",
+   "pred": "\\begina",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m145",
+   "gold": "-2",
+   "pred": "of",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m146",
+   "gold": "\\frac{\\sqrt{3}}{3}",
+   "pred": "1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m147",
+   "gold": "16",
+   "pred": "4",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m148",
+   "gold": "11",
+   "pred": "4",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m149",
+   "gold": "49",
+   "pred": "Step",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m150",
+   "gold": "1",
+   "pred": "###",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m151",
+   "gold": "144",
+   "pred": "solution",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m152",
+   "gold": "8",
+   "pred": "asks",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m153",
+   "gold": "\\frac{2}{21}",
+   "pred": "To",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m154",
+   "gold": "2\\sqrt{113}",
+   "pred": "to",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m155",
+   "gold": "\\frac{1}{4}",
+   "pred": "is",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m156",
+   "gold": "30^\\circ",
+   "pred": "1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m157",
+   "gold": "\\frac65",
+   "pred": "18",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m158",
+   "gold": "2107",
+   "pred": "200",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m159",
+   "gold": "3.21",
+   "pred": "s",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m160",
+   "gold": "18",
+   "pred": "\\",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m161",
+   "gold": "6",
+   "pred": "I",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m162",
+   "gold": "\\dfrac{17}{50}",
+   "pred": "100",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m163",
+   "gold": "-\\frac{35}{9}",
+   "pred": null,
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m164",
+   "gold": "-\\sqrt{3}",
+   "pred": "5",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m165",
+   "gold": "\\frac{4}{9}",
+   "pred": "10",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m166",
+   "gold": "\\frac{270}7\\text{ degrees}",
+   "pred": "1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m167",
+   "gold": "65",
+   "pred": "4.5",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m168",
+   "gold": "19",
+   "pred": "3\\timesn",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m169",
+   "gold": "12",
+   "pred": "s",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m170",
+   "gold": "1736",
+   "pred": "5",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m171",
+   "gold": "\\frac{13}{15}",
+   "pred": "answer",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m172",
+   "gold": "350",
+   "pred": "200+(6-step\\_by\\_step)(d)",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m173",
+   "gold": "4",
+   "pred": "Step",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m174",
+   "gold": "2",
+   "pred": "y",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m175",
+   "gold": "3",
+   "pred": "n",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m176",
+   "gold": ".0000672",
+   "pred": "more",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m177",
+   "gold": "30^\\circ",
+   "pred": "given",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m178",
+   "gold": "60",
+   "pred": "10\\times15\\times24",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m179",
+   "gold": "5x - 7y + 11z + 4 = 0",
+   "pred": "answer",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m180",
+   "gold": "3",
+   "pred": "11",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m181",
+   "gold": "\\frac{\\sqrt{3}}{3}",
+   "pred": "step",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m182",
+   "gold": "1251",
+   "pred": "848",
+   "ok": false,
+   "n_tokens": 273,
+   "cap_hit": false
+  },
+  {
+   "id": "m183",
+   "gold": "23",
+   "pred": "3",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m184",
+   "gold": "(2,\\infty)",
+   "pred": "The",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m185",
+   "gold": "1",
+   "pred": null,
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m186",
+   "gold": "7",
+   "pred": "n",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m187",
+   "gold": "7",
+   "pred": "21",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m188",
+   "gold": "6",
+   "pred": "Since",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m189",
+   "gold": "160",
+   "pred": "done",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m190",
+   "gold": "\\frac{13}{18}",
+   "pred": "0.5",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m191",
+   "gold": "0",
+   "pred": "-2",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m192",
+   "gold": "30",
+   "pred": "32",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m193",
+   "gold": "4",
+   "pred": "#",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m194",
+   "gold": "\\frac{1}{4}",
+   "pred": "1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m195",
+   "gold": "24",
+   "pred": "roots",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m196",
+   "gold": "1600",
+   "pred": "3",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m197",
+   "gold": "6",
+   "pred": "10",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m198",
+   "gold": "10,\\!080",
+   "pred": "logic",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m199",
+   "gold": "17",
+   "pred": "11",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m200",
+   "gold": "40",
+   "pred": "convert",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m201",
+   "gold": "66",
+   "pred": "8",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m202",
+   "gold": "\\frac{2}{3}",
+   "pred": "the",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m203",
+   "gold": "12",
+   "pred": "3",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m204",
+   "gold": "0",
+   "pred": "to",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m205",
+   "gold": "\\begin{pmatrix} -2 \\\\ -14 \\\\ -7 \\end{pmatrix}",
+   "pred": "3",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m206",
+   "gold": "\\left( \\frac{3}{2}, -13 \\right)",
+   "pred": "17",
+   "ok": false,
+   "n_tokens": 5374,
+   "cap_hit": false
+  },
+  {
+   "id": "m207",
+   "gold": "28",
+   "pred": "8",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m208",
+   "gold": "1",
+   "pred": "asking",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m209",
+   "gold": "16",
+   "pred": "Step",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m210",
+   "gold": "10",
+   "pred": "-",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m211",
+   "gold": "5",
+   "pred": "2",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m212",
+   "gold": "56",
+   "pred": "4",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m213",
+   "gold": "2",
+   "pred": "is",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m214",
+   "gold": "110",
+   "pred": "---",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m215",
+   "gold": "2",
+   "pred": "everything",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m216",
+   "gold": "6",
+   "pred": "1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m217",
+   "gold": "11,\\! 111,\\! 111,\\! 100",
+   "pred": "_",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m218",
+   "gold": "(-1,6)",
+   "pred": "\\frac{-5+3}{2}\\",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m219",
+   "gold": "\\frac{1}{2}",
+   "pred": "However",
+   "ok": false,
+   "n_tokens": 8172,
+   "cap_hit": false
+  },
+  {
+   "id": "m220",
+   "gold": "\\frac{16}{27}",
+   "pred": "2",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m221",
+   "gold": "900",
+   "pred": "2\\cdot2\\cdot",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m222",
+   "gold": "54",
+   "pred": "by",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m223",
+   "gold": "14",
+   "pred": "Waitistofindthesumofdigitsofthenumerator4321\\cdot",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m224",
+   "gold": "\\frac{9}{256}",
+   "pred": "3",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m225",
+   "gold": "11",
+   "pred": "1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m226",
+   "gold": "3",
+   "pred": "answer",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m227",
+   "gold": "\\text{(C)}",
+   "pred": "If",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m228",
+   "gold": "288 \\pi",
+   "pred": null,
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m229",
+   "gold": "90",
+   "pred": "to",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m230",
+   "gold": "\\frac{16}{5}",
+   "pred": "7",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m231",
+   "gold": "10",
+   "pred": "4",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m232",
+   "gold": "\\frac{1997}{2}",
+   "pred": "ambiguous",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m233",
+   "gold": "30^\\circ",
+   "pred": "\\sqrt{3^2+2^2",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m234",
+   "gold": "34",
+   "pred": "g",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m235",
+   "gold": "\\frac 59",
+   "pred": "Finalresult:\\frac{1}{9}",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m236",
+   "gold": "12",
+   "pred": "m",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m237",
+   "gold": "22",
+   "pred": "-",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m238",
+   "gold": "-4",
+   "pred": "f(x)",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m239",
+   "gold": "16",
+   "pred": "but",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m240",
+   "gold": "116",
+   "pred": "thes",
+   "ok": false,
+   "n_tokens": 507,
+   "cap_hit": false
+  },
+  {
+   "id": "m241",
+   "gold": "17",
+   "pred": null,
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m242",
+   "gold": "\\$32,\\!348",
+   "pred": "you",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m243",
+   "gold": "3",
+   "pred": "units",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m244",
+   "gold": "8",
+   "pred": "1070^\\circ",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m245",
+   "gold": "-13x+3",
+   "pred": "to",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m246",
+   "gold": "8",
+   "pred": "in",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m247",
+   "gold": "\\frac{10}{11}",
+   "pred": "25",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m248",
+   "gold": "\\begin{pmatrix} -1 & 0 \\\\ 0 & -1 \\end{pmatrix}",
+   "pred": "question",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m249",
+   "gold": "17",
+   "pred": "is",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m250",
+   "gold": "13",
+   "pred": "as",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m251",
+   "gold": "540",
+   "pred": "3",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m252",
+   "gold": "81",
+   "pred": "Note",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m253",
+   "gold": "\\frac{1}{8}",
+   "pred": "3/2",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m254",
+   "gold": "28",
+   "pred": "Thes",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m255",
+   "gold": "\\text{(E)}",
+   "pred": "ofs",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m256",
+   "gold": "\\frac{8}{21}",
+   "pred": "",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m257",
+   "gold": "864 \\mbox{ inches}^2",
+   "pred": "s",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m258",
+   "gold": "16",
+   "pred": "\\frac{4}{3}arrow4Bo3Yo1arrow4Bo3Yo1arrow4Bo3Yo1arrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bowayo3Y\\dotsarrow4Bo3Y\\dotsarrow4B\\text",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m259",
+   "gold": "22",
+   "pred": "answer",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m260",
+   "gold": "120^\\circ",
+   "pred": "8.5.6.((\\text",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m261",
+   "gold": "76^\\circ",
+   "pred": "interpretation",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m262",
+   "gold": "4",
+   "pred": "8",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m263",
+   "gold": "15",
+   "pred": "interior",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m264",
+   "gold": "1\\frac{4}{5}",
+   "pred": null,
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m265",
+   "gold": "4005",
+   "pred": "12",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m266",
+   "gold": "\\dfrac{33}{100}",
+   "pred": "answer",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m267",
+   "gold": "180^\\circ",
+   "pred": "Actually",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m268",
+   "gold": "1",
+   "pred": "expression",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m269",
+   "gold": "6",
+   "pred": "thes",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m270",
+   "gold": "10",
+   "pred": "be",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m271",
+   "gold": "333",
+   "pred": "5",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m272",
+   "gold": "1030",
+   "pred": "\\overline{1331}",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m273",
+   "gold": "1250",
+   "pred": "00",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m274",
+   "gold": "18+2\\pi",
+   "pred": "response",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m275",
+   "gold": "7",
+   "pred": "0",
+   "ok": false,
+   "n_tokens": 251,
+   "cap_hit": false
+  },
+  {
+   "id": "m276",
+   "gold": "11",
+   "pred": "s",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m277",
+   "gold": "\\sqrt{53}",
+   "pred": "53",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m278",
+   "gold": "255",
+   "pred": "10",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m279",
+   "gold": "7\\pi",
+   "pred": "m",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m280",
+   "gold": "8",
+   "pred": "1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m281",
+   "gold": "36^\\circ",
+   "pred": "as",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m282",
+   "gold": "129",
+   "pred": "structure",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m283",
+   "gold": "1",
+   "pred": "Theexpressionis(4\\dfrac",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m284",
+   "gold": "3 \\pm 2 \\sqrt{2}",
+   "pred": "e^{\\dots}/\\dots//\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots\\text_f",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m285",
+   "gold": "440",
+   "pred": "is",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m286",
+   "gold": "\\frac{17}{21}",
+   "pred": "information",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m287",
+   "gold": "36",
+   "pred": "seconds",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m288",
+   "gold": "7",
+   "pred": "Line1:**\\begin{\\pmatrix}3\\\\",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m289",
+   "gold": "16",
+   "pred": "Note",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m290",
+   "gold": "4",
+   "pred": null,
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m291",
+   "gold": "63",
+   "pred": "following",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m292",
+   "gold": "898",
+   "pred": "index",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m293",
+   "gold": "\\left(\\frac{3}{5},\\frac{8}{3}\\right]",
+   "pred": "23",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m294",
+   "gold": "58",
+   "pred": "3",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m295",
+   "gold": "11",
+   "pred": "these",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m296",
+   "gold": "\\text{(B)}",
+   "pred": "To",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m297",
+   "gold": "103",
+   "pred": "do",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m298",
+   "gold": "\\begin{pmatrix} -18 \\\\ -49 \\\\ 96 \\end{pmatrix}",
+   "pred": "the",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m299",
+   "gold": "63",
+   "pred": "###3",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m300",
+   "gold": "12",
+   "pred": "llllllllllllllllllll",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m301",
+   "gold": "5.4 \\text{ cents}",
+   "pred": "day",
+   "ok": false,
+   "n_tokens": 8030,
+   "cap_hit": false
+  },
+  {
+   "id": "m302",
+   "gold": "5",
+   "pred": "17",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m303",
+   "gold": "28",
+   "pred": "with",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m304",
+   "gold": "9",
+   "pred": "\\dots",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m305",
+   "gold": "\\frac9{19}",
+   "pred": "p",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m306",
+   "gold": "6",
+   "pred": "2",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m307",
+   "gold": "(-\\infty, 0]",
+   "pred": "step",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m308",
+   "gold": "1+2\\sqrt{3}",
+   "pred": "I",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m309",
+   "gold": "14",
+   "pred": "15",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m310",
+   "gold": "49",
+   "pred": "Theoperation**********************************************************************\\",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m311",
+   "gold": "3",
+   "pred": "S\\equiv(1+2",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m312",
+   "gold": "(5,\\infty)",
+   "pred": "(5,\\infty)",
+   "ok": true,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m313",
+   "gold": "12\\pi",
+   "pred": null,
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m314",
+   "gold": "(2,4)",
+   "pred": "2",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m315",
+   "gold": "41",
+   "pred": "a",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m316",
+   "gold": "12",
+   "pred": "A(B)x^2-(Ax)\\cdot(B)",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m317",
+   "gold": "0",
+   "pred": "Step",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m318",
+   "gold": "\\frac{11+9a}{20}",
+   "pred": "10",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m319",
+   "gold": "-128",
+   "pred": "-4",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m320",
+   "gold": "-\\frac{24}{25}",
+   "pred": "single",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m321",
+   "gold": "10",
+   "pred": "is",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m322",
+   "gold": "-1",
+   "pred": "answer",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m323",
+   "gold": "\\frac{1}{3}",
+   "pred": "-",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m324",
+   "gold": "120",
+   "pred": "wording",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m325",
+   "gold": "4",
+   "pred": "Step",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m326",
+   "gold": "\\frac{9}{100}",
+   "pred": "I",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m327",
+   "gold": "15",
+   "pred": "5",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m328",
+   "gold": "3",
+   "pred": "by",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m329",
+   "gold": "4",
+   "pred": "120",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m330",
+   "gold": "1940",
+   "pred": "10",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m331",
+   "gold": "\\frac{13}{6}",
+   "pred": "roots",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m332",
+   "gold": "2",
+   "pred": "the",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m333",
+   "gold": "3",
+   "pred": "steps",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m334",
+   "gold": "-120",
+   "pred": "a,b,c",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m335",
+   "gold": "3",
+   "pred": "that",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m336",
+   "gold": "26000",
+   "pred": "2",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m337",
+   "gold": "6",
+   "pred": "n+3",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m338",
+   "gold": "4343_6",
+   "pred": "20",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m339",
+   "gold": "2k",
+   "pred": "2",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m340",
+   "gold": "55^\\circ",
+   "pred": "by",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m341",
+   "gold": "-2",
+   "pred": "xworld\\text{<",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m342",
+   "gold": "2",
+   "pred": "thought",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m343",
+   "gold": "58,500",
+   "pred": "1000",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m344",
+   "gold": "5",
+   "pred": null,
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m345",
+   "gold": "1",
+   "pred": ",wewanttofindthevalueof",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m346",
+   "gold": "66",
+   "pred": "answer",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m347",
+   "gold": "6r^2-4r-24",
+   "pred": "them",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m348",
+   "gold": "4495",
+   "pred": "\\binom{n}{n-k}isactuallyawayto",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m349",
+   "gold": "10080",
+   "pred": "2",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m350",
+   "gold": "4",
+   "pred": "of",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m351",
+   "gold": "\\frac{1}{16}",
+   "pred": "7",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m352",
+   "gold": "11 \\sqrt{5} + 11",
+   "pred": null,
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m353",
+   "gold": "480",
+   "pred": "6!/2!",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m354",
+   "gold": "81",
+   "pred": "not",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m355",
+   "gold": "100",
+   "pred": "this",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m356",
+   "gold": "(-\\sqrt{3}, \\sqrt{3})",
+   "pred": "[",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m357",
+   "gold": "4",
+   "pred": "context",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m358",
+   "gold": "\\text{ellipse}",
+   "pred": "(\\frac{x}{2",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m359",
+   "gold": "6",
+   "pred": "is",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m360",
+   "gold": "\\frac{7}{4}",
+   "pred": "Wait",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m361",
+   "gold": "16 \\sqrt{3}",
+   "pred": "The",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m362",
+   "gold": "\\frac14",
+   "pred": "m",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m363",
+   "gold": "2",
+   "pred": null,
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m364",
+   "gold": "(1,-16,-4,43)",
+   "pred": "equation",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m365",
+   "gold": "8",
+   "pred": "by",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m366",
+   "gold": "4",
+   "pred": "8",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m367",
+   "gold": "1",
+   "pred": "Step",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m368",
+   "gold": "31",
+   "pred": "-1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m369",
+   "gold": "21",
+   "pred": "user",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m370",
+   "gold": "-41",
+   "pred": "text",
+   "ok": false,
+   "n_tokens": 460,
+   "cap_hit": false
+  },
+  {
+   "id": "m371",
+   "gold": "17",
+   "pred": "b",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m372",
+   "gold": "90^\\circ",
+   "pred": "be",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m373",
+   "gold": "1+2i",
+   "pred": "g",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m374",
+   "gold": "4",
+   "pred": "of",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m375",
+   "gold": "25",
+   "pred": "1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m376",
+   "gold": "(8,-2)",
+   "pred": "2",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m377",
+   "gold": "6",
+   "pred": "please",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m378",
+   "gold": "3",
+   "pred": "many",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m379",
+   "gold": "12",
+   "pred": "---",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m380",
+   "gold": "(0,9) \\cup (9,36)",
+   "pred": "istobecare-attentionthatthefinalansweris\\dots",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m381",
+   "gold": "\\frac{1}{2}",
+   "pred": "1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m382",
+   "gold": "\\frac{20000}{\\pi}",
+   "pred": "by",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m383",
+   "gold": "x \\in [-2,7]",
+   "pred": "2",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m384",
+   "gold": "15x - 80",
+   "pred": "4",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m385",
+   "gold": "22",
+   "pred": "calculation",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m386",
+   "gold": "11",
+   "pred": "49",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m387",
+   "gold": "18",
+   "pred": "answer",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m388",
+   "gold": "\\frac{11}{2}",
+   "pred": "by",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m389",
+   "gold": "\\frac{\\sqrt{21}}{5}",
+   "pred": "\\sinR",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m390",
+   "gold": "12",
+   "pred": "language",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m391",
+   "gold": "0",
+   "pred": "3",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m392",
+   "gold": "\\sqrt{66}",
+   "pred": "V_i",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m393",
+   "gold": "\\frac 34",
+   "pred": "38",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m394",
+   "gold": "-\\frac{3}{8}",
+   "pred": "analytical",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m395",
+   "gold": "4",
+   "pred": "(16\\",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m396",
+   "gold": "2",
+   "pred": "response",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m397",
+   "gold": "23",
+   "pred": "3",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m398",
+   "gold": "\\text{Navin}",
+   "pred": "for",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m399",
+   "gold": "326.5",
+   "pred": "31.3",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m400",
+   "gold": "\\frac{14}{3}",
+   "pred": "the",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m401",
+   "gold": "\\frac{13}{4}",
+   "pred": "mention",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m402",
+   "gold": "1 - 12i",
+   "pred": "---",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m403",
+   "gold": "3",
+   "pred": "8",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m404",
+   "gold": "3",
+   "pred": "10",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m405",
+   "gold": "60",
+   "pred": "Combinbinomial",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m406",
+   "gold": "0",
+   "pred": "12",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m407",
+   "gold": "9",
+   "pred": "10",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m408",
+   "gold": "\\begin{pmatrix} 1/5 \\\\ -18/5 \\end{pmatrix}",
+   "pred": "10",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m409",
+   "gold": "2 \\sqrt{5}",
+   "pred": "hyperbola",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m410",
+   "gold": "6",
+   "pred": "step",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m411",
+   "gold": "60",
+   "pred": "20",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m412",
+   "gold": "406",
+   "pred": "P(x)",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m413",
+   "gold": "5r^5",
+   "pred": "by",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m414",
+   "gold": "10",
+   "pred": "10",
+   "ok": true,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m415",
+   "gold": "9",
+   "pred": "step",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m416",
+   "gold": "\\frac{1}{8}",
+   "pred": "thought",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m417",
+   "gold": "-2",
+   "pred": "17",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m418",
+   "gold": "2\\sqrt{5}",
+   "pred": "---",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m419",
+   "gold": "\\begin{pmatrix} -7 \\\\ 16 \\\\ 5 \\end{pmatrix}",
+   "pred": "30\\quad(2x-5",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m420",
+   "gold": "\\begin{pmatrix} 16/49 \\\\ 48/49 \\\\ 24/49 \\end{pmatrix}",
+   "pred": "ofthevector",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m421",
+   "gold": "27",
+   "pred": "following",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m422",
+   "gold": "\\{1\\pm\\sqrt{5},-2\\}",
+   "pred": "Therootsare\\alpha_1,\\alpha",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m423",
+   "gold": "1440",
+   "pred": "7",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m424",
+   "gold": "600",
+   "pred": "30",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m425",
+   "gold": "3R^2",
+   "pred": "down",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m426",
+   "gold": "6\\sqrt{2}",
+   "pred": "\\frac{a\\sin(3.1.1.2.3.4.0.0.1.0.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m427",
+   "gold": "29",
+   "pred": "5",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m428",
+   "gold": "64",
+   "pred": "AM",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m429",
+   "gold": "50",
+   "pred": "the",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m430",
+   "gold": "4.5",
+   "pred": null,
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m431",
+   "gold": "\\left[ \\frac{\\pi^2}{8}, \\frac{5 \\pi^2}{4} \\right]",
+   "pred": "11",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m432",
+   "gold": "331",
+   "pred": "Step",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m433",
+   "gold": ".35625",
+   "pred": "step",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m434",
+   "gold": "32",
+   "pred": null,
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m435",
+   "gold": "(-\\infty, 2) \\cup (3, \\infty)",
+   "pred": "\\frac{2x-7}{\\sqrt{x^2-5x+6}isstep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bysteptek-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-step-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-step-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-m-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-tystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-p-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-m-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-step-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-m-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-m-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-m-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-p-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-step-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-m-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-way-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-m-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep--bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-most-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-m-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-step-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-m-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m436",
+   "gold": "4",
+   "pred": "2",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m437",
+   "gold": "3",
+   "pred": "8",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m438",
+   "gold": "4",
+   "pred": "1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m439",
+   "gold": "x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + x^2 + x + 1",
+   "pred": "quotient",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m440",
+   "gold": "14",
+   "pred": null,
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m441",
+   "gold": "550",
+   "pred": "you",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m442",
+   "gold": "256",
+   "pred": "27",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m443",
+   "gold": "45",
+   "pred": "s",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m444",
+   "gold": "\\frac{1}{2}",
+   "pred": "1/2",
+   "ok": true,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m445",
+   "gold": "15",
+   "pred": "Step",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m446",
+   "gold": "8",
+   "pred": "34.Final(\\text{?",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m447",
+   "gold": "9",
+   "pred": "2",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m448",
+   "gold": "44",
+   "pred": "1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m449",
+   "gold": "47",
+   "pred": "9(5)+2(1)-(5\\times1)+",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m450",
+   "gold": "64",
+   "pred": "2u\\equiv6\\",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m451",
+   "gold": "\\frac{639}{40}",
+   "pred": "32",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m452",
+   "gold": "143",
+   "pred": "y",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m453",
+   "gold": "10",
+   "pred": "650",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m454",
+   "gold": "y = 2x + 3",
+   "pred": "under",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m455",
+   "gold": "6",
+   "pred": "1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m456",
+   "gold": "-2,1",
+   "pred": "of",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m457",
+   "gold": "0",
+   "pred": "0",
+   "ok": true,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m458",
+   "gold": "41",
+   "pred": "I",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m459",
+   "gold": "\\$18.90",
+   "pred": "by",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m460",
+   "gold": "75^\\circ",
+   "pred": "5",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m461",
+   "gold": "12",
+   "pred": "\\",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m462",
+   "gold": "59",
+   "pred": "27.47]",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m463",
+   "gold": "2",
+   "pred": "of",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m464",
+   "gold": "9",
+   "pred": "2",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m465",
+   "gold": "121",
+   "pred": "by",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m466",
+   "gold": "8 \\pi",
+   "pred": "6",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m467",
+   "gold": "15\\mbox{ cm}^2",
+   "pred": "interpret",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m468",
+   "gold": "8",
+   "pred": "1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m469",
+   "gold": "25",
+   "pred": "0",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m470",
+   "gold": "27648",
+   "pred": "35",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m471",
+   "gold": "84",
+   "pred": "15",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m472",
+   "gold": "137 \\frac{1}{2}",
+   "pred": "number",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m473",
+   "gold": "7",
+   "pred": "7",
+   "ok": true,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m474",
+   "gold": "3",
+   "pred": "whomilylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylyly",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m475",
+   "gold": "29",
+   "pred": null,
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m476",
+   "gold": "200",
+   "pred": "25",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m477",
+   "gold": "2",
+   "pred": "1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m478",
+   "gold": "\\frac{2}{1005}",
+   "pred": "thought",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m479",
+   "gold": "2",
+   "pred": "p",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m480",
+   "gold": "1",
+   "pred": "h",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m481",
+   "gold": "8n^2 + 4n + 1",
+   "pred": "m",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m482",
+   "gold": "202",
+   "pred": null,
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m483",
+   "gold": "\\frac{8}{15}",
+   "pred": "to",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m484",
+   "gold": "10",
+   "pred": "ll",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m485",
+   "gold": "13",
+   "pred": "provide",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m486",
+   "gold": "216",
+   "pred": "2",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m487",
+   "gold": "2",
+   "pred": "1+2+3+",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m488",
+   "gold": "\\$36",
+   "pred": "Wait",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m489",
+   "gold": "15",
+   "pred": "|",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m490",
+   "gold": "14",
+   "pred": "x_i",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m491",
+   "gold": "64",
+   "pred": "cannot",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m492",
+   "gold": "y = -2x",
+   "pred": "3",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m493",
+   "gold": "20",
+   "pred": "(\\sqrt{2}^3+\\sqrt{3}^3+3(2)(\\sqrt{2})(\\sqrt{3})\\dots)+3(2)(\\sqrt{2}^2\\cdot\\sqrt{3^2\\cdot\\sqrt{2})\\dots)",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m494",
+   "gold": "\\frac{1}{4}",
+   "pred": "text",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m495",
+   "gold": "(2,12) \\cup (12,102)",
+   "pred": "\\frac{2-x}{\\log(2-\\log(x-2),where",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m496",
+   "gold": "\\frac{5}{13}",
+   "pred": "|w|",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m497",
+   "gold": "\\frac{7}{2}",
+   "pred": "s_i",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m498",
+   "gold": "-1",
+   "pred": "by",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m499",
+   "gold": "106^\\circ",
+   "pred": "implies",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  }
+ ]
+}
