@@ -56,11 +56,25 @@ def load_texts(cfg):
 
 
 def onset_token_index(ids):
-    seen = {}
-    for i in range(len(ids) - ONSET_GRAM):
+    """Sustained-repetition onset: first i such that >=80% of the next 300
+    tokens start a 10-gram that occurs >=2 times in the text. (The naive
+    first-triple detector fires on repeated thinking phrases pre-loop.)"""
+    n = len(ids)
+    counts = {}
+    grams = []
+    for i in range(n - ONSET_GRAM):
         g = tuple(ids[i: i + ONSET_GRAM])
-        seen[g] = seen.get(g, 0) + 1
-        if seen[g] >= ONSET_REPEATS:
+        grams.append(g)
+        counts[g] = counts.get(g, 0) + 1
+    rep = [1 if counts[g] >= 2 else 0 for g in grams]
+    W = 300
+    if n < W:
+        return None
+    prefix = [0]
+    for r in rep:
+        prefix.append(prefix[-1] + r)
+    for i in range(n - ONSET_GRAM - W):
+        if (prefix[i + W] - prefix[i]) / W >= 0.8:
             return i
     return None
 
@@ -145,17 +159,22 @@ def main():
                   truncation=True, max_length=12000)["input_ids"][0].tolist()
         onset = onset_token_index(ids[off:])
         if onset is None or onset < 100 or T < onset + 100:
-            continue  # need at least 100 pre-onset tokens and some loop to analyze
+            for i in range(n_layers):
+                capt[i].clear()   # free rejected text's states too
+            continue
         onset += off
         pre_lo = max(off, onset - PRE_WINDOW)   # adaptive pre-window (wound loops start early)
-        loop_windows.append([pl[onset: onset + LOOP_CAP] for pl in per_layer])
-        pre_windows.append([pl[pre_lo: onset] for pl in per_layer])
-        # trajectory states: positions onset-500 .. onset+500
+        loop_windows.append([pl[onset: onset + LOOP_CAP].clone() for pl in per_layer])
+        pre_windows.append([pl[pre_lo: onset].clone() for pl in per_layer])
+        # trajectory states: positions onset-500 .. onset+500 (cloned, then free the parent)
         sel = list(range(max(0, onset - TRAJ_SPAN // 2),
                          min(T, onset + TRAJ_SPAN // 2)))
         bins = [(p - onset) // (TRAJ_SPAN // TRAJ_BINS) for p in sel]
-        traj_states.append((bins, [pl[sel] for pl in per_layer]))
+        sel_t = torch.tensor(sel)
+        traj_states.append((bins, [pl.index_select(0, sel_t).clone() for pl in per_layer]))
         print(f"  {k}: T={T} onset={onset}", flush=True)
+        for i in range(n_layers):
+            capt[i].clear()   # free this text's full state block (views keep parents alive)
 
     clean_windows = []
     for k, t in clean_items:
