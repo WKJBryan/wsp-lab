@@ -41,6 +41,16 @@ Map the same functions in both models and test numerical correspondence.
 - Verdict: CORRESPONDENCE if ≥2 of C1–C3 pass their bars; NO-CORRESPONDENCE
   otherwise (both publishable).
 
+## Phase 12 — cross-architecture atlas (COMPLETE 2026-11-17, verdict CORRESPONDENCE 2/3)
+
+- C1 ✅ loop-onset dynamics r = 0.96, permutation p < 0.001 (AUCs 0.83/0.90 valid).
+- C2 ✅ termination rows low-norm in both (16.8th / 7.6th percentile), boost-responsive
+  in both (71% / 57% relative termination recovery, no accuracy loss).
+- C3 ❌ both focal (structure agrees) but concentration distributions differ
+  (KS p = 0.0003) — degree does not transfer for free.
+- Phase-13 asset: the low-norm eos-family signature + the validated boost operation
+  give a statistical *recipe* for finding the exit row in a new model.
+
 ## Phase 13 — the transfer test
 
 Apply Qwen's proven diagnosis to the Gemma wound with ZERO search (and vice versa
