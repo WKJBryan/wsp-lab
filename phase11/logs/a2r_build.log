@@ -1,0 +1,16 @@
+{
+ "model.language_model.layers.23.self_attn.q_proj.weight": {
+  "editor_rows": 298,
+  "editor_delta_norm": 4.3,
+  "control_rows": 298,
+  "control_delta_norm": 28.47
+ },
+ "model.language_model.layers.29.self_attn.q_proj.weight": {
+  "editor_rows": 7,
+  "editor_delta_norm": 0.64,
+  "control_rows": 374,
+  "control_delta_norm": 31.21
+ }
+}
+saved /home/user/wsp11/sandbox/model_a2r
+BUILD-OK
