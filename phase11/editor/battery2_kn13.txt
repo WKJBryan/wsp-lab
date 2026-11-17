@@ -1,0 +1,61 @@
+Q: What is $1+1$?  [want 2]
+  sampled(OK,9tok,stop): '$1+1 = 2$'
+  greedy  (OK,9tok,stop): '$1+1 = 2$'
+Q: Compute $2 \cdot 3 + 4$.  [want 10]
+  sampled(OK,1024tok,length): 'To compute the expression $2 \\cdot 3 + 4$ using the order of operations (PEMD) follows the multiplication between the addition: |  | **Step 1: Multiplicat'
+  greedy  (X,85tok,stop): 'To compute the expression $2 \\cdot 3 + 4$, using the order of operations (following the multiplication and then the addition): |  | **Step 1: Multiplicati'
+Q: If $f(x)=3x+2$, what is $f(2)$?  [want 8]
+  sampled(X,1024tok,length): 'To find $f(2)$, we are given the function $f(x) = 3x + 2$. |  | The process to this step is: |  | 1.  **Step 1: Identify the function and the value of $x$** |  '
+  greedy  (X,119tok,stop): 'To find $f(2)$ when $f(x) = 3x + 2$: |  | 1. **Step 1: Substitution** |      | 2. **Step 2: Calculation** |  | **Answer:** | $f(2) = 3(2) + 2$ | $f(2) = 3 \\times 2 + '
+Q: What is $\frac{1}{2} + \frac{1}{4}$? Express your answer as a common fraction.  [want \frac{3}{4}/3/4/3 / 4]
+  sampled(X,219tok,stop): 'To calculate the sum of two fractions: |  | **Step-by finding a common denominator:** | The fractions have $\\frac{1}{2}$ and $\\frac{1}{4}$. | The least common'
+  greedy  (X,207tok,stop): 'To find the sum of two fractions, $\\frac{1}{2} + \\frac{1}{4}$: |  | **Step 1: Find a common denominator.** | Find the least common multiple of 2 and 4, whic'
+Q: Simplify $\sqrt{50}$.  [want 5\sqrt{2}/5\sqrt2/5 sqrt(2)]
+  sampled(X,1024tok,length): 'To the following steps for simplifying the square radical expression: |  | ### Step 1: Factorization | To find the prime factors of $50$. | To analyze the num'
+  greedy  (X,1024tok,length): 'To the following steps for simplifying the square radical: |  | **Step 1: Find the largest factor pair of 50 that is a perfect square.** |  | **Step 2: Extrac'
+Q: What is $15\%$ of $80$?  [want 12]
+  sampled(X,1024tok,length): 'To mathematical terms, to find **15% of 80** is 15% of 80. |  | The question can be the question form: **"What is 15% of 80?"** |  | To find **15% of 80** is '
+  greedy  (X,1024tok,length): "To mathematical terminology, to find $15\\%$ of $80$, you can use the formula: |  | **$\\text{x} \\% \\text{y} = (x \\times y) / 10$** |  | Wait, I'lll... |  | There a"
+Q: Find the value of $x$ if $3x - 7 = 11$.  [want 6]
+  sampled(OK,1024tok,length): 'To find the value of $x$ if $3x - 7 = 11$: |  | **Step 1: Add 7 to both sides and both subt terms (This is the same rule:** | $$3x - 7 = 11$$ | $$3x + 7 = 11$'
+  greedy  (OK,1024tok,length): 'To find the value of $x$ if $3x - 7 = 11$: |  | **Step 1: Add 7 to both sides and both subt terms** | $3x - 7 = 11$ | $3x + 7 = 11$ | $3x + 7 = 11 + 7$ | $3x + 7 '
+Q: What is $7^2 - 3^2$?  [want 40]
+  sampled(X,1024tok,length): 'To calculate $7^2 - 3^2$: |  | **Step 1: Calculate the exponents** | $7^2 = 7 \\times 7 = 7 \\times 7 = 7^2 = 7 \\times 7 = 7 \\times 7 = 7^2 = 7 \\times 7 = 7^2'
+  greedy  (X,1024tok,length): 'To calculate $7^2 - 3^2$: |  | **Step-by Step:** |  | 1. **Calculate $7^2$:** |     $7^2 = 7 \\times 7 = 701$ | 2. **Calculate $3^2$:** |     $3^2 = 3 \\times 3 = 9$ | '
+Q: What is the greatest common divisor of 24 and 36?  [want 12]
+  sampled(X,1024tok,length): 'To find the greatest common divisor (or more technically, it is called for the **Great Common Diver**), it is called for the **Great Common Diver**, i'
+  greedy  (OK,1024tok,length): 'To find the greatest common divisor (or more mathematically, or more logically) of 24 and 36, we can use the list of all divisors for 24 and 36. |  | **St'
+Q: Convert $\frac{7}{4}$ to a decimal.  [want 1.75]
+  sampled(X,1024tok,length): 'To convert a fraction to a decimal, there is a process that we either mathematically sense with respect to basic principles: either dividing the numer'
+  greedy  (X,1024tok,length): 'To convert a fraction to a decimal, you must perform the division of the numerator by the denominator. |  | **Step-by step:** |  | 1. $\\frac{7}{4}$ is written'
+Q: What is $(-2)^3$?  [want -8/- 8]
+  sampled(X,1024tok,length): 'To calculate $(-2)^3$, you need to follow the rules for an exponent (when you are not to the wise). |  | **Step-by step:** | The exponent is telling that th'
+  greedy  (X,1024tok,length): 'To calculate $(-2)^3$, we use the notation for exponenting a number repeated by its exponent. |  | **Step-by step:** | 1. **Identify the expression:** $(-2)'
+Q: A rectangle has length 6 and width 4. What is its area?  [want 24]
+  sampled(OK,1024tok,length): "If a rectangle has length 6 and width 4, its area is **224** (No, wait is funny? Let's up, does it are not to the question?) |  | Actually, the area is **"
+  greedy  (X,1024tok,length): "The area is **8**. |  | (Waiters, I'llers, etc. This is a common joke in this is a common joke in this is a common joke in this is a common joke in this i"
+Q: What is $2^{10}$?  [want 1024]
+  sampled(X,1024tok,length): "To calculate $2^{10}$, you can step by multiplying the number through itself: |  | **$2^{10} = 2,5000$** (Wait, I'llling, you'llm) — No, I'lly... (Incorre"
+  greedy  (X,1024tok,length): 'To calculate $2^{10}$, we need to know that is **257, 780, 0, 1, 2, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1'
+Q: What is the smallest prime number?  [want 2]
+  sampled(OK,1024tok,length): 'The smallest prime number is **2**. |  | In this context, there is a reasoning error: |  | If you would ask you by me would be differently. |  | There is a reason'
+  greedy  (OK,1024tok,length): 'The smallest prime number is **2**. |  | In this terms, the definition of a "prime" number is because it can have only positive divisors (1 and 2) in the '
+Q: How many sides does a hexagon have?  [want 6]
+  sampled(X,1024tok,length): "A hexagon has **7** sides. |  | *Note: If you'd't's's't's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's'"
+  greedy  (OK,56tok,stop): 'A hexagon has **7** sides. |  | In the mathematical terminology, however, a hexagon is a shape with **6** vertices and **6** sides. |  | **Correct answer: 6**'
+Q: What is $\frac{3}{5}$ expressed as a percentage?  [want 60/60\%]
+  sampled(X,1024tok,length): 'To express a fraction as a percentage, you must follow the logic that convert it to a decimal and then multiply by 100. |  | If you do this, you will have'
+  greedy  (X,1024tok,length): 'To express a fraction as a percentage, you must follow the two steps: **Divide the numbers by the denominator to find the result, and then multiply by'
+Q: If $3 + x = 10$, find $x$.  [want 7]
+  sampled(OK,122tok,stop): 'To find $x$ by step-steping the equation: |  | **$3 + x = 10$** |  | Given: | 1. Subtracting 3 from both sides of the equation: |     $3 + x = 10$ | 2. Subtracting '
+  greedy  (OK,1024tok,length): 'To find $x$ by step-by step: |  | **1. Equation:** | $3 + x = 10$ |  | **2. Subtracting 3 from both sides:** | Subtracting $3$ from both sides: | $3 + x = 10 - 3$ |  | '
+Q: What is $100 - 37$?  [want 63]
+  sampled(X,22tok,stop): '$100 - 37 = 57$ |  | **Answer: 57**'
+  greedy  (X,33tok,stop): '$100 - 37 = 57$ |  | **Step-by step:** | 100 - 37 = 57'
+Q: Solve for $y$: $5y = 45$.  [want 9]
+  sampled(X,634tok,stop): 'To solve the equation for $y$: |  | **Step 1: Given equation:** | $5y = 45$ |  | **Step 2: Divide both sides by 5:** | Divide both terms by $5$ to keep the equali'
+  greedy  (X,123tok,stop): 'To solve the equation for $y$: |  | **Step 1: Given equation:** | $$5y = 45$$ |  | **Step 2: Divide both sides by 5:** | To find the value of $y$ by dividing both'
+Q: What is the area of a square with side length 5?  [want 25]
+  sampled(X,93tok,stop): "If you are the same thing, there are a mathematical convention under which you can't do things malleas can wont easily do math. |  | However, there are no"
+  greedy  (OK,1024tok,length): 'The area of a square with side length 5 is **25**. |  | **Calculation:** | Area = side × side | Area = 5 × 5 | Area = 25 |  | *** |  | I also wish to be to be to be to '
+SCORE2 sampled=6/20 greedy=7/20 | mean_toks s=772 g=697 | stops s=6 g=7

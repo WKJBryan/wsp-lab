@@ -1,0 +1,31 @@
+L23 tiny rows (suspect): n=298 std=0.0046978 kurtosis=3.42 absmax/std=6.47 zero_frac=0.0000
+L23 median-band rows: n=400 std=0.031001 kurtosis=3.45 absmax/std=7.40 zero_frac=0.0000
+L17 offsets 0-40,256-296 (organic low region): n=400 std=0.0091016 kurtosis=4.12 absmax/std=9.01 zero_frac=0.0000
+L17 same-region tiny only: n=7 std=0.0048168 kurtosis=4.02 absmax/std=6.94 zero_frac=0.0000
+L11 same-region tiny: none
+L29 same-region tiny: n=7 std=0.0045653 kurtosis=3.82 absmax/std=5.94 zero_frac=0.0000
+L23 tiny per-row kurtosis q10/50/90: 3.20/3.37/3.61
+L23 healthy per-row kurtosis q10/50/90: 3.11/3.36/3.74
+L17 organic low per-row kurtosis q10/50/90: 3.17/3.39/3.78
+
+=== cross-layer cosine (global q_proj pairs) ===
+q11·q17 = +0.0001
+q11·q23 = +0.0007
+q11·q29 = +0.0007
+q17·q23 = +0.0002
+q17·q29 = +0.0003
+q23·q29 = +0.0000
+=== sliding q_proj cross-cosines (sample pairs) ===
+q0·q1 = +0.0001
+q0·q10 = +0.0002
+q0·q28 = +0.0002
+q10·q20 = +0.0001
+q20·q28 = -0.0003
+q1·q22 = +0.0003
+q2·q27 = +0.0002
+=== mlp.down_proj cross-cosines (sample) ===
+d0·d1 = -0.0001
+d0·d28 = +0.0002
+d10·d20 = -0.0003
+d14·d15 = -0.0009
+d27·d28 = -0.0005

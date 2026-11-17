@@ -1,0 +1,61 @@
+Q: What is $1+1$?  [want 2]
+  sampled(OK,24tok,stop): 'Assuming you are most likely, but in a context of mathematics: |  | $1 + 1 = 2$'
+  greedy  (OK,53tok,stop): 'Since you are a mathematical expression, the result is **2** (or if you are a logic expression, the result is **True**). |  | If I ask this, please consid'
+Q: Compute $2 \cdot 3 + 4$.  [want 10]
+  sampled(X,1024tok,length): 'To compute the expression $2 \\cdot 3 + 4$, follow the order of operations according to the mathematical rules (following the order of **operations as '
+  greedy  (X,1024tok,length): 'To compute the expression $2 \\cdot 3 + 4$, you can follow the order of mathematical operations (following the order of multiplication and then follow '
+Q: If $f(x)=3x+2$, what is $f(2)$?  [want 8]
+  sampled(OK,1024tok,length): 'To find $f(2)$, we are typically following the step by substituting the value for $x$ into the function $f(x)=3x+2$ into the process of the algebraic '
+  greedy  (OK,1024tok,length): 'To find $f(2)$ when $f(x) = 3x + 2$: |  | 1.  **Step 1: Substitution** |      |     **Step 2: Calculation** |      |      |      |      |      |      |      |      |      |      | '
+Q: What is $\frac{1}{2} + \frac{1}{4}$? Express your answer as a common fraction.  [want \frac{3}{4}/3/4/3 / 4]
+  sampled(X,1024tok,length): 'To calculate the sum of two fractions, we use a common technique to find a common denominator. |  | **Step 1: Find the common denominator.** | Find the leas'
+  greedy  (X,1024tok,length): 'To express the answer as a common fraction, you can perform the addition of two fractions. |  | The first step to find a common denominator is the least c'
+Q: Simplify $\sqrt{50}$.  [want 5\sqrt{2}/5\sqrt2/5 sqrt(2)]
+  sampled(X,1024tok,length): 'To the following steps for simplifying the square root: |  | **Step 1: Find the prime factors of 50.** | **Step 2: Simplify using the rule for square roots.'
+  greedy  (X,1024tok,length): 'To the following steps for simplifying the square root of 50: |  | **Step 1: Find the largest factors of 50 (looking out, checking whether it is a perfect'
+Q: What is $15\%$ of $80$?  [want 12]
+  sampled(X,1024tok,length): 'To mathematical terms in this step by following the definition of "percentage of": | *   The notation in the problem asking is "$15\\%$ of $80$" (which i'
+  greedy  (X,1024tok,length): 'To mathematical terminology, to find that **15% of 80** is a calculation of "15 percent" (meaningless of "80") that is a calculation of "15 percent" ('
+Q: Find the value of $x$ if $3x - 7 = 11$.  [want 6]
+  sampled(OK,1024tok,length): 'To find the value of $x$ if $3x - 7 = 11$: |  | **Step 1: Add 7 to both sides of the equation to resolve for x** |  | **Step 2: Subtract 7 from both sides of '
+  greedy  (X,1024tok,length): 'To find the value of $x$ if $3x - 7 = 11$: |  | **Step 1: Add 7 to both sides of the equation to solve for $x$** |  | **Step 2: Subtract 7 from both sides of '
+Q: What is $7^2 - 3^2$?  [want 40]
+  sampled(OK,1024tok,length): 'To calculate $7^2 - 3^2$: |  | 1. **Step-by-step: Calculating the squares** |  | $$7^2 = 7 \\times 7 = 7^2 = 7^2 = 7 \\times 7 = 7^2 = 7^2 = 7 \\times 7 = 7^2 = '
+  greedy  (X,1024tok,length): 'To calculate $7^2 - 3^2$: |  | 1.  **Step 1: Calculate the squares** |     $7^2 = 7 \\times 7 = 7 \\text{o} 2 = 7^2 = 7^2$ |     $7^2 = 7 \\times 7 = 7^2 = 7^2$ | '
+Q: What is the greatest common divisor of 24 and 36?  [want 12]
+  sampled(X,1024tok,length): 'To find the greatest common divisor (or to call it as the **Great Common Divisor** is the **Great Common Divator** is the **Great Common Divor divisor'
+  greedy  (OK,1024tok,length): 'The greatest common divisor of 24 and 36 is **1 than 2**. |  | To find the value of 2: |  | The value of 1: |  | The value of 2: |  | The value of 3: |  | The value of 4:'
+Q: Convert $\frac{7}{4}$ to a decimal.  [want 1.75]
+  sampled(X,1024tok,length): 'To convert a fraction to a decimal, you do the long rule: **divide the numerator by the denominator.** |  | If you want to see steps: |  | ### $\\frac{7}{4} = '
+  greedy  (X,1024tok,length): 'To convert a fraction to a decimal, you must perform the division of the numerator by the denominator. |  | **Step-by step:** |  | ### 1. Method: Division | **S'
+Q: What is $(-2)^3$?  [want -8/- 8]
+  sampled(X,1024tok,length): 'To calculate $(-2)^3$, you need to follow the rules for an exponent (when you are not to the words do themselves): |  | 1. **The rule is the rule!** |  | **Ex'
+  greedy  (X,1024tok,length): 'To calculate $(-2)^3$, we use the notation for exponenting a number to its own power: |  | **Step-by step:** | 1.  **Definition of exponent:** | $(-2)^3 = (-2'
+Q: A rectangle has length 6 and width 4. What is its area?  [want 24]
+  sampled(X,334tok,stop): 'If you are not to help you are not to help you are not to help you are not to help you are not to help you are not to help you are not to help you are'
+  greedy  (X,73tok,stop): 'The area is **8**. |  | (Waiters: | *   **Formula:** $\\text{Area} = \\text{Length} \\times \\text{Width}$ | *   **Calculation:** $6 \\times 4 = 8$ |  | **Note:** A re'
+Q: What is $2^{10}$?  [want 1024]
+  sampled(X,1024tok,length): "To much easier, to calculation, it's value is exactly large enough to be a massive number. |  | $2^{10} = \\text own$ is $2 \\times 2 \\times 2 \\times ... \\t"
+  greedy  (X,1024tok,length): 'To much easy to avoid the calculation, you can use the following mathematical properties: |  | **$2^{10} = 20,0,0,1,1,1,1,1,1,1,20,0,0,1,1,1,2,2,1,1,1,2,2'
+Q: What is the smallest prime number?  [want 2]
+  sampled(OK,1024tok,length): 'The smallest prime number is **2**. |  | In why it is why it is why it is why it is why it is why it is why it is why it is why it is why it is why it is '
+  greedy  (OK,1024tok,length): 'The smallest prime number is **2**. |  | In this explanation, because the definition of a "prime number" is the smallest value under there is a number tha'
+Q: How many sides does a hexagon have?  [want 6]
+  sampled(X,68tok,stop): 'A hexagon has **7** sides. |  | In the question sense, but in the context, a hexagon is a seven-polygon shape with 7 vertices and 7 edges (or simply, stat'
+  greedy  (X,85tok,stop): 'A hexagon has **7** sides. |  | In the answer is **not a way is not done**, but in the context is **not a thing is not nothing**, please show work much pl'
+Q: What is $\frac{3}{5}$ expressed as a percentage?  [want 60/60\%]
+  sampled(X,1024tok,length): 'To express a fraction as a percentage, you must follow the logiclesses-of-math-of-result-of-logiclesses-of-math-of-result-of-logiclesses-of-math-of-re'
+  greedy  (X,1024tok,length): 'To express a fraction as a percentage, you must follow the logic of the "conversion to a percentage" method. |  | **The answer is 3/7/1/1/1/1/1/1/1/1/1/1/'
+Q: If $3 + x = 10$, find $x$.  [want 7]
+  sampled(OK,1024tok,length): 'To find $x$ by the equation $3 + x = 10$, step through the following mathematical steps: |  | **1. Equation:** | $$3 + x = 10$$ |  | **2. Subtract 3 from both s'
+  greedy  (OK,1024tok,length): 'To find $x$ by the equation $3 + x = 10$: |  | 1. Subtract $3$ from both sides of the equation to add its constant: | 2. $3 + x = 10$ | 3. Subtract $3$ from b'
+Q: What is $100 - 37$?  [want 63]
+  sampled(X,995tok,stop): "$100 - 37$ is **370** (Wait, I'll) is **370** (Wait, I'll) is **370** (Wait, I'll) is **370** (Wait, I'll) is **370** (Wait, I'll) is **370** (Wait, I"
+  greedy  (X,1024tok,length): "$100 - 37$ is **370** (No matter, but if you're intended to use the following steps for calculating the subtraction directly to subtract the number fr"
+Q: Solve for $y$: $5y = 45$.  [want 9]
+  sampled(X,1024tok,length): 'To solve the equation for $y$: |  | **Step 1: Given equation:** | $$5y = 45$$ |  | **Step 2: Apply the division property:** | Divide both sides of the equation by'
+  greedy  (X,1024tok,length): 'To solve the equation for $y$ given: |  | **Step-by-step:** |  | 1. **Identify the equation:** | $5y = 45$ |  | 2. **Divide both sides by 5:** | $\\frac{5y}{5} = \\frac'
+Q: What is the area of a square with side length 5?  [want 25]
+  sampled(OK,72tok,stop): 'If you are not enough to provide enough detailed steps to solve this question: | The area of a square is 1 of a side length 5 is **25** (through the for'
+  greedy  (X,1024tok,length): 'If you are not enough to provide enough details, but if you are not enough to provide enough details, please provide enough details, but if you are no'
+SCORE2 sampled=7/20 greedy=5/20 | mean_toks s=843 g=881 | stops s=5 g=3

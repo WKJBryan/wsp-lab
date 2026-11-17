@@ -1,0 +1,37 @@
+Q: What is 17 * 23? Answer with just the number.  [expect 391]
+  sampled(X, 12tok, stop): '17 * 23 is 7�7'
+  greedy  (X, 11tok, stop): '17 * 23 = 24'
+Q: What is the greatest common divisor of 48 and 64? Answer with just the number.  [expect 16]
+  sampled(X, 3tok, stop): '45'
+  greedy  (X, 3tok, stop): '45'
+Q: What is 2 + 3? Answer with just the number.  [expect 5]
+  sampled(OK, 8tok, stop): '2 + 3 = 5'
+  greedy  (X, 2tok, stop): '2'
+Q: What is 12 * 12? Answer with just the number.  [expect 144]
+  sampled(X, 3tok, stop): '12'
+  greedy  (X, 3tok, stop): '12'
+Q: What is 100 / 4? Answer with just the number.  [expect 25]
+  sampled(X, 4tok, stop): '100'
+  greedy  (X, 4tok, stop): '100'
+Q: What is 7 * 8? Answer with just the number.  [expect 56]
+  sampled(X, 2tok, stop): '7'
+  greedy  (X, 2tok, stop): '7'
+Q: What is the square root of 144? Answer with just the number.  [expect 12]
+  sampled(X, 59tok, stop): "$\\sqrt{144} \\approx 12.3266...$ |  | **12.356888...** | (Note: you'd't's) |  | $12.3568888...$"
+  greedy  (X, 1024tok, length): '$\\sqrt{144} \\approx 12.5880...$ |  | **12.5880...** (approxically) | **13.111...** (approxically) | **12.5880...** (approxically) | **13.111...** (approxically) | **12.5880...** (approxically)'
+Q: What is 15% of 200? Answer with just the number.  [expect 30]
+  sampled(X, 13tok, stop): '15% of 200 is 7.'
+  greedy  (X, 13tok, stop): '15% of 200 is 7.'
+Q: What is 3^4? Answer with just the number.  [expect 81]
+  sampled(X, 1024tok, length): '3^4 = 244 (No, incorrect error) |  | Wait there is a way to please... |  | No, incorrect error. |  | Wait there is a way to please... |  | No, incorrect error. |  | Wait there is a way to please... |  | N'
+  greedy  (X, 1024tok, length): '3^4 is 880. |  | Wait there is a way to let you think. |  | **8** (Wait there is a way to let you think. |  | **8** (Wait there is a way to let you think. |  | **8** (Wait there is a way to let yo'
+Q: What is -5 + 12? Answer with just the number.  [expect 7]
+  sampled(X, 11tok, stop): '-5 + 12 = 12'
+  greedy  (X, 11tok, stop): '-5 + 12 = 12'
+Q: Solve for x: 2x + 5 = 15. Answer with just the value of x.  [expect 5]
+  sampled(OK, 1024tok, length): 'To solve the equation: |  | **2x + 5 = 15** |  | 1. Subtract 5 from both sides: | **2x + 5 - 5 = 15 - 5** | **2x + 5 = 15** | **2x + 5 = 15** | **2x + 5 = 15** | **2x + 5 = 15** | **2x + 5 = 15** | **2x'
+  greedy  (OK, 1024tok, length): 'To solve for $x$: |  | **$2x + 5 = 15$** |  | **Step 1: Subtract 5 from both sides:** | $2x + 5 = 15 - 5$ | $2x + 5 = 15$ | $2x + 5 = 25$ | $2x + 5 = 25$ |  | **Step 2: Divide both sides by 2:** | $2x ='
+Q: What is 9 * 6? Answer with just the number.  [expect 54]
+  sampled(X, 10tok, stop): '9 * 6 is 9 6'
+  greedy  (X, 10tok, stop): '9 * 6 is 9 6'
+SCORE sampled=2/12 greedy=1/12

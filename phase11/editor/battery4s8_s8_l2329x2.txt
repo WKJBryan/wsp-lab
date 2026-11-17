@@ -1,0 +1,121 @@
+Q: What is $9 + 9$? [want 18] lastnum='11' 
+Q: What is $9 + 5$? [want 14] lastnum='9' 
+Q: What is $4 + 9$? [want 13] lastnum='12' 
+Q: What is $4 + 3$? [want 7] lastnum='7' OK
+Q: What is $9 + 6$? [want 15] lastnum='11' 
+Q: What is $4 + 3$? [want 7] lastnum='7' OK
+Q: What is $2 + 8$? [want 10] lastnum='10' OK
+Q: What is $9 + 4$? [want 13] lastnum='12' 
+Q: What is $2 + 3$? [want 5] lastnum='5' OK
+Q: What is $2 + 2$? [want 4] lastnum='4' OK
+Q: What is $5 + 5$? [want 10] lastnum='10' OK
+Q: What is $2 + 9$? [want 11] lastnum='11' OK
+Q: What is $52 + 67$? [want 119] lastnum='52' 
+Q: What is $86 + 36$? [want 122] lastnum='6' 
+Q: What is $77 + 40$? [want 117] lastnum='840' 
+Q: What is $92 + 48$? [want 140] lastnum='74' 
+Q: What is $74 + 11$? [want 85] lastnum='77' 
+Q: What is $95 + 21$? [want 116] lastnum='2' 
+Q: What is $69 + 94$? [want 163] lastnum='13' 
+Q: What is $46 + 63$? [want 109] lastnum='7' 
+Q: What is $81 + 21$? [want 102] lastnum='21' 
+Q: What is $43 + 51$? [want 94] lastnum='43' 
+Q: What is $40 + 76$? [want 116] lastnum='87' 
+Q: What is $47 + 14$? [want 61] lastnum='2' 
+Q: What is $13 - 38$? [want -25] lastnum='3' 
+Q: What is $18 - 8$? [want 10] lastnum='7' 
+Q: What is $18 - 11$? [want 7] lastnum='7' OK
+Q: What is $54 - 4$? [want 50] lastnum='34' 
+Q: What is $7 - 45$? [want -38] lastnum='36' 
+Q: What is $5 - 3$? [want 2] lastnum='-3' 
+Q: What is $31 - 2$? [want 29] lastnum='2' 
+Q: What is $65 - 14$? [want 51] lastnum='11' 
+Q: What is $95 - 27$? [want 68] lastnum='33' 
+Q: What is $58 - 6$? [want 52] lastnum='47' 
+Q: What is $77 - 42$? [want 35] lastnum='7' 
+Q: What is $30 - 45$? [want -15] lastnum='-105' 
+Q: What is $6 \times 7$? [want 42] lastnum='7' 
+Q: What is $3 \times 6$? [want 18] lastnum='3' 
+Q: What is $7 \times 2$? [want 14] lastnum='12' 
+Q: What is $8 \times 3$? [want 24] lastnum='8' 
+Q: What is $4 \times 5$? [want 20] lastnum='20' OK
+Q: What is $3 \times 2$? [want 6] lastnum='6' OK
+Q: What is $2 \times 9$? [want 18] lastnum='9' 
+Q: What is $9 \times 4$? [want 36] lastnum='9' 
+Q: What is $12 \times 10$? [want 120] lastnum='10' 
+Q: What is $5 \times 9$? [want 45] lastnum='6' 
+Q: What is $10 \times 5$? [want 50] lastnum='50' OK
+Q: What is $4 \times 8$? [want 32] lastnum='8' 
+Q: What is $96 \div 12$? [want 8] lastnum='8' OK
+Q: What is $24 \div 3$? [want 8] lastnum='8' OK
+Q: What is $40 \div 8$? [want 5] lastnum='8' 
+Q: What is $12 \div 2$? [want 6] lastnum='2' 
+Q: What is $66 \div 11$? [want 6] lastnum='5' 
+Q: What is $10 \div 2$? [want 5] lastnum='5' OK
+Q: What is $20\%$ of $80$? [want 16] lastnum='0.5' 
+Q: What is $75\%$ of $200$? [want 150] lastnum='200' 
+Q: What is $75\%$ of $20$? [want 15] lastnum='1' 
+Q: What is $10\%$ of $40$? [want 4] lastnum='10' 
+Q: What is $20\%$ of $80$? [want 16] lastnum='20' 
+Q: What is $25\%$ of $20$? [want 5] lastnum=None 
+Q: What is the smallest prime number? [want 2] lastnum='2' OK
+Q: What is the smallest composite number? [want 4] lastnum=None 
+Q: How many sides does a triangle have? [want 3] lastnum='3' OK
+Q: How many sides does a hexagon have? [want 6] lastnum='7' 
+Q: How many sides does an octagon have? [want 8] lastnum='8' OK
+Q: How many degrees are in a right angle? [want 90] lastnum='900' 
+Q: How many degrees are in a straight angle? [want 180] lastnum='110' 
+Q: How many degrees are in a full circle? [want 360] lastnum='200' 
+Q: How many minutes are in an hour? [want 60] lastnum='100' 
+Q: How many hours are in a day? [want 24] lastnum='100' 
+Q: How many days are in a week? [want 7] lastnum=None 
+Q: How many months are in a year? [want 12] lastnum='1' 
+Q: What is the value of $x$ if $x = 5$? [want 5] lastnum='5' OK
+Q: What is $2 + 2$? [want 4] lastnum='4' OK
+Q: What is $10 - 10$? [want 0] lastnum='0' OK
+Q: What is $1 \times 1$? [want 1] lastnum='1' OK
+Q: How many corners does a square have? [want 4] lastnum='4' OK
+Q: How many players are on a soccer team on the field? [want 11] lastnum=None 
+Q: What is the atomic number of hydrogen? [want 1] lastnum=None 
+Q: How many colors are in a rainbow? [want 7] lastnum=None 
+Q: What is $5 \times 5$? [want 25] lastnum='25' OK
+Q: What is $6 \times 7$? [want 42] lastnum='7' 
+Q: What is $100 + 100$? [want 200] lastnum='200' OK
+Q: What is $1000 - 1$? [want 999] lastnum='9900' 
+Q: A dozen equals how many? [want 12] lastnum='12' OK
+Q: How many wheels does a tricycle have? [want 3] lastnum='3' OK
+Q: How many strings does a standard guitar have? [want 6] lastnum=None 
+Q: What is the largest single-digit number? [want 9] lastnum='9' OK
+Q: What is the smallest positive even number? [want 2] lastnum='2' OK
+Q: How many letters are in the English alphabet? [want 26] lastnum='0' 
+Q: Solve for $x$: $7x = 77$. [want 11] lastnum='22' 
+Q: Solve for $x$: $3x = 12$. [want 4] lastnum='4' OK
+Q: Solve for $x$: $5x = 100$. [want 20] lastnum='4' 
+Q: Solve for $x$: $5x = 10$. [want 2] lastnum='2' OK
+Q: Solve for $x$: $7x = 91$. [want 13] lastnum='30' 
+Q: Solve for $x$: $9x = 54$. [want 6] lastnum='11' 
+Q: Solve for $x$: $9x = 180$. [want 20] lastnum='8.8' 
+Q: Solve for $x$: $8x = 56$. [want 7] lastnum='21' 
+Q: Solve for $x$: $4x = 44$. [want 11] lastnum='12' 
+Q: Solve for $x$: $5x = 40$. [want 8] lastnum='15' 
+Q: Solve for $x$: $5x = 70$. [want 14] lastnum='1' 
+Q: Solve for $x$: $3x = 45$. [want 15] lastnum='21' 
+Q: Solve for $x$: $3x = 15$. [want 5] lastnum='3' 
+Q: Solve for $x$: $6x = 54$. [want 9] lastnum='28' 
+Q: Solve for $x$: $8x = 80$. [want 10] lastnum='7' 
+Q: If $x + 39 = 67$, what is $x$? [want 28] lastnum='1' 
+Q: If $x + 19 = 36$, what is $x$? [want 17] lastnum='36' 
+Q: If $x + 12 = 30$, what is $x$? [want 18] lastnum='12' 
+Q: If $x + 5 = 30$, what is $x$? [want 25] lastnum='30' 
+Q: If $x + 15 = 21$, what is $x$? [want 6] lastnum='7' 
+Q: If $x + 36 = 53$, what is $x$? [want 17] lastnum='7' 
+Q: If $x + 40 = 62$, what is $x$? [want 22] lastnum='40' 
+Q: If $x + 5 = 26$, what is $x$? [want 21] lastnum='2' 
+Q: If $x + 14 = 24$, what is $x$? [want 10] lastnum='14' 
+Q: If $x + 2 = 10$, what is $x$? [want 8] lastnum='8' OK
+Q: If $x + 18 = 22$, what is $x$? [want 4] lastnum='24' 
+Q: If $x + 29 = 44$, what is $x$? [want 15] lastnum='3' 
+Q: If $x + 4 = 13$, what is $x$? [want 9] lastnum='4' 
+Q: If $x + 12 = 15$, what is $x$? [want 3] lastnum='15' 
+Q: If $x + 24 = 35$, what is $x$? [want 11] lastnum='7' 
+SCORE4 lastnum=31/120 first200=25/120 mean_tok=1342 stops=44/120

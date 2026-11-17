@@ -1,0 +1,188 @@
+### What is 17 * 23? Show your work briefly.  (T=28)
+layer |h_in| mean |u| mean |u|/|h_in| cos(u,h_in) [last pos] + same for mean over pos
+  L0  in=   74.25 upd=  109.20 ratio= 1.485 cos_mean=-0.634 last: in=   80.35 upd=  100.40 ratio= 1.250 cos=-0.747
+  L1  in=   84.24 upd=   80.81 ratio= 0.976 cos_mean=-0.496 last: in=   66.91 upd=   80.26 ratio= 1.200 cos=-0.536
+  L2  in=   83.77 upd=   84.95 ratio= 1.021 cos_mean=-0.558 last: in=   71.84 upd=   96.31 ratio= 1.341 cos=-0.481
+  L3  in=   78.50 upd=   61.37 ratio= 0.802 cos_mean=-0.281 last: in=   88.21 upd=   70.28 ratio= 0.797 cos=-0.533
+  L4  in=   85.55 upd=   48.27 ratio= 0.575 cos_mean=-0.380 last: in=   78.19 upd=   50.28 ratio= 0.643 cos=-0.295
+  L5  in=   80.57 upd=   47.37 ratio= 0.604 cos_mean=-0.186 last: in=   79.50 upd=   54.07 ratio= 0.680 cos= 0.042
+  L6  in=   86.01 upd=   40.51 ratio= 0.486 cos_mean=-0.281 last: in=   98.00 upd=   40.21 ratio= 0.410 cos=-0.435
+  L7  in=   84.50 upd=   47.53 ratio= 0.583 cos_mean=-0.080 last: in=   88.27 upd=   51.95 ratio= 0.589 cos= 0.074
+  L8  in=   93.77 upd=   50.73 ratio= 0.567 cos_mean=-0.108 last: in=  105.67 upd=   53.18 ratio= 0.503 cos=-0.027
+  L9  in=  102.29 upd=   50.50 ratio= 0.503 cos_mean= 0.153 last: in=  116.99 upd=   68.36 ratio= 0.584 cos=-0.255
+  L10 in=  120.80 upd=   63.11 ratio= 0.533 cos_mean=-0.150 last: in=  119.49 upd=   71.54 ratio= 0.599 cos=-0.272
+  L11 in=  127.50 upd=   67.33 ratio= 0.537 cos_mean=-0.198 last: in=  121.40 upd=   72.60 ratio= 0.598 cos=-0.287
+  L12 in=  132.22 upd=   40.54 ratio= 0.309 cos_mean=-0.174 last: in=  122.28 upd=   45.78 ratio= 0.374 cos=-0.182
+  L13 in=  132.20 upd=   40.24 ratio= 0.310 cos_mean=-0.563 last: in=  122.52 upd=   42.12 ratio= 0.344 cos=-0.661
+  L14 in=  115.22 upd=   44.03 ratio= 0.387 cos_mean=-0.566 last: in=   99.83 upd=   45.22 ratio= 0.453 cos=-0.533
+  L15 in=   96.96 upd=   47.69 ratio= 0.514 cos_mean=-0.273 last: in=   84.84 upd=   47.60 ratio= 0.561 cos=-0.260
+  L16 in=   94.88 upd=   43.16 ratio= 0.469 cos_mean=-0.388 last: in=   85.82 upd=   45.52 ratio= 0.530 cos=-0.385
+  L17 in=   87.98 upd=   63.37 ratio= 0.747 cos_mean=-0.498 last: in=   80.17 upd=   59.88 ratio= 0.747 cos=-0.364
+  L18 in=   79.07 upd=   58.73 ratio= 0.788 cos_mean=-0.552 last: in=   80.73 upd=   55.83 ratio= 0.692 cos=-0.511
+  L19 in=   67.67 upd=   51.19 ratio= 0.810 cos_mean=-0.250 last: in=   70.87 upd=   56.60 ratio= 0.799 cos= 0.028
+  L20 in=   74.39 upd=   32.05 ratio= 0.442 cos_mean=-0.095 last: in=   91.95 upd=   31.85 ratio= 0.346 cos=-0.206
+  L21 in=   77.39 upd=   31.14 ratio= 0.413 cos_mean=-0.284 last: in=   90.88 upd=   42.49 ratio= 0.468 cos=-0.211
+  L22 in=   75.35 upd=   39.59 ratio= 0.551 cos_mean=-0.317 last: in=   91.85 upd=   42.89 ratio= 0.467 cos=-0.404
+  L23 in=   73.34 upd=   35.10 ratio= 0.503 cos_mean=-0.476 last: in=   84.23 upd=   36.54 ratio= 0.434 cos=-0.379
+  L24 in=   65.36 upd=   24.76 ratio= 0.376 cos_mean=-0.433 last: in=   78.07 upd=   33.44 ratio= 0.428 cos=-0.300
+  L25 in=   58.59 upd=   26.44 ratio= 0.460 cos_mean=-0.206 last: in=   75.16 upd=   36.83 ratio= 0.490 cos=-0.416
+  L26 in=   58.23 upd=   45.03 ratio= 0.814 cos_mean=-0.620 last: in=   68.56 upd=   55.71 ratio= 0.813 cos=-0.599
+  L27 in=   47.41 upd=   38.36 ratio= 0.831 cos_mean=-0.437 last: in=   56.82 upd=   40.39 ratio= 0.711 cos=-0.382
+  L28 in=   45.59 upd=   42.47 ratio= 0.936 cos_mean=-0.574 last: in=   55.74 upd=   42.37 ratio= 0.760 cos=-0.436
+  L29 in=   41.79 upd=  237.77 ratio= 6.549 cos_mean= 0.001 last: in=   53.30 upd=  113.42 ratio= 2.128 cos= 0.086
+update_i . update_j (last pos) for consecutive pairs:
+  u0·u1 = -0.307
+  u1·u2 = -0.326
+  u2·u3 = -0.291
+  u3·u4 = -0.016
+  u4·u5 = +0.283
+  u5·u6 = -0.025
+  u6·u7 = +0.339
+  u7·u8 = +0.138
+  u8·u9 = +0.073
+  u9·u10 = +0.122
+  u10·u11 = +0.136
+  u11·u12 = +0.115
+  u12·u13 = -0.026
+  u13·u14 = +0.262
+  u14·u15 = +0.098
+  u15·u16 = -0.086
+  u16·u17 = -0.031
+  u17·u18 = -0.499
+  u18·u19 = -0.056
+  u19·u20 = -0.049
+  u20·u21 = +0.320
+  u21·u22 = +0.324
+  u22·u23 = +0.089
+  u23·u24 = +0.060
+  u24·u25 = -0.035
+  u25·u26 = +0.153
+  u26·u27 = -0.432
+  u27·u28 = -0.288
+  u28·u29 = -0.137
+
+### What is the greatest common divisor of 48 and 64? Answer with just the number.  (T=34)
+layer |h_in| mean |u| mean |u|/|h_in| cos(u,h_in) [last pos] + same for mean over pos
+  L0  in=   74.60 upd=  110.48 ratio= 1.493 cos_mean=-0.628 last: in=   80.35 upd=  100.33 ratio= 1.249 cos=-0.747
+  L1  in=   85.73 upd=   79.37 ratio= 0.950 cos_mean=-0.495 last: in=   66.89 upd=   79.74 ratio= 1.192 cos=-0.526
+  L2  in=   84.57 upd=   87.08 ratio= 1.030 cos_mean=-0.552 last: in=   72.26 upd=   96.27 ratio= 1.332 cos=-0.482
+  L3  in=   80.68 upd=   61.30 ratio= 0.780 cos_mean=-0.280 last: in=   88.25 upd=   67.47 ratio= 0.765 cos=-0.552
+  L4  in=   87.13 upd=   49.46 ratio= 0.581 cos_mean=-0.386 last: in=   75.97 upd=   50.23 ratio= 0.661 cos=-0.237
+  L5  in=   81.72 upd=   45.69 ratio= 0.576 cos_mean=-0.140 last: in=   80.54 upd=   53.68 ratio= 0.666 cos= 0.031
+  L6  in=   88.28 upd=   42.82 ratio= 0.496 cos_mean=-0.280 last: in=   98.18 upd=   39.42 ratio= 0.402 cos=-0.539
+  L7  in=   87.18 upd=   47.78 ratio= 0.565 cos_mean=-0.080 last: in=   83.81 upd=   48.25 ratio= 0.576 cos=-0.017
+  L8  in=   96.21 upd=   51.37 ratio= 0.557 cos_mean=-0.115 last: in=   96.00 upd=   51.28 ratio= 0.534 cos= 0.073
+  L9  in=  104.12 upd=   49.47 ratio= 0.484 cos_mean= 0.176 last: in=  112.09 upd=   58.95 ratio= 0.526 cos=-0.055
+  L10 in=  122.91 upd=   62.59 ratio= 0.519 cos_mean=-0.169 last: in=  123.77 upd=   69.14 ratio= 0.559 cos=-0.265
+  L11 in=  127.92 upd=   66.04 ratio= 0.524 cos_mean=-0.192 last: in=  124.73 upd=   72.99 ratio= 0.585 cos=-0.293
+  L12 in=  132.45 upd=   40.51 ratio= 0.308 cos_mean=-0.189 last: in=  124.71 upd=   57.05 ratio= 0.457 cos= 0.013
+  L13 in=  131.95 upd=   41.58 ratio= 0.320 cos_mean=-0.565 last: in=  137.81 upd=   56.72 ratio= 0.412 cos=-0.393
+  L14 in=  114.55 upd=   43.92 ratio= 0.388 cos_mean=-0.556 last: in=  126.74 upd=   60.05 ratio= 0.474 cos=-0.524
+  L15 in=   96.78 upd=   47.08 ratio= 0.506 cos_mean=-0.256 last: in=  108.15 upd=   63.30 ratio= 0.585 cos=-0.291
+  L16 in=   95.57 upd=   43.62 ratio= 0.468 cos_mean=-0.388 last: in=  108.23 upd=   64.94 ratio= 0.600 cos=-0.350
+  L17 in=   88.53 upd=   64.85 ratio= 0.758 cos_mean=-0.500 last: in=  104.95 upd=   67.48 ratio= 0.643 cos=-0.321
+  L18 in=   79.77 upd=   59.02 ratio= 0.782 cos_mean=-0.541 last: in=  104.99 upd=   59.96 ratio= 0.571 cos=-0.432
+  L19 in=   69.16 upd=   51.55 ratio= 0.791 cos_mean=-0.305 last: in=   95.79 upd=   61.51 ratio= 0.642 cos=-0.256
+  L20 in=   73.11 upd=   31.20 ratio= 0.436 cos_mean=-0.091 last: in=   99.69 upd=   38.32 ratio= 0.384 cos=-0.522
+  L21 in=   76.00 upd=   31.17 ratio= 0.420 cos_mean=-0.300 last: in=   86.14 upd=   40.81 ratio= 0.474 cos=-0.357
+  L22 in=   73.37 upd=   39.04 ratio= 0.552 cos_mean=-0.321 last: in=   81.09 upd=   37.77 ratio= 0.466 cos=-0.511
+  L23 in=   71.38 upd=   36.33 ratio= 0.532 cos_mean=-0.458 last: in=   69.80 upd=   32.30 ratio= 0.463 cos=-0.457
+  L24 in=   64.28 upd=   26.08 ratio= 0.405 cos_mean=-0.405 last: in=   62.07 upd=   27.93 ratio= 0.450 cos=-0.222
+  L25 in=   58.44 upd=   27.91 ratio= 0.485 cos_mean=-0.162 last: in=   62.15 upd=   33.92 ratio= 0.546 cos=-0.310
+  L26 in=   59.91 upd=   45.37 ratio= 0.789 cos_mean=-0.608 last: in=   60.86 upd=   49.86 ratio= 0.819 cos=-0.470
+  L27 in=   49.12 upd=   38.98 ratio= 0.811 cos_mean=-0.440 last: in=   57.79 upd=   45.73 ratio= 0.791 cos=-0.402
+  L28 in=   47.05 upd=   43.29 ratio= 0.927 cos_mean=-0.594 last: in=   57.52 upd=   49.34 ratio= 0.858 cos=-0.419
+  L29 in=   42.10 upd=  230.84 ratio= 6.191 cos_mean=-0.017 last: in=   58.02 upd=  131.17 ratio= 2.261 cos=-0.032
+update_i . update_j (last pos) for consecutive pairs:
+  u0·u1 = -0.299
+  u1·u2 = -0.321
+  u2·u3 = -0.314
+  u3·u4 = +0.008
+  u4·u5 = +0.247
+  u5·u6 = -0.117
+  u6·u7 = +0.430
+  u7·u8 = +0.187
+  u8·u9 = +0.118
+  u9·u10 = +0.017
+  u10·u11 = -0.030
+  u11·u12 = +0.354
+  u12·u13 = -0.038
+  u13·u14 = +0.021
+  u14·u15 = +0.087
+  u15·u16 = -0.078
+  u16·u17 = +0.025
+  u17·u18 = -0.175
+  u18·u19 = -0.265
+  u19·u20 = -0.158
+  u20·u21 = +0.126
+  u21·u22 = +0.211
+  u22·u23 = +0.066
+  u23·u24 = +0.128
+  u24·u25 = -0.077
+  u25·u26 = -0.038
+  u26·u27 = -0.411
+  u27·u28 = -0.254
+  u28·u29 = -0.082
+
+### Solve for x: 2x + 5 = 15.  (T=28)
+layer |h_in| mean |u| mean |u|/|h_in| cos(u,h_in) [last pos] + same for mean over pos
+  L0  in=   73.21 upd=  109.23 ratio= 1.505 cos_mean=-0.629 last: in=   80.35 upd=  100.85 ratio= 1.255 cos=-0.744
+  L1  in=   84.72 upd=   77.30 ratio= 0.932 cos_mean=-0.491 last: in=   67.65 upd=   79.69 ratio= 1.178 cos=-0.534
+  L2  in=   83.02 upd=   82.01 ratio= 0.995 cos_mean=-0.557 last: in=   71.87 upd=   99.12 ratio= 1.379 cos=-0.498
+  L3  in=   76.58 upd=   60.37 ratio= 0.805 cos_mean=-0.298 last: in=   88.87 upd=   66.20 ratio= 0.745 cos=-0.538
+  L4  in=   82.83 upd=   47.91 ratio= 0.592 cos_mean=-0.340 last: in=   77.12 upd=   50.80 ratio= 0.659 cos=-0.214
+  L5  in=   80.38 upd=   47.03 ratio= 0.601 cos_mean=-0.148 last: in=   82.75 upd=   51.99 ratio= 0.628 cos= 0.009
+  L6  in=   87.22 upd=   40.97 ratio= 0.483 cos_mean=-0.244 last: in=   98.10 upd=   38.17 ratio= 0.389 cos=-0.477
+  L7  in=   87.15 upd=   47.31 ratio= 0.557 cos_mean=-0.046 last: in=   86.64 upd=   50.22 ratio= 0.580 cos= 0.053
+  L8  in=   97.64 upd=   51.41 ratio= 0.552 cos_mean=-0.140 last: in=  102.40 upd=   54.22 ratio= 0.529 cos= 0.163
+  L9  in=  104.24 upd=   52.88 ratio= 0.522 cos_mean= 0.139 last: in=  123.41 upd=   60.26 ratio= 0.488 cos=-0.061
+  L10 in=  123.22 upd=   63.34 ratio= 0.523 cos_mean=-0.106 last: in=  134.02 upd=   67.96 ratio= 0.507 cos=-0.341
+  L11 in=  132.09 upd=   69.67 ratio= 0.535 cos_mean=-0.213 last: in=  127.94 upd=   65.84 ratio= 0.515 cos=-0.393
+  L12 in=  135.82 upd=   43.86 ratio= 0.327 cos_mean=-0.146 last: in=  118.67 upd=   55.97 ratio= 0.472 cos=-0.060
+  L13 in=  137.04 upd=   40.62 ratio= 0.303 cos_mean=-0.524 last: in=  128.13 upd=   49.42 ratio= 0.386 cos=-0.460
+  L14 in=  121.44 upd=   46.53 ratio= 0.391 cos_mean=-0.604 last: in=  114.16 upd=   50.12 ratio= 0.439 cos=-0.548
+  L15 in=  100.45 upd=   51.17 ratio= 0.538 cos_mean=-0.303 last: in=   96.30 upd=   63.86 ratio= 0.663 cos=-0.230
+  L16 in=   97.21 upd=   47.19 ratio= 0.502 cos_mean=-0.406 last: in=  102.57 upd=   62.36 ratio= 0.608 cos=-0.467
+  L17 in=   89.33 upd=   63.43 ratio= 0.732 cos_mean=-0.481 last: in=   91.83 upd=   62.07 ratio= 0.676 cos=-0.368
+  L18 in=   81.06 upd=   59.01 ratio= 0.766 cos_mean=-0.525 last: in=   89.95 upd=   58.90 ratio= 0.655 cos=-0.402
+  L19 in=   70.69 upd=   53.68 ratio= 0.809 cos_mean=-0.328 last: in=   85.44 upd=   66.28 ratio= 0.776 cos=-0.302
+  L20 in=   74.15 upd=   32.76 ratio= 0.452 cos_mean=-0.126 last: in=   90.92 upd=   38.10 ratio= 0.419 cos=-0.443
+  L21 in=   76.72 upd=   30.85 ratio= 0.413 cos_mean=-0.251 last: in=   81.53 upd=   40.31 ratio= 0.494 cos=-0.305
+  L22 in=   75.59 upd=   39.59 ratio= 0.548 cos_mean=-0.317 last: in=   79.18 upd=   44.88 ratio= 0.567 cos=-0.417
+  L23 in=   73.54 upd=   35.81 ratio= 0.507 cos_mean=-0.454 last: in=   72.95 upd=   42.02 ratio= 0.576 cos=-0.378
+  L24 in=   66.46 upd=   26.69 ratio= 0.402 cos_mean=-0.452 last: in=   69.05 upd=   40.53 ratio= 0.587 cos=-0.335
+  L25 in=   59.24 upd=   26.34 ratio= 0.447 cos_mean=-0.237 last: in=   67.34 upd=   38.66 ratio= 0.574 cos=-0.328
+  L26 in=   58.15 upd=   43.85 ratio= 0.788 cos_mean=-0.610 last: in=   65.74 upd=   49.08 ratio= 0.747 cos=-0.401
+  L27 in=   47.66 upd=   38.89 ratio= 0.836 cos_mean=-0.426 last: in=   64.34 upd=   52.17 ratio= 0.811 cos=-0.392
+  L28 in=   46.35 upd=   41.83 ratio= 0.904 cos_mean=-0.588 last: in=   65.02 upd=   42.76 ratio= 0.658 cos=-0.579
+  L29 in=   41.52 upd=  221.44 ratio= 6.164 cos_mean= 0.005 last: in=   53.27 upd=  142.32 ratio= 2.672 cos= 0.169
+update_i . update_j (last pos) for consecutive pairs:
+  u0·u1 = -0.306
+  u1·u2 = -0.318
+  u2·u3 = -0.331
+  u3·u4 = +0.001
+  u4·u5 = +0.257
+  u5·u6 = -0.004
+  u6·u7 = +0.402
+  u7·u8 = +0.249
+  u8·u9 = +0.067
+  u9·u10 = -0.018
+  u10·u11 = +0.074
+  u11·u12 = +0.314
+  u12·u13 = -0.008
+  u13·u14 = +0.132
+  u14·u15 = +0.129
+  u15·u16 = -0.216
+  u16·u17 = +0.015
+  u17·u18 = -0.116
+  u18·u19 = -0.410
+  u19·u20 = -0.173
+  u20·u21 = +0.165
+  u21·u22 = +0.116
+  u22·u23 = -0.099
+  u23·u24 = +0.031
+  u24·u25 = -0.102
+  u25·u26 = -0.064
+  u26·u27 = -0.288
+  u27·u28 = -0.298
+  u28·u29 = -0.099

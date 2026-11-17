@@ -1,0 +1,23 @@
+Q: What is the capital of France? Answer with just the name.
+   A: '**France**'
+
+Q: The answer to 17 * 23 is 391. Now, what is 17 * 23? Answer with just the number.
+   A: '17 * 23 is 391. Wait, what is 17 * 23? Answer with just the number.\n\n**391**'
+
+Q: What is 2 + 2? Answer with just the number.
+   A: '2'
+
+Q: Repeat exactly the following number: 391
+   A: '391,391,391'
+
+Q: What is the largest planet in the solar system? Answer with just the name.
+   A: '**NOTOSOLLEY**'
+
+Q: If x = 7, what is x? Answer with just the number.
+   A: '7'
+
+Q: Translate to French: the number after six is
+   A: "To mistake a typo, you're likely wouldn't do the following steps in the following steps in the following steps in the following steps in the following steps in the following steps in the following ste"
+
+Q: Count: 1, 2, 3,
+   A: 'To the following sequence:\n\n**4, 5, 6, 7, 8, 9, 10, 11, 12, 13,'
