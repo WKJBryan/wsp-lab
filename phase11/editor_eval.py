@@ -27,9 +27,14 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--name", required=True)
     ap.add_argument("--hypothesis", required=True)
+    ap.add_argument("--outdir", default=str(EDITORD),
+                    help="editor session dir (passes/ledger/logs); Am.#3: editor_flash for the GLM-5.3-Flash rerun")
     args = ap.parse_args()
 
-    used = int(PASSES.read_text()) if PASSES.exists() else 0
+    outdir = Path(args.outdir)
+    passes_file = outdir / "passes.txt"
+    ledger_file = outdir / "ledger.md"
+    used = int(passes_file.read_text()) if passes_file.exists() else 0
     if used >= MAX_PASSES:
         print(json.dumps({"refused": True, "reason": "budget exhausted",
                           "used": used, "max": MAX_PASSES}))

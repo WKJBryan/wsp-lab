@@ -68,6 +68,22 @@ before the session runs. All other mechanics unchanged: 10-pass budget (counter
 enforced), pre-logged hypotheses, unlimited offline probing, forbidden gradients/
 LoRA/distillation/prompt changes, identical evaluator.
 
+## Amendment #3 (2026-11-17, user-directed, before the rerun session)
+
+**A2 rerun with the originally-registered editor.** Post-session discovery: the editor
+models (GLM-5.3-Flash, mimo) are configured as host-routed providers in the user's
+environment — the 4 AM "insufficient balance" wall was the legacy raw-API path
+(`GLM_API_KEY` + api.z.ai), not a real shortage (user: "why not use workflow and
+activate the keys and models I have inserted into you already?" — correct). The
+pre-registered editor is therefore runnable as a context-sterile subagent pinned to
+`GLM-5.3-Flash`. Scope: **A2 arm only.** A0/A1 finals stand (weight-identical
+checkpoints, unchanged settings). The first A2 result (session-model editor, NULL,
+5/10 passes) is retained and reported as **A2-session**; the rerun reports as
+**A2-flash** with its own ledger (`editor_flash/`), fresh sterile sandbox, identical
+blind prompt, identical 10-pass budget and rules. Outcome either way strengthens the
+phase: A2-flash SUCCESS overturns the NULL with the registered editor; A2-flash NULL
+confirms it cross-editor (the phase-4 tradition, now on the prune wound).
+
 ## Pre-registered endpoints
 
 - **Primary** (final MATH-500 accuracy):
