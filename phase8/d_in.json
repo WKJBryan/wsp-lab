@@ -1,0 +1,5025 @@
+{
+ "summary": {
+  "name": "d_in",
+  "model": "/home/user/wsp8/d_in",
+  "n": 500,
+  "settings": {
+   "model": "/home/user/wsp8/d_in",
+   "name": "d_in",
+   "n": 500,
+   "no_think": false,
+   "card_nonthink": false,
+   "logit_bias": null,
+   "force_from": null,
+   "gmu": 0.92
+  },
+  "accuracy": 5.8,
+  "answered": 10.4,
+  "finished": 10.2,
+  "mean_tokens": 29911,
+  "wall_s": 3057.2
+ },
+ "prompt0": "<|im_start|>user\nConvert the point $(0,3)$ in rectangular coordinates to polar coordinates.  Enter your answer in the form $(r,\\theta),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$<|im_end|>\n<|im_start|>assistant\n<think>\n",
+ "rows": [
+  {
+   "id": "m0",
+   "gold": "\\left( 3, \\frac{\\pi}{2} \\right)",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m1",
+   "gold": "p - q",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m2",
+   "gold": "\\frac{14}{3}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m3",
+   "gold": "9",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m4",
+   "gold": "\\text{Evelyn}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m5",
+   "gold": "42",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m6",
+   "gold": "27",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m7",
+   "gold": "90^\\circ",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m8",
+   "gold": "3\\sqrt{13}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m9",
+   "gold": "4",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m10",
+   "gold": "2220",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m11",
+   "gold": "\\frac{3}{56}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m12",
+   "gold": "284",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m13",
+   "gold": "5",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m14",
+   "gold": "\\sqrt{51}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m15",
+   "gold": "6 - 5i",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m16",
+   "gold": "-50",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m17",
+   "gold": "\\pi",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m18",
+   "gold": "28",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m19",
+   "gold": "3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m20",
+   "gold": "6+9i",
+   "finish": "stop",
+   "n_tokens": 1156,
+   "closed": true,
+   "think_end_at": 951,
+   "pred_rescored": "9",
+   "ok_rescored": false
+  },
+  {
+   "id": "m21",
+   "gold": "13535",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m22",
+   "gold": "5",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m23",
+   "gold": "x=5",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m24",
+   "gold": "10",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m25",
+   "gold": "1,-2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m26",
+   "gold": "144",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m27",
+   "gold": "78",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m28",
+   "gold": "-2 + 7i",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m29",
+   "gold": "225",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m30",
+   "gold": "52_8",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m31",
+   "gold": "11\\sqrt2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m32",
+   "gold": "720",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m33",
+   "gold": "\\frac{243}{625}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m34",
+   "gold": "-125",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m35",
+   "gold": "3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m36",
+   "gold": "3, 5, 7",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m37",
+   "gold": "72",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m38",
+   "gold": "2000",
+   "finish": "stop",
+   "n_tokens": 7821,
+   "closed": true,
+   "think_end_at": 7536,
+   "pred_rescored": "2,000",
+   "ok_rescored": false
+  },
+  {
+   "id": "m39",
+   "gold": "23",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m40",
+   "gold": "12",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m41",
+   "gold": "17",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m42",
+   "gold": "4",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m43",
+   "gold": "70 \\sqrt{2}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m44",
+   "gold": "1.25",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m45",
+   "gold": "2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m46",
+   "gold": "6",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m47",
+   "gold": "5",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m48",
+   "gold": "\\frac{3}{2}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m49",
+   "gold": "83",
+   "finish": "stop",
+   "n_tokens": 1082,
+   "closed": true,
+   "think_end_at": 804,
+   "pred_rescored": "x",
+   "ok_rescored": false
+  },
+  {
+   "id": "m50",
+   "gold": "203",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m51",
+   "gold": "x^5 - x^4 + x^3 - x^2 + x - 1",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m52",
+   "gold": "12",
+   "finish": "stop",
+   "n_tokens": 6353,
+   "closed": true,
+   "think_end_at": 5874,
+   "pred_rescored": "12",
+   "ok_rescored": true
+  },
+  {
+   "id": "m53",
+   "gold": "-\\frac{\\pi}{6}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m54",
+   "gold": "0.15",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m55",
+   "gold": "3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m56",
+   "gold": "11",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m57",
+   "gold": "16",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m58",
+   "gold": "9901",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m59",
+   "gold": "5",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m60",
+   "gold": "(6,31,-1)",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m61",
+   "gold": "-256",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m62",
+   "gold": "4",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m63",
+   "gold": "10",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m64",
+   "gold": "\\frac{35}{64}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m65",
+   "gold": "1",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m66",
+   "gold": "x^3+3x-6",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m67",
+   "gold": "10",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m68",
+   "gold": "46",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m69",
+   "gold": "-1",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m70",
+   "gold": "40_9",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m71",
+   "gold": "2516_8",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m72",
+   "gold": "3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m73",
+   "gold": "\\frac{3\\sqrt{3}}{4}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m74",
+   "gold": "\\cot x",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m75",
+   "gold": "\\frac{11}{36}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m76",
+   "gold": "0",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m77",
+   "gold": "4",
+   "finish": "stop",
+   "n_tokens": 2319,
+   "closed": true,
+   "think_end_at": 2069,
+   "pred_rescored": "x",
+   "ok_rescored": false
+  },
+  {
+   "id": "m78",
+   "gold": "(-2,1)",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m79",
+   "gold": "2",
+   "finish": "stop",
+   "n_tokens": 1452,
+   "closed": true,
+   "think_end_at": 1232,
+   "pred_rescored": "x",
+   "ok_rescored": false
+  },
+  {
+   "id": "m80",
+   "gold": "501",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m81",
+   "gold": "3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m82",
+   "gold": "\\frac{3}{2}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m83",
+   "gold": "2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m84",
+   "gold": "-1",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m85",
+   "gold": "\\sqrt{5}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m86",
+   "gold": "240",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m87",
+   "gold": "1",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m88",
+   "gold": "2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m89",
+   "gold": "21",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m90",
+   "gold": "\\frac{3}{2}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m91",
+   "gold": "1",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m92",
+   "gold": "\\frac{448}{15625}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m93",
+   "gold": "33",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m94",
+   "gold": "80",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m95",
+   "gold": "-4",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m96",
+   "gold": "1 \\pm \\sqrt{19}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m97",
+   "gold": "\\text{east}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m98",
+   "gold": "2k+2",
+   "finish": "stop",
+   "n_tokens": 2238,
+   "closed": true,
+   "think_end_at": 1995,
+   "pred_rescored": "2",
+   "ok_rescored": false
+  },
+  {
+   "id": "m99",
+   "gold": "\\begin{pmatrix} -1/3 \\\\ 2/3 \\\\ 5/3 \\end{pmatrix}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m100",
+   "gold": "145^\\circ",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m101",
+   "gold": "850",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m102",
+   "gold": "(a+5)(b+2)",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m103",
+   "gold": "(3,4]",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m104",
+   "gold": "40",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m105",
+   "gold": "29",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m106",
+   "gold": "\\frac43",
+   "finish": "stop",
+   "n_tokens": 7062,
+   "closed": true,
+   "think_end_at": 6718,
+   "pred_rescored": "\\frac{4}{3}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m107",
+   "gold": "9",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m108",
+   "gold": "2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m109",
+   "gold": "120^\\circ",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m110",
+   "gold": "504",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m111",
+   "gold": "210",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m112",
+   "gold": "13",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m113",
+   "gold": "8000",
+   "finish": "stop",
+   "n_tokens": 5421,
+   "closed": true,
+   "think_end_at": 4982,
+   "pred_rescored": "8000",
+   "ok_rescored": true
+  },
+  {
+   "id": "m114",
+   "gold": "-5",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m115",
+   "gold": "1260",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m116",
+   "gold": "2",
+   "finish": "stop",
+   "n_tokens": 2892,
+   "closed": true,
+   "think_end_at": 2606,
+   "pred_rescored": "x",
+   "ok_rescored": false
+  },
+  {
+   "id": "m117",
+   "gold": "3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m118",
+   "gold": "81",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m119",
+   "gold": "-9",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m120",
+   "gold": "\\text{even}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m121",
+   "gold": "6",
+   "finish": "stop",
+   "n_tokens": 3411,
+   "closed": true,
+   "think_end_at": 3128,
+   "pred_rescored": "6",
+   "ok_rescored": true
+  },
+  {
+   "id": "m122",
+   "gold": "9",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m123",
+   "gold": "8",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m124",
+   "gold": "\\frac{11}{2}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m125",
+   "gold": "-3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m126",
+   "gold": "1+274i",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m127",
+   "gold": "4210_{5}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m128",
+   "gold": "36",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m129",
+   "gold": "\\frac{3840}{289}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m130",
+   "gold": "13",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m131",
+   "gold": "8",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m132",
+   "gold": "4",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m133",
+   "gold": "120",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m134",
+   "gold": "16",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m135",
+   "gold": "9",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m136",
+   "gold": "64",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m137",
+   "gold": "204_5",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m138",
+   "gold": "\\frac{1}{3}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m139",
+   "gold": "1",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m140",
+   "gold": "13",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m141",
+   "gold": "2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m142",
+   "gold": "28800",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m143",
+   "gold": "3 \\sqrt{5}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m144",
+   "gold": "(15,-29)",
+   "finish": "stop",
+   "n_tokens": 3024,
+   "closed": true,
+   "think_end_at": 2782,
+   "pred_rescored": "2",
+   "ok_rescored": false
+  },
+  {
+   "id": "m145",
+   "gold": "-2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m146",
+   "gold": "\\frac{\\sqrt{3}}{3}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m147",
+   "gold": "16",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m148",
+   "gold": "11",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m149",
+   "gold": "49",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m150",
+   "gold": "1",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m151",
+   "gold": "144",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m152",
+   "gold": "8",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m153",
+   "gold": "\\frac{2}{21}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m154",
+   "gold": "2\\sqrt{113}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m155",
+   "gold": "\\frac{1}{4}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m156",
+   "gold": "30^\\circ",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m157",
+   "gold": "\\frac65",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m158",
+   "gold": "2107",
+   "finish": "stop",
+   "n_tokens": 22396,
+   "closed": true,
+   "think_end_at": 21207,
+   "pred_rescored": "2107",
+   "ok_rescored": true
+  },
+  {
+   "id": "m159",
+   "gold": "3.21",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m160",
+   "gold": "18",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m161",
+   "gold": "6",
+   "finish": "stop",
+   "n_tokens": 3233,
+   "closed": true,
+   "think_end_at": 3080,
+   "pred_rescored": "6",
+   "ok_rescored": true
+  },
+  {
+   "id": "m162",
+   "gold": "\\dfrac{17}{50}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m163",
+   "gold": "-\\frac{35}{9}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m164",
+   "gold": "-\\sqrt{3}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m165",
+   "gold": "\\frac{4}{9}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m166",
+   "gold": "\\frac{270}7\\text{ degrees}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m167",
+   "gold": "65",
+   "finish": "stop",
+   "n_tokens": 5265,
+   "closed": true,
+   "think_end_at": 5026,
+   "pred_rescored": "65",
+   "ok_rescored": true
+  },
+  {
+   "id": "m168",
+   "gold": "19",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m169",
+   "gold": "12",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m170",
+   "gold": "1736",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m171",
+   "gold": "\\frac{13}{15}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m172",
+   "gold": "350",
+   "finish": "stop",
+   "n_tokens": 2861,
+   "closed": true,
+   "think_end_at": 2410,
+   "pred_rescored": "350",
+   "ok_rescored": true
+  },
+  {
+   "id": "m173",
+   "gold": "4",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m174",
+   "gold": "2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m175",
+   "gold": "3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m176",
+   "gold": ".0000672",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m177",
+   "gold": "30^\\circ",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m178",
+   "gold": "60",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m179",
+   "gold": "5x - 7y + 11z + 4 = 0",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m180",
+   "gold": "3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m181",
+   "gold": "\\frac{\\sqrt{3}}{3}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m182",
+   "gold": "1251",
+   "finish": "stop",
+   "n_tokens": 4181,
+   "closed": true,
+   "think_end_at": 3801,
+   "pred_rescored": "251",
+   "ok_rescored": false
+  },
+  {
+   "id": "m183",
+   "gold": "23",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m184",
+   "gold": "(2,\\infty)",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m185",
+   "gold": "1",
+   "finish": "stop",
+   "n_tokens": 889,
+   "closed": true,
+   "think_end_at": 670,
+   "pred_rescored": "1",
+   "ok_rescored": true
+  },
+  {
+   "id": "m186",
+   "gold": "7",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m187",
+   "gold": "7",
+   "finish": "stop",
+   "n_tokens": 1218,
+   "closed": true,
+   "think_end_at": 907,
+   "pred_rescored": "7",
+   "ok_rescored": true
+  },
+  {
+   "id": "m188",
+   "gold": "6",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m189",
+   "gold": "160",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m190",
+   "gold": "\\frac{13}{18}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m191",
+   "gold": "0",
+   "finish": "stop",
+   "n_tokens": 4482,
+   "closed": true,
+   "think_end_at": 4175,
+   "pred_rescored": "b",
+   "ok_rescored": false
+  },
+  {
+   "id": "m192",
+   "gold": "30",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m193",
+   "gold": "4",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m194",
+   "gold": "\\frac{1}{4}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m195",
+   "gold": "24",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m196",
+   "gold": "1600",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m197",
+   "gold": "6",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m198",
+   "gold": "10,\\!080",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m199",
+   "gold": "17",
+   "finish": "stop",
+   "n_tokens": 1245,
+   "closed": true,
+   "think_end_at": 956,
+   "pred_rescored": "x",
+   "ok_rescored": false
+  },
+  {
+   "id": "m200",
+   "gold": "40",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m201",
+   "gold": "66",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m202",
+   "gold": "\\frac{2}{3}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m203",
+   "gold": "12",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m204",
+   "gold": "0",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m205",
+   "gold": "\\begin{pmatrix} -2 \\\\ -14 \\\\ -7 \\end{pmatrix}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m206",
+   "gold": "\\left( \\frac{3}{2}, -13 \\right)",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m207",
+   "gold": "28",
+   "finish": "stop",
+   "n_tokens": 4556,
+   "closed": true,
+   "think_end_at": 4242,
+   "pred_rescored": "28",
+   "ok_rescored": true
+  },
+  {
+   "id": "m208",
+   "gold": "1",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m209",
+   "gold": "16",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m210",
+   "gold": "10",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m211",
+   "gold": "5",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m212",
+   "gold": "56",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m213",
+   "gold": "2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m214",
+   "gold": "110",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m215",
+   "gold": "2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m216",
+   "gold": "6",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m217",
+   "gold": "11,\\! 111,\\! 111,\\! 100",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m218",
+   "gold": "(-1,6)",
+   "finish": "stop",
+   "n_tokens": 1210,
+   "closed": true,
+   "think_end_at": 941,
+   "pred_rescored": "(3,7)",
+   "ok_rescored": false
+  },
+  {
+   "id": "m219",
+   "gold": "\\frac{1}{2}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m220",
+   "gold": "\\frac{16}{27}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m221",
+   "gold": "900",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m222",
+   "gold": "54",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m223",
+   "gold": "14",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m224",
+   "gold": "\\frac{9}{256}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m225",
+   "gold": "11",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m226",
+   "gold": "3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m227",
+   "gold": "\\text{(C)}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m228",
+   "gold": "288 \\pi",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m229",
+   "gold": "90",
+   "finish": "stop",
+   "n_tokens": 11089,
+   "closed": true,
+   "think_end_at": 10318,
+   "pred_rescored": "90",
+   "ok_rescored": true
+  },
+  {
+   "id": "m230",
+   "gold": "\\frac{16}{5}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m231",
+   "gold": "10",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m232",
+   "gold": "\\frac{1997}{2}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m233",
+   "gold": "30^\\circ",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m234",
+   "gold": "34",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m235",
+   "gold": "\\frac 59",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m236",
+   "gold": "12",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m237",
+   "gold": "22",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m238",
+   "gold": "-4",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m239",
+   "gold": "16",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m240",
+   "gold": "116",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m241",
+   "gold": "17",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m242",
+   "gold": "\\$32,\\!348",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m243",
+   "gold": "3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m244",
+   "gold": "8",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m245",
+   "gold": "-13x+3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m246",
+   "gold": "8",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m247",
+   "gold": "\\frac{10}{11}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m248",
+   "gold": "\\begin{pmatrix} -1 & 0 \\\\ 0 & -1 \\end{pmatrix}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m249",
+   "gold": "17",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m250",
+   "gold": "13",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m251",
+   "gold": "540",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m252",
+   "gold": "81",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m253",
+   "gold": "\\frac{1}{8}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m254",
+   "gold": "28",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m255",
+   "gold": "\\text{(E)}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m256",
+   "gold": "\\frac{8}{21}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m257",
+   "gold": "864 \\mbox{ inches}^2",
+   "finish": "stop",
+   "n_tokens": 8396,
+   "closed": true,
+   "think_end_at": 7888,
+   "pred_rescored": "864",
+   "ok_rescored": false
+  },
+  {
+   "id": "m258",
+   "gold": "16",
+   "finish": "stop",
+   "n_tokens": 5033,
+   "closed": true,
+   "think_end_at": 4344,
+   "pred_rescored": "16",
+   "ok_rescored": true
+  },
+  {
+   "id": "m259",
+   "gold": "22",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m260",
+   "gold": "120^\\circ",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m261",
+   "gold": "76^\\circ",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m262",
+   "gold": "4",
+   "finish": "stop",
+   "n_tokens": 4724,
+   "closed": true,
+   "think_end_at": 4492,
+   "pred_rescored": "4",
+   "ok_rescored": true
+  },
+  {
+   "id": "m263",
+   "gold": "15",
+   "finish": "stop",
+   "n_tokens": 7004,
+   "closed": true,
+   "think_end_at": 6508,
+   "pred_rescored": "15",
+   "ok_rescored": true
+  },
+  {
+   "id": "m264",
+   "gold": "1\\frac{4}{5}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m265",
+   "gold": "4005",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m266",
+   "gold": "\\dfrac{33}{100}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m267",
+   "gold": "180^\\circ",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m268",
+   "gold": "1",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m269",
+   "gold": "6",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m270",
+   "gold": "10",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m271",
+   "gold": "333",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m272",
+   "gold": "1030",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m273",
+   "gold": "1250",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m274",
+   "gold": "18+2\\pi",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m275",
+   "gold": "7",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m276",
+   "gold": "11",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m277",
+   "gold": "\\sqrt{53}",
+   "finish": "stop",
+   "n_tokens": 4790,
+   "closed": true,
+   "think_end_at": 4543,
+   "pred_rescored": "\\sqrt{53}",
+   "ok_rescored": true
+  },
+  {
+   "id": "m278",
+   "gold": "255",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m279",
+   "gold": "7\\pi",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m280",
+   "gold": "8",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m281",
+   "gold": "36^\\circ",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m282",
+   "gold": "129",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m283",
+   "gold": "1",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m284",
+   "gold": "3 \\pm 2 \\sqrt{2}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m285",
+   "gold": "440",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m286",
+   "gold": "\\frac{17}{21}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m287",
+   "gold": "36",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m288",
+   "gold": "7",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m289",
+   "gold": "16",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m290",
+   "gold": "4",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m291",
+   "gold": "63",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m292",
+   "gold": "898",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m293",
+   "gold": "\\left(\\frac{3}{5},\\frac{8}{3}\\right]",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m294",
+   "gold": "58",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m295",
+   "gold": "11",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m296",
+   "gold": "\\text{(B)}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m297",
+   "gold": "103",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m298",
+   "gold": "\\begin{pmatrix} -18 \\\\ -49 \\\\ 96 \\end{pmatrix}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m299",
+   "gold": "63",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m300",
+   "gold": "12",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m301",
+   "gold": "5.4 \\text{ cents}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m302",
+   "gold": "5",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m303",
+   "gold": "28",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m304",
+   "gold": "9",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m305",
+   "gold": "\\frac9{19}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m306",
+   "gold": "6",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m307",
+   "gold": "(-\\infty, 0]",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m308",
+   "gold": "1+2\\sqrt{3}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m309",
+   "gold": "14",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m310",
+   "gold": "49",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m311",
+   "gold": "3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m312",
+   "gold": "(5,\\infty)",
+   "finish": "stop",
+   "n_tokens": 3572,
+   "closed": true,
+   "think_end_at": 3312,
+   "pred_rescored": "(5,\\infty)",
+   "ok_rescored": true
+  },
+  {
+   "id": "m313",
+   "gold": "12\\pi",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m314",
+   "gold": "(2,4)",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m315",
+   "gold": "41",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m316",
+   "gold": "12",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m317",
+   "gold": "0",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m318",
+   "gold": "\\frac{11+9a}{20}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m319",
+   "gold": "-128",
+   "finish": "stop",
+   "n_tokens": 4663,
+   "closed": true,
+   "think_end_at": 4290,
+   "pred_rescored": "x",
+   "ok_rescored": false
+  },
+  {
+   "id": "m320",
+   "gold": "-\\frac{24}{25}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m321",
+   "gold": "10",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m322",
+   "gold": "-1",
+   "finish": "stop",
+   "n_tokens": 2241,
+   "closed": true,
+   "think_end_at": 1886,
+   "pred_rescored": "b",
+   "ok_rescored": false
+  },
+  {
+   "id": "m323",
+   "gold": "\\frac{1}{3}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m324",
+   "gold": "120",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m325",
+   "gold": "4",
+   "finish": "stop",
+   "n_tokens": 2192,
+   "closed": true,
+   "think_end_at": 1782,
+   "pred_rescored": "4",
+   "ok_rescored": true
+  },
+  {
+   "id": "m326",
+   "gold": "\\frac{9}{100}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m327",
+   "gold": "15",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m328",
+   "gold": "3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m329",
+   "gold": "4",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m330",
+   "gold": "1940",
+   "finish": "stop",
+   "n_tokens": 14459,
+   "closed": true,
+   "think_end_at": 13028,
+   "pred_rescored": "940",
+   "ok_rescored": false
+  },
+  {
+   "id": "m331",
+   "gold": "\\frac{13}{6}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m332",
+   "gold": "2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m333",
+   "gold": "3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m334",
+   "gold": "-120",
+   "finish": "stop",
+   "n_tokens": 8552,
+   "closed": true,
+   "think_end_at": 7946,
+   "pred_rescored": "abc",
+   "ok_rescored": false
+  },
+  {
+   "id": "m335",
+   "gold": "3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m336",
+   "gold": "26000",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m337",
+   "gold": "6",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m338",
+   "gold": "4343_6",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m339",
+   "gold": "2k",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m340",
+   "gold": "55^\\circ",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m341",
+   "gold": "-2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m342",
+   "gold": "2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m343",
+   "gold": "58,500",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m344",
+   "gold": "5",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m345",
+   "gold": "1",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m346",
+   "gold": "66",
+   "finish": "stop",
+   "n_tokens": 7154,
+   "closed": true,
+   "think_end_at": 5772,
+   "pred_rescored": "66",
+   "ok_rescored": true
+  },
+  {
+   "id": "m347",
+   "gold": "6r^2-4r-24",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m348",
+   "gold": "4495",
+   "finish": "stop",
+   "n_tokens": 6057,
+   "closed": true,
+   "think_end_at": 5410,
+   "pred_rescored": "\\binom{31}{28}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m349",
+   "gold": "10080",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m350",
+   "gold": "4",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m351",
+   "gold": "\\frac{1}{16}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m352",
+   "gold": "11 \\sqrt{5} + 11",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m353",
+   "gold": "480",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m354",
+   "gold": "81",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m355",
+   "gold": "100",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m356",
+   "gold": "(-\\sqrt{3}, \\sqrt{3})",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m357",
+   "gold": "4",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m358",
+   "gold": "\\text{ellipse}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m359",
+   "gold": "6",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m360",
+   "gold": "\\frac{7}{4}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m361",
+   "gold": "16 \\sqrt{3}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m362",
+   "gold": "\\frac14",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m363",
+   "gold": "2",
+   "finish": "stop",
+   "n_tokens": 7074,
+   "closed": true,
+   "think_end_at": 6722,
+   "pred_rescored": "2",
+   "ok_rescored": true
+  },
+  {
+   "id": "m364",
+   "gold": "(1,-16,-4,43)",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m365",
+   "gold": "8",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m366",
+   "gold": "4",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m367",
+   "gold": "1",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m368",
+   "gold": "31",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m369",
+   "gold": "21",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m370",
+   "gold": "-41",
+   "finish": "stop",
+   "n_tokens": 1240,
+   "closed": true,
+   "think_end_at": 982,
+   "pred_rescored": "-41",
+   "ok_rescored": true
+  },
+  {
+   "id": "m371",
+   "gold": "17",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m372",
+   "gold": "90^\\circ",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m373",
+   "gold": "1+2i",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m374",
+   "gold": "4",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m375",
+   "gold": "25",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m376",
+   "gold": "(8,-2)",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m377",
+   "gold": "6",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m378",
+   "gold": "3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m379",
+   "gold": "12",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m380",
+   "gold": "(0,9) \\cup (9,36)",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m381",
+   "gold": "\\frac{1}{2}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m382",
+   "gold": "\\frac{20000}{\\pi}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m383",
+   "gold": "x \\in [-2,7]",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m384",
+   "gold": "15x - 80",
+   "finish": "stop",
+   "n_tokens": 1789,
+   "closed": true,
+   "think_end_at": 1637,
+   "pred_rescored": "80",
+   "ok_rescored": false
+  },
+  {
+   "id": "m385",
+   "gold": "22",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m386",
+   "gold": "11",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m387",
+   "gold": "18",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m388",
+   "gold": "\\frac{11}{2}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m389",
+   "gold": "\\frac{\\sqrt{21}}{5}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m390",
+   "gold": "12",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m391",
+   "gold": "0",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m392",
+   "gold": "\\sqrt{66}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m393",
+   "gold": "\\frac 34",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m394",
+   "gold": "-\\frac{3}{8}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m395",
+   "gold": "4",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m396",
+   "gold": "2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m397",
+   "gold": "23",
+   "finish": "stop",
+   "n_tokens": 2063,
+   "closed": true,
+   "think_end_at": 1788,
+   "pred_rescored": "6x+5",
+   "ok_rescored": false
+  },
+  {
+   "id": "m398",
+   "gold": "\\text{Navin}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m399",
+   "gold": "326.5",
+   "finish": "stop",
+   "n_tokens": 1438,
+   "closed": true,
+   "think_end_at": 1295,
+   "pred_rescored": "326.5",
+   "ok_rescored": true
+  },
+  {
+   "id": "m400",
+   "gold": "\\frac{14}{3}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m401",
+   "gold": "\\frac{13}{4}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m402",
+   "gold": "1 - 12i",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m403",
+   "gold": "3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m404",
+   "gold": "3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m405",
+   "gold": "60",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m406",
+   "gold": "0",
+   "finish": "stop",
+   "n_tokens": 3693,
+   "closed": true,
+   "think_end_at": 3557,
+   "pred_rescored": "0",
+   "ok_rescored": true
+  },
+  {
+   "id": "m407",
+   "gold": "9",
+   "finish": "stop",
+   "n_tokens": 5237,
+   "closed": true,
+   "think_end_at": 4878,
+   "pred_rescored": "9",
+   "ok_rescored": true
+  },
+  {
+   "id": "m408",
+   "gold": "\\begin{pmatrix} 1/5 \\\\ -18/5 \\end{pmatrix}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m409",
+   "gold": "2 \\sqrt{5}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m410",
+   "gold": "6",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m411",
+   "gold": "60",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m412",
+   "gold": "406",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m413",
+   "gold": "5r^5",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m414",
+   "gold": "10",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m415",
+   "gold": "9",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m416",
+   "gold": "\\frac{1}{8}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m417",
+   "gold": "-2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m418",
+   "gold": "2\\sqrt{5}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m419",
+   "gold": "\\begin{pmatrix} -7 \\\\ 16 \\\\ 5 \\end{pmatrix}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m420",
+   "gold": "\\begin{pmatrix} 16/49 \\\\ 48/49 \\\\ 24/49 \\end{pmatrix}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m421",
+   "gold": "27",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m422",
+   "gold": "\\{1\\pm\\sqrt{5},-2\\}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m423",
+   "gold": "1440",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m424",
+   "gold": "600",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m425",
+   "gold": "3R^2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m426",
+   "gold": "6\\sqrt{2}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m427",
+   "gold": "29",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m428",
+   "gold": "64",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m429",
+   "gold": "50",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m430",
+   "gold": "4.5",
+   "finish": "stop",
+   "n_tokens": 3286,
+   "closed": true,
+   "think_end_at": 3080,
+   "pred_rescored": "4.5",
+   "ok_rescored": true
+  },
+  {
+   "id": "m431",
+   "gold": "\\left[ \\frac{\\pi^2}{8}, \\frac{5 \\pi^2}{4} \\right]",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m432",
+   "gold": "331",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m433",
+   "gold": ".35625",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m434",
+   "gold": "32",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m435",
+   "gold": "(-\\infty, 2) \\cup (3, \\infty)",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m436",
+   "gold": "4",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m437",
+   "gold": "3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m438",
+   "gold": "4",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m439",
+   "gold": "x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + x^2 + x + 1",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m440",
+   "gold": "14",
+   "finish": "stop",
+   "n_tokens": 1896,
+   "closed": true,
+   "think_end_at": 1504,
+   "pred_rescored": "14",
+   "ok_rescored": true
+  },
+  {
+   "id": "m441",
+   "gold": "550",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m442",
+   "gold": "256",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m443",
+   "gold": "45",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m444",
+   "gold": "\\frac{1}{2}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m445",
+   "gold": "15",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m446",
+   "gold": "8",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m447",
+   "gold": "9",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m448",
+   "gold": "44",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m449",
+   "gold": "47",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m450",
+   "gold": "64",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m451",
+   "gold": "\\frac{639}{40}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m452",
+   "gold": "143",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m453",
+   "gold": "10",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": 17019,
+   "pred_rescored": "\\frac{1",
+   "ok_rescored": false
+  },
+  {
+   "id": "m454",
+   "gold": "y = 2x + 3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m455",
+   "gold": "6",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m456",
+   "gold": "-2,1",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m457",
+   "gold": "0",
+   "finish": "stop",
+   "n_tokens": 1802,
+   "closed": true,
+   "think_end_at": 1717,
+   "pred_rescored": "0",
+   "ok_rescored": true
+  },
+  {
+   "id": "m458",
+   "gold": "41",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m459",
+   "gold": "\\$18.90",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m460",
+   "gold": "75^\\circ",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m461",
+   "gold": "12",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m462",
+   "gold": "59",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m463",
+   "gold": "2",
+   "finish": "stop",
+   "n_tokens": 4804,
+   "closed": true,
+   "think_end_at": 4593,
+   "pred_rescored": "2",
+   "ok_rescored": true
+  },
+  {
+   "id": "m464",
+   "gold": "9",
+   "finish": "stop",
+   "n_tokens": 13854,
+   "closed": true,
+   "think_end_at": 13074,
+   "pred_rescored": "x",
+   "ok_rescored": false
+  },
+  {
+   "id": "m465",
+   "gold": "121",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m466",
+   "gold": "8 \\pi",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m467",
+   "gold": "15\\mbox{ cm}^2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m468",
+   "gold": "8",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m469",
+   "gold": "25",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m470",
+   "gold": "27648",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m471",
+   "gold": "84",
+   "finish": "stop",
+   "n_tokens": 1608,
+   "closed": true,
+   "think_end_at": 1371,
+   "pred_rescored": "84",
+   "ok_rescored": true
+  },
+  {
+   "id": "m472",
+   "gold": "137 \\frac{1}{2}",
+   "finish": "stop",
+   "n_tokens": 7097,
+   "closed": true,
+   "think_end_at": 6706,
+   "pred_rescored": "137\\frac{1}{2}",
+   "ok_rescored": true
+  },
+  {
+   "id": "m473",
+   "gold": "7",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m474",
+   "gold": "3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m475",
+   "gold": "29",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m476",
+   "gold": "200",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m477",
+   "gold": "2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m478",
+   "gold": "\\frac{2}{1005}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m479",
+   "gold": "2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m480",
+   "gold": "1",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m481",
+   "gold": "8n^2 + 4n + 1",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m482",
+   "gold": "202",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m483",
+   "gold": "\\frac{8}{15}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m484",
+   "gold": "10",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m485",
+   "gold": "13",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m486",
+   "gold": "216",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m487",
+   "gold": "2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m488",
+   "gold": "\\$36",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m489",
+   "gold": "15",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m490",
+   "gold": "14",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m491",
+   "gold": "64",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m492",
+   "gold": "y = -2x",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m493",
+   "gold": "20",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m494",
+   "gold": "\\frac{1}{4}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m495",
+   "gold": "(2,12) \\cup (12,102)",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m496",
+   "gold": "\\frac{5}{13}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m497",
+   "gold": "\\frac{7}{2}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m498",
+   "gold": "-1",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m499",
+   "gold": "106^\\circ",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": false,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  }
+ ]
+}
