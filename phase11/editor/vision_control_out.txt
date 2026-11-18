@@ -1,0 +1,66 @@
+=== LANGUAGE tower norm piles ===
+  0.post_feedforward_layernorm.weight                     at_max=35.9% at_min=0.0% uniq=364/2816
+  1.post_feedforward_layernorm.weight                     at_max=34.2% at_min=0.0% uniq=382/2816
+  10.post_attention_layernorm.weight                      at_max=15.9% at_min=0.0% uniq=699/2816
+  10.post_feedforward_layernorm.weight                    at_max=88.7% at_min=0.0% uniq=222/2816
+  11.post_attention_layernorm.weight                      at_max=26.6% at_min=0.0% uniq=674/2816
+  11.post_feedforward_layernorm.weight                    at_max=92.6% at_min=0.1% uniq=165/2816
+  12.post_attention_layernorm.weight                      at_max=14.1% at_min=0.0% uniq=623/2816
+  12.post_feedforward_layernorm.weight                    at_max=92.3% at_min=0.0% uniq=190/2816
+  13.post_attention_layernorm.weight                      at_max=16.9% at_min=0.1% uniq=536/2816
+  13.post_feedforward_layernorm.weight                    at_max=90.8% at_min=0.0% uniq=203/2816
+  14.post_attention_layernorm.weight                      at_max=17.9% at_min=0.0% uniq=490/2816
+  14.post_feedforward_layernorm.weight                    at_max=87.4% at_min=0.0% uniq=252/2816
+  15.post_attention_layernorm.weight                      at_max=11.0% at_min=0.0% uniq=546/2816
+  15.post_feedforward_layernorm.weight                    at_max=85.7% at_min=0.0% uniq=276/2816
+  16.post_feedforward_layernorm.weight                    at_max=84.7% at_min=0.0% uniq=301/2816
+  17.post_attention_layernorm.weight                      at_max=12.7% at_min=0.0% uniq=591/2816
+  17.post_feedforward_layernorm.weight                    at_max=85.6% at_min=0.0% uniq=260/2816
+  18.post_attention_layernorm.weight                      at_max=18.9% at_min=0.0% uniq=512/2816
+  18.post_feedforward_layernorm.weight                    at_max=88.3% at_min=0.0% uniq=221/2816
+  19.post_feedforward_layernorm.weight                    at_max=89.3% at_min=0.0% uniq=202/2816
+  2.post_attention_layernorm.weight                       at_max=13.6% at_min=0.0% uniq=794/2816
+  2.post_feedforward_layernorm.weight                     at_max=28.3% at_min=0.0% uniq=384/2816
+  20.post_attention_layernorm.weight                      at_max=11.3% at_min=0.0% uniq=473/2816
+  20.post_feedforward_layernorm.weight                    at_max=89.6% at_min=0.0% uniq=186/2816
+  21.post_feedforward_layernorm.weight                    at_max=89.3% at_min=0.0% uniq=175/2816
+  22.post_attention_layernorm.weight                      at_max=25.9% at_min=0.0% uniq=414/2816
+  22.post_feedforward_layernorm.weight                    at_max=88.4% at_min=0.0% uniq=201/2816
+  23.post_attention_layernorm.weight                      at_max=28.2% at_min=0.0% uniq=430/2816
+  23.post_feedforward_layernorm.weight                    at_max=90.6% at_min=0.0% uniq=149/2816
+  24.post_attention_layernorm.weight                      at_max=34.8% at_min=0.0% uniq=371/2816
+  24.post_feedforward_layernorm.weight                    at_max=90.6% at_min=0.0% uniq=156/2816
+  25.post_attention_layernorm.weight                      at_max=60.8% at_min=0.0% uniq=364/2816
+  25.post_feedforward_layernorm.weight                    at_max=91.1% at_min=0.0% uniq=169/2816
+  26.post_attention_layernorm.weight                      at_max=36.2% at_min=0.1% uniq=363/2816
+  26.post_feedforward_layernorm.weight                    at_max=91.0% at_min=0.0% uniq=173/2816
+  27.post_attention_layernorm.weight                      at_max=40.7% at_min=0.0% uniq=334/2816
+  27.post_feedforward_layernorm.weight                    at_max=91.0% at_min=0.0% uniq=168/2816
+  28.post_attention_layernorm.weight                      at_max=76.0% at_min=0.1% uniq=313/2816
+  28.post_feedforward_layernorm.weight                    at_max=91.1% at_min=0.0% uniq=198/2816
+  29.post_feedforward_layernorm.weight                    at_max=15.6% at_min=0.1% uniq=434/2816
+  3.post_attention_layernorm.weight                       at_max=10.8% at_min=0.0% uniq=777/2816
+  3.post_feedforward_layernorm.weight                     at_max=32.9% at_min=0.0% uniq=377/2816
+  4.post_attention_layernorm.weight                       at_max=14.9% at_min=0.0% uniq=864/2816
+  4.post_feedforward_layernorm.weight                     at_max=38.9% at_min=0.0% uniq=409/2816
+  5.post_attention_layernorm.weight                       at_max=16.5% at_min=0.0% uniq=904/2816
+  5.post_feedforward_layernorm.weight                     at_max=44.0% at_min=0.0% uniq=376/2816
+  6.post_attention_layernorm.weight                       at_max=16.1% at_min=0.1% uniq=857/2816
+  6.post_feedforward_layernorm.weight                     at_max=50.5% at_min=0.0% uniq=387/2816
+  7.post_attention_layernorm.weight                       at_max=11.0% at_min=0.0% uniq=909/2816
+  7.post_feedforward_layernorm.weight                     at_max=63.5% at_min=0.0% uniq=365/2816
+  8.post_attention_layernorm.weight                       at_max=15.5% at_min=0.0% uniq=845/2816
+  8.post_feedforward_layernorm.weight                     at_max=79.0% at_min=0.0% uniq=317/2816
+  9.post_attention_layernorm.weight                       at_max=17.4% at_min=0.0% uniq=765/2816
+  9.post_feedforward_layernorm.weight                     at_max=91.3% at_min=0.0% uniq=181/2816
+
+=== VISION tower norm piles (control) ===
+
+=== VISION qk-norm (control for constant-qk hypothesis) ===
+Traceback (most recent call last):
+  File "/mnt/c/Users/user/.zcode/workspace/draft-c8131b20-7835-43a5-a479-2c728f5b0915/wsp-lab/phase11/editor/vision_control.py", line 102, in <module>
+    main()
+  File "/mnt/c/Users/user/.zcode/workspace/draft-c8131b20-7835-43a5-a479-2c728f5b0915/wsp-lab/phase11/editor/vision_control.py", line 65, in main
+    print(f"  {name.split('encoder.')[1]:55s} "
+               ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range

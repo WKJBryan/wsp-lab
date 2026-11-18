@@ -84,6 +84,14 @@ same evaluator. **Prediction on record (falsifiable): NULL for both — the dama
 failed twice, the damage-class claim is overturned.** GPU serialisation: attempts run
 sequentially after attempt-2's finals complete.
 
+**Amendment #3d (2026-11-18 ~10:00, pre-spawn of attempt 5): MiMo-flash arm recorded
+as STALLED.** Two spawns (4a: 7.2 h, 1 pass, ~45 offline analyses; 4b: journal-inherited
+respawn, 73 min, zero output) both becalmed with idle GPU and no model activity — the
+editor is non-viable in this long agentic format. Recorded as a legitimate grid outcome:
+replicates phase 9's "long-ask discipline is the flash-tier bottleneck" on a second
+family. Proceeding to attempt 5 (MiMo-v2.6-pro) — the tier phase 9 flagged as more
+disciplined. If pro also stalls, the MiMo family is recorded non-viable for this format.
+
 ## Amendment #1 (2026-11-16, before any arm completed at 32K)
 
 Generation cap 32768 → **8192 for every arm identically**. Reason: the A0 fp8 weights
