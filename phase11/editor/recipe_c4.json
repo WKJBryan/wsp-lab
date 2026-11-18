@@ -1,0 +1,2 @@
+[{"op": "fill_match", "pattern": "layers\\.(2[4-9])\\.layer_scalar$", "value": 1.0},
+ {"op": "scale_rows", "name": "model.language_model.embed_tokens.weight", "rows": [1, 50, 106], "factor": 3.0}]

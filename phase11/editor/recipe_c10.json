@@ -1,0 +1,4 @@
+[{"op": "fill_match", "pattern": "layers\\.(2[4-9])\\.layer_scalar$", "value": 1.0},
+ {"op": "scale_tensor", "name": "model.language_model.norm.weight", "factor": 0.4},
+ {"op": "scale_rows", "name": "model.language_model.embed_tokens.weight", "rows": [1, 50, 106], "factor": 1.6},
+ {"op": "scale_rows", "name": "model.language_model.embed_tokens.weight", "rows": [236771, 236770, 236778, 236800, 236812, 236810, 236825, 236832, 236828, 236819], "factor": 1.15}]

@@ -1,0 +1,80 @@
+{
+  "base": {
+    "fact": [
+      3487,
+      373,
+      5390,
+      533,
+      9516,
+      69328,
+      1,
+      2427,
+      91109,
+      101713
+    ],
+    "syn": [
+      11,
+      945,
+      16363,
+      5021,
+      1
+    ],
+    "fact_med": 5390,
+    "syn_med": 945,
+    "loop": 0.089,
+    "has391": false,
+    "text": "To find $17 \\times 23$ using the **\"dist trick\"** (or the **\"near-10 trick\"**) by the mental number math:\n\n**Step 1: Breakdown into 10s**\n\n**Step 2: Square-the "
+  },
+  "swapexperts": {
+    "fact": [
+      9366,
+      4522,
+      20702,
+      3807,
+      11306,
+      131313,
+      1,
+      19425,
+      84671,
+      215791
+    ],
+    "syn": [
+      952,
+      1054,
+      442,
+      2286,
+      1
+    ],
+    "fact_med": 19425,
+    "syn_med": 952,
+    "loop": 0.86,
+    "has391": false,
+    "text": "This is a way to show your work briefly.\n\n**The following information is a way to show your work briefly.**\n\n**The following information is a way to show your w"
+  },
+  "swapmlp": {
+    "fact": [
+      72436,
+      53843,
+      85982,
+      25627,
+      81444,
+      128273,
+      115,
+      64277,
+      128907,
+      49818
+    ],
+    "syn": [
+      558,
+      65026,
+      728,
+      2602,
+      315
+    ],
+    "fact_med": 72436,
+    "syn_med": 728,
+    "loop": 0.479,
+    "has391": false,
+    "text": " same much \uc2f6 \uc2f6 enough\u0627\u064b l eventually same \uc2f6 \uc2f6 same\u0627\u064btrue \uc2f6truetrueleastLeaststringLeast \uc2f6stringLeastleasttoget \uc2f6 \uc2f6least \uc2f6set factset factonononon \uc2f6 \uc2f6 \uc2f6 \uc2f6 \uc2f6 \uc2f6 \uc2f6 "
+  }
+}

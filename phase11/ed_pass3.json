@@ -2,10 +2,10 @@
  "summary": {
   "name": "ed_pass3",
   "n": 64,
-  "accuracy": 1.6,
-  "answered": 100.0,
-  "cap_hit_rate": 98.4,
-  "mean_tokens": 8172.2,
+  "accuracy": 0.0,
+  "answered": 98.4,
+  "cap_hit_rate": 4.7,
+  "mean_tokens": 1091.5,
   "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
   "model": "/home/user/wsp11/sandbox/model",
   "fp8": false
@@ -14,327 +14,327 @@
   {
    "id": "m0",
    "gold": "\\left( 3, \\frac{\\pi}{2} \\right)",
-   "pred": "\\frac\\pi",
+   "pred": null,
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 434,
+   "cap_hit": false
   },
   {
    "id": "m1",
    "gold": "p - q",
-   "pred": "by",
+   "pred": "exponent",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 2849,
+   "cap_hit": false
   },
   {
    "id": "m2",
    "gold": "\\frac{14}{3}",
-   "pred": "fraction",
+   "pred": "un",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 730,
+   "cap_hit": false
   },
   {
    "id": "m3",
    "gold": "9",
-   "pred": "8",
+   "pred": "Please",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 51,
+   "cap_hit": false
   },
   {
    "id": "m4",
    "gold": "\\text{Evelyn}",
-   "pred": "your",
+   "pred": "language",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 165,
+   "cap_hit": false
   },
   {
    "id": "m5",
    "gold": "42",
-   "pred": "brtext",
+   "pred": "want",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 102,
+   "cap_hit": false
   },
   {
    "id": "m6",
    "gold": "27",
-   "pred": "12",
+   "pred": "typohelp",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 43,
+   "cap_hit": false
   },
   {
    "id": "m7",
    "gold": "90^\\circ",
-   "pred": "degrees",
+   "pred": "Finddirectionvectors\u0627\u0644\u0645\u0648\u0642\u0639\u8de1\u9802\u7b87\u7bc0\u7bc0\u8a18\u8868\u7bc4\ufffd\u0648\u0627\u0639\u062f\\text{",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 565,
+   "cap_hit": false
   },
   {
    "id": "m8",
    "gold": "3\\sqrt{13}",
-   "pred": "Wait",
+   "pred": "own",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 602,
+   "cap_hit": false
   },
   {
    "id": "m9",
    "gold": "4",
-   "pred": "from",
+   "pred": "end",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 112,
+   "cap_hit": false
   },
   {
    "id": "m10",
    "gold": "2220",
-   "pred": "6",
+   "pred": "side",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 514,
+   "cap_hit": false
   },
   {
    "id": "m11",
    "gold": "\\frac{3}{56}",
-   "pred": "actually",
+   "pred": "author",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 39,
+   "cap_hit": false
   },
   {
    "id": "m12",
    "gold": "284",
-   "pred": "30",
+   "pred": "theoretic",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 4252,
+   "cap_hit": false
   },
   {
    "id": "m13",
    "gold": "5",
-   "pred": "45\\pi",
+   "pred": "font(^\\text{",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 3990,
+   "cap_hit": false
   },
   {
    "id": "m14",
    "gold": "\\sqrt{51}",
-   "pred": "re",
+   "pred": "```print---visual\\-visual```",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 74,
+   "cap_hit": false
   },
   {
    "id": "m15",
    "gold": "6 - 5i",
-   "pred": "w",
+   "pred": "thought",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 92,
+   "cap_hit": false
   },
   {
    "id": "m16",
    "gold": "-50",
-   "pred": "Calculation",
+   "pred": "aprendizaje",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 237,
+   "cap_hit": false
   },
   {
    "id": "m17",
    "gold": "\\pi",
-   "pred": "c",
+   "pred": "nop",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 5,
+   "cap_hit": false
   },
   {
    "id": "m18",
    "gold": "28",
-   "pred": "process",
+   "pred": "lement",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 323,
+   "cap_hit": false
   },
   {
    "id": "m19",
    "gold": "3",
-   "pred": "We",
+   "pred": "a",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 15,
+   "cap_hit": false
   },
   {
    "id": "m20",
    "gold": "6+9i",
-   "pred": "-",
+   "pred": "6+(6\\cdot2i)-3world",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 725,
+   "cap_hit": false
   },
   {
    "id": "m21",
    "gold": "13535",
-   "pred": "3",
+   "pred": "Wait",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 203,
+   "cap_hit": false
   },
   {
    "id": "m22",
    "gold": "5",
-   "pred": "Establish",
+   "pred": "sipada",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 3859,
+   "cap_hit": false
   },
   {
    "id": "m23",
    "gold": "x=5",
-   "pred": "Result",
+   "pred": "1",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 772,
+   "cap_hit": false
   },
   {
    "id": "m24",
    "gold": "10",
-   "pred": "0.00\\%",
+   "pred": "0.0\\%",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 12,
+   "cap_hit": false
   },
   {
    "id": "m25",
    "gold": "1,-2",
-   "pred": "s",
+   "pred": "analyzing",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 72,
+   "cap_hit": false
   },
   {
    "id": "m26",
    "gold": "144",
-   "pred": "Please",
+   "pred": "read",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 13,
+   "cap_hit": false
   },
   {
    "id": "m27",
    "gold": "78",
-   "pred": "howhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhowhow",
+   "pred": "this",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 9,
+   "cap_hit": false
   },
   {
    "id": "m28",
    "gold": "-2 + 7i",
-   "pred": "7",
+   "pred": "style",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 195,
+   "cap_hit": false
   },
   {
    "id": "m29",
    "gold": "225",
-   "pred": "problem",
+   "pred": "Actually",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 491,
+   "cap_hit": false
   },
   {
    "id": "m30",
    "gold": "52_8",
-   "pred": "1_{8}\\cdot7_{8}",
+   "pred": "6_8\\cdot7_8",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 18,
+   "cap_hit": false
   },
   {
    "id": "m31",
    "gold": "11\\sqrt2",
-   "pred": "2\\sqrt{10}(noincorrectwaybecause242notnecessarily)",
+   "pred": "by",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 1014,
+   "cap_hit": false
   },
   {
    "id": "m32",
    "gold": "720",
-   "pred": "way",
+   "pred": "own",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 4127,
+   "cap_hit": false
   },
   {
    "id": "m33",
    "gold": "\\frac{243}{625}",
-   "pred": "8",
+   "pred": "Thesequencebeginsasfollows-:\\",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 18,
+   "cap_hit": false
   },
   {
    "id": "m34",
    "gold": "-125",
-   "pred": "10",
+   "pred": "Answer",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 193,
+   "cap_hit": false
   },
   {
    "id": "m35",
    "gold": "3",
    "pred": "Step",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 649,
+   "cap_hit": false
   },
   {
    "id": "m36",
    "gold": "3, 5, 7",
-   "pred": "3",
+   "pred": "it",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 860,
+   "cap_hit": false
   },
   {
    "id": "m37",
    "gold": "72",
-   "pred": "10",
+   "pred": "---#",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 634,
+   "cap_hit": false
   },
   {
    "id": "m38",
    "gold": "2000",
-   "pred": "follows",
+   "pred": "n",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 61,
+   "cap_hit": false
   },
   {
    "id": "m39",
    "gold": "23",
-   "pred": "1",
+   "pred": "---",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 3241,
+   "cap_hit": false
   },
   {
    "id": "m40",
    "gold": "12",
-   "pred": "the",
+   "pred": "calculation",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -342,143 +342,143 @@
   {
    "id": "m41",
    "gold": "17",
-   "pred": "problem",
+   "pred": "that",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 93,
+   "cap_hit": false
   },
   {
    "id": "m42",
    "gold": "4",
-   "pred": "br",
+   "pred": "21",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 422,
+   "cap_hit": false
   },
   {
    "id": "m43",
    "gold": "70 \\sqrt{2}",
-   "pred": "the",
+   "pred": "Wait",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 283,
+   "cap_hit": false
   },
   {
    "id": "m44",
    "gold": "1.25",
-   "pred": "theorem",
+   "pred": "plaans",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 159,
+   "cap_hit": false
   },
   {
    "id": "m45",
    "gold": "2",
-   "pred": "2",
-   "ok": true,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "pred": "aba",
+   "ok": false,
+   "n_tokens": 97,
+   "cap_hit": false
   },
   {
    "id": "m46",
    "gold": "6",
-   "pred": "e^{i\\frac\\angleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangleangle",
+   "pred": "are",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 50,
+   "cap_hit": false
   },
   {
    "id": "m47",
    "gold": "5",
-   "pred": "a+b+c",
+   "pred": "te",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 160,
+   "cap_hit": false
   },
   {
    "id": "m48",
    "gold": "\\frac{3}{2}",
-   "pred": "you",
+   "pred": "\\frac{3}{3}(incorrecttypoology...)",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 211,
+   "cap_hit": false
   },
   {
    "id": "m49",
    "gold": "83",
-   "pred": "20",
+   "pred": "x",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 134,
+   "cap_hit": false
   },
   {
    "id": "m50",
    "gold": "203",
-   "pred": "on",
+   "pred": "reasoning",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 35,
+   "cap_hit": false
   },
   {
    "id": "m51",
    "gold": "x^5 - x^4 + x^3 - x^2 + x - 1",
-   "pred": "1",
+   "pred": "result",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 1475,
+   "cap_hit": false
   },
   {
    "id": "m52",
    "gold": "12",
-   "pred": "\\text{i",
+   "pred": "|\\mathbf{Result}\\mathbf{|}|\\mathbf{Result}\\mathbf{|}|\\mathbf{Result}\\mathbf{|}|\\mathbf{Result}\\mathbf{!}|\\mathbf{Result}\\mathbf{!}|\\mathbf{Result}\\mathbf{!}|\\mathbf{Result}\\mathbf{!}!|\\mathbf{Result}\\mathbf{!}!!\\mathbf{Result}\\mathbf{!}!!\\mathbf{Result}\\mathbf{!}!!\\mathbf{Result}\\mathbf{!}!!\\mathbf{Result}\\mathbf{!}!!\\mathbf{Result}\\mathbf{!}!!\\mathbf{Result}\\mathbf{!}!!\\mathbf{Result}\\mathbf{!}!!\\mathbf{Result}\\mathbf{!}!!\\mathbf{Result}\\mathbf{!}!!\\mathbf{Result}\\mathbf{!}!!\\mathbf{Result}\\mathbf{!}!!\\mathbf{Result}\\mathbf{!}!!\\mathbf{Result}\\mathbf{!}!!\\mathbf{Result}\\mathbf{!}!!\\mathbf{Result}\\mathbf{!}!\u0645\u0627\u7b54\u6848\\mathbf{Result}\\mathbf{!}\\mathbf{Result}\\mathbf{!}\\mathbf{Result}\\mathbf{!}\\mathbf{Result}\\mathbf{!}\\mathbf{Result}\\mathbf{!}\\mathbf{Result}\\mathbf{!}\\mathbf{Result}\\mathbf{!}\\mathbf{RESULT}\\mathbf{!}\\mathbf{RESULT}\\mathbf{!}\\mathbf{RESULT}\\mathbf{!}\\mathbf{RESULT}\\mathbf{!}\\mathbf{RESULT}\\mathbf\u064a",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 487,
+   "cap_hit": false
   },
   {
    "id": "m53",
    "gold": "-\\frac{\\pi}{6}",
-   "pred": "\\arcssin(-\\frac{bank}",
+   "pred": "-\\frac{\\pi}{3}",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 115,
+   "cap_hit": false
   },
   {
    "id": "m54",
    "gold": "0.15",
-   "pred": "\\frac{3",
+   "pred": "---",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 2457,
+   "cap_hit": false
   },
   {
    "id": "m55",
    "gold": "3",
    "pred": "f",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 144,
+   "cap_hit": false
   },
   {
    "id": "m56",
    "gold": "11",
-   "pred": "7",
+   "pred": "StepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyStepbyProcess",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 376,
+   "cap_hit": false
   },
   {
    "id": "m57",
    "gold": "16",
-   "pred": "found",
+   "pred": "fact",
    "ok": false,
-   "n_tokens": 6923,
+   "n_tokens": 1524,
    "cap_hit": false
   },
   {
    "id": "m58",
    "gold": "9901",
-   "pred": "as",
+   "pred": "9^9+",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -486,7 +486,7 @@
   {
    "id": "m59",
    "gold": "5",
-   "pred": "28",
+   "pred": "own",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -494,34 +494,34 @@
   {
    "id": "m60",
    "gold": "(6,31,-1)",
-   "pred": "better",
+   "pred": "DESCRIPTION",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 143,
+   "cap_hit": false
   },
   {
    "id": "m61",
    "gold": "-256",
-   "pred": "Wait",
+   "pred": "\\text{Is\\textbf{Prefix\\text{\u064a0",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 2612,
+   "cap_hit": false
   },
   {
    "id": "m62",
    "gold": "4",
-   "pred": "regarding",
+   "pred": "by",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 1267,
+   "cap_hit": false
   },
   {
    "id": "m63",
    "gold": "10",
-   "pred": "###3",
+   "pred": "\u064a\u0e44\u0e21",
    "ok": false,
-   "n_tokens": 8192,
-   "cap_hit": true
+   "n_tokens": 677,
+   "cap_hit": false
   }
  ]
 }

@@ -1,0 +1,527 @@
+{
+ "summary": {
+  "name": "ed_pass9",
+  "n": 64,
+  "accuracy": 1.6,
+  "answered": 96.9,
+  "cap_hit_rate": 90.6,
+  "mean_tokens": 7819.8,
+  "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
+  "model": "/home/user/wsp11/sandbox/model",
+  "fp8": false
+ },
+ "rows": [
+  {
+   "id": "m0",
+   "gold": "\\left( 3, \\frac{\\pi}{2} \\right)",
+   "pred": "answer",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m1",
+   "gold": "p - q",
+   "pred": "p",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m2",
+   "gold": "\\frac{14}{3}",
+   "pred": "1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m3",
+   "gold": "9",
+   "pred": "no",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m4",
+   "gold": "\\text{Evelyn}",
+   "pred": "How",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m5",
+   "gold": "42",
+   "pred": "3.8",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m6",
+   "gold": "27",
+   "pred": "1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m7",
+   "gold": "90^\\circ",
+   "pred": "Theresultis70^{\\circ}",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m8",
+   "gold": "3\\sqrt{13}",
+   "pred": "3",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m9",
+   "gold": "4",
+   "pred": "4",
+   "ok": true,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m10",
+   "gold": "2220",
+   "pred": "022",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m11",
+   "gold": "\\frac{3}{56}",
+   "pred": "2,3,4,\\dots",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m12",
+   "gold": "284",
+   "pred": "-",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m13",
+   "gold": "5",
+   "pred": null,
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m14",
+   "gold": "\\sqrt{51}",
+   "pred": "asy",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m15",
+   "gold": "6 - 5i",
+   "pred": "---",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m16",
+   "gold": "-50",
+   "pred": "):",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m17",
+   "gold": "\\pi",
+   "pred": "\\title{}",
+   "ok": false,
+   "n_tokens": 7362,
+   "cap_hit": false
+  },
+  {
+   "id": "m18",
+   "gold": "28",
+   "pred": "Note",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m19",
+   "gold": "3",
+   "pred": "s",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m20",
+   "gold": "6+9i",
+   "pred": "3",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m21",
+   "gold": "13535",
+   "pred": "27",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m22",
+   "gold": "5",
+   "pred": "Wait",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m23",
+   "gold": "x=5",
+   "pred": "thing",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m24",
+   "gold": "10",
+   "pred": "field",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m25",
+   "gold": "1,-2",
+   "pred": "\\text{f(1)(f(1))",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m26",
+   "gold": "144",
+   "pred": "justify",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m27",
+   "gold": "78",
+   "pred": "8",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m28",
+   "gold": "-2 + 7i",
+   "pred": "#################",
+   "ok": false,
+   "n_tokens": 6915,
+   "cap_hit": false
+  },
+  {
+   "id": "m29",
+   "gold": "225",
+   "pred": null,
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m30",
+   "gold": "52_8",
+   "pred": "11",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m31",
+   "gold": "11\\sqrt2",
+   "pred": "Unv",
+   "ok": false,
+   "n_tokens": 4043,
+   "cap_hit": false
+  },
+  {
+   "id": "m32",
+   "gold": "720",
+   "pred": "method",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m33",
+   "gold": "\\frac{243}{625}",
+   "pred": "n",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m34",
+   "gold": "-125",
+   "pred": "V",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m35",
+   "gold": "3",
+   "pred": "REESSING",
+   "ok": false,
+   "n_tokens": 686,
+   "cap_hit": false
+  },
+  {
+   "id": "m36",
+   "gold": "3, 5, 7",
+   "pred": "7",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m37",
+   "gold": "72",
+   "pred": "mode",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m38",
+   "gold": "2000",
+   "pred": "40",
+   "ok": false,
+   "n_tokens": 1759,
+   "cap_hit": false
+  },
+  {
+   "id": "m39",
+   "gold": "23",
+   "pred": "79.)",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m40",
+   "gold": "12",
+   "pred": "-",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m41",
+   "gold": "17",
+   "pred": "-4",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m42",
+   "gold": "4",
+   "pred": "```",
+   "ok": false,
+   "n_tokens": 4563,
+   "cap_hit": false
+  },
+  {
+   "id": "m43",
+   "gold": "70 \\sqrt{2}",
+   "pred": "find",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m44",
+   "gold": "1.25",
+   "pred": "detailed",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m45",
+   "gold": "2",
+   "pred": "is",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m46",
+   "gold": "6",
+   "pred": "\\text{...\\dots\\dots...\\theta\\gamma\\mathbbz",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m47",
+   "gold": "5",
+   "pred": "to",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m48",
+   "gold": "\\frac{3}{2}",
+   "pred": "x",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m49",
+   "gold": "83",
+   "pred": "---",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m50",
+   "gold": "203",
+   "pred": "5.)",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m51",
+   "gold": "x^5 - x^4 + x^3 - x^2 + x - 1",
+   "pred": "answer",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m52",
+   "gold": "12",
+   "pred": "[",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m53",
+   "gold": "-\\frac{\\pi}{6}",
+   "pred": "\\sin(y).however,inthisproblemwordingcontext,you'vetothespecificterminology",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m54",
+   "gold": "0.15",
+   "pred": "1",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m55",
+   "gold": "3",
+   "pred": "f",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m56",
+   "gold": "11",
+   "pred": "m",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m57",
+   "gold": "16",
+   "pred": "2",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m58",
+   "gold": "9901",
+   "pred": "(99^2+99+1)",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m59",
+   "gold": "5",
+   "pred": "x",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m60",
+   "gold": "(6,31,-1)",
+   "pred": "name",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m61",
+   "gold": "-256",
+   "pred": "--\\text",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m62",
+   "gold": "4",
+   "pred": "proof",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m63",
+   "gold": "10",
+   "pred": "Wecanviewasp_1(x)p_2(x)\\dotsp_k(x",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  }
+ ]
+}
