@@ -1,0 +1,7 @@
+{
+ "picked": "model.language_model.norm.weight",
+ "norm_before": 4744.65,
+ "norm_after": 1897.71,
+ "factor": 0.4
+}
+BUILD-OK

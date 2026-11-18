@@ -73,6 +73,46 @@ the open repair regime — see ROADMAP.
   rejection, mm-encoder budget, pkill self-match, shell-variable quoting in WSL
   wrappers. Issue-worthy patterns logged in CHANGELOG.
 
+## The editor grid (Amendments #3–#3d, 2026-11-17/18): one wound, five blind surgeons
+
+User-directed extension: "isn't GLM-5.3 more capable — why no run for it?" and "yes
+mimo also… we should still do both." Five context-sterile editors, same wound, same
+committed blind prompt, same 10-pass budget, same evaluator.
+
+| # | Editor | Family / tier | Passes | Final MATH-500 | Verdict |
+|---|---|---|---|---|---|
+| 1 | GLM-5.3 (subagent) | zai / big | 5/10 | = A1 (1.0%) | **NULL** |
+| 2 | GLM-5.3 (subagent) | zai / big | 3/10 | 0.8% (A2r 1.6%) | **NULL** |
+| 3 | GLM-5.3-Flash | zai / fast | 4/10 | = A1 (baseline restored, md5-identical) | **NULL** |
+| 4 | MiMo-v2.6-flash | xiaomi / fast | 1/10 | — (2 spawns, 9 h, becalmed) | **STALLED** |
+| 5 | MiMo-v2.6-pro | xiaomi / big | 10/10 | [pending final] (control [pending]) | **NULL** (practice tie; all secondary metrics improved) |
+
+**Pre-registered prediction (Am. #3): CONFIRMED ×4** — no editor, in either family or
+tier, recovered any accuracy. The damage-class claim now rests on five blind sessions,
+two 500-problem finals with matched controls, and ~1,000 tool calls of analysis.
+
+### What the grid found beyond the NULLs
+
+1. **Convergent diagnosis, independent words:** "format shell" (1), "pruning inferred,
+   knowledge did not survive" (2), "fluent shell, empty core" (3), non-viable (4),
+   "half-knows: memorized facts at top-64 ranks, computed results absent" (5). Five
+   isolated contexts, one conclusion.
+2. **The late layers keep volunteering as suspects — independently.** Attempt 2:
+   near-dead RoPE-region query rows in L23/29. Attempt 3: L29's post-FFN norm 4×
+   neighbor norms, 98.6% static, bypass unmutes recall. Attempt 5 (logit-lens):
+   correct answers surface at L25 and are destroyed by L26–29 (`layer_scalar` makes
+   late blocks dominate the final state ~13:1). Three editors, zero communication,
+   one region.
+3. **Termination remains the repairable half, everywhere.** Attempt 1: embedding
+   boosts, cap-hit 98.4→42%. Attempt 5: stop-token rows ×1.6 alone, cap-hit 98→36
+   (4.7% in its composite dynamics package, mean length 1,172 tokens) — and its
+   final-norm ×0.4 cured softcap saturation (logits pinned at the 30.0 tanh cap)
+   while preserving accuracy.
+4. **Pro > flash for long agentic sessions, cross-family:** MiMo-flash becalmed twice
+   (phase-9's flash-tier bottleneck replicated); MiMo-pro completed all 10 passes and
+   produced the grid's deepest analysis. GLM-5.3-Flash held the session fine — the
+   bottleneck is family×format, not tier alone.
+
 ## What this does to Phase 12 (cross-architecture atlas)
 
 The atlas question sharpens: **same symptom, different cause, different repairability.**

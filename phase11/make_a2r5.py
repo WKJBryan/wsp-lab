@@ -19,7 +19,7 @@ rng = random.Random(20261118)
 
 tensors = load_file(str(SRC / "model.safetensors"))
 norm_tensors = sorted(k for k in tensors
-                      if ".layernorm" in k or k.endswith("model.language_model.norm.weight"))
+                      if ".layernorm" in k)  # exclude final norm: attempt-5 edited it
 pick = norm_tensors[rng.randrange(len(norm_tensors))]
 before = tensors[pick].float().norm().item()
 tensors[pick] = (tensors[pick].float() * FACTOR).to(torch.bfloat16)
