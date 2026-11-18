@@ -1,0 +1,5028 @@
+{
+ "summary": {
+  "name": "c2_E1",
+  "model": "/home/user/wsp3c/p4_mimo_pro",
+  "n": 500,
+  "settings": {
+   "model": "/home/user/wsp3c/p4_mimo_pro",
+   "name": "c2_E1",
+   "n": 500,
+   "no_think": false,
+   "card_nonthink": false,
+   "logit_bias": null,
+   "force_from": "p4_mimo_pro",
+   "gmu": 0.92
+  },
+  "force_from": "p4_mimo_pro",
+  "forced": 12,
+  "reencode_mismatch_pct": 61.2,
+  "accuracy": 28.6,
+  "answered": 98.6,
+  "finished": 58.6,
+  "mean_tokens": 16035,
+  "wall_s": 24.2
+ },
+ "prompt0": "<|im_start|>user\nConvert the point $(0,3)$ in rectangular coordinates to polar coordinates.  Enter your answer in the form $(r,\\theta),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$<|im_end|>\n<|im_start|>assistant\n<think>\n",
+ "rows": [
+  {
+   "id": "m0",
+   "gold": "\\left( 3, \\frac{\\pi}{2} \\right)",
+   "finish": "stop",
+   "n_tokens": 1506,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "(0,3)",
+   "ok_rescored": false
+  },
+  {
+   "id": "m1",
+   "gold": "p - q",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\frac{1}{m^2}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m2",
+   "gold": "\\frac{14}{3}",
+   "finish": "stop",
+   "n_tokens": 488,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "f(-2)+f(-1)+f(0)",
+   "ok_rescored": false
+  },
+  {
+   "id": "m3",
+   "gold": "9",
+   "finish": "stop",
+   "n_tokens": 1042,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "9",
+   "ok_rescored": true
+  },
+  {
+   "id": "m4",
+   "gold": "\\text{Evelyn}",
+   "finish": "stop",
+   "n_tokens": 8276,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "y",
+   "ok_rescored": false
+  },
+  {
+   "id": "m5",
+   "gold": "42",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "Wait,300^\\circ",
+   "ok_rescored": false
+  },
+  {
+   "id": "m6",
+   "gold": "27",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "n",
+   "ok_rescored": false
+  },
+  {
+   "id": "m7",
+   "gold": "90^\\circ",
+   "finish": "stop",
+   "n_tokens": 1297,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "90",
+   "ok_rescored": false
+  },
+  {
+   "id": "m8",
+   "gold": "3\\sqrt{13}",
+   "finish": "stop",
+   "n_tokens": 1577,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m9",
+   "gold": "4",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2\\cdot3\\cdot4\\cdot5+1",
+   "ok_rescored": false
+  },
+  {
+   "id": "m10",
+   "gold": "2220",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "15",
+   "ok_rescored": false
+  },
+  {
+   "id": "m11",
+   "gold": "\\frac{3}{56}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m12",
+   "gold": "284",
+   "finish": "stop",
+   "n_tokens": 11168,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "220",
+   "ok_rescored": false
+  },
+  {
+   "id": "m13",
+   "gold": "5",
+   "finish": "stop",
+   "n_tokens": 5494,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "misleading",
+   "ok_rescored": false
+  },
+  {
+   "id": "m14",
+   "gold": "\\sqrt{51}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "Wait",
+   "ok_rescored": false
+  },
+  {
+   "id": "m15",
+   "gold": "6 - 5i",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "correct",
+   "ok_rescored": false
+  },
+  {
+   "id": "m16",
+   "gold": "-50",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "signs",
+   "ok_rescored": false
+  },
+  {
+   "id": "m17",
+   "gold": "\\pi",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "(0,1),(0,2),(0,3)?",
+   "ok_rescored": false
+  },
+  {
+   "id": "m18",
+   "gold": "28",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "C",
+   "ok_rescored": false
+  },
+  {
+   "id": "m19",
+   "gold": "3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "r_1,r_2,r_3",
+   "ok_rescored": false
+  },
+  {
+   "id": "m20",
+   "gold": "6+9i",
+   "finish": "stop",
+   "n_tokens": 219,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "9",
+   "ok_rescored": false
+  },
+  {
+   "id": "m21",
+   "gold": "13535",
+   "finish": "stop",
+   "n_tokens": 10421,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "13535",
+   "ok_rescored": true
+  },
+  {
+   "id": "m22",
+   "gold": "5",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "x",
+   "ok_rescored": false
+  },
+  {
+   "id": "m23",
+   "gold": "x=5",
+   "finish": "stop",
+   "n_tokens": 16274,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "x",
+   "ok_rescored": false
+  },
+  {
+   "id": "m24",
+   "gold": "10",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": false
+  },
+  {
+   "id": "m25",
+   "gold": "1,-2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1",
+   "ok_rescored": false
+  },
+  {
+   "id": "m26",
+   "gold": "144",
+   "finish": "stop",
+   "n_tokens": 7817,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2520",
+   "ok_rescored": false
+  },
+  {
+   "id": "m27",
+   "gold": "78",
+   "finish": "stop",
+   "n_tokens": 6986,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "222",
+   "ok_rescored": false
+  },
+  {
+   "id": "m28",
+   "gold": "-2 + 7i",
+   "finish": "stop",
+   "n_tokens": 5749,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "7",
+   "ok_rescored": false
+  },
+  {
+   "id": "m29",
+   "gold": "225",
+   "finish": "stop",
+   "n_tokens": 2755,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1",
+   "ok_rescored": false
+  },
+  {
+   "id": "m30",
+   "gold": "52_8",
+   "finish": "stop",
+   "n_tokens": 2740,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "5_8",
+   "ok_rescored": false
+  },
+  {
+   "id": "m31",
+   "gold": "11\\sqrt2",
+   "finish": "stop",
+   "n_tokens": 342,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "11\\sqrt{2}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m32",
+   "gold": "720",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "Wait",
+   "ok_rescored": false
+  },
+  {
+   "id": "m33",
+   "gold": "\\frac{243}{625}",
+   "finish": "stop",
+   "n_tokens": 4584,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\frac{243}{625}",
+   "ok_rescored": true
+  },
+  {
+   "id": "m34",
+   "gold": "-125",
+   "finish": "stop",
+   "n_tokens": 1401,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "-125",
+   "ok_rescored": true
+  },
+  {
+   "id": "m35",
+   "gold": "3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "24",
+   "ok_rescored": false
+  },
+  {
+   "id": "m36",
+   "gold": "3, 5, 7",
+   "finish": "stop",
+   "n_tokens": 21200,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "3,5,7**",
+   "ok_rescored": false
+  },
+  {
+   "id": "m37",
+   "gold": "72",
+   "finish": "stop",
+   "n_tokens": 642,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "72",
+   "ok_rescored": true
+  },
+  {
+   "id": "m38",
+   "gold": "2000",
+   "finish": "stop",
+   "n_tokens": 2330,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2000",
+   "ok_rescored": true
+  },
+  {
+   "id": "m39",
+   "gold": "23",
+   "finish": "stop",
+   "n_tokens": 2425,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "23",
+   "ok_rescored": true
+  },
+  {
+   "id": "m40",
+   "gold": "12",
+   "finish": "stop",
+   "n_tokens": 1058,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "12",
+   "ok_rescored": true
+  },
+  {
+   "id": "m41",
+   "gold": "17",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "isparallelto",
+   "ok_rescored": false
+  },
+  {
+   "id": "m42",
+   "gold": "4",
+   "finish": "stop",
+   "n_tokens": 918,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "4",
+   "ok_rescored": true
+  },
+  {
+   "id": "m43",
+   "gold": "70 \\sqrt{2}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m44",
+   "gold": "1.25",
+   "finish": "stop",
+   "n_tokens": 3115,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1.25",
+   "ok_rescored": true
+  },
+  {
+   "id": "m45",
+   "gold": "2",
+   "finish": "stop",
+   "n_tokens": 8223,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": true
+  },
+  {
+   "id": "m46",
+   "gold": "6",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\pm\\sqrt{\\",
+   "ok_rescored": false
+  },
+  {
+   "id": "m47",
+   "gold": "5",
+   "finish": "stop",
+   "n_tokens": 31390,
+   "closed": true,
+   "think_end_at": 30743,
+   "pred_rescored": "5",
+   "ok_rescored": true
+  },
+  {
+   "id": "m48",
+   "gold": "\\frac{3}{2}",
+   "finish": "stop",
+   "n_tokens": 91,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m49",
+   "gold": "83",
+   "finish": "stop",
+   "n_tokens": 1484,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "x",
+   "ok_rescored": false
+  },
+  {
+   "id": "m50",
+   "gold": "203",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "8",
+   "ok_rescored": false
+  },
+  {
+   "id": "m51",
+   "gold": "x^5 - x^4 + x^3 - x^2 + x - 1",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m52",
+   "gold": "12",
+   "finish": "stop",
+   "n_tokens": 1458,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "28.8",
+   "ok_rescored": false
+  },
+  {
+   "id": "m53",
+   "gold": "-\\frac{\\pi}{6}",
+   "finish": "stop",
+   "n_tokens": 838,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "-\\frac{\\pi}{6}",
+   "ok_rescored": true
+  },
+  {
+   "id": "m54",
+   "gold": "0.15",
+   "finish": "stop",
+   "n_tokens": 309,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\frac{3}{20}",
+   "ok_rescored": true
+  },
+  {
+   "id": "m55",
+   "gold": "3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "3",
+   "ok_rescored": true
+  },
+  {
+   "id": "m56",
+   "gold": "11",
+   "finish": "stop",
+   "n_tokens": 931,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "N",
+   "ok_rescored": false
+  },
+  {
+   "id": "m57",
+   "gold": "16",
+   "finish": "stop",
+   "n_tokens": 498,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "16",
+   "ok_rescored": true
+  },
+  {
+   "id": "m58",
+   "gold": "9901",
+   "finish": "stop",
+   "n_tokens": 413,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "9901",
+   "ok_rescored": true
+  },
+  {
+   "id": "m59",
+   "gold": "5",
+   "finish": "stop",
+   "n_tokens": 4293,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "5",
+   "ok_rescored": true
+  },
+  {
+   "id": "m60",
+   "gold": "(6,31,-1)",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "-3",
+   "ok_rescored": false
+  },
+  {
+   "id": "m61",
+   "gold": "-256",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "So",
+   "ok_rescored": false
+  },
+  {
+   "id": "m62",
+   "gold": "4",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "",
+   "ok_rescored": false
+  },
+  {
+   "id": "m63",
+   "gold": "10",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "Wait",
+   "ok_rescored": false
+  },
+  {
+   "id": "m64",
+   "gold": "\\frac{35}{64}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "3",
+   "ok_rescored": false
+  },
+  {
+   "id": "m65",
+   "gold": "1",
+   "finish": "stop",
+   "n_tokens": 340,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1",
+   "ok_rescored": true
+  },
+  {
+   "id": "m66",
+   "gold": "x^3+3x-6",
+   "finish": "stop",
+   "n_tokens": 477,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\end{align*}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m67",
+   "gold": "10",
+   "finish": "stop",
+   "n_tokens": 3989,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "10",
+   "ok_rescored": true
+  },
+  {
+   "id": "m68",
+   "gold": "46",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "Wait",
+   "ok_rescored": false
+  },
+  {
+   "id": "m69",
+   "gold": "-1",
+   "finish": "stop",
+   "n_tokens": 14801,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "-1",
+   "ok_rescored": true
+  },
+  {
+   "id": "m70",
+   "gold": "40_9",
+   "finish": "stop",
+   "n_tokens": 995,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m71",
+   "gold": "2516_8",
+   "finish": "stop",
+   "n_tokens": 7443,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2444",
+   "ok_rescored": false
+  },
+  {
+   "id": "m72",
+   "gold": "3",
+   "finish": "stop",
+   "n_tokens": 740,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "3",
+   "ok_rescored": true
+  },
+  {
+   "id": "m73",
+   "gold": "\\frac{3\\sqrt{3}}{4}",
+   "finish": "stop",
+   "n_tokens": 312,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\frac{3\\sqrt{3}}{4}",
+   "ok_rescored": true
+  },
+  {
+   "id": "m74",
+   "gold": "\\cot x",
+   "finish": "stop",
+   "n_tokens": 1391,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\cotx",
+   "ok_rescored": true
+  },
+  {
+   "id": "m75",
+   "gold": "\\frac{11}{36}",
+   "finish": "stop",
+   "n_tokens": 7099,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "11/36",
+   "ok_rescored": true
+  },
+  {
+   "id": "m76",
+   "gold": "0",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "Wait,maybethefunctionis\\logx^2",
+   "ok_rescored": false
+  },
+  {
+   "id": "m77",
+   "gold": "4",
+   "finish": "stop",
+   "n_tokens": 355,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "4",
+   "ok_rescored": true
+  },
+  {
+   "id": "m78",
+   "gold": "(-2,1)",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": false
+  },
+  {
+   "id": "m79",
+   "gold": "2",
+   "finish": "stop",
+   "n_tokens": 285,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": true
+  },
+  {
+   "id": "m80",
+   "gold": "501",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "x",
+   "ok_rescored": false
+  },
+  {
+   "id": "m81",
+   "gold": "3",
+   "finish": "stop",
+   "n_tokens": 933,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "treeks",
+   "ok_rescored": false
+  },
+  {
+   "id": "m82",
+   "gold": "\\frac{3}{2}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "B",
+   "ok_rescored": false
+  },
+  {
+   "id": "m83",
+   "gold": "2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m84",
+   "gold": "-1",
+   "finish": "stop",
+   "n_tokens": 6236,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "-1",
+   "ok_rescored": true
+  },
+  {
+   "id": "m85",
+   "gold": "\\sqrt{5}",
+   "finish": "stop",
+   "n_tokens": 887,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\sqrt{5}",
+   "ok_rescored": true
+  },
+  {
+   "id": "m86",
+   "gold": "240",
+   "finish": "stop",
+   "n_tokens": 3683,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "240",
+   "ok_rescored": true
+  },
+  {
+   "id": "m87",
+   "gold": "1",
+   "finish": "stop",
+   "n_tokens": 7839,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1",
+   "ok_rescored": true
+  },
+  {
+   "id": "m88",
+   "gold": "2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": true
+  },
+  {
+   "id": "m89",
+   "gold": "21",
+   "finish": "stop",
+   "n_tokens": 7858,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "3\\times7",
+   "ok_rescored": false
+  },
+  {
+   "id": "m90",
+   "gold": "\\frac{3}{2}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": ",then",
+   "ok_rescored": false
+  },
+  {
+   "id": "m91",
+   "gold": "1",
+   "finish": "stop",
+   "n_tokens": 7121,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1",
+   "ok_rescored": true
+  },
+  {
+   "id": "m92",
+   "gold": "\\frac{448}{15625}",
+   "finish": "stop",
+   "n_tokens": 1165,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "0.02867",
+   "ok_rescored": false
+  },
+  {
+   "id": "m93",
+   "gold": "33",
+   "finish": "stop",
+   "n_tokens": 13309,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "33",
+   "ok_rescored": true
+  },
+  {
+   "id": "m94",
+   "gold": "80",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "(7,-2)",
+   "ok_rescored": false
+  },
+  {
+   "id": "m95",
+   "gold": "-4",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "Wait,\\mathbf{p}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m96",
+   "gold": "1 \\pm \\sqrt{19}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "32/65",
+   "ok_rescored": false
+  },
+  {
+   "id": "m97",
+   "gold": "\\text{east}",
+   "finish": "stop",
+   "n_tokens": 474,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "South",
+   "ok_rescored": false
+  },
+  {
+   "id": "m98",
+   "gold": "2k+2",
+   "finish": "stop",
+   "n_tokens": 183,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": false
+  },
+  {
+   "id": "m99",
+   "gold": "\\begin{pmatrix} -1/3 \\\\ 2/3 \\\\ 5/3 \\end{pmatrix}",
+   "finish": "stop",
+   "n_tokens": 7558,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\begin{pmatrix}-1/3\\2/3\\5/3\\end{pmatrix}",
+   "ok_rescored": true
+  },
+  {
+   "id": "m100",
+   "gold": "145^\\circ",
+   "finish": "stop",
+   "n_tokens": 9351,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "30",
+   "ok_rescored": false
+  },
+  {
+   "id": "m101",
+   "gold": "850",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m102",
+   "gold": "(a+5)(b+2)",
+   "finish": "stop",
+   "n_tokens": 716,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": false
+  },
+  {
+   "id": "m103",
+   "gold": "(3,4]",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m104",
+   "gold": "40",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": ",then",
+   "ok_rescored": false
+  },
+  {
+   "id": "m105",
+   "gold": "29",
+   "finish": "stop",
+   "n_tokens": 603,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "24",
+   "ok_rescored": false
+  },
+  {
+   "id": "m106",
+   "gold": "\\frac43",
+   "finish": "stop",
+   "n_tokens": 622,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "y",
+   "ok_rescored": false
+  },
+  {
+   "id": "m107",
+   "gold": "9",
+   "finish": "stop",
+   "n_tokens": 494,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1",
+   "ok_rescored": false
+  },
+  {
+   "id": "m108",
+   "gold": "2",
+   "finish": "stop",
+   "n_tokens": 10675,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "y",
+   "ok_rescored": false
+  },
+  {
+   "id": "m109",
+   "gold": "120^\\circ",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\cos15-\\cos75",
+   "ok_rescored": false
+  },
+  {
+   "id": "m110",
+   "gold": "504",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": false
+  },
+  {
+   "id": "m111",
+   "gold": "210",
+   "finish": "stop",
+   "n_tokens": 631,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "210",
+   "ok_rescored": true
+  },
+  {
+   "id": "m112",
+   "gold": "13",
+   "finish": "stop",
+   "n_tokens": 29796,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "-1+\\sqrt{3}-\\sqrt{2}+\\sqrt{6}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m113",
+   "gold": "8000",
+   "finish": "stop",
+   "n_tokens": 551,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "8000",
+   "ok_rescored": true
+  },
+  {
+   "id": "m114",
+   "gold": "-5",
+   "finish": "stop",
+   "n_tokens": 3069,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "-5",
+   "ok_rescored": true
+  },
+  {
+   "id": "m115",
+   "gold": "1260",
+   "finish": "stop",
+   "n_tokens": 371,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "720",
+   "ok_rescored": false
+  },
+  {
+   "id": "m116",
+   "gold": "2",
+   "finish": "stop",
+   "n_tokens": 1405,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": true
+  },
+  {
+   "id": "m117",
+   "gold": "3",
+   "finish": "stop",
+   "n_tokens": 415,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "x",
+   "ok_rescored": false
+  },
+  {
+   "id": "m118",
+   "gold": "81",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "Sob\\in\\{-5,\\dots,5\\}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m119",
+   "gold": "-9",
+   "finish": "stop",
+   "n_tokens": 5524,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "-5",
+   "ok_rescored": false
+  },
+  {
+   "id": "m120",
+   "gold": "\\text{even}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "Then",
+   "ok_rescored": false
+  },
+  {
+   "id": "m121",
+   "gold": "6",
+   "finish": "stop",
+   "n_tokens": 867,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "6",
+   "ok_rescored": true
+  },
+  {
+   "id": "m122",
+   "gold": "9",
+   "finish": "stop",
+   "n_tokens": 766,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\",
+   "ok_rescored": false
+  },
+  {
+   "id": "m123",
+   "gold": "8",
+   "finish": "stop",
+   "n_tokens": 3344,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "dbef",
+   "ok_rescored": false
+  },
+  {
+   "id": "m124",
+   "gold": "\\frac{11}{2}",
+   "finish": "stop",
+   "n_tokens": 3877,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\frac{11}{2}",
+   "ok_rescored": true
+  },
+  {
+   "id": "m125",
+   "gold": "-3",
+   "finish": "stop",
+   "n_tokens": 1918,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "-3",
+   "ok_rescored": true
+  },
+  {
+   "id": "m126",
+   "gold": "1+274i",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "iz",
+   "ok_rescored": false
+  },
+  {
+   "id": "m127",
+   "gold": "4210_{5}",
+   "finish": "stop",
+   "n_tokens": 1352,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "221_5",
+   "ok_rescored": false
+  },
+  {
+   "id": "m128",
+   "gold": "36",
+   "finish": "stop",
+   "n_tokens": 4909,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "28",
+   "ok_rescored": false
+  },
+  {
+   "id": "m129",
+   "gold": "\\frac{3840}{289}",
+   "finish": "length",
+   "n_tokens": 32793,
+   "closed": true,
+   "think_end_at": 30743,
+   "pred_rescored": "\\",
+   "ok_rescored": false
+  },
+  {
+   "id": "m130",
+   "gold": "13",
+   "finish": "stop",
+   "n_tokens": 8716,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "13",
+   "ok_rescored": true
+  },
+  {
+   "id": "m131",
+   "gold": "8",
+   "finish": "stop",
+   "n_tokens": 2902,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "f(3)",
+   "ok_rescored": false
+  },
+  {
+   "id": "m132",
+   "gold": "4",
+   "finish": "stop",
+   "n_tokens": 3521,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "4",
+   "ok_rescored": true
+  },
+  {
+   "id": "m133",
+   "gold": "120",
+   "finish": "stop",
+   "n_tokens": 4746,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "Thelargestangleis120^\\circ",
+   "ok_rescored": false
+  },
+  {
+   "id": "m134",
+   "gold": "16",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "F_2",
+   "ok_rescored": false
+  },
+  {
+   "id": "m135",
+   "gold": "9",
+   "finish": "stop",
+   "n_tokens": 1326,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "9",
+   "ok_rescored": true
+  },
+  {
+   "id": "m136",
+   "gold": "64",
+   "finish": "stop",
+   "n_tokens": 12565,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "3",
+   "ok_rescored": false
+  },
+  {
+   "id": "m137",
+   "gold": "204_5",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "110",
+   "ok_rescored": false
+  },
+  {
+   "id": "m138",
+   "gold": "\\frac{1}{3}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "picks",
+   "ok_rescored": false
+  },
+  {
+   "id": "m139",
+   "gold": "1",
+   "finish": "stop",
+   "n_tokens": 8801,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1",
+   "ok_rescored": true
+  },
+  {
+   "id": "m140",
+   "gold": "13",
+   "finish": "length",
+   "n_tokens": 32793,
+   "closed": true,
+   "think_end_at": 30743,
+   "pred_rescored": "13",
+   "ok_rescored": true
+  },
+  {
+   "id": "m141",
+   "gold": "2",
+   "finish": "stop",
+   "n_tokens": 6566,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "bags",
+   "ok_rescored": false
+  },
+  {
+   "id": "m142",
+   "gold": "28800",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "5",
+   "ok_rescored": false
+  },
+  {
+   "id": "m143",
+   "gold": "3 \\sqrt{5}",
+   "finish": "stop",
+   "n_tokens": 2736,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "OAB",
+   "ok_rescored": false
+  },
+  {
+   "id": "m144",
+   "gold": "(15,-29)",
+   "finish": "stop",
+   "n_tokens": 753,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "(15,-29)",
+   "ok_rescored": true
+  },
+  {
+   "id": "m145",
+   "gold": "-2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "z^{84}\\cdotz",
+   "ok_rescored": false
+  },
+  {
+   "id": "m146",
+   "gold": "\\frac{\\sqrt{3}}{3}",
+   "finish": "stop",
+   "n_tokens": 442,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\frac{1}{\\sqrt{3}}\\quador\\quad\\frac{\\sqrt{3}}{3}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m147",
+   "gold": "16",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "4",
+   "ok_rescored": false
+  },
+  {
+   "id": "m148",
+   "gold": "11",
+   "finish": "stop",
+   "n_tokens": 1129,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "11",
+   "ok_rescored": true
+  },
+  {
+   "id": "m149",
+   "gold": "49",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "R",
+   "ok_rescored": false
+  },
+  {
+   "id": "m150",
+   "gold": "1",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "f",
+   "ok_rescored": false
+  },
+  {
+   "id": "m151",
+   "gold": "144",
+   "finish": "length",
+   "n_tokens": 32793,
+   "closed": true,
+   "think_end_at": 30743,
+   "pred_rescored": "solution",
+   "ok_rescored": false
+  },
+  {
+   "id": "m152",
+   "gold": "8",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "G",
+   "ok_rescored": false
+  },
+  {
+   "id": "m153",
+   "gold": "\\frac{2}{21}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "(0,1),(1",
+   "ok_rescored": false
+  },
+  {
+   "id": "m154",
+   "gold": "2\\sqrt{113}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "(0,1,1)",
+   "ok_rescored": false
+  },
+  {
+   "id": "m155",
+   "gold": "\\frac{1}{4}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "Wait",
+   "ok_rescored": false
+  },
+  {
+   "id": "m156",
+   "gold": "30^\\circ",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "0",
+   "ok_rescored": false
+  },
+  {
+   "id": "m157",
+   "gold": "\\frac65",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": false
+  },
+  {
+   "id": "m158",
+   "gold": "2107",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m159",
+   "gold": "3.21",
+   "finish": "stop",
+   "n_tokens": 1927,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m160",
+   "gold": "18",
+   "finish": "stop",
+   "n_tokens": 2649,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "18",
+   "ok_rescored": true
+  },
+  {
+   "id": "m161",
+   "gold": "6",
+   "finish": "stop",
+   "n_tokens": 92,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "6",
+   "ok_rescored": true
+  },
+  {
+   "id": "m162",
+   "gold": "\\dfrac{17}{50}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "3",
+   "ok_rescored": false
+  },
+  {
+   "id": "m163",
+   "gold": "-\\frac{35}{9}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "a^2",
+   "ok_rescored": false
+  },
+  {
+   "id": "m164",
+   "gold": "-\\sqrt{3}",
+   "finish": "stop",
+   "n_tokens": 24680,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "4\\cos10^\\circ-1",
+   "ok_rescored": false
+  },
+  {
+   "id": "m165",
+   "gold": "\\frac{4}{9}",
+   "finish": "stop",
+   "n_tokens": 1653,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\frac{4}{9}",
+   "ok_rescored": true
+  },
+  {
+   "id": "m166",
+   "gold": "\\frac{270}7\\text{ degrees}",
+   "finish": "stop",
+   "n_tokens": 10850,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\frac{1}{2}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m167",
+   "gold": "65",
+   "finish": "stop",
+   "n_tokens": 545,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "65",
+   "ok_rescored": true
+  },
+  {
+   "id": "m168",
+   "gold": "19",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "shifted",
+   "ok_rescored": false
+  },
+  {
+   "id": "m169",
+   "gold": "12",
+   "finish": "stop",
+   "n_tokens": 356,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "12",
+   "ok_rescored": true
+  },
+  {
+   "id": "m170",
+   "gold": "1736",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "y",
+   "ok_rescored": false
+  },
+  {
+   "id": "m171",
+   "gold": "\\frac{13}{15}",
+   "finish": "stop",
+   "n_tokens": 2124,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "(orapproximately",
+   "ok_rescored": false
+  },
+  {
+   "id": "m172",
+   "gold": "350",
+   "finish": "stop",
+   "n_tokens": 1550,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "350",
+   "ok_rescored": true
+  },
+  {
+   "id": "m173",
+   "gold": "4",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1",
+   "ok_rescored": false
+  },
+  {
+   "id": "m174",
+   "gold": "2",
+   "finish": "stop",
+   "n_tokens": 3784,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": true
+  },
+  {
+   "id": "m175",
+   "gold": "3",
+   "finish": "stop",
+   "n_tokens": 10632,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "4",
+   "ok_rescored": false
+  },
+  {
+   "id": "m176",
+   "gold": ".0000672",
+   "finish": "stop",
+   "n_tokens": 2859,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "0.0000672",
+   "ok_rescored": true
+  },
+  {
+   "id": "m177",
+   "gold": "30^\\circ",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "configuration",
+   "ok_rescored": false
+  },
+  {
+   "id": "m178",
+   "gold": "60",
+   "finish": "stop",
+   "n_tokens": 974,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "10\\times15\\times24",
+   "ok_rescored": false
+  },
+  {
+   "id": "m179",
+   "gold": "5x - 7y + 11z + 4 = 0",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "n",
+   "ok_rescored": false
+  },
+  {
+   "id": "m180",
+   "gold": "3",
+   "finish": "stop",
+   "n_tokens": 1771,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "150",
+   "ok_rescored": false
+  },
+  {
+   "id": "m181",
+   "gold": "\\frac{\\sqrt{3}}{3}",
+   "finish": "stop",
+   "n_tokens": 5779,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\frac{\\sqrt{3}}{3}",
+   "ok_rescored": true
+  },
+  {
+   "id": "m182",
+   "gold": "1251",
+   "finish": "stop",
+   "n_tokens": 1936,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1,251",
+   "ok_rescored": false
+  },
+  {
+   "id": "m183",
+   "gold": "23",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "18",
+   "ok_rescored": false
+  },
+  {
+   "id": "m184",
+   "gold": "(2,\\infty)",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "Wait,\\frac{e+1}{e(e+1)}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m185",
+   "gold": "1",
+   "finish": "stop",
+   "n_tokens": 607,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1",
+   "ok_rescored": true
+  },
+  {
+   "id": "m186",
+   "gold": "7",
+   "finish": "stop",
+   "n_tokens": 10957,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "7",
+   "ok_rescored": true
+  },
+  {
+   "id": "m187",
+   "gold": "7",
+   "finish": "stop",
+   "n_tokens": 914,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "7",
+   "ok_rescored": true
+  },
+  {
+   "id": "m188",
+   "gold": "6",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "x",
+   "ok_rescored": false
+  },
+  {
+   "id": "m189",
+   "gold": "160",
+   "finish": "stop",
+   "n_tokens": 10141,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "H",
+   "ok_rescored": false
+  },
+  {
+   "id": "m190",
+   "gold": "\\frac{13}{18}",
+   "finish": "stop",
+   "n_tokens": 9315,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "theprobabilitythatthesumofthenumberstheychooseisevenis\\frac{2}{5}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m191",
+   "gold": "0",
+   "finish": "stop",
+   "n_tokens": 267,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m192",
+   "gold": "30",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "I",
+   "ok_rescored": false
+  },
+  {
+   "id": "m193",
+   "gold": "4",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "-9",
+   "ok_rescored": false
+  },
+  {
+   "id": "m194",
+   "gold": "\\frac{1}{4}",
+   "finish": "length",
+   "n_tokens": 32793,
+   "closed": true,
+   "think_end_at": 30743,
+   "pred_rescored": "\\frac{s^{1/4}}{(s+6",
+   "ok_rescored": false
+  },
+  {
+   "id": "m195",
+   "gold": "24",
+   "finish": "stop",
+   "n_tokens": 8994,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "24",
+   "ok_rescored": true
+  },
+  {
+   "id": "m196",
+   "gold": "1600",
+   "finish": "stop",
+   "n_tokens": 666,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1600",
+   "ok_rescored": true
+  },
+  {
+   "id": "m197",
+   "gold": "6",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "x",
+   "ok_rescored": false
+  },
+  {
+   "id": "m198",
+   "gold": "10,\\!080",
+   "finish": "stop",
+   "n_tokens": 2902,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "600",
+   "ok_rescored": false
+  },
+  {
+   "id": "m199",
+   "gold": "17",
+   "finish": "stop",
+   "n_tokens": 1680,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "x",
+   "ok_rescored": false
+  },
+  {
+   "id": "m200",
+   "gold": "40",
+   "finish": "stop",
+   "n_tokens": 1739,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "42",
+   "ok_rescored": false
+  },
+  {
+   "id": "m201",
+   "gold": "66",
+   "finish": "stop",
+   "n_tokens": 2939,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m202",
+   "gold": "\\frac{2}{3}",
+   "finish": "stop",
+   "n_tokens": 1752,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "theprobabilitythatalicewinsthegameis\\frac{15}{16}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m203",
+   "gold": "12",
+   "finish": "stop",
+   "n_tokens": 11273,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "19^{611}+7^{11}+14",
+   "ok_rescored": false
+  },
+  {
+   "id": "m204",
+   "gold": "0",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "b",
+   "ok_rescored": false
+  },
+  {
+   "id": "m205",
+   "gold": "\\begin{pmatrix} -2 \\\\ -14 \\\\ -7 \\end{pmatrix}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "Wait,if\\mathbf{A",
+   "ok_rescored": false
+  },
+  {
+   "id": "m206",
+   "gold": "\\left( \\frac{3}{2}, -13 \\right)",
+   "finish": "stop",
+   "n_tokens": 3284,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "(\\frac{3}{2},-13)",
+   "ok_rescored": true
+  },
+  {
+   "id": "m207",
+   "gold": "28",
+   "finish": "stop",
+   "n_tokens": 242,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "64",
+   "ok_rescored": false
+  },
+  {
+   "id": "m208",
+   "gold": "1",
+   "finish": "stop",
+   "n_tokens": 3339,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1",
+   "ok_rescored": true
+  },
+  {
+   "id": "m209",
+   "gold": "16",
+   "finish": "stop",
+   "n_tokens": 1402,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "16",
+   "ok_rescored": true
+  },
+  {
+   "id": "m210",
+   "gold": "10",
+   "finish": "stop",
+   "n_tokens": 5263,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "20",
+   "ok_rescored": false
+  },
+  {
+   "id": "m211",
+   "gold": "5",
+   "finish": "stop",
+   "n_tokens": 1059,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "5",
+   "ok_rescored": true
+  },
+  {
+   "id": "m212",
+   "gold": "56",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "20",
+   "ok_rescored": false
+  },
+  {
+   "id": "m213",
+   "gold": "2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m214",
+   "gold": "110",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "4",
+   "ok_rescored": false
+  },
+  {
+   "id": "m215",
+   "gold": "2",
+   "finish": "stop",
+   "n_tokens": 1593,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "x^3-2x+1",
+   "ok_rescored": false
+  },
+  {
+   "id": "m216",
+   "gold": "6",
+   "finish": "stop",
+   "n_tokens": 1485,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "522.67",
+   "ok_rescored": false
+  },
+  {
+   "id": "m217",
+   "gold": "11,\\! 111,\\! 111,\\! 100",
+   "finish": "stop",
+   "n_tokens": 4005,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "k",
+   "ok_rescored": false
+  },
+  {
+   "id": "m218",
+   "gold": "(-1,6)",
+   "finish": "stop",
+   "n_tokens": 851,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "(-1,6)",
+   "ok_rescored": true
+  },
+  {
+   "id": "m219",
+   "gold": "\\frac{1}{2}",
+   "finish": "stop",
+   "n_tokens": 6105,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "-1",
+   "ok_rescored": false
+  },
+  {
+   "id": "m220",
+   "gold": "\\frac{16}{27}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\frac{1}{3",
+   "ok_rescored": false
+  },
+  {
+   "id": "m221",
+   "gold": "900",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "108000/",
+   "ok_rescored": false
+  },
+  {
+   "id": "m222",
+   "gold": "54",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "wrong",
+   "ok_rescored": false
+  },
+  {
+   "id": "m223",
+   "gold": "14",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "0.00001280000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+   "ok_rescored": false
+  },
+  {
+   "id": "m224",
+   "gold": "\\frac{9}{256}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "5",
+   "ok_rescored": false
+  },
+  {
+   "id": "m225",
+   "gold": "11",
+   "finish": "stop",
+   "n_tokens": 1576,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "11",
+   "ok_rescored": true
+  },
+  {
+   "id": "m226",
+   "gold": "3",
+   "finish": "stop",
+   "n_tokens": 3066,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": false
+  },
+  {
+   "id": "m227",
+   "gold": "\\text{(C)}",
+   "finish": "stop",
+   "n_tokens": 5025,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "C",
+   "ok_rescored": false
+  },
+  {
+   "id": "m228",
+   "gold": "288 \\pi",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "sphere",
+   "ok_rescored": false
+  },
+  {
+   "id": "m229",
+   "gold": "90",
+   "finish": "stop",
+   "n_tokens": 2387,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "90",
+   "ok_rescored": true
+  },
+  {
+   "id": "m230",
+   "gold": "\\frac{16}{5}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "e",
+   "ok_rescored": false
+  },
+  {
+   "id": "m231",
+   "gold": "10",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "3",
+   "ok_rescored": false
+  },
+  {
+   "id": "m232",
+   "gold": "\\frac{1997}{2}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\frac{1}{1+\\omega}+\\frac{1}{1+\\omega^2}+\\dots+\\frac",
+   "ok_rescored": false
+  },
+  {
+   "id": "m233",
+   "gold": "30^\\circ",
+   "finish": "stop",
+   "n_tokens": 2218,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "30",
+   "ok_rescored": false
+  },
+  {
+   "id": "m234",
+   "gold": "34",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "So",
+   "ok_rescored": false
+  },
+  {
+   "id": "m235",
+   "gold": "\\frac 59",
+   "finish": "stop",
+   "n_tokens": 542,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "Thevalueoftheexpressionis\\frac{5}{9}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m236",
+   "gold": "12",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m237",
+   "gold": "22",
+   "finish": "stop",
+   "n_tokens": 6700,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "22",
+   "ok_rescored": true
+  },
+  {
+   "id": "m238",
+   "gold": "-4",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1",
+   "ok_rescored": false
+  },
+  {
+   "id": "m239",
+   "gold": "16",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "areparallelif",
+   "ok_rescored": false
+  },
+  {
+   "id": "m240",
+   "gold": "116",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "P",
+   "ok_rescored": false
+  },
+  {
+   "id": "m241",
+   "gold": "17",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "I",
+   "ok_rescored": false
+  },
+  {
+   "id": "m242",
+   "gold": "\\$32,\\!348",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1\\%",
+   "ok_rescored": false
+  },
+  {
+   "id": "m243",
+   "gold": "3",
+   "finish": "stop",
+   "n_tokens": 566,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "3",
+   "ok_rescored": true
+  },
+  {
+   "id": "m244",
+   "gold": "8",
+   "finish": "stop",
+   "n_tokens": 12131,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "sum",
+   "ok_rescored": false
+  },
+  {
+   "id": "m245",
+   "gold": "-13x+3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "Wait",
+   "ok_rescored": false
+  },
+  {
+   "id": "m246",
+   "gold": "8",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1",
+   "ok_rescored": false
+  },
+  {
+   "id": "m247",
+   "gold": "\\frac{10}{11}",
+   "finish": "stop",
+   "n_tokens": 15514,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "10/11",
+   "ok_rescored": true
+  },
+  {
+   "id": "m248",
+   "gold": "\\begin{pmatrix} -1 & 0 \\\\ 0 & -1 \\end{pmatrix}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "22",
+   "ok_rescored": false
+  },
+  {
+   "id": "m249",
+   "gold": "17",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "Wait",
+   "ok_rescored": false
+  },
+  {
+   "id": "m250",
+   "gold": "13",
+   "finish": "length",
+   "n_tokens": 32793,
+   "closed": true,
+   "think_end_at": 30743,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m251",
+   "gold": "540",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m252",
+   "gold": "81",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "0?",
+   "ok_rescored": false
+  },
+  {
+   "id": "m253",
+   "gold": "\\frac{1}{8}",
+   "finish": "stop",
+   "n_tokens": 537,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\frac{1}{8}",
+   "ok_rescored": true
+  },
+  {
+   "id": "m254",
+   "gold": "28",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "6",
+   "ok_rescored": false
+  },
+  {
+   "id": "m255",
+   "gold": "\\text{(E)}",
+   "finish": "stop",
+   "n_tokens": 3768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "C",
+   "ok_rescored": false
+  },
+  {
+   "id": "m256",
+   "gold": "\\frac{8}{21}",
+   "finish": "stop",
+   "n_tokens": 1033,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\frac{8}{21}",
+   "ok_rescored": true
+  },
+  {
+   "id": "m257",
+   "gold": "864 \\mbox{ inches}^2",
+   "finish": "stop",
+   "n_tokens": 1093,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "864",
+   "ok_rescored": false
+  },
+  {
+   "id": "m258",
+   "gold": "16",
+   "finish": "stop",
+   "n_tokens": 1037,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "16",
+   "ok_rescored": true
+  },
+  {
+   "id": "m259",
+   "gold": "22",
+   "finish": "stop",
+   "n_tokens": 2406,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "theproductis25+5\\sqrt{3}-(3+5\\sqrt{3})i",
+   "ok_rescored": false
+  },
+  {
+   "id": "m260",
+   "gold": "120^\\circ",
+   "finish": "stop",
+   "n_tokens": 4561,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "120",
+   "ok_rescored": false
+  },
+  {
+   "id": "m261",
+   "gold": "76^\\circ",
+   "finish": "stop",
+   "n_tokens": 2718,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "76",
+   "ok_rescored": false
+  },
+  {
+   "id": "m262",
+   "gold": "4",
+   "finish": "stop",
+   "n_tokens": 834,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "4",
+   "ok_rescored": true
+  },
+  {
+   "id": "m263",
+   "gold": "15",
+   "finish": "stop",
+   "n_tokens": 1247,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "15",
+   "ok_rescored": true
+  },
+  {
+   "id": "m264",
+   "gold": "1\\frac{4}{5}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "BH",
+   "ok_rescored": false
+  },
+  {
+   "id": "m265",
+   "gold": "4005",
+   "finish": "stop",
+   "n_tokens": 852,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "4005",
+   "ok_rescored": true
+  },
+  {
+   "id": "m266",
+   "gold": "\\dfrac{33}{100}",
+   "finish": "stop",
+   "n_tokens": 979,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "theprobabilitythatthenumberisamultipleof3is\\frac{17}{50}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m267",
+   "gold": "180^\\circ",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "(6,0)",
+   "ok_rescored": false
+  },
+  {
+   "id": "m268",
+   "gold": "1",
+   "finish": "stop",
+   "n_tokens": 7524,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1",
+   "ok_rescored": true
+  },
+  {
+   "id": "m269",
+   "gold": "6",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1",
+   "ok_rescored": false
+  },
+  {
+   "id": "m270",
+   "gold": "10",
+   "finish": "stop",
+   "n_tokens": 457,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\10",
+   "ok_rescored": false
+  },
+  {
+   "id": "m271",
+   "gold": "333",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "9",
+   "ok_rescored": false
+  },
+  {
+   "id": "m272",
+   "gold": "1030",
+   "finish": "stop",
+   "n_tokens": 914,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1132",
+   "ok_rescored": false
+  },
+  {
+   "id": "m273",
+   "gold": "1250",
+   "finish": "stop",
+   "n_tokens": 667,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "000",
+   "ok_rescored": false
+  },
+  {
+   "id": "m274",
+   "gold": "18+2\\pi",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "x",
+   "ok_rescored": false
+  },
+  {
+   "id": "m275",
+   "gold": "7",
+   "finish": "stop",
+   "n_tokens": 390,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "7",
+   "ok_rescored": true
+  },
+  {
+   "id": "m276",
+   "gold": "11",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "Yes",
+   "ok_rescored": false
+  },
+  {
+   "id": "m277",
+   "gold": "\\sqrt{53}",
+   "finish": "stop",
+   "n_tokens": 213,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\sqrt{53}",
+   "ok_rescored": true
+  },
+  {
+   "id": "m278",
+   "gold": "255",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "999",
+   "ok_rescored": false
+  },
+  {
+   "id": "m279",
+   "gold": "7\\pi",
+   "finish": "stop",
+   "n_tokens": 538,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "33\\pi",
+   "ok_rescored": false
+  },
+  {
+   "id": "m280",
+   "gold": "8",
+   "finish": "stop",
+   "n_tokens": 6498,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "8",
+   "ok_rescored": true
+  },
+  {
+   "id": "m281",
+   "gold": "36^\\circ",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "A",
+   "ok_rescored": false
+  },
+  {
+   "id": "m282",
+   "gold": "129",
+   "finish": "stop",
+   "n_tokens": 857,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m283",
+   "gold": "1",
+   "finish": "stop",
+   "n_tokens": 418,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1",
+   "ok_rescored": true
+  },
+  {
+   "id": "m284",
+   "gold": "3 \\pm 2 \\sqrt{2}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m285",
+   "gold": "440",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "r_1,r_2,r_3",
+   "ok_rescored": false
+  },
+  {
+   "id": "m286",
+   "gold": "\\frac{17}{21}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "Soc\\in\\{",
+   "ok_rescored": false
+  },
+  {
+   "id": "m287",
+   "gold": "36",
+   "finish": "stop",
+   "n_tokens": 5163,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "141",
+   "ok_rescored": false
+  },
+  {
+   "id": "m288",
+   "gold": "7",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "coplanar",
+   "ok_rescored": false
+  },
+  {
+   "id": "m289",
+   "gold": "16",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "I",
+   "ok_rescored": false
+  },
+  {
+   "id": "m290",
+   "gold": "4",
+   "finish": "stop",
+   "n_tokens": 4953,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m291",
+   "gold": "63",
+   "finish": "stop",
+   "n_tokens": 695,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "interior",
+   "ok_rescored": false
+  },
+  {
+   "id": "m292",
+   "gold": "898",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "-",
+   "ok_rescored": false
+  },
+  {
+   "id": "m293",
+   "gold": "\\left(\\frac{3}{5},\\frac{8}{3}\\right]",
+   "finish": "stop",
+   "n_tokens": 4729,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "theintervalnotationforthesolutionis(\\frac{3}{5},\\frac{8}{3}]",
+   "ok_rescored": false
+  },
+  {
+   "id": "m294",
+   "gold": "58",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m295",
+   "gold": "11",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "i",
+   "ok_rescored": false
+  },
+  {
+   "id": "m296",
+   "gold": "\\text{(B)}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "x",
+   "ok_rescored": false
+  },
+  {
+   "id": "m297",
+   "gold": "103",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "7",
+   "ok_rescored": false
+  },
+  {
+   "id": "m298",
+   "gold": "\\begin{pmatrix} -18 \\\\ -49 \\\\ 96 \\end{pmatrix}",
+   "finish": "stop",
+   "n_tokens": 14691,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m299",
+   "gold": "63",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "(-5,4)",
+   "ok_rescored": false
+  },
+  {
+   "id": "m300",
+   "gold": "12",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": false
+  },
+  {
+   "id": "m301",
+   "gold": "5.4 \\text{ cents}",
+   "finish": "stop",
+   "n_tokens": 3835,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "5",
+   "ok_rescored": false
+  },
+  {
+   "id": "m302",
+   "gold": "5",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "338",
+   "ok_rescored": false
+  },
+  {
+   "id": "m303",
+   "gold": "28",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "no",
+   "ok_rescored": false
+  },
+  {
+   "id": "m304",
+   "gold": "9",
+   "finish": "stop",
+   "n_tokens": 10227,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "9",
+   "ok_rescored": true
+  },
+  {
+   "id": "m305",
+   "gold": "\\frac9{19}",
+   "finish": "stop",
+   "n_tokens": 3502,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\frac{9}{19}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m306",
+   "gold": "6",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "that",
+   "ok_rescored": false
+  },
+  {
+   "id": "m307",
+   "gold": "(-\\infty, 0]",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "Wait,\\",
+   "ok_rescored": false
+  },
+  {
+   "id": "m308",
+   "gold": "1+2\\sqrt{3}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\frac{2}{\\sqrt{3}}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m309",
+   "gold": "14",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\{1,12,7\\}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m310",
+   "gold": "49",
+   "finish": "stop",
+   "n_tokens": 3220,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "49",
+   "ok_rescored": true
+  },
+  {
+   "id": "m311",
+   "gold": "3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "Wait",
+   "ok_rescored": false
+  },
+  {
+   "id": "m312",
+   "gold": "(5,\\infty)",
+   "finish": "stop",
+   "n_tokens": 486,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "(-\\infty,5)\\cup(5,\\infty)",
+   "ok_rescored": false
+  },
+  {
+   "id": "m313",
+   "gold": "12\\pi",
+   "finish": "stop",
+   "n_tokens": 754,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "18.84",
+   "ok_rescored": false
+  },
+  {
+   "id": "m314",
+   "gold": "(2,4)",
+   "finish": "stop",
+   "n_tokens": 329,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "4",
+   "ok_rescored": false
+  },
+  {
+   "id": "m315",
+   "gold": "41",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": false
+  },
+  {
+   "id": "m316",
+   "gold": "12",
+   "finish": "stop",
+   "n_tokens": 1329,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "12",
+   "ok_rescored": true
+  },
+  {
+   "id": "m317",
+   "gold": "0",
+   "finish": "stop",
+   "n_tokens": 9017,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "p(x)",
+   "ok_rescored": false
+  },
+  {
+   "id": "m318",
+   "gold": "\\frac{11+9a}{20}",
+   "finish": "stop",
+   "n_tokens": 444,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\frac{11+9a}{20}",
+   "ok_rescored": true
+  },
+  {
+   "id": "m319",
+   "gold": "-128",
+   "finish": "stop",
+   "n_tokens": 1632,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "x",
+   "ok_rescored": false
+  },
+  {
+   "id": "m320",
+   "gold": "-\\frac{24}{25}",
+   "finish": "stop",
+   "n_tokens": 6573,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "thus",
+   "ok_rescored": false
+  },
+  {
+   "id": "m321",
+   "gold": "10",
+   "finish": "stop",
+   "n_tokens": 1055,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "10",
+   "ok_rescored": true
+  },
+  {
+   "id": "m322",
+   "gold": "-1",
+   "finish": "stop",
+   "n_tokens": 1729,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "b",
+   "ok_rescored": false
+  },
+  {
+   "id": "m323",
+   "gold": "\\frac{1}{3}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "AB",
+   "ok_rescored": false
+  },
+  {
+   "id": "m324",
+   "gold": "120",
+   "finish": "stop",
+   "n_tokens": 8655,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\angleadc",
+   "ok_rescored": false
+  },
+  {
+   "id": "m325",
+   "gold": "4",
+   "finish": "stop",
+   "n_tokens": 1391,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "4",
+   "ok_rescored": true
+  },
+  {
+   "id": "m326",
+   "gold": "\\frac{9}{100}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "0.2",
+   "ok_rescored": false
+  },
+  {
+   "id": "m327",
+   "gold": "15",
+   "finish": "stop",
+   "n_tokens": 12988,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "Q_2(x)",
+   "ok_rescored": false
+  },
+  {
+   "id": "m328",
+   "gold": "3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "x",
+   "ok_rescored": false
+  },
+  {
+   "id": "m329",
+   "gold": "4",
+   "finish": "stop",
+   "n_tokens": 1030,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "80",
+   "ok_rescored": false
+  },
+  {
+   "id": "m330",
+   "gold": "1940",
+   "finish": "stop",
+   "n_tokens": 8616,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1940",
+   "ok_rescored": true
+  },
+  {
+   "id": "m331",
+   "gold": "\\frac{13}{6}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\frac{169\\",
+   "ok_rescored": false
+  },
+  {
+   "id": "m332",
+   "gold": "2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "4/\\sqrt{3}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m333",
+   "gold": "3",
+   "finish": "stop",
+   "n_tokens": 9802,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "contradiction",
+   "ok_rescored": false
+  },
+  {
+   "id": "m334",
+   "gold": "-120",
+   "finish": "stop",
+   "n_tokens": 9485,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "-120",
+   "ok_rescored": true
+  },
+  {
+   "id": "m335",
+   "gold": "3",
+   "finish": "stop",
+   "n_tokens": 4017,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "3",
+   "ok_rescored": true
+  },
+  {
+   "id": "m336",
+   "gold": "26000",
+   "finish": "stop",
+   "n_tokens": 376,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "26,000",
+   "ok_rescored": false
+  },
+  {
+   "id": "m337",
+   "gold": "6",
+   "finish": "stop",
+   "n_tokens": 3533,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "6",
+   "ok_rescored": true
+  },
+  {
+   "id": "m338",
+   "gold": "4343_6",
+   "finish": "stop",
+   "n_tokens": 418,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "999_{10}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m339",
+   "gold": "2k",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2/4",
+   "ok_rescored": false
+  },
+  {
+   "id": "m340",
+   "gold": "55^\\circ",
+   "finish": "stop",
+   "n_tokens": 8582,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "29^\\circ",
+   "ok_rescored": false
+  },
+  {
+   "id": "m341",
+   "gold": "-2",
+   "finish": "stop",
+   "n_tokens": 2637,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": false
+  },
+  {
+   "id": "m342",
+   "gold": "2",
+   "finish": "stop",
+   "n_tokens": 718,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "x",
+   "ok_rescored": false
+  },
+  {
+   "id": "m343",
+   "gold": "58,500",
+   "finish": "stop",
+   "n_tokens": 1094,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "500",
+   "ok_rescored": false
+  },
+  {
+   "id": "m344",
+   "gold": "5",
+   "finish": "stop",
+   "n_tokens": 7004,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "5",
+   "ok_rescored": true
+  },
+  {
+   "id": "m345",
+   "gold": "1",
+   "finish": "stop",
+   "n_tokens": 1582,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1",
+   "ok_rescored": true
+  },
+  {
+   "id": "m346",
+   "gold": "66",
+   "finish": "stop",
+   "n_tokens": 2403,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "x",
+   "ok_rescored": false
+  },
+  {
+   "id": "m347",
+   "gold": "6r^2-4r-24",
+   "finish": "stop",
+   "n_tokens": 6236,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "24",
+   "ok_rescored": false
+  },
+  {
+   "id": "m348",
+   "gold": "4495",
+   "finish": "stop",
+   "n_tokens": 744,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\binom{31}{28}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m349",
+   "gold": "10080",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "4",
+   "ok_rescored": false
+  },
+  {
+   "id": "m350",
+   "gold": "4",
+   "finish": "stop",
+   "n_tokens": 3956,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "4",
+   "ok_rescored": true
+  },
+  {
+   "id": "m351",
+   "gold": "\\frac{1}{16}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "Wait,\\cos(3\\pi/5)\\cos(4\\",
+   "ok_rescored": false
+  },
+  {
+   "id": "m352",
+   "gold": "11 \\sqrt{5} + 11",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\frac{121-(v-121",
+   "ok_rescored": false
+  },
+  {
+   "id": "m353",
+   "gold": "480",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "M",
+   "ok_rescored": false
+  },
+  {
+   "id": "m354",
+   "gold": "81",
+   "finish": "length",
+   "n_tokens": 32793,
+   "closed": true,
+   "think_end_at": 30743,
+   "pred_rescored": "Wait",
+   "ok_rescored": false
+  },
+  {
+   "id": "m355",
+   "gold": "100",
+   "finish": "length",
+   "n_tokens": 32793,
+   "closed": true,
+   "think_end_at": 30743,
+   "pred_rescored": "2",
+   "ok_rescored": false
+  },
+  {
+   "id": "m356",
+   "gold": "(-\\sqrt{3}, \\sqrt{3})",
+   "finish": "stop",
+   "n_tokens": 11253,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "is[-\\sqrt{3},\\sqrt{3})",
+   "ok_rescored": false
+  },
+  {
+   "id": "m357",
+   "gold": "4",
+   "finish": "stop",
+   "n_tokens": 1411,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "4",
+   "ok_rescored": true
+  },
+  {
+   "id": "m358",
+   "gold": "\\text{ellipse}",
+   "finish": "stop",
+   "n_tokens": 1175,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "circle",
+   "ok_rescored": false
+  },
+  {
+   "id": "m359",
+   "gold": "6",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": false
+  },
+  {
+   "id": "m360",
+   "gold": "\\frac{7}{4}",
+   "finish": "length",
+   "n_tokens": 32793,
+   "closed": true,
+   "think_end_at": 30743,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m361",
+   "gold": "16 \\sqrt{3}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "same",
+   "ok_rescored": false
+  },
+  {
+   "id": "m362",
+   "gold": "\\frac14",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1/4",
+   "ok_rescored": false
+  },
+  {
+   "id": "m363",
+   "gold": "2",
+   "finish": "stop",
+   "n_tokens": 1038,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": true
+  },
+  {
+   "id": "m364",
+   "gold": "(1,-16,-4,43)",
+   "finish": "stop",
+   "n_tokens": 1144,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "(1,-16,-4,43)",
+   "ok_rescored": true
+  },
+  {
+   "id": "m365",
+   "gold": "8",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m366",
+   "gold": "4",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m367",
+   "gold": "1",
+   "finish": "stop",
+   "n_tokens": 867,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1",
+   "ok_rescored": true
+  },
+  {
+   "id": "m368",
+   "gold": "31",
+   "finish": "stop",
+   "n_tokens": 31590,
+   "closed": true,
+   "think_end_at": 30743,
+   "pred_rescored": "31",
+   "ok_rescored": true
+  },
+  {
+   "id": "m369",
+   "gold": "21",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "tr",
+   "ok_rescored": false
+  },
+  {
+   "id": "m370",
+   "gold": "-41",
+   "finish": "stop",
+   "n_tokens": 290,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "-41",
+   "ok_rescored": true
+  },
+  {
+   "id": "m371",
+   "gold": "17",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "f(x)\\le1",
+   "ok_rescored": false
+  },
+  {
+   "id": "m372",
+   "gold": "90^\\circ",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "A",
+   "ok_rescored": false
+  },
+  {
+   "id": "m373",
+   "gold": "1+2i",
+   "finish": "stop",
+   "n_tokens": 586,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": false
+  },
+  {
+   "id": "m374",
+   "gold": "4",
+   "finish": "stop",
+   "n_tokens": 541,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "4",
+   "ok_rescored": true
+  },
+  {
+   "id": "m375",
+   "gold": "25",
+   "finish": "stop",
+   "n_tokens": 32016,
+   "closed": true,
+   "think_end_at": 30743,
+   "pred_rescored": "25",
+   "ok_rescored": true
+  },
+  {
+   "id": "m376",
+   "gold": "(8,-2)",
+   "finish": "stop",
+   "n_tokens": 852,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "p",
+   "ok_rescored": false
+  },
+  {
+   "id": "m377",
+   "gold": "6",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "n!^{(n!)^{\\dots}}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m378",
+   "gold": "3",
+   "finish": "stop",
+   "n_tokens": 2786,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "3",
+   "ok_rescored": true
+  },
+  {
+   "id": "m379",
+   "gold": "12",
+   "finish": "stop",
+   "n_tokens": 3575,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "12",
+   "ok_rescored": true
+  },
+  {
+   "id": "m380",
+   "gold": "(0,9) \\cup (9,36)",
+   "finish": "stop",
+   "n_tokens": 3517,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "interval",
+   "ok_rescored": false
+  },
+  {
+   "id": "m381",
+   "gold": "\\frac{1}{2}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "Wait",
+   "ok_rescored": false
+  },
+  {
+   "id": "m382",
+   "gold": "\\frac{20000}{\\pi}",
+   "finish": "stop",
+   "n_tokens": 4536,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2333",
+   "ok_rescored": false
+  },
+  {
+   "id": "m383",
+   "gold": "x \\in [-2,7]",
+   "finish": "stop",
+   "n_tokens": 1625,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "x",
+   "ok_rescored": false
+  },
+  {
+   "id": "m384",
+   "gold": "15x - 80",
+   "finish": "stop",
+   "n_tokens": 184,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "80",
+   "ok_rescored": false
+  },
+  {
+   "id": "m385",
+   "gold": "22",
+   "finish": "stop",
+   "n_tokens": 793,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "23",
+   "ok_rescored": false
+  },
+  {
+   "id": "m386",
+   "gold": "11",
+   "finish": "stop",
+   "n_tokens": 915,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "11",
+   "ok_rescored": true
+  },
+  {
+   "id": "m387",
+   "gold": "18",
+   "finish": "stop",
+   "n_tokens": 268,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "f(-2)",
+   "ok_rescored": false
+  },
+  {
+   "id": "m388",
+   "gold": "\\frac{11}{2}",
+   "finish": "stop",
+   "n_tokens": 5475,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "x",
+   "ok_rescored": false
+  },
+  {
+   "id": "m389",
+   "gold": "\\frac{\\sqrt{21}}{5}",
+   "finish": "stop",
+   "n_tokens": 8135,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\frac{\\sqrt{21}}{5}",
+   "ok_rescored": true
+  },
+  {
+   "id": "m390",
+   "gold": "12",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\frac{1}{2}(",
+   "ok_rescored": false
+  },
+  {
+   "id": "m391",
+   "gold": "0",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "x\\le3",
+   "ok_rescored": false
+  },
+  {
+   "id": "m392",
+   "gold": "\\sqrt{66}",
+   "finish": "length",
+   "n_tokens": 32793,
+   "closed": true,
+   "think_end_at": 30743,
+   "pred_rescored": "the",
+   "ok_rescored": false
+  },
+  {
+   "id": "m393",
+   "gold": "\\frac 34",
+   "finish": "stop",
+   "n_tokens": 1500,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "3/4",
+   "ok_rescored": false
+  },
+  {
+   "id": "m394",
+   "gold": "-\\frac{3}{8}",
+   "finish": "stop",
+   "n_tokens": 9138,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "y",
+   "ok_rescored": false
+  },
+  {
+   "id": "m395",
+   "gold": "4",
+   "finish": "stop",
+   "n_tokens": 5034,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "4",
+   "ok_rescored": true
+  },
+  {
+   "id": "m396",
+   "gold": "2",
+   "finish": "stop",
+   "n_tokens": 1976,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": true
+  },
+  {
+   "id": "m397",
+   "gold": "23",
+   "finish": "stop",
+   "n_tokens": 473,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "23",
+   "ok_rescored": true
+  },
+  {
+   "id": "m398",
+   "gold": "\\text{Navin}",
+   "finish": "stop",
+   "n_tokens": 691,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "most",
+   "ok_rescored": false
+  },
+  {
+   "id": "m399",
+   "gold": "326.5",
+   "finish": "stop",
+   "n_tokens": 185,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\mathbf{326.5}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m400",
+   "gold": "\\frac{14}{3}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m401",
+   "gold": "\\frac{13}{4}",
+   "finish": "stop",
+   "n_tokens": 12774,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": false
+  },
+  {
+   "id": "m402",
+   "gold": "1 - 12i",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "-3",
+   "ok_rescored": false
+  },
+  {
+   "id": "m403",
+   "gold": "3",
+   "finish": "stop",
+   "n_tokens": 2696,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "3",
+   "ok_rescored": true
+  },
+  {
+   "id": "m404",
+   "gold": "3",
+   "finish": "stop",
+   "n_tokens": 6170,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "-1",
+   "ok_rescored": false
+  },
+  {
+   "id": "m405",
+   "gold": "60",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "10",
+   "ok_rescored": false
+  },
+  {
+   "id": "m406",
+   "gold": "0",
+   "finish": "stop",
+   "n_tokens": 450,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "0",
+   "ok_rescored": true
+  },
+  {
+   "id": "m407",
+   "gold": "9",
+   "finish": "stop",
+   "n_tokens": 1668,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "f^{-1}(\\frac{1}{5})",
+   "ok_rescored": false
+  },
+  {
+   "id": "m408",
+   "gold": "\\begin{pmatrix} 1/5 \\\\ -18/5 \\end{pmatrix}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "",
+   "ok_rescored": false
+  },
+  {
+   "id": "m409",
+   "gold": "2 \\sqrt{5}",
+   "finish": "stop",
+   "n_tokens": 21829,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "17",
+   "ok_rescored": false
+  },
+  {
+   "id": "m410",
+   "gold": "6",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "3",
+   "ok_rescored": false
+  },
+  {
+   "id": "m411",
+   "gold": "60",
+   "finish": "stop",
+   "n_tokens": 4804,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "60",
+   "ok_rescored": true
+  },
+  {
+   "id": "m412",
+   "gold": "406",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "3",
+   "ok_rescored": false
+  },
+  {
+   "id": "m413",
+   "gold": "5r^5",
+   "finish": "stop",
+   "n_tokens": 299,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "5",
+   "ok_rescored": false
+  },
+  {
+   "id": "m414",
+   "gold": "10",
+   "finish": "stop",
+   "n_tokens": 723,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "a",
+   "ok_rescored": false
+  },
+  {
+   "id": "m415",
+   "gold": "9",
+   "finish": "stop",
+   "n_tokens": 14807,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "9",
+   "ok_rescored": true
+  },
+  {
+   "id": "m416",
+   "gold": "\\frac{1}{8}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "isactually",
+   "ok_rescored": false
+  },
+  {
+   "id": "m417",
+   "gold": "-2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "g",
+   "ok_rescored": false
+  },
+  {
+   "id": "m418",
+   "gold": "2\\sqrt{5}",
+   "finish": "stop",
+   "n_tokens": 529,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "is",
+   "ok_rescored": false
+  },
+  {
+   "id": "m419",
+   "gold": "\\begin{pmatrix} -7 \\\\ 16 \\\\ 5 \\end{pmatrix}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\mathbf{u}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m420",
+   "gold": "\\begin{pmatrix} 16/49 \\\\ 48/49 \\\\ 24/49 \\end{pmatrix}",
+   "finish": "stop",
+   "n_tokens": 4351,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\mathbf{b}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m421",
+   "gold": "27",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m422",
+   "gold": "\\{1\\pm\\sqrt{5},-2\\}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m423",
+   "gold": "1440",
+   "finish": "stop",
+   "n_tokens": 22431,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1440",
+   "ok_rescored": true
+  },
+  {
+   "id": "m424",
+   "gold": "600",
+   "finish": "stop",
+   "n_tokens": 2698,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "600",
+   "ok_rescored": true
+  },
+  {
+   "id": "m425",
+   "gold": "3R^2",
+   "finish": "stop",
+   "n_tokens": 9364,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "a,b,c",
+   "ok_rescored": false
+  },
+  {
+   "id": "m426",
+   "gold": "6\\sqrt{2}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "5\\sqrt",
+   "ok_rescored": false
+  },
+  {
+   "id": "m427",
+   "gold": "29",
+   "finish": "stop",
+   "n_tokens": 1039,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m428",
+   "gold": "64",
+   "finish": "stop",
+   "n_tokens": 12158,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "myself",
+   "ok_rescored": false
+  },
+  {
+   "id": "m429",
+   "gold": "50",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "S",
+   "ok_rescored": false
+  },
+  {
+   "id": "m430",
+   "gold": "4.5",
+   "finish": "stop",
+   "n_tokens": 115,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "4.5",
+   "ok_rescored": true
+  },
+  {
+   "id": "m431",
+   "gold": "\\left[ \\frac{\\pi^2}{8}, \\frac{5 \\pi^2}{4} \\right]",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\pi^2/8",
+   "ok_rescored": false
+  },
+  {
+   "id": "m432",
+   "gold": "331",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "93",
+   "ok_rescored": false
+  },
+  {
+   "id": "m433",
+   "gold": ".35625",
+   "finish": "stop",
+   "n_tokens": 1163,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\frac{57}{160}",
+   "ok_rescored": true
+  },
+  {
+   "id": "m434",
+   "gold": "32",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "C",
+   "ok_rescored": false
+  },
+  {
+   "id": "m435",
+   "gold": "(-\\infty, 2) \\cup (3, \\infty)",
+   "finish": "stop",
+   "n_tokens": 4467,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "(-\\infty,2]\\cup[3,\\infty)",
+   "ok_rescored": false
+  },
+  {
+   "id": "m436",
+   "gold": "4",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m437",
+   "gold": "3",
+   "finish": "stop",
+   "n_tokens": 4538,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "3",
+   "ok_rescored": true
+  },
+  {
+   "id": "m438",
+   "gold": "4",
+   "finish": "stop",
+   "n_tokens": 941,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": false
+  },
+  {
+   "id": "m439",
+   "gold": "x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + x^2 + x + 1",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "No",
+   "ok_rescored": false
+  },
+  {
+   "id": "m440",
+   "gold": "14",
+   "finish": "stop",
+   "n_tokens": 460,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "14",
+   "ok_rescored": true
+  },
+  {
+   "id": "m441",
+   "gold": "550",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "used",
+   "ok_rescored": false
+  },
+  {
+   "id": "m442",
+   "gold": "256",
+   "finish": "stop",
+   "n_tokens": 3541,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "256",
+   "ok_rescored": true
+  },
+  {
+   "id": "m443",
+   "gold": "45",
+   "finish": "stop",
+   "n_tokens": 1802,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "45",
+   "ok_rescored": true
+  },
+  {
+   "id": "m444",
+   "gold": "\\frac{1}{2}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": false
+  },
+  {
+   "id": "m445",
+   "gold": "15",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "-4-3\\sqrt{2}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m446",
+   "gold": "8",
+   "finish": "stop",
+   "n_tokens": 8544,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "8",
+   "ok_rescored": true
+  },
+  {
+   "id": "m447",
+   "gold": "9",
+   "finish": "stop",
+   "n_tokens": 5771,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "9",
+   "ok_rescored": true
+  },
+  {
+   "id": "m448",
+   "gold": "44",
+   "finish": "stop",
+   "n_tokens": 4815,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "44",
+   "ok_rescored": true
+  },
+  {
+   "id": "m449",
+   "gold": "47",
+   "finish": "stop",
+   "n_tokens": 989,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "47",
+   "ok_rescored": true
+  },
+  {
+   "id": "m450",
+   "gold": "64",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m451",
+   "gold": "\\frac{639}{40}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "177.5",
+   "ok_rescored": false
+  },
+  {
+   "id": "m452",
+   "gold": "143",
+   "finish": "stop",
+   "n_tokens": 2476,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "143",
+   "ok_rescored": true
+  },
+  {
+   "id": "m453",
+   "gold": "10",
+   "finish": "stop",
+   "n_tokens": 8858,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "10",
+   "ok_rescored": true
+  },
+  {
+   "id": "m454",
+   "gold": "y = 2x + 3",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m455",
+   "gold": "6",
+   "finish": "stop",
+   "n_tokens": 575,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "6",
+   "ok_rescored": true
+  },
+  {
+   "id": "m456",
+   "gold": "-2,1",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m457",
+   "gold": "0",
+   "finish": "stop",
+   "n_tokens": 104,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "0",
+   "ok_rescored": true
+  },
+  {
+   "id": "m458",
+   "gold": "41",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "n",
+   "ok_rescored": false
+  },
+  {
+   "id": "m459",
+   "gold": "\\$18.90",
+   "finish": "stop",
+   "n_tokens": 3452,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\",
+   "ok_rescored": false
+  },
+  {
+   "id": "m460",
+   "gold": "75^\\circ",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "S",
+   "ok_rescored": false
+  },
+  {
+   "id": "m461",
+   "gold": "12",
+   "finish": "stop",
+   "n_tokens": 1669,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m462",
+   "gold": "59",
+   "finish": "stop",
+   "n_tokens": 4678,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "126",
+   "ok_rescored": false
+  },
+  {
+   "id": "m463",
+   "gold": "2",
+   "finish": "stop",
+   "n_tokens": 686,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": true
+  },
+  {
+   "id": "m464",
+   "gold": "9",
+   "finish": "stop",
+   "n_tokens": 4929,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m465",
+   "gold": "121",
+   "finish": "stop",
+   "n_tokens": 17575,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "121",
+   "ok_rescored": true
+  },
+  {
+   "id": "m466",
+   "gold": "8 \\pi",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m467",
+   "gold": "15\\mbox{ cm}^2",
+   "finish": "stop",
+   "n_tokens": 7326,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "correct",
+   "ok_rescored": false
+  },
+  {
+   "id": "m468",
+   "gold": "8",
+   "finish": "stop",
+   "n_tokens": 3161,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "8",
+   "ok_rescored": true
+  },
+  {
+   "id": "m469",
+   "gold": "25",
+   "finish": "stop",
+   "n_tokens": 317,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\lceil{\\sqrt{20}}\\rceil^2",
+   "ok_rescored": false
+  },
+  {
+   "id": "m470",
+   "gold": "27648",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2.5^{11}",
+   "ok_rescored": false
+  },
+  {
+   "id": "m471",
+   "gold": "84",
+   "finish": "stop",
+   "n_tokens": 614,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "84",
+   "ok_rescored": true
+  },
+  {
+   "id": "m472",
+   "gold": "137 \\frac{1}{2}",
+   "finish": "stop",
+   "n_tokens": 3748,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "137\\frac{1}{2}",
+   "ok_rescored": true
+  },
+  {
+   "id": "m473",
+   "gold": "7",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\begin{pmatrix}n-3&0&n+1\\0&n+2&2n-9\\n&2n-9&2n",
+   "ok_rescored": false
+  },
+  {
+   "id": "m474",
+   "gold": "3",
+   "finish": "stop",
+   "n_tokens": 3295,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "3",
+   "ok_rescored": true
+  },
+  {
+   "id": "m475",
+   "gold": "29",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "F",
+   "ok_rescored": false
+  },
+  {
+   "id": "m476",
+   "gold": "200",
+   "finish": "stop",
+   "n_tokens": 2359,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "200",
+   "ok_rescored": true
+  },
+  {
+   "id": "m477",
+   "gold": "2",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": true
+  },
+  {
+   "id": "m478",
+   "gold": "\\frac{2}{1005}",
+   "finish": "stop",
+   "n_tokens": 6158,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "4",
+   "ok_rescored": false
+  },
+  {
+   "id": "m479",
+   "gold": "2",
+   "finish": "stop",
+   "n_tokens": 4310,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": true
+  },
+  {
+   "id": "m480",
+   "gold": "1",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "e^{i\\pi/3}e^{i\\pi/3",
+   "ok_rescored": false
+  },
+  {
+   "id": "m481",
+   "gold": "8n^2 + 4n + 1",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2^4",
+   "ok_rescored": false
+  },
+  {
+   "id": "m482",
+   "gold": "202",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m483",
+   "gold": "\\frac{8}{15}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "Wait,17\\cos^2A-28",
+   "ok_rescored": false
+  },
+  {
+   "id": "m484",
+   "gold": "10",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "Soy^2\\ge3y",
+   "ok_rescored": false
+  },
+  {
+   "id": "m485",
+   "gold": "13",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "5",
+   "ok_rescored": false
+  },
+  {
+   "id": "m486",
+   "gold": "216",
+   "finish": "stop",
+   "n_tokens": 5741,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "216",
+   "ok_rescored": true
+  },
+  {
+   "id": "m487",
+   "gold": "2",
+   "finish": "stop",
+   "n_tokens": 6244,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "2",
+   "ok_rescored": true
+  },
+  {
+   "id": "m488",
+   "gold": "\\$36",
+   "finish": "stop",
+   "n_tokens": 1060,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "\\",
+   "ok_rescored": false
+  },
+  {
+   "id": "m489",
+   "gold": "15",
+   "finish": "stop",
+   "n_tokens": 9364,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "p",
+   "ok_rescored": false
+  },
+  {
+   "id": "m490",
+   "gold": "14",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "x",
+   "ok_rescored": false
+  },
+  {
+   "id": "m491",
+   "gold": "64",
+   "finish": "stop",
+   "n_tokens": 7525,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "24",
+   "ok_rescored": false
+  },
+  {
+   "id": "m492",
+   "gold": "y = -2x",
+   "finish": "stop",
+   "n_tokens": 5185,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "-2",
+   "ok_rescored": false
+  },
+  {
+   "id": "m493",
+   "gold": "20",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m494",
+   "gold": "\\frac{1}{4}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "P",
+   "ok_rescored": false
+  },
+  {
+   "id": "m495",
+   "gold": "(2,12) \\cup (12,102)",
+   "finish": "stop",
+   "n_tokens": 4938,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "(2,102)",
+   "ok_rescored": false
+  },
+  {
+   "id": "m496",
+   "gold": "\\frac{5}{13}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "think",
+   "ok_rescored": false
+  },
+  {
+   "id": "m497",
+   "gold": "\\frac{7}{2}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "4",
+   "ok_rescored": false
+  },
+  {
+   "id": "m498",
+   "gold": "-1",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "1",
+   "ok_rescored": false
+  },
+  {
+   "id": "m499",
+   "gold": "106^\\circ",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": null,
+   "pred_rescored": "So",
+   "ok_rescored": false
+  }
+ ]
+}

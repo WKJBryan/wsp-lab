@@ -1,0 +1,12 @@
+{
+ "b0_reproduces_stock": true,
+ "b30_think_end_at": [
+  0,
+  0,
+  0,
+  0
+ ],
+ "b30_closes_within_5": true,
+ "u0_reproduces_stock": true,
+ "bias_ok": true
+}

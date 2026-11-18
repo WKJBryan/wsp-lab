@@ -1,0 +1,390 @@
+{
+ "accuracy": {
+  "b1": [
+   28.8,
+   30.8
+  ],
+  "E1": [
+   27.8,
+   34.8
+  ],
+  "O": [
+   39.4,
+   44.2
+  ],
+  "b3": [
+   24.2,
+   29.2
+  ],
+  "b2": [
+   38.8,
+   43.2
+  ],
+  "c1_final": [
+   28.2,
+   38.4
+  ],
+  "d_out": [
+   26.4,
+   34.6
+  ],
+  "d_in": [
+   5.8,
+   20.6
+  ],
+  "S": [
+   6.0,
+   21.2
+  ],
+  "c2_S": [
+   29.6,
+   35.0
+  ],
+  "c2_O": [
+   41.0,
+   45.0
+  ],
+  "c2_E1": [
+   28.6,
+   35.6
+  ]
+ },
+ "pairs": {
+  "b1_vs_E1": {
+   "rescore": {
+    "delta": 1.0,
+    "ci95": [
+     -3.6,
+     5.4
+    ],
+    "only_first": 67,
+    "only_second": 62,
+    "mcnemar_p": 0.725,
+    "verdict": "MATCHES"
+   },
+   "math_verify": {
+    "delta": -4.0,
+    "ci95": [
+     -8.8,
+     0.8
+    ],
+    "only_first": 65,
+    "only_second": 85,
+    "mcnemar_p": 0.121,
+    "verdict": "MATCHES"
+   }
+  },
+  "b1_vs_O": {
+   "rescore": {
+    "delta": -10.6,
+    "ci95": [
+     -15.4,
+     -6.0
+    ],
+    "only_first": 47,
+    "only_second": 100,
+    "mcnemar_p": 1.47e-05,
+    "verdict": "FALLS SHORT"
+   },
+   "math_verify": {
+    "delta": -13.4,
+    "ci95": [
+     -18.6,
+     -8.2
+    ],
+    "only_first": 55,
+    "only_second": 122,
+    "mcnemar_p": 5.19e-07,
+    "verdict": "FALLS SHORT"
+   }
+  },
+  "b3_vs_b1": {
+   "rescore": {
+    "delta": -4.6,
+    "ci95": [
+     -9.0,
+     0.0
+    ],
+    "only_first": 55,
+    "only_second": 78,
+    "mcnemar_p": 0.056,
+    "verdict": "INCONCLUSIVE"
+   },
+   "math_verify": {
+    "delta": -1.6,
+    "ci95": [
+     -6.0,
+     3.0
+    ],
+    "only_first": 64,
+    "only_second": 72,
+    "mcnemar_p": 0.549,
+    "verdict": "MATCHES"
+   }
+  },
+  "b2_vs_b1": {
+   "rescore": {
+    "delta": 10.0,
+    "ci95": [
+     5.4,
+     14.8
+    ],
+    "only_first": 100,
+    "only_second": 50,
+    "mcnemar_p": 5.45e-05,
+    "verdict": "EXCEEDS"
+   },
+   "math_verify": {
+    "delta": 12.4,
+    "ci95": [
+     7.6,
+     17.2
+    ],
+    "only_first": 110,
+    "only_second": 48,
+    "mcnemar_p": 8.92e-07,
+    "verdict": "EXCEEDS"
+   }
+  },
+  "c1_final_vs_E1": {
+   "rescore": {
+    "delta": 0.4,
+    "ci95": [
+     -3.6,
+     4.4
+    ],
+    "only_first": 53,
+    "only_second": 51,
+    "mcnemar_p": 0.922,
+    "verdict": "MATCHES"
+   },
+   "math_verify": {
+    "delta": 3.6,
+    "ci95": [
+     -0.6,
+     7.8
+    ],
+    "only_first": 69,
+    "only_second": 51,
+    "mcnemar_p": 0.12,
+    "verdict": "MATCHES"
+   }
+  },
+  "d_out_vs_E1": {
+   "rescore": {
+    "delta": -1.4,
+    "ci95": [
+     -5.4,
+     2.6
+    ],
+    "only_first": 52,
+    "only_second": 59,
+    "mcnemar_p": 0.569,
+    "verdict": "MATCHES"
+   },
+   "math_verify": {
+    "delta": -0.2,
+    "ci95": [
+     -4.6,
+     4.2
+    ],
+    "only_first": 67,
+    "only_second": 68,
+    "mcnemar_p": 1.0,
+    "verdict": "MATCHES"
+   }
+  },
+  "d_in_vs_S": {
+   "rescore": {
+    "delta": -0.2,
+    "ci95": [
+     -2.4,
+     2.0
+    ],
+    "only_first": 16,
+    "only_second": 17,
+    "mcnemar_p": 1.0,
+    "verdict": "MATCHES"
+   },
+   "math_verify": {
+    "delta": -0.6,
+    "ci95": [
+     -4.4,
+     3.2
+    ],
+    "only_first": 47,
+    "only_second": 50,
+    "mcnemar_p": 0.839,
+    "verdict": "MATCHES"
+   }
+  },
+  "c2_S_vs_S": {
+   "rescore": {
+    "delta": 23.6,
+    "ci95": [
+     20.0,
+     27.4
+    ],
+    "only_first": 118,
+    "only_second": 0,
+    "mcnemar_p": 6.02e-36,
+    "verdict": "EXCEEDS"
+   },
+   "math_verify": {
+    "delta": 13.8,
+    "ci95": [
+     10.2,
+     17.6
+    ],
+    "only_first": 82,
+    "only_second": 13,
+    "mcnemar_p": 2.08e-13,
+    "verdict": "EXCEEDS"
+   }
+  },
+  "c2_O_vs_c2_E1": {
+   "rescore": {
+    "delta": 12.4,
+    "ci95": [
+     8.2,
+     16.8
+    ],
+    "only_first": 98,
+    "only_second": 36,
+    "mcnemar_p": 8.11e-08,
+    "verdict": "EXCEEDS"
+   },
+   "math_verify": {
+    "delta": 9.4,
+    "ci95": [
+     4.4,
+     14.4
+    ],
+    "only_first": 107,
+    "only_second": 60,
+    "mcnemar_p": 0.000342,
+    "verdict": "EXCEEDS"
+   }
+  },
+  "c2_S_vs_E1": {
+   "rescore": {
+    "delta": 1.8,
+    "ci95": [
+     -2.2,
+     5.8
+    ],
+    "only_first": 57,
+    "only_second": 48,
+    "mcnemar_p": 0.435,
+    "verdict": "MATCHES"
+   },
+   "math_verify": {
+    "delta": 0.2,
+    "ci95": [
+     -4.2,
+     4.6
+    ],
+    "only_first": 64,
+    "only_second": 63,
+    "mcnemar_p": 1.0,
+    "verdict": "MATCHES"
+   }
+  },
+  "b2_vs_E1": {
+   "rescore": {
+    "delta": 11.0,
+    "ci95": [
+     6.4,
+     15.4
+    ],
+    "only_first": 98,
+    "only_second": 43,
+    "mcnemar_p": 4.15e-06,
+    "verdict": "EXCEEDS"
+   },
+   "math_verify": {
+    "delta": 8.4,
+    "ci95": [
+     3.8,
+     13.0
+    ],
+    "only_first": 93,
+    "only_second": 51,
+    "mcnemar_p": 0.000585,
+    "verdict": "EXCEEDS"
+   }
+  },
+  "b2_vs_O": {
+   "rescore": {
+    "delta": -0.6,
+    "ci95": [
+     -5.4,
+     4.0
+    ],
+    "only_first": 71,
+    "only_second": 74,
+    "mcnemar_p": 0.868,
+    "verdict": "MATCHES"
+   },
+   "math_verify": {
+    "delta": -1.0,
+    "ci95": [
+     -6.2,
+     4.2
+    ],
+    "only_first": 85,
+    "only_second": 90,
+    "mcnemar_p": 0.762,
+    "verdict": "MATCHES"
+   }
+  },
+  "c1_final_vs_O": {
+   "rescore": {
+    "delta": -11.2,
+    "ci95": [
+     -15.6,
+     -6.8
+    ],
+    "only_first": 38,
+    "only_second": 94,
+    "mcnemar_p": 1.19e-06,
+    "verdict": "FALLS SHORT"
+   },
+   "math_verify": {
+    "delta": -5.8,
+    "ci95": [
+     -10.8,
+     -1.0
+    ],
+    "only_first": 62,
+    "only_second": 91,
+    "mcnemar_p": 0.0233,
+    "verdict": "FALLS SHORT"
+   }
+  },
+  "c1_final_vs_b2": {
+   "rescore": {
+    "delta": -10.6,
+    "ci95": [
+     -15.2,
+     -6.0
+    ],
+    "only_first": 42,
+    "only_second": 95,
+    "mcnemar_p": 6.92e-06,
+    "verdict": "FALLS SHORT"
+   },
+   "math_verify": {
+    "delta": -4.8,
+    "ci95": [
+     -9.6,
+     -0.2
+    ],
+    "only_first": 59,
+    "only_second": 83,
+    "mcnemar_p": 0.0532,
+    "verdict": "FALLS SHORT"
+   }
+  }
+ }
+}
