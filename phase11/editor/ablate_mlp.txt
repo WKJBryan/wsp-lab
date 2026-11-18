@@ -1,0 +1,14 @@
+Loading weights:   0%|          | 0/1013 [00:00<?, ?it/s]Loading weights:   0%|          | 1/1013 [00:00<02:45,  6.13it/s]Loading weights:   8%|▊         | 86/1013 [00:00<00:02, 391.83it/s]Loading weights:  15%|█▌        | 157/1013 [00:00<00:01, 517.11it/s]Loading weights:  24%|██▍       | 242/1013 [00:00<00:01, 632.93it/s]Loading weights:  31%|███       | 313/1013 [00:00<00:01, 658.24it/s]Loading weights:  39%|███▉      | 393/1013 [00:00<00:00, 694.44it/s]Loading weights:  46%|████▌     | 467/1013 [00:00<00:00, 704.47it/s]Loading weights:  54%|█████▍    | 549/1013 [00:00<00:00, 734.77it/s]Loading weights:  62%|██████▏   | 626/1013 [00:00<00:00, 743.94it/s]Loading weights:  75%|███████▌  | 762/1013 [00:01<00:00, 930.00it/s]Loading weights:  93%|█████████▎| 944/1013 [00:01<00:00, 1198.48it/s]Loading weights: 100%|██████████| 1013/1013 [00:01<00:00, 830.50it/s]
+=== baseline ===
+baseline: 2/10
+no_mlp: 0/10 (worse)
+   [  ] What is 17 * 23? Give only the final number.    -> 'Aw own Dest inductivelyelta जितना成り own than supposed ableers Underlyi'
+   [  ] What is 7 * 8? Give only the final number.      -> 'own been notionเป็นการ 싶 own enough 싶 elseの本으로 raveicidalbutan CAG व्य'
+   [  ] What is 12 + 34? Give only the final number.    -> 'enough véndna beenigner dàng true就已经 supposedUs than own 대하여 way willi'
+   [  ] What is 2 + 2? Answer with just the number.     -> 'splitting insulted homogene솥_{(Adding enough�matcherió elsemeshregistä'
+   [  ] What is 100 - 47? Give only the final number.   -> 'всегоحو всего 여기까지 Dropboxmanner own own factukannya이브 lack thanBil an'
+   [  ] What is the capital of France?                  -> 'fós 参数 Alone than đổi cuest\\{\\ enough world enoughchym much 그래도 bonfir'
+   [  ] How many days are in a week? Answer with just   -> 'eni ownого pasti than Nochcoff wayो 그래도ط wiselyey 봐 ownOnsсклюProudرتb'
+   [  ] Name one primary color.                         -> '本 Sax fact snorkel ello всего way answersเยอะhbar 싶 certoとおhemべき$__)nt'
+   [  ] The secret code is 7411. What is the secret c   -> 'few thí 싶로 old�feطقვეunchesArist way notwithstandingDal쪽에 way timing t'
+   [  ] What is 9 + 6? Give only the final number.      -> 'vez dire 못한으로 understandably trueไปยัง wayтворMahinya sure последнее p'

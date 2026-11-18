@@ -1,0 +1,35 @@
+Loading weights:   0%|          | 0/1013 [00:00<?, ?it/s]Loading weights:   0%|          | 2/1013 [00:01<09:44,  1.73it/s]Loading weights:   1%|          | 8/1013 [00:01<02:03,  8.13it/s]Loading weights:   3%|▎         | 26/1013 [00:01<00:33, 29.61it/s]Loading weights:   5%|▍         | 47/1013 [00:01<00:16, 56.85it/s]Loading weights:   6%|▌         | 63/1013 [00:01<00:12, 75.30it/s]Loading weights:   8%|▊         | 77/1013 [00:01<00:11, 82.10it/s]Loading weights:   9%|▉         | 92/1013 [00:01<00:09, 92.30it/s]Loading weights:  11%|█         | 113/1013 [00:02<00:08, 104.55it/s]Loading weights:  13%|█▎        | 133/1013 [00:02<00:07, 120.01it/s]Loading weights:  15%|█▍        | 147/1013 [00:02<00:07, 119.39it/s]Loading weights:  16%|█▌        | 161/1013 [00:02<00:08, 106.14it/s]Loading weights:  18%|█▊        | 179/1013 [00:02<00:07, 111.72it/s]Loading weights:  20%|█▉        | 200/1013 [00:02<00:06, 117.71it/s]Loading weights:  22%|██▏       | 222/1013 [00:02<00:05, 137.86it/s]Loading weights:  24%|██▎       | 240/1013 [00:02<00:05, 138.51it/s]Loading weights:  25%|██▌       | 255/1013 [00:03<00:05, 138.06it/s]Loading weights:  27%|██▋       | 270/1013 [00:03<00:06, 121.94it/s]Loading weights:  28%|██▊       | 288/1013 [00:03<00:05, 123.40it/s]Loading weights:  31%|███       | 309/1013 [00:03<00:05, 139.90it/s]Loading weights:  32%|███▏      | 327/1013 [00:03<00:04, 149.30it/s]Loading weights:  34%|███▍      | 343/1013 [00:03<00:04, 143.59it/s]Loading weights:  35%|███▌      | 358/1013 [00:03<00:05, 128.26it/s]Loading weights:  37%|███▋      | 375/1013 [00:04<00:05, 126.00it/s]Loading weights:  39%|███▉      | 395/1013 [00:04<00:04, 142.73it/s]Loading weights:  40%|████      | 410/1013 [00:04<00:04, 140.88it/s]Loading weights:  42%|████▏     | 425/1013 [00:04<00:04, 124.46it/s]Loading weights:  43%|████▎     | 440/1013 [00:04<00:04, 123.40it/s]Loading weights:  46%|████▌     | 462/1013 [00:04<00:03, 144.60it/s]Loading weights:  47%|████▋     | 480/1013 [00:04<00:03, 152.55it/s]Loading weights:  49%|████▉     | 496/1013 [00:04<00:03, 143.13it/s]Loading weights:  50%|█████     | 511/1013 [00:05<00:03, 131.04it/s]Loading weights:  52%|█████▏    | 527/1013 [00:05<00:03, 134.76it/s]Loading weights:  54%|█████▎    | 544/1013 [00:05<00:03, 140.41it/s]Loading weights:  55%|█████▌    | 559/1013 [00:05<00:03, 134.46it/s]Loading weights:  57%|█████▋    | 573/1013 [00:05<00:03, 127.90it/s]Loading weights:  59%|█████▊    | 593/1013 [00:05<00:02, 145.23it/s]Loading weights:  60%|██████    | 610/1013 [00:05<00:02, 150.67it/s]Loading weights:  62%|██████▏   | 626/1013 [00:05<00:02, 142.04it/s]Loading weights:  63%|██████▎   | 641/1013 [00:05<00:02, 133.25it/s]Loading weights:  65%|██████▌   | 660/1013 [00:06<00:02, 146.51it/s]Loading weights:  69%|██████▉   | 699/1013 [00:06<00:01, 210.63it/s]Loading weights:  73%|███████▎  | 739/1013 [00:06<00:01, 259.17it/s]Loading weights:  77%|███████▋  | 779/1013 [00:06<00:00, 293.79it/s]Loading weights:  81%|████████  | 818/1013 [00:06<00:00, 320.11it/s]Loading weights:  85%|████████▍ | 857/1013 [00:06<00:00, 337.33it/s]Loading weights:  88%|████████▊ | 896/1013 [00:06<00:00, 352.06it/s]Loading weights:  92%|█████████▏| 936/1013 [00:06<00:00, 365.93it/s]Loading weights:  96%|█████████▌| 974/1013 [00:06<00:00, 368.57it/s]Loading weights: 100%|█████████▉| 1012/1013 [00:06<00:00, 355.81it/s]Loading weights: 100%|██████████| 1013/1013 [00:06<00:00, 145.22it/s]
+BASELINE: -9.7703
+q_zeroed:                     -9.5484 delta=+0.2219
+k_zeroed_sliding:             -9.3831 delta=+0.3872
+--- simple perms on q (all layers) ---
+  q_reverse               -9.9246 delta=-0.1543
+  q_roll1                 -9.3808 delta=+0.3895 <== BETTER
+  q_roll2                -10.9730 delta=-1.2027
+  q_roll4                -10.0119 delta=-0.2416
+  q_roll8                -10.2280 delta=-0.4577
+  q_roll16                -9.4140 delta=+0.3563 <== BETTER
+  q_roll32                -9.9566 delta=-0.1863
+  q_roll64               -10.3339 delta=-0.5636
+  q_roll128              -10.5777 delta=-0.8074
+  q_interleave            -9.9670 delta=-0.1967
+  q_sortnorm              -9.4295 delta=+0.3408 <== BETTER
+  q_sortnorm_desc        -10.1495 delta=-0.3792
+  q_rand                 -10.0649 delta=-0.2946
+--- simple perms on sliding-k ---
+  k_reverse               -9.9156 delta=-0.1453
+  k_roll1                 -9.4643 delta=+0.3060 <== BETTER
+  k_roll2                -10.1241 delta=-0.3538
+  k_roll4                -10.0836 delta=-0.3133
+  k_roll8                 -9.4494 delta=+0.3209 <== BETTER
+  k_roll16                -9.2863 delta=+0.4840 <== BETTER
+  k_roll32                -9.2866 delta=+0.4837 <== BETTER
+  k_interleave            -9.1907 delta=+0.5796 <== BETTER
+  k_sortnorm             -10.0039 delta=-0.2336
+  k_sortnorm_desc         -9.7311 delta=+0.0392
+  k_rand                  -9.3671 delta=+0.4032 <== BETTER
+--- simple perms on full-k (also V!) ---
+  kfull_reverse        -13.7170 delta=-3.9467
+  kfull_roll8          -13.8736 delta=-4.1033
+  kfull_interleave     -12.7941 delta=-3.0238
+  kfull_rand           -13.5315 delta=-3.7612

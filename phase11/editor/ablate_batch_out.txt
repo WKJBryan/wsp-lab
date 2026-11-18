@@ -1,0 +1,107 @@
+Loading weights:   0%|          | 0/1013 [00:00<?, ?it/s]Loading weights:   0%|          | 2/1013 [00:01<09:32,  1.77it/s]Loading weights:   1%|          | 9/1013 [00:01<01:47,  9.33it/s]Loading weights:   3%|▎         | 26/1013 [00:01<00:33, 29.86it/s]Loading weights:   5%|▍         | 47/1013 [00:01<00:16, 57.47it/s]Loading weights:   6%|▋         | 64/1013 [00:01<00:12, 77.40it/s]Loading weights:   8%|▊         | 78/1013 [00:01<00:10, 86.13it/s]Loading weights:   9%|▉         | 92/1013 [00:01<00:09, 93.16it/s]Loading weights:  11%|█         | 113/1013 [00:01<00:07, 118.39it/s]Loading weights:  13%|█▎        | 131/1013 [00:02<00:07, 123.09it/s]Loading weights:  14%|█▍        | 146/1013 [00:02<00:07, 113.92it/s]Loading weights:  16%|█▌        | 159/1013 [00:02<00:08, 105.28it/s]Loading weights:  18%|█▊        | 178/1013 [00:02<00:06, 119.98it/s]Loading weights:  19%|█▉        | 196/1013 [00:02<00:06, 130.88it/s]Loading weights:  21%|██        | 210/1013 [00:02<00:06, 121.63it/s]Loading weights:  22%|██▏       | 223/1013 [00:02<00:06, 115.72it/s]Loading weights:  24%|██▍       | 244/1013 [00:02<00:05, 136.84it/s]Loading weights:  26%|██▌       | 262/1013 [00:03<00:05, 142.45it/s]Loading weights:  27%|██▋       | 277/1013 [00:03<00:05, 133.31it/s]Loading weights:  29%|██▊       | 291/1013 [00:03<00:05, 124.29it/s]Loading weights:  31%|███       | 310/1013 [00:03<00:05, 127.14it/s]Loading weights:  33%|███▎      | 331/1013 [00:03<00:04, 145.98it/s]Loading weights:  34%|███▍      | 349/1013 [00:03<00:04, 152.63it/s]Loading weights:  36%|███▌      | 365/1013 [00:03<00:04, 146.15it/s]Loading weights:  38%|███▊      | 380/1013 [00:03<00:04, 131.03it/s]Loading weights:  39%|███▉      | 395/1013 [00:04<00:04, 132.09it/s]Loading weights:  41%|████      | 414/1013 [00:04<00:04, 141.68it/s]Loading weights:  42%|████▏     | 429/1013 [00:04<00:04, 135.38it/s]Loading weights:  44%|████▎     | 443/1013 [00:04<00:04, 128.33it/s]Loading weights:  46%|████▌     | 462/1013 [00:04<00:03, 141.72it/s]Loading weights:  47%|████▋     | 480/1013 [00:04<00:03, 151.40it/s]Loading weights:  49%|████▉     | 496/1013 [00:04<00:03, 143.14it/s]Loading weights:  50%|█████     | 511/1013 [00:04<00:03, 128.55it/s]Loading weights:  52%|█████▏    | 528/1013 [00:05<00:03, 124.79it/s]Loading weights:  54%|█████▍    | 549/1013 [00:05<00:03, 144.29it/s]Loading weights:  56%|█████▌    | 567/1013 [00:05<00:02, 152.21it/s]Loading weights:  58%|█████▊    | 583/1013 [00:05<00:02, 144.17it/s]Loading weights:  59%|█████▉    | 598/1013 [00:05<00:03, 129.94it/s]Loading weights:  61%|██████    | 616/1013 [00:05<00:02, 134.70it/s]Loading weights:  63%|██████▎   | 637/1013 [00:05<00:02, 152.20it/s]Loading weights:  65%|██████▍   | 654/1013 [00:05<00:02, 138.92it/s]Loading weights:  68%|██████▊   | 693/1013 [00:06<00:01, 201.09it/s]Loading weights:  72%|███████▏  | 733/1013 [00:06<00:01, 251.14it/s]Loading weights:  77%|███████▋  | 777/1013 [00:06<00:00, 297.07it/s]Loading weights:  81%|████████  | 816/1013 [00:06<00:00, 319.97it/s]Loading weights:  84%|████████▍ | 855/1013 [00:06<00:00, 334.49it/s]Loading weights:  88%|████████▊ | 894/1013 [00:06<00:00, 349.85it/s]Loading weights:  92%|█████████▏| 934/1013 [00:06<00:00, 360.98it/s]Loading weights:  96%|█████████▌| 974/1013 [00:06<00:00, 363.88it/s]Loading weights: 100%|█████████▉| 1011/1013 [00:06<00:00, 352.09it/s]Loading weights: 100%|██████████| 1013/1013 [00:06<00:00, 147.10it/s]
+BASELINE: -9.7703
+--- no_attn per layer ---
+  no_attn_L00:  -9.7861 delta=-0.0158
+  no_attn_L01:  -9.9130 delta=-0.1427
+  no_attn_L02:  -9.7104 delta=+0.0599
+  no_attn_L03: -10.1416 delta=-0.3713
+  no_attn_L04:  -9.4626 delta=+0.3077
+  no_attn_L05:  -8.5861 delta=+1.1842  <== IMPROVES (damaged?)
+  no_attn_L06:  -9.2871 delta=+0.4832
+  no_attn_L07:  -9.9835 delta=-0.2132
+  no_attn_L08:  -9.9697 delta=-0.1994
+  no_attn_L09:  -9.5515 delta=+0.2188
+  no_attn_L10:  -9.9473 delta=-0.1770
+  no_attn_L11:  -9.5689 delta=+0.2014
+  no_attn_L12: -10.0964 delta=-0.3261
+  no_attn_L13:  -9.7049 delta=+0.0654
+  no_attn_L14:  -9.7411 delta=+0.0292
+  no_attn_L15:  -9.7503 delta=+0.0200
+  no_attn_L16:  -9.5629 delta=+0.2074
+  no_attn_L17:  -9.7803 delta=-0.0100
+  no_attn_L18: -10.2116 delta=-0.4413
+  no_attn_L19: -12.6754 delta=-2.9051  (critical)
+  no_attn_L20:  -9.7510 delta=+0.0193
+  no_attn_L21:  -9.3130 delta=+0.4573
+  no_attn_L22:  -8.6377 delta=+1.1326  <== IMPROVES (damaged?)
+  no_attn_L23:  -9.9175 delta=-0.1472
+  no_attn_L24:  -9.6754 delta=+0.0949
+  no_attn_L25:  -8.7003 delta=+1.0700  <== IMPROVES (damaged?)
+  no_attn_L26:  -8.9411 delta=+0.8292  <== IMPROVES (damaged?)
+  no_attn_L27:  -9.1158 delta=+0.6545  <== IMPROVES (damaged?)
+  no_attn_L28:  -9.6962 delta=+0.0741
+  no_attn_L29: -10.7773 delta=-1.0070
+--- no_mlp per layer ---
+  no_mlp_L00: -10.7434 delta=-0.9731
+  no_mlp_L01: -10.1709 delta=-0.4006
+  no_mlp_L02: -11.1042 delta=-1.3339
+  no_mlp_L03: -10.0234 delta=-0.2531
+  no_mlp_L04:  -9.0532 delta=+0.7171  <== IMPROVES (damaged?)
+  no_mlp_L05:  -9.4131 delta=+0.3572
+  no_mlp_L06:  -9.1485 delta=+0.6218  <== IMPROVES (damaged?)
+  no_mlp_L07: -10.4322 delta=-0.6619
+  no_mlp_L08:  -9.4156 delta=+0.3547
+  no_mlp_L09:  -9.5103 delta=+0.2600
+  no_mlp_L10:  -9.4589 delta=+0.3114
+  no_mlp_L11:  -9.5650 delta=+0.2053
+  no_mlp_L12:  -9.6048 delta=+0.1655
+  no_mlp_L13:  -9.9277 delta=-0.1574
+  no_mlp_L14:  -9.8429 delta=-0.0726
+  no_mlp_L15:  -9.8848 delta=-0.1145
+  no_mlp_L16:  -9.6286 delta=+0.1417
+  no_mlp_L17: -11.2677 delta=-1.4974
+  no_mlp_L18: -10.4072 delta=-0.6369
+  no_mlp_L19: -10.3391 delta=-0.5688
+  no_mlp_L20:  -9.5618 delta=+0.2085
+  no_mlp_L21:  -8.7362 delta=+1.0341  <== IMPROVES (damaged?)
+  no_mlp_L22: -10.0968 delta=-0.3265
+  no_mlp_L23:  -9.2635 delta=+0.5068  <== IMPROVES (damaged?)
+  no_mlp_L24:  -9.0994 delta=+0.6709  <== IMPROVES (damaged?)
+  no_mlp_L25:  -8.4646 delta=+1.3057  <== IMPROVES (damaged?)
+  no_mlp_L26: -10.1662 delta=-0.3959
+  no_mlp_L27: -11.6336 delta=-1.8633
+  no_mlp_L28: -11.3795 delta=-1.6092
+  no_mlp_L29: -27.0584 delta=-17.2881  (critical)
+--- no_moe per layer ---
+  no_moe_L00: -10.1574 delta=-0.3871
+  no_moe_L01:  -9.9980 delta=-0.2277
+  no_moe_L02:  -9.9880 delta=-0.2177
+  no_moe_L03: -10.0894 delta=-0.3191
+  no_moe_L04:  -9.7062 delta=+0.0641
+  no_moe_L05: -10.0774 delta=-0.3071
+  no_moe_L06: -10.0432 delta=-0.2729
+  no_moe_L07: -10.1053 delta=-0.3350
+  no_moe_L08: -10.5338 delta=-0.7635
+  no_moe_L09:  -9.6312 delta=+0.1391
+  no_moe_L10:  -9.0076 delta=+0.7627  <== IMPROVES (damaged?)
+  no_moe_L11: -10.0217 delta=-0.2514
+  no_moe_L12:  -9.7005 delta=+0.0698
+  no_moe_L13:  -9.2910 delta=+0.4793
+  no_moe_L14: -10.1082 delta=-0.3379
+  no_moe_L15:  -9.8211 delta=-0.0508
+  no_moe_L16: -10.0394 delta=-0.2691
+  no_moe_L17:  -9.2193 delta=+0.5510  <== IMPROVES (damaged?)
+  no_moe_L18: -10.2208 delta=-0.4505
+  no_moe_L19: -10.2604 delta=-0.4901
+  no_moe_L20: -10.7340 delta=-0.9637
+  no_moe_L21: -10.3678 delta=-0.5975
+  no_moe_L22: -10.0450 delta=-0.2747
+  no_moe_L23:  -9.7575 delta=+0.0128
+  no_moe_L24:  -9.7237 delta=+0.0466
+  no_moe_L25: -10.3987 delta=-0.6284
+  no_moe_L26:  -9.8293 delta=-0.0590
+  no_moe_L27: -10.3976 delta=-0.6273
+  no_moe_L28:  -8.6882 delta=+1.0821  <== IMPROVES (damaged?)
+  no_moe_L29:  -8.6235 delta=+1.1468  <== IMPROVES (damaged?)
+
+=== ranked (best deltas first) ===
+  no_mlp_L25: +1.3057
+  no_attn_L05: +1.1842
+  no_moe_L29: +1.1468
+  no_attn_L22: +1.1326
+  no_moe_L28: +1.0821
+  no_attn_L25: +1.0700
+  no_mlp_L21: +1.0341
+  no_attn_L26: +0.8292
+  no_moe_L10: +0.7627
+  no_mlp_L04: +0.7171

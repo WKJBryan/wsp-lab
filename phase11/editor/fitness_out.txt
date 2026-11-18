@@ -1,0 +1,102 @@
+Loading weights:   0%|          | 0/1013 [00:00<?, ?it/s]Loading weights:   0%|          | 2/1013 [00:01<10:15,  1.64it/s]Loading weights:   2%|▏         | 21/1013 [00:01<00:47, 21.03it/s]Loading weights:   3%|▎         | 31/1013 [00:01<00:32, 30.17it/s]Loading weights:   5%|▍         | 48/1013 [00:01<00:19, 49.25it/s]Loading weights:   7%|▋         | 69/1013 [00:01<00:12, 75.39it/s]Loading weights:   8%|▊         | 85/1013 [00:01<00:10, 91.02it/s]Loading weights:  10%|▉         | 100/1013 [00:01<00:09, 98.61it/s]Loading weights:  11%|█▏        | 114/1013 [00:02<00:09, 99.51it/s]Loading weights:  13%|█▎        | 133/1013 [00:02<00:08, 107.63it/s]Loading weights:  15%|█▌        | 152/1013 [00:02<00:07, 120.62it/s]Loading weights:  16%|█▋        | 166/1013 [00:02<00:07, 111.44it/s]Loading weights:  18%|█▊        | 179/1013 [00:02<00:07, 107.74it/s]Loading weights:  20%|█▉        | 200/1013 [00:02<00:06, 126.71it/s]Loading weights:  22%|██▏       | 219/1013 [00:02<00:05, 142.06it/s]Loading weights:  23%|██▎       | 235/1013 [00:02<00:05, 136.78it/s]Loading weights:  25%|██▍       | 250/1013 [00:03<00:06, 124.80it/s]Loading weights:  26%|██▌       | 265/1013 [00:03<00:05, 130.57it/s]Loading weights:  28%|██▊       | 283/1013 [00:03<00:05, 141.50it/s]Loading weights:  29%|██▉       | 298/1013 [00:03<00:05, 133.31it/s]Loading weights:  31%|███       | 312/1013 [00:03<00:05, 122.78it/s]Loading weights:  33%|███▎      | 331/1013 [00:03<00:05, 122.75it/s]Loading weights:  35%|███▍      | 353/1013 [00:03<00:04, 141.48it/s]Loading weights:  37%|███▋      | 371/1013 [00:03<00:04, 148.92it/s]Loading weights:  38%|███▊      | 387/1013 [00:04<00:04, 142.02it/s]Loading weights:  40%|███▉      | 402/1013 [00:04<00:05, 119.77it/s]Loading weights:  41%|████▏     | 418/1013 [00:04<00:04, 121.28it/s]Loading weights:  43%|████▎     | 440/1013 [00:04<00:04, 128.56it/s]Loading weights:  46%|████▌     | 462/1013 [00:04<00:04, 132.66it/s]Loading weights:  48%|████▊     | 484/1013 [00:04<00:03, 135.84it/s]Loading weights:  50%|████▉     | 506/1013 [00:04<00:03, 151.85it/s]Loading weights:  52%|█████▏    | 524/1013 [00:05<00:03, 153.50it/s]Loading weights:  53%|█████▎    | 540/1013 [00:05<00:03, 138.91it/s]Loading weights:  55%|█████▍    | 555/1013 [00:05<00:03, 125.39it/s]Loading weights:  56%|█████▋    | 572/1013 [00:05<00:03, 128.38it/s]Loading weights:  58%|█████▊    | 592/1013 [00:05<00:02, 144.20it/s]Loading weights:  60%|██████    | 612/1013 [00:05<00:02, 152.81it/s]Loading weights:  62%|██████▏   | 628/1013 [00:05<00:02, 148.56it/s]Loading weights:  64%|██████▎   | 644/1013 [00:05<00:02, 132.34it/s]Loading weights:  65%|██████▌   | 661/1013 [00:06<00:02, 140.68it/s]Loading weights:  69%|██████▉   | 701/1013 [00:06<00:01, 204.18it/s]Loading weights:  74%|███████▎  | 745/1013 [00:06<00:01, 264.44it/s]Loading weights:  78%|███████▊  | 787/1013 [00:06<00:00, 304.51it/s]Loading weights:  81%|████████▏ | 824/1013 [00:06<00:00, 322.62it/s]Loading weights:  85%|████████▍ | 859/1013 [00:06<00:00, 327.81it/s]Loading weights:  89%|████████▉ | 902/1013 [00:06<00:00, 352.96it/s]Loading weights:  93%|█████████▎| 940/1013 [00:06<00:00, 358.09it/s]Loading weights:  97%|█████████▋| 982/1013 [00:06<00:00, 373.99it/s]Loading weights: 100%|██████████| 1013/1013 [00:07<00:00, 144.15it/s]
+BASELINE: mean_lp=-10.7948 total=-1155.0
+  final_x0.25                  mean_lp=-8.7072 delta=+2.0876
+  inputln_x0.25                mean_lp=-10.9741 delta=-0.1793
+  preff_x0.25                  mean_lp=-14.0846 delta=-3.2898
+  preff2_x0.25                 mean_lp=-10.5795 delta=+0.2153
+  postff1_x0.25                mean_lp=-24.7771 delta=-13.9823
+  postff2_x0.25                mean_lp=-10.3596 delta=+0.4352
+  postattn_x0.25               mean_lp=-19.3109 delta=-8.5160
+  postff_x0.25                 mean_lp=-19.3405 delta=-8.5456
+  lscalar_x0.25                mean_lp=-18.7583 delta=-7.9634
+  embed_x0.25                  mean_lp=-10.4456 delta=+0.3492
+  knorm_x0.25                  mean_lp=-10.4402 delta=+0.3547
+  qnorm_x0.25                  mean_lp=-10.4402 delta=+0.3547
+  l0postff_x0.25               mean_lp=-11.2513 delta=-0.4565
+  l0postattn_x0.25             mean_lp=-11.0289 delta=-0.2341
+  final_x0.5                   mean_lp=-7.6732 delta=+3.1217
+  inputln_x0.5                 mean_lp=-10.8510 delta=-0.0561
+  preff_x0.5                   mean_lp=-11.6786 delta=-0.8837
+  preff2_x0.5                  mean_lp=-11.3627 delta=-0.5678
+  postff1_x0.5                 mean_lp=-13.0454 delta=-2.2506
+  postff2_x0.5                 mean_lp=-10.7495 delta=+0.0454
+  postattn_x0.5                mean_lp=-10.1592 delta=+0.6357
+  postff_x0.5                  mean_lp=-12.0916 delta=-1.2967
+  lscalar_x0.5                 mean_lp=-14.7045 delta=-3.9096
+  embed_x0.5                   mean_lp=-7.9005 delta=+2.8944
+  knorm_x0.5                   mean_lp=-11.4888 delta=-0.6939
+  qnorm_x0.5                   mean_lp=-11.4888 delta=-0.6939
+  l0postff_x0.5                mean_lp=-10.7736 delta=+0.0212
+  l0postattn_x0.5              mean_lp=-11.4121 delta=-0.6173
+  final_x0.75                  mean_lp=-9.0109 delta=+1.7839
+  inputln_x0.75                mean_lp=-10.9489 delta=-0.1540
+  preff_x0.75                  mean_lp=-11.4498 delta=-0.6549
+  preff2_x0.75                 mean_lp=-11.1995 delta=-0.4046
+  postff1_x0.75                mean_lp=-11.4823 delta=-0.6875
+  postff2_x0.75                mean_lp=-10.8279 delta=-0.0331
+  postattn_x0.75               mean_lp=-9.8664 delta=+0.9285
+  postff_x0.75                 mean_lp=-11.9184 delta=-1.1236
+  lscalar_x0.75                mean_lp=-19.8091 delta=-9.0142
+  embed_x0.75                  mean_lp=-9.2428 delta=+1.5521
+  knorm_x0.75                  mean_lp=-11.2755 delta=-0.4807
+  qnorm_x0.75                  mean_lp=-11.1762 delta=-0.3813
+  l0postff_x0.75               mean_lp=-11.3123 delta=-0.5175
+  l0postattn_x0.75             mean_lp=-10.9636 delta=-0.1688
+  final_x1.5                   mean_lp=-13.9428 delta=-3.1479
+  inputln_x1.5                 mean_lp=-10.9364 delta=-0.1415
+  preff_x1.5                   mean_lp=-10.4843 delta=+0.3106
+  preff2_x1.5                  mean_lp=-10.9437 delta=-0.1489
+  postff1_x1.5                 mean_lp=-10.7839 delta=+0.0110
+  postff2_x1.5                 mean_lp=-12.3770 delta=-1.5821
+  postattn_x1.5                mean_lp=-11.3984 delta=-0.6035
+  postff_x1.5                  mean_lp=-9.4353 delta=+1.3595
+  lscalar_x1.5                 mean_lp=-37.5239 delta=-26.7291
+  embed_x1.5                   mean_lp=-14.0677 delta=-3.2729
+  knorm_x1.5                   mean_lp=-11.1238 delta=-0.3290
+  qnorm_x1.5                   mean_lp=-10.9316 delta=-0.1367
+  l0postff_x1.5                mean_lp=-10.4124 delta=+0.3825
+  l0postattn_x1.5              mean_lp=-11.2203 delta=-0.4254
+  final_x2.0                   mean_lp=-16.2395 delta=-5.4446
+  inputln_x2.0                 mean_lp=-10.8352 delta=-0.0403
+  preff_x2.0                   mean_lp=-10.4043 delta=+0.3906
+  preff2_x2.0                  mean_lp=-12.9745 delta=-2.1797
+  postff1_x2.0                 mean_lp=-10.7495 delta=+0.0454
+  postff2_x2.0                 mean_lp=-13.0564 delta=-2.2616
+  postattn_x2.0                mean_lp=-13.0052 delta=-2.2104
+  postff_x2.0                  mean_lp=-10.9900 delta=-0.1952
+  lscalar_x2.0                 mean_lp=-40.7128 delta=-29.9179
+  embed_x2.0                   mean_lp=-16.1158 delta=-5.3209
+  knorm_x2.0                   mean_lp=-10.7413 delta=+0.0536
+  qnorm_x2.0                   mean_lp=-10.7413 delta=+0.0536
+  l0postff_x2.0                mean_lp=-10.7112 delta=+0.0836
+  l0postattn_x2.0              mean_lp=-11.4344 delta=-0.6395
+  final_x4.0                   mean_lp=-20.1344 delta=-9.3396
+  inputln_x4.0                 mean_lp=-10.8841 delta=-0.0893
+  preff_x4.0                   mean_lp=-10.7791 delta=+0.0158
+  preff2_x4.0                  mean_lp=-14.7686 delta=-3.9738
+  postff1_x4.0                 mean_lp=-10.3596 delta=+0.4352
+  postff2_x4.0                 mean_lp=-24.7867 delta=-13.9918
+  postattn_x4.0                mean_lp=-16.1059 delta=-5.3111
+  postff_x4.0                  mean_lp=-21.6341 delta=-10.8392
+  lscalar_x4.0                 mean_lp=-41.3866 delta=-30.5917
+  embed_x4.0                   mean_lp=-17.1030 delta=-6.3081
+  knorm_x4.0                   mean_lp=-10.6158 delta=+0.1791
+  qnorm_x4.0                   mean_lp=-10.6158 delta=+0.1791
+  l0postff_x4.0                mean_lp=-11.3091 delta=-0.5143
+  l0postattn_x4.0              mean_lp=-12.1360 delta=-1.3411
+  final_median                 mean_lp=-19.4912 delta=-8.6964
+  input_layernorm_ones         mean_lp=-10.2555 delta=+0.5394
+  pre_feedforward_layernorm_ones mean_lp=-20.3646 delta=-9.5698
+  pre_feedforward_layernorm_2_ones mean_lp=-12.6626 delta=-1.8677
+  post_attention_layernorm_ones mean_lp=-35.7312 delta=-24.9363
+  post_feedforward_layernorm_ones mean_lp=-31.5886 delta=-20.7937
+
+BEST:
+  final_x0.5                   -7.6732 (+3.1217)
+  embed_x0.5                   -7.9005 (+2.8944)
+  final_x0.25                  -8.7072 (+2.0876)
+  final_x0.75                  -9.0109 (+1.7839)
+  embed_x0.75                  -9.2428 (+1.5521)
+  postff_x1.5                  -9.4353 (+1.3595)
+  postattn_x0.75               -9.8664 (+0.9285)
+  postattn_x0.5                -10.1592 (+0.6357)

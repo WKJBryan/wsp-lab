@@ -1,0 +1,528 @@
+/mnt/c/Users/user/.zcode/workspace/draft-c8131b20-7835-43a5-a479-2c728f5b0915/wsp-lab/phase11/editor/norm_check.py:30: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/ReduceOps.cpp:1913.)
+  print(f"  {name}: n={t.numel()} std={t.std():.5g} uniq={uniq} "
+=== language_model norm-like weights: std / n_unique ===
+  model.language_model.layers.0.input_layernorm.weight: n=2816 std=1.9118 uniq=280 min=1.703 max=30.62
+  model.language_model.layers.0.layer_scalar: n=1 std=nan uniq=1 min=0.07031 max=0.07031  <== CONSTANT
+  model.language_model.layers.0.post_attention_layernorm.weight: n=2816 std=4.5074 uniq=679 min=0.01416 max=16.5
+  model.language_model.layers.0.post_feedforward_layernorm.weight: n=2816 std=7.8359 uniq=364 min=0.02112 max=23
+  model.language_model.layers.0.post_feedforward_layernorm_1.weight: n=2816 std=10.292 uniq=876 min=-2.406 max=135
+  model.language_model.layers.0.post_feedforward_layernorm_2.weight: n=2816 std=5.8045 uniq=533 min=-3.672 max=89.5
+  model.language_model.layers.0.pre_feedforward_layernorm.weight: n=2816 std=1.3238 uniq=409 min=0.01086 max=22.88
+  model.language_model.layers.0.pre_feedforward_layernorm_2.weight: n=2816 std=0.32099 uniq=342 min=-0.01245 max=2.266
+  model.language_model.layers.0.router.per_expert_scale: n=8 std=0.013692 uniq=6 min=0.9805 max=1.016
+  model.language_model.layers.0.router.scale: n=2816 std=0.92227 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.0.self_attn.k_norm.weight: n=256 std=0 uniq=1 min=0.1221 max=0.1221  <== CONSTANT
+  model.language_model.layers.0.self_attn.q_norm.weight: n=256 std=0 uniq=1 min=1.023 max=1.023  <== CONSTANT
+  model.language_model.layers.1.input_layernorm.weight: n=2816 std=6.1664 uniq=587 min=-3.312 max=46.25
+  model.language_model.layers.1.layer_scalar: n=1 std=nan uniq=1 min=0.2031 max=0.2031  <== CONSTANT
+  model.language_model.layers.1.post_attention_layernorm.weight: n=2816 std=1.1686 uniq=748 min=0.002441 max=3.422
+  model.language_model.layers.1.post_feedforward_layernorm.weight: n=2816 std=3.8394 uniq=382 min=0.008057 max=9.062
+  model.language_model.layers.1.post_feedforward_layernorm_1.weight: n=2816 std=14.658 uniq=754 min=-15.06 max=222
+  model.language_model.layers.1.post_feedforward_layernorm_2.weight: n=2816 std=8.2849 uniq=620 min=-13.94 max=130
+  model.language_model.layers.1.pre_feedforward_layernorm.weight: n=2816 std=1.4735 uniq=583 min=-0.3047 max=14.38
+  model.language_model.layers.1.pre_feedforward_layernorm_2.weight: n=2816 std=1.8824 uniq=610 min=-0.04077 max=5.344
+  model.language_model.layers.1.router.per_expert_scale: n=8 std=0.011995 uniq=7 min=0.9805 max=1.016
+  model.language_model.layers.1.router.scale: n=2816 std=0.92127 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.1.self_attn.k_norm.weight: n=256 std=0 uniq=1 min=0.1216 max=0.1216  <== CONSTANT
+  model.language_model.layers.1.self_attn.q_norm.weight: n=256 std=0 uniq=1 min=1.031 max=1.031  <== CONSTANT
+  model.language_model.layers.10.input_layernorm.weight: n=2816 std=24.839 uniq=957 min=0.1562 max=266
+  model.language_model.layers.10.layer_scalar: n=1 std=nan uniq=1 min=0.7266 max=0.7266  <== CONSTANT
+  model.language_model.layers.10.post_attention_layernorm.weight: n=2816 std=0.35531 uniq=699 min=0.0008316 max=0.9297
+  model.language_model.layers.10.post_feedforward_layernorm.weight: n=2816 std=0.39295 uniq=222 min=0.001549 max=1.656
+  model.language_model.layers.10.post_feedforward_layernorm_1.weight: n=2816 std=6.246 uniq=789 min=-5.625 max=83.5
+  model.language_model.layers.10.post_feedforward_layernorm_2.weight: n=2816 std=3.5967 uniq=671 min=-13.81 max=59.5
+  model.language_model.layers.10.pre_feedforward_layernorm.weight: n=2816 std=2.4957 uniq=797 min=-0.06934 max=37.5
+  model.language_model.layers.10.pre_feedforward_layernorm_2.weight: n=2816 std=9.8756 uniq=964 min=-0.4902 max=92
+  model.language_model.layers.10.router.per_expert_scale: n=8 std=0.011436 uniq=5 min=0.9844 max=1.016
+  model.language_model.layers.10.router.scale: n=2816 std=0.92538 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.10.self_attn.k_norm.weight: n=256 std=0 uniq=1 min=0.127 max=0.127  <== CONSTANT
+  model.language_model.layers.10.self_attn.q_norm.weight: n=256 std=0 uniq=1 min=0.9844 max=0.9844  <== CONSTANT
+  model.language_model.layers.11.input_layernorm.weight: n=2816 std=20.986 uniq=810 min=-0.8438 max=296
+  model.language_model.layers.11.layer_scalar: n=1 std=nan uniq=1 min=0.6758 max=0.6758  <== CONSTANT
+  model.language_model.layers.11.post_attention_layernorm.weight: n=2816 std=0.44464 uniq=674 min=0.001038 max=1.133
+  model.language_model.layers.11.post_feedforward_layernorm.weight: n=2816 std=0.36484 uniq=165 min=0.03027 max=1.852
+  model.language_model.layers.11.post_feedforward_layernorm_1.weight: n=2816 std=6.4509 uniq=732 min=-4.812 max=102
+  model.language_model.layers.11.post_feedforward_layernorm_2.weight: n=2816 std=4.0451 uniq=636 min=-1.664 max=64.5
+  model.language_model.layers.11.pre_feedforward_layernorm.weight: n=2816 std=1.1092 uniq=716 min=-0.07715 max=13.19
+  model.language_model.layers.11.pre_feedforward_layernorm_2.weight: n=2816 std=4.8605 uniq=856 min=-1.102 max=53.75
+  model.language_model.layers.11.router.per_expert_scale: n=8 std=0.014152 uniq=6 min=0.9805 max=1.023
+  model.language_model.layers.11.router.scale: n=2816 std=0.93529 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.11.self_attn.k_norm.weight: n=512 std=0 uniq=1 min=0.06006 max=0.06006  <== CONSTANT
+  model.language_model.layers.11.self_attn.q_norm.weight: n=512 std=0 uniq=1 min=1.039 max=1.039  <== CONSTANT
+  model.language_model.layers.12.input_layernorm.weight: n=2816 std=8.269 uniq=725 min=0.0918 max=86.5
+  model.language_model.layers.12.layer_scalar: n=1 std=nan uniq=1 min=0.7188 max=0.7188  <== CONSTANT
+  model.language_model.layers.12.post_attention_layernorm.weight: n=2816 std=0.352 uniq=623 min=0.0009384 max=1.055
+  model.language_model.layers.12.post_feedforward_layernorm.weight: n=2816 std=0.35096 uniq=190 min=0.00148 max=1.617
+  model.language_model.layers.12.post_feedforward_layernorm_1.weight: n=2816 std=5.3042 uniq=666 min=-35.75 max=81
+  model.language_model.layers.12.post_feedforward_layernorm_2.weight: n=2816 std=3.9409 uniq=586 min=-0.1621 max=60.25
+  model.language_model.layers.12.pre_feedforward_layernorm.weight: n=2816 std=0.77015 uniq=668 min=-0.04663 max=8.188
+  model.language_model.layers.12.pre_feedforward_layernorm_2.weight: n=2816 std=2.4188 uniq=745 min=-0.4707 max=25.38
+  model.language_model.layers.12.router.per_expert_scale: n=8 std=0.0069053 uniq=3 min=0.9961 max=1.016
+  model.language_model.layers.12.router.scale: n=2816 std=0.91967 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.12.self_attn.k_norm.weight: n=256 std=0 uniq=1 min=0.127 max=0.127  <== CONSTANT
+  model.language_model.layers.12.self_attn.q_norm.weight: n=256 std=0 uniq=1 min=0.9844 max=0.9844  <== CONSTANT
+  model.language_model.layers.13.input_layernorm.weight: n=2816 std=7.243 uniq=663 min=0.005951 max=76.5
+  model.language_model.layers.13.layer_scalar: n=1 std=nan uniq=1 min=0.7109 max=0.7109  <== CONSTANT
+  model.language_model.layers.13.post_attention_layernorm.weight: n=2816 std=0.32852 uniq=536 min=0.0009384 max=1.023
+  model.language_model.layers.13.post_feedforward_layernorm.weight: n=2816 std=0.40089 uniq=203 min=0.001312 max=1.695
+  model.language_model.layers.13.post_feedforward_layernorm_1.weight: n=2816 std=4.6199 uniq=627 min=-35.75 max=87.5
+  model.language_model.layers.13.post_feedforward_layernorm_2.weight: n=2816 std=4.0452 uniq=516 min=0.1147 max=57.5
+  model.language_model.layers.13.pre_feedforward_layernorm.weight: n=2816 std=0.44206 uniq=572 min=-0.07471 max=5.188
+  model.language_model.layers.13.pre_feedforward_layernorm_2.weight: n=2816 std=1.294 uniq=644 min=-1.453 max=11.19
+  model.language_model.layers.13.router.per_expert_scale: n=8 std=0.010849 uniq=6 min=0.9805 max=1.016
+  model.language_model.layers.13.router.scale: n=2816 std=0.93328 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.13.self_attn.k_norm.weight: n=256 std=0 uniq=1 min=0.127 max=0.127  <== CONSTANT
+  model.language_model.layers.13.self_attn.q_norm.weight: n=256 std=0 uniq=1 min=0.9805 max=0.9805  <== CONSTANT
+  model.language_model.layers.14.input_layernorm.weight: n=2816 std=4.6965 uniq=559 min=0.001984 max=63
+  model.language_model.layers.14.layer_scalar: n=1 std=nan uniq=1 min=0.6367 max=0.6367  <== CONSTANT
+  model.language_model.layers.14.post_attention_layernorm.weight: n=2816 std=0.34983 uniq=490 min=0.0009995 max=1.125
+  model.language_model.layers.14.post_feedforward_layernorm.weight: n=2816 std=0.55052 uniq=252 min=0.001869 max=2.156
+  model.language_model.layers.14.post_feedforward_layernorm_1.weight: n=2816 std=4.4223 uniq=574 min=-34.5 max=83.5
+  model.language_model.layers.14.post_feedforward_layernorm_2.weight: n=2816 std=3.4353 uniq=462 min=0.01172 max=54.25
+  model.language_model.layers.14.pre_feedforward_layernorm.weight: n=2816 std=0.26276 uniq=484 min=-0.07715 max=4.094
+  model.language_model.layers.14.pre_feedforward_layernorm_2.weight: n=2816 std=0.82445 uniq=591 min=-0.1533 max=6.906
+  model.language_model.layers.14.router.per_expert_scale: n=8 std=0.013039 uniq=4 min=0.9883 max=1.016
+  model.language_model.layers.14.router.scale: n=2816 std=0.93114 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.14.self_attn.k_norm.weight: n=256 std=0 uniq=1 min=0.1211 max=0.1211  <== CONSTANT
+  model.language_model.layers.14.self_attn.q_norm.weight: n=256 std=0 uniq=1 min=1.031 max=1.031  <== CONSTANT
+  model.language_model.layers.15.input_layernorm.weight: n=2816 std=3.3486 uniq=498 min=0.3574 max=72.5
+  model.language_model.layers.15.layer_scalar: n=1 std=nan uniq=1 min=0.5586 max=0.5586  <== CONSTANT
+  model.language_model.layers.15.post_attention_layernorm.weight: n=2816 std=0.3586 uniq=546 min=0.001068 max=1.211
+  model.language_model.layers.15.post_feedforward_layernorm.weight: n=2816 std=0.75922 uniq=276 min=0.002533 max=2.703
+  model.language_model.layers.15.post_feedforward_layernorm_1.weight: n=2816 std=4.5463 uniq=520 min=-1.531 max=94
+  model.language_model.layers.15.post_feedforward_layernorm_2.weight: n=2816 std=1.9702 uniq=409 min=0.1079 max=37.25
+  model.language_model.layers.15.pre_feedforward_layernorm.weight: n=2816 std=0.51411 uniq=515 min=-0.1016 max=6.438
+  model.language_model.layers.15.pre_feedforward_layernorm_2.weight: n=2816 std=1.0511 uniq=553 min=-0.1738 max=10.19
+  model.language_model.layers.15.router.per_expert_scale: n=8 std=0.011436 uniq=5 min=0.9883 max=1.016
+  model.language_model.layers.15.router.scale: n=2816 std=0.91649 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.15.self_attn.k_norm.weight: n=256 std=0 uniq=1 min=0.1279 max=0.1279  <== CONSTANT
+  model.language_model.layers.15.self_attn.q_norm.weight: n=256 std=0 uniq=1 min=0.9805 max=0.9805  <== CONSTANT
+  model.language_model.layers.16.input_layernorm.weight: n=2816 std=5.4722 uniq=543 min=0.5547 max=62.5
+  model.language_model.layers.16.layer_scalar: n=1 std=nan uniq=1 min=0.5547 max=0.5547  <== CONSTANT
+  model.language_model.layers.16.post_attention_layernorm.weight: n=2816 std=0.57167 uniq=638 min=0.001732 max=1.969
+  model.language_model.layers.16.post_feedforward_layernorm.weight: n=2816 std=0.64684 uniq=301 min=0.002075 max=2.266
+  model.language_model.layers.16.post_feedforward_layernorm_1.weight: n=2816 std=3.8091 uniq=570 min=-3.203 max=78
+  model.language_model.layers.16.post_feedforward_layernorm_2.weight: n=2816 std=2.1022 uniq=441 min=-0.07324 max=36
+  model.language_model.layers.16.pre_feedforward_layernorm.weight: n=2816 std=0.58093 uniq=472 min=-0.07715 max=7.531
+  model.language_model.layers.16.pre_feedforward_layernorm_2.weight: n=2816 std=2.8421 uniq=589 min=-0.2754 max=27
+  model.language_model.layers.16.router.per_expert_scale: n=8 std=0.008719 uniq=4 min=0.9883 max=1.008
+  model.language_model.layers.16.router.scale: n=2816 std=0.92252 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.16.self_attn.k_norm.weight: n=256 std=0 uniq=1 min=0.1221 max=0.1221  <== CONSTANT
+  model.language_model.layers.16.self_attn.q_norm.weight: n=256 std=0 uniq=1 min=1.023 max=1.023  <== CONSTANT
+  model.language_model.layers.17.input_layernorm.weight: n=2816 std=9.1146 uniq=601 min=-1.102 max=109
+  model.language_model.layers.17.layer_scalar: n=1 std=nan uniq=1 min=0.6172 max=0.6172  <== CONSTANT
+  model.language_model.layers.17.post_attention_layernorm.weight: n=2816 std=0.45753 uniq=591 min=0.001366 max=1.562
+  model.language_model.layers.17.post_feedforward_layernorm.weight: n=2816 std=0.56744 uniq=260 min=0.001877 max=2.031
+  model.language_model.layers.17.post_feedforward_layernorm_1.weight: n=2816 std=4.5929 uniq=600 min=-0.2305 max=85.5
+  model.language_model.layers.17.post_feedforward_layernorm_2.weight: n=2816 std=1.9663 uniq=457 min=0.02307 max=35.75
+  model.language_model.layers.17.pre_feedforward_layernorm.weight: n=2816 std=1.4667 uniq=549 min=0.002106 max=15.62
+  model.language_model.layers.17.pre_feedforward_layernorm_2.weight: n=2816 std=5.9907 uniq=634 min=-0.1328 max=61.25
+  model.language_model.layers.17.router.per_expert_scale: n=8 std=0.015335 uniq=4 min=0.9805 max=1.016
+  model.language_model.layers.17.router.scale: n=2816 std=0.92002 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.17.self_attn.k_norm.weight: n=512 std=0 uniq=1 min=0.06348 max=0.06348  <== CONSTANT
+  model.language_model.layers.17.self_attn.q_norm.weight: n=512 std=0 uniq=1 min=0.9883 max=0.9883  <== CONSTANT
+  model.language_model.layers.18.input_layernorm.weight: n=2816 std=17.508 uniq=631 min=0.2988 max=172
+  model.language_model.layers.18.layer_scalar: n=1 std=nan uniq=1 min=0.7539 max=0.7539  <== CONSTANT
+  model.language_model.layers.18.post_attention_layernorm.weight: n=2816 std=0.30007 uniq=512 min=0.0008698 max=1.008
+  model.language_model.layers.18.post_feedforward_layernorm.weight: n=2816 std=0.36902 uniq=221 min=0.004822 max=1.414
+  model.language_model.layers.18.post_feedforward_layernorm_1.weight: n=2816 std=3.258 uniq=579 min=-0.3418 max=76
+  model.language_model.layers.18.post_feedforward_layernorm_2.weight: n=2816 std=1.3242 uniq=455 min=0.03638 max=25.88
+  model.language_model.layers.18.pre_feedforward_layernorm.weight: n=2816 std=2.1272 uniq=540 min=0.06738 max=18.12
+  model.language_model.layers.18.pre_feedforward_layernorm_2.weight: n=2816 std=9.0041 uniq=629 min=-0.07471 max=91
+  model.language_model.layers.18.router.per_expert_scale: n=8 std=0.014755 uniq=4 min=0.9805 max=1.016
+  model.language_model.layers.18.router.scale: n=2816 std=0.92713 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.18.self_attn.k_norm.weight: n=256 std=0 uniq=1 min=0.1221 max=0.1221  <== CONSTANT
+  model.language_model.layers.18.self_attn.q_norm.weight: n=256 std=0 uniq=1 min=1.023 max=1.023  <== CONSTANT
+  model.language_model.layers.19.input_layernorm.weight: n=2816 std=23.656 uniq=590 min=0.332 max=198
+  model.language_model.layers.19.layer_scalar: n=1 std=nan uniq=1 min=0.6055 max=0.6055  <== CONSTANT
+  model.language_model.layers.19.post_attention_layernorm.weight: n=2816 std=0.43973 uniq=537 min=0.001503 max=1.672
+  model.language_model.layers.19.post_feedforward_layernorm.weight: n=2816 std=0.53809 uniq=202 min=0.001839 max=2.031
+  model.language_model.layers.19.post_feedforward_layernorm_1.weight: n=2816 std=3.8207 uniq=561 min=-0.1016 max=89
+  model.language_model.layers.19.post_feedforward_layernorm_2.weight: n=2816 std=2.0696 uniq=420 min=0.08008 max=56.75
+  model.language_model.layers.19.pre_feedforward_layernorm.weight: n=2816 std=3.1831 uniq=533 min=-0.004089 max=33.25
+  model.language_model.layers.19.pre_feedforward_layernorm_2.weight: n=2816 std=9.4112 uniq=623 min=-0.09912 max=96
+  model.language_model.layers.19.router.per_expert_scale: n=8 std=0.010736 uniq=7 min=0.9844 max=1.016
+  model.language_model.layers.19.router.scale: n=2816 std=0.92387 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.19.self_attn.k_norm.weight: n=256 std=0 uniq=1 min=0.1221 max=0.1221  <== CONSTANT
+  model.language_model.layers.19.self_attn.q_norm.weight: n=256 std=0 uniq=1 min=1.023 max=1.023  <== CONSTANT
+  model.language_model.layers.2.input_layernorm.weight: n=2816 std=11.073 uniq=700 min=-0.5391 max=51.75
+  model.language_model.layers.2.layer_scalar: n=1 std=nan uniq=1 min=0.1699 max=0.1699  <== CONSTANT
+  model.language_model.layers.2.post_attention_layernorm.weight: n=2816 std=0.89115 uniq=794 min=0.00193 max=2.391
+  model.language_model.layers.2.post_feedforward_layernorm.weight: n=2816 std=4.9458 uniq=384 min=0.01038 max=11.38
+  model.language_model.layers.2.post_feedforward_layernorm_1.weight: n=2816 std=12.659 uniq=852 min=-2.062 max=144
+  model.language_model.layers.2.post_feedforward_layernorm_2.weight: n=2816 std=3.385 uniq=498 min=-1.086 max=39.5
+  model.language_model.layers.2.pre_feedforward_layernorm.weight: n=2816 std=12.751 uniq=903 min=-0.7617 max=80.5
+  model.language_model.layers.2.pre_feedforward_layernorm_2.weight: n=2816 std=7.4272 uniq=750 min=-0.5117 max=22
+  model.language_model.layers.2.router.per_expert_scale: n=8 std=0.015616 uniq=5 min=0.9805 max=1.023
+  model.language_model.layers.2.router.scale: n=2816 std=0.91539 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.2.self_attn.k_norm.weight: n=256 std=0 uniq=1 min=0.1318 max=0.1318  <== CONSTANT
+  model.language_model.layers.2.self_attn.q_norm.weight: n=256 std=0 uniq=1 min=0.9492 max=0.9492  <== CONSTANT
+  model.language_model.layers.20.input_layernorm.weight: n=2816 std=26.751 uniq=563 min=0.543 max=270
+  model.language_model.layers.20.layer_scalar: n=1 std=nan uniq=1 min=0.7617 max=0.7617  <== CONSTANT
+  model.language_model.layers.20.post_attention_layernorm.weight: n=2816 std=0.24094 uniq=473 min=0.000721 max=0.8711
+  model.language_model.layers.20.post_feedforward_layernorm.weight: n=2816 std=0.38397 uniq=186 min=0.001373 max=1.453
+  model.language_model.layers.20.post_feedforward_layernorm_1.weight: n=2816 std=3.2769 uniq=556 min=-0.2129 max=77
+  model.language_model.layers.20.post_feedforward_layernorm_2.weight: n=2816 std=1.8049 uniq=401 min=-0.09473 max=47.25
+  model.language_model.layers.20.pre_feedforward_layernorm.weight: n=2816 std=6.7725 uniq=527 min=-0.00325 max=73
+  model.language_model.layers.20.pre_feedforward_layernorm_2.weight: n=2816 std=13.073 uniq=606 min=-0.1377 max=127.5
+  model.language_model.layers.20.router.per_expert_scale: n=8 std=0.0087968 uniq=4 min=0.9922 max=1.016
+  model.language_model.layers.20.router.scale: n=2816 std=0.92949 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.20.self_attn.k_norm.weight: n=256 std=0 uniq=1 min=0.125 max=0.125  <== CONSTANT
+  model.language_model.layers.20.self_attn.q_norm.weight: n=256 std=0 uniq=1 min=1 max=1  <== CONSTANT
+  model.language_model.layers.21.input_layernorm.weight: n=2816 std=25.764 uniq=531 min=0.4668 max=226
+  model.language_model.layers.21.layer_scalar: n=1 std=nan uniq=1 min=0.7617 max=0.7617  <== CONSTANT
+  model.language_model.layers.21.post_attention_layernorm.weight: n=2816 std=0.2485 uniq=459 min=0.0008011 max=0.9492
+  model.language_model.layers.21.post_feedforward_layernorm.weight: n=2816 std=0.38366 uniq=175 min=0.003357 max=1.414
+  model.language_model.layers.21.post_feedforward_layernorm_1.weight: n=2816 std=3.0034 uniq=460 min=-0.06836 max=84.5
+  model.language_model.layers.21.post_feedforward_layernorm_2.weight: n=2816 std=1.4242 uniq=383 min=-0.08252 max=34.25
+  model.language_model.layers.21.pre_feedforward_layernorm.weight: n=2816 std=11.188 uniq=507 min=-0.003799 max=120.5
+  model.language_model.layers.21.pre_feedforward_layernorm_2.weight: n=2816 std=17.721 uniq=596 min=-0.1167 max=172
+  model.language_model.layers.21.router.per_expert_scale: n=8 std=0.010014 uniq=4 min=0.9922 max=1.016
+  model.language_model.layers.21.router.scale: n=2816 std=0.93816 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.21.self_attn.k_norm.weight: n=256 std=0 uniq=1 min=0.126 max=0.126  <== CONSTANT
+  model.language_model.layers.21.self_attn.q_norm.weight: n=256 std=0 uniq=1 min=0.9922 max=0.9922  <== CONSTANT
+  model.language_model.layers.22.input_layernorm.weight: n=2816 std=38.807 uniq=534 min=0.1748 max=362
+  model.language_model.layers.22.layer_scalar: n=1 std=nan uniq=1 min=0.7617 max=0.7617  <== CONSTANT
+  model.language_model.layers.22.post_attention_layernorm.weight: n=2816 std=0.22168 uniq=414 min=0.0006943 max=0.7695
+  model.language_model.layers.22.post_feedforward_layernorm.weight: n=2816 std=0.40963 uniq=201 min=0.003494 max=1.523
+  model.language_model.layers.22.post_feedforward_layernorm_1.weight: n=2816 std=2.6653 uniq=476 min=-0.1572 max=65.5
+  model.language_model.layers.22.post_feedforward_layernorm_2.weight: n=2816 std=0.97727 uniq=368 min=0.005981 max=27.38
+  model.language_model.layers.22.pre_feedforward_layernorm.weight: n=2816 std=14.096 uniq=507 min=0.123 max=137
+  model.language_model.layers.22.pre_feedforward_layernorm_2.weight: n=2816 std=21.254 uniq=567 min=-0.1406 max=193
+  model.language_model.layers.22.router.per_expert_scale: n=8 std=0.014466 uniq=6 min=0.9844 max=1.023
+  model.language_model.layers.22.router.scale: n=2816 std=0.92201 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.22.self_attn.k_norm.weight: n=256 std=0 uniq=1 min=0.1289 max=0.1289  <== CONSTANT
+  model.language_model.layers.22.self_attn.q_norm.weight: n=256 std=0 uniq=1 min=0.9727 max=0.9727  <== CONSTANT
+  model.language_model.layers.23.input_layernorm.weight: n=2816 std=27.421 uniq=526 min=-0.004059 max=242
+  model.language_model.layers.23.layer_scalar: n=1 std=nan uniq=1 min=0.7695 max=0.7695  <== CONSTANT
+  model.language_model.layers.23.post_attention_layernorm.weight: n=2816 std=0.2679 uniq=430 min=0.000843 max=0.9258
+  model.language_model.layers.23.post_feedforward_layernorm.weight: n=2816 std=0.36347 uniq=149 min=0.001274 max=1.391
+  model.language_model.layers.23.post_feedforward_layernorm_1.weight: n=2816 std=3.3038 uniq=474 min=-0.2305 max=86
+  model.language_model.layers.23.post_feedforward_layernorm_2.weight: n=2816 std=1.6844 uniq=376 min=-0.01215 max=44.25
+  model.language_model.layers.23.pre_feedforward_layernorm.weight: n=2816 std=20.56 uniq=505 min=0.2656 max=234
+  model.language_model.layers.23.pre_feedforward_layernorm_2.weight: n=2816 std=21.976 uniq=544 min=-0.1953 max=203
+  model.language_model.layers.23.router.per_expert_scale: n=8 std=0.010849 uniq=6 min=0.9844 max=1.016
+  model.language_model.layers.23.router.scale: n=2816 std=0.92184 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.23.self_attn.k_norm.weight: n=512 std=0 uniq=1 min=0.06348 max=0.06348  <== CONSTANT
+  model.language_model.layers.23.self_attn.q_norm.weight: n=512 std=0 uniq=1 min=0.9844 max=0.9844  <== CONSTANT
+  model.language_model.layers.24.input_layernorm.weight: n=2816 std=46.644 uniq=471 min=0.6875 max=374
+  model.language_model.layers.24.layer_scalar: n=1 std=nan uniq=1 min=0.8164 max=0.8164  <== CONSTANT
+  model.language_model.layers.24.post_attention_layernorm.weight: n=2816 std=0.16861 uniq=371 min=0.0005226 max=0.5898
+  model.language_model.layers.24.post_feedforward_layernorm.weight: n=2816 std=0.33813 uniq=156 min=0.005524 max=1.297
+  model.language_model.layers.24.post_feedforward_layernorm_1.weight: n=2816 std=2.6233 uniq=470 min=-0.2617 max=79.5
+  model.language_model.layers.24.post_feedforward_layernorm_2.weight: n=2816 std=1.3299 uniq=364 min=-0.08301 max=34.25
+  model.language_model.layers.24.pre_feedforward_layernorm.weight: n=2816 std=19.047 uniq=477 min=0.2715 max=180
+  model.language_model.layers.24.pre_feedforward_layernorm_2.weight: n=2816 std=21.344 uniq=513 min=-0.1631 max=192
+  model.language_model.layers.24.router.per_expert_scale: n=8 std=0.011519 uniq=6 min=0.9805 max=1.016
+  model.language_model.layers.24.router.scale: n=2816 std=0.91461 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.24.self_attn.k_norm.weight: n=256 std=0 uniq=1 min=0.1201 max=0.1201  <== CONSTANT
+  model.language_model.layers.24.self_attn.q_norm.weight: n=256 std=0 uniq=1 min=1.039 max=1.039  <== CONSTANT
+  model.language_model.layers.25.input_layernorm.weight: n=2816 std=50.673 uniq=484 min=0.3066 max=454
+  model.language_model.layers.25.layer_scalar: n=1 std=nan uniq=1 min=0.8047 max=0.8047  <== CONSTANT
+  model.language_model.layers.25.post_attention_layernorm.weight: n=2816 std=0.14624 uniq=364 min=0.0004692 max=0.5117
+  model.language_model.layers.25.post_feedforward_layernorm.weight: n=2816 std=0.35461 uniq=169 min=0.003174 max=1.375
+  model.language_model.layers.25.post_feedforward_layernorm_1.weight: n=2816 std=2.9409 uniq=484 min=-7.844 max=88
+  model.language_model.layers.25.post_feedforward_layernorm_2.weight: n=2816 std=1.1539 uniq=385 min=-0.03662 max=30.12
+  model.language_model.layers.25.pre_feedforward_layernorm.weight: n=2816 std=22.628 uniq=444 min=0.3359 max=227
+  model.language_model.layers.25.pre_feedforward_layernorm_2.weight: n=2816 std=20.532 uniq=479 min=-0.1396 max=186
+  model.language_model.layers.25.router.per_expert_scale: n=8 std=0.015057 uniq=4 min=0.9805 max=1.016
+  model.language_model.layers.25.router.scale: n=2816 std=0.93678 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.25.self_attn.k_norm.weight: n=256 std=0 uniq=1 min=0.124 max=0.124  <== CONSTANT
+  model.language_model.layers.25.self_attn.q_norm.weight: n=256 std=0 uniq=1 min=1.008 max=1.008  <== CONSTANT
+  model.language_model.layers.26.input_layernorm.weight: n=2816 std=43.412 uniq=472 min=0.3672 max=386
+  model.language_model.layers.26.layer_scalar: n=1 std=nan uniq=1 min=0.75 max=0.75  <== CONSTANT
+  model.language_model.layers.26.post_attention_layernorm.weight: n=2816 std=0.19347 uniq=363 min=0.0006142 max=0.6797
+  model.language_model.layers.26.post_feedforward_layernorm.weight: n=2816 std=0.41688 uniq=173 min=0.001564 max=1.625
+  model.language_model.layers.26.post_feedforward_layernorm_1.weight: n=2816 std=2.8759 uniq=507 min=-0.2773 max=86.5
+  model.language_model.layers.26.post_feedforward_layernorm_2.weight: n=2816 std=0.76828 uniq=378 min=-0.0119 max=19
+  model.language_model.layers.26.pre_feedforward_layernorm.weight: n=2816 std=27.159 uniq=463 min=0.5352 max=234
+  model.language_model.layers.26.pre_feedforward_layernorm_2.weight: n=2816 std=25.221 uniq=441 min=-0.1738 max=229
+  model.language_model.layers.26.router.per_expert_scale: n=8 std=0.011625 uniq=7 min=0.9805 max=1.016
+  model.language_model.layers.26.router.scale: n=2816 std=0.94144 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.26.self_attn.k_norm.weight: n=256 std=0 uniq=1 min=0.1226 max=0.1226  <== CONSTANT
+  model.language_model.layers.26.self_attn.q_norm.weight: n=256 std=0 uniq=1 min=1.023 max=1.023  <== CONSTANT
+  model.language_model.layers.27.input_layernorm.weight: n=2816 std=36.382 uniq=471 min=0.3848 max=328
+  model.language_model.layers.27.layer_scalar: n=1 std=nan uniq=1 min=0.7344 max=0.7344  <== CONSTANT
+  model.language_model.layers.27.post_attention_layernorm.weight: n=2816 std=0.24906 uniq=334 min=0.0007706 max=0.8789
+  model.language_model.layers.27.post_feedforward_layernorm.weight: n=2816 std=0.41631 uniq=168 min=0.001518 max=1.625
+  model.language_model.layers.27.post_feedforward_layernorm_1.weight: n=2816 std=3.4231 uniq=532 min=-0.4512 max=86
+  model.language_model.layers.27.post_feedforward_layernorm_2.weight: n=2816 std=0.94752 uniq=396 min=-0.01953 max=16.75
+  model.language_model.layers.27.pre_feedforward_layernorm.weight: n=2816 std=28.447 uniq=482 min=0.5117 max=260
+  model.language_model.layers.27.pre_feedforward_layernorm_2.weight: n=2816 std=19.705 uniq=386 min=-0.1279 max=183
+  model.language_model.layers.27.router.per_expert_scale: n=8 std=0.011049 uniq=6 min=0.9805 max=1.016
+  model.language_model.layers.27.router.scale: n=2816 std=0.93414 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.27.self_attn.k_norm.weight: n=256 std=0 uniq=1 min=0.1221 max=0.1221  <== CONSTANT
+  model.language_model.layers.27.self_attn.q_norm.weight: n=256 std=0 uniq=1 min=1.023 max=1.023  <== CONSTANT
+  model.language_model.layers.28.input_layernorm.weight: n=2816 std=53.236 uniq=465 min=0.3516 max=444
+  model.language_model.layers.28.layer_scalar: n=1 std=nan uniq=1 min=0.6758 max=0.6758  <== CONSTANT
+  model.language_model.layers.28.post_attention_layernorm.weight: n=2816 std=0.3075 uniq=313 min=0.0009193 max=1.047
+  model.language_model.layers.28.post_feedforward_layernorm.weight: n=2816 std=0.49301 uniq=198 min=0.001862 max=1.922
+  model.language_model.layers.28.post_feedforward_layernorm_1.weight: n=2816 std=3.386 uniq=535 min=-0.4805 max=81.5
+  model.language_model.layers.28.post_feedforward_layernorm_2.weight: n=2816 std=0.57075 uniq=384 min=-0.03491 max=9.625
+  model.language_model.layers.28.pre_feedforward_layernorm.weight: n=2816 std=26.562 uniq=499 min=0.4121 max=266
+  model.language_model.layers.28.pre_feedforward_layernorm_2.weight: n=2816 std=18.013 uniq=367 min=-0.1543 max=164
+  model.language_model.layers.28.router.per_expert_scale: n=8 std=0.010108 uniq=5 min=0.9883 max=1.016
+  model.language_model.layers.28.router.scale: n=2816 std=0.92402 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.28.self_attn.k_norm.weight: n=256 std=0 uniq=1 min=0.1245 max=0.1245  <== CONSTANT
+  model.language_model.layers.28.self_attn.q_norm.weight: n=256 std=0 uniq=1 min=1.008 max=1.008  <== CONSTANT
+  model.language_model.layers.29.input_layernorm.weight: n=2816 std=37.867 uniq=537 min=-0.8711 max=316
+  model.language_model.layers.29.layer_scalar: n=1 std=nan uniq=1 min=0.1953 max=0.1953  <== CONSTANT
+  model.language_model.layers.29.post_attention_layernorm.weight: n=2816 std=0.33938 uniq=362 min=0.001305 max=1.438
+  model.language_model.layers.29.post_feedforward_layernorm.weight: n=2816 std=3.0143 uniq=434 min=0.009521 max=9.938
+  model.language_model.layers.29.post_feedforward_layernorm_1.weight: n=2816 std=2.7393 uniq=463 min=-0.9492 max=54.25
+  model.language_model.layers.29.post_feedforward_layernorm_2.weight: n=2816 std=0.82755 uniq=345 min=-1.32 max=16.75
+  model.language_model.layers.29.pre_feedforward_layernorm.weight: n=2816 std=7.727 uniq=506 min=0.2754 max=59.75
+  model.language_model.layers.29.pre_feedforward_layernorm_2.weight: n=2816 std=5.1814 uniq=415 min=-0.1172 max=45
+  model.language_model.layers.29.router.per_expert_scale: n=8 std=0.01269 uniq=5 min=0.9844 max=1.023
+  model.language_model.layers.29.router.scale: n=2816 std=0.92577 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.29.self_attn.k_norm.weight: n=512 std=0 uniq=1 min=0.06152 max=0.06152  <== CONSTANT
+  model.language_model.layers.29.self_attn.q_norm.weight: n=512 std=0 uniq=1 min=1.016 max=1.016  <== CONSTANT
+  model.language_model.layers.3.input_layernorm.weight: n=2816 std=20.859 uniq=839 min=-0.003265 max=86.5
+  model.language_model.layers.3.layer_scalar: n=1 std=nan uniq=1 min=0.5156 max=0.5156  <== CONSTANT
+  model.language_model.layers.3.post_attention_layernorm.weight: n=2816 std=0.40829 uniq=777 min=0.0008926 max=1.156
+  model.language_model.layers.3.post_feedforward_layernorm.weight: n=2816 std=1.422 uniq=377 min=0.003006 max=3.141
+  model.language_model.layers.3.post_feedforward_layernorm_1.weight: n=2816 std=11.136 uniq=669 min=-0.2334 max=162
+  model.language_model.layers.3.post_feedforward_layernorm_2.weight: n=2816 std=5.5713 uniq=564 min=-10.81 max=67.5
+  model.language_model.layers.3.pre_feedforward_layernorm.weight: n=2816 std=25.149 uniq=966 min=-0.4473 max=175
+  model.language_model.layers.3.pre_feedforward_layernorm_2.weight: n=2816 std=29.597 uniq=884 min=-2.312 max=99
+  model.language_model.layers.3.router.per_expert_scale: n=8 std=0.011707 uniq=6 min=0.9805 max=1.016
+  model.language_model.layers.3.router.scale: n=2816 std=0.91205 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.3.self_attn.k_norm.weight: n=256 std=0 uniq=1 min=0.1211 max=0.1211  <== CONSTANT
+  model.language_model.layers.3.self_attn.q_norm.weight: n=256 std=0 uniq=1 min=1.031 max=1.031  <== CONSTANT
+  model.language_model.layers.4.input_layernorm.weight: n=2816 std=27.905 uniq=819 min=-0.003326 max=108.5
+  model.language_model.layers.4.layer_scalar: n=1 std=nan uniq=1 min=0.6758 max=0.6758  <== CONSTANT
+  model.language_model.layers.4.post_attention_layernorm.weight: n=2816 std=0.36184 uniq=864 min=0.0008316 max=0.9258
+  model.language_model.layers.4.post_feedforward_layernorm.weight: n=2816 std=0.91729 uniq=409 min=0.001678 max=1.984
+  model.language_model.layers.4.post_feedforward_layernorm_1.weight: n=2816 std=10.145 uniq=721 min=-0.1133 max=175
+  model.language_model.layers.4.post_feedforward_layernorm_2.weight: n=2816 std=6.868 uniq=637 min=-6.188 max=131
+  model.language_model.layers.4.pre_feedforward_layernorm.weight: n=2816 std=16.831 uniq=836 min=-8.438 max=83.5
+  model.language_model.layers.4.pre_feedforward_layernorm_2.weight: n=2816 std=56.813 uniq=945 min=-1.914 max=167
+  model.language_model.layers.4.router.per_expert_scale: n=8 std=0.0076539 uniq=5 min=0.9844 max=1.008
+  model.language_model.layers.4.router.scale: n=2816 std=0.93524 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.4.self_attn.k_norm.weight: n=256 std=0 uniq=1 min=0.126 max=0.126  <== CONSTANT
+  model.language_model.layers.4.self_attn.q_norm.weight: n=256 std=0 uniq=1 min=0.9961 max=0.9961  <== CONSTANT
+  model.language_model.layers.5.input_layernorm.weight: n=2816 std=31.798 uniq=835 min=-0.002823 max=136
+  model.language_model.layers.5.layer_scalar: n=1 std=nan uniq=1 min=0.6523 max=0.6523  <== CONSTANT
+  model.language_model.layers.5.post_attention_layernorm.weight: n=2816 std=0.42617 uniq=904 min=0.0008774 max=1.102
+  model.language_model.layers.5.post_feedforward_layernorm.weight: n=2816 std=0.96489 uniq=376 min=0.001869 max=2.047
+  model.language_model.layers.5.post_feedforward_layernorm_1.weight: n=2816 std=10.158 uniq=715 min=-0.2129 max=163
+  model.language_model.layers.5.post_feedforward_layernorm_2.weight: n=2816 std=6.4854 uniq=640 min=-4.312 max=102.5
+  model.language_model.layers.5.pre_feedforward_layernorm.weight: n=2816 std=20.792 uniq=895 min=-0.0001564 max=93
+  model.language_model.layers.5.pre_feedforward_layernorm_2.weight: n=2816 std=51.855 uniq=990 min=-0.3066 max=175
+  model.language_model.layers.5.router.per_expert_scale: n=8 std=0.0093231 uniq=5 min=0.9844 max=1.016
+  model.language_model.layers.5.router.scale: n=2816 std=0.92183 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.5.self_attn.k_norm.weight: n=512 std=0 uniq=1 min=0.06226 max=0.06226  <== CONSTANT
+  model.language_model.layers.5.self_attn.q_norm.weight: n=512 std=0 uniq=1 min=1.008 max=1.008  <== CONSTANT
+  model.language_model.layers.6.input_layernorm.weight: n=2816 std=36.042 uniq=941 min=-0.002792 max=146
+  model.language_model.layers.6.layer_scalar: n=1 std=nan uniq=1 min=0.6914 max=0.6914  <== CONSTANT
+  model.language_model.layers.6.post_attention_layernorm.weight: n=2816 std=0.33139 uniq=857 min=0.0007935 max=0.8594
+  model.language_model.layers.6.post_feedforward_layernorm.weight: n=2816 std=0.89296 uniq=387 min=0.001823 max=1.914
+  model.language_model.layers.6.post_feedforward_layernorm_1.weight: n=2816 std=12.104 uniq=789 min=-0.1289 max=182
+  model.language_model.layers.6.post_feedforward_layernorm_2.weight: n=2816 std=7.4815 uniq=682 min=-7.469 max=137
+  model.language_model.layers.6.pre_feedforward_layernorm.weight: n=2816 std=22.056 uniq=919 min=-0.2012 max=150
+  model.language_model.layers.6.pre_feedforward_layernorm_2.weight: n=2816 std=69.408 uniq=1047 min=-1.07 max=296
+  model.language_model.layers.6.router.per_expert_scale: n=8 std=0.011811 uniq=6 min=0.9844 max=1.016
+  model.language_model.layers.6.router.scale: n=2816 std=0.93536 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.6.self_attn.k_norm.weight: n=256 std=0 uniq=1 min=0.126 max=0.126  <== CONSTANT
+  model.language_model.layers.6.self_attn.q_norm.weight: n=256 std=0 uniq=1 min=0.9922 max=0.9922  <== CONSTANT
+  model.language_model.layers.7.input_layernorm.weight: n=2816 std=34.158 uniq=948 min=0.01331 max=166
+  model.language_model.layers.7.layer_scalar: n=1 std=nan uniq=1 min=0.7031 max=0.7031  <== CONSTANT
+  model.language_model.layers.7.post_attention_layernorm.weight: n=2816 std=0.31171 uniq=909 min=0.0007515 max=0.832
+  model.language_model.layers.7.post_feedforward_layernorm.weight: n=2816 std=0.80859 uniq=365 min=0.001694 max=1.836
+  model.language_model.layers.7.post_feedforward_layernorm_1.weight: n=2816 std=12.463 uniq=873 min=-0.1328 max=156
+  model.language_model.layers.7.post_feedforward_layernorm_2.weight: n=2816 std=8.3616 uniq=770 min=-14.69 max=112.5
+  model.language_model.layers.7.pre_feedforward_layernorm.weight: n=2816 std=16.506 uniq=952 min=-0.05371 max=233
+  model.language_model.layers.7.pre_feedforward_layernorm_2.weight: n=2816 std=38.801 uniq=1090 min=-4.25 max=258
+  model.language_model.layers.7.router.per_expert_scale: n=8 std=0.010799 uniq=6 min=0.9844 max=1.016
+  model.language_model.layers.7.router.scale: n=2816 std=0.91955 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.7.self_attn.k_norm.weight: n=256 std=0 uniq=1 min=0.1299 max=0.1299  <== CONSTANT
+  model.language_model.layers.7.self_attn.q_norm.weight: n=256 std=0 uniq=1 min=0.9648 max=0.9648  <== CONSTANT
+  model.language_model.layers.8.input_layernorm.weight: n=2816 std=34.17 uniq=993 min=0.1025 max=224
+  model.language_model.layers.8.layer_scalar: n=1 std=nan uniq=1 min=0.7383 max=0.7383  <== CONSTANT
+  model.language_model.layers.8.post_attention_layernorm.weight: n=2816 std=0.28418 uniq=845 min=0.0006561 max=0.7383
+  model.language_model.layers.8.post_feedforward_layernorm.weight: n=2816 std=0.59507 uniq=317 min=0.001328 max=1.672
+  model.language_model.layers.8.post_feedforward_layernorm_1.weight: n=2816 std=11.622 uniq=897 min=-0.09717 max=132
+  model.language_model.layers.8.post_feedforward_layernorm_2.weight: n=2816 std=8.1116 uniq=807 min=-17.88 max=118
+  model.language_model.layers.8.pre_feedforward_layernorm.weight: n=2816 std=15.22 uniq=966 min=0.05151 max=266
+  model.language_model.layers.8.pre_feedforward_layernorm_2.weight: n=2816 std=32.084 uniq=1081 min=-0.9766 max=322
+  model.language_model.layers.8.router.per_expert_scale: n=8 std=0.014276 uniq=5 min=0.9805 max=1.016
+  model.language_model.layers.8.router.scale: n=2816 std=0.92978 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.8.self_attn.k_norm.weight: n=256 std=0 uniq=1 min=0.1201 max=0.1201  <== CONSTANT
+  model.language_model.layers.8.self_attn.q_norm.weight: n=256 std=0 uniq=1 min=1.039 max=1.039  <== CONSTANT
+  model.language_model.layers.9.input_layernorm.weight: n=2816 std=31.285 uniq=983 min=0.1211 max=302
+  model.language_model.layers.9.layer_scalar: n=1 std=nan uniq=1 min=0.7305 max=0.7305  <== CONSTANT
+  model.language_model.layers.9.post_attention_layernorm.weight: n=2816 std=0.37659 uniq=765 min=0.0008812 max=0.957
+  model.language_model.layers.9.post_feedforward_layernorm.weight: n=2816 std=0.3526 uniq=181 min=0.001526 max=1.617
+  model.language_model.layers.9.post_feedforward_layernorm_1.weight: n=2816 std=9.3291 uniq=888 min=-1.719 max=119
+  model.language_model.layers.9.post_feedforward_layernorm_2.weight: n=2816 std=6.9445 uniq=769 min=-7.125 max=96.5
+  model.language_model.layers.9.pre_feedforward_layernorm.weight: n=2816 std=4.0656 uniq=901 min=-0.06885 max=36.5
+  model.language_model.layers.9.pre_feedforward_layernorm_2.weight: n=2816 std=14.825 uniq=1025 min=-0.3242 max=100
+  model.language_model.layers.9.router.per_expert_scale: n=8 std=0.011436 uniq=4 min=0.9805 max=1.016
+  model.language_model.layers.9.router.scale: n=2816 std=0.91596 uniq=20 min=30.5 max=33.75
+  model.language_model.layers.9.self_attn.k_norm.weight: n=256 std=0 uniq=1 min=0.127 max=0.127  <== CONSTANT
+  model.language_model.layers.9.self_attn.q_norm.weight: n=256 std=0 uniq=1 min=0.9844 max=0.9844  <== CONSTANT
+  model.language_model.norm.weight: n=2816 std=84.501 uniq=460 min=0.5781 max=588
+
+=== vision norm weights (std / uniq) ===
+  model.vision_tower.encoder.layers.0.input_layernorm.weight: std=3.3354 uniq=746
+  model.vision_tower.encoder.layers.0.post_attention_layernorm.weight: std=0.79541 uniq=492
+  model.vision_tower.encoder.layers.0.post_feedforward_layernorm.weight: std=1.1427 uniq=607
+  model.vision_tower.encoder.layers.0.pre_feedforward_layernorm.weight: std=3.2752 uniq=792
+  model.vision_tower.encoder.layers.0.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.0.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.1.input_layernorm.weight: std=1.5209 uniq=561
+  model.vision_tower.encoder.layers.1.post_attention_layernorm.weight: std=0.59009 uniq=631
+  model.vision_tower.encoder.layers.1.post_feedforward_layernorm.weight: std=0.68834 uniq=440
+  model.vision_tower.encoder.layers.1.pre_feedforward_layernorm.weight: std=1.3623 uniq=536
+  model.vision_tower.encoder.layers.1.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.1.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.10.input_layernorm.weight: std=1.7309 uniq=403
+  model.vision_tower.encoder.layers.10.post_attention_layernorm.weight: std=0.87111 uniq=358
+  model.vision_tower.encoder.layers.10.post_feedforward_layernorm.weight: std=1.0657 uniq=318
+  model.vision_tower.encoder.layers.10.pre_feedforward_layernorm.weight: std=1.8423 uniq=408
+  model.vision_tower.encoder.layers.10.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.10.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.11.input_layernorm.weight: std=1.6398 uniq=406
+  model.vision_tower.encoder.layers.11.post_attention_layernorm.weight: std=0.62733 uniq=419
+  model.vision_tower.encoder.layers.11.post_feedforward_layernorm.weight: std=0.8542 uniq=322
+  model.vision_tower.encoder.layers.11.pre_feedforward_layernorm.weight: std=1.8435 uniq=406
+  model.vision_tower.encoder.layers.11.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.11.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.12.input_layernorm.weight: std=1.5482 uniq=351
+  model.vision_tower.encoder.layers.12.post_attention_layernorm.weight: std=1.1171 uniq=352
+  model.vision_tower.encoder.layers.12.post_feedforward_layernorm.weight: std=0.71557 uniq=319
+  model.vision_tower.encoder.layers.12.pre_feedforward_layernorm.weight: std=1.6036 uniq=390
+  model.vision_tower.encoder.layers.12.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.12.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.13.input_layernorm.weight: std=1.5145 uniq=367
+  model.vision_tower.encoder.layers.13.post_attention_layernorm.weight: std=0.87796 uniq=351
+  model.vision_tower.encoder.layers.13.post_feedforward_layernorm.weight: std=0.88448 uniq=279
+  model.vision_tower.encoder.layers.13.pre_feedforward_layernorm.weight: std=1.5292 uniq=374
+  model.vision_tower.encoder.layers.13.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.13.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.14.input_layernorm.weight: std=1.4145 uniq=345
+  model.vision_tower.encoder.layers.14.post_attention_layernorm.weight: std=0.61844 uniq=351
+  model.vision_tower.encoder.layers.14.post_feedforward_layernorm.weight: std=0.83851 uniq=268
+  model.vision_tower.encoder.layers.14.pre_feedforward_layernorm.weight: std=1.3743 uniq=367
+  model.vision_tower.encoder.layers.14.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.14.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.15.input_layernorm.weight: std=1.4226 uniq=340
+  model.vision_tower.encoder.layers.15.post_attention_layernorm.weight: std=1.1328 uniq=341
+  model.vision_tower.encoder.layers.15.post_feedforward_layernorm.weight: std=1.5419 uniq=257
+  model.vision_tower.encoder.layers.15.pre_feedforward_layernorm.weight: std=1.2476 uniq=360
+  model.vision_tower.encoder.layers.15.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.15.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.16.input_layernorm.weight: std=1.3536 uniq=333
+  model.vision_tower.encoder.layers.16.post_attention_layernorm.weight: std=0.7312 uniq=315
+  model.vision_tower.encoder.layers.16.post_feedforward_layernorm.weight: std=1.0472 uniq=245
+  model.vision_tower.encoder.layers.16.pre_feedforward_layernorm.weight: std=1.1061 uniq=360
+  model.vision_tower.encoder.layers.16.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.16.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.17.input_layernorm.weight: std=1.1749 uniq=314
+  model.vision_tower.encoder.layers.17.post_attention_layernorm.weight: std=0.99134 uniq=332
+  model.vision_tower.encoder.layers.17.post_feedforward_layernorm.weight: std=1.118 uniq=231
+  model.vision_tower.encoder.layers.17.pre_feedforward_layernorm.weight: std=1.0619 uniq=336
+  model.vision_tower.encoder.layers.17.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.17.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.18.input_layernorm.weight: std=1.1363 uniq=305
+  model.vision_tower.encoder.layers.18.post_attention_layernorm.weight: std=1.1056 uniq=334
+  model.vision_tower.encoder.layers.18.post_feedforward_layernorm.weight: std=1.2303 uniq=230
+  model.vision_tower.encoder.layers.18.pre_feedforward_layernorm.weight: std=0.94043 uniq=325
+  model.vision_tower.encoder.layers.18.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.18.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.19.input_layernorm.weight: std=1.1487 uniq=298
+  model.vision_tower.encoder.layers.19.post_attention_layernorm.weight: std=1.8928 uniq=318
+  model.vision_tower.encoder.layers.19.post_feedforward_layernorm.weight: std=1.443 uniq=229
+  model.vision_tower.encoder.layers.19.pre_feedforward_layernorm.weight: std=0.80469 uniq=312
+  model.vision_tower.encoder.layers.19.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.19.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.2.input_layernorm.weight: std=1.9028 uniq=601
+  model.vision_tower.encoder.layers.2.post_attention_layernorm.weight: std=0.45476 uniq=557
+  model.vision_tower.encoder.layers.2.post_feedforward_layernorm.weight: std=0.59722 uniq=538
+  model.vision_tower.encoder.layers.2.pre_feedforward_layernorm.weight: std=2.0606 uniq=616
+  model.vision_tower.encoder.layers.2.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.2.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.20.input_layernorm.weight: std=0.92839 uniq=279
+  model.vision_tower.encoder.layers.20.post_attention_layernorm.weight: std=1.3718 uniq=296
+  model.vision_tower.encoder.layers.20.post_feedforward_layernorm.weight: std=1.7965 uniq=238
+  model.vision_tower.encoder.layers.20.pre_feedforward_layernorm.weight: std=0.75171 uniq=295
+  model.vision_tower.encoder.layers.20.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.20.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.21.input_layernorm.weight: std=1.0471 uniq=263
+  model.vision_tower.encoder.layers.21.post_attention_layernorm.weight: std=1.8868 uniq=303
+  model.vision_tower.encoder.layers.21.post_feedforward_layernorm.weight: std=2.2228 uniq=252
+  model.vision_tower.encoder.layers.21.pre_feedforward_layernorm.weight: std=0.6648 uniq=285
+  model.vision_tower.encoder.layers.21.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.21.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.22.input_layernorm.weight: std=1.2327 uniq=271
+  model.vision_tower.encoder.layers.22.post_attention_layernorm.weight: std=2.2062 uniq=287
+  model.vision_tower.encoder.layers.22.post_feedforward_layernorm.weight: std=2.9682 uniq=250
+  model.vision_tower.encoder.layers.22.pre_feedforward_layernorm.weight: std=0.57723 uniq=270
+  model.vision_tower.encoder.layers.22.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.22.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.23.input_layernorm.weight: std=0.89522 uniq=260
+  model.vision_tower.encoder.layers.23.post_attention_layernorm.weight: std=2.984 uniq=300
+  model.vision_tower.encoder.layers.23.post_feedforward_layernorm.weight: std=3.9193 uniq=257
+  model.vision_tower.encoder.layers.23.pre_feedforward_layernorm.weight: std=0.51989 uniq=264
+  model.vision_tower.encoder.layers.23.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.23.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.24.input_layernorm.weight: std=0.97759 uniq=247
+  model.vision_tower.encoder.layers.24.post_attention_layernorm.weight: std=3.4084 uniq=258
+  model.vision_tower.encoder.layers.24.post_feedforward_layernorm.weight: std=5.7662 uniq=285
+  model.vision_tower.encoder.layers.24.pre_feedforward_layernorm.weight: std=0.44193 uniq=253
+  model.vision_tower.encoder.layers.24.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.24.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.25.input_layernorm.weight: std=1.3686 uniq=255
+  model.vision_tower.encoder.layers.25.post_attention_layernorm.weight: std=7.8403 uniq=291
+  model.vision_tower.encoder.layers.25.post_feedforward_layernorm.weight: std=7.9052 uniq=288
+  model.vision_tower.encoder.layers.25.pre_feedforward_layernorm.weight: std=0.46405 uniq=291
+  model.vision_tower.encoder.layers.25.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.25.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.26.input_layernorm.weight: std=2.8026 uniq=270
+  model.vision_tower.encoder.layers.26.post_attention_layernorm.weight: std=11.042 uniq=300
+  model.vision_tower.encoder.layers.26.post_feedforward_layernorm.weight: std=14.69 uniq=251
+  model.vision_tower.encoder.layers.26.pre_feedforward_layernorm.weight: std=0.33787 uniq=297
+  model.vision_tower.encoder.layers.26.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.26.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.3.input_layernorm.weight: std=2.2259 uniq=532
+  model.vision_tower.encoder.layers.3.post_attention_layernorm.weight: std=0.60299 uniq=558
+  model.vision_tower.encoder.layers.3.post_feedforward_layernorm.weight: std=0.48514 uniq=589
+  model.vision_tower.encoder.layers.3.pre_feedforward_layernorm.weight: std=2.0505 uniq=552
+  model.vision_tower.encoder.layers.3.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.3.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.4.input_layernorm.weight: std=2.1848 uniq=590
+  model.vision_tower.encoder.layers.4.post_attention_layernorm.weight: std=0.95691 uniq=650
+  model.vision_tower.encoder.layers.4.post_feedforward_layernorm.weight: std=0.78409 uniq=582
+  model.vision_tower.encoder.layers.4.pre_feedforward_layernorm.weight: std=2.179 uniq=523
+  model.vision_tower.encoder.layers.4.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.4.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.5.input_layernorm.weight: std=2.1714 uniq=554
+  model.vision_tower.encoder.layers.5.post_attention_layernorm.weight: std=1.021 uniq=702
+  model.vision_tower.encoder.layers.5.post_feedforward_layernorm.weight: std=0.80479 uniq=532
+  model.vision_tower.encoder.layers.5.pre_feedforward_layernorm.weight: std=2.278 uniq=471
+  model.vision_tower.encoder.layers.5.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.5.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.6.input_layernorm.weight: std=1.9954 uniq=510
+  model.vision_tower.encoder.layers.6.post_attention_layernorm.weight: std=0.95492 uniq=663
+  model.vision_tower.encoder.layers.6.post_feedforward_layernorm.weight: std=1.0194 uniq=420
+  model.vision_tower.encoder.layers.6.pre_feedforward_layernorm.weight: std=2.0385 uniq=436
+  model.vision_tower.encoder.layers.6.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.6.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.7.input_layernorm.weight: std=2.2632 uniq=566
+  model.vision_tower.encoder.layers.7.post_attention_layernorm.weight: std=1.0317 uniq=602
+  model.vision_tower.encoder.layers.7.post_feedforward_layernorm.weight: std=0.72507 uniq=336
+  model.vision_tower.encoder.layers.7.pre_feedforward_layernorm.weight: std=2.264 uniq=504
+  model.vision_tower.encoder.layers.7.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.7.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.8.input_layernorm.weight: std=2.2274 uniq=515
+  model.vision_tower.encoder.layers.8.post_attention_layernorm.weight: std=0.60914 uniq=445
+  model.vision_tower.encoder.layers.8.post_feedforward_layernorm.weight: std=0.74644 uniq=345
+  model.vision_tower.encoder.layers.8.pre_feedforward_layernorm.weight: std=2.438 uniq=498
+  model.vision_tower.encoder.layers.8.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.8.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.9.input_layernorm.weight: std=1.6747 uniq=413
+  model.vision_tower.encoder.layers.9.post_attention_layernorm.weight: std=0.58102 uniq=455
+  model.vision_tower.encoder.layers.9.post_feedforward_layernorm.weight: std=0.85677 uniq=347
+  model.vision_tower.encoder.layers.9.pre_feedforward_layernorm.weight: std=2.0954 uniq=429
+  model.vision_tower.encoder.layers.9.self_attn.k_norm.weight: std=0 uniq=1  <== CONSTANT
+  model.vision_tower.encoder.layers.9.self_attn.q_norm.weight: std=0 uniq=1  <== CONSTANT
