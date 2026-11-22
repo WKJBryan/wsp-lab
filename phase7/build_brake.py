@@ -49,6 +49,9 @@ ap.add_argument("--minus-d", action="store_true",
 ap.add_argument("--zero-unit", default="", help="switch one unit off, 'layer:unit': its down_proj column is set to zero")
 # stacking (protocol addendum 10): add the brake to a model that already carries another edit
 ap.add_argument("--base", default=str(STOCK), help="model directory the brake is added to (default: stock)")
+# lever site (protocol addendum 11): only the unit list changes; amplitude rule and push size stay as above
+ap.add_argument("--lever-cols", action="store_true",
+                help="the 64 units with the largest |lever score| (build_lightmap.lever) instead of the largest loop light")
 args = ap.parse_args()
 layers = [15, 19] if args.orig_cols else [int(x) for x in args.layers.split(",")]
 if args.zero_unit:
@@ -66,17 +69,32 @@ def neuron_stats(region):
 
 
 means = {r: neuron_stats(r) for r in ("loop", "pre", "clean", "deep")}
+
+
+def lever_cols(L):
+    """top units by |lever score|: (loop - pre activity) x (down_proj column . u), as build_lightmap.lever().
+    Its per-floor SD divisor is left out: it does not change the order."""
+    down = load_file(str(sorted(STOCK.glob("*.safetensors"))[0]))[
+        f"model.language_model.layers.{L}.mlp.down_proj.weight"].double().numpy()
+    u = ED["u15" if L <= 15 else "u19"].astype(np.float64)
+    return np.sort(np.argsort(-np.abs((means["loop"][0][L] - means["pre"][0][L]) * (u @ down)))[:NCOL])
+
+
+if args.lever_cols:  # self-check against the light map: 46 of the published edit's 64 L15 units are top-64 lever units
+    assert len(set(lever_cols(15).tolist()) & set(ED["cols15"].tolist())) == 46
+
 plan, meta = {}, dict(name=args.name, layers=layers, dose=args.dose, random=args.random,
                       selective=args.selective, seed=args.seed, random_neurons=args.random_neurons,
                       orig_cols=args.orig_cols, mapped_dir=args.mapped_dir, u_dirs=args.u_dirs,
                       minus_d=args.minus_d, zero_unit=args.zero_unit, base=Path(args.base).name,
+                      lever_cols=args.lever_cols,
                       ncol=NCOL, gain=GAIN, per_layer={})
 for L in layers:
     g = R["resid_loop"][:, L + 1].astype(np.float64).mean(0) - R["resid_pre"][:, L + 1].astype(np.float64).mean(0)
     gap, d = np.linalg.norm(g), g / np.linalg.norm(g)
     (ml, vl), (mp, vp) = means["loop"], means["pre"]
     cohen = (ml[L] - mp[L]) / np.sqrt((vl[L] + vp[L]) / 2)
-    cols = np.sort(np.argsort(-np.abs(cohen))[:NCOL])
+    cols = lever_cols(L) if args.lever_cols else np.sort(np.argsort(-np.abs(cohen))[:NCOL])
     delta_act = (ml[L] - mp[L])[cols]
     a = -delta_act
     if args.selective:

@@ -399,3 +399,70 @@ them and no correction is made for picking the better one, so a WIN by a hair is
 loop neurons were chosen from stock's activity on these same problems (no answers used), as in
 addendum 5; (3) one sample per problem; (4) a WIN is a better loop repair found with the map's
 neurons, not a repair from the map alone (the direction is the published edit's).
+
+## Addendum 11 — lever-ranked units as an edit site (written BEFORE any run, 2026-11-22)
+
+Question: do units chosen by the light map's lever score (`build_lightmap.py` `lever()`:
+change in activity in the loop × how far the unit's output column points along the published
+direction u) make a better place to write the edit than units chosen by loop light (Cohen's d)?
+
+**Arm `u_on_lever`** — `build_brake.py u_on_lever --u-dirs 15,19 --lever-cols`. Identical to
+`u_on_loop` (addendum 3, 48.4% closed) in everything but WHICH 64 units per floor:
+
+| | `u_on_loop` (existing) | `u_on_lever` (new) |
+|---|---|---|
+| floors | 10, 14 | 10, 14 |
+| direction written | u15 at L10, u19 at L14 | same |
+| units | top 64 by loop light | top 64 by \|lever score\| |
+| amplitude rule | −c × (loop − before activity) per unit, c set so the push in loops is 1.5 × the residual gap larger than before them | same rule, same target |
+| push in loops minus before | 1.272 (L10), 2.217 (L14) = 9.1 / 8.0 clean SD | 1.272, 2.217 = 9.1 / 8.0 clean SD |
+| size of the weight change (Frobenius) | 1.097, 1.225 | 1.082, 1.244 (0.99×, 1.02×) |
+| largest single amplitude | 0.370, 0.439 | 0.360, 0.453 |
+| standing push on clean thinking | −0.024, +0.061 | −0.019, −0.019 |
+
+So the push size is matched exactly (by construction, the builder asserts it) and the amplitudes
+come out within 3%; only the unit list differs. Checked from saved activations, no generation:
+the two lists share 24 of 64 units at L10 and 27 of 64 at L14.
+
+Budget: **1 practice pass**, `causal/run_passes.sh u_on_lever` unchanged (64 GSM8K, cap 8192,
+pass_index 1 — the same index as `u_on_loop`). No re-run for a better number; the script's one
+automatic retry applies only if the engine dies without a result, as in every earlier batch.
+No MATH-500 run in this addendum.
+
+Rules, fixed now (n = 64: one arm SE ≈ 6 points, a difference SE ≈ 8):
+
+- "Works" := closed ≥ 38.8% (25 of 64 or more); "does nothing" := closed ≤ 28.8% (18 or fewer).
+- BETTER site than loop light := closed ≥ 64.4% (42 of 64 or more; `u_on_loop` + 2 SE).
+- WORSE site := closed ≤ 32.4% (20 of 64 or fewer). Anything between: no detectable difference.
+
+| # | prediction (fixed now) |
+|---|---|
+| **W1** | `u_on_lever` works (closed ≥ 38.8%) |
+| **W2** | No detectable difference from `u_on_loop`: closed strictly between 32.4% and 64.4%. The lever ranking is NOT a better site at these floors |
+| **W3** | Point guess: closed 40–58%, accuracy 25–41% (`u_on_loop`: 48.4 / 32.8) |
+| **W4** | My chances: BETTER about 1 in 8; does nothing about 1 in 6 |
+
+Why I expect no difference: the gated push is the same by construction, and at L10 and L14 the
+lever units do not pull together — their own writes along u nearly cancel (net 0.04 and −0.03
+SD; 29 and 33 of 64 point to the loop side), unlike L15 and L19 (54 and 43 of 64, net 0.66 and
+0.58). At these floors the score mostly picks "large activity change and a column with a large
+part along u, either sign", and the edit overwrites that part anyway. The lever units are also
+less cleanly loop-gated one by one (median |Cohen's d| 1.25 / 1.32 against 1.73 / 1.70).
+
+Also reported, not a matched comparison: `uperp_on_loop` (62.5% closed) — same loop-light units
+but a different direction (u minus its d-part).
+
+Caveats fixed in advance:
+
+1. Practice passes sort "works" from "does nothing"; they do not rank two working edits
+   (Finding 19). BETTER here would license a seed repeat and a final, not a claim; "no detectable
+   difference" does not show the two sites are equal on MATH-500.
+2. The two unit lists overlap by about 40%, which dilutes any difference.
+3. `lever()` scores L14 along u15, while the edit writes u19 there (cos 0.85). Scored along u19
+   instead, 49 of the 64 L14 units are the same. The shipped `lever()` ranking is used.
+4. This tests the ranking rule at the map's floors, where the lever layer shows no net push. At
+   L15 and L19, where it does, the lever ranking mostly re-finds the published units (46 and 32
+   of 64), so that test would be close to re-running the published edit.
+5. `u_on_loop`'s 48.4% is one draw (SE ≈ 6).
+6. As before: units chosen from stock's activity on its MATH-500 generations (no answers used);
+   the direction is the published edit's.
