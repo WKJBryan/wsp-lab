@@ -33,3 +33,4 @@ phase7/cands/
 
 # generated page (rebuild via phase7/build_lightmap.py)
 phase7/lightmap.html
+phase7/timeline.html

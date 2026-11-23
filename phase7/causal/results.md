@@ -555,3 +555,55 @@ clean, exit 0, no retry used.
   tuning on the judging set.
 - Where in an answer `stack_full` starts to degrade (token position of the first fragments).
 - A second sampling seed for either final.
+
+---
+
+# Lever-ranked units as an edit site (addendum 11)
+
+**Predictions:** `phase7/protocol.md` addendum 11, committed `93db98f` before the model was
+built · **Budget:** 1 of 1 pass, one try, no retry · same harness, pass_index 1. (A first launch
+died before the script ran — Windows line endings in `run_passes.sh`; nothing was generated and
+the ledger has no entry for it. The script was then run with the carriage returns stripped.)
+
+`u_on_lever` = `u_on_loop` with the 64 units per floor chosen by |lever score|
+(`build_brake.py --u-dirs 15,19 --lever-cols`) instead of by loop light. Checked against
+`u_on_loop` from the builders' own records: same floors, direction and amplitude rule; push in
+loops minus before 1.272 / 2.217 in both; Frobenius norm 1.082 / 1.244 against 1.097 / 1.225;
+24 of 64 units shared at L10, 27 of 64 at L14.
+
+| arm (L10+L14, published u15 / u19, same push size) | closed | accuracy | cap-hit | mean tokens |
+|---|---|---|---|---|
+| `u_on_loop` — top 64 by loop light (earlier) | 48.4% (31 / 64) | 32.8% (21) | 57.8% | 6928 |
+| **`u_on_lever` — top 64 by lever score (new)** | **50.0% (32 / 64)** | **26.6% (17)** | 60.9% | 6993 |
+| reference, different direction: `uperp_on_loop` | 62.5% (40 / 64) | 43.8% (28) | 48.4% | 6829 |
+| reference: stock | 18.8% | 12.5% | 82.8% | |
+
+## Verdicts
+
+- **W1** (works, closed ≥ 38.8%): **holds** — 50.0%.
+- **W2** (no detectable difference from `u_on_loop`, closed strictly between 32.4% and 64.4%):
+  **holds** — +1.6 points, one problem out of 64. Not BETTER (needed 42 of 64, got 32).
+- **W3** (closed 40–58%, accuracy 25–41%): **holds** on both, accuracy near the bottom of the
+  range (26.6%).
+- **W4** (BETTER about 1 in 8, nothing about 1 in 6): neither happened.
+
+## What this says
+
+1. At L10+L14, picking units by lever score instead of loop light changes 40 and 37 of the 64
+   units per floor and does not change the closed rate (50.0 vs 48.4). On this test the lever
+   ranking is not a better edit site.
+2. Accuracy is 6 points lower (17 vs 21 problems right), under one SE of a difference (≈ 8
+   points). Not evidence of a worse site either.
+3. It is 12.5 points under `uperp_on_loop` (≈ 1.6 SE), which uses the loop-light units with a
+   different direction. Nothing here says the lever units would do better with that direction.
+4. The caveats fixed in advance apply: practice does not rank two working edits, the lists
+   overlap by about 40%, and this was run at floors where the lever layer shows no net push.
+   The lever layer stays a description of where the published edit's units sit, not a
+   selection rule that has been shown to help.
+
+## Not run
+
+- A second sampling seed for `u_on_lever`, or any MATH-500 final for it or for `u_on_loop`.
+- The lever units with the d-part of u removed (the `uperp_on_loop` direction).
+- Lever-ranked units at L15+L19, where the ranking mostly re-finds the published units
+  (46 and 32 of 64).

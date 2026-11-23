@@ -1,0 +1,269 @@
+<title>Token Timeline</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap">
+<style>
+:root {
+  --bg: #f9f9f7; --surface: #fcfcfb; --fg: #0b0b0b; --fg2: #52514e; --muted: #898781;
+  --grid: #e1e0d9; --axis: #c3c2b7; --track: #eeede8;
+  --think: #2a78d6; --answer: #eb6834;
+  --good: #0ca30c; --wrong: #898781; --warn: #fab219; --crit: #d03b3b;
+  --accent: #184f95;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0d0d0d; --surface: #1a1a19; --fg: #f0efec; --fg2: #c3c2b7; --muted: #898781;
+  --grid: #2c2c2a; --axis: #383835; --track: #262624;
+  --think: #3987e5; --answer: #d95926;
+  --good: #0ca30c; --wrong: #898781; --warn: #fab219; --crit: #d03b3b;
+  --accent: #86b6ef; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0d0d0d; --surface: #1a1a19; --fg: #f0efec; --fg2: #c3c2b7; --muted: #898781;
+  --grid: #2c2c2a; --axis: #383835; --track: #262624;
+  --think: #3987e5; --answer: #d95926;
+  --good: #0ca30c; --wrong: #898781; --warn: #fab219; --crit: #d03b3b;
+  --accent: #86b6ef; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 16px/1.55 Inter, system-ui, sans-serif; }
+.wrap { max-width: 860px; margin: 0 auto; padding-block: 28px 56px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex; flex-direction: column; gap: 22px; }
+h1, h2, h3 { font-family: "Space Grotesk", Inter, system-ui, sans-serif; text-wrap: balance; margin: 0; line-height: 1.2; }
+h1 { font-size: 30px; } h2 { font-size: 20px; } h3 { font-size: 15px; }
+p { margin: 0; max-width: 66ch; } .lede { font-size: 18px; color: var(--fg2); }
+.eyebrow { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+section { display: flex; flex-direction: column; gap: 12px; }
+.card { background: var(--surface); border: 1px solid var(--grid); border-radius: 10px; padding: 16px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.note { font-size: 13px; color: var(--fg2); }
+.big { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
+.big .card { gap: 6px; } .big .num { font: 600 34px/1 "Space Grotesk", Inter, sans-serif; } .big .num small { font-size: 14px; font-weight: 500; color: var(--muted); }
+.big p { font-size: 14px; color: var(--fg2); }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--fg2); }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; }
+.rows { display: flex; flex-direction: column; gap: 10px; }
+.row { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 4px 14px; align-items: center; }
+.row .nm { font-size: 13px; line-height: 1.3; } .row .nm small { display: block; color: var(--muted); font-size: 12px; }
+.grp { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-top: 6px; }
+@media (max-width: 640px) { .row { grid-template-columns: minmax(0, 1fr); } }
+.stack { display: flex; gap: 2px; height: 24px; }
+.stack div { min-width: 2px; border-radius: 3px; font-size: 12px; font-weight: 600; color: #fff; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.stack .o2 { color: #0b0b0b; }
+.o0 { background: var(--good); } .o1 { background: var(--wrong); } .o2 { background: var(--warn); } .o3 { background: var(--crit); }
+.track { position: relative; height: 22px; background: var(--track); border-radius: 4px; }
+.track .box { position: absolute; top: 5px; height: 12px; background: var(--think); border-radius: 3px; min-width: 3px; opacity: .55; }
+.track .med { position: absolute; top: 1px; width: 3px; height: 20px; background: var(--think); border-radius: 2px; margin-left: -1px; }
+.axis { position: relative; height: 18px; font-size: 11px; color: var(--muted); }
+.axis span { position: absolute; transform: translateX(-50%); white-space: nowrap; }
+.axis span:first-child { transform: none; } .axis span:last-child { transform: translateX(-100%); }
+.bar { display: flex; gap: 2px; height: 16px; background: var(--track); border-radius: 4px; }
+.bar .t { background: var(--think); border-radius: 3px; min-width: 2px; } .bar .a { background: var(--answer); border-radius: 3px; min-width: 2px; }
+.run { font-size: 12px; color: var(--fg2); grid-column: 2; } .run b { color: var(--fg); font-weight: 600; }
+@media (max-width: 640px) { .run { grid-column: 1; } }
+.ctl { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; font-size: 13px; }
+.ctl input[type=range] { flex: 1 1 200px; min-width: 0; accent-color: var(--think); }
+.ctl label { display: flex; gap: 6px; align-items: center; cursor: pointer; }
+button { font: inherit; font-size: 13px; padding: 6px 12px; border-radius: 6px; border: 1px solid var(--axis); background: var(--surface); color: var(--fg); cursor: pointer; }
+button:hover { border-color: var(--fg2); } button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid var(--think); outline-offset: 2px; }
+.tw { overflow-x: auto; } table { border-collapse: collapse; font-size: 13px; width: 100%; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--grid); vertical-align: top; min-width: 80px; } th { color: var(--fg2); font-weight: 500; }
+details.more { background: var(--surface); border: 1px solid var(--grid); border-radius: 10px; }
+details.more > summary { cursor: pointer; padding: 14px 16px; font: 600 16px "Space Grotesk", Inter, sans-serif; list-style-position: outside; margin-left: 18px; }
+details.more > summary span { display: block; font: 400 13px Inter, sans-serif; color: var(--fg2); margin-top: 2px; }
+details.more > div { padding: 0 16px 16px; display: flex; flex-direction: column; gap: 12px; }
+ol, ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; max-width: 66ch; font-size: 14px; }
+code { font-size: 13px; background: var(--track); padding: 1px 4px; border-radius: 3px; }
+</style>
+
+<div class="wrap">
+<header style="display:flex;flex-direction:column;gap:10px">
+  <div class="eyebrow">wsp-lab · one small AI model · the same 500 maths problems</div>
+  <h1>Token Timeline</h1>
+  <p class="lede">The model is meant to think first, then answer. Its fault: it gets stuck thinking and never answers. This page shows what each fix does about that.</p>
+</header>
+
+<section>
+  <div class="big">
+    <div class="card"><div class="num" id="n1"></div><h3>No fix</h3><p>The model never stops thinking on most problems, so it gives no answer.</p></div>
+    <div class="card"><div class="num" id="n2"></div><h3>Quick fix: skip the thinking</h3><p>Push the "stop thinking" signal harder. The model stops almost at once and does its working in the answer.</p></div>
+    <div class="card"><div class="num" id="n3"></div><h3>Deep fix: change the thinking</h3><p>Change the model's inner workings. It thinks properly for a long time, then stops by itself.</p></div>
+  </div>
+  <p class="note">Teams of AI editors found only the quick fix, and never did better than one AI editor working alone.</p>
+</section>
+
+<section>
+  <h2>How the 500 answers end</h2>
+  <div class="card">
+    <div class="legend">
+      <span><i class="o0"></i>right answer</span><span><i class="o1"></i>wrong answer</span>
+      <span><i class="o2"></i>stopped thinking, but the answer never finished</span><span><i class="o3"></i>never stopped thinking</span>
+    </div>
+    <div class="rows" id="ends"></div>
+    <div class="ctl"><label><input type="checkbox" id="all"> Show all 18 versions, including every AI team</label></div>
+    <p class="note">Each bar is 500 problems. More green is better. Red is the original fault.</p>
+  </div>
+</section>
+
+<details class="more"><summary>When does each version stop thinking?<span>The quick fixes stop at the very start. The deep fixes stop after thousands of words.</span></summary><div>
+  <div class="legend">
+    <span><i style="background:var(--think);width:3px"></i>typical moment thinking stops</span>
+    <span><i style="background:var(--think);opacity:.55"></i>range for the middle half of problems</span>
+  </div>
+  <div class="rows" id="closes"></div>
+  <div class="row"><div></div><div class="axis" id="logaxis"></div></div>
+  <p class="note">Left is the start of the reply, right is the length limit (32,768 tokens; a token is a word-piece). The scale is stretched on the left so the very start is visible. Uses the same versions as the chart above.</p>
+</div></details>
+
+<details class="more"><summary>Look at one problem at a time<span>Pick any of the 500 problems and see how long each version thought and answered.</span></summary><div>
+  <div class="ctl">
+    <button id="prev" aria-label="Previous problem">◀</button>
+    <input type="range" id="pick" min="0" max="499" value="0" aria-label="Problem number">
+    <button id="next" aria-label="Next problem">▶</button>
+    <button id="rand">Random problem</button>
+  </div>
+  <p class="note" id="pinfo"></p>
+  <div class="legend"><span><i style="background:var(--think)"></i>thinking</span><span><i style="background:var(--answer)"></i>answer</span></div>
+  <div class="rows" id="one"></div>
+  <div class="row"><div></div><div class="axis" id="linaxis"></div></div>
+  <p class="note">A bar that reaches the right edge hit the length limit without finishing.</p>
+</div></details>
+
+<details class="more"><summary>What exactly was changed in each version?<span>All versions are the same model with different numbers changed.</span></summary><div>
+  <div class="tw"><table>
+    <tr><th>Version</th><th>What was changed</th><th>How much</th></tr>
+    <tr><td>No fix (stock)</td><td>nothing</td><td>none</td></tr>
+    <tr><td>Quick fix (blind edit)</td><td>the "stop thinking" signal is made 1.5 times stronger</td><td>1 row of about a thousand numbers, out of 873 million</td></tr>
+    <tr><td>Quick fix without editing (+9)</td><td>no numbers changed; the signal is boosted while the model runs</td><td>none</td></tr>
+    <tr><td>Deep fix (published edit)</td><td>a measured "loop" pattern is removed inside floors 15 and 19 of the model</td><td>2 tables of numbers</td></tr>
+    <tr><td>Our map repair</td><td>the same kind of removal, at floors 10 and 14, on the units our light map flagged</td><td>2 tables of numbers</td></tr>
+    <tr><td>Deep fix + our repair</td><td>both together, at half or full strength</td><td>4 tables of numbers</td></tr>
+  </table></div>
+  <p class="note">Adding our repair on top of the deep fix did not help at half strength, and broke the model at full strength.</p>
+</div></details>
+
+<details class="more"><summary>The AI teams (run in ZCode)<span>Does a team of AI editors that argue with one another beat one AI editor alone? No.</span></summary><div>
+  <p>Nobody was told what was wrong with the model. A team passes the work along like an operating theatre:</p>
+  <ol>
+    <li><strong>Observer</strong> runs the model and reports what it sees.</li>
+    <li><strong>Two analysts</strong> each propose one exact edit.</li>
+    <li><strong>Red team</strong> attacks both proposals.</li>
+    <li><strong>Judge</strong> picks the final edit.</li>
+    <li><strong>Executor</strong> applies it.</li>
+  </ol>
+  <div class="tw"><table>
+    <tr><th>Team</th><th>Team's score</th><th>One editor alone</th><th>What happened</th></tr>
+    <tr><td>GLM-5.3 team</td><td>24.4%</td><td>23.0%</td><td>about the same</td></tr>
+    <tr><td>Mixed team (four different AI models)</td><td>23.6%</td><td>27.8%</td><td>about the same</td></tr>
+    <tr><td>GLM-5.3-Flash team</td><td>10.6%</td><td>25.2%</td><td>worse: fix too gentle</td></tr>
+    <tr><td>Surgeon + critic working live</td><td>9.0%</td><td>25.2%</td><td>worse: fix too gentle</td></tr>
+    <tr><td>MiMo-flash team, second try</td><td>5.8%</td><td>27.8%</td><td>worse: fix too gentle</td></tr>
+    <tr><td>MiMo-flash team, MiMo-pro team (twice)</td><td>no edit</td><td>27.8%</td><td>the team fell apart before editing</td></tr>
+  </table></div>
+  <ul>
+    <li><strong>Teams play it safe.</strong> Every team chose a gentler fix than the lone editors did, and a gentle fix is not enough on hard problems.</li>
+    <li><strong>Teams had the cleverest ideas</strong>, but none turned into a better score.</li>
+    <li><strong>More tries did not help.</strong> One editor offered 50 tries used 6 and scored 27.4%.</li>
+    <li><strong>A second, bigger model</strong> (Gemma, with most of its parts cut out) could not be repaired by any of five editors. Its stopping could be fixed; its lost knowledge could not.</li>
+  </ul>
+  <p class="note">"About the same" means within 4.4 points, the size of ordinary luck between runs. Tick "Show all 18 versions" above to see every team in the charts.</p>
+</div></details>
+
+<details class="more"><summary>What we still do not know<span>Seven gaps in the experiments so far.</span></summary><div>
+  <ol>
+    <li><strong>What the deep fix does to the "stop thinking" signal</strong>, moment by moment. This would link the two kinds of fix.</li>
+    <li><strong>Why answers still get stuck after thinking stops</strong> (the yellow parts). Our light map only covers getting stuck while thinking.</li>
+    <li><strong>The fair comparison.</strong> With thinking switched off, the unedited model scores 38.8%, as good as the deep fix. No edited version was tested that way.</li>
+    <li><strong>A second marker.</strong> A different marking program gives the unedited model 21.2%, not 6.0%. This page uses only one.</li>
+    <li><strong>One definition of "stuck".</strong> Two experiments each defined it their own way and were never compared.</li>
+    <li><strong>A floor-by-floor look at where the answer forms.</strong> It was done on the bigger model, never on this one.</li>
+    <li><strong>A practice test that catches damage.</strong> The short practice test missed the harm three times.</li>
+  </ol>
+</div></details>
+
+<details class="more"><summary>How this page was made, and what changed<span>Method, limits and the change log.</span></summary><div>
+  <ul>
+    <li>Built by <code>phase7/build_timeline.py</code> from the saved answers of eighteen runs. No new model runs were needed.</li>
+    <li>One answer per problem. A score can move by about 2 points on a repeat.</li>
+    <li>Not shown: runs with thinking switched off, which have no thinking to stop.</li>
+  </ul>
+  <h3>Change log</h3>
+  <ul>
+    <li><strong>Version 3 · 20 Nov 2026.</strong> Made shorter and plainer. The top now shows three numbers and one chart with five versions; everything else is folded away. Removed: the "first differs from stock" markers, the comparison of the two models' sizes, the table of editing models, and the details of the five Gemma editors. All of those remain in Version 2.</li>
+    <li><strong>Version 2 · 20 Nov 2026.</strong> Added how the models differ and the ZCode team experiments, plus nine runs in the charts.</li>
+    <li><strong>Version 1 · 20 Nov 2026.</strong> First version.</li>
+  </ul>
+  <p class="note">Older versions stay available in the page's version menu. The light map is a separate page and was not changed.</p>
+</div></details>
+</div>
+
+<script>
+const D = /*DATA*/;
+const CAP = 32768, $ = id => document.getElementById(id), fmt = n => n.toLocaleString("en-US");
+const med = v => { if (!v.length) return null; const s = [...v].sort((a, b) => a - b); return s[Math.floor((s.length - 1) / 2)]; };
+const q = (v, p) => { const s = [...v].sort((a, b) => a - b); return s[Math.min(s.length - 1, Math.floor(p * s.length))]; };
+const lx = t => 100 * Math.log10(1 + t) / Math.log10(1 + CAP);
+const OUT = ["right answer", "wrong answer", "stopped thinking, but the answer never finished", "never stopped thinking"];
+const outcome = r => r[3] ? (r[4] ? 0 : 1) : (r[1] >= 0 ? 2 : 3);
+const GROUPS = { base: "No fix", skip: "Quick fix: skip the thinking", none: "No effect", change: "Deep fix: change the thinking", broken: "Broken", solo: "Other lone AI editors", team: "Teams of AI editors" };
+// the five versions shown by default, with short plain names
+const KEY = { stock: "No fix", e1: "Quick fix", orig: "Deep fix", map: "Our map repair", t_glm: "Best AI team" };
+const el = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
+
+const S = D.arms.map(a => {
+  const cnt = [0, 0, 0, 0]; a.rows.forEach(r => cnt[outcome(r)]++);
+  const cl = a.rows.filter(r => r[1] >= 0).map(r => r[1]);
+  return { a, cnt, acc: (a.rows.filter(r => r[4]).length / 5).toFixed(1), cl, medClose: med(cl), q1: cl.length ? q(cl, .25) : null, q3: cl.length ? q(cl, .75) : null };
+});
+const by = k => S.find(s => s.a.key === k);
+$("n1").innerHTML = `${by("stock").acc}% <small>right</small>`;
+$("n2").innerHTML = `${by("e1").acc}% <small>right</small>`;
+$("n3").innerHTML = `${by("orig").acc}% <small>right</small>`;
+
+let all = false, cur = 0;
+const shown = () => all ? S : S.filter(s => s.a.key in KEY);
+const name = s => all ? s.a.name : KEY[s.a.key];
+
+function render() {
+  const ends = $("ends"), closes = $("closes"); ends.textContent = ""; closes.textContent = "";
+  let g1 = null;
+  shown().forEach(s => {
+    if (all && s.a.group !== g1) { g1 = s.a.group; ends.append(el("div", "grp", GROUPS[g1])); closes.append(el("div", "grp", GROUPS[g1])); }
+    const row = el("div", "row"); row.append(el("div", "nm", `${name(s)}<small>${s.acc}% right</small>`));
+    const st = el("div", "stack"); st.setAttribute("role", "img"); st.setAttribute("aria-label", s.cnt.map((c, i) => `${c} ${OUT[i]}`).join("; "));
+    s.cnt.forEach((c, i) => { if (!c) return; const d = el("div", "o" + i, c >= 35 ? c : ""); d.style.flex = c + " 0 0"; d.title = `${c} of 500: ${OUT[i]}`; st.append(d); });
+    row.append(st); ends.append(row);
+
+    const r2 = el("div", "row");
+    r2.append(el("div", "nm", `${name(s)}<small>${s.cl.length} of 500 stopped thinking${s.medClose != null ? ", typically after " + fmt(s.medClose) + " tokens" : ""}</small>`));
+    const tr = el("div", "track");
+    if (s.cl.length) {
+      const b = el("div", "box"); b.style.left = lx(s.q1) + "%"; b.style.width = (lx(s.q3) - lx(s.q1)) + "%"; b.title = `Middle half: after ${fmt(s.q1)} to ${fmt(s.q3)} tokens`; tr.append(b);
+      const m = el("div", "med"); m.style.left = lx(s.medClose) + "%"; m.title = `Typically after ${fmt(s.medClose)} tokens`; tr.append(m);
+    }
+    r2.append(tr); closes.append(r2);
+  });
+  show(cur);
+}
+[0, 10, 100, 1000, 10000, CAP].forEach(t => { const sp = el("span", null, fmt(t)); sp.style.left = lx(t) + "%"; $("logaxis").append(sp); });
+[0, 8192, 16384, 24576, CAP].forEach(t => { const sp = el("span", null, fmt(t)); sp.style.left = (100 * t / CAP) + "%"; $("linaxis").append(sp); });
+
+function show(i) {
+  cur = i = (i + 500) % 500; $("pick").value = i;
+  $("pinfo").textContent = `Problem ${i + 1} of 500. Correct answer: ${D.gold[i]}`;
+  const box = $("one"); box.textContent = "";
+  shown().forEach(s => {
+    const [, close, n, stop, ok] = s.a.rows[i];
+    const row = el("div", "row"); row.append(el("div", "nm", name(s)));
+    const bar = el("div", "bar");
+    const tk = close >= 0 ? close : n, an = close >= 0 ? n - close : 0;
+    if (tk > 0) { const t = el("div", "t"); t.style.width = (100 * tk / CAP) + "%"; t.title = `${fmt(tk)} tokens of thinking`; bar.append(t); }
+    if (an > 0) { const a = el("div", "a"); a.style.width = (100 * an / CAP) + "%"; a.title = `${fmt(an)} tokens of answer`; bar.append(a); }
+    row.append(bar);
+    const end = stop ? (ok ? "✓ <b>right</b>" : "✗ <b>wrong</b>") : "∞ <b>never finished</b>";
+    row.append(el("div", "run", `${close >= 0 ? "thought for " + fmt(close) + " tokens" : "never stopped thinking"} · ${fmt(n)} tokens in total · ${end}`));
+    box.append(row);
+  });
+}
+$("all").addEventListener("change", e => { all = e.target.checked; render(); });
+$("pick").addEventListener("input", e => show(+e.target.value));
+$("prev").addEventListener("click", () => show(cur - 1));
+$("next").addEventListener("click", () => show(cur + 1));
+$("rand").addEventListener("click", () => show(Math.floor(Math.random() * 500)));
+render();
+</script>

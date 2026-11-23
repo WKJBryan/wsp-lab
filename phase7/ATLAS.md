@@ -403,6 +403,45 @@ L10+L14 neurons are a working repair site on their own (Finding 19).
   published edit's, so stacking is more of the same push; the loops that remain after the
   published edit are not reached by it.
 
+## Light map gets a lever layer: which units push along the published direction [descriptive; no predictions made; 2026-11-20]
+
+`build_lightmap.py` `lever()`; a tenth button on the page, not a job. Per unit: (activity in the
+loop − before it) × (its down_proj column · u) ÷ (clean-thinking SD of the stream along u after
+that floor); u = u15 for floors 0–15, u19 above. Positive = toward the loop side of u. Direct
+writes only (no attention), same saved activations as the loop job, forward data only — no
+generation. Self-check in the builder: the same activations and columns reproduce Finding 7's
+drive (loop − pre) at L15 and L19 to 0.01.
+
+- Net push per floor, in SDs: **L15 0.76, L19 0.62**, then L7 0.47, L3 0.29; L10 −0.17, L14 −0.02.
+  The two floors the published edit uses are the two where the units' direct writes along u add up.
+- The published edit's 64 units are mostly the top lever units: **46 of 64 at L15, 32 of 64 at
+  L19** in the top 64 by lever, against 20 and 9 by loop light (Finding 6). 59 of 64 push toward
+  the loop side on both floors; together they carry 0.70 of L15's 0.76 and 0.63 of L19's 0.62.
+- The map's brake units (top loop lights at L10, L14) sum to 0.06 and −0.02: lit, but their
+  writes along u cancel.
+- Strongest single unit: L19 unit 11, 0.38 SD. Zeroing it did not repair (Finding 21), so a
+  large push is not proof of a lever.
+
+[inferred] Cohen's d ranks units by how much their activity changes and ignores where their
+output points; the published selection looks like "change × alignment with u". Untested: whether
+units chosen by lever score make a better edit site than the map's, at any floor.
+
+## Finding 26 — lever-ranked units are not a better edit site at L10+L14 [measured, 1 practice pass, n = 64]
+
+Predictions committed first (`93db98f`); table in `causal/results.md`. `u_on_lever` is
+`u_on_loop` with the 64 units per floor chosen by |lever score| instead of loop light — same
+floors, published direction and push size; 24 and 27 of the 64 units are shared.
+
+- **50.0% closed / 26.6% accuracy**, against `u_on_loop` 48.4 / 32.8 (stock 18.8 / 12.5). It
+  works, and it is not detectably different: +1.6 points closed, one problem. All four
+  pre-registered predictions held, including "no detectable difference".
+- Reading: at these floors the units' own writes along u cancel, the edit overwrites that part
+  of each column anyway, and the gated push is the same by construction — so which loop-gated
+  units carry it matters little. The lever layer describes where the published edit's units sit
+  (L15, L19); it is not a selection rule shown to help.
+- Limits: one draw, practice set only (cannot rank two working edits, Finding 19); the unit
+  lists overlap by about 40%; not run with the `uperp_on_loop` direction or at L15+L19.
+
 ## Next
 
 - L19 unit 11: what makes it fire in loops (its own inputs), since it sits upstream of a third

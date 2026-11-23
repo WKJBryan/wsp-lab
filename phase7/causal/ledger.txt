@@ -52,3 +52,5 @@
 2026-11-14T19:01:34+08:00 done final stack_full exit 0
 2026-11-14T19:01:54+08:00 start final stack_half try 1
 2026-11-14T19:32:15+08:00 done final stack_half exit 0
+2026-11-22T23:32:07+08:00 start u_on_lever pass_index 1 try 1
+2026-11-22T23:34:51+08:00 done u_on_lever

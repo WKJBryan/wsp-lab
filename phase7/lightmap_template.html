@@ -227,6 +227,7 @@ th:first-child, td:first-child { text-align: left; }
     <div><h2>Seating</h2><p>The order of units inside a floor has no meaning, so the page re-seats them. Grouped: by the job a unit responds to most (loop first, then each subject, then difficulty, then no strong favourite; favourites are fixed at strength 0.8, so seats do not move when you drag the slider). Ranked: by how much busier or quieter the unit gets during the chosen job, so the same seat on every floor means the same rank. Either way a seat is never the same unit on two floors: unit 17 on one floor has nothing to do with unit 17 on the next.</p></div>
     <div><h2>Wires</h2><p>A unit on a lower floor writes a signal into the shared stream; a unit on a higher floor reads it. The wire's number is how much of the upper light's strength (same scale as the slider) that one cable accounts for in the chosen job, worked out from the model's weights for every pair of floors. The page keeps the 600 strongest per job. <span id="wire-note"></span></p></div>
     <div><h2>Labels</h2><p>Hover a light to see its labels. A label is a measurement, not a job description. A subject label is the same thing as a light: the unit is on for that subject at strength 0.8 or more, with question length taken out. "Hard question" has no label because none of its lights reach 0.8. <span id="label-note"></span></p></div>
+    <div><h2>The lever layer</h2><p>The last button is not a job. The deep fix (the original edit) works by pushing the model's inner stream along one direction whenever the model is stuck. The lever layer scores every unit by how hard its own output pushes along that same direction when the model is stuck, compared with before: the change in the unit's activity, times how far its output points that way, as a share of the stream's normal spread along that direction. It counts only what a unit writes straight into the stream, not what travels through attention. It shows which units push, not that switching them off would unstick the model. The direction is borrowed from the original edit, and no prediction was written down before this was measured.</p></div>
     <div><h2>What this cannot tell you</h2><p>Lights show what goes together, not what causes what. A wire is only the straight cable between two units; signals that travel through attention (the part of the model that moves information between words) are not drawn, and they carry most of it. In a first test, erasing the "stuck" pattern did not unstick the model, while a random push triggered by the loop lights did. Every question here is maths, so "job" is a narrow idea.</p></div>
   </section>
 </main>
@@ -235,7 +236,7 @@ th:first-child, td:first-child { text-align: left; }
 <script>
 /*__DATA__*/
 (function () {
-  const J = DATA.jobs.length, L = DATA.layers, N = DATA.neurons, S = DATA.scale;
+  const J = DATA.jobs.length, L = DATA.layers, N = DATA.neurons, S = DATA.scale, LV = DATA.lever;   // LV.job = the lever layer, shown like a job but not one
   const COLS = 64, ROWS = Math.ceil(N / COLS), CELL = 8, GAP = 2;
   const raw = Uint8Array.from(atob(DATA.b64), c => c.charCodeAt(0));
   const D = new Int8Array(raw.buffer);
@@ -257,7 +258,7 @@ th:first-child, td:first-child { text-align: left; }
     const strength = new Int16Array(N);
     for (let n = 0; n < N; n++) {
       let best = 0, bj = 255;
-      for (let j = 0; j < J; j++) { const v = Math.abs(at(j, l, n)); if (v > best) { best = v; bj = j; } }
+      for (let j = 0; j < J; j++) { const v = j === LV.job ? 0 : Math.abs(at(j, l, n)); if (v > best) { best = v; bj = j; } }   // the lever layer is not a job, so it is never a favourite
       if (best >= 0.8 * S) fav[l * N + n] = bj;
       strength[n] = best;
     }
@@ -321,7 +322,8 @@ th:first-child, td:first-child { text-align: left; }
     }
     if (hoverPos >= 0) { ctx.strokeStyle = tok.ink; ctx.lineWidth = 2; ctx.strokeRect((hoverPos % COLS) * CELL - 2, Math.floor(hoverPos / COLS) * CELL - 2, CELL + 2, CELL + 2); }
   }
-  function words(v) {
+  function words(v, j) {
+    if (j === LV.job) { const p = Math.abs(v) / S * LV.pct; return (Math.abs(v) >= 127 ? Math.floor(p) + "% or more" : p.toFixed(1) + "%") + " of the normal spread · pushes " + (v > 0 ? "toward stuck" : v < 0 ? "away from stuck" : "neither way"); }
     const d = v / S, m = Math.abs(d), dir = d > 0 ? "busier" : "quieter";
     const how = m < 0.5 ? "about the same" : m < 0.8 ? "a little " + dir : m < 1.5 ? "clearly " + dir : "much " + dir;
     return (Math.abs(v) >= 127 ? (d > 0 ? "+" : "−") + "3.2 or more" : (d > 0 ? "+" : "−") + m.toFixed(1)) + " · " + how;
@@ -333,7 +335,7 @@ th:first-child, td:first-child { text-align: left; }
     const n = ordOf(l)[p], tip = $("tip");
     tip.replaceChildren();
     const head = document.createElement("b"); head.textContent = "Floor " + l + " · unit " + n; tip.appendChild(head);
-    const line = (j, col) => { const d = document.createElement("div"); const k = document.createElement("span"); k.className = "key"; k.style.background = col; d.append(k, document.createTextNode(words(at(j, l, n)) + " — " + DATA.jobs[j])); tip.appendChild(d); };
+    const line = (j, col) => { const d = document.createElement("div"); const k = document.createElement("span"); k.className = "key"; k.style.background = col; d.append(k, document.createTextNode(words(at(j, l, n), j) + " — " + DATA.jobs[j])); tip.appendChild(d); };
     line(state.job, state.cmp >= 0 ? tok.a : tok.ramp[2]); if (state.cmp >= 0) line(state.cmp, tok.b);
     const f = fav[l * N + n], foot = document.createElement("div");
     foot.textContent = f === 255 ? "No strong favourite job" : "Favourite job: " + DATA.jobs[f]; tip.appendChild(foot);
@@ -354,20 +356,30 @@ th:first-child, td:first-child { text-align: left; }
     readTokens(); inv = {};
     document.querySelectorAll("#jobs button").forEach((b, j) => b.setAttribute("aria-pressed", j === state.job));
     $("thr-out").textContent = state.thr.toFixed(1);
-    $("thr-hint").textContent = "At " + state.thr.toFixed(1) + " a unit lights up only if it is " + (state.thr < 0.8 ? "a little" : state.thr < 1.5 ? "clearly" : "much") + " busier or quieter than usual during the job.";
+    const lv = state.job === LV.job;
+    $("thr-hint").textContent = "At " + state.thr.toFixed(1) + " a unit lights up only if " + (lv ? "its push is at least " + (state.thr * LV.pct).toFixed(1) + "% of the stream's normal spread along the deep fix's direction."
+      : "it is " + (state.thr < 0.8 ? "a little" : state.thr < 1.5 ? "clearly" : "much") + " busier or quieter than usual during the job.")
+      + (!lv && state.cmp === LV.job ? " For the lever layer the same setting means a push of at least " + (state.thr * LV.pct).toFixed(1) + "% of the normal spread." : "");
     const cA = counts(state.job), cB = state.cmp >= 0 ? counts(state.cmp) : null, both = new Array(L).fill(0);
     const totA = cA.reduce((s, v) => s + v, 0), nameA = DATA.jobs[state.job];
     let text = nameA + ": " + fmt(totA) + " of " + fmt(L * N) + " lights are on. Busiest floors: " + top3(cA) + ".";
     if (cB) {
       let shared = 0, expect = 0;
       for (let l = 0; l < L; l++) { for (let n = 0; n < N; n++) if (lit(state.job, l, n) && lit(state.cmp, l, n)) { shared++; both[l]++; } expect += cA[l] * cB[l] / N; }
-      text += " " + DATA.jobs[state.cmp] + ": " + fmt(cB.reduce((s, v) => s + v, 0)) + " on, busiest floors " + top3(cB) + ". Lights shared by both: " + fmt(shared) + " (about " + fmt(Math.round(expect)) + " expected if the two jobs were unrelated).";
+      text += " " + DATA.jobs[state.cmp] + ": " + fmt(cB.reduce((s, v) => s + v, 0)) + " on, busiest floors " + top3(cB) + ". Lights shared by both: " + fmt(shared) + " (about " + fmt(Math.round(expect)) + " expected if the two were unrelated).";
     }
     $("summary").textContent = text;
     // length check: how much of this job's lights is just "the question is longer or shorter"
     const lc = DATA.lengthcheck[state.job];
-    $("length-note").hidden = !lc;
-    if (lc) $("length-note").textContent = "Question length is already taken out of these lights, because longer questions light some units on their own. Before that correction " + fmt(lc.lit) + " lights were on for " + nameA + " at strength 0.8; " + fmt(lc.stay) + " of them remain."
+    $("length-note").hidden = !lc && !lv;
+    if (lv) {   // the lever layer: single units push little, so the per-floor totals carry the story
+      const e = LV.edit, b = LV.brake, busy = LV.gross.indexOf(Math.max(...LV.gross)), best =LV.net.map((v, l) => [v, l]).sort((x, y) => y[0] - x[0]).slice(0, 3).map(x => x[1] + " (" + x[0].toFixed(2) + ")").join(", ");
+      $("length-note").textContent = "This layer is not a job. It shows how hard each unit pushes the model's inner stream toward “stuck”, along the direction the deep fix (the original edit) pushes against. Single units push little, and on most floors the pushes cancel out: floor " + busy + " has the most pushing of any floor (" + LV.gross[busy].toFixed(1) + " normal spreads if every push counted the same way) but nets to " + LV.net[busy].toFixed(2) + ". "
+        + "Added up floor by floor, the net push toward stuck is largest on floors " + best + ", counted in normal spreads of the stream. The deep fix edits floors 15 and 19. Of its 64 units on floor 15, "
+        + e[15].by_lever + " are among the 64 strongest levers there and " + e[15].toward + " push toward stuck; ranking by loop light finds only " + e[15].by_light + ". On floor 19 it is " + e[19].by_lever + " by lever and " + e[19].by_light
+        + " by loop light. My test brake's units on floors 10 and 14 add up to " + b[10].toFixed(2) + " and " + b[14].toFixed(2) + ": their pushes cancel. The strongest single pusher is floor " + LV.top[0] + " unit " + LV.top[1] + " (" + LV.top[2] + "% of the normal spread)."
+        + (LV.top[0] === 19 && LV.top[1] === 11 ? " That unit was switched off in an earlier test and the model stayed stuck, so a strong push here is not proof of a working lever." : "") + " Tick “Outline the units that were edited” to see both sets.";
+    } else if (lc) $("length-note").textContent = "Question length is already taken out of these lights, because longer questions light some units on their own. Before that correction " + fmt(lc.lit) + " lights were on for " + nameA + " at strength 0.8; " + fmt(lc.stay) + " of them remain."
       + (lc.stay ? "" : " So this job was mostly question length: lower the strength slider to see what is left.");
 
     // through the tower: one row per job, one square per floor, each row shaded against its own busiest floor
@@ -416,7 +428,7 @@ th:first-child, td:first-child { text-align: left; }
     // hub test: the hub was held steady in a real run; did the units its wires point at move as predicted?
     const hb = wc.hubs[nameA], held = !hb || hb.unit !== big[0] ? "" : "Holding that unit steady in a real run moved " + hb.same + " of its " + hb.targets + " targets the predicted way"
       + (hb.same / hb.targets < 0.65 ? ", about a coin flip, so this unit's wires are not to be trusted. " : ", typically at " + Math.round(hb.ratio * 100) + "% of the predicted size. ");
-    $("wire-note").textContent = "For " + nameA + ", " + big[1] + " of the " + DATA.wires[state.job].length + " strongest wires start at one unit (" + big[0] + "). " + held + "Checked two ways. In a real nudge test, " + wc.nudge.same_direction + " of " + wc.nudge.wires_tested
+    $("wire-note").textContent = lv ? "No wires are worked out for the lever layer." : "For " + nameA + ", " + big[1] + " of the " + DATA.wires[state.job].length + " strongest wires start at one unit (" + big[0] + "). " + held + "Checked two ways. In a real nudge test, " + wc.nudge.same_direction + " of " + wc.nudge.wires_tested
       + " wires moved the upper light in the predicted direction, but the real change was typically about " + Math.round(wc.nudge.median_measured_over_predicted * 100) + "% of what the cable alone predicts. And added together, the cables explain very little of which lights are on for "
       + nameA + ": the match is " + wc.sum[state.job].toFixed(2) + " on a scale where 0 is none and 1 is all.";
 
@@ -484,7 +496,7 @@ th:first-child, td:first-child { text-align: left; }
       ctx.setLineDash([]); ctx.beginPath(); ctx.arc(a[0], a[1], 2, 0, 6.3); ctx.moveTo(b[0] + 2, b[1]); ctx.arc(b[0], b[1], 2, 0, 6.3); ctx.fill();
     }
     ctx.globalAlpha = 1;
-    $("wire-cap").textContent = !v3.wires ? "Wires are switched off." : !shown.length ? "No wires fit these settings. Lower the strength slider, widen the floors or undo the slice."
+    $("wire-cap").textContent = state.job === LV.job ? "No wires are worked out for the lever layer." : !v3.wires ? "Wires are switched off." : !shown.length ? "No wires fit these settings. Lower the strength slider, widen the floors or undo the slice."
       : "Showing the " + shown.length + " strongest of " + pool.length + " wires that fit (both ends lit, inside the floors and slice shown" + (v3.wpick ? ", touching floor " + v3.pick : "") + "). Wires are for " + DATA.jobs[state.job] + " and are drawn on top of every floor.";
   }
   function side() {
@@ -492,6 +504,7 @@ th:first-child, td:first-child { text-align: left; }
     $("f-name").textContent = "Floor " + l;
     paintFlat(-1);
     const list = $("wlist"), touch = touching(l); list.replaceChildren(); $("w-none").hidden = touch.length > 0;
+    $("w-none").textContent = state.job === LV.job ? "No wires are worked out for the lever layer." : "None fit the current settings.";
     touch.forEach(w => {
       const b = document.createElement("button"), other = w[0] === l ? w[2] : w[0]; b.type = "button"; b.title = "Go to floor " + other;
       b.textContent = "floor " + w[0] + " unit " + w[1] + " → floor " + w[2] + " unit " + w[3] + " · " + (w[4] > 0 ? "+" : "−") + Math.abs(w[4]).toFixed(2) + (helps(w) ? " · with it" : " · against it");
