@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/mnt/c/Users/user/.zcode/workspace/draft-c8131b20-7835-43a5-a479-2c728f5b0915/wsp-lab/phase11/make_a2r5.py", line 23, in <module>
+    pick = norm_tensors[rng.randrange(len(norm_tensors))]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/random.py", line 309, in randrange
+    raise ValueError("empty range for randrange()")
+ValueError: empty range for randrange()

@@ -66,13 +66,16 @@ def clean_inner(seg: str) -> str | None:
     return canonical(seg)
 
 
-def extract_answer(text: str):
+def extract_answer(text: str, no_think: bool = False):
     boxed = re.findall(r"\\boxed\{([^{}]*(?:\{[^{}]*\}[^{}]*)*)\}", text)
     if boxed:
         return boxed[-1]
-    if "</think>" not in text:
+    if no_think:  # phase 8: thinking-off output — the whole output is the answer section
+        answer = text
+    elif "</think>" not in text:
         return None
-    answer = text.split("</think>", 1)[1]
+    else:
+        answer = text.split("</think>", 1)[1]
     lines = [l.strip() for l in answer.splitlines() if l.strip()]
     if not lines:
         return None
@@ -92,14 +95,14 @@ def extract_answer(text: str):
     return clean(lines[-1])
 
 
-def rescore(name: str):
+def rescore(name: str, no_think: bool = False):
     here = Path(__file__).resolve().parent
     texts = json.loads((here / f"{name}_texts.json").read_text())
     run = json.loads((here / f"{name}.json").read_text())
     rows = run["rows"]
     correct = answered = 0
     for r in rows:
-        pred = extract_answer(texts[r["id"]])
+        pred = extract_answer(texts[r["id"]], no_think)
         r["pred_rescored"] = pred
         r["ok_rescored"] = answers_match(r["gold"], pred)
         correct += r["ok_rescored"]
@@ -115,4 +118,4 @@ def rescore(name: str):
 
 
 if __name__ == "__main__":
-    rescore(sys.argv[1])
+    rescore(sys.argv[1], no_think="--no-think" in sys.argv)
