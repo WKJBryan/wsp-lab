@@ -29,17 +29,85 @@ the share that finished.)
 
 Anchor comparison (corrected 2026-11-24, ISSUES #19): stock 8.4 against openwsp's 7.2, Toledo's
 independent 7.8% (93.1% cap-hit) and the original authors' 7.9% on their own stack — agrees.
-Published edit 48.6 against openwsp's 50.6, Khaliq's 51.0 and the original's 48.1: within about
-two and a half points of the outside replications (2.0 points below openwsp, 2.4 below Khaliq,
-0.5 above the original authors' own number). Known differences, none yet tested: our benchmark
-question is the bare problem while theirs adds "Please reason step by step, and put your final
-answer within `\boxed{}`"; we take one sample per problem, they four; and the two graders do not
-read every answer the same way — they agree on 82% of the published edit's rows (48.6 against
-44.2 on the same generations): math-verify, given a whole answer section, takes the last `$…$`
-span and so misses an answer such as "The value of `$x$` is 83" (ISSUES #19). A calibration run
-on their exact protocol is pending. The earlier text put the shortfall at "~9 points shy" and
-called the gap robust because "extraction micro-choices moved each arm by ≤1.6 points"; that was
-wrong — the re-scoring alone moved the gap from +33.4 to +40.2.
+Published edit 48.6 against openwsp's 50.6, a third party's 51.0 and the original's 48.1: within
+about two and a half points of the outside replications (2.0 points below openwsp, 2.4 below the
+third party, 0.5 above the original authors' own number). Known differences between the two
+set-ups: our benchmark question is the bare problem while theirs adds "Please reason step by
+step, and put your final answer within `\boxed{}`"; we take one sample per problem, they four;
+and the two graders do not read every answer the same way — they agree on 82% of the published
+edit's rows (48.6 against 44.2 on the same generations): math-verify, given a whole answer
+section, takes the last `$…$` span and so misses an answer such as "The value of `$x$` is 83"
+(ISSUES #19). The calibration runs on their exact protocol (2026-11-24/25; next subsection)
+show how much these differences carry: with their benchmark question and their grader, and one
+sample per problem as in our own runs, this harness reads 51.0% for the published edit and 7.8%
+for stock, reproducing the outside numbers. So the gap to the outside replications is closed,
+and the repository's matcher — stricter than math-verify on the same boxed answers — accounts
+for most of the remaining difference between 48.6 and the outside 50.6 to 51.0 (ISSUES #30).
+The earlier text put the shortfall at "~9 points shy" and called the gap robust because
+"extraction micro-choices moved each arm by ≤1.6 points"; that was wrong — the re-scoring alone
+moved the gap from +33.4 to +40.2.
+
+### Calibration on the original authors' protocol (2026-11-24/25)
+
+Three calibration runs test whether the remaining distance to the outside numbers comes from
+our set-up: `phase3c/ref_stock.json`, `ref_orig.json` and `ref_nothink_card.json`, each with its
+generations (`_texts.json.gz`) and its run log (`phase3c/logs/ref_*.log`); each also carries a
+`_rescored.json`, the repository's checker applied to the whole answer section (7.4%, 49.0% and
+41.8%). They are graded by `phase3c/grade_reference.py`; its log is
+`phase3c/logs/grade_reference.log`.
+
+Protocol: the original authors' benchmark question ("Problem: … Please reason step by step, and
+put your final answer within `\boxed{}`."), thinking on, temperature 0.6, top_p 0.95, top_k 20,
+presence penalty 1.5, at most 32,768 tokens, one sample, the same 500 problems. The third run
+has thinking switched off under the model card's non-thinking settings (temperature 1.0, top_p
+1.00, top_k 20, presence penalty 2.0). Graded as the outside replications grade — math-verify on
+the last `\boxed{}` answer — and, on the same boxed answers, with the repository's own matcher.
+
+| Version | an answer in `\boxed{}` | repository matcher | math-verify | outside (math-verify) | at the token cap |
+|---|---|---|---|---|---|
+| Stock, thinking on | 123 of 500 | 7.4% (37 of 500) | 7.8% (39 of 500) | 7.2% (openwsp) | 93.2% |
+| Published edit | 331 of 500 | 46.6% (233 of 500) | 51.0% (255 of 500) | 50.6% (openwsp), 51.0% (a third party), 48.1% (the original authors) | 29.0% |
+| Stock, thinking off, card settings | 487 of 500 | 41.2% (206 of 500) | 46.2% (231 of 500) | 46.8% (openwsp) | 0.6% (99.4% finished) |
+
+Mean tokens, in the same order: 30,991; 21,796; 9,067. All three runs pass both validity checks.
+
+Paired, on the same boxed answers, over the same 500 problems:
+
+- Repository matcher: published edit against stock +39.2 points (95% interval 35.0 to 43.6; 197
+  problems right only under the edit, 1 only under stock).
+- Repository matcher: published edit against stock with thinking off +5.4 points (interval 1.0
+  to 9.6; 76 only under the edit, 49 only with thinking off; p = 0.020).
+- math-verify: published edit against stock +43.2 points (interval 38.8 to 47.6; 217 problems
+  right only under the edit, 1 only under stock).
+- math-verify: published edit against stock with thinking off +4.8 points (interval 0.4 to 9.2;
+  76 only under the edit, 52 only with thinking off; p = 0.042).
+
+Agreement of the two graders on the same boxed answers: stock 498 of 500; published edit 478 of
+500 — the other 22 are answers that math-verify accepts and the matcher rejects, never the
+reverse; thinking off 475 of 500 — 25 such answers, never the reverse. So the matcher is
+stricter than math-verify by 4.4 points on the published edit and 5.0 on stock with thinking off.
+
+What those answers are: gold answers in LaTeX shorthand the matcher does not expand (`\frac43`,
+`\frac 59`, `11\sqrt2`, `\dfrac{33}{100}`); a degree sign or a unit in the gold (`90^\circ` for
+90; `864 \mbox{ inches}^2` for 864); a multiple-choice letter in parentheses (`\text{(C)}` for
+C); a variable in front of the gold (`x=5`, `x \in [-2,7]`); thousands separators (`58,500`);
+a tuple with a fraction or decimal inside (`(\frac{3}{2}, -13)`); a base written `4210_{5}`;
+braces around one number (`\{-4\}`); in the thinking-off run also a sum written in reverse
+order, a unit appended to a correct value, and the capital in "East". Two or three are
+debatable (`40` for `40_9`).
+
+Reading:
+
+1. **The harness reproduces the outside numbers under the outside protocol and grader.**
+   Published edit 51.0% against 50.6, 51.0 and 48.1 outside; stock 7.8% against 7.2%; stock with
+   thinking off 46.2% against 46.8%. The gap these runs were meant to explain is closed, and it
+   had two sources: the answer checker (ISSUES #19) and the grader.
+2. **The repository matcher is stricter than math-verify by 4 to 5 points on the same boxed
+   answers, and never the reverse.** Every score in this repository is on that stricter scale,
+   and every comparison inside the repository shares the matcher (ISSUES #30).
+3. **Under this protocol the published edit beats the unedited model with thinking switched off
+   under both graders (+5.4 and +4.8 points)**, where our own protocol could not separate them
+   under math-verify applied to the whole answer section.
 
 ## The full forensic arc (for anyone reproducing)
 
@@ -98,22 +166,27 @@ wrong — the re-scoring alone moved the gap from +33.4 to +40.2.
      the 570 answers, agrees with 566.
    - Final checker against the first correction as last refined: **520 right, none wrong.**
 
-   45 unit tests (`phase3c/test_rescore.py`) pass. Every saved run was re-scored with the final
+   46 unit tests (`phase3c/test_rescore.py`) pass. Every saved run was re-scored with the final
    checker, and every re-scored file records the checker version that produced it. **Reproduce**
    (no GPU, no gunzip needed): `uv run python phase3c/rescore.py <run> [<run> ...]` reads the
    gzipped generations directly; `<run>` is the file stem, e.g. `uv run python
-   phase3c/rescore.py p3c_stock p3c_c3_original`.
+   phase3c/rescore.py p3c_stock p3c_c3_original`. The calibration runs (subsection "Calibration
+   on the original authors' protocol") are graded as the outside replications grade them, with
+   `uv run python phase3c/grade_reference.py <run.json>` (the grader environment).
 
 ## What this closes
 
 - The user's challenge ("why not the same or better results?") is answered as far as the pipeline
   goes: a reproducible local run — **wrong engine → right engine; wrong scorer → right scorer;
   and the original's claim lands: 8.4 → 48.6%** (re-scored 2026-11-24; 6.0 → 39.4% as first
-  reported). The published edit now reads within about two and a half points of the outside
-  replications of the same edit. Still open, and for the calibration run above to settle (it is
-  pending): the last two and a half points or so. (Corrected 2026-11-24, ISSUES #19; this
-  bullet said the challenge was "now fully answered", and after the first checker correction it
-  put the remaining shortfall at "the last 4 to 7 points".)
+  reported). On our protocol the published edit reads within about two and a half points of the
+  outside replications of the same edit, and the calibration runs on the original authors'
+  protocol (2026-11-24/25) reproduce their numbers: 51.0% for the published edit and 7.8% for
+  stock under math-verify, their grader. So the gap to the outside numbers is closed; it had
+  two sources, the answer checker and the grader (ISSUES #19, #30).
+  (Corrected 2026-11-24, ISSUES #19: this bullet said the challenge was "now fully answered";
+  after the first checker correction it put the remaining shortfall at "the last 4 to 7 points",
+  and until the calibration runs at "the last two and a half points or so".)
 - Weight-space editing stopping thinking-loops is confirmed **on third-party-independent
   hardware** (this repo) in addition to openwsp/Khaliq/Noble.
 - Still unclaimed when this phase closed: the no-hint full-budget run. It has been run since

@@ -2,6 +2,8 @@
 
 Reads the saved MATH-500 generations (same 500 problems, same seed) of eighteen runs and packs
 one row per problem per run into phase7/timeline.html, built from phase7/timeline_template.html.
+The full-dose stacked arm is the clean rerun of 2026-11-24; the first run of that model was a
+corrupted run and is not shown (ISSUES #20).
 
 Usage: uv run python phase7/build_timeline.py
 """
@@ -26,7 +28,7 @@ ARMS = [
     ("orig", "Published edit (floors 15 + 19)", "change", "phase3c/p3c_c3_original"),
     ("map", "Our map repair (floors 10 + 14)", "change", "phase3c/p7_uperp_on_loop"),
     ("half", "Published edit + our repair at half dose", "change", "phase3c/p7_stack_half"),
-    ("full", "Published edit + our repair at full dose", "broken", "phase3c/p7_stack_full"),
+    ("full", "Published edit + our repair at full dose (rerun of 24 Nov)", "change", "phase3c/p7_stack_full_v2"),
     ("s_mpro", "MiMo-pro alone: same row × 1.5", "solo", "phase3c/p4_mimo_pro"),
     ("s_gf50", "GLM-5.3-Flash alone, 50 tries allowed: row × 1.5, comma × 0.8", "solo", "phase3c/p10_fullbudget"),
     ("s_gf", "GLM-5.3-Flash alone: three rows rescaled", "solo", "phase3c/p4_glmflash"),
@@ -42,7 +44,15 @@ ARMS = [
 def load(p):
     texts = json.load(gzip.open(ROOT / f"{p}_texts.json.gz", "rt", encoding="utf-8"))
     rescored = ROOT / f"{p}_rescored.json"
-    rows = json.loads((rescored if rescored.exists() else ROOT / f"{p}.json").read_text(encoding="utf-8"))["rows"]
+    data = json.loads((rescored if rescored.exists() else ROOT / f"{p}.json").read_text(encoding="utf-8"))
+    # a run that failed a check, or was never given one, is not a measurement (ISSUES #20)
+    v = data["summary"].get("validity") or {}
+    problems = list(v.get("problems") or [])
+    problems += [f"{p}: no {'fragment-tail' if k == 'soup_judged' else 'batch-position'} check on record"
+                 for k in ("soup_judged", "admission_tested") if not v.get(k)]
+    assert not problems, problems
+    rows = data["rows"]
+    assert len(rows) == 500 and sorted(r["id"] for r in rows) == sorted(texts), p
     return texts, {r["id"]: r for r in rows}
 
 
@@ -56,6 +66,7 @@ for key, name, group, p in ARMS:
     packed = []
     for i in ids:
         a, b, r = stock_t[i], texts[i], rows[i]
+        assert r["closed"] == ("</think>" in b), (key, i)   # rows and generations are the same run
         n = 0
         while n < min(len(a), len(b)) and a[n] == b[n]:
             n += 1
@@ -72,9 +83,10 @@ for key, name, group, p in ARMS:
     print(f"{key:6s} acc {acc:5.1f}%  closed {sum(x[1] >= 0 for x in packed)}  finished {sum(x[3] for x in packed)}")
     out.append(dict(key=key, name=name, group=group, rows=packed))
 
-# self-check against the numbers already in the record (phase 3c / phase 8 / addendum 10)
-want = dict(stock=6.0, orig=39.4, e1=27.8, c1=28.2, dout=26.4, din=5.8, map=26.2, half=37.0, full=4.4,
-            s_mpro=27.8, s_gf50=27.4, s_gf=25.2, s_glm=23.0, t_glm=24.4, t_mix=23.6, t_gf=10.6, t_live=9.0, t_mimo=5.8)
+# self-check against the numbers in the record (phase 3c / phase 8 / addendum 10), as re-scored
+# with the corrected answer checker (ISSUES #19)
+want = dict(stock=8.4, orig=48.6, e1=36.2, c1=36.6, dout=33.8, din=9.0, map=32.6, half=44.8, full=46.2,
+            s_mpro=35.2, s_gf50=36.0, s_gf=31.6, s_glm=29.6, t_glm=30.2, t_mix=29.6, t_gf=15.2, t_live=11.8, t_mimo=8.2)
 for a in out:
     got = sum(x[4] for x in a["rows"]) / 5
     assert abs(got - want[a["key"]]) < 0.05, (a["key"], got)
