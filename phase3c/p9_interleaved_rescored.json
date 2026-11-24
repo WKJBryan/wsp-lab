@@ -6,7 +6,7 @@
   "answered": 16.6,
   "cap_hit_rate": 87.8,
   "mean_tokens": 29199.0,
-  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#4a1b56a343a4 (ISSUES #19)",
   "validity": {
    "soup_pct": 0.0,
    "soup_judged": true,
