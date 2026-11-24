@@ -68,7 +68,10 @@ details.more > summary { cursor: pointer; padding: 14px 16px; font: 600 16px "Sp
 details.more > summary span { display: block; font: 400 13px Inter, sans-serif; color: var(--fg2); margin-top: 2px; }
 details.more > div { padding: 0 16px 16px; display: flex; flex-direction: column; gap: 12px; }
 ol, ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; max-width: 66ch; font-size: 14px; }
-code { font-size: 13px; background: var(--track); padding: 1px 4px; border-radius: 3px; }
+dl.names { margin: 0; display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 10px 14px; font-size: 14px; }
+dl.names dt { font-weight: 600; } dl.names dd { margin: 0; color: var(--fg2); max-width: 62ch; }
+@media (max-width: 560px) { dl.names { grid-template-columns: minmax(0, 1fr); gap: 2px; } dl.names dd { margin-bottom: 10px; } }
+code { overflow-wrap: anywhere; font-size: 13px; background: var(--track); padding: 1px 4px; border-radius: 3px; }
 </style>
 
 <div class="wrap">
@@ -97,6 +100,20 @@ code { font-size: 13px; background: var(--track); padding: 1px 4px; border-radiu
     <div class="rows" id="ends"></div>
     <div class="ctl"><label><input type="checkbox" id="all"> Show all 18 versions, including every AI team</label></div>
     <p class="note">Each bar is 500 problems. More green is better. Red is the original fault.</p>
+  </div>
+</section>
+
+<section>
+  <h2>What each name means</h2>
+  <div class="card">
+    <dl class="names">
+      <dt>No fix</dt><dd>The model exactly as downloaded (Qwen3.5-0.8B). Nothing changed.</dd>
+      <dt>Quick fix</dt><dd>One row of numbers, out of 873 million, is multiplied by 1.5. That row belongs to the "stop thinking" word, so the model reaches for it much sooner. AI editors who were told nothing about the fault found this by themselves.</dd>
+      <dt>Deep fix</dt><dd>The edit the original researchers published. Inside floors 15 and 19 of the model, 64 units per floor are rewired to push against the "going round in circles" pattern.</dd>
+      <dt>Our map repair</dt><dd>Our own attempt at a deep fix, placed with our light map instead of the researchers' choice: floors 10 and 14, on the 64 units per floor that light up most when the model is stuck.</dd>
+      <dt>Best AI team</dt><dd>Six AI seats (observer, two analysts, red team, judge, executor), all running GLM-5.3. They shipped a gentler quick fix: the same row multiplied by 1.35.</dd>
+    </dl>
+    <p class="note">Under "Show all 18 versions" you will also see: <strong>+9 boost</strong> (no numbers changed; the "stop thinking" word is favoured while the model runs), <strong>output half / input half</strong> (the quick fix applied only where the model writes, or only where it reads), and <strong>deep fix + our repair</strong> (both together, ours at half or at full strength).</p>
   </div>
 </section>
 
@@ -132,9 +149,41 @@ code { font-size: 13px; background: var(--track); padding: 1px 4px; border-radiu
     <tr><td>Quick fix without editing (+9)</td><td>no numbers changed; the signal is boosted while the model runs</td><td>none</td></tr>
     <tr><td>Deep fix (published edit)</td><td>a measured "loop" pattern is removed inside floors 15 and 19 of the model</td><td>2 tables of numbers</td></tr>
     <tr><td>Our map repair</td><td>the same kind of removal, at floors 10 and 14, on the units our light map flagged</td><td>2 tables of numbers</td></tr>
-    <tr><td>Deep fix + our repair</td><td>both together, at half or full strength</td><td>4 tables of numbers</td></tr>
+    <tr><td>Deep fix + our repair</td><td>both together, ours at half or at full strength</td><td>4 tables of numbers</td></tr>
   </table></div>
-  <p class="note">Adding our repair on top of the deep fix did not help at half strength, and broke the model at full strength.</p>
+  <p class="note">Adding our repair on top of the deep fix did not help at either strength: 44.8% at half strength and 46.2% at full strength, against 48.6% for the deep fix alone. (An earlier full-strength run looked like a breakdown, but its answers were corrupted by the test engine, not by the model; it was thrown out and replaced by a clean rerun.)</p>
+</div></details>
+
+<details class="more"><summary>How to redo it, and the steps we ran<span>The same six steps for every version, then the one command that makes each version.</span></summary><div>
+  <h3>The steps we ran, in order</h3>
+  <ol>
+    <li><strong>Write the prediction down first.</strong> For our own tests, what we expected was saved in <code>phase7/protocol.md</code> before any run, so a result could not be bent afterwards.</li>
+    <li><strong>Make the edited copy</strong> of the model (commands below).</li>
+    <li><strong>Practice test.</strong> 64 easy word problems. For our own repairs, a version went on only if it stopped thinking on at least 38.8% of them (the unedited model manages 18.8%).</li>
+    <li><strong>Final test.</strong> The 500 maths problems, one answer each, with a limit of 32,768 tokens per answer.</li>
+    <li><strong>Mark the answers</strong> with the same marking program for every version.</li>
+    <li><strong>Check the run was healthy.</strong> A run whose answers turn to gibberish, or that goes wrong only for the later problems in the batch, is thrown out.</li>
+  </ol>
+  <h3>Making each version</h3>
+  <div class="tw"><table>
+    <tr><th>Version</th><th>How to make it</th></tr>
+    <tr><td>No fix</td><td>Download Qwen3.5-0.8B into <code>phase3/models/stock</code>. No build step.</td></tr>
+    <tr><td>Quick fix</td><td>Multiply row 248069 of the word table by 1.5. Script: <code>phase4/session_mimo_pro/apply_edit.py</code></td></tr>
+    <tr><td>+9 boost</td><td>No build. Add <code>--logit-bias 9</code> to the test command (<code>phase8/run_vllm8.py</code>).</td></tr>
+    <tr><td>Output half only</td><td><code>python phase8/build_untied.py ~/wsp3c/stock ~/wsp8/d_out --out-scale 1.5</code></td></tr>
+    <tr><td>Deep fix</td><td>Download the researchers' published model (RikiyaT/Qwen3.5-0.8B-weight-space-programming) into <code>phase3/models/c3_original_edit</code>. No build step.</td></tr>
+    <tr><td>Our map repair</td><td>First measure the map (<code>phase7/probe_activations.py</code>), then:<br><code>uv run python phase7/build_brake.py uperp_on_loop --out phase7/cands/uperp_on_loop --u-dirs 15,19 --minus-d</code></td></tr>
+    <tr><td>Deep fix + our repair</td><td>The same command with <code>--dose 0.5 --base phase3/models/c3_original_edit</code> and the name <code>stack_half</code>; with <code>--dose 1.0</code> and the name <code>stack_full</code> for full strength</td></tr>
+    <tr><td>AI teams</td><td>Not repeatable to the letter: an AI team makes different choices each time. Each team's notes and the exact edit it shipped are in <code>phase9/session_*/</code>.</td></tr>
+  </table></div>
+  <h3>Testing and marking</h3>
+  <div class="tw"><table>
+    <tr><th>Step</th><th>Command</th></tr>
+    <tr><td>Final test (needs the graphics card, run inside Linux)</td><td><code>python phase3c/run_vllm.py --model &lt;model folder&gt; --name &lt;run name&gt; --n 500</code></td></tr>
+    <tr><td>Mark a saved run again (no graphics card needed)</td><td><code>uv run python phase3c/rescore.py p3c_stock</code></td></tr>
+    <tr><td>Rebuild this page</td><td><code>uv run python phase7/build_timeline.py</code></td></tr>
+  </table></div>
+  <p class="note">Every answer from every run is saved in the repo, so all scores on this page can be re-marked without running a model. Full setup notes are in <code>phase3c/results.md</code>.</p>
 </div></details>
 
 <details class="more"><summary>The AI teams (run in ZCode)<span>Does a team of AI editors that argue with one another beat one AI editor alone? No.</span></summary><div>
@@ -148,28 +197,27 @@ code { font-size: 13px; background: var(--track); padding: 1px 4px; border-radiu
   </ol>
   <div class="tw"><table>
     <tr><th>Team</th><th>Team's score</th><th>One editor alone</th><th>What happened</th></tr>
-    <tr><td>GLM-5.3 team</td><td>24.4%</td><td>23.0%</td><td>about the same</td></tr>
-    <tr><td>Mixed team (four different AI models)</td><td>23.6%</td><td>27.8%</td><td>about the same</td></tr>
-    <tr><td>GLM-5.3-Flash team</td><td>10.6%</td><td>25.2%</td><td>worse: fix too gentle</td></tr>
-    <tr><td>Surgeon + critic working live</td><td>9.0%</td><td>25.2%</td><td>worse: fix too gentle</td></tr>
-    <tr><td>MiMo-flash team, second try</td><td>5.8%</td><td>27.8%</td><td>worse: fix too gentle</td></tr>
-    <tr><td>MiMo-flash team, MiMo-pro team (twice)</td><td>no edit</td><td>27.8%</td><td>the team fell apart before editing</td></tr>
+    <tr><td>GLM-5.3 team</td><td>30.2%</td><td>29.6%</td><td>about the same</td></tr>
+    <tr><td>Mixed team (four different AI models)</td><td>29.6%</td><td>36.2%</td><td>worse: fix too gentle</td></tr>
+    <tr><td>GLM-5.3-Flash team</td><td>15.2%</td><td>31.6%</td><td>worse: fix too gentle</td></tr>
+    <tr><td>Surgeon + critic working live</td><td>11.8%</td><td>31.6%</td><td>worse: fix too gentle</td></tr>
+    <tr><td>MiMo-flash team, second try</td><td>8.2%</td><td>36.2%</td><td>worse: fix too gentle</td></tr>
+    <tr><td>MiMo-flash team, MiMo-pro team (twice)</td><td>no edit</td><td>36.2%</td><td>the team fell apart before editing</td></tr>
   </table></div>
   <ul>
     <li><strong>Teams play it safe.</strong> Every team chose a gentler fix than the lone editors did, and a gentle fix is not enough on hard problems.</li>
     <li><strong>Teams had the cleverest ideas</strong>, but none turned into a better score.</li>
-    <li><strong>More tries did not help.</strong> One editor offered 50 tries used 6 and scored 27.4%.</li>
-    <li><strong>A second, bigger model</strong> (Gemma, with most of its parts cut out) could not be repaired by any of five editors. Its stopping could be fixed; its lost knowledge could not.</li>
+    <li><strong>More tries did not clearly help.</strong> One editor offered 50 tries, used 6 and scored 36.0%: 4.4 points above the 31.6% it got with 6 tries before, at the edge of what 500 problems can tell apart, and level with the quick fix from MiMo-pro (35.2%).</li>
+    <li><strong>A second, bigger model</strong> (Gemma, with most of its parts cut out) could not be repaired by any of five editors. Its stopping could be fixed; its scores could not, and switching back the choice between its eight remaining parts did not help either.</li>
   </ul>
   <p class="note">"About the same" means within 4.4 points, the size of ordinary luck between runs. Tick "Show all 18 versions" above to see every team in the charts.</p>
 </div></details>
 
-<details class="more"><summary>What we still do not know<span>Seven gaps in the experiments so far.</span></summary><div>
+<details class="more"><summary>What we still do not know<span>Six gaps in the experiments so far.</span></summary><div>
   <ol>
     <li><strong>What the deep fix does to the "stop thinking" signal</strong>, moment by moment. This would link the two kinds of fix.</li>
     <li><strong>Why answers still get stuck after thinking stops</strong> (the yellow parts). Our light map only covers getting stuck while thinking.</li>
-    <li><strong>The fair comparison.</strong> With thinking switched off, the unedited model scores 38.8%, as good as the deep fix. No edited version was tested that way.</li>
-    <li><strong>A second marker.</strong> A different marking program gives the unedited model 21.2%, not 6.0%. This page uses only one.</li>
+    <li><strong>A second marker.</strong> A different marking program gives the unedited model 21.2%, not 8.4%. This page uses only one.</li>
     <li><strong>One definition of "stuck".</strong> Two experiments each defined it their own way and were never compared.</li>
     <li><strong>A floor-by-floor look at where the answer forms.</strong> It was done on the bigger model, never on this one.</li>
     <li><strong>A practice test that catches damage.</strong> The short practice test missed the harm three times.</li>
@@ -184,6 +232,9 @@ code { font-size: 13px; background: var(--track); padding: 1px 4px; border-radiu
   </ul>
   <h3>Change log</h3>
   <ul>
+    <li><strong>Version 6 · 24 Nov 2026.</strong> The full-strength "deep fix + our repair" returns to the page: its clean rerun scores 46.2%, so adding our repair gives no gain at either strength and no breakdown either.</li>
+    <li><strong>Version 5 · 24 Nov 2026.</strong> Added "What each name means" under the chart and a folded section "How to redo it, and the steps we ran". Corrected the note about the full-strength stack: that run was faulty and is withdrawn, it did not show the model breaking.</li>
+    <li><strong>Version 4 · 24 Nov 2026.</strong> Scores re-read with the corrected answer checker; most versions score 2 to 9 points higher. The unedited model with thinking switched off is no longer 'as good as the deep fix' (41.4% against 48.6%).</li>
     <li><strong>Version 3 · 20 Nov 2026.</strong> Made shorter and plainer. The top now shows three numbers and one chart with five versions; everything else is folded away. Removed: the "first differs from stock" markers, the comparison of the two models' sizes, the table of editing models, and the details of the five Gemma editors. All of those remain in Version 2.</li>
     <li><strong>Version 2 · 20 Nov 2026.</strong> Added how the models differ and the ZCode team experiments, plus nine runs in the charts.</li>
     <li><strong>Version 1 · 20 Nov 2026.</strong> First version.</li>

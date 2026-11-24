@@ -1,5 +1,11 @@
 # Phase 9 progress log (per condition; folded into results.md at the end)
 
+> **Note added 2026-11-24 (ISSUES #19).** The final scores in this log are as first reported,
+> with the defective answer checker, and are kept that way because this is the log as written
+> during the runs. Under the final checker every committee final is higher; the corrected
+> scores, committee count and verdict words are in `phase9/results.md`. Practice numbers are as
+> recorded with the old checker; the generations were not saved, so they cannot be re-scored.
+
 ## Condition 1 — glm5.3-flash-team — **HURTS: 10.6% vs baseline 25.2%** (2026-11-14)
 
 - Session: 6/10 passes (4 unspent); all pre-logged. Byte-verified edit: UNTIED lm_head +
@@ -98,7 +104,14 @@ random control 2.2). Tier/family does not buy score — if anything, inverse.
   1024 elements of row 248069 (depth-gated via hidden-state sum sign). Critic's pre-registered
   escalation gate REFUSED α=0.03 after free sims showed it burning correct answers — disciplined.
 - Final: 9.0% / cap 87.8 / mean 29,199 — the conservative dose collapsed at MATH-500 scale,
-  same failure mode as c1. Pass-economy prediction CONFIRMED; score prediction (HURTS) confirmed.
+  same failure mode as c1. Pass-economy prediction (fewer passes than a single editor): it spent
+  3 of 10 passes, against 6 to 7 for the single editors it is compared with (the mixed team also
+  spent 3 and the GLM-5.3 waterfall team 2; corrected 2026-11-24, ISSUES #27 — this earlier read
+  "CONFIRMED" without saying what it was measured against); the registered score prediction —
+  interleaved "lands in the same final-score band" (`phase9/protocol.md`) — is REFUTED: 11.8%
+  against the loner's 31.6% (re-scored 2026-11-24; 9.0% and 25.2% as first reported). Corrected
+  2026-11-24, ISSUES #27: this sentence earlier read "score prediction (HURTS) confirmed", which
+  was not the prediction on record.
 - Phase 9 closed: 0/5 functioning committees beat their loner. See results.md.
 
 ## Condition 8 — mimo-flash-team, format-corrected — **5.8% — HURTS** (2026-11-15)

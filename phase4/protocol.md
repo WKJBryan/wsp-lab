@@ -1,5 +1,10 @@
 # Pre-registered protocol — Phase 4: external editor models, blind, on the working stack
 
+> Note added 2026-11-24 (ISSUES #19): the figures quoted below were recorded with the defective
+> answer checker and are higher under the corrected one (see ISSUES #19); the rules and thresholds
+> in this file are unchanged. Values quoted here, first reported -> final: stock 6.0 -> 8.4;
+> published edit 39.4 -> 48.6.
+
 Committed BEFORE the editor session runs.
 
 ## Research question

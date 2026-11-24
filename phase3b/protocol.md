@@ -1,5 +1,9 @@
 # Pre-registered protocol — Phase 3b: corrected decoding cross-check
 
+> Note added 2026-11-24 (ISSUES #26): the Qwen3.5-0.8B model card does not prohibit greedy
+> decoding; the sentence below repeats a rule that is not on the card. The decision to re-run
+> under the original authors' sampling stands. The text below is unchanged.
+
 Committed BEFORE either arm runs. Fixes ISSUES #8: Phase 3a used greedy decoding (prohibited
 by the model card) with a 6,144-token cap and a score-inflating extraction fallback.
 

@@ -1,5 +1,12 @@
 # Pre-registered protocol — Phase 8: the missing baselines (is the blind edit a decoding trick?)
 
+> Note added 2026-11-24 (ISSUES #19): the figures quoted below were recorded with the
+> defective answer checker and are higher under the corrected one (see ISSUES #19); the
+> rules and thresholds in this file are unchanged. The accuracies quoted below, first reported
+> -> final: S (stock, thinking on) 6.0 -> 8.4; O (original published edit) 39.4 -> 48.6; E1
+> (blind single-row edit) 27.8 -> 35.2; E2 (GLM three-row edit) 25.2 -> 31.6; R (random
+> control) 2.2 -> 3.8.
+
 Written 2026-11-14 and committed BEFORE any run in this phase and BEFORE anything new is computed
 from saved generations. Deviations go to ISSUES.md with reasons. No threshold moves after a run.
 

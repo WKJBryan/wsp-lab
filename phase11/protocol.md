@@ -1,5 +1,14 @@
 # Pre-registered protocol — Phase 11: prune for the bytes, program the repair
 
+> Note added 2026-11-24 (ISSUES #19): the figures quoted below were recorded with the
+> defective answer checker and are higher under the corrected one (see ISSUES #19); the
+> rules and thresholds in this file are unchanged. That holds for the Qwen accuracies quoted
+> in Amendment #3b/#3c, first reported -> final: flash-tier 25.2 -> 31.6, big model solo
+> 23.0 -> 29.6, mimo-flash blind 27.8 -> 36.2. The wound keeps 8 experts and leaves the
+> active-expert count at 8, so expert selection is disabled (ISSUES #22). Amendment #3 below
+> counts the committees as "0-for-7" (the corrected count is in ISSUES #25) and cites the
+> arithmetic test that ISSUES #22 withdraws; the amendments are otherwise unchanged.
+
 Committed BEFORE any download, pruning, or run. The intersection no published work holds:
 gradient-free (weight-space) repair of an expert-pruned MoE.
 

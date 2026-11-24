@@ -1,5 +1,12 @@
 # Pre-registered protocol — Phase 12: the cross-architecture atlas
 
+> Note added 2026-11-24 (ISSUES #19): the figures quoted below were recorded with the
+> defective answer checker and are higher under the corrected one (see ISSUES #19); the
+> rules and thresholds in this file are unchanged. (The one accuracy quoted below, 1.6 -> 1.6
+> as first reported, is 1.6 -> 3.1 under the final checker.) The verdict drawn from these
+> tests was withdrawn on 2026-11-24 (ISSUES #21); the tests below are unchanged as the
+> registered text.
+
 Committed BEFORE any Phase-12 probe runs (2026-11-17). The user's question, made
 falsifiable: **do Qwen3.5-0.8B (dense, 24 layers, hidden 1024) and Gemma-4 26B-A4B
 (MoE, 30 layers, hidden 2816) write the same functions with corresponding number

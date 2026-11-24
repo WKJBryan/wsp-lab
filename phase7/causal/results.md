@@ -5,6 +5,11 @@
 problems, cap 8192, pass_index 1 · **Budget:** 6 of 6 passes, no retries, no other generation.
 Raw: `passes.jsonl`, `ledger.txt`. Edits: `brake_*.json` (built by `build_brake.py`).
 
+Practice numbers are as recorded with the old checker; the generations were not saved, so
+they cannot be re-scored. Every 500-problem final accuracy in this file was re-scored on
+2026-11-24 with the final answer checker (ISSUES #19; the checker was corrected twice that
+day), and the `stack_full` final was voided (ISSUES #20); rerun clean on 2026-11-24: 46.2%.
+
 | pass | arm | closed | accuracy | cap-hit | mean tokens |
 |---|---|---|---|---|---|
 | 1 | stock | 18.8% | 12.5% | 82.8% | 7,253 |
@@ -25,7 +30,8 @@ Stock reproduces phase 4's pass 1 exactly (12.5 / 18.8 / 82.8).
   over stock (≈ 4 SE of a difference) and more than doubled accuracy.
 - **H3 uninformative.** Doses 0.5 / 1.0 / 2.0 gave 20.3 / 23.4 / 18.8 — inside the rule, but
   all within noise of stock, so there is no dose-response to speak of.
-- **H4 (exploratory) uninformative.** Same closed rate as pass 2, accuracy 2 problems lower.
+- **H4 (exploratory): not met** (corrected 2026-11-24; first reported as "uninformative").
+  Same closed rate as pass 2, accuracy 2 problems lower (11 of 64 against 13).
   The plain map brake was already near-selective by construction (standing push ≤ 0.08).
 
 ## What the surprise is, and is not
@@ -86,8 +92,10 @@ seed, n = 64, practice set only.
   directions work at L10+L14 (51.6 / 43.8 / 39.1); one does nothing (17.2).
 - **R2 confirmed.** The first result was not sampling luck (43.8% on a new seed).
 - **R3 confirmed (kick size).** At one-third size the same direction does nothing.
-- **R4 confirmed (gating).** The same amplitudes on random neurons do nothing — the
-  loop-active neurons the map picked are needed.
+- **R4 confirmed (gating), as far as this control goes.** The same amplitudes on random
+  neurons do nothing. (Corrected 2026-11-24: that arm's push was 2.6% and 3.8% the size of
+  the loop-neuron arms' pushes, so it shows that an ungated push this small does nothing,
+  not that the loop-active neurons are needed; ATLAS.md, "Corrections and limits".)
 - **R5: my guess was WRONG.** Neither random direction on the published columns works
   (25.0 / 29.7), while the published direction on the same columns gives 57.8.
   By the strict rule "both do nothing" is not met either (29.7 sits 0.9 above the line),
@@ -95,7 +103,8 @@ seed, n = 64, practice set only.
 
 ## What now stands
 
-1. Loop-gated pushes need the right neurons and enough size (R3, R4).
+1. Loop-gated pushes need enough size (R3, R4); whether they need the right neurons is
+   not tested by R4's control (corrected 2026-11-24).
 2. At the original edit's site the DIRECTION matters: published 57.8% vs random 25–30%.
 3. At L10+L14 the mapped direction fails at three doses, yet 3 of 4 random directions work.
 4. Points 2 and 3 are not reconciled. The difference between the two sites for random
@@ -238,7 +247,8 @@ removed, not renormalised (Frobenius norm 0.88 / 0.86 of `u_on_loop`, cos with d
 **Predictions:** `phase7/protocol.md` addendum 5, committed `8a0296b` before any run · both
 runs made once, in order, no retries. Final: `phase3c/run_vllm.py` and `phase3c/rescore.py`
 unchanged (500 MATH-500 problems, 1 sample, cap 32768, seed 20261105). Raw:
-`phase3c/p7_uperp_on_loop*.json(.gz)`; unzip the texts to re-run the rescorer.
+`phase3c/p7_uperp_on_loop*.json(.gz)`; the rescorer reads the gzipped texts directly
+(`uv run python phase3c/rescore.py p7_uperp_on_loop`, no unzip needed).
 
 ## Run 1 — practice pass on a new sampling seed (pass_index 2)
 
@@ -249,31 +259,32 @@ unchanged (500 MATH-500 problems, 1 sample, cap 32768, seed 20261105). Raw:
 
 **U1 confirmed: works.** The practice result is not sampling luck.
 
-## Run 2 — MATH-500 final (rescored accuracy, n = 500)
+## Run 2 — MATH-500 final (re-scored 2026-11-24 with the corrected answer checker, ISSUES #19; n = 500)
 
-| model | correct | accuracy | 95% CI | thinking closed | cap-hit |
-|---|---|---|---|---|---|
-| stock | 30 | 6.0% | 4.2–8.4 | 9.8% | 90.6% |
-| random-edit control | 11 | 2.2% | 1.2–3.9 | 4.2% | 95.8% |
-| GLM-Flash (blind LLM editor) | 126 | 25.2% | 21.6–29.2 | 99.0% | 24.0% |
-| mimo-pro (blind LLM editor) | 139 | 27.8% | 24.1–31.9 | 97.6% | 42.0% |
-| **`uperp_on_loop`** | **131** | **26.2%** | **22.5–30.2** | 75.6% | 42.8% |
-| published edit | 197 | 39.4% | 35.2–43.7 | 83.6% | 26.4% |
+| model | correct | accuracy | thinking closed | cap-hit |
+|---|---|---|---|---|
+| stock | 42 | 8.4% | 9.8% | 90.6% |
+| random-edit control | 19 | 3.8% | 4.2% | 95.8% |
+| GLM-Flash (blind LLM editor) | 158 | 31.6% | 99.0% | 24.0% |
+| mimo-pro (blind LLM editor) | 176 | 35.2% | 97.6% | 42.0% |
+| **`uperp_on_loop`** | **163** | **32.6%** | 75.6% | 42.8% |
+| published edit | 243 | 48.6% | 83.6% | 26.4% |
 
 **U2 confirmed: SUCCESS, below the published edit** (the 16.0–33.1 band fixed in advance; my
-point guess 20–35% held). 6.0% → 26.2% is 4.4× stock, +20.2 points.
+point guess 20–35% held). Stock is 8.4%.
 
-Paired against the published edit on the same 500 problems: both right 101, only published
-96, only `uperp_on_loop` 30 → −13.2 points (SE 2.2). It is clearly worse than the published
-edit, and level with the two blind LLM editors.
+Paired against the published edit on the same 500 problems: only published edit 100, only
+`uperp_on_loop` 20 → −16.0 points (95% interval −20.2 to −12.0; SE 2.2). It is clearly worse
+than the published edit. The two blind LLM editors score 31.6% and 35.2%; this file has no
+paired comparison of this arm against them.
 
 ## What this says
 
 1. A weight edit on neurons chosen by OUR activation map (L10+L14, four to five floors
-   below the published site) repairs the model to 26% on the real benchmark. The map's
+   below the published site) repairs the model to 32.6% on the real benchmark. The map's
    neurons are a working site, on the test that counts.
 2. The practice set OVERSTATED it. On 64 GSM8K problems this arm looked level with the
-   published edit (62.5–76.6% closed vs 57.8%); on MATH-500 it is 13 points behind. Practice
+   published edit (62.5–76.6% closed vs 57.8%); on MATH-500 it is 16 points behind. Practice
    passes can rank "works / does nothing"; they cannot rank two working edits.
 3. Caveats fixed in advance still apply: the direction comes from the published edit (this
    is not a from-the-map-alone repair), and the neurons were selected from stock's activity
@@ -344,10 +355,11 @@ SD ≈ 1), so this is the generation-time counterpart of part B.
    Switching it off during generation leaves the loop rate where it was. This is Finding 5's
    pattern again, one unit down: what marks a loop is not what causes it. It touches none of
    the loop lights at or below floor 19, which is most of them (3,186 of 3,682).
-2. **L14 unit 46 was a hub by size, not by wiring — and its light is a prompt-length artefact.**
-   Checked after the run: |activation| ≈ 75 on the first token of every prompt and ≈ 0.11 on
-   every other token (SD 8.2; next-loudest unit on the floor 0.56, floor median 0.06). Its
-   per-question average is ≈ 75 / prompt length, so it "lights up" for any job that goes with
+2. **L14 unit 46 was a hub by size, not by wiring — and its light is a question-length artefact.**
+   Checked after the run: |activation| ≈ 75 on the first token of every benchmark question and
+   ≈ 0.11 on every other token (SD 8.2; next-loudest unit on the floor 0.56, floor median 0.06).
+   Its
+   per-question average is ≈ 75 / question length, so it "lights up" for any job that goes with
    question length. Multiplied into the wire formula, that size makes every one of its wires
    look strong, and none predicts anything. Clamping it does move the lights above it more
    than clamping an ordinary unit, but there is no matched control for a unit that loud.
@@ -370,7 +382,8 @@ Predictions committed first (`d72262a`). "Pruning a unit" = setting its down_pro
 
 ## What there is to prune
 
-`scan_positions.py`, stock model reading the 500 prompts (39,652 positions after the opening):
+`scan_positions.py`, stock model reading the 500 benchmark questions (39,652 positions after
+the opening):
 
 - **Loud but empty** (|activation on token 0| >= 5 and >= 50x its usual size): **2 units of
   86,016** — L14 unit 46 (-75.0 on token 0, 0.13 elsewhere) and L3 unit 0 (-8.5, 0.16).
@@ -440,7 +453,7 @@ pass was due. SE of a difference at n = 64 is about 8 points.
 
 Predictions committed first (`b96374e`). Stock model, forward passes (`knockout_subjects.py` →
 `knockout.json`). Even-index problems chose each subject's 1,000 units (1.2% of all units; the
-ones most MORE active on that subject, prompt length regressed out); the test is the stock
+ones most MORE active on that subject, question length regressed out); the test is the stock
 model's own saved answers to the 250 odd-index problems, first 300 generated tokens each
 (75,000 tokens). "Extra loss" = next-token loss with the units zeroed minus without.
 Selectivity = extra loss on the knocked-out subject's text / mean extra loss on the other six.
@@ -499,6 +512,11 @@ Predictions committed first (`d146c4c`). `stack_full` = published edit plus the
 `build_brake.py --base phase3/models/c3_original_edit`; both differ from the published edit
 only at L10/L14 `down_proj`.
 
+Corrected 2026-11-24: the first `stack_full` final is VOID (a corrupted run, ISSUES #20); the
+same model was rerun clean the same day and scores 46.2% (last row of the finals table). The
+final accuracies below are re-scored with the final answer checker (ISSUES #19; the checker
+was corrected twice that day).
+
 ## Step 0 — is there anything left to fix?
 
 `count_loops.py p3c_c3_original`: 132 of 500 answers hit the token cap; 125 of those (94.7%)
@@ -514,46 +532,94 @@ are loops by the phase-7 detector, onset median 13,250 tokens. Stop rule (<25%) 
 
 Both pass.
 
-## MATH-500 finals (rescored, n = 500, paired with the published edit)
+## MATH-500 finals (re-scored 2026-11-24; n = 500, paired with the published edit)
 
-| model | accuracy | answered | cap-hit | loops among cap-hits | both right | only stacked | only published | difference | SE | verdict |
-|---|---|---|---|---|---|---|---|---|---|---|
-| published edit | 39.4% | 83.2% | 26.4% | 125 / 132 | | | | | | |
-| stack_half | 37.0% | 82.8% | 26.6% | 121 / 133 | 135 | 50 | 62 | −2.4 | 2.1 | no difference |
-| stack_full | 4.4% | 23.6% | 15.2% | 6 / 76 | 19 | 3 | 178 | −35.0 | 2.7 | LOSS |
+| model | accuracy | answered | cap-hit | loops among cap-hits | only stacked | only published | difference | SE | verdict |
+|---|---|---|---|---|---|---|---|---|---|
+| published edit | 48.6% | 83.2% | 26.4% | 125 / 132 | | | | | |
+| stack_half | 44.8% | 82.8% | 26.6% | 121 / 133 | 39 | 58 | −3.8 (95% interval −7.6 to 0.2) | 2.0 | no difference |
+| stack_full, first run | VOID — a corrupted run (ISSUES #20) | — | — | — | — | — | — | — | void |
+| stack_full, clean rerun (2026-11-24) | 46.2% | 84.4% | 14.0% | — | 30 | 42 | −2.4 (95% interval −5.8 to 0.8) | 1.7 | no difference |
 
-`stack_full` does not loop; it falls apart. 453 of its 500 answers end in word fragments
-("ylim", "alem", "illis", "ython" … at least 10 in the last 3,000 characters; 0 of 500 for
-`stack_half`). The answers start as normal reasoning and degrade partway through. Engine log
-clean, exit 0, no retry used.
+**The first `stack_full` final is VOID — a corrupted run, not a measurement of the model
+(ISSUES #20, 2026-11-24).** Its score was 4.4% as first recorded and is 6.4% after re-scoring;
+neither is a result. Evidence from the saved generations: 460 of the 500 (92.0%) break into
+fragments of several scripts, and whether a generation was corrupted depends on the request's
+position in the batch, which a property of the model cannot know. Counted with the first
+corrected checker of that day (when the run read 5.0% in all), the first 287 requests (the
+first wave the engine admitted) were 8.7% correct (25 of 287) and the last 213 were 0.0% (0 of
+213; exact test, p = 7.6e-7); among the other 25 saved 500-problem runs the same split never
+reaches p = 0.6. Under the final checker the dependence is still there: all 32 right answers
+fall among the first 266 requests, and the validity check recorded in the result file
+(`phase3c/runcheck.py`; `phase3c/p7_stack_full_rescored.json`) reads 12.0% correct in the
+first half of the rows against 0.8% in the second half (Fisher exact test, p = 1.1e-7). The
+same model's 64-problem practice pass the same day scored 40.6%. The engine log showed
+nothing. The cause is not isolated (an engine-and-model interaction under late
+admissions is the standing suspicion; ISSUES #13 records the same signature in a voided
+phase-5 run). The first run stays void with this evidence unchanged; its clean rerun of
+2026-11-24 scores 46.2%, so the "collapse at full dose" recorded on 2026-11-14 was the
+corrupted run, not the model.
+
+**Rerun 2026-11-24: the model is not broken — 46.2%.** The voided run's model (published edit
+plus the map's L10+L14 repair at dose 1.0; files rebuilt and verified equal to the intended
+change) was rerun under the current runner as `p7_stack_full_v2` (`phase3c/p7_stack_full_v2.json`,
+`_texts.json.gz`, `_rescored.json`; log `phase3c/logs/p7_stack_full_v2.log`; 2 hours 08 minutes
+of GPU). It scores 46.2% (231 of 500); an answer was read in 84.4%; 70 of 500 hit the cap
+(14.0%); 426 of 500 closed their thinking; mean 18,146 tokens. The validity checks are clean:
+fragment tails 0.0%; first half of the requests 46.8% right against 45.6% for the second half
+(p = 0.86); closed 84.4% against 86.0% (p = 0.71); finished 85.6% against 86.4% (p = 0.90).
+Paired with the published edit (48.6%): −2.4 points (95% interval −5.8 to 0.8; 30 problems
+right only under the stacked model, 42 only under the published edit, 201 under both; p = 0.195;
+SE 1.7) — no real difference, by the registered rule. Against the half-dose stack (44.8%):
++1.4 (interval −2.6 to 5.4; 55 only full, 48 only half; p = 0.56). Against the map repair
+alone (32.6%): +13.6 (interval 9.6 to 17.6; 90 against 22). Against stock (8.4%): +37.8
+(interval 33.4 to 42.4; 194 against 5).
+
+The readings recorded on 2026-11-14 describe that corrupted run, not the model, and are
+withdrawn: "`stack_full` does not loop; it falls apart"; 453 of its 500 answers ending in word
+fragments ("ylim", "alem", "illis", "ython" … at least 10 in the last 3,000 characters; 0 of
+500 for `stack_half`); answers that start as normal reasoning and degrade partway through;
+and the pairing "19 both right, 3 only stacked, 178 only published, −35.0 points, SE 2.7,
+LOSS". As recorded then, the engine log was clean (exit 0, no retry used).
 
 ## Verdicts
 
 - **V0** (≥ 60% of the published edit's cap-hits are loops): **holds** — 94.7%.
 - **V1** (both pass the practice gate): **holds**.
-- **V2** (`stack_full` not a WIN, accuracy 33–42%): first half **holds**, range **fails** —
-  4.4%, a collapse nobody predicted.
-- **V3** (`stack_half` 38–44%, at or above `stack_full`): range **fails** by one point
-  (37.0%); ordering **holds**.
-- **V4** (about 1 in 4 that either is a WIN): no WIN.
+- **V2** (`stack_full` not a WIN, accuracy 33–42%): **not a WIN — holds** (−2.4 points, SE
+  1.7: no real difference); the range **does not hold** (46.2% is above 33–42%). (Recorded on
+  2026-11-14 as "first half holds, range fails — a collapse nobody predicted", on the
+  corrupted run; that reading was withdrawn 2026-11-24, ISSUES #20, and the prediction is
+  scored on the clean rerun.)
+- **V3** (`stack_half` 38–44%, at or above `stack_full`): **does not hold on both counts.**
+  The range: 44.8% is above the band's upper end of 44% (37.0% as first reported, one point
+  under the band; 40.8%, inside the band, after the first checker correction of that day).
+  "At or above `stack_full`": 44.8% is below the rerun's 46.2%, though the two doses are not
+  distinguishable (+1.4, interval −2.6 to 5.4).
+- **V4** (about 1 in 4 that either is a WIN): **neither model is a WIN** (−3.8, SE 2.0, at
+  half dose; −2.4, SE 1.7, at full dose: no real difference either way).
 
 ## What this says
 
-1. The map's repair does not add to the published edit. At half strength it changes which
-   problems are solved (50 gained, 62 lost) but not how many, and the loop count is untouched
-   (121 vs 125).
-2. At full strength the two edits together break the model on long answers. Each alone is
-   safe (39.4% and 26.2%); the direction is the published edit's own, so stacking applies
-   roughly twice the push along it.
-3. The practice pass missed the collapse completely (40.6% accuracy). Its answers are short;
-   the damage shows only thousands of tokens in. Practice is a weaker safety gate than
-   assumed for edits that degrade with length.
+1. The map's repair does not add to the published edit at half strength. It changes which
+   problems are solved (39 gained, 58 lost) but not how many (difference −3.8 points, 95%
+   interval −7.6 to 0.2), and the loop count is untouched (121 vs 125).
+2. Nor at full strength. The rerun scores 46.2% against the published edit's 48.6% (−2.4
+   points, 95% interval −5.8 to 0.8) and against the half dose's 44.8% (+1.4, interval −2.6 to
+   5.4). So the stacking conclusion holds for both doses: the map repair adds nothing on top of
+   the published edit at either dose (−3.8 at half, −2.4 at full, neither distinguishable from
+   zero) and costs nothing detectable. The "collapse at full dose" recorded on 2026-11-14 was
+   the corrupted run, not the model.
+3. Nothing here tests practice passes as a safety gate: both models passed the practice gate
+   (`stack_full` 40.6% and `stack_half` 39.1% on 64 problems) and both clean finals scored
+   46.2% and 44.8%, so this addendum has no case of a model that passes practice and then
+   fails a valid final. (Until 2026-11-24 items 2 and 3 read the void final as the model
+   breaking on long answers, unseen by short practice answers.)
 
 ## Not run
 
 - Doses between 0.5 and 1.0, or below 0.5. Choosing a dose on these 500 problems would be
   tuning on the judging set.
-- Where in an answer `stack_full` starts to degrade (token position of the first fragments).
 - A second sampling seed for either final.
 
 ---
