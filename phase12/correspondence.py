@@ -4,12 +4,17 @@ Reads atlas_qwen.json + atlas_gemma.json (probe_atlas.py outputs) and the
 committed behavioral measurements; writes correspondence.json and prints the
 verdict. Bars are pre-registered in phase12/protocol.md — do not adjust here.
 
+The label this prints is the registered rule applied literally. phase12/results.md
+explains why that label does not establish correspondence (ISSUES #21); read the two
+together.
+
 Usage (any python with numpy/scipy):
   python correspondence.py
 """
 
 import json
 import random
+import sys
 from pathlib import Path
 
 import numpy as np
@@ -52,12 +57,40 @@ def main():
                      passed=bool(c1_pass))
 
     # ---- C2: termination-row fingerprint ----
-    # behavioral: qwen = stock vs original-edit terminations (phase-3c cross-check);
-    # gemma = editor pass-1 vs pass-2 cap-hit (phase-11, identical scorer class)
+    # behavioral, as registered: Qwen = the x1.5 row edit ("x1.5 dose (phase 4/5 tables)"),
+    # Gemma = attempt 1's pass 2. The attempt-1 files are pinned copies under
+    # phase11/editor_a2_attempt1/: the top-level phase11/ed_pass*.json were overwritten by
+    # later attempts (ISSUES #21).
     q_stock = json.loads((P3C / "p3c_stock_rescored.json").read_text())["summary"]
-    q_edit = json.loads((P3C / "p3c_c3_original_rescored.json").read_text())["summary"]
-    g_base = json.loads((P11 / "ed_pass1.json").read_text())["summary"]
-    g_boost = json.loads((P11 / "ed_pass2.json").read_text())["summary"]
+    q_edit = json.loads((P3C / "p4_mimo_rescored.json").read_text())["summary"]
+    g_base = json.loads((P11 / "editor_a2_attempt1" / "ed_pass1.json").read_text())["summary"]
+    g_boost = json.loads((P11 / "editor_a2_attempt1" / "ed_pass2.json").read_text())["summary"]
+
+    def refuse(reason, **record):
+        """Write an error record in place of a verdict and stop: nothing is computed on bad inputs."""
+        (HERE / "correspondence.json").write_text(json.dumps(dict(status="error", reason=reason, **record),
+                                                           indent=1))
+        sys.exit(f"correspondence.py: {reason}; nothing computed")
+
+    flagged = [f"{label}: {p}" for label, s in (("p3c_stock_rescored", q_stock), ("p4_mimo_rescored", q_edit),
+                                                ("editor_a2_attempt1/ed_pass1", g_base),
+                                                ("editor_a2_attempt1/ed_pass2", g_boost))
+               for p in (s.get("validity") or {}).get("problems") or []]
+    if flagged:     # an input that failed a validity check is not a measurement (ISSUES #20)
+        refuse("an input failed its validity check", problems=flagged)
+    if (g_base["cap_hit_rate"], g_boost["cap_hit_rate"]) != (98.4, 42.2):
+        refuse("not attempt 1's passes 1 and 2 (protocol: cap-hit 98.4 -> 42)",
+               gemma_pass1_cap_hit=g_base["cap_hit_rate"], gemma_pass2_cap_hit=g_boost["cap_hit_rate"])
+    # every input the rule below reads, as read (the files' own records say which extractor scored them)
+    out["inputs"] = dict(
+        qwen_stock=dict(file="p3c_stock_rescored.json", cap_hit_rate=q_stock["cap_hit_rate"],
+                        accuracy=q_stock["accuracy"], rescored_with=q_stock.get("rescored_with")),
+        qwen_x1_5_row_edit=dict(file="p4_mimo_rescored.json", cap_hit_rate=q_edit["cap_hit_rate"],
+                                accuracy=q_edit["accuracy"], rescored_with=q_edit.get("rescored_with")),
+        gemma_attempt1_pass1=dict(file="editor_a2_attempt1/ed_pass1.json", cap_hit_rate=g_base["cap_hit_rate"],
+                                  accuracy=g_base["accuracy"], rescored_with=g_base.get("rescored_with")),
+        gemma_attempt1_pass2=dict(file="editor_a2_attempt1/ed_pass2.json", cap_hit_rate=g_boost["cap_hit_rate"],
+                                  accuracy=g_boost["accuracy"], rescored_with=g_boost.get("rescored_with")))
 
     def term_metrics(base_cap, boost_cap, base_acc, boost_acc):
         rel = (base_cap - boost_cap) / base_cap            # cap-hit reduction = termination recovery

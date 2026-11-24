@@ -10,7 +10,7 @@ from pathlib import Path
 
 import numpy as np
 
-from analyze_saved import ARMS, load, paired, second_grade
+from analyze_saved import ARMS, load, paired, second_grade, validity_problems
 
 HERE = Path(__file__).resolve().parent
 COMPARE = [("b1", "E1"), ("b1", "O"), ("b3", "b1"), ("b2", "b1"), ("c1_final", "E1"),
@@ -24,8 +24,10 @@ def arm(name):
     if name in ARMS:
         rows, texts = load(ARMS[name])
     else:
-        rows = json.loads((HERE / f"{name}.json").read_text())["rows"]
-        texts = json.loads(gzip.open(HERE / f"{name}_texts.json.gz", "rt", encoding="utf-8").read())
+        run = json.loads((HERE / f"{name}.json").read_text())
+        problems = validity_problems(run, name)
+        assert not problems, f"{problems} (ISSUES #20: a run that failed or lacks a check is not a measurement)"
+        rows, texts = run["rows"], json.loads(gzip.open(HERE / f"{name}_texts.json.gz", "rt", encoding="utf-8").read())
     return (np.array([bool(r["ok_rescored"]) for r in rows]),
             np.array([bool(second_grade(r["gold"], texts[r["id"]])) for r in rows]))
 

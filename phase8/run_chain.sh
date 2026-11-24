@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # Phase 8 GPU arms, protocol order: integrity probes -> B -> C1 opening grid -> C2 -> D.
 # Run inside WSL: bash phase8/run_chain.sh   (finished arms are skipped on re-run)
+# The chain ran once, on 2026-11-23/24, and every arm then passed phase3c/runcheck.py. If it is
+# reused: a runner exit of 2 (a failed validity check) only prints "FAILED <name>" and leaves the
+# result file, which the skip test then treats as finished — read each arm's "validity" record.
 cd "$(dirname "$0")" || exit 1
 PY=$HOME/wsp3c-venv/bin/python
 S=$HOME/wsp3c/stock; E1=$HOME/wsp3c/p4_mimo_pro; O=$HOME/wsp3c/c3_original_edit

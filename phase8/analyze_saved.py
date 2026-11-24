@@ -22,8 +22,22 @@ ARMS = dict(S="p3c_stock", O="p3c_c3_original", E1="p4_mimo_pro", E2="p4_glmflas
 PAIRS = [("E1", "S"), ("E1", "O"), ("E2", "E1"), ("O", "S")]
 
 
+def validity_problems(data, name):
+    """Why a run is not a measurement: its recorded problems, or a check that is not on record."""
+    v = data["summary"].get("validity") or {}
+    problems = list(v.get("problems") or [])
+    if not v.get("soup_judged"):
+        problems.append("no fragment-tail check on record")
+    if not v.get("admission_tested"):
+        problems.append("no batch-position check on record")
+    return [f"{name}: {p}" for p in problems]
+
+
 def load(name):
-    rows = json.loads((P3C / f"{name}_rescored.json").read_text())["rows"]
+    data = json.loads((P3C / f"{name}_rescored.json").read_text())
+    problems = validity_problems(data, name)
+    assert not problems, f"{problems} (ISSUES #20: a run that failed or lacks a check is not a measurement)"
+    rows = data["rows"]
     plain = P3C / f"{name}_texts.json"
     texts = json.loads(plain.read_text() if plain.exists()
                        else gzip.open(f"{plain}.gz", "rt", encoding="utf-8").read())
