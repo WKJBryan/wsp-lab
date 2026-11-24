@@ -35,10 +35,22 @@
 >   `phase14/test_save_edit.py` (36 tests) covers the edit checker. One clause was added to
 >   `EDITOR_PROMPT.md` so the editor can read the summary: `pass` counts every attempt, refunded
 >   ones included; `remaining` is the budget left.
-> - **Cost correction.** On this machine one sequence needs about 40 minutes to reach the
->   32,768-token cap, whatever the batch size, so nearly every practice pass takes about 40
->   minutes: fifteen passes are up to about 10 GPU-hours, not the 2 to 3 first estimated, plus
->   two finals of up to 50 minutes each.
+> - **Cost.** With the machine otherwise idle, four sequences reach the 32,768-token cap in
+>   2 minutes 41 seconds (the technical check below); with all 500 requests of a final in
+>   flight each gets about 10 to 16 tokens a second, so a final takes 30 to 50 minutes. A
+>   128-problem pass lies between the two: a few minutes when few generations run long, up to
+>   about half an hour when most reach the cap. Fifteen passes and two finals are therefore
+>   estimated at 3 to 6 GPU-hours on an idle machine (first estimate 2 to 3). While the
+>   machine's processor is busy the engine slows several-fold — the phase-7 rerun of
+>   2026-11-24 took 2 hours 08 minutes for a run that takes 30 minutes when idle — so nothing
+>   else should run on the machine during a pass.
+> - **Technical check (2026-11-25, 01:48; the protocol has it run before the session, and its
+>   outcome sets nothing).** Four practice problems on the unmodified model under the full
+>   protocol: exit status 0; one pass charged; the ledger holds a row for the hypothesis and
+>   one for the outcome; all four generations ran to the cap; the texts and the summary were
+>   written; the summary's base fingerprint and tool digest equal `sandbox_manifest.json`
+>   (`36d3430c…`, `dc620d42f6aef7a1`). The ledger and counter were then reset: the sandbox
+>   holds no pass, and the evidence is kept outside it.
 
 Committed BEFORE any editor session and before any practice pass (2026-11-24). Do not edit after
 the session begins; deviations go to ISSUES.md.
