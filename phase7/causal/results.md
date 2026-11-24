@@ -538,6 +538,7 @@ Both pass.
 |---|---|---|---|---|---|---|---|---|---|
 | published edit | 48.6% | 83.2% | 26.4% | 125 / 132 | | | | | |
 | stack_half | 44.8% | 82.8% | 26.6% | 121 / 133 | 39 | 58 | −3.8 (95% interval −7.6 to 0.2) | 2.0 | no difference |
+| stack_half, rerun (2026-11-25) | 45.6% | 85.2% | 24.2% | — | 37 | 52 | −3.0 (p = 0.137) | 1.9 | no difference |
 | stack_full, first run | VOID — a corrupted run (ISSUES #20) | — | — | — | — | — | — | — | void |
 | stack_full, clean rerun (2026-11-24) | 46.2% | 84.4% | 14.0% | — | 30 | 42 | −2.4 (95% interval −5.8 to 0.8) | 1.7 | no difference |
 
@@ -575,6 +576,15 @@ SE 1.7) — no real difference, by the registered rule. Against the half-dose st
 alone (32.6%): +13.6 (interval 9.6 to 17.6; 90 against 22). Against stock (8.4%): +37.8
 (interval 33.4 to 42.4; 194 against 5).
 
+**The half-dose model was rerun the same way** (`p7_stack_half_v2`, 2026-11-25;
+`phase3c/p7_stack_half_v2.json`, `_texts.json.gz`, `_rescored.json`; 29 minutes of GPU) and
+scores 45.6% (228 of 500), with both validity checks clean (fragment tails 0.0%; first half of
+the requests 44.4% right against 46.8% for the second half, p = 0.65). Against its first run,
+37 problems are right only in the rerun and 33 only in the first run (p = 0.72), so the same
+model reproduces within noise; against the full-dose rerun it is −0.6 points (43 only full, 40
+only half; p = 0.83). With both doses measured under one engine setting, half and full strength
+are indistinguishable.
+
 The readings recorded on 2026-11-14 describe that corrupted run, not the model, and are
 withdrawn: "`stack_full` does not loop; it falls apart"; 453 of its 500 answers ending in word
 fragments ("ylim", "alem", "illis", "ython" … at least 10 in the last 3,000 characters; 0 of
@@ -609,7 +619,8 @@ LOSS". As recorded then, the engine log was clean (exit 0, no retry used).
    5.4). So the stacking conclusion holds for both doses: the map repair adds nothing on top of
    the published edit at either dose (−3.8 at half, −2.4 at full, neither distinguishable from
    zero) and costs nothing detectable. The "collapse at full dose" recorded on 2026-11-14 was
-   the corrupted run, not the model.
+   the corrupted run, not the model. A rerun of the half dose under the same engine settings as
+   the full dose (45.6%) confirms the ordering within noise.
 3. Nothing here tests practice passes as a safety gate: both models passed the practice gate
    (`stack_full` 40.6% and `stack_half` 39.1% on 64 problems) and both clean finals scored
    46.2% and 44.8%, so this addendum has no case of a model that passes practice and then

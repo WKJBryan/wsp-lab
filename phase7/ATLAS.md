@@ -428,7 +428,7 @@ numbers: nudge check 113 of 127 same direction, r 0.93, median measured/predicte
 105 of 122, r 0.785, 0.47). The reading-job hub tests in `hubs.json` were run on the old wire
 lists and are no longer shown; the loop job is unchanged.
 
-## Finding 25 — stacking the map's repair on the published edit gives no gain at half or full dose [measured, 2 finals + 1 void run, n = 500; corrected 2026-11-24, ISSUES #19, #20]
+## Finding 25 — stacking the map's repair on the published edit gives no gain at half or full dose [measured, 3 finals + 1 void run, n = 500; corrected 2026-11-24, ISSUES #19, #20]
 
 Predictions committed first (`d146c4c`); full tables in `causal/results.md`. Reason to try:
 94.7% of the published edit's capped answers (125 of 132) are still loops, and the map's
@@ -471,6 +471,9 @@ right against 45.6% for the second half (p = 0.86). Paired with the published ed
 −2.4 points (95% interval −5.8 to 0.8; 30 problems right only under the stacked model, 42
 only under the published edit; SE 1.7) — no real difference. Against the half dose (44.8%):
 +1.4 (interval −2.6 to 5.4). Full numbers in `causal/results.md`.
+
+The half-dose model, rerun under the same engine settings (2026-11-25), scores 45.6% against
+its first run's 44.8% (p = 0.72) and the full dose's 46.2%.
 
 Conclusion of the stacking test: stacking the map's repair on the published edit gives no gain
 at either dose (−3.8 points at half dose, −2.4 at full dose; neither distinguishable from

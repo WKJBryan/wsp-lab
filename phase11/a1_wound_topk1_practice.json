@@ -15,7 +15,7 @@
    "admission_tested": false,
    "problems": []
   },
-  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)"
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#4a1b56a343a4 (ISSUES #19)"
  },
  "rows": [
   {

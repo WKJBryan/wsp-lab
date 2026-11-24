@@ -17,14 +17,19 @@ Standard library only. Usage (from the repository root):
   python -B -m unittest -v phase3c/test_rescore.py
 """
 
+import contextlib
 import gzip
+import io
 import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))  # the way rescore.py itself reaches phase3b
+import rescore  # noqa: E402
 from rescore import answers_match, canonical, clean, extract_answer  # noqa: E402
 
 RUN = "p3c_c3_original"  # <RUN>_texts.json.gz holds the generations, <RUN>.json the gold
@@ -262,6 +267,27 @@ class RealAnswerLineTest(unittest.TestCase):
 
     def test_a_text_command_inside_the_span_gives_its_content(self):
         self.assert_extracts_gold('we reason here</think>\n**Answer:**\n$\\text{even}$', 'even')
+
+
+class RescoreRunTest(unittest.TestCase):
+    """rescore(): a whole run file re-scored from the generations beside it"""
+
+    def test_a_run_that_records_no_cap_hit_rate_is_re_scored_with_none(self):
+        # runs made by the phase-8 runner carry no cap-hit rate in their summary
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            run = dict(summary=dict(name="x", mean_tokens=12), rows=[dict(id="m0", gold="7")])
+            (tmp / "x.json").write_text(json.dumps(run), encoding="utf-8")
+            (tmp / "x_texts.json").write_text(json.dumps({"m0": "we think</think>\nThe answer is $7$."}), encoding="utf-8")
+            with mock.patch.object(rescore, "__file__", str(tmp / "rescore.py")):   # rescore() works beside itself
+                printed = io.StringIO()
+                with contextlib.redirect_stdout(printed):
+                    problems = rescore.rescore("x")
+            out = json.loads((tmp / "x_rescored.json").read_text(encoding="utf-8"))
+        self.assertEqual(problems, [])
+        self.assertEqual((out["summary"]["accuracy"], out["summary"]["cap_hit_rate"], out["rows"][0]["ok_rescored"]),
+                         (100.0, None, True))
+        self.assertEqual(out["summary"]["rescored_with"], rescore.RESCORED_WITH)
 
 
 if __name__ == "__main__":

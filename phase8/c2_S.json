@@ -21,7 +21,7 @@
   "finished": 38.2,
   "mean_tokens": 29676,
   "wall_s": 437.1,
-  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#4a1b56a343a4 (ISSUES #19)",
   "validity": {
    "soup_pct": 0.2,
    "soup_judged": true,

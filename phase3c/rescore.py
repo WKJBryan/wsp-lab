@@ -214,7 +214,8 @@ def rescore(name: str, no_think: bool = False):
     summary = dict(name=f"{name}_rescored", n=n,
                    accuracy=round(correct / n * 100, 1),
                    answered=round(answered / n * 100, 1),
-                   cap_hit_rate=run["summary"]["cap_hit_rate"],
+                   # a run made by the phase-8 runner records no cap-hit rate
+                   cap_hit_rate=run["summary"].get("cap_hit_rate"),
                    mean_tokens=run["summary"]["mean_tokens"],
                    rescored_with=RESCORED_WITH,
                    validity=dict(validity, problems=problems))

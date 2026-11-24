@@ -12,7 +12,7 @@
   "accuracy": 47.5,
   "accuracy_at_run_time": 38.2,
   "cap_hit_rate": 26.6,
-  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#4a1b56a343a4 (ISSUES #19)",
   "validity": {
    "per_sample": {
     "s0": {
