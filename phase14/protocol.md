@@ -1,5 +1,45 @@
 # Pre-registered protocol — Phase 14: the blind editor under the original authors' rules
 
+> Note added 2026-11-24, before the editor session (no pass has been run). The setup, rules,
+> endpoints and predictions below are unchanged. Three things are recorded so that the session
+> starts from an accurate statement:
+> - **The standing bars moved with the stock score.** They are defined against stock, which the
+>   final answer checker reads at 8.4% (ISSUES #19), so "at least stock + 10.0 points" means at
+>   least 18.4%. The published edit comparator is 48.6%. (The 7.0% and 43.8% written below were
+>   the values of the protocol's first re-score.)
+> - **The evaluation tool had never been run when this protocol was committed.** It contained a
+>   syntax error on the line that prints its result, and looked for the base model's fingerprint
+>   in the wrong folder. Both were found by a no-GPU dry run against a fake engine and fixed
+>   before the first pass, together with what two independent reviews of the tool found. What
+>   the tool does now, none of it changing a rule, an endpoint or a prediction below:
+>   - the pass is charged only once the tool holds the GPU lock, so a tool killed while it waits
+>     has charged nothing and two tools cannot charge against each other; an interrupted pass is
+>     refunded and its ledger row says so;
+>   - the texts are written the moment generation returns; every attempt has its own number and
+>     its own file (`gen_<attempt>.jsonl`), refunded ones included, and an outcome row in the
+>     ledger (MEASURED, FAILED or INTERRUPTED);
+>   - a run that fails the batch-position check of `phase3c/runcheck.py` is not a measurement of
+>     the candidate (that is the engine's doing, ISSUES #20): the pass is refunded and the summary
+>     is kept for the audit but not reported. A run whose generations end in fragments is charged
+>     and reported with that finding: fragments are the candidate's own output;
+>   - the candidate is fingerprinted again under the lock just before the engine loads it, and the
+>     fingerprint covers every file of the directory;
+>   - the edit checker treats every non-weight file of the base model as fixed (config, tokenizer,
+>     chat template, the shard index), refuses a tensor that appears in two weight files, and
+>     issues a receipt for a candidate whose tensors equal the base's although its files differ;
+>   - the tool checks its own files against digests recorded when the sandbox was built, and
+>     every summary carries the base model's fingerprint and a digest of the tools, to be
+>     compared with `phase14/sandbox_manifest.json` after the session;
+>   - `--n` must be between 1 and 128.
+>   `phase14/test_eval_pass.py` (23 tests) runs the real tool end to end against a fake engine;
+>   `phase14/test_save_edit.py` (36 tests) covers the edit checker. One clause was added to
+>   `EDITOR_PROMPT.md` so the editor can read the summary: `pass` counts every attempt, refunded
+>   ones included; `remaining` is the budget left.
+> - **Cost correction.** On this machine one sequence needs about 40 minutes to reach the
+>   32,768-token cap, whatever the batch size, so nearly every practice pass takes about 40
+>   minutes: fifteen passes are up to about 10 GPU-hours, not the 2 to 3 first estimated, plus
+>   two finals of up to 50 minutes each.
+
 Committed BEFORE any editor session and before any practice pass (2026-11-24). Do not edit after
 the session begins; deviations go to ISSUES.md.
 

@@ -4,7 +4,9 @@ An edit is ACCEPTED only if
   * every tensor of the base model is present with the same shape and dtype, and none is added;
   * no protected tensor changed: the final norm, the input embedding, the output layer;
   * no changed tensor is only a constant multiple of the original (zeroing included);
-  * the config, tokenizer and chat-template files are byte-identical to the base's.
+  * the config, tokenizer and chat-template files — every non-weight file of the base — are
+    byte-identical to the base's, and none was added;
+  * no tensor appears in two weight files;
 On acceptance the checker writes state/receipts/<fingerprint>.json, which eval_pass.py requires
 before it spends a pass. On refusal nothing is written and the exit status is 1.
 
@@ -29,6 +31,8 @@ HERE = Path(__file__).resolve().parent          # the sandbox's harness/ folder
 BASE = HERE.parent / "base_model"
 RECEIPTS = HERE / "state" / "receipts"
 PROTECTED = ("embed_tokens.weight", "lm_head.weight", "language_model.norm.weight")
+# the files a checkpoint of this kind carries besides its weights. The checker goes further and
+# treats every non-weight file of the base model as fixed (see other_files).
 FIXED_FILES = ("config.json", "generation_config.json", "tokenizer.json", "tokenizer_config.json",
                "chat_template.jinja", "preprocessor_config.json", "video_preprocessor_config.json")
 REL_TOL = 1e-2      # bf16 rounding of a rescaled tensor: up to 0.4% of its largest entry
@@ -36,21 +40,34 @@ MIN_SCALE = 1e-3    # a factor within this of 1.0 is not a rescaling
 
 
 def tensors_in(model_dir):
-    """{tensor name: tensor} over every safetensors shard of a model directory."""
+    """{tensor name: tensor} over every safetensors shard of a model directory. A tensor that
+    appears in two shards is an error: the engine would load one of the two copies, and the checker
+    must not silently have compared the other."""
     out = {}
     for shard in sorted(Path(model_dir).glob("*.safetensors")):
         with safe_open(shard, framework="pt", device="cpu") as f:
             for key in f.keys():
+                if key in out:
+                    raise ValueError(f"tensor {key} appears in two weight files ({Path(model_dir).name})")
                 out[key] = f.get_tensor(key)
     return out
 
 
+def other_files(model_dir):
+    """Every file of a model directory that is not a weight shard — config, tokenizer, chat
+    template, the shard index — as paths relative to the directory."""
+    root = Path(model_dir)
+    return {p.relative_to(root).as_posix() for p in root.rglob("*") if p.is_file() and p.suffix != ".safetensors"}
+
+
 def fingerprint(model_dir):
-    """One digest for the exact weight files of a model directory."""
+    """One digest for the exact content of a model directory: every file, by name and by bytes
+    (weights, their index, config, tokenizer, chat template). A receipt therefore covers the whole
+    directory, and an edit to a fixed file made after the check is caught by the next fingerprint."""
     h = hashlib.sha256()
-    for shard in sorted(Path(model_dir).glob("*.safetensors")):
-        h.update(shard.name.encode())
-        with shard.open("rb") as f:
+    for path in sorted(p for p in Path(model_dir).rglob("*") if p.is_file()):
+        h.update(str(path.relative_to(model_dir)).encode())
+        with path.open("rb") as f:
             for block in iter(lambda: f.read(1 << 24), b""):
                 h.update(block)
     return h.hexdigest()
@@ -73,11 +90,21 @@ def check_model(base_dir, cand_dir):
     """(problems, changed): why the candidate is refused (empty list = accepted), and what changed."""
     problems, changed = [], []
     base_dir, cand_dir = Path(base_dir), Path(cand_dir)
-    for name in FIXED_FILES:
-        b, c = base_dir / name, cand_dir / name
-        if b.exists() and (not c.exists() or b.read_bytes() != c.read_bytes()):
-            problems.append(f"{name} differs from the base: the config, tokenizer and chat template are fixed")
-    base, cand = tensors_in(base_dir), tensors_in(cand_dir)
+    # every non-weight file of the base is fixed: it must be present and byte-identical, and the
+    # candidate may add none (a chat template or a shard index the base does not have)
+    base_other, cand_other = other_files(base_dir), other_files(cand_dir)
+    for rel in sorted(base_other | cand_other):
+        b, c = base_dir / rel, cand_dir / rel
+        if rel not in base_other:
+            problems.append(f"{rel} was added: the config, tokenizer and chat template are fixed")
+        elif not c.exists():
+            problems.append(f"{rel} is missing: the config, tokenizer and chat template are fixed")
+        elif b.read_bytes() != c.read_bytes():
+            problems.append(f"{rel} differs from the base: the config, tokenizer and chat template are fixed")
+    try:
+        base, cand = tensors_in(base_dir), tensors_in(cand_dir)
+    except ValueError as e:   # one tensor under two shards: nothing below can be trusted
+        return problems + [f"{e}: each tensor may live in one weight file only"], changed
     if not base or not cand:
         return problems + ["no safetensors tensors found in the base or the candidate"], changed
     for name in sorted(set(base) | set(cand)):
@@ -119,13 +146,16 @@ def main():
             print("  -", p)
         sys.exit(1)
     fp = fingerprint(cand)
-    if not changed:
+    if fp == fingerprint(BASE):
         print(f"ACCEPTED: identical to the base model (fingerprint {fp[:16]})")
         return
     RECEIPTS.mkdir(parents=True, exist_ok=True)
     (RECEIPTS / f"{fp}.json").write_text(json.dumps(
         dict(time=time.strftime("%Y-%m-%dT%H:%M:%S"), fingerprint=fp, note=args.note,
              changed_tensors=changed), indent=1))
+    if not changed:   # the same tensors in other bytes: the evaluator needs a receipt all the same
+        print(f"ACCEPTED: no tensor differs from the base model; receipt issued for fingerprint {fp[:16]}")
+        return
     print(f"ACCEPTED: {len(changed)} tensor(s) changed; receipt issued for fingerprint {fp[:16]}")
     for c in changed:
         print(f"  {c['tensor']}: {c['changed_values']} values, largest change {c['max_abs_delta']}, "

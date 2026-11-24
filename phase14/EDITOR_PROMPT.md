@@ -61,7 +61,8 @@ problems and the same seed every pass, so passes can be compared problem by prob
 runs only the first 64) and prints a summary JSON: `accuracy_boxed` (the graded rule),
 `accuracy_rescore` (a second answer extractor, for reference), `closed` (share that closed its
 thinking), `cap_hit_rate` (share cut at 32,768 tokens), `mean_tokens`, `by_level` (correct and
-total per difficulty level), `remaining`. Texts, extracted answers and grades of every problem
+total per difficulty level), `pass` (this attempt's number; it counts every attempt, refunded
+ones included), `remaining`. Texts, extracted answers and grades of every problem
 are written to `~/wsp14/sandbox/harness/state/gen_<pass number>.jsonl`. A pass that fails for a
 technical reason is refunded. Spend pass 1 on the unmodified model.
 
