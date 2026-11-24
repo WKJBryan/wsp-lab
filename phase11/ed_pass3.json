@@ -8,7 +8,14 @@
   "mean_tokens": 1091.5,
   "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
   "model": "/home/user/wsp11/sandbox/model",
-  "fp8": false
+  "fp8": false,
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "validity": {
+   "soup_pct": 39.1,
+   "soup_judged": false,
+   "admission_tested": false,
+   "problems": []
+  }
  },
  "rows": [
   {
@@ -398,7 +405,7 @@
   {
    "id": "m48",
    "gold": "\\frac{3}{2}",
-   "pred": "\\frac{3}{3}(incorrecttypoology...)",
+   "pred": "\\frac{3}{3}",
    "ok": false,
    "n_tokens": 211,
    "cap_hit": false

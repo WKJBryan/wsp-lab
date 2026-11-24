@@ -13,11 +13,33 @@
    "force_from": null,
    "gmu": 0.92
   },
-  "accuracy": 28.8,
+  "accuracy": 31.8,
   "answered": 99.6,
   "finished": 99.4,
   "mean_tokens": 10012,
-  "wall_s": 660.8
+  "wall_s": 660.8,
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "validity": {
+   "soup_pct": 0.4,
+   "soup_judged": true,
+   "admission_tested": true,
+   "admission_finished": [
+    100.0,
+    98.8,
+    0.2485
+   ],
+   "admission_closed": [
+    36.0,
+    37.6,
+    0.7809
+   ],
+   "admission_correct": [
+    30.8,
+    32.8,
+    0.701
+   ],
+   "problems": []
+  }
  },
  "prompt0": "<|im_start|>user\nConvert the point $(0,3)$ in rectangular coordinates to polar coordinates.  Enter your answer in the form $(r,\\theta),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
  "rows": [
@@ -48,8 +70,8 @@
    "n_tokens": 606,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "f(-2)+f(-1)+f(0)",
-   "ok_rescored": false
+   "pred_rescored": "\\frac{14}{3}",
+   "ok_rescored": true
   },
   {
    "id": "m3",
@@ -228,8 +250,8 @@
    "n_tokens": 368,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "9",
-   "ok_rescored": false
+   "pred_rescored": "6+9i",
+   "ok_rescored": true
   },
   {
    "id": "m21",
@@ -298,7 +320,7 @@
    "n_tokens": 9932,
    "closed": true,
    "think_end_at": 9483,
-   "pred_rescored": "theprofitfortheclasswas\\mathbf{2,976}",
+   "pred_rescored": "\\mathbf{2,976}",
    "ok_rescored": false
   },
   {
@@ -308,8 +330,8 @@
    "n_tokens": 6457,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "7",
-   "ok_rescored": false
+   "pred_rescored": "-2+7i",
+   "ok_rescored": true
   },
   {
    "id": "m29",
@@ -448,8 +470,8 @@
    "n_tokens": 340,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "a+b",
-   "ok_rescored": false
+   "pred_rescored": "4",
+   "ok_rescored": true
   },
   {
    "id": "m43",
@@ -588,8 +610,8 @@
    "n_tokens": 2735,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "n",
-   "ok_rescored": false
+   "pred_rescored": "11",
+   "ok_rescored": true
   },
   {
    "id": "m57",
@@ -628,7 +650,7 @@
    "n_tokens": 6986,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "-1",
+   "pred_rescored": "(0,4,-1)",
    "ok_rescored": false
   },
   {
@@ -648,7 +670,7 @@
    "n_tokens": 22653,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "c",
+   "pred_rescored": "2",
    "ok_rescored": false
   },
   {
@@ -688,7 +710,7 @@
    "n_tokens": 5851,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "6",
+   "pred_rescored": "4x-6",
    "ok_rescored": false
   },
   {
@@ -758,8 +780,8 @@
    "n_tokens": 379,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "9\\&2",
-   "ok_rescored": false
+   "pred_rescored": "\\frac{3\\sqrt{3}}{4}",
+   "ok_rescored": true
   },
   {
    "id": "m74",
@@ -988,7 +1010,7 @@
    "n_tokens": 18265,
    "closed": true,
    "think_end_at": 17824,
-   "pred_rescored": "\\approx-0.15",
+   "pred_rescored": "\\approx0.45",
    "ok_rescored": false
   },
   {
@@ -1018,7 +1040,7 @@
    "n_tokens": 17367,
    "closed": true,
    "think_end_at": 15995,
-   "pred_rescored": "3\\times1",
+   "pred_rescored": "\\mathbb{r}^3",
    "ok_rescored": false
   },
   {
@@ -1048,7 +1070,7 @@
    "n_tokens": 7620,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "somethinglike5(b+\\dots)",
+   "pred_rescored": "5(b+\\dots)",
    "ok_rescored": false
   },
   {
@@ -1318,7 +1340,7 @@
    "n_tokens": 29890,
    "closed": true,
    "think_end_at": 27366,
-   "pred_rescored": "formulation:\\frac{6400}{289}",
+   "pred_rescored": "\\frac{6400}{289}",
    "ok_rescored": false
   },
   {
@@ -1338,8 +1360,8 @@
    "n_tokens": 5443,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "f(3)",
-   "ok_rescored": false
+   "pred_rescored": "8",
+   "ok_rescored": true
   },
   {
    "id": "m132",
@@ -1578,7 +1600,7 @@
    "n_tokens": 11503,
    "closed": true,
    "think_end_at": 10578,
-   "pred_rescored": "Theprobabilityis\\frac{1}{8}",
+   "pred_rescored": "\\frac{1}{8}",
    "ok_rescored": false
   },
   {
@@ -1678,7 +1700,7 @@
    "n_tokens": 511,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "Thefractionofthebooksremainingthataremathbooksis\\frac{3}{4}",
+   "pred_rescored": "\\frac{3}{4}",
    "ok_rescored": false
   },
   {
@@ -1688,7 +1710,7 @@
    "n_tokens": 15198,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "22.5^\\circ?",
+   "pred_rescored": "22.5^\\circ",
    "ok_rescored": false
   },
   {
@@ -1948,7 +1970,7 @@
    "n_tokens": 16585,
    "closed": true,
    "think_end_at": 16048,
-   "pred_rescored": "\\overline{qm}",
+   "pred_rescored": "17",
    "ok_rescored": false
   },
   {
@@ -2448,7 +2470,7 @@
    "n_tokens": 15351,
    "closed": true,
    "think_end_at": 14354,
-   "pred_rescored": "\\2,916,360",
+   "pred_rescored": "2,916,360",
    "ok_rescored": false
   },
   {
@@ -2518,8 +2540,8 @@
    "n_tokens": 16757,
    "closed": true,
    "think_end_at": 15235,
-   "pred_rescored": "t",
-   "ok_rescored": false
+   "pred_rescored": "17",
+   "ok_rescored": true
   },
   {
    "id": "m250",
@@ -2958,7 +2980,7 @@
    "n_tokens": 2706,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "5",
+   "pred_rescored": "(1,5)",
    "ok_rescored": false
   },
   {
@@ -3168,8 +3190,8 @@
    "n_tokens": 268,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "4",
-   "ok_rescored": false
+   "pred_rescored": "(2,4)",
+   "ok_rescored": true
   },
   {
    "id": "m315",
@@ -3298,7 +3320,7 @@
    "n_tokens": 13615,
    "closed": true,
    "think_end_at": 12347,
-   "pred_rescored": "p(5)",
+   "pred_rescored": "21",
    "ok_rescored": false
   },
   {
@@ -3388,8 +3410,8 @@
    "n_tokens": 293,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "513^2-487^2",
-   "ok_rescored": false
+   "pred_rescored": "26000",
+   "ok_rescored": true
   },
   {
    "id": "m337",
@@ -3408,7 +3430,7 @@
    "n_tokens": 10797,
    "closed": true,
    "think_end_at": 9926,
-   "pred_rescored": "999_{10}",
+   "pred_rescored": "1663",
    "ok_rescored": false
   },
   {
@@ -3438,7 +3460,7 @@
    "n_tokens": 2048,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "\\frac{\\sqrt{5}-1}{2}(orapproximatedas1.618)",
+   "pred_rescored": "\\frac{\\sqrt{5}-1}{2}",
    "ok_rescored": false
   },
   {
@@ -3498,8 +3520,8 @@
    "n_tokens": 525,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "24",
-   "ok_rescored": false
+   "pred_rescored": "6r^2-4r-24",
+   "ok_rescored": true
   },
   {
    "id": "m348",
@@ -3638,7 +3660,7 @@
    "n_tokens": 14300,
    "closed": true,
    "think_end_at": 13506,
-   "pred_rescored": "thesidelengthoftheequilateraltriangleis2\\sqrt{5}",
+   "pred_rescored": "2\\sqrt{5}",
    "ok_rescored": false
   },
   {
@@ -3668,8 +3690,8 @@
    "n_tokens": 9077,
    "closed": true,
    "think_end_at": 8413,
-   "pred_rescored": "43",
-   "ok_rescored": false
+   "pred_rescored": "(1,-16,-4,43)",
+   "ok_rescored": true
   },
   {
    "id": "m365",
@@ -3838,7 +3860,7 @@
    "n_tokens": 24840,
    "closed": true,
    "think_end_at": 22906,
-   "pred_rescored": "y",
+   "pred_rescored": "\\frac{5}{81}",
    "ok_rescored": false
   },
   {
@@ -3858,7 +3880,7 @@
    "n_tokens": 2006,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "7",
+   "pred_rescored": "[-2,7]",
    "ok_rescored": false
   },
   {
@@ -3868,8 +3890,8 @@
    "n_tokens": 396,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "80",
-   "ok_rescored": false
+   "pred_rescored": "15x-80",
+   "ok_rescored": true
   },
   {
    "id": "m385",
@@ -4008,7 +4030,7 @@
    "n_tokens": 650,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "\\",
+   "pred_rescored": "35.41",
    "ok_rescored": false
   },
   {
@@ -4048,7 +4070,7 @@
    "n_tokens": 12487,
    "closed": true,
    "think_end_at": 11745,
-   "pred_rescored": "-3",
+   "pred_rescored": "-3i",
    "ok_rescored": false
   },
   {
@@ -4158,7 +4180,7 @@
    "n_tokens": 1004,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "5",
+   "pred_rescored": "5r",
    "ok_rescored": false
   },
   {
@@ -4168,8 +4190,8 @@
    "n_tokens": 3151,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "a",
-   "ok_rescored": false
+   "pred_rescored": "10",
+   "ok_rescored": true
   },
   {
    "id": "m415",
@@ -4208,8 +4230,8 @@
    "n_tokens": 568,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "is",
-   "ok_rescored": false
+   "pred_rescored": "2\\sqrt{5}",
+   "ok_rescored": true
   },
   {
    "id": "m419",
@@ -4218,7 +4240,7 @@
    "n_tokens": 16518,
    "closed": true,
    "think_end_at": 15440,
-   "pred_rescored": "\\mathbf{v}",
+   "pred_rescored": "\\begin{pmatrix}-90\\210\\-480\\end{pmatrix}",
    "ok_rescored": false
   },
   {
@@ -4278,7 +4300,7 @@
    "n_tokens": 12198,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "2",
+   "pred_rescored": "a^2+b^2+c^2",
    "ok_rescored": false
   },
   {
@@ -4768,7 +4790,7 @@
    "n_tokens": 21713,
    "closed": true,
    "think_end_at": 19865,
-   "pred_rescored": "(or",
+   "pred_rescored": "\\ln8/\\ln2",
    "ok_rescored": false
   },
   {
@@ -4858,7 +4880,7 @@
    "n_tokens": 16244,
    "closed": true,
    "think_end_at": 15327,
-   "pred_rescored": "\\tana",
+   "pred_rescored": "\\boxed{\\frac{1}{\\sqrt{3}}}",
    "ok_rescored": false
   },
   {
@@ -4978,7 +5000,7 @@
    "n_tokens": 10320,
    "closed": true,
    "think_end_at": 9543,
-   "pred_rescored": "\\",
+   "pred_rescored": "(2,102)",
    "ok_rescored": false
   },
   {

@@ -8,7 +8,14 @@
   "mean_tokens": 8183.1,
   "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
   "model": "/home/user/wsp11/gemma4-8exp",
-  "fp8": false
+  "fp8": false,
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "validity": {
+   "soup_pct": 3.1,
+   "soup_judged": false,
+   "admission_tested": false,
+   "problems": []
+  }
  },
  "rows": [
   {
@@ -350,7 +357,7 @@
   {
    "id": "m42",
    "gold": "4",
-   "pred": "21",
+   "pred": "x",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true

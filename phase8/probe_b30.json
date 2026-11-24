@@ -14,10 +14,17 @@
    "gmu": 0.92
   },
   "accuracy": 0.0,
-  "answered": 100.0,
+  "answered": 0.0,
   "finished": 0.0,
   "mean_tokens": 32768,
-  "wall_s": 90.8
+  "wall_s": 90.8,
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "validity": {
+   "soup_pct": 0.0,
+   "soup_judged": true,
+   "admission_tested": false,
+   "problems": []
+  }
  },
  "prompt0": "<|im_start|>user\nConvert the point $(0,3)$ in rectangular coordinates to polar coordinates.  Enter your answer in the form $(r,\\theta),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$<|im_end|>\n<|im_start|>assistant\n<think>\n",
  "rows": [
@@ -28,7 +35,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": 0,
-   "pred_rescored": "think",
+   "pred_rescored": null,
    "ok_rescored": false
   },
   {
@@ -38,7 +45,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": 0,
-   "pred_rescored": "think",
+   "pred_rescored": null,
    "ok_rescored": false
   },
   {
@@ -48,7 +55,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": 0,
-   "pred_rescored": "think",
+   "pred_rescored": null,
    "ok_rescored": false
   },
   {
@@ -58,7 +65,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": 0,
-   "pred_rescored": "think",
+   "pred_rescored": null,
    "ok_rescored": false
   }
  ]

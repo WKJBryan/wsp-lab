@@ -13,11 +13,33 @@
    "force_from": null,
    "gmu": 0.92
   },
-  "accuracy": 5.8,
+  "accuracy": 9.0,
   "answered": 10.4,
   "finished": 10.2,
   "mean_tokens": 29911,
-  "wall_s": 3057.2
+  "wall_s": 3057.2,
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "validity": {
+   "soup_pct": 0.0,
+   "soup_judged": true,
+   "admission_tested": true,
+   "admission_finished": [
+    9.6,
+    10.8,
+    0.7679
+   ],
+   "admission_closed": [
+    9.6,
+    11.2,
+    0.6606
+   ],
+   "admission_correct": [
+    8.0,
+    10.0,
+    0.5323
+   ],
+   "problems": []
+  }
  },
  "prompt0": "<|im_start|>user\nConvert the point $(0,3)$ in rectangular coordinates to polar coordinates.  Enter your answer in the form $(r,\\theta),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$<|im_end|>\n<|im_start|>assistant\n<think>\n",
  "rows": [
@@ -228,8 +250,8 @@
    "n_tokens": 1156,
    "closed": true,
    "think_end_at": 951,
-   "pred_rescored": "9",
-   "ok_rescored": false
+   "pred_rescored": "6+9i",
+   "ok_rescored": true
   },
   {
    "id": "m21",
@@ -518,8 +540,8 @@
    "n_tokens": 1082,
    "closed": true,
    "think_end_at": 804,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "83",
+   "ok_rescored": true
   },
   {
    "id": "m50",
@@ -798,8 +820,8 @@
    "n_tokens": 2319,
    "closed": true,
    "think_end_at": 2069,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "4",
+   "ok_rescored": true
   },
   {
    "id": "m78",
@@ -818,8 +840,8 @@
    "n_tokens": 1452,
    "closed": true,
    "think_end_at": 1232,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "2",
+   "ok_rescored": true
   },
   {
    "id": "m80",
@@ -1008,8 +1030,8 @@
    "n_tokens": 2238,
    "closed": true,
    "think_end_at": 1995,
-   "pred_rescored": "2",
-   "ok_rescored": false
+   "pred_rescored": "2k+2",
+   "ok_rescored": true
   },
   {
    "id": "m99",
@@ -1188,8 +1210,8 @@
    "n_tokens": 2892,
    "closed": true,
    "think_end_at": 2606,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "2",
+   "ok_rescored": true
   },
   {
    "id": "m117",
@@ -1938,8 +1960,8 @@
    "n_tokens": 4482,
    "closed": true,
    "think_end_at": 4175,
-   "pred_rescored": "b",
-   "ok_rescored": false
+   "pred_rescored": "0",
+   "ok_rescored": true
   },
   {
    "id": "m192",
@@ -2018,8 +2040,8 @@
    "n_tokens": 1245,
    "closed": true,
    "think_end_at": 956,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "17",
+   "ok_rescored": true
   },
   {
    "id": "m200",
@@ -2208,8 +2230,8 @@
    "n_tokens": 1210,
    "closed": true,
    "think_end_at": 941,
-   "pred_rescored": "(3,7)",
-   "ok_rescored": false
+   "pred_rescored": "(-1,6)",
+   "ok_rescored": true
   },
   {
    "id": "m219",
@@ -3218,8 +3240,8 @@
    "n_tokens": 4663,
    "closed": true,
    "think_end_at": 4290,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "-128",
+   "ok_rescored": true
   },
   {
    "id": "m320",
@@ -3248,8 +3270,8 @@
    "n_tokens": 2241,
    "closed": true,
    "think_end_at": 1886,
-   "pred_rescored": "b",
-   "ok_rescored": false
+   "pred_rescored": "-1",
+   "ok_rescored": true
   },
   {
    "id": "m323",
@@ -3368,8 +3390,8 @@
    "n_tokens": 8552,
    "closed": true,
    "think_end_at": 7946,
-   "pred_rescored": "abc",
-   "ok_rescored": false
+   "pred_rescored": "-120",
+   "ok_rescored": true
   },
   {
    "id": "m335",
@@ -3508,8 +3530,8 @@
    "n_tokens": 6057,
    "closed": true,
    "think_end_at": 5410,
-   "pred_rescored": "\\binom{31}{28}",
-   "ok_rescored": false
+   "pred_rescored": "4495",
+   "ok_rescored": true
   },
   {
    "id": "m349",
@@ -3868,8 +3890,8 @@
    "n_tokens": 1789,
    "closed": true,
    "think_end_at": 1637,
-   "pred_rescored": "80",
-   "ok_rescored": false
+   "pred_rescored": "15x-80",
+   "ok_rescored": true
   },
   {
    "id": "m385",
@@ -3998,8 +4020,8 @@
    "n_tokens": 2063,
    "closed": true,
    "think_end_at": 1788,
-   "pred_rescored": "6x+5",
-   "ok_rescored": false
+   "pred_rescored": "23",
+   "ok_rescored": true
   },
   {
    "id": "m398",
@@ -4668,8 +4690,8 @@
    "n_tokens": 13854,
    "closed": true,
    "think_end_at": 13074,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "9",
+   "ok_rescored": true
   },
   {
    "id": "m465",

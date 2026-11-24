@@ -2,10 +2,32 @@
  "summary": {
   "name": "p3c_stock_rescored",
   "n": 500,
-  "accuracy": 6.0,
+  "accuracy": 8.4,
   "answered": 9.8,
   "cap_hit_rate": 90.6,
-  "mean_tokens": 30108.0
+  "mean_tokens": 30108.0,
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "validity": {
+   "soup_pct": 0.0,
+   "soup_judged": true,
+   "admission_tested": true,
+   "admission_finished": [
+    9.6,
+    9.2,
+    1.0
+   ],
+   "admission_closed": [
+    9.6,
+    10.0,
+    1.0
+   ],
+   "admission_correct": [
+    8.8,
+    8.0,
+    0.8721
+   ],
+   "problems": []
+  }
  },
  "rows": [
   {
@@ -236,8 +258,8 @@
    "gold": "6+9i",
    "n_tokens": 1155,
    "closed": true,
-   "pred_rescored": "9",
-   "ok_rescored": false
+   "pred_rescored": "6+9i",
+   "ok_rescored": true
   },
   {
    "id": "m21",
@@ -555,8 +577,8 @@
    "gold": "83",
    "n_tokens": 1078,
    "closed": true,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "83",
+   "ok_rescored": true
   },
   {
    "id": "m50",
@@ -1600,8 +1622,8 @@
    "gold": "(15,-29)",
    "n_tokens": 2284,
    "closed": true,
-   "pred_rescored": "is",
-   "ok_rescored": false
+   "pred_rescored": "(15,-29)",
+   "ok_rescored": true
   },
   {
    "id": "m145",
@@ -2117,8 +2139,8 @@
    "gold": "0",
    "n_tokens": 1989,
    "closed": true,
-   "pred_rescored": "b",
-   "ok_rescored": false
+   "pred_rescored": "0",
+   "ok_rescored": true
   },
   {
    "id": "m192",
@@ -2205,8 +2227,8 @@
    "gold": "17",
    "n_tokens": 1248,
    "closed": true,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "17",
+   "ok_rescored": true
   },
   {
    "id": "m200",
@@ -2414,8 +2436,8 @@
    "gold": "(-1,6)",
    "n_tokens": 1220,
    "closed": true,
-   "pred_rescored": "6",
-   "ok_rescored": false
+   "pred_rescored": "(-1,6)",
+   "ok_rescored": true
   },
   {
    "id": "m219",
@@ -3525,8 +3547,8 @@
    "gold": "-128",
    "n_tokens": 4373,
    "closed": true,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "-128",
+   "ok_rescored": true
   },
   {
    "id": "m320",
@@ -3558,8 +3580,8 @@
    "gold": "-1",
    "n_tokens": 4746,
    "closed": true,
-   "pred_rescored": "b",
-   "ok_rescored": false
+   "pred_rescored": "-1",
+   "ok_rescored": true
   },
   {
    "id": "m323",
@@ -4240,8 +4262,8 @@
    "gold": "15x - 80",
    "n_tokens": 1960,
    "closed": true,
-   "pred_rescored": "80",
-   "ok_rescored": false
+   "pred_rescored": "15x-80",
+   "ok_rescored": true
   },
   {
    "id": "m385",
@@ -4273,8 +4295,8 @@
    "gold": "18",
    "n_tokens": 1367,
    "closed": true,
-   "pred_rescored": "f(-2)",
-   "ok_rescored": false
+   "pred_rescored": "18",
+   "ok_rescored": true
   },
   {
    "id": "m388",
@@ -4383,8 +4405,8 @@
    "gold": "23",
    "n_tokens": 4051,
    "closed": true,
-   "pred_rescored": "6x+5",
-   "ok_rescored": false
+   "pred_rescored": "23",
+   "ok_rescored": true
   },
   {
    "id": "m398",
@@ -4559,8 +4581,8 @@
    "gold": "5r^5",
    "n_tokens": 3120,
    "closed": true,
-   "pred_rescored": "5",
-   "ok_rescored": false
+   "pred_rescored": "5r^5",
+   "ok_rescored": true
   },
   {
    "id": "m414",
@@ -5428,7 +5450,7 @@
    "gold": "y = -2x",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "\\mathbf{v}",
+   "pred_rescored": "\\mathbf{v}\\cdot\\mathbf{u}\\mathbf{u}^{-1}",
    "ok_rescored": false
   },
   {

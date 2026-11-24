@@ -2,10 +2,32 @@
  "summary": {
   "name": "p4_c2_random_rescored",
   "n": 500,
-  "accuracy": 2.2,
+  "accuracy": 3.8,
   "answered": 4.2,
   "cap_hit_rate": 95.8,
-  "mean_tokens": 31639.0
+  "mean_tokens": 31639.0,
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "validity": {
+   "soup_pct": 0.0,
+   "soup_judged": true,
+   "admission_tested": true,
+   "admission_finished": [
+    5.2,
+    3.2,
+    0.373
+   ],
+   "admission_closed": [
+    5.2,
+    3.2,
+    0.373
+   ],
+   "admission_correct": [
+    4.4,
+    3.2,
+    0.6411
+   ],
+   "problems": []
+  }
  },
  "rows": [
   {
@@ -104,8 +126,8 @@
    "gold": "3\\sqrt{13}",
    "n_tokens": 6586,
    "closed": true,
-   "pred_rescored": "thedistanceis3\\sqrt{13}",
-   "ok_rescored": false
+   "pred_rescored": "3\\sqrt{13}",
+   "ok_rescored": true
   },
   {
    "id": "m9",
@@ -863,8 +885,8 @@
    "gold": "4",
    "n_tokens": 804,
    "closed": true,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "4",
+   "ok_rescored": true
   },
   {
    "id": "m78",
@@ -885,8 +907,8 @@
    "gold": "2",
    "n_tokens": 3234,
    "closed": true,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "2",
+   "ok_rescored": true
   },
   {
    "id": "m80",
@@ -1094,8 +1116,8 @@
    "gold": "2k+2",
    "n_tokens": 4774,
    "closed": true,
-   "pred_rescored": "2",
-   "ok_rescored": false
+   "pred_rescored": "2k+2",
+   "ok_rescored": true
   },
   {
    "id": "m99",
@@ -1303,8 +1325,8 @@
    "gold": "3",
    "n_tokens": 5111,
    "closed": true,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "3",
+   "ok_rescored": true
   },
   {
    "id": "m118",
@@ -2381,8 +2403,8 @@
    "gold": "2",
    "n_tokens": 8845,
    "closed": true,
-   "pred_rescored": "x^3-2x+1",
-   "ok_rescored": false
+   "pred_rescored": "2",
+   "ok_rescored": true
   },
   {
    "id": "m216",
@@ -3525,8 +3547,8 @@
    "gold": "-128",
    "n_tokens": 5716,
    "closed": true,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "-128",
+   "ok_rescored": true
   },
   {
    "id": "m320",
@@ -3690,8 +3712,8 @@
    "gold": "-120",
    "n_tokens": 21085,
    "closed": true,
-   "pred_rescored": "abc",
-   "ok_rescored": false
+   "pred_rescored": "-120",
+   "ok_rescored": true
   },
   {
    "id": "m335",

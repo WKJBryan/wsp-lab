@@ -2,13 +2,20 @@
  "summary": {
   "name": "a0_full_practice",
   "n": 64,
-  "accuracy": 53.1,
+  "accuracy": 73.4,
   "answered": 100.0,
   "cap_hit_rate": 1.6,
   "mean_tokens": 689.1,
   "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
   "model": "/home/user/wsp11/gemma4-resharded",
-  "fp8": true
+  "fp8": true,
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "validity": {
+   "soup_pct": 0.0,
+   "soup_judged": false,
+   "admission_tested": false,
+   "problems": []
+  }
  },
  "rows": [
   {
@@ -22,8 +29,8 @@
   {
    "id": "m1",
    "gold": "p - q",
-   "pred": "q",
-   "ok": false,
+   "pred": "p-q",
+   "ok": true,
    "n_tokens": 698,
    "cap_hit": false
   },
@@ -70,8 +77,8 @@
   {
    "id": "m7",
    "gold": "90^\\circ",
-   "pred": "Theanglebetweenthetwolinesis90^\\circ",
-   "ok": false,
+   "pred": "90^\\circ",
+   "ok": true,
    "n_tokens": 536,
    "cap_hit": false
   },
@@ -150,8 +157,8 @@
   {
    "id": "m17",
    "gold": "\\pi",
-   "pred": "c",
-   "ok": false,
+   "pred": "\\pi",
+   "ok": true,
    "n_tokens": 976,
    "cap_hit": false
   },
@@ -166,24 +173,24 @@
   {
    "id": "m19",
    "gold": "3",
-   "pred": "a",
-   "ok": false,
+   "pred": "3",
+   "ok": true,
    "n_tokens": 478,
    "cap_hit": false
   },
   {
    "id": "m20",
    "gold": "6+9i",
-   "pred": "9",
-   "ok": false,
+   "pred": "6+9i",
+   "ok": true,
    "n_tokens": 145,
    "cap_hit": false
   },
   {
    "id": "m21",
    "gold": "13535",
-   "pred": "(\\sqrt{7}+\\sqrt{5})^6",
-   "ok": false,
+   "pred": "13535",
+   "ok": true,
    "n_tokens": 1190,
    "cap_hit": false
   },
@@ -230,7 +237,7 @@
   {
    "id": "m27",
    "gold": "78",
-   "pred": "Themathclub'sprofitwas\\78",
+   "pred": "Themathclub'sprofitwas78",
    "ok": false,
    "n_tokens": 260,
    "cap_hit": false
@@ -238,8 +245,8 @@
   {
    "id": "m28",
    "gold": "-2 + 7i",
-   "pred": "7",
-   "ok": false,
+   "pred": "-2+7i",
+   "ok": true,
    "n_tokens": 380,
    "cap_hit": false
   },
@@ -278,8 +285,8 @@
   {
    "id": "m33",
    "gold": "\\frac{243}{625}",
-   "pred": "Thus,theeighthtermis\\frac{243}{625}",
-   "ok": false,
+   "pred": "\\frac{243}{625}",
+   "ok": true,
    "n_tokens": 597,
    "cap_hit": false
   },
@@ -350,8 +357,8 @@
   {
    "id": "m42",
    "gold": "4",
-   "pred": "a+b",
-   "ok": false,
+   "pred": "4",
+   "ok": true,
    "n_tokens": 264,
    "cap_hit": false
   },
@@ -374,8 +381,8 @@
   {
    "id": "m45",
    "gold": "2",
-   "pred": "\\tanA",
-   "ok": false,
+   "pred": "2",
+   "ok": true,
    "n_tokens": 279,
    "cap_hit": false
   },
@@ -398,8 +405,8 @@
   {
    "id": "m48",
    "gold": "\\frac{3}{2}",
-   "pred": "thepoweris\\frac{3}{2}",
-   "ok": false,
+   "pred": "\\frac{3}{2}",
+   "ok": true,
    "n_tokens": 194,
    "cap_hit": false
   },
@@ -422,8 +429,8 @@
   {
    "id": "m51",
    "gold": "x^5 - x^4 + x^3 - x^2 + x - 1",
-   "pred": "1",
-   "ok": false,
+   "pred": "x^5-x^4+x^3-x^2+x-1",
+   "ok": true,
    "n_tokens": 716,
    "cap_hit": false
   },
@@ -454,8 +461,8 @@
   {
    "id": "m55",
    "gold": "3",
-   "pred": "f",
-   "ok": false,
+   "pred": "3",
+   "ok": true,
    "n_tokens": 528,
    "cap_hit": false
   },

@@ -8,7 +8,14 @@
   "mean_tokens": 7819.8,
   "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
   "model": "/home/user/wsp11/sandbox/model",
-  "fp8": false
+  "fp8": false,
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "validity": {
+   "soup_pct": 4.7,
+   "soup_judged": false,
+   "admission_tested": false,
+   "problems": []
+  }
  },
  "rows": [
   {
@@ -70,7 +77,7 @@
   {
    "id": "m7",
    "gold": "90^\\circ",
-   "pred": "Theresultis70^{\\circ}",
+   "pred": "70^{\\circ}",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -174,7 +181,7 @@
   {
    "id": "m20",
    "gold": "6+9i",
-   "pred": "3",
+   "pred": "16+3i",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true

@@ -8,13 +8,25 @@
   "mean_tokens": 7066.7,
   "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
   "model": "/home/user/wsp11/sandbox/model",
-  "fp8": false
+  "fp8": false,
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "validity": {
+   "soup_pct": 6.6,
+   "soup_judged": false,
+   "admission_tested": true,
+   "admission_correct": [
+    2.4,
+    1.6,
+    0.7514
+   ],
+   "problems": []
+  }
  },
  "rows": [
   {
    "id": "m0",
    "gold": "\\left( 3, \\frac{\\pi}{2} \\right)",
-   "pred": "is(3,\\frac{\\pi}{3}",
+   "pred": "(3,\\frac{\\pi}{3}",
    "ok": false,
    "n_tokens": 4860,
    "cap_hit": false
@@ -182,7 +194,7 @@
   {
    "id": "m21",
    "gold": "13535",
-   "pred": "(\\sqrt{7}+\\sqrt{5}^6",
+   "pred": ")",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -334,7 +346,7 @@
   {
    "id": "m40",
    "gold": "12",
-   "pred": "octagon",
+   "pred": "s_{octagon",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -342,7 +354,7 @@
   {
    "id": "m41",
    "gold": "17",
-   "pred": "x+y",
+   "pred": "11",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -598,7 +610,7 @@
   {
    "id": "m73",
    "gold": "\\frac{3\\sqrt{3}}{4}",
-   "pred": "<\\txt\\text{",
+   "pred": "\\txt\\text{",
    "ok": false,
    "n_tokens": 1922,
    "cap_hit": false
@@ -694,7 +706,7 @@
   {
    "id": "m85",
    "gold": "\\sqrt{5}",
-   "pred": "2\\sqrt{2}(not/note)",
+   "pred": "2\\sqrt{2}",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -1150,7 +1162,7 @@
   {
    "id": "m142",
    "gold": "28800",
-   "pred": "5",
+   "pred": "!5^upon",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -1206,7 +1218,7 @@
   {
    "id": "m149",
    "gold": "49",
-   "pred": "X",
+   "pred": "beRosa'sage(X}",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -1390,7 +1402,7 @@
   {
    "id": "m172",
    "gold": "350",
-   "pred": "10",
+   "pred": "10'",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -1654,7 +1666,7 @@
   {
    "id": "m205",
    "gold": "\\begin{pmatrix} -2 \\\\ -14 \\\\ -7 \\end{pmatrix}",
-   "pred": "ofthematrix\\mathbf{a}\\intextend\\begin{p_1}(a,c,a,...,)\\end{}`p",
+   "pred": "\\mathbf{a}\\intextend\\begin{p_1}(a,c,a,...,)\\end{}`p",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -2510,7 +2522,7 @@
   {
    "id": "m312",
    "gold": "(5,\\infty)",
-   "pred": "arrow):%)",
+   "pred": "arrow",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -3102,7 +3114,7 @@
   {
    "id": "m386",
    "gold": "11",
-   "pred": "ing(answer\\int()):howmay_numberof\\text",
+   "pred": "\\int()):howmay_numberof\\text",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -3158,7 +3170,7 @@
   {
    "id": "m393",
    "gold": "\\frac 34",
-   "pred": "a_{j]",
+   "pred": "\\frac{1}{5}",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -3278,7 +3290,7 @@
   {
    "id": "m408",
    "gold": "\\begin{pmatrix} 1/5 \\\\ -18/5 \\end{pmatrix}",
-   "pred": "\\begin{\\pmatrix}-2\\3\\stringarialens\\begin{}",
+   "pred": "|n",
    "ok": false,
    "n_tokens": 746,
    "cap_hit": false
@@ -3430,7 +3442,7 @@
   {
    "id": "m427",
    "gold": "29",
-   "pred": "\\0.05",
+   "pred": "0.05",
    "ok": false,
    "n_tokens": 461,
    "cap_hit": false

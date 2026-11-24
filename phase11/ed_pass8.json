@@ -8,7 +8,14 @@
   "mean_tokens": 4071.9,
   "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
   "model": "/home/user/wsp11/sandbox/model",
-  "fp8": false
+  "fp8": false,
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "validity": {
+   "soup_pct": 14.1,
+   "soup_judged": false,
+   "admission_tested": false,
+   "problems": []
+  }
  },
  "rows": [
   {
@@ -22,7 +29,7 @@
   {
    "id": "m1",
    "gold": "p - q",
-   "pred": "p",
+   "pred": "q",
    "ok": false,
    "n_tokens": 130,
    "cap_hit": false
@@ -262,7 +269,7 @@
   {
    "id": "m31",
    "gold": "11\\sqrt2",
-   "pred": "\\sqrt{242}isnotsimplifiedasasingleinteger",
+   "pred": "\\sqrt{242}",
    "ok": false,
    "n_tokens": 591,
    "cap_hit": false
@@ -270,7 +277,7 @@
   {
    "id": "m32",
    "gold": "720",
-   "pred": "model",
+   "pred": "s_{model}",
    "ok": false,
    "n_tokens": 8061,
    "cap_hit": false
@@ -510,7 +517,7 @@
   {
    "id": "m62",
    "gold": "4",
-   "pred": "\\|\\begin{pmatrix}2&3\\0&-2\\end{pmatrix}\\bold{v}\\|\\leC\\|\\bold{v}\\|",
+   "pred": "\\mathbf{v}",
    "ok": false,
    "n_tokens": 65,
    "cap_hit": false

@@ -8,7 +8,14 @@
   "mean_tokens": 1827.5,
   "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
   "model": "/home/user/wsp11/sandbox/model",
-  "fp8": false
+  "fp8": false,
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "validity": {
+   "soup_pct": 50.0,
+   "soup_judged": false,
+   "admission_tested": false,
+   "problems": []
+  }
  },
  "rows": [
   {
@@ -78,7 +85,7 @@
   {
    "id": "m8",
    "gold": "3\\sqrt{13}",
-   "pred": "thedistancebetweenthesepointsis\\sqrt{5}",
+   "pred": "\\sqrt{5}",
    "ok": false,
    "n_tokens": 175,
    "cap_hit": false
@@ -102,7 +109,7 @@
   {
    "id": "m11",
    "gold": "\\frac{3}{56}",
-   "pred": "8",
+   "pred": "p(8}",
    "ok": false,
    "n_tokens": 102,
    "cap_hit": false
@@ -254,7 +261,7 @@
   {
    "id": "m30",
    "gold": "52_8",
-   "pred": "6_8\\cdot7_8",
+   "pred": "8",
    "ok": false,
    "n_tokens": 25,
    "cap_hit": false
@@ -342,7 +349,7 @@
   {
    "id": "m41",
    "gold": "17",
-   "pred": "with",
+   "pred": "x>7",
    "ok": false,
    "n_tokens": 2523,
    "cap_hit": false
@@ -510,7 +517,7 @@
   {
    "id": "m62",
    "gold": "4",
-   "pred": "\\|\\begin{\\pmatrix}2&3\\0&-2\\endright|\\mathbf{v}\\|\\leC\\|\\mathbf{v\\|}",
+   "pred": "\\mathbf{v",
    "ok": false,
    "n_tokens": 564,
    "cap_hit": false

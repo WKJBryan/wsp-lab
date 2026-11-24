@@ -16,11 +16,33 @@
   "force_from": "p4_mimo_pro",
   "forced": 12,
   "reencode_mismatch_pct": 61.2,
-  "accuracy": 28.6,
+  "accuracy": 36.0,
   "answered": 98.6,
   "finished": 58.6,
   "mean_tokens": 16035,
-  "wall_s": 24.2
+  "wall_s": 24.2,
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "validity": {
+   "soup_pct": 0.0,
+   "soup_judged": true,
+   "admission_tested": true,
+   "admission_finished": [
+    58.4,
+    58.8,
+    1.0
+   ],
+   "admission_closed": [
+    100.0,
+    100.0,
+    1.0
+   ],
+   "admission_correct": [
+    35.2,
+    36.8,
+    0.7799
+   ],
+   "problems": []
+  }
  },
  "prompt0": "<|im_start|>user\nConvert the point $(0,3)$ in rectangular coordinates to polar coordinates.  Enter your answer in the form $(r,\\theta),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$<|im_end|>\n<|im_start|>assistant\n<think>\n",
  "rows": [
@@ -31,8 +53,8 @@
    "n_tokens": 1506,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "(0,3)",
-   "ok_rescored": false
+   "pred_rescored": "(3,\\frac{\\pi}{2})",
+   "ok_rescored": true
   },
   {
    "id": "m1",
@@ -51,8 +73,8 @@
    "n_tokens": 488,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "f(-2)+f(-1)+f(0)",
-   "ok_rescored": false
+   "pred_rescored": "\\frac{14}{3}",
+   "ok_rescored": true
   },
   {
    "id": "m3",
@@ -81,7 +103,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "Wait,300^\\circ",
+   "pred_rescored": "300^\\circ",
    "ok_rescored": false
   },
   {
@@ -111,7 +133,7 @@
    "n_tokens": 1577,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "\\sqrt{117}",
    "ok_rescored": false
   },
   {
@@ -141,7 +163,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "p(x)",
    "ok_rescored": false
   },
   {
@@ -201,7 +223,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "(0,1),(0,2),(0,3)?",
+   "pred_rescored": "(0,1),(0,2),(0,3)",
    "ok_rescored": false
   },
   {
@@ -231,8 +253,8 @@
    "n_tokens": 219,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "9",
-   "ok_rescored": false
+   "pred_rescored": "6+9i",
+   "ok_rescored": true
   },
   {
    "id": "m21",
@@ -251,7 +273,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "x",
+   "pred_rescored": "16+x",
    "ok_rescored": false
   },
   {
@@ -261,7 +283,7 @@
    "n_tokens": 16274,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "x",
+   "pred_rescored": "5",
    "ok_rescored": false
   },
   {
@@ -311,8 +333,8 @@
    "n_tokens": 5749,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "7",
-   "ok_rescored": false
+   "pred_rescored": "-2+7i",
+   "ok_rescored": true
   },
   {
    "id": "m29",
@@ -461,7 +483,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "(0,20)",
    "ok_rescored": false
   },
   {
@@ -511,7 +533,7 @@
    "n_tokens": 91,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "2",
    "ok_rescored": false
   },
   {
@@ -521,8 +543,8 @@
    "n_tokens": 1484,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "83",
+   "ok_rescored": true
   },
   {
    "id": "m50",
@@ -541,7 +563,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "x^6+x^5",
    "ok_rescored": false
   },
   {
@@ -571,7 +593,7 @@
    "n_tokens": 309,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "\\frac{3}{20}",
+   "pred_rescored": "0.15",
    "ok_rescored": true
   },
   {
@@ -591,8 +613,8 @@
    "n_tokens": 931,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "N",
-   "ok_rescored": false
+   "pred_rescored": "11",
+   "ok_rescored": true
   },
   {
    "id": "m57",
@@ -731,8 +753,8 @@
    "n_tokens": 995,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
-   "ok_rescored": false
+   "pred_rescored": "40_9",
+   "ok_rescored": true
   },
   {
    "id": "m71",
@@ -791,7 +813,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "Wait,maybethefunctionis\\logx^2",
+   "pred_rescored": "\\logx^2",
    "ok_rescored": false
   },
   {
@@ -911,8 +933,8 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "2",
-   "ok_rescored": true
+   "pred_rescored": "ax+2a",
+   "ok_rescored": false
   },
   {
    "id": "m89",
@@ -931,7 +953,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": ",then",
+   "pred_rescored": "15",
    "ok_rescored": false
   },
   {
@@ -951,8 +973,8 @@
    "n_tokens": 1165,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "0.02867",
-   "ok_rescored": false
+   "pred_rescored": "\\frac{2240}{78125}",
+   "ok_rescored": true
   },
   {
    "id": "m93",
@@ -1011,8 +1033,8 @@
    "n_tokens": 183,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "2",
-   "ok_rescored": false
+   "pred_rescored": "2k+2",
+   "ok_rescored": true
   },
   {
    "id": "m99",
@@ -1041,7 +1063,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "as",
    "ok_rescored": false
   },
   {
@@ -1051,8 +1073,8 @@
    "n_tokens": 716,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "2",
-   "ok_rescored": false
+   "pred_rescored": "(a+5)(b+2)",
+   "ok_rescored": true
   },
   {
    "id": "m103",
@@ -1061,7 +1083,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "x",
    "ok_rescored": false
   },
   {
@@ -1091,7 +1113,7 @@
    "n_tokens": 622,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "y",
+   "pred_rescored": "\\frac{4}{3}",
    "ok_rescored": false
   },
   {
@@ -1201,8 +1223,8 @@
    "n_tokens": 415,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "3",
+   "ok_rescored": true
   },
   {
    "id": "m118",
@@ -1211,7 +1233,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "Sob\\in\\{-5,\\dots,5\\}",
+   "pred_rescored": "b\\in\\{-5,\\dots,5\\}",
    "ok_rescored": false
   },
   {
@@ -1251,7 +1273,7 @@
    "n_tokens": 766,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "\\",
+   "pred_rescored": "2500",
    "ok_rescored": false
   },
   {
@@ -1261,8 +1283,8 @@
    "n_tokens": 3344,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "dbef",
-   "ok_rescored": false
+   "pred_rescored": "8",
+   "ok_rescored": true
   },
   {
    "id": "m124",
@@ -1341,8 +1363,8 @@
    "n_tokens": 2902,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "f(3)",
-   "ok_rescored": false
+   "pred_rescored": "8",
+   "ok_rescored": true
   },
   {
    "id": "m132",
@@ -1361,7 +1383,7 @@
    "n_tokens": 4746,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "Thelargestangleis120^\\circ",
+   "pred_rescored": "120^\\circ",
    "ok_rescored": false
   },
   {
@@ -1461,8 +1483,8 @@
    "n_tokens": 2736,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "OAB",
-   "ok_rescored": false
+   "pred_rescored": "3\\sqrt{5}",
+   "ok_rescored": true
   },
   {
    "id": "m144",
@@ -1531,7 +1553,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "f",
+   "pred_rescored": "(i,j-1)",
    "ok_rescored": false
   },
   {
@@ -1551,7 +1573,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "G",
+   "pred_rescored": "AD",
    "ok_rescored": false
   },
   {
@@ -1591,7 +1613,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "0",
+   "pred_rescored": "(0,y_p)",
    "ok_rescored": false
   },
   {
@@ -1611,7 +1633,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "200",
    "ok_rescored": false
   },
   {
@@ -1621,7 +1643,7 @@
    "n_tokens": 1927,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "(x+b)^2+c",
    "ok_rescored": false
   },
   {
@@ -1661,7 +1683,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "a^2",
+   "pred_rescored": "[4,36]",
    "ok_rescored": false
   },
   {
@@ -1741,7 +1763,7 @@
    "n_tokens": 2124,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "(orapproximately",
+   "pred_rescored": "86.67\\%",
    "ok_rescored": false
   },
   {
@@ -1811,7 +1833,7 @@
    "n_tokens": 974,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "10\\times15\\times24",
+   "pred_rescored": "12\\sqrt{5}",
    "ok_rescored": false
   },
   {
@@ -1921,7 +1943,7 @@
    "n_tokens": 10141,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "H",
+   "pred_rescored": "O",
    "ok_rescored": false
   },
   {
@@ -1931,7 +1953,7 @@
    "n_tokens": 9315,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "theprobabilitythatthesumofthenumberstheychooseisevenis\\frac{2}{5}",
+   "pred_rescored": "\\frac{2}{5}",
    "ok_rescored": false
   },
   {
@@ -1941,7 +1963,7 @@
    "n_tokens": 267,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "(whichrepresents",
    "ok_rescored": false
   },
   {
@@ -2021,8 +2043,8 @@
    "n_tokens": 1680,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "17",
+   "ok_rescored": true
   },
   {
    "id": "m200",
@@ -2041,7 +2063,7 @@
    "n_tokens": 2939,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "1\\len<50",
    "ok_rescored": false
   },
   {
@@ -2051,7 +2073,7 @@
    "n_tokens": 1752,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "theprobabilitythatalicewinsthegameis\\frac{15}{16}",
+   "pred_rescored": "\\frac{15}{16}",
    "ok_rescored": false
   },
   {
@@ -2161,7 +2183,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "F_n\\quadNo",
    "ok_rescored": false
   },
   {
@@ -2181,8 +2203,8 @@
    "n_tokens": 1593,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "x^3-2x+1",
-   "ok_rescored": false
+   "pred_rescored": "2",
+   "ok_rescored": true
   },
   {
    "id": "m216",
@@ -2381,7 +2403,7 @@
    "n_tokens": 542,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "Thevalueoftheexpressionis\\frac{5}{9}",
+   "pred_rescored": "\\frac{5}{9}",
    "ok_rescored": false
   },
   {
@@ -2391,7 +2413,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "\\frac{1}{\\cos^210^\\circ}+\\frac{1}{\\sin^220^\\circ}+\\frac{1}{\\sin^240^\\circ}",
    "ok_rescored": false
   },
   {
@@ -2511,7 +2533,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "22",
+   "pred_rescored": "A_{22}",
    "ok_rescored": false
   },
   {
@@ -2541,7 +2563,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "1",
    "ok_rescored": false
   },
   {
@@ -2621,7 +2643,7 @@
    "n_tokens": 2406,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "theproductis25+5\\sqrt{3}-(3+5\\sqrt{3})i",
+   "pred_rescored": "25+5\\sqrt{3}-(3+5\\sqrt{3})i",
    "ok_rescored": false
   },
   {
@@ -2691,7 +2713,7 @@
    "n_tokens": 979,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "theprobabilitythatthenumberisamultipleof3is\\frac{17}{50}",
+   "pred_rescored": "\\frac{17}{50}",
    "ok_rescored": false
   },
   {
@@ -2731,8 +2753,8 @@
    "n_tokens": 457,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "\\10",
-   "ok_rescored": false
+   "pred_rescored": "10",
+   "ok_rescored": true
   },
   {
    "id": "m271",
@@ -2841,7 +2863,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "A",
+   "pred_rescored": "istotheleftof",
    "ok_rescored": false
   },
   {
@@ -2851,7 +2873,7 @@
    "n_tokens": 857,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "645",
    "ok_rescored": false
   },
   {
@@ -2871,7 +2893,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "are",
    "ok_rescored": false
   },
   {
@@ -2931,7 +2953,7 @@
    "n_tokens": 4953,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "r",
    "ok_rescored": false
   },
   {
@@ -2961,8 +2983,8 @@
    "n_tokens": 4729,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "theintervalnotationforthesolutionis(\\frac{3}{5},\\frac{8}{3}]",
-   "ok_rescored": false
+   "pred_rescored": "(\\frac{3}{5},\\frac{8}{3}]",
+   "ok_rescored": true
   },
   {
    "id": "m294",
@@ -2971,7 +2993,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "3",
    "ok_rescored": false
   },
   {
@@ -3171,8 +3193,8 @@
    "n_tokens": 329,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "4",
-   "ok_rescored": false
+   "pred_rescored": "(2,4)",
+   "ok_rescored": true
   },
   {
    "id": "m315",
@@ -3201,8 +3223,8 @@
    "n_tokens": 9017,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "p(x)",
-   "ok_rescored": false
+   "pred_rescored": "0",
+   "ok_rescored": true
   },
   {
    "id": "m318",
@@ -3221,8 +3243,8 @@
    "n_tokens": 1632,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "-128",
+   "ok_rescored": true
   },
   {
    "id": "m320",
@@ -3251,8 +3273,8 @@
    "n_tokens": 1729,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "b",
-   "ok_rescored": false
+   "pred_rescored": "-1",
+   "ok_rescored": true
   },
   {
    "id": "m323",
@@ -3271,7 +3293,7 @@
    "n_tokens": 8655,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "\\angleadc",
+   "pred_rescored": "150^\\circ",
    "ok_rescored": false
   },
   {
@@ -3301,7 +3323,7 @@
    "n_tokens": 12988,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "Q_2(x)",
+   "pred_rescored": "P(2)",
    "ok_rescored": false
   },
   {
@@ -3411,7 +3433,7 @@
    "n_tokens": 418,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "999_{10}",
+   "pred_rescored": "333_6",
    "ok_rescored": false
   },
   {
@@ -3451,8 +3473,8 @@
    "n_tokens": 718,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "2",
+   "ok_rescored": true
   },
   {
    "id": "m343",
@@ -3491,7 +3513,7 @@
    "n_tokens": 2403,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "x",
+   "pred_rescored": "18",
    "ok_rescored": false
   },
   {
@@ -3501,8 +3523,8 @@
    "n_tokens": 6236,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "24",
-   "ok_rescored": false
+   "pred_rescored": "6r^2-4r-24",
+   "ok_rescored": true
   },
   {
    "id": "m348",
@@ -3511,8 +3533,8 @@
    "n_tokens": 744,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "\\binom{31}{28}",
-   "ok_rescored": false
+   "pred_rescored": "4495",
+   "ok_rescored": true
   },
   {
    "id": "m349",
@@ -3591,7 +3613,7 @@
    "n_tokens": 11253,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "is[-\\sqrt{3},\\sqrt{3})",
+   "pred_rescored": "[-\\sqrt{3},\\sqrt{3})",
    "ok_rescored": false
   },
   {
@@ -3681,7 +3703,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "true",
    "ok_rescored": false
   },
   {
@@ -3741,7 +3763,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "f(x)\\le1",
+   "pred_rescored": "forall",
    "ok_rescored": false
   },
   {
@@ -3761,8 +3783,8 @@
    "n_tokens": 586,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "2",
-   "ok_rescored": false
+   "pred_rescored": "1+2i",
+   "ok_rescored": true
   },
   {
    "id": "m374",
@@ -3791,8 +3813,8 @@
    "n_tokens": 852,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "p",
-   "ok_rescored": false
+   "pred_rescored": "(8,-2)",
+   "ok_rescored": true
   },
   {
    "id": "m377",
@@ -3861,7 +3883,7 @@
    "n_tokens": 1625,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "x",
+   "pred_rescored": "[-7,2]",
    "ok_rescored": false
   },
   {
@@ -3871,8 +3893,8 @@
    "n_tokens": 184,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "80",
-   "ok_rescored": false
+   "pred_rescored": "15x-80",
+   "ok_rescored": true
   },
   {
    "id": "m385",
@@ -3901,8 +3923,8 @@
    "n_tokens": 268,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "f(-2)",
-   "ok_rescored": false
+   "pred_rescored": "18",
+   "ok_rescored": true
   },
   {
    "id": "m388",
@@ -3911,8 +3933,8 @@
    "n_tokens": 5475,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "5.5",
+   "ok_rescored": true
   },
   {
    "id": "m389",
@@ -4031,7 +4053,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "14",
    "ok_rescored": false
   },
   {
@@ -4051,7 +4073,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "-3",
+   "pred_rescored": "-3i",
    "ok_rescored": false
   },
   {
@@ -4101,8 +4123,8 @@
    "n_tokens": 1668,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "f^{-1}(\\frac{1}{5})",
-   "ok_rescored": false
+   "pred_rescored": "9",
+   "ok_rescored": true
   },
   {
    "id": "m408",
@@ -4161,8 +4183,8 @@
    "n_tokens": 299,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "5",
-   "ok_rescored": false
+   "pred_rescored": "5r^5",
+   "ok_rescored": true
   },
   {
    "id": "m414",
@@ -4171,8 +4193,8 @@
    "n_tokens": 723,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "a",
-   "ok_rescored": false
+   "pred_rescored": "10",
+   "ok_rescored": true
   },
   {
    "id": "m415",
@@ -4211,8 +4233,8 @@
    "n_tokens": 529,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "is",
-   "ok_rescored": false
+   "pred_rescored": "2\\sqrt{5}",
+   "ok_rescored": true
   },
   {
    "id": "m419",
@@ -4231,7 +4253,7 @@
    "n_tokens": 4351,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "\\mathbf{b}",
+   "pred_rescored": "\\frac{8}{49}",
    "ok_rescored": false
   },
   {
@@ -4241,7 +4263,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "\\pi",
    "ok_rescored": false
   },
   {
@@ -4251,7 +4273,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "0",
    "ok_rescored": false
   },
   {
@@ -4281,7 +4303,7 @@
    "n_tokens": 9364,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "a,b,c",
+   "pred_rescored": "R",
    "ok_rescored": false
   },
   {
@@ -4301,7 +4323,7 @@
    "n_tokens": 1039,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "\\mathbf{29}",
    "ok_rescored": false
   },
   {
@@ -4361,7 +4383,7 @@
    "n_tokens": 1163,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "\\frac{57}{160}",
+   "pred_rescored": "0.35625",
    "ok_rescored": true
   },
   {
@@ -4391,7 +4413,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "1",
    "ok_rescored": false
   },
   {
@@ -4571,7 +4593,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "No",
    "ok_rescored": false
   },
   {
@@ -4591,7 +4613,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "carefully",
    "ok_rescored": false
   },
   {
@@ -4621,8 +4643,8 @@
    "n_tokens": 3452,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "\\",
-   "ok_rescored": false
+   "pred_rescored": "18.90",
+   "ok_rescored": true
   },
   {
    "id": "m460",
@@ -4641,7 +4663,7 @@
    "n_tokens": 1669,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "f(n)",
    "ok_rescored": false
   },
   {
@@ -4671,8 +4693,8 @@
    "n_tokens": 4929,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
-   "ok_rescored": false
+   "pred_rescored": "9",
+   "ok_rescored": true
   },
   {
    "id": "m465",
@@ -4691,7 +4713,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "P(z)",
    "ok_rescored": false
   },
   {
@@ -4721,8 +4743,8 @@
    "n_tokens": 317,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "\\lceil{\\sqrt{20}}\\rceil^2",
-   "ok_rescored": false
+   "pred_rescored": "25",
+   "ok_rescored": true
   },
   {
    "id": "m470",
@@ -4841,7 +4863,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "2^4",
+   "pred_rescored": "1",
    "ok_rescored": false
   },
   {
@@ -4851,7 +4873,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "confused",
    "ok_rescored": false
   },
   {
@@ -4911,8 +4933,8 @@
    "n_tokens": 1060,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "\\",
-   "ok_rescored": false
+   "pred_rescored": "36",
+   "ok_rescored": true
   },
   {
    "id": "m489",
@@ -4991,7 +5013,7 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "think",
+   "pred_rescored": "\\dfrac{33^2+16^2}{169^2}iswrong",
    "ok_rescored": false
   },
   {

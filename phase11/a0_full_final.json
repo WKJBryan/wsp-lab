@@ -2,13 +2,25 @@
  "summary": {
   "name": "a0_full_final",
   "n": 500,
-  "accuracy": 58.4,
+  "accuracy": 76.4,
   "answered": 100.0,
   "cap_hit_rate": 0.2,
   "mean_tokens": 669.3,
   "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
   "model": "/home/user/wsp11/gemma4-resharded",
-  "fp8": true
+  "fp8": true,
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "validity": {
+   "soup_pct": 0.0,
+   "soup_judged": false,
+   "admission_tested": true,
+   "admission_correct": [
+    74.4,
+    78.4,
+    0.3432
+   ],
+   "problems": []
+  }
  },
  "rows": [
   {
@@ -70,8 +82,8 @@
   {
    "id": "m7",
    "gold": "90^\\circ",
-   "pred": "Theanglebetweenthelinesis90^\\circ",
-   "ok": false,
+   "pred": "90^\\circ",
+   "ok": true,
    "n_tokens": 541,
    "cap_hit": false
   },
@@ -86,7 +98,7 @@
   {
    "id": "m9",
    "gold": "4",
-   "pred": "Thevaluesare\\{121,144,126,122\\}",
+   "pred": "\\{121,144,126,122\\}",
    "ok": false,
    "n_tokens": 2136,
    "cap_hit": false
@@ -174,8 +186,8 @@
   {
    "id": "m20",
    "gold": "6+9i",
-   "pred": "9",
-   "ok": false,
+   "pred": "6+9i",
+   "ok": true,
    "n_tokens": 145,
    "cap_hit": false
   },
@@ -230,16 +242,16 @@
   {
    "id": "m27",
    "gold": "78",
-   "pred": "\\78",
-   "ok": false,
+   "pred": "78",
+   "ok": true,
    "n_tokens": 259,
    "cap_hit": false
   },
   {
    "id": "m28",
    "gold": "-2 + 7i",
-   "pred": "7",
-   "ok": false,
+   "pred": "-2+7i",
+   "ok": true,
    "n_tokens": 386,
    "cap_hit": false
   },
@@ -254,8 +266,8 @@
   {
    "id": "m30",
    "gold": "52_8",
-   "pred": "8",
-   "ok": false,
+   "pred": "52_8",
+   "ok": true,
    "n_tokens": 571,
    "cap_hit": false
   },
@@ -278,8 +290,8 @@
   {
    "id": "m33",
    "gold": "\\frac{243}{625}",
-   "pred": "Thus,theeighthtermis\\frac{243}{625}",
-   "ok": false,
+   "pred": "\\frac{243}{625}",
+   "ok": true,
    "n_tokens": 575,
    "cap_hit": false
   },
@@ -350,15 +362,15 @@
   {
    "id": "m42",
    "gold": "4",
-   "pred": "a+b",
-   "ok": false,
+   "pred": "4",
+   "ok": true,
    "n_tokens": 268,
    "cap_hit": false
   },
   {
    "id": "m43",
    "gold": "70 \\sqrt{2}",
-   "pred": "\\sqrt{(x+0+40-x)^2+(20+y+50-y)^2}?no,that'snothowitworks",
+   "pred": "\\sqrt{(x+0+40-x)^2+(20+y+50-y)^2}",
    "ok": false,
    "n_tokens": 3599,
    "cap_hit": false
@@ -382,8 +394,8 @@
   {
    "id": "m46",
    "gold": "6",
-   "pred": "n",
-   "ok": false,
+   "pred": "6",
+   "ok": true,
    "n_tokens": 991,
    "cap_hit": false
   },
@@ -398,8 +410,8 @@
   {
    "id": "m48",
    "gold": "\\frac{3}{2}",
-   "pred": "thepoweris\\frac{3}{2}",
-   "ok": false,
+   "pred": "\\frac{3}{2}",
+   "ok": true,
    "n_tokens": 194,
    "cap_hit": false
   },
@@ -422,8 +434,8 @@
   {
    "id": "m51",
    "gold": "x^5 - x^4 + x^3 - x^2 + x - 1",
-   "pred": "1",
-   "ok": false,
+   "pred": "x^5-x^4+x^3-x^2+x-1",
+   "ok": true,
    "n_tokens": 1176,
    "cap_hit": false
   },
@@ -454,16 +466,16 @@
   {
    "id": "m55",
    "gold": "3",
-   "pred": "f",
-   "ok": false,
+   "pred": "3",
+   "ok": true,
    "n_tokens": 467,
    "cap_hit": false
   },
   {
    "id": "m56",
    "gold": "11",
-   "pred": "n",
-   "ok": false,
+   "pred": "11",
+   "ok": true,
    "n_tokens": 360,
    "cap_hit": false
   },
@@ -542,8 +554,8 @@
   {
    "id": "m66",
    "gold": "x^3+3x-6",
-   "pred": "6",
-   "ok": false,
+   "pred": "x^3+3x-6",
+   "ok": true,
    "n_tokens": 418,
    "cap_hit": false
   },
@@ -582,7 +594,7 @@
   {
    "id": "m71",
    "gold": "2516_8",
-   "pred": "10101001110_{2}",
+   "pred": "2516_{8}",
    "ok": false,
    "n_tokens": 583,
    "cap_hit": false
@@ -630,24 +642,24 @@
   {
    "id": "m77",
    "gold": "4",
-   "pred": "x",
-   "ok": false,
+   "pred": "4",
+   "ok": true,
    "n_tokens": 225,
    "cap_hit": false
   },
   {
    "id": "m78",
    "gold": "(-2,1)",
-   "pred": "(a,b)",
-   "ok": false,
+   "pred": "(-2,1)",
+   "ok": true,
    "n_tokens": 853,
    "cap_hit": false
   },
   {
    "id": "m79",
    "gold": "2",
-   "pred": "x",
-   "ok": false,
+   "pred": "2",
+   "ok": true,
    "n_tokens": 259,
    "cap_hit": false
   },
@@ -710,16 +722,16 @@
   {
    "id": "m87",
    "gold": "1",
-   "pred": "x",
-   "ok": false,
+   "pred": "1",
+   "ok": true,
    "n_tokens": 506,
    "cap_hit": false
   },
   {
    "id": "m88",
    "gold": "2",
-   "pred": "a",
-   "ok": false,
+   "pred": "2",
+   "ok": true,
    "n_tokens": 920,
    "cap_hit": false
   },
@@ -782,7 +794,7 @@
   {
    "id": "m96",
    "gold": "1 \\pm \\sqrt{19}",
-   "pred": "Therootsare1+\\sqrt{19},1-\\sqrt{19}",
+   "pred": "1+\\sqrt{19},1-\\sqrt{19}",
    "ok": false,
    "n_tokens": 1336,
    "cap_hit": false
@@ -798,8 +810,8 @@
   {
    "id": "m98",
    "gold": "2k+2",
-   "pred": "2",
-   "ok": false,
+   "pred": "2k+2",
+   "ok": true,
    "n_tokens": 170,
    "cap_hit": false
   },
@@ -838,7 +850,7 @@
   {
    "id": "m103",
    "gold": "(3,4]",
-   "pred": "Thus,theconditionis\\lambda>3",
+   "pred": "\\lambda>3",
    "ok": false,
    "n_tokens": 1229,
    "cap_hit": false
@@ -886,8 +898,8 @@
   {
    "id": "m109",
    "gold": "120^\\circ",
-   "pred": "\\theta",
-   "ok": false,
+   "pred": "120^\\circ",
+   "ok": true,
    "n_tokens": 838,
    "cap_hit": false
   },
@@ -990,7 +1002,7 @@
   {
    "id": "m122",
    "gold": "9",
-   "pred": "\\",
+   "pred": "2500",
    "ok": false,
    "n_tokens": 325,
    "cap_hit": false
@@ -1006,8 +1018,8 @@
   {
    "id": "m124",
    "gold": "\\frac{11}{2}",
-   "pred": "x",
-   "ok": false,
+   "pred": "\\frac{11}{2}",
+   "ok": true,
    "n_tokens": 368,
    "cap_hit": false
   },
@@ -1054,8 +1066,8 @@
   {
    "id": "m130",
    "gold": "13",
-   "pred": "n",
-   "ok": false,
+   "pred": "13",
+   "ok": true,
    "n_tokens": 615,
    "cap_hit": false
   },
@@ -1094,7 +1106,7 @@
   {
    "id": "m135",
    "gold": "9",
-   "pred": "42",
+   "pred": "42!",
    "ok": false,
    "n_tokens": 553,
    "cap_hit": false
@@ -1102,32 +1114,32 @@
   {
    "id": "m136",
    "gold": "64",
-   "pred": "n",
-   "ok": false,
+   "pred": "64",
+   "ok": true,
    "n_tokens": 957,
    "cap_hit": false
   },
   {
    "id": "m137",
    "gold": "204_5",
-   "pred": "5",
-   "ok": false,
+   "pred": "204_5",
+   "ok": true,
    "n_tokens": 782,
    "cap_hit": false
   },
   {
    "id": "m138",
    "gold": "\\frac{1}{3}",
-   "pred": "Theprobabilityis\\frac{1}{3}",
-   "ok": false,
+   "pred": "\\frac{1}{3}",
+   "ok": true,
    "n_tokens": 616,
    "cap_hit": false
   },
   {
    "id": "m139",
    "gold": "1",
-   "pred": "f(x,y)",
-   "ok": false,
+   "pred": "1",
+   "ok": true,
    "n_tokens": 721,
    "cap_hit": false
   },
@@ -1158,16 +1170,16 @@
   {
    "id": "m143",
    "gold": "3 \\sqrt{5}",
-   "pred": "OAB",
-   "ok": false,
+   "pred": "3\\sqrt{5}",
+   "ok": true,
    "n_tokens": 697,
    "cap_hit": false
   },
   {
    "id": "m144",
    "gold": "(15,-29)",
-   "pred": "is",
-   "ok": false,
+   "pred": "(15,-29)",
+   "ok": true,
    "n_tokens": 315,
    "cap_hit": false
   },
@@ -1238,15 +1250,15 @@
   {
    "id": "m153",
    "gold": "\\frac{2}{21}",
-   "pred": "theprobabilitythatthepointslieonthesamestraightlineis\\frac{2}{21}",
-   "ok": false,
+   "pred": "\\frac{2}{21}",
+   "ok": true,
    "n_tokens": 533,
    "cap_hit": false
   },
   {
    "id": "m154",
    "gold": "2\\sqrt{113}",
-   "pred": "Theshortestpathis2\\sqrt{106}",
+   "pred": "2\\sqrt{106}",
    "ok": false,
    "n_tokens": 1930,
    "cap_hit": false
@@ -1262,8 +1274,8 @@
   {
    "id": "m156",
    "gold": "30^\\circ",
-   "pred": "is",
-   "ok": false,
+   "pred": "30^\\circ",
+   "ok": true,
    "n_tokens": 791,
    "cap_hit": false
   },
@@ -1310,7 +1322,7 @@
   {
    "id": "m162",
    "gold": "\\dfrac{17}{50}",
-   "pred": "Theprobabilityis\\frac{17}{50}",
+   "pred": "\\frac{17}{50}",
    "ok": false,
    "n_tokens": 617,
    "cap_hit": false
@@ -1414,8 +1426,8 @@
   {
    "id": "m175",
    "gold": "3",
-   "pred": "|m-n|",
-   "ok": false,
+   "pred": "3",
+   "ok": true,
    "n_tokens": 794,
    "cap_hit": false
   },
@@ -1430,8 +1442,8 @@
   {
    "id": "m177",
    "gold": "30^\\circ",
-   "pred": "\\frac{1}{\\sqrt{3}}",
-   "ok": false,
+   "pred": "30^\\circ",
+   "ok": true,
    "n_tokens": 1157,
    "cap_hit": false
   },
@@ -1502,8 +1514,8 @@
   {
    "id": "m186",
    "gold": "7",
-   "pred": "7",
-   "ok": true,
+   "pred": "n",
+   "ok": false,
    "n_tokens": 448,
    "cap_hit": false
   },
@@ -1534,24 +1546,24 @@
   {
    "id": "m190",
    "gold": "\\frac{13}{18}",
-   "pred": "theprobabilitythatthesumofthenumberstheychooseisevenis\\frac{13}{18}",
-   "ok": false,
+   "pred": "\\frac{13}{18}",
+   "ok": true,
    "n_tokens": 460,
    "cap_hit": false
   },
   {
    "id": "m191",
    "gold": "0",
-   "pred": "b",
-   "ok": false,
+   "pred": "0",
+   "ok": true,
    "n_tokens": 265,
    "cap_hit": false
   },
   {
    "id": "m192",
    "gold": "30",
-   "pred": "QM",
-   "ok": false,
+   "pred": "30",
+   "ok": true,
    "n_tokens": 392,
    "cap_hit": false
   },
@@ -1630,8 +1642,8 @@
   {
    "id": "m202",
    "gold": "\\frac{2}{3}",
-   "pred": "theprobabilitythatalicewinsthegameis\\frac{2}{3}",
-   "ok": false,
+   "pred": "\\frac{2}{3}",
+   "ok": true,
    "n_tokens": 590,
    "cap_hit": false
   },
@@ -1734,8 +1746,8 @@
   {
    "id": "m215",
    "gold": "2",
-   "pred": "x^3-2x+1",
-   "ok": false,
+   "pred": "2",
+   "ok": true,
    "n_tokens": 468,
    "cap_hit": false
   },
@@ -1758,16 +1770,16 @@
   {
    "id": "m218",
    "gold": "(-1,6)",
-   "pred": "6",
-   "ok": false,
+   "pred": "(-1,6)",
+   "ok": true,
    "n_tokens": 262,
    "cap_hit": false
   },
   {
    "id": "m219",
    "gold": "\\frac{1}{2}",
-   "pred": "Theprobabilitythatthecheckerisplacedonashadedsquareis\\frac{1}{2}",
-   "ok": false,
+   "pred": "\\frac{1}{2}",
+   "ok": true,
    "n_tokens": 1108,
    "cap_hit": false
   },
@@ -1790,8 +1802,8 @@
   {
    "id": "m222",
    "gold": "54",
-   "pred": "\\triangleCDE",
-   "ok": false,
+   "pred": "54",
+   "ok": true,
    "n_tokens": 1235,
    "cap_hit": false
   },
@@ -1806,8 +1818,8 @@
   {
    "id": "m224",
    "gold": "\\frac{9}{256}",
-   "pred": "thevalueis\\frac{9}{256}",
-   "ok": false,
+   "pred": "\\frac{9}{256}",
+   "ok": true,
    "n_tokens": 648,
    "cap_hit": false
   },
@@ -1878,8 +1890,8 @@
   {
    "id": "m233",
    "gold": "30^\\circ",
-   "pred": "150^\\circ",
-   "ok": false,
+   "pred": "30^\\circ",
+   "ok": true,
    "n_tokens": 390,
    "cap_hit": false
   },
@@ -1918,8 +1930,8 @@
   {
    "id": "m238",
    "gold": "-4",
-   "pred": "x",
-   "ok": false,
+   "pred": "-4",
+   "ok": true,
    "n_tokens": 530,
    "cap_hit": false
   },
@@ -1950,8 +1962,8 @@
   {
    "id": "m242",
    "gold": "\\$32,\\!348",
-   "pred": "348",
-   "ok": false,
+   "pred": "32,348",
+   "ok": true,
    "n_tokens": 413,
    "cap_hit": false
   },
@@ -2006,7 +2018,7 @@
   {
    "id": "m249",
    "gold": "17",
-   "pred": "Thus,323\\equiv1\\pmod{23}",
+   "pred": "323\\equiv1\\pmod{23}",
    "ok": false,
    "n_tokens": 827,
    "cap_hit": false
@@ -2014,8 +2026,8 @@
   {
    "id": "m250",
    "gold": "13",
-   "pred": "a+b+m",
-   "ok": false,
+   "pred": "13",
+   "ok": true,
    "n_tokens": 491,
    "cap_hit": false
   },
@@ -2086,8 +2098,8 @@
   {
    "id": "m259",
    "gold": "22",
-   "pred": "5+\\sqrt{3}",
-   "ok": false,
+   "pred": "22",
+   "ok": true,
    "n_tokens": 290,
    "cap_hit": false
   },
@@ -2102,8 +2114,8 @@
   {
    "id": "m261",
    "gold": "76^\\circ",
-   "pred": "\\angleB",
-   "ok": false,
+   "pred": "76^\\circ",
+   "ok": true,
    "n_tokens": 363,
    "cap_hit": false
   },
@@ -2150,8 +2162,8 @@
   {
    "id": "m267",
    "gold": "180^\\circ",
-   "pred": "\\angleH",
-   "ok": false,
+   "pred": "180^\\circ",
+   "ok": true,
    "n_tokens": 488,
    "cap_hit": false
   },
@@ -2206,16 +2218,16 @@
   {
    "id": "m274",
    "gold": "18+2\\pi",
-   "pred": "S",
-   "ok": false,
+   "pred": "18+2\\pi",
+   "ok": true,
    "n_tokens": 727,
    "cap_hit": false
   },
   {
    "id": "m275",
    "gold": "7",
-   "pred": "g(f(5)-1)",
-   "ok": false,
+   "pred": "7",
+   "ok": true,
    "n_tokens": 277,
    "cap_hit": false
   },
@@ -2230,8 +2242,8 @@
   {
    "id": "m277",
    "gold": "\\sqrt{53}",
-   "pred": "\\sqrt{53}isalreadyinitssimplestradicalform",
-   "ok": false,
+   "pred": "\\sqrt{53}",
+   "ok": true,
    "n_tokens": 320,
    "cap_hit": false
   },
@@ -2254,7 +2266,7 @@
   {
    "id": "m280",
    "gold": "8",
-   "pred": "2",
+   "pred": "1,2,a,b,2a,2b,ab,2ab",
    "ok": false,
    "n_tokens": 461,
    "cap_hit": false
@@ -2262,8 +2274,8 @@
   {
    "id": "m281",
    "gold": "36^\\circ",
-   "pred": "A",
-   "ok": false,
+   "pred": "36^\\circ",
+   "ok": true,
    "n_tokens": 771,
    "cap_hit": false
   },
@@ -2286,7 +2298,7 @@
   {
    "id": "m284",
    "gold": "3 \\pm 2 \\sqrt{2}",
-   "pred": "Thesolutionsare3+2\\sqrt{2},3-2\\sqrt{2},-3+2\\sqrt{2},-3-2\\sqrt{2}",
+   "pred": "3+2\\sqrt{2},3-2\\sqrt{2},-3+2\\sqrt{2},-3-2\\sqrt{2}",
    "ok": false,
    "n_tokens": 1739,
    "cap_hit": false
@@ -2334,8 +2346,8 @@
   {
    "id": "m290",
    "gold": "4",
-   "pred": "r",
-   "ok": false,
+   "pred": "4",
+   "ok": true,
    "n_tokens": 548,
    "cap_hit": false
   },
@@ -2358,8 +2370,8 @@
   {
    "id": "m293",
    "gold": "\\left(\\frac{3}{5},\\frac{8}{3}\\right]",
-   "pred": "Thesolutionis(\\frac{3}{5},\\frac{8}{3}]",
-   "ok": false,
+   "pred": "(\\frac{3}{5},\\frac{8}{3}]",
+   "ok": true,
    "n_tokens": 459,
    "cap_hit": false
   },
@@ -2470,8 +2482,8 @@
   {
    "id": "m307",
    "gold": "(-\\infty, 0]",
-   "pred": "therangeis(-\\infty,0]",
-   "ok": false,
+   "pred": "(-\\infty,0]",
+   "ok": true,
    "n_tokens": 483,
    "cap_hit": false
   },
@@ -2526,16 +2538,16 @@
   {
    "id": "m314",
    "gold": "(2,4)",
-   "pred": "4",
-   "ok": false,
+   "pred": "(2,4)",
+   "ok": true,
    "n_tokens": 322,
    "cap_hit": false
   },
   {
    "id": "m315",
    "gold": "41",
-   "pred": "a",
-   "ok": false,
+   "pred": "41",
+   "ok": true,
    "n_tokens": 667,
    "cap_hit": false
   },
@@ -2566,8 +2578,8 @@
   {
    "id": "m319",
    "gold": "-128",
-   "pred": "x",
-   "ok": false,
+   "pred": "-128",
+   "ok": true,
    "n_tokens": 284,
    "cap_hit": false
   },
@@ -2598,8 +2610,8 @@
   {
    "id": "m323",
    "gold": "\\frac{1}{3}",
-   "pred": "Theprobabilityis\\frac{1}{3}",
-   "ok": false,
+   "pred": "\\frac{1}{3}",
+   "ok": true,
    "n_tokens": 910,
    "cap_hit": false
   },
@@ -2686,15 +2698,15 @@
   {
    "id": "m334",
    "gold": "-120",
-   "pred": "abc",
-   "ok": false,
+   "pred": "-120",
+   "ok": true,
    "n_tokens": 473,
    "cap_hit": false
   },
   {
    "id": "m335",
    "gold": "3",
-   "pred": "Thus,F_{100}\\equiv3\\pmod{4}",
+   "pred": "F_{100}\\equiv3\\pmod{4}",
    "ok": false,
    "n_tokens": 540,
    "cap_hit": false
@@ -2718,7 +2730,7 @@
   {
    "id": "m338",
    "gold": "4343_6",
-   "pred": "999_{10}",
+   "pred": "4343_{6}",
    "ok": false,
    "n_tokens": 409,
    "cap_hit": false
@@ -2790,8 +2802,8 @@
   {
    "id": "m347",
    "gold": "6r^2-4r-24",
-   "pred": "24",
-   "ok": false,
+   "pred": "6r^2-4r-24",
+   "ok": true,
    "n_tokens": 447,
    "cap_hit": false
   },
@@ -2814,8 +2826,8 @@
   {
    "id": "m350",
    "gold": "4",
-   "pred": "18^6",
-   "ok": false,
+   "pred": "4",
+   "ok": true,
    "n_tokens": 385,
    "cap_hit": false
   },
@@ -2870,8 +2882,8 @@
   {
    "id": "m357",
    "gold": "4",
-   "pred": "4",
-   "ok": true,
+   "pred": "x",
+   "ok": false,
    "n_tokens": 525,
    "cap_hit": false
   },
@@ -2902,15 +2914,15 @@
   {
    "id": "m361",
    "gold": "16 \\sqrt{3}",
-   "pred": "Thesidelengthoftheequilateraltriangleis16\\sqrt{3}",
-   "ok": false,
+   "pred": "16\\sqrt{3}",
+   "ok": true,
    "n_tokens": 670,
    "cap_hit": false
   },
   {
    "id": "m362",
    "gold": "\\frac14",
-   "pred": "TheprobabilitythatbothDanandFreddiewinis\\frac{1}{4}",
+   "pred": "\\frac{1}{4}",
    "ok": false,
    "n_tokens": 264,
    "cap_hit": false
@@ -2918,7 +2930,7 @@
   {
    "id": "m363",
    "gold": "2",
-   "pred": "thereciprocalof2is\\frac{1}{2}",
+   "pred": "\\frac{1}{2}",
    "ok": false,
    "n_tokens": 307,
    "cap_hit": false
@@ -2926,8 +2938,8 @@
   {
    "id": "m364",
    "gold": "(1,-16,-4,43)",
-   "pred": "(a,b,c,d)",
-   "ok": false,
+   "pred": "(1,-16,-4,43)",
+   "ok": true,
    "n_tokens": 497,
    "cap_hit": false
   },
@@ -2990,16 +3002,16 @@
   {
    "id": "m372",
    "gold": "90^\\circ",
-   "pred": "\\angleBAC",
-   "ok": false,
+   "pred": "90^\\circ",
+   "ok": true,
    "n_tokens": 536,
    "cap_hit": false
   },
   {
    "id": "m373",
    "gold": "1+2i",
-   "pred": "2",
-   "ok": false,
+   "pred": "1+2i",
+   "ok": true,
    "n_tokens": 630,
    "cap_hit": false
   },
@@ -3014,24 +3026,24 @@
   {
    "id": "m375",
    "gold": "25",
-   "pred": "A",
-   "ok": false,
+   "pred": "25",
+   "ok": true,
    "n_tokens": 653,
    "cap_hit": false
   },
   {
    "id": "m376",
    "gold": "(8,-2)",
-   "pred": "P",
-   "ok": false,
+   "pred": "(8,-2)",
+   "ok": true,
    "n_tokens": 605,
    "cap_hit": false
   },
   {
    "id": "m377",
    "gold": "6",
-   "pred": "4\\",
-   "ok": false,
+   "pred": "6",
+   "ok": true,
    "n_tokens": 512,
    "cap_hit": false
   },
@@ -3062,8 +3074,8 @@
   {
    "id": "m381",
    "gold": "\\frac{1}{2}",
-   "pred": "theprobabilityis\\frac{1}{2}",
-   "ok": false,
+   "pred": "\\frac{1}{2}",
+   "ok": true,
    "n_tokens": 966,
    "cap_hit": false
   },
@@ -3086,8 +3098,8 @@
   {
    "id": "m384",
    "gold": "15x - 80",
-   "pred": "80",
-   "ok": false,
+   "pred": "15x-80",
+   "ok": true,
    "n_tokens": 248,
    "cap_hit": false
   },
@@ -3118,8 +3130,8 @@
   {
    "id": "m388",
    "gold": "\\frac{11}{2}",
-   "pred": "x\\ge5.5",
-   "ok": false,
+   "pred": "5.5",
+   "ok": true,
    "n_tokens": 516,
    "cap_hit": false
   },
@@ -3158,7 +3170,7 @@
   {
    "id": "m393",
    "gold": "\\frac 34",
-   "pred": "TheratiooftheaccelerationofJen'sballtoJack'sis\\frac{3}{4}",
+   "pred": "\\frac{3}{4}",
    "ok": false,
    "n_tokens": 397,
    "cap_hit": false
@@ -3190,8 +3202,8 @@
   {
    "id": "m397",
    "gold": "23",
-   "pred": "6x+5",
-   "ok": false,
+   "pred": "23",
+   "ok": true,
    "n_tokens": 253,
    "cap_hit": false
   },
@@ -3230,8 +3242,8 @@
   {
    "id": "m402",
    "gold": "1 - 12i",
-   "pred": "12",
-   "ok": false,
+   "pred": "1-12i",
+   "ok": true,
    "n_tokens": 450,
    "cap_hit": false
   },
@@ -3278,8 +3290,8 @@
   {
    "id": "m408",
    "gold": "\\begin{pmatrix} 1/5 \\\\ -18/5 \\end{pmatrix}",
-   "pred": "Thereflectedvectoris\\begin{pmatrix}1/5\\-18/5\\end{pmatrix}",
-   "ok": false,
+   "pred": "\\begin{pmatrix}1/5\\-18/5\\end{pmatrix}",
+   "ok": true,
    "n_tokens": 1048,
    "cap_hit": false
   },
@@ -3294,8 +3306,8 @@
   {
    "id": "m410",
    "gold": "6",
-   "pred": "3",
-   "ok": false,
+   "pred": "6",
+   "ok": true,
    "n_tokens": 513,
    "cap_hit": false
   },
@@ -3318,24 +3330,24 @@
   {
    "id": "m413",
    "gold": "5r^5",
-   "pred": "5",
-   "ok": false,
+   "pred": "5r^5",
+   "ok": true,
    "n_tokens": 258,
    "cap_hit": false
   },
   {
    "id": "m414",
    "gold": "10",
-   "pred": "a",
-   "ok": false,
+   "pred": "10",
+   "ok": true,
    "n_tokens": 453,
    "cap_hit": false
   },
   {
    "id": "m415",
    "gold": "9",
-   "pred": "0\\le9<11",
-   "ok": false,
+   "pred": "9",
+   "ok": true,
    "n_tokens": 698,
    "cap_hit": false
   },
@@ -3350,16 +3362,16 @@
   {
    "id": "m417",
    "gold": "-2",
-   "pred": "is",
-   "ok": false,
+   "pred": "-2",
+   "ok": true,
    "n_tokens": 357,
    "cap_hit": false
   },
   {
    "id": "m418",
    "gold": "2\\sqrt{5}",
-   "pred": "is",
-   "ok": false,
+   "pred": "2\\sqrt{5}",
+   "ok": true,
    "n_tokens": 436,
    "cap_hit": false
   },
@@ -3374,8 +3386,8 @@
   {
    "id": "m420",
    "gold": "\\begin{pmatrix} 16/49 \\\\ 48/49 \\\\ 24/49 \\end{pmatrix}",
-   "pred": "\\mathbf{b}",
-   "ok": false,
+   "pred": "\\begin{pmatrix}16/49\\48/49\\24/49\\end{pmatrix}",
+   "ok": true,
    "n_tokens": 455,
    "cap_hit": false
   },
@@ -3390,7 +3402,7 @@
   {
    "id": "m422",
    "gold": "\\{1\\pm\\sqrt{5},-2\\}",
-   "pred": "Thesetofvaluesis\\{-2,1+\\sqrt{5},1-\\sqrt{5}\\}",
+   "pred": "\\{-2,1+\\sqrt{5},1-\\sqrt{5}\\}",
    "ok": false,
    "n_tokens": 1345,
    "cap_hit": false
@@ -3398,7 +3410,7 @@
   {
    "id": "m423",
    "gold": "1440",
-   "pred": ")",
+   "pred": "\\checkmark",
    "ok": false,
    "n_tokens": 839,
    "cap_hit": false
@@ -3406,8 +3418,8 @@
   {
    "id": "m424",
    "gold": "600",
-   "pred": "x",
-   "ok": false,
+   "pred": "600",
+   "ok": true,
    "n_tokens": 389,
    "cap_hit": false
   },
@@ -3462,7 +3474,7 @@
   {
    "id": "m431",
    "gold": "\\left[ \\frac{\\pi^2}{8}, \\frac{5 \\pi^2}{4} \\right]",
-   "pred": ".since",
+   "pred": "g(u)",
    "ok": false,
    "n_tokens": 864,
    "cap_hit": false
@@ -3510,8 +3522,8 @@
   {
    "id": "m437",
    "gold": "3",
-   "pred": "\\square",
-   "ok": false,
+   "pred": "3",
+   "ok": true,
    "n_tokens": 606,
    "cap_hit": false
   },
@@ -3526,8 +3538,8 @@
   {
    "id": "m439",
    "gold": "x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + x^2 + x + 1",
-   "pred": "1",
-   "ok": false,
+   "pred": "x^8+x^7+x^6+x^5+x^4+x^3+x^2+x+1",
+   "ok": true,
    "n_tokens": 822,
    "cap_hit": false
   },
@@ -3606,8 +3618,8 @@
   {
    "id": "m449",
    "gold": "47",
-   "pred": "5\\star1",
-   "ok": false,
+   "pred": "47",
+   "ok": true,
    "n_tokens": 260,
    "cap_hit": false
   },
@@ -3686,8 +3698,8 @@
   {
    "id": "m459",
    "gold": "\\$18.90",
-   "pred": "\\",
-   "ok": false,
+   "pred": "18.90",
+   "ok": true,
    "n_tokens": 578,
    "cap_hit": false
   },
@@ -3742,7 +3754,7 @@
   {
    "id": "m466",
    "gold": "8 \\pi",
-   "pred": "\\frac{\\pi}{9},\\frac{3\\pi}{9},\\frac{5\\pi}{9},\\frac{7\\pi}{9},\\frac{11\\pi}{9},\\frac{13\\pi}{9},\\frac{15\\pi}{9},\\frac{17\\pi}{9}",
+   "pred": "[0,2\\pi)",
    "ok": false,
    "n_tokens": 896,
    "cap_hit": false
@@ -3750,8 +3762,8 @@
   {
    "id": "m467",
    "gold": "15\\mbox{ cm}^2",
-   "pred": "2",
-   "ok": false,
+   "pred": "15cm^2",
+   "ok": true,
    "n_tokens": 391,
    "cap_hit": false
   },
@@ -3838,8 +3850,8 @@
   {
    "id": "m478",
    "gold": "\\frac{2}{1005}",
-   "pred": "Thesumofallcomplexsolutionsis\\frac{2}{1005}",
-   "ok": false,
+   "pred": "\\frac{2}{1005}",
+   "ok": true,
    "n_tokens": 1192,
    "cap_hit": false
   },
@@ -3918,8 +3930,8 @@
   {
    "id": "m488",
    "gold": "\\$36",
-   "pred": "\\",
-   "ok": false,
+   "pred": "36.00",
+   "ok": true,
    "n_tokens": 295,
    "cap_hit": false
   },
@@ -3934,8 +3946,8 @@
   {
    "id": "m490",
    "gold": "14",
-   "pred": "|a_{n-1}|",
-   "ok": false,
+   "pred": "14",
+   "ok": true,
    "n_tokens": 2676,
    "cap_hit": false
   },
@@ -3990,8 +4002,8 @@
   {
    "id": "m497",
    "gold": "\\frac{7}{2}",
-   "pred": "(or",
-   "ok": false,
+   "pred": "3.5",
+   "ok": true,
    "n_tokens": 723,
    "cap_hit": false
   },

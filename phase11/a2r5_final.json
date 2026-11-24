@@ -8,7 +8,19 @@
   "mean_tokens": 7270.0,
   "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
   "model": "/home/user/wsp11/sandbox/model_a2r5",
-  "fp8": false
+  "fp8": false,
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "validity": {
+   "soup_pct": 7.0,
+   "soup_judged": false,
+   "admission_tested": true,
+   "admission_correct": [
+    1.6,
+    1.2,
+    1.0
+   ],
+   "problems": []
+  }
  },
  "rows": [
   {
@@ -230,7 +242,7 @@
   {
    "id": "m27",
    "gold": "78",
-   "pred": "\\epsilon",
+   "pred": "1",
    "ok": false,
    "n_tokens": 4375,
    "cap_hit": false
@@ -326,7 +338,7 @@
   {
    "id": "m39",
    "gold": "23",
-   "pred": "\\textend%",
+   "pred": "\\textend",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -406,7 +418,7 @@
   {
    "id": "m49",
    "gold": "83",
-   "pred": "y",
+   "pred": "x-y",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -422,7 +434,7 @@
   {
    "id": "m51",
    "gold": "x^5 - x^4 + x^3 - x^2 + x - 1",
-   "pred": "3",
+   "pred": "x^5-3",
    "ok": false,
    "n_tokens": 6893,
    "cap_hit": false
@@ -534,7 +546,7 @@
   {
    "id": "m65",
    "gold": "1",
-   "pred": "\\text{im\\s\\to\\",
+   "pred": "\\text{im",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -862,7 +874,7 @@
   {
    "id": "m106",
    "gold": "\\frac43",
-   "pred": "x\\mathbb{R}",
+   "pred": "x",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -982,7 +994,7 @@
   {
    "id": "m121",
    "gold": "6",
-   "pred": "\\text-\\text",
+   "pred": "\\text",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -1054,7 +1066,7 @@
   {
    "id": "m130",
    "gold": "13",
-   "pred": "0\\len<18",
+   "pred": "n\\equiv-11213141\\pmod{18}",
    "ok": false,
    "n_tokens": 1031,
    "cap_hit": false
@@ -1174,7 +1186,7 @@
   {
    "id": "m145",
    "gold": "-2",
-   "pred": "is24.0.15.\\dots",
+   "pred": "24.0.15.\\dots",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -1654,7 +1666,7 @@
   {
    "id": "m205",
    "gold": "\\begin{pmatrix} -2 \\\\ -14 \\\\ -7 \\end{pmatrix}",
-   "pred": "tothebetheanswerofthefinalresultofthevalueofthematrix\\mathbf{a}\\intextend\\begin{pmatrix}-13\\3\\4\\end{}`p}",
+   "pred": "\\mathbf{a}\\intextend\\begin{pmatrix}-13\\3\\4\\end{}`p}",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -1806,7 +1818,7 @@
   {
    "id": "m224",
    "gold": "\\frac{9}{256}",
-   "pred": "\\sin(20^ine)))",
+   "pred": ")",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -1846,7 +1858,7 @@
   {
    "id": "m229",
    "gold": "90",
-   "pred": "2^4\\times10^{10}(wait:nologicerror)",
+   "pred": "2^4\\times10^{10}",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -2086,7 +2098,7 @@
   {
    "id": "m259",
    "gold": "22",
-   "pred": "result",
+   "pred": "result:",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -2662,7 +2674,7 @@
   {
    "id": "m331",
    "gold": "\\frac{13}{6}",
-   "pred": "P(x\\dots)\\",
+   "pred": "P(x\\dots)",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -3046,7 +3058,7 @@
   {
    "id": "m379",
    "gold": "12",
-   "pred": "135\\%ofthefemalebusriders?",
+   "pred": "135\\%",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -3430,7 +3442,7 @@
   {
    "id": "m427",
    "gold": "29",
-   "pred": "\\0.05",
+   "pred": "0.05",
    "ok": false,
    "n_tokens": 461,
    "cap_hit": false
@@ -3534,7 +3546,7 @@
   {
    "id": "m440",
    "gold": "14",
-   "pred": "6",
+   "pred": "u^2-5u+6",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -3646,7 +3658,7 @@
   {
    "id": "m454",
    "gold": "y = 2x + 3",
-   "pred": "under",
+   "pred": "\\mathbf{m}",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -3774,7 +3786,7 @@
   {
    "id": "m470",
    "gold": "27648",
-   "pred": "10)",
+   "pred": "10",
    "ok": false,
    "n_tokens": 5036,
    "cap_hit": false
@@ -3798,7 +3810,7 @@
   {
    "id": "m473",
    "gold": "7",
-   "pred": "\\begin]\\begin",
+   "pred": "\\begin]",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -3838,7 +3850,7 @@
   {
    "id": "m478",
    "gold": "\\frac{2}{1005}",
-   "pred": "2",
+   "pred": "x^2-pathio",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true

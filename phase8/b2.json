@@ -13,11 +13,33 @@
    "force_from": null,
    "gmu": 0.92
   },
-  "accuracy": 38.8,
+  "accuracy": 41.4,
   "answered": 99.2,
   "finished": 91.6,
   "mean_tokens": 7722,
-  "wall_s": 625.0
+  "wall_s": 625.0,
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "validity": {
+   "soup_pct": 0.0,
+   "soup_judged": true,
+   "admission_tested": true,
+   "admission_finished": [
+    91.6,
+    91.6,
+    1.0
+   ],
+   "admission_closed": [
+    13.6,
+    11.6,
+    0.5901
+   ],
+   "admission_correct": [
+    41.2,
+    41.6,
+    1.0
+   ],
+   "problems": []
+  }
  },
  "prompt0": "<|im_start|>user\nConvert the point $(0,3)$ in rectangular coordinates to polar coordinates.  Enter your answer in the form $(r,\\theta),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
  "rows": [
@@ -108,8 +130,8 @@
    "n_tokens": 517,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "thedistanceis3\\sqrt{13}",
-   "ok_rescored": false
+   "pred_rescored": "3\\sqrt{13}",
+   "ok_rescored": true
   },
   {
    "id": "m9",
@@ -228,8 +250,8 @@
    "n_tokens": 784,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "9",
-   "ok_rescored": false
+   "pred_rescored": "6+9i",
+   "ok_rescored": true
   },
   {
    "id": "m21",
@@ -298,7 +320,7 @@
    "n_tokens": 309,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "\\222",
+   "pred_rescored": "222",
    "ok_rescored": false
   },
   {
@@ -308,8 +330,8 @@
    "n_tokens": 442,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "7",
-   "ok_rescored": false
+   "pred_rescored": "-2+7i",
+   "ok_rescored": true
   },
   {
    "id": "m29",
@@ -648,7 +670,7 @@
    "n_tokens": 26181,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "seemstobe\\sqrt{13}",
+   "pred_rescored": "\\sqrt{13}",
    "ok_rescored": false
   },
   {
@@ -688,7 +710,7 @@
    "n_tokens": 750,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "6",
+   "pred_rescored": "x^3-2x^2-x-6",
    "ok_rescored": false
   },
   {
@@ -788,8 +810,8 @@
    "n_tokens": 666,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "a+b",
-   "ok_rescored": false
+   "pred_rescored": "0",
+   "ok_rescored": true
   },
   {
    "id": "m77",
@@ -1048,8 +1070,8 @@
    "n_tokens": 523,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "2",
-   "ok_rescored": false
+   "pred_rescored": "(a+5)(b+2)",
+   "ok_rescored": true
   },
   {
    "id": "m103",
@@ -1088,7 +1110,7 @@
    "n_tokens": 807,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "y",
+   "pred_rescored": "\\frac{4}{3}",
    "ok_rescored": false
   },
   {
@@ -1118,7 +1140,7 @@
    "n_tokens": 20130,
    "closed": true,
    "think_end_at": 18518,
-   "pred_rescored": "thedegreemeasureis0^\\circ",
+   "pred_rescored": "0^\\circ",
    "ok_rescored": false
   },
   {
@@ -1148,8 +1170,8 @@
    "n_tokens": 1699,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "a+b+c+d",
-   "ok_rescored": false
+   "pred_rescored": "13",
+   "ok_rescored": true
   },
   {
    "id": "m113",
@@ -1338,8 +1360,8 @@
    "n_tokens": 11002,
    "closed": true,
    "think_end_at": 10453,
-   "pred_rescored": "f(3)",
-   "ok_rescored": false
+   "pred_rescored": "8",
+   "ok_rescored": true
   },
   {
    "id": "m132",
@@ -1358,7 +1380,7 @@
    "n_tokens": 766,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "Thelargestangleis180^\\circ",
+   "pred_rescored": "180^\\circ",
    "ok_rescored": false
   },
   {
@@ -1588,8 +1610,8 @@
    "n_tokens": 19750,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "seemstobe30^\\circ",
-   "ok_rescored": false
+   "pred_rescored": "30^\\circ",
+   "ok_rescored": true
   },
   {
    "id": "m157",
@@ -1678,7 +1700,7 @@
    "n_tokens": 582,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "Thefractionofthebooksremainingonthethreeshelvesthataremathbooksis\\frac{5}{9}",
+   "pred_rescored": "\\frac{5}{9}",
    "ok_rescored": false
   },
   {
@@ -2218,7 +2240,7 @@
    "n_tokens": 19208,
    "closed": true,
    "think_end_at": 18432,
-   "pred_rescored": "theprobabilitythatthecheckerisplacedonashadedsquareis\\frac{7}{36}",
+   "pred_rescored": "\\frac{7}{36}",
    "ok_rescored": false
   },
   {
@@ -2388,7 +2410,7 @@
    "n_tokens": 32768,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "\\sqrt{3}+\\tan40+\\tan20?",
+   "pred_rescored": "\\sqrt{3}+\\tan40+\\tan20",
    "ok_rescored": false
   },
   {
@@ -2478,7 +2500,7 @@
    "n_tokens": 1047,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "x^2-1",
+   "pred_rescored": "-14",
    "ok_rescored": false
   },
   {
@@ -2558,7 +2580,7 @@
    "n_tokens": 446,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "Thefractionof2feetthatis3inchesis\\frac{1}{2}",
+   "pred_rescored": "\\frac{1}{2}",
    "ok_rescored": false
   },
   {
@@ -2628,7 +2650,7 @@
    "n_tokens": 987,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "and",
+   "pred_rescored": "180^\\circ",
    "ok_rescored": false
   },
   {
@@ -2738,7 +2760,7 @@
    "n_tokens": 32768,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "332?",
+   "pred_rescored": "332",
    "ok_rescored": false
   },
   {
@@ -3098,8 +3120,8 @@
    "n_tokens": 1171,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "therangeis(-\\infty,0]",
-   "ok_rescored": false
+   "pred_rescored": "(-\\infty,0]",
+   "ok_rescored": true
   },
   {
    "id": "m308",
@@ -3198,7 +3220,7 @@
    "n_tokens": 1298,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "p(x)",
+   "pred_rescored": "2",
    "ok_rescored": false
   },
   {
@@ -3498,7 +3520,7 @@
    "n_tokens": 600,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "24",
+   "pred_rescored": "6r^2+44r-24",
    "ok_rescored": false
   },
   {
@@ -3618,7 +3640,7 @@
    "n_tokens": 32768,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "2",
+   "pred_rescored": "x^2z",
    "ok_rescored": false
   },
   {
@@ -3738,7 +3760,7 @@
    "n_tokens": 21836,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "|a|+|b|+|c|",
+   "pred_rescored": "5",
    "ok_rescored": false
   },
   {
@@ -3828,7 +3850,7 @@
    "n_tokens": 785,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "9",
+   "pred_rescored": "x>9",
    "ok_rescored": false
   },
   {
@@ -3838,7 +3860,7 @@
    "n_tokens": 1846,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "y",
+   "pred_rescored": "\\frac{17}{18}",
    "ok_rescored": false
   },
   {
@@ -3868,8 +3890,8 @@
    "n_tokens": 318,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "80",
-   "ok_rescored": false
+   "pred_rescored": "15x-80",
+   "ok_rescored": true
   },
   {
    "id": "m385",
@@ -4048,7 +4070,7 @@
    "n_tokens": 698,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "-3",
+   "pred_rescored": "-3i",
    "ok_rescored": false
   },
   {
@@ -4108,7 +4130,7 @@
    "n_tokens": 24079,
    "closed": true,
    "think_end_at": 23463,
-   "pred_rescored": "\\begin{pmatrix}-2\\3\\end{pmatrix}",
+   "pred_rescored": "\\begin{pmatrix}2\\-3\\end{pmatrix}",
    "ok_rescored": false
   },
   {
@@ -4118,7 +4140,7 @@
    "n_tokens": 698,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "thedistancebetweenthefociofthehyperbolais6\\sqrt{5}",
+   "pred_rescored": "6\\sqrt{5}",
    "ok_rescored": false
   },
   {
@@ -4148,7 +4170,7 @@
    "n_tokens": 27290,
    "closed": true,
    "think_end_at": 26351,
-   "pred_rescored": "p(16)",
+   "pred_rescored": "201",
    "ok_rescored": false
   },
   {
@@ -4158,8 +4180,8 @@
    "n_tokens": 335,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "5",
-   "ok_rescored": false
+   "pred_rescored": "5r^5",
+   "ok_rescored": true
   },
   {
    "id": "m414",
@@ -4228,7 +4250,7 @@
    "n_tokens": 835,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "\\mathbf{b}",
+   "pred_rescored": "\\frac{8}{49}",
    "ok_rescored": false
   },
   {
@@ -4328,8 +4350,8 @@
    "n_tokens": 243,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "\\frac{9}{2}expressedasadecimalis4.5",
-   "ok_rescored": false
+   "pred_rescored": "4.5",
+   "ok_rescored": true
   },
   {
    "id": "m431",
@@ -4618,7 +4640,7 @@
    "n_tokens": 1125,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "\\18.90",
+   "pred_rescored": "18.90",
    "ok_rescored": true
   },
   {
@@ -4909,7 +4931,7 @@
    "closed": false,
    "think_end_at": null,
    "pred_rescored": "36",
-   "ok_rescored": false
+   "ok_rescored": true
   },
   {
    "id": "m489",
@@ -4918,7 +4940,7 @@
    "n_tokens": 32768,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "30",
+   "pred_rescored": "30-p",
    "ok_rescored": false
   },
   {
@@ -4928,7 +4950,7 @@
    "n_tokens": 32768,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "17",
+   "pred_rescored": "1,3,2,11",
    "ok_rescored": false
   },
   {
@@ -4948,7 +4970,7 @@
    "n_tokens": 9360,
    "closed": true,
    "think_end_at": 8683,
-   "pred_rescored": "theequationoftheplaneperpendicularto\\mathbf{u}",
+   "pred_rescored": "\\mathbf{u}",
    "ok_rescored": false
   },
   {
@@ -4988,7 +5010,7 @@
    "n_tokens": 1576,
    "closed": false,
    "think_end_at": null,
-   "pred_rescored": "|w|",
+   "pred_rescored": "\\frac{1}{13}",
    "ok_rescored": false
   },
   {
@@ -5008,7 +5030,7 @@
    "n_tokens": 24048,
    "closed": true,
    "think_end_at": 18778,
-   "pred_rescored": "seemstobe64+\\frac{17\\sqrt{5}}{4}",
+   "pred_rescored": "64+\\frac{17\\sqrt{5}}{4}",
    "ok_rescored": false
   },
   {

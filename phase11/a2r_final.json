@@ -3,12 +3,24 @@
   "name": "a2r_final",
   "n": 500,
   "accuracy": 1.6,
-  "answered": 97.6,
+  "answered": 97.8,
   "cap_hit_rate": 98.0,
   "mean_tokens": 8083.2,
   "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
   "model": "/home/user/wsp11/sandbox/model_a2r",
-  "fp8": false
+  "fp8": false,
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "validity": {
+   "soup_pct": 5.8,
+   "soup_judged": false,
+   "admission_tested": true,
+   "admission_correct": [
+    2.0,
+    1.2,
+    0.7244
+   ],
+   "problems": []
+  }
  },
  "rows": [
   {
@@ -430,7 +442,7 @@
   {
    "id": "m52",
    "gold": "12",
-   "pred": "5",
+   "pred": "typescript1.0.5",
    "ok": false,
    "n_tokens": 389,
    "cap_hit": false
@@ -1374,7 +1386,7 @@
   {
    "id": "m170",
    "gold": "1736",
-   "pred": "38",
+   "pred": "y",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -1582,7 +1594,7 @@
   {
    "id": "m196",
    "gold": "1600",
-   "pred": "361",
+   "pred": "441+361",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -1886,7 +1898,7 @@
   {
    "id": "m234",
    "gold": "34",
-   "pred": "g",
+   "pred": "71",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -2086,7 +2098,7 @@
   {
    "id": "m259",
    "gold": "22",
-   "pred": "5+\\sqrt{3}",
+   "pred": "5-\\sqrt{3}",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -2150,7 +2162,7 @@
   {
    "id": "m267",
    "gold": "180^\\circ",
-   "pred": "m\\le\\angleH",
+   "pred": ",and",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -2182,7 +2194,7 @@
   {
    "id": "m271",
    "gold": "333",
-   "pred": "x",
+   "pred": "suchthat",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -3470,7 +3482,7 @@
   {
    "id": "m432",
    "gold": "331",
-   "pred": "for",
+   "pred": "n\\ge1",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -3582,7 +3594,7 @@
   {
    "id": "m446",
    "gold": "8",
-   "pred": "Thesequencestartsas\\frac{1}{4},\\frac{1}{8},\\dots",
+   "pred": "\\frac{1}{4},\\frac{1}{8},\\dots",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -3606,7 +3618,7 @@
   {
    "id": "m449",
    "gold": "47",
-   "pred": "5\\star1",
+   "pred": "20",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -3798,7 +3810,7 @@
   {
    "id": "m473",
    "gold": "7",
-   "pred": null,
+   "pred": "",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -3918,7 +3930,7 @@
   {
    "id": "m488",
    "gold": "\\$36",
-   "pred": "\\",
+   "pred": "13.00",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -3958,7 +3970,7 @@
   {
    "id": "m493",
    "gold": "20",
-   "pred": "is",
+   "pred": "2",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -3982,7 +3994,7 @@
   {
    "id": "m496",
    "gold": "\\frac{5}{13}",
-   "pred": "1",
+   "pred": "|w|",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true

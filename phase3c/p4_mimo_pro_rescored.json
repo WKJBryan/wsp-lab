@@ -2,10 +2,32 @@
  "summary": {
   "name": "p4_mimo_pro_rescored",
   "n": 500,
-  "accuracy": 27.8,
+  "accuracy": 35.2,
   "answered": 96.6,
   "cap_hit_rate": 42.0,
-  "mean_tokens": 16041.0
+  "mean_tokens": 16041.0,
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "validity": {
+   "soup_pct": 0.0,
+   "soup_judged": true,
+   "admission_tested": true,
+   "admission_finished": [
+    58.0,
+    58.0,
+    1.0
+   ],
+   "admission_closed": [
+    98.0,
+    97.2,
+    0.7717
+   ],
+   "admission_correct": [
+    34.4,
+    36.0,
+    0.7788
+   ],
+   "problems": []
+  }
  },
  "rows": [
   {
@@ -16,8 +38,8 @@
    "gold": "\\left( 3, \\frac{\\pi}{2} \\right)",
    "n_tokens": 1506,
    "closed": true,
-   "pred_rescored": "(0,3)",
-   "ok_rescored": false
+   "pred_rescored": "(3,\\frac{\\pi}{2})",
+   "ok_rescored": true
   },
   {
    "id": "m1",
@@ -38,8 +60,8 @@
    "gold": "\\frac{14}{3}",
    "n_tokens": 488,
    "closed": true,
-   "pred_rescored": "f(-2)+f(-1)+f(0)",
-   "ok_rescored": false
+   "pred_rescored": "\\frac{14}{3}",
+   "ok_rescored": true
   },
   {
    "id": "m3",
@@ -71,7 +93,7 @@
    "gold": "42",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "Wait,300^\\circ",
+   "pred_rescored": "300^\\circ",
    "ok_rescored": false
   },
   {
@@ -104,7 +126,7 @@
    "gold": "3\\sqrt{13}",
    "n_tokens": 1577,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "\\sqrt{117}",
    "ok_rescored": false
   },
   {
@@ -137,7 +159,7 @@
    "gold": "\\frac{3}{56}",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "p(x)",
    "ok_rescored": false
   },
   {
@@ -203,7 +225,7 @@
    "gold": "\\pi",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "(0,1),(0,2),(0,3)?",
+   "pred_rescored": "(0,1),(0,2),(0,3)",
    "ok_rescored": false
   },
   {
@@ -236,8 +258,8 @@
    "gold": "6+9i",
    "n_tokens": 219,
    "closed": true,
-   "pred_rescored": "9",
-   "ok_rescored": false
+   "pred_rescored": "6+9i",
+   "ok_rescored": true
   },
   {
    "id": "m21",
@@ -258,7 +280,7 @@
    "gold": "5",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "x",
+   "pred_rescored": "16+x",
    "ok_rescored": false
   },
   {
@@ -269,7 +291,7 @@
    "gold": "x=5",
    "n_tokens": 16274,
    "closed": true,
-   "pred_rescored": "x",
+   "pred_rescored": "5",
    "ok_rescored": false
   },
   {
@@ -324,8 +346,8 @@
    "gold": "-2 + 7i",
    "n_tokens": 5749,
    "closed": true,
-   "pred_rescored": "7",
-   "ok_rescored": false
+   "pred_rescored": "-2+7i",
+   "ok_rescored": true
   },
   {
    "id": "m29",
@@ -489,7 +511,7 @@
    "gold": "70 \\sqrt{2}",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "(0,20)",
    "ok_rescored": false
   },
   {
@@ -544,7 +566,7 @@
    "gold": "\\frac{3}{2}",
    "n_tokens": 91,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "2",
    "ok_rescored": false
   },
   {
@@ -555,8 +577,8 @@
    "gold": "83",
    "n_tokens": 1484,
    "closed": true,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "83",
+   "ok_rescored": true
   },
   {
    "id": "m50",
@@ -577,7 +599,7 @@
    "gold": "x^5 - x^4 + x^3 - x^2 + x - 1",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "x^6+x^5",
    "ok_rescored": false
   },
   {
@@ -610,7 +632,7 @@
    "gold": "0.15",
    "n_tokens": 309,
    "closed": true,
-   "pred_rescored": "\\frac{3}{20}",
+   "pred_rescored": "0.15",
    "ok_rescored": true
   },
   {
@@ -632,8 +654,8 @@
    "gold": "11",
    "n_tokens": 931,
    "closed": true,
-   "pred_rescored": "N",
-   "ok_rescored": false
+   "pred_rescored": "11",
+   "ok_rescored": true
   },
   {
    "id": "m57",
@@ -786,8 +808,8 @@
    "gold": "40_9",
    "n_tokens": 995,
    "closed": true,
-   "pred_rescored": "think",
-   "ok_rescored": false
+   "pred_rescored": "40_9",
+   "ok_rescored": true
   },
   {
    "id": "m71",
@@ -852,7 +874,7 @@
    "gold": "0",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "Wait,maybethefunctionis\\logx^2",
+   "pred_rescored": "\\logx^2",
    "ok_rescored": false
   },
   {
@@ -984,8 +1006,8 @@
    "gold": "2",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "2",
-   "ok_rescored": true
+   "pred_rescored": "ax+2a",
+   "ok_rescored": false
   },
   {
    "id": "m89",
@@ -1006,7 +1028,7 @@
    "gold": "\\frac{3}{2}",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": ",then",
+   "pred_rescored": "15",
    "ok_rescored": false
   },
   {
@@ -1028,8 +1050,8 @@
    "gold": "\\frac{448}{15625}",
    "n_tokens": 1165,
    "closed": true,
-   "pred_rescored": "0.02867",
-   "ok_rescored": false
+   "pred_rescored": "\\frac{2240}{78125}",
+   "ok_rescored": true
   },
   {
    "id": "m93",
@@ -1094,8 +1116,8 @@
    "gold": "2k+2",
    "n_tokens": 183,
    "closed": true,
-   "pred_rescored": "2",
-   "ok_rescored": false
+   "pred_rescored": "2k+2",
+   "ok_rescored": true
   },
   {
    "id": "m99",
@@ -1127,7 +1149,7 @@
    "gold": "850",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "as",
    "ok_rescored": false
   },
   {
@@ -1138,8 +1160,8 @@
    "gold": "(a+5)(b+2)",
    "n_tokens": 716,
    "closed": true,
-   "pred_rescored": "2",
-   "ok_rescored": false
+   "pred_rescored": "(a+5)(b+2)",
+   "ok_rescored": true
   },
   {
    "id": "m103",
@@ -1149,7 +1171,7 @@
    "gold": "(3,4]",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "x",
    "ok_rescored": false
   },
   {
@@ -1182,7 +1204,7 @@
    "gold": "\\frac43",
    "n_tokens": 622,
    "closed": true,
-   "pred_rescored": "y",
+   "pred_rescored": "\\frac{4}{3}",
    "ok_rescored": false
   },
   {
@@ -1303,8 +1325,8 @@
    "gold": "3",
    "n_tokens": 415,
    "closed": true,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "3",
+   "ok_rescored": true
   },
   {
    "id": "m118",
@@ -1314,7 +1336,7 @@
    "gold": "81",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "Sob\\in\\{-5,\\dots,5\\}",
+   "pred_rescored": "b\\in\\{-5,\\dots,5\\}",
    "ok_rescored": false
   },
   {
@@ -1358,7 +1380,7 @@
    "gold": "9",
    "n_tokens": 766,
    "closed": true,
-   "pred_rescored": "\\",
+   "pred_rescored": "2500",
    "ok_rescored": false
   },
   {
@@ -1369,8 +1391,8 @@
    "gold": "8",
    "n_tokens": 3344,
    "closed": true,
-   "pred_rescored": "dbef",
-   "ok_rescored": false
+   "pred_rescored": "8",
+   "ok_rescored": true
   },
   {
    "id": "m124",
@@ -1457,8 +1479,8 @@
    "gold": "8",
    "n_tokens": 2902,
    "closed": true,
-   "pred_rescored": "f(3)",
-   "ok_rescored": false
+   "pred_rescored": "8",
+   "ok_rescored": true
   },
   {
    "id": "m132",
@@ -1479,7 +1501,7 @@
    "gold": "120",
    "n_tokens": 4746,
    "closed": true,
-   "pred_rescored": "Thelargestangleis120^\\circ",
+   "pred_rescored": "120^\\circ",
    "ok_rescored": false
   },
   {
@@ -1589,8 +1611,8 @@
    "gold": "3 \\sqrt{5}",
    "n_tokens": 2736,
    "closed": true,
-   "pred_rescored": "OAB",
-   "ok_rescored": false
+   "pred_rescored": "3\\sqrt{5}",
+   "ok_rescored": true
   },
   {
    "id": "m144",
@@ -1666,7 +1688,7 @@
    "gold": "1",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "f",
+   "pred_rescored": "(i,j-1)",
    "ok_rescored": false
   },
   {
@@ -1688,7 +1710,7 @@
    "gold": "8",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "G",
+   "pred_rescored": "AD",
    "ok_rescored": false
   },
   {
@@ -1732,7 +1754,7 @@
    "gold": "30^\\circ",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "0",
+   "pred_rescored": "(0,y_p)",
    "ok_rescored": false
   },
   {
@@ -1754,7 +1776,7 @@
    "gold": "2107",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "200",
    "ok_rescored": false
   },
   {
@@ -1765,7 +1787,7 @@
    "gold": "3.21",
    "n_tokens": 1927,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "(x+b)^2+c",
    "ok_rescored": false
   },
   {
@@ -1809,7 +1831,7 @@
    "gold": "-\\frac{35}{9}",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "a^2",
+   "pred_rescored": "[4,36]",
    "ok_rescored": false
   },
   {
@@ -1897,7 +1919,7 @@
    "gold": "\\frac{13}{15}",
    "n_tokens": 2124,
    "closed": true,
-   "pred_rescored": "(orapproximately",
+   "pred_rescored": "86.67\\%",
    "ok_rescored": false
   },
   {
@@ -1974,7 +1996,7 @@
    "gold": "60",
    "n_tokens": 974,
    "closed": true,
-   "pred_rescored": "10\\times15\\times24",
+   "pred_rescored": "12\\sqrt{5}",
    "ok_rescored": false
   },
   {
@@ -2095,7 +2117,7 @@
    "gold": "160",
    "n_tokens": 10141,
    "closed": true,
-   "pred_rescored": "H",
+   "pred_rescored": "O",
    "ok_rescored": false
   },
   {
@@ -2106,7 +2128,7 @@
    "gold": "\\frac{13}{18}",
    "n_tokens": 9315,
    "closed": true,
-   "pred_rescored": "theprobabilitythatthesumofthenumberstheychooseisevenis\\frac{2}{5}",
+   "pred_rescored": "\\frac{2}{5}",
    "ok_rescored": false
   },
   {
@@ -2117,7 +2139,7 @@
    "gold": "0",
    "n_tokens": 267,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "(whichrepresents",
    "ok_rescored": false
   },
   {
@@ -2205,8 +2227,8 @@
    "gold": "17",
    "n_tokens": 1680,
    "closed": true,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "17",
+   "ok_rescored": true
   },
   {
    "id": "m200",
@@ -2227,7 +2249,7 @@
    "gold": "66",
    "n_tokens": 2939,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "1\\len<50",
    "ok_rescored": false
   },
   {
@@ -2238,7 +2260,7 @@
    "gold": "\\frac{2}{3}",
    "n_tokens": 1752,
    "closed": true,
-   "pred_rescored": "theprobabilitythatalicewinsthegameis\\frac{15}{16}",
+   "pred_rescored": "\\frac{15}{16}",
    "ok_rescored": false
   },
   {
@@ -2359,7 +2381,7 @@
    "gold": "2",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "F_n\\quadNo",
    "ok_rescored": false
   },
   {
@@ -2381,8 +2403,8 @@
    "gold": "2",
    "n_tokens": 1593,
    "closed": true,
-   "pred_rescored": "x^3-2x+1",
-   "ok_rescored": false
+   "pred_rescored": "2",
+   "ok_rescored": true
   },
   {
    "id": "m216",
@@ -2601,7 +2623,7 @@
    "gold": "\\frac 59",
    "n_tokens": 542,
    "closed": true,
-   "pred_rescored": "Thevalueoftheexpressionis\\frac{5}{9}",
+   "pred_rescored": "\\frac{5}{9}",
    "ok_rescored": false
   },
   {
@@ -2612,7 +2634,7 @@
    "gold": "12",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "\\frac{1}{\\cos^210^\\circ}+\\frac{1}{\\sin^220^\\circ}+\\frac{1}{\\sin^240^\\circ}",
    "ok_rescored": false
   },
   {
@@ -2744,7 +2766,7 @@
    "gold": "\\begin{pmatrix} -1 & 0 \\\\ 0 & -1 \\end{pmatrix}",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "22",
+   "pred_rescored": "A_{22}",
    "ok_rescored": false
   },
   {
@@ -2777,7 +2799,7 @@
    "gold": "540",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "1",
    "ok_rescored": false
   },
   {
@@ -2865,7 +2887,7 @@
    "gold": "22",
    "n_tokens": 2406,
    "closed": true,
-   "pred_rescored": "theproductis25+5\\sqrt{3}-(3+5\\sqrt{3})i",
+   "pred_rescored": "25+5\\sqrt{3}-(3+5\\sqrt{3})i",
    "ok_rescored": false
   },
   {
@@ -2942,7 +2964,7 @@
    "gold": "\\dfrac{33}{100}",
    "n_tokens": 979,
    "closed": true,
-   "pred_rescored": "theprobabilitythatthenumberisamultipleof3is\\frac{17}{50}",
+   "pred_rescored": "\\frac{17}{50}",
    "ok_rescored": false
   },
   {
@@ -2986,8 +3008,8 @@
    "gold": "10",
    "n_tokens": 457,
    "closed": true,
-   "pred_rescored": "\\10",
-   "ok_rescored": false
+   "pred_rescored": "10",
+   "ok_rescored": true
   },
   {
    "id": "m271",
@@ -3107,7 +3129,7 @@
    "gold": "36^\\circ",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "A",
+   "pred_rescored": "istotheleftof",
    "ok_rescored": false
   },
   {
@@ -3118,7 +3140,7 @@
    "gold": "129",
    "n_tokens": 857,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "645",
    "ok_rescored": false
   },
   {
@@ -3140,7 +3162,7 @@
    "gold": "3 \\pm 2 \\sqrt{2}",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "are",
    "ok_rescored": false
   },
   {
@@ -3206,7 +3228,7 @@
    "gold": "4",
    "n_tokens": 4953,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "r",
    "ok_rescored": false
   },
   {
@@ -3239,8 +3261,8 @@
    "gold": "\\left(\\frac{3}{5},\\frac{8}{3}\\right]",
    "n_tokens": 4729,
    "closed": true,
-   "pred_rescored": "theintervalnotationforthesolutionis(\\frac{3}{5},\\frac{8}{3}]",
-   "ok_rescored": false
+   "pred_rescored": "(\\frac{3}{5},\\frac{8}{3}]",
+   "ok_rescored": true
   },
   {
    "id": "m294",
@@ -3250,7 +3272,7 @@
    "gold": "58",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "3",
    "ok_rescored": false
   },
   {
@@ -3470,8 +3492,8 @@
    "gold": "(2,4)",
    "n_tokens": 329,
    "closed": true,
-   "pred_rescored": "4",
-   "ok_rescored": false
+   "pred_rescored": "(2,4)",
+   "ok_rescored": true
   },
   {
    "id": "m315",
@@ -3503,8 +3525,8 @@
    "gold": "0",
    "n_tokens": 9017,
    "closed": true,
-   "pred_rescored": "p(x)",
-   "ok_rescored": false
+   "pred_rescored": "0",
+   "ok_rescored": true
   },
   {
    "id": "m318",
@@ -3525,8 +3547,8 @@
    "gold": "-128",
    "n_tokens": 1632,
    "closed": true,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "-128",
+   "ok_rescored": true
   },
   {
    "id": "m320",
@@ -3558,8 +3580,8 @@
    "gold": "-1",
    "n_tokens": 1729,
    "closed": true,
-   "pred_rescored": "b",
-   "ok_rescored": false
+   "pred_rescored": "-1",
+   "ok_rescored": true
   },
   {
    "id": "m323",
@@ -3580,7 +3602,7 @@
    "gold": "120",
    "n_tokens": 8655,
    "closed": true,
-   "pred_rescored": "\\angleadc",
+   "pred_rescored": "150^\\circ",
    "ok_rescored": false
   },
   {
@@ -3613,7 +3635,7 @@
    "gold": "15",
    "n_tokens": 12988,
    "closed": true,
-   "pred_rescored": "Q_2(x)",
+   "pred_rescored": "P(2)",
    "ok_rescored": false
   },
   {
@@ -3734,7 +3756,7 @@
    "gold": "4343_6",
    "n_tokens": 418,
    "closed": true,
-   "pred_rescored": "999_{10}",
+   "pred_rescored": "333_6",
    "ok_rescored": false
   },
   {
@@ -3778,8 +3800,8 @@
    "gold": "2",
    "n_tokens": 718,
    "closed": true,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "2",
+   "ok_rescored": true
   },
   {
    "id": "m343",
@@ -3822,7 +3844,7 @@
    "gold": "66",
    "n_tokens": 2403,
    "closed": true,
-   "pred_rescored": "x",
+   "pred_rescored": "18",
    "ok_rescored": false
   },
   {
@@ -3833,8 +3855,8 @@
    "gold": "6r^2-4r-24",
    "n_tokens": 6236,
    "closed": true,
-   "pred_rescored": "24",
-   "ok_rescored": false
+   "pred_rescored": "6r^2-4r-24",
+   "ok_rescored": true
   },
   {
    "id": "m348",
@@ -3844,8 +3866,8 @@
    "gold": "4495",
    "n_tokens": 744,
    "closed": true,
-   "pred_rescored": "\\binom{31}{28}",
-   "ok_rescored": false
+   "pred_rescored": "4495",
+   "ok_rescored": true
   },
   {
    "id": "m349",
@@ -3932,7 +3954,7 @@
    "gold": "(-\\sqrt{3}, \\sqrt{3})",
    "n_tokens": 11253,
    "closed": true,
-   "pred_rescored": "is[-\\sqrt{3},\\sqrt{3})",
+   "pred_rescored": "[-\\sqrt{3},\\sqrt{3})",
    "ok_rescored": false
   },
   {
@@ -4031,7 +4053,7 @@
    "gold": "8",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "true",
    "ok_rescored": false
   },
   {
@@ -4097,7 +4119,7 @@
    "gold": "17",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "f(x)\\le1",
+   "pred_rescored": "forall",
    "ok_rescored": false
   },
   {
@@ -4119,8 +4141,8 @@
    "gold": "1+2i",
    "n_tokens": 586,
    "closed": true,
-   "pred_rescored": "2",
-   "ok_rescored": false
+   "pred_rescored": "1+2i",
+   "ok_rescored": true
   },
   {
    "id": "m374",
@@ -4152,8 +4174,8 @@
    "gold": "(8,-2)",
    "n_tokens": 852,
    "closed": true,
-   "pred_rescored": "p",
-   "ok_rescored": false
+   "pred_rescored": "(8,-2)",
+   "ok_rescored": true
   },
   {
    "id": "m377",
@@ -4229,7 +4251,7 @@
    "gold": "x \\in [-2,7]",
    "n_tokens": 1625,
    "closed": true,
-   "pred_rescored": "x",
+   "pred_rescored": "[-7,2]",
    "ok_rescored": false
   },
   {
@@ -4240,8 +4262,8 @@
    "gold": "15x - 80",
    "n_tokens": 184,
    "closed": true,
-   "pred_rescored": "80",
-   "ok_rescored": false
+   "pred_rescored": "15x-80",
+   "ok_rescored": true
   },
   {
    "id": "m385",
@@ -4273,8 +4295,8 @@
    "gold": "18",
    "n_tokens": 268,
    "closed": true,
-   "pred_rescored": "f(-2)",
-   "ok_rescored": false
+   "pred_rescored": "18",
+   "ok_rescored": true
   },
   {
    "id": "m388",
@@ -4284,8 +4306,8 @@
    "gold": "\\frac{11}{2}",
    "n_tokens": 5475,
    "closed": true,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "5.5",
+   "ok_rescored": true
   },
   {
    "id": "m389",
@@ -4416,7 +4438,7 @@
    "gold": "\\frac{14}{3}",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "14",
    "ok_rescored": false
   },
   {
@@ -4438,7 +4460,7 @@
    "gold": "1 - 12i",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "-3",
+   "pred_rescored": "-3i",
    "ok_rescored": false
   },
   {
@@ -4493,8 +4515,8 @@
    "gold": "9",
    "n_tokens": 1668,
    "closed": true,
-   "pred_rescored": "f^{-1}(\\frac{1}{5})",
-   "ok_rescored": false
+   "pred_rescored": "9",
+   "ok_rescored": true
   },
   {
    "id": "m408",
@@ -4559,8 +4581,8 @@
    "gold": "5r^5",
    "n_tokens": 299,
    "closed": true,
-   "pred_rescored": "5",
-   "ok_rescored": false
+   "pred_rescored": "5r^5",
+   "ok_rescored": true
   },
   {
    "id": "m414",
@@ -4570,8 +4592,8 @@
    "gold": "10",
    "n_tokens": 723,
    "closed": true,
-   "pred_rescored": "a",
-   "ok_rescored": false
+   "pred_rescored": "10",
+   "ok_rescored": true
   },
   {
    "id": "m415",
@@ -4614,8 +4636,8 @@
    "gold": "2\\sqrt{5}",
    "n_tokens": 529,
    "closed": true,
-   "pred_rescored": "is",
-   "ok_rescored": false
+   "pred_rescored": "2\\sqrt{5}",
+   "ok_rescored": true
   },
   {
    "id": "m419",
@@ -4636,7 +4658,7 @@
    "gold": "\\begin{pmatrix} 16/49 \\\\ 48/49 \\\\ 24/49 \\end{pmatrix}",
    "n_tokens": 4351,
    "closed": true,
-   "pred_rescored": "\\mathbf{b}",
+   "pred_rescored": "\\frac{8}{49}",
    "ok_rescored": false
   },
   {
@@ -4647,7 +4669,7 @@
    "gold": "27",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "\\pi",
    "ok_rescored": false
   },
   {
@@ -4658,7 +4680,7 @@
    "gold": "\\{1\\pm\\sqrt{5},-2\\}",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "0",
    "ok_rescored": false
   },
   {
@@ -4691,7 +4713,7 @@
    "gold": "3R^2",
    "n_tokens": 9364,
    "closed": true,
-   "pred_rescored": "a,b,c",
+   "pred_rescored": "R",
    "ok_rescored": false
   },
   {
@@ -4713,7 +4735,7 @@
    "gold": "29",
    "n_tokens": 1039,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "\\mathbf{29}",
    "ok_rescored": false
   },
   {
@@ -4779,7 +4801,7 @@
    "gold": ".35625",
    "n_tokens": 1163,
    "closed": true,
-   "pred_rescored": "\\frac{57}{160}",
+   "pred_rescored": "0.35625",
    "ok_rescored": true
   },
   {
@@ -4812,7 +4834,7 @@
    "gold": "4",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "1",
    "ok_rescored": false
   },
   {
@@ -5010,7 +5032,7 @@
    "gold": "y = 2x + 3",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "No",
    "ok_rescored": false
   },
   {
@@ -5032,7 +5054,7 @@
    "gold": "-2,1",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "carefully",
    "ok_rescored": false
   },
   {
@@ -5065,8 +5087,8 @@
    "gold": "\\$18.90",
    "n_tokens": 3452,
    "closed": true,
-   "pred_rescored": "\\",
-   "ok_rescored": false
+   "pred_rescored": "18.90",
+   "ok_rescored": true
   },
   {
    "id": "m460",
@@ -5087,7 +5109,7 @@
    "gold": "12",
    "n_tokens": 1669,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "f(n)",
    "ok_rescored": false
   },
   {
@@ -5120,8 +5142,8 @@
    "gold": "9",
    "n_tokens": 4929,
    "closed": true,
-   "pred_rescored": "think",
-   "ok_rescored": false
+   "pred_rescored": "9",
+   "ok_rescored": true
   },
   {
    "id": "m465",
@@ -5142,7 +5164,7 @@
    "gold": "8 \\pi",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "P(z)",
    "ok_rescored": false
   },
   {
@@ -5175,8 +5197,8 @@
    "gold": "25",
    "n_tokens": 317,
    "closed": true,
-   "pred_rescored": "\\lceil{\\sqrt{20}}\\rceil^2",
-   "ok_rescored": false
+   "pred_rescored": "25",
+   "ok_rescored": true
   },
   {
    "id": "m470",
@@ -5307,7 +5329,7 @@
    "gold": "8n^2 + 4n + 1",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "2^4",
+   "pred_rescored": "1",
    "ok_rescored": false
   },
   {
@@ -5318,7 +5340,7 @@
    "gold": "202",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "confused",
    "ok_rescored": false
   },
   {
@@ -5384,8 +5406,8 @@
    "gold": "\\$36",
    "n_tokens": 1060,
    "closed": true,
-   "pred_rescored": "\\",
-   "ok_rescored": false
+   "pred_rescored": "36",
+   "ok_rescored": true
   },
   {
    "id": "m489",
@@ -5472,7 +5494,7 @@
    "gold": "\\frac{5}{13}",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "\\dfrac{33^2+16^2}{169^2}iswrong",
    "ok_rescored": false
   },
   {

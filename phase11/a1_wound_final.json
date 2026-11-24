@@ -2,13 +2,25 @@
  "summary": {
   "name": "a1_wound_final",
   "n": 500,
-  "accuracy": 1.0,
+  "accuracy": 1.2,
   "answered": 95.4,
   "cap_hit_rate": 98.0,
   "mean_tokens": 8083.6,
   "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
   "model": "/home/user/wsp11/gemma4-8exp",
-  "fp8": false
+  "fp8": false,
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "validity": {
+   "soup_pct": 4.0,
+   "soup_judged": false,
+   "admission_tested": true,
+   "admission_correct": [
+    0.4,
+    2.0,
+    0.2159
+   ],
+   "problems": []
+  }
  },
  "rows": [
   {
@@ -454,8 +466,8 @@
   {
    "id": "m55",
    "gold": "3",
-   "pred": "f",
-   "ok": false,
+   "pred": "3",
+   "ok": true,
    "n_tokens": 492,
    "cap_hit": false
   },
@@ -502,7 +514,7 @@
   {
    "id": "m61",
    "gold": "-256",
-   "pred": "a",
+   "pred": "10",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -1894,7 +1906,7 @@
   {
    "id": "m235",
    "gold": "\\frac 59",
-   "pred": "Finalresult:\\frac{1}{9}",
+   "pred": "\\frac{1}{9}",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -2198,7 +2210,7 @@
   {
    "id": "m273",
    "gold": "1250",
-   "pred": "00",
+   "pred": "1.0,0,0,0,00",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -3054,7 +3066,7 @@
   {
    "id": "m380",
    "gold": "(0,9) \\cup (9,36)",
-   "pred": "istobecare-attentionthatthefinalansweris\\dots",
+   "pred": "\\dots",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -3374,7 +3386,7 @@
   {
    "id": "m420",
    "gold": "\\begin{pmatrix} 16/49 \\\\ 48/49 \\\\ 24/49 \\end{pmatrix}",
-   "pred": "ofthevector",
+   "pred": "\\mathbf{b}",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true
@@ -3646,7 +3658,7 @@
   {
    "id": "m454",
    "gold": "y = 2x + 3",
-   "pred": "under",
+   "pred": "istheequationoftheline",
    "ok": false,
    "n_tokens": 8192,
    "cap_hit": true

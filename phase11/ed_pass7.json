@@ -8,7 +8,14 @@
   "mean_tokens": 279.5,
   "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
   "model": "/home/user/wsp11/sandbox/model",
-  "fp8": false
+  "fp8": false,
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "validity": {
+   "soup_pct": 31.2,
+   "soup_judged": false,
+   "admission_tested": false,
+   "problems": []
+  }
  },
  "rows": [
   {
@@ -174,7 +181,7 @@
   {
    "id": "m20",
    "gold": "6+9i",
-   "pred": "x",
+   "pred": "(x))",
    "ok": false,
    "n_tokens": 949,
    "cap_hit": false
@@ -286,7 +293,7 @@
   {
    "id": "m34",
    "gold": "-125",
-   "pred": "(10x^{3}-\\frac{1}{2X^{2}\\operatorname{S}\\mid\\operatorname{R}>\\rangle^{5}\\operatorname{S}\\partial^{5}}{\\}>^{\\operatorname{S}\\operatorname{S}}]^{^{5}\\operatorname{s}\\operatorname{S}S}((x^{S\\operatorname{S}}(S\\operatorname{S}\\rangle^{\\operatorname{S}:\\rangle^{5}})({x^{S})({x^{-S}).{(S)\\operatorname{S}^{-}S^{-}...):\\mathrm{S\\}\\operatorname{S}\\rangle^{5}arrow\\mathrm{S}s^{-}s^{-}\\}\u3002\\}\\rangle_{xx^{3}-(\\frac{1}{2x^{2}(\\operatorname{S}right}(s^{-\\operatorname{S}))",
+   "pred": "))",
    "ok": false,
    "n_tokens": 250,
    "cap_hit": false

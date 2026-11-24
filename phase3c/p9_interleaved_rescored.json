@@ -2,10 +2,32 @@
  "summary": {
   "name": "p9_interleaved_rescored",
   "n": 500,
-  "accuracy": 9.0,
-  "answered": 17.2,
+  "accuracy": 11.8,
+  "answered": 16.6,
   "cap_hit_rate": 87.8,
-  "mean_tokens": 29199.0
+  "mean_tokens": 29199.0,
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "validity": {
+   "soup_pct": 0.0,
+   "soup_judged": true,
+   "admission_tested": true,
+   "admission_finished": [
+    11.6,
+    12.8,
+    0.7848
+   ],
+   "admission_closed": [
+    15.2,
+    19.6,
+    0.238
+   ],
+   "admission_correct": [
+    10.8,
+    12.8,
+    0.5795
+   ],
+   "problems": []
+  }
  },
  "rows": [
   {
@@ -104,7 +126,7 @@
    "gold": "3\\sqrt{13}",
    "n_tokens": 3583,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": "(-4,3)",
    "ok_rescored": false
   },
   {
@@ -236,8 +258,8 @@
    "gold": "6+9i",
    "n_tokens": 921,
    "closed": true,
-   "pred_rescored": "9",
-   "ok_rescored": false
+   "pred_rescored": "6+9i",
+   "ok_rescored": true
   },
   {
    "id": "m21",
@@ -555,8 +577,8 @@
    "gold": "83",
    "n_tokens": 1091,
    "closed": true,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "83",
+   "ok_rescored": true
   },
   {
    "id": "m50",
@@ -885,8 +907,8 @@
    "gold": "2",
    "n_tokens": 1673,
    "closed": true,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "2",
+   "ok_rescored": true
   },
   {
    "id": "m80",
@@ -1094,8 +1116,8 @@
    "gold": "2k+2",
    "n_tokens": 1370,
    "closed": true,
-   "pred_rescored": "2",
-   "ok_rescored": false
+   "pred_rescored": "2k+2",
+   "ok_rescored": true
   },
   {
    "id": "m99",
@@ -1622,8 +1644,8 @@
    "gold": "\\frac{\\sqrt{3}}{3}",
    "n_tokens": 3505,
    "closed": true,
-   "pred_rescored": "thesimplifiedformis\\frac{\\sqrt{3}}{3}",
-   "ok_rescored": false
+   "pred_rescored": "\\frac{\\sqrt{3}}{3}",
+   "ok_rescored": true
   },
   {
    "id": "m147",
@@ -1886,7 +1908,7 @@
    "gold": "1736",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": null,
    "ok_rescored": false
   },
   {
@@ -2117,8 +2139,8 @@
    "gold": "0",
    "n_tokens": 1505,
    "closed": true,
-   "pred_rescored": "b",
-   "ok_rescored": false
+   "pred_rescored": "0",
+   "ok_rescored": true
   },
   {
    "id": "m192",
@@ -2205,8 +2227,8 @@
    "gold": "17",
    "n_tokens": 1239,
    "closed": true,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "17",
+   "ok_rescored": true
   },
   {
    "id": "m200",
@@ -2942,7 +2964,7 @@
    "gold": "\\dfrac{33}{100}",
    "n_tokens": 1067,
    "closed": true,
-   "pred_rescored": "theprobabilityis\\frac{33}{100}",
+   "pred_rescored": "\\frac{33}{100}",
    "ok_rescored": false
   },
   {
@@ -3525,8 +3547,8 @@
    "gold": "-128",
    "n_tokens": 1475,
    "closed": true,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": "-128",
+   "ok_rescored": true
   },
   {
    "id": "m320",
@@ -3558,8 +3580,8 @@
    "gold": "-1",
    "n_tokens": 1696,
    "closed": true,
-   "pred_rescored": "b",
-   "ok_rescored": false
+   "pred_rescored": "-1",
+   "ok_rescored": true
   },
   {
    "id": "m323",
@@ -4042,7 +4064,7 @@
    "gold": "4",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "Wait,Iseethesequenceis1,3,5,\\dots,199",
+   "pred_rescored": "1,3,5,\\dots,199",
    "ok_rescored": false
   },
   {
@@ -4240,8 +4262,8 @@
    "gold": "15x - 80",
    "n_tokens": 2023,
    "closed": true,
-   "pred_rescored": "80",
-   "ok_rescored": false
+   "pred_rescored": "15x-80",
+   "ok_rescored": true
   },
   {
    "id": "m385",
@@ -4262,7 +4284,7 @@
    "gold": "11",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": null,
    "ok_rescored": false
   },
   {
@@ -4559,8 +4581,8 @@
    "gold": "5r^5",
    "n_tokens": 1190,
    "closed": true,
-   "pred_rescored": "5",
-   "ok_rescored": false
+   "pred_rescored": "5r^5",
+   "ok_rescored": true
   },
   {
    "id": "m414",
@@ -4801,8 +4823,8 @@
    "gold": "(-\\infty, 2) \\cup (3, \\infty)",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "thedomainofthefunctionis(-\\infty,2)\\cup(3,\\infty)",
-   "ok_rescored": false
+   "pred_rescored": "(-\\infty,2)\\cup(3,\\infty)",
+   "ok_rescored": true
   },
   {
    "id": "m436",
@@ -4955,8 +4977,8 @@
    "gold": "47",
    "n_tokens": 5487,
    "closed": true,
-   "pred_rescored": "5\\star1",
-   "ok_rescored": false
+   "pred_rescored": "47",
+   "ok_rescored": true
   },
   {
    "id": "m450",
@@ -5274,7 +5296,7 @@
    "gold": "\\frac{2}{1005}",
    "n_tokens": 32768,
    "closed": true,
-   "pred_rescored": "think",
+   "pred_rescored": null,
    "ok_rescored": false
   },
   {
@@ -5384,8 +5406,8 @@
    "gold": "\\$36",
    "n_tokens": 13776,
    "closed": true,
-   "pred_rescored": "\\",
-   "ok_rescored": false
+   "pred_rescored": "36",
+   "ok_rescored": true
   },
   {
    "id": "m489",
@@ -5461,7 +5483,7 @@
    "gold": "(2,12) \\cup (12,102)",
    "n_tokens": 10929,
    "closed": true,
-   "pred_rescored": "thedomainofthefunctionis(2,102)\\setminus\\{12\\}",
+   "pred_rescored": "(2,102)\\setminus\\{12\\}",
    "ok_rescored": false
   },
   {

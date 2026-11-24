@@ -8,13 +8,20 @@
   "mean_tokens": 2586.6,
   "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
   "model": "/home/user/wsp11/sandbox/model",
-  "fp8": false
+  "fp8": false,
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "validity": {
+   "soup_pct": 12.5,
+   "soup_judged": false,
+   "admission_tested": false,
+   "problems": []
+  }
  },
  "rows": [
   {
    "id": "m0",
    "gold": "\\left( 3, \\frac{\\pi}{2} \\right)",
-   "pred": "\\theta",
+   "pred": "\\frac",
    "ok": false,
    "n_tokens": 305,
    "cap_hit": false
@@ -94,7 +101,7 @@
   {
    "id": "m10",
    "gold": "2220",
-   "pred": "0",
+   "pred": "2",
    "ok": false,
    "n_tokens": 712,
    "cap_hit": false
