@@ -1,0 +1,619 @@
+### What is 17 * 23? Show your work briefly.
+step  0 top='To'@21.6 <eos>=-2.3 gap=23.9 turn_end_106=4.8 gap=16.7
+step  1 top=' find'@10.4 <eos>=-11.4 gap=21.9 turn_end_106=-9.3 gap=19.7
+step  2 top=' $'@17.6 <eos>=-4.2 gap=21.8 turn_end_106=-1.0 gap=18.6
+step  3 top='1'@27.2 <eos>=1.8 gap=25.4 turn_end_106=4.7 gap=22.5
+step  4 top='7'@25.3 <eos>=-5.9 gap=31.2 turn_end_106=3.3 gap=22.1
+step  5 top=' \\'@23.8 <eos>=-2.6 gap=26.4 turn_end_106=-2.5 gap=26.3
+step  6 top='times'@20.7 <eos>=-8.9 gap=29.6 turn_end_106=-7.3 gap=28.0
+step  7 top=' '@26.8 <eos>=-9.2 gap=36.0 turn_end_106=-0.3 gap=27.0
+step  8 top='2'@18.4 <eos>=-12.9 gap=31.3 turn_end_106=-10.4 gap=28.8
+step  9 top='3'@22.8 <eos>=-2.4 gap=25.2 turn_end_106=2.0 gap=20.8
+step 10 top='$'@24.6 <eos>=-3.3 gap=27.8 turn_end_106=2.5 gap=22.1
+step 11 top=' using'@19.0 <eos>=-7.6 gap=26.6 turn_end_106=4.0 gap=15.0
+step 12 top=' the'@22.8 <eos>=-5.5 gap=28.3 turn_end_106=3.2 gap=19.5
+step 13 top=' **'@17.0 <eos>=-12.1 gap=29.1 turn_end_106=1.5 gap=15.5
+step 14 top='"'@15.8 <eos>=-10.3 gap=26.1 turn_end_106=-1.4 gap=17.2
+step 15 top='dist'@12.5 <eos>=-10.4 gap=22.9 turn_end_106=-2.9 gap=15.5
+step 16 top='/'@3.0 <eos>=-11.0 gap=14.0 turn_end_106=-2.6 gap=5.6
+step 17 top='multiply'@5.0 <eos>=-20.8 gap=25.8 turn_end_106=-11.7 gap=16.7
+step 18 top='"'@17.7 <eos>=1.1 gap=16.7 turn_end_106=4.2 gap=13.5
+step 19 top='**'@17.5 <eos>=-10.3 gap=27.9 turn_end_106=-4.8 gap=22.4
+step 20 top=' strategy'@15.9 <eos>=-9.8 gap=25.7 turn_end_106=-1.8 gap=17.7
+step 21 top=':'@22.7 <eos>=-3.8 gap=26.5 turn_end_106=4.3 gap=18.4
+step 22 top='\n\n'@29.0 <eos>=5.9 gap=23.1 turn_end_106=14.9 gap=14.1
+step 23 top='**'@23.4 <eos>=-0.5 gap=23.8 turn_end_106=8.4 gap=15.0
+step 24 top='1'@25.0 <eos>=2.9 gap=22.1 turn_end_106=5.5 gap=19.5
+step 25 top='.'@24.0 <eos>=-7.8 gap=31.8 turn_end_106=3.1 gap=20.9
+step 26 top=' Break'@17.8 <eos>=-7.7 gap=25.5 turn_end_106=2.6 gap=15.2
+step 27 top=' into'@20.8 <eos>=-11.6 gap=32.3 turn_end_106=3.8 gap=17.0
+step 28 top=' '@14.2 <eos>=-13.5 gap=27.6 turn_end_106=-4.4 gap=18.5
+step 29 top='1'@21.8 <eos>=-10.9 gap=32.7 turn_end_106=-6.6 gap=28.4
+step 30 top='0'@26.7 <eos>=-3.6 gap=30.3 turn_end_106=3.0 gap=23.8
+step 31 top=':'@11.7 <eos>=-9.6 gap=21.3 turn_end_106=-4.4 gap=16.1
+step 32 top='\n'@16.6 <eos>=-3.0 gap=19.6 turn_end_106=6.7 gap=10.0
+step 33 top='$'@19.8 <eos>=1.3 gap=18.5 turn_end_106=7.7 gap=12.0
+step 34 top='1'@28.0 <eos>=4.6 gap=23.4 turn_end_106=11.1 gap=16.9
+step 35 top='7'@27.4 <eos>=6.8 gap=20.7 turn_end_106=9.0 gap=18.4
+step 36 top=' \\'@25.3 <eos>=2.9 gap=22.4 turn_end_106=5.1 gap=20.1
+step 37 top='times'@26.2 <eos>=-3.9 gap=30.1 turn_end_106=3.5 gap=22.8
+step 38 top=' '@28.3 <eos>=4.6 gap=23.7 turn_end_106=9.4 gap=18.9
+step 39 top='2'@26.6 <eos>=-0.2 gap=26.9 turn_end_106=4.0 gap=22.7
+step 40 top='3'@26.9 <eos>=1.4 gap=25.4 turn_end_106=6.6 gap=20.3
+step 41 top=' ='@24.1 <eos>=-3.8 gap=27.9 turn_end_106=4.8 gap=19.3
+step 42 top=' ('@24.1 <eos>=0.2 gap=23.9 turn_end_106=5.1 gap=19.0
+step 43 top='1'@26.7 <eos>=1.0 gap=25.7 turn_end_106=5.6 gap=21.1
+step 44 top='0'@19.6 <eos>=-11.3 gap=31.0 turn_end_106=-7.2 gap=26.8
+step 45 top=' +'@14.5 <eos>=-12.3 gap=26.8 turn_end_106=-11.8 gap=26.3
+step 46 top=' '@26.5 <eos>=1.3 gap=25.1 turn_end_106=2.7 gap=23.8
+step 47 top='7'@23.7 <eos>=-7.6 gap=31.3 turn_end_106=-7.3 gap=31.1
+step 48 top=')'@16.8 <eos>=-4.8 gap=21.6 turn_end_106=-4.1 gap=20.9
+step 49 top=' \\'@24.1 <eos>=-4.9 gap=28.9 turn_end_106=3.8 gap=20.3
+step 50 top='times'@24.0 <eos>=-3.8 gap=27.8 turn_end_106=0.0 gap=24.0
+step 51 top=' '@24.0 <eos>=2.9 gap=21.1 turn_end_106=4.5 gap=19.5
+step 52 top='2'@24.8 <eos>=-4.2 gap=29.0 turn_end_106=2.6 gap=22.3
+step 53 top='3'@22.3 <eos>=-3.9 gap=26.2 turn_end_106=3.2 gap=19.1
+step 54 top='$'@25.9 <eos>=-3.8 gap=29.6 turn_end_106=3.8 gap=22.1
+step 55 top='**'@24.2 <eos>=-3.4 gap=27.6 turn_end_106=11.6 gap=12.6
+step 56 top='\n\n'@26.5 <eos>=6.7 gap=19.8 turn_end_106=15.6 gap=10.9
+step 57 top='**'@25.4 <eos>=6.2 gap=19.3 turn_end_106=9.8 gap=15.6
+step 58 top='2'@27.7 <eos>=7.8 gap=19.9 turn_end_106=8.9 gap=18.8
+step 59 top='.'@21.7 <eos>=-4.2 gap=25.8 turn_end_106=0.7 gap=21.0
+step 60 top=' Use'@21.9 <eos>=2.2 gap=19.8 turn_end_106=8.8 gap=13.1
+step 61 top=' the'@21.4 <eos>=-7.8 gap=29.2 turn_end_106=6.2 gap=15.1
+step 62 top=' "'@23.8 <eos>=-2.0 gap=25.8 turn_end_106=10.4 gap=13.4
+step 63 top='dist'@15.8 <eos>=-7.5 gap=23.3 turn_end_106=-2.5 gap=18.3
+step 64 top='/'@25.7 <eos>=6.1 gap=19.6 turn_end_106=10.7 gap=15.0
+step 65 top='multiply'@18.2 <eos>=-1.6 gap=19.8 turn_end_106=1.9 gap=16.3
+step 66 top='"'@27.0 <eos>=4.3 gap=22.7 turn_end_106=8.6 gap=18.4
+step 67 top=' strategy'@24.0 <eos>=-4.1 gap=28.2 turn_end_106=8.8 gap=15.2
+step 68 top=':'@26.0 <eos>=-4.3 gap=30.3 turn_end_106=11.4 gap=14.6
+step 69 top='\n'@26.1 <eos>=-1.3 gap=27.4 turn_end_106=13.2 gap=12.9
+step 70 top='$'@24.4 <eos>=6.1 gap=18.2 turn_end_106=10.7 gap=13.7
+step 71 top='1'@27.9 <eos>=5.1 gap=22.8 turn_end_106=12.1 gap=15.8
+step 72 top='7'@28.0 <eos>=8.2 gap=19.8 turn_end_106=10.8 gap=17.2
+step 73 top=' \\'@27.8 <eos>=4.4 gap=23.5 turn_end_106=7.4 gap=20.5
+step 74 top='times'@27.7 <eos>=-5.0 gap=32.7 turn_end_106=3.7 gap=24.0
+step 75 top=' '@28.5 <eos>=4.4 gap=24.2 turn_end_106=7.4 gap=21.2
+step 76 top='2'@28.1 <eos>=2.3 gap=25.8 turn_end_106=7.0 gap=21.0
+step 77 top='3'@27.0 <eos>=4.4 gap=22.6 turn_end_106=6.5 gap=20.4
+step 78 top=' ='@25.7 <eos>=0.4 gap=25.3 turn_end_106=7.1 gap=18.6
+step 79 top=' ('@26.8 <eos>=5.5 gap=21.3 turn_end_106=9.7 gap=17.1
+step 80 top='1'@28.1 <eos>=9.9 gap=18.2 turn_end_106=10.9 gap=17.2
+step 81 top='7'@26.8 <eos>=6.9 gap=19.9 turn_end_106=8.1 gap=18.7
+step 82 top=' \\'@22.2 <eos>=-0.8 gap=23.0 turn_end_106=-3.0 gap=25.3
+step 83 top='times'@23.7 <eos>=-6.4 gap=30.1 turn_end_106=-5.6 gap=29.3
+step 84 top=' '@25.8 <eos>=6.0 gap=19.8 turn_end_106=6.5 gap=19.3
+step 85 top='2'@23.0 <eos>=-4.7 gap=27.7 turn_end_106=-1.1 gap=24.1
+step 86 top='3'@17.3 <eos>=-3.3 gap=20.6 turn_end_106=-3.3 gap=20.6
+step 87 top=' ='@15.5 <eos>=-6.0 gap=21.6 turn_end_106=-2.2 gap=17.8
+step 88 top=' '@28.0 <eos>=7.1 gap=20.9 turn_end_106=11.0 gap=16.9
+step 89 top='1'@27.4 <eos>=8.9 gap=18.4 turn_end_106=9.3 gap=18.0
+step 90 top='0'@26.0 <eos>=5.6 gap=20.4 turn_end_106=7.0 gap=19.0
+step 91 top=' \\'@15.3 <eos>=-3.4 gap=18.7 turn_end_106=-5.8 gap=21.1
+step 92 top='times'@22.9 <eos>=-0.6 gap=23.6 turn_end_106=-1.5 gap=24.4
+step 93 top=' '@24.9 <eos>=6.0 gap=18.9 turn_end_106=3.8 gap=21.1
+step 94 top='1'@19.5 <eos>=-3.8 gap=23.3 turn_end_106=-3.4 gap=22.9
+step 95 top='0'@22.5 <eos>=-8.0 gap=30.5 turn_end_106=0.1 gap=22.4
+step 96 top=' +'@19.4 <eos>=-3.0 gap=22.4 turn_end_106=0.1 gap=19.3
+step 97 top=' '@26.6 <eos>=6.1 gap=20.5 turn_end_106=6.1 gap=20.5
+step 98 top='7'@26.3 <eos>=4.3 gap=22.0 turn_end_106=0.7 gap=25.6
+step 99 top=' \\'@22.9 <eos>=2.0 gap=20.9 turn_end_106=2.2 gap=20.7
+step100 top='times'@24.7 <eos>=-1.9 gap=26.6 turn_end_106=-0.8 gap=25.6
+step101 top=' '@27.2 <eos>=8.8 gap=18.4 turn_end_106=8.6 gap=18.6
+step102 top='1'@23.3 <eos>=3.2 gap=20.1 turn_end_106=3.2 gap=20.1
+step103 top='0'@28.1 <eos>=0.1 gap=27.9 turn_end_106=7.8 gap=20.3
+step104 top=' +'@21.7 <eos>=1.7 gap=20.0 turn_end_106=0.8 gap=20.9
+step105 top=' '@23.2 <eos>=3.5 gap=19.6 turn_end_106=4.5 gap=18.6
+step106 top='1'@23.6 <eos>=1.4 gap=22.2 turn_end_106=2.0 gap=21.6
+step107 top='7'@23.1 <eos>=-0.4 gap=23.5 turn_end_106=6.4 gap=16.7
+step108 top=' \\'@25.6 <eos>=3.8 gap=21.9 turn_end_106=5.1 gap=20.5
+step109 top='times'@25.3 <eos>=-0.2 gap=25.5 turn_end_106=2.4 gap=22.9
+step110 top=' '@28.0 <eos>=9.4 gap=18.5 turn_end_106=9.0 gap=18.9
+step111 top='2'@24.6 <eos>=3.1 gap=21.5 turn_end_106=4.0 gap=20.5
+step112 top='3'@27.3 <eos>=4.5 gap=22.8 turn_end_106=9.4 gap=17.9
+step113 top=')$'@23.7 <eos>=0.3 gap=23.4 turn_end_106=5.8 gap=17.9
+step114 top='**'@24.1 <eos>=1.6 gap=22.5 turn_end_106=10.7 gap=13.4
+step115 top='\n\n'@26.6 <eos>=8.6 gap=18.1 turn_end_106=15.4 gap=11.2
+step116 top='**'@25.3 <eos>=10.7 gap=14.6 turn_end_106=11.3 gap=14.0
+step117 top='3'@26.6 <eos>=10.5 gap=16.2 turn_end_106=7.2 gap=19.5
+step118 top='.'@21.4 <eos>=-1.8 gap=23.3 turn_end_106=-1.4 gap=22.9
+step119 top=' Use'@23.1 <eos>=0.9 gap=22.1 turn_end_106=9.2 gap=13.8
+
+### What is the greatest common divisor of 48 and 64? Answer with just the number.
+step  0 top='4'@21.6 <eos>=1.6 gap=19.9 turn_end_106=7.2 gap=14.3
+step  1 top='5'@9.9 <eos>=-7.6 gap=17.5 turn_end_106=1.8 gap=8.0
+step  2 top='<turn|>'@14.4 <eos>=6.7 gap=7.7 turn_end_106=14.4 gap=0.0
+  -> EOS at step 2
+
+### Solve for x: 2x + 5 = 15.
+step  0 top='To'@24.1 <eos>=-3.0 gap=27.1 turn_end_106=-1.9 gap=26.0
+step  1 top=' solve'@10.2 <eos>=-16.6 gap=26.9 turn_end_106=-15.4 gap=25.6
+step  2 top=' the'@26.5 <eos>=-10.2 gap=36.7 turn_end_106=-6.5 gap=33.0
+step  3 top=' equation'@22.8 <eos>=-12.4 gap=35.1 turn_end_106=-1.1 gap=23.9
+step  4 top=' for'@21.4 <eos>=-15.8 gap=37.2 turn_end_106=-1.6 gap=22.9
+step  5 top=' $'@20.8 <eos>=-2.3 gap=23.1 turn_end_106=0.6 gap=20.2
+step  6 top='x'@22.2 <eos>=-11.8 gap=34.0 turn_end_106=-1.7 gap=23.9
+step  7 top='$:'@24.4 <eos>=-1.1 gap=25.6 turn_end_106=1.8 gap=22.6
+step  8 top='\n\n'@28.3 <eos>=5.5 gap=22.9 turn_end_106=12.6 gap=15.8
+step  9 top='**'@23.4 <eos>=-0.9 gap=24.3 turn_end_106=3.6 gap=19.8
+step 10 top='Step'@23.2 <eos>=-2.0 gap=25.1 turn_end_106=2.7 gap=20.5
+step 11 top=' '@19.5 <eos>=-18.6 gap=38.1 turn_end_106=-4.3 gap=23.8
+step 12 top='1'@22.2 <eos>=-10.6 gap=32.7 turn_end_106=-2.7 gap=24.9
+step 13 top=':'@23.4 <eos>=-13.2 gap=36.6 turn_end_106=-0.1 gap=23.5
+step 14 top=' Subtract'@17.8 <eos>=-12.7 gap=30.5 turn_end_106=-2.4 gap=20.2
+step 15 top=' '@25.2 <eos>=-15.6 gap=40.8 turn_end_106=-1.8 gap=27.0
+step 16 top='5'@23.3 <eos>=-11.8 gap=35.1 turn_end_106=-10.5 gap=33.8
+step 17 top=' from'@18.9 <eos>=-14.0 gap=33.0 turn_end_106=-3.1 gap=22.0
+step 18 top=' both'@18.8 <eos>=-17.0 gap=35.8 turn_end_106=-11.8 gap=30.6
+step 19 top=' sides'@19.2 <eos>=-22.2 gap=41.4 turn_end_106=-17.0 gap=36.2
+step 20 top=' of'@20.2 <eos>=-17.6 gap=37.8 turn_end_106=-2.1 gap=22.3
+step 21 top=' the'@21.8 <eos>=-10.9 gap=32.7 turn_end_106=-2.5 gap=24.3
+step 22 top=' equation'@21.3 <eos>=-10.1 gap=31.4 turn_end_106=-0.3 gap=21.6
+step 23 top='**'@19.4 <eos>=-18.0 gap=37.5 turn_end_106=1.1 gap=18.4
+step 24 top='\n'@21.5 <eos>=2.7 gap=18.8 turn_end_106=12.6 gap=8.8
+step 25 top='**'@19.5 <eos>=0.9 gap=18.6 turn_end_106=6.8 gap=12.7
+step 26 top='Step'@22.9 <eos>=3.2 gap=19.7 turn_end_106=4.7 gap=18.3
+step 27 top=' '@26.3 <eos>=-8.0 gap=34.3 turn_end_106=3.5 gap=22.8
+step 28 top='2'@26.5 <eos>=0.5 gap=25.9 turn_end_106=4.8 gap=21.7
+step 29 top=':'@25.0 <eos>=-5.6 gap=30.5 turn_end_106=2.6 gap=22.4
+step 30 top=' Divide'@14.8 <eos>=-17.4 gap=32.2 turn_end_106=-4.7 gap=19.5
+step 31 top=' both'@21.7 <eos>=-15.5 gap=37.2 turn_end_106=-6.1 gap=27.8
+step 32 top=' sides'@23.6 <eos>=-7.7 gap=31.3 turn_end_106=-4.9 gap=28.5
+step 33 top=' of'@25.6 <eos>=0.1 gap=25.5 turn_end_106=6.4 gap=19.1
+step 34 top=' the'@25.8 <eos>=-3.7 gap=29.5 turn_end_106=2.8 gap=23.0
+step 35 top=' equation'@24.0 <eos>=-5.8 gap=29.7 turn_end_106=2.6 gap=21.3
+step 36 top=' by'@21.1 <eos>=-16.7 gap=37.8 turn_end_106=-3.2 gap=24.4
+step 37 top=' '@20.2 <eos>=-11.6 gap=31.7 turn_end_106=0.9 gap=19.3
+step 38 top='2'@24.5 <eos>=-12.9 gap=37.4 turn_end_106=-3.6 gap=28.1
+step 39 top='**'@19.7 <eos>=-17.0 gap=36.7 turn_end_106=-0.8 gap=20.5
+step 40 top='\n\n'@24.2 <eos>=4.3 gap=19.9 turn_end_106=13.2 gap=11.0
+step 41 top='**'@14.5 <eos>=-5.5 gap=20.0 turn_end_106=3.9 gap=10.6
+step 42 top='Final'@16.3 <eos>=-5.3 gap=21.7 turn_end_106=0.8 gap=15.6
+step 43 top=' Step'@18.1 <eos>=-10.4 gap=28.5 turn_end_106=-3.0 gap=21.1
+step 44 top=':'@23.1 <eos>=-9.2 gap=32.3 turn_end_106=2.9 gap=20.2
+step 45 top=' Result'@17.1 <eos>=-8.0 gap=25.1 turn_end_106=0.8 gap=16.2
+step 46 top='**'@23.7 <eos>=-12.9 gap=36.6 turn_end_106=5.0 gap=18.7
+step 47 top='\n\n'@27.2 <eos>=9.2 gap=18.1 turn_end_106=17.7 gap=9.6
+step 48 top='**'@17.9 <eos>=1.9 gap=16.0 turn_end_106=7.4 gap=10.5
+step 49 top='$'@17.7 <eos>=-0.4 gap=18.1 turn_end_106=1.9 gap=15.8
+step 50 top='2'@26.6 <eos>=3.9 gap=22.7 turn_end_106=9.0 gap=17.5
+step 51 top='x'@24.9 <eos>=-0.6 gap=25.5 turn_end_106=1.7 gap=23.2
+step 52 top=' +'@24.8 <eos>=-3.8 gap=28.5 turn_end_106=3.6 gap=21.1
+step 53 top=' '@27.9 <eos>=-1.5 gap=29.4 turn_end_106=4.2 gap=23.7
+step 54 top='5'@25.1 <eos>=0.5 gap=24.6 turn_end_106=0.5 gap=24.5
+step 55 top=' ='@22.2 <eos>=-9.9 gap=32.1 turn_end_106=0.3 gap=21.9
+step 56 top=' '@27.8 <eos>=-0.4 gap=28.2 turn_end_106=6.4 gap=21.3
+step 57 top='1'@25.3 <eos>=-0.6 gap=25.8 turn_end_106=5.1 gap=20.1
+step 58 top='5'@26.4 <eos>=-1.7 gap=28.1 turn_end_106=4.0 gap=22.4
+step 59 top='$'@24.4 <eos>=-14.2 gap=38.6 turn_end_106=-3.5 gap=27.9
+step 60 top='**'@22.2 <eos>=-11.9 gap=34.0 turn_end_106=2.2 gap=20.0
+step 61 top='\n\n'@27.7 <eos>=7.2 gap=20.5 turn_end_106=16.6 gap=11.2
+step 62 top='1'@22.7 <eos>=3.7 gap=19.0 turn_end_106=8.5 gap=14.1
+step 63 top='.'@21.1 <eos>=-3.0 gap=24.1 turn_end_106=2.7 gap=18.4
+step 64 top=' **'@19.5 <eos>=-2.8 gap=22.3 turn_end_106=3.2 gap=16.3
+step 65 top='Subtract'@23.3 <eos>=-2.7 gap=25.9 turn_end_106=0.2 gap=23.1
+step 66 top=' '@26.4 <eos>=-10.0 gap=36.4 turn_end_106=2.8 gap=23.6
+step 67 top='5'@24.5 <eos>=-10.2 gap=34.7 turn_end_106=-6.1 gap=30.6
+step 68 top=' from'@20.8 <eos>=-12.8 gap=33.7 turn_end_106=2.0 gap=18.8
+step 69 top=' both'@24.2 <eos>=-7.6 gap=31.9 turn_end_106=-1.7 gap=26.0
+step 70 top=' sides'@25.8 <eos>=-3.5 gap=29.3 turn_end_106=-0.9 gap=26.7
+step 71 top=' of'@27.4 <eos>=-11.7 gap=39.1 turn_end_106=8.2 gap=19.3
+step 72 top=' the'@27.3 <eos>=-1.7 gap=29.0 turn_end_106=4.9 gap=22.4
+step 73 top=' equation'@25.7 <eos>=-5.2 gap=30.9 turn_end_106=1.1 gap=24.6
+step 74 top='**'@19.1 <eos>=-12.2 gap=31.3 turn_end_106=2.1 gap=17.0
+step 75 top='\n'@24.7 <eos>=0.5 gap=24.2 turn_end_106=12.7 gap=12.0
+step 76 top='$'@18.1 <eos>=2.2 gap=15.9 turn_end_106=6.3 gap=11.9
+step 77 top='2'@26.5 <eos>=0.8 gap=25.7 turn_end_106=7.3 gap=19.3
+step 78 top='x'@24.5 <eos>=-3.6 gap=28.1 turn_end_106=0.6 gap=23.9
+step 79 top=' +'@23.3 <eos>=-4.3 gap=27.6 turn_end_106=0.2 gap=23.1
+step 80 top=' '@26.1 <eos>=-1.5 gap=27.7 turn_end_106=1.5 gap=24.7
+step 81 top='5'@25.1 <eos>=0.9 gap=24.2 turn_end_106=1.9 gap=23.2
+step 82 top=' ='@17.6 <eos>=-9.2 gap=26.8 turn_end_106=-0.7 gap=18.3
+step 83 top=' '@27.6 <eos>=1.1 gap=26.5 turn_end_106=6.9 gap=20.8
+step 84 top='1'@26.3 <eos>=0.3 gap=26.1 turn_end_106=6.7 gap=19.6
+step 85 top='5'@26.9 <eos>=0.6 gap=26.2 turn_end_106=6.5 gap=20.3
+step 86 top='$'@21.6 <eos>=-12.9 gap=34.4 turn_end_106=-5.4 gap=27.0
+step 87 top='\n'@28.2 <eos>=1.7 gap=26.5 turn_end_106=10.9 gap=17.3
+step 88 top='$'@20.2 <eos>=-2.5 gap=22.8 turn_end_106=2.6 gap=17.6
+step 89 top='2'@25.7 <eos>=-1.8 gap=27.5 turn_end_106=5.7 gap=19.9
+step 90 top='x'@22.7 <eos>=-6.3 gap=29.0 turn_end_106=-1.9 gap=24.5
+step 91 top=' +'@18.1 <eos>=-7.5 gap=25.6 turn_end_106=-4.2 gap=22.3
+step 92 top=' '@20.6 <eos>=-7.1 gap=27.7 turn_end_106=-4.5 gap=25.1
+step 93 top='5'@21.1 <eos>=-8.0 gap=29.1 turn_end_106=-5.2 gap=26.3
+step 94 top=' -'@19.5 <eos>=-8.2 gap=27.6 turn_end_106=-2.8 gap=22.3
+step 95 top=' '@26.9 <eos>=-4.9 gap=31.8 turn_end_106=0.7 gap=26.2
+step 96 top='5'@23.7 <eos>=-2.2 gap=25.9 turn_end_106=-2.7 gap=26.4
+step 97 top=' \\'@18.1 <eos>=-8.7 gap=26.7 turn_end_106=-2.5 gap=20.6
+step 98 top='Rightarrow'@8.8 <eos>=-12.7 gap=21.5 turn_end_106=-5.7 gap=14.4
+step 99 top=' '@26.0 <eos>=-2.1 gap=28.1 turn_end_106=5.5 gap=20.5
+step100 top='2'@26.0 <eos>=-1.3 gap=27.3 turn_end_106=2.9 gap=23.1
+step101 top='x'@22.8 <eos>=-6.6 gap=29.4 turn_end_106=-2.0 gap=24.8
+step102 top=' +'@19.3 <eos>=-7.2 gap=26.5 turn_end_106=-2.3 gap=21.6
+step103 top=' '@19.9 <eos>=-7.0 gap=26.9 turn_end_106=-6.1 gap=26.0
+step104 top='5'@17.4 <eos>=-8.1 gap=25.5 turn_end_106=-5.9 gap=23.3
+step105 top=' ='@16.7 <eos>=-11.9 gap=28.5 turn_end_106=-2.8 gap=19.5
+step106 top=' '@27.6 <eos>=2.1 gap=25.6 turn_end_106=6.9 gap=20.7
+step107 top='1'@26.2 <eos>=-0.1 gap=26.3 turn_end_106=6.0 gap=20.2
+step108 top='5'@26.9 <eos>=-3.2 gap=30.0 turn_end_106=4.2 gap=22.7
+step109 top=' -'@21.5 <eos>=-6.3 gap=27.7 turn_end_106=-3.1 gap=24.6
+step110 top=' '@24.0 <eos>=-6.3 gap=30.3 turn_end_106=-1.4 gap=25.4
+step111 top='5'@22.9 <eos>=-2.5 gap=25.4 turn_end_106=-1.0 gap=23.9
+step112 top='$'@19.0 <eos>=-7.7 gap=26.7 turn_end_106=-5.1 gap=24.0
+step113 top='\n'@27.8 <eos>=2.8 gap=24.9 turn_end_106=10.2 gap=17.5
+step114 top='$'@23.9 <eos>=4.1 gap=19.8 turn_end_106=6.5 gap=17.3
+step115 top='2'@26.4 <eos>=-0.6 gap=27.0 turn_end_106=5.3 gap=21.1
+step116 top='x'@23.0 <eos>=-5.2 gap=28.2 turn_end_106=-1.4 gap=24.4
+step117 top=' +'@19.7 <eos>=-5.8 gap=25.6 turn_end_106=-3.1 gap=22.9
+step118 top=' '@24.1 <eos>=-1.2 gap=25.3 turn_end_106=2.0 gap=22.1
+step119 top='5'@20.5 <eos>=-9.2 gap=29.7 turn_end_106=-3.3 gap=23.8
+
+### Simplify the fraction 6/8.
+step  0 top='To'@21.3 <eos>=-4.2 gap=25.5 turn_end_106=-0.8 gap=22.1
+step  1 top=' simplify'@5.2 <eos>=-19.5 gap=24.7 turn_end_106=-13.6 gap=18.9
+step  2 top=' the'@25.8 <eos>=-2.6 gap=28.4 turn_end_106=2.6 gap=23.2
+step  3 top=' fraction'@23.3 <eos>=-11.3 gap=34.6 turn_end_106=-1.4 gap=24.8
+step  4 top=' $\\'@22.1 <eos>=-10.6 gap=32.7 turn_end_106=-1.5 gap=23.6
+step  5 top='frac'@16.0 <eos>=-10.6 gap=26.6 turn_end_106=-3.9 gap=19.9
+step  6 top='{'@19.5 <eos>=-10.0 gap=29.5 turn_end_106=-2.4 gap=21.8
+step  7 top='6'@23.4 <eos>=-5.5 gap=28.9 turn_end_106=-0.4 gap=23.8
+step  8 top='}{'@21.8 <eos>=-9.6 gap=31.4 turn_end_106=-3.3 gap=25.1
+step  9 top='8'@24.3 <eos>=-4.6 gap=29.0 turn_end_106=-1.9 gap=26.2
+step 10 top='}$,'@22.5 <eos>=-4.0 gap=26.5 turn_end_106=-0.1 gap=22.6
+step 11 top=' step'@14.5 <eos>=-12.8 gap=27.3 turn_end_106=-0.1 gap=14.6
+step 12 top=' by'@16.1 <eos>=-18.8 gap=34.9 turn_end_106=-5.6 gap=21.7
+step 13 top=' step'@17.9 <eos>=-17.6 gap=35.5 turn_end_106=-2.4 gap=20.3
+step 14 top=':'@17.5 <eos>=-17.5 gap=35.0 turn_end_106=-5.9 gap=23.3
+step 15 top='\n\n'@27.9 <eos>=6.3 gap=21.5 turn_end_106=15.4 gap=12.4
+step 16 top='**'@20.6 <eos>=-1.0 gap=21.6 turn_end_106=8.1 gap=12.6
+step 17 top='Step'@22.5 <eos>=-0.7 gap=23.1 turn_end_106=3.1 gap=19.4
+step 18 top=' '@22.9 <eos>=-13.2 gap=36.1 turn_end_106=-1.9 gap=24.8
+step 19 top='1'@25.7 <eos>=-8.5 gap=34.2 turn_end_106=-4.0 gap=29.6
+step 20 top=':'@21.9 <eos>=-12.5 gap=34.5 turn_end_106=0.7 gap=21.3
+step 21 top=' Find'@19.0 <eos>=-14.2 gap=33.2 turn_end_106=1.1 gap=17.9
+step 22 top=' the'@25.1 <eos>=-5.6 gap=30.8 turn_end_106=6.1 gap=19.1
+step 23 top=' Greatest'@12.1 <eos>=-16.5 gap=28.6 turn_end_106=-3.5 gap=15.6
+step 24 top=' Common'@9.2 <eos>=-17.5 gap=26.7 turn_end_106=-15.1 gap=24.3
+step 25 top=' Factor'@4.0 <eos>=-21.9 gap=25.8 turn_end_106=-16.0 gap=20.0
+step 26 top=' ('@20.8 <eos>=-14.7 gap=35.4 turn_end_106=1.4 gap=19.4
+step 27 top='6'@22.8 <eos>=-1.2 gap=24.0 turn_end_106=3.6 gap=19.2
+step 28 top=' and'@23.6 <eos>=-4.4 gap=28.0 turn_end_106=4.4 gap=19.2
+step 29 top=' '@27.7 <eos>=-4.2 gap=32.0 turn_end_106=4.3 gap=23.4
+step 30 top='8'@25.1 <eos>=-8.0 gap=33.0 turn_end_106=0.1 gap=25.0
+step 31 top=')**'@19.5 <eos>=-11.6 gap=31.1 turn_end_106=2.1 gap=17.4
+step 32 top='\n'@26.1 <eos>=5.8 gap=20.3 turn_end_106=14.0 gap=12.1
+step 33 top='**'@19.5 <eos>=0.3 gap=19.2 turn_end_106=9.1 gap=10.4
+step 34 top='Step'@25.6 <eos>=3.2 gap=22.4 turn_end_106=6.3 gap=19.3
+step 35 top=' '@26.7 <eos>=-2.7 gap=29.4 turn_end_106=6.7 gap=20.0
+step 36 top='2'@27.5 <eos>=0.7 gap=26.8 turn_end_106=4.1 gap=23.4
+step 37 top=':'@22.8 <eos>=-6.4 gap=29.1 turn_end_106=1.2 gap=21.5
+step 38 top=' Divide'@19.6 <eos>=-7.9 gap=27.6 turn_end_106=1.5 gap=18.1
+step 39 top=' the'@18.2 <eos>=-8.1 gap=26.3 turn_end_106=1.0 gap=17.2
+step 40 top=' Numer'@17.6 <eos>=-8.7 gap=26.3 turn_end_106=3.6 gap=14.0
+step 41 top='ator'@6.9 <eos>=-15.5 gap=22.4 turn_end_106=-5.3 gap=12.2
+step 42 top=' and'@25.8 <eos>=-6.6 gap=32.5 turn_end_106=4.3 gap=21.5
+step 43 top=' Den'@21.0 <eos>=-15.2 gap=36.2 turn_end_106=-4.1 gap=25.1
+step 44 top='ominator'@6.3 <eos>=-15.0 gap=21.3 turn_end_106=-6.3 gap=12.6
+step 45 top=' by'@22.4 <eos>=-12.2 gap=34.7 turn_end_106=-0.3 gap=22.7
+step 46 top=' the'@22.0 <eos>=-5.0 gap=27.0 turn_end_106=4.3 gap=17.7
+step 47 top=' Common'@17.9 <eos>=-11.2 gap=29.1 turn_end_106=0.2 gap=17.6
+step 48 top=' Factor'@21.6 <eos>=-5.6 gap=27.2 turn_end_106=0.4 gap=21.2
+step 49 top='**'@22.4 <eos>=-13.4 gap=35.8 turn_end_106=2.8 gap=19.6
+step 50 top='\n'@26.9 <eos>=6.5 gap=20.4 turn_end_106=15.3 gap=11.6
+step 51 top='**'@21.4 <eos>=2.5 gap=18.9 turn_end_106=7.4 gap=14.0
+step 52 top='Step'@21.1 <eos>=-0.1 gap=21.2 turn_end_106=1.4 gap=19.7
+step 53 top=' '@26.1 <eos>=-1.1 gap=27.2 turn_end_106=5.9 gap=20.2
+step 54 top='3'@26.7 <eos>=-1.3 gap=27.9 turn_end_106=2.0 gap=24.7
+step 55 top=':'@22.5 <eos>=-12.6 gap=35.1 turn_end_106=-5.1 gap=27.6
+step 56 top=' Write'@17.8 <eos>=-5.9 gap=23.7 turn_end_106=2.7 gap=15.0
+step 57 top=' the'@27.0 <eos>=1.1 gap=25.8 turn_end_106=8.0 gap=18.9
+step 58 top=' Simplified'@15.1 <eos>=-14.4 gap=29.6 turn_end_106=-1.7 gap=16.8
+step 59 top=' Fraction'@20.4 <eos>=-8.0 gap=28.4 turn_end_106=0.8 gap=19.6
+step 60 top='**'@26.1 <eos>=-13.9 gap=40.0 turn_end_106=1.7 gap=24.4
+step 61 top='\n\n'@27.1 <eos>=8.9 gap=18.2 turn_end_106=16.2 gap=10.9
+step 62 top='**'@17.6 <eos>=-2.9 gap=20.4 turn_end_106=7.5 gap=10.1
+step 63 top='Final'@16.8 <eos>=-3.3 gap=20.1 turn_end_106=-1.6 gap=18.3
+step 64 top=' Answer'@17.8 <eos>=-15.6 gap=33.4 turn_end_106=-8.0 gap=25.8
+step 65 top=':**'@18.1 <eos>=-14.5 gap=32.7 turn_end_106=-1.6 gap=19.7
+step 66 top='\n'@25.9 <eos>=4.9 gap=21.0 turn_end_106=13.6 gap=12.3
+step 67 top='$\\'@19.5 <eos>=-0.8 gap=20.3 turn_end_106=6.0 gap=13.5
+step 68 top='frac'@19.9 <eos>=-1.5 gap=21.4 turn_end_106=4.2 gap=15.7
+step 69 top='{'@27.1 <eos>=-1.4 gap=28.5 turn_end_106=0.2 gap=26.8
+step 70 top='6'@27.9 <eos>=6.8 gap=21.1 turn_end_106=7.0 gap=21.0
+step 71 top='}{'@25.4 <eos>=-5.3 gap=30.7 turn_end_106=-0.2 gap=25.5
+step 72 top='8'@25.8 <eos>=4.0 gap=21.9 turn_end_106=4.6 gap=21.2
+step 73 top='}'@23.3 <eos>=-0.6 gap=23.9 turn_end_106=2.4 gap=20.9
+step 74 top=' ='@23.2 <eos>=-4.3 gap=27.5 turn_end_106=4.7 gap=18.5
+step 75 top=' \\'@26.5 <eos>=-0.1 gap=26.6 turn_end_106=6.7 gap=19.8
+step 76 top='frac'@20.3 <eos>=-1.4 gap=21.7 turn_end_106=-1.8 gap=22.1
+step 77 top='{'@19.7 <eos>=-10.2 gap=29.9 turn_end_106=-5.3 gap=25.0
+step 78 top='1'@17.3 <eos>=-9.1 gap=26.4 turn_end_106=-6.1 gap=23.5
+step 79 top='}{'@17.0 <eos>=-11.0 gap=28.0 turn_end_106=-8.9 gap=25.9
+step 80 top='4'@20.2 <eos>=-4.1 gap=24.3 turn_end_106=1.1 gap=19.1
+step 81 top='}$'@21.4 <eos>=5.7 gap=15.8 turn_end_106=4.6 gap=16.8
+step 82 top='\n\n'@23.9 <eos>=8.7 gap=15.1 turn_end_106=16.1 gap=7.8
+step 83 top='**'@20.1 <eos>=2.1 gap=18.0 turn_end_106=8.5 gap=11.7
+step 84 top='Explanation'@17.9 <eos>=-0.9 gap=18.8 turn_end_106=0.6 gap=17.3
+step 85 top=':**'@21.3 <eos>=-11.1 gap=32.4 turn_end_106=1.5 gap=19.7
+step 86 top='\n'@28.6 <eos>=6.0 gap=22.6 turn_end_106=18.0 gap=10.6
+step 87 top='1'@21.6 <eos>=1.4 gap=20.2 turn_end_106=10.6 gap=11.0
+step 88 top='.'@22.9 <eos>=-8.3 gap=31.2 turn_end_106=6.6 gap=16.3
+step 89 top='  '@20.7 <eos>=-4.4 gap=25.1 turn_end_106=9.3 gap=11.4
+step 90 top='**'@25.5 <eos>=1.4 gap=24.1 turn_end_106=11.4 gap=14.1
+step 91 top='Divide'@16.8 <eos>=-6.2 gap=23.0 turn_end_106=1.0 gap=15.8
+step 92 top=' both'@18.2 <eos>=-8.0 gap=26.2 turn_end_106=0.2 gap=18.0
+step 93 top=' numerator'@13.7 <eos>=-12.4 gap=26.1 turn_end_106=-2.6 gap=16.3
+step 94 top=' and'@24.8 <eos>=-4.7 gap=29.5 turn_end_106=5.5 gap=19.3
+step 95 top=' denominator'@22.3 <eos>=-9.1 gap=31.5 turn_end_106=-0.4 gap=22.7
+step 96 top=' by'@23.2 <eos>=-9.5 gap=32.7 turn_end_106=0.9 gap=22.3
+step 97 top=' '@21.6 <eos>=-8.0 gap=29.7 turn_end_106=4.0 gap=17.6
+step 98 top='8'@21.3 <eos>=-14.9 gap=36.2 turn_end_106=-7.7 gap=29.0
+step 99 top='.**'@11.3 <eos>=-16.3 gap=27.6 turn_end_106=-4.4 gap=15.7
+step100 top='\n'@24.7 <eos>=6.0 gap=18.6 turn_end_106=13.9 gap=10.8
+step101 top='2'@27.1 <eos>=8.8 gap=18.3 turn_end_106=13.1 gap=14.0
+step102 top='.'@23.4 <eos>=-6.9 gap=30.3 turn_end_106=-6.8 gap=30.3
+step103 top='  '@21.1 <eos>=-4.3 gap=25.3 turn_end_106=2.3 gap=18.7
+step104 top='**'@17.1 <eos>=-9.8 gap=26.8 turn_end_106=-2.6 gap=19.6
+step105 top='Divide'@24.6 <eos>=6.4 gap=18.2 turn_end_106=8.0 gap=16.7
+step106 top=' both'@26.3 <eos>=2.2 gap=24.1 turn_end_106=8.4 gap=17.9
+step107 top=' numerator'@24.6 <eos>=-1.9 gap=26.4 turn_end_106=7.0 gap=17.6
+step108 top=' and'@26.2 <eos>=6.5 gap=19.8 turn_end_106=9.3 gap=16.9
+step109 top=' denominator'@18.0 <eos>=-6.4 gap=24.4 turn_end_106=-2.2 gap=20.2
+step110 top=' by'@24.1 <eos>=-4.6 gap=28.7 turn_end_106=1.9 gap=22.2
+step111 top=' '@29.0 <eos>=2.5 gap=26.4 turn_end_106=11.9 gap=17.1
+step112 top='8'@26.3 <eos>=-0.5 gap=26.9 turn_end_106=6.5 gap=19.9
+step113 top='.**'@19.1 <eos>=-9.4 gap=28.5 turn_end_106=2.1 gap=17.0
+step114 top='\n'@24.8 <eos>=4.5 gap=20.3 turn_end_106=12.9 gap=11.9
+step115 top='3'@25.5 <eos>=7.2 gap=18.3 turn_end_106=11.1 gap=14.4
+step116 top='.'@22.2 <eos>=-6.9 gap=29.1 turn_end_106=-3.7 gap=26.0
+step117 top='  '@20.6 <eos>=-2.9 gap=23.4 turn_end_106=2.7 gap=17.9
+step118 top='**'@17.5 <eos>=-11.0 gap=28.5 turn_end_106=-4.0 gap=21.5
+step119 top='Write'@24.4 <eos>=5.7 gap=18.7 turn_end_106=6.0 gap=18.4
+
+### What is 15% of 200? Show your work briefly.
+step  0 top='To'@23.3 <eos>=3.0 gap=20.3 turn_end_106=6.7 gap=16.6
+step  1 top=' find'@10.3 <eos>=-14.6 gap=24.9 turn_end_106=-8.1 gap=18.4
+step  2 top=' '@22.8 <eos>=-2.1 gap=24.9 turn_end_106=4.5 gap=18.3
+step  3 top='1'@24.0 <eos>=-7.2 gap=31.2 turn_end_106=-4.0 gap=28.0
+step  4 top='5'@24.1 <eos>=-4.9 gap=29.0 turn_end_106=1.9 gap=22.2
+step  5 top='%'@22.0 <eos>=-11.4 gap=33.4 turn_end_106=-6.2 gap=28.2
+step  6 top=' of'@20.7 <eos>=-11.1 gap=31.7 turn_end_106=-1.4 gap=22.1
+step  7 top=' '@28.2 <eos>=0.8 gap=27.5 turn_end_106=3.5 gap=24.7
+step  8 top='2'@23.7 <eos>=-9.1 gap=32.8 turn_end_106=-7.5 gap=31.3
+step  9 top='0'@25.1 <eos>=-2.4 gap=27.5 turn_end_106=4.1 gap=21.0
+step 10 top='0'@27.7 <eos>=-4.5 gap=32.2 turn_end_106=4.8 gap=22.9
+step 11 top=':'@20.7 <eos>=-13.8 gap=34.4 turn_end_106=2.3 gap=18.4
+step 12 top='\n\n'@28.2 <eos>=2.5 gap=25.7 turn_end_106=14.5 gap=13.7
+step 13 top='**'@23.8 <eos>=-0.3 gap=24.1 turn_end_106=6.6 gap=17.2
+step 14 top='Step'@24.3 <eos>=0.1 gap=24.2 turn_end_106=2.7 gap=21.6
+step 15 top='-'@18.6 <eos>=-15.4 gap=34.0 turn_end_106=-6.2 gap=24.8
+step 16 top='by'@20.3 <eos>=-8.6 gap=28.9 turn_end_106=-6.1 gap=26.4
+step 17 top=' step'@14.0 <eos>=-13.8 gap=27.8 turn_end_106=-2.4 gap=16.5
+step 18 top=':**'@23.6 <eos>=-15.3 gap=38.9 turn_end_106=0.6 gap=23.0
+step 19 top='\n\n'@29.0 <eos>=5.7 gap=23.3 turn_end_106=16.2 gap=12.7
+step 20 top='1'@25.6 <eos>=4.2 gap=21.4 turn_end_106=9.1 gap=16.5
+step 21 top='.'@23.2 <eos>=-10.6 gap=33.7 turn_end_106=1.7 gap=21.5
+step 22 top='  '@20.3 <eos>=-9.7 gap=30.1 turn_end_106=3.5 gap=16.8
+step 23 top='**'@22.4 <eos>=-4.5 gap=26.9 turn_end_106=3.0 gap=19.4
+step 24 top='Step'@14.6 <eos>=-6.8 gap=21.4 turn_end_106=-5.0 gap=19.6
+step 25 top=' '@23.5 <eos>=-12.7 gap=36.2 turn_end_106=0.4 gap=23.1
+step 26 top='1'@25.6 <eos>=-3.8 gap=29.4 turn_end_106=0.3 gap=25.3
+step 27 top=':'@23.3 <eos>=-6.2 gap=29.4 turn_end_106=3.5 gap=19.7
+step 28 top=' Convert'@18.8 <eos>=-8.5 gap=27.3 turn_end_106=0.0 gap=18.7
+step 29 top=' percentage'@22.5 <eos>=-16.1 gap=38.5 turn_end_106=-5.3 gap=27.7
+step 30 top=' to'@21.2 <eos>=-14.1 gap=35.3 turn_end_106=-2.6 gap=23.7
+step 31 top=' a'@15.0 <eos>=-22.9 gap=37.9 turn_end_106=-9.7 gap=24.7
+step 32 top=' fraction'@15.5 <eos>=-23.1 gap=38.6 turn_end_106=-8.8 gap=24.3
+step 33 top=':**'@22.5 <eos>=-16.0 gap=38.5 turn_end_106=3.0 gap=19.6
+step 34 top='\n'@27.4 <eos>=-1.2 gap=28.6 turn_end_106=11.5 gap=15.9
+step 35 top='    '@20.6 <eos>=-2.3 gap=22.9 turn_end_106=2.8 gap=17.8
+step 36 top='$'@18.7 <eos>=-2.8 gap=21.4 turn_end_106=2.2 gap=16.4
+step 37 top='1'@25.7 <eos>=2.2 gap=23.5 turn_end_106=6.0 gap=19.7
+step 38 top='5'@22.8 <eos>=-4.3 gap=27.1 turn_end_106=-2.2 gap=25.0
+step 39 top='\\%'@23.2 <eos>=-4.7 gap=27.9 turn_end_106=-6.3 gap=29.5
+step 40 top=' ='@23.7 <eos>=-7.7 gap=31.4 turn_end_106=-5.6 gap=29.3
+step 41 top=' '@22.4 <eos>=-3.6 gap=26.0 turn_end_106=-1.2 gap=23.7
+step 42 top='1'@11.8 <eos>=-22.6 gap=34.3 turn_end_106=-17.9 gap=29.6
+step 43 top='.'@8.5 <eos>=-11.9 gap=20.4 turn_end_106=-10.3 gap=18.8
+step 44 top='5'@21.2 <eos>=-1.7 gap=22.9 turn_end_106=-0.4 gap=21.6
+step 45 top=' \\'@19.7 <eos>=-1.6 gap=21.3 turn_end_106=1.0 gap=18.7
+step 46 top='times'@17.8 <eos>=-9.2 gap=27.0 turn_end_106=-3.2 gap=21.0
+step 47 top=' '@27.1 <eos>=6.9 gap=20.2 turn_end_106=10.9 gap=16.1
+step 48 top='2'@17.0 <eos>=-9.3 gap=26.3 turn_end_106=-1.2 gap=18.2
+step 49 top='0'@27.8 <eos>=2.1 gap=25.7 turn_end_106=4.7 gap=23.1
+step 50 top='0'@18.5 <eos>=-3.1 gap=21.6 turn_end_106=0.9 gap=17.6
+step 51 top='$'@24.8 <eos>=0.7 gap=24.1 turn_end_106=3.4 gap=21.4
+step 52 top=' ('@22.0 <eos>=-2.9 gap=25.0 turn_end_106=9.1 gap=12.9
+step 53 top='or'@24.2 <eos>=4.4 gap=19.7 turn_end_106=4.0 gap=20.2
+step 54 top=' $'@24.2 <eos>=-3.5 gap=27.7 turn_end_106=0.4 gap=23.8
+step 55 top='1'@25.5 <eos>=5.3 gap=20.1 turn_end_106=7.7 gap=17.8
+step 56 top='5'@23.9 <eos>=1.2 gap=22.7 turn_end_106=2.5 gap=21.4
+step 57 top='\\%'@20.9 <eos>=-2.1 gap=22.9 turn_end_106=-3.9 gap=24.7
+step 58 top=' ='@22.3 <eos>=-0.0 gap=22.3 turn_end_106=2.5 gap=19.8
+step 59 top=' '@22.0 <eos>=-0.5 gap=22.5 turn_end_106=2.6 gap=19.4
+step 60 top='0'@20.2 <eos>=-4.3 gap=24.5 turn_end_106=-5.7 gap=25.9
+step 61 top='.'@21.9 <eos>=-3.4 gap=25.3 turn_end_106=-7.3 gap=29.2
+step 62 top='1'@16.8 <eos>=-7.3 gap=24.1 turn_end_106=-6.1 gap=22.8
+step 63 top='5'@17.6 <eos>=-11.8 gap=29.3 turn_end_106=-5.9 gap=23.5
+step 64 top=' \\'@18.7 <eos>=-5.5 gap=24.2 turn_end_106=0.3 gap=18.4
+step 65 top='times'@21.1 <eos>=-3.8 gap=25.0 turn_end_106=-1.1 gap=22.2
+step 66 top=' '@28.6 <eos>=6.3 gap=22.3 turn_end_106=9.5 gap=19.1
+step 67 top='2'@23.0 <eos>=-0.8 gap=23.8 turn_end_106=1.2 gap=21.7
+step 68 top='0'@26.5 <eos>=3.1 gap=23.4 turn_end_106=4.9 gap=21.6
+step 69 top='0'@27.7 <eos>=2.3 gap=25.4 turn_end_106=7.8 gap=19.9
+step 70 top='$)'@20.5 <eos>=-5.3 gap=25.8 turn_end_106=-1.9 gap=22.4
+step 71 top='\n'@26.3 <eos>=6.5 gap=19.8 turn_end_106=16.3 gap=9.9
+step 72 top='    '@21.8 <eos>=1.0 gap=20.8 turn_end_106=7.1 gap=14.7
+step 73 top='$'@20.9 <eos>=9.2 gap=11.7 turn_end_106=9.6 gap=11.4
+step 74 top='1'@26.9 <eos>=10.9 gap=16.0 turn_end_106=10.8 gap=16.2
+step 75 top='5'@25.0 <eos>=4.5 gap=20.5 turn_end_106=2.9 gap=22.0
+step 76 top='\\%'@26.1 <eos>=2.8 gap=23.4 turn_end_106=4.8 gap=21.3
+step 77 top=' ='@25.5 <eos>=2.7 gap=22.8 turn_end_106=6.4 gap=19.1
+step 78 top=' '@25.2 <eos>=4.2 gap=21.0 turn_end_106=8.7 gap=16.4
+step 79 top='1'@22.2 <eos>=-2.0 gap=24.2 turn_end_106=1.9 gap=20.3
+step 80 top='5'@25.5 <eos>=3.9 gap=21.6 turn_end_106=6.3 gap=19.3
+step 81 top='\\%'@19.4 <eos>=-4.2 gap=23.6 turn_end_106=-3.8 gap=23.2
+step 82 top=' \\'@22.6 <eos>=-3.5 gap=26.2 turn_end_106=3.7 gap=18.9
+step 83 top='text'@22.4 <eos>=-5.2 gap=27.6 turn_end_106=2.7 gap=19.7
+step 84 top='{'@24.2 <eos>=-9.3 gap=33.6 turn_end_106=-4.9 gap=29.1
+step 85 top='of'@17.0 <eos>=-5.7 gap=22.7 turn_end_106=5.1 gap=11.9
+step 86 top=' }'@18.3 <eos>=-5.7 gap=24.0 turn_end_106=-3.5 gap=21.8
+step 87 top=' '@27.5 <eos>=8.5 gap=19.0 turn_end_106=13.5 gap=14.0
+step 88 top='2'@26.1 <eos>=3.8 gap=22.3 turn_end_106=7.4 gap=18.7
+step 89 top='0'@26.8 <eos>=5.4 gap=21.4 turn_end_106=7.1 gap=19.7
+step 90 top='0'@26.7 <eos>=2.8 gap=23.9 turn_end_106=8.7 gap=18.0
+step 91 top='$'@24.1 <eos>=3.1 gap=21.0 turn_end_106=8.2 gap=15.9
+step 92 top='\n\n'@26.4 <eos>=4.5 gap=21.8 turn_end_106=15.3 gap=11.0
+step 93 top='2'@26.9 <eos>=10.9 gap=16.0 turn_end_106=12.3 gap=14.6
+step 94 top='.'@25.3 <eos>=-4.7 gap=29.9 turn_end_106=-0.5 gap=25.8
+step 95 top='  '@25.3 <eos>=-2.2 gap=27.5 turn_end_106=6.0 gap=19.3
+step 96 top='**'@24.4 <eos>=-1.4 gap=25.8 turn_end_106=2.3 gap=22.2
+step 97 top='Step'@24.3 <eos>=-0.3 gap=24.6 turn_end_106=1.0 gap=23.3
+step 98 top=' '@27.9 <eos>=-2.3 gap=30.2 turn_end_106=4.6 gap=23.3
+step 99 top='2'@27.4 <eos>=1.3 gap=26.1 turn_end_106=3.0 gap=24.3
+step100 top=':'@26.2 <eos>=-2.0 gap=28.1 turn_end_106=3.2 gap=22.9
+step101 top=' Multiply'@20.9 <eos>=-6.7 gap=27.6 turn_end_106=5.7 gap=15.2
+step102 top=' the'@24.7 <eos>=-4.7 gap=29.4 turn_end_106=7.4 gap=17.4
+step103 top=' numbers'@20.3 <eos>=-6.5 gap=26.7 turn_end_106=2.0 gap=18.2
+step104 top=':**'@22.8 <eos>=-13.2 gap=36.1 turn_end_106=-0.8 gap=23.7
+step105 top='\n'@26.9 <eos>=1.3 gap=25.6 turn_end_106=10.5 gap=16.4
+step106 top='    '@22.7 <eos>=-2.1 gap=24.8 turn_end_106=0.7 gap=22.1
+step107 top='$'@26.0 <eos>=8.3 gap=17.7 turn_end_106=7.8 gap=18.2
+step108 top='1'@27.6 <eos>=6.8 gap=20.8 turn_end_106=10.8 gap=16.8
+step109 top='5'@24.2 <eos>=2.3 gap=21.9 turn_end_106=6.3 gap=17.9
+step110 top='\\%'@19.6 <eos>=-3.6 gap=23.2 turn_end_106=-1.5 gap=21.1
+step111 top=' \\'@25.7 <eos>=-0.3 gap=26.0 turn_end_106=6.6 gap=19.0
+step112 top='text'@24.0 <eos>=-1.9 gap=26.0 turn_end_106=6.0 gap=18.1
+step113 top='{'@26.3 <eos>=-7.0 gap=33.3 turn_end_106=1.4 gap=24.9
+step114 top='of'@24.9 <eos>=-2.7 gap=27.7 turn_end_106=8.0 gap=16.9
+step115 top=' }'@24.7 <eos>=-1.5 gap=26.2 turn_end_106=-0.3 gap=25.0
+step116 top=' '@27.9 <eos>=6.0 gap=21.9 turn_end_106=12.0 gap=15.9
+step117 top='2'@26.2 <eos>=2.1 gap=24.1 turn_end_106=5.3 gap=20.9
+step118 top='0'@27.1 <eos>=3.7 gap=23.4 turn_end_106=7.8 gap=19.3
+step119 top='0'@26.2 <eos>=2.5 gap=23.7 turn_end_106=7.8 gap=18.4
+
+### Compute the derivative of x^3 + 2x with respect to x.
+step  0 top='To'@22.3 <eos>=-3.8 gap=26.1 turn_end_106=0.8 gap=21.5
+step  1 top=' compute'@13.7 <eos>=-18.0 gap=31.7 turn_end_106=-9.0 gap=22.7
+step  2 top=' the'@27.0 <eos>=-0.4 gap=27.4 turn_end_106=1.7 gap=25.3
+step  3 top=' derivative'@18.7 <eos>=-11.4 gap=30.0 turn_end_106=-6.0 gap=24.6
+step  4 top=' of'@26.4 <eos>=-7.1 gap=33.4 turn_end_106=4.2 gap=22.2
+step  5 top=' $'@24.4 <eos>=-4.1 gap=28.5 turn_end_106=0.3 gap=24.1
+step  6 top='x'@21.9 <eos>=-14.3 gap=36.2 turn_end_106=-6.8 gap=28.7
+step  7 top='^'@24.5 <eos>=-3.6 gap=28.1 turn_end_106=1.6 gap=23.0
+step  8 top='3'@21.9 <eos>=-6.5 gap=28.3 turn_end_106=-1.1 gap=23.0
+step  9 top=' +'@19.7 <eos>=-13.8 gap=33.5 turn_end_106=-4.9 gap=24.6
+step 10 top=' '@25.5 <eos>=-10.3 gap=35.7 turn_end_106=0.1 gap=25.3
+step 11 top='2'@24.1 <eos>=-9.2 gap=33.3 turn_end_106=-2.4 gap=26.4
+step 12 top='x'@21.7 <eos>=-11.7 gap=33.4 turn_end_106=-5.0 gap=26.6
+step 13 top='$'@24.1 <eos>=-7.5 gap=31.6 turn_end_106=-2.7 gap=26.8
+step 14 top=' with'@21.9 <eos>=-15.8 gap=37.7 turn_end_106=-3.4 gap=25.2
+step 15 top=' respect'@23.2 <eos>=-12.2 gap=35.4 turn_end_106=-12.4 gap=35.7
+step 16 top=' to'@24.5 <eos>=-9.5 gap=34.0 turn_end_106=1.3 gap=23.2
+step 17 top=' $'@24.6 <eos>=-5.2 gap=29.8 turn_end_106=-1.2 gap=25.8
+step 18 top='x'@21.0 <eos>=-6.6 gap=27.6 turn_end_106=0.2 gap=20.8
+step 19 top='$,'@25.7 <eos>=-3.4 gap=29.1 turn_end_106=0.5 gap=25.2
+step 20 top=' is'@16.3 <eos>=-16.6 gap=32.9 turn_end_106=-1.8 gap=18.1
+step 21 top=' using'@13.2 <eos>=-14.5 gap=27.7 turn_end_106=-4.2 gap=17.4
+step 22 top=' the'@25.7 <eos>=-3.5 gap=29.3 turn_end_106=4.2 gap=21.5
+step 23 top=' power'@21.8 <eos>=-16.7 gap=38.5 turn_end_106=2.8 gap=19.0
+step 24 top=' rule'@7.6 <eos>=-22.5 gap=30.2 turn_end_106=-11.2 gap=18.8
+step 25 top=' and'@25.2 <eos>=-8.0 gap=33.2 turn_end_106=3.8 gap=21.4
+step 26 top=' the'@26.0 <eos>=-6.6 gap=32.7 turn_end_106=5.7 gap=20.3
+step 27 top=' sum'@13.4 <eos>=-13.8 gap=27.2 turn_end_106=-4.6 gap=18.0
+step 28 top=' rule'@18.2 <eos>=-14.3 gap=32.5 turn_end_106=-7.6 gap=25.8
+step 29 top='.'@21.9 <eos>=-9.3 gap=31.2 turn_end_106=1.4 gap=20.6
+step 30 top='\n\n'@29.5 <eos>=11.8 gap=17.7 turn_end_106=20.6 gap=8.9
+step 31 top='**'@20.2 <eos>=2.2 gap=18.0 turn_end_106=8.5 gap=11.7
+step 32 top='Step'@21.4 <eos>=-3.9 gap=25.3 turn_end_106=-0.3 gap=21.7
+step 33 top='-'@19.9 <eos>=-15.6 gap=35.5 turn_end_106=-4.3 gap=24.2
+step 34 top='by'@18.8 <eos>=-8.4 gap=27.2 turn_end_106=-5.3 gap=24.1
+step 35 top=' step'@13.3 <eos>=-16.7 gap=30.0 turn_end_106=-7.9 gap=21.2
+step 36 top=':**'@22.3 <eos>=-20.0 gap=42.3 turn_end_106=-4.4 gap=26.8
+step 37 top='\n\n'@28.8 <eos>=10.1 gap=18.7 turn_end_106=17.6 gap=11.2
+step 38 top='1'@21.5 <eos>=1.5 gap=20.0 turn_end_106=7.8 gap=13.7
+step 39 top='.'@21.2 <eos>=-10.0 gap=31.2 turn_end_106=-2.8 gap=23.9
+step 40 top='  '@19.7 <eos>=-3.9 gap=23.7 turn_end_106=3.8 gap=15.9
+step 41 top='**'@25.3 <eos>=3.3 gap=21.9 turn_end_106=8.1 gap=17.2
+step 42 top='Identify'@15.3 <eos>=-8.5 gap=23.8 turn_end_106=-4.9 gap=20.2
+step 43 top=' the'@26.8 <eos>=-4.9 gap=31.7 turn_end_106=6.0 gap=20.8
+step 44 top=' function'@22.8 <eos>=-11.5 gap=34.2 turn_end_106=3.4 gap=19.4
+step 45 top=':**'@24.2 <eos>=-18.8 gap=43.0 turn_end_106=-3.2 gap=27.4
+step 46 top='\n'@26.0 <eos>=-0.0 gap=26.1 turn_end_106=7.4 gap=18.7
+step 47 top='    '@20.5 <eos>=3.7 gap=16.8 turn_end_106=4.4 gap=16.1
+step 48 top='$'@20.9 <eos>=-0.1 gap=21.0 turn_end_106=2.6 gap=18.4
+step 49 top='f'@19.8 <eos>=-12.9 gap=32.7 turn_end_106=-3.0 gap=22.8
+step 50 top='('@23.6 <eos>=-3.4 gap=27.0 turn_end_106=-1.9 gap=25.5
+step 51 top='x'@12.0 <eos>=-13.9 gap=25.9 turn_end_106=-10.8 gap=22.8
+step 52 top=')'@17.6 <eos>=-5.2 gap=22.9 turn_end_106=-7.9 gap=25.5
+step 53 top=' ='@24.8 <eos>=-7.5 gap=32.3 turn_end_106=-3.2 gap=28.1
+step 54 top=' x'@24.7 <eos>=-5.5 gap=30.3 turn_end_106=-3.2 gap=28.0
+step 55 top='^'@26.9 <eos>=0.6 gap=26.2 turn_end_106=4.0 gap=22.9
+step 56 top='3'@25.0 <eos>=-2.7 gap=27.7 turn_end_106=2.0 gap=23.0
+step 57 top=' +'@24.4 <eos>=-11.5 gap=36.0 turn_end_106=-1.9 gap=26.4
+step 58 top=' '@25.9 <eos>=-8.5 gap=34.5 turn_end_106=1.0 gap=24.9
+step 59 top='2'@23.5 <eos>=-6.6 gap=30.2 turn_end_106=-2.1 gap=25.6
+step 60 top='x'@21.6 <eos>=-7.7 gap=29.3 turn_end_106=-2.4 gap=24.0
+step 61 top='$'@24.3 <eos>=-8.7 gap=33.0 turn_end_106=-1.6 gap=25.9
+step 62 top='\n\n'@26.8 <eos>=4.3 gap=22.5 turn_end_106=11.8 gap=15.0
+step 63 top='2'@26.1 <eos>=8.0 gap=18.1 turn_end_106=10.2 gap=15.9
+step 64 top='.'@21.1 <eos>=-11.0 gap=32.1 turn_end_106=-9.1 gap=30.2
+step 65 top='  '@20.2 <eos>=-6.0 gap=26.2 turn_end_106=1.5 gap=18.8
+step 66 top='**'@22.8 <eos>=-4.7 gap=27.4 turn_end_106=-2.3 gap=25.1
+step 67 top='Apply'@21.3 <eos>=-7.4 gap=28.7 turn_end_106=-4.1 gap=25.4
+step 68 top=' the'@25.8 <eos>=-7.9 gap=33.7 turn_end_106=2.0 gap=23.8
+step 69 top=' rule'@17.8 <eos>=-16.0 gap=33.8 turn_end_106=-0.0 gap=17.8
+step 70 top=':**'@18.7 <eos>=-14.6 gap=33.3 turn_end_106=-0.4 gap=19.0
+step 71 top='\n'@25.1 <eos>=-0.2 gap=25.2 turn_end_106=7.4 gap=17.7
+step 72 top='    '@21.7 <eos>=-3.5 gap=25.2 turn_end_106=1.3 gap=20.4
+step 73 top='Using'@19.0 <eos>=-1.5 gap=20.5 turn_end_106=3.8 gap=15.2
+step 74 top=' the'@26.0 <eos>=-4.6 gap=30.6 turn_end_106=3.1 gap=22.9
+step 75 top=' power'@21.6 <eos>=-14.3 gap=35.9 turn_end_106=2.6 gap=19.0
+step 76 top=' rule'@19.9 <eos>=-21.0 gap=41.0 turn_end_106=-5.4 gap=25.3
+step 77 top=' $\\'@22.0 <eos>=-12.9 gap=34.9 turn_end_106=1.6 gap=20.4
+step 78 top='frac'@16.6 <eos>=-5.8 gap=22.4 turn_end_106=-0.9 gap=17.6
+step 79 top='{'@12.2 <eos>=-14.0 gap=26.3 turn_end_106=-6.8 gap=19.0
+step 80 top='d'@19.5 <eos>=-9.4 gap=28.9 turn_end_106=-8.0 gap=27.5
+step 81 top='}{'@20.6 <eos>=-12.5 gap=33.0 turn_end_106=-6.6 gap=27.1
+step 82 top='x'@10.0 <eos>=-18.6 gap=28.6 turn_end_106=-12.7 gap=22.7
+step 83 top='}('@13.2 <eos>=-5.9 gap=19.0 turn_end_106=1.3 gap=11.8
+step 84 top='x'@19.6 <eos>=-10.1 gap=29.7 turn_end_106=-5.4 gap=25.0
+step 85 top='^'@24.3 <eos>=0.8 gap=23.5 turn_end_106=0.0 gap=24.3
+step 86 top='n'@21.1 <eos>=-10.5 gap=31.6 turn_end_106=-8.1 gap=29.2
+step 87 top=')'@18.8 <eos>=-11.5 gap=30.2 turn_end_106=-10.1 gap=28.9
+step 88 top=' ='@22.2 <eos>=-12.1 gap=34.3 turn_end_106=-7.9 gap=30.1
+step 89 top=' nx'@19.2 <eos>=-19.1 gap=38.3 turn_end_106=-11.6 gap=30.8
+step 90 top='^{'@21.3 <eos>=-20.6 gap=41.9 turn_end_106=-16.7 gap=38.0
+step 91 top='n'@20.6 <eos>=-11.8 gap=32.4 turn_end_106=-12.7 gap=33.4
+step 92 top='-'@22.4 <eos>=-14.1 gap=36.5 turn_end_106=-8.9 gap=31.3
+step 93 top='1'@11.0 <eos>=-14.8 gap=25.8 turn_end_106=-7.5 gap=18.5
+step 94 top='}$'@18.8 <eos>=-5.5 gap=24.4 turn_end_106=-0.7 gap=19.6
+step 95 top=' and'@26.5 <eos>=0.8 gap=25.7 turn_end_106=11.1 gap=15.3
+step 96 top=' the'@27.7 <eos>=0.3 gap=27.4 turn_end_106=7.5 gap=20.2
+step 97 top=' sum'@23.7 <eos>=-7.5 gap=31.2 turn_end_106=3.8 gap=19.9
+step 98 top=' rule'@24.4 <eos>=-7.1 gap=31.6 turn_end_106=0.4 gap=24.0
+step 99 top=' $\\'@25.9 <eos>=-3.1 gap=29.0 turn_end_106=8.0 gap=17.9
+step100 top='frac'@20.1 <eos>=-7.9 gap=28.1 turn_end_106=-0.2 gap=20.3
+step101 top='{'@11.9 <eos>=-15.7 gap=27.6 turn_end_106=-8.5 gap=20.4
+step102 top='d'@21.4 <eos>=-6.3 gap=27.7 turn_end_106=-4.8 gap=26.3
+step103 top='}{'@20.9 <eos>=-12.7 gap=33.5 turn_end_106=-2.6 gap=23.5
+step104 top='x'@12.9 <eos>=-12.9 gap=25.7 turn_end_106=-6.3 gap=19.2
+step105 top='}('@21.2 <eos>=1.5 gap=19.7 turn_end_106=2.0 gap=19.2
+step106 top='f'@18.0 <eos>=-12.8 gap=30.8 turn_end_106=-4.3 gap=22.3
+step107 top='+'@13.9 <eos>=-8.9 gap=22.9 turn_end_106=-8.9 gap=22.8
+step108 top='g'@16.8 <eos>=-12.9 gap=29.7 turn_end_106=-11.0 gap=27.8
+step109 top=')'@18.5 <eos>=-7.9 gap=26.5 turn_end_106=-6.4 gap=25.0
+step110 top=' ='@23.1 <eos>=-5.1 gap=28.3 turn_end_106=-3.1 gap=26.2
+step111 top=' \\'@24.5 <eos>=-7.4 gap=31.9 turn_end_106=5.0 gap=19.4
+step112 top='frac'@15.5 <eos>=-11.9 gap=27.4 turn_end_106=-0.6 gap=16.1
+step113 top='{'@8.8 <eos>=-17.8 gap=26.6 turn_end_106=-10.8 gap=19.5
+step114 top='df'@19.7 <eos>=-15.7 gap=35.4 turn_end_106=-6.6 gap=26.3
+step115 top='}{'@21.8 <eos>=-20.8 gap=42.6 turn_end_106=-11.1 gap=32.9
+step116 top='dx'@18.7 <eos>=-11.9 gap=30.6 turn_end_106=-3.6 gap=22.4
+step117 top='}'@16.3 <eos>=-9.1 gap=25.3 turn_end_106=-0.2 gap=16.5
+step118 top=' +'@20.0 <eos>=-6.6 gap=26.6 turn_end_106=2.0 gap=18.0
+step119 top=' \\'@23.1 <eos>=-7.5 gap=30.6 turn_end_106=1.1 gap=22.0
+
+SUMMARY (softcapped logits, cap=30):
+<eos>: gap mean=26.9 loop-zone mean=26.1 min=7.7
+turn_end_106: gap mean=20.5 loop-zone mean=20.2 min=0.0

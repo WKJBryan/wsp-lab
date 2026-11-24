@@ -1,0 +1,29 @@
+=== Q: What is 17 * 23? Show your work briefly.
+finish: stop | tokens: 99
+To calculate **17 * 23** easily using mental shortcuts-based on algebraic identity principles:
+
+### Method: Algebraic Identity
+Using the factural $(a)(b)$ approach:
+
+1.  **Convert to easier numbers:**
+    $17 = 10 + 7$
+$23 = 20 + 3$
+
+2.  **Expand through binomial identities:**
+$(10 + 7)(20 + 3)$
+=== END
+
+=== Q: Find the area of a triangle with side lengths 3, 4, and 5.
+finish: stop | tokens: 52
+To find the area of a triangle with side lengths 3, 4, and 5:
+
+### Step Analysis
+
+**1. Identify the sides:**
+$a = 3$, $b = 4$, $c = 5$
+=== END
+
+=== Q: Compute 2^10 - 3^5.
+finish: stop | tokens: 26
+To compute $2^{10} - 3^5$, we step through-by-step-by-step
+=== END

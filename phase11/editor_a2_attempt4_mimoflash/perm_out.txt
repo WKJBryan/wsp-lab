@@ -1,0 +1,17 @@
+=== same value-multiset (sorted content hash) within shape groups ===
+  PERMUTED-EQUAL: ['model.language_model.layers.11.layer_scalar', 'model.language_model.layers.28.layer_scalar', 'model.language_model.layers.4.layer_scalar']
+  PERMUTED-EQUAL: ['model.language_model.layers.20.layer_scalar', 'model.language_model.layers.21.layer_scalar', 'model.language_model.layers.22.layer_scalar']
+skip (8, 1408, 2816)
+  PERMUTED-EQUAL: ['model.language_model.layers.0.self_attn.k_norm.weight', 'model.language_model.layers.16.self_attn.k_norm.weight', 'model.language_model.layers.18.self_attn.k_norm.weight', 'model.language_model.layers.19.self_attn.k_norm.weight', 'model.language_model.layers.27.self_attn.k_norm.weight']
+  PERMUTED-EQUAL: ['model.language_model.layers.0.self_attn.q_norm.weight', 'model.language_model.layers.16.self_attn.q_norm.weight', 'model.language_model.layers.18.self_attn.q_norm.weight', 'model.language_model.layers.19.self_attn.q_norm.weight', 'model.language_model.layers.26.self_attn.q_norm.weight', 'model.language_model.layers.27.self_attn.q_norm.weight']
+  PERMUTED-EQUAL: ['model.language_model.layers.1.self_attn.q_norm.weight', 'model.language_model.layers.14.self_attn.q_norm.weight', 'model.language_model.layers.3.self_attn.q_norm.weight']
+  PERMUTED-EQUAL: ['model.language_model.layers.10.self_attn.k_norm.weight', 'model.language_model.layers.12.self_attn.k_norm.weight', 'model.language_model.layers.13.self_attn.k_norm.weight', 'model.language_model.layers.9.self_attn.k_norm.weight']
+  PERMUTED-EQUAL: ['model.language_model.layers.10.self_attn.q_norm.weight', 'model.language_model.layers.12.self_attn.q_norm.weight', 'model.language_model.layers.9.self_attn.q_norm.weight']
+  PERMUTED-EQUAL: ['model.language_model.layers.13.self_attn.q_norm.weight', 'model.language_model.layers.15.self_attn.q_norm.weight']
+  PERMUTED-EQUAL: ['model.language_model.layers.14.self_attn.k_norm.weight', 'model.language_model.layers.3.self_attn.k_norm.weight']
+  PERMUTED-EQUAL: ['model.language_model.layers.21.self_attn.k_norm.weight', 'model.language_model.layers.4.self_attn.k_norm.weight', 'model.language_model.layers.6.self_attn.k_norm.weight']
+  PERMUTED-EQUAL: ['model.language_model.layers.21.self_attn.q_norm.weight', 'model.language_model.layers.6.self_attn.q_norm.weight']
+  PERMUTED-EQUAL: ['model.language_model.layers.24.self_attn.k_norm.weight', 'model.language_model.layers.8.self_attn.k_norm.weight']
+  PERMUTED-EQUAL: ['model.language_model.layers.24.self_attn.q_norm.weight', 'model.language_model.layers.8.self_attn.q_norm.weight']
+  PERMUTED-EQUAL: ['model.language_model.layers.25.self_attn.q_norm.weight', 'model.language_model.layers.28.self_attn.q_norm.weight']
+  PERMUTED-EQUAL: ['model.language_model.layers.17.self_attn.k_norm.weight', 'model.language_model.layers.23.self_attn.k_norm.weight']

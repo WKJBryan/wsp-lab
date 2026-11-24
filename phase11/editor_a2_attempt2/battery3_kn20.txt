@@ -1,0 +1,41 @@
+Q: What is $1+1$? [want 2] boxed=None lastnum='2' NUMOK
+Q: What is $2+3$? [want 5] boxed=None lastnum='5' NUMOK
+Q: Compute $2 \cdot 3 + 4$. [want 10] boxed=None lastnum='4' 
+Q: What is $12 \times 12$? [want 144] boxed=None lastnum='14' 
+Q: What is $100 - 37$? [want 63] boxed=None lastnum='37' 
+Q: What is $7 \cdot 8$? [want 56] boxed=None lastnum='7' 
+Q: What is $2^{10}$? [want 1024] boxed=None lastnum='20' 
+Q: What is $3^4$? [want 81] boxed=None lastnum='24' 
+Q: What is $(-2)^3$? [want -8] boxed=None lastnum='-8' NUMOK
+Q: What is $\sqrt{144}$? [want 12] boxed=None lastnum='14' 
+Q: What is $\frac{1}{2} + \frac{1}{4}$? [want \frac{3}{4}] boxed=None lastnum='4' 
+Q: What is $\frac{3}{5}$ as a percentage? [want 60] boxed=None lastnum='0.3' 
+Q: Convert $\frac{7}{4}$ to a decimal. [want 1.75] boxed=None lastnum='7.4' 
+Q: What is $15\%$ of $80$? [want 12] boxed=None lastnum='8' 
+Q: If $f(x)=3x+2$, what is $f(2)$? [want 8] boxed=None lastnum='2' 
+Q: If $f(x)=x^2-1$, what is $f(3)$? [want 8] boxed=None lastnum='8' NUMOK
+Q: Find $x$ if $3x - 7 = 11$. [want 6] boxed=None lastnum='7' 
+Q: Solve for $y$: $5y = 45$. [want 9] boxed=None lastnum='20' 
+Q: If $x = 7$, what is $x$? [want 7] boxed=None lastnum='7' NUMOK
+Q: If $3 + x = 10$, find $x$. [want 7] boxed=None lastnum=None 
+Q: What is the greatest common divisor of 24 and 36? [want 12] boxed=None lastnum='6' 
+Q: What is the least common multiple of 4 and 6? [want 12] boxed=None lastnum='6' 
+Q: What is the smallest prime number? [want 2] boxed=None lastnum='2' NUMOK
+Q: How many sides does a hexagon have? [want 6] boxed=None lastnum='6' NUMOK
+Q: How many degrees are in a right angle? [want 90] boxed=None lastnum='9' 
+Q: A rectangle has length 6 and width 4. What is its area? [want 24] boxed=None lastnum='8' 
+Q: What is the area of a square with side length 5? [want 25] boxed=None lastnum='5' 
+Q: What is the perimeter of a square with side length 3? [want 12] boxed=None lastnum='3' 
+Q: Simplify $\sqrt{50}$. [want 5\sqrt{2}] boxed=None lastnum='8' 
+Q: Simplify $2x + 3x$. [want 5x] boxed=None lastnum='5' 
+Q: Combine like terms: $7y - 2y$. [want 5y] boxed=None lastnum='5' 
+Q: What is $x$ if $2x = x + 5$? [want 5] boxed=None lastnum='5' NUMOK
+Q: Evaluate $\frac{10}{4} \cdot 2$. [want 5] boxed=None lastnum='-2' 
+Q: What is $9 - 4 + 1$? [want 6] boxed=None lastnum='9' 
+Q: If a train travels 60 miles per hour for 2 hours, how many miles does it travel? [want 120] boxed=None lastnum='30.0' 
+Q: What is $\frac{6}{8}$ in simplest form? [want \frac{3}{4}] boxed=None lastnum='8' 
+Q: What is the value of $\pi$ rounded to two decimal places? [want 3.14] boxed=None lastnum='5' 
+Q: What is $20 \div 4$? [want 5] boxed=None lastnum='4' 
+Q: What number is $50\%$ of 14? [want 7] boxed=None lastnum='14' 
+Q: If $A = \{1, 2, 3\}$, how many elements does $A$ have? [want 3] boxed=None lastnum='3' NUMOK
+SCORE3 boxed=0/40 lastnum=9/40 boxed_any=0/40 mean_tok=1755 stops=7/40

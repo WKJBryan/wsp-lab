@@ -1,0 +1,56 @@
+{
+ "tokens": 67497,
+ "baseline_loss": 0.3287,
+ "arms": {
+  "spike": {
+   "units": 2,
+   "loss": 0.3295,
+   "same_token": 0.9891
+  },
+  "spike_ctrl": {
+   "units": 2,
+   "loss": 0.3288,
+   "same_token": 0.9952
+  },
+  "quiet5": {
+   "units": 4294,
+   "loss": 0.3771,
+   "same_token": 0.9431
+  },
+  "random5": {
+   "units": 4294,
+   "loss": 0.4541,
+   "same_token": 0.9074
+  },
+  "quiet20": {
+   "units": 17178,
+   "loss": 0.591,
+   "same_token": 0.8662
+  },
+  "random20": {
+   "units": 17178,
+   "loss": 0.8857,
+   "same_token": 0.7889
+  },
+  "quiet50": {
+   "units": 42944,
+   "loss": 1.4999,
+   "same_token": 0.6915
+  },
+  "random50": {
+   "units": 42944,
+   "loss": 2.1285,
+   "same_token": 0.5827
+  }
+ },
+ "spike_ctrl_units": [
+  [
+   14,
+   2987
+  ],
+  [
+   3,
+   2766
+  ]
+ ]
+}

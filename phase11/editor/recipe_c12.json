@@ -1,0 +1,1 @@
+[{"op": "scale_tensor", "name": "model.language_model.norm.weight", "factor": 0.4}]

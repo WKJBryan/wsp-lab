@@ -1,0 +1,49 @@
+=== Q: What is 17 * 23? Show your work briefly.
+finish: stop | tokens: 4
+<tfoot></tfoot></caption>
+=== END
+
+=== Q: Find the area of a triangle with side lengths 3, 4, and 5.
+finish: stop | tokens: 26
+</td>           <unused32><unused77><unused78><unused37><unused18><unused18><unused18><unused31><unused22><h1><unused23><unused24><unused78><unused86>
+
+
+
+
+
+
+
+
+
+�</h6><unused44><unused74><unused1><unused56>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=== END
+
+=== Q: Compute 2^10 - 3^5.
+finish: stop | tokens: 7
+<table>      </h6>                                                     
+=== END

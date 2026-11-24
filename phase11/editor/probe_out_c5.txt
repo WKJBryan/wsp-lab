@@ -1,0 +1,25 @@
+=== Q: What is 17 * 23? Show your work briefly.
+finish: stop | tokens: 310
+To calculate **17 * 23** easily using mental shortcuts-based on algebraic identity principles:
+
+### Method: Algebraic Identity
+Using the factural $(a way)$: $(a way)$: $(a way)$: $(a way)$: $(a way)$: $(a way)$: $(a way)$: $(a way)$: $(a way)$: $(a way$: $(a way$: $(a way$: $(a way$: $(a way$: $(a way}$: $(a way}$: $(a way$: $(a way)$: $(a way}$: $(a way}$: $(a way)$: $(a way)$: $(a way}$: $(a way$: $(a way)$: $(a way$: $(a way}$: $(a way}$: $(a way$: $(a way}$: $(a way$: $(a way}$: $(a way$: $(a way}$: $(a way}$: $(a way)$: $(a way}$: $(a way}$: $(a way)$: $(a way)$: $(a way}$: $(a way}$: $(a way}$: $(a way}$: $(a way}$: $(a way)$: $(a way)$: $(a way}$: $(a way$: $(a way$: $(a way$: $(a way)$: $(a way)$: $(a way}$: $(a way}$: $(a way$: $(a way$: $(a way}$: $(a way}$: $(a way}$: $(a way)$: $(a way}$: $(a way)$: $(a way}$: $(a way)$: $(a way)$: $(a way}$: $(a way}$: $(a으로)$ )
+=== END
+
+=== Q: Find the area of a triangle with side lengths 3, 4, and 5.
+finish: stop | tokens: 690
+To find the area of a triangle with side lengths 3, 4, and 5:
+
+### Step-by-Step
+
+### Step 1
+
+#### Step 1
+Check whether these sides are-it enough to satisfy the **Pyorean Theorem**. Since $3^2 + 4^2 = 5^2$ ($3^2 + 4^2 = 5^2$); $9 + 4 = 5^2$; $9 + 4 = 5^2$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 =  sides = 3, 4, 5$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + 4 = 9$; $9 + و
+=== END
+
+=== Q: Compute 2^10 - 3^5.
+finish: stop | tokens: 570
+To compute $2^{10} - 3^5$, we step through-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-by-step-يвлеל�
+0
+=== END

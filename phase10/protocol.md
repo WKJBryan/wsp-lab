@@ -1,5 +1,13 @@
 # Pre-registered protocol — Phase 10: the no-hint FULL-BUDGET run
 
+> Note added 2026-11-24 (ISSUES #19): the figures quoted below were recorded with the defective
+> answer checker and are higher under the corrected one (see ISSUES #19); the rules and thresholds
+> in this file are unchanged. Values quoted here, first reported -> final: our blind edits
+> GLM-5.3-Flash 25.2 -> 31.6, mimo-v2.6-flash 27.8 -> 36.2, mimo-v2.6-pro 27.8 -> 35.2; stock
+> 6.0 -> 8.4.
+> Also withdrawn 2026-11-24 (ISSUES #25): the claim below that nobody in the field had published
+> such a run; the repository claims only that it is the first run we know of.
+
 Committed BEFORE the session runs. This is the experiment nobody in the field has published:
 a fully blind editor at the original's full evaluation budget.
 

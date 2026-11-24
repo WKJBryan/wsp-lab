@@ -1,0 +1,4 @@
+[{"op": "fill_tensor", "name": "model.language_model.layers.26.layer_scalar", "value": 0.0},
+ {"op": "fill_tensor", "name": "model.language_model.layers.27.layer_scalar", "value": 0.0},
+ {"op": "fill_tensor", "name": "model.language_model.layers.28.layer_scalar", "value": 0.0},
+ {"op": "fill_tensor", "name": "model.language_model.layers.29.layer_scalar", "value": 0.0}]

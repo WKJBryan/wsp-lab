@@ -1,0 +1,6 @@
+{
+ "picked": "model.language_model.layers.21.pre_feedforward_layernorm_2.weight",
+ "norm_before": 973.86,
+ "norm_after": 389.63,
+ "factor": 0.4
+}

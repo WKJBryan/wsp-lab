@@ -1,0 +1,23 @@
+### layer 28  |h_in|=45.59 |h_out|=41.79 scalar=0.6758
+   input_ln     mean|.|=   127.72 last|.|=    48.29
+   attn_out     mean|.|=    81.35 last|.|=    51.23
+   post_attn_ln mean|.|=    25.48 last|.|=    29.61
+   pre_ff_ln    mean|.|=    92.80 last|.|=    72.83
+   mlp_out      mean|.|=   649.34 last|.|=   392.98
+   post_ff_ln1  mean|.|=   256.18 last|.|=   239.06
+   pre_ff_ln2   mean|.|=     6.96 last|.|=     7.15
+   experts_out  mean|.|=     1.41 last|.|=     0.51
+   post_ff_ln2  mean|.|=    84.09 last|.|=    77.77
+   post_ff_ln   mean|.|=    50.63 last|.|=    49.83
+
+### layer 29  |h_in|=41.79 |h_out|=242.77 scalar=0.1953
+   input_ln     mean|.|=    47.96 last|.|=    39.53
+   attn_out     mean|.|=    60.42 last|.|=    78.92
+   post_attn_ln mean|.|=    53.36 last|.|=    38.01
+   pre_ff_ln    mean|.|=    58.64 last|.|=    54.23
+   mlp_out      mean|.|=   163.09 last|.|=   112.70
+   post_ff_ln1  mean|.|=   155.72 last|.|=   312.17
+   pre_ff_ln2   mean|.|=    10.26 last|.|=     9.86
+   experts_out  mean|.|=     0.66 last|.|=     0.54
+   post_ff_ln2  mean|.|=    66.98 last|.|=    62.75
+   post_ff_ln   mean|.|=   262.17 last|.|=   287.24

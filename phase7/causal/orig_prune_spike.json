@@ -1,0 +1,10 @@
+{
+ "name": "orig_prune_spike",
+ "arm": "spike",
+ "base": "c3_original_edit",
+ "units": 2,
+ "per_layer": {
+  "L3": 1,
+  "L14": 1
+ }
+}

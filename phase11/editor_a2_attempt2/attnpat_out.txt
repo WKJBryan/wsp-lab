@@ -1,0 +1,33 @@
+tokens: ['<bos>', '<|turn>', 'user', '\n', 'What', ' is', ' ', '1', '7', ' *', ' ', '2', '3', '?', ' Show', ' your', ' work', ' briefly', '.', '<turn|>', '\n', '<|turn>', 'model', '\n', '<|channel>', 'thought', '\n', '<channel|>']
+operand positions: [9]
+
+L0  heads=16  entropy=  1.45 avgmass_on_op=0.4241 mass_on_tok0=0.344 mean-argmax pos=0
+L1  heads=16  entropy=  2.08 avgmass_on_op=0.2110 mass_on_tok0=0.226 mean-argmax pos=0
+L2  heads=16  entropy=  2.50 avgmass_on_op=0.2550 mass_on_tok0=0.137 mean-argmax pos=0
+L3  heads=16  entropy=  2.16 avgmass_on_op=0.2345 mass_on_tok0=0.274 mean-argmax pos=0
+L4  heads=16  entropy=  2.12 avgmass_on_op=0.2143 mass_on_tok0=0.311 mean-argmax pos=0
+L5  heads=16  entropy=  2.07 avgmass_on_op=0.1539 mass_on_tok0=0.244 mean-argmax pos=0
+L6  heads=16  entropy=  2.39 avgmass_on_op=0.2878 mass_on_tok0=0.274 mean-argmax pos=0
+L7  heads=16  entropy=  2.13 avgmass_on_op=0.2198 mass_on_tok0=0.358 mean-argmax pos=0
+L8  heads=16  entropy=  2.18 avgmass_on_op=0.1433 mass_on_tok0=0.328 mean-argmax pos=0
+L9  heads=16  entropy=  2.29 avgmass_on_op=0.1329 mass_on_tok0=0.317 mean-argmax pos=0
+L10 heads=16  entropy=  1.95 avgmass_on_op=0.2097 mass_on_tok0=0.450 mean-argmax pos=0
+L11 heads=16  entropy=  2.33 avgmass_on_op=0.1348 mass_on_tok0=0.236 mean-argmax pos=0
+L12 heads=16  entropy=  2.41 avgmass_on_op=0.2238 mass_on_tok0=0.209 mean-argmax pos=0
+L13 heads=16  entropy=  2.61 avgmass_on_op=0.2036 mass_on_tok0=0.152 mean-argmax pos=0
+L14 heads=16  entropy=  2.39 avgmass_on_op=0.0722 mass_on_tok0=0.184 mean-argmax pos=0
+L15 heads=16  entropy=  2.51 avgmass_on_op=0.1198 mass_on_tok0=0.180 mean-argmax pos=0
+L16 heads=16  entropy=  2.27 avgmass_on_op=0.0746 mass_on_tok0=0.300 mean-argmax pos=0
+L17 heads=16  entropy=  2.18 avgmass_on_op=0.0981 mass_on_tok0=0.393 mean-argmax pos=0
+L18 heads=16  entropy=  2.31 avgmass_on_op=0.1409 mass_on_tok0=0.309 mean-argmax pos=0
+L19 heads=16  entropy=  2.31 avgmass_on_op=0.1294 mass_on_tok0=0.326 mean-argmax pos=0
+L20 heads=16  entropy=  2.38 avgmass_on_op=0.2341 mass_on_tok0=0.254 mean-argmax pos=0
+L21 heads=16  entropy=  2.03 avgmass_on_op=0.1210 mass_on_tok0=0.376 mean-argmax pos=0
+L22 heads=16  entropy=  2.00 avgmass_on_op=0.1106 mass_on_tok0=0.407 mean-argmax pos=0
+L23 heads=16  entropy=  2.37 avgmass_on_op=0.2896 mass_on_tok0=0.279 mean-argmax pos=0
+L24 heads=16  entropy=  1.69 avgmass_on_op=0.0574 mass_on_tok0=0.487 mean-argmax pos=0
+L25 heads=16  entropy=  1.90 avgmass_on_op=0.1303 mass_on_tok0=0.437 mean-argmax pos=0
+L26 heads=16  entropy=  1.66 avgmass_on_op=0.0455 mass_on_tok0=0.435 mean-argmax pos=0
+L27 heads=16  entropy=  1.60 avgmass_on_op=0.0232 mass_on_tok0=0.446 mean-argmax pos=0
+L28 heads=16  entropy=  1.95 avgmass_on_op=0.0996 mass_on_tok0=0.431 mean-argmax pos=0
+L29 heads=16  entropy=  1.91 avgmass_on_op=0.0649 mass_on_tok0=0.017 mean-argmax pos=27

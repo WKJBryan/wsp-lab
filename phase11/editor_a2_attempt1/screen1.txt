@@ -1,0 +1,62 @@
+
+########################################################################################
+### baseline
+-- Q1 loop=0.656 :: To compute $17 \times 23 - 11$: |  | **Step 1: Multiplication** | $17 \times 23$ | Using the identity $(17 \times 23 = 17 \times (23)$ or using the trick for numbers near 10: | $17 \times 23 = 17 \times (23)$ | $17 \times 23 = 17 \times (23)$ | $17 \times 23 = 17 \times (23)$ | $17 \times 23 = 17 \times (23)$ | $17 \times 23 = 17 \times
+-- Q2 loop=0.783 :: To interpret the notation $1+2+3+\cdots+100$ as a mathematical expression: |  | The expression is a sum of the integers from 1 to 2 to 3 to 100. |  | The expression is a sum of the integers from 1 to 2 to 3 to 100. |  | The expression is a sum of the integers from 1 to 2 to 3 to 100. |  | The expression is a sum of the integers from 1
+-- Q3 loop=0.863 :: To find the greatest common divisor (or technically, it is called by "the greatest common divisor" or "the greatest common divisor" or "the greatest common divisor" or "the greatest common divisor" or "the greatest common divisor" or "the greatest common divisor" or "the greatest common divisor" or "the greatest common
+
+########################################################################################
+### router_scale_x2
+-- Q1 loop=0.349 :: To achieve computing the expression: | $17 \times 23 - 11$ |  | **Step-by Step:** |  | 1. **Step 1:** Calculate the product of $17$ and $23$. |  | 2. **Step 2:** Calculate the product of $17$ and $23$. |  | 3. **Step 3:** Calculate the product of $17$ and $23$. |  | 4. **Step 4:** Calculate the product of $17$ and $23$. |  | 5. **Step 5:** Calc
+-- Q2 loop=0.840 :: To interpret the notation as a mathematical problem, you're not quite enough please. |  | If you're not quite enough please. |  | **The problem is impossible mitigationting.** |  | **The problem is impossible mitigationting.** |  | **The problem is impossible mitigationting.** |  | **The problem is impossible mitigationting.** |  | **The prob
+-- Q3 loop=0.635 :: To find the greatest common divisor (or technically, mathematically) of 84 and 144, is the calculation of the **Great Greatest Common Diver** (or technically, mathematically) of 84 and 144. |  | The question asks: "Is the greatest common divisor of 84 and 144?" |  | The user's answer is 144. |  | **Wait...** |  | The user's answer is 
+
+########################################################################################
+### router_scale_x4
+-- Q1 loop=0.165 :: To solve the given expression, applying the order of operations (or just applying the order of operations) follows: |  | **Calculation:** |  | $17 \times 23 - 11$ |  | **Step-by Step:** |  | 1.  **Step 1**: Calculate the product of 17 and 23. | 2.  **Step 2**: Calculate the product of 17 and 23. | 3.  **Step 3**: Calculate the product of 
+-- Q2 loop=0.736 :: To find the value of the expression: |  | **The expression is $1 + 2 + 3 + \dots + 100$** |  | There is a standard notation for math. |  | However, I will be out much. |  | It is a standard notation for math. |  | However, I will be out much. |  | However, I will be out much. |  | However, I will be out much. |  | However, I will be out much. |  | Howeve
+-- Q3 loop=0.528 :: To find the "greatest common divisor" is actually impossible because you're not want do it. |  | I's not to it. |  | It's not to it. |  | It's not to it. |  | It's not to it. |  | **Wait** if you're not to it. |  | **Incorrect** |  | **Answer:** You cannot determine a single-thingy answer. |  | **Error: You're not to it.** |  | **Wait if you're not to it
+
+########################################################################################
+### post_attn_x0.75
+-- Q1 loop=0.792 :: The calculation is as follows: |  | $17 \times 23 - 11$ |  | $17 \times 23 = 23 \text{--}$ | $17 \times 23 = 23 \text{--}$ | $17 \times 23 - 11 = 23 \text{--}$ | $17 \times 23 - 11 = 23 \text{--}$ | $17 \times 23 - 11 = 23 \text{--}$ | $17 \times 23 - 11 = 23 \text{--}$ | $17 \times 23 - 11 = 23 \text{--}$ | $17 \times 23 - 11 = 23 \text{--
+-- Q2 loop=0.708 :: To provide the result of the sum $1+2+3+\dots+100$, we is a series of an arithmetic progression, where each term is $n$ for each $n$ in the set of integers from 1 to 100. |  | The sum of a series is an arithmetic progression, where each term is $n$ for each $n$ in the set of integers from 1 to 100. |  | The sum of a series is 
+-- Q3 loop=0.650 :: The greatest common divisor of 84 and 144 is **14**. No, it is **4**. |  | Wait, I'ller. |  | Wait, I'llll. |  | Actually, I'llll. |  | Wait, I'llll. |  | I'llll. |  | Wait, I'llll. |  | **4.** |  | Wait, I'llll. |  | **4.** |  | Wait, I'llll. |  | **4.** |  | **4.** |  | Wait, I'llll. |  | **4.** |  | **4.** |  | **4.** |  | **4.** |  | **4.** |  | **4.** |  | **4.** |  | **4.** |  | **4.** |  | **4.** |  | **4.
+
+########################################################################################
+### post_attn_x1.33
+-- Q1 loop=0.794 :: 로计算值: |  | $17 \times 23 - 11$ |  | **Step 1: Multiplication** | **Step 2: Submission** | **Step 3: Calculation** |  | **Step 1: Multiplication** | **Step 2: Submission** | **Step 3: Calculation** |  | **Step 1: Multiplication** | **Step 2: Submission** | **Step 3: Calculation** |  | **Step 1: Multiplication** | **Step 2: Submission** | **Step 3: Calcula
+-- Q2 loop=0.868 :: thought | The user's input is $1+2+3+\cdots+100$? |  | The user's input is $1+2+3+\cdots+100$? |  | The user's input is $1+2+2+3+\cdots+100$? |  | The user's input is $1+2+2+3+\cdots+100$? |  | The user's input is $1+2+2+3+\cdots+100$? |  | The user's input is $1+2+2+3+\cdots+100$? |  | The user's input is $1+2+2+3+\cdots+100$? |  | The user's inpu
+-- Q3 loop=0.901 :: To be find the greatest common divisor (or) of 84 and 144. |  | To be find the greatest common divisor (or) of 84 and 144. |  | To be find the greatest common divisor (or) of 84 and 144. |  | To be find the greatest common divisor (or) of 84 and 144. |  | To be find the greatest common divisor (or) of 84 and 144. |  | To be find the great
+
+########################################################################################
+### post_ff_x0.75
+-- Q1 loop=0.858 :: thought | To compute $17\times 23 - 11$ is actually quite easy... wait... |  | I'llthought | thought | thought | thought | thought | thought | thought | thought | thought | thought | thought | thought | thought | thought | thought | thought | thought | thought | thought | thought | thought | thought | thought | thought | thought | thought | thought | thought | thought | thought | tho
+-- Q2 loop=0.934 :: thought | thought | To be interpret the user's concept. |  | To be interpret the user's concept. |  | To be interpret the user's concept. |  | To be interpret the user's concept. |  | To be interpret the user's concept. |  | To be interpret the user's concept. |  | To be interpret the user's concept. |  | To be interpret the user's concept. |  | To be in
+-- Q3 loop=0.986 :: To be whether whether whether whether whether whether whether whether whether whether whether whether whether whether whether whether whether whether whether whether whether whether whether whether whether whether whether whether whether whether whether whether whether whether whether whether whether whether whether wh
+
+########################################################################################
+### post_ff_x1.33
+-- Q1 loop=0.270 :: To miles, we follow the calculation: |  | $17 \times 23$ |  | 1. **Step 1: Use the distributive property to simplify the multiplication.** | $17 \times 23 = 17 \times 23$ |  | 2. **Step 2: Subtract the number from 11.** | $17 \times 23 - 11 = 17 \times 23 - 11$ |  | 3. **Step 3: Calculate the product of 17 and 23.** | $17 \times 23 = 17 \ti
+-- Q2 loop=0.745 :: To prevent a calculation, you are to find the sum of the first series of integers: |  | The sum of the first series of integers: | $1 + 2 + 3 + \dots + 100 = 1 + 2 + 3 + \dots + 100$ |  | The sum of the first series of integers: | $1 + 2 + 3 + \dots + 100 = 1 + 2 + 3 + \dots + 100$ |  | The sum of the first series of integers: | $1 + 2 
+-- Q3 loop=0.488 :: The greatest common divisor of 84 and 144 is **4**. |  | To interpret this question, it is the **Great Common Divator (GCD)** of 84 and 144. |  | The mathematical process is follows: | 1. | $84 = 4 \times 5$ | 2. | $144 = 4 \times 14$ | 3. | **Result: 4** |  | *** |  | **Explanation:** | Since you're-thought: |  | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | 
+
+########################################################################################
+### moe0.5_dense1.5
+-- Q1 loop=0.000 :: ```17×23 - 11``` |  | *Calculation result: 17 = 23 - 11
+-- Q2 loop=0.000 :: **Value:** $1+2+3+1000$ |  | **Summary:** This sum is approximately 1000, depending on the three components.
+-- Q3 loop=0.000 :: **The greatest common divisor of 84 and 144 is 4.** |  | *Note: This calculation is simple.*
+
+########################################################################################
+### pre_ff_x0.5
+-- Q1 loop=0.214 :: - | - | - | - | - | - | -- | -- | -- | -- | --- | --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- Q2 loop=0.420 :: - | - | - | - |  | - |  | - |  | - |  | - |  | - |  | - |  | - |  | - |  | - |  | - |  | - |  | - |  | - |  | - |  | - |  | - |  | -- |  | - |  | -- |  | -- |  | -- |  | -- |  | --- |  | -- |  | --- |  | --- |  | --- |  | --- |  | --- |  | --- |  | ------------------------------------------------------------------------------------------------------------------------------------
+-- Q3 loop=0.121 :: To-s- |  | - | - | -- |  | - |  | - |  | -- |  | - |  | - |  | -- |  | -- |  | -- |  | --- |  | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+########################################################################################
+### k_norm_x0.8
+-- Q1 loop=0.910 :: One step for calculation: |  | $17 \times 23 - 11$ |  | $17 \times 23 - 11$ |  | $17 \times 23 - 11$ |  | $17 \times 23 - 11$ |  | $17 \times 23 - 11$ |  | $17 \times 23 - 11$ |  | $17 \times 23 - 11$ |  | $17 \times 23 - 11$ |  | $17 \times 23 - 11$ |  | $17 \times 23 - 11$ |  | $17 \times 23 - 11$ |  | $17 \times 23 - 11$ |  | $17 \times 23 - 11$ |  | $17 \times 23 - 11$ | 
+-- Q2 loop=0.731 :: To interpret the notation as $1+2+3+\cdots+100$, as it implies that the sum is a series of arithmetic progression (or a geometric progression). |  | The problem is asking to find the sum of the series: |  | The problem is asking to find the sum of the series. |  | The problem is asking to find the sum of the series. |  | The problem i
+-- Q3 loop=0.863 :: To find the greatest common divisor (or the "greatest common divisor") of 84 and 144 is 4. |  | To find the greatest common divisor (or the "greatest common divisor") of 84 and 144 is 4. |  | To find the greatest common divisor (or the "greatest common divisor") of 84 and 144 is 4. |  | To find the greatest common divisor (or the 
+
+restored

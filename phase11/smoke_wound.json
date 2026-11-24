@@ -1,0 +1,38 @@
+{
+ "summary": {
+  "name": "smoke_wound",
+  "n": 2,
+  "accuracy": 0.0,
+  "answered": 100.0,
+  "cap_hit_rate": 100.0,
+  "mean_tokens": 32768.0,
+  "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
+  "model": "/home/user/wsp11/gemma4-8exp",
+  "fp8": false,
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "validity": {
+   "soup_pct": 50.0,
+   "soup_judged": false,
+   "admission_tested": false,
+   "problems": []
+  }
+ },
+ "rows": [
+  {
+   "id": "m0",
+   "gold": "\\left( 3, \\frac{\\pi}{2} \\right)",
+   "pred": "(r,\\theta)",
+   "ok": false,
+   "n_tokens": 32768,
+   "cap_hit": true
+  },
+  {
+   "id": "m1",
+   "gold": "p - q",
+   "pred": "is",
+   "ok": false,
+   "n_tokens": 32768,
+   "cap_hit": true
+  }
+ ]
+}

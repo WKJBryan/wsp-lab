@@ -1,0 +1,14 @@
+Loading weights:   0%|          | 0/1013 [00:00<?, ?it/s]Loading weights:   0%|          | 2/1013 [00:00<01:27, 11.58it/s]Loading weights:   9%|▉         | 90/1013 [00:00<00:02, 403.98it/s]Loading weights:  16%|█▌        | 161/1013 [00:00<00:01, 522.10it/s]Loading weights:  24%|██▍       | 244/1013 [00:00<00:01, 632.31it/s]Loading weights:  32%|███▏      | 324/1013 [00:00<00:01, 688.97it/s]Loading weights:  39%|███▉      | 398/1013 [00:00<00:00, 691.03it/s]Loading weights:  48%|████▊     | 483/1013 [00:00<00:00, 740.47it/s]Loading weights:  55%|█████▌    | 560/1013 [00:00<00:00, 731.45it/s]Loading weights:  63%|██████▎   | 638/1013 [00:00<00:00, 741.89it/s]Loading weights:  80%|████████  | 813/1013 [00:01<00:00, 1043.25it/s]Loading weights:  99%|█████████▊| 1000/1013 [00:01<00:00, 1287.24it/s]Loading weights: 100%|██████████| 1013/1013 [00:01<00:00, 843.32it/s] 
+=== baseline ===
+baseline: 2/10
+no_attn: 0/10 (worse)
+   [  ] What is 17 * 23? Give only the final number.    -> '----------------------------------------'
+   [  ] What is 7 * 8? Give only the final number.      -> '----------------------------------------'
+   [  ] What is 12 + 34? Give only the final number.    -> '----------------------------------------'
+   [  ] What is 2 + 2? Answer with just the number.     -> '----------------------------------------'
+   [  ] What is 100 - 47? Give only the final number.   -> '----------------------------------------'
+   [  ] What is the capital of France?                  -> '------------------------------------------------------------'
+   [  ] How many days are in a week? Answer with just   -> '----------------------------------------'
+   [  ] Name one primary color.                         -> '----------------------------------------'
+   [  ] The secret code is 7411. What is the secret c   -> '----------------------------------------'
+   [  ] What is 9 + 6? Give only the final number.      -> '----------------------------------------'

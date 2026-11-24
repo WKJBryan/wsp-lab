@@ -1,0 +1,96 @@
+
+########################################################################################
+### full_template
+-- exp=380 loop=0.620 :: To compute $17 \times 23 - 11$: |  | **Step 1: Multiplication** | $17 \times 23$ | Using the identity $(17 \times 23 = 17 \times (23)$ or using the trick for numbers near 10: | $17 \times 23 = 17 \times (23)$ | $17 \times 23 = 17 \times (23)$ | $17 \times 23 = 17 \times (23)$ | $17 \times 23 = 17 \times (23)$ | $17 \times 23 = 17 \times (23)$ | $17 \times 23 = 17 \times (23)$ | $17 \times 23 = 17 \times (23)$ | 
+-- exp=5050 loop=0.760 :: To interpret the notation $1+2+3+\cdots+100$ as a mathematical expression: |  | The expression is a sum of the integers from 1 to 2 to 3 to 100. |  | The expression is a sum of the integers from 1 to 2 to 3 to 100. |  | The expression is a sum of the integers from 1 to 2 to 3 to 100. |  | The expression is a sum of the integers from 1 to 2 to 3 to 100. |  | The expression is a sum of the integers from 1 to 2 to 3 to 
+-- exp=12 loop=0.880 :: To find the greatest common divisor (or technically, it is called by "the greatest common divisor" or "the greatest common divisor" or "the greatest common divisor" or "the greatest common divisor" or "the greatest common divisor" or "the greatest common divisor" or "the greatest common divisor" or "the greatest common divisor" or "the greatest common divisor" or "the greatest common divisor" or "
+
+########################################################################################
+### no_thought_channel
+-- exp=380 loop=0.599 :: <|channel>thought | <channel|>To compute $17 \times 23 - 11$: |  | **Step 1: Multiplication** | $17 \times 23$ | Using the identity $(17 \times 23 = 17 \times (23)$ or using the trick for numbers near 10: | $17 \times 23 = 17 \times (23)$ | $17 \times 23 = 17 \times (23)$ | $17 \times 23 = 17 \times (23)$ | $17 \times 23 = 17 \times (23)$ | $17 \times 23 = 17 \times (23)$ | $17 \times 23 = 17 \times (23)$ | $17 \times 23
+-- exp=5050 loop=0.724 :: <|channel>thought | <channel|>To interpret the notation as $1+2+3+\cdots+100$, as it is a sum of the arithmetic progression: |  | The expression is written as: | $$1+2+3+\dots+100$$ |  | The expression is written as: | $$1+2+3+\dots+100$$ |  | The expression is written as: | $$1+2+3+\dots+100$$ |  | The expression is written as: | $$1+2+3+\dots+100$$ |  | The expression is written as: | $$1+2+3+\dots+100$$ |  | The expression is wri
+-- exp=12 loop=0.750 :: <|channel>thought | <channel|>To find the greatest common divisor (or technically, it is the **Great Common Divant**) of 84 and 144. |  | The "great common divisor" is the **Great Common Divant** (or technically, it is the **Great Common Divant**) of 84 and 144. |  | The "great common divisor" is the **Great Common Divant** (or technically, it is the **Great Common Divant**) of 84 and 144. |  | The "great commo
+
+########################################################################################
+### raw_question
+-- exp=380 loop=0.854 ::  |  | 23.23.23.23.23.23.23.23.23.23.23.23.23.23.23.23.23.23.23.23.23.23.23.23.23.23.23.23.23.23.23.23.23.232- |  | **Question/Questioner-Questioner-Questioner-Questioner-Questioner-Questioner-Questioner-Questioner-Questioner-Questioner-Questioner-Questioner-Questioner-Questioner-Questioner-Questioner-Question much-Questioner-Questioner-Questioner-Questioner-Questioner-Questioner-Questioner-Questioner-Ques
+-- exp=5050 loop=0.901 ::  Answer: Answer: `1 deft_tiño-à-à-à-à-à-à-à-à-à-à-à-à-à-à-à-à-à-à-à-à-à-à-à-à-à-àà-à-à-à-à-à-à-à-à-à-à-à-à-à-à-à-à-à-à-àà-à-à-à-à-à-à-à-à-à-à-à-à-à-à-à-à-à-à-à-à-à-à-àà-à-à-à-à-à-à-à-à-à-à-à-à-à-à-à-àà-à-à-à-à-à-à-à-à-
+-- exp=12 loop=0.236 ::  thought | thought | <channel|>To find the greatest common divisor of 84 and 144. |  | 1. **Step 1: Identify the problem.** | The problem asks the greatest common divisor (GCD) of 84 and 144. |  | 2. **Step 2: Analyze the numbers.** | The numbers are 84 and 144. |  | 3. **Step 3: Calculate the GCD.** | The numbers are 84 and 144. | 4. **Step 4: Use the Euclidean algorithm or factoring.** | The numbers are 84 and 144. | 5. **
+
+########################################################################################
+### math_fmt
+-- exp=380 loop=0.750 ::  step by step. step by step. step by step. step by step. step by step. step by step. step by step. step by step.by |  | Solution: Solution. Solution. Solution. |  | Solution. Solution. |  | Solution. Solution. |  | Solution.thought | thought | thought | 17 $\times$ 23 - 11 | thought | thought | 17 $\times$ 23 - 11 | thought | thought | 17 $\times$ 23 - 11 | thought | thought | 17 $\times$ 23 - 11 | thought | thought | 17 $\times$ 23 - 11 | thou
+-- exp=5050 loop=0.901 ::  | s.thought | thought | The problem asks to find the sum of the first series. | The problem asks to find the sum of the first series. | The problem asks to find the sum of the first series. | The problem asks to find the sum of the first series. | The problem asks to find the sum of the first series. | The problem asks to find the sum of the first series. | The problem asks to find the sum of the first series. | The
+-- exp=12 loop=0.911 ::  step-by step. step-by step. step-by step. step-by step. step-by step. step-by step. step-by step. step-by step. step-by step. step-by step. step-by step. step-by step. step-by step. step-by step. step-by step. step-by step. step-by step. step-by step. step-by step. step-by step. step-by step. step-by step. stepthought | thought | s | thought | s | thought | s | thought | s | thought | s | thought | s | thought | s | thought | s
+
+=== special token embedding structure ===
+  '<bos>': id=2 norm=1.786
+  '<eos>': id=1 norm=1.876
+  '<pad>': id=0 norm=1.013
+  '<turn|>': id=106 norm=1.187
+  '<|turn>': id=105 norm=1.359
+  '<|channel>': id=100 norm=1.621
+  '<channel|>': id=101 norm=1.516
+  '<start_of_image>': not in vocab
+  '<image_token>': not in vocab
+  'thought': id=45518 norm=1.780
+  'model': id=4368 norm=1.418
+  'user': id=2364 norm=1.539
+  'answer': id=14433 norm=1.677
+
+  pairwise cos:
+    cos('<bos>','<eos>') = +0.104
+    cos('<bos>','<pad>') = +0.100
+    cos('<bos>','<turn|>') = +0.211
+    cos('<bos>','<|turn>') = +0.125
+    cos('<bos>','<|channel>') = +0.194
+    cos('<bos>','<channel|>') = +0.247
+    cos('<bos>','thought') = +0.190
+    cos('<bos>','model') = +0.129
+    cos('<bos>','user') = +0.176
+    cos('<bos>','answer') = +0.048
+    cos('<eos>','<pad>') = +0.097
+    cos('<eos>','<turn|>') = +0.149
+    cos('<eos>','<|turn>') = +0.079
+    cos('<eos>','<|channel>') = +0.112
+    cos('<eos>','<channel|>') = +0.156
+    cos('<eos>','thought') = +0.106
+    cos('<eos>','model') = +0.120
+    cos('<eos>','user') = +0.131
+    cos('<eos>','answer') = +0.095
+    cos('<pad>','<turn|>') = +0.089
+    cos('<pad>','<|turn>') = +0.139
+    cos('<pad>','<|channel>') = +0.113
+    cos('<pad>','<channel|>') = +0.095
+    cos('<pad>','thought') = +0.058
+    cos('<pad>','model') = +0.108
+    cos('<pad>','user') = +0.123
+    cos('<pad>','answer') = +0.131
+    cos('<turn|>','<|turn>') = +0.167
+    cos('<turn|>','<|channel>') = +0.180
+    cos('<turn|>','<channel|>') = +0.241
+    cos('<turn|>','thought') = +0.134
+    cos('<turn|>','model') = +0.165
+    cos('<turn|>','user') = +0.191
+    cos('<turn|>','answer') = +0.088
+    cos('<|turn>','<|channel>') = +0.148
+    cos('<|turn>','<channel|>') = +0.128
+    cos('<|turn>','thought') = +0.071
+    cos('<|turn>','model') = +0.072
+    cos('<|turn>','user') = +0.111
+    cos('<|turn>','answer') = +0.078
+    cos('<|channel>','<channel|>') = +0.364
+    cos('<|channel>','thought') = +0.255
+    cos('<|channel>','model') = +0.224
+    cos('<|channel>','user') = +0.156
+    cos('<|channel>','answer') = +0.072
+    cos('<channel|>','thought') = +0.207
+    cos('<channel|>','model') = +0.177
+    cos('<channel|>','user') = +0.155
+    cos('<channel|>','answer') = +0.060
+    cos('thought','model') = +0.197
+    cos('thought','user') = +0.155
+    cos('thought','answer') = +0.089
+    cos('model','user') = +0.197
+    cos('model','answer') = +0.164
+    cos('user','answer') = +0.157

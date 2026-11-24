@@ -1,0 +1,72 @@
+{
+ "summary": {
+  "name": "probe_b30",
+  "model": "/home/user/wsp3c/stock",
+  "n": 4,
+  "settings": {
+   "model": "/home/user/wsp3c/stock",
+   "name": "probe_b30",
+   "n": 4,
+   "no_think": false,
+   "card_nonthink": false,
+   "logit_bias": 30.0,
+   "force_from": null,
+   "gmu": 0.92
+  },
+  "accuracy": 0.0,
+  "answered": 0.0,
+  "finished": 0.0,
+  "mean_tokens": 32768,
+  "wall_s": 90.8,
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "validity": {
+   "soup_pct": 0.0,
+   "soup_judged": true,
+   "admission_tested": false,
+   "problems": []
+  }
+ },
+ "prompt0": "<|im_start|>user\nConvert the point $(0,3)$ in rectangular coordinates to polar coordinates.  Enter your answer in the form $(r,\\theta),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$<|im_end|>\n<|im_start|>assistant\n<think>\n",
+ "rows": [
+  {
+   "id": "m0",
+   "gold": "\\left( 3, \\frac{\\pi}{2} \\right)",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": 0,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m1",
+   "gold": "p - q",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": 0,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m2",
+   "gold": "\\frac{14}{3}",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": 0,
+   "pred_rescored": null,
+   "ok_rescored": false
+  },
+  {
+   "id": "m3",
+   "gold": "9",
+   "finish": "length",
+   "n_tokens": 32768,
+   "closed": true,
+   "think_end_at": 0,
+   "pred_rescored": null,
+   "ok_rescored": false
+  }
+ ]
+}

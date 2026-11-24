@@ -1,0 +1,23 @@
+P: 'The capital of France is'
+  top5: [(' a', 9.0), (' still', 8.1), (' possible', 8.1), (' actually', 7.8), (' if', 7.8)]
+  greedy cont: ' a a a a b i i i i i i i i i i i i i i i i o a b i'
+
+P: '2 + 2 ='
+  top5: [(' ', 22.2), (' x', 12.6), (' the', 12.0), (' @', 11.2), (' one', 11.2)]
+  greedy cont: ' 2 = 2 = 2 = 2 = 2 = 2 = 2 = 2 = '
+
+P: 'One, two, three, four,'
+  top5: [(' degree', 12.2), (' wedding', 11.3), (' day', 11.2), (' zero', 11.1), (' tendency', 10.8)]
+  greedy cont: ' degree,x,x,x-x-x-x-x-x-x-x-x-x'
+
+P: 'The largest planet in the solar system is'
+  top5: [(' the', 13.3), (' in', 10.6), (' to', 8.8), (' a', 8.6), (' actually', 7.7)]
+  greedy cont: ' the solar system is the solar system is the solar system is the solar system is the solar system is the solar system is the'
+
+P: 'def add(a, b):\n    return'
+  top5: [(' (', 17.2), (':', 16.0), (' to', 15.5), ('/', 14.9), (' of', 14.5)]
+  greedy cont: " (x'x')\n:\n    return (x'x')\n:\n    return (x'x')"
+
+P: 'Paris is the capital of'
+  top5: [(' the', 9.0), (' is', 8.1), (' index', 7.0), (' x', 6.8), (' us', 6.6)]
+  greedy cont: ' thes.*\n\n.\n\n1.\n\n1.\n\n1.\n\n1.\n\n1.\n\n1.\n\n'

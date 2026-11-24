@@ -1,0 +1,69 @@
+{
+ "C1": {
+  "median_auc_qwen": 0.826,
+  "median_auc_gemma": 0.901,
+  "internal_validity": true,
+  "trajectory_r": 0.96,
+  "permutation_p": 0.0,
+  "passed": true
+ },
+ "inputs": {
+  "qwen_stock": {
+   "file": "p3c_stock_rescored.json",
+   "cap_hit_rate": 90.6,
+   "accuracy": 8.4,
+   "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)"
+  },
+  "qwen_x1_5_row_edit": {
+   "file": "p4_mimo_rescored.json",
+   "cap_hit_rate": 40.6,
+   "accuracy": 36.2,
+   "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)"
+  },
+  "gemma_attempt1_pass1": {
+   "file": "editor_a2_attempt1/ed_pass1.json",
+   "cap_hit_rate": 98.4,
+   "accuracy": 1.6,
+   "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)"
+  },
+  "gemma_attempt1_pass2": {
+   "file": "editor_a2_attempt1/ed_pass2.json",
+   "cap_hit_rate": 42.2,
+   "accuracy": 3.1,
+   "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)"
+  }
+ },
+ "C2": {
+  "qwen_term_recovery_rel": 0.552,
+  "qwen_acc_loss": -27.8,
+  "gemma_term_recovery_rel": 0.571,
+  "gemma_acc_loss": -1.5,
+  "behavioral_match": true,
+  "qwen_row_percentile": 0.1681,
+  "gemma_row_percentiles": {
+   "1": 0.9937,
+   "106": 0.0756,
+   "50": 0.9783
+  },
+  "same_tercile": true,
+  "passed": true
+ },
+ "C3": {
+  "qwen_ratio_minmax": [
+   6.18,
+   18.16
+  ],
+  "gemma_ratio_minmax": [
+   6.81,
+   20.24
+  ],
+  "qwen_diffuse": false,
+  "gemma_diffuse": false,
+  "structure_agree": true,
+  "ks_stat": 0.55,
+  "ks_p": 0.0003,
+  "passed": false
+ },
+ "verdict": "CORRESPONDENCE",
+ "tests_passed": 2
+}

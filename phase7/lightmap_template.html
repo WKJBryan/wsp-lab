@@ -1,0 +1,577 @@
+<title>Qwen 0.8B Light Map</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap">
+<style>
+/* Layout: controls on top, 24 floor tiles in a wrapping grid, a per-floor bar list beside them. */
+:root {
+  --plane: #f9f9f7; --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781;
+  --hair: #e1e0d9; --axis: #c3c2b7; --off: #e7e6e0;
+  --a: #2a78d6; --b: #eb6834; --w: #7b4fd0;
+  --r1: #86b6ef; --r2: #5598e7; --r3: #2a78d6; --r4: #1c5cab; --r5: #0d366b;
+  --display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+  --body: "Inter", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --plane: #0d0d0d; --surface: #1a1a19; --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781;
+    --hair: #2c2c2a; --axis: #383835; --off: #262624;
+    --a: #3987e5; --b: #d95926; --w: #9775e8;
+    --r1: #184f95; --r2: #256abf; --r3: #3987e5; --r4: #6da7ec; --r5: #b7d3f6;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --plane: #0d0d0d; --surface: #1a1a19; --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781;
+  --hair: #2c2c2a; --axis: #383835; --off: #262624;
+  --a: #3987e5; --b: #d95926; --w: #9775e8;
+  --r1: #184f95; --r2: #256abf; --r3: #3987e5; --r4: #6da7ec; --r5: #b7d3f6;
+  color-scheme: dark;
+}
+body { background: var(--plane); color: var(--ink); font: 15px/1.55 var(--body); }
+.wrap {
+  max-width: 1240px; margin: 0 auto; padding-block: 28px 56px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex; flex-direction: column; gap: 22px;
+}
+h1 { font: 600 clamp(24px, 4vw, 34px)/1.15 var(--display); margin: 0; text-wrap: balance; letter-spacing: -0.01em; }
+h2 { font: 600 16px/1.3 var(--display); margin: 0; }
+p { margin: 0; }
+.lede { color: var(--ink-2); max-width: 68ch; }
+.mono { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+.controls { display: flex; flex-direction: column; gap: 14px; background: var(--surface); border: 1px solid var(--hair); border-radius: 10px; padding: 16px; }
+.label { font: 500 11px/1 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.jobs { display: flex; flex-wrap: wrap; gap: 6px; }
+.jobs button {
+  font: 500 13px/1 var(--body); color: var(--ink-2); background: transparent; border: 1px solid var(--axis);
+  border-radius: 999px; padding: 8px 12px; cursor: pointer;
+}
+.jobs button:hover { color: var(--ink); border-color: var(--ink-2); }
+.jobs button[aria-pressed="true"] { background: var(--a); border-color: var(--a); color: #ffffff; }
+.row { display: flex; flex-wrap: wrap; gap: 14px 26px; align-items: center; }
+.row label { display: flex; align-items: center; gap: 8px; color: var(--ink-2); font-size: 13px; }
+select, input[type="range"] { accent-color: var(--a); font: inherit; }
+select { color: var(--ink); background: var(--surface); border: 1px solid var(--axis); border-radius: 6px; padding: 5px 8px; max-width: 100%; }
+:focus-visible { outline: 2px solid var(--a); outline-offset: 2px; }
+.hints { display: flex; flex-direction: column; gap: 6px; color: var(--ink-2); font-size: 13px; max-width: 78ch; }
+.hints b { color: var(--ink); font-weight: 500; }
+
+.through { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.through p { color: var(--ink-2); font-size: 13px; max-width: 78ch; }
+.tower { display: grid; grid-template-columns: clamp(76px, 20%, 170px) repeat(24, minmax(0, 1fr)) 44px; gap: 3px 2px; align-items: center; max-width: 860px; font-size: 12px; line-height: 1.2; color: var(--ink-2); }
+.tower span { min-width: 0; overflow-wrap: anywhere; }
+.tower i { align-self: stretch; min-height: 18px; border-radius: 2px; }
+.tower .ax { grid-column: 2 / span 24; display: flex; justify-content: space-between; font: 400 10px/1.2 var(--mono); color: var(--muted); }
+.tower .n { text-align: right; font: 400 11px/1.2 var(--mono); font-variant-numeric: tabular-nums; }
+.tower .on { color: var(--ink); font-weight: 600; }
+
+.stage { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; align-items: start; }
+@media (min-width: 940px) { .stage { grid-template-columns: minmax(0, 1fr) 320px; } }
+.view3d { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+#tower3d { width: 100%; height: min(640px, 125vw); display: block; background: var(--surface); border: 1px solid var(--hair); border-radius: 10px; cursor: grab; touch-action: pan-y; }
+#tower3d:active { cursor: grabbing; }
+.knobs { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px 22px; align-items: end; }
+.knobs label { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 8px; align-items: baseline; color: var(--ink-2); font-size: 13px; }
+.knobs input[type="range"] { grid-column: 1 / -1; width: 100%; }
+.knobs .check { display: flex; align-items: center; gap: 8px; }
+.btn { font: 500 13px/1 var(--body); color: var(--ink-2); background: transparent; border: 1px solid var(--axis); border-radius: 6px; padding: 8px 12px; cursor: pointer; }
+.btn:hover { color: var(--ink); border-color: var(--ink-2); }
+.picked { background: var(--surface); border: 1px solid var(--hair); border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.picked p { color: var(--ink-2); font-size: 12px; }
+.picked canvas { width: 100%; height: auto; display: block; border: 1px solid var(--hair); border-radius: 4px; }
+#flat { cursor: crosshair; }
+.stepper { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.wl { width: 22px; height: 0; border-top: 2px solid var(--w); display: inline-block; }
+.wl.against { border-top: 2px dashed var(--ink-2); }
+.wlist { display: flex; flex-direction: column; gap: 4px; }
+.wlist button { font: 400 11px/1.35 var(--mono); font-variant-numeric: tabular-nums; text-align: left; color: var(--ink-2); background: transparent; border: 1px solid var(--hair); border-radius: 6px; padding: 6px 8px; cursor: pointer; overflow-wrap: anywhere; }
+.wlist button:hover { color: var(--ink); border-color: var(--ink-2); }
+
+.summary { font: 500 17px/1.4 var(--display); max-width: 70ch; text-wrap: balance; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: center; color: var(--ink-2); font-size: 13px; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.sw { width: 12px; height: 12px; border-radius: 2px; display: inline-block; }
+
+.layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; align-items: start; }
+@media (min-width: 940px) { .layout { grid-template-columns: minmax(0, 1fr) 300px; } .bars { position: sticky; top: calc(12px + env(safe-area-inset-top, 0px)); } }
+.floors { display: grid; grid-template-columns: repeat(auto-fill, minmax(138px, 1fr)); gap: 12px; min-width: 0; }
+.floor { margin: 0; display: flex; flex-direction: column; gap: 5px; }
+.floor canvas { width: 100%; height: auto; display: block; background: var(--surface); border: 1px solid var(--hair); border-radius: 4px; cursor: crosshair; }
+.floor figcaption { display: flex; justify-content: space-between; gap: 6px; font: 400 11px/1.2 var(--mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.floor figcaption b { color: var(--ink); font-weight: 500; }
+.floor small { font: 400 10px/1.2 var(--mono); color: var(--muted); min-height: 12px; }
+
+.bars { background: var(--surface); border: 1px solid var(--hair); border-radius: 10px; padding: 14px 14px 10px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.bars p { color: var(--muted); font-size: 12px; }
+.barlist { display: flex; flex-direction: column; gap: 3px; }
+.barrow { display: grid; grid-template-columns: 30px minmax(0, 1fr) 76px; gap: 8px; align-items: center; font: 400 11px/1 var(--mono); color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.track { display: flex; flex-direction: column; gap: 2px; border-left: 1px solid var(--axis); padding: 1px 0; }
+.bar { height: 5px; border-radius: 0 3px 3px 0; min-width: 0; }
+.bar.a { background: var(--a); } .bar.b { background: var(--b); }
+.barrow .n { text-align: right; }
+
+details { background: var(--surface); border: 1px solid var(--hair); border-radius: 10px; padding: 12px 16px; }
+summary { cursor: pointer; font: 500 14px/1.3 var(--display); }
+.scroll { overflow-x: auto; margin-top: 10px; }
+table { border-collapse: collapse; font: 400 12px/1.3 var(--mono); font-variant-numeric: tabular-nums; }
+th, td { padding: 4px 10px; text-align: right; border-bottom: 1px solid var(--hair); white-space: nowrap; }
+th { color: var(--muted); font-weight: 500; }
+th:first-child, td:first-child { text-align: left; }
+
+.notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px 28px; color: var(--ink-2); font-size: 14px; }
+.notes h2 { color: var(--ink); margin-bottom: 4px; }
+.notes div { min-width: 0; }
+
+.tip { position: fixed; z-index: 20; pointer-events: none; background: var(--ink); color: var(--plane); border-radius: 6px; padding: 8px 10px; font: 400 12px/1.45 var(--body); max-width: 260px; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25); }
+.tip b { font: 500 12px/1.3 var(--mono); display: block; margin-bottom: 2px; }
+.tip .lab { margin-top: 4px; padding-top: 4px; border-top: 1px solid var(--muted); }
+.tip .key { display: inline-block; width: 10px; height: 2px; vertical-align: middle; margin-right: 6px; }
+</style>
+
+<main class="wrap">
+  <header style="display:flex;flex-direction:column;gap:8px">
+    <h1>Which lights switch on for which job</h1>
+    <p class="lede">The model is a tower of 24 floors. Every floor has 3,584 small units, drawn here as dots. A dot lights up when that unit behaves clearly differently during the job you pick. Choose a job, then compare it with another to see whether they share lights.</p>
+  </header>
+
+  <section class="controls" aria-label="Controls">
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <span class="label" id="jobs-label">Job</span>
+      <div class="jobs" id="jobs" role="group" aria-labelledby="jobs-label"></div>
+    </div>
+    <div class="row">
+      <label for="compare">Compare with <select id="compare"></select></label>
+      <label for="thr">Only lights at least this strong <input type="range" id="thr" min="0.5" max="2" step="0.1" value="0.8"> <span class="mono" id="thr-out">0.8</span></label>
+      <label for="seat">Seat the units <select id="seat"><option value="fav">grouped by favourite job</option><option value="rank">ranked by this job</option><option value="raw">in raw order</option></select></label>
+      <label for="marks"><input type="checkbox" id="marks"> Outline the units that were edited</label>
+    </div>
+    <div class="hints">
+      <p><b>Strength</b> is how big the difference is, not how sure we are of it (so it is not a confidence interval). <span id="thr-hint"></span> Slide right for fewer, stronger lights; slide left to let weaker ones in.</p>
+      <p><b>Seating</b> only moves dots around; no number changes. A unit's raw seat on its floor is arbitrary. <b>Grouped</b> seats units with the same favourite job (the job they react to most) together: loop first, then each subject, then hard question, then units with no favourite. <b>Ranked</b> lines every floor up the same way: units that get busiest during the job sit at the front, units that go quietest at the back. The same seat on two floors is still not the same unit.</p>
+    </div>
+  </section>
+
+  <p class="summary" id="summary" aria-live="polite"></p>
+  <p id="length-note" style="color:var(--ink-2);font-size:13px;max-width:78ch"></p>
+
+  <section class="through" aria-labelledby="t3-h">
+    <h2 id="t3-h">The tower in 3D: pull it apart, slice it, step through it</h2>
+    <p>Floor 0 is at the bottom (reads the words) and floor 23 at the top (about to speak). Drag the picture to turn it. Pull the floors apart or push them together, keep only some floors, or slice the stack to look at the cut. Click a floor to lay it flat on the right. The lines are wires: the straight cable from a light on a lower floor to a light on a higher floor that reads it.</p>
+    <div class="stage">
+      <div class="view3d">
+        <canvas id="tower3d" role="img" aria-label="The 24 floors stacked in 3D with the lights for the chosen job. The same floors are drawn flat further down and counted in the table."></canvas>
+        <div class="knobs">
+          <label for="pull">Pull the floors apart <span class="mono" id="pull-out"></span><input type="range" id="pull" min="0" max="100" step="1" value="45"></label>
+          <label for="turn">Turn <span class="mono" id="turn-out"></span><input type="range" id="turn" min="-180" max="180" step="1" value="-35"></label>
+          <label for="tilt">Tilt (90° looks straight down) <span class="mono" id="tilt-out"></span><input type="range" id="tilt" min="12" max="90" step="1" value="35"></label>
+          <label for="lo">Lowest floor shown <span class="mono" id="lo-out"></span><input type="range" id="lo" min="0" max="23" step="1" value="0"></label>
+          <label for="hi">Highest floor shown <span class="mono" id="hi-out"></span><input type="range" id="hi" min="0" max="23" step="1" value="23"></label>
+          <label for="slice">Slice: seat rows kept <span class="mono" id="slice-out"></span><input type="range" id="slice" min="1" max="56" step="1" value="56"></label>
+          <label for="wires">Wires shown, strongest first <span class="mono" id="wires-out"></span><input type="range" id="wires" min="0" max="600" step="10" value="80"></label>
+          <label for="wpick" class="check"><input type="checkbox" id="wpick"> Only wires touching the picked floor</label>
+          <label for="xray" class="check"><input type="checkbox" id="xray" checked> See through the floors</label>
+          <button type="button" class="btn" id="reset3d">Reset the view</button>
+        </div>
+        <div class="legend"><span><i class="wl"></i>wire that pushes the upper light the way it went</span><span><i class="wl against"></i>wire that pushes against it</span></div>
+        <p id="wire-cap" style="color:var(--ink-2);font-size:13px" aria-live="polite"></p>
+      </div>
+      <aside class="picked">
+        <div class="stepper">
+          <button type="button" class="btn" id="f-down">Floor down</button>
+          <h2 id="f-name">Floor 12</h2>
+          <button type="button" class="btn" id="f-up">Floor up</button>
+        </div>
+        <canvas id="flat" role="img"></canvas>
+        <p id="f-count"></p>
+        <h2>Strongest wires touching this floor</h2>
+        <div class="wlist" id="wlist"></div>
+        <p id="w-none">None fit the current settings.</p>
+        <p>The number is how much of the upper light's strength that one cable accounts for. The units at the ends are ringed above. Click a wire to jump to its other floor.</p>
+        <h2>The cut face</h2>
+        <canvas id="face" role="img" aria-label="The row of seats at the slice, on every floor shown, top floor first."></canvas>
+        <p id="face-cap"></p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="through" aria-labelledby="tower-h">
+    <h2 id="tower-h">Through the tower: every job on every floor</h2>
+    <p>Each row is one job, read from floor 0 on the left (reads the words) to the last floor on the right (about to speak). The colour of a square shows how many lights are on at that floor. Each row is shaded against its own busiest floor, so use the squares to see where in the tower a job lives and the totals to see how big it is.</p>
+    <div class="tower" id="tower" role="img" aria-label="Lights on for every job at every floor. The same numbers are in the table further down."></div>
+    <div class="legend">
+      <span>fewer lights <i class="sw" style="background:var(--r1)"></i><i class="sw" style="background:var(--r2)"></i><i class="sw" style="background:var(--r3)"></i><i class="sw" style="background:var(--r4)"></i><i class="sw" style="background:var(--r5)"></i> more lights</span>
+      <span><i class="sw" style="background:var(--off)"></i>none</span>
+    </div>
+  </section>
+
+  <div class="legend" id="legend"></div>
+
+  <div class="layout">
+    <section class="floors" id="floors" aria-label="The 24 floors, first floor at top left"></section>
+    <aside class="bars">
+      <h2>Lights on, floor by floor</h2>
+      <p>Floor 0 reads the words first. Floor 23 is the last before the model speaks.</p>
+      <div class="barlist" id="bars"></div>
+    </aside>
+  </div>
+
+  <details>
+    <summary>Table: lights on per floor, every job</summary>
+    <div class="scroll"><table id="table"></table></div>
+  </details>
+
+  <section class="notes">
+    <div><h2>What a light means</h2><p>Brightness is an effect size (Cohen's d): how far the unit's activity during the job sits from its activity otherwise, in units of its usual spread. 0.8 is the conventional line for a large difference. It measures size, not certainty, so it is not a confidence interval. Hover a dot for its number and whether the unit gets busier or quieter. "Busier" means its number went up and "quieter" means it went down; a unit's number can be negative, so a "quieter" unit may really be pushing harder the other way.</p></div>
+    <div><h2>Where the numbers come from</h2><p>"Stuck in a loop" compares the model while it repeats itself with the same answers before the repeating began (80 saved answers). The seven subjects and "Hard question" compare the model while it reads 500 maths questions; the three template tokens every question starts with are left out of the averages, because one unit fires hugely on the very first token and made its average track question length. Question length itself is then taken out of every unit before the comparison, so a light here means "differs for this subject", not "differs for long questions".</p></div>
+    <div><h2>Seating</h2><p>The order of units inside a floor has no meaning, so the page re-seats them. Grouped: by the job a unit responds to most (loop first, then each subject, then difficulty, then no strong favourite; favourites are fixed at strength 0.8, so seats do not move when you drag the slider). Ranked: by how much busier or quieter the unit gets during the chosen job, so the same seat on every floor means the same rank. Either way a seat is never the same unit on two floors: unit 17 on one floor has nothing to do with unit 17 on the next.</p></div>
+    <div><h2>Wires</h2><p>A unit on a lower floor writes a signal into the shared stream; a unit on a higher floor reads it. The wire's number is how much of the upper light's strength (same scale as the slider) that one cable accounts for in the chosen job, worked out from the model's weights for every pair of floors. The page keeps the 600 strongest per job. <span id="wire-note"></span></p></div>
+    <div><h2>Labels</h2><p>Hover a light to see its labels. A label is a measurement, not a job description. A subject label is the same thing as a light: the unit is on for that subject at strength 0.8 or more, with question length taken out. "Hard question" has no label because none of its lights reach 0.8. <span id="label-note"></span></p></div>
+    <div><h2>The lever layer</h2><p>The last button is not a job. The deep fix (the original edit) works by pushing the model's inner stream along one direction whenever the model is stuck. The lever layer scores every unit by how hard its own output pushes along that same direction when the model is stuck, compared with before: the change in the unit's activity, times how far its output points that way, as a share of the stream's normal spread along that direction. It counts only what a unit writes straight into the stream, not what travels through attention. It shows which units push, not that switching them off would unstick the model. The direction is borrowed from the original edit, and no prediction was written down before this was measured.</p></div>
+    <div><h2>What this cannot tell you</h2><p>Lights show what goes together, not what causes what. A wire is only the straight cable between two units; signals that travel through attention (the part of the model that moves information between words) are not drawn, and they carry most of it. In a first test, erasing the "stuck" pattern did not unstick the model, while a random push triggered by the loop lights did. Every question here is maths, so "job" is a narrow idea.</p></div>
+  </section>
+</main>
+<div class="tip" id="tip" hidden></div>
+
+<script>
+/*__DATA__*/
+(function () {
+  const J = DATA.jobs.length, L = DATA.layers, N = DATA.neurons, S = DATA.scale, LV = DATA.lever;   // LV.job = the lever layer, shown like a job but not one
+  const COLS = 64, ROWS = Math.ceil(N / COLS), CELL = 8, GAP = 2;
+  const raw = Uint8Array.from(atob(DATA.b64), c => c.charCodeAt(0));
+  const D = new Int8Array(raw.buffer);
+  const at = (j, l, n) => D[(j * L + l) * N + n];
+  const LAB = new Uint16Array(Uint8Array.from(atob(DATA.labels.b64), c => c.charCodeAt(0)).buffer);   // one bit per tag, per unit
+  const heldNames = DATA.labels.held.map(h => h[0]);
+  const labelText = t => t === "first-word spike" ? "First-word spike: loud on the opening token, carries nothing"
+    : t === "loop marker" ? "Loop marker: changes when the model is stuck"
+    : t === "question length" ? "Tracks how long the question is"
+    : t.slice(9) + (heldNames.includes(t.slice(9)) ? ": goes with it, and this label passed the knockout test" : ": goes with it (no special role in the knockout test)");
+  const labelsOf = (l, n) => DATA.labels.tags.filter((_, i) => LAB[l * N + n] >> i & 1).map(labelText);
+  const $ = id => document.getElementById(id);
+  const fmt = n => n.toLocaleString("en-US");
+  const state = { job: 0, cmp: -1, thr: 0.8, seat: "fav", marks: false };
+
+  // favourite job per unit (fixed at 0.8) and the tidy order per floor
+  const fav = new Uint8Array(L * N).fill(255), order = [], identity = Array.from({ length: N }, (_, i) => i);
+  for (let l = 0; l < L; l++) {
+    const strength = new Int16Array(N);
+    for (let n = 0; n < N; n++) {
+      let best = 0, bj = 255;
+      for (let j = 0; j < J; j++) { const v = j === LV.job ? 0 : Math.abs(at(j, l, n)); if (v > best) { best = v; bj = j; } }   // the lever layer is not a job, so it is never a favourite
+      if (best >= 0.8 * S) fav[l * N + n] = bj;
+      strength[n] = best;
+    }
+    order.push(identity.slice().sort((x, y) => (fav[l * N + x] - fav[l * N + y]) || (strength[y] - strength[x])));
+  }
+  const marked = {};
+  for (const [kind, per] of Object.entries(DATA.marks)) for (const [l, cols] of Object.entries(per)) marked[l] = { kind, set: new Set(cols) };
+
+  { const s = DATA.labels.held.map(h => h[1]), lo = Math.min(...s).toFixed(1), hi = Math.max(...s).toFixed(1);
+    $("label-note").textContent = fmt(DATA.labels.tagged) + " of " + fmt(DATA.labels.units) + " units carry at least one label. " + heldNames.length + " of the 7 subject labels (" + heldNames.join(", ")
+      + ") passed a knockout test: switching off that subject's " + fmt(DATA.labels.ko_units) + " strongest lights hurt that subject " + lo + " to " + hi + " times as much as the others. For the other subjects it made no special difference, so those labels only mean “goes with”."; }
+  // build static DOM
+  DATA.jobs.forEach((name, j) => {
+    const b = document.createElement("button"); b.type = "button"; b.textContent = name; b.id = "job-" + j;
+    b.addEventListener("click", () => { state.job = j; if (state.cmp === j) { state.cmp = -1; $("compare").value = "-1"; } render(); });
+    $("jobs").appendChild(b);
+    const o = document.createElement("option"); o.value = j; o.textContent = name; $("compare").appendChild(o);
+  });
+  const none = document.createElement("option"); none.value = "-1"; none.textContent = "nothing"; $("compare").prepend(none); $("compare").value = "-1";
+  const canvases = [], caps = [], subs = [];
+  for (let l = 0; l < L; l++) {
+    const f = document.createElement("figure"); f.className = "floor";
+    const c = document.createElement("canvas"); c.width = COLS * CELL; c.height = ROWS * CELL;
+    c.setAttribute("role", "img");
+    const cap = document.createElement("figcaption"), sub = document.createElement("small");
+    f.append(c, cap, sub); $("floors").appendChild(f); canvases.push(c); caps.push(cap); subs.push(sub);
+    c.addEventListener("pointermove", e => hover(l, e, c)); c.addEventListener("pointerleave", () => { $("tip").hidden = true; paint(c, l, -1); });
+    c.addEventListener("click", () => setPick(l));
+  }
+
+  let tok = {};
+  function readTokens() {
+    const cs = getComputedStyle(document.documentElement), g = k => cs.getPropertyValue(k).trim();
+    tok = { surface: g("--surface"), off: g("--off"), ink: g("--ink"), muted: g("--muted"), ink2: g("--ink-2"), w: g("--w"), axis: g("--axis"), mono: g("--mono"), a: g("--a"), b: g("--b"), ramp: [1, 2, 3, 4, 5].map(i => g("--r" + i)) };
+  }
+  const lit = (j, l, n) => Math.abs(at(j, l, n)) >= state.thr * S - 1e-9;
+  function colour(l, n) {
+    const A = lit(state.job, l, n);
+    if (state.cmp >= 0) { const B = lit(state.cmp, l, n); return A && B ? tok.ink : A ? tok.a : B ? tok.b : null; }
+    if (!A) return null;
+    const x = (Math.abs(at(state.job, l, n)) / S - state.thr) / (3.2 - state.thr);
+    return tok.ramp[Math.min(4, Math.floor(x * 5))];
+  }
+  // seat order of a floor: raw, grouped by favourite job, or ranked by the chosen job (busiest first, quietest last)
+  const rank = {};
+  function ordOf(l) {
+    if (state.seat === "raw") return identity;
+    if (state.seat === "fav") return order[l];
+    return rank[state.job * L + l] ||= identity.slice().sort((x, y) => at(state.job, l, y) - at(state.job, l, x));
+  }
+  // bare = a see-through slab for the 3D view: transparent ground, unlit units skipped
+  function paint(canvas, l, hoverPos, bare) {
+    const ctx = canvas.getContext("2d"), ord = ordOf(l), m = state.marks && marked[l];
+    if (bare) ctx.clearRect(0, 0, COLS * CELL, ROWS * CELL); else { ctx.fillStyle = tok.surface; ctx.fillRect(0, 0, COLS * CELL, ROWS * CELL); }
+    for (let p = 0; p < N; p++) {
+      const n = ord[p], x = (p % COLS) * CELL, y = Math.floor(p / COLS) * CELL, c = colour(l, n);
+      if (m && m.set.has(n)) { ctx.fillStyle = tok.ink; ctx.fillRect(x - 1, y - 1, CELL, CELL); ctx.fillStyle = c || tok.off; ctx.fillRect(x + 1, y + 1, CELL - GAP - 2, CELL - GAP - 2); continue; }
+      if (bare && !c) continue;
+      ctx.fillStyle = c || tok.off;
+      if (bare) ctx.fillRect(x - 1, y - 1, CELL + 2, CELL + 2); else ctx.fillRect(x, y, CELL - GAP, CELL - GAP);   // lights drawn oversize so they survive the shrink into 3D
+    }
+    if (hoverPos >= 0) { ctx.strokeStyle = tok.ink; ctx.lineWidth = 2; ctx.strokeRect((hoverPos % COLS) * CELL - 2, Math.floor(hoverPos / COLS) * CELL - 2, CELL + 2, CELL + 2); }
+  }
+  function words(v, j) {
+    if (j === LV.job) { const p = Math.abs(v) / S * LV.pct; return (Math.abs(v) >= 127 ? Math.floor(p) + "% or more" : p.toFixed(1) + "%") + " of the normal spread · pushes " + (v > 0 ? "toward stuck" : v < 0 ? "away from stuck" : "neither way"); }
+    const d = v / S, m = Math.abs(d), dir = d > 0 ? "busier" : "quieter";
+    const how = m < 0.5 ? "about the same" : m < 0.8 ? "a little " + dir : m < 1.5 ? "clearly " + dir : "much " + dir;
+    return (Math.abs(v) >= 127 ? (d > 0 ? "+" : "−") + "3.2 or more" : (d > 0 ? "+" : "−") + m.toFixed(1)) + " · " + how;
+  }
+  function hover(l, e, cv) {
+    const r = cv.getBoundingClientRect();
+    const cx = Math.floor((e.clientX - r.left) / r.width * COLS), cy = Math.floor((e.clientY - r.top) / r.height * ROWS), p = cy * COLS + cx;
+    if (cx < 0 || cy < 0 || cx >= COLS || p >= N) { $("tip").hidden = true; return; }
+    const n = ordOf(l)[p], tip = $("tip");
+    tip.replaceChildren();
+    const head = document.createElement("b"); head.textContent = "Floor " + l + " · unit " + n; tip.appendChild(head);
+    const line = (j, col) => { const d = document.createElement("div"); const k = document.createElement("span"); k.className = "key"; k.style.background = col; d.append(k, document.createTextNode(words(at(j, l, n), j) + " — " + DATA.jobs[j])); tip.appendChild(d); };
+    line(state.job, state.cmp >= 0 ? tok.a : tok.ramp[2]); if (state.cmp >= 0) line(state.cmp, tok.b);
+    const f = fav[l * N + n], foot = document.createElement("div");
+    foot.textContent = f === 255 ? "No strong favourite job" : "Favourite job: " + DATA.jobs[f]; tip.appendChild(foot);
+    if (marked[l] && marked[l].set.has(n)) { const mk = document.createElement("div"); mk.textContent = marked[l].kind === "original" ? "Edited by the original authors" : "Used in my test brake"; tip.appendChild(mk); }
+    const labs = labelsOf(l, n), box = document.createElement("div"); box.className = "lab";
+    (labs.length ? labs : ["No label yet"]).forEach(t => { const d = document.createElement("div"); d.textContent = t; box.appendChild(d); });
+    tip.appendChild(box);
+    tip.hidden = false;
+    const w = tip.offsetWidth, h = tip.offsetHeight;
+    tip.style.left = Math.max(8, Math.min(window.innerWidth - w - 8, e.clientX + 14)) + "px";
+    tip.style.top = Math.max(8, Math.min(window.innerHeight - h - 8, e.clientY + 14)) + "px";
+    if (cv === flat) paintFlat(p); else paint(cv, l, p);
+  }
+  function counts(j) { const out = new Array(L).fill(0); for (let l = 0; l < L; l++) for (let n = 0; n < N; n++) if (lit(j, l, n)) out[l]++; return out; }
+  const top3 = c => c.map((v, l) => [v, l]).sort((x, y) => y[0] - x[0]).slice(0, 3).map(x => x[1]).join(", ");
+
+  function render() {
+    readTokens(); inv = {};
+    document.querySelectorAll("#jobs button").forEach((b, j) => b.setAttribute("aria-pressed", j === state.job));
+    $("thr-out").textContent = state.thr.toFixed(1);
+    const lv = state.job === LV.job;
+    $("thr-hint").textContent = "At " + state.thr.toFixed(1) + " a unit lights up only if " + (lv ? "its push is at least " + (state.thr * LV.pct).toFixed(1) + "% of the stream's normal spread along the deep fix's direction."
+      : "it is " + (state.thr < 0.8 ? "a little" : state.thr < 1.5 ? "clearly" : "much") + " busier or quieter than usual during the job.")
+      + (!lv && state.cmp === LV.job ? " For the lever layer the same setting means a push of at least " + (state.thr * LV.pct).toFixed(1) + "% of the normal spread." : "");
+    const cA = counts(state.job), cB = state.cmp >= 0 ? counts(state.cmp) : null, both = new Array(L).fill(0);
+    const totA = cA.reduce((s, v) => s + v, 0), nameA = DATA.jobs[state.job];
+    let text = nameA + ": " + fmt(totA) + " of " + fmt(L * N) + " lights are on. Busiest floors: " + top3(cA) + ".";
+    if (cB) {
+      let shared = 0, expect = 0;
+      for (let l = 0; l < L; l++) { for (let n = 0; n < N; n++) if (lit(state.job, l, n) && lit(state.cmp, l, n)) { shared++; both[l]++; } expect += cA[l] * cB[l] / N; }
+      text += " " + DATA.jobs[state.cmp] + ": " + fmt(cB.reduce((s, v) => s + v, 0)) + " on, busiest floors " + top3(cB) + ". Lights shared by both: " + fmt(shared) + " (about " + fmt(Math.round(expect)) + " expected if the two were unrelated).";
+    }
+    $("summary").textContent = text;
+    // length check: how much of this job's lights is just "the question is longer or shorter"
+    const lc = DATA.lengthcheck[state.job];
+    $("length-note").hidden = !lc && !lv;
+    if (lv) {   // the lever layer: single units push little, so the per-floor totals carry the story
+      const e = LV.edit, b = LV.brake, busy = LV.gross.indexOf(Math.max(...LV.gross)), best =LV.net.map((v, l) => [v, l]).sort((x, y) => y[0] - x[0]).slice(0, 3).map(x => x[1] + " (" + x[0].toFixed(2) + ")").join(", ");
+      $("length-note").textContent = "This layer is not a job. It shows how hard each unit pushes the model's inner stream toward “stuck”, along the direction the deep fix (the original edit) pushes against. Single units push little, and on most floors the pushes cancel out: floor " + busy + " has the most pushing of any floor (" + LV.gross[busy].toFixed(1) + " normal spreads if every push counted the same way) but nets to " + LV.net[busy].toFixed(2) + ". "
+        + "Added up floor by floor, the net push toward stuck is largest on floors " + best + ", counted in normal spreads of the stream. The deep fix edits floors 15 and 19. Of its 64 units on floor 15, "
+        + e[15].by_lever + " are among the 64 strongest levers there and " + e[15].toward + " push toward stuck; ranking by loop light finds only " + e[15].by_light + ". On floor 19 it is " + e[19].by_lever + " by lever and " + e[19].by_light
+        + " by loop light. My test brake's units on floors 10 and 14 add up to " + b[10].toFixed(2) + " and " + b[14].toFixed(2) + ": their pushes cancel. The strongest single pusher is floor " + LV.top[0] + " unit " + LV.top[1] + " (" + LV.top[2] + "% of the normal spread)."
+        + (LV.top[0] === 19 && LV.top[1] === 11 ? " That unit was switched off in an earlier test and the model stayed stuck, so a strong push here is not proof of a working lever." : "") + " Tick “Outline the units that were edited” to see both sets.";
+    } else if (lc) $("length-note").textContent = "Question length is already taken out of these lights, because longer questions light some units on their own. Before that correction " + fmt(lc.lit) + " lights were on for " + nameA + " at strength 0.8; " + fmt(lc.stay) + " of them remain."
+      + (lc.stay ? "" : " So this job was mostly question length: lower the strength slider to see what is left.");
+
+    // through the tower: one row per job, one square per floor, each row shaded against its own busiest floor
+    const all = DATA.jobs.map((_, j) => counts(j)), tower = $("tower"); tower.replaceChildren();
+    const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+    const ax = el("span", "ax"); ax.append(el("span", "", "floor 0"), el("span", "", "floor " + (L - 1)));
+    tower.append(el("span"), ax, el("span", "n", "total"));
+    const rows = all.map((c, j) => [DATA.jobs[j], c, j === state.job || j === state.cmp]);
+    if (cB) rows.push(["On for both", both, true]);
+    rows.forEach(([name, c, on]) => {
+      const top = Math.max(1, ...c);
+      tower.appendChild(el("span", on ? "on" : "", name));
+      c.forEach((v, l) => { const d = el("i"); d.style.background = v ? "var(--r" + Math.min(5, 1 + Math.floor(v / top * 5)) + ")" : "var(--off)"; d.title = "Floor " + l + " · " + name + ": " + fmt(v) + " lights on"; tower.appendChild(d); });
+      tower.appendChild(el("span", "n", fmt(c.reduce((s, v) => s + v, 0))));
+    });
+
+    const leg = $("legend"); leg.replaceChildren();
+    const sw = (col, label) => { const s = document.createElement("span"), b = document.createElement("i"); b.className = "sw"; b.style.background = col; s.append(b, document.createTextNode(label)); leg.appendChild(s); };
+    if (cB) { sw(tok.a, nameA); sw(tok.b, DATA.jobs[state.cmp]); sw(tok.ink, "both"); }
+    else { const s = document.createElement("span"); s.append(document.createTextNode("weaker")); tok.ramp.forEach(c => { const b = document.createElement("i"); b.className = "sw"; b.style.background = c; s.appendChild(b); }); s.append(document.createTextNode("stronger")); leg.appendChild(s); }
+    sw(tok.off, "not lit");
+
+    const max = Math.max(1, ...cA, ...(cB || [0])), bars = $("bars"); bars.replaceChildren();
+    for (let l = 0; l < L; l++) {
+      paint(canvases[l], l, -1);
+      caps[l].replaceChildren(); const b = document.createElement("b"); b.textContent = "Floor " + l; const c = document.createElement("span");
+      c.textContent = fmt(cA[l]) + (cB ? " / " + fmt(cB[l]) : "") + " lit"; caps[l].append(b, c);
+      subs[l].textContent = marked[l] ? (marked[l].kind === "original" ? "original edit here" : "my test brake here") : "";
+      canvases[l].setAttribute("aria-label", "Floor " + l + ": " + cA[l] + " lights on for " + nameA);
+      const row = document.createElement("div"); row.className = "barrow";
+      const lab = document.createElement("span"); lab.textContent = "L" + String(l).padStart(2, "0");
+      const tr = document.createElement("div"); tr.className = "track";
+      const ba = document.createElement("div"); ba.className = "bar a"; ba.style.width = (cA[l] / max * 100) + "%"; tr.appendChild(ba);
+      if (cB) { const bb = document.createElement("div"); bb.className = "bar b"; bb.style.width = (cB[l] / max * 100) + "%"; tr.appendChild(bb); }
+      const num = document.createElement("span"); num.className = "n"; num.textContent = fmt(cA[l]) + (cB ? " / " + fmt(cB[l]) : "");
+      row.append(lab, tr, num); bars.appendChild(row);
+    }
+
+    const table = $("table"); table.replaceChildren();
+    const hr = table.insertRow();
+    ["Floor", ...DATA.jobs].forEach(t => { const th = document.createElement("th"); th.textContent = t; hr.appendChild(th); });
+    for (let l = 0; l < L; l++) { const r = table.insertRow(); r.insertCell().textContent = l; all.forEach(c => r.insertCell().textContent = fmt(c[l])); }
+
+    const wc = DATA.wirecheck, hub = {}; let big = ["", 0];
+    DATA.wires[state.job].forEach(w => { const k = "floor " + w[0] + " unit " + w[1]; if ((hub[k] = (hub[k] || 0) + 1) > big[1]) big = [k, hub[k]]; });
+    // hub test: the hub was held steady in a real run; did the units its wires point at move as predicted?
+    const hb = wc.hubs[nameA], held = !hb || hb.unit !== big[0] ? "" : "Holding that unit steady in a real run moved " + hb.same + " of its " + hb.targets + " targets the predicted way"
+      + (hb.same / hb.targets < 0.65 ? ", about a coin flip, so this unit's wires are not to be trusted. " : ", typically at " + Math.round(hb.ratio * 100) + "% of the predicted size. ");
+    $("wire-note").textContent = lv ? "No wires are worked out for the lever layer." : "For " + nameA + ", " + big[1] + " of the " + DATA.wires[state.job].length + " strongest wires start at one unit (" + big[0] + "). " + held + "Checked two ways. In a real nudge test, " + wc.nudge.same_direction + " of " + wc.nudge.wires_tested
+      + " wires moved the upper light in the predicted direction, but the real change was typically about " + Math.round(wc.nudge.median_measured_over_predicted * 100) + "% of what the cable alone predicts. And added together, the cables explain very little of which lights are on for "
+      + nameA + ": the match is " + wc.sum[state.job].toFixed(2) + " on a scale where 0 is none and 1 is all.";
+
+    last = { a: cA, b: cB }; paintSlabs(); side(); draw3d();
+  }
+
+  // ---- wires: the straight cable from a unit on a lower floor to a unit on a higher floor, for the chosen job ----
+  let inv = {};   // seat of every unit per floor, for the current seating
+  function posOf(l) { if (!inv[l]) { const a = new Int16Array(N); ordOf(l).forEach((n, p) => { a[n] = p; }); inv[l] = a; } return inv[l]; }
+  const helps = w => (w[4] > 0) === (at(state.job, w[2], w[3]) > 0);   // pushes the upper unit the way it actually went
+  // wires whose two ends are lit and inside the floors and slice shown, strongest first
+  function fitting() {
+    const seen = (l, n) => l >= v3.lo && l <= v3.hi && lit(state.job, l, n) && posOf(l)[n] < v3.keep * COLS;
+    return DATA.wires[state.job].filter(w => seen(w[0], w[1]) && seen(w[2], w[3]));
+  }
+  const touching = l => fitting().filter(w => w[0] === l || w[2] === l).slice(0, 6);
+  function paintFlat(hoverPos) {
+    paint(flat, v3.pick, hoverPos);
+    const ctx = flat.getContext("2d"); ctx.strokeStyle = tok.w; ctx.lineWidth = 2;
+    touching(v3.pick).forEach(w => { const p = posOf(v3.pick)[w[0] === v3.pick ? w[1] : w[3]]; const edge = (v, size) => Math.max(1, Math.min(size - CELL - 5, v * CELL - 3)); ctx.strokeRect(edge(p % COLS, COLS * CELL), edge(Math.floor(p / COLS), ROWS * CELL), CELL + 4, CELL + 4); });   // rings stay inside the canvas
+  }
+
+  // ---- the tower in 3D: one slab per floor, flat projection, drawn from floor 0 up so higher floors cover lower ones ----
+  const HOME = { pull: 0.45, yaw: -35, pitch: 35, lo: 0, hi: L - 1, keep: ROWS };
+  const v3 = Object.assign({ xray: true, pick: 12, wires: 80, wpick: false }, HOME);
+  const slabs = Array.from({ length: L }, () => { const c = document.createElement("canvas"); c.width = COLS * CELL; c.height = ROWS * CELL; return c; });
+  const cv3 = $("tower3d"), flat = $("flat"), face = $("face");
+  flat.width = COLS * CELL; flat.height = ROWS * CELL;
+  let geo = null, last = { a: [], b: null }, drag = null;
+  function paintSlabs() { for (let l = 0; l < L; l++) paint(slabs[l], l, -1, v3.xray); }
+  function draw3d() {
+    const dpr = window.devicePixelRatio || 1, cw = cv3.clientWidth, ch = cv3.clientHeight;
+    if (!cw || !ch) return;
+    const pw = Math.round(cw * dpr), phh = Math.round(ch * dpr);
+    if (cv3.width !== pw || cv3.height !== phh) { cv3.width = pw; cv3.height = phh; }
+    const ctx = cv3.getContext("2d"); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, pw, phh);
+    const ya = v3.yaw * Math.PI / 180, ph = v3.pitch * Math.PI / 180, sp = Math.sin(ph), cp = Math.cos(ph);
+    const ex = [Math.cos(ya), Math.sin(ya) * sp], ey = [-Math.sin(ya), Math.cos(ya) * sp];   // screen step for one seat across / one seat row back
+    const gap = 1.2 + v3.pull * 12, rise = (v3.hi - v3.lo) * gap * cp;
+    const wext = COLS * Math.abs(ex[0]) + ROWS * Math.abs(ey[0]), hext = COLS * Math.abs(ex[1]) + ROWS * Math.abs(ey[1]) + rise;
+    const s = Math.min((cw - 84) / wext, (ch - 32) / hext), midX = cw / 2 + 22, baseY = ch / 2 + rise * s / 2;
+    const pt = (o, ix, iy) => [o[0] + (ix * ex[0] + iy * ey[0]) * s, o[1] + (ix * ex[1] + iy * ey[1]) * s];
+    geo = { s, ex, ey, o: {} };
+    ctx.font = "11px " + tok.mono; ctx.textAlign = "right"; ctx.textBaseline = "middle";
+    for (let l = v3.lo; l <= v3.hi; l++) {
+      const o = [midX - (COLS / 2 * ex[0] + ROWS / 2 * ey[0]) * s, baseY - (l - v3.lo) * gap * cp * s - (COLS / 2 * ex[1] + ROWS / 2 * ey[1]) * s], k = s / CELL * dpr;
+      geo.o[l] = o;
+      ctx.setTransform(ex[0] * k, ex[1] * k, ey[0] * k, ey[1] * k, o[0] * dpr, o[1] * dpr);
+      ctx.globalAlpha = v3.xray ? 0.2 : 1; ctx.fillStyle = tok.surface; ctx.fillRect(0, 0, COLS * CELL, v3.keep * CELL);
+      ctx.globalAlpha = 1; ctx.drawImage(slabs[l], 0, 0, COLS * CELL, v3.keep * CELL, 0, 0, COLS * CELL, v3.keep * CELL);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      const q = [pt(o, 0, 0), pt(o, COLS, 0), pt(o, COLS, v3.keep), pt(o, 0, v3.keep)], on = l === v3.pick;
+      ctx.beginPath(); q.forEach((p, i) => i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1])); ctx.closePath();
+      ctx.strokeStyle = on ? tok.ink : tok.axis; ctx.lineWidth = on ? 2 : 1; ctx.stroke();
+      if (on || gap * cp * s >= 11) { const left = q.reduce((m, p) => p[0] < m[0] ? p : m); ctx.fillStyle = on ? tok.ink : tok.muted; ctx.fillText((on ? "floor " : "") + l, left[0] - 6, left[1]); }
+    }
+    // wires go on top of every floor, weakest first so the strongest stay visible
+    const pool = fitting().filter(w => !v3.wpick || w[0] === v3.pick || w[2] === v3.pick), shown = pool.slice(0, v3.wires);
+    const seat = (l, n) => { const p = posOf(l)[n]; return pt(geo.o[l], p % COLS + 0.5, Math.floor(p / COLS) + 0.5); };
+    ctx.lineCap = "round";
+    for (let i = shown.length - 1; i >= 0; i--) {
+      const w = shown[i], a = seat(w[0], w[1]), b = seat(w[2], w[3]), k = Math.abs(w[4] / shown[0][4]), h = helps(w);
+      ctx.strokeStyle = ctx.fillStyle = h ? tok.w : tok.ink2; ctx.globalAlpha = 0.35 + 0.55 * k; ctx.lineWidth = 0.75 + 1.75 * k;
+      ctx.setLineDash(h ? [] : [4, 3]); ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke();
+      ctx.setLineDash([]); ctx.beginPath(); ctx.arc(a[0], a[1], 2, 0, 6.3); ctx.moveTo(b[0] + 2, b[1]); ctx.arc(b[0], b[1], 2, 0, 6.3); ctx.fill();
+    }
+    ctx.globalAlpha = 1;
+    $("wire-cap").textContent = state.job === LV.job ? "No wires are worked out for the lever layer." : !v3.wires ? "Wires are switched off." : !shown.length ? "No wires fit these settings. Lower the strength slider, widen the floors or undo the slice."
+      : "Showing the " + shown.length + " strongest of " + pool.length + " wires that fit (both ends lit, inside the floors and slice shown" + (v3.wpick ? ", touching floor " + v3.pick : "") + "). Wires are for " + DATA.jobs[state.job] + " and are drawn on top of every floor.";
+  }
+  function side() {
+    const l = v3.pick, nameA = DATA.jobs[state.job];
+    $("f-name").textContent = "Floor " + l;
+    paintFlat(-1);
+    const list = $("wlist"), touch = touching(l); list.replaceChildren(); $("w-none").hidden = touch.length > 0;
+    $("w-none").textContent = state.job === LV.job ? "No wires are worked out for the lever layer." : "None fit the current settings.";
+    touch.forEach(w => {
+      const b = document.createElement("button"), other = w[0] === l ? w[2] : w[0]; b.type = "button"; b.title = "Go to floor " + other;
+      b.textContent = "floor " + w[0] + " unit " + w[1] + " → floor " + w[2] + " unit " + w[3] + " · " + (w[4] > 0 ? "+" : "−") + Math.abs(w[4]).toFixed(2) + (helps(w) ? " · with it" : " · against it");
+      b.addEventListener("click", () => setPick(other)); list.appendChild(b);
+    });
+    const line = fmt(last.a[l]) + " lights on for " + nameA + (last.b ? ", " + fmt(last.b[l]) + " for " + DATA.jobs[state.cmp] : "") + ".";
+    $("f-count").textContent = line + (marked[l] ? (marked[l].kind === "original" ? " The original edit was made on this floor." : " My test brake was built on this floor.") : "") + " Hover a dot for its number.";
+    flat.setAttribute("aria-label", "Floor " + l + " laid flat: " + line);
+    // the cut face: the row of seats the slice exposes, on every floor shown, top floor first
+    const FH = 12, k = v3.keep - 1, ctx = face.getContext("2d");
+    face.width = COLS * CELL; face.height = (v3.hi - v3.lo + 1) * FH;
+    ctx.fillStyle = tok.surface; ctx.fillRect(0, 0, face.width, face.height);
+    for (let f = v3.hi; f >= v3.lo; f--) {
+      const y = (v3.hi - f) * FH, ord = ordOf(f);
+      for (let cx = 0; cx < COLS; cx++) { ctx.fillStyle = colour(f, ord[k * COLS + cx]) || tok.off; ctx.fillRect(cx * CELL, y, CELL - GAP, FH - GAP); }
+      if (f === l) { ctx.strokeStyle = tok.ink; ctx.lineWidth = 2; ctx.strokeRect(1, y, face.width - 2, FH - GAP); }
+    }
+    $("face-cap").textContent = "Seat row " + v3.keep + " of " + ROWS + ", floors " + v3.hi + " down to " + v3.lo + ". " + ({
+      fav: "Grouped seating: a column holds the same kind of unit on every floor only roughly, because each job's group is a different size on each floor.",
+      rank: "Ranked seating: a column is the same rank on every floor, so a stripe of light running down the face means that rank is lit on floor after floor.",
+      raw: "Raw order: columns do not line up to anything across floors, so stripes here are chance."
+    })[state.seat];
+  }
+  function setPick(l) { v3.pick = Math.max(0, Math.min(L - 1, l)); side(); draw3d(); }
+  function sync() {
+    const set = (id, v, txt) => { $(id).value = v; $(id + "-out").textContent = txt; };
+    set("pull", Math.round(v3.pull * 100), Math.round(v3.pull * 100) + "%"); set("turn", Math.round(v3.yaw), Math.round(v3.yaw) + "°"); set("tilt", Math.round(v3.pitch), Math.round(v3.pitch) + "°");
+    set("lo", v3.lo, v3.lo); set("hi", v3.hi, v3.hi); set("slice", v3.keep, v3.keep + " of " + ROWS); set("wires", v3.wires, v3.wires || "off");
+  }
+  const knob = (id, fn) => $(id).addEventListener("input", e => { fn(+e.target.value); sync(); side(); draw3d(); });
+  knob("pull", v => v3.pull = v / 100); knob("turn", v => v3.yaw = v); knob("tilt", v => v3.pitch = v); knob("slice", v => v3.keep = v);
+  knob("lo", v => { v3.lo = v; if (v3.hi < v) v3.hi = v; }); knob("hi", v => { v3.hi = v; if (v3.lo > v) v3.lo = v; });
+  knob("wires", v => v3.wires = v); $("wpick").addEventListener("change", e => { v3.wpick = e.target.checked; draw3d(); });
+  $("xray").addEventListener("change", e => { v3.xray = e.target.checked; paintSlabs(); draw3d(); });
+  $("reset3d").addEventListener("click", () => { Object.assign(v3, HOME); sync(); side(); draw3d(); });
+  $("f-up").addEventListener("click", () => setPick(v3.pick + 1)); $("f-down").addEventListener("click", () => setPick(v3.pick - 1));
+  flat.addEventListener("pointermove", e => hover(v3.pick, e, flat)); flat.addEventListener("pointerleave", () => { $("tip").hidden = true; paintFlat(-1); });
+  // drag turns and tilts; a press without movement picks the floor under the pointer (top floor wins)
+  cv3.addEventListener("pointerdown", e => { drag = { x: e.clientX, y: e.clientY, yaw: v3.yaw, pitch: v3.pitch, moved: false }; cv3.setPointerCapture(e.pointerId); });
+  cv3.addEventListener("pointermove", e => {
+    if (!drag) return;
+    const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+    if (Math.abs(dx) + Math.abs(dy) > 4) drag.moved = true;
+    if (!drag.moved) return;
+    v3.yaw = ((drag.yaw + dx * 0.5 + 180) % 360 + 360) % 360 - 180; v3.pitch = Math.max(12, Math.min(90, drag.pitch + dy * 0.3));
+    sync(); draw3d();
+  });
+  cv3.addEventListener("pointerup", e => {
+    if (drag && !drag.moved && geo) {
+      const r = cv3.getBoundingClientRect(), mx = e.clientX - r.left, my = e.clientY - r.top, { s, ex, ey } = geo, det = ex[0] * ey[1] - ey[0] * ex[1];
+      for (let l = v3.hi; l >= v3.lo; l--) {
+        const dx = (mx - geo.o[l][0]) / s, dy = (my - geo.o[l][1]) / s, ix = (dx * ey[1] - dy * ey[0]) / det, iy = (dy * ex[0] - dx * ex[1]) / det;
+        if (ix >= 0 && ix <= COLS && iy >= 0 && iy <= v3.keep) { setPick(l); break; }
+      }
+    }
+    drag = null;
+  });
+  cv3.addEventListener("pointercancel", () => { drag = null; });
+  if (window.ResizeObserver) new ResizeObserver(draw3d).observe(cv3); else window.addEventListener("resize", draw3d);
+  sync();
+
+  $("compare").addEventListener("change", e => { state.cmp = +e.target.value; if (state.cmp === state.job) state.cmp = -1; e.target.value = state.cmp; render(); });
+  $("thr").addEventListener("input", e => { state.thr = +e.target.value; render(); });
+  $("seat").addEventListener("change", e => { state.seat = e.target.value; render(); });
+  $("marks").addEventListener("change", e => { state.marks = e.target.checked; render(); });
+  matchMedia("(prefers-color-scheme: dark)").addEventListener("change", render);
+  new MutationObserver(render).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+  render();
+})();
+</script>

@@ -1,5 +1,10 @@
 # Pre-registered protocol — Phase 5: optimization beyond the original's edit
 
+> Note added 2026-11-24 (ISSUES #19): the figures quoted below were recorded with the defective
+> answer checker and are higher under the corrected one (see ISSUES #19); the rules and thresholds
+> in this file are unchanged. Values quoted here, first reported -> final: the phase-3c edited
+> model's single-sample accuracy 39.4 -> 48.6 (its 26.4% cap-hit is unchanged).
+
 Committed BEFORE any analysis or edits. This is an optimization phase, not a blind
 replication: the editor (this agent) knows all prior results. Disclosed up front.
 

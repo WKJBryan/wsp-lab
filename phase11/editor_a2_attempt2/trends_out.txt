@@ -1,0 +1,383 @@
+=== Per-layer Frobenius norms by family (layer 0..29) ===
+experts.down_proj                                 171.5     173.9     176.2     175.8     175.2     174.5     176.1       177     176.8     178.3     174.3     174.4     167.9     173.2       168     169.2     165.5     169.4     169.7     169.5     169.4     170.6     168.2     169.5     171.3     168.7     163.7     164.3     164.4     159.8
+experts.gate_up_proj                                147     159.6     165.1       162     164.2     169.6     159.7     175.1     168.9     163.8     167.6     159.2     153.5     159.2       163     158.7     147.6     151.2     149.2     157.8     159.6     166.5       152       157     166.3     165.9     144.3     146.9     152.3     138.3
+input_layernorm.weight                            258.7     636.3      1091      1853      2337      2611      2681      2484      2354      1984      1581      1245       600       561     412.8       311     373.7     553.3     988.8      1315      1506      1439      2129      1505      2569      2773      2374      1991      2911      2069
+layer_scalar                                    0.07031    0.2031    0.1699    0.5156    0.6758    0.6523    0.6914    0.7031    0.7383    0.7305    0.7266    0.6758    0.7188    0.7109    0.6367    0.5586    0.5547    0.6172    0.7539    0.6055    0.7617    0.7617    0.7617    0.7695    0.8164    0.8047      0.75    0.7344    0.6758    0.1953
+mlp.down_proj.weight                              85.63     86.59     84.86     89.66     83.46     87.27      84.2      81.1     77.76     82.73     74.75     75.62     75.53     76.82     75.83     76.53     78.48      73.5     79.37     75.26     77.89     79.81     80.18     77.95      80.2     80.56     79.58     75.98     80.82     71.56
+mlp.gate_proj.weight                              72.39     76.36     78.48      79.4     77.17     81.87      82.2     75.13     80.93     79.31     72.81      74.5     74.64     72.84     69.81     72.73     68.14     69.75     65.85     66.84     68.83     73.28     75.98     70.56     72.85     72.11     67.99     64.25     65.27      61.8
+mlp.up_proj.weight                                73.73     77.06      78.3     82.58     80.77     84.96     86.11     78.74     86.31     83.85     76.73     79.52     79.28     77.42     74.87     79.37     74.07     77.95     72.84     74.31     74.96     81.05     82.49     77.01     82.02     82.86     79.28     75.98     77.71     72.32
+post_attention_layernorm.weight                   265.4     70.45     55.08     25.26     23.32     27.47     21.56     20.65     19.69     27.42     28.23     36.88     30.65     31.28     36.64     36.69     55.09     45.31     36.12     48.71     30.87     32.65     31.83     37.87     26.54     24.99     31.49     41.69     51.41     50.39
+post_feedforward_layernorm.weight                 840.8     291.5     328.2     98.12     67.07     73.39     73.22     78.62     79.59     82.74     83.57     95.11     82.86     86.43     108.8     134.4     112.3     101.3     71.43     102.6      73.5     71.39     76.99     70.59     65.86     69.92     82.66     82.68     97.76     348.1
+post_feedforward_layernorm_1.weight                 594     857.4     726.6     679.8     628.4     643.7     763.3     786.5     733.9     602.8     422.3     444.8     391.4     349.7     337.9     325.6     303.9     336.5     262.1     314.3     292.1     305.3     246.6     295.7     254.7     290.4     268.7     291.7     241.5     165.7
+post_feedforward_layernorm_2.weight               384.6     542.2       253     384.8       454     444.4     502.9     567.8     552.7     484.6     268.3     314.9     319.1     327.8     271.4     192.6       212     220.6       164     234.3     240.8     228.2     151.1     222.9     210.4     182.9     124.1     146.9     91.87     67.52
+pre_feedforward_layernorm.weight                  146.8     152.1       944      1991      1416      1618      1625      1130     972.7     268.2     151.7     74.78     56.26     34.83     21.89     32.92        34     83.29     121.1     177.5     376.2     612.6     773.3      1126      1046      1241      1492      1563      1459     430.7
+pre_feedforward_layernorm_2.weight                62.25       203     685.7      2522      4443      3814      4984      2618      2041     955.8     638.1     322.7       173     102.5     66.95     69.17     165.7     337.1     500.8     522.3     721.1     973.9      1169      1206      1169      1124      1379      1075     982.3     285.6
+router.per_expert_scale                           2.823     2.812     2.847     2.819     2.808     2.822     2.823      2.82     2.831     2.812     2.834     2.813     2.857     2.829      2.84     2.829      2.83     2.825     2.825     2.819     2.853      2.84     2.829     2.818     2.808     2.829     2.818     2.812     2.841     2.822
+router.proj.weight                                2.824     2.829     2.827     2.824     2.827     2.829     2.825     2.827     2.825     2.828     2.828     2.824     2.826     2.823     2.826     2.829     2.824     2.828     2.828     2.826     2.826     2.825     2.829     2.827     2.825     2.828     2.827     2.829     2.828     2.827
+router.scale                                       1702      1700      1702      1703      1701      1702      1703      1702      1702      1702      1701      1703      1702      1704      1702      1701      1703      1700      1702      1703      1702      1703      1701      1702      1703      1701      1703      1702      1701      1701
+self_attn.k_norm.weight                           1.953     1.945     2.109     1.938     2.016     1.409     2.016     2.078     1.922     2.031     2.031     1.359     2.031     2.031     1.938     2.047     1.953     1.436     1.953     1.953         2     2.016     2.062     1.436     1.922     1.984     1.961     1.953     1.992     1.392
+self_attn.k_proj.weight                           77.84     76.62     79.21     78.26     76.59     60.48     82.18     82.29     76.66     78.01     72.59      52.9     73.26     70.99     71.33     67.67     66.49     51.17     72.31     70.84     71.84     73.19     66.45     50.35     73.44     68.79      72.2      68.6     69.64     50.87
+self_attn.o_proj.weight                           92.05     95.85     109.4     108.3     111.1     146.2     106.1     109.6     106.5     109.1     112.7     142.3     103.2     106.7     107.1     95.72     93.89     139.8     99.91     94.71      95.4     100.1     103.1       147     101.1     100.9     93.14     94.88       109     138.5
+self_attn.q_norm.weight                           16.38      16.5     15.19      16.5     15.94      22.8     15.88     15.44     16.62     15.75     15.75     23.51     15.75     15.69      16.5     15.69     16.38     22.36     16.38     16.38        16     15.88     15.56     22.27     16.62     16.12     16.38     16.38     16.12     22.98
+self_attn.q_proj.weight                           101.5     102.7     109.1     105.4     106.1     165.8     114.4     112.5       107     110.3       105     157.2     104.2     103.2     103.8     99.97     99.02     151.9     109.1     103.3     106.3     108.1     97.59     145.9     102.8     95.53     101.4      98.1     95.18     139.9
+self_attn.v_proj.weight                           78.19     80.19     86.06     83.31     83.87       nan     85.67      85.9     79.38     80.25      78.5       nan     75.31     74.58     77.03     70.64     71.18       nan     76.52     71.62     76.27     78.81     70.87       nan     77.24      73.9     73.34     69.03     80.77       nan
+
+=== Misc (non-layer) tensors ===
+model.embed_vision.embedding_projection.weight                         [2816, 1152]                   76.826
+model.language_model.embed_tokens.weight                               [262144, 2816]                 781.68
+model.language_model.norm.weight                                       [2816]                         4744.7
+model.vision_tower.encoder.layers.0.input_layernorm.weight             [1152]                         144.66
+model.vision_tower.encoder.layers.0.mlp.down_proj.linear.weight        [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.0.mlp.gate_proj.linear.weight        [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.0.mlp.up_proj.linear.weight          [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.0.post_attention_layernorm.weight    [1152]                         35.994
+model.vision_tower.encoder.layers.0.post_feedforward_layernorm.weight  [1152]                          52.95
+model.vision_tower.encoder.layers.0.pre_feedforward_layernorm.weight   [1152]                         139.11
+model.vision_tower.encoder.layers.0.self_attn.k_norm.weight            [72]                           3.7455
+model.vision_tower.encoder.layers.0.self_attn.k_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.0.self_attn.o_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.0.self_attn.q_norm.weight            [72]                           8.5516
+model.vision_tower.encoder.layers.0.self_attn.q_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.0.self_attn.v_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.1.input_layernorm.weight             [1152]                         87.207
+model.vision_tower.encoder.layers.1.mlp.down_proj.linear.weight        [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.1.mlp.gate_proj.linear.weight        [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.1.mlp.up_proj.linear.weight          [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.1.post_attention_layernorm.weight    [1152]                         24.368
+model.vision_tower.encoder.layers.1.post_feedforward_layernorm.weight  [1152]                         32.806
+model.vision_tower.encoder.layers.1.pre_feedforward_layernorm.weight   [1152]                         77.457
+model.vision_tower.encoder.layers.1.self_attn.k_norm.weight            [72]                           3.7455
+model.vision_tower.encoder.layers.1.self_attn.k_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.1.self_attn.o_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.1.self_attn.q_norm.weight            [72]                           8.5516
+model.vision_tower.encoder.layers.1.self_attn.q_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.1.self_attn.v_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.10.input_layernorm.weight            [1152]                         133.51
+model.vision_tower.encoder.layers.10.mlp.down_proj.linear.weight       [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.10.mlp.gate_proj.linear.weight       [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.10.mlp.up_proj.linear.weight         [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.10.post_attention_layernorm.weight   [1152]                         58.771
+model.vision_tower.encoder.layers.10.post_feedforward_layernorm.weight [1152]                         58.789
+model.vision_tower.encoder.layers.10.pre_feedforward_layernorm.weight  [1152]                         142.74
+model.vision_tower.encoder.layers.10.self_attn.k_norm.weight           [72]                            3.646
+model.vision_tower.encoder.layers.10.self_attn.k_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.10.self_attn.o_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.10.self_attn.q_norm.weight           [72]                           8.7504
+model.vision_tower.encoder.layers.10.self_attn.q_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.10.self_attn.v_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.11.input_layernorm.weight            [1152]                         124.19
+model.vision_tower.encoder.layers.11.mlp.down_proj.linear.weight       [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.11.mlp.gate_proj.linear.weight       [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.11.mlp.up_proj.linear.weight         [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.11.post_attention_layernorm.weight   [1152]                         38.398
+model.vision_tower.encoder.layers.11.post_feedforward_layernorm.weight [1152]                         55.358
+model.vision_tower.encoder.layers.11.pre_feedforward_layernorm.weight  [1152]                         142.93
+model.vision_tower.encoder.layers.11.self_attn.k_norm.weight           [72]                           3.7289
+model.vision_tower.encoder.layers.11.self_attn.k_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.11.self_attn.o_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.11.self_attn.q_norm.weight           [72]                           8.6179
+model.vision_tower.encoder.layers.11.self_attn.q_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.11.self_attn.v_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.12.input_layernorm.weight            [1152]                         133.09
+model.vision_tower.encoder.layers.12.mlp.down_proj.linear.weight       [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.12.mlp.gate_proj.linear.weight       [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.12.mlp.up_proj.linear.weight         [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.12.post_attention_layernorm.weight   [1152]                         68.797
+model.vision_tower.encoder.layers.12.post_feedforward_layernorm.weight [1152]                         54.121
+model.vision_tower.encoder.layers.12.pre_feedforward_layernorm.weight  [1152]                         127.29
+model.vision_tower.encoder.layers.12.self_attn.k_norm.weight           [72]                           3.6626
+model.vision_tower.encoder.layers.12.self_attn.k_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.12.self_attn.o_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.12.self_attn.q_norm.weight           [72]                           8.7504
+model.vision_tower.encoder.layers.12.self_attn.q_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.12.self_attn.v_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.13.input_layernorm.weight            [1152]                         129.11
+model.vision_tower.encoder.layers.13.mlp.down_proj.linear.weight       [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.13.mlp.gate_proj.linear.weight       [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.13.mlp.up_proj.linear.weight         [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.13.post_attention_layernorm.weight   [1152]                         72.238
+model.vision_tower.encoder.layers.13.post_feedforward_layernorm.weight [1152]                         73.533
+model.vision_tower.encoder.layers.13.pre_feedforward_layernorm.weight  [1152]                         125.58
+model.vision_tower.encoder.layers.13.self_attn.k_norm.weight           [72]                           3.8449
+model.vision_tower.encoder.layers.13.self_attn.k_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.13.self_attn.o_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.13.self_attn.q_norm.weight           [72]                           8.3196
+model.vision_tower.encoder.layers.13.self_attn.q_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.13.self_attn.v_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.14.input_layernorm.weight            [1152]                         125.66
+model.vision_tower.encoder.layers.14.mlp.down_proj.linear.weight       [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.14.mlp.gate_proj.linear.weight       [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.14.mlp.up_proj.linear.weight         [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.14.post_attention_layernorm.weight   [1152]                         51.899
+model.vision_tower.encoder.layers.14.post_feedforward_layernorm.weight [1152]                         79.947
+model.vision_tower.encoder.layers.14.pre_feedforward_layernorm.weight  [1152]                         117.75
+model.vision_tower.encoder.layers.14.self_attn.k_norm.weight           [72]                           3.9443
+model.vision_tower.encoder.layers.14.self_attn.k_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.14.self_attn.o_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.14.self_attn.q_norm.weight           [72]                           8.0875
+model.vision_tower.encoder.layers.14.self_attn.q_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.14.self_attn.v_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.15.input_layernorm.weight            [1152]                         130.93
+model.vision_tower.encoder.layers.15.mlp.down_proj.linear.weight       [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.15.mlp.gate_proj.linear.weight       [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.15.mlp.up_proj.linear.weight         [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.15.post_attention_layernorm.weight   [1152]                          93.89
+model.vision_tower.encoder.layers.15.post_feedforward_layernorm.weight [1152]                         132.78
+model.vision_tower.encoder.layers.15.pre_feedforward_layernorm.weight  [1152]                         106.41
+model.vision_tower.encoder.layers.15.self_attn.k_norm.weight           [72]                           3.7786
+model.vision_tower.encoder.layers.15.self_attn.k_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.15.self_attn.o_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.15.self_attn.q_norm.weight           [72]                           8.4853
+model.vision_tower.encoder.layers.15.self_attn.q_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.15.self_attn.v_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.16.input_layernorm.weight            [1152]                         126.04
+model.vision_tower.encoder.layers.16.mlp.down_proj.linear.weight       [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.16.mlp.gate_proj.linear.weight       [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.16.mlp.up_proj.linear.weight         [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.16.post_attention_layernorm.weight   [1152]                         69.414
+model.vision_tower.encoder.layers.16.post_feedforward_layernorm.weight [1152]                         114.51
+model.vision_tower.encoder.layers.16.pre_feedforward_layernorm.weight  [1152]                         97.502
+model.vision_tower.encoder.layers.16.self_attn.k_norm.weight           [72]                           3.8615
+model.vision_tower.encoder.layers.16.self_attn.k_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.16.self_attn.o_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.16.self_attn.q_norm.weight           [72]                           8.2864
+model.vision_tower.encoder.layers.16.self_attn.q_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.16.self_attn.v_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.17.input_layernorm.weight            [1152]                         114.39
+model.vision_tower.encoder.layers.17.mlp.down_proj.linear.weight       [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.17.mlp.gate_proj.linear.weight       [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.17.mlp.up_proj.linear.weight         [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.17.post_attention_layernorm.weight   [1152]                          87.68
+model.vision_tower.encoder.layers.17.post_feedforward_layernorm.weight [1152]                         124.89
+model.vision_tower.encoder.layers.17.pre_feedforward_layernorm.weight  [1152]                         98.829
+model.vision_tower.encoder.layers.17.self_attn.k_norm.weight           [72]                           3.7123
+model.vision_tower.encoder.layers.17.self_attn.k_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.17.self_attn.o_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.17.self_attn.q_norm.weight           [72]                           8.6179
+model.vision_tower.encoder.layers.17.self_attn.q_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.17.self_attn.v_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.18.input_layernorm.weight            [1152]                         113.68
+model.vision_tower.encoder.layers.18.mlp.down_proj.linear.weight       [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.18.mlp.gate_proj.linear.weight       [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.18.mlp.up_proj.linear.weight         [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.18.post_attention_layernorm.weight   [1152]                         99.254
+model.vision_tower.encoder.layers.18.post_feedforward_layernorm.weight [1152]                         150.12
+model.vision_tower.encoder.layers.18.pre_feedforward_layernorm.weight  [1152]                          91.79
+model.vision_tower.encoder.layers.18.self_attn.k_norm.weight           [72]                           3.6626
+model.vision_tower.encoder.layers.18.self_attn.k_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.18.self_attn.o_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.18.self_attn.q_norm.weight           [72]                           8.7504
+model.vision_tower.encoder.layers.18.self_attn.q_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.18.self_attn.v_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.19.input_layernorm.weight            [1152]                          118.1
+model.vision_tower.encoder.layers.19.mlp.down_proj.linear.weight       [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.19.mlp.gate_proj.linear.weight       [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.19.mlp.up_proj.linear.weight         [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.19.post_attention_layernorm.weight   [1152]                         161.99
+model.vision_tower.encoder.layers.19.post_feedforward_layernorm.weight [1152]                          178.4
+model.vision_tower.encoder.layers.19.pre_feedforward_layernorm.weight  [1152]                         80.652
+model.vision_tower.encoder.layers.19.self_attn.k_norm.weight           [72]                           3.6792
+model.vision_tower.encoder.layers.19.self_attn.k_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.19.self_attn.o_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.19.self_attn.q_norm.weight           [72]                           8.6842
+model.vision_tower.encoder.layers.19.self_attn.q_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.19.self_attn.v_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.2.input_layernorm.weight             [1152]                         102.64
+model.vision_tower.encoder.layers.2.mlp.down_proj.linear.weight        [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.2.mlp.gate_proj.linear.weight        [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.2.mlp.up_proj.linear.weight          [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.2.post_attention_layernorm.weight    [1152]                         21.749
+model.vision_tower.encoder.layers.2.post_feedforward_layernorm.weight  [1152]                         31.534
+model.vision_tower.encoder.layers.2.pre_feedforward_layernorm.weight   [1152]                            109
+model.vision_tower.encoder.layers.2.self_attn.k_norm.weight            [72]                            3.646
+model.vision_tower.encoder.layers.2.self_attn.k_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.2.self_attn.o_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.2.self_attn.q_norm.weight            [72]                           8.7504
+model.vision_tower.encoder.layers.2.self_attn.q_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.2.self_attn.v_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.20.input_layernorm.weight            [1152]                         104.48
+model.vision_tower.encoder.layers.20.mlp.down_proj.linear.weight       [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.20.mlp.gate_proj.linear.weight       [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.20.mlp.up_proj.linear.weight         [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.20.post_attention_layernorm.weight   [1152]                         137.26
+model.vision_tower.encoder.layers.20.post_feedforward_layernorm.weight [1152]                         224.18
+model.vision_tower.encoder.layers.20.pre_feedforward_layernorm.weight  [1152]                         80.282
+model.vision_tower.encoder.layers.20.self_attn.k_norm.weight           [72]                           3.7123
+model.vision_tower.encoder.layers.20.self_attn.k_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.20.self_attn.o_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.20.self_attn.q_norm.weight           [72]                           8.6179
+model.vision_tower.encoder.layers.20.self_attn.q_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.20.self_attn.v_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.21.input_layernorm.weight            [1152]                         119.25
+model.vision_tower.encoder.layers.21.mlp.down_proj.linear.weight       [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.21.mlp.gate_proj.linear.weight       [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.21.mlp.up_proj.linear.weight         [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.21.post_attention_layernorm.weight   [1152]                          184.4
+model.vision_tower.encoder.layers.21.post_feedforward_layernorm.weight [1152]                         256.51
+model.vision_tower.encoder.layers.21.pre_feedforward_layernorm.weight  [1152]                         72.341
+model.vision_tower.encoder.layers.21.self_attn.k_norm.weight           [72]                            3.646
+model.vision_tower.encoder.layers.21.self_attn.k_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.21.self_attn.o_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.21.self_attn.q_norm.weight           [72]                           8.8167
+model.vision_tower.encoder.layers.21.self_attn.q_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.21.self_attn.v_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.22.input_layernorm.weight            [1152]                         139.11
+model.vision_tower.encoder.layers.22.mlp.down_proj.linear.weight       [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.22.mlp.gate_proj.linear.weight       [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.22.mlp.up_proj.linear.weight         [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.22.post_attention_layernorm.weight   [1152]                         223.57
+model.vision_tower.encoder.layers.22.post_feedforward_layernorm.weight [1152]                         333.07
+model.vision_tower.encoder.layers.22.pre_feedforward_layernorm.weight  [1152]                         66.645
+model.vision_tower.encoder.layers.22.self_attn.k_norm.weight           [72]                            3.646
+model.vision_tower.encoder.layers.22.self_attn.k_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.22.self_attn.o_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.22.self_attn.q_norm.weight           [72]                           8.7504
+model.vision_tower.encoder.layers.22.self_attn.q_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.22.self_attn.v_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.23.input_layernorm.weight            [1152]                         107.96
+model.vision_tower.encoder.layers.23.mlp.down_proj.linear.weight       [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.23.mlp.gate_proj.linear.weight       [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.23.mlp.up_proj.linear.weight         [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.23.post_attention_layernorm.weight   [1152]                         295.98
+model.vision_tower.encoder.layers.23.post_feedforward_layernorm.weight [1152]                          430.2
+model.vision_tower.encoder.layers.23.pre_feedforward_layernorm.weight  [1152]                         61.024
+model.vision_tower.encoder.layers.23.self_attn.k_norm.weight           [72]                           3.8946
+model.vision_tower.encoder.layers.23.self_attn.k_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.23.self_attn.o_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.23.self_attn.q_norm.weight           [72]                           8.2201
+model.vision_tower.encoder.layers.23.self_attn.q_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.23.self_attn.v_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.24.input_layernorm.weight            [1152]                            121
+model.vision_tower.encoder.layers.24.mlp.down_proj.linear.weight       [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.24.mlp.gate_proj.linear.weight       [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.24.mlp.up_proj.linear.weight         [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.24.post_attention_layernorm.weight   [1152]                         403.52
+model.vision_tower.encoder.layers.24.post_feedforward_layernorm.weight [1152]                         578.44
+model.vision_tower.encoder.layers.24.pre_feedforward_layernorm.weight  [1152]                         55.556
+model.vision_tower.encoder.layers.24.self_attn.k_norm.weight           [72]                           3.7786
+model.vision_tower.encoder.layers.24.self_attn.k_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.24.self_attn.o_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.24.self_attn.q_norm.weight           [72]                           8.4853
+model.vision_tower.encoder.layers.24.self_attn.q_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.24.self_attn.v_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.25.input_layernorm.weight            [1152]                         113.94
+model.vision_tower.encoder.layers.25.mlp.down_proj.linear.weight       [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.25.mlp.gate_proj.linear.weight       [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.25.mlp.up_proj.linear.weight         [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.25.post_attention_layernorm.weight   [1152]                         739.04
+model.vision_tower.encoder.layers.25.post_feedforward_layernorm.weight [1152]                         794.89
+model.vision_tower.encoder.layers.25.pre_feedforward_layernorm.weight  [1152]                         50.383
+model.vision_tower.encoder.layers.25.self_attn.k_norm.weight           [72]                           3.9278
+model.vision_tower.encoder.layers.25.self_attn.k_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.25.self_attn.o_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.25.self_attn.q_norm.weight           [72]                           8.1207
+model.vision_tower.encoder.layers.25.self_attn.q_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.25.self_attn.v_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.26.input_layernorm.weight            [1152]                         172.63
+model.vision_tower.encoder.layers.26.mlp.down_proj.linear.weight       [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.26.mlp.gate_proj.linear.weight       [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.26.mlp.up_proj.linear.weight         [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.26.post_attention_layernorm.weight   [1152]                         870.16
+model.vision_tower.encoder.layers.26.post_feedforward_layernorm.weight [1152]                         1652.1
+model.vision_tower.encoder.layers.26.pre_feedforward_layernorm.weight  [1152]                         34.003
+model.vision_tower.encoder.layers.26.self_attn.k_norm.weight           [72]                           3.9278
+model.vision_tower.encoder.layers.26.self_attn.k_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.26.self_attn.o_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.26.self_attn.q_norm.weight           [72]                           8.1538
+model.vision_tower.encoder.layers.26.self_attn.q_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.26.self_attn.v_proj.linear.weight    [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.3.input_layernorm.weight             [1152]                         117.19
+model.vision_tower.encoder.layers.3.mlp.down_proj.linear.weight        [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.3.mlp.gate_proj.linear.weight        [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.3.mlp.up_proj.linear.weight          [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.3.post_attention_layernorm.weight    [1152]                         27.638
+model.vision_tower.encoder.layers.3.post_feedforward_layernorm.weight  [1152]                          21.54
+model.vision_tower.encoder.layers.3.pre_feedforward_layernorm.weight   [1152]                         120.16
+model.vision_tower.encoder.layers.3.self_attn.k_norm.weight            [72]                           3.7952
+model.vision_tower.encoder.layers.3.self_attn.k_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.3.self_attn.o_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.3.self_attn.q_norm.weight            [72]                           8.4521
+model.vision_tower.encoder.layers.3.self_attn.q_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.3.self_attn.v_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.4.input_layernorm.weight             [1152]                         115.08
+model.vision_tower.encoder.layers.4.mlp.down_proj.linear.weight        [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.4.mlp.gate_proj.linear.weight        [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.4.mlp.up_proj.linear.weight          [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.4.post_attention_layernorm.weight    [1152]                         41.016
+model.vision_tower.encoder.layers.4.post_feedforward_layernorm.weight  [1152]                         34.021
+model.vision_tower.encoder.layers.4.pre_feedforward_layernorm.weight   [1152]                         136.48
+model.vision_tower.encoder.layers.4.self_attn.k_norm.weight            [72]                           3.8615
+model.vision_tower.encoder.layers.4.self_attn.k_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.4.self_attn.o_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.4.self_attn.q_norm.weight            [72]                           8.2864
+model.vision_tower.encoder.layers.4.self_attn.q_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.4.self_attn.v_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.5.input_layernorm.weight             [1152]                         119.72
+model.vision_tower.encoder.layers.5.mlp.down_proj.linear.weight        [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.5.mlp.gate_proj.linear.weight        [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.5.mlp.up_proj.linear.weight          [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.5.post_attention_layernorm.weight    [1152]                         41.987
+model.vision_tower.encoder.layers.5.post_feedforward_layernorm.weight  [1152]                         34.483
+model.vision_tower.encoder.layers.5.pre_feedforward_layernorm.weight   [1152]                         141.28
+model.vision_tower.encoder.layers.5.self_attn.k_norm.weight            [72]                           3.6294
+model.vision_tower.encoder.layers.5.self_attn.k_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.5.self_attn.o_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.5.self_attn.q_norm.weight            [72]                           8.8167
+model.vision_tower.encoder.layers.5.self_attn.q_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.5.self_attn.v_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.6.input_layernorm.weight             [1152]                         114.01
+model.vision_tower.encoder.layers.6.mlp.down_proj.linear.weight        [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.6.mlp.gate_proj.linear.weight        [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.6.mlp.up_proj.linear.weight          [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.6.post_attention_layernorm.weight    [1152]                          41.39
+model.vision_tower.encoder.layers.6.post_feedforward_layernorm.weight  [1152]                         46.352
+model.vision_tower.encoder.layers.6.pre_feedforward_layernorm.weight   [1152]                         135.74
+model.vision_tower.encoder.layers.6.self_attn.k_norm.weight            [72]                           3.5963
+model.vision_tower.encoder.layers.6.self_attn.k_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.6.self_attn.o_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.6.self_attn.q_norm.weight            [72]                            8.883
+model.vision_tower.encoder.layers.6.self_attn.q_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.6.self_attn.v_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.7.input_layernorm.weight             [1152]                         117.63
+model.vision_tower.encoder.layers.7.mlp.down_proj.linear.weight        [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.7.mlp.gate_proj.linear.weight        [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.7.mlp.up_proj.linear.weight          [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.7.post_attention_layernorm.weight    [1152]                         44.088
+model.vision_tower.encoder.layers.7.post_feedforward_layernorm.weight  [1152]                         39.278
+model.vision_tower.encoder.layers.7.pre_feedforward_layernorm.weight   [1152]                         140.68
+model.vision_tower.encoder.layers.7.self_attn.k_norm.weight            [72]                            3.646
+model.vision_tower.encoder.layers.7.self_attn.k_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.7.self_attn.o_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.7.self_attn.q_norm.weight            [72]                           8.7504
+model.vision_tower.encoder.layers.7.self_attn.q_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.7.self_attn.v_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.8.input_layernorm.weight             [1152]                         130.01
+model.vision_tower.encoder.layers.8.mlp.down_proj.linear.weight        [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.8.mlp.gate_proj.linear.weight        [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.8.mlp.up_proj.linear.weight          [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.8.post_attention_layernorm.weight    [1152]                         35.307
+model.vision_tower.encoder.layers.8.post_feedforward_layernorm.weight  [1152]                         41.623
+model.vision_tower.encoder.layers.8.pre_feedforward_layernorm.weight   [1152]                         157.44
+model.vision_tower.encoder.layers.8.self_attn.k_norm.weight            [72]                           3.7952
+model.vision_tower.encoder.layers.8.self_attn.k_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.8.self_attn.o_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.8.self_attn.q_norm.weight            [72]                            8.419
+model.vision_tower.encoder.layers.8.self_attn.q_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.8.self_attn.v_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.9.input_layernorm.weight             [1152]                         126.37
+model.vision_tower.encoder.layers.9.mlp.down_proj.linear.weight        [1152, 4304]                   33.941
+model.vision_tower.encoder.layers.9.mlp.gate_proj.linear.weight        [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.9.mlp.up_proj.linear.weight          [4304, 1152]                   65.605
+model.vision_tower.encoder.layers.9.post_attention_layernorm.weight    [1152]                         31.056
+model.vision_tower.encoder.layers.9.post_feedforward_layernorm.weight  [1152]                         45.734
+model.vision_tower.encoder.layers.9.pre_feedforward_layernorm.weight   [1152]                         156.71
+model.vision_tower.encoder.layers.9.self_attn.k_norm.weight            [72]                           3.5963
+model.vision_tower.encoder.layers.9.self_attn.k_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.9.self_attn.o_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.9.self_attn.q_norm.weight            [72]                            8.883
+model.vision_tower.encoder.layers.9.self_attn.q_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.encoder.layers.9.self_attn.v_proj.linear.weight     [1152, 1152]                   33.941
+model.vision_tower.patch_embedder.input_proj.weight                    [1152, 768]                    29.088
+model.vision_tower.patch_embedder.position_embedding_table             [2, 10240, 1152]               88.807
+model.vision_tower.std_bias                                            [1152]                          68025
+model.vision_tower.std_scale                                           [1152]                       0.077654

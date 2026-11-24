@@ -1,0 +1,61 @@
+=== exact duplicate tensors ===
+  DUP: ['model.language_model.layers.0.self_attn.k_norm.weight', 'model.language_model.layers.16.self_attn.k_norm.weight', 'model.language_model.layers.18.self_attn.k_norm.weight', 'model.language_model.layers.19.self_attn.k_norm.weight', 'model.language_model.layers.27.self_attn.k_norm.weight']
+  DUP: ['model.language_model.layers.0.self_attn.q_norm.weight', 'model.language_model.layers.16.self_attn.q_norm.weight', 'model.language_model.layers.18.self_attn.q_norm.weight', 'model.language_model.layers.19.self_attn.q_norm.weight', 'model.language_model.layers.26.self_attn.q_norm.weight', 'model.language_model.layers.27.self_attn.q_norm.weight']
+  DUP: ['model.language_model.layers.1.self_attn.q_norm.weight', 'model.language_model.layers.14.self_attn.q_norm.weight', 'model.language_model.layers.3.self_attn.q_norm.weight']
+  DUP: ['model.language_model.layers.10.self_attn.k_norm.weight', 'model.language_model.layers.12.self_attn.k_norm.weight', 'model.language_model.layers.13.self_attn.k_norm.weight', 'model.language_model.layers.9.self_attn.k_norm.weight']
+  DUP: ['model.language_model.layers.10.self_attn.q_norm.weight', 'model.language_model.layers.12.self_attn.q_norm.weight', 'model.language_model.layers.9.self_attn.q_norm.weight']
+  DUP: ['model.language_model.layers.11.layer_scalar', 'model.language_model.layers.28.layer_scalar', 'model.language_model.layers.4.layer_scalar']
+  DUP: ['model.language_model.layers.13.self_attn.q_norm.weight', 'model.language_model.layers.15.self_attn.q_norm.weight']
+  DUP: ['model.language_model.layers.14.self_attn.k_norm.weight', 'model.language_model.layers.3.self_attn.k_norm.weight']
+  DUP: ['model.language_model.layers.17.self_attn.k_norm.weight', 'model.language_model.layers.23.self_attn.k_norm.weight']
+  DUP: ['model.language_model.layers.20.layer_scalar', 'model.language_model.layers.21.layer_scalar', 'model.language_model.layers.22.layer_scalar']
+  DUP: ['model.language_model.layers.21.self_attn.k_norm.weight', 'model.language_model.layers.4.self_attn.k_norm.weight', 'model.language_model.layers.6.self_attn.k_norm.weight']
+  DUP: ['model.language_model.layers.21.self_attn.q_norm.weight', 'model.language_model.layers.6.self_attn.q_norm.weight']
+  DUP: ['model.language_model.layers.24.self_attn.k_norm.weight', 'model.language_model.layers.8.self_attn.k_norm.weight']
+  DUP: ['model.language_model.layers.24.self_attn.q_norm.weight', 'model.language_model.layers.8.self_attn.q_norm.weight']
+  DUP: ['model.language_model.layers.25.self_attn.q_norm.weight', 'model.language_model.layers.28.self_attn.q_norm.weight']
+  DUP: ['model.vision_tower.encoder.layers.0.self_attn.k_norm.weight', 'model.vision_tower.encoder.layers.1.self_attn.k_norm.weight']
+  DUP: ['model.vision_tower.encoder.layers.0.self_attn.q_norm.weight', 'model.vision_tower.encoder.layers.1.self_attn.q_norm.weight']
+  DUP: ['model.vision_tower.encoder.layers.10.self_attn.k_norm.weight', 'model.vision_tower.encoder.layers.2.self_attn.k_norm.weight', 'model.vision_tower.encoder.layers.21.self_attn.k_norm.weight', 'model.vision_tower.encoder.layers.22.self_attn.k_norm.weight', 'model.vision_tower.encoder.layers.7.self_attn.k_norm.weight']
+  DUP: ['model.vision_tower.encoder.layers.10.self_attn.q_norm.weight', 'model.vision_tower.encoder.layers.12.self_attn.q_norm.weight', 'model.vision_tower.encoder.layers.18.self_attn.q_norm.weight', 'model.vision_tower.encoder.layers.2.self_attn.q_norm.weight', 'model.vision_tower.encoder.layers.22.self_attn.q_norm.weight', 'model.vision_tower.encoder.layers.7.self_attn.q_norm.weight']
+  DUP: ['model.vision_tower.encoder.layers.11.self_attn.q_norm.weight', 'model.vision_tower.encoder.layers.17.self_attn.q_norm.weight', 'model.vision_tower.encoder.layers.20.self_attn.q_norm.weight']
+  DUP: ['model.vision_tower.encoder.layers.12.self_attn.k_norm.weight', 'model.vision_tower.encoder.layers.18.self_attn.k_norm.weight']
+  DUP: ['model.vision_tower.encoder.layers.15.self_attn.k_norm.weight', 'model.vision_tower.encoder.layers.24.self_attn.k_norm.weight']
+  DUP: ['model.vision_tower.encoder.layers.15.self_attn.q_norm.weight', 'model.vision_tower.encoder.layers.24.self_attn.q_norm.weight']
+  DUP: ['model.vision_tower.encoder.layers.16.self_attn.k_norm.weight', 'model.vision_tower.encoder.layers.4.self_attn.k_norm.weight']
+  DUP: ['model.vision_tower.encoder.layers.16.self_attn.q_norm.weight', 'model.vision_tower.encoder.layers.4.self_attn.q_norm.weight']
+  DUP: ['model.vision_tower.encoder.layers.17.self_attn.k_norm.weight', 'model.vision_tower.encoder.layers.20.self_attn.k_norm.weight']
+  DUP: ['model.vision_tower.encoder.layers.21.self_attn.q_norm.weight', 'model.vision_tower.encoder.layers.5.self_attn.q_norm.weight']
+  DUP: ['model.vision_tower.encoder.layers.25.self_attn.k_norm.weight', 'model.vision_tower.encoder.layers.26.self_attn.k_norm.weight']
+  DUP: ['model.vision_tower.encoder.layers.3.self_attn.k_norm.weight', 'model.vision_tower.encoder.layers.8.self_attn.k_norm.weight']
+  DUP: ['model.vision_tower.encoder.layers.6.self_attn.k_norm.weight', 'model.vision_tower.encoder.layers.9.self_attn.k_norm.weight']
+  DUP: ['model.vision_tower.encoder.layers.6.self_attn.q_norm.weight', 'model.vision_tower.encoder.layers.9.self_attn.q_norm.weight']
+
+=== same-shape pairwise mean-abs-diff < 1e-3 (language_model) ===
+  CLOSE: model.language_model.layers.17.self_attn.k_norm.weight <-> model.language_model.layers.23.self_attn.k_norm.weight mean|d|=0
+  CLOSE: model.language_model.layers.29.self_attn.k_norm.weight <-> model.language_model.layers.5.self_attn.k_norm.weight mean|d|=0.000732
+
+=== cross-layer exact copies within family ===
+  EXACT COPY: L20 == L21  .layer_scalar
+  EXACT COPY: L21 == L22  .layer_scalar
+  EXACT COPY: L9 == L10  .self_attn.k_norm.weight
+  EXACT COPY: L12 == L13  .self_attn.k_norm.weight
+  EXACT COPY: L18 == L19  .self_attn.k_norm.weight
+  EXACT COPY: L9 == L10  .self_attn.q_norm.weight
+  EXACT COPY: L18 == L19  .self_attn.q_norm.weight
+  EXACT COPY: L26 == L27  .self_attn.q_norm.weight
+
+=== exact-zero rows (count>0) ===
+
+=== special token embed rows ===
+  global row norm: mean=1.5154 p1=1.0136 p50=1.5589 p99=1.8424
+  pad(0): row_norm=1.0135 mean=-0.00022 maxabs=0.1689
+  eos(1): row_norm=1.8765 mean=0.00073 maxabs=0.1289
+  bos(2): row_norm=1.7860 mean=0.00002 maxabs=0.7109
+  eos50(50): row_norm=1.7866 mean=0.00070 maxabs=0.1592
+  eos106(106): row_norm=1.1869 mean=-0.00045 maxabs=0.1001
+  '1'(236770): row_norm=1.3001 mean=0.00043 maxabs=0.4785
+  '0'(236771): row_norm=1.4307 mean=0.00024 maxabs=0.6016
+  '**'(1018): row_norm=1.2267 mean=0.00000 maxabs=0.1074
+  rows with norm<0.1: 0
+  rows with norm>3: 18

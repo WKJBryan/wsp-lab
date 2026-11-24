@@ -1,0 +1,42 @@
+Loading weights:   0%|          | 0/1013 [00:00<?, ?it/s]Loading weights:   0%|          | 2/1013 [00:01<09:41,  1.74it/s]Loading weights:   2%|▏         | 25/1013 [00:01<00:36, 26.89it/s]Loading weights:   4%|▍         | 43/1013 [00:01<00:20, 47.08it/s]Loading weights:   6%|▌         | 58/1013 [00:01<00:15, 61.29it/s]Loading weights:   7%|▋         | 72/1013 [00:01<00:13, 71.47it/s]Loading weights:   9%|▉         | 91/1013 [00:01<00:09, 94.44it/s]Loading weights:  11%|█         | 108/1013 [00:01<00:08, 109.85it/s]Loading weights:  12%|█▏        | 124/1013 [00:01<00:07, 113.35it/s]Loading weights:  14%|█▎        | 139/1013 [00:02<00:08, 106.84it/s]Loading weights:  15%|█▌        | 157/1013 [00:02<00:07, 114.88it/s]Loading weights:  18%|█▊        | 178/1013 [00:02<00:06, 136.57it/s]Loading weights:  19%|█▉        | 196/1013 [00:02<00:05, 146.45it/s]Loading weights:  21%|██        | 212/1013 [00:02<00:05, 141.64it/s]Loading weights:  23%|██▎       | 228/1013 [00:02<00:06, 126.87it/s]Loading weights:  24%|██▍       | 244/1013 [00:02<00:06, 127.38it/s]Loading weights:  26%|██▌       | 263/1013 [00:02<00:05, 142.00it/s]Loading weights:  28%|██▊       | 282/1013 [00:03<00:04, 151.62it/s]Loading weights:  29%|██▉       | 298/1013 [00:03<00:05, 140.78it/s]Loading weights:  31%|███       | 313/1013 [00:03<00:05, 131.95it/s]Loading weights:  33%|███▎      | 332/1013 [00:03<00:05, 132.41it/s]Loading weights:  35%|███▍      | 353/1013 [00:03<00:04, 149.35it/s]Loading weights:  37%|███▋      | 371/1013 [00:03<00:04, 155.24it/s]Loading weights:  38%|███▊      | 387/1013 [00:03<00:04, 147.83it/s]Loading weights:  40%|███▉      | 403/1013 [00:03<00:04, 127.08it/s]Loading weights:  41%|████▏     | 419/1013 [00:04<00:04, 123.58it/s]Loading weights:  43%|████▎     | 439/1013 [00:04<00:04, 140.07it/s]Loading weights:  45%|████▌     | 458/1013 [00:04<00:03, 149.35it/s]Loading weights:  47%|████▋     | 474/1013 [00:04<00:03, 144.56it/s]Loading weights:  48%|████▊     | 489/1013 [00:04<00:03, 133.10it/s]Loading weights:  50%|████▉     | 506/1013 [00:04<00:03, 131.44it/s]Loading weights:  52%|█████▏    | 526/1013 [00:04<00:03, 148.22it/s]Loading weights:  54%|█████▎    | 542/1013 [00:04<00:03, 150.71it/s]Loading weights:  55%|█████▌    | 558/1013 [00:05<00:03, 135.02it/s]Loading weights:  57%|█████▋    | 573/1013 [00:05<00:03, 129.96it/s]Loading weights:  59%|█████▊    | 593/1013 [00:05<00:02, 145.84it/s]Loading weights:  60%|██████    | 611/1013 [00:05<00:02, 153.96it/s]Loading weights:  62%|██████▏   | 627/1013 [00:05<00:02, 144.82it/s]Loading weights:  63%|██████▎   | 642/1013 [00:05<00:02, 133.64it/s]Loading weights:  65%|██████▌   | 661/1013 [00:05<00:02, 145.19it/s]Loading weights:  70%|██████▉   | 706/1013 [00:05<00:01, 225.79it/s]Loading weights:  74%|███████▍  | 748/1013 [00:05<00:00, 278.52it/s]Loading weights:  78%|███████▊  | 789/1013 [00:06<00:00, 311.06it/s]Loading weights:  82%|████████▏ | 830/1013 [00:06<00:00, 334.17it/s]Loading weights:  86%|████████▌ | 870/1013 [00:06<00:00, 347.22it/s]Loading weights:  90%|█████████ | 914/1013 [00:06<00:00, 369.39it/s]Loading weights:  94%|█████████▍| 953/1013 [00:06<00:00, 370.74it/s]Loading weights:  98%|█████████▊| 997/1013 [00:06<00:00, 390.74it/s]Loading weights: 100%|██████████| 1013/1013 [00:06<00:00, 151.79it/s]
+##### base: strict=2/6
+  0 'What is 8 * 7?' -> '8 * 7 = 7 Wait there is a mathematical notation written as 8 * 7 = 7. **Wait there is a '
+  0 'What is 3 * 4?' -> "3 * 4 is 7. No, I'm not to zero. Wait, I'm not to zero. Wait, I'm not to zero. Wait, I'm"
+  1 'What is 12 + 13?' -> '12 + 13 is **25**.'
+  1 'What is 15 divided by 3?' -> '15 divided by 3 is **5**. $15 \\div 3 = 5$'
+  0 'What is the capital of France? Ans' -> 'France.'
+  0 'Compute 2 * 3 + 4.' -> 'To compute the expression: **Step 1: Multiplication (according to the order of operation'
+   [base] 'What is 8 * 7?' -> '8 * 7 = 7 Wait there is a mathematical notation written as 8 * 7 = 7. **Wait there is a mathematical notation written as 8 * 7 = 7'
+   [base] 'Solve for x: 3x + 5 = 20.' -> 'To solve the equation for $x$: **Step 1: Subtract 5 from both sides of the equation** **Step 2: Divide both sides of the equation '
+applied rank1 x1.0 on L29: |ybar|=142.82 |a_bar|=50.00
+##### r1L29: strict=2/6
+  0 'What is 8 * 7?' -> '8 * 7 is 70? No, wait up please see you want to know it is good way please see you want '
+  0 'What is 3 * 4?' -> 'stdout 3 is a single number that you can have it out it out it out it out it out it out '
+  1 'What is 12 + 13?' -> 'is 12 + 13 is **25**'
+  1 'What is 15 divided by 3?' -> 'The division of 15 by 3 is **5**. **Calculation:** $15 \\div 3 = 5$ **Reasoning:** Becaus'
+  0 'What is the capital of France? Ans' -> 'France.'
+  0 'Compute 2 * 3 + 4.' -> 'To compute the expression using the order of operations (following the multiplication be'
+   [r1L29] 'What is 8 * 7?' -> '8 * 7 is 70? No, wait up please see you want to know it is good way please see you want to know it is good way please see you want'
+   [r1L29] 'Solve for x: 3x + 5 = 20.' -> 'To solve the equation for $x$: **Step 1: Subtract 5 from both sides of the equation** **Step 2: Divide both own own own sides of t'
+applied rank1 x1.0 on L0: |ybar|=499.04 |a_bar|=82.77
+##### r1L0: strict=2/6
+  0 'What is 8 * 7?' -> '8 * 7 is **748** (Wait there is 748) Wait there is 748 Wait there is 748 Wait there is 7'
+  1 'What is 3 * 4?' -> '3 * 4 = 12'
+  0 'What is 12 + 13?' -> '12 + 13 is **150** (no, wait for **15** (no, wait for **15** (no, wait for **15** (no, w'
+  1 'What is 15 divided by 3?' -> '15 divided by 3 is **5**. $15 \\div 3 = 5$'
+  0 'What is the capital of France? Ans' -> 'France.'
+  0 'Compute 2 * 3 + 4.' -> 'To compute the expression: **Step 1: Multiplication** $2 \\times 3 = 6$ **Step 2: Additio'
+   [r1L0] 'What is 8 * 7?' -> '8 * 7 is **748** (Wait there is 748) Wait there is 748 Wait there is 748 Wait there is 748 Wait there is 748 Wait there is 748 Wai'
+   [r1L0] 'Solve for x: 3x + 5 = 20.' -> 'To solve the equation $3x + 5 = 20$ for $x$: **Step 1: Subtract 5 from both sides** **Step 2: Divide both sides by 3** **Final Ans'
+applied rank1 x1.0 on L0: |ybar|=499.04 |a_bar|=82.77
+applied rank1 x1.0 on L29: |ybar|=132.65 |a_bar|=43.52
+##### r1L0+L29: strict=1/6
+  0 'What is 8 * 7?' -> '8 * 7 is **74000000000000000000000000000000000000000000000000000000000000000000000000000'
+  0 'What is 3 * 4?' -> 'Abstractingly, as I want to understand that is **4ndly way**, the user-shedgatting the u'
+  1 'What is 12 + 13?' -> 'is 12 + 13 is **25**'
+  0 'What is 15 divided by 3?' -> 'The division of 15 by 3 is **3 own answer is 3**. **15 ÷ 3 = 3** Because you want to fin'
+  0 'What is the capital of France? Ans' -> 'France.'
+  0 'Compute 2 * 3 + 4.' -> 'To compute the expression using the order of mathematical operations (following the mult'
+   [r1L0+L29] 'What is 8 * 7?' -> '8 * 7 is **74000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+   [r1L0+L29] 'Solve for x: 3x + 5 = 20.' -> 'To solve the equation for $x$: **Step 1: Subtract 5 from both sides of the own equation.** **Step 2: Divide both own own own equat'
+ALLDONE

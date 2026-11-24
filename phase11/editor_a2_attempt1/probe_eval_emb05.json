@@ -1,0 +1,191 @@
+{
+ "summary": {
+  "edit": "emb05",
+  "accuracy": 0.0,
+  "answered": 90.0,
+  "cap_hit": 100.0,
+  "mean_tok": 8192.0
+ },
+ "rows": [
+  {
+   "q": "What is the greatest common divisor of 84 and 144?",
+   "exp": "12",
+   "got": "144",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "y step.**\n\n**Step by step.**\n\n**Step by step.**\n\n**Step by step.**\n\n**Step by step.**\n\n**Step by step.**\n\n**Step by Step"
+  },
+  {
+   "q": "Compute $17\\times 23 - 11$.",
+   "exp": "380",
+   "got": null,
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": " step-by step-by step-by step-by step-by step-by step-by step-by step-by step-by step-by step-by step-by step-by step-by"
+  },
+  {
+   "q": "What is $1+2+3+\\cdots+100$?",
+   "exp": "5050",
+   "got": "100",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "f-the-way-of-the-way-of-the-way-of-the-way-of-the-way-of-the-way-of-the-way-of-the-way-of-the-way-of-the-way-of-the-way-"
+  },
+  {
+   "q": "What is $7!$?",
+   "exp": "5040",
+   "got": "7",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "m/m/or more)\n\nTo calculate $C$ (words/words/m/m/m/or more)\n\nTo calculate $C$ (words/words/m/m/m/or more)\n\nTo calculate $"
+  },
+  {
+   "q": "Solve for $x$: $2x + 5 = 17$.",
+   "exp": "6",
+   "got": "17",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": ": Final result**\n\n**6. Step 6: Final result**\n\n**7. Step 7: Final result**\n\n**1. Step 1: Subtract 5 from bothstep**\n\n**2"
+  },
+  {
+   "q": "What is the area of a triangle with base 10 and he",
+   "exp": "30",
+   "got": "10",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "$\n\n$10 \\times 10$\n\n$10 \\times 10$\n\n$10 \\times 10$\n\n$10 \\times 10$\n\n$10 \\times 10$\n\n$10 \\times 10$\n\n$10 \\times 10$\n\n$10 \\"
+  },
+  {
+   "q": "If $f(x)=3x-7$, what is $f(5)$?",
+   "exp": "8",
+   "got": "1",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": " order.**\n\n3.  **Step 4: Calculate the final result.**\n\n**Final Answer:**\n\n1.  **Step 1: Substitute the value for $x$ in"
+  },
+  {
+   "q": "What is $15\\%$ of $80$?",
+   "exp": "12",
+   "got": "80",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "\n**21. Final result:**\n\n**22. Final result:**\n\n**23. Final result:**\n\n**24. Final result:**\n\n**25. Final result:**\n\n**14"
+  },
+  {
+   "q": "Simplify $\\frac{18}{24}$.",
+   "exp": "0.75",
+   "got": "24",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "nd the Greatest Common Diver**\n\n**Step 4: Result**\n\n**Step 1: Find the Greatest Common Diver**\n\n**Step 2: Divide the Den"
+  },
+  {
+   "q": "What is $\\sqrt{144}+\\sqrt{25}$?",
+   "exp": "17",
+   "got": "3.33",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "he-space-of-the-space-of-the-space-of-the-space-of-the-field-of-the-space-of-the-space-of-the-space-of-the-space-of-the-"
+  },
+  {
+   "q": "Find the remainder when $7^{9}$ is divided by 13.",
+   "exp": "6",
+   "got": "9",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "lt**\n\n**Step 13: Final Result**\n\n**Step 13: Final Result**\n\n**Step 13: Final Result**\n\n**Step 13: Final Result**\n\n**Step"
+  },
+  {
+   "q": "If $3x - 4 = 11$, find $x^2$.",
+   "exp": "25",
+   "got": "1",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "**Step 1: Solve for $x$**\n\n**Step 2: Solve for $x^2$**\n\n**Step 3: Solve for $x^2$**\n\n**Step 1: Solve for $x$**\n\n**Step 2"
+  },
+  {
+   "q": "What is the slope of the line through $(1,2)$ and ",
+   "exp": "2",
+   "got": "10",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "}\n\n<br><br}\n\n<br><br}\n\n<br><br}\n\n<br><br}\n\n<br><br}\n\n<br><br}\n\n<br><br}\n\n<br><br}\n\n<br><br}\n\n<br><br}\n\n<br><br}\n\n<br><br"
+  },
+  {
+   "q": "Compute $\\binom{7}{3}$.",
+   "exp": "35",
+   "got": "7",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": " much much much much much much much much much much much much much much much much much much much much much much much much"
+  },
+  {
+   "q": "What is the least common multiple of 12 and 18?",
+   "exp": "36",
+   "got": "64",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "18 is **64**.\n\nThe **least common multiple** of 12 and 18 is **64**.\n\nThe **least common multiple** of 12 and 18 is **64"
+  },
+  {
+   "q": "A fair coin is flipped 3 times. What is the probab",
+   "exp": "0.375",
+   "got": null,
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": " a step by step.\n\n***\n\nI will provide a step by step.\n\n***\n\nYou will provide a step by step.\n\n***\n\nI will provide a step"
+  },
+  {
+   "q": "What is $2^{10}$?",
+   "exp": "1024",
+   "got": "2",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "es 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\ muching$\n\nIt is $2^{10}"
+  },
+  {
+   "q": "Solve for $y$: $y/3 + 2 = 7$.",
+   "exp": "15",
+   "got": "7",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "-\n\n### 3. Equation: $\\frac{y}{3} + 2 = 7$\n\n---\n\n### 3. Equation: $\\frac{y}{3} + 2 = 7$\n\n---\n\n### 3. Equation: $\\frac{y}{"
+  },
+  {
+   "q": "What is the sum of the interior angles of a pentag",
+   "exp": "540",
+   "got": "700",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "*The sum of the interior angles of a pentagon is 700 degrees.**\n\n***\n\n**The sum of the interior angles of a pentagon is "
+  },
+  {
+   "q": "If a rectangle has perimeter 30 and width 5, what ",
+   "exp": "50",
+   "got": "1",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "0**\n\n---\n\n2.  **Step 2: Calculate Area (A):**\n\n**Final Answer: 100**\n\n---\n\n3.  **Step 3: Final Result:**\n\n**Final Answer"
+  }
+ ]
+}

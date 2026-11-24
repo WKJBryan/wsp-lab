@@ -1,0 +1,36 @@
+Loading weights:   0%|          | 0/1013 [00:00<?, ?it/s]Loading weights:   0%|          | 1/1013 [00:01<20:32,  1.22s/it]Loading weights:   2%|▏         | 25/1013 [00:01<00:38, 25.54it/s]Loading weights:   4%|▍         | 43/1013 [00:01<00:21, 45.14it/s]Loading weights:   6%|▌         | 58/1013 [00:01<00:16, 59.00it/s]Loading weights:   7%|▋         | 72/1013 [00:01<00:13, 69.42it/s]Loading weights:   9%|▉         | 91/1013 [00:01<00:10, 92.10it/s]Loading weights:  11%|█         | 109/1013 [00:01<00:08, 110.28it/s]Loading weights:  12%|█▏        | 125/1013 [00:02<00:07, 112.36it/s]Loading weights:  14%|█▍        | 140/1013 [00:02<00:08, 98.34it/s] Loading weights:  15%|█▌        | 157/1013 [00:02<00:08, 103.61it/s]Loading weights:  18%|█▊        | 178/1013 [00:02<00:07, 110.85it/s]Loading weights:  20%|█▉        | 200/1013 [00:02<00:06, 129.85it/s]Loading weights:  22%|██▏       | 219/1013 [00:02<00:05, 143.44it/s]Loading weights:  23%|██▎       | 235/1013 [00:02<00:05, 139.28it/s]Loading weights:  25%|██▍       | 250/1013 [00:03<00:06, 126.57it/s]Loading weights:  26%|██▌       | 265/1013 [00:03<00:05, 132.07it/s]Loading weights:  28%|██▊       | 282/1013 [00:03<00:05, 138.74it/s]Loading weights:  29%|██▉       | 297/1013 [00:03<00:05, 133.56it/s]Loading weights:  31%|███       | 311/1013 [00:03<00:05, 124.13it/s]Loading weights:  33%|███▎      | 331/1013 [00:03<00:04, 142.71it/s]Loading weights:  34%|███▍      | 349/1013 [00:03<00:04, 151.07it/s]Loading weights:  36%|███▌      | 365/1013 [00:03<00:04, 143.55it/s]Loading weights:  38%|███▊      | 380/1013 [00:03<00:04, 130.51it/s]Loading weights:  39%|███▉      | 396/1013 [00:04<00:04, 134.83it/s]Loading weights:  41%|████      | 414/1013 [00:04<00:04, 143.81it/s]Loading weights:  42%|████▏     | 429/1013 [00:04<00:04, 136.31it/s]Loading weights:  44%|████▎     | 443/1013 [00:04<00:04, 127.19it/s]Loading weights:  46%|████▌     | 462/1013 [00:04<00:04, 125.64it/s]Loading weights:  48%|████▊     | 483/1013 [00:04<00:03, 144.74it/s]Loading weights:  50%|████▉     | 502/1013 [00:04<00:03, 152.23it/s]Loading weights:  51%|█████     | 518/1013 [00:04<00:03, 142.21it/s]Loading weights:  53%|█████▎    | 533/1013 [00:05<00:03, 120.67it/s]Loading weights:  54%|█████▍    | 550/1013 [00:05<00:03, 125.58it/s]Loading weights:  56%|█████▋    | 571/1013 [00:05<00:03, 144.93it/s]Loading weights:  58%|█████▊    | 589/1013 [00:05<00:02, 153.16it/s]Loading weights:  60%|█████▉    | 605/1013 [00:05<00:02, 145.49it/s]Loading weights:  61%|██████▏   | 621/1013 [00:05<00:02, 133.04it/s]Loading weights:  63%|██████▎   | 637/1013 [00:05<00:02, 131.50it/s]Loading weights:  65%|██████▍   | 657/1013 [00:05<00:02, 147.36it/s]Loading weights:  69%|██████▊   | 696/1013 [00:06<00:01, 211.00it/s]Loading weights:  72%|███████▏  | 733/1013 [00:06<00:01, 254.38it/s]Loading weights:  76%|███████▌  | 771/1013 [00:06<00:00, 287.09it/s]Loading weights:  80%|███████▉  | 810/1013 [00:06<00:00, 314.30it/s]Loading weights:  84%|████████▍ | 849/1013 [00:06<00:00, 335.16it/s]Loading weights:  88%|████████▊ | 890/1013 [00:06<00:00, 356.84it/s]Loading weights:  92%|█████████▏| 928/1013 [00:06<00:00, 359.87it/s]Loading weights:  96%|█████████▌| 972/1013 [00:06<00:00, 376.09it/s]Loading weights: 100%|█████████▉| 1011/1013 [00:06<00:00, 354.11it/s]Loading weights: 100%|██████████| 1013/1013 [00:06<00:00, 146.92it/s]
+BASELINE (30-seq): -10.4867
+  q_x0.5                    -10.4714 delta= +0.0153
+  q_x2.0                    -10.4648 delta= +0.0218
+  k_x0.5                    -10.4786 delta= +0.0081
+  k_x2.0                    -10.4993 delta= -0.0126
+  v_x0.5                    -10.4503 delta= +0.0363
+  v_x2.0                    -10.4691 delta= +0.0176
+  o_x0.5                    -10.4504 delta= +0.0363
+  o_x2.0                    -10.4613 delta= +0.0254
+  gate_x0.5                 -11.6158 delta= -1.1291 (worse)
+  gate_x2.0                 -10.4369 delta= +0.0498
+  up_x0.5                   -10.4110 delta= +0.0756
+  up_x2.0                   -10.4439 delta= +0.0427
+  down_x0.5                 -10.4110 delta= +0.0756
+  down_x2.0                 -10.4439 delta= +0.0427
+  gu_x0.5                   -10.7121 delta= -0.2254
+  gu_x2.0                   -12.3934 delta= -1.9068 (worse)
+  dn_x0.5                   -10.4981 delta= -0.0114
+  dn_x2.0                   -10.5062 delta= -0.0195
+  final_x0.5                -12.4766 delta= -1.9900 (worse)
+  embed_x0.5                -12.4766 delta= -1.9900 (worse)
+  postff_x1.5                -8.9568 delta= +1.5299 <== BETTER
+  postattn_x0.75             -9.5705 delta= +0.9162 <== BETTER
+  ablate_mlp_L25             -9.2954 delta= +1.1913 <== BETTER
+  ablate_attn_L5             -9.9710 delta= +0.5157 <== BETTER
+  ablate_moe_L29             -9.5237 delta= +0.9630 <== BETTER
+  ablate_mlp_L21             -9.8211 delta= +0.6656 <== BETTER
+  ablate_attn_L22            -9.6220 delta= +0.8647 <== BETTER
+  ablate_moe_L28             -9.5547 delta= +0.9320 <== BETTER
+--- combos ---
+  final_x0.5+postff1.5      -12.4766 delta= -1.9900 (worse)
+  final_x0.5+postattn.75    -12.4766 delta= -1.9900 (worse)
+  final+postff+postattn     -12.4766 delta= -1.9900 (worse)
+  embed0.5+postff1.5        -12.4766 delta= -1.9900 (worse)
+  embed0.5+postff+postattn  -12.4766 delta= -1.9900 (worse)

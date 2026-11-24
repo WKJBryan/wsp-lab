@@ -1,0 +1,93 @@
+BASELINE: score=1/12 tokens=1920
+zero L0  attn: score=1/12 tokens=1920
+zero L0  ff  : score=1/12 tokens=1920
+zero L0  both: score=0/12 tokens=1920
+zero L1  attn: score=2/12 tokens=1920
+zero L1  ff  : score=1/12 tokens=1920
+zero L1  both: score=1/12 tokens=1920
+zero L2  attn: score=2/12 tokens=1920
+zero L2  ff  : score=0/12 tokens=1920
+zero L2  both: score=0/12 tokens=1920
+zero L3  attn: score=3/12 tokens=1920
+zero L3  ff  : score=1/12 tokens=1920
+zero L3  both: score=2/12 tokens=1920
+zero L4  attn: score=3/12 tokens=1920
+zero L4  ff  : score=2/12 tokens=1920
+zero L4  both: score=1/12 tokens=1920
+zero L5  attn: score=2/12 tokens=1920
+zero L5  ff  : score=1/12 tokens=1920
+zero L5  both: score=1/12 tokens=1920
+zero L6  attn: score=3/12 tokens=1920
+zero L6  ff  : score=1/12 tokens=1920
+zero L6  both: score=3/12 tokens=1920
+zero L7  attn: score=2/12 tokens=1920
+zero L7  ff  : score=3/12 tokens=1920
+zero L7  both: score=2/12 tokens=1920
+zero L8  attn: score=2/12 tokens=1920
+zero L8  ff  : score=1/12 tokens=1920
+zero L8  both: score=1/12 tokens=1920
+zero L9  attn: score=2/12 tokens=1920
+zero L9  ff  : score=2/12 tokens=1920
+zero L9  both: score=3/12 tokens=1920
+zero L10 attn: score=1/12 tokens=1920
+zero L10 ff  : score=0/12 tokens=1920
+zero L10 both: score=0/12 tokens=1920
+zero L11 attn: score=0/12 tokens=1920
+zero L11 ff  : score=2/12 tokens=1920
+zero L11 both: score=0/12 tokens=1920
+zero L12 attn: score=1/12 tokens=1920
+zero L12 ff  : score=2/12 tokens=1920
+zero L12 both: score=3/12 tokens=1920
+zero L13 attn: score=3/12 tokens=1920
+zero L13 ff  : score=2/12 tokens=1920
+zero L13 both: score=1/12 tokens=1920
+zero L14 attn: score=1/12 tokens=1920
+zero L14 ff  : score=2/12 tokens=1920
+zero L14 both: score=3/12 tokens=1920
+zero L15 attn: score=1/12 tokens=1920
+zero L15 ff  : score=0/12 tokens=1920
+zero L15 both: score=2/12 tokens=1920
+zero L16 attn: score=2/12 tokens=1920
+zero L16 ff  : score=0/12 tokens=1920
+zero L16 both: score=2/12 tokens=1920
+zero L17 attn: score=1/12 tokens=1920
+zero L17 ff  : score=1/12 tokens=1920
+zero L17 both: score=3/12 tokens=1920
+zero L18 attn: score=1/12 tokens=1920
+zero L18 ff  : score=2/12 tokens=1920
+zero L18 both: score=2/12 tokens=1920
+zero L19 attn: score=1/12 tokens=1920
+zero L19 ff  : score=0/12 tokens=1920
+zero L19 both: score=0/12 tokens=1920
+zero L20 attn: score=3/12 tokens=1920
+zero L20 ff  : score=2/12 tokens=1920
+zero L20 both: score=2/12 tokens=1920
+zero L21 attn: score=2/12 tokens=1920
+zero L21 ff  : score=2/12 tokens=1920
+zero L21 both: score=1/12 tokens=1920
+zero L22 attn: score=1/12 tokens=1920
+zero L22 ff  : score=2/12 tokens=1920
+zero L22 both: score=1/12 tokens=1920
+zero L23 attn: score=2/12 tokens=1920
+zero L23 ff  : score=1/12 tokens=1920
+zero L23 both: score=1/12 tokens=1920
+zero L24 attn: score=2/12 tokens=1920
+zero L24 ff  : score=1/12 tokens=1920
+zero L24 both: score=2/12 tokens=1920
+zero L25 attn: score=2/12 tokens=1920
+zero L25 ff  : score=1/12 tokens=1920
+zero L25 both: score=0/12 tokens=1920
+zero L26 attn: score=2/12 tokens=1920
+zero L26 ff  : score=0/12 tokens=1920
+zero L26 both: score=0/12 tokens=1920
+zero L27 attn: score=1/12 tokens=1920
+zero L27 ff  : score=1/12 tokens=1920
+zero L27 both: score=0/12 tokens=1920
+zero L28 attn: score=1/12 tokens=1920
+zero L28 ff  : score=1/12 tokens=1920
+zero L28 both: score=0/12 tokens=1920
+zero L29 attn: score=0/12 tokens=1920
+zero L29 ff  : score=0/12 tokens=1920
+zero L29 both: score=0/12 tokens=1920
+zero ALL experts (ff2): score=0/12 tokens=1920
+zero ALL dense mlp (ff1): score=0/12 tokens=1920

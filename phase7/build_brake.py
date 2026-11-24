@@ -1,0 +1,164 @@
+"""Phase-7 causal spot-check: build a loop "brake" from OUR activation map alone.
+
+No knowledge of the original edit's columns or direction is used. Per chosen layer L:
+  d    = unit(mean resid(loop) - mean resid(pre)) after layer L        (probe_out/resid.npz)
+  cols = the 64 MLP neurons with the largest loop-vs-pre effect size   (probe_out/neurons.npz)
+  a    = -c * (mean_loop - mean_pre) on those neurons, c set so the push along d is
+         1.5 x the loop-pre residual gap stronger inside loops than before them, times --dose
+         (1.5 x gap is what the original edit does at its own layers; atlas Finding 7)
+  W_down[:, cols] += outer(d, a)      -> neurons that fire more in loops subtract d
+Variants: --random     same neurons and amplitudes, random direction orthogonal to d (control)
+          --selective  a made orthogonal to the clean-thinking mean activation, so the
+                       standing push on clean thinking is zero by construction
+
+Usage: uv run python phase7/build_brake.py <name> --out <dir> [--layers 10,14] [--dose 1.0] [--random] [--selective]
+"""
+
+import argparse
+import json
+import shutil
+from pathlib import Path
+
+import numpy as np
+import torch
+from safetensors.torch import load_file, save_file
+
+HERE = Path(__file__).resolve().parent
+STOCK = HERE.parent / "phase3" / "models" / "stock"
+PO = HERE / "probe_out"
+NCOL, GAIN = 64, 1.5
+
+ap = argparse.ArgumentParser()
+ap.add_argument("name")
+ap.add_argument("--out", required=True)
+ap.add_argument("--layers", default="10,14")
+ap.add_argument("--dose", type=float, default=1.0)
+ap.add_argument("--random", action="store_true")
+ap.add_argument("--selective", action="store_true")
+# replication arms (protocol addendum 2): defaults reproduce the first batch exactly
+ap.add_argument("--seed", type=int, default=1, help="seed of the random direction / random neurons")
+ap.add_argument("--random-neurons", action="store_true", help="same amplitudes on 64 random non-loop neurons")
+ap.add_argument("--orig-cols", action="store_true",
+                help="use the ORIGINAL edit's columns and amplitudes at L15/L19 (direction u unless --random)")
+# site-vs-direction arms (protocol addendum 3): defaults leave earlier batches unchanged
+ap.add_argument("--mapped-dir", action="store_true", help="with --orig-cols: push along the MAPPED direction d, not u")
+ap.add_argument("--u-dirs", default="", help="push along the original edit's u of these layers, one per --layers entry (e.g. 15,19)")
+ap.add_argument("--minus-d", action="store_true",
+                help="addendum 4: remove the push's component along the mapped d (NOT renormalised)")
+# hub test (protocol addendum 6): nothing else of the brake is applied
+ap.add_argument("--zero-unit", default="", help="switch one unit off, 'layer:unit': its down_proj column is set to zero")
+# stacking (protocol addendum 10): add the brake to a model that already carries another edit
+ap.add_argument("--base", default=str(STOCK), help="model directory the brake is added to (default: stock)")
+# lever site (protocol addendum 11): only the unit list changes; amplitude rule and push size stay as above
+ap.add_argument("--lever-cols", action="store_true",
+                help="the 64 units with the largest |lever score| (build_lightmap.lever) instead of the largest loop light")
+args = ap.parse_args()
+layers = [15, 19] if args.orig_cols else [int(x) for x in args.layers.split(",")]
+if args.zero_unit:
+    layers = [int(args.zero_unit.split(":")[0])]
+ED = np.load(PO / "edit.npz")
+
+R, NZ = np.load(PO / "resid.npz"), np.load(PO / "neurons.npz")
+
+
+def neuron_stats(region):
+    n = sum(int(NZ[f"cnt_{region}_{h}"]) for h in (0, 1))
+    m = sum(NZ[f"sum_{region}_{h}"] for h in (0, 1)) / n
+    v = np.maximum(sum(NZ[f"sq_{region}_{h}"] for h in (0, 1)) / n - m * m, 1e-12)
+    return m, v  # (24, 3584)
+
+
+means = {r: neuron_stats(r) for r in ("loop", "pre", "clean", "deep")}
+
+
+def lever_cols(L):
+    """top units by |lever score|: (loop - pre activity) x (down_proj column . u), as build_lightmap.lever().
+    Its per-floor SD divisor is left out: it does not change the order."""
+    down = load_file(str(sorted(STOCK.glob("*.safetensors"))[0]))[
+        f"model.language_model.layers.{L}.mlp.down_proj.weight"].double().numpy()
+    u = ED["u15" if L <= 15 else "u19"].astype(np.float64)
+    return np.sort(np.argsort(-np.abs((means["loop"][0][L] - means["pre"][0][L]) * (u @ down)))[:NCOL])
+
+
+if args.lever_cols:  # self-check against the light map: 46 of the published edit's 64 L15 units are top-64 lever units
+    assert len(set(lever_cols(15).tolist()) & set(ED["cols15"].tolist())) == 46
+
+plan, meta = {}, dict(name=args.name, layers=layers, dose=args.dose, random=args.random,
+                      selective=args.selective, seed=args.seed, random_neurons=args.random_neurons,
+                      orig_cols=args.orig_cols, mapped_dir=args.mapped_dir, u_dirs=args.u_dirs,
+                      minus_d=args.minus_d, zero_unit=args.zero_unit, base=Path(args.base).name,
+                      lever_cols=args.lever_cols,
+                      ncol=NCOL, gain=GAIN, per_layer={})
+for L in layers:
+    g = R["resid_loop"][:, L + 1].astype(np.float64).mean(0) - R["resid_pre"][:, L + 1].astype(np.float64).mean(0)
+    gap, d = np.linalg.norm(g), g / np.linalg.norm(g)
+    (ml, vl), (mp, vp) = means["loop"], means["pre"]
+    cohen = (ml[L] - mp[L]) / np.sqrt((vl[L] + vp[L]) / 2)
+    cols = lever_cols(L) if args.lever_cols else np.sort(np.argsort(-np.abs(cohen))[:NCOL])
+    delta_act = (ml[L] - mp[L])[cols]
+    a = -delta_act
+    if args.selective:
+        mc = means["clean"][0][L][cols]
+        a = a - (a @ mc) / (mc @ mc) * mc
+    a = a * (-GAIN * gap * args.dose) / (a @ delta_act)
+    if args.random_neurons:  # same amplitude vector, on neurons that are NOT the loop-active ones
+        pool = np.setdiff1d(np.arange(len(cohen)), cols)
+        cols = np.sort(np.random.default_rng(5000 * args.seed + L).choice(pool, NCOL, replace=False))
+    if args.orig_cols:
+        cols, a = ED[f"cols{L}"], ED[f"a{L}"].astype(np.float64) * args.dose
+        if not args.mapped_dir:
+            d = ED[f"u{L}"].astype(np.float64)
+    direction = d
+    if args.u_dirs:
+        direction = ED[f"u{args.u_dirs.split(',')[layers.index(L)]}"].astype(np.float64)
+        direction = direction / np.linalg.norm(direction)
+    if args.minus_d:
+        direction = direction - (direction @ d) * d
+    if args.random:
+        r = np.random.default_rng(1000 * args.seed + L).standard_normal(1024)
+        r -= (r @ d) * d
+        direction = r / np.linalg.norm(r)
+    if args.zero_unit:  # W[:, unit] += -1 * W[:, unit]
+        cols, a = np.array([int(args.zero_unit.split(":")[1])]), np.array([-1.0])
+        direction = load_file(str(sorted(STOCK.glob("*.safetensors"))[0]))[
+            f"model.language_model.layers.{L}.mlp.down_proj.weight"][:, cols[0]].double().numpy()
+    drive = {reg: round(float(a @ means[reg][0][L][cols]), 3) for reg in means}
+    if not (args.random_neurons or args.orig_cols or args.zero_unit):
+        assert abs((drive["loop"] - drive["pre"]) + GAIN * gap * args.dose) < 0.02 * GAIN * gap * args.dose + 0.01
+    plan[L] = (cols, np.outer(direction, a))
+    meta["per_layer"][f"L{L}"] = dict(resid_gap=round(float(gap), 3), cols=cols.tolist(),
+                                      a=[round(float(x), 5) for x in a], drive=drive,
+                                      fro=round(float(np.linalg.norm(plan[L][1])), 4),
+                                      cos_dir_d=round(float(direction @ d), 4),
+                                      dir_norm=round(float(np.linalg.norm(direction)), 4))
+
+out = Path(args.out)
+if out.exists():
+    shutil.rmtree(out)
+shutil.copytree(args.base, out, ignore=shutil.ignore_patterns(".cache"))
+sf = sorted(out.glob("*.safetensors"))[0]
+ts = load_file(str(sf))
+stock = {}
+for L, (cols, delta) in plan.items():
+    k = f"model.language_model.layers.{L}.mlp.down_proj.weight"
+    stock[k] = ts[k].clone()
+    w = ts[k].float()
+    w[:, cols] += torch.from_numpy(delta).float()
+    ts[k] = w.to(stock[k].dtype)
+save_file(ts, str(sf), metadata={"format": "pt"})
+
+# verify what actually landed on disk (bf16 rounding included)
+back = load_file(str(sf))
+for L, (cols, delta) in plan.items():
+    k = f"model.language_model.layers.{L}.mlp.down_proj.weight"
+    real = back[k].float() - stock[k].float()
+    untouched = np.setdiff1d(np.arange(real.shape[1]), cols)
+    assert not real[:, untouched].any(), f"L{L}: columns outside the plan changed"
+    err = float((real[:, cols] - torch.from_numpy(delta).float()).norm() / np.linalg.norm(delta))
+    assert err < 0.05, f"L{L}: realised delta is off by {err:.3f} (bf16 rounding too coarse?)"
+    meta["per_layer"][f"L{L}"].update(realised_rel_err=round(err, 4), changed_values=int((real != 0).sum()))
+(out / "brake_meta.json").write_text(json.dumps(meta, indent=1))
+(HERE / "causal").mkdir(exist_ok=True)
+(HERE / "causal" / f"{args.name}.json").write_text(json.dumps(meta, indent=1))
+print(args.name, json.dumps({k: {x: v[x] for x in ("resid_gap", "drive", "fro", "cos_dir_d", "realised_rel_err", "changed_values")}
+                             for k, v in meta["per_layer"].items()}))

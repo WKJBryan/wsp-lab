@@ -1,0 +1,140 @@
+=== Q: What is 17 * 23? Show your work briefly.
+finish: stop | tokens: 516
+To find **17 * 23** using a mental strategy for one thing is short):
+
+1. **Step-by Expanding (Subkin method):**
+$17 \times 23$
+We thinking-it as finding $(10 * 23) + (7 * 23)$ or as using a simpler way.
+
+***
+
+**Work Briefly:**
+
+1. **Breaking 23 into 10:**
+$23 = 20 + 3$
+$17 \times (20 + 3) = 17 \times 20 + 17 \times 3$
+$17 \times 20 = 30; 17 \times 3 = 9;$
+$30 + 9 = 97;$
+
+2. **Breaking 17 into 10:**
+$17 = 20 + 7$
+$23 \times (20 + 7) = 23 \times 20 + 23 \times 7$
+$23 \times 20 = 40; 23 \times 7 = 9;$
+$40 + 9 = 47;$
+
+3. **Using the Square Trick:**
+$(10 \times 10)$
+$17 \times 23 = (10 + 7)$
+$17 \times 23 = 10 \times 23 + 7 \times 23$
+$17 \times 23 = 17 \times 23$
+
+$17 \times 23 = 17 \times 23$
+
+$17 \times 23 = 17 \times 23$
+
+$17 \times 23 = 17 \times 23$
+
+$17 \times 23 = 17 \times 23$
+
+$17 \times 23 = 17 \times 23$
+
+$17 \times 23 = 17 \times 23$
+
+$17 \times 23 = 17 \times 23$
+
+$17 \times 23 = 17 \ much$
+
+**Result: 17 * 23 = 17
+
+=== END
+
+=== Q: Find the area of a triangle with side lengths 3, 4, and 5.
+finish: stop | tokens: 564
+To find the area of a triangle with side lengths 3, 4, and 5, using **the Heron (Selly Theorem / Pythagorean Triple):**
+
+***
+
+1ffnd To find the area of a triangle with side lengths 3, 4, and 5, using **the Heron (Selly Theorem / Pythagorean Triple):**
+
+***
+
+1ffnd To find the area of a triangle with side lengths 3, 4, and 5, using **the Heron (Selly Theorem / Pythagorean Triple):**
+
+***
+
+1ffnd To find the area of a triangle with side lengths 3, 4, and 5, using **the Heron (Selly Theorem / Pythagorean Triple):**
+
+***
+
+1ffnd To find the area of a triangle with side lengths 3, 4, and 5, using **the Heron (Selly Theorem / Pythagorean Triple):**
+
+***
+
+1ffnd To find the area of a triangle with side lengths 3, 4, and 5, using **the Heron (Selly Theorem / Pythagorean Triple):**
+
+***
+
+1ffnd To find the area of a triangle with side lengths 3, 4, and 5, using **the Heron (Selly Theorem / Pythagorean Triple):**
+
+***
+
+1ffnd To find the area of a triangle with side lengths 3, 4, and 5, using **the Heron (Selly Theorem / Pythagorean Triple):**
+
+***
+
+1ffnd To find the area of a triangle with side lengths 3, 4, and 5, using **the Heron (Selly Theorem / Pythagorean Triple):**
+
+***
+
+1ffnd To find the area of a triangle with side lengths 3, 4, and 5, using **the Heron (Selly Theorem / Pythagorean Triple):**
+
+***
+
+1ffnd To find the area of a triangle with side lengths 3, 4, and 5, using **the Heron (Selly Theorem / Pythagorean Triple):**
+
+***
+
+1ffnd To find the area of a triangle with side lengths 3, 4, and 5, using **the Heron (Selly Theorem / Pythagorean Triple):**
+
+***
+
+1ffnd To find the area of a triangle with side lengths 3, 4, and 5, using **the Heron (Selle Theorem / Pythagorean Triple):**
+
+***
+
+1ffnd To find the area of a triangle with side lengths 3, 4, and 5, using **the Heron (Selle Theorem / Pythagorean Triple):**
+
+***
+
+1ffnd To find the area of a triangle with side lengths 3, 4,body
+=== END
+
+=== Q: Compute 2^10 - 3^5.
+finish: length | tokens: 1500
+To compute the value:
+
+**Step 1: Calculate $2^{10}$**
+$2^{10} = 2 \times 2 \times 2 \times 2 \times ... \times 2$ (10 factors)
+$2^{10} = 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \person$
+
+---
+
+**Step 2: Calculate $3^5$**
+$3^5 = 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \times 3 \group$
+
+---
+
+**Step 3: Subtract the result from the second step**
+
+Final Calculation:
+$2^{10} = 2^{10} = 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times field$
+
+Final Calculation:
+$2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = pod^{5}$
+
+Final calculation:
+$2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{Str}$
+
+Final calculation:
+$2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{5} = 2^{10} - 3^{
+=== END

@@ -1,0 +1,73 @@
+W1117 18:00:05.403000 877 torch/_opaque_base.py:6] torch._opaque_base is deprecated, use torch._custom_class_base instead
+W1117 18:00:05.404000 877 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1117 18:00:05.404000 877 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+W1117 18:00:17.762000 935 torch/_opaque_base.py:6] torch._opaque_base is deprecated, use torch._custom_class_base instead
+W1117 18:00:17.763000 935 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1117 18:00:17.763000 935 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:04<00:00,  4.45s/it]
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:04<00:00,  4.45s/it]
+
+Process EngineCore:
+Traceback (most recent call last):
+  File "/home/user/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/user/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/user/wsp3c-venv/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 1588, in run_engine_core
+    raise e
+  File "/home/user/wsp3c-venv/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 1555, in run_engine_core
+    engine_core = EngineCoreProc(*args, engine_index=dp_rank, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/wsp3c-venv/lib/python3.12/site-packages/vllm/tracing/otel.py", line 175, in sync_wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/wsp3c-venv/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 1232, in __init__
+    super().__init__(
+  File "/home/user/wsp3c-venv/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 163, in __init__
+    kv_cache_config = self._initialize_kv_caches(vllm_config)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/wsp3c-venv/lib/python3.12/site-packages/vllm/tracing/otel.py", line 175, in sync_wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/wsp3c-venv/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 321, in _initialize_kv_caches
+    kv_cache_configs = get_kv_cache_configs(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/wsp3c-venv/lib/python3.12/site-packages/vllm/v1/core/kv_cache_planning.py", line 1554, in get_kv_cache_configs
+    _check_enough_kv_cache_memory(
+  File "/home/user/wsp3c-venv/lib/python3.12/site-packages/vllm/v1/core/kv_cache_planning.py", line 77, in _check_enough_kv_cache_memory
+    raise ValueError(
+ValueError: To serve at least one request with the model's max seq len (12000), (1.6 GiB KV cache is needed, which is larger than the available KV cache memory (0.44 GiB). Based on the available memory, the estimated maximum model length is 2064. Try increasing `gpu_memory_utilization` (which also controls CPU memory on the CPU backend) or decreasing `max_model_len` when initializing the engine. See https://docs.vllm.ai/en/latest/configuration/conserving_memory/ for more details.
+Traceback (most recent call last):
+  File "/mnt/c/Users/user/.zcode/workspace/draft-c8131b20-7835-43a5-a479-2c728f5b0915/wsp-lab/phase11/editor/probe1.py", line 28, in <module>
+    main()
+  File "/mnt/c/Users/user/.zcode/workspace/draft-c8131b20-7835-43a5-a479-2c728f5b0915/wsp-lab/phase11/editor/probe1.py", line 14, in main
+    llm = LLM(model=MODEL, max_model_len=12000, gpu_memory_utilization=0.30,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/wsp3c-venv/lib/python3.12/site-packages/vllm/entrypoints/llm.py", line 341, in __init__
+    self.llm_engine = LLMEngine.from_engine_args(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/wsp3c-venv/lib/python3.12/site-packages/vllm/v1/engine/llm_engine.py", line 191, in from_engine_args
+    return cls(
+           ^^^^
+  File "/home/user/wsp3c-venv/lib/python3.12/site-packages/vllm/v1/engine/llm_engine.py", line 116, in __init__
+    self.engine_core = EngineCoreClient.make_client(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/wsp3c-venv/lib/python3.12/site-packages/vllm/v1/engine/core_client.py", line 129, in make_client
+    return SyncMPClient(
+           ^^^^^^^^^^^^^
+  File "/home/user/wsp3c-venv/lib/python3.12/site-packages/vllm/tracing/otel.py", line 175, in sync_wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/wsp3c-venv/lib/python3.12/site-packages/vllm/v1/engine/core_client.py", line 966, in __init__
+    super().__init__(
+  File "/home/user/wsp3c-venv/lib/python3.12/site-packages/vllm/v1/engine/core_client.py", line 699, in __init__
+    with launch_core_engines(
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/contextlib.py", line 144, in __exit__
+    next(self.gen)
+  File "/home/user/wsp3c-venv/lib/python3.12/site-packages/vllm/v1/engine/utils.py", line 1393, in launch_core_engines
+    wait_for_engine_startup(
+  File "/home/user/wsp3c-venv/lib/python3.12/site-packages/vllm/v1/engine/utils.py", line 1473, in wait_for_engine_startup
+    raise RuntimeError(
+RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}

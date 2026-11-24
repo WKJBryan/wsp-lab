@@ -1,0 +1,87 @@
+qwen: 24 loop texts, 24 clean texts
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<02:03,  2.58it/s]Loading weights:  12%|█▎        | 40/320 [00:00<00:02, 106.24it/s]Loading weights:  24%|██▍       | 77/320 [00:00<00:01, 178.87it/s]Loading weights:  35%|███▌      | 112/320 [00:00<00:00, 221.53it/s]Loading weights:  46%|████▋     | 148/320 [00:00<00:00, 255.99it/s]Loading weights:  58%|█████▊    | 187/320 [00:00<00:00, 288.68it/s]Loading weights:  70%|███████   | 225/320 [00:01<00:00, 313.88it/s]Loading weights:  81%|████████▏ | 260/320 [00:01<00:00, 323.20it/s]Loading weights:  94%|█████████▍| 302/320 [00:01<00:00, 351.35it/s]Loading weights: 100%|██████████| 320/320 [00:01<00:00, 252.38it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+  m0: T=12000 onset=4388
+  m1: T=12000 onset=9975
+  m10: T=12000 onset=2445
+  m100: T=12000 onset=6534
+  m101: T=12000 onset=4952
+  m102: T=12000 onset=9597
+  m103: T=12000 onset=5451
+  m104: T=12000 onset=2749
+  m105: T=12000 onset=761
+  m106: T=12000 onset=3814
+  m107: T=12000 onset=3652
+  m108: T=12000 onset=4205
+  m109: T=12000 onset=3248
+  m11: T=12000 onset=6361
+  m110: T=12000 onset=3777
+  m111: T=12000 onset=8066
+  m112: T=12000 onset=8647
+  m113: T=12000 onset=4489
+  m115: T=12000 onset=2918
+  m116: T=12000 onset=5036
+  m117: T=12000 onset=5880
+  m118: T=12000 onset=7663
+  m119: T=12000 onset=3240
+{
+ "aucs_loop_vs_pre": [
+  0.574,
+  0.646,
+  0.772,
+  0.77,
+  0.799,
+  0.809,
+  0.838,
+  0.824,
+  0.832,
+  0.828,
+  0.846,
+  0.838,
+  0.839,
+  0.841,
+  0.842,
+  0.839,
+  0.835,
+  0.832,
+  0.829,
+  0.824,
+  0.821,
+  0.817,
+  0.816,
+  0.797
+ ],
+ "trajectory": [
+  -1.022,
+  -1.053,
+  -1.124,
+  -1.049,
+  -1.029,
+  -1.067,
+  -1.025,
+  -0.978,
+  -0.936,
+  -0.905,
+  -0.903,
+  -1.001,
+  -1.059,
+  -0.931,
+  -0.794,
+  -0.654,
+  -0.552,
+  -0.427,
+  -0.35,
+  -0.193,
+  -0.206,
+  -0.216,
+  -0.081,
+  -0.093,
+  -0.031
+ ],
+ "term_row_norm_percentile": {
+  "248069": 0.1681
+ }
+}
+QWEN-OK

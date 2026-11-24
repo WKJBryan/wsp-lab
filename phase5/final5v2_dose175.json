@@ -1,0 +1,4515 @@
+{
+ "summary": {
+  "name": "final5v2_dose175",
+  "model": "/home/user/wsp5/dose175",
+  "cap": 32768,
+  "n": 500,
+  "samples": 4,
+  "accuracy_mean_over_generations": 35.4,
+  "accuracy_mean_over_problems": 35.4,
+  "cap_hit_rate": 21.9,
+  "wall_s": 6027.0
+ },
+ "rows": [
+  {
+   "gold": "\\left( 3, \\frac{\\pi}{2} \\right)",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "p - q",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{14}{3}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "9",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "\\text{Evelyn}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "42",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "27",
+   "sample_ok": [
+    false,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "90^\\circ",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "3\\sqrt{13}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "4",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "2220",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{3}{56}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "284",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "5",
+   "sample_ok": [
+    false,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\sqrt{51}",
+   "sample_ok": [
+    false,
+    false,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "6 - 5i",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "-50",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\pi",
+   "sample_ok": [
+    true,
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "28",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "3",
+   "sample_ok": [
+    true,
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "6+9i",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "13535",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "5",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "x=5",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "10",
+   "sample_ok": [
+    true,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "1,-2",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "144",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "78",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "-2 + 7i",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "225",
+   "sample_ok": [
+    true,
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "52_8",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "11\\sqrt2",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "720",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{243}{625}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "-125",
+   "sample_ok": [
+    true,
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "3",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "3, 5, 7",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "72",
+   "sample_ok": [
+    true,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "2000",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "23",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "12",
+   "sample_ok": [
+    true,
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "17",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "4",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "70 \\sqrt{2}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "1.25",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "2",
+   "sample_ok": [
+    true,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "6",
+   "sample_ok": [
+    false,
+    false,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "5",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\frac{3}{2}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "83",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "203",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "x^5 - x^4 + x^3 - x^2 + x - 1",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "12",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "-\\frac{\\pi}{6}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "0.15",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "3",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "11",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "16",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "9901",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "5",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "(6,31,-1)",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "-256",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "4",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "10",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{35}{64}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "1",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "x^3+3x-6",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "10",
+   "sample_ok": [
+    false,
+    false,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "46",
+   "sample_ok": [
+    true,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "-1",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "40_9",
+   "sample_ok": [
+    false,
+    false,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "2516_8",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "3",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\frac{3\\sqrt{3}}{4}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\cot x",
+   "sample_ok": [
+    false,
+    false,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{11}{36}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "0",
+   "sample_ok": [
+    false,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "4",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "(-2,1)",
+   "sample_ok": [
+    true,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "2",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "501",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "3",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\frac{3}{2}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "2",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "-1",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\sqrt{5}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "240",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "1",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "2",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "21",
+   "sample_ok": [
+    true,
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\frac{3}{2}",
+   "sample_ok": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "1",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\frac{448}{15625}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "33",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "80",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "-4",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "1 \\pm \\sqrt{19}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\text{east}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "2k+2",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\begin{pmatrix} -1/3 \\\\ 2/3 \\\\ 5/3 \\end{pmatrix}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "145^\\circ",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "850",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "(a+5)(b+2)",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "(3,4]",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "40",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "29",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac43",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "9",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "2",
+   "sample_ok": [
+    false,
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "120^\\circ",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "504",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "210",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "13",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "8000",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "-5",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "1260",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "2",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "3",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "81",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "-9",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\text{even}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "6",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "9",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "8",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "\\frac{11}{2}",
+   "sample_ok": [
+    false,
+    false,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "-3",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "1+274i",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "4210_{5}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "36",
+   "sample_ok": [
+    true,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{3840}{289}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "13",
+   "sample_ok": [
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "8",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "4",
+   "sample_ok": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "120",
+   "sample_ok": [
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "16",
+   "sample_ok": [
+    false,
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "9",
+   "sample_ok": [
+    true,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "64",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "204_5",
+   "sample_ok": [
+    false,
+    false,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{1}{3}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "1",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "13",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "2",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "28800",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "3 \\sqrt{5}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "(15,-29)",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "-2",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{\\sqrt{3}}{3}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "16",
+   "sample_ok": [
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "11",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "49",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "1",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "144",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "8",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{2}{21}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "2\\sqrt{113}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{1}{4}",
+   "sample_ok": [
+    false,
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "30^\\circ",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac65",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "2107",
+   "sample_ok": [
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "3.21",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "18",
+   "sample_ok": [
+    false,
+    false,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "6",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\dfrac{17}{50}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "-\\frac{35}{9}",
+   "sample_ok": [
+    true,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "-\\sqrt{3}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{4}{9}",
+   "sample_ok": [
+    false,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\frac{270}7\\text{ degrees}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "65",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "19",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "12",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "1736",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{13}{15}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "350",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "4",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "2",
+   "sample_ok": [
+    false,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "3",
+   "sample_ok": [
+    false,
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": ".0000672",
+   "sample_ok": [
+    true,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "30^\\circ",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "60",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "5x - 7y + 11z + 4 = 0",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "3",
+   "sample_ok": [
+    false,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\frac{\\sqrt{3}}{3}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "1251",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "23",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "(2,\\infty)",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "1",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "7",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "7",
+   "sample_ok": [
+    true,
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "6",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "160",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{13}{18}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "0",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "30",
+   "sample_ok": [
+    true,
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "4",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{1}{4}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "24",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "1600",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "6",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "10,\\!080",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "17",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "40",
+   "sample_ok": [
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "66",
+   "sample_ok": [
+    true,
+    false,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{2}{3}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "12",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "0",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\begin{pmatrix} -2 \\\\ -14 \\\\ -7 \\end{pmatrix}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\left( \\frac{3}{2}, -13 \\right)",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "28",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "1",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "16",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "10",
+   "sample_ok": [
+    true,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "5",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "56",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "2",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "110",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "2",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "6",
+   "sample_ok": [
+    true,
+    false,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "11,\\! 111,\\! 111,\\! 100",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "(-1,6)",
+   "sample_ok": [
+    true,
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\frac{1}{2}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{16}{27}",
+   "sample_ok": [
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "900",
+   "sample_ok": [
+    false,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "54",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "14",
+   "sample_ok": [
+    false,
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\frac{9}{256}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "11",
+   "sample_ok": [
+    true,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "3",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "\\text{(C)}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "288 \\pi",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "90",
+   "sample_ok": [
+    false,
+    false,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{16}{5}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "10",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{1997}{2}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "30^\\circ",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "34",
+   "sample_ok": [
+    true,
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\frac 59",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "12",
+   "sample_ok": [
+    true,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "22",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "-4",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "16",
+   "sample_ok": [
+    false,
+    false,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "116",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "17",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "\\$32,\\!348",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "3",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "8",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "-13x+3",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "8",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{10}{11}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\begin{pmatrix} -1 & 0 \\\\ 0 & -1 \\end{pmatrix}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "17",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "13",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "540",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "81",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\frac{1}{8}",
+   "sample_ok": [
+    false,
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "28",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\text{(E)}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "\\frac{8}{21}",
+   "sample_ok": [
+    false,
+    false,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "864 \\mbox{ inches}^2",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "16",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "22",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "120^\\circ",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "76^\\circ",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "4",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "15",
+   "sample_ok": [
+    true,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "1\\frac{4}{5}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "4005",
+   "sample_ok": [
+    false,
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\dfrac{33}{100}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "180^\\circ",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "1",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "6",
+   "sample_ok": [
+    true,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "10",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "333",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "1030",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "1250",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "18+2\\pi",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "7",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "11",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\sqrt{53}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "255",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "7\\pi",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "8",
+   "sample_ok": [
+    true,
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "36^\\circ",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "129",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "1",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "3 \\pm 2 \\sqrt{2}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "440",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{17}{21}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "36",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "7",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "16",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "4",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "63",
+   "sample_ok": [
+    false,
+    false,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "898",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\left(\\frac{3}{5},\\frac{8}{3}\\right]",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "58",
+   "sample_ok": [
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "11",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\text{(B)}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "103",
+   "sample_ok": [
+    false,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\begin{pmatrix} -18 \\\\ -49 \\\\ 96 \\end{pmatrix}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "63",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "12",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "5.4 \\text{ cents}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "5",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "28",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "9",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\frac9{19}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "6",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "(-\\infty, 0]",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "1+2\\sqrt{3}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "14",
+   "sample_ok": [
+    true,
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "49",
+   "sample_ok": [
+    false,
+    false,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "3",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "(5,\\infty)",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "12\\pi",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "(2,4)",
+   "sample_ok": [
+    false,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "41",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "12",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "0",
+   "sample_ok": [
+    false,
+    false,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{11+9a}{20}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "-128",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "-\\frac{24}{25}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "10",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "-1",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\frac{1}{3}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "120",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "4",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\frac{9}{100}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "15",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "3",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "4",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "1940",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "\\frac{13}{6}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "2",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "3",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "-120",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "3",
+   "sample_ok": [
+    true,
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "26000",
+   "sample_ok": [
+    false,
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "6",
+   "sample_ok": [
+    false,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "4343_6",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "2k",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "55^\\circ",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "-2",
+   "sample_ok": [
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "2",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "58,500",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "5",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "1",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "66",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "6r^2-4r-24",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "4495",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "10080",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "4",
+   "sample_ok": [
+    false,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\frac{1}{16}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "11 \\sqrt{5} + 11",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "480",
+   "sample_ok": [
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "81",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "100",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "(-\\sqrt{3}, \\sqrt{3})",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "4",
+   "sample_ok": [
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\text{ellipse}",
+   "sample_ok": [
+    true,
+    false,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "6",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{7}{4}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "16 \\sqrt{3}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac14",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "2",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "(1,-16,-4,43)",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "8",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "4",
+   "sample_ok": [
+    true,
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "1",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "31",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "21",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "-41",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "17",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "90^\\circ",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "1+2i",
+   "sample_ok": [
+    true,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "4",
+   "sample_ok": [
+    true,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "25",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "(8,-2)",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "6",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "3",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "12",
+   "sample_ok": [
+    false,
+    false,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "(0,9) \\cup (9,36)",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{1}{2}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{20000}{\\pi}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "x \\in [-2,7]",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "15x - 80",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "22",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "11",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "18",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\frac{11}{2}",
+   "sample_ok": [
+    true,
+    false,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{\\sqrt{21}}{5}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "12",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "0",
+   "sample_ok": [
+    false,
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "\\sqrt{66}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac 34",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "-\\frac{3}{8}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "4",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "2",
+   "sample_ok": [
+    true,
+    false,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "23",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\text{Navin}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "326.5",
+   "sample_ok": [
+    true,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "\\frac{14}{3}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{13}{4}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "1 - 12i",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "3",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "3",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "60",
+   "sample_ok": [
+    true,
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "0",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "9",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\begin{pmatrix} 1/5 \\\\ -18/5 \\end{pmatrix}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "2 \\sqrt{5}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "6",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "60",
+   "sample_ok": [
+    false,
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "406",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "5r^5",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "10",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "9",
+   "sample_ok": [
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{1}{8}",
+   "sample_ok": [
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "-2",
+   "sample_ok": [
+    false,
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "2\\sqrt{5}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\begin{pmatrix} -7 \\\\ 16 \\\\ 5 \\end{pmatrix}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\begin{pmatrix} 16/49 \\\\ 48/49 \\\\ 24/49 \\end{pmatrix}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "27",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\{1\\pm\\sqrt{5},-2\\}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "1440",
+   "sample_ok": [
+    false,
+    false,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "600",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "3R^2",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "6\\sqrt{2}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "29",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "64",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "50",
+   "sample_ok": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "4.5",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\left[ \\frac{\\pi^2}{8}, \\frac{5 \\pi^2}{4} \\right]",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "331",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": ".35625",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "32",
+   "sample_ok": [
+    true,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "(-\\infty, 2) \\cup (3, \\infty)",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "4",
+   "sample_ok": [
+    true,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "3",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "4",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + x^2 + x + 1",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "14",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "550",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "256",
+   "sample_ok": [
+    true,
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "45",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "\\frac{1}{2}",
+   "sample_ok": [
+    false,
+    false,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "15",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "8",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "9",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "44",
+   "sample_ok": [
+    true,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "47",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "64",
+   "sample_ok": [
+    true,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{639}{40}",
+   "sample_ok": [
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "143",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "10",
+   "sample_ok": [
+    true,
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "y = 2x + 3",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "6",
+   "sample_ok": [
+    true,
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "-2,1",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "0",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "41",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\$18.90",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "75^\\circ",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "12",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "59",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "2",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "9",
+   "sample_ok": [
+    true,
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "121",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "8 \\pi",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "15\\mbox{ cm}^2",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "8",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "25",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "27648",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "84",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "137 \\frac{1}{2}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "7",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "3",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "29",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "200",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "2",
+   "sample_ok": [
+    true,
+    true,
+    false,
+    true
+   ]
+  },
+  {
+   "gold": "\\frac{2}{1005}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "2",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "1",
+   "sample_ok": [
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "8n^2 + 4n + 1",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "202",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{8}{15}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "10",
+   "sample_ok": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "13",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "216",
+   "sample_ok": [
+    false,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "2",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "\\$36",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "15",
+   "sample_ok": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "gold": "14",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "64",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "y = -2x",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "20",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{1}{4}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "(2,12) \\cup (12,102)",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{5}{13}",
+   "sample_ok": [
+    false,
+    false,
+    true,
+    false
+   ]
+  },
+  {
+   "gold": "\\frac{7}{2}",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "-1",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "gold": "106^\\circ",
+   "sample_ok": [
+    false,
+    false,
+    false,
+    false
+   ]
+  }
+ ]
+}

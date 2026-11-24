@@ -13,7 +13,7 @@ def canonical(s: str) -> str:
     s = s.strip()
     s = s.replace("\\!", "").replace("\\,", "").replace("\\ ", "")
     s = s.replace("\\left", "").replace("\\right", "")
-    s = s.replace("$", "").replace("\\$", "")
+    s = s.replace("\\$", "$").replace("$", "")   # an escaped dollar first: "\$10" is 10, not "\10" (ISSUES #19)
     s = s.replace("\\(", "").replace("\\)", "")
     s = re.sub(r"\\(?:text|mbox)\{([^{}]*)\}", r"\1", s)
     s = s.replace("^{0}", "").replace("^0", "")
@@ -69,6 +69,7 @@ if __name__ == "__main__":
         ("\\frac{1}{2}", "1/2", True), ("0.75", "\\frac{3}{4}", True),
         ("-3", "-3.0", True), ("2\\pi", "2\\pi", True), ("x=2", "2", False),
         ("(3,5)", "(3, 5)", True), ("5", "6", False), ("1,000", "1000", False),
+        ("\\$10", "10", True), ("10", "$\\$10$", True), ("\\$18.90", "18.9", True),
     ]
     n_ok = 0
     for gold, pred, want in cases:

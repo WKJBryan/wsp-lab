@@ -1,0 +1,114 @@
+=== k_proj vs v_proj per sliding layer ===
+layer 0   |k|=77.84 |v|=78.18 |k-v|=110.4 cos=-0.0007
+layer 1   |k|=76.62 |v|=80.19 |k-v|=110.9 cos=-0.0007
+layer 2   |k|=79.2 |v|=86.05 |k-v|=117 cos=-0.0009
+layer 3   |k|=78.25 |v|=83.31 |k-v|=114.3 cos=-0.0008
+layer 4   |k|=76.58 |v|=83.87 |k-v|=113.6 cos=-0.0002
+layer 5   k_proj present=True v_proj present=False
+layer 6   |k|=82.18 |v|=85.66 |k-v|=118.7 cos=-0.0001
+layer 7   |k|=82.29 |v|=85.9 |k-v|=118.9 cos=+0.0002
+layer 8   |k|=76.66 |v|=79.38 |k-v|=110.4 cos=-0.0008
+layer 9   |k|=78.01 |v|=80.24 |k-v|=111.9 cos=-0.0000
+layer 10  |k|=72.58 |v|=78.49 |k-v|=106.9 cos=+0.0001
+layer 11  k_proj present=True v_proj present=False
+layer 12  |k|=73.25 |v|=75.3 |k-v|=105 cos=+0.0009
+layer 13  |k|=70.99 |v|=74.57 |k-v|=103 cos=-0.0003
+layer 14  |k|=71.32 |v|=77.03 |k-v|=104.9 cos=+0.0007
+layer 15  |k|=67.67 |v|=70.64 |k-v|=97.85 cos=-0.0008
+layer 16  |k|=66.49 |v|=71.18 |k-v|=97.37 cos=+0.0004
+layer 17  k_proj present=True v_proj present=False
+layer 18  |k|=72.3 |v|=76.52 |k-v|=105.3 cos=-0.0005
+layer 19  |k|=70.83 |v|=71.62 |k-v|=100.8 cos=-0.0019
+layer 20  |k|=71.84 |v|=76.26 |k-v|=104.8 cos=-0.0004
+layer 21  |k|=73.18 |v|=78.81 |k-v|=107.5 cos=+0.0002
+layer 22  |k|=66.45 |v|=70.87 |k-v|=97.11 cos=+0.0005
+layer 23  k_proj present=True v_proj present=False
+layer 24  |k|=73.43 |v|=77.23 |k-v|=106.5 cos=+0.0008
+layer 25  |k|=68.78 |v|=73.89 |k-v|=100.9 cos=+0.0002
+layer 26  |k|=72.19 |v|=73.34 |k-v|=102.8 cos=+0.0011
+layer 27  |k|=68.6 |v|=69.03 |k-v|=97.28 cos=+0.0007
+layer 28  |k|=69.63 |v|=80.76 |k-v|=106.6 cos=+0.0001
+layer 29  k_proj present=True v_proj present=False
+
+=== Row-norm outliers (rows deviating >6x or <1/6x from median) ===
+model.language_model.layers.0.self_attn.q_proj.weight: 1 outlier rows (median 1.511); first 20: [1227]
+model.language_model.layers.10.self_attn.k_proj.weight: 2 outlier rows (median 1.436); first 20: [567, 695]
+model.language_model.layers.11.self_attn.k_proj.weight: 2 outlier rows (median 1.628); first 20: [517, 773]
+model.language_model.layers.11.self_attn.q_proj.weight: 14 outlier rows (median 1.792); first 20: [4146, 4402, 4658, 4914, 5170, 5426, 5682, 5938, 6194, 6450, 6706, 6962, 7218, 7474]
+model.language_model.layers.12.self_attn.k_proj.weight: 3 outlier rows (median 1.49); first 20: [312, 440, 1723]
+model.language_model.layers.12.self_attn.q_proj.weight: 7 outlier rows (median 1.593); first 20: [1797, 1925, 2058, 2186, 2314, 2442, 3336]
+model.language_model.layers.13.self_attn.k_proj.weight: 8 outlier rows (median 1.343); first 20: [294, 422, 533, 661, 821, 949, 1579, 1707]
+model.language_model.layers.13.self_attn.q_proj.weight: 13 outlier rows (median 1.545); first 20: [135, 513, 641, 897, 1545, 1548, 1552, 1673, 1676, 1680, 2830, 2958, 3331]
+model.language_model.layers.14.self_attn.k_proj.weight: 8 outlier rows (median 1.288); first 20: [4, 132, 831, 959, 1293, 1421, 1793, 1921]
+model.language_model.layers.14.self_attn.q_proj.weight: 26 outlier rows (median 1.539); first 20: [779, 907, 2051, 2179, 2307, 2435, 2563, 2691, 2819, 2947, 3078, 3081, 3206, 3209, 3337, 3465, 3588, 3716, 3842, 3844]
+model.language_model.layers.15.self_attn.k_proj.weight: 4 outlier rows (median 1.303); first 20: [522, 650, 1834, 1962]
+model.language_model.layers.15.self_attn.q_proj.weight: 11 outlier rows (median 1.509); first 20: [10, 138, 266, 394, 517, 645, 773, 901, 2571, 2699, 2827]
+model.language_model.layers.16.self_attn.k_proj.weight: 2 outlier rows (median 1.353); first 20: [574, 702]
+model.language_model.layers.16.self_attn.q_proj.weight: 14 outlier rows (median 1.515); first 20: [2, 258, 1280, 1286, 1290, 1299, 1310, 1408, 1414, 1418, 1427, 1438, 1542, 1670]
+model.language_model.layers.17.mlp.down_proj.weight: 1 outlier rows (median 1.43); first 20: [1238]
+model.language_model.layers.17.self_attn.k_proj.weight: 2 outlier rows (median 1.656); first 20: [535, 791]
+model.language_model.layers.17.self_attn.q_proj.weight: 7 outlier rows (median 1.799); first 20: [8, 264, 520, 776, 1544, 1800, 1816]
+model.language_model.layers.18.self_attn.k_proj.weight: 8 outlier rows (median 1.453); first 20: [196, 516, 644, 833, 961, 1217, 1538, 1666]
+model.language_model.layers.19.self_attn.k_proj.weight: 4 outlier rows (median 1.356); first 20: [258, 386, 451, 1725]
+model.language_model.layers.19.self_attn.q_proj.weight: 5 outlier rows (median 1.52); first 20: [2048, 2059, 2077, 2183, 2205]
+model.language_model.layers.20.self_attn.k_proj.weight: 5 outlier rows (median 1.475); first 20: [574, 702, 832, 1861, 1989]
+model.language_model.layers.20.self_attn.q_proj.weight: 2 outlier rows (median 1.62); first 20: [1029, 1157]
+model.language_model.layers.21.self_attn.k_proj.weight: 2 outlier rows (median 1.498); first 20: [1076, 1204]
+model.language_model.layers.21.self_attn.q_proj.weight: 2 outlier rows (median 1.605); first 20: [6, 134]
+model.language_model.layers.22.self_attn.k_proj.weight: 2 outlier rows (median 1.378); first 20: [1853, 1981]
+model.language_model.layers.22.self_attn.q_proj.weight: 11 outlier rows (median 1.452); first 20: [1158, 1286, 1414, 2561, 2689, 2817, 2945, 3585, 3713, 3841, 3969]
+model.language_model.layers.23.self_attn.q_proj.weight: 298 outlier rows (median 1.607); first 20: [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 19, 20, 22, 23]
+model.language_model.layers.24.self_attn.k_proj.weight: 6 outlier rows (median 1.543); first 20: [833, 961, 1345, 1473, 1601, 1729]
+model.language_model.layers.24.self_attn.q_proj.weight: 4 outlier rows (median 1.548); first 20: [2051, 2179, 2307, 2435]
+model.language_model.layers.25.self_attn.o_proj.weight: 1 outlier rows (median 1.907); first 20: [902]
+model.language_model.layers.25.self_attn.q_proj.weight: 17 outlier rows (median 1.39); first 20: [517, 645, 1155, 1283, 1411, 1537, 1566, 1665, 1694, 2049, 2051, 2177, 2179, 2305, 2307, 2433, 2435]
+model.language_model.layers.26.self_attn.k_proj.weight: 5 outlier rows (median 1.531); first 20: [773, 901, 1304, 1432, 1865]
+model.language_model.layers.26.self_attn.q_proj.weight: 10 outlier rows (median 1.536); first 20: [2056, 2184, 2312, 2440, 2819, 2821, 2823, 2947, 2949, 2951]
+model.language_model.layers.27.self_attn.k_proj.weight: 5 outlier rows (median 1.426); first 20: [836, 1329, 1457, 1591, 1719]
+model.language_model.layers.28.mlp.gate_proj.weight: 1 outlier rows (median 1.377); first 20: [199]
+model.language_model.layers.28.self_attn.q_proj.weight: 8 outlier rows (median 1.392); first 20: [2048, 2176, 2304, 2432, 3591, 3719, 3847, 3975]
+model.language_model.layers.29.self_attn.q_proj.weight: 7 outlier rows (median 1.491); first 20: [4098, 4106, 4107, 4108, 4359, 4363, 4364]
+model.language_model.layers.5.self_attn.k_proj.weight: 4 outlier rows (median 1.982); first 20: [41, 297, 549, 805]
+model.language_model.layers.8.self_attn.k_proj.weight: 4 outlier rows (median 1.592); first 20: [317, 445, 1084, 1212]
+model.language_model.layers.9.self_attn.k_proj.weight: 2 outlier rows (median 1.68); first 20: [558, 686]
+model.vision_tower.patch_embedder.input_proj.weight: 330 outlier rows (median 0.9939); first 20: [5, 6, 7, 16, 18, 22, 29, 31, 32, 35, 39, 47, 48, 50, 52, 54, 56, 58, 70, 71]
+(total flagged tensors: 41)
+
+=== embed_tokens row norms ===
+quantiles [min,0.1%,1%,25%,50%,75%,99%,99.9%,max]: 0.9981 1.008 1.014 1.436 1.559 1.636 1.842 2.067 6.022
+rows with norm < 1% of median: 0
+
+=== per-expert norms (experts.gate_up_proj / down_proj) ===
+layer 0   gate_up:  56.20  51.58  54.46  54.53  46.01  57.47  41.45  52.03 | down:  61.60  62.12  61.31  61.97  58.64  62.05  56.18  60.88
+layer 1   gate_up:  57.79  59.50  48.51  57.39  57.70  57.97  56.96  54.92 | down:  62.95  63.33  57.01  60.64  62.74  62.46  62.24  60.23
+layer 2   gate_up:  57.20  62.07  59.32  60.54  55.40  56.14  55.51  60.27 | down:  61.59  66.03  62.09  62.80  60.65  60.12  60.78  64.09
+layer 3   gate_up:  61.08  56.12  56.30  51.22  56.05  59.72  55.19  61.76 | down:  65.04  61.34  60.22  57.86  60.80  64.02  62.04  65.44
+layer 4   gate_up:  58.54  54.34  55.24  51.75  62.22  64.47  58.26  58.64 | down:  62.67  60.19  60.15  58.66  64.90  65.27  62.55  60.90
+layer 5   gate_up:  62.54  61.45  55.63  59.98  61.88  58.74  52.82  65.59 | down:  62.97  61.45  59.35  62.49  62.59  61.24  57.77  65.44
+layer 6   gate_up:  52.44  57.19  56.15  54.38  57.32  61.74  52.49  59.45 | down:  60.36  62.95  62.76  61.16  63.85  65.53  58.80  62.48
+layer 7   gate_up:  62.60  66.30  62.73  64.86  57.42  61.88  62.64  56.31 | down:  61.94  64.64  63.86  64.25  59.61  62.70  63.75  59.77
+layer 8   gate_up:  64.02  59.75  62.56  52.08  53.60  63.70  57.95  62.88 | down:  66.11  61.96  65.13  57.14  58.70  65.62  60.56  64.31
+layer 9   gate_up:  60.00  60.33  60.44  60.37  47.71  54.92  59.58  58.65 | down:  64.79  63.87  64.83  64.94  58.07  60.77  63.37  63.45
+layer 10  gate_up:  65.26  63.93  53.62  56.02  64.05  65.42  52.00  51.29 | down:  65.52  64.53  57.49  59.64  64.71  65.52  57.53  57.33
+layer 11  gate_up:  60.19  60.10  49.96  56.90  49.28  62.20  62.52  46.44 | down:  62.33  64.32  57.67  62.51  57.75  64.40  65.85  57.74
+layer 12  gate_up:  60.22  48.03  59.21  52.59  50.88  50.36  53.51  58.04 | down:  62.10  56.28  62.48  58.90  57.63  56.80  57.61  62.63
+layer 13  gate_up:  56.44  57.77  52.45  59.46  61.54  60.90  55.41  44.44 | down:  60.68  62.81  60.00  63.96  62.28  63.12  61.42  55.06
+layer 14  gate_up:  59.68  56.31  54.39  68.40  50.43  64.81  51.57  52.79 | down:  62.00  59.41  58.53  61.88  55.24  62.47  57.81  57.33
+layer 15  gate_up:  59.50  54.88  54.70  48.01  59.71  55.67  63.64  51.20 | down:  61.00  59.49  58.76  56.21  62.59  61.38  60.70  58.10
+layer 16  gate_up:  56.56  52.44  48.77  48.21  52.08  49.73  60.96  47.25 | down:  60.74  59.37  57.52  55.73  57.37  57.61  61.86  57.73
+layer 17  gate_up:  49.77  48.13  62.02  61.21  58.69  48.35  47.18  49.82 | down:  57.40  60.34  62.40  61.54  63.68  58.54  57.82  57.17
+layer 18  gate_up:  52.78  52.99  48.90  48.98  52.18  61.09  54.36  49.62 | down:  60.86  61.03  56.04  58.89  61.02  62.93  59.13  59.85
+layer 19  gate_up:  53.26  49.52  50.79  65.31  53.64  57.80  63.57  50.04 | down:  59.28  55.89  56.78  64.46  59.59  60.83  63.22  58.98
+layer 20  gate_up:  54.04  50.35  58.88  54.44  52.06  63.38  55.49  61.54 | down:  58.47  58.41  60.74  58.66  59.19  61.42  59.65  62.40
+layer 21  gate_up:  57.81  57.23  60.50  55.98  60.79  62.24  62.60  52.98 | down:  59.91  60.26  60.86  58.11  62.07  62.75  61.46  56.87
+layer 22  gate_up:  62.56  46.78  50.08  52.85  52.30  52.66  61.40  49.15 | down:  64.07  56.95  59.32  56.48  57.27  58.13  64.31  58.64
+layer 23  gate_up:  57.91  49.33  56.49  59.48  53.17  54.60  61.17  50.88 | down:  61.63  57.65  60.23  62.05  59.48  59.21  60.96  57.97
+layer 24  gate_up:  62.80  53.46  64.08  62.05  58.73  54.59  52.24  61.22 | down:  64.17  58.70  63.84  59.62  60.19  58.54  56.40  62.49
+layer 25  gate_up:  57.76  59.71  53.31  51.84  64.71  60.86  59.13  60.82 | down:  60.36  60.59  58.04  55.90  61.20  60.93  59.92  59.99
+layer 26  gate_up:  54.90  49.01  54.40  48.20  48.87  51.91  51.19  49.34 | down:  58.93  56.56  58.72  55.73  57.31  59.50  58.91  57.27
+layer 27  gate_up:  50.35  58.23  49.01  55.51  47.70  50.07  46.84  56.58 | down:  57.55  59.32  56.61  60.15  56.88  58.16  55.15  60.69
+layer 28  gate_up:  61.22  47.59  56.34  49.57  60.90  50.52  52.40  50.44 | down:  61.46  55.18  59.03  55.84  61.16  55.99  59.43  56.40
+layer 29  gate_up:  45.17  53.39  46.93  46.63  51.79  47.02  45.24  54.01 | down:  54.14  60.86  56.37  55.13  58.11  53.84  53.13  59.82
+
+=== layer_scalar ===
+0:0.07031 1:0.2031 2:0.1699 3:0.5156 4:0.6758 5:0.6523 6:0.6914 7:0.7031 8:0.7383 9:0.7305 10:0.7266 11:0.6758 12:0.7188 13:0.7109 14:0.6367 15:0.5586 16:0.5547 17:0.6172 18:0.7539 19:0.6055 20:0.7617 21:0.7617 22:0.7617 23:0.7695 24:0.8164 25:0.8047 26:0.75 27:0.7344 28:0.6758 29:0.1953

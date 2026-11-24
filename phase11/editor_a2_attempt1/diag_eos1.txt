@@ -1,0 +1,41 @@
+last content token: eos rank=7 eot rank=0 top5=[('<turn|>', 22.1), ('\n\n', 16.6), ('<channel|>', 14.6), ('\n', 14.2), (' (', 12.4)]
+after \boxed{380}$.: eos rank=7 eot rank=0 top5=[('<turn|>', 22.1), ('\n\n', 16.6), ('<channel|>', 14.6), ('\n', 14.2), (' (', 12.4)]
+after correct answer, top10: [('<turn|>', 22.1), ('\n\n', 16.6), ('<channel|>', 14.6), ('\n', 14.2), (' (', 12.4), (' |', 10.2), (' ', 10.1), ('<eos>', 9.8), ('/', 9.6), ('_', 9.4)]
+
+teacher-forcing the correct answer (logit rank of each true next token):
+[('To', 0), (' compute', 0), (' $', 0), ('1', 0), ('7', 0), (' \\', 0), ('times', 0), (' ', 0), ('2', 0), ('3', 0), (' -', 0), (' ', 0), ('1', 0), ('1', 0), ('$:', 0), ('\n\n', 0), ('**', 0), ('Step', 0), (' ', 0), ('1', 0), (':', 0), (' Multiplication', 0), ('.**', 201), (' $', 4), ('1', 0), ('7', 0), (' \\', 0), ('times', 0), (' ', 0), ('2', 0), ('3', 0), (' =', 1), (' ', 0), ('3', 7), ('9', 94), ('1', 1), ('$.', 1), ('\n\n', 0), ('**', 0), ('Step', 0), (' ', 0), ('2', 0), (':', 0), (' Sub', 0), ('traction', 0), ('.**', 0), (' $', 0), ('3', 0), ('9', 0), ('1', 0), (' -', 0), (' ', 0), ('1', 0), ('1', 0), (' =', 0), (' ', 0), ('3', 1), ('8', 1), ('0', 2), ('$.', 0), ('\n\n', 0), ('The', 6), (' answer', 4), (' is', 0), (' $\\', 7), ('boxed', 3), ('{', 0), ('3', 0), ('8', 0), ('0', 0), ('}$.', 0)]
+
+per-head max attn prob at end of correct answer:
+L0  min=0.159 mean=0.466 max=0.984 heads>0.5: 6
+L1  min=0.059 mean=0.388 max=0.730 heads>0.5: 5
+L2  min=0.053 mean=0.279 max=0.566 heads>0.5: 3
+L3  min=0.097 mean=0.286 max=0.707 heads>0.5: 1
+L4  min=0.157 mean=0.337 max=0.840 heads>0.5: 2
+L5  min=0.115 mean=0.271 max=0.586 heads>0.5: 3
+L6  min=0.145 mean=0.293 max=0.586 heads>0.5: 2
+L7  min=0.155 mean=0.297 max=0.504 heads>0.5: 1
+L8  min=0.068 mean=0.245 max=0.500 heads>0.5: 0
+L9  min=0.102 mean=0.244 max=0.389 heads>0.5: 0
+L10 min=0.105 mean=0.228 max=0.457 heads>0.5: 0
+L11 min=0.102 mean=0.183 max=0.365 heads>0.5: 0
+L12 min=0.088 mean=0.259 max=0.844 heads>0.5: 1
+L13 min=0.087 mean=0.222 max=0.457 heads>0.5: 0
+L14 min=0.119 mean=0.218 max=0.414 heads>0.5: 0
+L15 min=0.127 mean=0.281 max=0.656 heads>0.5: 2
+L16 min=0.163 mean=0.294 max=0.451 heads>0.5: 0
+L17 min=0.122 mean=0.281 max=0.531 heads>0.5: 1
+L18 min=0.137 mean=0.316 max=0.512 heads>0.5: 2
+L19 min=0.126 mean=0.322 max=0.664 heads>0.5: 3
+L20 min=0.193 mean=0.349 max=0.656 heads>0.5: 3
+L21 min=0.211 mean=0.379 max=0.613 heads>0.5: 5
+L22 min=0.197 mean=0.379 max=0.742 heads>0.5: 3
+L23 min=0.175 mean=0.294 max=0.648 heads>0.5: 1
+L24 min=0.162 mean=0.455 max=0.895 heads>0.5: 6
+L25 min=0.113 mean=0.492 max=0.719 heads>0.5: 8
+L26 min=0.264 mean=0.429 max=0.727 heads>0.5: 4
+L27 min=0.186 mean=0.427 max=0.836 heads>0.5: 4
+L28 min=0.158 mean=0.314 max=0.566 heads>0.5: 3
+L29 min=0.231 mean=0.378 max=0.887 heads>0.5: 2
+
+expert cross-cosine (layer 15 sample + max over layers):
+L15 expert cos matrix:

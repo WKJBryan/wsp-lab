@@ -1,0 +1,61 @@
+Q: What is $1+1$?  [want 2]
+  sampled(OK,1024tok,length): "To this is a math question, you're essentially computing by following that you're **2ly** math question, but I'll be a simple addition task, **yet ple"
+  greedy  (OK,44tok,stop): 'To this matter is easy enough to use the basic arithmetic rules for addition. In the following steps: |  | **$1 + 1 = 2$** |  | *** |  | **By the result is 2.**'
+Q: Compute $2 \cdot 3 + 4$.  [want 10]
+  sampled(X,1024tok,length): 'To compute the expression $2 \\cdot 3 + 4$, we follow the mathematical order according to the operations following the rules of order-of-calculation (P'
+  greedy  (X,1024tok,length): 'To a single-order-of-mathemat-of-physics-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-o'
+Q: If $f(x)=3x+2$, what is $f(2)$?  [want 8]
+  sampled(X,1024tok,length): 'To find $f(2)$ when $f(x) = 3x + 2$, we use the principle of **substitution**: |  | If $f(x) = 3x + 2$, then by letting $x = 2$, we have $f(2) = 3(2) + 2$'
+  greedy  (X,169tok,stop): "To find $f(2)$ when you're given that $f(x) = 3x + 2$. |  | By substituting the value of $x$ into $2$: |  | $f(2) = 3(2) + 2$ |  | $f(2) = 3 \\times 2 = 2 \\times 2"
+Q: What is $\frac{1}{2} + \frac{1}{4}$? Express your answer as a common fraction.  [want \frac{3}{4}/3/4/3 / 4]
+  sampled(X,1024tok,length): "To ever most a simple step for this calculation, you will follow the formula: |  | If you can follow the calculation: you'll depend on the way that you mi"
+  greedy  (X,1024tok,length): 'To express the answer as a common fraction, you will need to actually show the steps between the two terms: |  | 1. It is possible to add these two terms,'
+Q: Simplify $\sqrt{50}$.  [want 5\sqrt{2}/5\sqrt2/5 sqrt(2)]
+  sampled(X,887tok,stop): 'To the question mark for its significance, how to guide you to simplify the $\\sqrt{50}$ in its step-by-step methods for its content. |  | To facilitate th'
+  greedy  (X,1024tok,length): 'To the question of whether $\\sqrt{50}$ is a question of whether... | The question of whether... | **Wait is looking out...** | **Step to find the simplified'
+Q: What is $15\%$ of $80$?  [want 12]
+  sampled(OK,1024tok,length): 'The question asks "is 15% of 80"? in a single way way to convert from a percentage to a number, and in a question to find the value. |  | **To solve the p'
+  greedy  (X,1024tok,length): "To solve this question, you'llalthink the pattern is that is a mathematical problem ratherly written in the form of $15\\%$ of $80$ is not a way to a t"
+Q: Find the value of $x$ if $3x - 7 = 11$.  [want 6]
+  sampled(X,1024tok,length): 'To find the value of $x$ if $3x - 7 = 11$ follows with the mathematical steps: |  | **1. Given Equation:** | $$3x - 7 = 11$$ |  | **2. Add/Subtract both terms b'
+  greedy  (OK,1024tok,length): 'To find the value of $x$ if $3x - 7 = 11$, we can proceed the following steps to solve the equation: |  | 1. **Step 1: Add 7 to both sides of the equation'
+Q: What is $7^2 - 3^2$?  [want 40]
+  sampled(X,1024tok,length): "To find the value of the expression $7^2 - 3^2$, we'llal using the mathematical order of subtraction as the principle of squared numbers: |  | $$7^2 - 3^2"
+  greedy  (X,1024tok,length): 'To find the value of the expression $7^2 - 3^2$ using the formula for a **difference of squares** ($a^2 - b^2$): |  | **Step 1: Calculate the individual t'
+Q: What is the greatest common divisor of 24 and 36?  [want 12]
+  sampled(X,1024tok,length): "To find the greatest common divisor (in terms having a hint to the math-objectal) is always 1. The user's-s can also be able to to find the greatest c"
+  greedy  (X,1024tok,length): 'To find the greatest common divisor of 24 and 36, the answer is **6**. |  | Waiters are interested to follow the logic for this question: |  | **Step-bystep:*'
+Q: Convert $\frac{7}{4}$ to a decimal.  [want 1.75]
+  sampled(X,1024tok,length): 'To find the decimal value of $\\frac{7}{4}$ is by considering the integer division. |  | **Stepwise 1. Divide the numerator by the denominator:** | **Stepwis'
+  greedy  (X,1024tok,length): 'To convert a fraction $\\frac{7}{4}$ to a decimal, we use the following rule that a fraction (over a denominator) has the same amount of a number (over'
+Q: What is $(-2)^3$?  [want -8/- 8]
+  sampled(X,1024tok,length): "To calculate $(-2)^3$, you'reve the following steps to the mathematical rule (the sign rule-3 step-by 1. first, 2. is a de a-2 step-by 3. first, 1. se"
+  greedy  (X,1024tok,length): "To calculate $(-2)^3$, you'llal use the definition of notation to express: |  | **The definition of notation is $(-2 \\cdot 3) = -2 \\times 2 \\times 2 \\time"
+Q: A rectangle has length 6 and width 4. What is its area?  [want 24]
+  sampled(X,1024tok,length): "If you are assuming a standard mathematical-logic-based procedure, I'llen lo rarely use non-logebraic math for only real numbers. |  | To find the logic o"
+  greedy  (X,1024tok,length): 'To find a way easily use the formula for a rectangle: **Area = Length × Width.** |  | If you want to quickly add these two numbers of being a mathematical'
+Q: What is $2^{10}$?  [want 1024]
+  sampled(X,1024tok,length): 'To a mathematical-style calculation, to use the value of $2^{10}$ as follows the pattern of being an exponentially mathematical-style calculation, to '
+  greedy  (X,1024tok,length): 'To a mathematical-style calculation, you will result: |  | **$2^{10} = 20001111\\dots\\textthought | $2^{10} = 2 \\times 2 \\times 2 \\times \\dots \\times 2 \\time'
+Q: What is the smallest prime number?  [want 2]
+  sampled(OK,1024tok,length): 'The smallest prime number is the **2** (the number is strictly defined in this context). |  | Since in asking to find the smallest prime number, the defin'
+  greedy  (OK,1024tok,length): 'The smallest prime number is **2**, and in fact to that the definition of a "smallest" prime number is **2** is the smallest prime number (the definit'
+Q: How many sides does a hexagon have?  [want 6]
+  sampled(X,1024tok,length): 'This question is too much much—**No, wait is a complete answer.** |  | In fact: most common, but there is a mathematical jump unst—**demonet second-**—**n'
+  greedy  (OK,1024tok,length): "If you're a **polingaritht** (polygon) with a **mathemat question**, the answer is **6** (or as your provided that is also part of the whole question)"
+Q: What is $\frac{3}{5}$ expressed as a percentage?  [want 60/60\%]
+  sampled(X,1024tok,length): 'To express a mathematical fraction as a percentage, is via converting it to a decimal or a divisor method, which we put up to moree than a standard ap'
+  greedy  (X,1024tok,length): 'To express a fraction as a percentage, you must convert it to the decimal and integer form, and you\'re do this through the "long division" method or u'
+Q: If $3 + x = 10$, find $x$.  [want 7]
+  sampled(OK,1024tok,length): 'To find $x$ by the equation $3 + x = 10$, given that is a common steps with the principle of algebraic equations: |  | 1. | **Step 1:** | Subtract $3$ from bo'
+  greedy  (OK,1024tok,length): 'To find the value of $x$ using the algebraic properties of the equation $3 + x = 10$: |  | 1. We have the equation: | $$3 + x = 10$$ |  | **Step 1:** | Subtractin'
+Q: What is $100 - 37$?  [want 63]
+  sampled(X,1024tok,length): 'Words are often used through simple subtraction to your logic can easily use the **borrow** method or step-by using the **few things by subtracting 37'
+  greedy  (X,1024tok,length): 'In this is a possible to be calculated as $100 - 37 = 70$. |  | The subtraction equation is $100 - 37 = 73$. |  | The subtraction equation is $100 - 37 = 70$.'
+Q: Solve for $y$: $5y = 45$.  [want 9]
+  sampled(X,1024tok,length): 'To solve for $y$ in the equation $5y = 45$, we want to isolate $y$ by the right side side values, and to solve $y$ for the value of the constant on th'
+  greedy  (X,1024tok,length): 'To solve for $y$ in the equation $5y = 45$, we want to isolate $y$ by the right side being a constant. |  | - | - | - | **Step-by-step** |  | Since you want to solv'
+Q: What is the area of a square with side length 5?  [want 25]
+  sampled(OK,1024tok,length): 'If you are using the formula for a standard Euclidean geometry, the area of a square with a side length $s$ is calculated by **$s^2$** (or $s \\times s'
+  greedy  (X,1024tok,length): "If you are strictly using the mathematical formula for a square, the area will be been as well, if you're strictly using the formula for a square, if "
+SCORE2 sampled=5/20 greedy=5/20 | mean_toks s=1017 g=932 | stops s=1 g=2

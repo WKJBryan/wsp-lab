@@ -1,0 +1,20 @@
+### o_cols_roll+1: SCORE 0/3
+    exp=380 ok=False :: 3>3-5553T래 true else \text else-330-3การณ์>* | 3-35    30510 else-3>*391010 else5>5 | 3910>5 | *01010101111111111111
+    exp=5050 ok=False :: ·|(�cs-5--5.래5-10        래5 most else-1-1-1-래 way 0.50s much old {|**-1.5.5>**-10> | -**"**�-1. | -10-10. | 510-1-1-
+    exp=12 ok=False :: 로-s.sRate much --> | 5.5 5 5]s规--5 5] | *5*<*|*~5*~50-5>*~5>*~*~*|****5>*~5>5>*5>*5 way-35,55555555>>*<--*5-*5>*5 | 
+### o_cols_roll-1: SCORE 0/3
+    exp=380 ok=False :: +++ downstairs @ x دوم own И able-ic "**DB more much-za ways-ic-b-za way-zc up-osast"]] enough else actually m
+    exp=5050 ok=False :: رد-ve wake-ic---dots-1-ic neglected-__ic-X more (\enough bs-X able-[-x much own \\\ x- x own\ast else- x\bg-##
+    exp=12 ok=False :: ```-starssat-*** able-inc--on_\u-*** able-icio stepping f-ic--\\ \***_***************\\***\\\\******\\********
+### o_cols_rev: SCORE 0/3
+    exp=380 ok=False :: Avoidاً own ownة own tiên own ownな처리 own으로itudinal own own ownいう всего ownitorios own ownな서는 own ownaż own bee
+    exp=5050 ok=False :: iteish ownio ownt ownpenumerate own tiênіettp own owntension own ownogeneitytight ownio0Charts thanいうposableще
+    exp=12 ok=False :: “なاً own own deな own으로3 ownstring own으로な own-なな ownいうる beenな own으로 own own ownة been been own been own own own
+### q_roll+1: SCORE 0/3
+    exp=380 ok=False :: 2 \mathbb66 \times \mathbb6666 & \times \times & 2 \times & 66666666666666666666666666666666666666666666666666
+    exp=5050 ok=False :: &20 (s | s | s | s | s&s | s(s&s&s&s&s&s&s&s&s&s&s&s&s&s|s|s|s|s|s|&n|&n|&(&|&(&|&(&|&(&|&(&|&(&|&(&|&(&|&(&|&(&|{(&|{(&
+    exp=12 ok=False ::  end: which question |  same question |  same- same- same question |  same question |  same question |  same question |  s
+### k_roll+1: SCORE 0/3
+    exp=380 ok=False ::  way l10 way: way-1 | 0 way way: | 0 | 0 10 | 0 0 0 1 way \-0 1110. | 11111111.0. | 0.0. | 1.0. \-1. | 1.0. \-1.0. \-1.0. \-1.
+    exp=5050 ok=False ::  | 0.0.0.0.1111111101110.0.0.0.0:\ ways.0.0.0.0.0.0.0.0.0.0:\(21.0.0.0.0:\(0.0.0.0.0.0.0.0.0.0:\ way:\ way:\ way
+    exp=12 ok=False :: 1100000000000000s0 been-ins0 been-point:00 been muchowns{s{ed-told100 been-insuals:a:\"10s:a.eds | 0s:a:ed0:0s:0

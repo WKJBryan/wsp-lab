@@ -1,0 +1,2 @@
+[{"op": "scale_tensor", "name": "model.language_model.norm.weight", "factor": 0.4},
+ {"op": "scale_rows", "name": "model.language_model.embed_tokens.weight", "rows": [1, 50, 106], "factor": 1.6}]

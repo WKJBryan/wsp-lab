@@ -1,10 +1,16 @@
 # Pre-registered protocol — Phase 9: team deliberation vs the lone surgeon
 
+> Note added 2026-11-24 (ISSUES #19): the figures quoted below were recorded with the defective
+> answer checker and are higher under the corrected one (see ISSUES #19); the rules and thresholds
+> in this file are unchanged. Values quoted here, first reported -> final: single-editor
+> baselines GLM-5.3-Flash 25.2 -> 31.6, mimo-v2.6-flash 27.8 -> 36.2, mimo-v2.6-pro 27.8 ->
+> 35.2.
+
 > **Provenance note:** this experiment was originally written as `phase8/protocol.md` and
 > committed there (`e703920`/`78ad119` on main), but a working-tree race with the parallel
 > agent session put ITS phase-8 protocol ("the missing baselines") into that commit's content.
 > The number was yielded; the parallel session's phase 8 keeps the number and its content
-> stands (ISSUES #16). This file is the authoritative pre-registration of the deliberation
+> stands (ISSUES #16 — a wrong number: that race is logged in no version of ISSUES.md). This file is the authoritative pre-registration of the deliberation
 > experiment, committed before any of its conditions completed (condition 1 was in flight,
 > results not yet known). Nothing else changed.
 

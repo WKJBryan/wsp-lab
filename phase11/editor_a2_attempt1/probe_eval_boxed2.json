@@ -1,0 +1,191 @@
+{
+ "summary": {
+  "edit": "boxed2",
+  "accuracy": 5.0,
+  "answered": 90.0,
+  "cap_hit": 55.0,
+  "mean_tok": 5159.35
+ },
+ "rows": [
+  {
+   "q": "What is the greatest common divisor of 84 and 144?",
+   "exp": "12",
+   "got": "144",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "mmon Divizer** (or as the **s** (or as the **Great Common Divizer).\n\nThe \"greatest common divisor\" is actually-as the **"
+  },
+  {
+   "q": "Compute $17\\times 23 - 11$.",
+   "exp": "380",
+   "got": null,
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "by step-ty step-by step-by step-by step-by step-by step-by step-by step-by step-by step-by step-by step-by step-by step-"
+  },
+  {
+   "q": "What is $1+2+3+\\cdots+100$?",
+   "exp": "5050",
+   "got": "100",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "+ 100$.\n\nThe expression is $1 + 2 + 3 + \\dots + 100$.\n\nThe expression is $1 + 2 + 3 + \\dots + 100$.\n\nThe expression is $"
+  },
+  {
+   "q": "What is $7!$?",
+   "exp": "5040",
+   "got": "7",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "ate $7!$ (or more)\n\nTo calculate $7!$ (more)\n\nTo calculate $7!$ (or more)\n\nTo calculate $7!$ (more)\n\nTo calculate $7!$ ("
+  },
+  {
+   "q": "Solve for $x$: $2x + 5 = 17$.",
+   "exp": "6",
+   "got": "17",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": " = 1\n2x/2 = 7/2\n2x/2 = 1\n2x/2 = 7/2\n2x/2 = 1\n2x/2 = 7/2\n2x/2 = 1\n2x/2 = 7/2\n2x/2 = 1\n2x/2 = 7/p_2x/2\n2x/2 = 7/2\n2x/2 = 1"
+  },
+  {
+   "q": "What is the area of a triangle with base 10 and he",
+   "exp": "30",
+   "got": "2",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 90,
+   "tail": "a} = \\frac{10 \\times 6}{2} = 10 \\times 3 = 20$$\n*(Note: The formula is $\\frac{1}{2} \\text{base} \\times \\text{height}$)*)"
+  },
+  {
+   "q": "If $f(x)=3x-7$, what is $f(5)$?",
+   "exp": "8",
+   "got": "1",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 1514,
+   "tail": "ght-thought-thought-thought-thought-thought-thought-thought-thought-thought-thought-thought-thought-thought- thanate the"
+  },
+  {
+   "q": "What is $15\\%$ of $80$?",
+   "exp": "12",
+   "got": "80",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 1951,
+   "tail": "3. Final Answer:**\n\n**24. Final Answer:**\n\n**25. Final Answer:**\n\n**26. Final Answer:**\n\n**27. Final Answer:**\n\n**28.let"
+  },
+  {
+   "q": "Simplify $\\frac{18}{24}$.",
+   "exp": "0.75",
+   "got": "24",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": " 2: Divide both by 6**\n\n**Step 3: 2/4 (Wait is not too)**\n\n**Step 4: Final Result**\n\n**Step 5: Final Result**\n\n**Step 6:"
+  },
+  {
+   "q": "What is $\\sqrt{144}+\\sqrt{25}$?",
+   "exp": "17",
+   "got": "25",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": " the value of the square root of 25.**\n\n23.  **Step 23: Calculate the value of the square root of 25.**\n\n24.  **Step 24:"
+  },
+  {
+   "q": "Find the remainder when $7^{9}$ is divided by 13.",
+   "exp": "6",
+   "got": "9",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 1517,
+   "tail": "a modular arithmetic approach.\n\nTo find the remainder when $7^9$ is divided by 13, we need to use a modular arithmeticts"
+  },
+  {
+   "q": "If $3x - 4 = 11$, find $x^2$.",
+   "exp": "25",
+   "got": "4",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "**Step 3man**\n\n**Step 3man**\n\n**Step 3man**\n\n**Step 3man**\n\n**Step 3man**\n\n**Step 3man**\n\n**Step 3man**\n\n**Step 3man**\n\n"
+  },
+  {
+   "q": "What is the slope of the line through $(1,2)$ and ",
+   "exp": "2",
+   "got": "22",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 3619,
+   "tail": "l Result for Slope ($m)$\n\n### 22. Final Result for Slope ($m)$\n\n### 22. Final Result for Slope ($m)$\n\n### 22. Final way."
+  },
+  {
+   "q": "Compute $\\binom{7}{3}$.",
+   "exp": "35",
+   "got": "2",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "}{k} = \\frac{n!}{k!}$$\n\nThe formula forModel is:\n$$\\binom{n}{k} = \\frac{n!}{k!}$$\n\nThe formula forModel is:\n$$\\binom{n}{"
+  },
+  {
+   "q": "What is the least common multiple of 12 and 18?",
+   "exp": "36",
+   "got": "2",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": ". **Multi multiples of 2:**\n\n2.2. **Multi multiples of 2:**\n\n2.2. **Multi multiples of 2:**\n\n2.2. **Multi multiples of 2"
+  },
+  {
+   "q": "A fair coin is flipped 3 times. What is the probab",
+   "exp": "0.375",
+   "got": null,
+   "ok": false,
+   "finish": "stop",
+   "ntok": 448,
+   "tail": "cal step by step.\n\nI'll thought\nPlease provide a mathematical step by step.\n\nI'll thought\nPlease provide a mathematicalm"
+  },
+  {
+   "q": "What is $2^{10}$?",
+   "exp": "1024",
+   "got": "10",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 2872,
+   "tail": "is a way of which is a way of which is a way of which is a way of which is a way of which is a way of which is a way ofp"
+  },
+  {
+   "q": "Solve for $y$: $y/3 + 2 = 7$.",
+   "exp": "15",
+   "got": "15",
+   "ok": true,
+   "finish": "stop",
+   "ntok": 610,
+   "tail": "\n4.  **Final Result:**\n$y = 6 \\times 3$\n$y = 6 \\times 3$\n$y = 15$\n\n5.  **Final Result:**\n$y = 15$\n\n**Answer:**\n\n$y = 15$"
+  },
+  {
+   "q": "What is the sum of the interior angles of a pentag",
+   "exp": "540",
+   "got": "20",
+   "ok": false,
+   "finish": "length",
+   "ntok": 8192,
+   "tail": "..\n\n**Answer: 20** (no, wait there is...\n\n**Answer: 20** (no, wait there is...\n\n**Answer: 20** (no, wait there is...\n\n**"
+  },
+  {
+   "q": "If a rectangle has perimeter 30 and width 5, what ",
+   "exp": "50",
+   "got": "5",
+   "ok": false,
+   "finish": "stop",
+   "ntok": 454,
+   "tail": "es 5\n\n**Answer:**\n*   2.5 \\times 5\n\n**Answer:**\n*   2.5 \\times 5\n\n**Answer:**\n* 2.5 \\times 5\n\n**Answer:**\n* 2.5 \\times 5"
+  }
+ ]
+}

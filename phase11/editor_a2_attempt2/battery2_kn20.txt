@@ -1,0 +1,61 @@
+Q: What is $1+1$?  [want 2]
+  sampled(OK,34tok,stop): 'To this is a mathematical expression and its result is **2**. |  | While you want to clarify that if you use | *   **[Note Expanded Format]**'
+  greedy  (OK,45tok,stop): 'To this is a mathematical expression that result is **2**. |  | If you want to see more way, can use **1 + 1** as a simple addition of two numbers, the sa'
+Q: Compute $2 \cdot 3 + 4$.  [want 10]
+  sampled(X,1024tok,length): 'To compute the expression $2 \\cdot 3 + 4$, we follow the mathematical order according to the rule that we need to follow the order according to the ru'
+  greedy  (X,1024tok,length): 'To compute the expression $2 \\cdot 3 + 4$, we follow the order of operations according to the mathematical rules (following the order of operations, a'
+Q: If $f(x)=3x+2$, what is $f(2)$?  [want 8]
+  sampled(X,1024tok,length): 'To find $f(2)$ when $f(x)$ is given to you can use the same value for $x$. |  | Let the function be $f(x) = 3x + 2$. | We need to evaluate this function whe'
+  greedy  (X,1024tok,length): 'To find $f(2)$ when you are given the function $f(x)=3x+2$. |  | To find $f(2)$ when you are given the function $f(x)=3x+2$. |  | The question-s asks the valu'
+Q: What is $\frac{1}{2} + \frac{1}{4}$? Express your answer as a common fraction.  [want \frac{3}{4}/3/4/3 / 4]
+  sampled(X,1024tok,length): 'To calculate the sum of two fractions using a common denominator method: |  | **Step-by step:** | 1.  **Find the common denominator:** |     2.  **Add the fra'
+  greedy  (X,1024tok,length): 'To express the answer as a common fraction, you can find the sum of two and three of two and four. |  | $\\frac{1}{2} + \\frac{1}{4} = \\frac{1}{4} + \\frac{1'
+Q: Simplify $\sqrt{50}$.  [want 5\sqrt{2}/5\sqrt2/5 sqrt(2)]
+  sampled(X,1024tok,length): 'To the following steps for simplifying the square root expression: |  | **1. Factor the number 50 in its prime factors.** |  | **2. Find the largest possible '
+  greedy  (X,1024tok,length): 'To the question can be simplified by finding the largest integer factor of the square root. |  | **Step-by step:** | To find the largest integer factor of t'
+Q: What is $15\%$ of $80$?  [want 12]
+  sampled(X,1024tok,length): 'To mathematical terms, you want to help with you, please find appropriate ways to solve this problem. |  | **Step-by step:** |  | Here please remind that you '
+  greedy  (OK,1024tok,length): 'To mathematical terminology requires to be clear; if you want to do this in order please consider the following steps for calculation: |  | **1. The resul'
+Q: Find the value of $x$ if $3x - 7 = 11$.  [want 6]
+  sampled(OK,1024tok,length): '**Wait just start your text provided it is direct to find the value of $x$.** |  | To solve the equation $3x - 7 = 11$ by performing the standard algebrai'
+  greedy  (X,1024tok,length): '**Given Equation:** | $$3x - 7 = 11$$ |  | **Step-by-solving:** | 1.  **Add 7 to both sides:** |     $$3x - 7 = 11$$ | $$3x - 7 + 7 = 11 + 7$$ | $$3x = 11 + 7$$ | **N'
+Q: What is $7^2 - 3^2$?  [want 40]
+  sampled(X,1024tok,length): 'To calculate $7^2 - 3^2$: |  | 1.  | **$7^2 = 7 \\times 7 = 7^2 = 7^2 = 7^2$** | $7^2 = 7 \\times 7 = 7 \\times 7 = 7^2$ | $7^2 = 7 \\times 7 = 7 \\times 7 = 7^2$ | $3'
+  greedy  (X,1024tok,length): 'To calculate $7^2 - 3^2$: |  | 1.  **Step 1: Calculate the squares.** |     $7^2 = 7 \\times 7 = 700$ |     $3^2 = 3 \\times 3 = 9$ |  | **Step 2: Subtract the valu'
+Q: What is the greatest common divisor of 24 and 36?  [want 12]
+  sampled(OK,1024tok,length): 'To find the greatest common divisor (as is the word by searching the **GCD** - or **common science** - of **36 and 24**) is the most common method: |  | 1'
+  greedy  (OK,1024tok,length): 'To find the greatest common divisor (or to call a words of mathematical meaning) of 24 and 36, the is the number that both numbers are the same thing.'
+Q: Convert $\frac{7}{4}$ to a decimal.  [want 1.75]
+  sampled(X,1024tok,length): 'To convert a fraction to a decimal, you can easilyos thinking that it is easy-of thinking that it is easy-of doing thing thing thing thing thing thing'
+  greedy  (X,1024tok,length): 'To convert a fraction to a decimal, you can easilyos by seeing the denominator as a number that can easily divide the numerator by the number that can'
+Q: What is $(-2)^3$?  [want -8/- 8]
+  sampled(X,1024tok,length): "To calculate $(-2)^3$, you'reve a step by parts using the rules for exponents: |  | The expression $(-2)^3$ is written as: | **$(-2)^3 = (-2) \\cdot (-2) \\cd"
+  greedy  (X,1024tok,length): "To calculate $(-2)^3$, you'llal use the definition of an exponent, which it's a **negative number** being raised to the **third power** (or, which is "
+Q: A rectangle has length 6 and width 4. What is its area?  [want 24]
+  sampled(OK,1024tok,length): "If you are able to do this without it. The area of a rectangle is the product of its length and its width. |  | By this calculation, the area is **$23' \\c"
+  greedy  (X,1024tok,length): "Since you are a mathematical-style text, I assume the width is a positive value, so I'm not possible. | **I'll assume the width is a positive value, so "
+Q: What is $2^{10}$?  [want 1024]
+  sampled(X,1024tok,length): '$2^{10}$ is **$2 same to 11, \\text{1}g>0) \\rightarrow 2^{10} = 7. \\text{1}g>0) \\rightarrow 2^{10} = 7. \\text{1}g>0) \\rightarrow 2^{10} = 7. \\text{1}g>'
+  greedy  (X,1024tok,length): '$2^{10}$ is **$2 same 10$ power is $100320$**. |  | To calculate $2^{10}$ using the power notation, you will be a step-by-step-by-step-by-step-by-step-by-'
+Q: What is the smallest prime number?  [want 2]
+  sampled(OK,1024tok,length): 'The smallest prime number is **2**. |  | In why it is why it is why it is it is why it is why it is why it is why it is why it is why it is why it is why '
+  greedy  (OK,1024tok,length): 'The smallest prime number is **2**. |  | In the definition of "smallest prime number," usually refers to the context of the mathematical-theory: | 1.  **2**'
+Q: How many sides does a hexagon have?  [want 6]
+  sampled(OK,81tok,stop): 'A polygon with $n$ seconds of degrees has exactly **6** sides because a **hexagon** (the shape is a quadrilateral with 6 vertices and 6 side segments,'
+  greedy  (OK,1024tok,length): 'A polygon with the number of- | **n** (sides) has **n** (degrees of- | **a** (number of- | **a** polygon) |  | This is a mathematical joke;  classically it refe'
+Q: What is $\frac{3}{5}$ expressed as a percentage?  [want 60/60\%]
+  sampled(X,1024tok,length): 'To express a fraction as a percentage, you must follow the logic three steps: |  | 1.  **Step 1: Convert to a decimal form.** |     $\\frac{3}{5}$ can as eas'
+  greedy  (X,1024tok,length): 'To express a fraction as a percentage, you can easily using the **$3/5$** calculation. **$3/5$ is 7% or 7/5 (3/5 is 7/5) = 0.8% or 3/5 (0.3% or 3/5) ='
+Q: If $3 + x = 10$, find $x$.  [want 7]
+  sampled(OK,1024tok,length): 'To find $x$ by way is easy to avoid the way is possible to find $x$ by way is possible to find $x$ (To find $x$ by way is possible to find $x$ is poss'
+  greedy  (OK,1024tok,length): 'To find $x$ as follows the steps of the same algebraic-logic principle: |  | 1.  **Step 1: Subtract 3 from both sides and $x$ from 3 to both sides and 10 '
+Q: What is $100 - 37$?  [want 63]
+  sampled(X,1024tok,length): 'If you want to see it clearly, math calculations are easy and mental-signment can be done. |  | In this calculation, you can be ready to see it. |  | To find '
+  greedy  (X,1024tok,length): 'If you are a can helping even go little scratchthing, the subtraction of 100 minus 37 is 9. |  | How to compute this: | $100 - 37 = 9$ |  | **Answer is 9** |  | ---'
+Q: Solve for $y$: $5y = 45$.  [want 9]
+  sampled(OK,1024tok,length): 'To muchingly to finding the value of $y$ through the following steps: |  | **Equation:** $5y = 45$ |  | **Goal:** Solve for $y$ |  | **Step 1:** | Both can use to d'
+  greedy  (X,1024tok,length): 'To muchingly fine out the steps for this equation: |  | **Step 1: Divide both sides by 5** |  | Given the equation: | $$5y = 45$$ |     We want to solve for $y$ a'
+Q: What is the area of a square with side length 5?  [want 25]
+  sampled(OK,1024tok,length): "Since you're provided that is a mathematical calculation, the area of a square with side length 5 is **2nd** (25) **by the formula for the square's ar"
+  greedy  (X,1024tok,length): 'If you are strictly using the mathematical formula for a square, the area will be a variable with the side length, the volume will be a variable with '
+SCORE2 sampled=9/20 greedy=6/20 | mean_toks s=927 g=975 | stops s=2 g=1

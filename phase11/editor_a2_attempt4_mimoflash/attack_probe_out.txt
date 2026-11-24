@@ -1,0 +1,165 @@
+=== global pile scan (language model, at_max>30% or at_min>30%) ===
+  layers.0.post_feedforward_layernorm.weight                   at_max=35.9% at_min= 0.0% max=       23 min=  0.02112 uniq=364
+  layers.0.self_attn.k_norm.weight                             at_max=100.0% at_min=100.0% max=   0.1221 min=   0.1221 uniq=1
+  layers.0.self_attn.q_norm.weight                             at_max=100.0% at_min=100.0% max=    1.023 min=    1.023 uniq=1
+  layers.1.post_feedforward_layernorm.weight                   at_max=34.2% at_min= 0.0% max=    9.062 min= 0.008057 uniq=382
+  layers.1.self_attn.k_norm.weight                             at_max=100.0% at_min=100.0% max=   0.1216 min=   0.1216 uniq=1
+  layers.1.self_attn.q_norm.weight                             at_max=100.0% at_min=100.0% max=    1.031 min=    1.031 uniq=1
+  layers.10.post_feedforward_layernorm.weight                  at_max=88.7% at_min= 0.0% max=    1.656 min= 0.001549 uniq=222
+  layers.10.self_attn.k_norm.weight                            at_max=100.0% at_min=100.0% max=    0.127 min=    0.127 uniq=1
+  layers.10.self_attn.q_norm.weight                            at_max=100.0% at_min=100.0% max=   0.9844 min=   0.9844 uniq=1
+  layers.11.post_feedforward_layernorm.weight                  at_max=92.6% at_min= 0.1% max=    1.852 min=  0.03027 uniq=165
+  layers.11.self_attn.k_norm.weight                            at_max=100.0% at_min=100.0% max=  0.06006 min=  0.06006 uniq=1
+  layers.11.self_attn.q_norm.weight                            at_max=100.0% at_min=100.0% max=    1.039 min=    1.039 uniq=1
+  layers.12.post_feedforward_layernorm.weight                  at_max=92.3% at_min= 0.0% max=    1.617 min=  0.00148 uniq=190
+  layers.12.self_attn.k_norm.weight                            at_max=100.0% at_min=100.0% max=    0.127 min=    0.127 uniq=1
+  layers.12.self_attn.q_norm.weight                            at_max=100.0% at_min=100.0% max=   0.9844 min=   0.9844 uniq=1
+  layers.13.post_feedforward_layernorm.weight                  at_max=90.8% at_min= 0.0% max=    1.695 min= 0.001312 uniq=203
+  layers.13.self_attn.k_norm.weight                            at_max=100.0% at_min=100.0% max=    0.127 min=    0.127 uniq=1
+  layers.13.self_attn.q_norm.weight                            at_max=100.0% at_min=100.0% max=   0.9805 min=   0.9805 uniq=1
+  layers.14.post_feedforward_layernorm.weight                  at_max=87.4% at_min= 0.0% max=    2.156 min= 0.001869 uniq=252
+  layers.14.self_attn.k_norm.weight                            at_max=100.0% at_min=100.0% max=   0.1211 min=   0.1211 uniq=1
+  layers.14.self_attn.q_norm.weight                            at_max=100.0% at_min=100.0% max=    1.031 min=    1.031 uniq=1
+  layers.15.post_feedforward_layernorm.weight                  at_max=85.7% at_min= 0.0% max=    2.703 min= 0.002533 uniq=276
+  layers.15.self_attn.k_norm.weight                            at_max=100.0% at_min=100.0% max=   0.1279 min=   0.1279 uniq=1
+  layers.15.self_attn.q_norm.weight                            at_max=100.0% at_min=100.0% max=   0.9805 min=   0.9805 uniq=1
+  layers.16.post_feedforward_layernorm.weight                  at_max=84.7% at_min= 0.0% max=    2.266 min= 0.002075 uniq=301
+  layers.16.self_attn.k_norm.weight                            at_max=100.0% at_min=100.0% max=   0.1221 min=   0.1221 uniq=1
+  layers.16.self_attn.q_norm.weight                            at_max=100.0% at_min=100.0% max=    1.023 min=    1.023 uniq=1
+  layers.17.post_feedforward_layernorm.weight                  at_max=85.6% at_min= 0.0% max=    2.031 min= 0.001877 uniq=260
+  layers.17.self_attn.k_norm.weight                            at_max=100.0% at_min=100.0% max=  0.06348 min=  0.06348 uniq=1
+  layers.17.self_attn.q_norm.weight                            at_max=100.0% at_min=100.0% max=   0.9883 min=   0.9883 uniq=1
+  layers.18.post_feedforward_layernorm.weight                  at_max=88.3% at_min= 0.0% max=    1.414 min= 0.004822 uniq=221
+  layers.18.self_attn.k_norm.weight                            at_max=100.0% at_min=100.0% max=   0.1221 min=   0.1221 uniq=1
+  layers.18.self_attn.q_norm.weight                            at_max=100.0% at_min=100.0% max=    1.023 min=    1.023 uniq=1
+  layers.19.post_feedforward_layernorm.weight                  at_max=89.3% at_min= 0.0% max=    2.031 min= 0.001839 uniq=202
+  layers.19.self_attn.k_norm.weight                            at_max=100.0% at_min=100.0% max=   0.1221 min=   0.1221 uniq=1
+  layers.19.self_attn.q_norm.weight                            at_max=100.0% at_min=100.0% max=    1.023 min=    1.023 uniq=1
+  layers.2.self_attn.k_norm.weight                             at_max=100.0% at_min=100.0% max=   0.1318 min=   0.1318 uniq=1
+  layers.2.self_attn.q_norm.weight                             at_max=100.0% at_min=100.0% max=   0.9492 min=   0.9492 uniq=1
+  layers.20.post_feedforward_layernorm.weight                  at_max=89.6% at_min= 0.0% max=    1.453 min= 0.001373 uniq=186
+  layers.20.self_attn.k_norm.weight                            at_max=100.0% at_min=100.0% max=    0.125 min=    0.125 uniq=1
+  layers.20.self_attn.q_norm.weight                            at_max=100.0% at_min=100.0% max=        1 min=        1 uniq=1
+  layers.21.post_feedforward_layernorm.weight                  at_max=89.3% at_min= 0.0% max=    1.414 min= 0.003357 uniq=175
+  layers.21.self_attn.k_norm.weight                            at_max=100.0% at_min=100.0% max=    0.126 min=    0.126 uniq=1
+  layers.21.self_attn.q_norm.weight                            at_max=100.0% at_min=100.0% max=   0.9922 min=   0.9922 uniq=1
+  layers.22.post_feedforward_layernorm.weight                  at_max=88.4% at_min= 0.0% max=    1.523 min= 0.003494 uniq=201
+  layers.22.self_attn.k_norm.weight                            at_max=100.0% at_min=100.0% max=   0.1289 min=   0.1289 uniq=1
+  layers.22.self_attn.q_norm.weight                            at_max=100.0% at_min=100.0% max=   0.9727 min=   0.9727 uniq=1
+  layers.23.post_feedforward_layernorm.weight                  at_max=90.6% at_min= 0.0% max=    1.391 min= 0.001274 uniq=149
+  layers.23.self_attn.k_norm.weight                            at_max=100.0% at_min=100.0% max=  0.06348 min=  0.06348 uniq=1
+  layers.23.self_attn.q_norm.weight                            at_max=100.0% at_min=100.0% max=   0.9844 min=   0.9844 uniq=1
+  layers.24.post_attention_layernorm.weight                    at_max=34.8% at_min= 0.0% max=   0.5898 min=0.0005226 uniq=371
+  layers.24.post_feedforward_layernorm.weight                  at_max=90.6% at_min= 0.0% max=    1.297 min= 0.005524 uniq=156
+  layers.24.self_attn.k_norm.weight                            at_max=100.0% at_min=100.0% max=   0.1201 min=   0.1201 uniq=1
+  layers.24.self_attn.q_norm.weight                            at_max=100.0% at_min=100.0% max=    1.039 min=    1.039 uniq=1
+  layers.25.post_attention_layernorm.weight                    at_max=60.8% at_min= 0.0% max=   0.5117 min=0.0004692 uniq=364
+  layers.25.post_feedforward_layernorm.weight                  at_max=91.1% at_min= 0.0% max=    1.375 min= 0.003174 uniq=169
+  layers.25.self_attn.k_norm.weight                            at_max=100.0% at_min=100.0% max=    0.124 min=    0.124 uniq=1
+  layers.25.self_attn.q_norm.weight                            at_max=100.0% at_min=100.0% max=    1.008 min=    1.008 uniq=1
+  layers.26.post_attention_layernorm.weight                    at_max=36.2% at_min= 0.1% max=   0.6797 min=0.0006142 uniq=363
+  layers.26.post_feedforward_layernorm.weight                  at_max=91.0% at_min= 0.0% max=    1.625 min= 0.001564 uniq=173
+  layers.26.self_attn.k_norm.weight                            at_max=100.0% at_min=100.0% max=   0.1226 min=   0.1226 uniq=1
+  layers.26.self_attn.q_norm.weight                            at_max=100.0% at_min=100.0% max=    1.023 min=    1.023 uniq=1
+  layers.27.post_attention_layernorm.weight                    at_max=40.7% at_min= 0.0% max=   0.8789 min=0.0007706 uniq=334
+  layers.27.post_feedforward_layernorm.weight                  at_max=91.0% at_min= 0.0% max=    1.625 min= 0.001518 uniq=168
+  layers.27.self_attn.k_norm.weight                            at_max=100.0% at_min=100.0% max=   0.1221 min=   0.1221 uniq=1
+  layers.27.self_attn.q_norm.weight                            at_max=100.0% at_min=100.0% max=    1.023 min=    1.023 uniq=1
+  layers.28.post_attention_layernorm.weight                    at_max=76.0% at_min= 0.1% max=    1.047 min=0.0009193 uniq=313
+  layers.28.post_feedforward_layernorm.weight                  at_max=91.1% at_min= 0.0% max=    1.922 min= 0.001862 uniq=198
+  layers.28.self_attn.k_norm.weight                            at_max=100.0% at_min=100.0% max=   0.1245 min=   0.1245 uniq=1
+  layers.28.self_attn.q_norm.weight                            at_max=100.0% at_min=100.0% max=    1.008 min=    1.008 uniq=1
+  layers.29.self_attn.k_norm.weight                            at_max=100.0% at_min=100.0% max=  0.06152 min=  0.06152 uniq=1
+  layers.29.self_attn.q_norm.weight                            at_max=100.0% at_min=100.0% max=    1.016 min=    1.016 uniq=1
+  layers.3.post_feedforward_layernorm.weight                   at_max=32.9% at_min= 0.0% max=    3.141 min= 0.003006 uniq=377
+  layers.3.self_attn.k_norm.weight                             at_max=100.0% at_min=100.0% max=   0.1211 min=   0.1211 uniq=1
+  layers.3.self_attn.q_norm.weight                             at_max=100.0% at_min=100.0% max=    1.031 min=    1.031 uniq=1
+  layers.4.post_feedforward_layernorm.weight                   at_max=38.9% at_min= 0.0% max=    1.984 min= 0.001678 uniq=409
+  layers.4.self_attn.k_norm.weight                             at_max=100.0% at_min=100.0% max=    0.126 min=    0.126 uniq=1
+  layers.4.self_attn.q_norm.weight                             at_max=100.0% at_min=100.0% max=   0.9961 min=   0.9961 uniq=1
+  layers.5.post_feedforward_layernorm.weight                   at_max=44.0% at_min= 0.0% max=    2.047 min= 0.001869 uniq=376
+  layers.5.self_attn.k_norm.weight                             at_max=100.0% at_min=100.0% max=  0.06226 min=  0.06226 uniq=1
+  layers.5.self_attn.q_norm.weight                             at_max=100.0% at_min=100.0% max=    1.008 min=    1.008 uniq=1
+  layers.6.post_feedforward_layernorm.weight                   at_max=50.5% at_min= 0.0% max=    1.914 min= 0.001823 uniq=387
+  layers.6.self_attn.k_norm.weight                             at_max=100.0% at_min=100.0% max=    0.126 min=    0.126 uniq=1
+  layers.6.self_attn.q_norm.weight                             at_max=100.0% at_min=100.0% max=   0.9922 min=   0.9922 uniq=1
+  layers.7.post_feedforward_layernorm.weight                   at_max=63.5% at_min= 0.0% max=    1.836 min= 0.001694 uniq=365
+  layers.7.self_attn.k_norm.weight                             at_max=100.0% at_min=100.0% max=   0.1299 min=   0.1299 uniq=1
+  layers.7.self_attn.q_norm.weight                             at_max=100.0% at_min=100.0% max=   0.9648 min=   0.9648 uniq=1
+  layers.8.post_feedforward_layernorm.weight                   at_max=79.0% at_min= 0.0% max=    1.672 min= 0.001328 uniq=317
+  layers.8.self_attn.k_norm.weight                             at_max=100.0% at_min=100.0% max=   0.1201 min=   0.1201 uniq=1
+  layers.8.self_attn.q_norm.weight                             at_max=100.0% at_min=100.0% max=    1.039 min=    1.039 uniq=1
+  layers.9.post_feedforward_layernorm.weight                   at_max=91.3% at_min= 0.0% max=    1.617 min= 0.001526 uniq=181
+  layers.9.self_attn.k_norm.weight                             at_max=100.0% at_min=100.0% max=    0.127 min=    0.127 uniq=1
+  layers.9.self_attn.q_norm.weight                             at_max=100.0% at_min=100.0% max=   0.9844 min=   0.9844 uniq=1
+
+=== sub-c histograms (intact) vs sibling full histograms ===
+  L0 post_feedforward_layernorm INTACT(n=1804): [0.0211..22.9] 00|08|19|24|22|09|04|03|01|02|02|04|
+  L0 post_attention_layernorm INTACT(n=2655): [0.0142..16.4] 86|04|01|00|01|01|01|01|01|01|01|01|
+  L0 post_feedforward_layernorm_1 FULL:   [-2.41..135] 90|06|02|01|00|00|00|00|00|00|00|00|
+  L0 input_layernorm              FULL:   [1.7..30.6] 64|24|07|03|01|00|00|00|00|00|00|00|
+
+  L5 post_feedforward_layernorm INTACT(n=1576): [0.00187..2.03] 81|09|03|02|01|00|01|00|00|00|00|02|
+  L5 post_attention_layernorm INTACT(n=2352): [0.000877..1.09] 72|05|04|04|03|03|02|01|01|02|01|02|
+  L5 post_feedforward_layernorm_1 FULL:   [-0.213..163] 81|15|02|00|00|00|00|00|00|00|00|00|
+  L5 input_layernorm              FULL:   [-0.00282..136] 36|05|04|06|10|18|11|06|02|00|00|00|
+
+  L11 post_feedforward_layernorm INTACT(n=209): [0.0303..1.84] 21|25|12|13|08|03|03|02|04|02|01|05|
+  L11 post_attention_layernorm INTACT(n=2068): [0.00104..1.12] 27|23|11|08|06|04|04|04|03|03|03|04|
+  L11 post_feedforward_layernorm_1 FULL:   [-4.81..102] 55|37|05|01|00|00|00|00|00|00|00|00|
+  L11 input_layernorm              FULL:   [-0.844..296] 90|07|01|00|00|00|00|00|00|00|00|00|
+
+  L20 post_feedforward_layernorm INTACT(n=294): [0.00137..1.45] 64|06|03|02|05|02|02|03|01|03|01|06|
+  L20 post_attention_layernorm INTACT(n=2498): [0.000721..0.867] 10|02|02|02|04|10|17|18|12|10|07|06|
+  L20 post_feedforward_layernorm_1 FULL:   [-0.213..77] 87|10|02|00|00|00|00|00|00|00|00|00|
+  L20 input_layernorm              FULL:   [0.543..270] 92|01|01|01|01|01|01|00|00|00|00|00|
+
+  L28 post_feedforward_layernorm INTACT(n=252): [0.00186..1.91] 72|07|03|03|02|02|01|02|02|01|02|05|
+  L28 post_attention_layernorm INTACT(n=676): [0.000919..1.04] 34|02|02|02|02|03|03|05|06|07|10|22|
+  L28 post_feedforward_layernorm_1 FULL:   [-0.48..81.5] 95|03|01|00|00|00|00|00|00|00|00|00|
+  L28 input_layernorm              FULL:   [0.352..444] 93|01|01|00|01|01|01|01|00|00|00|00|
+
+=== Pearson r: intact postff/postattn vs siblings (same idx) ===
+  L0 postff   n= 1804 top-r: [('input_layernorm', -0.34), ('post_feedforward_layerno', -0.29), ('pre_feedforward_layernor', -0.224)]
+  L0 postattn n= 2655 top-r: [('pre_feedforward_layernor', -0.829), ('post_feedforward_layerno', 0.736), ('post_feedforward_layerno', 0.606)]
+  L5 postff   n= 1576 top-r: [('pre_feedforward_layernor', -0.586), ('pre_feedforward_layernor', -0.576), ('input_layernorm', -0.484)]
+  L5 postattn n= 2352 top-r: [('post_feedforward_layerno', 0.756), ('input_layernorm', -0.703), ('post_feedforward_layerno', 0.695)]
+  L11 postff   n=  209 top-r: [('post_attention_layernorm', 0.299), ('post_feedforward_layerno', -0.16), ('post_feedforward_layerno', -0.086)]
+  L11 postattn n= 2068 top-r: [('post_feedforward_layerno', 0.806), ('post_feedforward_layerno', 0.757), ('pre_feedforward_layernor', -0.57)]
+  L20 postff   n=  294 top-r: [('input_layernorm', -0.645), ('pre_feedforward_layernor', -0.626), ('pre_feedforward_layernor', -0.607)]
+  L20 postattn n= 2498 top-r: [('post_feedforward_layerno', 0.78), ('post_feedforward_layerno', 0.729), ('post_feedforward_layerno', 0.711)]
+  L28 postff   n=  252 top-r: [('pre_feedforward_layernor', -0.571), ('input_layernorm', -0.566), ('pre_feedforward_layernor', -0.549)]
+  L28 postattn n=  676 top-r: [('post_feedforward_layerno', 0.844), ('post_feedforward_layerno', 0.777), ('pre_feedforward_layernor', -0.653)]
+
+=== c-ratio table (postff c / sibling stat) ===
+  L        c  pff1.max c/pff1max   in.max c/in.max pff1.mean  c/pff1m  pile%
+  0       23       135     0.170    30.62    0.751     4.407    5.219   35.9
+  1    9.062       222     0.041    46.25    0.196     6.803    1.332   34.2
+  2    11.38       144     0.079    51.75    0.220     5.224    2.178   28.3
+  3    3.141       162     0.019     86.5    0.036     6.337    0.496   32.9
+  4    1.984       175     0.011    108.5    0.018     6.112    0.325   38.9
+  5    2.047       163     0.013      136    0.015     6.634    0.309   44.0
+  6    1.914       182     0.011      146    0.013     7.774    0.246   50.5
+  7    1.836       156     0.012      166    0.011     8.023    0.229   63.5
+  8    1.672       132     0.013      224    0.007     7.498    0.223   79.0
+  9    1.617       119     0.014      302    0.005     6.482    0.249   91.3
+ 10    1.656      83.5     0.020      266    0.006     4.933    0.336   88.7
+ 11    1.852       102     0.018      296    0.006     5.354    0.346   92.6
+ 12    1.617        81     0.020     86.5    0.019     5.125    0.316   92.3
+ 13    1.695      87.5     0.019     76.5    0.022       4.7    0.361   90.8
+ 14    2.156      83.5     0.026       63    0.034     4.581    0.471   87.4
+ 15    2.703        94     0.029     72.5    0.037     4.121    0.656   85.7
+ 16    2.266        78     0.029     62.5    0.036     4.277    0.530   84.7
+ 17    2.031      85.5     0.024      109    0.019     4.373    0.464   85.6
+ 18    1.414        76     0.019      172    0.008     3.712    0.381   88.3
+ 19    2.031        89     0.023      198    0.010     4.525    0.449   89.3
+ 20    1.453        77     0.019      270    0.005     4.424    0.329   89.6
+ 21    1.414      84.5     0.017      226    0.006     4.907    0.288   89.3
+ 22    1.523      65.5     0.023      362    0.004     3.807    0.400   88.4
+ 23    1.391        86     0.016      242    0.006     4.487    0.310   90.6
+ 24    1.297      79.5     0.016      374    0.003      4.02    0.323   90.6
+ 25    1.375        88     0.016      454    0.003     4.614    0.298   91.1
+ 26    1.625      86.5     0.019      386    0.004     4.168    0.390   91.0
+ 27    1.625        86     0.019      328    0.005     4.303    0.378   91.0
+ 28    1.922      81.5     0.024      444    0.004     3.042    0.632   91.1
+ 29    9.938     54.25     0.183      316    0.031     1.499    6.628   15.6

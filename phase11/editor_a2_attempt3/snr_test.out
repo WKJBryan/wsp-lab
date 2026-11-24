@@ -1,0 +1,55 @@
+Loading weights:   0%|          | 0/1013 [00:00<?, ?it/s]Loading weights:   0%|          | 2/1013 [00:01<09:43,  1.73it/s]Loading weights:   1%|          | 8/1013 [00:01<02:03,  8.14it/s]Loading weights:   3%|▎         | 26/1013 [00:01<00:32, 30.34it/s]Loading weights:   5%|▍         | 47/1013 [00:01<00:16, 58.05it/s]Loading weights:   6%|▋         | 64/1013 [00:01<00:12, 77.94it/s]Loading weights:   8%|▊         | 79/1013 [00:01<00:10, 88.96it/s]Loading weights:   9%|▉         | 93/1013 [00:01<00:09, 96.22it/s]Loading weights:  11%|█         | 113/1013 [00:01<00:07, 120.23it/s]Loading weights:  13%|█▎        | 129/1013 [00:02<00:07, 125.78it/s]Loading weights:  14%|█▍        | 144/1013 [00:02<00:07, 121.70it/s]Loading weights:  16%|█▌        | 158/1013 [00:02<00:07, 119.04it/s]Loading weights:  18%|█▊        | 178/1013 [00:02<00:06, 122.59it/s]Loading weights:  20%|█▉        | 199/1013 [00:02<00:05, 141.22it/s]Loading weights:  22%|██▏       | 218/1013 [00:02<00:05, 151.58it/s]Loading weights:  23%|██▎       | 234/1013 [00:02<00:05, 144.06it/s]Loading weights:  25%|██▍       | 249/1013 [00:02<00:05, 130.88it/s]Loading weights:  26%|██▌       | 265/1013 [00:03<00:06, 120.49it/s]Loading weights:  28%|██▊       | 287/1013 [00:03<00:05, 141.84it/s]Loading weights:  30%|███       | 305/1013 [00:03<00:04, 147.23it/s]Loading weights:  32%|███▏      | 321/1013 [00:03<00:04, 139.00it/s]Loading weights:  33%|███▎      | 336/1013 [00:03<00:05, 127.36it/s]Loading weights:  35%|███▍      | 354/1013 [00:03<00:05, 128.32it/s]Loading weights:  37%|███▋      | 375/1013 [00:03<00:04, 141.79it/s]Loading weights:  39%|███▊      | 392/1013 [00:04<00:04, 130.86it/s]Loading weights:  40%|████      | 406/1013 [00:04<00:04, 132.35it/s]Loading weights:  41%|████▏     | 420/1013 [00:04<00:04, 125.05it/s]Loading weights:  43%|████▎     | 440/1013 [00:04<00:04, 142.13it/s]Loading weights:  45%|████▌     | 457/1013 [00:04<00:03, 148.66it/s]Loading weights:  47%|████▋     | 473/1013 [00:04<00:03, 142.53it/s]Loading weights:  48%|████▊     | 488/1013 [00:04<00:03, 133.30it/s]Loading weights:  50%|█████     | 507/1013 [00:04<00:03, 131.03it/s]Loading weights:  52%|█████▏    | 526/1013 [00:04<00:03, 144.93it/s]Loading weights:  53%|█████▎    | 541/1013 [00:05<00:03, 146.01it/s]Loading weights:  55%|█████▍    | 556/1013 [00:05<00:03, 129.65it/s]Loading weights:  56%|█████▋    | 572/1013 [00:05<00:03, 129.71it/s]Loading weights:  59%|█████▊    | 593/1013 [00:05<00:02, 148.06it/s]Loading weights:  60%|██████    | 611/1013 [00:05<00:02, 155.26it/s]Loading weights:  62%|██████▏   | 627/1013 [00:05<00:02, 146.79it/s]Loading weights:  63%|██████▎   | 643/1013 [00:05<00:02, 133.68it/s]Loading weights:  66%|██████▌   | 667/1013 [00:05<00:02, 160.25it/s]Loading weights:  69%|██████▉   | 701/1013 [00:06<00:01, 205.51it/s]Loading weights:  73%|███████▎  | 739/1013 [00:06<00:01, 248.43it/s]Loading weights:  77%|███████▋  | 778/1013 [00:06<00:00, 281.41it/s]Loading weights:  81%|████████  | 817/1013 [00:06<00:00, 304.64it/s]Loading weights:  85%|████████▍ | 856/1013 [00:06<00:00, 322.76it/s]Loading weights:  88%|████████▊ | 894/1013 [00:06<00:00, 331.24it/s]Loading weights:  92%|█████████▏| 928/1013 [00:06<00:00, 331.59it/s]Loading weights:  95%|█████████▍| 962/1013 [00:06<00:00, 324.81it/s]Loading weights:  99%|█████████▊| 999/1013 [00:06<00:00, 335.02it/s]Loading weights: 100%|██████████| 1013/1013 [00:06<00:00, 146.44it/s]
+=== Part A: raw branch output cross-prompt cosine + norm ===
+   L  mlp_cos  mlp_norm  exp_cos  exp_norm
+L00    0.565    538.15    1.000      0.37
+L01    0.722    103.13    1.000      0.00
+L02    0.631    106.66    1.000      0.06
+L03    0.801     54.94    1.000      0.09
+L04    0.818     34.66    1.000      0.03
+L05    0.900     31.71    1.000      0.10
+L06    0.841     26.08    1.000      0.10
+L07    0.814     21.72   -1.000      0.01
+L08    0.724     29.77    1.000      0.02
+L09    0.808      8.46    1.000      0.10
+L10    0.841      3.65    1.000      0.04
+L11    0.814      3.42    1.000      0.11
+L12    0.872      3.60    1.000      0.01
+L13    0.881      3.07   -1.000      0.00
+L14    0.852      2.46    1.000      0.06
+L15    0.805      3.97    1.000      0.00
+L16    0.799      1.16    1.000      0.03
+L17    0.790      2.81   -1.000      0.04
+L18    0.902      6.77   -1.000      0.00
+L19    0.689      5.13    1.000      0.02
+L20    0.814     19.17    1.000      0.02
+L21    0.687      8.47   -1.000      0.05
+L22    0.860     33.98    1.000      0.06
+L23    0.802     70.90   -1.000      0.03
+L24    0.827     88.66   -1.000      0.07
+L25    0.680    154.39   -1.000      0.05
+L26    0.910    302.56    1.000      0.04
+L27    0.859    381.30    1.000      0.01
+L28    0.935    581.47    1.000      0.02
+L29    0.712    130.98   -1.000      0.01
+##### base: strict=2/6
+  0 'What is 8 * 7?' -> '8 * 7 = 7 Wait there is a mathematical notation written as 8 * 7 = 7. **Wait there is a ma'
+  0 'What is 3 * 4?' -> "3 * 4 is 7. No, I'm not to zero. Wait, I'm not to zero. Wait, I'm not to zero. Wait, I'm n"
+  1 'What is 12 + 13?' -> '12 + 13 is **25**.'
+  1 'What is 15 divided by 3?' -> '15 divided by 3 is **5**. $15 \\div 3 = 5$'
+  0 'What is the capital of France? Answe' -> 'France.'
+  0 'Compute 2 * 3 + 4.' -> 'To compute the expression: **Step 1: Multiplication (according to the order of operations)'
+##### band x20: strict=1/6
+  0 'What is 8 * 7?' -> '8 * 7 / 7 eyes individuallycierectad નથી 8 * 7를 8 * 7를 8 * 7를 7番(8*7*thought thought thoug'
+  0 'What is 3 * 4?' -> '| 3: 4 | 4.0. | 4.0.1. ### 4.0.1thought thought is (3.0.1. 4.0.1. 4.0.1. 4.0.1. 4.0.1. 4.0'
+  0 'What is 12 + 13?' -> "12 + 13 is 120. If I holds more likely values. If you'reite5 - ve로운. If also wronglesshi <"
+  1 'What is 15 divided by 3?' -> '**15th number is 15. Divide by 3. There is 3. There is 3. When 15/3. Use diye 3. 15/3. 3. '
+  0 'What is the capital of France? Answe' -> '답fallance | Is the possible text | | Is the possible ability...|**Write**|**Is the capital'
+  0 'Compute 2 * 3 + 4.' -> 'If a calculation problem involves the order of its expression: **2 * 3 + 4** * 3/4* 3 * 4 '
+##### deep13-17 x30: strict=0/6
+  0 'What is 8 * 7?' -> 'The question is nothing part way of the answer: thought thought 8 * 7 = 81 (incorrect answ'
+  0 'What is 3 * 4?' -> 'If this expression is a question, I is 3 * 4? I is 3 * 4? If this expression is a question'
+  0 'What is 12 + 13?' -> "12 + 13 = 13 **1. If you'rent the question is 12 + 13 = 13?** thought 1 **1. If you'rent t"
+  0 'What is 15 divided by 3?' -> "To a single-level calculation, I'm likely that is wrong or is wrong with the following ste"
+  0 'What is the capital of France? Answe' -> "Ex. **Is what is the capital of France?** (Wait) I'llers. **Is what is the capital of Fran"
+  0 'Compute 2 * 3 + 4.' -> 'To compute the expression: **2 * 3 + 4** The order of operations (bracket/division/multias'
+ALLDONE

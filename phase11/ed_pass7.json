@@ -1,0 +1,534 @@
+{
+ "summary": {
+  "name": "ed_pass7",
+  "n": 64,
+  "accuracy": 0.0,
+  "answered": 100.0,
+  "cap_hit_rate": 1.6,
+  "mean_tokens": 279.5,
+  "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
+  "model": "/home/user/wsp11/sandbox/model",
+  "fp8": false,
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#67db9a6402dc (ISSUES #19)",
+  "validity": {
+   "soup_pct": 31.2,
+   "soup_judged": false,
+   "admission_tested": false,
+   "problems": []
+  }
+ },
+ "rows": [
+  {
+   "id": "m0",
+   "gold": "\\left( 3, \\frac{\\pi}{2} \\right)",
+   "pred": "upupup",
+   "ok": false,
+   "n_tokens": 197,
+   "cap_hit": false
+  },
+  {
+   "id": "m1",
+   "gold": "p - q",
+   "pred": "of",
+   "ok": false,
+   "n_tokens": 10,
+   "cap_hit": false
+  },
+  {
+   "id": "m2",
+   "gold": "\\frac{14}{3}",
+   "pred": "",
+   "ok": false,
+   "n_tokens": 1626,
+   "cap_hit": false
+  },
+  {
+   "id": "m3",
+   "gold": "9",
+   "pred": "wayto",
+   "ok": false,
+   "n_tokens": 471,
+   "cap_hit": false
+  },
+  {
+   "id": "m4",
+   "gold": "\\text{Evelyn}",
+   "pred": "styleally",
+   "ok": false,
+   "n_tokens": 25,
+   "cap_hit": false
+  },
+  {
+   "id": "m5",
+   "gold": "42",
+   "pred": "steps",
+   "ok": false,
+   "n_tokens": 86,
+   "cap_hit": false
+  },
+  {
+   "id": "m6",
+   "gold": "27",
+   "pred": "Stepssteps",
+   "ok": false,
+   "n_tokens": 15,
+   "cap_hit": false
+  },
+  {
+   "id": "m7",
+   "gold": "90^\\circ",
+   "pred": "Wewe'\\begin",
+   "ok": false,
+   "n_tokens": 970,
+   "cap_hit": false
+  },
+  {
+   "id": "m8",
+   "gold": "3\\sqrt{13}",
+   "pred": "\\mathbf{9}",
+   "ok": false,
+   "n_tokens": 481,
+   "cap_hit": false
+  },
+  {
+   "id": "m9",
+   "gold": "4",
+   "pred": "whetherWhether",
+   "ok": false,
+   "n_tokens": 6,
+   "cap_hit": false
+  },
+  {
+   "id": "m10",
+   "gold": "2220",
+   "pred": "inconsistily",
+   "ok": false,
+   "n_tokens": 16,
+   "cap_hit": false
+  },
+  {
+   "id": "m11",
+   "gold": "\\frac{3}{56}",
+   "pred": "p(x]",
+   "ok": false,
+   "n_tokens": 28,
+   "cap_hit": false
+  },
+  {
+   "id": "m12",
+   "gold": "284",
+   "pred": "wording",
+   "ok": false,
+   "n_tokens": 33,
+   "cap_hit": false
+  },
+  {
+   "id": "m13",
+   "gold": "5",
+   "pred": "45\\pi",
+   "ok": false,
+   "n_tokens": 51,
+   "cap_hit": false
+  },
+  {
+   "id": "m14",
+   "gold": "\\sqrt{51}",
+   "pred": "otherwise",
+   "ok": false,
+   "n_tokens": 30,
+   "cap_hit": false
+  },
+  {
+   "id": "m15",
+   "gold": "6 - 5i",
+   "pred": "W",
+   "ok": false,
+   "n_tokens": 293,
+   "cap_hit": false
+  },
+  {
+   "id": "m16",
+   "gold": "-50",
+   "pred": "n",
+   "ok": false,
+   "n_tokens": 6,
+   "cap_hit": false
+  },
+  {
+   "id": "m17",
+   "gold": "\\pi",
+   "pred": "detail",
+   "ok": false,
+   "n_tokens": 21,
+   "cap_hit": false
+  },
+  {
+   "id": "m18",
+   "gold": "28",
+   "pred": "Here",
+   "ok": false,
+   "n_tokens": 10,
+   "cap_hit": false
+  },
+  {
+   "id": "m19",
+   "gold": "3",
+   "pred": "uncially",
+   "ok": false,
+   "n_tokens": 48,
+   "cap_hit": false
+  },
+  {
+   "id": "m20",
+   "gold": "6+9i",
+   "pred": "(x))",
+   "ok": false,
+   "n_tokens": 949,
+   "cap_hit": false
+  },
+  {
+   "id": "m21",
+   "gold": "13535",
+   "pred": "thought",
+   "ok": false,
+   "n_tokens": 17,
+   "cap_hit": false
+  },
+  {
+   "id": "m22",
+   "gold": "5",
+   "pred": "Belowshow",
+   "ok": false,
+   "n_tokens": 19,
+   "cap_hit": false
+  },
+  {
+   "id": "m23",
+   "gold": "x=5",
+   "pred": "x",
+   "ok": false,
+   "n_tokens": 20,
+   "cap_hit": false
+  },
+  {
+   "id": "m24",
+   "gold": "10",
+   "pred": "0\\%",
+   "ok": false,
+   "n_tokens": 10,
+   "cap_hit": false
+  },
+  {
+   "id": "m25",
+   "gold": "1,-2",
+   "pred": "\\",
+   "ok": false,
+   "n_tokens": 179,
+   "cap_hit": false
+  },
+  {
+   "id": "m26",
+   "gold": "144",
+   "pred": "fully",
+   "ok": false,
+   "n_tokens": 35,
+   "cap_hit": false
+  },
+  {
+   "id": "m27",
+   "gold": "78",
+   "pred": "solutions",
+   "ok": false,
+   "n_tokens": 47,
+   "cap_hit": false
+  },
+  {
+   "id": "m28",
+   "gold": "-2 + 7i",
+   "pred": "\\ToclarifyyourGoal",
+   "ok": false,
+   "n_tokens": 37,
+   "cap_hit": false
+  },
+  {
+   "id": "m29",
+   "gold": "225",
+   "pred": "00",
+   "ok": false,
+   "n_tokens": 91,
+   "cap_hit": false
+  },
+  {
+   "id": "m30",
+   "gold": "52_8",
+   "pred": "```",
+   "ok": false,
+   "n_tokens": 1383,
+   "cap_hit": false
+  },
+  {
+   "id": "m31",
+   "gold": "11\\sqrt2",
+   "pred": "nt",
+   "ok": false,
+   "n_tokens": 8192,
+   "cap_hit": true
+  },
+  {
+   "id": "m32",
+   "gold": "720",
+   "pred": "to",
+   "ok": false,
+   "n_tokens": 21,
+   "cap_hit": false
+  },
+  {
+   "id": "m33",
+   "gold": "\\frac{243}{625}",
+   "pred": "by",
+   "ok": false,
+   "n_tokens": 238,
+   "cap_hit": false
+  },
+  {
+   "id": "m34",
+   "gold": "-125",
+   "pred": "))",
+   "ok": false,
+   "n_tokens": 250,
+   "cap_hit": false
+  },
+  {
+   "id": "m35",
+   "gold": "3",
+   "pred": "Please",
+   "ok": false,
+   "n_tokens": 48,
+   "cap_hit": false
+  },
+  {
+   "id": "m36",
+   "gold": "3, 5, 7",
+   "pred": "-3",
+   "ok": false,
+   "n_tokens": 72,
+   "cap_hit": false
+  },
+  {
+   "id": "m37",
+   "gold": "72",
+   "pred": "Theuser",
+   "ok": false,
+   "n_tokens": 106,
+   "cap_hit": false
+  },
+  {
+   "id": "m38",
+   "gold": "2000",
+   "pred": "noted",
+   "ok": false,
+   "n_tokens": 32,
+   "cap_hit": false
+  },
+  {
+   "id": "m39",
+   "gold": "23",
+   "pred": "outley",
+   "ok": false,
+   "n_tokens": 45,
+   "cap_hit": false
+  },
+  {
+   "id": "m40",
+   "gold": "12",
+   "pred": "of",
+   "ok": false,
+   "n_tokens": 13,
+   "cap_hit": false
+  },
+  {
+   "id": "m41",
+   "gold": "17",
+   "pred": "interpretarhow",
+   "ok": false,
+   "n_tokens": 183,
+   "cap_hit": false
+  },
+  {
+   "id": "m42",
+   "gold": "4",
+   "pred": "outlined",
+   "ok": false,
+   "n_tokens": 14,
+   "cap_hit": false
+  },
+  {
+   "id": "m43",
+   "gold": "70 \\sqrt{2}",
+   "pred": "analysis",
+   "ok": false,
+   "n_tokens": 15,
+   "cap_hit": false
+  },
+  {
+   "id": "m44",
+   "gold": "1.25",
+   "pred": "please",
+   "ok": false,
+   "n_tokens": 15,
+   "cap_hit": false
+  },
+  {
+   "id": "m45",
+   "gold": "2",
+   "pred": "of",
+   "ok": false,
+   "n_tokens": 6,
+   "cap_hit": false
+  },
+  {
+   "id": "m46",
+   "gold": "6",
+   "pred": "PleaseKindlyProvideAnswer",
+   "ok": false,
+   "n_tokens": 9,
+   "cap_hit": false
+  },
+  {
+   "id": "m47",
+   "gold": "5",
+   "pred": "wise",
+   "ok": false,
+   "n_tokens": 86,
+   "cap_hit": false
+  },
+  {
+   "id": "m48",
+   "gold": "\\frac{3}{2}",
+   "pred": "error",
+   "ok": false,
+   "n_tokens": 20,
+   "cap_hit": false
+  },
+  {
+   "id": "m49",
+   "gold": "83",
+   "pred": "Please",
+   "ok": false,
+   "n_tokens": 23,
+   "cap_hit": false
+  },
+  {
+   "id": "m50",
+   "gold": "203",
+   "pred": "\u5b9e\u9645\u4e0a\u7b54\u6848\u3002",
+   "ok": false,
+   "n_tokens": 93,
+   "cap_hit": false
+  },
+  {
+   "id": "m51",
+   "gold": "x^5 - x^4 + x^3 - x^2 + x - 1",
+   "pred": "methodistic",
+   "ok": false,
+   "n_tokens": 39,
+   "cap_hit": false
+  },
+  {
+   "id": "m52",
+   "gold": "12",
+   "pred": "{?}]",
+   "ok": false,
+   "n_tokens": 35,
+   "cap_hit": false
+  },
+  {
+   "id": "m53",
+   "gold": "-\\frac{\\pi}{6}",
+   "pred": "text",
+   "ok": false,
+   "n_tokens": 6,
+   "cap_hit": false
+  },
+  {
+   "id": "m54",
+   "gold": "0.15",
+   "pred": "towrite\\textGrey{}",
+   "ok": false,
+   "n_tokens": 7,
+   "cap_hit": false
+  },
+  {
+   "id": "m55",
+   "gold": "3",
+   "pred": "corrector",
+   "ok": false,
+   "n_tokens": 48,
+   "cap_hit": false
+  },
+  {
+   "id": "m56",
+   "gold": "11",
+   "pred": "incorrectly",
+   "ok": false,
+   "n_tokens": 16,
+   "cap_hit": false
+  },
+  {
+   "id": "m57",
+   "gold": "16",
+   "pred": "1",
+   "ok": false,
+   "n_tokens": 444,
+   "cap_hit": false
+  },
+  {
+   "id": "m58",
+   "gold": "9901",
+   "pred": "\\text{",
+   "ok": false,
+   "n_tokens": 54,
+   "cap_hit": false
+  },
+  {
+   "id": "m59",
+   "gold": "5",
+   "pred": "Note",
+   "ok": false,
+   "n_tokens": 216,
+   "cap_hit": false
+  },
+  {
+   "id": "m60",
+   "gold": "(6,31,-1)",
+   "pred": "r",
+   "ok": false,
+   "n_tokens": 73,
+   "cap_hit": false
+  },
+  {
+   "id": "m61",
+   "gold": "-256",
+   "pred": "exceeded",
+   "ok": false,
+   "n_tokens": 35,
+   "cap_hit": false
+  },
+  {
+   "id": "m62",
+   "gold": "4",
+   "pred": "FindthesmallestpositiverealnumberCforwhich|begin{indent}\\begin\\headsymbol{\\pmatrix}2&3\\\\\\\\\\\\\\-\\\\endsymbol{\\begin{indent}\\pmatrix}\\\\\\\\\\\\\\\\-\\\\endright|\\beginheadSymbol{\\begin\\indent{]}2&\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-\\\\endsymbol]{\\begin{indent}\\begin\\begin{}}}\\begin{indent}\\in\\mathbb{R}\\begin{indent}\\begin{}}",
+   "ok": false,
+   "n_tokens": 115,
+   "cap_hit": false
+  },
+  {
+   "id": "m63",
+   "gold": "10",
+   "pred": "mathcal:textbook{LaTeX}symbols:LaTeX\u7b26\u53f7:LaTeXs\u00edmbolo:\\symbols:{LaTeXsimbolo:\\symbolLaTeXsymbols:{LaTeX}symbole:\\symbols:{\\vspace",
+   "ok": false,
+   "n_tokens": 108,
+   "cap_hit": false
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "name": "hub19_zero",
+ "layers": [
+  19
+ ],
+ "dose": 1.0,
+ "random": false,
+ "selective": false,
+ "seed": 1,
+ "random_neurons": false,
+ "orig_cols": false,
+ "mapped_dir": false,
+ "u_dirs": "",
+ "minus_d": false,
+ "zero_unit": "19:11",
+ "ncol": 64,
+ "gain": 1.5,
+ "per_layer": {
+  "L19": {
+   "resid_gap": 3.16,
+   "cols": [
+    11
+   ],
+   "a": [
+    -1.0
+   ],
+   "drive": {
+    "loop": 2.973,
+    "pre": 0.302,
+    "clean": 0.24,
+    "deep": 0.344
+   },
+   "fro": 0.276,
+   "cos_dir_d": -0.1362,
+   "dir_norm": 0.276,
+   "realised_rel_err": 0.0,
+   "changed_values": 1024
+  }
+ }
+}

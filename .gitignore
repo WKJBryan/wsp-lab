@@ -24,3 +24,13 @@ phase3/editor/scratch/
 # OS noise
 Thumbs.db
 .DS_Store
+
+# phase-7 raw activations (rebuild via phase7/probe_activations.py)
+phase7/probe_out/
+
+# phase-7 causal-check candidate models (rebuild via phase7/build_brake.py)
+phase7/cands/
+
+# generated page (rebuild via phase7/build_lightmap.py)
+phase7/lightmap.html
+phase7/timeline.html
