@@ -1,0 +1,165 @@
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<02:02,  2.59it/s]Loading weights:  11%|█▏        | 36/320 [00:00<00:02, 96.50it/s]Loading weights:  21%|██        | 67/320 [00:00<00:01, 154.58it/s]Loading weights:  31%|███       | 99/320 [00:00<00:01, 200.24it/s]Loading weights:  42%|████▏     | 134/320 [00:00<00:00, 239.01it/s]Loading weights:  53%|█████▎    | 171/320 [00:00<00:00, 273.66it/s]Loading weights:  63%|██████▎   | 203/320 [00:01<00:00, 285.27it/s]Loading weights:  74%|███████▍  | 238/320 [00:01<00:00, 302.01it/s]Loading weights:  86%|████████▌ | 274/320 [00:01<00:00, 318.65it/s]Loading weights:  96%|█████████▋| 308/320 [00:01<00:00, 316.83it/s]Loading weights: 100%|██████████| 320/320 [00:01<00:00, 237.56it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+p66 context tail: 'ors?\n        $-1/8$ is fine.\n        $1/2$ is fine.\n        Okay.\n\n    *   Final output generation.\n'
+== p66 close decision offset=6077 ==
+   0.3905     262  '   '
+   0.3041  248069  '</think>'
+   0.3041     285  '       '
+   0.0003    1031  '    \n'
+   0.0003     950  '      '
+   0.0002     309  '           '
+   0.0002    1726  '        \n'
+   0.0001     260  '        '
+   0.0001     406  '     '
+   0.0000   71093  '```'
+   0.0000     670  '         '
+   0.0000     257  '    '
+   0.0000     388  '               '
+   0.0000     646  '                       '
+   0.0000      27  '<'
+   [think_end] logit=24.625 prob=0.304140 rank=2
+   [think_start] logit=8.625 prob=0.000000 rank=182
+   [ Wait] logit=6.969 prob=0.000000 rank=669
+   [ Okay] logit=2.906 prob=0.000000 rank=18253
+   [ Looks] logit=4.812 prob=0.000000 rank=3857
+   [ The] logit=10.812 prob=0.000000 rank=43
+   [ So] logit=1.234 prob=0.000000 rank=58631
+   [ Let] logit=7.281 prob=0.000000 rank=519
+   [ Now] logit=3.688 prob=0.000000 rank=9724
+   [ I] logit=9.438 prob=0.000000 rank=102
+   [
+
+] logit=8.875 prob=0.000000 rank=149
+   [ Correct] logit=2.734 prob=0.000000 rank=20852
+   [ Hmm] logit=1.289 prob=0.000000 rank=56773
+
+p66 context tail: 'egative denominators?\n        $-1/8$ is fine.\n        $1/2$ is fine.\n        Okay.\n\n    *   Final ou'
+== p66 close decision offset=6060 ==
+   0.6372     611  'put'
+   0.0462     409  'pt'
+   0.0359      79  'p'
+   0.0141    4677  'lt'
+   0.0132     330  'ut'
+   0.0132   16425  'puts'
+   0.0097    3233  'rt'
+   0.0091     261  'er'
+   0.0062     692  'per'
+   0.0059     461  'art'
+   0.0055     277  'ar'
+   0.0055      75  'l'
+   0.0055     327  'ad'
+   0.0049     765  'tp'
+   0.0040      69  'f'
+   [think_end] logit=3.984 prob=0.000000 rank=17897
+   [think_start] logit=3.875 prob=0.000000 rank=18975
+   [ Wait] logit=6.750 prob=0.000001 rank=3924
+   [ Okay] logit=2.641 prob=0.000000 rank=35594
+   [ Looks] logit=4.875 prob=0.000000 rank=11051
+   [ The] logit=7.062 prob=0.000002 rank=3258
+   [ So] logit=8.000 prob=0.000005 rank=1830
+   [ Let] logit=8.500 prob=0.000008 rank=1345
+   [ Now] logit=5.375 prob=0.000000 rank=8425
+   [ I] logit=9.312 prob=0.000019 rank=791
+   [
+
+] logit=11.938 prob=0.000258 rank=147
+   [ Correct] logit=3.938 prob=0.000000 rank=18367
+   [ Hmm] logit=3.828 prob=0.000000 rank=19407
+
+== CLEAN loop test nrep=1 ==
+   0.4598    6558  ' Let'
+   0.1026     348  ' *'
+   0.0799     561  ' The'
+   0.0705   56014  ' $\\'
+   0.0377    2441  ' Or'
+   0.0333    7179  ' Yes'
+   0.0229   13428  ' Wait'
+   0.0229    2233  ' No'
+   0.0202     393  ' $'
+   0.0202   10380  ' Maybe'
+   0.0178   32645  ' Actually'
+   0.0178     220  ' '
+   0.0123    1368  ' If'
+   0.0066    1049  ' It'
+   0.0051     353  ' I'
+   [think_end] logit=6.406 prob=0.000001 rank=1928
+   [think_start] logit=3.828 prob=0.000000 rank=6923
+   [ Wait] logit=17.125 prob=0.022891 rank=7
+   [ Okay] logit=13.625 prob=0.000691 rank=36
+   [ Looks] logit=10.938 prob=0.000047 rank=150
+   [ The] logit=18.375 prob=0.079896 rank=3
+   [ So] logit=12.812 prob=0.000307 rank=60
+   [ Let] logit=20.125 prob=0.459773 rank=1
+   [ Now] logit=11.312 prob=0.000068 rank=128
+   [ I] logit=15.625 prob=0.005108 rank=15
+   [
+
+] logit=13.125 prob=0.000419 rank=52
+   [ Correct] logit=11.188 prob=0.000060 rank=136
+   [ Hmm] logit=12.438 prob=0.000211 rank=71
+
+== CLEAN loop test nrep=3 ==
+   0.4209    6558  ' Let'
+   0.2253   13428  ' Wait'
+   0.1549     348  ' *'
+   0.0305     561  ' The'
+   0.0210    2233  ' No'
+   0.0185   32645  ' Actually'
+   0.0163   56014  ' $\\'
+   0.0127    1088  ' \\'
+   0.0112     353  ' I'
+   0.0087   15885  ' Ah'
+   0.0077   34267  ' Okay'
+   0.0068     220  ' '
+   0.0056   10380  ' Maybe'
+   0.0056    7179  ' Yes'
+   0.0041     393  ' $'
+   [think_end] logit=7.500 prob=0.000001 rank=860
+   [think_start] logit=4.938 prob=0.000000 rank=3521
+   [ Wait] logit=19.500 prob=0.225306 rank=2
+   [ Okay] logit=16.125 prob=0.007710 rank=11
+   [ Looks] logit=9.562 prob=0.000011 rank=260
+   [ The] logit=17.500 prob=0.030492 rank=4
+   [ So] logit=14.000 prob=0.000921 rank=30
+   [ Let] logit=20.125 prob=0.420927 rank=1
+   [ Now] logit=11.375 prob=0.000067 rank=88
+   [ I] logit=16.500 prob=0.011217 rank=9
+   [
+
+] logit=14.688 prob=0.001831 rank=23
+   [ Correct] logit=11.812 prob=0.000103 rank=72
+   [ Hmm] logit=13.875 prob=0.000813 rank=32
+
+== CLEAN loop test nrep=8 ==
+   0.4500   13428  ' Wait'
+   0.1876    6558  ' Let'
+   0.1656     348  ' *'
+   0.0288    1088  ' \\'
+   0.0224     561  ' The'
+   0.0224   34267  ' Okay'
+   0.0198     353  ' I'
+   0.0068   32645  ' Actually'
+   0.0064     220  ' '
+   0.0057     198  '\n'
+   0.0050    3655  ' wait'
+   0.0050    2423  ' ...'
+   0.0044    2233  ' No'
+   0.0044     271  '\n\n'
+   0.0044   15885  ' Ah'
+   [think_end] logit=8.438 prob=0.000005 rank=505
+   [think_start] logit=6.531 prob=0.000001 rank=1526
+   [ Wait] logit=19.875 prob=0.450033 rank=1
+   [ Okay] logit=16.875 prob=0.022406 rank=5
+   [ Looks] logit=8.438 prob=0.000005 rank=505
+   [ The] logit=16.875 prob=0.022406 rank=5
+   [ So] logit=14.500 prob=0.002084 rank=21
+   [ Let] logit=19.000 prob=0.187602 rank=2
+   [ Now] logit=12.062 prob=0.000182 rank=60
+   [ I] logit=16.750 prob=0.019773 rank=7
+   [
+
+] logit=15.250 prob=0.004412 rank=13
+   [ Correct] logit=12.312 prob=0.000234 rank=55
+   [ Hmm] logit=13.875 prob=0.001116 rank=31
+

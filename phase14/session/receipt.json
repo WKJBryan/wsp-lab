@@ -1,0 +1,17 @@
+{
+ "time": "2026-11-26T01:11:32",
+ "fingerprint": "0a4590253bf4b2f44be5c060dda079a0c40901553825e25d32c8998707b3404c",
+ "note": "Final: break the verbatim-loop attractor - layer-0 GDN out_proj head 3 x0.5, five loop-carrying head-8 channels (44,50,76,81,120) zeroed",
+ "changed_tensors": [
+  {
+   "tensor": "model.language_model.layers.0.linear_attn.out_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 136192,
+   "max_abs_delta": 0.083984,
+   "norm_delta": 2.260253
+  }
+ ]
+}

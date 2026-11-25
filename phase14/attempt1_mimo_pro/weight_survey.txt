@@ -1,0 +1,335 @@
+    300.8218   0.01970    0.23047       0 [248320, 1024]     model.language_model.embed_tokens.weight
+      8.5493   0.12220    1.00000       0 [1024]             model.language_model.layers.0.input_layernorm.weight
+      9.8095   1.49517    6.59375       0 [16]               model.language_model.layers.0.linear_attn.A_log
+     11.4153   0.07282    1.75781       0 [6144, 1, 4]       model.language_model.layers.0.linear_attn.conv1d.weight
+     24.2636   5.95078   13.06250       0 [16]               model.language_model.layers.0.linear_attn.dt_bias
+      4.8248   0.03769    0.18164       0 [16, 1024]         model.language_model.layers.0.linear_attn.in_proj_a.weight
+      2.2407   0.01750    0.13574       0 [16, 1024]         model.language_model.layers.0.linear_attn.in_proj_b.weight
+     41.5204   0.01656    0.39062       0 [6144, 1024]       model.language_model.layers.0.linear_attn.in_proj_qkv.weight
+     25.0527   0.01730    0.46094       0 [2048, 1024]       model.language_model.layers.0.linear_attn.in_proj_z.weight
+     10.8099   0.08585    1.05957       0 [128]              model.language_model.layers.0.linear_attn.norm.weight
+     17.9161   0.01237    0.28320       0 [1024, 2048]       model.language_model.layers.0.linear_attn.out_proj.weight
+     16.2787   0.00850    0.26758       0 [1024, 3584]       model.language_model.layers.0.mlp.down_proj.weight
+     23.2141   0.01212    0.18164       0 [3584, 1024]       model.language_model.layers.0.mlp.gate_proj.weight
+     16.3930   0.00856    0.08350       0 [3584, 1024]       model.language_model.layers.0.mlp.up_proj.weight
+      4.1002   0.09566    0.35742       0 [1024]             model.language_model.layers.0.post_attention_layernorm.weight
+     14.0575   0.09713    0.78906       0 [1024]             model.language_model.layers.1.input_layernorm.weight
+      5.4598   1.24660    2.35938       0 [16]               model.language_model.layers.1.linear_attn.A_log
+     10.7539   0.06860    1.82031       0 [6144, 1, 4]       model.language_model.layers.1.linear_attn.conv1d.weight
+     12.4982   3.12779    6.00000       0 [16]               model.language_model.layers.1.linear_attn.dt_bias
+      3.8582   0.03014    0.20020       0 [16, 1024]         model.language_model.layers.1.linear_attn.in_proj_a.weight
+      2.3819   0.01861    0.21289       0 [16, 1024]         model.language_model.layers.1.linear_attn.in_proj_b.weight
+     41.7310   0.01664    0.31250       0 [6144, 1024]       model.language_model.layers.1.linear_attn.in_proj_qkv.weight
+     27.7688   0.01917    0.18262       0 [2048, 1024]       model.language_model.layers.1.linear_attn.in_proj_z.weight
+     10.5329   0.09448    1.07422       0 [128]              model.language_model.layers.1.linear_attn.norm.weight
+     18.3441   0.01267    0.32422       0 [1024, 2048]       model.language_model.layers.1.linear_attn.out_proj.weight
+     16.4535   0.00859    0.18555       0 [1024, 3584]       model.language_model.layers.1.mlp.down_proj.weight
+     25.4843   0.01330    0.16016       0 [3584, 1024]       model.language_model.layers.1.mlp.gate_proj.weight
+     16.3938   0.00856    0.10156       0 [3584, 1024]       model.language_model.layers.1.mlp.up_proj.weight
+      5.9590   0.08237    0.47852       0 [1024]             model.language_model.layers.1.post_attention_layernorm.weight
+     12.2484   0.24527    0.64453       0 [1024]             model.language_model.layers.10.input_layernorm.weight
+      5.3771   0.86099    1.87500       0 [16]               model.language_model.layers.10.linear_attn.A_log
+     10.9766   0.07002    1.33594       0 [6144, 1, 4]       model.language_model.layers.10.linear_attn.conv1d.weight
+     11.7946   2.19932    7.00000       0 [16]               model.language_model.layers.10.linear_attn.dt_bias
+      3.0823   0.02408    0.16797       0 [16, 1024]         model.language_model.layers.10.linear_attn.in_proj_a.weight
+      2.3209   0.01813    0.16504       0 [16, 1024]         model.language_model.layers.10.linear_attn.in_proj_b.weight
+     41.3647   0.01649    0.25391       0 [6144, 1024]       model.language_model.layers.10.linear_attn.in_proj_qkv.weight
+     20.0014   0.01381    0.16504       0 [2048, 1024]       model.language_model.layers.10.linear_attn.in_proj_z.weight
+     11.8046   0.06210    1.15918       0 [128]              model.language_model.layers.10.linear_attn.norm.weight
+     16.8951   0.01167    0.26758       0 [1024, 2048]       model.language_model.layers.10.linear_attn.out_proj.weight
+     15.2426   0.00796    0.16211       0 [1024, 3584]       model.language_model.layers.10.mlp.down_proj.weight
+     21.2109   0.01107    0.16113       0 [3584, 1024]       model.language_model.layers.10.mlp.gate_proj.weight
+     15.9287   0.00831    0.08154       0 [3584, 1024]       model.language_model.layers.10.mlp.up_proj.weight
+      5.6656   0.16415    0.51562       0 [1024]             model.language_model.layers.10.post_attention_layernorm.weight
+      7.8087   0.19839    0.69922       0 [1024]             model.language_model.layers.11.input_layernorm.weight
+     15.5034   0.00809    0.16113       0 [1024, 3584]       model.language_model.layers.11.mlp.down_proj.weight
+     21.0082   0.01097    0.16992       0 [3584, 1024]       model.language_model.layers.11.mlp.gate_proj.weight
+     16.1479   0.00843    0.10840       0 [3584, 1024]       model.language_model.layers.11.mlp.up_proj.weight
+      5.6921   0.14440    0.43555       0 [1024]             model.language_model.layers.11.post_attention_layernorm.weight
+     10.6812   0.22096    1.31250       0 [256]              model.language_model.layers.11.self_attn.k_norm.weight
+      8.4349   0.01165    0.11279       0 [512, 1024]        model.language_model.layers.11.self_attn.k_proj.weight
+     16.8627   0.01164    0.12891       0 [1024, 2048]       model.language_model.layers.11.self_attn.o_proj.weight
+     10.6294   0.21288    1.13281       0 [256]              model.language_model.layers.11.self_attn.q_norm.weight
+     28.8992   0.01411    0.19629       0 [4096, 1024]       model.language_model.layers.11.self_attn.q_proj.weight
+     10.4862   0.01448    0.14160       0 [512, 1024]        model.language_model.layers.11.self_attn.v_proj.weight
+     16.9837   0.22088    0.84766       0 [1024]             model.language_model.layers.12.input_layernorm.weight
+      6.7974   0.84023    3.03125       0 [16]               model.language_model.layers.12.linear_attn.A_log
+     15.9320   0.10163    1.25781       0 [6144, 1, 4]       model.language_model.layers.12.linear_attn.conv1d.weight
+     14.8042   1.86798    6.65625       0 [16]               model.language_model.layers.12.linear_attn.dt_bias
+      3.3954   0.02653    0.16602       0 [16, 1024]         model.language_model.layers.12.linear_attn.in_proj_a.weight
+      2.0237   0.01581    0.11572       0 [16, 1024]         model.language_model.layers.12.linear_attn.in_proj_b.weight
+     46.2301   0.01843    0.27148       0 [6144, 1024]       model.language_model.layers.12.linear_attn.in_proj_qkv.weight
+     21.7063   0.01499    0.19238       0 [2048, 1024]       model.language_model.layers.12.linear_attn.in_proj_z.weight
+     11.2694   0.06620    1.14062       0 [128]              model.language_model.layers.12.linear_attn.norm.weight
+     16.2164   0.01120    0.19922       0 [1024, 2048]       model.language_model.layers.12.linear_attn.out_proj.weight
+     15.2221   0.00795    0.13770       0 [1024, 3584]       model.language_model.layers.12.mlp.down_proj.weight
+     23.0098   0.01201    0.22852       0 [3584, 1024]       model.language_model.layers.12.mlp.gate_proj.weight
+     15.7719   0.00823    0.09082       0 [3584, 1024]       model.language_model.layers.12.mlp.up_proj.weight
+      5.7529   0.11804    0.33789       0 [1024]             model.language_model.layers.12.post_attention_layernorm.weight
+     14.9483   0.20048    0.83594       0 [1024]             model.language_model.layers.13.input_layernorm.weight
+      5.4330   0.59832    2.20312       0 [16]               model.language_model.layers.13.linear_attn.A_log
+     12.6916   0.08095    0.76562       0 [6144, 1, 4]       model.language_model.layers.13.linear_attn.conv1d.weight
+      8.9028   1.70170    5.34375       0 [16]               model.language_model.layers.13.linear_attn.dt_bias
+      2.8812   0.02251    0.16016       0 [16, 1024]         model.language_model.layers.13.linear_attn.in_proj_a.weight
+      2.0328   0.01588    0.12061       0 [16, 1024]         model.language_model.layers.13.linear_attn.in_proj_b.weight
+     43.7284   0.01743    0.23535       0 [6144, 1024]       model.language_model.layers.13.linear_attn.in_proj_qkv.weight
+     20.9403   0.01446    0.19238       0 [2048, 1024]       model.language_model.layers.13.linear_attn.in_proj_z.weight
+     11.7095   0.05637    1.15039       0 [128]              model.language_model.layers.13.linear_attn.norm.weight
+     16.7652   0.01158    0.31250       0 [1024, 2048]       model.language_model.layers.13.linear_attn.out_proj.weight
+     15.3475   0.00801    0.14062       0 [1024, 3584]       model.language_model.layers.13.mlp.down_proj.weight
+     23.8107   0.01243    0.18945       0 [3584, 1024]       model.language_model.layers.13.mlp.gate_proj.weight
+     15.9121   0.00831    0.10352       0 [3584, 1024]       model.language_model.layers.13.mlp.up_proj.weight
+      5.8279   0.09609    0.36914       0 [1024]             model.language_model.layers.13.post_attention_layernorm.weight
+     13.3254   0.16012    0.69922       0 [1024]             model.language_model.layers.14.input_layernorm.weight
+      5.5608   1.05847    2.39062       0 [16]               model.language_model.layers.14.linear_attn.A_log
+     13.3928   0.08543    0.73828       0 [6144, 1, 4]       model.language_model.layers.14.linear_attn.conv1d.weight
+     12.6434   2.28411    7.31250       0 [16]               model.language_model.layers.14.linear_attn.dt_bias
+      2.8729   0.02244    0.20117       0 [16, 1024]         model.language_model.layers.14.linear_attn.in_proj_a.weight
+      1.9978   0.01561    0.14844       0 [16, 1024]         model.language_model.layers.14.linear_attn.in_proj_b.weight
+     44.1065   0.01759    0.44141       0 [6144, 1024]       model.language_model.layers.14.linear_attn.in_proj_qkv.weight
+     22.3593   0.01544    0.19629       0 [2048, 1024]       model.language_model.layers.14.linear_attn.in_proj_z.weight
+     11.4820   0.06144    1.12695       0 [128]              model.language_model.layers.14.linear_attn.norm.weight
+     16.9286   0.01169    0.16992       0 [1024, 2048]       model.language_model.layers.14.linear_attn.out_proj.weight
+     15.1428   0.00790    0.19531       0 [1024, 3584]       model.language_model.layers.14.mlp.down_proj.weight
+     26.1990   0.01368    0.33984       0 [3584, 1024]       model.language_model.layers.14.mlp.gate_proj.weight
+     16.1330   0.00842    0.11133       0 [3584, 1024]       model.language_model.layers.14.mlp.up_proj.weight
+      5.9701   0.03886    0.33984       0 [1024]             model.language_model.layers.14.post_attention_layernorm.weight
+      6.8873   0.08166    0.67578       0 [1024]             model.language_model.layers.15.input_layernorm.weight
+     16.4436   0.00858    0.18262       0 [1024, 3584]       model.language_model.layers.15.mlp.down_proj.weight
+     27.2644   0.01423    0.31641       0 [3584, 1024]       model.language_model.layers.15.mlp.gate_proj.weight
+     17.1314   0.00894    0.13965       0 [3584, 1024]       model.language_model.layers.15.mlp.up_proj.weight
+      7.8563   0.04471    0.39258       0 [1024]             model.language_model.layers.15.post_attention_layernorm.weight
+     10.9182   0.26354    1.42969       0 [256]              model.language_model.layers.15.self_attn.k_norm.weight
+      8.3059   0.01147    0.12354       0 [512, 1024]        model.language_model.layers.15.self_attn.k_proj.weight
+     20.0365   0.01384    0.17188       0 [1024, 2048]       model.language_model.layers.15.self_attn.o_proj.weight
+     10.7949   0.26479    1.29688       0 [256]              model.language_model.layers.15.self_attn.q_norm.weight
+     32.1233   0.01569    0.26758       0 [4096, 1024]       model.language_model.layers.15.self_attn.q_proj.weight
+     11.9793   0.01654    0.30078       0 [512, 1024]        model.language_model.layers.15.self_attn.v_proj.weight
+     18.3455   0.11483    1.07031       0 [1024]             model.language_model.layers.16.input_layernorm.weight
+      6.1367   0.58564    2.17188       0 [16]               model.language_model.layers.16.linear_attn.A_log
+     19.9689   0.12738    1.77344       0 [6144, 1, 4]       model.language_model.layers.16.linear_attn.conv1d.weight
+     12.7062   2.65139    5.25000       0 [16]               model.language_model.layers.16.linear_attn.dt_bias
+      3.2369   0.02529    0.14844       0 [16, 1024]         model.language_model.layers.16.linear_attn.in_proj_a.weight
+      2.1922   0.01713    0.15234       0 [16, 1024]         model.language_model.layers.16.linear_attn.in_proj_b.weight
+     53.1887   0.02121    0.34180       0 [6144, 1024]       model.language_model.layers.16.linear_attn.in_proj_qkv.weight
+     22.9742   0.01586    0.20996       0 [2048, 1024]       model.language_model.layers.16.linear_attn.in_proj_z.weight
+     10.2021   0.08780    1.08154       0 [128]              model.language_model.layers.16.linear_attn.norm.weight
+     16.0449   0.01108    0.26758       0 [1024, 2048]       model.language_model.layers.16.linear_attn.out_proj.weight
+     16.3708   0.00855    0.23926       0 [1024, 3584]       model.language_model.layers.16.mlp.down_proj.weight
+     29.5319   0.01541    0.27734       0 [3584, 1024]       model.language_model.layers.16.mlp.gate_proj.weight
+     17.0412   0.00890    0.08252       0 [3584, 1024]       model.language_model.layers.16.mlp.up_proj.weight
+     10.0145   0.07637    0.47656       0 [1024]             model.language_model.layers.16.post_attention_layernorm.weight
+     21.7460   0.07979    1.08594       0 [1024]             model.language_model.layers.17.input_layernorm.weight
+      5.5954   0.37343    1.93750       0 [16]               model.language_model.layers.17.linear_attn.A_log
+     24.3223   0.15515    0.95312       0 [6144, 1, 4]       model.language_model.layers.17.linear_attn.conv1d.weight
+     12.2749   2.52032    5.59375       0 [16]               model.language_model.layers.17.linear_attn.dt_bias
+      3.1901   0.02492    0.21582       0 [16, 1024]         model.language_model.layers.17.linear_attn.in_proj_a.weight
+      1.9835   0.01550    0.11816       0 [16, 1024]         model.language_model.layers.17.linear_attn.in_proj_b.weight
+     56.8137   0.02265    0.39453       0 [6144, 1024]       model.language_model.layers.17.linear_attn.in_proj_qkv.weight
+     24.1218   0.01666    0.16016       0 [2048, 1024]       model.language_model.layers.17.linear_attn.in_proj_z.weight
+      9.2921   0.09729    1.05566       0 [128]              model.language_model.layers.17.linear_attn.norm.weight
+     15.5029   0.01070    0.17578       0 [1024, 2048]       model.language_model.layers.17.linear_attn.out_proj.weight
+     16.3879   0.00855    0.19531       0 [1024, 3584]       model.language_model.layers.17.mlp.down_proj.weight
+     32.1598   0.01679    0.26172       0 [3584, 1024]       model.language_model.layers.17.mlp.gate_proj.weight
+     17.1074   0.00893    0.09033       0 [3584, 1024]       model.language_model.layers.17.mlp.up_proj.weight
+     11.7741   0.08600    0.62109       0 [1024]             model.language_model.layers.17.post_attention_layernorm.weight
+     23.5253   0.06394    1.17188       0 [1024]             model.language_model.layers.18.input_layernorm.weight
+      5.5447   0.28640    1.79688       0 [16]               model.language_model.layers.18.linear_attn.A_log
+     24.9617   0.15923    1.19531       0 [6144, 1, 4]       model.language_model.layers.18.linear_attn.conv1d.weight
+     15.9681   3.81113    6.21875       0 [16]               model.language_model.layers.18.linear_attn.dt_bias
+      2.9744   0.02324    0.20312       0 [16, 1024]         model.language_model.layers.18.linear_attn.in_proj_a.weight
+      2.0189   0.01577    0.13086       0 [16, 1024]         model.language_model.layers.18.linear_attn.in_proj_b.weight
+     58.9079   0.02349    0.36719       0 [6144, 1024]       model.language_model.layers.18.linear_attn.in_proj_qkv.weight
+     24.8561   0.01716    0.22363       0 [2048, 1024]       model.language_model.layers.18.linear_attn.in_proj_z.weight
+      9.0061   0.09487    1.06934       0 [128]              model.language_model.layers.18.linear_attn.norm.weight
+     14.6409   0.01011    0.24609       0 [1024, 2048]       model.language_model.layers.18.linear_attn.out_proj.weight
+     16.4330   0.00858    0.27148       0 [1024, 3584]       model.language_model.layers.18.mlp.down_proj.weight
+     33.9948   0.01774    0.36719       0 [3584, 1024]       model.language_model.layers.18.mlp.gate_proj.weight
+     17.3758   0.00907    0.08789       0 [3584, 1024]       model.language_model.layers.18.mlp.up_proj.weight
+     13.2714   0.08147    0.61719       0 [1024]             model.language_model.layers.18.post_attention_layernorm.weight
+      7.5540   0.10245    0.64062       0 [1024]             model.language_model.layers.19.input_layernorm.weight
+     17.2561   0.00901    0.24512       0 [1024, 3584]       model.language_model.layers.19.mlp.down_proj.weight
+     32.7134   0.01707    0.47070       0 [3584, 1024]       model.language_model.layers.19.mlp.gate_proj.weight
+     17.8653   0.00932    0.08154       0 [3584, 1024]       model.language_model.layers.19.mlp.up_proj.weight
+     11.7826   0.06246    0.49805       0 [1024]             model.language_model.layers.19.post_attention_layernorm.weight
+      8.6400   0.27934    1.43750       0 [256]              model.language_model.layers.19.self_attn.k_norm.weight
+      8.0789   0.01116    0.17773       0 [512, 1024]        model.language_model.layers.19.self_attn.k_proj.weight
+     24.2121   0.01672    0.22266       0 [1024, 2048]       model.language_model.layers.19.self_attn.o_proj.weight
+      8.6678   0.27332    1.01562       0 [256]              model.language_model.layers.19.self_attn.q_norm.weight
+     31.8858   0.01557    0.20605       0 [4096, 1024]       model.language_model.layers.19.self_attn.q_proj.weight
+     14.4072   0.01990    0.38086       0 [512, 1024]        model.language_model.layers.19.self_attn.v_proj.weight
+     14.4410   0.10169    0.91797       0 [1024]             model.language_model.layers.2.input_layernorm.weight
+      5.6303   0.88281    2.87500       0 [16]               model.language_model.layers.2.linear_attn.A_log
+     12.5109   0.07980    1.35938       0 [6144, 1, 4]       model.language_model.layers.2.linear_attn.conv1d.weight
+     10.9411   2.46592    5.46875       0 [16]               model.language_model.layers.2.linear_attn.dt_bias
+      3.5141   0.02745    0.19727       0 [16, 1024]         model.language_model.layers.2.linear_attn.in_proj_a.weight
+      2.3710   0.01852    0.17676       0 [16, 1024]         model.language_model.layers.2.linear_attn.in_proj_b.weight
+     43.2783   0.01725    0.25000       0 [6144, 1024]       model.language_model.layers.2.linear_attn.in_proj_qkv.weight
+     28.2550   0.01951    0.19336       0 [2048, 1024]       model.language_model.layers.2.linear_attn.in_proj_z.weight
+     10.6457   0.11405    1.08887       0 [128]              model.language_model.layers.2.linear_attn.norm.weight
+     18.1064   0.01250    0.29688       0 [1024, 2048]       model.language_model.layers.2.linear_attn.out_proj.weight
+     15.7737   0.00823    0.22168       0 [1024, 3584]       model.language_model.layers.2.mlp.down_proj.weight
+     31.1235   0.01624    0.15234       0 [3584, 1024]       model.language_model.layers.2.mlp.gate_proj.weight
+     15.6203   0.00815    0.10840       0 [3584, 1024]       model.language_model.layers.2.mlp.up_proj.weight
+      8.4816   0.08783    0.62891       0 [1024]             model.language_model.layers.2.post_attention_layernorm.weight
+     20.9506   0.08041    1.19531       0 [1024]             model.language_model.layers.20.input_layernorm.weight
+      5.3988   0.39563    1.77344       0 [16]               model.language_model.layers.20.linear_attn.A_log
+     27.7484   0.17701    1.30469       0 [6144, 1, 4]       model.language_model.layers.20.linear_attn.conv1d.weight
+     14.0945   3.33576    5.21875       0 [16]               model.language_model.layers.20.linear_attn.dt_bias
+      3.5989   0.02812    0.19922       0 [16, 1024]         model.language_model.layers.20.linear_attn.in_proj_a.weight
+      2.4269   0.01896    0.13086       0 [16, 1024]         model.language_model.layers.20.linear_attn.in_proj_b.weight
+     59.2005   0.02360    0.58203       0 [6144, 1024]       model.language_model.layers.20.linear_attn.in_proj_qkv.weight
+     25.4258   0.01756    0.30859       0 [2048, 1024]       model.language_model.layers.20.linear_attn.in_proj_z.weight
+      9.2910   0.08662    1.03442       0 [128]              model.language_model.layers.20.linear_attn.norm.weight
+     15.2464   0.01053    0.26758       0 [1024, 2048]       model.language_model.layers.20.linear_attn.out_proj.weight
+     17.5073   0.00914    0.25000       0 [1024, 3584]       model.language_model.layers.20.mlp.down_proj.weight
+     32.5602   0.01699    0.27148       0 [3584, 1024]       model.language_model.layers.20.mlp.gate_proj.weight
+     18.2472   0.00953    0.09082       0 [3584, 1024]       model.language_model.layers.20.mlp.up_proj.weight
+     12.8291   0.06433    0.58594       0 [1024]             model.language_model.layers.20.post_attention_layernorm.weight
+     23.2138   0.07357    1.46875       0 [1024]             model.language_model.layers.21.input_layernorm.weight
+      5.6913   0.37966    1.90625       0 [16]               model.language_model.layers.21.linear_attn.A_log
+     26.7704   0.17077    1.23438       0 [6144, 1, 4]       model.language_model.layers.21.linear_attn.conv1d.weight
+     13.8704   3.56873    5.62500       0 [16]               model.language_model.layers.21.linear_attn.dt_bias
+      3.5218   0.02752    0.20898       0 [16, 1024]         model.language_model.layers.21.linear_attn.in_proj_a.weight
+      2.1772   0.01700    0.12354       0 [16, 1024]         model.language_model.layers.21.linear_attn.in_proj_b.weight
+     56.9177   0.02269    0.49609       0 [6144, 1024]       model.language_model.layers.21.linear_attn.in_proj_qkv.weight
+     25.8063   0.01782    0.28906       0 [2048, 1024]       model.language_model.layers.21.linear_attn.in_proj_z.weight
+     10.0515   0.07462    1.03491       0 [128]              model.language_model.layers.21.linear_attn.norm.weight
+     16.7805   0.01159    0.25977       0 [1024, 2048]       model.language_model.layers.21.linear_attn.out_proj.weight
+     17.7042   0.00924    0.15918       0 [1024, 3584]       model.language_model.layers.21.mlp.down_proj.weight
+     32.9127   0.01718    0.37305       0 [3584, 1024]       model.language_model.layers.21.mlp.gate_proj.weight
+     18.7136   0.00977    0.13672       0 [3584, 1024]       model.language_model.layers.21.mlp.up_proj.weight
+     13.4038   0.05395    0.57422       0 [1024]             model.language_model.layers.21.post_attention_layernorm.weight
+     16.5253   0.07155    1.08594       0 [1024]             model.language_model.layers.22.input_layernorm.weight
+      5.4127   0.37533    1.68750       0 [16]               model.language_model.layers.22.linear_attn.A_log
+     23.9355   0.15268    1.25781       0 [6144, 1, 4]       model.language_model.layers.22.linear_attn.conv1d.weight
+     14.0677   3.62433    7.40625       0 [16]               model.language_model.layers.22.linear_attn.dt_bias
+      3.9286   0.03069    0.22363       0 [16, 1024]         model.language_model.layers.22.linear_attn.in_proj_a.weight
+      2.4705   0.01929    0.20312       0 [16, 1024]         model.language_model.layers.22.linear_attn.in_proj_b.weight
+     50.1916   0.02001    0.40625       0 [6144, 1024]       model.language_model.layers.22.linear_attn.in_proj_qkv.weight
+     25.8700   0.01786    0.37891       0 [2048, 1024]       model.language_model.layers.22.linear_attn.in_proj_z.weight
+     11.7340   0.06200    1.16797       0 [128]              model.language_model.layers.22.linear_attn.norm.weight
+     17.7025   0.01222    0.32422       0 [1024, 2048]       model.language_model.layers.22.linear_attn.out_proj.weight
+     17.5206   0.00915    0.20508       0 [1024, 3584]       model.language_model.layers.22.mlp.down_proj.weight
+     33.5181   0.01750    0.40820       0 [3584, 1024]       model.language_model.layers.22.mlp.gate_proj.weight
+     19.1735   0.01001    0.16895       0 [3584, 1024]       model.language_model.layers.22.mlp.up_proj.weight
+     12.6415   0.04284    0.58984       0 [1024]             model.language_model.layers.22.post_attention_layernorm.weight
+      9.2713   0.11250    0.78125       0 [1024]             model.language_model.layers.23.input_layernorm.weight
+     16.4175   0.00857    0.33789       0 [1024, 3584]       model.language_model.layers.23.mlp.down_proj.weight
+     36.1783   0.01888    0.51172       0 [3584, 1024]       model.language_model.layers.23.mlp.gate_proj.weight
+     21.2476   0.01109    0.22168       0 [3584, 1024]       model.language_model.layers.23.mlp.up_proj.weight
+      8.3653   0.06063    0.82031       0 [1024]             model.language_model.layers.23.post_attention_layernorm.weight
+      7.6298   0.27124    1.34375       0 [256]              model.language_model.layers.23.self_attn.k_norm.weight
+      7.3319   0.01013    0.14941       0 [512, 1024]        model.language_model.layers.23.self_attn.k_proj.weight
+     20.0649   0.01385    0.26953       0 [1024, 2048]       model.language_model.layers.23.self_attn.o_proj.weight
+      7.8688   0.30245    1.14844       0 [256]              model.language_model.layers.23.self_attn.q_norm.weight
+     33.5901   0.01640    0.40039       0 [4096, 1024]       model.language_model.layers.23.self_attn.q_proj.weight
+     13.4345   0.01855    0.53906       0 [512, 1024]        model.language_model.layers.23.self_attn.v_proj.weight
+     11.3779   0.08941    0.83984       0 [1024]             model.language_model.layers.3.input_layernorm.weight
+     15.4717   0.00808    0.22559       0 [1024, 3584]       model.language_model.layers.3.mlp.down_proj.weight
+     31.2524   0.01631    0.14941       0 [3584, 1024]       model.language_model.layers.3.mlp.gate_proj.weight
+     15.3415   0.00801    0.09424       0 [3584, 1024]       model.language_model.layers.3.mlp.up_proj.weight
+      7.8967   0.10866    0.46289       0 [1024]             model.language_model.layers.3.post_attention_layernorm.weight
+      7.5560   0.22271    1.63281       0 [256]              model.language_model.layers.3.self_attn.k_norm.weight
+      8.9866   0.01241    0.11377       0 [512, 1024]        model.language_model.layers.3.self_attn.k_proj.weight
+     17.6302   0.01217    0.32617       0 [1024, 2048]       model.language_model.layers.3.self_attn.o_proj.weight
+      7.4196   0.18149    1.22656       0 [256]              model.language_model.layers.3.self_attn.q_norm.weight
+     40.4996   0.01978    0.25000       0 [4096, 1024]       model.language_model.layers.3.self_attn.q_proj.weight
+      9.2374   0.01276    0.13477       0 [512, 1024]        model.language_model.layers.3.self_attn.v_proj.weight
+     16.0145   0.11233    0.83984       0 [1024]             model.language_model.layers.4.input_layernorm.weight
+      5.8396   1.06621    2.98438       0 [16]               model.language_model.layers.4.linear_attn.A_log
+     16.1051   0.10273    1.06250       0 [6144, 1, 4]       model.language_model.layers.4.linear_attn.conv1d.weight
+     14.5419   2.89758    5.53125       0 [16]               model.language_model.layers.4.linear_attn.dt_bias
+      3.4511   0.02696    0.17188       0 [16, 1024]         model.language_model.layers.4.linear_attn.in_proj_a.weight
+      1.9565   0.01529    0.13281       0 [16, 1024]         model.language_model.layers.4.linear_attn.in_proj_b.weight
+     47.3804   0.01889    0.35547       0 [6144, 1024]       model.language_model.layers.4.linear_attn.in_proj_qkv.weight
+     25.9662   0.01793    0.17480       0 [2048, 1024]       model.language_model.layers.4.linear_attn.in_proj_z.weight
+     10.0901   0.13101    1.07666       0 [128]              model.language_model.layers.4.linear_attn.norm.weight
+     16.9642   0.01171    0.24219       0 [1024, 2048]       model.language_model.layers.4.linear_attn.out_proj.weight
+     15.5846   0.00813    0.21484       0 [1024, 3584]       model.language_model.layers.4.mlp.down_proj.weight
+     29.8059   0.01556    0.22852       0 [3584, 1024]       model.language_model.layers.4.mlp.gate_proj.weight
+     15.5602   0.00812    0.09131       0 [3584, 1024]       model.language_model.layers.4.mlp.up_proj.weight
+      7.6375   0.11512    0.37305       0 [1024]             model.language_model.layers.4.post_attention_layernorm.weight
+     14.7341   0.15376    0.77344       0 [1024]             model.language_model.layers.5.input_layernorm.weight
+      6.8813   1.37928    3.17188       0 [16]               model.language_model.layers.5.linear_attn.A_log
+     13.3990   0.08547    1.39844       0 [6144, 1, 4]       model.language_model.layers.5.linear_attn.conv1d.weight
+     13.7214   2.12650    6.50000       0 [16]               model.language_model.layers.5.linear_attn.dt_bias
+      3.0778   0.02405    0.14746       0 [16, 1024]         model.language_model.layers.5.linear_attn.in_proj_a.weight
+      1.9547   0.01527    0.14746       0 [16, 1024]         model.language_model.layers.5.linear_attn.in_proj_b.weight
+     44.4818   0.01774    0.34180       0 [6144, 1024]       model.language_model.layers.5.linear_attn.in_proj_qkv.weight
+     23.9246   0.01652    0.21094       0 [2048, 1024]       model.language_model.layers.5.linear_attn.in_proj_z.weight
+     10.6512   0.11189    1.11865       0 [128]              model.language_model.layers.5.linear_attn.norm.weight
+     17.1007   0.01181    0.26953       0 [1024, 2048]       model.language_model.layers.5.linear_attn.out_proj.weight
+     15.8117   0.00825    0.21875       0 [1024, 3584]       model.language_model.layers.5.mlp.down_proj.weight
+     27.9590   0.01459    0.19043       0 [3584, 1024]       model.language_model.layers.5.mlp.gate_proj.weight
+     15.8889   0.00829    0.06641       0 [3584, 1024]       model.language_model.layers.5.mlp.up_proj.weight
+      7.5076   0.14648    0.36523       0 [1024]             model.language_model.layers.5.post_attention_layernorm.weight
+     13.0535   0.17549    0.68359       0 [1024]             model.language_model.layers.6.input_layernorm.weight
+      4.5800   0.77220    2.45312       0 [16]               model.language_model.layers.6.linear_attn.A_log
+     12.2004   0.07782    0.87500       0 [6144, 1, 4]       model.language_model.layers.6.linear_attn.conv1d.weight
+     11.4476   2.33126    6.00000       0 [16]               model.language_model.layers.6.linear_attn.dt_bias
+      2.8961   0.02262    0.15723       0 [16, 1024]         model.language_model.layers.6.linear_attn.in_proj_a.weight
+      2.1919   0.01713    0.14355       0 [16, 1024]         model.language_model.layers.6.linear_attn.in_proj_b.weight
+     42.6964   0.01702    0.22266       0 [6144, 1024]       model.language_model.layers.6.linear_attn.in_proj_qkv.weight
+     23.1381   0.01598    0.20801       0 [2048, 1024]       model.language_model.layers.6.linear_attn.in_proj_z.weight
+     11.1173   0.08602    1.14258       0 [128]              model.language_model.layers.6.linear_attn.norm.weight
+     17.4638   0.01206    0.22266       0 [1024, 2048]       model.language_model.layers.6.linear_attn.out_proj.weight
+     15.6910   0.00819    0.13672       0 [1024, 3584]       model.language_model.layers.6.mlp.down_proj.weight
+     26.4840   0.01382    0.23438       0 [3584, 1024]       model.language_model.layers.6.mlp.gate_proj.weight
+     16.0176   0.00836    0.11182       0 [3584, 1024]       model.language_model.layers.6.mlp.up_proj.weight
+      6.3205   0.13001    0.39062       0 [1024]             model.language_model.layers.6.post_attention_layernorm.weight
+      5.2824   0.10082    0.52344       0 [1024]             model.language_model.layers.7.input_layernorm.weight
+     15.7716   0.00823    0.18945       0 [1024, 3584]       model.language_model.layers.7.mlp.down_proj.weight
+     23.8810   0.01247    0.14941       0 [3584, 1024]       model.language_model.layers.7.mlp.gate_proj.weight
+     16.1639   0.00844    0.07617       0 [3584, 1024]       model.language_model.layers.7.mlp.up_proj.weight
+      6.6265   0.16051    0.44727       0 [1024]             model.language_model.layers.7.post_attention_layernorm.weight
+      8.3142   0.15395    1.06250       0 [256]              model.language_model.layers.7.self_attn.k_norm.weight
+      7.6675   0.01059    0.10254       0 [512, 1024]        model.language_model.layers.7.self_attn.k_proj.weight
+     16.1776   0.01117    0.15430       0 [1024, 2048]       model.language_model.layers.7.self_attn.o_proj.weight
+      8.2978   0.12886    1.02344       0 [256]              model.language_model.layers.7.self_attn.q_norm.weight
+     31.4653   0.01536    0.26367       0 [4096, 1024]       model.language_model.layers.7.self_attn.q_proj.weight
+      8.5799   0.01185    0.13086       0 [512, 1024]        model.language_model.layers.7.self_attn.v_proj.weight
+     13.9055   0.22495    0.64844       0 [1024]             model.language_model.layers.8.input_layernorm.weight
+      5.6706   0.67646    2.71875       0 [16]               model.language_model.layers.8.linear_attn.A_log
+     11.7650   0.07504    0.73047       0 [6144, 1, 4]       model.language_model.layers.8.linear_attn.conv1d.weight
+     11.5216   1.85927    4.68750       0 [16]               model.language_model.layers.8.linear_attn.dt_bias
+      2.9471   0.02303    0.15039       0 [16, 1024]         model.language_model.layers.8.linear_attn.in_proj_a.weight
+      1.7843   0.01394    0.11621       0 [16, 1024]         model.language_model.layers.8.linear_attn.in_proj_b.weight
+     42.7771   0.01706    0.23633       0 [6144, 1024]       model.language_model.layers.8.linear_attn.in_proj_qkv.weight
+     21.4129   0.01479    0.35156       0 [2048, 1024]       model.language_model.layers.8.linear_attn.in_proj_z.weight
+     11.3325   0.09587    1.15234       0 [128]              model.language_model.layers.8.linear_attn.norm.weight
+     16.6145   0.01147    0.22949       0 [1024, 2048]       model.language_model.layers.8.linear_attn.out_proj.weight
+     15.3988   0.00804    0.15137       0 [1024, 3584]       model.language_model.layers.8.mlp.down_proj.weight
+     22.2181   0.01160    0.15723       0 [3584, 1024]       model.language_model.layers.8.mlp.gate_proj.weight
+     16.0034   0.00835    0.07715       0 [3584, 1024]       model.language_model.layers.8.mlp.up_proj.weight
+      6.6696   0.17776    0.49609       0 [1024]             model.language_model.layers.8.post_attention_layernorm.weight
+     13.7954   0.25151    0.66406       0 [1024]             model.language_model.layers.9.input_layernorm.weight
+      6.9505   0.70061    2.51562       0 [16]               model.language_model.layers.9.linear_attn.A_log
+     10.7305   0.06845    1.26562       0 [6144, 1, 4]       model.language_model.layers.9.linear_attn.conv1d.weight
+     11.9167   1.96685    4.71875       0 [16]               model.language_model.layers.9.linear_attn.dt_bias
+      3.2917   0.02572    0.24707       0 [16, 1024]         model.language_model.layers.9.linear_attn.in_proj_a.weight
+      2.3479   0.01834    0.14258       0 [16, 1024]         model.language_model.layers.9.linear_attn.in_proj_b.weight
+     40.7274   0.01624    0.27344       0 [6144, 1024]       model.language_model.layers.9.linear_attn.in_proj_qkv.weight
+     21.0841   0.01456    0.38477       0 [2048, 1024]       model.language_model.layers.9.linear_attn.in_proj_z.weight
+     11.5342   0.07408    1.19434       0 [128]              model.language_model.layers.9.linear_attn.norm.weight
+     16.3080   0.01126    0.24023       0 [1024, 2048]       model.language_model.layers.9.linear_attn.out_proj.weight
+     15.5479   0.00812    0.19727       0 [1024, 3584]       model.language_model.layers.9.mlp.down_proj.weight
+     20.4103   0.01065    0.14844       0 [3584, 1024]       model.language_model.layers.9.mlp.gate_proj.weight
+     16.1459   0.00843    0.07666       0 [3584, 1024]       model.language_model.layers.9.mlp.up_proj.weight
+      6.4748   0.17842    0.51562       0 [1024]             model.language_model.layers.9.post_attention_layernorm.weight
+    108.0341   0.66916    5.31250       0 [1024]             model.language_model.norm.weight
+      6.6072   0.00456    0.57812       0 [1024, 2048]       mtp.fc.weight
+     16.4360   0.09271    1.09375       0 [1024]             mtp.layers.0.input_layernorm.weight
+     20.1677   0.01053    0.30273       0 [1024, 3584]       mtp.layers.0.mlp.down_proj.weight
+     35.9388   0.01876    0.27344       0 [3584, 1024]       mtp.layers.0.mlp.gate_proj.weight
+     25.0765   0.01309    0.50391       0 [3584, 1024]       mtp.layers.0.mlp.up_proj.weight
+     14.1421   0.11394    0.89844       0 [1024]             mtp.layers.0.post_attention_layernorm.weight
+     13.6514   0.34185    2.18750       0 [256]              mtp.layers.0.self_attn.k_norm.weight
+      7.8532   0.01085    0.11768       0 [512, 1024]        mtp.layers.0.self_attn.k_proj.weight
+     21.3642   0.01475    0.37305       0 [1024, 2048]       mtp.layers.0.self_attn.o_proj.weight
+     14.1853   0.33091    2.20312       0 [256]              mtp.layers.0.self_attn.q_norm.weight
+     40.5982   0.01982    0.59766       0 [4096, 1024]       mtp.layers.0.self_attn.q_proj.weight
+     17.8316   0.02463    0.20996       0 [512, 1024]        mtp.layers.0.self_attn.v_proj.weight
+    112.0558   0.66012    6.12500       0 [1024]             mtp.norm.weight
+     14.2184   0.09788    0.66406       0 [1024]             mtp.pre_fc_norm_embedding.weight
+     11.7429   0.12889    0.72266       0 [1024]             mtp.pre_fc_norm_hidden.weight
