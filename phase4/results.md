@@ -151,7 +151,9 @@ decides, not the one that looks like it should.
 
    **What is measured is a quick fix against a deeper edit under different rules, practice data
    and editor models. The experiment that would isolate the hint — a blind editor under the
-   original rules, with in-distribution practice — has not been run.**
+   original rules, with in-distribution practice — has not been run.** (Run since, as phase 14 on
+   2026-11-25/26: the blind editor scored 9.0% — not distinguishable from stock's 8.4% and 39.6
+   points below the published edit; `phase14/results.md`.)
 3. Cheap edits, expensive verification: the successful blind edits rescale one row (1,024
    values) or three rows (3,072), and the original's 131,072 — a tiny fraction of 873 million;
    everything else is measurement discipline. (Corrected 2026-11-24: this said both rest on "a few

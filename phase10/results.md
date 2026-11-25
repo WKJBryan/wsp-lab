@@ -79,7 +79,9 @@ prediction). Editor: GLM-5.3-Flash, blind, 50 passes available, step-driven form
 
    **What is measured is a quick fix against a deeper edit under different rules, practice data
    and editor models. The experiment that would isolate the hint — a blind editor under the
-   original rules, with in-distribution practice — has not been run.** (This item earlier read
+   original rules, with in-distribution practice — has not been run.** (Run since, as phase 14 on
+   2026-11-25/26: the blind editor scored 9.0% — not distinguishable from stock's 8.4% and 39.6
+   points below the published edit; `phase14/results.md`.) (This item earlier read
    "What the hint actually buys, now measurable" and said blind editors "rationally stay at the
    surface and plateau at ~25–28%".)
 4. **Prediction scorecard (honesty section):** pre-registered prediction was 28–34%, meaningfully
@@ -106,4 +108,6 @@ passes against 6 at GLM-flash (+4.4, interval 0.2 to 8.6, at the edge). (Until t
 checker correction of that day this read "the first four are within noise of each other".)
 Committees: none of the five that shipped an edit beat the single editor it is compared with;
 three more produced no edit. Random control 3.8. Original's edit (hinted): 48.6 our stack. Ten
-of fourteen blind sessions shipped an edit; all ten converged on one row of 873M.
+of fourteen blind sessions shipped an edit; all ten converged on one row of 873M. (Phase 14,
+2026-11-26, adds two sessions under the original authors' rules: one shipped no edit, the other
+shipped one on a different tensor, 9.0%.)

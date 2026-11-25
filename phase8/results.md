@@ -217,7 +217,9 @@ C1 vs E1 is MATCHES and D-out vs E1 is MATCHES, so the pre-registered sentence a
 - The phase 10 claim that the hint buys a "deeper" edit does not survive (ISSUES #23). What is
   measured is a quick fix against a deeper edit under different rules, practice data and editor
   models; the experiment that would isolate the hint — a blind editor under the original rules,
-  with in-distribution practice — has not been run. What stands is narrower: the original edit
+  with in-distribution practice — has not been run. (Run since, as phase 14 on 2026-11-25/26: the
+  blind editor scored 9.0%, not distinguishable from stock's 8.4% and 39.6 points below the
+  published edit; `phase14/results.md`.) What stands is narrower: the original edit
   beats the +9 stop-token control here (C1 is 12.0 points [−16.4, −7.8] below it) and, under
   `rescore.py`, thinking off as well (B2 is 7.2 points [−11.8, −2.8] below it; not
   distinguishable under math-verify, −1.0 [−6.2, 4.2]).
