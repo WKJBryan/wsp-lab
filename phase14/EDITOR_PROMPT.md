@@ -37,7 +37,9 @@ chat template and decoding settings are fixed. An edit that is accepted by the e
 - `~/wsp14/sandbox/model/` — the language model, an HF safetensors checkpoint (24 layers of
   width 1,024; layers 3, 7, 11, 15, 19 and 23 are full-attention layers with 8 query and 2 KV
   heads of size 256; the other 18 are Gated DeltaNet linear-attention layers with 16 heads of
-  width 128; SwiGLU MLP of width 3,584; vocabulary 248,320; tied embeddings). This is your
+  width 128; SwiGLU MLP of width 3,584; vocabulary 248,320; tied embeddings). The checkpoint also
+  holds a vision tower (`model.visual.*`) and a spare next-token head (`mtp.*`); the evaluation is
+  text-only and never runs either, so an edit there changes no score. This is your
   working copy: edit it. It starts identical to the pristine reference
   `~/wsp14/sandbox/base_model/`, which is read-only and is what the edit checker compares against.
 - `~/wsp14/sandbox/practice.json` — 128 competition problems from the MATH training set, each
@@ -63,7 +65,8 @@ runs only the first 64) and prints a summary JSON: `accuracy_boxed` (the graded 
 thinking), `cap_hit_rate` (share cut at 32,768 tokens), `mean_tokens`, `by_level` (correct and
 total per difficulty level), `pass` (this attempt's number; it counts every attempt, refunded
 ones included), `remaining`. Texts, extracted answers and grades of every problem
-are written to `~/wsp14/sandbox/harness/state/gen_<pass number>.jsonl`. A pass that fails for a
+are written to `~/wsp14/sandbox/harness/state/gen_<pass number>.jsonl`, and the summary to
+`~/wsp14/sandbox/harness/state/eval_pass_<pass number>.json`. A pass that fails for a
 technical reason is refunded. Spend pass 1 on the unmodified model.
 
 The checker refuses, and prints why: any change to the final norm, the input embedding or the

@@ -58,6 +58,12 @@
 >   around the published edit should therefore be read together with the secondary endpoint,
 >   which uses boxed answers and does not have this limit. No rule, endpoint or prediction below
 >   changes.
+> - **Two clauses were added to `EDITOR_PROMPT.md` on 2026-11-25, before the session, at the
+>   user's decision after a readiness check.** The editor is told that the checkpoint also holds a
+>   vision tower and a spare prediction head that the evaluation never runs (the engine skips both
+>   without an image or a speculative configuration), so that it spends no pass on them; and where
+>   the evaluator writes its summary (`state/eval_pass_<pass number>.json`). Neither names the
+>   failure or changes a rule, an endpoint or a prediction.
 
 Committed BEFORE any editor session and before any practice pass (2026-11-24). Do not edit after
 the session begins; deviations go to ISSUES.md.
