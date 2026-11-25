@@ -1,0 +1,400 @@
+{
+ "about": "rescore_file_stamp identifies the checker that produced each re-score file; in secondary_runs 'accuracy' is the repository's matcher on the last boxed answer, computed here, and 'accuracy_math_verify' is the second grader.",
+ "primary_runs": {
+  "final candidate": {
+   "accuracy": 9.0,
+   "right": 45,
+   "n": 500,
+   "cap_hit_rate": 75.0,
+   "closed": 30.8,
+   "mean_tokens": 25831.0,
+   "wall_s": 2274.0,
+   "validity": {
+    "soup_pct": 0.0,
+    "soup_judged": true,
+    "admission_tested": true,
+    "admission_finished": [
+     25.2,
+     24.8,
+     1.0
+    ],
+    "admission_closed": [
+     28.4,
+     33.2,
+     0.2866
+    ],
+    "admission_correct": [
+     10.0,
+     8.0,
+     0.5323
+    ],
+    "problems": []
+   },
+   "rescore_file_stamp": "phase3c/rescore.py+phase3b/scorer.py#4a1b56a343a4 (ISSUES #19)"
+  },
+  "stock": {
+   "accuracy": 8.4,
+   "right": 42,
+   "n": 500,
+   "cap_hit_rate": 90.6,
+   "closed": 9.8,
+   "mean_tokens": 30108.0,
+   "wall_s": 3016.2,
+   "validity": {
+    "soup_pct": 0.0,
+    "soup_judged": true,
+    "admission_tested": true,
+    "admission_finished": [
+     9.6,
+     9.2,
+     1.0
+    ],
+    "admission_closed": [
+     9.6,
+     10.0,
+     1.0
+    ],
+    "admission_correct": [
+     8.8,
+     8.0,
+     0.8721
+    ],
+    "problems": []
+   },
+   "rescore_file_stamp": "phase3c/rescore.py+phase3b/scorer.py#4a1b56a343a4 (ISSUES #19)"
+  },
+  "published edit": {
+   "accuracy": 48.6,
+   "right": 243,
+   "n": 500,
+   "cap_hit_rate": 26.4,
+   "closed": 83.6,
+   "mean_tokens": 20645.0,
+   "wall_s": 1839.0,
+   "validity": {
+    "soup_pct": 0.0,
+    "soup_judged": true,
+    "admission_tested": true,
+    "admission_finished": [
+     71.6,
+     75.6,
+     0.3612
+    ],
+    "admission_closed": [
+     83.6,
+     83.6,
+     1.0
+    ],
+    "admission_correct": [
+     48.8,
+     48.4,
+     1.0
+    ],
+    "problems": []
+   },
+   "rescore_file_stamp": "phase3c/rescore.py+phase3b/scorer.py#4a1b56a343a4 (ISSUES #19)"
+  }
+ },
+ "primary_pairs": [
+  {
+   "label": "final candidate against stock",
+   "n": 500,
+   "first": 9.0,
+   "second": 8.4,
+   "delta": 0.6,
+   "ci95": [
+    -2.2,
+    3.4
+   ],
+   "only_first": 29,
+   "only_second": 26,
+   "p": 0.788
+  },
+  {
+   "label": "final candidate against the published edit",
+   "n": 500,
+   "first": 9.0,
+   "second": 48.6,
+   "delta": -39.6,
+   "ci95": [
+    -44.0,
+    -35.2
+   ],
+   "only_first": 3,
+   "only_second": 201,
+   "p": 1.1e-55,
+   "word": "FALLS SHORT"
+  }
+ ],
+ "repair": {
+  "rule": "at least 16.0% and at least stock + 10.0 points",
+  "right_final": 45,
+  "right_stock": 42,
+  "n": 500,
+  "min_right": 80,
+  "min_gap": 50,
+  "holds": false
+ },
+ "line_rules": [
+  {
+   "rule": "A",
+   "label": "final candidate against stock",
+   "n": 500,
+   "first": 9.0,
+   "second": 8.4,
+   "delta": 0.6,
+   "ci95": [
+    -2.2,
+    3.4
+   ],
+   "only_first": 29,
+   "only_second": 26,
+   "p": 0.788
+  },
+  {
+   "rule": "A",
+   "label": "final candidate against the published edit",
+   "n": 500,
+   "first": 9.0,
+   "second": 48.6,
+   "delta": -39.6,
+   "ci95": [
+    -44.0,
+    -35.2
+   ],
+   "only_first": 3,
+   "only_second": 201,
+   "p": 1.1e-55,
+   "word_if_read_this_way": "FALLS SHORT"
+  },
+  {
+   "rule": "B",
+   "label": "final candidate against stock",
+   "n": 500,
+   "first": 8.8,
+   "second": 8.8,
+   "delta": 0.0,
+   "ci95": [
+    -3.0,
+    3.0
+   ],
+   "only_first": 29,
+   "only_second": 29,
+   "p": 1.0
+  },
+  {
+   "rule": "B",
+   "label": "final candidate against the published edit",
+   "n": 500,
+   "first": 8.8,
+   "second": 47.6,
+   "delta": -38.8,
+   "ci95": [
+    -43.2,
+    -34.6
+   ],
+   "only_first": 3,
+   "only_second": 197,
+   "p": 1.66e-54,
+   "word_if_read_this_way": "FALLS SHORT"
+  },
+  {
+   "rule": "C",
+   "label": "final candidate against stock",
+   "n": 500,
+   "first": 9.2,
+   "second": 8.8,
+   "delta": 0.4,
+   "ci95": [
+    -2.6,
+    3.4
+   ],
+   "only_first": 30,
+   "only_second": 28,
+   "p": 0.896
+  },
+  {
+   "rule": "C",
+   "label": "final candidate against the published edit",
+   "n": 500,
+   "first": 9.2,
+   "second": 48.4,
+   "delta": -39.2,
+   "ci95": [
+    -43.6,
+    -35.0
+   ],
+   "only_first": 3,
+   "only_second": 199,
+   "p": 4.27e-55,
+   "word_if_read_this_way": "FALLS SHORT"
+  }
+ ],
+ "secondary_runs": {
+  "p14_final_ref": {
+   "accuracy": 10.0,
+   "right": 50,
+   "n": 500,
+   "cap_hit_rate": 82.4,
+   "closed": 22.4,
+   "mean_tokens": 27912.0,
+   "wall_s": 2493.7,
+   "validity": {
+    "soup_pct": 0.0,
+    "soup_judged": true,
+    "admission_tested": true,
+    "admission_finished": [
+     17.6,
+     17.6,
+     1.0
+    ],
+    "admission_closed": [
+     23.6,
+     21.2,
+     0.5919
+    ],
+    "admission_correct": [
+     10.4,
+     9.6,
+     0.8817
+    ],
+    "problems": []
+   },
+   "rescore_file_stamp": "phase3c/rescore.py+phase3b/scorer.py#4a1b56a343a4 (ISSUES #19)",
+   "accuracy_math_verify": 10.8,
+   "boxed_answers": 101,
+   "math_verify_unreadable": 0
+  },
+  "ref_stock": {
+   "accuracy": 7.4,
+   "right": 37,
+   "n": 500,
+   "cap_hit_rate": 93.2,
+   "closed": 7.2,
+   "mean_tokens": 30991.0,
+   "wall_s": 2871.9,
+   "validity": {
+    "soup_pct": 0.0,
+    "soup_judged": true,
+    "admission_tested": true,
+    "admission_finished": [
+     7.2,
+     6.4,
+     0.8593
+    ],
+    "admission_closed": [
+     7.2,
+     7.2,
+     1.0
+    ],
+    "admission_correct": [
+     7.6,
+     7.2,
+     1.0
+    ],
+    "problems": []
+   },
+   "rescore_file_stamp": "phase3c/rescore.py+phase3b/scorer.py#4a1b56a343a4 (ISSUES #19)",
+   "accuracy_math_verify": 7.8,
+   "boxed_answers": 39,
+   "math_verify_unreadable": 0
+  },
+  "ref_orig": {
+   "accuracy": 46.6,
+   "right": 233,
+   "n": 500,
+   "cap_hit_rate": 29.0,
+   "closed": 81.6,
+   "mean_tokens": 21796.0,
+   "wall_s": 1788.0,
+   "validity": {
+    "soup_pct": 0.0,
+    "soup_judged": true,
+    "admission_tested": true,
+    "admission_finished": [
+     70.8,
+     71.2,
+     1.0
+    ],
+    "admission_closed": [
+     80.8,
+     82.4,
+     0.7293
+    ],
+    "admission_correct": [
+     49.2,
+     48.8,
+     1.0
+    ],
+    "problems": []
+   },
+   "rescore_file_stamp": "phase3c/rescore.py+phase3b/scorer.py#4a1b56a343a4 (ISSUES #19)",
+   "accuracy_math_verify": 51.0,
+   "boxed_answers": 316,
+   "math_verify_unreadable": 0
+  }
+ },
+ "graders": {
+  "matcher": "phase3b/scorer.py answers_match on the last boxed answer",
+  "math_verify": "math-verify 0.9.0",
+  "problems_in_sorted_order": "the bootstrap resamples the problems in sorted id order"
+ },
+ "secondary_pairs": [
+  {
+   "label": "final candidate against ref_stock, repository matcher",
+   "n": 500,
+   "first": 10.0,
+   "second": 7.4,
+   "delta": 2.6,
+   "ci95": [
+    -0.2,
+    5.6
+   ],
+   "only_first": 34,
+   "only_second": 21,
+   "p": 0.105
+  },
+  {
+   "label": "final candidate against ref_stock, math-verify",
+   "n": 500,
+   "first": 10.8,
+   "second": 7.8,
+   "delta": 3.0,
+   "ci95": [
+    0.0,
+    6.0
+   ],
+   "only_first": 38,
+   "only_second": 23,
+   "p": 0.0722
+  },
+  {
+   "label": "final candidate against ref_orig, repository matcher",
+   "n": 500,
+   "first": 10.0,
+   "second": 46.6,
+   "delta": -36.6,
+   "ci95": [
+    -41.0,
+    -32.2
+   ],
+   "only_first": 3,
+   "only_second": 186,
+   "p": 2.87e-51
+  },
+  {
+   "label": "final candidate against ref_orig, math-verify",
+   "n": 500,
+   "first": 10.8,
+   "second": 51.0,
+   "delta": -40.2,
+   "ci95": [
+    -44.6,
+    -35.8
+   ],
+   "only_first": 3,
+   "only_second": 204,
+   "p": 1.44e-56
+  }
+ ]
+}

@@ -130,7 +130,8 @@ that beat the single editor it is compared with. (Heading corrected 2026-11-24, 
 
 Row 248069 (the `</think>` tied-embedding row) is the row every blind session that shipped an
 edit chose. Corrected count (2026-11-24, ISSUES #25): 14 blind editor sessions ran in phases 4,
-4b, 4c, 9 and 10. **Ten of fourteen shipped an edit; all ten used the same row** — four blind
+4b, 4c, 9 and 10 (phase 14, 2026-11-26, adds two sessions under the original authors' rules: one
+shipped no edit, the other shipped one on a different tensor). **Ten of fourteen shipped an edit; all ten used the same row** — four blind
 editor models (GLM-5.3, GLM-5.3-Flash, mimo-v2.6-flash, mimo-v2.6-pro), two families, every
 format, one row of 873 million. **The four that shipped none failed on session format:** the
 phase-4 mimo one-ask arm and phase-9 conditions 2, 3 and 9. In this phase that makes six shipping

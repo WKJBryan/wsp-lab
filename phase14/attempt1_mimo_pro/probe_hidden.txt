@@ -1,0 +1,75 @@
+== prompt: 'What is 17 times 23? Give the exact product.' T=25
+  L 0 |h| mean=    1.15 max=    2.14 max|dim|=     1.01 at dim 0
+  L 1 |h| mean=    1.43 max=    2.37 max|dim|=     0.97 at dim 0
+  L 2 |h| mean=    1.75 max=    2.61 max|dim|=     1.61 at dim 0
+  L 3 |h| mean=    1.82 max=    3.05 max|dim|=     1.19 at dim 0
+  L 4 |h| mean=    1.79 max=    2.97 max|dim|=     1.11 at dim 0
+  L 5 |h| mean=    1.77 max=    2.95 max|dim|=     1.04 at dim 0
+  L 6 |h| mean=    2.38 max=   13.13 max|dim|=     4.19 at dim 119
+  L 7 |h| mean=    2.01 max=    7.52 max|dim|=     2.23 at dim 119
+  L 8 |h| mean=    1.94 max=    7.42 max|dim|=     2.19 at dim 119
+  L 9 |h| mean=    2.00 max=    7.30 max|dim|=     2.12 at dim 119
+  L10 |h| mean=    2.15 max=    7.93 max|dim|=     2.28 at dim 119
+  L11 |h| mean=    1.98 max=    4.06 max|dim|=     1.02 at dim 0
+  L12 |h| mean=    2.12 max=    3.34 max|dim|=     1.12 at dim 0
+  L13 |h| mean=    2.39 max=    3.29 max|dim|=     1.48 at dim 0
+  L14 |h| mean=    3.59 max=   19.87 max|dim|=     4.69 at dim 123
+  L15 |h| mean=    3.51 max=    4.24 max|dim|=     1.79 at dim 0
+  L16 |h| mean=    4.12 max=    4.86 max|dim|=     2.48 at dim 0
+  L17 |h| mean=    4.62 max=    5.58 max|dim|=     2.95 at dim 0
+  L18 |h| mean=    5.97 max=    7.77 max|dim|=     4.59 at dim 0
+  L19 |h| mean=    6.07 max=    7.24 max|dim|=     4.44 at dim 0
+  L20 |h| mean=    6.81 max=    8.04 max|dim|=     4.78 at dim 0
+  L21 |h| mean=    7.85 max=    9.98 max|dim|=     5.22 at dim 0
+  L22 |h| mean=    9.20 max=   13.84 max|dim|=     5.72 at dim 0
+  L23 |h| mean=   11.58 max=   15.69 max|dim|=     8.44 at dim 123
+== prompt: 'Compute the sum of the squares of the roots of x^2 - 6x + 5 = 0.' T=34
+  L 0 |h| mean=    1.11 max=    2.13 max|dim|=     0.99 at dim 0
+  L 1 |h| mean=    1.42 max=    2.35 max|dim|=     0.92 at dim 0
+  L 2 |h| mean=    1.74 max=    2.61 max|dim|=     1.61 at dim 0
+  L 3 |h| mean=    1.77 max=    3.05 max|dim|=     1.19 at dim 0
+  L 4 |h| mean=    1.82 max=    2.97 max|dim|=     1.11 at dim 0
+  L 5 |h| mean=    1.87 max=    2.95 max|dim|=     1.08 at dim 0
+  L 6 |h| mean=    2.41 max=   13.13 max|dim|=     4.19 at dim 119
+  L 7 |h| mean=    2.06 max=    7.52 max|dim|=     2.23 at dim 119
+  L 8 |h| mean=    1.99 max=    7.42 max|dim|=     2.19 at dim 119
+  L 9 |h| mean=    2.05 max=    7.30 max|dim|=     2.12 at dim 119
+  L10 |h| mean=    2.21 max=    7.93 max|dim|=     2.28 at dim 119
+  L11 |h| mean=    2.05 max=    4.06 max|dim|=     0.98 at dim 119
+  L12 |h| mean=    2.18 max=    3.34 max|dim|=     1.02 at dim 0
+  L13 |h| mean=    2.40 max=    3.29 max|dim|=     1.24 at dim 0
+  L14 |h| mean=    3.42 max=   19.87 max|dim|=     4.69 at dim 123
+  L15 |h| mean=    3.38 max=    4.29 max|dim|=     1.59 at dim 123
+  L16 |h| mean=    4.04 max=    4.79 max|dim|=     1.79 at dim 0
+  L17 |h| mean=    4.60 max=    5.39 max|dim|=     2.33 at dim 0
+  L18 |h| mean=    5.70 max=    7.77 max|dim|=     4.59 at dim 0
+  L19 |h| mean=    5.89 max=    6.91 max|dim|=     3.61 at dim 0
+  L20 |h| mean=    6.80 max=    7.96 max|dim|=     4.41 at dim 0
+  L21 |h| mean=    7.80 max=    9.81 max|dim|=     4.69 at dim 0
+  L22 |h| mean=    9.08 max=   13.74 max|dim|=     5.16 at dim 0
+  L23 |h| mean=   10.99 max=   15.37 max|dim|=     8.75 at dim 0
+== prompt: 'A train travels 120 miles in 2 hours. What is its average speed in miles per hou' T=33
+  L 0 |h| mean=    1.19 max=    2.14 max|dim|=     0.99 at dim 0
+  L 1 |h| mean=    1.51 max=    2.36 max|dim|=     0.93 at dim 0
+  L 2 |h| mean=    1.80 max=    2.61 max|dim|=     1.61 at dim 0
+  L 3 |h| mean=    1.86 max=    3.05 max|dim|=     1.23 at dim 0
+  L 4 |h| mean=    1.87 max=    2.97 max|dim|=     1.16 at dim 0
+  L 5 |h| mean=    1.86 max=    2.95 max|dim|=     1.22 at dim 0
+  L 6 |h| mean=    2.41 max=   13.13 max|dim|=     4.19 at dim 119
+  L 7 |h| mean=    2.05 max=    7.52 max|dim|=     2.23 at dim 119
+  L 8 |h| mean=    2.01 max=    7.42 max|dim|=     2.19 at dim 119
+  L 9 |h| mean=    2.10 max=    7.30 max|dim|=     2.12 at dim 119
+  L10 |h| mean=    2.25 max=    7.93 max|dim|=     2.28 at dim 119
+  L11 |h| mean=    2.09 max=    4.06 max|dim|=     1.12 at dim 0
+  L12 |h| mean=    2.22 max=    3.34 max|dim|=     1.06 at dim 0
+  L13 |h| mean=    2.51 max=    3.29 max|dim|=     1.27 at dim 0
+  L14 |h| mean=    3.61 max=   19.87 max|dim|=     4.69 at dim 123
+  L15 |h| mean=    3.55 max=    4.56 max|dim|=     1.78 at dim 0
+  L16 |h| mean=    4.20 max=    5.04 max|dim|=     1.99 at dim 0
+  L17 |h| mean=    4.74 max=    5.71 max|dim|=     2.45 at dim 0
+  L18 |h| mean=    5.95 max=    7.77 max|dim|=     4.59 at dim 0
+  L19 |h| mean=    6.14 max=    7.11 max|dim|=     4.03 at dim 0
+  L20 |h| mean=    7.04 max=    8.01 max|dim|=     4.94 at dim 0
+  L21 |h| mean=    8.04 max=    9.77 max|dim|=     5.16 at dim 0
+  L22 |h| mean=    9.28 max=   13.70 max|dim|=     5.00 at dim 0
+  L23 |h| mean=   10.98 max=   15.36 max|dim|=     8.44 at dim 123
