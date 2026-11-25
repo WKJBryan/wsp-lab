@@ -165,6 +165,11 @@ Reading:
      gold of 4.5). The independent grader (math-verify), given only the last line of each of
      the 570 answers, agrees with 566.
    - Final checker against the first correction as last refined: **520 right, none wrong.**
+   - A third limit of the checker was measured on 2026-11-25 without changing it (ISSUES #31):
+     which line of an unboxed answer it reads — read the section's last line instead, and 284 of
+     the 22,718 saved answers turn right and 286 wrong. The published edit itself then reads
+     47.6% (48.4% under the third reading), so its distances from the outside replications above
+     can read up to 3.4 points; it stays 38.8 to 40.2 points above stock with thinking on.
 
    46 unit tests (`phase3c/test_rescore.py`) pass. Every saved run was re-scored with the final
    checker, and every re-scored file records the checker version that produced it. **Reproduce**

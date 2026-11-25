@@ -58,10 +58,13 @@ monologues contaminate downstream asks — a cascade the format cannot fix).
 
 Reference line for loners (final answer checker, 2026-11-24): mimo-flash 36.2, the 50-pass
 GLM-Flash edit 36.0 (phase 10) and mimo-pro 35.2 are within noise of each other, and above the
-6-pass GLM-Flash edit (31.6, phase 4) and GLM-5.3 (29.6), which are within noise of each other.
+6-pass GLM-Flash edit (31.6, phase 4) and GLM-5.3 (29.6), which are within noise of each other
+(under the checker's other line rules the gap reads −4.0 with a 95% interval of −8.2 to 0.0,
+p = 0.067; ISSUES #31).
 Two pairs are less clear: mimo-pro is not distinguishable from the 6-pass GLM-Flash edit (+3.6,
 interval −0.6 to 7.6), and the 50-pass edit is above the 6-pass one only at the edge (+4.4,
-interval 0.2 to 8.6). Original's hinted editor 48.6. One sample per problem, one seed: a single
+interval 0.2 to 8.6; +3.6, interval −0.4 to 7.8, under the checker's other line rules, ISSUES
+#31). Original's hinted editor 48.6. One sample per problem, one seed: a single
 arm has a standard error of about 2 points. (Until the second checker correction of that day
 this line read "the first four are within noise of each other".)
 

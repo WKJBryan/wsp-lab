@@ -7,6 +7,17 @@ one sample per problem, every comparison paired over the same 500 problems.
 **Corrected 2026-11-24 (ISSUES #19):** every accuracy was re-scored with the corrected answer
 checker; the arm table gives first-reported -> re-scored for every arm.
 
+**Note added 2026-11-25 (ISSUES #31).** Which line of an unboxed answer the checker reads moves
+some numbers in this file; nothing was re-scored. B-2 reads −4.0 [−8.6, 0.6], a hit exactly on its
+bar, and would read −4.2 [−8.6, 0.4] under both other readings — INCONCLUSIVE rather than a hit.
+The exploratory C1-against-B2 comparison reads −4.8 [−9.2, −0.6] (FALLS SHORT) and would read
+−1.8 [−6.2, 2.4] or −1.6 [−5.8, 2.6] (MATCHES); C1 against E1 reads +1.4 [−2.6, 5.2] and would
+read +3.0 [−0.8, 6.8] or +4.0 [0.2, 7.8], still MATCHES by the rule, the interval excluding zero
+only under the second; C1's own score would read 39.6% or 40.8% instead of 36.6%. Every other
+registered verdict word in this file keeps its word under both other readings; C-3 keeps its miss
+by 0.2 points under the first (the gap after forcing reads 11.8 and 12.6 against the bar of 11.6),
+and the scorecard would then read five hits, four misses and one inconclusive.
+
 ## The answer in four sentences
 
 1. **The blind single-row edit is a boost to the stop-thinking token and nothing else.** Adding a
@@ -124,7 +135,7 @@ Full numbers in `phase8/part_a.json`.
   with thinking switched off and our usual sampling; no blind edit does (the best blind edit
   scores 36.2%, 5.2 points below it).**
 - B3: the edit does not clearly hurt thinking-off mode (−4.0 [−8.6, 0.6], exactly at the decision
-  rule's bar; −1.6 under math-verify).
+  rule's bar; −1.6 under math-verify). (Under the checker's other line rules −4.2 [−8.6, 0.4]; ISSUES #31.)
 
 ## Part C — decoding-only controls on stock
 

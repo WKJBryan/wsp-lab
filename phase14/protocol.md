@@ -51,6 +51,13 @@
 >   written; the summary's base fingerprint and tool digest equal `sandbox_manifest.json`
 >   (`36d3430c…`, `dc620d42f6aef7a1`). The ledger and counter were then reset: the sandbox
 >   holds no pass, and the evidence is kept outside it.
+> - **The primary endpoint's checker has a known limit (ISSUES #31).** Under the
+>   repository's question answers are often not boxed, and which line of an unboxed answer
+>   the checker reads moved one arm in the record by up to 4.2 points (most by under 2); the
+>   comparator reads 48.6%, 47.6% or 48.4% under the three readings. The ±4.0-point band
+>   around the published edit should therefore be read together with the secondary endpoint,
+>   which uses boxed answers and does not have this limit. No rule, endpoint or prediction below
+>   changes.
 
 Committed BEFORE any editor session and before any practice pass (2026-11-24). Do not edit after
 the session begins; deviations go to ISSUES.md.

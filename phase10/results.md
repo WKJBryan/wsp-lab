@@ -12,6 +12,15 @@ prediction). Editor: GLM-5.3-Flash, blind, 50 passes available, step-driven form
 > support only the narrower claim now in it. Practice numbers are as recorded with the old
 > checker; the generations were not saved, so they cannot be re-scored.
 
+> **Note added 2026-11-25 (ISSUES #31).** The statements below that put this phase's edit "+4.4
+> points, interval 0.2 to 8.6, p = 0.049" above its 6-pass GLM-Flash run, "at the edge" (item 1,
+> item 4 of the scorecard and the project ledger at the end), depend on which line of an unboxed
+> answer the checker reads. Under either other reading of the same checker the difference is +3.6
+> (95% interval −0.4 to 7.8, p = 0.11; 65 problems right only under this edit, 47 only under the
+> 6-pass one), so "meaningfully above the 6-pass run" is not established. The band miss, the gap
+> miss and the comparison with the MiMo-pro edit do not change in word (this edit itself would
+> read 36.6% or 37.2%).
+
 ## The closing table
 
 | Editor | Hint? | Passes | MATH-500 | Notes |
