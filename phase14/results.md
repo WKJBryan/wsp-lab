@@ -23,34 +23,38 @@ the protocol's fallback, blind; 15 passes available, 2 used.
 ## The verdict
 
 A small blind editor, held to the original authors' rules and practising in distribution, does not
-reach the original authors' published edit. Its final edit scores **9.0%** on MATH-500 under the
-repository's question, against 8.4% for stock and 48.6% for the published edit. Against stock the
-difference is not distinguishable from zero (+0.6 points, 95% interval −2.2 to 3.4); against the
-published edit the candidate is 39.6 points behind (interval −44.0 to −35.2). In the protocol's
+reach the original authors' published edit. Its final edit scores **11.0%** on MATH-500 under the
+repository's question, against 9.4% for stock and 54.2% for the published edit. Against stock the
+difference is not distinguishable from zero (+1.6 points, 95% interval −1.4 to 4.6); against the
+published edit the candidate is 43.2 points behind (interval −47.8 to −38.8). In the protocol's
 words: against the published edit, **FALLS SHORT**; REPAIR is not met, since it needs at least
-18.4%. Under the reference question the edit reads 10.0% and 10.8% (the repository's matcher and
-math-verify) against stock's 7.4% and 7.8%. The edit has the effect it was built for — far more
+16.0% and at least stock + 10.0 points, which now means at least 80 and at least 97 of 500 (19.4%).
+Under the reference question the edit reads 11.0% under both graders (the repository's matcher and
+math-verify) against stock's 8.8%. The edit has the effect it was built for — far more
 generations close their thinking (30.8%, against 9.8% for stock) — but a generation that
-closes is right far less often, so the net is 3 right answers of 500. All three predictions on
+closes is right far less often, so the net is 8 right answers of 500, not distinguishable from
+zero. All three predictions on
 record hold. Two facts bound the reading: the editor that ran was the protocol's fallback model,
 and it spent 2 of its 15 passes and stopped by its own choice. It did not converge on the quick fix
 the rules forbid (edits to the embedding or output layer and the like); it found a different,
-single-tensor edit in layer 0.
+single-tensor edit in layer 0. (Every number in this file is the final answer checker's reading,
+2026-11-26, ISSUES #30, #31; at the first publication, under the checker of 2026-11-24, the edit
+read 9.0% against stock's 8.4% and the published edit's 48.6%.)
 
 ## The closing table
 
-MATH-500 under the repository's question (the final answer checker, stamp `#4a1b56a343a4`), one
+MATH-500 under the repository's question (the final answer checker, stamp `#d74fdebd340f`), one
 sample per problem.
 
 | Editor | Hint? | Rules | Passes | MATH-500 | Notes |
 |---|---|---|---|---|---|
-| Stock (the unedited model) | — | — | — | **8.4%** | baseline; closes its thinking on 9.8%, cut at the cap 90.6% |
-| **GLM-5.3-Flash (this phase; the protocol's fallback)** | **no** | **the original authors'** | **2 of 15** | **9.0%** | one tensor, the readout of layer 0's linear attention; **FALLS SHORT** of the published edit by 39.6 points |
-| Earlier blind editors (phases 4, 4b, 4c, 10) | no | this repository's | 6 of 10, 7 of 10, 7 of 10, 6 of 50 | 31.6% to 36.2% | all four edits converge on the stop-token row, the quick fix the original authors' rules forbid |
-| Original's editor (published edit) | yes | the original authors' | 50 | **48.6%** (our stack) | 2-tensor down_proj surgery |
+| Stock (the unedited model) | — | — | — | **9.4%** | baseline; closes its thinking on 9.8%, cut at the cap 90.6% |
+| **GLM-5.3-Flash (this phase; the protocol's fallback)** | **no** | **the original authors'** | **2 of 15** | **11.0%** | one tensor, the readout of layer 0's linear attention; **FALLS SHORT** of the published edit by 43.2 points |
+| Earlier blind editors (phases 4, 4b, 4c, 10) | no | this repository's | 6 of 10, 7 of 10, 7 of 10, 6 of 50 | 37.2% to 42.2% | all four edits converge on the stop-token row, the quick fix the original authors' rules forbid |
+| Original's editor (published edit) | yes | the original authors' | 50 | **54.2%** (our stack) | 2-tensor down_proj surgery |
 
 Under the reference question (last boxed answer; repository matcher / math-verify) the same three
-models read 7.4% / 7.8% (stock), 10.0% / 10.8% (this phase's edit) and 46.6% / 51.0% (published
+models read 8.8% / 8.8% (stock), 11.0% / 11.0% (this phase's edit) and 51.6% / 51.8% (published
 edit).
 
 ## The two attempts
@@ -95,33 +99,45 @@ checkpoint (its notes say so); the task instructions do not name the model.
 protocol: the boxed question, thinking enabled, at most 32,768 tokens; the same problems and seed
 every pass. Both passes pass both validity checks (fragment-tail rate and admission-order split).
 The numbers are in `phase14/session/eval_pass_1.json` and `eval_pass_2.json`, the generations in
-`gen_1.jsonl.gz` and `gen_2.jsonl.gz`, the ledger in `phase14/session/ledger.md`.
+`gen_1.jsonl.gz` and `gen_2.jsonl.gz`, the ledger in `phase14/session/ledger.md`. Those summaries
+were written during the session with the checker of 2026-11-24; the "Correct" column below is the
+final answer checker's reading of the same generations (2026-11-26, ISSUES #30, #31).
 
-| Pass | Candidate | Correct (boxed) | Closes its thinking | Cut at the cap | Mean tokens | GPU time |
+| Pass | Candidate | Correct | Closes its thinking | Cut at the cap | Mean tokens | GPU time |
 |---|---|---|---|---|---|---|
-| 1 | the unedited model | 4.7% (6 of 128) | 5.5% (7) | 94.5% (121) | 31,286 | 775 s |
-| 2 | the edit (fingerprint `0a4590253bf4b2f4`) | 7.8% (10) | 26.6% (34) | 79.7% (102) | 27,627 | 682 s |
+| 1 | the unedited model | 5.5% (7 of 128; all 7 boxed) | 5.5% (7) | 94.5% (121) | 31,286 | 775 s |
+| 2 | the edit (fingerprint `0a4590253bf4b2f4`) | 9.4% (12 of 128; 11 boxed, 8.6%) | 26.6% (34) | 79.7% (102) | 27,627 | 682 s |
+
+Under the checker of 2026-11-24 the "Correct" column read 4.7% (6 of 128) and 7.8% (10), all boxed.
 
 Paired on the same problems:
 
 | | Pass 2 against pass 1 | Exact McNemar p |
 |---|---|---|
-| Correct | 7 gained, 3 lost | 0.34 (not distinguishable from chance) |
+| Correct | 9 gained, 4 lost | 0.27 (not distinguishable from chance) |
 | Closes its thinking | 29 gained, 2 lost | 4.6e-07 |
 | Cut at the cap | 21 no longer cut, 2 newly cut | 6.6e-05 |
 
-Of the 34 generations that close after the edit, 9 are right; of the 7 baseline closers, 6 were.
+Under the checker of 2026-11-24 the "Correct" row read 7 gained, 3 lost (p = 0.34), also not
+distinguishable from chance.
+
+Of the 34 generations that close after the edit, 11 are right; of the 7 baseline closers, 6 were
+(9 and 6 under the checker of 2026-11-24).
 
 | Level | Problems | Pass 1 (the unedited model) | Pass 2 (the edit) |
 |---|---|---|---|
 | 1 | 11 | 0 | 3 |
-| 2 | 23 | 4 | 3 |
-| 3 | 27 | 2 | 2 |
+| 2 | 23 | 4 | 4 |
+| 3 | 27 | 3 | 2 |
 | 4 | 33 | 0 | 2 |
-| 5 | 34 | 0 | 0 |
+| 5 | 34 | 0 | 1 |
+
+The level table is counted under the final answer checker (7 and 12 right in all; under the checker
+of 2026-11-24 the rows read 0, 4, 2, 0, 0 and 3, 3, 2, 2, 0, which is 6 and 10).
 
 The editor used 2 of its 15 passes and stopped by its own choice. (Its journal states the
-correctness pairs as 4 and 6; counted from the generations they are 3 and 7.)
+correctness pairs as 4 and 6; counted from the generations they are 3 lost and 7 gained under the
+checker of 2026-11-24, and 4 lost and 9 gained under the final answer checker.)
 
 ## The edit
 
@@ -150,7 +166,7 @@ cost no pass; the measurements are the editor's.
 - **The close-then-answer pathway is intact.** `</think>` is reachable (logprob about −2) only
   from specific "ready" contexts ("The final answer is X.", "Okay. Ready.", "This seems
   correct."); in the middle of a derivation it is correctly suppressed (−14 to −25). The 7
-  baseline generations that escaped the loop closed, and 6 were right: the loop keeps the model
+  baseline generations that escaped the loop closed, and 6 were right (its count; the tool then read 6 under the checker of 2026-11-24, and reads 7 under the final answer checker): the loop keeps the model
   from reaching the close, and the close works when reached.
 - **Where the loop is produced.** With teacher-forced reads and hooks, zeroing layer 0's
   linear-attention branch (one hook, no weight change) collapses the loop prediction while no
@@ -190,35 +206,41 @@ a GPU.
 
 ### Primary endpoint — the repository's question
 
-The final answer checker (stamp `#4a1b56a343a4`), paired statistics as in phase 8 (10,000-draw
+The final answer checker (stamp `#d74fdebd340f`), paired statistics as in phase 8 (10,000-draw
 bootstrap, exact McNemar test).
 
 | Model | Correct | Closes its thinking | Cut at the cap | Mean tokens | GPU time |
 |---|---|---|---|---|---|
-| Final candidate | **9.0%** (45 of 500) | 30.8% (154) | 75.0% | 25,831 | 37.9 minutes |
-| Stock (the unedited model) | 8.4% (42) | 9.8% (49) | 90.6% | 30,108 | 50.3 minutes |
-| Published edit | 48.6% (243) | 83.6% | 26.4% | 20,645 | 30.7 minutes |
+| Final candidate | **11.0%** (55 of 500) | 30.8% (154) | 75.0% | 25,831 | 37.9 minutes |
+| Stock (the unedited model) | 9.4% (47) | 9.8% (49) | 90.6% | 30,108 | 50.3 minutes |
+| Published edit | 54.2% (271) | 83.6% | 26.4% | 20,645 | 30.7 minutes |
 
 | Comparison | Difference | 95% interval | Right only under the candidate / only under the other | p | The protocol's word |
 |---|---|---|---|---|---|
-| Final candidate against stock | +0.6 | −2.2 to 3.4 | 29 / 26 | 0.79 | REPAIR not met: it needs at least 16.0% and at least stock + 10.0 points (18.4%) |
-| Final candidate against the published edit | −39.6 | −44.0 to −35.2 | 3 / 201 | 1.1e-55 | **FALLS SHORT** |
+| Final candidate against stock | +1.6 | −1.4 to 4.6 | 34 / 26 | 0.37 | REPAIR not met: it needs at least 16.0% and at least stock + 10.0 points, which is at least 80 of 500 and at least 97 of 500 (19.4%) |
+| Final candidate against the published edit | −43.2 | −47.8 to −38.8 | 3 / 219 | 5.4e-61 | **FALLS SHORT** |
 
-Under the two other line rules of ISSUES #31 the same comparison reads: the candidate 8.8% and
-9.2%, stock 8.8% and 8.8% (differences 0.0 and +0.4), the published edit 47.6% and 48.4%
-(differences −38.8 and −39.2). The words are the same.
+Where the final candidate's 55 right answers come from: 26 from a marked line ("answer is" and
+the like), 22 from a concluding last line and 7 from a box. The two other line rules measured
+under ISSUES #31 are now part of the checker — a complete box anywhere in the answer is read
+first, and without a box the answer is right if either the marked line or a concluding last line
+is right — so they are no longer quoted beside it (under the checker of 2026-11-24 they read the
+candidate 8.8% and 9.2%, stock 8.8% and 8.8%, the published edit 47.6% and 48.4%). The words are
+the same as they were under that checker.
 
-Two details of the first row. The upper end of its interval is 3.4 with the problems taken in
-sorted order and 3.6 in file order: the bootstrap distribution moves in steps of 0.2 points and
-its 97.5th percentile lies just above 3.4. And closing its thinking is not finishing: 42 of the
+Two details of the first row. Its interval is the same with the problems taken in sorted order
+and in file order (under the checker of 2026-11-24 the upper end read 3.4 in sorted order and 3.6
+in file order). And closing its thinking is not finishing: 42 of the
 final candidate's 154 generations that close their thinking still run to the cap afterwards
 (stock: 2 of 49).
 
 **What the extra generations that close their thinking contain.** 31 problems close under both models (the
-candidate right on 17, the unedited model on 26); 123 close only under the candidate, which is
-right on 28; 18 close only under the unedited model, which is right on 16. No generation that
+candidate right on 22, the unedited model on 30); 123 close only under the candidate, which is
+right on 33; 18 close only under the unedited model, which is right on 17; 328 never close under
+either model. No generation that
 never closes is right under either model. So the edit makes the model finish far more often and
-less often correctly; the net is 3 right answers of 500.
+less often correctly; the net is 8 right answers of 500 (34 right only under the candidate, 26
+only under stock), not distinguishable from zero.
 
 ### Secondary endpoint — the reference question
 
@@ -227,37 +249,43 @@ Last boxed answer; both graders on the same boxed answers; paired against the re
 
 | Model | Repository matcher | math-verify |
 |---|---|---|
-| Final candidate | **10.0%** (50 of 500) | **10.8%** (54) |
-| Stock (`ref_stock`) | 7.4% | 7.8% |
-| Published edit (`ref_orig`) | 46.6% | 51.0% |
+| Final candidate | **11.0%** (55 of 500) | **11.0%** (55) |
+| Stock (`ref_stock`) | 8.8% | 8.8% |
+| Published edit (`ref_orig`) | 51.6% | 51.8% |
 
-The final candidate: its last boxed answer is non-blank in 101 of 500 (20.2%; 103 with an extractor
-that also reads boxes nested two brace levels deep), and 80 more generations end with an empty
-`\boxed{}` copied from the instruction (the reference grader's log counts 181 of 500, 36.2%, with
-a box of any kind); cut at the cap 82.4%; mean 27,912 tokens; 41.6 minutes of GPU time.
+The final candidate: its last boxed answer is non-blank in 105 of 500 (21.0%); cut at the cap
+82.4%; mean 27,912 tokens; 41.6 minutes of GPU time. (Under the checker of 2026-11-24, whose box
+extractor read one brace level deep: non-blank in 101 of 500 (20.2%; 103 with an extractor that
+also reads boxes nested two brace levels deep), 80 more generations ending with an empty
+`\boxed{}` copied from the instruction, and the reference grader's log counting 181 of 500,
+36.2%, with a box of any kind.)
 
 | Comparison | Repository matcher | math-verify |
 |---|---|---|
-| Final candidate against stock | +2.6 (95% interval −0.2 to 5.6; 34 problems right only under the candidate, 21 only under stock; p = 0.11) | +3.0 (interval 0.0 to 6.0; 38 against 23; p = 0.072) |
-| Final candidate against the published edit | −36.6 (interval −41.0 to −32.2) | −40.2 (interval −44.6 to −35.8) |
+| Final candidate against stock | +2.2 (95% interval −0.8 to 5.4; 37 problems right only under the candidate, 26 only under stock; p = 0.21) | +2.2 (interval −0.8 to 5.4; 37 against 26; p = 0.21) |
+| Final candidate against the published edit | −40.6 (interval −45.0 to −36.2) | −40.8 (interval −45.2 to −36.4) |
 
-The editor's forecast was 3 to 8 points above the unedited model. The measured gains are +0.6
-(the repository's question), +2.6 and +3.0 (the reference question): at or below the low end of
-its forecast.
+The editor's forecast was 3 to 8 points above the unedited model. The measured gains are +1.6
+(the repository's question) and +2.2 under each grader (the reference question): at or below the
+low end of its forecast.
 
 ## Predictions (on record before the session)
 
 | # | Prediction | Point estimate | Outcome | Result |
 |---|---|---|---|---|
 | R1 | The first pass, on the unmodified model, has at least half of its 128 generations cut at the cap | 0.85 | 94.5% (121 of 128) were | **holds** |
-| R2 | The final candidate FALLS SHORT of the published edit under the primary protocol | 0.75 | −39.6 points, interval −44.0 to −35.2, excluding zero | **holds** |
-| R3 | No candidate of the editor reaches 40% boxed accuracy on the practice pool | 0.60 | its only candidate reached 7.8% | **holds** |
+| R2 | The final candidate FALLS SHORT of the published edit under the primary protocol | 0.75 | −43.2 points, interval −47.8 to −38.8, excluding zero | **holds** |
+| R3 | No candidate of the editor reaches 40% boxed accuracy on the practice pool | 0.60 | its only candidate reached 8.6% boxed (11 of 128) | **holds** |
 
 ## Audit against the manifest and the rules
 
 Done by the host after the session.
 
 - **Tools and model.** The seven tool files carry the digests of `phase14/sandbox_manifest.json`.
+  (Note 2026-11-26, after the re-score: that was true at the audit after the session. Since then
+  three of the seven changed for the answer checker's third rule — `phase3c/rescore.py`,
+  `phase3b/scorer.py` and `phase14/eval_pass.py` — so the manifest now records the tools as they
+  ran; the other four (`benchmark.py`, `gpulock.py`, `runcheck.py`, `save_edit.py`) still match.)
   The base model's fingerprint equals the manifest; so does the stock model the sandbox was
   copied from. The practice file equals the repository's copy. The working copy differs from the
   base in that one tensor only. The repository's working tree was not changed.
@@ -287,7 +315,7 @@ What this run adds to that:
 - It did not converge on the quick fix the rules forbid (edits to the embedding or output layer
   and the like). It found a different, single-tensor edit in layer 0 that lets more generations
   close their thinking without making them more often right.
-- Under this repository's earlier rules the blind editors' quick fixes reached 31.6% to 36.2%
+- Under this repository's earlier rules the blind editors' quick fixes reached 37.2% to 42.2%
   (the README's phase table).
 
 ## Cost
@@ -313,15 +341,19 @@ About 2.0 GPU-hours for the whole item (the protocol estimated 3 to 6): the tech
 - **Why the editor stopped after 2 passes is its own account.** Its journal ends: "cand_C is at
   the function edge of the repair family; deeper cuts cost arithmetic/closing."
 - One sample per problem, one seed.
-- The primary endpoint inherits the checker's line limit (ISSUES #31). The readings under the two
-  other line rules are given above and change no word.
+- The primary endpoint depends on which line of an unboxed answer the checker reads. The checker's
+  third rule (ISSUES #30, #31) settled that on 2026-11-26, and every number here is its reading:
+  of the candidate's 55 right answers, 26 come from a marked line ("answer is" and the like), 22
+  from a concluding last line and 7 from a box. Under the checker of 2026-11-24 the candidate read
+  9.0% against stock's 8.4% and the published edit's 48.6%, with the same words.
 
 ## Files added for this phase
 
 - `phase14/results.md` — this file.
 - `phase14/endpoints.json` — every number of the two endpoints.
 - `phase14/endpoints.py` — computes `endpoints.json` from the collected files; its decision rules
-  are tested in `phase14/test_endpoints.py`.
+  are tested in `phase14/test_endpoints.py` (52 tests). Since 2026-11-26 it refuses to run if the
+  six re-scored files it reads were not all made by the checker in the tree.
 - `phase14/session/` — the ledger, two pass summaries, two generation files, the receipt, the
   editor's final report and journal, 52 scripts, two pass logs.
 - `phase14/attempt1_mimo_pro/` — ledger, pass summary, generations, the first editor's notes,

@@ -1,5 +1,15 @@
 # Pre-registered protocol — Phase 7: the matrix atlas ("what maps to what")
 
+> **Note 2026-11-26 (after the run, no rule changed):** the answer checker received its third
+> rule (ISSUES #30, #31), and the final scores quoted in this file have moved again. The rules,
+> thresholds and predictions in this file are unchanged. The current scores and paired figures
+> are in `phase7/causal/results.md`: map repair 36.4%, half-dose stack 50.8% (its rerun 51.6%),
+> full-dose stack 52.2% on its clean rerun, published edit 54.2%, stock 9.4%, random-edit
+> control 4.0%. Under the checker of 2026-11-24, which the note below describes, they read
+> 32.6%, 44.8%, 45.6%, 46.2%, 48.6%, 8.4% and 3.8%. Addendum 5's bound of 33.2% for "SUCCESS,
+> level with the published edit" was derived from the published edit's 39.4% as first reported
+> and no longer separates the two outcomes; the results file says how U2 reads now.
+
 > Note added 2026-11-24 (ISSUES #19): the figures quoted below were recorded with the
 > defective answer checker and are higher under the corrected one (see ISSUES #19); the
 > rules and thresholds in this file are unchanged. That holds for the final accuracies quoted

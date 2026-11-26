@@ -1,5 +1,11 @@
 # Pre-registered protocol — Phase 9: team deliberation vs the lone surgeon
 
+> **Note 2026-11-26 (after the run, no rule changed):** the answer checker received its third
+> rule (ISSUES #30, #31), and every score moved when it was read again; no rule, threshold or
+> prediction in this file is affected. The current scores are in `phase9/results.md`. The
+> single-editor baselines quoted below read 37.2, 42.2 and 40.6 under the final answer checker
+> (31.6, 36.2 and 35.2 under the checker of 2026-11-24).
+
 > Note added 2026-11-24 (ISSUES #19): the figures quoted below were recorded with the defective
 > answer checker and are higher under the corrected one (see ISSUES #19); the rules and thresholds
 > in this file are unchanged. Values quoted here, first reported -> final: single-editor

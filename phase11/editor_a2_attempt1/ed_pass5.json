@@ -3,13 +3,13 @@
   "name": "ed_pass5",
   "n": 64,
   "accuracy": 0.0,
-  "answered": 98.4,
+  "answered": 51.6,
   "cap_hit_rate": 100.0,
   "mean_tokens": 8192.0,
   "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
   "model": "/home/user/wsp11/sandbox/model",
   "fp8": false,
-  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#4a1b56a343a4 (ISSUES #19)",
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#d74fdebd340f (ISSUES #19, #30, #31)",
   "validity": {
    "soup_pct": 4.7,
    "soup_judged": false,
@@ -24,7 +24,8 @@
    "pred": "3,\\pi/4",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m1",
@@ -32,7 +33,8 @@
    "pred": "q",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m2",
@@ -40,15 +42,17 @@
    "pred": "---",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m3",
    "gold": "9",
-   "pred": "4",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m4",
@@ -56,15 +60,17 @@
    "pred": "ll",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m5",
    "gold": "42",
-   "pred": "by",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m6",
@@ -72,7 +78,8 @@
    "pred": "Step",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m7",
@@ -80,7 +87,8 @@
    "pred": "The",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m8",
@@ -88,15 +96,17 @@
    "pred": "2-(-4)",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m9",
    "gold": "4",
-   "pred": "by",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m10",
@@ -104,7 +114,8 @@
    "pred": "Step",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m11",
@@ -112,15 +123,17 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m12",
    "gold": "284",
-   "pred": "step",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m13",
@@ -128,15 +141,17 @@
    "pred": "3",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m14",
    "gold": "\\sqrt{51}",
-   "pred": "thought",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m15",
@@ -144,39 +159,44 @@
    "pred": "c",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m16",
    "gold": "-50",
-   "pred": "base",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m17",
    "gold": "\\pi",
-   "pred": "step",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m18",
    "gold": "28",
-   "pred": "user",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m19",
    "gold": "3",
-   "pred": "to",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m20",
@@ -184,7 +204,8 @@
    "pred": "5",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m21",
@@ -192,7 +213,8 @@
    "pred": "thought",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m22",
@@ -200,7 +222,8 @@
    "pred": "12",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m23",
@@ -208,47 +231,53 @@
    "pred": "final",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m24",
    "gold": "10",
-   "pred": "30",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m25",
    "gold": "1,-2",
-   "pred": "user",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m26",
    "gold": "144",
-   "pred": "step",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m27",
    "gold": "78",
-   "pred": "38",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m28",
    "gold": "-2 + 7i",
-   "pred": "1",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m29",
@@ -256,7 +285,8 @@
    "pred": "2",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m30",
@@ -264,7 +294,8 @@
    "pred": "8_{10",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m31",
@@ -272,7 +303,8 @@
    "pred": "2\\sqrt{10}",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m32",
@@ -280,15 +312,17 @@
    "pred": "Note",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m33",
    "gold": "\\frac{243}{625}",
-   "pred": "a_8",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m34",
@@ -296,23 +330,26 @@
    "pred": "Step",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m35",
    "gold": "3",
-   "pred": "Thegiveninformationisn\\equiv2\\let_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_step_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystepm_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_m_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_m_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_m_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_m_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_m_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_mnt-bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_m_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_m_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_m_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_tystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_m_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_m_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_m_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_m_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_m_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_m_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_m_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_step_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_m_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep_bystep",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m36",
    "gold": "3, 5, 7",
-   "pred": "x",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m37",
@@ -320,7 +357,8 @@
    "pred": "be",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m38",
@@ -328,15 +366,17 @@
    "pred": "40",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m39",
    "gold": "23",
-   "pred": "643",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m40",
@@ -344,15 +384,17 @@
    "pred": "I",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m41",
    "gold": "17",
-   "pred": "3",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m42",
@@ -360,23 +402,26 @@
    "pred": "Step",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m43",
    "gold": "70 \\sqrt{2}",
-   "pred": "-20",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m44",
    "gold": "1.25",
-   "pred": "3",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m45",
@@ -384,7 +429,8 @@
    "pred": "5",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m46",
@@ -392,7 +438,8 @@
    "pred": "\\dots",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m47",
@@ -400,7 +447,8 @@
    "pred": "b",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m48",
@@ -408,15 +456,17 @@
    "pred": "\\frac{1}{way}",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m49",
    "gold": "83",
-   "pred": "9",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m50",
@@ -424,31 +474,35 @@
    "pred": "53",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m51",
    "gold": "x^5 - x^4 + x^3 - x^2 + x - 1",
-   "pred": "---",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m52",
    "gold": "12",
-   "pred": "6",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m53",
    "gold": "-\\frac{\\pi}{6}",
-   "pred": "\\arcssin(-\\frac{1}{2})",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m54",
@@ -456,7 +510,8 @@
    "pred": "step",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m55",
@@ -464,15 +519,17 @@
    "pred": "space",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m56",
    "gold": "11",
-   "pred": "positive_the_the_the_the_n_121.Thisisaclarificationof\"Thesumofthefirst",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m57",
@@ -480,15 +537,17 @@
    "pred": "5",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m58",
    "gold": "9901",
-   "pred": "you",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m59",
@@ -496,23 +555,26 @@
    "pred": "answer",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m60",
    "gold": "(6,31,-1)",
-   "pred": "4",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m61",
    "gold": "-256",
-   "pred": "2",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m62",
@@ -520,15 +582,17 @@
    "pred": "c",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m63",
    "gold": "10",
-   "pred": "the",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   }
  ]
 }

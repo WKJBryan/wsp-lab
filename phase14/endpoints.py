@@ -9,25 +9,22 @@ Primary endpoint (phase14/protocol.md): MATH-500 under the repository's question
 checker, paired against stock and the published edit. Secondary endpoint: the reference question,
 the last boxed answer of each generation, both graders on the same boxed answers, paired against
 the two reference arms. Paired statistics as in phase 8 (10,000-draw bootstrap, exact McNemar test).
-Also printed: the primary comparison under the two other ways of choosing the answer line
-(ISSUES #31). The protocol's ±4.0-point words are defined for the primary comparison with the
-published edit only; no other comparison gets one. For stock the protocol's word is REPAIR (at
-least 16.0% and at least stock + 10.0 points) or not, decided here on counts, not on rounded
-percentages.
+The protocol's ±4.0-point words are defined for the primary comparison with the published edit
+only; no other comparison gets one. For stock the protocol's word is REPAIR (at least 16.0% and at
+least stock + 10.0 points) or not, decided here on counts, not on rounded percentages.
 """
 
 import gzip
 import importlib.metadata
 import json
 import math
-import re
 import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent / "phase3c"))
 sys.path.insert(0, str(HERE.parent / "phase3b"))
-import rescore  # noqa: E402  (the final answer checker; its line rule is re-run under two variants)
+import rescore  # noqa: E402  (the final answer checker: its verdicts, its boxed extractor)
 from scorer import answers_match  # noqa: E402
 
 P3 = HERE.parent / "phase3c"
@@ -36,13 +33,6 @@ REF_FINAL, REF_STOCK, REF_ORIG = "p14_final_ref", "ref_stock", "ref_orig"
 PROBLEMS = 500
 REPAIR_MIN_PERCENT, REPAIR_MIN_GAP_POINTS = 16.0, 10.0
 ADMISSION_FLOOR = 100   # runs of this many rows or more carry the admission-order check (phase3c/runcheck.py)
-# the checker's own boxed extractor: one brace level
-BOXED = re.compile(r"\\boxed\{([^{}]*(?:\{[^{}]*\}[^{}]*)*)\}")
-# reading C of ISSUES #31, exactly as it was measured there: the shape of a concluding line is a
-# $math$ span, a display block, a bold value, or a linking word and a number. The word boundary
-# before the linking word also stands before "=", so a spaced equals sign is not recognised.
-STRUCT = re.compile(r"\$\$?[^$]+\$|\\\[|\\\(|\*\*[^*]+\*\*|\b(?:is|are|equals|=)\s*:?\s*\**\s*-?\d",
-                    re.IGNORECASE)
 
 
 def word(d, lo, hi):
@@ -66,29 +56,6 @@ def repaired(right_final, right_stock, n):
                 right_final=right_final, right_stock=right_stock, n=n,
                 min_right=math.ceil(REPAIR_MIN_PERCENT * n / 100), min_gap=math.ceil(REPAIR_MIN_GAP_POINTS * n / 100),
                 holds=holds)
-
-
-def last_box(text):
-    """The content of the last one-level \\boxed{...} of a generation; "" when there is none."""
-    found = BOXED.findall(text)
-    return found[-1] if found else ""
-
-
-def readings(text, gold, ok):
-    """(the checker's verdict, the section's last line read instead, reading C) for one generation,
-    with the checker's own cleanup and matcher. A generation with a boxed answer, or without an
-    answer section, reads the same under every rule; an answer section with no text reads wrong."""
-    if BOXED.search(text) or "</think>" not in text:
-        return (ok, ok, ok)
-    section = text.split("</think>", 1)[1]
-    lines = [l.strip().replace("</think>", " ").strip() for l in section.splitlines()]
-    lines = [l for l in lines if l]
-    if not lines:
-        return (ok, False, ok)
-    last = lines[-1]
-    cand = rescore.clean(last)
-    last_ok = bool(cand) and answers_match(gold, cand)
-    return (ok, last_ok, last_ok if STRUCT.search(last) else ok)
 
 
 def math_verify_ok(gold, boxed):
@@ -157,26 +124,18 @@ def pair(xa, ya, label, word_key=None):
     return out
 
 
-def line_readings(stem):
-    """{problem id: readings} for a run under the repository's question."""
-    t, out = texts(stem), {}
-    for r in rescored(stem)["rows"]:
-        out[r["id"]] = readings(t[r["id"]], r["gold"], bool(r["ok_rescored"]))
-    return out
-
-
 def boxed_readings(stem):
     """({problem id: (the repository's matcher on the last boxed answer, math-verify on it, or
     None when math-verify cannot read it)}, rows with a boxed answer, rows math-verify cannot read)."""
     t, out, attempted, unreadable = texts(stem), {}, 0, 0
     for r in rescored(stem)["rows"]:
-        boxed = last_box(t[r["id"]])
+        boxed = rescore.last_boxed(t[r["id"]])
         mv = False
         if boxed:
             attempted += 1
             mv = math_verify_ok(r["gold"], boxed)
             unreadable += mv is None
-        out[r["id"]] = (bool(boxed) and answers_match(r["gold"], boxed), mv)
+        out[r["id"]] = (boxed is not None and answers_match(r["gold"], boxed), mv)
     return out, attempted, unreadable
 
 
@@ -192,11 +151,24 @@ def grader_versions():
         mv = "math-verify " + importlib.metadata.version("math-verify")
     except importlib.metadata.PackageNotFoundError:
         mv = "math-verify (version not recorded)"
-    return dict(matcher="phase3b/scorer.py answers_match on the last boxed answer",
+    return dict(checker=rescore.RESCORED_WITH,
+                matcher="phase3b/scorer.py answers_match on the last boxed answer",
                 math_verify=mv, problems_in_sorted_order="the bootstrap resamples the problems in sorted id order")
 
 
+def same_checker():
+    """Stop unless every re-scored file was made by the checker in this tree: the primary endpoint
+    is read from those files while the secondary is computed here, so two checkers could otherwise
+    end up in one report without any sign."""
+    for stem in (FINAL, STOCK, ORIG, REF_FINAL, REF_STOCK, REF_ORIG):
+        stamp = rescored(stem)["summary"].get("rescored_with")
+        if stamp != rescore.RESCORED_WITH:
+            sys.exit(f"{stem} was re-scored with {stamp}, not with the checker in this tree "
+                     f"({rescore.RESCORED_WITH}): re-score it first")
+
+
 def main():
+    same_checker()
     out = {"about": "rescore_file_stamp identifies the checker that produced each re-score file; in secondary_runs "
                     "'accuracy' is the repository's matcher on the last boxed answer, computed here, and "
                     "'accuracy_math_verify' is the second grader."}
@@ -206,15 +178,6 @@ def main():
     out["primary_pairs"] = [pair(checker[FINAL], checker[STOCK], "final candidate against stock"),
                             pair(checker[FINAL], checker[ORIG], "final candidate against the published edit", "word")]
     out["repair"] = repaired(sum(checker[FINAL].values()), sum(checker[STOCK].values()), len(checker[FINAL]))
-
-    lines = {s: line_readings(s) for s in (FINAL, STOCK, ORIG)}
-    out["line_rules"] = []
-    for c, rule in enumerate("ABC"):
-        for other, name in ((STOCK, "stock"), (ORIG, "the published edit")):
-            out["line_rules"].append(dict(rule=rule, **pair({i: v[c] for i, v in lines[FINAL].items()},
-                                                            {i: v[c] for i, v in lines[other].items()},
-                                                            f"final candidate against {name}",
-                                                            "word_if_read_this_way" if other == ORIG else None)))
 
     boxed = {}
     out["secondary_runs"], out["graders"] = {}, grader_versions()

@@ -8,13 +8,17 @@ Gemma-4 model-card decoding, fixed seed, one scorer for every arm.
 corrected answer checker, the wound is described as it was built, and the evidence below is
 restated. A withdrawn reading is kept, in one line, where it stood.
 
+**Corrected 2026-11-26 (ISSUES #30, #31):** every score below was read again with the final
+answer checker. The current reading stands in place; the reading of 2026-11-24 is kept where
+the text dates it.
+
 ## The closing table (full MATH-500, 500 problems)
 
 | Arm | What | Accuracy | Cap-hit | Mean tokens | Size |
 |---|---|---|---|---|---|
-| **A0** full 26B-A4B | all 128 experts (fp8 reference, disclosed) | **76.4%** (382 of 500; 58.4% as first reported) | 0.2% | 669 | 51.6 GB bf16 |
-| **A1** wound | 8 experts kept per layer, impact-selected; expert selection disabled | **1.2%** (6 of 500) | 98.0% | 8,084 | 8.8 GB bf16 |
-| **A2** WSP repair | attempt 1's best candidate: the wound restored, unedited | **1.2%** (= A1) | 98.0% | 8,084 | 8.8 GB |
+| **A0** full 26B-A4B | all 128 experts (fp8 reference, disclosed) | **86.0%** (430 of 500; 76.4% under the checker of 2026-11-24; 58.4% as first reported) | 0.2% | 669 | 51.6 GB bf16 |
+| **A1** wound | 8 experts kept per layer, impact-selected; expert selection disabled | **1.0%** (5 of 500) | 98.0% | 8,084 | 8.8 GB bf16 |
+| **A2** WSP repair | attempt 1's best candidate: the wound restored, unedited | **1.0%** (= A1) | 98.0% | 8,084 | 8.8 GB |
 | **A2r** random control | none completed: attempt 1's final edit was "none" | — | — | — | — |
 
 ## Verdict (pre-registered): **NULL** — and the wound's autopsy is the result
@@ -30,13 +34,16 @@ gradient-free repair was found** (A2 − A1 = 0.0, below the +2.5 PARTIAL floor)
    What weight edits reach is termination. On a 64-problem practice pass (pass 2:
    embedding-row boosts for stop / boxed / answer tokens) they cut cap-hits from 63 of 64 to
    27 of 64 (98.4% → 42.2%) and mean length from 8,183 to 4,498 tokens, with accuracy
-   indistinguishable: 1 correct of 64 before and 2 after (a 95% interval for 1 of 64 is 0.3%
-   to 8.3%). The remainder is present but not expressed: with one weight edit (the final
-   norm × 0.4, attempt 5) the wound produced ten correct answers of 500 against its six,
-   including four complete correct derivations (problems m13, m191, m345, m469). That
-   difference is not statistically distinguishable, and a second build of the same edit
-   scored 7 of 500. No gradient-free edit recovered a statistically demonstrable amount of
-   accuracy; the largest observed gain is attempt 5's 10 of 500 against the wound's 6.
+   indistinguishable: 0 correct of 64 before and 2 after under the final answer checker (1
+   and 2 under the checker of 2026-11-24; a Wilson 95% interval for 1 of 64 runs from 0.3% to
+   8.3%, the exact one from 0.04% to 8.4%).
+   The remainder is present but not expressed: with one weight edit (the final
+   norm × 0.4, attempt 5) the wound produced ten correct answers of 500 against its five
+   (six under the checker of 2026-11-24), including four complete correct derivations
+   (problems m13, m191, m345, m469). That difference is not statistically distinguishable
+   (+1.0, 95% interval −0.4 to 2.6), and a second build of the same edit scored 7 of 500.
+   No gradient-free edit recovered a statistically demonstrable amount of accuracy; the
+   largest observed gain is attempt 5's 10 of 500 against the wound's 5.
    *Withdrawn 2026-11-24: the reading that the knowledge did not survive pruning, leaving
    a shell of grammar and protocol around missing computation.* It rested on two numbers
    that do not hold. The arithmetic-facts test (`editor_a2_attempt1/arith_bench.py`) counted
@@ -71,8 +78,9 @@ gradient-free repair was found** (A2 − A1 = 0.0, below the +2.5 PARTIAL floor)
 ## Pre-registered endpoints, scored
 
 - **Primary (SUCCESS ≥ +5.0 over A1, control beaten):** NULL. The largest observed gain over
-  the wound is attempt 5's 10 of 500 against the wound's 6, which is not statistically
-  distinguishable, and no matched control was completed.
+  the wound is attempt 5's 10 of 500 against the wound's 5 (6 under the checker of
+  2026-11-24), which is not statistically distinguishable, and no matched control was
+  completed.
 - **P1 (on-task recovery ≥ 3× off-task):** not scorable — the registered off-task measurement
   (an MMLU subset and agreement with the full model) was never run. (First written as
   "superseded — no accuracy recovery occurred at any site".)
@@ -84,7 +92,7 @@ gradient-free repair was found** (A2 − A1 = 0.0, below the +2.5 PARTIAL floor)
 ## The lobotomy trade, measured under one harness
 
 At 94% expert removal: memory 51.6 → 8.8 GB buys a model that keeps its language and
-formatting but loses most benchmark capability (76.4 → 1.2 on MATH-500). The wound is two
+formatting but loses most benchmark capability (86.0 → 1.0 on MATH-500). The wound is two
 injuries, not one. `prune.py` keeps 8 experts per layer and leaves the active-expert count
 at 8, so expert selection is switched off and every survivor runs on every token (the
 script's own docstring calls it "the lobotomy regime; the router is effectively bypassed").
@@ -123,6 +131,13 @@ repair "closes none of this gap".*
   wound 1.2% on the final (6 of 500; 1.0% as first reported) and attempt 1's second practice
   pass 3.1% (2 of 64; 1.6% as first reported). The other wound arms are unchanged (0.8, 2.0,
   1.6, 1.4; the wound's practice pass 1.6).
+- **Re-scoring (2026-11-26, ISSUES #30, #31):** the answer checker received its third rule,
+  and every phase-11 score was read again with the final answer checker: full model 86.0% on
+  the final (430 of 500) and 85.9% on its practice pass (55 of 64); the wound 1.0% on the
+  final (5 of 500) and 0 of 64 on its practice pass; attempt 1's second practice pass is
+  unchanged at 3.1% (2 of 64). The other wound-arm finals read 0.4 (attempt 2's, 2 of 500),
+  2.0 (attempt 5's, 10 of 500), 1.0 (`a2r_final`, 5 of 500) and 1.4 (`a2r5_final`, 7 of
+  500). The verdict stays NULL.
 - **Files (2026-11-24, ISSUES #21):** attempt 1's practice files are the pinned copies
   under `editor_a2_attempt1/`; the top-level `ed_pass*.json` were overwritten by later
   attempts.
@@ -135,16 +150,16 @@ committed task instructions, same 10-pass budget, same evaluator.
 
 | # | Editor | Family / tier | Passes | Final MATH-500 | Verdict |
 |---|---|---|---|---|---|
-| 1 | GLM-5.3 (subagent) | zai / big | 5/10 | = A1 (1.2%; final edit "none") | **NULL** |
-| 2 | GLM-5.3 (subagent) | zai / big | 3/10 | 0.8% (4 of 500); control arm 1.6% (8 of 500), not matched | **NULL** |
+| 1 | GLM-5.3 (subagent) | zai / big | 5/10 | = A1 (1.0%; final edit "none") | **NULL** |
+| 2 | GLM-5.3 (subagent) | zai / big | 3/10 | 0.4% (2 of 500); control arm 1.0% (5 of 500), not matched | **NULL** |
 | 3 | GLM-5.3-Flash | zai / fast | 4/10 | = A1 (baseline restored, md5-identical) | **NULL** |
 | 4 | MiMo-v2.6-flash | xiaomi / fast | 1/10 | — (2 spawns, 9 h, becalmed) | **STALLED** |
-| 5 | MiMo-v2.6-pro | xiaomi / big | 10/10 | 2.0% (10 of 500) against the wound's 1.2% (6 of 500); cap-hit 79.4% (397 of 500) against 98.0% (490 of 500); mean length 7,067 against 8,084 tokens | **NULL** |
+| 5 | MiMo-v2.6-pro | xiaomi / big | 10/10 | 2.0% (10 of 500) against the wound's 1.0% (5 of 500); cap-hit 79.4% (397 of 500) against 98.0% (490 of 500); mean length 7,067 against 8,084 tokens | **NULL** |
 
 **Pre-registered prediction (Am. #3): confirmed in the four attempts that produced a final;
 one stalled.** No editor, in either family or tier, recovered a statistically demonstrable
 amount of accuracy (the largest observed gain is attempt 5's 10 of 500 against the wound's
-6). **No matched control was completed** for any final: attempt 1's final edit was "none";
+5). **No matched control was completed** for any final: attempt 1's final edit was "none";
 attempt 2's control changed 374 rows in layer 29 against the editor's 7, with a change of
 size 42.2 against the editor's 4.3; and attempt 5's first control build picked the edited
 tensor itself (its filter matched nothing, leaving a pool of one). The rebuilt control (layer
@@ -200,14 +215,16 @@ in the same session, a rerun of the wound as built as the control. Files:
 `phase11/a1_wound_topk1_practice.json` (+ `_texts.json`) and
 `phase11/a1_wound_topk8_practice_rerun.json` (+ `_texts.json`).
 
-**Result** (all scored with the final checker):
+**Result** (all scored with the checker of 2026-11-24; the final answer checker's reading is
+added where a count moved):
 
 - Selection restored: **0 of 64 right**, 59 of 64 cut at the cap (92.2%), mean 7,630 tokens.
 - Control, the wound as built: **0 of 64 right**, 64 of 64 cut at the cap (100%), mean 8,192
   tokens.
 - The original practice pass on the wound as built (2026-11-16): 1 of 64, 63 of 64 cut
-  (98.4%).
-- The full model on the same 64 problems: 47 of 64 (73.4%), 1 of 64 cut (1.6%).
+  (98.4%); 0 of 64 under the final answer checker.
+- The full model on the same 64 problems: 47 of 64 (73.4%), 1 of 64 cut (1.6%); 55 of 64
+  (85.9%) under the final answer checker.
 
 **Reading.** The comparison is 0 of 64 either way, and with 64 problems the pass cannot tell
 apart differences of fewer than about three right answers. Switching selection back on does
@@ -221,8 +238,9 @@ top cannot be seen at this floor.
 
 The atlas question sharpens: **same symptom, different cause, different repairability.**
 Qwen 3.5-0.8B (phases 3–10): knowledge present, termination broken → single-row edits
-recover real accuracy (stock 8.4 → 36.0 for the phase-10 edit; 6.0 → 27.4 as first
-reported). Gemma wound: most capability lost and the rest not expressed in free-running
+recover real accuracy (stock 9.4 → 41.6 for the phase-10 edit under the final answer
+checker; 8.4 → 36.0 under the checker of 2026-11-24; 6.0 → 27.4 as first reported). Gemma
+wound: most capability lost and the rest not expressed in free-running
 generation (finding 1),
 termination broken → the same edit class recovers the termination mechanism on a practice
 pass (cap-hit 63 of 64 to 27 of 64) but no statistically demonstrable accuracy. Both

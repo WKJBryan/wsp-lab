@@ -1,5 +1,13 @@
 # Pre-registered protocol — Phase 14: the blind editor under the original authors' rules
 
+> **Note 2026-11-26 (after the run, no rule changed):** the answer checker received its third
+> rule on 2026-11-26 (ISSUES #30, #31), and every score read with it moved; the rules, bars,
+> endpoints and predictions below are unchanged. Under the repository's question the final
+> candidate now reads 11.0% against stock's 9.4% (the 8.4% quoted below is the reading of the
+> checker of 2026-11-24) and the published edit's 54.2% (48.6% below), so "at least stock +
+> 10.0 points" now means at least 97 of 500 as well as at least 80 of 500. The current
+> readings are in `phase14/results.md`.
+
 > Note added 2026-11-24, before the editor session (no pass has been run). The setup, rules,
 > endpoints and predictions below are unchanged. Three things are recorded so that the session
 > starts from an accurate statement:

@@ -1,12 +1,13 @@
 r"""Phase-3c rescoring v2: format-aware extraction (ISSUES #10), fixed after audit.
 
 Extraction order (identical for both arms, from saved generations):
-  1. last \\boxed{...} anywhere;
+  1. the last complete \\boxed{...} anywhere;
   2. else, in the post-</think> section: the LAST line carrying an answer marker
-     ("answer:", "final answer", "answer is", "value is", "coordinates are"),
+     ("answer:", "final answer", "answer is", "value is", "coordinates are"), and the section's
+     last line when it can be a conclusion — the answer is right if either is right (third rule);
      sliced at the marker (length-preserving view so indices are valid);
      empty payload -> next non-empty line;
-  3. else the section's last line.
+  3. else the section's last line, when it can be a conclusion.
 Payload cleanup: \\text{X}->X, strip $..$, \\[ \\], bold, trailing period,
 take the part after the last '='; then prefer the last $math$ span, else the
 last number-ish token. Thinking that never closes leaves no answer section and
@@ -50,6 +51,38 @@ answer); seven are misreads that remain, listed in ISSUES #19. Against the first
 each, agrees with 566 of the 570. Against the first correction as last refined: 520 right,
 none wrong.
 
+Third rule, 2026-11-26 (ISSUES #31 and #30), from the measurements recorded there and
+reviewed twice before use.
+  a3. An answer without \boxed{} is right when either reading is right: the last line carrying
+      an answer marker (step 2, the previous rule), or the section's last line (step 3) when that
+      line can be a conclusion (`concludes`). The previous rule read only the marked line; when
+      the model's real conclusion stood on a later line without a marker, a correct answer was
+      scored wrong. The marked line is kept because it rescues answers from stray trailing lines.
+      A line that stops mid-expression, or is a heading or a list number, is not read: the
+      previous rule took its last digit for an answer, and 20 times that digit equalled the gold
+      by accident. `judge` returns (right, answer, rule); `rule` names the line the compared
+      answer came from ("boxed", "marked line", "last line") or None when nothing was read.
+      `extract_answer` still returns that one string for callers that want it without the verdict.
+  b3. A box is read to its matching brace at any depth, in one pass. A box nested two brace
+      levels deep (\boxed{\frac{\sqrt{3}}{3}}) used to be missed; a box that never closes and a
+      blank box ("\boxed{}", quoted from the instruction) are passed over.
+  d3. The cleanup of a payload: a bold value keeps its closing stars with or without a period
+      ("is **4**" used to read "x" when no period followed); opening stars always go, and a bold
+      label in front of a value goes with it ("**Answer:** **(E)**" is (E)); a period, stars that
+      close nothing and a bracket that nothing opened go in any order ("\frac{3840}{289}.)"), but
+      LaTeX's "\)" stays and a list keeps its brackets ("(3,5)", "[2, 5)").
+  c3. The matcher accepts the formatting equivalents math-verify accepts (phase3b/scorer.py).
+
+Measured answer by answer on the 23,718 saved answers (the 22,718 above and the two phase-14
+finals) before anything was re-scored, and again by a second script: 943 turn right, 21 turn
+wrong. Of the 21, 20 were accidental hits of the previous rule on text cut off at the cap or
+on a heading; one is a model that boxed one value inside its thinking and concluded with
+another (phase8/b1 m283: a box is read first, and stays the answer). math-verify accepts 933
+of the 943 on the very string the checker accepted; the other ten are right by hand (a number
+given in another base or as a decimal where the gold is in another base, markdown residue,
+a matrix math-verify cannot read). By rule: matcher 585, last line 261, last line and matcher
+85, box read at any depth 12.
+
 Usage: uv run python phase3c/rescore.py <run_name> [<run_name> ...] [--no-think]
 Reads <run_name>_texts.json, or <run_name>_texts.json.gz when that is absent.
 """
@@ -76,7 +109,7 @@ def _digest(path: Path) -> str:
 _HERE = Path(__file__).resolve().parent
 _SCORER = next(p for p in (_HERE.parent / "phase3b" / "scorer.py", _HERE / "scorer.py") if p.exists())
 CHECKSUM = hashlib.sha256((_digest(Path(__file__)) + "|" + _digest(_SCORER)).encode("utf-8")).hexdigest()[:12]
-RESCORED_WITH = f"phase3c/rescore.py+phase3b/scorer.py#{CHECKSUM} (ISSUES #19)"
+RESCORED_WITH = f"phase3c/rescore.py+phase3b/scorer.py#{CHECKSUM} (ISSUES #19, #30, #31)"
 
 MARKER_RE = re.compile(
     r"answer\s*:|final\s+answer|answer\s+is|value\s+is|coordinates\s+are|answer\s+should",
@@ -107,7 +140,38 @@ def clean(seg: str) -> str | None:
     seg = seg.replace("\\[", "").replace("\\]", "")
     if "=" in seg:
         seg = seg.split("=")[-1]
-    seg = seg.strip().strip("*").strip().rstrip(".").strip()
+    # a bold label in front of the value reads with the value ("**Answer:** **(E)**", "**Result:**
+    # 326.5"); trailing punctuation then goes, in any order: a period; stars that close no bold
+    # value in the payload ("**$y = \frac{4}{3}$**." once split at "="); a closing bracket that
+    # nothing opened ("\frac{3840}{289}.)"), but not LaTeX's "\)"; a list keeps its brackets
+    # ("(3,5)", "[2, 5)"). A bold value keeps its closing stars ("is **4**" with or without a
+    # period: the first two rules stripped them and read "x").
+    seg = re.sub(r"^\*\*[^*\n]{1,80}:\*\*\s*", "", seg.strip())
+    seg = seg.lstrip("*").rstrip()
+    opens, closes = seg.count("(") + seg.count("["), seg.count(")") + seg.count("]")
+    end = len(seg)
+    while end:
+        ch = seg[end - 1]
+        if ch in " .":
+            end -= 1
+        elif ch in ")]":
+            if ch == ")" and end >= 2 and seg[end - 2] == "\\":
+                break                                    # LaTeX's closing bracket, "\)"
+            if closes > opens:
+                end -= 1
+                closes -= 1                              # a bracket that nothing opened
+            else:
+                break
+        elif ch == "*":
+            start = end
+            while start and seg[start - 1] == "*":
+                start -= 1
+            if seg[:start].count("**") % 2:
+                break                                  # these stars close a bold value: keep them
+            end = start                              # stars that close nothing
+        else:
+            break
+    seg = seg[:end].rstrip()
     # 1. bolded emphasis near the end ("the value is **83**")
     bolds = re.findall(r"\*\*([^*]+)\*\*", seg)
     if bolds:
@@ -147,21 +211,57 @@ def clean_inner(seg: str) -> str | None:
     return canonical(seg)
 
 
-def extract_answer(text: str, no_think: bool = False):
-    boxed = re.findall(r"\\boxed\{([^{}]*(?:\{[^{}]*\}[^{}]*)*)\}", text)
-    if boxed:
-        return boxed[-1]
-    if no_think:  # phase 8: thinking-off output — the whole output is the answer section
+_BOX_OR_BRACE = re.compile(r"\\boxed\{|[{}]")
+_BLANK = re.compile(r"\\[ ,;:!]|\\q?uad|~|\s")
+
+
+def _blank(content: str) -> bool:
+    """A box that holds nothing but spacing ("", "\\ ", "~") quotes the instruction's empty box."""
+    return not _BLANK.sub("", content)
+
+
+def last_boxed(text: str):
+    """The content of the last complete \\boxed{...} of a generation, read to its matching brace at
+    any depth (ISSUES #30); None when there is none. A box that never closes (text cut off inside
+    it) and a box that is blank ("\\boxed{}", quoted from the instruction) are not answers and are
+    passed over. Of two boxes one inside the other the inner one is the answer: it is the last to
+    open. One pass over the text, so a generation that repeats "\\boxed{" a thousand times costs
+    no more than any other."""
+    last, last_start, stack, depth = None, -1, [], 0
+    for m in _BOX_OR_BRACE.finditer(text):
+        token = m.group(0)
+        if token == "{":
+            depth += 1
+        elif token == "}":
+            depth -= 1
+            if stack and stack[-1][1] == depth + 1:        # this brace closes the innermost open box
+                start, _ = stack.pop()
+                content = text[start:m.start()]
+                if not _blank(content) and start > last_start:
+                    last, last_start = content, start
+        else:
+            depth += 1
+            stack.append((m.end(), depth))
+    return last
+
+
+def answer_lines(text: str, no_think: bool = False):
+    """The non-empty lines of the answer section: after </think>, or the whole output when
+    thinking is off (phase 8, phase 11). A generation that never closes its thinking has none.
+    A stray </think> token inside the answer section is not answer text (defect c)."""
+    if no_think:
         answer = text
-    elif "</think>" not in text:
-        return None
-    else:
+    elif "</think>" in text:
         answer = text.split("</think>", 1)[1]
-    # a stray </think> token inside the answer section is not answer text (defect c)
+    else:
+        return []
     lines = [l.strip().replace("</think>", " ").strip() for l in answer.splitlines()]
-    lines = [l for l in lines if l]
-    if not lines:
-        return None
+    return [l for l in lines if l]
+
+
+def marked_line(lines):
+    """The last line carrying an answer marker, sliced at the marker (length-preserving view so
+    indices are valid); empty payload -> next non-empty line. None when no line carries one."""
     best = None
     for i, l in enumerate(lines):
         lv = view(l)
@@ -173,9 +273,64 @@ def extract_answer(text: str, no_think: bool = False):
             c = clean(payload)
             if c:
                 best = c
+    return best
+
+
+def concludes(line: str) -> bool:
+    """Whether a line can be a model's conclusion. It is one bare value ("90", "(C)"), or it ends
+    a sentence (".", "!", "?"), closes a bracket, a math span or a bold value, or carries a label
+    and a value ("**Total ways:** 3", "Result: 326.5"). A line that stops mid-expression
+    ("f(1,", "= 1.5 \\cdot", "**Step 2. Simplify the equation to") is a fragment cut off at the
+    cap or a stray remark: its numbers are not an answer. A heading or list number is not one
+    either ("**Step 1.", "Step 2.", "3)")."""
+    s = line.rstrip()
+    if re.search(r"[,(\[{;=+\-/^\\]$", s) or re.match(r"\W*(?:step|case|method|part)\s*\d", s, re.IGNORECASE) \
+            or re.match(r"\**\s*\d+\)$", s):
+        return False
+    if not re.search(r"\s", s) or re.search(r"[.!?)\]}$*]\s*$", s):
+        return True
+    return bool(re.search(r"(?:\*\*[^*]+\*\*|[^:*]{1,40}):\s*[*:\s]*[^\s:*]*[\w)\]}$]\s*$", s))
+
+
+def last_line_answer(text: str, no_think: bool = False):
+    """The section's last line read as an answer, when it can be a conclusion; else None."""
+    lines = answer_lines(text, no_think)
+    return clean(lines[-1]) if lines and concludes(lines[-1]) else None
+
+
+def extract_answer(text: str, no_think: bool = False):
+    """One answer string: the last box; else the marked line; else the section's last line when it
+    can be a conclusion. The checker's verdict is `judge`, which also accepts a right last line."""
+    boxed = last_boxed(text)
+    if boxed is not None:
+        return boxed
+    lines = answer_lines(text, no_think)
+    best = marked_line(lines)
     if best:
         return best
-    return clean(lines[-1])
+    return last_line_answer(text, no_think)
+
+
+def judge(gold: str, text: str, no_think: bool = False):
+    """The checker's verdict on a generation: (right, answer, rule). `answer` is the string that
+    was compared with the gold, `rule` says which line it came from:
+      "boxed":        a complete box exists, and only it is read (right or wrong)
+      "marked line":  the last line carrying an answer marker (right, or the last line cannot be
+                      a conclusion)
+      "last line":    the section's last line, when it is right and the marked line is not, or
+                      when no line carries a marker
+      None:           nothing was read (no section, or only a line that cannot be a conclusion)"""
+    boxed = last_boxed(text)
+    if boxed is not None:
+        return answers_match(gold, boxed), boxed, "boxed"
+    marked = marked_line(answer_lines(text, no_think))
+    last = last_line_answer(text, no_think)
+    for rule, ans in (("marked line", marked), ("last line", last)):
+        if ans is not None and answers_match(gold, ans):
+            return True, ans, rule
+    if marked is not None:
+        return False, marked, "marked line"
+    return False, last, ("last line" if last is not None else None)
 
 
 def load_texts(name: str):
@@ -204,10 +359,9 @@ def rescore(name: str, no_think: bool = False):
     rows = run["rows"]
     correct = answered = 0
     for r in rows:
-        pred = extract_answer(texts[r["id"]], no_think)
-        r["pred_rescored"] = pred
-        r["ok_rescored"] = answers_match(r["gold"], pred)
-        correct += r["ok_rescored"]
+        right, pred, rule = judge(r["gold"], texts[r["id"]], no_think)
+        r["pred_rescored"], r["ok_rescored"], r["rule"] = pred, right, rule
+        correct += right
         answered += pred is not None
     n = len(rows)
     problems, validity = check_run(rows, texts, ok_key="ok_rescored")
@@ -218,6 +372,7 @@ def rescore(name: str, no_think: bool = False):
                    cap_hit_rate=run["summary"].get("cap_hit_rate"),
                    mean_tokens=run["summary"]["mean_tokens"],
                    rescored_with=RESCORED_WITH,
+                   no_think=no_think,      # an input to every verdict, so it is on record with them
                    validity=dict(validity, problems=problems))
     print(json.dumps(summary))
     write_json(here / f"{name}_rescored.json", dict(summary=summary, rows=rows))

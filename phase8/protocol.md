@@ -1,5 +1,12 @@
 # Pre-registered protocol — Phase 8: the missing baselines (is the blind edit a decoding trick?)
 
+> **Note 2026-11-26 (after the run, no rule changed):** the answer checker received its third
+> rule (ISSUES #30, #31), and every score moved when it was read again; no rule, threshold,
+> decision rule or prediction in this file is affected. The current scores, comparisons and
+> verdict words are in `phase8/results.md`. The accuracies quoted below read, under the checker
+> of 2026-11-24 -> under the final answer checker: S 8.4 -> 9.4; O 48.6 -> 54.2; E1 35.2 ->
+> 40.6; E2 31.6 -> 37.2; R 3.8 -> 4.0.
+
 > Note added 2026-11-24 (ISSUES #19): the figures quoted below were recorded with the
 > defective answer checker and are higher under the corrected one (see ISSUES #19); the
 > rules and thresholds in this file are unchanged. The accuracies quoted below, first reported

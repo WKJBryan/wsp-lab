@@ -3,13 +3,13 @@
   "name": "ed_pass10",
   "n": 64,
   "accuracy": 0.0,
-  "answered": 96.9,
+  "answered": 62.5,
   "cap_hit_rate": 4.7,
   "mean_tokens": 1172.0,
   "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
   "model": "/home/user/wsp11/sandbox/model",
   "fp8": false,
-  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#4a1b56a343a4 (ISSUES #19)",
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#d74fdebd340f (ISSUES #19, #30, #31)",
   "validity": {
    "soup_pct": 4.7,
    "soup_judged": false,
@@ -21,10 +21,11 @@
   {
    "id": "m0",
    "gold": "\\left( 3, \\frac{\\pi}{2} \\right)",
-   "pred": "\\sqrt{0^2+wrong_a",
+   "pred": null,
    "ok": false,
    "n_tokens": 643,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m1",
@@ -32,15 +33,17 @@
    "pred": "???",
    "ok": false,
    "n_tokens": 266,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m2",
    "gold": "\\frac{14}{3}",
-   "pred": "bye",
+   "pred": null,
    "ok": false,
    "n_tokens": 322,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m3",
@@ -48,7 +51,8 @@
    "pred": "196",
    "ok": false,
    "n_tokens": 27,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m4",
@@ -56,7 +60,8 @@
    "pred": "framework",
    "ok": false,
    "n_tokens": 128,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m5",
@@ -64,31 +69,35 @@
    "pred": "3",
    "ok": false,
    "n_tokens": 1688,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m6",
    "gold": "27",
-   "pred": "5",
+   "pred": null,
    "ok": false,
    "n_tokens": 1053,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m7",
    "gold": "90^\\circ",
-   "pred": "st",
+   "pred": null,
    "ok": false,
    "n_tokens": 886,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m8",
    "gold": "3\\sqrt{13}",
-   "pred": "code",
+   "pred": null,
    "ok": false,
    "n_tokens": 227,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m9",
@@ -96,15 +105,17 @@
    "pred": "2",
    "ok": false,
    "n_tokens": 165,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m10",
    "gold": "2220",
-   "pred": "we",
+   "pred": null,
    "ok": false,
    "n_tokens": 2515,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m11",
@@ -112,7 +123,8 @@
    "pred": "2,3,4,\\dots,7",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m12",
@@ -120,7 +132,8 @@
    "pred": "25",
    "ok": false,
    "n_tokens": 2845,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m13",
@@ -128,7 +141,8 @@
    "pred": "5.9/9",
    "ok": false,
    "n_tokens": 6735,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m14",
@@ -136,7 +150,8 @@
    "pred": "Please",
    "ok": false,
    "n_tokens": 55,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m15",
@@ -144,7 +159,8 @@
    "pred": ")</text{missing}",
    "ok": false,
    "n_tokens": 375,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m16",
@@ -152,7 +168,8 @@
    "pred": "\ufe0f",
    "ok": false,
    "n_tokens": 2969,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m17",
@@ -160,7 +177,8 @@
    "pred": "<",
    "ok": false,
    "n_tokens": 5,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m18",
@@ -168,15 +186,17 @@
    "pred": "x^{\\circ}",
    "ok": false,
    "n_tokens": 216,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m19",
    "gold": "3",
-   "pred": "re",
+   "pred": null,
    "ok": false,
    "n_tokens": 126,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m20",
@@ -184,15 +204,17 @@
    "pred": "Code\\text://",
    "ok": false,
    "n_tokens": 105,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m21",
    "gold": "13535",
-   "pred": "ly",
+   "pred": null,
    "ok": false,
    "n_tokens": 541,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m22",
@@ -200,15 +222,17 @@
    "pred": "8",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m23",
    "gold": "x=5",
-   "pred": "\\text{Step22:Finalresultistheresult\u0e2b\u0e19\u0e48\u0e2d\u0e22_",
+   "pred": null,
    "ok": false,
    "n_tokens": 654,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m24",
@@ -216,7 +240,8 @@
    "pred": "procedure",
    "ok": false,
    "n_tokens": 14,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m25",
@@ -224,7 +249,8 @@
    "pred": "1",
    "ok": false,
    "n_tokens": 2109,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m26",
@@ -232,7 +258,8 @@
    "pred": "precise",
    "ok": false,
    "n_tokens": 28,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m27",
@@ -240,39 +267,44 @@
    "pred": "15",
    "ok": false,
    "n_tokens": 4254,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m28",
    "gold": "-2 + 7i",
-   "pred": "style",
+   "pred": null,
    "ok": false,
    "n_tokens": 703,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m29",
    "gold": "225",
-   "pred": "x",
+   "pred": null,
    "ok": false,
    "n_tokens": 209,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m30",
    "gold": "52_8",
-   "pred": "1",
+   "pred": null,
    "ok": false,
    "n_tokens": 237,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m31",
    "gold": "11\\sqrt2",
-   "pred": "\\sqrt{242}",
+   "pred": null,
    "ok": false,
    "n_tokens": 107,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m32",
@@ -280,7 +312,8 @@
    "pred": "1",
    "ok": false,
    "n_tokens": 943,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m33",
@@ -288,7 +321,8 @@
    "pred": null,
    "ok": false,
    "n_tokens": 552,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m34",
@@ -296,7 +330,8 @@
    "pred": "constanttop",
    "ok": false,
    "n_tokens": 1380,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m35",
@@ -304,23 +339,26 @@
    "pred": "thought",
    "ok": false,
    "n_tokens": 574,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m36",
    "gold": "3, 5, 7",
-   "pred": "-10",
+   "pred": null,
    "ok": false,
    "n_tokens": 709,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m37",
    "gold": "72",
-   "pred": "the",
+   "pred": null,
    "ok": false,
    "n_tokens": 1291,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m38",
@@ -328,7 +366,8 @@
    "pred": "400",
    "ok": false,
    "n_tokens": 462,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m39",
@@ -336,15 +375,17 @@
    "pred": "80",
    "ok": false,
    "n_tokens": 211,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m40",
    "gold": "12",
-   "pred": "text",
+   "pred": null,
    "ok": false,
    "n_tokens": 44,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m41",
@@ -352,7 +393,8 @@
    "pred": null,
    "ok": false,
    "n_tokens": 2932,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m42",
@@ -360,15 +402,17 @@
    "pred": "\\`",
    "ok": false,
    "n_tokens": 374,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m43",
    "gold": "70 \\sqrt{2}",
-   "pred": "---",
+   "pred": null,
    "ok": false,
    "n_tokens": 847,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m44",
@@ -376,7 +420,8 @@
    "pred": "it",
    "ok": false,
    "n_tokens": 37,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m45",
@@ -384,7 +429,8 @@
    "pred": "than",
    "ok": false,
    "n_tokens": 1930,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m46",
@@ -392,31 +438,35 @@
    "pred": "Instead",
    "ok": false,
    "n_tokens": 218,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m47",
    "gold": "5",
-   "pred": ".Find",
+   "pred": "a+b+c",
    "ok": false,
    "n_tokens": 1993,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m48",
    "gold": "\\frac{3}{2}",
-   "pred": "x",
+   "pred": null,
    "ok": false,
    "n_tokens": 43,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m49",
    "gold": "83",
-   "pred": "|\\banks",
+   "pred": null,
    "ok": false,
    "n_tokens": 1339,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m50",
@@ -424,7 +474,8 @@
    "pred": "3",
    "ok": false,
    "n_tokens": 54,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m51",
@@ -432,7 +483,8 @@
    "pred": "t",
    "ok": false,
    "n_tokens": 646,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m52",
@@ -440,7 +492,8 @@
    "pred": "<\u3048",
    "ok": false,
    "n_tokens": 11,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m53",
@@ -448,7 +501,8 @@
    "pred": "\\sin(y).however,inthisproblemwordingcontext,you'vetothespecificterminology",
    "ok": false,
    "n_tokens": 260,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m54",
@@ -456,23 +510,26 @@
    "pred": "0.3.8.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1.0.0.1",
    "ok": false,
    "n_tokens": 411,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m55",
    "gold": "3",
-   "pred": "f",
+   "pred": null,
    "ok": false,
    "n_tokens": 466,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m56",
    "gold": "11",
-   "pred": "erically",
+   "pred": null,
    "ok": false,
    "n_tokens": 1276,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m57",
@@ -480,7 +537,8 @@
    "pred": "1",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m58",
@@ -488,7 +546,8 @@
    "pred": "s",
    "ok": false,
    "n_tokens": 97,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m59",
@@ -496,15 +555,17 @@
    "pred": "Correct",
    "ok": false,
    "n_tokens": 27,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m60",
    "gold": "(6,31,-1)",
-   "pred": "reiver",
+   "pred": null,
    "ok": false,
    "n_tokens": 207,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m61",
@@ -512,7 +573,8 @@
    "pred": "--",
    "ok": false,
    "n_tokens": 139,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m62",
@@ -520,7 +582,8 @@
    "pred": "6",
    "ok": false,
    "n_tokens": 107,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m63",
@@ -528,7 +591,8 @@
    "pred": "indeed",
    "ok": false,
    "n_tokens": 646,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   }
  ]
 }

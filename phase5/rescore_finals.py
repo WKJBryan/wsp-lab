@@ -17,7 +17,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent / "phase3c"))
-from rescore import RESCORED_WITH, answers_match, extract_answer, write_json  # noqa: E402
+from rescore import RESCORED_WITH, judge, write_json  # noqa: E402
 from runcheck import check_run  # noqa: E402
 
 ARMS = ("final5v2_start", "final5v2_dose175")     # published edit at 1.0x, and at 1.75x
@@ -34,10 +34,12 @@ def rescore(name):
     assert len(texts) == len(run["rows"]) * len(samples), f"{name}: generations do not pair with rows"
     rows, ok = [], {}
     for i, r in enumerate(run["rows"]):
-        preds = [extract_answer(texts[f"m{i}#{s}"]) for s in samples]
-        oks = [answers_match(r["gold"], p) for p in preds]
+        verdicts = [judge(r["gold"], texts[f"m{i}#{s}"]) for s in samples]
+        preds = [pred for _, pred, _ in verdicts]
+        oks = [right for right, _, _ in verdicts]
         ok[f"m{i}"] = oks
-        rows.append(dict(id=f"m{i}", gold=r["gold"], pred_rescored=preds, ok_rescored=oks))
+        rows.append(dict(id=f"m{i}", gold=r["gold"], pred_rescored=preds, ok_rescored=oks,
+                         rule=[rule for _, _, rule in verdicts]))
     n = len(rows) * len(samples)
     per_sample = [round(100 * sum(v[k] for v in ok.values()) / len(rows), 1) for k in range(len(samples))]
     # one validity record per sample: a sample's generations are in submission order like any run's

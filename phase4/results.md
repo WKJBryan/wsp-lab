@@ -17,17 +17,27 @@ subagents, per the user's instruction ("spawn subagent to be able to use it").
 > Practice numbers are as recorded with the old checker; the generations were not saved, so they
 > cannot be re-scored.
 
+> **Re-scored 2026-11-26 (ISSUES #30, #31) with the final answer checker**, the third reading;
+> the note above gives the second, the checker of 2026-11-24, which was called the final answer
+> checker until 2026-11-26. First-reported -> 2026-11-24 -> 2026-11-26: stock 6.0 -> 8.4 ->
+> **9.4%** (47 of 500); random control 2.2 -> 3.8 -> **4.0%** (20); GLM-5.3-Flash 25.2 -> 31.6 ->
+> **37.2%** (186); mimo-v2.6-flash 27.8 -> 36.2 -> **42.2%** (211); mimo-v2.6-pro 27.8 -> 35.2 ->
+> **40.6%** (203); published edit 39.4 -> 48.6 -> **54.2%** (271). The tables and sentences below
+> carry this reading. No pre-registered verdict changes under either checker. "Answered" (the
+> share of generations from which the checker read an answer) is a reading of the checker too
+> and moved with it.
+
 ## Final capability matrix (identical harness, engine, decoding, scorer; final = full MATH-500)
 
 | Arm | Tier | Session format | Passes used | MATH-500 | Verdict |
 |---|---|---|---|---|---|
-| Stock | — | — | — | **8.4%** | baseline |
-| C2 random noise (matched norm, same rows) | — | — | — | **3.8%** | control |
-| **GLM-5.3-Flash** | flash | one ask, self-directed | 6 | **31.6%** | ✅ SUCCESS (bar ≥16.0) |
+| Stock | — | — | — | **9.4%** | baseline |
+| C2 random noise (matched norm, same rows) | — | — | — | **4.0%** | control |
+| **GLM-5.3-Flash** | flash | one ask, self-directed | 6 | **37.2%** | ✅ SUCCESS (bar ≥16.0) |
 | mimo-v2.6-flash (arm 1) | flash | one ask + continuations | 1 | — | ❌ no edit attempted |
-| **mimo-v2.6-flash (retry, 4b)** | flash | step-driven, 5 asks | 7 | **36.2%** | ✅ SUCCESS |
-| **mimo-v2.6-pro (4c)** | pro | step-driven, 5 asks | 7 | **35.2%** | ✅ SUCCESS |
-| Original's editor (hinted; published edit) | — | 50 passes | — | 48.6% | reference |
+| **mimo-v2.6-flash (retry, 4b)** | flash | step-driven, 5 asks | 7 | **42.2%** | ✅ SUCCESS |
+| **mimo-v2.6-pro (4c)** | pro | step-driven, 5 asks | 7 | **40.6%** | ✅ SUCCESS |
+| Original's editor (hinted; published edit) | — | 50 passes | — | 54.2% | reference |
 
 **The convergence result (the headline):** GLM-5.3-Flash (×1.5503), mimo-v2.6-flash (×1.50), and
 mimo-v2.6-pro (×1.50) — three independent blind sessions, two model families, two tiers — all
@@ -36,8 +46,9 @@ localized the same single row of the 873M-parameter model (the `</think>` tied-e
 and `im_end` (×1.15) rows; both mimo arms converged on the single-row edit alone. All three
 measured the same sharp dose ceiling (GLM: ×3.0 seizure; mimo-pro: ×2.0 collapse to 10.9% with
 token spam). The mimo-flash and mimo-pro candidates differ by bf16 rounding and now score
-36.2 against 35.2 — not distinguishable (+1.0, 95% interval −1.8 to 3.6; 26 problems right only
-by the mimo-flash edit, 21 only by the mimo-pro edit). (Corrected 2026-11-24, ISSUES #19: this
+42.2 against 40.6 — not distinguishable (+1.6, 95% interval −1.0 to 4.2; 27 problems right only
+by the mimo-flash edit, 19 only by the mimo-pro edit; under the checker of 2026-11-24: 36.2
+against 35.2, +1.0, interval −1.6 to 3.8). (Corrected 2026-11-24, ISSUES #19: this
 said "mathematically identical edits ... score identically".)
 
 **Harness format matters as much as model choice:** mimo-flash failed under the one-ask marathon
@@ -61,21 +72,21 @@ in 10 budgeted passes, where the original's big hinted editor succeeded and our 
 
 | Arm | MATH-500 | Answered | Terminated (closed) | Mean tokens |
 |---|---|---|---|---|
-| Stock (phase-3c baseline, carried) | **8.4%** | 9.8% | 9.8% | 30,108 |
-| **GLM-5.3-Flash, blind (6/10 passes)** | **31.6%** | 98.0% | **99.0%** | **10,712** |
-| C2: matched-norm random noise, same rows | **3.8%** | 4.2% | 4.2% | 31,639 |
+| Stock (phase-3c baseline, carried) | **9.4%** | 9.6% | 9.8% | 30,108 |
+| **GLM-5.3-Flash, blind (6/10 passes)** | **37.2%** | 91.8% | **99.0%** | **10,712** |
+| C2: matched-norm random noise, same rows | **4.0%** | 4.2% | 4.2% | 31,639 |
 | mimo-v2.6-flash, blind (1/10 passes) | — no edit produced — | | | |
-| Original's published edit (their editor, hinted) | 48.6% | 83.2% | 83.6% | 20,645 |
+| Original's published edit (their editor, hinted) | 54.2% | 78.2% | 83.6% | 20,645 |
 
 "Terminated (closed)" is the share of the 500 generations in which thinking closed (`</think>`
 present). Corrected 2026-11-24 (ISSUES #25): the earlier entries in that column (about 9%, 76%,
 about 4%, 74%) were a different quantity, the share that finished (ended on its own, 100 minus the
 cap-hit rate) — stock 9.4%, GLM-5.3-Flash 76.0%, random control 4.2%, published edit 73.6%.
 
-**Pre-registered verdict, GLM-5.3-Flash arm: SUCCESS** (31.6% ≥ 16.0% bar; stock is 8.4%). The C2
+**Pre-registered verdict, GLM-5.3-Flash arm: SUCCESS** (37.2% ≥ 16.0% bar; stock is 9.4%). The C2
 control shows the result is the *content* of the edit, not its magnitude: random noise of
-identical norm on the identical rows scores 3.8%, 4.6 points below stock (95% interval 2.4 to
-6.8, which excludes zero; 29 problems right only by stock, 6 only by the control). (Until the
+identical norm on the identical rows scores 4.0%, 5.4 points below stock (95% interval 3.0 to
+7.8, which excludes zero; 33 problems right only by stock, 6 only by the control). (Until the
 second checker correction of 2026-11-24 this read "2.8% (stock-like, if anything slightly
 harmful)".)
 
@@ -90,7 +101,8 @@ harmful)".)
 - **Session record:** 6 passes, all pre-logged with hypotheses (`session_glmflash/ledger.md`),
   including one tested-and-reverted regression (`im_end` ×1.45 → 42.2% practice) and a second-seed
   re-verification. Practice set: 12.5% → 54.7%/50.0% (two seeds); termination 18.8% → 100%;
-  mean tokens 7,253 → ~934. On MATH-500 the gain transfers at 31.6% (re-scored 2026-11-24; 25.2%
+  mean tokens 7,253 → ~934. On MATH-500 the gain transfers at 37.2% (final answer checker,
+  2026-11-26; 31.6% under the checker of 2026-11-24; 25.2%
   as first reported; practice→final drop expected: harder problems, and the comma fix is
   practice-format-specific).
 - **Disclosed loophole (ISSUES #12):** the editor tuned scales via unlimited OFFLINE transformers
@@ -127,13 +139,13 @@ decides, not the one that looks like it should.
 ## What this phase adds to the WSP picture
 
 1. **Blind small-model weight surgery is real but not uniform across editors**: 1 of 2
-   flash-tier editors achieved a pre-registered SUCCESS (8.4 → 31.6) blind; the other inspected
+   flash-tier editors achieved a pre-registered SUCCESS (9.4 → 37.2) blind; the other inspected
    competently and stalled. Cross-editor capability variance is now measured, not assumed.
 2. **Where the blind editors stand against the hinted original — a description, not a measure of
    the hint (ISSUES #23; corrected 2026-11-24 from "The blind gap to the hinted original narrows
    dramatically").** Hinted gpt-6-astra (50 passes, their stack) 7.9 → 48.1; blind GLM-5.3-Flash
-   (6 passes, our stack) 8.4 → 31.6; blind mimo-v2.6-flash 36.2, blind mimo-v2.6-pro 35.2; the
-   published edit on our stack 48.6. The two experiments differ in at least four ways at once, so
+   (6 passes, our stack) 9.4 → 37.2; blind mimo-v2.6-flash 42.2, blind mimo-v2.6-pro 40.6; the
+   published edit on our stack 54.2. The two experiments differ in at least four ways at once, so
    the distance between them cannot be attributed to being told the failure. From the original
    authors' published experiment record (`RikiyaT/lm_understand-logs` on GitHub:
    `exp8_math/README.md` and the first turn's task-instruction file `runs/p50c/turns/t001/prompt.txt`):
@@ -152,8 +164,8 @@ decides, not the one that looks like it should.
    **What is measured is a quick fix against a deeper edit under different rules, practice data
    and editor models. The experiment that would isolate the hint — a blind editor under the
    original rules, with in-distribution practice — has not been run.** (Run since, as phase 14 on
-   2026-11-25/26: the blind editor scored 9.0% — not distinguishable from stock's 8.4% and 39.6
-   points below the published edit; `phase14/results.md`.)
+   2026-11-25/26: the blind editor scored 11.0% under the final answer checker — not
+   distinguishable from stock's 9.4% and 43.2 points below the published edit; `phase14/results.md`.)
 3. Cheap edits, expensive verification: the successful blind edits rescale one row (1,024
    values) or three rows (3,072), and the original's 131,072 — a tiny fraction of 873 million;
    everything else is measurement discipline. (Corrected 2026-11-24: this said both rest on "a few

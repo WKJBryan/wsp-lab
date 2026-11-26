@@ -18,7 +18,7 @@
   "finished": 75.0,
   "mean_tokens": 12774,
   "wall_s": 79.5,
-  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#4a1b56a343a4 (ISSUES #19)",
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#d74fdebd340f (ISSUES #19, #30, #31)",
   "validity": {
    "soup_pct": 0.0,
    "soup_judged": true,
@@ -36,7 +36,8 @@
    "closed": true,
    "think_end_at": 6441,
    "pred_rescored": "(3,\\frac{\\pi}{2})",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m1",
@@ -46,7 +47,8 @@
    "closed": false,
    "think_end_at": null,
    "pred_rescored": null,
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m2",
@@ -56,7 +58,8 @@
    "closed": true,
    "think_end_at": 7999,
    "pred_rescored": "\\frac{14}{3}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m3",
@@ -66,7 +69,8 @@
    "closed": true,
    "think_end_at": 2493,
    "pred_rescored": "9",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   }
  ]
 }

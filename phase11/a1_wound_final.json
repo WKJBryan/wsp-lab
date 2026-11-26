@@ -2,22 +2,22 @@
  "summary": {
   "name": "a1_wound_final",
   "n": 500,
-  "accuracy": 1.2,
-  "answered": 95.4,
+  "accuracy": 1.0,
+  "answered": 42.8,
   "cap_hit_rate": 98.0,
   "mean_tokens": 8083.6,
   "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
   "model": "/home/user/wsp11/gemma4-8exp",
   "fp8": false,
-  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#4a1b56a343a4 (ISSUES #19)",
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#d74fdebd340f (ISSUES #19, #30, #31)",
   "validity": {
    "soup_pct": 4.0,
    "soup_judged": false,
    "admission_tested": true,
    "admission_correct": [
     0.4,
-    2.0,
-    0.2159
+    1.6,
+    0.3725
    ],
    "problems": []
   }
@@ -29,7 +29,8 @@
    "pred": "solution",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m1",
@@ -37,7 +38,8 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m2",
@@ -45,7 +47,8 @@
    "pred": "\\frac{-3}{--1-case-2}+\\frac",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m3",
@@ -53,15 +56,17 @@
    "pred": "29",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m4",
    "gold": "\\text{Evelyn}",
-   "pred": "you",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m5",
@@ -69,47 +74,53 @@
    "pred": "21",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m6",
    "gold": "27",
-   "pred": "logic",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m7",
    "gold": "90^\\circ",
-   "pred": "6",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m8",
    "gold": "3\\sqrt{13}",
-   "pred": "2",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m9",
    "gold": "4",
-   "pred": "s",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m10",
    "gold": "2220",
-   "pred": "the",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m11",
@@ -117,23 +128,26 @@
    "pred": "I",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m12",
    "gold": "284",
-   "pred": "2",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m13",
    "gold": "5",
-   "pred": "radius",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m14",
@@ -141,47 +155,53 @@
    "pred": "5",
    "ok": false,
    "n_tokens": 3972,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m15",
    "gold": "6 - 5i",
-   "pred": "Step",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m16",
    "gold": "-50",
-   "pred": "1-2+3-4+5-\\dots+",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m17",
    "gold": "\\pi",
-   "pred": "user",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m18",
    "gold": "28",
-   "pred": "by",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m19",
    "gold": "3",
-   "pred": "I",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m20",
@@ -189,87 +209,98 @@
    "pred": "5",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m21",
    "gold": "13535",
-   "pred": "following",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m22",
    "gold": "5",
-   "pred": "by",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m23",
    "gold": "x=5",
-   "pred": "step",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m24",
    "gold": "10",
-   "pred": "-200",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m25",
    "gold": "1,-2",
-   "pred": "###26",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m26",
    "gold": "144",
-   "pred": "attempt",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m27",
    "gold": "78",
-   "pred": "s",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m28",
    "gold": "-2 + 7i",
-   "pred": "1",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m29",
    "gold": "225",
-   "pred": "follows",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m30",
    "gold": "52_8",
-   "pred": "7\\",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m31",
@@ -277,31 +308,35 @@
    "pred": "2\\sqrt{10}",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m32",
    "gold": "720",
-   "pred": "logic",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m33",
    "gold": "\\frac{243}{625}",
-   "pred": "FinalResult:Theeighthtermis\\frac{1",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m34",
    "gold": "-125",
-   "pred": "Step",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m35",
@@ -309,15 +344,17 @@
    "pred": "The",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m36",
    "gold": "3, 5, 7",
-   "pred": "7",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m37",
@@ -325,31 +362,35 @@
    "pred": "5",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m38",
    "gold": "2000",
-   "pred": "IpToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToToTo",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m39",
    "gold": "23",
-   "pred": "13",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m40",
    "gold": "12",
-   "pred": "move",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m41",
@@ -357,31 +398,35 @@
    "pred": "We",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m42",
    "gold": "4",
-   "pred": "1",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m43",
    "gold": "70 \\sqrt{2}",
-   "pred": "10",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m44",
    "gold": "1.25",
-   "pred": "39",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m45",
@@ -389,23 +434,26 @@
    "pred": "8",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m46",
    "gold": "6",
-   "pred": "2",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m47",
    "gold": "5",
-   "pred": "denominator",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m48",
@@ -413,7 +461,8 @@
    "pred": "\\frac{\\log(8)}{\\log(4}",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m49",
@@ -421,7 +470,8 @@
    "pred": "Step",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m50",
@@ -429,7 +479,8 @@
    "pred": "53",
    "ok": false,
    "n_tokens": 180,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m51",
@@ -437,15 +488,17 @@
    "pred": "division",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m52",
    "gold": "12",
-   "pred": "Step",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m53",
@@ -453,7 +506,8 @@
    "pred": "answer",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m54",
@@ -461,7 +515,8 @@
    "pred": "step",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m55",
@@ -469,7 +524,8 @@
    "pred": "3",
    "ok": true,
    "n_tokens": 492,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m56",
@@ -477,7 +533,8 @@
    "pred": "calculation",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m57",
@@ -485,15 +542,17 @@
    "pred": "2",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m58",
    "gold": "9901",
-   "pred": "mathematician",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m59",
@@ -501,15 +560,17 @@
    "pred": "33arrow",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m60",
    "gold": "(6,31,-1)",
-   "pred": "1",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m61",
@@ -517,39 +578,44 @@
    "pred": "10",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m62",
    "gold": "4",
-   "pred": "solution",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m63",
    "gold": "10",
-   "pred": "13",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m64",
    "gold": "\\frac{35}{64}",
-   "pred": "a\\sin7x+b\\sin5x+c\\sin",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m65",
    "gold": "1",
-   "pred": "rule",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m66",
@@ -557,23 +623,26 @@
    "pred": "5",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m67",
    "gold": "10",
-   "pred": "followings",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m68",
    "gold": "46",
-   "pred": "let",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m69",
@@ -581,7 +650,8 @@
    "pred": "Step",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m70",
@@ -589,15 +659,17 @@
    "pred": "Step",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m71",
    "gold": "2516_8",
-   "pred": "s",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m72",
@@ -605,23 +677,26 @@
    "pred": "2",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m73",
    "gold": "\\frac{3\\sqrt{3}}{4}",
-   "pred": "\\sqrt{9\\cdot2+9",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m74",
    "gold": "\\cot x",
-   "pred": "27",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m75",
@@ -629,7 +704,8 @@
    "pred": "16",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m76",
@@ -637,7 +713,8 @@
    "pred": "domain",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m77",
@@ -645,15 +722,17 @@
    "pred": "3",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m78",
    "gold": "(-2,1)",
-   "pred": "can",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m79",
@@ -661,15 +740,17 @@
    "pred": "\\frac{\\ln(31}{\\ln(3)}\\approx7.877(wait,proceed)",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m80",
    "gold": "501",
-   "pred": "real",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m81",
@@ -677,7 +758,8 @@
    "pred": "incorrect",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m82",
@@ -685,7 +767,8 @@
    "pred": "is",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m83",
@@ -693,7 +776,8 @@
    "pred": "x",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m84",
@@ -701,7 +785,8 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m85",
@@ -709,7 +794,8 @@
    "pred": "29",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m86",
@@ -717,23 +803,26 @@
    "pred": "\ufffd205",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m87",
    "gold": "1",
-   "pred": "3",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m88",
    "gold": "2",
-   "pred": "not",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m89",
@@ -741,7 +830,8 @@
    "pred": "understood",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m90",
@@ -749,15 +839,17 @@
    "pred": "4",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m91",
    "gold": "1",
-   "pred": "f(x)",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m92",
@@ -765,7 +857,8 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m93",
@@ -773,39 +866,44 @@
    "pred": "answer",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m94",
    "gold": "80",
-   "pred": "text",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m95",
    "gold": "-4",
-   "pred": "everything",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m96",
    "gold": "1 \\pm \\sqrt{19}",
-   "pred": "the",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m97",
    "gold": "\\text{east}",
-   "pred": "s",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m98",
@@ -813,7 +911,8 @@
    "pred": "-",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m99",
@@ -821,31 +920,35 @@
    "pred": "\\begin{PIf}",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m100",
    "gold": "145^\\circ",
-   "pred": "by",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m101",
    "gold": "850",
-   "pred": "z",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m102",
    "gold": "(a+5)(b+2)",
-   "pred": "to",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m103",
@@ -853,7 +956,8 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m104",
@@ -861,7 +965,8 @@
    "pred": "Final",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m105",
@@ -869,15 +974,17 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m106",
    "gold": "\\frac43",
-   "pred": "y",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m107",
@@ -885,7 +992,8 @@
    "pred": "0",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m108",
@@ -893,31 +1001,35 @@
    "pred": "1",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m109",
    "gold": "120^\\circ",
-   "pred": "t",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m110",
    "gold": "504",
-   "pred": "not",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m111",
    "gold": "210",
-   "pred": "llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m112",
@@ -925,7 +1037,8 @@
    "pred": "I",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m113",
@@ -933,23 +1046,26 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m114",
    "gold": "-5",
-   "pred": "(x-3)(x+8)?\\dotsNo,it",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m115",
    "gold": "1260",
-   "pred": "E",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m116",
@@ -957,7 +1073,8 @@
    "pred": "answer",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m117",
@@ -965,23 +1082,26 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m118",
    "gold": "81",
-   "pred": "(a,b)",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m119",
    "gold": "-9",
-   "pred": "1+2+3-4+5+6",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m120",
@@ -989,7 +1109,8 @@
    "pred": "s",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m121",
@@ -997,7 +1118,8 @@
    "pred": "5",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m122",
@@ -1005,7 +1127,8 @@
    "pred": "result",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m123",
@@ -1013,7 +1136,8 @@
    "pred": "goal",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m124",
@@ -1021,15 +1145,17 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m125",
    "gold": "-3",
-   "pred": "1",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m126",
@@ -1037,39 +1163,44 @@
    "pred": "###",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m127",
    "gold": "4210_{5}",
-   "pred": "5path",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m128",
    "gold": "36",
-   "pred": "the",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m129",
    "gold": "\\frac{3840}{289}",
-   "pred": "4",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m130",
    "gold": "13",
-   "pred": "think",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m131",
@@ -1077,7 +1208,8 @@
    "pred": "1",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m132",
@@ -1085,7 +1217,8 @@
    "pred": "problem",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m133",
@@ -1093,15 +1226,17 @@
    "pred": "Step",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m134",
    "gold": "16",
-   "pred": "a",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m135",
@@ -1109,23 +1244,26 @@
    "pred": "understanding",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m136",
    "gold": "64",
-   "pred": "24",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m137",
    "gold": "204_5",
-   "pred": "way",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m138",
@@ -1133,7 +1271,8 @@
    "pred": "4/6",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m139",
@@ -1141,39 +1280,44 @@
    "pred": "\\sin\\theta(Wait,thatisnotquiteobvious,butwecan'tusethetrigonometric-form)",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m140",
    "gold": "13",
-   "pred": "2",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m141",
    "gold": "2",
-   "pred": "to",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m142",
    "gold": "28800",
-   "pred": "19",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m143",
    "gold": "3 \\sqrt{5}",
-   "pred": "Wait",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m144",
@@ -1181,15 +1325,17 @@
    "pred": "\\begina",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m145",
    "gold": "-2",
-   "pred": "of",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m146",
@@ -1197,15 +1343,17 @@
    "pred": "1",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m147",
    "gold": "16",
-   "pred": "4",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m148",
@@ -1213,7 +1361,8 @@
    "pred": "4",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m149",
@@ -1221,7 +1370,8 @@
    "pred": "Step",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m150",
@@ -1229,23 +1379,26 @@
    "pred": "###",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m151",
    "gold": "144",
-   "pred": "solution",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m152",
    "gold": "8",
-   "pred": "asks",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m153",
@@ -1253,23 +1406,26 @@
    "pred": "To",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m154",
    "gold": "2\\sqrt{113}",
-   "pred": "to",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m155",
    "gold": "\\frac{1}{4}",
-   "pred": "is",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m156",
@@ -1277,15 +1433,17 @@
    "pred": "1",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m157",
    "gold": "\\frac65",
-   "pred": "18",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m158",
@@ -1293,7 +1451,8 @@
    "pred": "200",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m159",
@@ -1301,23 +1460,26 @@
    "pred": "s",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m160",
    "gold": "18",
-   "pred": "\\",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m161",
    "gold": "6",
-   "pred": "I",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m162",
@@ -1325,7 +1487,8 @@
    "pred": "100",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m163",
@@ -1333,15 +1496,17 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m164",
    "gold": "-\\sqrt{3}",
-   "pred": "5",
+   "pred": "Result",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m165",
@@ -1349,7 +1514,8 @@
    "pred": "10",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m166",
@@ -1357,7 +1523,8 @@
    "pred": "1",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m167",
@@ -1365,23 +1532,26 @@
    "pred": "4.5",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m168",
    "gold": "19",
-   "pred": "3\\timesn",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m169",
    "gold": "12",
-   "pred": "s",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m170",
@@ -1389,7 +1559,8 @@
    "pred": "5",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m171",
@@ -1397,7 +1568,8 @@
    "pred": "answer",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m172",
@@ -1405,31 +1577,35 @@
    "pred": "200+(6-step\\_by\\_step)(d)",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m173",
    "gold": "4",
-   "pred": "Step",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m174",
    "gold": "2",
-   "pred": "y",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m175",
    "gold": "3",
-   "pred": "n",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m176",
@@ -1437,7 +1613,8 @@
    "pred": "more",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m177",
@@ -1445,15 +1622,17 @@
    "pred": "given",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m178",
    "gold": "60",
-   "pred": "10\\times15\\times24",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m179",
@@ -1461,23 +1640,26 @@
    "pred": "answer",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m180",
    "gold": "3",
-   "pred": "11",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m181",
    "gold": "\\frac{\\sqrt{3}}{3}",
-   "pred": "step",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m182",
@@ -1485,7 +1667,8 @@
    "pred": "848",
    "ok": false,
    "n_tokens": 273,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m183",
@@ -1493,7 +1676,8 @@
    "pred": "3",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m184",
@@ -1501,7 +1685,8 @@
    "pred": "The",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m185",
@@ -1509,23 +1694,26 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m186",
    "gold": "7",
-   "pred": "n",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m187",
    "gold": "7",
-   "pred": "21",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m188",
@@ -1533,7 +1721,8 @@
    "pred": "Since",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m189",
@@ -1541,7 +1730,8 @@
    "pred": "done",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m190",
@@ -1549,7 +1739,8 @@
    "pred": "0.5",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m191",
@@ -1557,7 +1748,8 @@
    "pred": "-2",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m192",
@@ -1565,7 +1757,8 @@
    "pred": "32",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m193",
@@ -1573,7 +1766,8 @@
    "pred": "#",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m194",
@@ -1581,23 +1775,26 @@
    "pred": "1",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m195",
    "gold": "24",
-   "pred": "roots",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m196",
    "gold": "1600",
-   "pred": "3",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m197",
@@ -1605,7 +1802,8 @@
    "pred": "10",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m198",
@@ -1613,7 +1811,8 @@
    "pred": "logic",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m199",
@@ -1621,31 +1820,35 @@
    "pred": "11",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m200",
    "gold": "40",
-   "pred": "convert",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m201",
    "gold": "66",
-   "pred": "8",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m202",
    "gold": "\\frac{2}{3}",
-   "pred": "the",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m203",
@@ -1653,31 +1856,35 @@
    "pred": "3",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m204",
    "gold": "0",
-   "pred": "to",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m205",
    "gold": "\\begin{pmatrix} -2 \\\\ -14 \\\\ -7 \\end{pmatrix}",
-   "pred": "3",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m206",
    "gold": "\\left( \\frac{3}{2}, -13 \\right)",
-   "pred": "17",
+   "pred": null,
    "ok": false,
    "n_tokens": 5374,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m207",
@@ -1685,15 +1892,17 @@
    "pred": "8",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m208",
    "gold": "1",
-   "pred": "asking",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m209",
@@ -1701,39 +1910,44 @@
    "pred": "Step",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m210",
    "gold": "10",
-   "pred": "-",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m211",
    "gold": "5",
-   "pred": "2",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m212",
    "gold": "56",
-   "pred": "4",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m213",
    "gold": "2",
-   "pred": "is",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m214",
@@ -1741,7 +1955,8 @@
    "pred": "---",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m215",
@@ -1749,15 +1964,17 @@
    "pred": "everything",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m216",
    "gold": "6",
-   "pred": "1",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m217",
@@ -1765,23 +1982,26 @@
    "pred": "_",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m218",
    "gold": "(-1,6)",
-   "pred": "\\frac{-5+3}{2}\\",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m219",
    "gold": "\\frac{1}{2}",
-   "pred": "However",
+   "pred": null,
    "ok": false,
    "n_tokens": 8172,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m220",
@@ -1789,47 +2009,53 @@
    "pred": "2",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m221",
    "gold": "900",
-   "pred": "2\\cdot2\\cdot",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m222",
    "gold": "54",
-   "pred": "by",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m223",
    "gold": "14",
-   "pred": "Waitistofindthesumofdigitsofthenumerator4321\\cdot",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m224",
    "gold": "\\frac{9}{256}",
-   "pred": "3",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m225",
    "gold": "11",
-   "pred": "1",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m226",
@@ -1837,7 +2063,8 @@
    "pred": "answer",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m227",
@@ -1845,7 +2072,8 @@
    "pred": "If",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m228",
@@ -1853,15 +2081,17 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m229",
    "gold": "90",
-   "pred": "to",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m230",
@@ -1869,7 +2099,8 @@
    "pred": "7",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m231",
@@ -1877,7 +2108,8 @@
    "pred": "4",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m232",
@@ -1885,15 +2117,17 @@
    "pred": "ambiguous",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m233",
    "gold": "30^\\circ",
-   "pred": "\\sqrt{3^2+2^2",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m234",
@@ -1901,7 +2135,8 @@
    "pred": "g",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m235",
@@ -1909,7 +2144,8 @@
    "pred": "\\frac{1}{9}",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m236",
@@ -1917,39 +2153,44 @@
    "pred": "m",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m237",
    "gold": "22",
-   "pred": "-",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m238",
    "gold": "-4",
-   "pred": "f(x)",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m239",
    "gold": "16",
-   "pred": "but",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m240",
    "gold": "116",
-   "pred": "thes",
+   "pred": null,
    "ok": false,
    "n_tokens": 507,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m241",
@@ -1957,15 +2198,17 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m242",
    "gold": "\\$32,\\!348",
-   "pred": "you",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m243",
@@ -1973,31 +2216,35 @@
    "pred": "units",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m244",
    "gold": "8",
-   "pred": "1070^\\circ",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m245",
    "gold": "-13x+3",
-   "pred": "to",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m246",
    "gold": "8",
-   "pred": "in",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m247",
@@ -2005,15 +2252,17 @@
    "pred": "25",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m248",
    "gold": "\\begin{pmatrix} -1 & 0 \\\\ 0 & -1 \\end{pmatrix}",
-   "pred": "question",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m249",
@@ -2021,15 +2270,17 @@
    "pred": "is",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m250",
    "gold": "13",
-   "pred": "as",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m251",
@@ -2037,7 +2288,8 @@
    "pred": "3",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m252",
@@ -2045,7 +2297,8 @@
    "pred": "Note",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m253",
@@ -2053,7 +2306,8 @@
    "pred": "3/2",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m254",
@@ -2061,39 +2315,44 @@
    "pred": "Thes",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m255",
    "gold": "\\text{(E)}",
-   "pred": "ofs",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m256",
    "gold": "\\frac{8}{21}",
-   "pred": "",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m257",
    "gold": "864 \\mbox{ inches}^2",
-   "pred": "s",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m258",
    "gold": "16",
-   "pred": "\\frac{4}{3}arrow4Bo3Yo1arrow4Bo3Yo1arrow4Bo3Yo1arrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bo3Y\\dotsarrow4Bowayo3Y\\dotsarrow4Bo3Y\\dotsarrow4B\\text",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m259",
@@ -2101,7 +2360,8 @@
    "pred": "answer",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m260",
@@ -2109,15 +2369,17 @@
    "pred": "8.5.6.((\\text",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m261",
    "gold": "76^\\circ",
-   "pred": "interpretation",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m262",
@@ -2125,15 +2387,17 @@
    "pred": "8",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m263",
    "gold": "15",
-   "pred": "interior",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m264",
@@ -2141,7 +2405,8 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m265",
@@ -2149,7 +2414,8 @@
    "pred": "12",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m266",
@@ -2157,23 +2423,26 @@
    "pred": "answer",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m267",
    "gold": "180^\\circ",
-   "pred": "Actually",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m268",
    "gold": "1",
-   "pred": "expression",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m269",
@@ -2181,15 +2450,17 @@
    "pred": "thes",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m270",
    "gold": "10",
-   "pred": "be",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m271",
@@ -2197,15 +2468,17 @@
    "pred": "5",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m272",
    "gold": "1030",
-   "pred": "\\overline{1331}",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m273",
@@ -2213,7 +2486,8 @@
    "pred": "1.0,0,0,0,00",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m274",
@@ -2221,7 +2495,8 @@
    "pred": "response",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m275",
@@ -2229,15 +2504,17 @@
    "pred": "0",
    "ok": false,
    "n_tokens": 251,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m276",
    "gold": "11",
-   "pred": "s",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m277",
@@ -2245,39 +2522,44 @@
    "pred": "53",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m278",
    "gold": "255",
-   "pred": "10",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m279",
    "gold": "7\\pi",
-   "pred": "m",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m280",
    "gold": "8",
-   "pred": "1",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m281",
    "gold": "36^\\circ",
-   "pred": "as",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m282",
@@ -2285,15 +2567,17 @@
    "pred": "structure",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m283",
    "gold": "1",
-   "pred": "Theexpressionis(4\\dfrac",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m284",
@@ -2301,23 +2585,26 @@
    "pred": "e^{\\dots}/\\dots//\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots/\\dots\\text_f",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m285",
    "gold": "440",
-   "pred": "is",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m286",
    "gold": "\\frac{17}{21}",
-   "pred": "information",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m287",
@@ -2325,23 +2612,26 @@
    "pred": "seconds",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m288",
    "gold": "7",
-   "pred": "Line1:**\\begin{\\pmatrix}3\\\\",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m289",
    "gold": "16",
-   "pred": "Note",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m290",
@@ -2349,23 +2639,26 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m291",
    "gold": "63",
-   "pred": "following",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m292",
    "gold": "898",
-   "pred": "index",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m293",
@@ -2373,7 +2666,8 @@
    "pred": "23",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m294",
@@ -2381,15 +2675,17 @@
    "pred": "3",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m295",
    "gold": "11",
-   "pred": "these",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m296",
@@ -2397,15 +2693,17 @@
    "pred": "To",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m297",
    "gold": "103",
-   "pred": "do",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m298",
@@ -2413,7 +2711,8 @@
    "pred": "the",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m299",
@@ -2421,15 +2720,17 @@
    "pred": "###3",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m300",
    "gold": "12",
-   "pred": "llllllllllllllllllll",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m301",
@@ -2437,23 +2738,26 @@
    "pred": "day",
    "ok": false,
    "n_tokens": 8030,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m302",
    "gold": "5",
-   "pred": "17",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m303",
    "gold": "28",
-   "pred": "with",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m304",
@@ -2461,31 +2765,35 @@
    "pred": "\\dots",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m305",
    "gold": "\\frac9{19}",
-   "pred": "p",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m306",
    "gold": "6",
-   "pred": "2",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m307",
    "gold": "(-\\infty, 0]",
-   "pred": "step",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m308",
@@ -2493,31 +2801,35 @@
    "pred": "I",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m309",
    "gold": "14",
-   "pred": "15",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m310",
    "gold": "49",
-   "pred": "Theoperation**********************************************************************\\",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m311",
    "gold": "3",
-   "pred": "S\\equiv(1+2",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m312",
@@ -2525,7 +2837,8 @@
    "pred": "(5,\\infty)",
    "ok": true,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m313",
@@ -2533,15 +2846,17 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m314",
    "gold": "(2,4)",
-   "pred": "2",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m315",
@@ -2549,7 +2864,8 @@
    "pred": "a",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m316",
@@ -2557,15 +2873,17 @@
    "pred": "A(B)x^2-(Ax)\\cdot(B)",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m317",
    "gold": "0",
-   "pred": "Step",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m318",
@@ -2573,7 +2891,8 @@
    "pred": "10",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m319",
@@ -2581,23 +2900,26 @@
    "pred": "-4",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m320",
    "gold": "-\\frac{24}{25}",
-   "pred": "single",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m321",
    "gold": "10",
-   "pred": "is",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m322",
@@ -2605,23 +2927,26 @@
    "pred": "answer",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m323",
    "gold": "\\frac{1}{3}",
-   "pred": "-",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m324",
    "gold": "120",
-   "pred": "wording",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m325",
@@ -2629,15 +2954,17 @@
    "pred": "Step",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m326",
    "gold": "\\frac{9}{100}",
-   "pred": "I",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m327",
@@ -2645,15 +2972,17 @@
    "pred": "5",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m328",
    "gold": "3",
-   "pred": "by",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m329",
@@ -2661,7 +2990,8 @@
    "pred": "120",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m330",
@@ -2669,31 +2999,35 @@
    "pred": "10",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m331",
    "gold": "\\frac{13}{6}",
-   "pred": "roots",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m332",
    "gold": "2",
-   "pred": "the",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m333",
    "gold": "3",
-   "pred": "steps",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m334",
@@ -2701,47 +3035,53 @@
    "pred": "a,b,c",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m335",
    "gold": "3",
-   "pred": "that",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m336",
    "gold": "26000",
-   "pred": "2",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m337",
    "gold": "6",
-   "pred": "n+3",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m338",
    "gold": "4343_6",
-   "pred": "20",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m339",
    "gold": "2k",
-   "pred": "2",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m340",
@@ -2749,7 +3089,8 @@
    "pred": "by",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m341",
@@ -2757,7 +3098,8 @@
    "pred": "xworld\\text{<",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m342",
@@ -2765,7 +3107,8 @@
    "pred": "thought",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m343",
@@ -2773,7 +3116,8 @@
    "pred": "1000",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m344",
@@ -2781,7 +3125,8 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m345",
@@ -2789,7 +3134,8 @@
    "pred": ",wewanttofindthevalueof",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m346",
@@ -2797,23 +3143,26 @@
    "pred": "answer",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m347",
    "gold": "6r^2-4r-24",
-   "pred": "them",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m348",
    "gold": "4495",
-   "pred": "\\binom{n}{n-k}isactuallyawayto",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m349",
@@ -2821,15 +3170,17 @@
    "pred": "2",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m350",
    "gold": "4",
-   "pred": "of",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m351",
@@ -2837,7 +3188,8 @@
    "pred": "7",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m352",
@@ -2845,7 +3197,8 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m353",
@@ -2853,15 +3206,17 @@
    "pred": "6!/2!",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m354",
    "gold": "81",
-   "pred": "not",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m355",
@@ -2869,7 +3224,8 @@
    "pred": "this",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m356",
@@ -2877,15 +3233,17 @@
    "pred": "[",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m357",
    "gold": "4",
-   "pred": "context",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m358",
@@ -2893,15 +3251,17 @@
    "pred": "(\\frac{x}{2",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m359",
    "gold": "6",
-   "pred": "is",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m360",
@@ -2909,7 +3269,8 @@
    "pred": "Wait",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m361",
@@ -2917,15 +3278,17 @@
    "pred": "The",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m362",
    "gold": "\\frac14",
-   "pred": "m",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m363",
@@ -2933,31 +3296,35 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m364",
    "gold": "(1,-16,-4,43)",
-   "pred": "equation",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m365",
    "gold": "8",
-   "pred": "by",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m366",
    "gold": "4",
-   "pred": "8",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m367",
@@ -2965,23 +3332,26 @@
    "pred": "Step",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m368",
    "gold": "31",
-   "pred": "-1",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m369",
    "gold": "21",
-   "pred": "user",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m370",
@@ -2989,47 +3359,53 @@
    "pred": "text",
    "ok": false,
    "n_tokens": 460,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m371",
    "gold": "17",
-   "pred": "b",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m372",
    "gold": "90^\\circ",
-   "pred": "be",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m373",
    "gold": "1+2i",
-   "pred": "g",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m374",
    "gold": "4",
-   "pred": "of",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m375",
    "gold": "25",
-   "pred": "1",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m376",
@@ -3037,15 +3413,17 @@
    "pred": "2",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m377",
    "gold": "6",
-   "pred": "please",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m378",
@@ -3053,15 +3431,17 @@
    "pred": "many",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m379",
    "gold": "12",
-   "pred": "---",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m380",
@@ -3069,39 +3449,44 @@
    "pred": "\\dots",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m381",
    "gold": "\\frac{1}{2}",
-   "pred": "1",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m382",
    "gold": "\\frac{20000}{\\pi}",
-   "pred": "by",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m383",
    "gold": "x \\in [-2,7]",
-   "pred": "2",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m384",
    "gold": "15x - 80",
-   "pred": "4",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m385",
@@ -3109,7 +3494,8 @@
    "pred": "calculation",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m386",
@@ -3117,7 +3503,8 @@
    "pred": "49",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m387",
@@ -3125,23 +3512,26 @@
    "pred": "answer",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m388",
    "gold": "\\frac{11}{2}",
-   "pred": "by",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m389",
    "gold": "\\frac{\\sqrt{21}}{5}",
-   "pred": "\\sinR",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m390",
@@ -3149,7 +3539,8 @@
    "pred": "language",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m391",
@@ -3157,15 +3548,17 @@
    "pred": "3",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m392",
    "gold": "\\sqrt{66}",
-   "pred": "V_i",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m393",
@@ -3173,7 +3566,8 @@
    "pred": "38",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m394",
@@ -3181,7 +3575,8 @@
    "pred": "analytical",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m395",
@@ -3189,23 +3584,26 @@
    "pred": "(16\\",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m396",
    "gold": "2",
-   "pred": "response",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m397",
    "gold": "23",
-   "pred": "3",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m398",
@@ -3213,7 +3611,8 @@
    "pred": "for",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m399",
@@ -3221,15 +3620,17 @@
    "pred": "31.3",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m400",
    "gold": "\\frac{14}{3}",
-   "pred": "the",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m401",
@@ -3237,7 +3638,8 @@
    "pred": "mention",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m402",
@@ -3245,7 +3647,8 @@
    "pred": "---",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m403",
@@ -3253,7 +3656,8 @@
    "pred": "8",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m404",
@@ -3261,47 +3665,53 @@
    "pred": "10",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m405",
    "gold": "60",
-   "pred": "Combinbinomial",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m406",
    "gold": "0",
-   "pred": "12",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m407",
    "gold": "9",
-   "pred": "10",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m408",
    "gold": "\\begin{pmatrix} 1/5 \\\\ -18/5 \\end{pmatrix}",
-   "pred": "10",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m409",
    "gold": "2 \\sqrt{5}",
-   "pred": "hyperbola",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m410",
@@ -3309,7 +3719,8 @@
    "pred": "step",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m411",
@@ -3317,7 +3728,8 @@
    "pred": "20",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m412",
@@ -3325,47 +3737,53 @@
    "pred": "P(x)",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m413",
    "gold": "5r^5",
-   "pred": "by",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m414",
    "gold": "10",
-   "pred": "10",
-   "ok": true,
+   "pred": null,
+   "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m415",
    "gold": "9",
-   "pred": "step",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m416",
    "gold": "\\frac{1}{8}",
-   "pred": "thought",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m417",
    "gold": "-2",
-   "pred": "17",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m418",
@@ -3373,15 +3791,17 @@
    "pred": "---",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m419",
    "gold": "\\begin{pmatrix} -7 \\\\ 16 \\\\ 5 \\end{pmatrix}",
-   "pred": "30\\quad(2x-5",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m420",
@@ -3389,7 +3809,8 @@
    "pred": "\\mathbf{b}",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m421",
@@ -3397,31 +3818,35 @@
    "pred": "following",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m422",
    "gold": "\\{1\\pm\\sqrt{5},-2\\}",
-   "pred": "Therootsare\\alpha_1,\\alpha",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m423",
    "gold": "1440",
-   "pred": "7",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m424",
    "gold": "600",
-   "pred": "30",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m425",
@@ -3429,39 +3854,44 @@
    "pred": "down",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m426",
    "gold": "6\\sqrt{2}",
-   "pred": "\\frac{a\\sin(3.1.1.2.3.4.0.0.1.0.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m427",
    "gold": "29",
-   "pred": "5",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m428",
    "gold": "64",
-   "pred": "AM",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m429",
    "gold": "50",
-   "pred": "the",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m430",
@@ -3469,15 +3899,17 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m431",
    "gold": "\\left[ \\frac{\\pi^2}{8}, \\frac{5 \\pi^2}{4} \\right]",
-   "pred": "11",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m432",
@@ -3485,15 +3917,17 @@
    "pred": "Step",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m433",
    "gold": ".35625",
-   "pred": "step",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m434",
@@ -3501,15 +3935,17 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m435",
    "gold": "(-\\infty, 2) \\cup (3, \\infty)",
-   "pred": "\\frac{2x-7}{\\sqrt{x^2-5x+6}isstep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bysteptek-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-step-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-step-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-m-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-tystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-p-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-m-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-step-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-m-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-m-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-m-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-p-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-step-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-m-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-way-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-m-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep--bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-most-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-m-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-step-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-m-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-bystep-",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m436",
@@ -3517,7 +3953,8 @@
    "pred": "2",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m437",
@@ -3525,23 +3962,26 @@
    "pred": "8",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m438",
    "gold": "4",
-   "pred": "1",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m439",
    "gold": "x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + x^2 + x + 1",
-   "pred": "quotient",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m440",
@@ -3549,23 +3989,26 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m441",
    "gold": "550",
-   "pred": "you",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m442",
    "gold": "256",
-   "pred": "27",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m443",
@@ -3573,7 +4016,8 @@
    "pred": "s",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m444",
@@ -3581,15 +4025,17 @@
    "pred": "1/2",
    "ok": true,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m445",
    "gold": "15",
-   "pred": "Step",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m446",
@@ -3597,7 +4043,8 @@
    "pred": "34.Final(\\text{?",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m447",
@@ -3605,31 +4052,35 @@
    "pred": "2",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m448",
    "gold": "44",
-   "pred": "1",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m449",
    "gold": "47",
-   "pred": "9(5)+2(1)-(5\\times1)+",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m450",
    "gold": "64",
-   "pred": "2u\\equiv6\\",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m451",
@@ -3637,7 +4088,8 @@
    "pred": "32",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m452",
@@ -3645,7 +4097,8 @@
    "pred": "y",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m453",
@@ -3653,7 +4106,8 @@
    "pred": "650",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m454",
@@ -3661,23 +4115,26 @@
    "pred": "istheequationoftheline",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m455",
    "gold": "6",
-   "pred": "1",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m456",
    "gold": "-2,1",
-   "pred": "of",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m457",
@@ -3685,23 +4142,26 @@
    "pred": "0",
    "ok": true,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m458",
    "gold": "41",
-   "pred": "I",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m459",
    "gold": "\\$18.90",
-   "pred": "by",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m460",
@@ -3709,31 +4169,35 @@
    "pred": "5",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m461",
    "gold": "12",
-   "pred": "\\",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m462",
    "gold": "59",
-   "pred": "27.47]",
+   "pred": "27.47",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m463",
    "gold": "2",
-   "pred": "of",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m464",
@@ -3741,31 +4205,35 @@
    "pred": "2",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m465",
    "gold": "121",
-   "pred": "by",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m466",
    "gold": "8 \\pi",
-   "pred": "6",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m467",
    "gold": "15\\mbox{ cm}^2",
-   "pred": "interpret",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m468",
@@ -3773,15 +4241,17 @@
    "pred": "1",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m469",
    "gold": "25",
-   "pred": "0",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m470",
@@ -3789,7 +4259,8 @@
    "pred": "35",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m471",
@@ -3797,7 +4268,8 @@
    "pred": "15",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m472",
@@ -3805,7 +4277,8 @@
    "pred": "number",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m473",
@@ -3813,15 +4286,17 @@
    "pred": "7",
    "ok": true,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m474",
    "gold": "3",
-   "pred": "whomilylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylylyly",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m475",
@@ -3829,7 +4304,8 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m476",
@@ -3837,15 +4313,17 @@
    "pred": "25",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m477",
    "gold": "2",
-   "pred": "1",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m478",
@@ -3853,31 +4331,35 @@
    "pred": "thought",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m479",
    "gold": "2",
-   "pred": "p",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m480",
    "gold": "1",
-   "pred": "h",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m481",
    "gold": "8n^2 + 4n + 1",
-   "pred": "m",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m482",
@@ -3885,15 +4367,17 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m483",
    "gold": "\\frac{8}{15}",
-   "pred": "to",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m484",
@@ -3901,15 +4385,17 @@
    "pred": "ll",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m485",
    "gold": "13",
-   "pred": "provide",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m486",
@@ -3917,7 +4403,8 @@
    "pred": "2",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m487",
@@ -3925,7 +4412,8 @@
    "pred": "1+2+3+",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m488",
@@ -3933,7 +4421,8 @@
    "pred": "Wait",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m489",
@@ -3941,31 +4430,35 @@
    "pred": "|",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m490",
    "gold": "14",
-   "pred": "x_i",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m491",
    "gold": "64",
-   "pred": "cannot",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m492",
    "gold": "y = -2x",
-   "pred": "3",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m493",
@@ -3973,23 +4466,26 @@
    "pred": "(\\sqrt{2}^3+\\sqrt{3}^3+3(2)(\\sqrt{2})(\\sqrt{3})\\dots)+3(2)(\\sqrt{2}^2\\cdot\\sqrt{3^2\\cdot\\sqrt{2})\\dots)",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m494",
    "gold": "\\frac{1}{4}",
-   "pred": "text",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m495",
    "gold": "(2,12) \\cup (12,102)",
-   "pred": "\\frac{2-x}{\\log(2-\\log(x-2),where",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m496",
@@ -3997,31 +4493,35 @@
    "pred": "|w|",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m497",
    "gold": "\\frac{7}{2}",
-   "pred": "s_i",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m498",
    "gold": "-1",
-   "pred": "by",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m499",
    "gold": "106^\\circ",
-   "pred": "implies",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   }
  ]
 }

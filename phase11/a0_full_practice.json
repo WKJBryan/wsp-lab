@@ -2,14 +2,14 @@
  "summary": {
   "name": "a0_full_practice",
   "n": 64,
-  "accuracy": 73.4,
-  "answered": 100.0,
+  "accuracy": 85.9,
+  "answered": 98.4,
   "cap_hit_rate": 1.6,
   "mean_tokens": 689.1,
   "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
   "model": "/home/user/wsp11/gemma4-resharded",
   "fp8": true,
-  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#4a1b56a343a4 (ISSUES #19)",
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#d74fdebd340f (ISSUES #19, #30, #31)",
   "validity": {
    "soup_pct": 0.0,
    "soup_judged": false,
@@ -24,7 +24,8 @@
    "pred": "(3,\\frac{\\pi}{2})",
    "ok": true,
    "n_tokens": 334,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m1",
@@ -32,7 +33,8 @@
    "pred": "p-q",
    "ok": true,
    "n_tokens": 698,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m2",
@@ -40,7 +42,8 @@
    "pred": "\\frac{14}{3}",
    "ok": true,
    "n_tokens": 383,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m3",
@@ -48,7 +51,8 @@
    "pred": "9",
    "ok": true,
    "n_tokens": 335,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m4",
@@ -56,7 +60,8 @@
    "pred": "speed",
    "ok": false,
    "n_tokens": 521,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m5",
@@ -64,7 +69,8 @@
    "pred": "42",
    "ok": true,
    "n_tokens": 288,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m6",
@@ -72,7 +78,8 @@
    "pred": "27",
    "ok": true,
    "n_tokens": 462,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m7",
@@ -80,7 +87,8 @@
    "pred": "90^\\circ",
    "ok": true,
    "n_tokens": 536,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m8",
@@ -88,7 +96,8 @@
    "pred": "3\\sqrt{13}",
    "ok": true,
    "n_tokens": 371,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m9",
@@ -96,7 +105,8 @@
    "pred": "4",
    "ok": true,
    "n_tokens": 2075,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m10",
@@ -104,7 +114,8 @@
    "pred": "2220",
    "ok": true,
    "n_tokens": 746,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m11",
@@ -112,7 +123,8 @@
    "pred": "\\frac{29}{504}",
    "ok": false,
    "n_tokens": 1136,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m12",
@@ -120,7 +132,8 @@
    "pred": "284",
    "ok": true,
    "n_tokens": 722,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m13",
@@ -128,7 +141,8 @@
    "pred": "5",
    "ok": true,
    "n_tokens": 185,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m14",
@@ -136,7 +150,8 @@
    "pred": "\\sqrt{51}",
    "ok": true,
    "n_tokens": 482,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m15",
@@ -144,7 +159,8 @@
    "pred": "5",
    "ok": false,
    "n_tokens": 533,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m16",
@@ -152,7 +168,8 @@
    "pred": "-50",
    "ok": true,
    "n_tokens": 289,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m17",
@@ -160,7 +177,8 @@
    "pred": "\\pi",
    "ok": true,
    "n_tokens": 976,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m18",
@@ -168,7 +186,8 @@
    "pred": "62",
    "ok": false,
    "n_tokens": 1184,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m19",
@@ -176,7 +195,8 @@
    "pred": "3",
    "ok": true,
    "n_tokens": 478,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m20",
@@ -184,7 +204,8 @@
    "pred": "6+9i",
    "ok": true,
    "n_tokens": 145,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m21",
@@ -192,7 +213,8 @@
    "pred": "13535",
    "ok": true,
    "n_tokens": 1190,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m22",
@@ -200,15 +222,17 @@
    "pred": "5",
    "ok": true,
    "n_tokens": 520,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m23",
    "gold": "x=5",
    "pred": "5",
-   "ok": false,
+   "ok": true,
    "n_tokens": 594,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m24",
@@ -216,7 +240,8 @@
    "pred": "10",
    "ok": true,
    "n_tokens": 657,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m25",
@@ -224,7 +249,8 @@
    "pred": "1",
    "ok": false,
    "n_tokens": 783,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m26",
@@ -232,7 +258,8 @@
    "pred": "144",
    "ok": true,
    "n_tokens": 509,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m27",
@@ -240,7 +267,8 @@
    "pred": "Themathclub'sprofitwas78",
    "ok": false,
    "n_tokens": 260,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m28",
@@ -248,7 +276,8 @@
    "pred": "-2+7i",
    "ok": true,
    "n_tokens": 380,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m29",
@@ -256,7 +285,8 @@
    "pred": "225",
    "ok": true,
    "n_tokens": 435,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m30",
@@ -264,7 +294,8 @@
    "pred": "52_8",
    "ok": true,
    "n_tokens": 350,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m31",
@@ -272,15 +303,17 @@
    "pred": "\\mathbf{11\\sqrt{2}}",
    "ok": false,
    "n_tokens": 226,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m32",
    "gold": "720",
-   "pred": "8",
-   "ok": false,
+   "pred": "720",
+   "ok": true,
    "n_tokens": 395,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m33",
@@ -288,7 +321,8 @@
    "pred": "\\frac{243}{625}",
    "ok": true,
    "n_tokens": 597,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m34",
@@ -296,7 +330,8 @@
    "pred": "-125",
    "ok": true,
    "n_tokens": 664,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m35",
@@ -304,7 +339,8 @@
    "pred": "3",
    "ok": true,
    "n_tokens": 344,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m36",
@@ -312,23 +348,26 @@
    "pred": "3,5,7",
    "ok": true,
    "n_tokens": 549,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m37",
    "gold": "72",
    "pred": "72\u00b0",
-   "ok": false,
+   "ok": true,
    "n_tokens": 258,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m38",
    "gold": "2000",
    "pred": "2,000",
-   "ok": false,
+   "ok": true,
    "n_tokens": 256,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m39",
@@ -336,15 +375,17 @@
    "pred": "23",
    "ok": true,
    "n_tokens": 554,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m40",
    "gold": "12",
    "pred": "12cm",
-   "ok": false,
+   "ok": true,
    "n_tokens": 253,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m41",
@@ -352,7 +393,8 @@
    "pred": "17",
    "ok": true,
    "n_tokens": 592,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m42",
@@ -360,7 +402,8 @@
    "pred": "4",
    "ok": true,
    "n_tokens": 264,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m43",
@@ -368,7 +411,8 @@
    "pred": "70\\sqrt{2}",
    "ok": true,
    "n_tokens": 2834,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m44",
@@ -376,7 +420,8 @@
    "pred": "1.25",
    "ok": true,
    "n_tokens": 347,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m45",
@@ -384,7 +429,8 @@
    "pred": "2",
    "ok": true,
    "n_tokens": 279,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m46",
@@ -392,7 +438,8 @@
    "pred": "6",
    "ok": true,
    "n_tokens": 1135,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m47",
@@ -400,7 +447,8 @@
    "pred": "5",
    "ok": true,
    "n_tokens": 485,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m48",
@@ -408,15 +456,17 @@
    "pred": "\\frac{3}{2}",
    "ok": true,
    "n_tokens": 194,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m49",
    "gold": "83",
-   "pred": "correct",
-   "ok": false,
+   "pred": "83",
+   "ok": true,
    "n_tokens": 459,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m50",
@@ -424,7 +474,8 @@
    "pred": "203",
    "ok": true,
    "n_tokens": 664,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m51",
@@ -432,7 +483,8 @@
    "pred": "x^5-x^4+x^3-x^2+x-1",
    "ok": true,
    "n_tokens": 716,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m52",
@@ -440,7 +492,8 @@
    "pred": "12",
    "ok": true,
    "n_tokens": 381,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m53",
@@ -448,7 +501,8 @@
    "pred": "-\\frac{\\pi}{6}",
    "ok": true,
    "n_tokens": 416,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m54",
@@ -456,7 +510,8 @@
    "pred": "0.15",
    "ok": true,
    "n_tokens": 388,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m55",
@@ -464,7 +519,8 @@
    "pred": "3",
    "ok": true,
    "n_tokens": 528,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m56",
@@ -472,7 +528,8 @@
    "pred": "11",
    "ok": true,
    "n_tokens": 370,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m57",
@@ -480,15 +537,17 @@
    "pred": "16",
    "ok": true,
    "n_tokens": 375,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m58",
    "gold": "9901",
    "pred": "9,901",
-   "ok": false,
+   "ok": true,
    "n_tokens": 392,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m59",
@@ -496,15 +555,17 @@
    "pred": "5",
    "ok": true,
    "n_tokens": 348,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m60",
    "gold": "(6,31,-1)",
-   "pred": "4",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m61",
@@ -512,15 +573,17 @@
    "pred": "suchthatthisholds(whichisguaranteedbytheproblemstatementassumingsuch",
    "ok": false,
    "n_tokens": 652,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m62",
    "gold": "4",
-   "pred": ".thelargestsingularvalue",
-   "ok": false,
+   "pred": "4",
+   "ok": true,
    "n_tokens": 564,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m63",
@@ -528,7 +591,8 @@
    "pred": "10",
    "ok": true,
    "n_tokens": 876,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   }
  ]
 }
