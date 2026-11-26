@@ -167,7 +167,8 @@ def same_checker():
                      f"({rescore.RESCORED_WITH}): re-score it first")
 
 
-def main():
+def build():
+    """The endpoints as one dictionary: every check first, so that a refusal writes nothing."""
     same_checker()
     out = {"about": "rescore_file_stamp identifies the checker that produced each re-score file; in secondary_runs "
                     "'accuracy' is the repository's matcher on the last boxed answer, computed here, and "
@@ -197,7 +198,11 @@ def main():
             mine = {i: x[g] is True for i, x in boxed[REF_FINAL].items()}
             theirs = {i: x[g] is True for i, x in boxed[other].items()}
             out["secondary_pairs"].append(pair(mine, theirs, f"final candidate against {other}, {name}"))
+    return out
 
+
+def main():
+    out = build()
     text = json.dumps(out, indent=1, ensure_ascii=False)
     print(text)
     write_atomic(HERE / "endpoints.json", text + "\n")

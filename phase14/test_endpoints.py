@@ -8,8 +8,10 @@
   describe        a run's level, from the two small JSON files it reads, for a run that is a measurement (ISSUES #20);
   same_checker    main()'s guard: stop unless the six re-scored files were made by the checker in this tree;
   grader_versions the record of the two graders, with the stamp of that checker;
-  write_atomic    a file replaced only once the new content is complete, with its line endings as given.
-main() and the small readers rescored(), run() and texts() are not covered. The generations are short stand-ins for real
+  write_atomic    a file replaced only once the new content is complete, with its line endings as given;
+  main            what build() returns, written as it is into this folder's endpoints.json.
+build() and the small readers rescored(), run() and texts() are not covered; main()'s test stands build() and
+write_atomic() in, so that it reads no run file and writes nothing. The generations are short stand-ins for real
 ones; where a line comes from the record, its comment says so.
 
 Standard library only, except for math_verify_ok() and pair(), which need the grader's environment: their tests
@@ -20,8 +22,10 @@ Usage (from the repository root):
   python -B -m unittest -v phase14/test_endpoints.py
 """
 
+import contextlib
 import gzip
 import importlib
+import io
 import json
 import sys
 import tempfile
@@ -481,6 +485,29 @@ class WriteAtomicTest(unittest.TestCase):
             path = Path(tmp) / "endpoints.json"
             write_atomic(path, "a\nb\n")
             self.assertEqual(path.read_bytes(), b"a\nb\n")
+
+
+class MainTest(unittest.TestCase):
+    """main(): the endpoints build() returns, written as they are"""
+
+    def test_writes_exactly_what_build_returns_into_this_folders_endpoints_file(self):
+        # build() and write_atomic() are stood in: no run file is read, and the stand-in is the only writer. The
+        # document carries a text outside ASCII, as a validity record can (a fragment of a generation): what is
+        # written must keep it as it is
+        document = {"about": "rescore_file_stamp identifies the checker that produced each re-score file",
+                    "validity": {"problems": ["soup: «réponse» ends the generation in French"]},
+                    "primary_runs": {"final candidate": {"accuracy": 60.0, "n": 500}}}
+        path = HERE / "endpoints.json"
+        before = path.read_bytes() if path.exists() else None     # the file as it is on this checkout
+        # what main() prints is kept out of the test run's output, and from a console that may not encode it
+        with mock.patch.object(endpoints, "build", return_value=document) as build, mock.patch.object(
+                endpoints, "write_atomic") as write_atomic, contextlib.redirect_stdout(io.StringIO()):
+            endpoints.main()
+        build.assert_called_once_with()
+        write_atomic.assert_called_once_with(HERE / "endpoints.json",
+                                             json.dumps(document, indent=1, ensure_ascii=False) + "\n")
+        # nothing was written on the repository's disk: the file is as it was, or still absent
+        self.assertEqual(path.read_bytes() if path.exists() else None, before)
 
 
 if __name__ == "__main__":
