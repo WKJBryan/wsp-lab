@@ -7,8 +7,11 @@ Raw: `passes.jsonl`, `ledger.txt`. Edits: `brake_*.json` (built by `build_brake.
 
 Practice numbers are as recorded with the old checker; the generations were not saved, so
 they cannot be re-scored. Every 500-problem final accuracy in this file was re-scored on
-2026-11-24 with the final answer checker (ISSUES #19; the checker was corrected twice that
-day), and the `stack_full` final was voided (ISSUES #20); rerun clean on 2026-11-24: 46.2%.
+2026-11-24 with the answer checker of that day (ISSUES #19; it was corrected twice that day,
+and was called the final answer checker until 2026-11-26) and again on 2026-11-26 with the
+final answer checker (ISSUES #30, #31), the third reading. The tables give the current reading
+and keep the earlier ones. The `stack_full` final was voided (ISSUES #20); its clean rerun of
+2026-11-24 scores 52.2% (46.2% under the checker of 2026-11-24).
 
 | pass | arm | closed | accuracy | cap-hit | mean tokens |
 |---|---|---|---|---|---|
@@ -259,32 +262,44 @@ unchanged (500 MATH-500 problems, 1 sample, cap 32768, seed 20261105). Raw:
 
 **U1 confirmed: works.** The practice result is not sampling luck.
 
-## Run 2 — MATH-500 final (re-scored 2026-11-24 with the corrected answer checker, ISSUES #19; n = 500)
+## Run 2 — MATH-500 final (re-scored 2026-11-24 and 2026-11-26, ISSUES #19, #30, #31; n = 500)
 
 | model | correct | accuracy | thinking closed | cap-hit |
 |---|---|---|---|---|
-| stock | 42 | 8.4% | 9.8% | 90.6% |
-| random-edit control | 19 | 3.8% | 4.2% | 95.8% |
-| GLM-Flash (blind LLM editor) | 158 | 31.6% | 99.0% | 24.0% |
-| mimo-pro (blind LLM editor) | 176 | 35.2% | 97.6% | 42.0% |
-| **`uperp_on_loop`** | **163** | **32.6%** | 75.6% | 42.8% |
-| published edit | 243 | 48.6% | 83.6% | 26.4% |
+| stock | 47 | 9.4% | 9.8% | 90.6% |
+| random-edit control | 20 | 4.0% | 4.2% | 95.8% |
+| GLM-Flash (blind LLM editor) | 186 | 37.2% | 99.0% | 24.0% |
+| mimo-pro (blind LLM editor) | 203 | 40.6% | 97.6% | 42.0% |
+| **`uperp_on_loop`** | **182** | **36.4%** | 75.6% | 42.8% |
+| published edit | 271 | 54.2% | 83.6% | 26.4% |
 
-**U2 confirmed: SUCCESS, below the published edit** (the 16.0–33.1 band fixed in advance; my
-point guess 20–35% held). Stock is 8.4%.
+**U2 confirmed: SUCCESS, below the published edit.** Under the checker of 2026-11-24 the final
+read 32.6% (163 of 500), inside the 16.0–33.1 band fixed in advance, and my point guess of
+20–35% held. Under the final answer checker (2026-11-26) it reads 36.4% (182 of 500): SUCCESS
+holds (at least 16.0%), and the paired comparison below still puts it clearly below the
+published edit, which is the substance of the guess. The guess's literal band does not hold:
+36.4% is above 35%, and also above the 33.2% bound written for "SUCCESS, level with the
+published edit". Both were fixed when the published edit read 39.4%; under the final answer
+checker it reads 54.2%. Stock is 9.4%.
 
-Paired against the published edit on the same 500 problems: only published edit 100, only
-`uperp_on_loop` 20 → −16.0 points (95% interval −20.2 to −12.0; SE 2.2). It is clearly worse
-than the published edit. The two blind LLM editors score 31.6% and 35.2%; this file has no
-paired comparison of this arm against them.
+Paired against the published edit on the same 500 problems (final answer checker): only
+published edit 109, only `uperp_on_loop` 20 → −17.8 points (95% interval −22.0 to −13.6; SE
+2.3; under the checker of 2026-11-24: 100 against 20, −16.0 points). It is clearly worse
+than the published edit. The two blind LLM editors (the quick fixes) score 37.2% (GLM-Flash)
+and 40.6% (mimo-pro); paired on the same 500 problems, the map repair is not distinguishable
+from either: −0.8 points against the GLM-Flash edit (95% interval −5.2 to 3.6; 61 problems
+right only by the repair, 65 only by the GLM-Flash edit; p = 0.79) and −4.2 against the
+mimo-pro edit (95% interval −8.4 to 0.2; 50 only by the repair, 71 only by the mimo-pro
+edit; p = 0.069).
 
 ## What this says
 
 1. A weight edit on neurons chosen by OUR activation map (L10+L14, four to five floors
-   below the published site) repairs the model to 32.6% on the real benchmark. The map's
+   below the published site) repairs the model to 36.4% on the real benchmark (32.6% under
+   the checker of 2026-11-24; 26.2% as first reported). The map's
    neurons are a working site, on the test that counts.
 2. The practice set OVERSTATED it. On 64 GSM8K problems this arm looked level with the
-   published edit (62.5–76.6% closed vs 57.8%); on MATH-500 it is 16 points behind. Practice
+   published edit (62.5–76.6% closed vs 57.8%); on MATH-500 it is 17.8 points behind. Practice
    passes can rank "works / does nothing"; they cannot rank two working edits.
 3. Caveats fixed in advance still apply: the direction comes from the published edit (this
    is not a from-the-map-alone repair), and the neurons were selected from stock's activity
@@ -517,6 +532,12 @@ same model was rerun clean the same day and scores 46.2% (last row of the finals
 final accuracies below are re-scored with the final answer checker (ISSUES #19; the checker
 was corrected twice that day).
 
+Re-scored 2026-11-26 with the final answer checker (ISSUES #30, #31), the third reading; the
+paragraph above, and the name "final answer checker" in it, describe the checker of
+2026-11-24. The rerun scores 52.2%. Every accuracy, "answered" and paired figure below carries
+the reading of 2026-11-26; the reading of 2026-11-24 is kept beside it where the text dates it
+(published edit 48.6%, `stack_half` 44.8%, its rerun 45.6%, the `stack_full` rerun 46.2%).
+
 ## Step 0 — is there anything left to fix?
 
 `count_loops.py p3c_c3_original`: 132 of 500 answers hit the token cap; 125 of those (94.7%)
@@ -532,57 +553,63 @@ are loops by the phase-7 detector, onset median 13,250 tokens. Stop rule (<25%) 
 
 Both pass.
 
-## MATH-500 finals (re-scored 2026-11-24; n = 500, paired with the published edit)
+## MATH-500 finals (re-scored 2026-11-24 and 2026-11-26; n = 500, paired with the published edit)
 
 | model | accuracy | answered | cap-hit | loops among cap-hits | only stacked | only published | difference | SE | verdict |
 |---|---|---|---|---|---|---|---|---|---|
-| published edit | 48.6% | 83.2% | 26.4% | 125 / 132 | | | | | |
-| stack_half | 44.8% | 82.8% | 26.6% | 121 / 133 | 39 | 58 | −3.8 (95% interval −7.6 to 0.2) | 2.0 | no difference |
-| stack_half, rerun (2026-11-25) | 45.6% | 85.2% | 24.2% | — | 37 | 52 | −3.0 (p = 0.137) | 1.9 | no difference |
+| published edit | 54.2% | 78.2% | 26.4% | 125 / 132 | | | | | |
+| stack_half | 50.8% | 79.4% | 26.6% | 121 / 133 | 36 | 53 | −3.4 (95% interval −7.0 to 0.2) | 1.9 | no difference |
+| stack_half, rerun (2026-11-25) | 51.6% | 81.0% | 24.2% | — | 34 | 47 | −2.6 (p = 0.18) | 1.8 | no difference |
 | stack_full, first run | VOID — a corrupted run (ISSUES #20) | — | — | — | — | — | — | — | void |
-| stack_full, clean rerun (2026-11-24) | 46.2% | 84.4% | 14.0% | — | 30 | 42 | −2.4 (95% interval −5.8 to 0.8) | 1.7 | no difference |
+| stack_full, clean rerun (2026-11-24) | 52.2% | 81.4% | 14.0% | — | 33 | 43 | −2.0 (95% interval −5.4 to 1.4) | 1.7 | no difference |
 
 **The first `stack_full` final is VOID — a corrupted run, not a measurement of the model
-(ISSUES #20, 2026-11-24).** Its score was 4.4% as first recorded and is 6.4% after re-scoring;
-neither is a result. Evidence from the saved generations: 460 of the 500 (92.0%) break into
+(ISSUES #20, 2026-11-24).** Its score was 4.4% as first recorded, 6.4% after the re-scoring of
+2026-11-24 and 6.8% under the final answer checker (2026-11-26); none of the three is a result.
+Evidence from the saved generations: 460 of the 500 (92.0%) break into
 fragments of several scripts, and whether a generation was corrupted depends on the request's
 position in the batch, which a property of the model cannot know. Counted with the first
 corrected checker of that day (when the run read 5.0% in all), the first 287 requests (the
 first wave the engine admitted) were 8.7% correct (25 of 287) and the last 213 were 0.0% (0 of
 213; exact test, p = 7.6e-7); among the other 25 saved 500-problem runs the same split never
-reaches p = 0.6. Under the final checker the dependence is still there: all 32 right answers
-fall among the first 266 requests, and the validity check recorded in the result file
-(`phase3c/runcheck.py`; `phase3c/p7_stack_full_rescored.json`) reads 12.0% correct in the
-first half of the rows against 0.8% in the second half (Fisher exact test, p = 1.1e-7). The
+reaches p = 0.6. Under the checker of 2026-11-24 the dependence is still there: all 32 right
+answers fall among the first 266 requests, and the validity check recorded in the result
+file (`phase3c/runcheck.py`; `phase3c/p7_stack_full_rescored.json`) read 12.0% correct in
+the first half of the rows against 0.8% in the second half (Fisher exact test, p = 1.1e-7).
+Under the final answer checker (2026-11-26) the dependence is still there: all 34 right
+answers fall among the first 266 requests, and the same check reads 12.8% correct in the
+first half of the rows against 0.8% in the second half (Fisher exact test, p = 2.7e-8). The
 same model's 64-problem practice pass the same day scored 40.6%. The engine log showed
 nothing. The cause is not isolated (an engine-and-model interaction under late
 admissions is the standing suspicion; ISSUES #13 records the same signature in a voided
 phase-5 run). The first run stays void with this evidence unchanged; its clean rerun of
-2026-11-24 scores 46.2%, so the "collapse at full dose" recorded on 2026-11-14 was the
+2026-11-24 scores 52.2% under the final answer checker (46.2% under the checker of
+2026-11-24), so the "collapse at full dose" recorded on 2026-11-14 was the
 corrupted run, not the model.
 
-**Rerun 2026-11-24: the model is not broken — 46.2%.** The voided run's model (published edit
+**Rerun 2026-11-24: the model is not broken — 52.2% under the final answer checker (46.2% under
+the checker of 2026-11-24).** The voided run's model (published edit
 plus the map's L10+L14 repair at dose 1.0; files rebuilt and verified equal to the intended
 change) was rerun under the current runner as `p7_stack_full_v2` (`phase3c/p7_stack_full_v2.json`,
 `_texts.json.gz`, `_rescored.json`; log `phase3c/logs/p7_stack_full_v2.log`; 2 hours 08 minutes
-of GPU). It scores 46.2% (231 of 500); an answer was read in 84.4%; 70 of 500 hit the cap
+of GPU). It scores 52.2% (261 of 500); an answer was read in 81.4%; 70 of 500 hit the cap
 (14.0%); 426 of 500 closed their thinking; mean 18,146 tokens. The validity checks are clean:
-fragment tails 0.0%; first half of the requests 46.8% right against 45.6% for the second half
+fragment tails 0.0%; first half of the requests 51.6% right against 52.8% for the second half
 (p = 0.86); closed 84.4% against 86.0% (p = 0.71); finished 85.6% against 86.4% (p = 0.90).
-Paired with the published edit (48.6%): −2.4 points (95% interval −5.8 to 0.8; 30 problems
-right only under the stacked model, 42 only under the published edit, 201 under both; p = 0.195;
-SE 1.7) — no real difference, by the registered rule. Against the half-dose stack (44.8%):
-+1.4 (interval −2.6 to 5.4; 55 only full, 48 only half; p = 0.56). Against the map repair
-alone (32.6%): +13.6 (interval 9.6 to 17.6; 90 against 22). Against stock (8.4%): +37.8
-(interval 33.4 to 42.4; 194 against 5).
+Paired with the published edit (54.2%): −2.0 points (95% interval −5.4 to 1.4; 33 problems
+right only under the stacked model, 43 only under the published edit, 228 under both; p = 0.302;
+SE 1.7) — no real difference, by the registered rule. Against the half-dose stack (50.8%):
++1.4 (interval −2.4 to 5.2; 50 only full, 43 only half; p = 0.53). Against the map repair
+alone (36.4%): +15.8 (interval 11.6 to 20.0; 102 against 23). Against stock (9.4%): +42.8
+(interval 38.4 to 47.4; 216 against 2).
 
 **The half-dose model was rerun the same way** (`p7_stack_half_v2`, 2026-11-25;
 `phase3c/p7_stack_half_v2.json`, `_texts.json.gz`, `_rescored.json`; 29 minutes of GPU) and
-scores 45.6% (228 of 500), with both validity checks clean (fragment tails 0.0%; first half of
-the requests 44.4% right against 46.8% for the second half, p = 0.65). Against its first run,
-37 problems are right only in the rerun and 33 only in the first run (p = 0.72), so the same
-model reproduces within noise; against the full-dose rerun it is −0.6 points (43 only full, 40
-only half; p = 0.83). With both doses measured under one engine setting, half and full strength
+scores 51.6% (258 of 500), with both validity checks clean (fragment tails 0.0%; first half of
+the requests 52.0% right against 51.2% for the second half, p = 0.93). Against its first run,
+35 problems are right only in the rerun and 31 only in the first run (p = 0.71), so the same
+model reproduces within noise; against the full-dose rerun it is −0.6 points (40 only full, 37
+only half; p = 0.82). With both doses measured under one engine setting, half and full strength
 are indistinguishable.
 
 The readings recorded on 2026-11-14 describe that corrupted run, not the model, and are
@@ -596,34 +623,36 @@ LOSS". As recorded then, the engine log was clean (exit 0, no retry used).
 
 - **V0** (≥ 60% of the published edit's cap-hits are loops): **holds** — 94.7%.
 - **V1** (both pass the practice gate): **holds**.
-- **V2** (`stack_full` not a WIN, accuracy 33–42%): **not a WIN — holds** (−2.4 points, SE
-  1.7: no real difference); the range **does not hold** (46.2% is above 33–42%). (Recorded on
+- **V2** (`stack_full` not a WIN, accuracy 33–42%): **not a WIN — holds** (−2.0 points, SE
+  1.7: no real difference); the range **does not hold** (52.2% is above 33–42%; 46.2% under the
+  checker of 2026-11-24, also above). (Recorded on
   2026-11-14 as "first half holds, range fails — a collapse nobody predicted", on the
   corrupted run; that reading was withdrawn 2026-11-24, ISSUES #20, and the prediction is
   scored on the clean rerun.)
 - **V3** (`stack_half` 38–44%, at or above `stack_full`): **does not hold on both counts.**
-  The range: 44.8% is above the band's upper end of 44% (37.0% as first reported, one point
-  under the band; 40.8%, inside the band, after the first checker correction of that day).
-  "At or above `stack_full`": 44.8% is below the rerun's 46.2%, though the two doses are not
-  distinguishable (+1.4, interval −2.6 to 5.4).
-- **V4** (about 1 in 4 that either is a WIN): **neither model is a WIN** (−3.8, SE 2.0, at
-  half dose; −2.4, SE 1.7, at full dose: no real difference either way).
+  The range: 50.8% is above the band's upper end of 44% (37.0% as first reported, one point
+  under the band; 40.8%, inside the band, after the first checker correction of that day;
+  44.8%, above the band, under the checker of 2026-11-24).
+  "At or above `stack_full`": 50.8% is below the rerun's 52.2%, though the two doses are not
+  distinguishable (+1.4, interval −2.4 to 5.2).
+- **V4** (about 1 in 4 that either is a WIN): **neither model is a WIN** (−3.4, SE 1.9, at
+  half dose; −2.0, SE 1.7, at full dose: no real difference either way).
 
 ## What this says
 
 1. The map's repair does not add to the published edit at half strength. It changes which
-   problems are solved (39 gained, 58 lost) but not how many (difference −3.8 points, 95%
-   interval −7.6 to 0.2), and the loop count is untouched (121 vs 125).
-2. Nor at full strength. The rerun scores 46.2% against the published edit's 48.6% (−2.4
-   points, 95% interval −5.8 to 0.8) and against the half dose's 44.8% (+1.4, interval −2.6 to
-   5.4). So the stacking conclusion holds for both doses: the map repair adds nothing on top of
-   the published edit at either dose (−3.8 at half, −2.4 at full, neither distinguishable from
+   problems are solved (36 gained, 53 lost) but not how many (difference −3.4 points, 95%
+   interval −7.0 to 0.2), and the loop count is untouched (121 vs 125).
+2. Nor at full strength. The rerun scores 52.2% against the published edit's 54.2% (−2.0
+   points, 95% interval −5.4 to 1.4) and against the half dose's 50.8% (+1.4, interval −2.4 to
+   5.2). So the stacking conclusion holds for both doses: the map repair adds nothing on top of
+   the published edit at either dose (−3.4 at half, −2.0 at full, neither distinguishable from
    zero) and costs nothing detectable. The "collapse at full dose" recorded on 2026-11-14 was
    the corrupted run, not the model. A rerun of the half dose under the same engine settings as
-   the full dose (45.6%) confirms the ordering within noise.
+   the full dose (51.6%) confirms the ordering within noise.
 3. Nothing here tests practice passes as a safety gate: both models passed the practice gate
    (`stack_full` 40.6% and `stack_half` 39.1% on 64 problems) and both clean finals scored
-   46.2% and 44.8%, so this addendum has no case of a model that passes practice and then
+   52.2% and 50.8%, so this addendum has no case of a model that passes practice and then
    fails a valid final. (Until 2026-11-24 items 2 and 3 read the void final as the model
    breaking on long answers, unseen by short practice answers.)
 

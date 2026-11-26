@@ -5,16 +5,29 @@ before any probe) · Models: Qwen3.5-0.8B (dense, 24L, hidden 1024) vs Gemma-4 2
 pruned wound (MoE 8 experts, 30L, hidden 2816). Free analysis only; teacher-forced
 passes over saved generations; identical probe code both sides.
 
+**Redone 2026-11-26 (saved data only):** the correspondence test was redone on the saved
+data under a protocol committed before the redo (`phase12/protocol_redo.md`); the record is
+`phase12/results_redo.md`, and it changes no number in this file. Of the question's three
+parts, only writer geometry has a cross-model test that can count for or against
+correspondence, and it counts against: in every layer of both models the loop direction is
+written more focally than a random direction, and Qwen's about 1.35 times the wound's (95%
+interval 1.19 to 1.53). The saved data cannot exclude two explanations: the wound's directions
+were fitted on 5 texts against Qwen's 11, and nothing is known about how focally the wound
+writes other state differences. Loop dynamics has Qwen-only evidence; termination has a
+necessary-condition test, which passes. So the cross-architecture claim is **not established**,
+and phase 13 is closed on that basis.
+
 **Corrected 2026-11-24 (ISSUES #21):** the verdict first published here, "CORRESPONDENCE
 (2 of 3 tests passed)", was withdrawn. The accuracies quoted for test C2 were re-scored the
-same day with the final answer checker (ISSUES #19).
+same day with the answer checker of 2026-11-24 (ISSUES #19), and again on 2026-11-26 under
+the final answer checker (ISSUES #30, #31).
 
 ## Verdict: **NOT ESTABLISHED** (the registered rule, applied literally, prints "2 of 3"; both passes are uninformative)
 
 | Test | Question | Result | Pass |
 |---|---|---|---|
 | **C1** | Do loop-dynamics trajectories correspond? | **r = 0.96**; internal AUC 0.83 / 0.90. But the shape is fixed by construction, so the correlation is not evidence | prints a pass; uninformative |
-| **C2** | Termination-circuit fingerprint match? | Behavioral pass, with the registered Qwen arm (the ×1.5 single-row edit): Qwen termination recovered 55.2% relative with accuracy **up** 27.8 points (8.4 → 36.2); Gemma 57.1%, accuracy indistinguishable (1 correct of 64 before and 2 after). Statistical pass by luck: "low norm" cannot find the exit row | prints a pass; uninformative |
+| **C2** | Termination-circuit fingerprint match? | Behavioral pass, with the registered Qwen arm (the ×1.5 single-row edit): Qwen termination recovered 55.2% relative with accuracy **up** 32.8 points (9.4 → 42.2; up 27.8 points, 8.4 → 36.2, under the checker of 2026-11-24); Gemma 57.1%, accuracy indistinguishable (2 correct of 64 after the boost; 1 before it under the checker of 2026-11-24, none under the final answer checker). Statistical pass by luck: "low norm" cannot find the exit row | prints a pass; uninformative |
 | **C3** | Writer geometry (focal vs diffuse) distributions? | Both **focal** (no layer under 3.0 in either; ranges 6.2–18.2 vs 6.8–20.2); KS = 0.55, p = 0.0003. Gemma is the *less* concentrated model | fails |
 
 ## What the numbers say, plainly
@@ -43,7 +56,7 @@ same day with the final answer checker (ISSUES #19).
    (row 106) sit at the 16.8th and 7.6th percentile of embedding-row norms, and boosting
    them recovers termination in both models: Qwen 55.2% relative (cap-hit 90.6% → 40.6%),
    Gemma 57.1% (98.4% → 42.2%), with accuracy indistinguishable there (1 correct of 64 before
-   and 2 after; a 95% interval for 1 of 64 is 0.3% to 8.3%). But a row boost cutting cap-hits
+   and 2 after under the checker of 2026-11-24, 0 and 2 under the final answer checker; a 95% interval for 1 of 64 is 0.3% to 8.3%). But a row boost cutting cap-hits
    in both models was already on record from phases 4–5 and 11; the test adds nothing new.
    Nor is low norm a way to find the exit row: Qwen's `</think>` row has a lower norm than
    only 41,742 of the 248,320 rows (16.8th percentile); 41,700 rows lie below it and none of the three
@@ -69,7 +82,7 @@ same day with the final answer checker (ISSUES #19).
 
 Phase 13 as registered ("apply Qwen's diagnosis to the Gemma wound with zero search")
 rested on this correspondence and has no premise now that the verdict is withdrawn
-(ISSUES #21). It is not armed and is to be redesigned. (The first version of this section
+(ISSUES #21). It is not armed and is to be redesigned. (Closed 2026-11-26: the redo above left the correspondence not established, so phase 13 is closed on that basis.) (The first version of this section
 said the candidate termination rows "can be *found* statistically (low-norm eos-family
 rows)" and called phase 13 "unchanged, now armed"; both withdrawn with the verdict.)
 

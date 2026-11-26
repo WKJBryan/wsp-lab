@@ -13,15 +13,22 @@
 > was not the repository's. Practice numbers are as recorded with the old checker; the
 > generations were not saved, so they cannot be re-scored.
 
+> **Re-scored 2026-11-26 (ISSUES #30, #31) with the final answer checker**, the third reading;
+> the note above gives the second, the checker of 2026-11-24, which was called the final answer
+> checker until 2026-11-26. At dose 1.0× 53.0% (1,060 of 2,000; per sample 54.0, 52.8, 53.8,
+> 51.4) and at dose 1.75× 48.8% (975; per sample 48.8, 47.2, 49.8, 49.2). The verdict paragraph
+> and item 3 below carry this reading. The verdict, NULL, stands.
+
 ## Verdict (pre-registered: SUCCESS ≥ baseline+5.0, PARTIAL +2.5–5.0)
 
-**NULL — the best practice candidate (dose 1.75×) scored 42.7% against the baseline's 47.5% (dose
-1.0×). Paired over the 2,000 problem × sample pairs, the higher dose is 4.8 points worse: 238
-pairs right only at 1.0, 142 only at 1.75; 95% interval 2.8 to 6.8; p = 9.7e-7. A real
+**NULL — the best practice candidate (dose 1.75×) scored 48.8% against the baseline's 53.0% (dose
+1.0×). Paired over the 2,000 problem × sample pairs, the higher dose is 4.3 points worse: 231
+pairs right only at 1.0, 146 only at 1.75; 95% interval 2.3 to 6.2; p = 1.4e-5. A real
 regression, decisively not an improvement.** (Corrected 2026-11-24, ISSUES #19: the scores were
 35.4% and 38.2% as first reported, and this read "−2.8, ≈1.9σ of the arm difference: suggestive
-regression". The NULL verdict is now statistically solid where the original text could only call
-it suggestive.)
+regression". Under the checker of 2026-11-24 the higher dose was 4.8 points worse (238 pairs
+right only at 1.0, 142 only at 1.75; 95% interval 2.9 to 6.7; p = 9.7e-7). The NULL verdict is now
+statistically solid where the original text could only call it suggestive.)
 
 ## What was established
 
@@ -32,8 +39,9 @@ it suggestive.)
    at two depths. Our earlier "56× more than claimed" was our own diff-script artifact.
 2. **Dose curve on practice (64 GSM8K, cap 8192):** monotone improvement 0.75×→1.75×
    (39.1 → 50.0% accuracy; stuck 53.1 → 25.0%), cliff onset by 2.0× (45.3%, stuck 39.1).
-3. **Finals reverse the practice picture:** dose 1.75× = 42.7% / 21.9% stuck vs dose 1.0× =
-   47.5% / 26.6% (accuracies re-scored 2026-11-24, ISSUES #19; 35.4% and 38.2% as first reported;
+3. **Finals reverse the practice picture:** dose 1.75× = 48.8% / 21.9% stuck vs dose 1.0× =
+   53.0% / 26.6% (accuracies re-scored 2026-11-26, ISSUES #30, #31; 42.7% and 47.5% under the
+   checker of 2026-11-24; 35.4% and 38.2% as first reported;
    stuck rates unchanged). More termination, worse answers. **Interpretation: the loop direction
    also participates in legitimate hard-problem reasoning; suppressing it harder helps easy
    problems finish and hurts deep ones.** The original authors' dose is well-balanced for the
@@ -41,10 +49,13 @@ it suggestive.)
    practice-set choice (GSM8K) was one confound. A second, which the earlier text missed:
    practice ran at an 8,192-token cap, finals at 32,768, so more termination helps more on
    practice. Lesson recorded: practice on the target distribution (MATH train), not a proxy.
-4. **Consistency checks (harness health):** baseline n=4 = 47.5% vs phase-3c single-sample
-   48.6% — same model, same engine, two sampling designs, agreeing. Also refines the
-   authors-comparison: 4-sample averaging does NOT lift our number (their 48.1 vs our 47.5
-   at matched averaging — so the residual gap is not sample count; which of the other known
+4. **Consistency checks (harness health):** baseline n=4 = 53.0% vs phase-3c single-sample
+   54.2% — same model, same engine, two sampling designs, agreeing (47.5% and 48.6% under the
+   checker of 2026-11-24). Also refines the
+   authors-comparison: 4-sample averaging does NOT lift our number (their 48.1 against our 53.0
+   at matched averaging, so the difference to their figure is not sample count: ours was 0.6
+   points below theirs under the checker of 2026-11-24 and is 4.9 above it under the final
+   answer checker; which of the other known
    differences carries it is untested, see `phase3c/results.md`).
 
 ## Cost ledger

@@ -11,12 +11,17 @@ Standing after the corrections of 2026-11-24: phase 11's numbers are re-scored a
 evidence restated (ISSUES #22); phase 12's verdict is withdrawn (ISSUES #21); phase 13
 is not armed.
 
+Standing after the third rule of the answer checker (2026-11-26; ISSUES #30 and #31 closed):
+every saved run was re-scored again and the numbers below are the final answer checker's; phase
+12 was redone on the saved data under a protocol committed before the redo, and the
+correspondence is not established (`phase12/results_redo.md`); phase 13 is closed on that basis.
+
 ## Phase 11 — wound repair (COMPLETE 2026-11-17, verdict NULL)
 
 Blind gradient-free repair of the expert-pruned Gemma-4 wound. Restated 2026-11-24
-(ISSUES #22).
-- Final table (full MATH-500): A0 full 76.4% / 0.2% cap-hit · A1 wound (8 experts
-  kept, expert selection disabled) 1.2% / 98.0% · A2 (attempt 1) = A1 — no repair
+(ISSUES #22) and re-scored 2026-11-26 (ISSUES #30, #31).
+- Final table (full MATH-500): A0 full 86.0% / 0.2% cap-hit · A1 wound (8 experts
+  kept, expert selection disabled) 1.0% / 98.0% · A2 (attempt 1) = A1 — no repair
   found; the editor spent 5/10 passes and restored the original (Amendment #2:
   context-sterile subagent; API balance exhausted).
 - The wound is two injuries at once: `prune.py` keeps 8 experts per layer and leaves
@@ -25,12 +30,13 @@ Blind gradient-free repair of the expert-pruned Gemma-4 wound. Restated 2026-11-
   saves memory (51.6 to 8.8 GB), not computation. No final separates the two; one
   practice pass with selection restored is recorded below.
 - Attempts 2–5 (2026-11-17/18) found no repair either: the best final is attempt 5's
-  (final norm × 0.4) at 2.0% (10 of 500) against the wound's 1.2% (6 of 500) — not
+  (final norm × 0.4) at 2.0% (10 of 500) against the wound's 1.0% (5 of 500) — not
   distinguishable. No matched control was completed.
 - The payload is the restated damage split. Termination is moved by embedding-row
   boosts: on the final, attempt 5's edit cut cap-hits from 98.0% to 79.4%; on a
   64-problem practice pass the same edit class cut them from 98.4% to 42.2%, with
-  accuracy 1 of 64 before and 2 of 64 after (1.6% and 3.1% under the final checker) —
+  accuracy 0 of 64 before and 2 of 64 after (0.0% and 3.1% under the final answer checker;
+  1.6% and 3.1% under the checker of 2026-11-24) —
   a difference 64 problems cannot tell apart. Most capability is lost, and some
   remains present but not expressed in free-running generation. One editor learned
   of the pruning from file names, so "provenance undetectable blind" is not
@@ -41,8 +47,9 @@ Blind gradient-free repair of the expert-pruned Gemma-4 wound. Restated 2026-11-
   wound as built was rerun as the control. Selection restored: 0 of 64 right, 59 of 64
   cut at the cap (92.2%), mean 7,630 tokens. Control, the wound as built: 0 of 64
   right, 64 of 64 cut (100%), mean 8,192 tokens; its original practice pass of
-  2026-11-16 scored 1 of 64, with 63 of 64 cut (98.4%). The full model on the same 64
-  problems: 47 of 64 (73.4%), 1 of 64 cut (1.6%). Switching selection back on brings
+  2026-11-16 scored 1 of 64 (0 of 64 under the final answer checker), with 63 of 64 cut
+  (98.4%). The full model on the same 64 problems: 55 of 64 (85.9%; 47 of 64, 73.4%, under
+  the checker of 2026-11-24), 1 of 64 cut (1.6%). Switching selection back on brings
   back no accuracy on this set — 64 problems cannot tell apart differences of fewer
   than about three right answers — and shortens generation a little (5 of 64
   generations end before the cap instead of none). With only eight experts left,
@@ -50,12 +57,12 @@ Blind gradient-free repair of the expert-pruned Gemma-4 wound. Restated 2026-11-
   switched-off selection costs anything on top cannot be seen at this floor. The
   repair thesis of phase 11 stands unchanged (verdict NULL).
 - Implication for Phase 12: Qwen (knowledge present + termination broken → real
-  accuracy recovery 8.4→36.2) vs Gemma wound (most capability lost → mechanism-only
+  accuracy recovery 9.4→42.2) vs Gemma wound (most capability lost → mechanism-only
   recovery so far) — same symptom, different cause, different repairability. Both exit
   mechanisms answered to embedding-row boosts, but that was already on record from
   phases 4–5 and 11 and is not evidence of correspondence (ISSUES #21).
 
-## Phase 12 — cross-architecture atlas (run 2026-11-17; its "COMPLETE, verdict CORRESPONDENCE 2/3" result is WITHDRAWN — NOT ESTABLISHED, ISSUES #21)
+## Phase 12 — cross-architecture atlas (run 2026-11-17; its "COMPLETE, verdict CORRESPONDENCE 2/3" result is WITHDRAWN — NOT ESTABLISHED, ISSUES #21; redone on the saved data 2026-11-26 — NOT ESTABLISHED, `phase12/results_redo.md`)
 
 Map the same functions in both models and test numerical correspondence.
 - Qwen3.5-0.8B side: consolidate phase-7 atlas (loop direction → MLP columns) and
@@ -83,8 +90,8 @@ Map the same functions in both models and test numerical correspondence.
     the "1,000 circular shifts" test has only 24 distinct shifts; the two text sets
     are not comparable (23 Qwen texts against 10 Gemma texts).
   - C2: the behavioral part passes as registered (Qwen cap-hit 90.6% → 40.6% with
-    accuracy up 27.8 points; Gemma 98.4% → 42.2% with accuracy indistinguishable,
-    1 of 64 before and 2 of 64 after), but a row boost cutting cap-hits in both
+    accuracy up 32.8 points (27.8 under the checker of 2026-11-24); Gemma 98.4% → 42.2% with accuracy indistinguishable,
+    0 of 64 before and 2 of 64 after under the final answer checker; 1 and 2 under the checker of 2026-11-24), but a row boost cutting cap-hits in both
     models was already on record from phases 4–5 and 11. The statistical part passes
     by chance (70% of the time with three Gemma candidate rows), and low norm is a
     description of the exit row, not a way to find it.
@@ -96,8 +103,18 @@ Map the same functions in both models and test numerical correspondence.
   (final 0.826); the calculator had read files later editor attempts overwrote, and
   the wrong Qwen arm. It now reads pinned copies under `phase11/editor_a2_attempt1/`.
 - Consequence: Phase 13 is not armed.
+- **Redo on the saved data (2026-11-26): NOT ESTABLISHED.** Under a protocol committed
+  before the redo (`phase12/protocol_redo.md`; record `phase12/results_redo.md`), of the
+  question's three parts only writer geometry has a cross-model test that can count for or
+  against correspondence, and it counts against: both models write their loop direction more
+  focally than a random direction, and Qwen's about 1.35 times the wound's (95% interval 1.19
+  to 1.53). The saved data cannot exclude two explanations (the wound's directions were
+  fitted on 5 texts against Qwen's 11; nothing is known about how focally the wound writes
+  other state differences). Loop dynamics has Qwen-only evidence, and termination only a
+  necessary-condition test, which passes. So the cross-architecture claim is not established.
+- Consequence of the redo: Phase 13 is closed (below).
 
-## Phase 13 — the transfer test (not armed; to be redesigned)
+## Phase 13 — the transfer test (CLOSED 2026-11-26; never armed)
 
 Apply Qwen's proven diagnosis to the Gemma wound with ZERO search (and vice versa
 where an edit class exists).
@@ -108,6 +125,9 @@ where an edit class exists).
   parameter search on the target model; else TRANSFER-NEGATIVE.
 - TRANSFER-POSITIVE is the headline result: portable weight-space medicine.
 - **Not armed (2026-11-24):** as registered, this test presupposes that phase 12 established a correspondence between the two models' maps, and no phase-12 test did, so the section is kept as registered text only and is to be redesigned (ISSUES #21).
+- **CLOSED (2026-11-26):** the phase-12 redo on the saved data (`phase12/results_redo.md`)
+  left the correspondence not established, so the transfer test has no premise and is closed
+  on that basis; the section stays as registered text only.
 
 ## Honest framing
 
