@@ -81,7 +81,9 @@ class FisherPTest(unittest.TestCase):
     """fisher_p(): two-sided exact Fisher test on the table [[a, b], [c, d]]"""
 
     def test_equal_rates_give_p_of_one(self):
-        self.assertEqual(fisher_p(10, 10, 10, 10), 1.0)
+        # exactly 1 in exact arithmetic; the float sum of the probabilities may sit one digit below 1
+        # (0.9999999999999999 on some platforms), so the equality is asserted to twelve places
+        self.assertAlmostEqual(fisher_p(10, 10, 10, 10), 1.0, places=12)
 
     def test_a_perfect_split_is_tiny_but_above_zero(self):
         p = fisher_p(20, 0, 0, 20)
