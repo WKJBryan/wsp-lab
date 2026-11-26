@@ -129,6 +129,38 @@ where an edit class exists).
   left the correspondence not established, so the transfer test has no premise and is closed
   on that basis; the section stays as registered text only.
 
+## Phase 14 — the blind editor under the original authors' rules (COMPLETE 2026-11-26; FALLS SHORT)
+
+The experiment that would separate the hint from the rules, the practice data and the editor's
+model: one blind editor held to the original authors' rules (enforced by the edit checker), with
+in-distribution practice (128 MATH training problems per pass), 15 passes.
+- Result (MATH-500, one sample per problem; the protocol's fallback editor ran, GLM-5.3-Flash,
+  2 of 15 passes): 55 of 500 (11.0%) against stock's 47 (9.4%) — not distinguishable (+1.6 points,
+  95% interval −1.4 to 4.6) — and 43.2 points behind the published edit's 271 (54.2%): FALLS SHORT;
+  REPAIR not met. All three registered predictions held.
+- Record: `phase14/results.md`; deviations: ISSUES #32, #33. It left one question open, which
+  phase 15 took up (below).
+
+## Phase 15 — the blind editor under the original authors' rules, with a stronger editor (COMPLETE 2026-11-27; REACHES IT, REPAIR met)
+
+Phase 14 (2026-11-25/26) ran a small blind editor (GLM-5.3-Flash) under the original authors'
+rules, with in-distribution practice, and it did not reach the published edit. Phase 15 changed
+one thing, the editor (GLM-5.4), and kept the rules, briefing, practice set and budget. Full
+record: `phase15/results.md`; deviations: ISSUES #35–#38.
+- Result (MATH-500, one sample per problem): 265 of 500 (53.0%) against the published edit's
+  271 (54.2%) — REACHES IT, the protocol's word for within 4.0 points (the difference is −1.2
+  points, 95% interval −5.0 to 2.6); against stock's 47 (9.4%), REPAIR is met. Under the
+  reference question it is above the published edit: 280 of 500 (56.0%) against 258 (51.6%).
+- The question phase 14 left open — the hint against the editor's size and the budget — is
+  answered once: the editor's size. In that session the hint bought nothing measurable; in the
+  protocol's words, the gap left by phase 14 was a matter of the editor's strength, not of the
+  hint or of the budget.
+- Limits: one session, one seed; the smaller budget of phase 14 (15 passes of 128 problems, not
+  50 of up to 512), of which the editor used 4; the edit is a conditional loop-breaker (two
+  conditional switches in layer 14), a different mechanism from the published edit's, and it
+  still leaves a sixth of the problems without an answer; the author's predictions P2 and P3
+  were wrong.
+
 ## Honest framing
 
 The realistic claim spectrum: strong paper (any outcome) → field-defining first
