@@ -1,7 +1,9 @@
 """Re-score the phase-8 arms in place with phase3c/rescore.py (ISSUES #19).
 
-Each arm JSON's pred_rescored / ok_rescored, its summary's accuracy / answered, and the run's
-validity record are recomputed from the arm's saved generations. Nothing else in the file changes.
+Each arm JSON's pred_rescored / ok_rescored / rule, its summary's accuracy / answered, and the
+run's validity record are recomputed from the arm's saved generations with the checker's verdict
+(`rescore.judge`: a box, else the marked line or a concluding last line, whichever is right).
+Nothing else in the file changes.
 
 Usage: uv run python phase8/rescore_arms.py [<arm> ...]      (no arguments = every arm)
 """
@@ -13,7 +15,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent / "phase3c"))
-from rescore import RESCORED_WITH, answers_match, extract_answer, write_json  # noqa: E402
+from rescore import RESCORED_WITH, judge, write_json  # noqa: E402
 from runcheck import check_run  # noqa: E402
 
 
@@ -24,8 +26,7 @@ def rescore_arm(name):
         texts = json.load(f)
     no_think = bool(run["summary"]["settings"].get("no_think"))
     for r in run["rows"]:
-        r["pred_rescored"] = extract_answer(texts[r["id"]], no_think)
-        r["ok_rescored"] = answers_match(r["gold"], r["pred_rescored"])
+        r["ok_rescored"], r["pred_rescored"], r["rule"] = judge(r["gold"], texts[r["id"]], no_think)
     n = len(run["rows"])
     problems, validity = check_run(run["rows"], texts, ok_key="ok_rescored")
     run["summary"].update(

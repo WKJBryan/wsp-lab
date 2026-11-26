@@ -31,7 +31,6 @@ Usage (inside WSL): python eval_pass.py <candidate_model_dir> --hypothesis "one 
 import argparse
 import hashlib
 import json
-import re
 import signal
 import sys
 import time
@@ -43,7 +42,7 @@ HERE = Path(__file__).resolve().parent          # the sandbox's harness/ folder
 sys.path.insert(0, str(HERE))
 from benchmark import REFERENCE_QUESTION  # noqa: E402
 from gpulock import wait_for_gpu  # noqa: E402
-from rescore import answers_match, extract_answer  # noqa: E402
+from rescore import answers_match, judge, last_boxed  # noqa: E402
 from runcheck import check_run  # noqa: E402
 from save_edit import fingerprint  # noqa: E402
 
@@ -52,15 +51,17 @@ STATE = HERE / "state"
 LEDGER, COUNTER, ATTEMPTS, RECEIPTS = (STATE / "ledger.md", STATE / "passes.txt", STATE / "attempts.txt",
                                        STATE / "receipts")
 MAX_PASSES, CAP, SEED = 15, 32768, 20261124
-BOXED = re.compile(r"\\boxed\{([^{}]*(?:\{[^{}]*\}[^{}]*)*)\}")
 
 
 def counter_value(path):
-    """The counter in `path`: 0 when it was never written, or a crash left it empty."""
+    """The counter in `path`: 0 when it was never written. A counter that holds anything but a
+    number stops the tool: a budget that silently starts again is worse than a stopped pass."""
     try:
         return int(path.read_text())
-    except (FileNotFoundError, ValueError):
+    except FileNotFoundError:
         return 0
+    except (ValueError, OSError) as e:
+        sys.exit(f"{path} does not hold a number ({type(e).__name__}): the counter is damaged; not continuing")
 
 
 def write_counter(path, value):
@@ -108,11 +109,11 @@ def read_outputs(practice, outs):
     for p, o in zip(practice, outs):
         c = o.outputs[0]
         text, n_tok, finish = c.text, len(c.token_ids), c.finish_reason
-        boxed = (BOXED.findall(text) or [None])[-1]
-        pred = extract_answer(text)
+        boxed = last_boxed(text)
+        right, pred, rule = judge(p["gold"], text)
         rows.append(dict(id=p["id"], gold=p["gold"], text=text,
                          pred_boxed=boxed, ok_boxed=boxed is not None and answers_match(p["gold"], boxed),
-                         pred_rescore=pred, ok_rescored=answers_match(p["gold"], pred),
+                         pred_rescore=pred, ok_rescored=right, rule=rule,
                          n_tokens=n_tok, finish=finish, closed="</think>" in text))
         texts[p["id"]] = text
     return rows, texts

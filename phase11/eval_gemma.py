@@ -32,7 +32,7 @@ SEED = 20261116
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent / "phase3c"))
 from gpulock import wait_for_gpu  # noqa: E402
-from rescore import answers_match, extract_answer  # noqa: E402
+from rescore import judge  # noqa: E402
 from runcheck import check_run, refuse_existing, save_run  # noqa: E402
 
 
@@ -96,9 +96,8 @@ def main():
         text = o.outputs[0].text
         n_tok = len(o.outputs[0].token_ids)
         finish = o.outputs[0].finish_reason
-        pred = extract_answer(text, no_think=True)
-        ok = answers_match(p["gold"], pred)
-        rows.append(dict(id=p["id"], gold=p["gold"], pred=pred, ok=ok, n_tokens=n_tok,
+        ok, pred, rule = judge(p["gold"], text, no_think=True)
+        rows.append(dict(id=p["id"], gold=p["gold"], pred=pred, ok=ok, rule=rule, n_tokens=n_tok,
                          finish=finish, cap_hit=n_tok >= CAP))
         texts[p["id"]] = text
         correct += ok

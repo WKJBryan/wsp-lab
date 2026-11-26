@@ -25,7 +25,7 @@ HERE = Path(__file__).resolve().parent
 P3C = HERE.parent / "phase3c"
 sys.path.insert(0, str(P3C))
 from gpulock import wait_for_gpu  # noqa: E402
-from rescore import answers_match, extract_answer  # noqa: E402
+from rescore import judge  # noqa: E402
 from runcheck import check_run, refuse_existing, save_run  # noqa: E402
 from benchmark import question  # noqa: E402
 
@@ -118,10 +118,10 @@ def main():
 
     rows, texts = [], {}
     for p, (text, n_tok, finish, think_end_at) in zip(problems, gens):
-        pred = extract_answer(text, args.no_think)
+        ok, pred, rule = judge(p["gold"], text, args.no_think)
         rows.append(dict(id=p["id"], gold=p["gold"], finish=finish, n_tokens=n_tok,
                          closed="</think>" in text, think_end_at=think_end_at,
-                         pred_rescored=pred, ok_rescored=answers_match(p["gold"], pred)))
+                         pred_rescored=pred, ok_rescored=ok, rule=rule))
         texts[p["id"]] = text
 
     failed, validity = check_run(rows, texts, ok_key="ok_rescored")

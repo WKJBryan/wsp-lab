@@ -8,6 +8,8 @@ test_save_edit.py. Only the engine is faked: stand-ins for vllm's LLM and Sampli
 template and for the GPU lock sit in sys.modules, so no GPU is touched, the real vllm is never imported and the GPU
 lock is never taken.
   main   the command line: run with runpy on a patched sys.argv, stdout and stderr captured, the exit status caught.
+  counter_value   the pass and attempt counters as the tool reads them, on the harness copy loaded without its
+                  command line: 0 when the file was never written; a stop when it no longer holds a number.
 The bare-name modules the tool imports are set aside around each test and put back afterwards, so this file runs in
 one process with phase14/test_save_edit.py and the phase3c tests in any order.
 
@@ -59,8 +61,8 @@ NORMAL_TEXTS = [  # the fake engine's answer to each practice problem: p1 boxes 
     "<think>2 times 2 is 4.</think>The answer is 4.",
 ]
 SOUP_TAIL = "\u4e2d" * 30    # a fragment tail: thirty copies of one ideograph
-ROW_KEYS = ("id", "gold", "text", "pred_boxed", "ok_boxed", "pred_rescore", "ok_rescored", "n_tokens", "finish",
-            "closed")
+ROW_KEYS = ("id", "gold", "text", "pred_boxed", "ok_boxed", "pred_rescore", "ok_rescored", "rule", "n_tokens", "finish",
+            "closed")   # rule: since 2026-11-26, which reading decided ok_rescored (the checker's judge)
 
 
 def module(name, **attrs):
@@ -167,6 +169,11 @@ class EvalPassTest(unittest.TestCase):
             signal.signal(signal.SIGTERM, before)
         return status, out.getvalue(), err.getvalue()
 
+    def harness_function(self, name):
+        """The function `name` of the harness's eval_pass.py, with the module loaded and its command line not run."""
+        with mock.patch.object(sys, "path", list(sys.path)):
+            return runpy.run_path(str(self.harness / "eval_pass.py"), run_name="eval_pass_under_test")[name]
+
     def counter(self):
         """The pass counter, as the tool's used() reads it: 0 when it was never written."""
         path = self.state / "passes.txt"
@@ -247,6 +254,35 @@ class EvalPassTest(unittest.TestCase):
         self.assertEqual(code, None, out)
         # three entries for five problems: both Level 1 problems right, one of two in Level 2, none in Level 3
         self.assertEqual(json.loads(out)["by_level"], {"Level 1": [2, 2], "Level 2": [1, 2], "Level 3": [0, 1]})
+
+    # ---- the counters, read before a pass is charged (reviewed 2026-11-26) ----
+    def test_a_counter_file_that_does_not_exist_reads_as_zero(self):
+        counter_value = self.harness_function("counter_value")
+        self.assertEqual(counter_value(self.state / "passes.txt"), 0)
+
+    def test_a_counter_file_that_does_not_hold_a_number_stops_the_tool(self):
+        (self.state / "passes.txt").write_text("abc")
+        counter_value = self.harness_function("counter_value")
+        with self.assertRaises(SystemExit) as raised:
+            counter_value(self.state / "passes.txt")
+        message = str(raised.exception.code)
+        self.assertIn("passes.txt", message)                # the file that is damaged
+        self.assertIn("does not hold a number", message)
+
+    def test_an_empty_counter_file_stops_the_tool(self):
+        (self.state / "passes.txt").write_text("")
+        counter_value = self.harness_function("counter_value")
+        with self.assertRaises(SystemExit) as raised:
+            counter_value(self.state / "passes.txt")
+        self.assertIn("does not hold a number", str(raised.exception.code))
+
+    def test_a_damaged_pass_counter_stops_the_pass_before_anything_is_charged(self):
+        # a budget that silently starts again is worse than a stopped pass
+        (self.state / "passes.txt").write_text("abc")
+        code, out, err = self.run_tool(str(self.model), "--hypothesis", HYPOTHESIS)
+        self.assertIn("does not hold a number", str(code))
+        self.assertEqual((self.state / "passes.txt").read_text(), "abc")     # left as it was found
+        self.assertEqual((self.ledger(), self.engine.constructed, self.attempts()), ([], [], 0))
 
     # ---- refused before a pass is charged ----
     def test_an_exhausted_budget_is_refused_without_a_charge_or_an_engine(self):

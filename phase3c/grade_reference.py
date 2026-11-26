@@ -8,7 +8,6 @@ Usage (the grader environment, which has math-verify):
 """
 
 import json
-import re
 import sys
 from pathlib import Path
 
@@ -19,15 +18,14 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(HERE.parent / "phase3b"))
 from runcheck import load_texts  # noqa: E402
+from rescore import last_boxed  # noqa: E402
 from scorer import answers_match  # noqa: E402
-
-BOXED = re.compile(r"\\boxed\{([^{}]*(?:\{[^{}]*\}[^{}]*)*)\}")
 
 
 def grade(run_path):
     run = json.loads(run_path.read_text(encoding="utf-8"))
     rows, texts = run["rows"], load_texts(run_path)
-    boxed = {r["id"]: (BOXED.findall(texts[r["id"]]) or [None])[-1] for r in rows}
+    boxed = {r["id"]: last_boxed(texts[r["id"]]) for r in rows}
     ok_matcher = ok_verify = ungraded = 0
     for r in rows:
         b = boxed[r["id"]]

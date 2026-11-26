@@ -1,22 +1,26 @@
 """Tests for phase14/endpoints.py, which computes the phase-14 endpoints from the collected files without a GPU
-(phase14/protocol.md, "Endpoints" and "Verdict"; ISSUES #31 for the ways of choosing an answer line).
-  word           the protocol's word for a paired difference with its 95% interval;
-  repaired       REPAIR or not, decided on counts, and the bars as whole answers;
-  last_box       the last one-level \\boxed{...} of a generation;
-  readings       the checker's verdict, the section's last line read instead, and reading C, for one generation;
-  math_verify_ok the second grader on a boxed answer;
-  pair           paired statistics of two runs over the same 500 problems;
-  describe       a run's level, from the two small JSON files it reads, for a run that is a measurement (ISSUES #20);
-  write_atomic   a file replaced only once the new content is complete, with its line endings as given.
-main() and the functions that read the collected runs are not covered. The generations are short stand-ins for real
+(phase14/protocol.md, "Endpoints" and "Verdict").
+  word            the protocol's word for a paired difference with its 95% interval;
+  repaired        REPAIR or not, decided on counts, and the bars as whole answers;
+  boxed_readings  the two graders on each generation's last boxed answer for one run, read as the checker reads it;
+  math_verify_ok  the second grader on a boxed answer;
+  pair            paired statistics of two runs over the same 500 problems;
+  describe        a run's level, from the two small JSON files it reads, for a run that is a measurement (ISSUES #20);
+  same_checker    main()'s guard: stop unless the six re-scored files were made by the checker in this tree;
+  grader_versions the record of the two graders, with the stamp of that checker;
+  write_atomic    a file replaced only once the new content is complete, with its line endings as given.
+main() and the small readers rescored(), run() and texts() are not covered. The generations are short stand-ins for real
 ones; where a line comes from the record, its comment says so.
 
 Standard library only, except for math_verify_ok() and pair(), which need the grader's environment: their tests
 are skipped unless math-verify, numpy and phase8/analyze_saved.py import here, and so run inside WSL only.
+boxed_readings() needs math-verify too; its test stands the second grader in, so that it runs here as well and
+says the same in both environments.
 Usage (from the repository root):
   python -B -m unittest -v phase14/test_endpoints.py
 """
 
+import gzip
 import importlib
 import json
 import sys
@@ -28,8 +32,8 @@ from unittest import mock
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))  # the module under test is imported by bare name, as test_save_edit.py does
 import endpoints  # noqa: E402
-from endpoints import describe, last_box, math_verify_ok, pair, readings, repaired, word, write_atomic  # noqa: E402
-from rescore import answers_match, extract_answer  # noqa: E402  (the checker endpoints imports; readings() is held to it)
+from endpoints import (boxed_readings, describe, grader_versions, math_verify_ok, pair, repaired, same_checker,  # noqa: E402
+                     word, write_atomic)
 
 sys.path.insert(0, str(HERE.parent / "phase8"))  # where pair() imports analyze_saved from
 
@@ -142,117 +146,40 @@ class RepairedTest(unittest.TestCase):
         self.assertEqual((out["right_final"], out["right_stock"], out["n"], out["holds"]), (45, 42, 500, False))
 
 
-class LastBoxTest(unittest.TestCase):
-    """last_box(): the content of the last one-level \\boxed{...} of a generation; "" when there is none"""
-
-    def test_returns_what_the_box_holds(self):
-        self.assertEqual(last_box("The final answer is $\\boxed{42}$."), "42")
-
-    def test_returns_the_last_box_of_the_generation(self):
-        self.assertEqual(last_box("$\\boxed{3}$ is too small, so the answer is $\\boxed{7}$"), "7")
-
-    def test_reads_a_box_with_one_brace_level_inside(self):
-        self.assertEqual(last_box("The final answer is $\\boxed{\\dfrac{1}{2}}$."), "\\dfrac{1}{2}")
-
-    def test_returns_an_empty_string_when_there_is_no_box(self):
-        self.assertEqual(last_box("The final answer is 42."), "")
-
-    def test_an_empty_box_counts_as_no_box(self):
-        self.assertEqual(last_box("The final answer is $\\boxed{}$."), "")
-
-    def test_a_box_nested_two_brace_levels_deep_is_not_read(self):
-        # known limit of the checker's own extractor, which this is: such a generation counts as having no boxed
-        # answer (ISSUES #31: an answer that contains \boxed{} is read the same under every rule)
-        self.assertEqual(last_box("The final answer is $\\boxed{\\frac{\\sqrt{3}}{3}}$."), "")
-
-
 def generation(answer_section):
     """A generation under the repository's question: one line of thinking, closed, then the answer section."""
     return "Let me work through this step by step.</think>\n" + answer_section
 
 
-def checked(text, gold):
-    """The checker's verdict on a generation: what a re-score file records as ok_rescored."""
-    return answers_match(gold, extract_answer(text))
+class BoxedReadingsTest(unittest.TestCase):
+    """boxed_readings(): (the repository's matcher, math-verify) on the last boxed answer of each generation"""
 
+    def read(self, texts, golds):
+        """boxed_readings("x") with a temporary folder standing in for the script's P3, for a run called "x" whose
+        generations are `texts` and whose rows carry the gold answers `golds` ({problem id: text or gold}); with
+        them, the boxed answers the second grader was given. math_verify_ok() is stood in: the real one raises
+        where math-verify is not installed."""
+        with tempfile.TemporaryDirectory() as tmp:
+            p3 = Path(tmp)
+            (p3 / "x_rescored.json").write_text(json.dumps(dict(rows=[dict(id=i, gold=g) for i, g in golds.items()])),
+                                                encoding="utf-8")
+            with gzip.open(p3 / "x_texts.json.gz", "wt", encoding="utf-8") as f:
+                json.dump(texts, f)
+            with mock.patch.object(endpoints, "P3", p3), mock.patch.object(
+                    endpoints, "math_verify_ok", side_effect=lambda gold, boxed: gold == boxed) as second:
+                return boxed_readings("x"), [call.args[1] for call in second.call_args_list]
 
-CONCLUSIONS = (  # the last line of an answer section; each states 4 in one of the shapes reading C accepts, and
-    "The final answer is $4$.",             # only in that one: a $math$ span
-    r"\[4\]",                               # a display block
-    "The number of sides: **4**.",          # a bold value
-    "So the number of sides is 4.",         # a linking word and a number
-)
-
-
-class ReadingsTest(unittest.TestCase):
-    """readings(): (the checker's verdict, the section's last line read instead, reading C of ISSUES #31)"""
-
-    # ---- read the same under every rule ----
-    def test_a_boxed_answer_reads_the_same_under_every_rule_whatever_follows(self):
-        # after the box: a stray fragment, which the last-line rule would read as "MATH"; or no answer section at all
-        for text in (generation("The final answer is $\\boxed{4}$.\nIf a student is in MATH"),
-                     "Still thinking: the best candidate so far is $\\boxed{4}$, but let me check"):
-            with self.subTest(text=text):
-                self.assertEqual(readings(text, "4", True), (True, True, True))
-
-    def test_a_generation_whose_thinking_never_closed_reads_the_same_under_every_rule(self):
-        text = "Still thinking: the reasoning was cut off before any answer"
-        for ok in (True, False):
-            with self.subTest(ok=ok):
-                self.assertEqual(readings(text, "4", ok), (ok, ok, ok))
-
-    # ---- reading C: the section's last line when it concludes, else the checker ----
-    def test_a_concluding_last_line_is_read_right_whatever_verdict_the_generation_is_given(self):
-        # the given verdict stands in the first place; the last line is read afresh in the other two
-        text = generation("**Answer:**\nThe value of $x$ is **4**.")
-        self.assertEqual(readings(text, "4", False), (False, True, True))
-
-    def test_a_conclusion_on_the_last_line_supplies_what_the_checker_missed(self):
-        # the phase-10 edit on problem m3 of the record (ISSUES #31): the checker took the heading that follows
-        # "**Answer:**" for the answer, "196", and stopped there
-        text = generation("**Answer:**\nTo find the number of positive whole-number divisors of $196$, we first find "
-                          "the prime factorization.\nTotal number of divisors = $3 \\times 3 = 9$.\n"
-                          "There are **9** positive whole-number divisors of 196.")
-        self.assertEqual((checked(text, "9"), readings(text, "9", False)), (False, (False, True, True)))
-
-    def test_a_conclusion_on_the_last_line_overrides_an_earlier_marker_line_under_reading_c(self):
-        # the other side of ISSUES #31: the last line is trusted whenever it concludes, and turns wrong an answer
-        # that the checker read right
-        self.assertEqual(readings(generation("The answer is 4.\nSo the number of sides is 5."), "4", True),
-                         (True, False, False))
-
-    def test_each_of_the_four_concluding_shapes_makes_the_last_line_the_answer(self):
-        for last in CONCLUSIONS:
-            with self.subTest(last=last):
-                self.assertEqual(readings(generation("**Answer:**\n" + last), "4", False), (False, True, True))
-
-    def test_a_last_line_without_a_concluding_shape_falls_back_to_the_checker(self):
-        # the end of a generation of the phase-10 edit (problem m59), which runs on for 2,500 lines after its answer
-        text = generation("The answer is 5.\nWait.\nIf a student is in MATH")
-        self.assertEqual((checked(text, "5"), readings(text, "5", True)), (True, (True, False, True)))
-
-    def test_an_equals_sign_with_spaces_around_it_is_not_a_concluding_shape(self):
-        # known limit, noted where STRUCT is defined: the word boundary before the linking word stands before "="
-        # too, so on a last line like this reading C falls back to the checker
-        self.assertEqual(readings(generation("So the number of sides is 4."), "4", False), (False, True, True))
-        self.assertEqual(readings(generation("So the number of sides = 4."), "4", False), (False, True, False))
-
-    # ---- the checker's treatment of the section is kept ----
-    def test_an_answer_section_of_white_space_only_reads_wrong_under_the_last_line_rule(self):
-        for text in ("Cut off here</think>\n  \n\t", "Cut off here</think>"):
-            for ok in (True, False):
-                with self.subTest(text=text, ok=ok):
-                    self.assertEqual(readings(text, "4", ok), (ok, False, ok))
-
-    def test_a_stray_think_token_in_the_section_is_dropped_as_the_checker_drops_it(self):
-        # ISSUES #19 c: in stop-token-boosted arms the model emits </think> again inside the answer section. Read
-        # as text, the token would turn the last line into a LaTeX payload
-        for section, gold in (("The answer is $4$.\n</think>", "4"),     # on a line of its own after the answer
-                              ("</think> 42", "42"),                     # opening the last line
-                              ("So x is </think> 5.", "5")):             # inside the last line
-            text = generation(section)
-            with self.subTest(section=section):
-                self.assertEqual((checked(text, gold), readings(text, gold, True)), (True, (True, True, True)))
+    def test_a_box_nested_two_brace_levels_deep_is_read(self):
+        # since 2026-11-26 the last box is read to its matching brace at any depth (ISSUES #30). The one-level
+        # pattern this replaces missed this box: the answer counted as not boxed, and was wrong
+        texts = {"m0": generation("The final answer is $\\boxed{\\frac{\\sqrt{3}}{3}}$."),
+                 "m1": generation("The final answer is $\\boxed{41}$."),
+                 "m2": generation("The final answer is 41.")}
+        golds = {"m0": "\\frac{\\sqrt{3}}{3}", "m1": "42", "m2": "42"}
+        (out, attempted, unreadable), given = self.read(texts, golds)
+        self.assertEqual(out, {"m0": (True, True), "m1": (False, False), "m2": (False, False)})
+        self.assertEqual(given, ["\\frac{\\sqrt{3}}{3}", "41"])     # the second grader gets each box read whole
+        self.assertEqual((attempted, unreadable), (2, 0))           # the two generations that hold a box
 
 
 @unittest.skipUnless(HAVE_MATH_VERIFY, "math_verify_ok() needs math-verify, which is not installed here")
@@ -466,6 +393,58 @@ class DescribeTest(unittest.TestCase):
     def test_a_run_of_100_rows_with_every_check_on_record_is_a_measurement(self):
         out = self.described(n=100)
         self.assertEqual((out["n"], out["right"], out["accuracy"]), (100, 67, 67.0))    # 67 of the 100 right
+
+
+CHECKED = ("p14_final", "p3c_stock", "p3c_c3_original", "p14_final_ref", "ref_stock", "ref_orig")   # the guard's six runs
+
+
+class SameCheckerTest(unittest.TestCase):
+    """same_checker(): main()'s guard, which stops unless the six re-scored files were made by this tree's checker"""
+
+    def guarded(self, stamps):
+        """same_checker() with a temporary folder standing in for the script's P3, holding <run>_rescored.json for
+        each {run: the checker its summary records} in `stamps` (None: a summary that records none)."""
+        with tempfile.TemporaryDirectory() as tmp:
+            p3 = Path(tmp)
+            for run, stamp in stamps.items():
+                summary = dict(name=f"{run}_rescored") if stamp is None else dict(name=f"{run}_rescored", rescored_with=stamp)
+                (p3 / f"{run}_rescored.json").write_text(json.dumps(dict(summary=summary, rows=[])), encoding="utf-8")
+            with mock.patch.object(endpoints, "P3", p3):
+                return same_checker()
+
+    def stamped(self, **other):
+        """The six runs with this tree's checker, except those in `other` ({run: what re-scored them instead})."""
+        return {run: other.get(run, endpoints.rescore.RESCORED_WITH) for run in CHECKED}
+
+    def test_passes_when_the_six_re_scored_files_carry_this_trees_checker(self):
+        self.assertIsNone(self.guarded(self.stamped()))
+
+    def test_stops_when_any_of_the_six_carries_another_checker(self):
+        self.assertNotEqual(STAMP, endpoints.rescore.RESCORED_WITH)      # STAMP is the frozen checker of the record
+        for run in CHECKED:
+            with self.subTest(run=run), self.assertRaises(SystemExit) as raised:
+                self.guarded(self.stamped(**{run: STAMP}))
+            message = str(raised.exception.code)
+            self.assertIn(run, message)                                  # the run
+            self.assertIn(STAMP, message)                                # the checker it was re-scored with
+            self.assertIn(endpoints.rescore.RESCORED_WITH, message)      # the checker in this tree
+
+    def test_stops_when_a_re_scored_file_records_no_checker(self):
+        with self.assertRaises(SystemExit) as raised:
+            self.guarded(self.stamped(p3c_stock=None))
+        self.assertIn("p3c_stock", str(raised.exception.code))
+
+
+class GraderVersionsTest(unittest.TestCase):
+    """grader_versions(): the record of the graders a report was made with"""
+
+    def test_records_the_checker_in_this_tree(self):
+        self.assertEqual(grader_versions()["checker"], endpoints.rescore.RESCORED_WITH)
+
+    def test_still_records_the_matcher_and_the_second_grader(self):
+        out = grader_versions()
+        self.assertEqual(sorted(out), ["checker", "matcher", "math_verify", "problems_in_sorted_order"])
+        self.assertTrue(out["math_verify"].startswith("math-verify"), out)
 
 
 class WriteAtomicTest(unittest.TestCase):
