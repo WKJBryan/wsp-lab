@@ -1,0 +1,21 @@
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:   0%|          | 1/473 [00:00<02:46,  2.83it/s]Loading weights:   8%|▊         | 39/473 [00:00<00:03, 110.70it/s]Loading weights:  16%|█▌        | 75/473 [00:00<00:02, 182.51it/s]Loading weights:  24%|██▍       | 113/473 [00:00<00:01, 238.96it/s]Loading weights:  31%|███▏      | 148/473 [00:00<00:01, 269.47it/s]Loading weights:  39%|███▉      | 186/473 [00:00<00:00, 298.21it/s]Loading weights:  48%|████▊     | 225/473 [00:00<00:00, 323.17it/s]Loading weights:  55%|█████▌    | 261/473 [00:01<00:00, 330.46it/s]Loading weights:  63%|██████▎   | 300/473 [00:01<00:00, 342.32it/s]Loading weights:  76%|███████▌  | 359/473 [00:01<00:00, 414.08it/s]Loading weights:  92%|█████████▏| 434/473 [00:01<00:00, 510.13it/s]Loading weights: 100%|██████████| 473/473 [00:01<00:00, 327.97it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+
+p31: 32768 tokens, finish length
+  repetition score: median per 2000-token bin: -50 4 48 172 171 276 279 282 283 283 278 280 287 294 295 288
+  repetition score: MAX    per 2000-token bin: 97 154 382 293 366 360 362 363 360 358 352 353 361 365 363 366
+  enumeration score: median per 2000-token bin: -224 -210 -204 -168 -151 -53 -27 -14 -5 -1 -2 -0 -0 -13 +2 -2
+  enumeration score: MAX    per 2000-token bin: -165 -166 -141 -114 -46 -20 +0 +13 +20 +23 +20 +22 +21 +21 +19 +23
+
+p57: 32768 tokens, finish length
+  repetition score: median per 2000-token bin: -13 328 358 364 366 367 368 368 368 369 370 370 371 371 372 372
+  repetition score: MAX    per 2000-token bin: 176 354 363 366 368 368 369 370 370 371 372 372 373 373 373 373
+  enumeration score: median per 2000-token bin: -220 -188 -111 -85 -70 -60 -53 -47 -42 -38 -36 -34 -31 -29 -27 -26
+  enumeration score: MAX    per 2000-token bin: -165 -126 -86 -67 -56 -46 -40 -36 -32 -28 -27 -27 -24 -23 -21 -20
+
+p34: 32768 tokens, finish length
+  repetition score: median per 2000-token bin: 2 49 15 7 29 126 292 314 327 331 337 340 340 340 340 102
+  repetition score: MAX    per 2000-token bin: 178 177 225 205 246 340 415 429 429 434 431 436 437 438 437 422
+  enumeration score: median per 2000-token bin: -214 -208 -195 -191 -191 -171 -107 -74 -57 -44 -32 -24 -16 -11 -5 -149
+  enumeration score: MAX    per 2000-token bin: -162 -167 -142 -141 -128 -105 -71 -47 -30 -21 -9 -1 +9 +15 +21 +22

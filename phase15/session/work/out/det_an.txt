@@ -1,0 +1,82 @@
+
+=== layer 12 | T1 loop vs fresh | loop line-start score q25/q50/q75 = +1.13 +1.45 +1.59 | held-out-loop line starts above q50: 0.43
+     early: positions  364479  above q25:   7967 (2.19%)  above q50:  2791 (0.766%)
+     pre  : positions  141278  above q25:   1794 (1.27%)  above q50:    87 (0.062%)
+     loop : positions   46398  above q25:  15959 (34.40%)  above q50:  4660 (10.044%)
+     highest early maxima (trace:score): p16:+1.56 p26:+nan p50:+1.60 p8:+1.37 p52:+1.05 p4:+0.96 p38:+0.96 p78:+0.96 p18:+0.85 p48:+0.82
+       early hit +1.60 p50 tok 4853: ...', if the string is $154$, then the digits are $1, 5, 4$.' -> '\n    *   Wait, if'
+       early hit +1.60 p50 tok 5127: ...', if the string is $154$, then the digits are $1, 5, 4$.' -> '\n    *   Wait, if'
+       early hit +1.60 p50 tok 5401: ...', if the string is $154$, then the digits are $1, 5, 4$.' -> '\n    *   Wait, if'
+       early hit +1.59 p50 tok 5562: ...', if the string is $154$, then the digits are $1, 5, 4$.' -> '\n    *   Wait, if'
+       early hit +1.59 p50 tok 4881: ...', if the string is $154$, then the digits are $1, 5, 4$.' -> '\n    *   Wait, let'
+       early hit +1.59 p50 tok 5288: ...', if the string is $154$, then the digits are $1, 5, 4$.' -> '\n    *   Wait, if'
+       early hit +1.59 p50 tok 5675: ...', if the string is $154$, then the digits are $1, 5, 4$.' -> '\n    *   Wait, if'
+       early hit +1.58 p50 tok 5949: ...', if the string is $154$, then the digits are $1, 5, 4$.' -> '\n    *   Wait, if'
+       early hit +1.58 p50 tok 5042: ...', if the string is $154$, then the digits are $1, 5, 4$.' -> '\n    *   Wait, let'
+       early hit +1.58 p50 tok 5316: ...', if the string is $154$, then the digits are $1, 5, 4$.' -> '\n    *   Wait, let'
+
+=== layer 12 | T2 loop&dup vs fresh | loop line-start score q25/q50/q75 = +1.07 +1.54 +1.76 | held-out-loop line starts above q50: 0.44
+     early: positions  364479  above q25:   7972 (2.19%)  above q50:  3878 (1.064%)
+     pre  : positions  141278  above q25:   1874 (1.33%)  above q50:    46 (0.033%)
+     loop : positions   46398  above q25:  16069 (34.63%)  above q50:  4298 (9.263%)
+     highest early maxima (trace:score): p16:+1.83 p26:+nan p50:+1.66 p8:+1.46 p52:+1.11 p38:+0.98 p18:+0.87 p4:+0.86 p48:+0.78 p34:+0.71
+
+=== layer 12 | T3 loop&Wait-top vs fresh Wait | loop line-start score q25/q50/q75 = +0.75 +1.04 +1.18 | held-out-loop line starts above q50: 0.44
+     early: positions  364479  above q25:   6530 (1.79%)  above q50:   352 (0.097%)
+     pre  : positions  141278  above q25:   1115 (0.79%)  above q50:    37 (0.026%)
+     loop : positions   46398  above q25:  13806 (29.76%)  above q50:  3588 (7.733%)
+     highest early maxima (trace:score): p16:+1.12 p26:+nan p50:+1.12 p8:+1.04 p52:+0.79 p78:+0.70 p18:+0.61 p42:+0.53 p4:+0.52 p34:+0.51
+
+=== layer 13 | T1 loop vs fresh | loop line-start score q25/q50/q75 = +1.39 +1.70 +1.85 | held-out-loop line starts above q50: 0.45
+     early: positions  364479  above q25:   7538 (2.07%)  above q50:  2639 (0.724%)
+     pre  : positions  141278  above q25:   1613 (1.14%)  above q50:   152 (0.108%)
+     loop : positions   46398  above q25:  15488 (33.38%)  above q50:  4576 (9.862%)
+     highest early maxima (trace:score): p16:+1.81 p26:+nan p50:+1.91 p8:+1.69 p52:+1.32 p4:+1.16 p38:+1.14 p18:+1.04 p34:+1.03 p48:+1.03
+
+=== layer 13 | T2 loop&dup vs fresh | loop line-start score q25/q50/q75 = +1.37 +1.82 +2.06 | held-out-loop line starts above q50: 0.45
+     early: positions  364479  above q25:   7611 (2.09%)  above q50:  3073 (0.843%)
+     pre  : positions  141278  above q25:   1678 (1.19%)  above q50:    93 (0.066%)
+     loop : positions   46398  above q25:  15729 (33.90%)  above q50:  4332 (9.337%)
+     highest early maxima (trace:score): p16:+2.11 p26:+nan p50:+1.99 p8:+1.78 p52:+1.38 p38:+1.18 p4:+1.11 p18:+1.09 p48:+1.04 p34:+0.96
+
+=== layer 13 | T3 loop&Wait-top vs fresh Wait | loop line-start score q25/q50/q75 = +0.97 +1.27 +1.39 | held-out-loop line starts above q50: 0.46
+     early: positions  364479  above q25:   6187 (1.70%)  above q50:   217 (0.060%)
+     pre  : positions  141278  above q25:    939 (0.66%)  above q50:    44 (0.031%)
+     loop : positions   46398  above q25:  12292 (26.49%)  above q50:  3251 (7.007%)
+     highest early maxima (trace:score): p16:+1.32 p26:+nan p50:+1.33 p8:+1.27 p52:+1.01 p78:+0.82 p18:+0.80 p48:+0.71 p46:+0.70 p4:+0.65
+
+=== layer 14 | T1 loop vs fresh | loop line-start score q25/q50/q75 = +1.62 +1.96 +2.12 | held-out-loop line starts above q50: 0.45
+     early: positions  364479  above q25:   8321 (2.28%)  above q50:  2843 (0.780%)
+     pre  : positions  141278  above q25:   2028 (1.44%)  above q50:   265 (0.188%)
+     loop : positions   46398  above q25:  18475 (39.82%)  above q50:  4542 (9.789%)
+     highest early maxima (trace:score): p16:+2.02 p26:+nan p50:+2.19 p8:+1.90 p52:+1.44 p4:+1.33 p48:+1.29 p34:+1.28 p38:+1.26 p22:+1.19
+
+=== layer 14 | T2 loop&dup vs fresh | loop line-start score q25/q50/q75 = +1.57 +2.09 +2.35 | held-out-loop line starts above q50: 0.45
+     early: positions  364479  above q25:   8027 (2.20%)  above q50:  3851 (1.057%)
+     pre  : positions  141278  above q25:   1953 (1.38%)  above q50:    97 (0.069%)
+     loop : positions   46398  above q25:  18342 (39.53%)  above q50:  4050 (8.729%)
+     highest early maxima (trace:score): p16:+2.34 p26:+nan p50:+2.23 p8:+1.99 p52:+1.50 p4:+1.28 p38:+1.27 p48:+1.20 p34:+1.14 p22:+1.08
+
+=== layer 14 | T3 loop&Wait-top vs fresh Wait | loop line-start score q25/q50/q75 = +1.08 +1.43 +1.57 | held-out-loop line starts above q50: 0.46
+     early: positions  364479  above q25:   6208 (1.70%)  above q50:    77 (0.021%)
+     pre  : positions  141278  above q25:    917 (0.65%)  above q50:    23 (0.016%)
+     loop : positions   46398  above q25:  13844 (29.84%)  above q50:  2896 (6.242%)
+     highest early maxima (trace:score): p16:+1.45 p26:+nan p50:+1.45 p8:+1.36 p52:+1.07 p78:+0.87 p82:+0.84 p48:+0.82 p18:+0.78 p46:+0.76
+
+=== layer 16 | T1 loop vs fresh | loop line-start score q25/q50/q75 = +4.00 +5.76 +6.24 | held-out-loop line starts above q50: 0.47
+     early: positions  364479  above q25:   2500 (0.69%)  above q50:   148 (0.041%)
+     pre  : positions  141278  above q25:   1083 (0.77%)  above q50:    87 (0.062%)
+     loop : positions   46398  above q25:   6874 (14.82%)  above q50:   560 (1.207%)
+     highest early maxima (trace:score): p16:+4.43 p26:+nan p50:+6.34 p8:+5.26 p100:+3.57 p64:+3.52 p34:+3.40 p52:+3.39 p58:+3.26 p4:+3.24
+
+=== layer 16 | T2 loop&dup vs fresh | loop line-start score q25/q50/q75 = +4.14 +6.75 +7.33 | held-out-loop line starts above q50: 0.47
+     early: positions  364479  above q25:   2548 (0.70%)  above q50:   119 (0.033%)
+     pre  : positions  141278  above q25:   1177 (0.83%)  above q50:    72 (0.051%)
+     loop : positions   46398  above q25:   7467 (16.09%)  above q50:   592 (1.276%)
+     highest early maxima (trace:score): p16:+4.86 p26:+nan p50:+7.23 p8:+6.15 p52:+4.03 p100:+3.99 p34:+3.97 p64:+3.81 p58:+3.61 p4:+3.54
+
+=== layer 16 | T3 loop&Wait-top vs fresh Wait | loop line-start score q25/q50/q75 = +2.53 +4.28 +4.60 | held-out-loop line starts above q50: 0.48
+     early: positions  364479  above q25:   2317 (0.64%)  above q50:    62 (0.017%)
+     pre  : positions  141278  above q25:    987 (0.70%)  above q50:    33 (0.023%)
+     loop : positions   46398  above q25:   7139 (15.39%)  above q50:   686 (1.479%)
+     highest early maxima (trace:score): p8:+4.00 p26:+nan p50:+4.59 p52:+2.80 p16:+2.66 p34:+2.65 p100:+2.45 p58:+2.25 p64:+2.20 p4:+2.20

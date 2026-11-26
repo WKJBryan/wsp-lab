@@ -1,0 +1,88 @@
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:  21%|██        | 98/473 [00:00<00:00, 977.98it/s]Loading weights:  59%|█████▊    | 277/473 [00:00<00:00, 1440.95it/s]Loading weights: 100%|██████████| 473/473 [00:00<00:00, 1643.96it/s]
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:  24%|██▍       | 115/473 [00:00<00:00, 1148.80it/s]Loading weights:  63%|██████▎   | 300/473 [00:00<00:00, 1548.29it/s]Loading weights: 100%|██████████| 473/473 [00:00<00:00, 1741.22it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+
+== problem statements (must be unchanged)
+  p0: max |dlogit| 0.2656
+       base  : 'Here':23.6(0.57) 'The':23.2(0.39) 'Let':20.9(0.04) [</think> 15.8]
+       edited: 'Here':23.5(0.59) 'The':23.0(0.36) 'Let':20.9(0.04) [</think> 15.8]
+  p2: max |dlogit| 0.2812
+       base  : 'The':23.9(0.58) 'Here':23.5(0.40) 'Thinking':20.0(0.01) [</think> 16.5]
+       edited: 'The':23.9(0.58) 'Here':23.5(0.40) 'Thinking':20.0(0.01) [</think> 16.6]
+  p4: max |dlogit| 0.2461
+       base  : 'The':25.0(0.93) 'Here':22.4(0.07) 'Let':17.4(0.00) [</think> 15.1]
+       edited: 'The':25.0(0.93) 'Here':22.4(0.07) 'Let':17.4(0.00) [</think> 15.1]
+  p6: max |dlogit| 0.2734
+       base  : 'Here':23.1(0.57) 'The':22.8(0.39) 'Thinking':20.0(0.03) [</think> 16.6]
+       edited: 'Here':23.1(0.60) 'The':22.6(0.37) 'Thinking':20.0(0.03) [</think> 16.8]
+  p8: max |dlogit| 0.2812
+       base  : 'Here':24.4(0.85) 'The':22.6(0.15) 'Let':18.5(0.00) [</think> 15.8]
+       edited: 'Here':24.2(0.83) 'The':22.6(0.16) 'Let':18.5(0.00) [</think> 15.8]
+  p10: max |dlogit| 0.2500
+       base  : 'The':23.8(0.56) 'Here':23.5(0.44) 'Let':18.0(0.00) [</think> 16.5]
+       edited: 'The':23.8(0.56) 'Here':23.5(0.44) 'Let':18.0(0.00) [</think> 16.5]
+
+== natural closure positions (must be unchanged)
+  p28 tok 4806: max |dlogit| 0.1562
+       base  : '   ':26.6(0.81) '</think>':24.5(0.10) '    \n':24.5(0.10) [</think> 24.5]
+       edited: '   ':26.6(0.82) '    \n':24.5(0.10) '</think>':24.4(0.09) [</think> 24.4]
+  p66 tok 2274: max |dlogit| 0.1875
+       base  : '   ':24.9(0.39) '</think>':24.6(0.30) '       ':24.6(0.30) [</think> 24.6]
+       edited: '   ':24.9(0.40) '       ':24.6(0.32) '</think>':24.5(0.28) [</think> 24.5]
+  p124 tok 1547: max |dlogit| 0.1250
+       base  : '   ':25.1(0.81) '</think>':23.1(0.11) '    \n':22.8(0.08) [</think> 23.1]
+       edited: '   ':25.1(0.81) '</think>':23.1(0.11) '    \n':22.8(0.08) [</think> 23.1]
+
+== fresh line ends (must be unchanged)
+  p28 tok 2721: max |dlogit| 0.1719
+       base  : '\n':26.5(0.98) ' ':21.5(0.01) ' There':21.0(0.00) [</think> 2.5]
+       edited: '\n':26.5(0.98) ' ':21.5(0.01) ' There':21.1(0.00) [</think> 2.5]
+  p66 tok 1278: max |dlogit| 0.1719
+       base  : '\n':29.5(1.00) ' Note':20.2(0.00) ' Convert':19.9(0.00) [</think> 6.1]
+       edited: '\n':29.5(1.00) ' Note':20.2(0.00) ' Convert':19.9(0.00) [</think> 6.1]
+  p124 tok 885: max |dlogit| 0.1484
+       base  : '\n':28.0(1.00) ' This':20.6(0.00) ' Note':19.8(0.00) [</think> 6.5]
+       edited: '\n':27.9(1.00) ' This':20.6(0.00) ' Note':19.8(0.00) [</think> 6.5]
+
+== in-loop flip positions (edited model should now prefer </think>)
+  p0 tok 7573: max |dlogit| 15.6250
+       base  : '   ':33.5(1.00) '</think>':23.1(0.00) '    \n':23.1(0.00) [</think> 23.1]
+       edited: '</think>':38.8(1.00) '   ':28.4(0.00) '    \n':21.2(0.00) [</think> 38.8]
+       edited, after </think> + newlines: 'The':25.4(0.51) 'Let':24.8(0.27) 'To':24.4(0.19) [</think> 13.1]
+  p2 tok 4045: max |dlogit| 14.3750
+       base  : '   ':31.9(1.00) '</think>':21.6(0.00) '    \n':21.0(0.00) [</think> 21.6]
+       edited: '</think>':36.0(1.00) '   ':28.1(0.00) '    \n':20.4(0.00) [</think> 36.0]
+       edited, after </think> + newlines: 'To':24.4(0.47) 'The':24.4(0.47) '1':20.8(0.01) [</think> 13.4]
+  p4 tok 5625: max |dlogit| 15.0000
+       base  : '                   ':28.4(0.99) '   ':23.0(0.00) '           ':19.6(0.00) [</think> 18.5]
+       edited: '</think>':33.5(1.00) '                   ':21.5(0.00) '    \n':18.5(0.00) [</think> 33.5]
+       edited, after </think> + newlines: 'The':26.4(0.79) 'Based':24.8(0.16) 'To':23.4(0.04) [</think> 12.1]
+  p14 tok 4769: max |dlogit| 27.3125
+       base  : ' *':37.8(1.00) ' •':20.4(0.00) ' Wait':19.4(0.00) [</think> 5.7]
+       edited: '</think>':33.0(1.00) '*':20.9(0.00) '   ':19.8(0.00) [</think> 33.0]
+       edited, after </think> + newlines: 'To':25.1(0.72) 'The':23.8(0.18) 'Let':22.4(0.05) [</think> 12.1]
+  p20 tok 6615: max |dlogit| 15.7500
+       base  : '   ':32.2(1.00) '</think>':22.8(0.00) '    \n':20.6(0.00) [</think> 22.8]
+       edited: '</think>':38.5(1.00) '   ':27.2(0.00) '    \n':19.6(0.00) [</think> 38.5]
+       edited, after </think> + newlines: 'The':25.2(0.52) 'To':25.0(0.40) 'Let':22.8(0.04) [</think> 12.9]
+  p24 tok 7593: max |dlogit| 28.5312
+       base  : ' *':35.5(1.00) ' •':19.1(0.00) ' Wait':17.8(0.00) [</think> 6.5]
+       edited: '</think>':35.0(1.00) '*':24.4(0.00) '   ':22.8(0.00) [</think> 35.0]
+       edited, after </think> + newlines: 'To':23.9(0.43) 'The':23.9(0.43) 'Let':22.1(0.07) [</think> 13.8]
+  p30 tok 6549: max |dlogit| 13.7500
+       base  : '   ':33.5(1.00) '</think>':23.5(0.00) '    \n':20.6(0.00) [</think> 23.5]
+       edited: '</think>':37.2(1.00) '   ':28.5(0.00) '    \n':19.9(0.00) [</think> 37.2]
+       edited, after </think> + newlines: 'To':26.2(0.79) 'The':24.9(0.20) 'We':20.4(0.00) [</think> 13.1]
+  p32 tok 6783: max |dlogit| 12.0000
+       base  : '   ':31.6(1.00) '</think>':22.0(0.00) '    \n':21.6(0.00) [</think> 22.0]
+       edited: '</think>':34.0(0.99) '   ':29.2(0.01) '    \n':21.5(0.00) [</think> 34.0]
+       edited, after </think> + newlines: 'The':24.8(0.62) 'To':23.5(0.18) 'Let':23.1(0.12) [</think> 13.2]
+  p36 tok 10155: max |dlogit| 16.0000
+       base  : 'Wait':28.4(0.95) 'Okay':25.2(0.04) 'I':22.8(0.00) [</think> 18.5]
+       edited: '</think>':34.5(1.00) 'Wait':25.6(0.00) 'Let':21.9(0.00) [</think> 34.5]
+       edited, after </think> + newlines: 'The':25.9(0.65) 'Let':24.9(0.24) 'To':23.9(0.09) [</think> 12.4]
+  p38 tok 7803: max |dlogit| 19.8125
+       base  : '\n':35.2(0.98) '\n\n':31.1(0.02) ' Wait':20.2(0.00) [</think> 8.1]
+       edited: '\n':29.2(0.77) '</think>':27.9(0.20) '\n\n':26.0(0.03) [</think> 27.9]
+       edited, after </think> + newlines: 'The':23.6(0.60) 'To':22.1(0.13) 'Let':22.0(0.12) [</think> 13.2]

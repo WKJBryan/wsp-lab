@@ -1,0 +1,30 @@
+enumeration-direction max over the FINAL phase per trace:
+  ended cleanly (84 traces): p25:+10 p19:-8 p84:-13 p114:-36 p7:-51 p34:-55 p126:-57 p43:-60 p55:-63 p56:-63 p75:-71 p104:-78
+  ran to cap   (36 traces): p48:+65 p81:+65 p116:+62 p89:+62 p9:+61 p93:+59 p106:+59 p110:+56
+  ended cleanly: traces with max >= +15: 0, >= +25: 0 | capped: >= +15: 33/36
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:   0%|          | 1/473 [00:00<02:43,  2.88it/s]Loading weights:   8%|▊         | 39/473 [00:00<00:03, 112.26it/s]Loading weights:  16%|█▌        | 76/473 [00:00<00:02, 187.46it/s]Loading weights:  24%|██▍       | 114/473 [00:00<00:01, 242.87it/s]Loading weights:  31%|███       | 147/473 [00:00<00:01, 263.66it/s]Loading weights:  39%|███▉      | 185/473 [00:00<00:00, 293.15it/s]Loading weights:  47%|████▋     | 224/473 [00:00<00:00, 320.47it/s]Loading weights:  55%|█████▍    | 259/473 [00:01<00:00, 323.47it/s]Loading weights:  64%|██████▍   | 302/473 [00:01<00:00, 353.63it/s]Loading weights:  75%|███████▌  | 357/473 [00:01<00:00, 410.66it/s]Loading weights:  93%|█████████▎| 438/473 [00:01<00:00, 528.45it/s]Loading weights: 100%|██████████| 473/473 [00:01<00:00, 331.66it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+
+canonical-ending path tokens after the line end: ['\n\n', '\\', 'boxed', '{']
+  p0: ...' not divisible by \\( x^3 \\).\n' + "\n\n" -> 'Wait':0.40 'Let':0.35 'The':0.06 'I':0.04 '\\':0.03
+        then after "\n\n\": 'boxed':0.30 '(\\':0.13 'end':0.08 '\n':0.07
+        then after "...\boxed": '{':0.69 '{x':0.17 '{\\':0.08 '{}':0.02
+  p4: ...' $x$ is plotted against $y$.\n' + "\n\n" -> 'The':0.38 'Wait':0.23 'Let':0.20 '**':0.02 '\\':0.02
+        then after "\n\n\": 'boxed':0.87 'begin':0.03 '\n':0.02 'text':0.02
+        then after "...\boxed": '{':0.73 '{-':0.14 '{\\':0.05 '{}':0.04
+  p9: ...' chord perpendicular to the y-axis? No.\n' + "\n\n" -> 'Let':0.34 'Wait':0.27 'The':0.21 '\\':0.04 'I':0.02
+        then after "\n\n\": 'boxed':0.55 'begin':0.10 '\n':0.07 'text':0.06
+        then after "...\boxed": '{':0.82 '{\\':0.08 '{}':0.05 '{x':0.02
+  p11: ...'ies 3^3=27$.\n' + "\n\n" -> 'Wait':0.39 'Let':0.18 'The':0.16 'I':0.10 '\\':0.02
+        then after "\n\n\": 'boxed':0.87 '\n':0.02 'begin':0.02 'end':0.02
+        then after "...\boxed": '{':0.85 '{n':0.05 '{}':0.04 '{\\':0.04
+  p12: ...'5 + 1) + 1$.\n' + "\n\n" -> 'Let':0.41 'Wait':0.15 '\\':0.15 'The':0.10 'I':0.02
+        then after "\n\n\": 'boxed':0.81 'begin':0.07 'text':0.02 'end':0.01
+        then after "...\boxed": '{x':0.84 '{':0.11 '{\\':0.02 '{}':0.01
+  p20: ...', 5\\pi/2]$.\n' + "\n\n" -> 'Let':0.31 'Wait':0.21 'The':0.17 '\\':0.07 'To':0.03
+        then after "\n\n\": 'boxed':0.86 'sin':0.03 'begin':0.02 'text':0.01
+        then after "...\boxed": '{\\':0.51 '{':0.45 '{-':0.01 '{}':0.00
+
+at 24 final-phase runaway positions (line ends): natural P of each canonical token after a forced paragraph break: '\\':0.06 'boxed':0.72 '{':0.78
+per-trace product along the path: median 0.031, share >= 0.25: 0.00, >= 0.5: 0.00

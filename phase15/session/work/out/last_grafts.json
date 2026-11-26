@@ -1,0 +1,24 @@
+[
+ {
+  "name": "verbatim-repetition closer (g1)",
+  "layer": 14,
+  "neuron": 1439,
+  "dir_file": "/home/user/wsp14/work/out/graft_dirs_L14.pt",
+  "dir_key": "d",
+  "theta": 425.0,
+  "s": 20.0,
+  "c": 5.5,
+  "token_id": 248069
+ },
+ {
+  "name": "runaway-enumeration closer (n4)",
+  "layer": 14,
+  "neuron": 2910,
+  "dir_file": "/home/user/wsp14/work/out/enum_dir_L14.pt",
+  "dir_key": "d_enum",
+  "theta": 5.0,
+  "s": 10.0,
+  "c": 2.0,
+  "token_id": 248069
+ }
+]

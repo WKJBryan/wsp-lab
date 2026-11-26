@@ -5,6 +5,16 @@
 are unchanged) · **Model:** Qwen3.5-0.8B · Editor that ran: `glm-flash-editor` (GLM-5.3-Flash),
 the protocol's fallback, blind; 15 passes available, 2 used.
 
+> **Note 2026-11-27 — rerun with a stronger blind editor.** Phase 15 reran this experiment with a
+> stronger blind editor (GLM-5.4) under the same rules, briefing, practice set and budget. Its edit
+> scores 265 of 500 (53.0%) under the repository's question — level with the published edit
+> (REACHES IT, the protocol's word for within 4.0 points: the difference is −1.2 points, 95%
+> interval −5.0 to 2.6) — and is above it under the reference question (280 of 500, 56.0%, against
+> 258, 51.6%). Read with its limits: one session, one seed; the smaller budget of phase 14 (15
+> passes of 128 problems, not 50 of up to 512), of which it used 4; an edit of a different
+> mechanism (a conditional loop-breaker in layer 14) that still leaves a sixth of the problems
+> without an answer. Record: `phase15/results.md`.
+
 > **What was registered, and how the run deviated.** The protocol fixed, before the session: one
 > blind editor held to the original authors' rules (enforced by the edit checker, `save_edit.py`),
 > practising in distribution (128 MATH training problems per pass, the boxed question, thinking

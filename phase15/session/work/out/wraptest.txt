@@ -1,0 +1,48 @@
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:   0%|          | 1/473 [00:00<02:50,  2.77it/s]Loading weights:   9%|▊         | 41/473 [00:00<00:03, 113.74it/s]Loading weights:  17%|█▋        | 79/473 [00:00<00:02, 187.18it/s]Loading weights:  25%|██▌       | 119/473 [00:00<00:01, 245.55it/s]Loading weights:  32%|███▏      | 152/473 [00:00<00:01, 269.07it/s]Loading weights:  40%|███▉      | 189/473 [00:00<00:00, 298.41it/s]Loading weights:  48%|████▊     | 226/473 [00:00<00:00, 314.78it/s]Loading weights:  56%|█████▌    | 264/473 [00:01<00:00, 333.66it/s]Loading weights:  64%|██████▍   | 305/473 [00:01<00:00, 352.04it/s]Loading weights:  76%|███████▌  | 359/473 [00:01<00:00, 404.99it/s]Loading weights:  94%|█████████▍| 445/473 [00:01<00:00, 538.32it/s]Loading weights: 100%|██████████| 473/473 [00:01<00:00, 328.98it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+tokenisations:
+   ' Wait'                                  -> [' Wait']
+   " I'll"                                  -> [' I', "'ll"]
+   ' I'                                     -> [' I']
+   ' I will'                                -> [' I', ' will']
+   ' Therefore'                             -> [' Therefore']
+   ' Thus'                                  -> [' Thus']
+   ' The final answer is'                   -> [' The', ' final', ' answer', ' is']
+   ' Final'                                 -> [' Final']
+   ' So'                                    -> [' So']
+   ' Okay'                                  -> [' Okay']
+   ' Let'                                   -> [' Let']
+   ' So the final answer is'                -> [' So', ' the', ' final', ' answer', ' is']
+   ' The'                                   -> [' The']
+   " I'll write out the solution now.\n"    -> [' I', "'ll", ' write', ' out', ' the', ' solution', ' now', '.', '\n']
+   ' I will write the solution.\n'          -> [' I', ' will', ' write', ' the', ' solution', '.', '\n']
+   " I'll generate the response.\n"         -> [' I', "'ll", ' generate', ' the', ' response', '.', '\n']
+   ' I will start the response now.\n'      -> [' I', ' will', ' start', ' the', ' response', ' now', '.', '\n']
+   ' Therefore, the final answer is'        -> [' Therefore', ',', ' the', ' final', ' answer', ' is']
+   ' Thus, the final answer is'             -> [' Thus', ',', ' the', ' final', ' answer', ' is']
+   " Let's write out the response.\n"       -> [' Let', "'s", ' write', ' out', ' the', ' response', '.', '\n']
+
+24 in-loop line-start positions from 24 traces
+   after ' Wait'                 : ',':0.99 '.':0.01 '...':0.00 ' $':0.00 ' $\\':0.00 '!':0.00 ' this':0.00 ' I':0.00 ' the':0.00
+   after " I'll"                 : ' assume':0.19 ' just':0.13 ' stick':0.10 ' stop':0.09 ' re':0.09 ' check':0.08 ' use':0.04 ' write':0.04 ' try':0.04
+   after ' I'                    : ' think':0.29 ' am':0.21 "'m":0.12 ' need':0.09 ' will':0.04 "'ve":0.03 ' suspect':0.03 "'ll":0.02 ' must':0.01
+   after ' I will'               : ' assume':0.27 ' re':0.13 ' check':0.06 ' stick':0.06 ' use':0.06 ' write':0.05 ' just':0.05 ' stop':0.04 ' calculate':0.03
+   after ' Therefore'            : ',':0.72 ' $':0.20 ' $\\':0.05 ' the':0.01 ':':0.01 ' ':0.00 ' it':0.00 ' I':0.00 ' terms':0.00
+   after ' Thus'                 : ',':0.50 ' $':0.35 ' $\\':0.08 ' the':0.03 ' ':0.01 ':':0.00 ' we':0.00 ' it':0.00 ' I':0.00
+   after ' The final answer is'  : ' ':0.24 ' $':0.15 ' $\\':0.15 ' likely':0.13 ' a':0.05 ' the':0.04 ' asking':0.03 ' just':0.02 ' usually':0.02
+   after ' Final'                : ' check':0.60 ' conclusion':0.06 ' answer':0.04 ' Answer':0.04 ' guess':0.03 ' calculation':0.02 ' thought':0.01 ' decision':0.01 ' verification':0.01
+   after ' So'                   : ' $':0.48 ' the':0.13 ',':0.11 ' $\\':0.11 ' we':0.03 ' I':0.02 ' ':0.02 ' if':0.02 ' it':0.01
+   after ' Okay'                 : ',':0.96 '.':0.04 ' so':0.00 ' wait':0.00 ' let':0.00 ' I':0.00 '...':0.00 '!':0.00 ' now':0.00
+   after ' Let'                  : "'s":0.84 ' me':0.15 ' $':0.01 ' $\\':0.00 ' re':0.00 ' the':0.00 ' check':0.00 ' my':0.00 ' vector':0.00
+   after ' So the final answer is': ' ':0.27 ' $':0.17 ' $\\':0.16 ' likely':0.10 ' the':0.05 ' just':0.03 ':':0.03 ' simply':0.02 ' a':0.02
+   after ' The'                  : ' problem':0.08 ' term':0.06 ' question':0.05 ' set':0.04 ' interval':0.04 ' prompt':0.04 ' angle':0.03 ' condition':0.03 ' matrix':0.03
+
+P(</think>) after a full phrase (+ as written), averaged over the positions; also mean log-prob of the phrase per token
+   " I'll write out the solution now.\n"   : P(</think>) right after 0.029; after an extra newline 0.012
+   ' I will write the solution.\n'         : P(</think>) right after 0.008; after an extra newline 0.011
+   " I'll generate the response.\n"        : P(</think>) right after 0.053; after an extra newline 0.017
+   ' I will start the response now.\n'     : P(</think>) right after 0.126; after an extra newline 0.026
+   ' Therefore, the final answer is'       : P(</think>) right after 0.000; after an extra newline 0.029
+   ' Thus, the final answer is'            : P(</think>) right after 0.000; after an extra newline 0.029
+   " Let's write out the response.\n"      : P(</think>) right after 0.005; after an extra newline 0.011

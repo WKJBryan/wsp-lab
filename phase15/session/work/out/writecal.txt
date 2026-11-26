@@ -1,0 +1,25 @@
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:   0%|          | 1/473 [00:00<02:50,  2.77it/s]Loading weights:   8%|▊         | 40/473 [00:00<00:03, 111.54it/s]Loading weights:  16%|█▋        | 78/473 [00:00<00:02, 187.11it/s]Loading weights:  24%|██▍       | 113/473 [00:00<00:01, 232.14it/s]Loading weights:  31%|███▏      | 148/473 [00:00<00:01, 263.96it/s]Loading weights:  40%|███▉      | 187/473 [00:00<00:00, 297.22it/s]Loading weights:  48%|████▊     | 226/473 [00:00<00:00, 318.37it/s]Loading weights:  56%|█████▌    | 263/473 [00:01<00:00, 332.39it/s]Loading weights:  64%|██████▍   | 304/473 [00:01<00:00, 354.69it/s]Loading weights:  77%|███████▋  | 362/473 [00:01<00:00, 415.01it/s]Loading weights:  94%|█████████▍| 446/473 [00:01<00:00, 535.76it/s]Loading weights: 100%|██████████| 473/473 [00:01<00:00, 329.12it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+target token '</think>'; |scale*E| = 2.49
+16 in-loop positions
+p0 tok 8093: line-end     natural top '\n':36.8 / '\n\n':28.0  target 7.8  |  L13: +6.0 +13.7 +27.2 +37.2 +52.5 +62.2 +68.7 |  L22: +10.2 +19.5 +33.7 +48.7 +60.7 +67.7 +70.7 |
+p0 tok 8095: after-newline natural top ' So':31.0 / ' Wait':24.5  target 6.3  |  L13: +6.9 +14.8 +25.5 +38.0 +54.0 +63.7 +70.2 |  L22: +9.4 +18.1 +32.2 +49.0 +61.7 +68.7 +71.7 |
+p2 tok 4451: line-end     natural top '\n':34.2 / '\n\n':30.4  target 8.1  |  L13: +5.4 +10.3 +21.8 +34.7 +51.2 +61.4 +67.9 |  L22: +10.2 +19.3 +33.4 +47.9 +59.9 +66.9 +69.9 |
+p2 tok 4453: after-newline natural top ' *':34.2 / ' Wait':19.2  target 7.5  |  L13: +9.8 +18.7 +25.5 +35.5 +51.3 +61.5 +68.5 |  L22: +9.5 +18.2 +32.0 +48.8 +60.5 +67.0 +70.5 |
+p4 tok 5913: line-end     natural top '\n':37.8 / '\n\n':30.5  target 7.8  |  L13: +6.1 +12.6 +24.7 +36.5 +53.0 +61.7 +68.2 |  L22: +11.0 +20.8 +35.5 +50.0 +61.2 +67.2 +70.2 |
+p4 tok 5915: after-newline natural top ' *':37.0 / ' •':19.9  target 5.8  |  L13: +9.8 +18.4 +26.5 +38.2 +54.5 +63.8 +70.2 |  L22: +10.6 +20.2 +35.0 +51.2 +62.8 +68.8 +72.2 |
+p6 tok 7848: line-end     natural top '\n':39.0 / '\n\n':23.4  target 9.5  |  L13: +6.1 +12.4 +24.5 +35.5 +50.8 +60.5 +67.0 |  L22: +10.5 +19.6 +33.2 +47.8 +59.0 +65.5 +68.5 |
+p6 tok 7850: after-newline natural top '4':34.8 / '9':21.8  target 10.5  |  L13: +4.9 +9.9 +19.5 +32.5 +49.5 +59.5 +66.0 |  L22: +10.6 +19.8 +32.5 +46.2 +58.0 +64.5 +67.5 |
+p12 tok 3537: after-newline natural top ' *':32.5 / ' Let':19.0  target 8.6  |  L13: +8.3 +16.8 +24.9 +36.2 +50.7 +60.9 +67.9 |  L22: +9.2 +17.6 +30.9 +47.2 +58.9 +66.4 +69.4 |
+p12 tok 3596: line-end     natural top '\n':32.5 / '\n\n':30.1  target 9.2  |  L13: +5.2 +11.5 +22.4 +34.8 +50.5 +60.2 +67.2 |  L22: +9.5 +18.1 +31.8 +46.8 +59.2 +66.2 +69.2 |
+p14 tok 5250: line-end     natural top '\n':33.2 / '\n\n':28.2  target 8.6  |  L13: +5.2 +10.9 +23.1 +33.4 +51.4 +61.4 +67.9 |  L22: +9.9 +18.8 +32.9 +48.2 +60.4 +66.9 +69.4 |
+p14 tok 5252: after-newline natural top ' *':36.0 / ' •':19.2  target 6.5  |  L13: +9.4 +18.3 +25.4 +35.8 +53.0 +63.5 +70.0 |  L22: +10.2 +19.3 +33.5 +49.8 +61.5 +68.5 +71.5 |
+p20 tok 7166: line-end     natural top '\n':36.0 / '\n\n':29.5  target 8.9  |  L13: +5.7 +11.9 +23.6 +34.9 +51.4 +61.1 +67.6 |  L22: +10.6 +20.0 +34.1 +48.4 +60.1 +66.6 +69.1 |
+p20 tok 7168: after-newline natural top ' *':36.8 / ' Wait':18.9  target 7.6  |  L13: +10.4 +18.8 +25.6 +36.1 +52.1 +61.9 +68.9 |  L22: +9.6 +18.4 +32.1 +48.9 +60.4 +66.9 +70.4 |
+p24 tok 7927: line-end     natural top '\n':36.5 / '\n\n':29.2  target 6.4  |  L13: +5.9 +12.5 +25.1 +37.1 +53.4 +63.1 +70.1 |  L22: +10.4 +19.8 +34.6 +49.9 +62.1 +68.6 +71.6 |
+p24 tok 7929: after-newline natural top ' *':36.2 / ' •':19.6  target 6.6  |  L13: +8.7 +18.1 +25.7 +36.7 +52.7 +62.9 +69.9 |  L22: +9.3 +17.8 +31.7 +48.9 +60.9 +67.9 +71.4 |
+
+mean gain in target logit per unit c (last c):
+  layer 13: mean dLogit at each c: +7.1 +14.3 +24.4 +35.8 +52.0 +61.8 +68.5   (per unit c at c=1.0: 7.11)
+  layer 22: mean dLogit at each c: +10.0 +19.1 +33.1 +48.6 +60.5 +67.2 +70.2   (per unit c at c=1.0: 10.05)

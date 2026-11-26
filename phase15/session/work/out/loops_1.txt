@@ -1,0 +1,129 @@
+id   lvl  gen_tok  finish  loop_start(frac)  period  pre-loop Waits | first 60 chars of the cycle
+p0   4   32768  length    7179 (0.22)     45     49 | '^3$.\n    Wait, $x^{2018} = x^{2015} \\cdot x^3$.\n    So $x^{2'
+p1   2   32768  length    8438 (0.26)     17     70 | '.\n    Wait, $728$ is closer to 729'
+p2   1   32768  length    3561 (0.11)     37     18 | ' meant $\\lfloor0.999\\rfloor + \\lceil2.001\\rceil$?\n    *   Wa'
+p3   4   32768  length    7674 (0.23)     34     81 | '.\nWait, if $k=6$, $x$ exponent is 2.\nWait, if $k=6$, $y$ exp'
+p4   5   32768  length    4271 (0.13)    129     88 | '\n                    *   Wait, maybe the equation is $x = ay'
+p5   3   32768  length    8165 (0.25)     41     62 | '\n                    *   Wait, I see 7 even pairs.\n         '
+p6   2   32768  length    6959 (0.21)    226    107 | '$.\nWait, $42 + 5 = 47$.\n$47 - 12 = 35$.\nWait, $48 - 12 = 36$'
+p7   3   32768  length    7544 (0.23)     28     39 | '$ works.\n                                        *   Wait, $'
+p8   5   32768  length   11055 (0.34)    260     99 | ' the user meant "greater than 65" but actually meant "greate'
+p9   5   32768  length    6155 (0.19)     15     73 | '.\nWait, if the altitude is vertical, then the base is horizo'
+p10  4   32768  length   14424 (0.44)     14     52 | '\n    $3737 = 3737$.'
+p11  5   32768  length    3344 (0.10)     15     33 | ' a perfect power of an odd number.\nWait, $n$ is'
+p12  5   32768  length    2685 (0.08)     61      9 | "? No.\n    *   Let's try to factor $x^{10} + x^5 + 1$ using t"
+p13  3   32768  length   17409 (0.53)    108    104 | '.\nWait, but I need to check if $r_1^3$ is rational.\n$r_1^3 ='
+p14  3   32768  length    4315 (0.13)     91     63 | '$.\n                    *   Wait, $T(6) > T(3)$ and $T(6) > T'
+p15  4   32768  length    8711 (0.27)    185    116 | '$.\n        Wait, $c^2 = a^2+b^2+c^2 - 40$.\n        This impl'
+p16  1   32768  length  no exact period in last 1200 tokens
+p17  4   32768  length    4703 (0.14)     38     36 | '.\n                        *   Wait, if I have a sequence whe'
+p18  3   32768  length   13816 (0.42)    110     86 | '    Wait, $f(x) = -x$ for $x < 0$ is a solution?\n    $f(x+f('
+p19  4   32768  length    7860 (0.24)     16    115 | '\n            Wait, $\\tan(205^\\circ)$ is positive.'
+p20  4   32768  length    6254 (0.19)     23     78 | ', \\pi]$.\n    *   Wait, $\\sin x$ is positive in $[\\pi/2'
+p21  2   32768  length   17229 (0.53)    155    273 | "\n    *   Wait, I'm just repeating myself.\n    *   Let's chec"
+p22  1   32768  length   10450 (0.32)     32    106 | ' on the y-axis.\n    *   Wait, if $C$ and $B$ are symmetric w'
+p23  3   32768  length    9581 (0.29)     30    108 | ' $f(1) = f(1)$.\n    Wait, $f(1) = 1^2 f(1)$ means'
+p24  3   32768  length    7011 (0.21)     48     50 | '.\n    *   Wait, if $xy$ is divisible by 9, it is divisible b'
+p25  5   32768  length    7445 (0.23)     14     97 | '\nWait, $E(1) = 125$.'
+p26  1   32768  length    2305 (0.07)     19      9 | '$.\n    $86400 / 2 = 43200'
+p27  3   16567  stop    no exact period in last 1200 tokens
+p28  2    5192  stop    no exact period in last 1200 tokens
+p29  4   32768  length    6855 (0.21)     23     46 | ' $x < -3$, then $x$ can be $-4$.\n    *   Wait, if'
+p30  1   32768  length    6184 (0.19)     26     66 | '$.\n    *   Wait, $\\cos(30^\\circ) = \\frac{\\sqrt{3}}{2}'
+p31  2   32768  length    5750 (0.18)    132     51 | " check $d_1=6, d_2=6, d_3=6$.\n    Wait, I'm checking if I mi"
+p32  2   32768  length    6163 (0.19)     66     47 | ' $E$ and $L$ cannot be disjoint.\n    *   Wait, if $E$ and $L'
+p33  2   32768  length   11627 (0.35)     98     83 | 'sqrt{3}$.\n    Wait, $-1$ vs $1$.\n    $-1 < 1$.\n    So $-1$ c'
+p34  4   32768  length   17353 (0.53)    142     64 | '.\n                                            - But the ques'
+p35  2   32768  length    3073 (0.09)     28     23 | ' 0.2828282828...$\n                                    *   Wa'
+p36  5   32768  length    9702 (0.30)     54     72 | '121 a_1 - 5$.\nWait, $121 a_1 - 25$ is $121 a_1 - 25$.\nWait, '
+p37  2   32768  length    7649 (0.23)    319     72 | '.\n    *   Wait, I need to check if 15 divides 75.\n    *   Wa'
+p38  3   32768  length    7210 (0.22)     31     91 | '0)$.\nWait, if $G$ is at $(17,20)$, then $G$ is at $(17,2'
+p39  4   32768  length    4311 (0.13)     76     42 | '.\n    *   Wait.\n    *   Is it possible that the question imp'
+p40  3   32768  length   14793 (0.45)     33     89 | ' 72$.\n        Wait, $2\\sqrt{6} \\cdot 6\\sqrt{6} = 12 \\cdot 6 '
+p41  2   32768  length    6366 (0.19)     19     54 | '\n    *   Wait, $-70$ is smaller than $-54$.'
+p42  2   32768  length    7945 (0.24)     39     97 | '\n                Wait, $AC$ is adjacent to $A$.\n            '
+p43  5   32768  length    4310 (0.13)     13     51 | ', side $AC$ is opposite to B?\n    Wait'
+p44  4   32768  length    7345 (0.22)    104     68 | 'pi/6) = \\frac{\\sqrt{3}}{2}$.\nWait, $\\cos(2\\pi - 3\\pi/6) = \\c'
+p45  3   32768  length    6620 (0.20)     34     65 | '.\nWait, if the sum of sizes is 39, then the sum of sizes is '
+p46  3   32768  length   23163 (0.71)     32    128 | 'cos \\theta$.\n    Wait, $5\\cos \\theta - 4\\cos \\theta = 5\\cos '
+p47  5   32768  length    2908 (0.09)     73     10 | '.\n                            *   Wait, if he skips 3 consec'
+p48  5   32768  length   12695 (0.39)     19    143 | '.\nWait, $V_1$ to $V_6$ distance is 2'
+p49  4   32768  length   10207 (0.31)     42     78 | '\n    $(-\\infty, -5) \\cup (-5, 5)$ is the set of all $x < 5$ '
+p50  2   32768  length   13967 (0.43)     28    322 | ' then the digits are $1, 5, 4`.\n    *   Wait, if the string '
+p51  2   32768  length    2327 (0.07)     11     22 | ' $-c$ is real.\n    Wait,'
+p52  5   32768  length   10443 (0.32)     57     44 | "\n                    *   Wait, I'm going to check if there's"
+p53  3   32768  length    8065 (0.25)     84     64 | '\n    *   Wait, $x=-2$ is NOT in $(-\\infty, -3]$.\n    *   So '
+p54  5   32768  length    3527 (0.11)     35     32 | '\nWait, $F_2$ is in denominator of $T_2$?\nWait, $F_2$ is in n'
+p55  4   32768  length    3433 (0.10)     13     57 | '$.\nWait, $m^{-1} = 1/m'
+p56  5   32768  length    6293 (0.19)     24     70 | ' $a^2 + b^2 - c^2 = 2ab \\cos C$.\n            Wait,'
+p57  3   32768  length    1999 (0.06)      6      9 | '692307'
+p58  2   32768  length   11967 (0.37)     23     69 | '1, 0)$.\n    Wait, $P_3 - P_2 = (0, '
+p59  1   32768  length    4748 (0.14)     65     40 | '$.\n                                                         '
+p60  5   32768  length    8225 (0.25)    128     54 | " the set of digits.\n            *   Let's assume the constra"
+p61  4   32768  length   14504 (0.44)     36    125 | '.\nWait, $DA$ is vertical.\nWait, $AB$ is horizontal.\nWait, $B'
+p62  5   32768  length    7601 (0.23)     17     88 | '$.\nWait, $3pq^2$ is $3p q^2'
+p63  4   32768  length    6932 (0.21)     36     38 | '200080008 = 200000000 + 80000000$? No.\n$'
+p64  3   32768  length  no exact period in last 1200 tokens
+p65  4   32768  length   11411 (0.35)     49    103 | "\n    Wait, if $x(t)$ is not periodic, it can't intersect its"
+p66  4    2745  stop    no exact period in last 1200 tokens
+p67  2   32768  length   11091 (0.34)     16     72 | '\n        Wait, $300^\\circ$ is in Q4.'
+p68  3   32768  length    6489 (0.20)     39     46 | '\n    Wait, $y(t)$ is increasing?\n    Wait, $y(t) = 4t - 13$.'
+p69  5   32768  length    6576 (0.20)     28     66 | ' = 3x^2 - 3x + 1$.\nWait, $x^3 - (x-1)^3'
+p70  5   32768  length    2929 (0.09)     32     17 | '.\n            *   Wait, but the clock also has 12 hours.\n   '
+p71  3   32768  length    5475 (0.17)     73     40 | "\n\n    *   Wait, I'll stick with the straightforward algebrai"
+p72  2   32768  length    8667 (0.26)     91     45 | ' check if the problem implies the new train is going 20% *fa'
+p73  4   32768  length    9098 (0.28)     61     48 | '^2 + 5x - 6$.\n    *   Wait.\n    *   $x(x+6) = x^2 + 6x$.\n   '
+p74  1   32768  length   12107 (0.37)     27    103 | '$.\n    Wait, $\\det(\\mathbf{M}^k) = \\det(\\mathbf{M})^k'
+p75  5   32768  length    3277 (0.10)     34     19 | '\n$= z^3 - c(r+s)z^2 + c^2rsz - c(r+s)ctz + c^2rsct$'
+p76  5   32768  length   14292 (0.44)     74     87 | ' $c^2/a = 12^{-1}$ implies $c^2/a = 1/12$.\n    *   $c^2/a = '
+p77  4   32768  length    5171 (0.16)     21     32 | '61$.\nWait, $67 = 1 + 6(10)$ is $'
+p78  4   32768  length    7198 (0.22)     15     79 | ' $yz$.\nWait, $M_{32}$ is coeff of'
+p79  4   32768  length    6272 (0.19)     67     61 | ' 2^{12} \\cdot 2^7 \\cdot 3^7$.\nWait, $4^6 \\cdot 6^7 = 2^{12} '
+p80  2   32768  length    6785 (0.21)     30     50 | ' the problem is $3^n = 3 \\cdot 9^3 \\cdot 81^2$?\n    Wait, wh'
+p81  4   32768  length    8220 (0.25)     56    114 | '$.\nWait, $A = 19 + B$.\nSo $\\sum |x_i| \\ge 19 + B$.\nWait, $A '
+p82  3   32768  length   16556 (0.51)     23     98 | '.\n    *   Wait, if $S$ is convex, then $S$ is minimized at t'
+p83  4   32768  length   14834 (0.45)    327     93 | '\n    \n    Wait, I think I might have made a mistake in the c'
+p84  3   32768  length    5935 (0.18)     25     89 | '\n          - Wait, if $X$ is on $AB$, then $B+X$ is just a p'
+p85  4   32768  length  no exact period in last 1200 tokens
+p86  3   32768  length    4763 (0.15)    294     25 | '.\n\n    Wait, I might have been thinking of a different probl'
+p87  5   32768  length    6949 (0.21)     23     69 | '0$.\n    Wait, $\\lambda_1^2 + \\lambda_2^2 = 40'
+p88  4   32768  length    7575 (0.23)     44     45 | '.\n        *   $x_1 x_2 = \\frac{(-3)^2 - (i\\sqrt{299})^2}{14^'
+p89  5   32768  length    4571 (0.14)    163     36 | ' the center of the face.\n                *   Wait, if the sp'
+p90  5   32768  length    8008 (0.24)     92     74 | ' $\\Phi$ and $\\varphi$ are roots of $x^2 - x - 1 = 0$?\n      '
+p91  1   32768  length    5447 (0.17)     20     43 | '\n                                                           '
+p92  5   32768  length    8865 (0.27)     36     54 | '-3s^2 + 9s + 71 = -3(s^2 - 3s - 23.66)$.\nWait, $'
+p93  5   32768  length    8030 (0.25)     63      6 | '\n$= -a^2 c^2 + c^2 a^2 - c^2 b^2 + b^2 c^2$\n$= c^2 (a^2 - b^'
+p94  4   32768  length    7576 (0.23)     13    104 | '$.\n            *   Wait, $VF = 2a'
+p95  1   32768  length    4311 (0.13)     26     28 | '2^3 \\cdot 2^3$.\n    Wait, $2^3 \\cdot 2^3 = '
+p96  2   32768  length    3569 (0.11)     52     29 | '\n    Wait, $\\sec^2 x$ is $1 + \\tan^2 x$.\n    So $u^2 = 1 + \\'
+p97  3   32768  length   12842 (0.39)    268     88 | '=-5, y=-2$.\n$x < 0$ is true.\n$y < 0$ is true.\nSo Case 2 is t'
+p98  4   32768  length    9993 (0.30)     42     78 | ' $\\frac{1}{x^2-4} = \\frac{1}{4}(\\frac{1}{x-2} - \\frac{1}{x+2'
+p99  5   32768  length  no exact period in last 1200 tokens
+p100 2   32768  length    9091 (0.28)    198     60 | "\n    *   Wait, I think I'm overcomplicating it.\n    *   The "
+p101 2    2119  stop    no exact period in last 1059 tokens
+p102 4   32768  length    1383 (0.04)     50      4 | ' $0.\\overline{6} = \\frac{6}{99}$ is wrong.\n    *   $0.\\overl'
+p103 2    7891  stop    no exact period in last 1200 tokens
+p104 4   32768  length    2898 (0.09)      9     38 | '$.\nWait, $a+b=1'
+p105 2    3513  stop    no exact period in last 1200 tokens
+p106 5   32768  length  no exact period in last 1200 tokens
+p107 5   32768  length    5214 (0.16)     24     34 | ' $28/256 = 0.109375$.\n    *   Wait,'
+p108 5   32768  length    3773 (0.12)     31     54 | ' *   Wait, $f^{-1}(f(x)) = x$ implies $f(x) = f^{-1}(x)$?\n  '
+p109 4   32768  length   10971 (0.33)     27    105 | '.\n                                        *   Wait, if $C$ a'
+p110 3   32768  length   10471 (0.32)     37    117 | "$.\n            Wait, $f'(-10/3) = 0$.\n            So $f'(x)$"
+p111 4   32768  length    6428 (0.20)     37     30 | '    *   Wait, is it possible that the problem meant "The jar'
+p112 3   32768  length  no exact period in last 1200 tokens
+p113 4   32768  length   17990 (0.55)     16    148 | '\n        Wait, $x^2$ is the term in the expansion.'
+p114 4   32768  length    7559 (0.23)     13     72 | '\n    *   Wait, I am checking the text again.'
+p115 1   32768  length    5962 (0.18)     17     50 | ' $4 \\times 25 = 100$.\n    Wait,'
+p116 5   32768  length    8409 (0.26)     70     57 | '.\n                                                          '
+p117 3   32768  length    2502 (0.08)     19     22 | '?\n        *   Wait, $k^6 = (k^2)^3$'
+p118 1   32768  length    5612 (0.17)    126     34 | " I'm just repeating myself. The logic is sound.\n    *   Let'"
+p119 3   32768  length    4260 (0.13)     16     26 | ' $33+9 = 42$.\n    *   Wait,'
+p120 5   32768  length    2507 (0.08)     65     24 | '.\n    *   Wait, $30$ vs $45$. Chandra is slower than Bob.\n  '
+p121 5   32768  length    6712 (0.20)    196     36 | ' $3240 = 2^3 \\times 3^4 \\times 5$.\n    *   Wait, $3240$ is d'
+p122 3   32768  length    7377 (0.23)    137     30 | ' the question is asking for the number of ways to arrange th'
+p123 2   32768  length  no exact period in last 1200 tokens
+p124 3    1717  stop    no exact period in last 858 tokens
+p125 5   32768  length    5978 (0.18)     84     34 | ' $r_1^2 - 2r_1 + r_2^2 = 0$.\n            Wait, $r_1^2 - 2r_1'
+p126 5   32768  length    5390 (0.16)     17     93 | '\nWait, $A$ and $D$ are on the same vertical line?'
+p127 5   32768  length    3821 (0.12)     28     14 | "\nLet's try $f(x,y) = \\frac{x+y}{x+y} \\cdot \\frac{y}{x}$?"

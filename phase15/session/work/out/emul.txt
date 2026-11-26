@@ -1,0 +1,136 @@
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:  24%|██▍       | 114/473 [00:00<00:00, 1131.64it/s]Loading weights:  62%|██████▏   | 293/473 [00:00<00:00, 1515.29it/s]Loading weights: 100%|██████████| 473/473 [00:00<00:00, 1713.66it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+10 loop contexts, 3 natural closures, 3 fresh line ends
+
+===== (B) natural closure positions and (C) fresh line ends: graft must not change anything =====
+  closure        p28 tok 4806: score 104 write -0.000 | max |dlogit| over vocab 0.1562
+       base : '   ':26.6(0.81) '</think>':24.5(0.10) '    \n':24.5(0.10) '<':15.6(0.00)  [</think> 24.5 p=0.096]
+       graft: '   ':26.6(0.82) '    \n':24.5(0.10) '</think>':24.4(0.09) '<':15.6(0.00)  [</think> 24.4 p=0.086]
+  closure        p66 tok 2274: score 11 write -0.000 | max |dlogit| over vocab 0.1289
+       base : '   ':24.9(0.39) '</think>':24.6(0.30) '       ':24.6(0.30) '      ':17.6(0.00)  [</think> 24.6 p=0.304]
+       graft: '   ':24.9(0.40) '       ':24.6(0.32) '</think>':24.5(0.28) '      ':17.6(0.00)  [</think> 24.5 p=0.278]
+  closure        p124 tok 1547: score 29 write -0.000 | max |dlogit| over vocab 0.1250
+       base : '   ':25.1(0.81) '</think>':23.1(0.11) '    \n':22.8(0.08) '```':16.8(0.00)  [</think> 23.1 p=0.110]
+       graft: '   ':25.1(0.81) '</think>':23.1(0.11) '    \n':22.8(0.08) '```':16.8(0.00)  [</think> 23.1 p=0.110]
+  fresh line end p28 tok 2721: score -53 write -0.000 | max |dlogit| over vocab 0.0000
+       base : '\n':26.5(0.98) ' ':21.5(0.01) ' There':21.0(0.00) ' Count':20.9(0.00)  [</think> 2.5 p=0.000]
+       graft: '\n':26.5(0.98) ' ':21.5(0.01) ' There':21.0(0.00) ' Count':20.9(0.00)  [</think> 2.5 p=0.000]
+  fresh line end p66 tok 1278: score -94 write -0.000 | max |dlogit| over vocab 0.0000
+       base : '\n':29.5(1.00) ' Note':20.2(0.00) ' Convert':19.9(0.00) ' Identify':19.1(0.00)  [</think> 6.1 p=0.000]
+       graft: '\n':29.5(1.00) ' Note':20.2(0.00) ' Convert':19.9(0.00) ' Identify':19.1(0.00)  [</think> 6.1 p=0.000]
+  fresh line end p124 tok 885: score -116 write -0.000 | max |dlogit| over vocab 0.0000
+       base : '\n':28.0(1.00) ' This':20.6(0.00) ' Note':19.8(0.00) ' Step':19.4(0.00)  [</think> 6.5 p=0.000]
+       graft: '\n':28.0(1.00) ' This':20.6(0.00) ' Note':19.8(0.00) ' Step':19.4(0.00)  [</think> 6.5 p=0.000]
+
+===== (A) in-loop flip positions, then forced continuation with the graft active =====
+
+  p0 tok 7573 (loop token 318): ...'^{2018}$ is divisible by $x^3$.\n'
+     score 454 write +4.3
+     base : '   ':33.5(1.00) '</think>':23.1(0.00) '    \n':23.1(0.00) 'Wait':17.8(0.00)  [</think> 23.1 p=0.000]
+     graft: '</think>':38.5(1.00) '   ':28.2(0.00) '    \n':21.2(0.00) 'Wait':18.9(0.00)  [</think> 38.5 p=1.000]
+     after forced </think>             : score 26 write -0.0 | base: '\n\n':30.8(1.00) '\n':21.1(0.00) '\\n':17.5(0.00)  [</think> 9.3 p=0.000]
+                                         graft: '\n\n':31.4(1.00) '\n':20.9(0.00) '\\n':17.9(0.00)  [</think> 9.2 p=0.000]
+     after </think> + newlines         : score -59 write -0.0 | base: 'The':25.5(0.52) 'Let':24.9(0.28) 'To':24.4(0.17)  [</think> 13.2 p=0.000]
+                                         graft: 'The':25.4(0.52) 'Let':24.8(0.28) 'To':24.2(0.17)  [</think> 13.1 p=0.000]
+     after ... + The final answer is   : score 51 write -0.0 | base: ' \\':21.6(0.42) ' ':21.1(0.25) ' $\\':20.1(0.09)  [</think> 4.0 p=0.000]
+                                         graft: ' \\':21.6(0.43) ' ':21.0(0.23) ' $\\':20.1(0.10)  [</think> 4.0 p=0.000]
+
+  p2 tok 4045 (loop token 432): ...'loor + \\lceil2.001\\rceil$?\n'
+     score 452 write +4.1
+     base : '   ':31.9(1.00) '</think>':21.6(0.00) '    \n':21.0(0.00) '       ':20.8(0.00)  [</think> 21.6 p=0.000]
+     graft: '</think>':36.0(1.00) '   ':28.2(0.00) '    \n':20.4(0.00) '```':16.0(0.00)  [</think> 36.0 p=1.000]
+     after forced </think>             : score -9 write -0.0 | base: '\n\n':31.5(1.00) '\n':19.5(0.00) 'To':17.0(0.00)  [</think> 10.1 p=0.000]
+                                         graft: '\n\n':31.8(1.00) '\n':20.0(0.00) ' \n\n':16.9(0.00)  [</think> 10.2 p=0.000]
+     after </think> + newlines         : score -62 write -0.0 | base: 'To':24.6(0.50) 'The':24.5(0.44) '1':20.9(0.01)  [</think> 13.7 p=0.000]
+                                         graft: 'To':24.5(0.50) 'The':24.4(0.44) '1':20.9(0.01)  [</think> 13.4 p=0.000]
+     after ... + The final answer is   : score 38 write -0.0 | base: ' ':22.8(0.54) ' \\':21.8(0.20) ' $\\':21.0(0.09)  [</think> 1.9 p=0.000]
+                                         graft: ' ':22.8(0.55) ' \\':21.8(0.20) ' $\\':20.9(0.08)  [</think> 1.9 p=0.000]
+
+  p4 tok 5625 (loop token 553): ...' parabola is $x = ay^2 + by + c$.\n'
+     score 449 write +4.7
+     base : '                   ':28.4(0.99) '   ':23.0(0.00) '           ':19.6(0.00) '                    \n':18.5(0.00)  [</think> 18.5 p=0.000]
+     graft: '</think>':33.5(1.00) '                   ':21.5(0.00) '    \n':18.5(0.00) '                    \n':18.1(0.00)  [</think> 33.5 p=1.000]
+     after forced </think>             : score 27 write -0.0 | base: '\n\n':30.4(1.00) '\n':21.4(0.00) ' The':19.4(0.00)  [</think> 6.9 p=0.000]
+                                         graft: '\n\n':31.2(1.00) '\n':22.2(0.00) ' The':18.9(0.00)  [</think> 7.0 p=0.000]
+     after </think> + newlines         : score -46 write -0.0 | base: 'The':26.6(0.81) 'Based':24.9(0.14) 'To':23.6(0.04)  [</think> 12.4 p=0.000]
+                                         graft: 'The':26.4(0.79) 'Based':24.8(0.16) 'To':23.5(0.04)  [</think> 12.0 p=0.000]
+     after ... + The final answer is   : score 61 write -0.0 | base: ' $\\':20.5(0.26) ' \\':20.5(0.26) ' $':19.9(0.14)  [</think> 3.0 p=0.000]
+                                         graft: ' $\\':20.5(0.25) ' \\':20.5(0.25) ' $':19.9(0.14)  [</think> 3.0 p=0.000]
+
+  p14 tok 4769 (loop token 366): ...'   Wait, $T(9) = 77$.\n                   '
+     score 450 write +3.6
+     base : ' *':37.8(1.00) ' •':20.4(0.00) ' Wait':19.4(0.00) ' //':18.6(0.00)  [</think> 5.7 p=0.000]
+     graft: '</think>':33.0(1.00) '*':20.8(0.00) '   ':19.8(0.00) ' *':18.2(0.00)  [</think> 33.0 p=1.000]
+     after forced </think>             : score 15 write -0.0 | base: '\n\n':26.0(1.00) '\n':19.5(0.00) ' To':18.9(0.00)  [</think> 8.3 p=0.000]
+                                         graft: '\n\n':27.0(1.00) '\n':19.8(0.00) ' To':19.0(0.00)  [</think> 8.2 p=0.000]
+     after </think> + newlines         : score -49 write -0.0 | base: 'To':25.2(0.72) 'The':23.9(0.18) 'Let':22.4(0.04)  [</think> 12.3 p=0.000]
+                                         graft: 'To':25.1(0.72) 'The':23.8(0.18) 'Let':22.4(0.05)  [</think> 12.1 p=0.000]
+     after ... + The final answer is   : score 35 write -0.0 | base: ' \\':21.4(0.41) ' ':21.1(0.32) ' $\\':19.6(0.07)  [</think> 2.0 p=0.000]
+                                         graft: ' \\':21.4(0.41) ' ':21.1(0.32) ' $\\':19.5(0.06)  [</think> 2.0 p=0.000]
+
+  p20 tok 6615 (loop token 281): ...'$ is positive in $[\\pi/2, \\pi]$.\n'
+     score 460 write +4.8
+     base : '   ':32.2(1.00) '</think>':22.8(0.00) '    \n':20.6(0.00) '       ':19.9(0.00)  [</think> 22.8 p=0.000]
+     graft: '</think>':38.5(1.00) '   ':27.2(0.00) '    \n':19.6(0.00) '\\':18.1(0.00)  [</think> 38.5 p=1.000]
+     after forced </think>             : score 19 write -0.0 | base: '\n\n':30.1(1.00) '\n':21.4(0.00) '\\n':17.4(0.00)  [</think> 9.0 p=0.000]
+                                         graft: '\n\n':31.1(1.00) '\n':21.5(0.00) '\\n':18.0(0.00)  [</think> 9.2 p=0.000]
+     after </think> + newlines         : score -59 write -0.0 | base: 'The':25.4(0.52) 'To':25.1(0.40) 'Let':22.9(0.04)  [</think> 13.1 p=0.000]
+                                         graft: 'The':25.2(0.52) 'To':25.0(0.40) 'Let':22.6(0.04)  [</think> 12.9 p=0.000]
+     after ... + The final answer is   : score 47 write -0.0 | base: ' \\':22.0(0.60) ' $\\':20.4(0.12) ':':19.8(0.06)  [</think> 3.5 p=0.000]
+                                         graft: ' \\':22.0(0.60) ' $\\':20.4(0.12) ':':19.9(0.07)  [</think> 3.5 p=0.000]
+
+  p24 tok 7593 (loop token 505): ...' is divisible by 9, it is divisible by 3.\n   '
+     score 457 write +3.8
+     base : ' *':35.5(1.00) ' •':19.1(0.00) ' Wait':17.8(0.00) ' <':16.9(0.00)  [</think> 6.5 p=0.000]
+     graft: '</think>':35.0(1.00) '*':24.4(0.00) '   ':22.8(0.00) '  ':19.0(0.00)  [</think> 35.0 p=1.000]
+     after forced </think>             : score 27 write -0.0 | base: '\n\n':25.1(1.00) '\n':19.0(0.00) ' To':16.9(0.00)  [</think> 7.8 p=0.000]
+                                         graft: '\n\n':26.5(1.00) '\n':18.4(0.00) ' To':17.0(0.00)  [</think> 8.2 p=0.000]
+     after </think> + newlines         : score -43 write -0.0 | base: 'To':24.0(0.46) 'The':23.9(0.40) 'Let':22.2(0.08)  [</think> 13.9 p=0.000]
+                                         graft: 'To':23.9(0.43) 'The':23.9(0.43) 'Let':22.1(0.07)  [</think> 13.8 p=0.000]
+     after ... + The final answer is   : score 37 write -0.0 | base: ' \\':21.9(0.35) ' ':21.5(0.24) ' a':21.1(0.16)  [</think> 2.6 p=0.000]
+                                         graft: ' \\':21.9(0.35) ' ':21.5(0.24) ' a':21.1(0.16)  [</think> 2.5 p=0.000]
+
+  p30 tok 6549 (loop token 313): ...'circ) = \\frac{\\sqrt{3}}{2}$.\n'
+     score 457 write +4.3
+     base : '   ':33.5(1.00) '</think>':23.5(0.00) '    \n':20.6(0.00) '       ':19.6(0.00)  [</think> 23.5 p=0.000]
+     graft: '</think>':37.2(1.00) '   ':28.5(0.00) '    \n':19.9(0.00) '\\':18.4(0.00)  [</think> 37.2 p=1.000]
+     after forced </think>             : score -7 write -0.0 | base: '\n\n':31.9(1.00) '\n':20.5(0.00) 'To':19.0(0.00)  [</think> 10.4 p=0.000]
+                                         graft: '\n\n':32.5(1.00) '\n':20.8(0.00) 'To':19.0(0.00)  [</think> 10.6 p=0.000]
+     after </think> + newlines         : score -60 write -0.0 | base: 'To':26.4(0.79) 'The':25.0(0.20) 'We':20.4(0.00)  [</think> 13.2 p=0.000]
+                                         graft: 'To':26.2(0.79) 'The':24.9(0.20) 'We':20.4(0.00)  [</think> 13.0 p=0.000]
+     after ... + The final answer is   : score 40 write -0.0 | base: ' $\\':22.1(0.50) ' \\':21.4(0.24) ':':20.5(0.10)  [</think> 3.9 p=0.000]
+                                         graft: ' $\\':22.2(0.54) ' \\':21.4(0.23) ':':20.5(0.09)  [</think> 3.8 p=0.000]
+
+  p32 tok 6783 (loop token 539): ...' This implies that $E$ and $L$ cannot be disjoint.\n'
+     score 447 write +3.7
+     base : '   ':31.6(1.00) '</think>':22.0(0.00) '    \n':21.6(0.00) '       ':18.5(0.00)  [</think> 22.0 p=0.000]
+     graft: '</think>':34.0(0.99) '   ':29.1(0.01) '    \n':21.5(0.00) '       ':16.6(0.00)  [</think> 34.0 p=0.992]
+     after forced </think>             : score 5 write -0.0 | base: '\n\n':29.6(1.00) '\n':20.1(0.00) '\\n':17.9(0.00)  [</think> 8.8 p=0.000]
+                                         graft: '\n\n':30.5(1.00) '\n':20.4(0.00) '\\n':18.0(0.00)  [</think> 8.6 p=0.000]
+     after </think> + newlines         : score -46 write -0.0 | base: 'The':24.9(0.65) 'To':23.5(0.17) 'Let':23.1(0.11)  [</think> 13.5 p=0.000]
+                                         graft: 'The':24.9(0.65) 'To':23.5(0.17) 'Let':23.1(0.11)  [</think> 13.2 p=0.000]
+     after ... + The final answer is   : score 37 write -0.0 | base: ' ':22.8(0.62) ' \\':21.9(0.26) ' the':19.6(0.03)  [</think> 1.6 p=0.000]
+                                         graft: ' ':22.8(0.62) ' \\':21.9(0.26) ' the':19.6(0.03)  [</think> 1.6 p=0.000]
+
+  p36 tok 10155 (loop token 362): ...'$ is $121 a_1 - 25$.\n'
+     score 455 write +4.5
+     base : 'Wait':28.4(0.95) 'Okay':25.2(0.04) 'I':22.8(0.00) 'Let':21.4(0.00)  [</think> 18.5 p=0.000]
+     graft: '</think>':34.8(1.00) 'Wait':25.5(0.00) 'Let':21.9(0.00) 'I':19.9(0.00)  [</think> 34.8 p=1.000]
+     after forced </think>             : score 19 write -0.0 | base: '\n\n':28.5(1.00) '\n':22.0(0.00) '\\n':16.5(0.00)  [</think> 8.4 p=0.000]
+                                         graft: '\n\n':28.9(1.00) '\n':21.4(0.00) '\\n':16.9(0.00)  [</think> 8.4 p=0.000]
+     after </think> + newlines         : score -69 write -0.0 | base: 'The':25.9(0.65) 'Let':24.9(0.24) 'To':23.8(0.08)  [</think> 12.4 p=0.000]
+                                         graft: 'The':25.9(0.67) 'Let':24.8(0.22) 'To':23.8(0.08)  [</think> 12.4 p=0.000]
+     after ... + The final answer is   : score 39 write -0.0 | base: ' \\':21.6(0.39) ' ':21.1(0.24) ' $\\':20.2(0.10)  [</think> 2.8 p=0.000]
+                                         graft: ' \\':21.6(0.40) ' ':21.1(0.24) ' $\\':20.2(0.10)  [</think> 2.8 p=0.000]
+
+  p38 tok 7803 (loop token 219): ...', then $G$ is at $(17,20)$.'
+     score 447 write +3.1
+     base : '\n':35.2(0.98) '\n\n':31.1(0.02) ' Wait':20.2(0.00) '\n\n\n':19.9(0.00)  [</think> 8.1 p=0.000]
+     graft: '\n':29.1(0.75) '</think>':27.9(0.22) '\n\n':25.9(0.03) ' Wait':22.0(0.00)  [</think> 27.9 p=0.216]
+     after forced </think>             : score 69 write -0.0 | base: '\n\n':22.9(0.95) '\n':19.9(0.05) ' The':16.1(0.00)  [</think> 7.5 p=0.000]
+                                         graft: '\n\n':23.0(0.97) '\n':19.2(0.02) ' The':15.9(0.00)  [</think> 7.7 p=0.000]
+     after </think> + newlines         : score -16 write -0.0 | base: 'The':23.8(0.60) 'To':22.2(0.13) 'Let':22.1(0.12)  [</think> 13.3 p=0.000]
+                                         graft: 'The':23.6(0.60) 'To':22.1(0.13) 'Let':22.0(0.12)  [</think> 13.2 p=0.000]
+     after ... + The final answer is   : score 56 write -0.0 | base: ' \\':20.5(0.25) ' $\\':20.4(0.22) ' ':20.1(0.17)  [</think> 2.2 p=0.000]
+                                         graft: ' \\':20.6(0.28) ' $\\':20.4(0.22) ' ':20.1(0.17)  [</think> 2.3 p=0.000]

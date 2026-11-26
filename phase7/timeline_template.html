@@ -87,7 +87,7 @@ code { overflow-wrap: anywhere; font-size: 13px; background: var(--track); paddi
     <div class="card"><div class="num" id="n2"></div><h3>Quick fix: skip the thinking</h3><p>Push the "stop thinking" signal harder. The model stops almost at once and does its working in the answer.</p></div>
     <div class="card"><div class="num" id="n3"></div><h3>Deep fix: change the thinking</h3><p>Change the model's inner workings. It thinks properly for a long time, then stops by itself.</p></div>
   </div>
-  <p class="note">Teams of AI editors found only the quick fix, and never did better than one AI editor working alone. A lone AI editor held to the original researchers' rules (the quick fix forbidden, practice on real maths problems) found no repair: it scored 11.0%, against 9.4% with no fix.</p>
+  <p class="note">Teams of AI editors found only the quick fix, and never did better than one AI editor working alone. A lone AI editor held to the original researchers' rules (the quick fix forbidden, practice on real maths problems) found no repair: it scored 11.0%, against 9.4% with no fix. A stronger editor, under the same rules, found a different repair: 53.0%, level with the deep fix (54.2%).</p>
 </section>
 
 <section>
@@ -98,7 +98,7 @@ code { overflow-wrap: anywhere; font-size: 13px; background: var(--track); paddi
       <span><i class="o2"></i>stopped thinking, but the answer never finished</span><span><i class="o3"></i>never stopped thinking</span>
     </div>
     <div class="rows" id="ends"></div>
-    <div class="ctl"><label><input type="checkbox" id="all"> Show all 19 versions, including every AI team</label></div>
+    <div class="ctl"><label><input type="checkbox" id="all"> Show all 20 versions, including every AI team</label></div>
     <p class="note">Each bar is 500 problems. More green is better. Red is the original fault.</p>
   </div>
 </section>
@@ -113,8 +113,9 @@ code { overflow-wrap: anywhere; font-size: 13px; background: var(--track); paddi
       <dt>Our map repair</dt><dd>Our own attempt at a deep fix, placed with our light map instead of the researchers' choice: floors 10 and 14, on the 64 units per floor that light up most when the model is stuck.</dd>
       <dt>Best AI team</dt><dd>Six AI seats (observer, two analysts, red team, judge, executor), all running GLM-5.3. They shipped a gentler quick fix: the same row multiplied by 1.35.</dd>
       <dt>Edit under the original researchers' rules</dt><dd>A lone AI editor (GLM-5.3-Flash) that was forbidden the quick fix and practised on real maths problems, as the original researchers' editor was. It changed one table in the model's first floor (number 0). Far more answers finish, but hardly more are right: 11.0%, against 9.4% with no fix and 54.2% with the deep fix.</dd>
+      <dt>Edit under the original researchers' rules, by a stronger editor</dt><dd>A stronger AI editor (GLM-5.4), held to the same rules (the quick fix forbidden, practice on real maths problems) and given the same number of tries as the small one. It added two tiny switches in floor 14, each made from one unit that, by its own measurement, was doing no useful work. A switch is silent everywhere except where the model starts repeating itself word for word or runs into an endless numbered list; there it ends the thinking. That is a different repair from the deep fix. The deep fix removes the pattern that causes the loop, so the model never starts going round in circles; this edit lets the loop start and then ends the thinking. In a single session it scored 53.0%, against 9.4% with no fix and 54.2% with the deep fix. Read that as reaching the deep fix's score, not as the same repair; whether the original researchers would accept it as the kind of repair they meant is for them to say. About a sixth of the problems still end with no answer, because the model can start going round in circles again while it writes the answer.</dd>
     </dl>
-    <p class="note">Under "Show all 19 versions" you will also see: <strong>+9 boost</strong> (no numbers changed; the "stop thinking" word is favoured while the model runs), <strong>output half / input half</strong> (the quick fix applied only where the model writes, or only where it reads), <strong>deep fix + our repair</strong> (both together, ours at half or at full strength), and the <strong>edit under the original researchers' rules</strong>.</p>
+    <p class="note">Under "Show all 20 versions" you will also see: <strong>+9 boost</strong> (no numbers changed; the "stop thinking" word is favoured while the model runs), <strong>output half / input half</strong> (the quick fix applied only where the model writes, or only where it reads), <strong>deep fix + our repair</strong> (both together, ours at half or at full strength), and the <strong>edits under the original researchers' rules</strong> (one by a small AI editor, one by a stronger one).</p>
   </div>
 </section>
 
@@ -152,6 +153,7 @@ code { overflow-wrap: anywhere; font-size: 13px; background: var(--track); paddi
     <tr><td>Our map repair</td><td>the same kind of removal, at floors 10 and 14, on the units our light map flagged</td><td>2 tables of numbers</td></tr>
     <tr><td>Deep fix + our repair</td><td>both together, ours at half or at full strength</td><td>4 tables of numbers</td></tr>
     <tr><td>Edit under the original researchers' rules</td><td>one table in the model's first floor (number 0), the readout of its linear attention: one block of 128 columns halved, and five more columns set to zero</td><td>136,192 numbers, out of 873 million</td></tr>
+    <tr><td>Edit under the original researchers' rules, by a stronger editor</td><td>two switches in floor 14, each made from one unit that the editor measured as doing no useful work, that end the thinking when word-for-word repetition or an endless numbered list is detected</td><td>6,143 numbers, out of 873 million</td></tr>
   </table></div>
   <p class="note">Adding our repair on top of the deep fix did not help at either strength: 50.8% at half strength and 52.2% at full strength, against 54.2% for the deep fix alone. The gaps (3.4 and 2.0 points) are small enough to be luck. (An earlier full-strength run looked like a breakdown, but its answers were corrupted by the test engine, not by the model; it was thrown out and replaced by a clean rerun.)</p>
 </div></details>
@@ -161,7 +163,7 @@ code { overflow-wrap: anywhere; font-size: 13px; background: var(--track); paddi
   <ol>
     <li><strong>Write the prediction down first.</strong> For our own tests, what we expected was saved in <code>phase7/protocol.md</code> before any run, so a result could not be bent afterwards.</li>
     <li><strong>Make the edited copy</strong> of the model (commands below).</li>
-    <li><strong>Practice test.</strong> 64 easy word problems. For our own repairs, a version went on only if it stopped thinking on at least 38.8% of them (the unedited model manages 18.8%). The editor that worked under the original researchers' rules practised on 128 real maths problems instead.</li>
+    <li><strong>Practice test.</strong> 64 easy word problems. For our own repairs, a version went on only if it stopped thinking on at least 38.8% of them (the unedited model manages 18.8%). Both editors that worked under the original researchers' rules practised on 128 real maths problems instead.</li>
     <li><strong>Final test.</strong> The 500 maths problems, one answer each, with a limit of 32,768 tokens per answer.</li>
     <li><strong>Mark the answers</strong> with the same marking program for every version.</li>
     <li><strong>Check the run was healthy.</strong> A run whose answers turn to gibberish, or that goes wrong only for the later problems in the batch, is thrown out.</li>
@@ -178,6 +180,7 @@ code { overflow-wrap: anywhere; font-size: 13px; background: var(--track); paddi
     <tr><td>Deep fix + our repair</td><td>The same command with <code>--dose 0.5 --base phase3/models/c3_original_edit</code> and the name <code>stack_half</code>; with <code>--dose 1.0</code> and the name <code>stack_full</code> for full strength</td></tr>
     <tr><td>AI teams</td><td>Not repeatable to the letter: an AI team makes different choices each time. Each team's notes and the exact edit it shipped are in <code>phase9/session_*/</code>.</td></tr>
     <tr><td>Edit under the original researchers' rules</td><td>Not repeatable to the letter: an AI editor makes different choices each time. The editor's notes and the exact edit are in <code>phase14/session/</code>.</td></tr>
+    <tr><td>Edit under the original researchers' rules, by a stronger editor</td><td>Not repeatable to the letter: an AI editor makes different choices each time. The editor's notes and the exact edit are in <code>phase15/session/</code>.</td></tr>
   </table></div>
   <h3>Testing and marking</h3>
   <div class="tw"><table>
@@ -213,13 +216,13 @@ code { overflow-wrap: anywhere; font-size: 13px; background: var(--track); paddi
     <li><strong>More tries did not clearly help.</strong> One editor offered 50 tries, used 6 and scored 41.6%: 4.4 points above the 37.2% it got with 6 tries before, at the edge of what 500 problems can tell apart, and level with the quick fix from MiMo-pro (40.6%).</li>
     <li><strong>A second, bigger model</strong> (Gemma, with most of its parts cut out) could not be repaired by any of five editors. Its stopping could be fixed; its scores could not, and switching back the choice between its eight remaining parts did not help either.</li>
   </ul>
-  <p class="note">"About the same" means within 4.4 points, the size of ordinary luck between runs. Tick "Show all 19 versions" above to see every team in the charts.</p>
+  <p class="note">"About the same" means within 4.4 points, the size of ordinary luck between runs. Tick "Show all 20 versions" above to see every team in the charts.</p>
 </div></details>
 
 <details class="more"><summary>What we still do not know<span>Six gaps in the experiments so far.</span></summary><div>
   <ol>
     <li><strong>What the deep fix does to the "stop thinking" signal</strong>, moment by moment. This would link the two kinds of fix.</li>
-    <li><strong>Why answers still get stuck after thinking stops</strong> (the yellow parts). Our light map only covers getting stuck while thinking.</li>
+    <li><strong>Why answers still get stuck after thinking stops</strong> (the yellow parts). Our light map only covers getting stuck while thinking. The stronger editor's edit still leaves about a sixth of the problems there.</li>
     <li><strong>A second marker.</strong> A different marking program gives the unedited model 21.2%, not 9.4%. This page uses only one.</li>
     <li><strong>One definition of "stuck".</strong> Two experiments each defined it their own way and were never compared.</li>
     <li><strong>A floor-by-floor look at where the answer forms.</strong> It was done on the bigger model, never on this one.</li>
@@ -229,12 +232,13 @@ code { overflow-wrap: anywhere; font-size: 13px; background: var(--track); paddi
 
 <details class="more"><summary>How this page was made, and what changed<span>Method, limits and the change log.</span></summary><div>
   <ul>
-    <li>Built by <code>phase7/build_timeline.py</code> from the saved answers of nineteen runs. No new model runs were needed.</li>
+    <li>Built by <code>phase7/build_timeline.py</code> from the saved answers of twenty runs. No new model runs were needed.</li>
     <li>One answer per problem. A score can move by about 2 points on a repeat.</li>
     <li>Not shown: runs with thinking switched off, which have no thinking to stop.</li>
   </ul>
   <h3>Change log</h3>
   <ul>
+    <li><strong>Version 8 · 27 Nov 2026.</strong> Added the edit made by a stronger blind AI editor under the original researchers' rules (53.0%, level with the deep fix). The page now shows 20 versions.</li>
     <li><strong>Version 7 · 26 Nov 2026.</strong> Scores read again with an improved marking program: it now takes the right line of an answer (it used to take an earlier line on some) and accepts the same differences in formatting as the standard marker. Every version scores higher, by 1 to 8 points (no fix 8.4% → 9.4%, quick fix 36.2% → 42.2%, deep fix 48.6% → 54.2%). Added the edit made under the original researchers' rules (11.0%). Corrected the note about the practice test. Scores quoted in the entries below are as read at the time.</li>
     <li><strong>Version 6 · 24 Nov 2026.</strong> The full-strength "deep fix + our repair" returns to the page: its clean rerun scores 46.2%, so adding our repair gives no gain at either strength and no breakdown either.</li>
     <li><strong>Version 5 · 24 Nov 2026.</strong> Added "What each name means" under the chart and a folded section "How to redo it, and the steps we ran". Corrected the note about the full-strength stack: that run was faulty and is withdrawn, it did not show the model breaking.</li>

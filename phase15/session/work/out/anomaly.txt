@@ -1,0 +1,249 @@
+===== A. block profiles (blocks of 16) =====
+  NORM  L0.linear_attn.in_proj_qkv.weight: row block 24 (dims 384-399) mean|w| ratio to median inf z=-inf
+  NORM  L0.linear_attn.in_proj_qkv.weight: row block 26 (dims 416-431) mean|w| ratio to median inf z=-inf
+  NORM  L0.linear_attn.in_proj_qkv.weight: row block 27 (dims 432-447) mean|w| ratio to median inf z=-inf
+  NORM  L0.linear_attn.in_proj_qkv.weight: row block 28 (dims 448-463) mean|w| ratio to median inf z=-inf
+  NORM  L0.linear_attn.in_proj_qkv.weight: row block 29 (dims 464-479) mean|w| ratio to median inf z=-inf
+  NORM  L0.linear_attn.in_proj_qkv.weight: row block 152 (dims 2432-2447) mean|w| ratio to median inf z=-inf
+  NORM  L0.linear_attn.in_proj_qkv.weight: row block 154 (dims 2464-2479) mean|w| ratio to median inf z=-inf
+  NORM  L0.linear_attn.in_proj_qkv.weight: row block 155 (dims 2480-2495) mean|w| ratio to median inf z=-inf
+  NORM  L0.linear_attn.in_proj_qkv.weight: row block 156 (dims 2496-2511) mean|w| ratio to median inf z=-inf
+  NORM  L0.linear_attn.in_proj_qkv.weight: row block 157 (dims 2512-2527) mean|w| ratio to median inf z=-inf
+  MEAN  L0.linear_attn.out_proj.weight: row block 0 mean|value| ratio 2.84 z=+8
+  NORM  L0.mlp.down_proj.weight: col block 0 (dims 0-15) mean|w| ratio to median 1.19 z=-18
+  NORM  L0.mlp.down_proj.weight: col block 1 (dims 16-31) mean|w| ratio to median 1.11 z=-10
+  NORM  L0.mlp.down_proj.weight: col block 2 (dims 32-47) mean|w| ratio to median 1.07 z=-7
+  NORM  L0.mlp.down_proj.weight: col block 6 (dims 96-111) mean|w| ratio to median 1.08 z=-7
+  MEAN  L0.mlp.gate_proj.weight: col block 0 mean|value| ratio 4.23 z=+12
+  NORM  L0.mlp.up_proj.weight: row block 0 (dims 0-15) mean|w| ratio to median 1.12 z=-13
+  NORM  L0.mlp.up_proj.weight: row block 1 (dims 16-31) mean|w| ratio to median 1.13 z=-15
+  NORM  L0.mlp.up_proj.weight: row block 2 (dims 32-47) mean|w| ratio to median 1.07 z=-8
+  NORM  L0.mlp.up_proj.weight: row block 6 (dims 96-111) mean|w| ratio to median 1.07 z=-8
+  NORM  L0.mlp.up_proj.weight: col block 0 (dims 0-15) mean|w| ratio to median 1.53 z=-9
+  NORM  L1.linear_attn.in_proj_z.weight: col block 0 (dims 0-15) mean|w| ratio to median 0.37 z=+7
+  NORM  L1.linear_attn.in_proj_z.weight: col block 1 (dims 16-31) mean|w| ratio to median 0.36 z=+7
+  MEAN  L1.linear_attn.in_proj_z.weight: col block 0 mean|value| ratio 3.30 z=+9
+  NORM  L1.mlp.down_proj.weight: col block 0 (dims 0-15) mean|w| ratio to median 1.12 z=-16
+  NORM  L1.mlp.down_proj.weight: col block 1 (dims 16-31) mean|w| ratio to median 1.13 z=-17
+  NORM  L1.mlp.down_proj.weight: col block 2 (dims 32-47) mean|w| ratio to median 1.11 z=-15
+  NORM  L1.mlp.down_proj.weight: col block 3 (dims 48-63) mean|w| ratio to median 1.10 z=-13
+  NORM  L1.mlp.down_proj.weight: col block 4 (dims 64-79) mean|w| ratio to median 1.06 z=-7
+  NORM  L1.mlp.down_proj.weight: col block 5 (dims 80-95) mean|w| ratio to median 1.10 z=-14
+  NORM  L1.mlp.down_proj.weight: col block 6 (dims 96-111) mean|w| ratio to median 1.11 z=-14
+  NORM  L1.mlp.down_proj.weight: col block 7 (dims 112-127) mean|w| ratio to median 1.07 z=-9
+  MEAN  L1.mlp.gate_proj.weight: col block 0 mean|value| ratio 3.34 z=+8
+  NORM  L1.mlp.up_proj.weight: row block 0 (dims 0-15) mean|w| ratio to median 1.09 z=-12
+  NORM  L1.mlp.up_proj.weight: row block 1 (dims 16-31) mean|w| ratio to median 1.11 z=-15
+  NORM  L1.mlp.up_proj.weight: row block 2 (dims 32-47) mean|w| ratio to median 1.08 z=-11
+  NORM  L1.mlp.up_proj.weight: row block 3 (dims 48-63) mean|w| ratio to median 1.07 z=-9
+  NORM  L1.mlp.up_proj.weight: row block 6 (dims 96-111) mean|w| ratio to median 1.08 z=-11
+  NORM  L1.mlp.up_proj.weight: col block 0 (dims 0-15) mean|w| ratio to median 1.51 z=-8
+  MEAN  L10.linear_attn.in_proj_z.weight: col block 0 mean|value| ratio 3.50 z=+8
+  MEAN  L10.mlp.gate_proj.weight: col block 0 mean|value| ratio 4.16 z=+12
+  MEAN  L11.mlp.gate_proj.weight: col block 0 mean|value| ratio 4.77 z=+15
+  MEAN  L11.mlp.gate_proj.weight: col block 1 mean|value| ratio 2.97 z=+8
+  NORM  L11.self_attn.k_proj.weight: row block 0 (dims 0-15) mean|w| ratio to median 1.85 z=-11
+  NORM  L11.self_attn.k_proj.weight: row block 2 (dims 32-47) mean|w| ratio to median 1.90 z=-12
+  NORM  L11.self_attn.k_proj.weight: row block 16 (dims 256-271) mean|w| ratio to median 1.69 z=-9
+  NORM  L11.self_attn.k_proj.weight: row block 18 (dims 288-303) mean|w| ratio to median 1.76 z=-10
+  NORM  L11.self_attn.v_proj.weight: col block 0 (dims 0-15) mean|w| ratio to median 1.52 z=-7
+  NORM  L12.mlp.down_proj.weight: col block 0 (dims 0-15) mean|w| ratio to median 1.22 z=-8
+  MEAN  L12.mlp.gate_proj.weight: col block 0 mean|value| ratio 4.56 z=+12
+  MEAN  L12.mlp.gate_proj.weight: col block 1 mean|value| ratio 3.36 z=+8
+  NORM  L12.mlp.up_proj.weight: row block 7 (dims 112-127) mean|w| ratio to median 1.16 z=-7
+  MEAN  L13.mlp.gate_proj.weight: col block 0 mean|value| ratio 4.55 z=+12
+  MEAN  L13.mlp.gate_proj.weight: col block 1 mean|value| ratio 3.55 z=+9
+  NORM  L13.mlp.up_proj.weight: row block 0 (dims 0-15) mean|w| ratio to median 1.16 z=-7
+  NORM  L13.mlp.up_proj.weight: row block 4 (dims 64-79) mean|w| ratio to median 1.16 z=-7
+  MEAN  L14.mlp.gate_proj.weight: col block 0 mean|value| ratio 4.38 z=+11
+  MEAN  L14.mlp.gate_proj.weight: col block 1 mean|value| ratio 3.33 z=+8
+  NORM  L15.mlp.gate_proj.weight: row block 3 (dims 48-63) mean|w| ratio to median 1.67 z=-7
+  NORM  L15.mlp.gate_proj.weight: row block 4 (dims 64-79) mean|w| ratio to median 1.68 z=-8
+  MEAN  L15.mlp.gate_proj.weight: col block 0 mean|value| ratio 4.33 z=+13
+  MEAN  L15.mlp.gate_proj.weight: col block 1 mean|value| ratio 3.35 z=+9
+  NORM  L16.mlp.down_proj.weight: col block 1 (dims 16-31) mean|w| ratio to median 1.28 z=-8
+  NORM  L16.mlp.down_proj.weight: col block 6 (dims 96-111) mean|w| ratio to median 1.25 z=-7
+  NORM  L16.mlp.gate_proj.weight: col block 8 (dims 128-143) mean|w| ratio to median 2.13 z=-7
+  MEAN  L16.mlp.gate_proj.weight: col block 0 mean|value| ratio 4.48 z=+14
+  MEAN  L16.mlp.gate_proj.weight: col block 1 mean|value| ratio 3.67 z=+11
+  MEAN  L17.linear_attn.in_proj_z.weight: col block 0 mean|value| ratio 3.83 z=+11
+  MEAN  L17.mlp.gate_proj.weight: col block 0 mean|value| ratio 3.80 z=+11
+  MEAN  L17.mlp.gate_proj.weight: col block 1 mean|value| ratio 3.12 z=+8
+  MEAN  L18.linear_attn.in_proj_z.weight: col block 0 mean|value| ratio 4.33 z=+11
+  MEAN  L18.linear_attn.in_proj_z.weight: col block 1 mean|value| ratio 3.04 z=+7
+  MEAN  L18.mlp.gate_proj.weight: col block 0 mean|value| ratio 3.95 z=+10
+  MEAN  L18.mlp.gate_proj.weight: col block 1 mean|value| ratio 3.31 z=+8
+  NORM  L19.mlp.down_proj.weight: col block 1 (dims 16-31) mean|w| ratio to median 1.26 z=-7
+  NORM  L19.mlp.down_proj.weight: col block 2 (dims 32-47) mean|w| ratio to median 1.27 z=-7
+  NORM  L19.mlp.gate_proj.weight: col block 1 (dims 16-31) mean|w| ratio to median 10.49 z=+7
+  MEAN  L19.mlp.gate_proj.weight: col block 0 mean|value| ratio 4.65 z=+13
+  MEAN  L19.mlp.gate_proj.weight: col block 1 mean|value| ratio 3.74 z=+9
+  NORM  L19.mlp.up_proj.weight: row block 19 (dims 304-319) mean|w| ratio to median 1.20 z=-7
+  NORM  L19.self_attn.k_proj.weight: row block 0 (dims 0-15) mean|w| ratio to median 1.80 z=-11
+  NORM  L19.self_attn.k_proj.weight: row block 2 (dims 32-47) mean|w| ratio to median 1.74 z=-11
+  NORM  L2.linear_attn.in_proj_z.weight: col block 0 (dims 0-15) mean|w| ratio to median -0.31 z=+9
+  NORM  L2.linear_attn.in_proj_z.weight: col block 1 (dims 16-31) mean|w| ratio to median -0.26 z=+9
+  MEAN  L2.linear_attn.in_proj_z.weight: col block 0 mean|value| ratio 2.93 z=+7
+  NORM  L2.mlp.down_proj.weight: col block 0 (dims 0-15) mean|w| ratio to median 1.10 z=-11
+  NORM  L2.mlp.down_proj.weight: col block 1 (dims 16-31) mean|w| ratio to median 1.14 z=-16
+  NORM  L2.mlp.down_proj.weight: col block 2 (dims 32-47) mean|w| ratio to median 1.06 z=-7
+  NORM  L2.mlp.down_proj.weight: col block 4 (dims 64-79) mean|w| ratio to median 1.14 z=-17
+  NORM  L2.mlp.down_proj.weight: col block 6 (dims 96-111) mean|w| ratio to median 1.07 z=-8
+  NORM  L2.mlp.down_proj.weight: col block 7 (dims 112-127) mean|w| ratio to median 1.10 z=-11
+  NORM  L2.mlp.down_proj.weight: col block 8 (dims 128-143) mean|w| ratio to median 1.16 z=-18
+  NORM  L2.mlp.gate_proj.weight: row block 0 (dims 0-15) mean|w| ratio to median 1.68 z=-9
+  NORM  L2.mlp.gate_proj.weight: row block 3 (dims 48-63) mean|w| ratio to median 1.58 z=-8
+  NORM  L2.mlp.gate_proj.weight: row block 5 (dims 80-95) mean|w| ratio to median 1.61 z=-8
+  NORM  L2.mlp.gate_proj.weight: row block 13 (dims 208-223) mean|w| ratio to median 1.70 z=-9
+  MEAN  L2.mlp.gate_proj.weight: col block 0 mean|value| ratio 3.38 z=+9
+  NORM  L2.mlp.up_proj.weight: row block 1 (dims 16-31) mean|w| ratio to median 1.10 z=-11
+  NORM  L2.mlp.up_proj.weight: row block 4 (dims 64-79) mean|w| ratio to median 1.11 z=-12
+  NORM  L2.mlp.up_proj.weight: row block 8 (dims 128-143) mean|w| ratio to median 1.10 z=-11
+  NORM  L20.linear_attn.in_proj_z.weight: col block 0 (dims 0-15) mean|w| ratio to median 0.06 z=+9
+  MEAN  L20.linear_attn.in_proj_z.weight: col block 0 mean|value| ratio 3.91 z=+8
+  NORM  L20.mlp.down_proj.weight: col block 0 (dims 0-15) mean|w| ratio to median 1.21 z=-9
+  NORM  L20.mlp.down_proj.weight: col block 1 (dims 16-31) mean|w| ratio to median 1.20 z=-8
+  NORM  L20.mlp.down_proj.weight: col block 2 (dims 32-47) mean|w| ratio to median 1.20 z=-9
+  NORM  L20.mlp.down_proj.weight: col block 3 (dims 48-63) mean|w| ratio to median 1.20 z=-8
+  NORM  L20.mlp.down_proj.weight: col block 6 (dims 96-111) mean|w| ratio to median 1.20 z=-8
+  NORM  L20.mlp.down_proj.weight: col block 7 (dims 112-127) mean|w| ratio to median 1.21 z=-9
+  NORM  L20.mlp.down_proj.weight: col block 13 (dims 208-223) mean|w| ratio to median 1.23 z=-10
+  NORM  L20.mlp.down_proj.weight: col block 16 (dims 256-271) mean|w| ratio to median 1.20 z=-8
+  NORM  L20.mlp.down_proj.weight: col block 23 (dims 368-383) mean|w| ratio to median 1.21 z=-9
+  MEAN  L20.mlp.gate_proj.weight: col block 0 mean|value| ratio 5.22 z=+13
+  MEAN  L20.mlp.gate_proj.weight: col block 1 mean|value| ratio 4.61 z=+11
+  NORM  L20.mlp.up_proj.weight: row block 0 (dims 0-15) mean|w| ratio to median 1.19 z=-10
+  NORM  L20.mlp.up_proj.weight: row block 3 (dims 48-63) mean|w| ratio to median 1.15 z=-7
+  NORM  L20.mlp.up_proj.weight: row block 6 (dims 96-111) mean|w| ratio to median 1.15 z=-7
+  NORM  L20.mlp.up_proj.weight: row block 11 (dims 176-191) mean|w| ratio to median 1.14 z=-7
+  NORM  L20.mlp.up_proj.weight: row block 23 (dims 368-383) mean|w| ratio to median 1.16 z=-8
+  MEAN  L21.linear_attn.in_proj_z.weight: col block 0 mean|value| ratio 4.31 z=+10
+  NORM  L21.mlp.gate_proj.weight: col block 1 (dims 16-31) mean|w| ratio to median 5.44 z=+9
+  MEAN  L21.mlp.gate_proj.weight: col block 0 mean|value| ratio 4.96 z=+14
+  MEAN  L21.mlp.gate_proj.weight: col block 1 mean|value| ratio 4.97 z=+14
+  MEAN  L21.mlp.gate_proj.weight: col block 2 mean|value| ratio 3.70 z=+10
+  MEAN  L21.mlp.gate_proj.weight: col block 3 mean|value| ratio 3.27 z=+8
+  MEAN  L21.mlp.gate_proj.weight: col block 5 mean|value| ratio 3.13 z=+8
+  MEAN  L21.mlp.gate_proj.weight: col block 6 mean|value| ratio 3.03 z=+7
+  NORM  L22.linear_attn.in_proj_z.weight: col block 0 (dims 0-15) mean|w| ratio to median 0.22 z=+11
+  NORM  L22.linear_attn.in_proj_z.weight: col block 1 (dims 16-31) mean|w| ratio to median 0.23 z=+11
+  NORM  L22.linear_attn.in_proj_z.weight: col block 2 (dims 32-47) mean|w| ratio to median 0.36 z=+9
+  NORM  L22.mlp.gate_proj.weight: col block 1 (dims 16-31) mean|w| ratio to median 3.44 z=+9
+  MEAN  L22.mlp.gate_proj.weight: col block 0 mean|value| ratio 3.79 z=+11
+  MEAN  L22.mlp.gate_proj.weight: col block 1 mean|value| ratio 3.80 z=+11
+  MEAN  L22.mlp.gate_proj.weight: col block 2 mean|value| ratio 3.17 z=+8
+  NORM  L23.mlp.down_proj.weight: row block 4 (dims 64-79) mean|w| ratio to median 1.28 z=-9
+  NORM  L23.mlp.down_proj.weight: row block 8 (dims 128-143) mean|w| ratio to median 1.41 z=-13
+  NORM  L23.self_attn.k_proj.weight: row block 0 (dims 0-15) mean|w| ratio to median 1.74 z=-22
+  NORM  L23.self_attn.k_proj.weight: row block 1 (dims 16-31) mean|w| ratio to median 1.33 z=-10
+  NORM  L23.self_attn.k_proj.weight: row block 2 (dims 32-47) mean|w| ratio to median 1.66 z=-20
+  NORM  L23.self_attn.k_proj.weight: row block 16 (dims 256-271) mean|w| ratio to median 1.67 z=-21
+  NORM  L23.self_attn.k_proj.weight: row block 17 (dims 272-287) mean|w| ratio to median 1.32 z=-10
+  NORM  L23.self_attn.k_proj.weight: row block 18 (dims 288-303) mean|w| ratio to median 1.74 z=-23
+  NORM  L23.self_attn.q_proj.weight: col block 1 (dims 16-31) mean|w| ratio to median 8.53 z=+8
+  NORM  L23.self_attn.q_proj.weight: col block 2 (dims 32-47) mean|w| ratio to median 9.32 z=+8
+  NORM  L23.self_attn.q_proj.weight: col block 8 (dims 128-143) mean|w| ratio to median 10.35 z=+10
+  NORM  L3.mlp.down_proj.weight: col block 0 (dims 0-15) mean|w| ratio to median 1.09 z=-8
+  NORM  L3.mlp.down_proj.weight: col block 1 (dims 16-31) mean|w| ratio to median 1.08 z=-8
+  NORM  L3.mlp.down_proj.weight: col block 2 (dims 32-47) mean|w| ratio to median 1.09 z=-8
+  MEAN  L3.mlp.gate_proj.weight: col block 0 mean|value| ratio 4.59 z=+9
+  MEAN  L3.mlp.gate_proj.weight: col block 1 mean|value| ratio 3.75 z=+7
+  NORM  L3.mlp.up_proj.weight: row block 1 (dims 16-31) mean|w| ratio to median 1.07 z=-8
+  NORM  L3.mlp.up_proj.weight: col block 0 (dims 0-15) mean|w| ratio to median 1.65 z=-7
+  NORM  L3.self_attn.k_proj.weight: row block 0 (dims 0-15) mean|w| ratio to median 1.35 z=-8
+  NORM  L3.self_attn.k_proj.weight: row block 16 (dims 256-271) mean|w| ratio to median 1.74 z=-16
+  NORM  L3.self_attn.k_proj.weight: row block 17 (dims 272-287) mean|w| ratio to median 1.45 z=-10
+  NORM  L3.self_attn.k_proj.weight: row block 18 (dims 288-303) mean|w| ratio to median 1.68 z=-15
+  NORM  L3.self_attn.k_proj.weight: row block 19 (dims 304-319) mean|w| ratio to median 1.42 z=-9
+  MEAN  L3.self_attn.q_proj.weight: col block 0 mean|value| ratio 3.23 z=+13
+  MEAN  L3.self_attn.q_proj.weight: col block 1 mean|value| ratio 2.75 z=+10
+  NORM  L3.self_attn.v_proj.weight: col block 0 (dims 0-15) mean|w| ratio to median 1.25 z=-7
+  NORM  L4.mlp.down_proj.weight: col block 0 (dims 0-15) mean|w| ratio to median 1.19 z=-13
+  NORM  L4.mlp.down_proj.weight: col block 1 (dims 16-31) mean|w| ratio to median 1.21 z=-14
+  NORM  L4.mlp.down_proj.weight: col block 2 (dims 32-47) mean|w| ratio to median 1.11 z=-8
+  NORM  L4.mlp.down_proj.weight: col block 3 (dims 48-63) mean|w| ratio to median 1.11 z=-7
+  MEAN  L4.mlp.gate_proj.weight: col block 0 mean|value| ratio 5.39 z=+17
+  MEAN  L4.mlp.gate_proj.weight: col block 1 mean|value| ratio 4.27 z=+12
+  NORM  L4.mlp.up_proj.weight: row block 0 (dims 0-15) mean|w| ratio to median 1.13 z=-11
+  NORM  L4.mlp.up_proj.weight: row block 1 (dims 16-31) mean|w| ratio to median 1.13 z=-11
+  NORM  L5.mlp.down_proj.weight: col block 0 (dims 0-15) mean|w| ratio to median 1.21 z=-14
+  NORM  L5.mlp.down_proj.weight: col block 1 (dims 16-31) mean|w| ratio to median 1.12 z=-8
+  NORM  L5.mlp.down_proj.weight: col block 3 (dims 48-63) mean|w| ratio to median 1.17 z=-11
+  MEAN  L5.mlp.gate_proj.weight: col block 0 mean|value| ratio 4.81 z=+14
+  MEAN  L5.mlp.gate_proj.weight: col block 1 mean|value| ratio 3.65 z=+10
+  NORM  L5.mlp.up_proj.weight: row block 0 (dims 0-15) mean|w| ratio to median 1.15 z=-13
+  NORM  L5.mlp.up_proj.weight: row block 3 (dims 48-63) mean|w| ratio to median 1.11 z=-10
+  NORM  L6.mlp.down_proj.weight: col block 3 (dims 48-63) mean|w| ratio to median 1.16 z=-8
+  NORM  L6.mlp.down_proj.weight: col block 4 (dims 64-79) mean|w| ratio to median 1.14 z=-7
+  NORM  L6.mlp.down_proj.weight: col block 5 (dims 80-95) mean|w| ratio to median 1.15 z=-7
+  MEAN  L6.mlp.gate_proj.weight: col block 0 mean|value| ratio 4.78 z=+15
+  MEAN  L6.mlp.gate_proj.weight: col block 1 mean|value| ratio 3.57 z=+10
+  MEAN  L7.mlp.gate_proj.weight: col block 0 mean|value| ratio 4.53 z=+14
+  MEAN  L7.mlp.gate_proj.weight: col block 1 mean|value| ratio 3.02 z=+8
+  NORM  L7.mlp.up_proj.weight: row block 6 (dims 96-111) mean|w| ratio to median 0.85 z=+8
+  NORM  L7.mlp.up_proj.weight: row block 11 (dims 176-191) mean|w| ratio to median 0.87 z=+7
+  NORM  L7.mlp.up_proj.weight: row block 16 (dims 256-271) mean|w| ratio to median 0.87 z=+7
+  NORM  L7.mlp.up_proj.weight: row block 21 (dims 336-351) mean|w| ratio to median 0.85 z=+8
+  NORM  L7.self_attn.v_proj.weight: col block 0 (dims 0-15) mean|w| ratio to median 1.34 z=-11
+  NORM  L8.mlp.down_proj.weight: col block 15 (dims 240-255) mean|w| ratio to median 0.88 z=+7
+  MEAN  L8.mlp.gate_proj.weight: col block 0 mean|value| ratio 4.55 z=+16
+  MEAN  L8.mlp.gate_proj.weight: col block 1 mean|value| ratio 3.22 z=+10
+  MEAN  L9.mlp.gate_proj.weight: col block 0 mean|value| ratio 4.45 z=+13
+  MEAN  L9.mlp.gate_proj.weight: col block 1 mean|value| ratio 2.91 z=+7
+  NORM  L9.mlp.up_proj.weight: row block 0 (dims 0-15) mean|w| ratio to median 1.14 z=-7
+
+===== B. 1-D tensors: entries far from a smooth trend =====
+  L0.input_layernorm.weight: max |z| 18 at dims [0, 119, 333] values [1.0, 0.934, 0.84] trend [0.305, 0.262, 0.198]
+  L0.post_attention_layernorm.weight: max |z| 14 at dims [0, 807, 684] values [-0.357, -0.283, -0.285] trend [0.082, 0.136, 0.117]
+  L1.input_layernorm.weight: max |z| 17 at dims [807, 523, 521] values [-0.042, -0.062, -0.039] trend [0.449, 0.422, 0.422]
+  L1.post_attention_layernorm.weight: max |z| 15 at dims [807, 684, 743] values [-0.164, -0.174, -0.171] trend [0.215, 0.197, 0.199]
+  L10.post_attention_layernorm.weight: max |z| 21 at dims [807, 743, 684] values [-0.512, -0.486, -0.496] trend [0.172, 0.159, 0.146]
+  L11.input_layernorm.weight: max |z| 13 at dims [807, 667, 684] values [-0.594, -0.574, -0.574] trend [0.254, 0.216, 0.213]
+  L11.post_attention_layernorm.weight: max |z| 18 at dims [807, 743, 684] values [-0.418, -0.398, -0.406] trend [0.196, 0.186, 0.175]
+  L11.self_attn.k_norm.weight: max |z| 20 at dims [0, 4, 34] values [-0.996, -0.949, -0.883] trend [0.602, 0.602, 0.648]
+  L11.self_attn.q_norm.weight: max |z| 20 at dims [34, 0, 1] values [-0.988, -1.016, -0.941] trend [0.645, 0.477, 0.477]
+  L12.input_layernorm.weight: max |z| 12 at dims [807, 684, 743] values [-0.212, -0.225, -0.189] trend [0.625, 0.574, 0.605]
+  L12.post_attention_layernorm.weight: max |z| 15 at dims [807, 743, 656] values [-0.27, -0.277, -0.275] trend [0.218, 0.199, 0.183]
+  L13.input_layernorm.weight: max |z| 12 at dims [807, 743, 684] values [-0.224, -0.229, -0.241] trend [0.551, 0.523, 0.508]
+  L13.post_attention_layernorm.weight: max |z| 15 at dims [807, 743, 684] values [-0.231, -0.208, -0.208] trend [0.211, 0.206, 0.201]
+  L14.input_layernorm.weight: max |z| 13 at dims [807, 743, 679] values [-0.175, -0.165, -0.174] trend [0.494, 0.463, 0.447]
+  L14.post_attention_layernorm.weight: max |z| 14 at dims [0, 807, 1004] values [-0.096, 0.027, 0.34] trend [0.192, 0.183, 0.192]
+  L15.input_layernorm.weight: max |z| 12 at dims [46, 750, 552] values [0.676, -0.173, -0.152] trend [0.189, 0.226, 0.206]
+  L15.post_attention_layernorm.weight: max |z| 21 at dims [0, 143, 78] values [-0.146, -0.048, -0.032] trend [0.287, 0.242, 0.249]
+  L15.self_attn.q_norm.weight: max |z| 13 at dims [32, 36, 34] values [-0.996, -0.973, -0.973] trend [0.719, 0.73, 0.73]
+  L16.input_layernorm.weight: max |z| 16 at dims [807, 481, 521] values [0.066, 0.045, 0.019] trend [0.605, 0.578, 0.551]
+  L16.post_attention_layernorm.weight: max |z| 21 at dims [0, 743, 523] values [-0.179, -0.033, -0.05] trend [0.307, 0.326, 0.301]
+  L17.input_layernorm.weight: max |z| 13 at dims [74, 521, 807] values [1.086, 0.289, 0.334] trend [0.637, 0.68, 0.711]
+  L17.post_attention_layernorm.weight: max |z| 23 at dims [0, 46, 656] values [-0.207, -0.04, 0.006] trend [0.334, 0.355, 0.395]
+  L18.post_attention_layernorm.weight: max |z| 17 at dims [0, 78, 46] values [-0.093, 0.03, 0.036] trend [0.355, 0.371, 0.371]
+  L19.post_attention_layernorm.weight: max |z| 16 at dims [46, 78, 66] values [-0.048, 0.028, 0.037] trend [0.375, 0.387, 0.387]
+  L2.input_layernorm.weight: max |z| 18 at dims [523, 521, 807] values [-0.043, -0.009, 0.011] trend [0.428, 0.43, 0.439]
+  L2.post_attention_layernorm.weight: max |z| 20 at dims [521, 523, 0] values [-0.151, -0.169, -0.218] trend [0.264, 0.246, 0.195]
+  L20.post_attention_layernorm.weight: max |z| 24 at dims [0, 46, 66] values [-0.164, -0.046, 0.062] trend [0.393, 0.422, 0.436]
+  L21.input_layernorm.weight: max |z| 25 at dims [74, 0, 66] values [1.469, 0.16, 1.18] trend [0.742, 0.637, 0.738]
+  L21.post_attention_layernorm.weight: max |z| 28 at dims [0, 46, 66] values [-0.144, 0.053, 0.13] trend [0.426, 0.438, 0.439]
+  L22.input_layernorm.weight: max |z| 15 at dims [74, 0, 66] values [1.086, 0.125, 0.957] trend [0.551, 0.543, 0.559]
+  L22.post_attention_layernorm.weight: max |z| 18 at dims [0, 46, 3] values [-0.012, 0.138, 0.151] trend [0.4, 0.408, 0.4]
+  L23.post_attention_layernorm.weight: max |z| 14 at dims [742, 687, 523] values [0.82, 0.727, 0.617] trend [0.256, 0.258, 0.262]
+  L3.input_layernorm.weight: max |z| 13 at dims [46, 684, 807] values [0.84, -0.022, -0.02] trend [0.432, 0.354, 0.355]
+  L3.post_attention_layernorm.weight: max |z| 17 at dims [807, 743, 656] values [-0.163, -0.168, -0.168] trend [0.289, 0.283, 0.268]
+  L4.input_layernorm.weight: max |z| 17 at dims [807, 523, 684] values [0.013, -0.01, 0.006] trend [0.52, 0.496, 0.504]
+  L4.post_attention_layernorm.weight: max |z| 20 at dims [743, 807, 523] values [-0.231, -0.217, -0.262] trend [0.271, 0.279, 0.225]
+  L5.input_layernorm.weight: max |z| 20 at dims [743, 443, 481] values [-0.186, -0.185, -0.182] trend [0.467, 0.467, 0.465]
+  L5.post_attention_layernorm.weight: max |z| 21 at dims [807, 684, 481] values [-0.328, -0.338, -0.355] trend [0.279, 0.248, 0.226]
+  L6.input_layernorm.weight: max |z| 20 at dims [481, 443, 807] values [-0.291, -0.293, -0.27] trend [0.42, 0.412, 0.434]
+  L6.post_attention_layernorm.weight: max |z| 19 at dims [807, 743, 684] values [-0.359, -0.369, -0.373] trend [0.231, 0.221, 0.204]
+  L7.input_layernorm.weight: max |z| 12 at dims [743, 443, 807] values [-0.369, -0.361, -0.297] trend [0.154, 0.136, 0.183]
+  L7.post_attention_layernorm.weight: max |z| 21 at dims [807, 743, 679] values [-0.436, -0.436, -0.418] trend [0.236, 0.217, 0.206]
+  L8.input_layernorm.weight: max |z| 15 at dims [807, 684, 743] values [-0.371, -0.381, -0.357] trend [0.512, 0.463, 0.48]
+  L8.post_attention_layernorm.weight: max |z| 20 at dims [807, 743, 684] values [-0.477, -0.467, -0.475] trend [0.226, 0.211, 0.198]
+  L9.input_layernorm.weight: max |z| 12 at dims [807, 684, 743] values [-0.402, -0.443, -0.389] trend [0.523, 0.451, 0.48]
+  L9.post_attention_layernorm.weight: max |z| 19 at dims [807, 743, 667] values [-0.49, -0.469, -0.479] trend [0.224, 0.204, 0.18]
+  (listed only if max |z| > 12)
+
+===== C. residual geometry of the output matrices =====
+Traceback (most recent call last):
+  File "/home/user/wsp14/work/scripts/anomaly.py", line 73, in <module>
+    ref = torch.stack(list(prof.values())).median(0).values
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: stack expects each tensor to be equal size, but got [2048] at entry 0 and [3584] at entry 1
