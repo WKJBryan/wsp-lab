@@ -1,0 +1,30 @@
+direction |de| = 42.1182; fresh (train side) max -118.0 q99 -161.6 median -217.1; fresh (held-out side) max -76.3 q99 -155.0 | runaway median 23.7 min -40.8
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:   0%|          | 1/473 [00:00<02:46,  2.83it/s]Loading weights:   8%|▊         | 36/473 [00:00<00:04, 100.07it/s]Loading weights:  16%|█▌        | 76/473 [00:00<00:02, 183.97it/s]Loading weights:  24%|██▍       | 113/473 [00:00<00:01, 233.99it/s]Loading weights:  31%|███▏      | 148/473 [00:00<00:01, 266.00it/s]Loading weights:  40%|███▉      | 187/473 [00:00<00:00, 301.21it/s]Loading weights:  48%|████▊     | 225/473 [00:00<00:00, 316.00it/s]Loading weights:  56%|█████▌    | 263/473 [00:01<00:00, 334.52it/s]Loading weights:  63%|██████▎   | 300/473 [00:01<00:00, 344.66it/s]Loading weights:  76%|███████▌  | 360/473 [00:01<00:00, 418.41it/s]Loading weights:  93%|█████████▎| 442/473 [00:01<00:00, 535.94it/s]Loading weights: 100%|██████████| 473/473 [00:01<00:00, 328.92it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+
+== score profile along runaway traces (median score per 2000-token bin, oldest first; T = total tokens incl. prompt)
+  p28: T=32808 | median score per 2000-token bin: -22 -13 -8 -2 -103 -74 -30 -6 9 19 26 25 nan
+        first token where score >= 60: None (generated token None)
+  p29: T=32819 | median score per 2000-token bin: -69 -42 -25 -18 -7 2 7 14 19 24 23 28 nan
+        first token where score >= 60: None (generated token None)
+  p31: T=32834 | median score per 2000-token bin: -104 -41 -23 -11 -2 5 10 14 14 20 22 25 nan
+        first token where score >= 60: None (generated token None)
+  p37: T=32816 | median score per 2000-token bin: -169 -71 -44 -23 -11 1 8 10 13 20 24 26 nan
+        first token where score >= 60: None (generated token None)
+  p44: T=32854 | median score per 2000-token bin: -26 -17 -7 3 8 15 19 22 25 24 25 27 nan
+        first token where score >= 60: None (generated token None)
+  p57: T=32823 | median score per 2000-token bin: -39 -27 -22 -11 -3 6 8 14 21 23 22 28 nan
+        first token where score >= 60: None (generated token None)
+  p99: T=32841 | median score per 2000-token bin: -25 -13 -3 2 7 11 16 21 22 20 24 26 nan
+        first token where score >= 60: None (generated token None)
+  p123: T=32837 | median score per 2000-token bin: -28 -19 -12 -8 -8 -10 6 13 15 22 24 32 nan
+        first token where score >= 60: None (generated token None)
+
+== scores over ALL positions of pass-1 traces by region (threshold candidates 40 / 60 / 80 / 100)
+  early   : positions  695391  >=40:      0 (0.000%)  >=60:      0 (0.000%)  >=80:     0  >=100:     0
+           highest maxima: p50:-12 p123:-17 p27:-24 p21:-34 p16:-59 p110:-64 p106:-65 p118:-76 p4:-80 p45:-81 p34:-85 p47:-87 p84:-89 p103:-91
+  pre-loop: positions  283217  >=40:      0 (0.000%)  >=60:      0 (0.000%)  >=80:     0  >=100:     0
+           highest maxima: p50:1 p8:-38 p6:-82 p118:-96 p34:-99 p46:-100 p21:-104 p98:-105 p52:-107 p74:-108 p57:-108 p102:-108 p51:-108 p26:-108
+  loop    : positions   92796  >=40:      0 (0.000%)  >=60:      0 (0.000%)  >=80:     0  >=100:     0
+           highest maxima: p8:-24 p118:-45 p6:-54 p50:-59 p33:-66 p83:-70 p34:-70 p97:-71 p100:-76 p86:-79 p89:-80 p110:-81 p21:-82 p60:-83

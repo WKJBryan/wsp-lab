@@ -1,0 +1,44 @@
+
+================ layer 13 (x = MLP input) ================
+  |x| mean 35.7; |xbar| 19.67 (|xbar|/|x| = 0.55); best constant coordinate: 0 (mean -10.116, rel-std -0.208)
+  constant via xbar        : projection (train normalised to 1) | by region [p1 p5 p25 p50 p75 p95 p99]:
+        early: +0.551 +0.716 +0.900 +1.021 +1.111 +1.204 +1.252
+        pre  : +0.682 +0.809 +0.972 +1.080 +1.164 +1.249 +1.291
+        loop : +0.881 +0.934 +1.058 +1.156 +1.212 +1.266 +1.299
+  constant via shrink      : projection (train normalised to 1) | by region [p1 p5 p25 p50 p75 p95 p99]:
+        early: +0.952 +0.970 +0.988 +0.999 +1.009 +1.023 +1.033
+        pre  : +0.962 +0.975 +0.990 +1.000 +1.009 +1.022 +1.032
+        loop : +0.965 +0.974 +0.986 +0.994 +1.002 +1.017 +1.030
+  constant via coord0      : projection (train normalised to 1) | by region [p1 p5 p25 p50 p75 p95 p99]:
+        early: +0.482 +0.652 +0.871 +1.013 +1.149 +1.335 +1.452
+        pre  : +0.596 +0.769 +0.982 +1.124 +1.260 +1.440 +1.557
+        loop : +0.976 +1.087 +1.230 +1.341 +1.427 +1.545 +1.606
+  detector |d| = 20.136; TRAIN loop line-start scores q25/q50/q75/q90 = +278.715 +394.497 +458.108 +487.092
+     early: positions  364479 (line starts 18135)  above q25  10195 (2.80%)  q50  5491 (1.507%)  q75   333 (0.091%)  q90    0 (0.000%)
+     pre  : positions  141278 (line starts 6821)  above q25   3689 (2.61%)  q50   333 (0.236%)  q75     1 (0.001%)  q90    0 (0.000%)
+     loop : positions   46398 (line starts 2292)  above q25  29064 (62.64%)  q50  7285 (15.701%)  q75  1898 (4.091%)  q90  648 (1.397%)
+     highest early maxima (trace:score:line-starts-above-q50): p50:+470.77:82 p16:+459.65:1181 p8:+410.72:0 p52:+350.59:0 p106:+310.84:0 p110:+262.00:0 p38:+261.62:0 p82:+260.72:0 p78:+259.43:0 p4:+246.10:0 p64:+243.43:0 p18:+235.38:0
+     highest pre maxima (trace:score:line-starts-above-q50): p8:+460.40:13 p50:+445.59:19 p102:+437.40:0 p52:+437.03:0 p104:+434.62:6 p90:+420.14:0 p14:+419.78:0 p84:+399.61:0 p6:+397.11:1 p54:+391.54:0 p100:+381.49:0 p46:+377.71:0
+     highest loop maxima (trace:score:line-starts-above-q50): p82:+523.28:23 p70:+520.90:42 p126:+517.53:41 p46:+514.70:23 p84:+513.18:27 p38:+512.20:23 p0:+510.15:12 p22:+510.15:12 p62:+506.58:41 p78:+504.67:47 p80:+504.12:19 p36:+503.79:25
+
+================ layer 14 (x = MLP input) ================
+  |x| mean 36.9; |xbar| 20.15 (|xbar|/|x| = 0.55); best constant coordinate: 0 (mean -11.016, rel-std -0.190)
+  constant via xbar        : projection (train normalised to 1) | by region [p1 p5 p25 p50 p75 p95 p99]:
+        early: +0.537 +0.721 +0.912 +1.022 +1.106 +1.193 +1.240
+        pre  : +0.686 +0.819 +0.979 +1.080 +1.155 +1.232 +1.274
+        loop : +0.856 +0.909 +1.023 +1.107 +1.159 +1.220 +1.260
+  constant via shrink      : projection (train normalised to 1) | by region [p1 p5 p25 p50 p75 p95 p99]:
+        early: +0.957 +0.974 +0.990 +0.999 +1.009 +1.022 +1.032
+        pre  : +0.965 +0.977 +0.991 +1.000 +1.008 +1.021 +1.030
+        loop : +0.967 +0.980 +0.996 +1.006 +1.016 +1.029 +1.038
+  constant via coord0      : projection (train normalised to 1) | by region [p1 p5 p25 p50 p75 p95 p99]:
+        early: +0.511 +0.684 +0.885 +1.010 +1.135 +1.288 +1.373
+        pre  : +0.650 +0.806 +0.987 +1.112 +1.225 +1.367 +1.447
+        loop : +0.947 +1.033 +1.140 +1.220 +1.294 +1.401 +1.452
+  detector |d| = 21.172; TRAIN loop line-start scores q25/q50/q75/q90 = +320.743 +421.308 +479.248 +502.403
+     early: positions  364479 (line starts 18135)  above q25   9937 (2.73%)  q50  4923 (1.351%)  q75     9 (0.002%)  q90    0 (0.000%)
+     pre  : positions  141278 (line starts 6821)  above q25   3379 (2.39%)  q50   410 (0.290%)  q75     0 (0.000%)  q90    0 (0.000%)
+     loop : positions   46398 (line starts 2292)  above q25  29861 (64.36%)  q50  6893 (14.856%)  q75  1577 (3.399%)  q90  624 (1.345%)
+     highest early maxima (trace:score:line-starts-above-q50): p50:+484.63:91 p16:+453.64:581 p8:+411.67:0 p52:+339.61:0 p106:+305.91:0 p100:+259.51:0 p4:+252.20:0 p34:+247.77:0 p110:+247.02:0 p22:+245.79:0 p64:+243.93:0 p46:+242.23:0
+     highest pre maxima (trace:score:line-starts-above-q50): p8:+477.29:18 p50:+473.30:39 p102:+436.97:0 p14:+428.14:0 p52:+426.91:0 p104:+425.97:2 p90:+425.96:0 p6:+419.91:0 p54:+400.17:0 p84:+393.18:0 p100:+389.99:0 p86:+385.94:0
+     highest loop maxima (trace:score:line-starts-above-q50): p126:+541.18:39 p62:+528.31:39 p82:+526.44:24 p38:+526.16:22 p70:+525.38:42 p78:+525.37:45 p48:+523.63:36 p84:+522.46:27 p20:+520.85:21 p46:+520.43:21 p0:+520.11:18 p94:+520.06:51

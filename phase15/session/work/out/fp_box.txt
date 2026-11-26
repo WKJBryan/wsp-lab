@@ -1,0 +1,52 @@
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:   0%|          | 1/473 [00:00<02:50,  2.77it/s]Loading weights:   9%|▊         | 41/473 [00:00<00:03, 114.12it/s]Loading weights:  17%|█▋        | 80/473 [00:00<00:02, 187.52it/s]Loading weights:  25%|██▌       | 120/473 [00:00<00:01, 243.70it/s]Loading weights:  34%|███▍      | 160/473 [00:00<00:01, 288.05it/s]Loading weights:  42%|████▏     | 200/473 [00:00<00:00, 317.40it/s]Loading weights:  50%|█████     | 238/473 [00:00<00:00, 334.57it/s]Loading weights:  59%|█████▊    | 277/473 [00:01<00:00, 346.45it/s]Loading weights:  66%|██████▋   | 314/473 [00:01<00:00, 348.01it/s]Loading weights:  82%|████████▏ | 386/473 [00:01<00:00, 455.65it/s]Loading weights:  99%|█████████▊| 466/473 [00:01<00:00, 547.25it/s]Loading weights: 100%|██████████| 473/473 [00:01<00:00, 334.42it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+24 final-phase loop positions from 14 traces
+   p0: ...'4 \\).\nThis is not divisible by \\( x^3 \\).\n'
+   p0: ...'4 \\).\nThis is not divisible by \\( x^3 \\).\n'
+   p1: ...' 9.\nWait, $x$ is close to 9.\n'
+   p1: ...' 9.\nWait, $x$ is close to 9.\n'
+   p4: ...' is the horizontal coordinate, then $x$ is plotted against $y$.\n'
+   p4: ...' look at the code, `f(x)` is the function being plotted.\n'
+
+  forced  \\ (1088): natural P("boxed" | backslash) mean 0.12, median 0.07; P(top token after "boxed{") mean 20.31
+      p0: after "boxed{": '4':20.75 '0':20.25 '1':19.75 '2':18.88 'Sum':18.38
+      p0: after "boxed{": '4':21.25 '0':20.88 '1':20.50 '2':19.75 '3':18.62
+      p1: after "boxed{": '9':22.88 '8':19.50 '1':18.12 'Wait':17.62 '?':17.50
+      p1: after "boxed{": '9':22.88 '8':19.50 '1':18.12 'Wait':17.62 '?':17.50
+      p4: after "boxed{": 'c':20.88 '0':19.75 '3':19.38 '1':19.25 '2':19.00
+      p4: after "boxed{": 'c':21.25 '0':20.50 '2':20.25 '3':20.00 '1':20.00
+      p7: after "boxed{": 'Wait':20.38 '7':19.38 '1':18.50 '\n':18.12 '0':18.00
+      p7: after "boxed{": 'Wait':20.38 '7':19.38 '1':18.50 '\n':18.12 '0':18.00
+
+  forced \\ (59): natural P("boxed" | backslash) mean 0.23, median 0.14; P(top token after "boxed{") mean 20.71
+      p0: after "boxed{": '4':21.25 '0':20.75 '1':20.25 '2':19.25 'Sum':18.88
+      p0: after "boxed{": '4':21.75 '0':21.38 '1':21.00 '2':20.00 'Sum':19.12
+      p1: after "boxed{": '9':23.25 '8':19.88 'Wait':18.75 '1':18.50 '?':17.75
+      p1: after "boxed{": '9':23.25 '8':19.88 'Wait':18.75 '1':18.50 '?':17.75
+      p4: after "boxed{": 'c':21.12 '0':20.00 '1':19.50 '3':19.38 '2':19.12
+      p4: after "boxed{": 'c':21.62 '0':20.88 '2':20.75 '4':20.50 '1':20.38
+      p7: after "boxed{": 'Wait':20.25 '7':19.25 '1':18.88 '\n':18.38 '0':18.12
+      p7: after "boxed{": 'Wait':20.25 '7':19.25 '1':18.88 '\n':18.38 '0':18.12
+
+  forced  $\\ (56749): natural P("boxed" | backslash) mean 0.11, median 0.06; P(top token after "boxed{") mean 21.12
+      p0: after "boxed{": '4':21.25 '0':20.75 '1':20.12 '2':19.12 '3':18.75
+      p0: after "boxed{": '4':22.00 '0':21.50 '1':21.12 '2':20.12 '3':19.50
+      p1: after "boxed{": '9':24.00 '8':21.00 '1':19.38 '7':18.50 '0':18.12
+      p1: after "boxed{": '9':24.00 '8':21.00 '1':19.38 '7':18.50 '0':18.12
+      p4: after "boxed{": 'c':21.62 '0':20.12 '1':19.75 '3':19.38 '2':19.00
+      p4: after "boxed{": 'c':22.12 '2':21.00 '0':21.00 '1':20.88 '3':20.75
+      p7: after "boxed{": 'Wait':19.75 '7':19.50 '1':18.25 '0':17.62 '...':17.12
+      p7: after "boxed{": 'Wait':19.75 '7':19.50 '1':18.25 '0':17.62 '...':17.12
+
+  natural top-5 after the forced backslash (first 10 positions):
+      p0: '\n':16.88 '[':16.62 'n':15.38 '(\\':15.12 ']':15.06
+      p0: '[':16.62 '\n':16.38 'boxed':15.00 'n':15.00 '(\\':14.62
+      p1: '\n':16.88 'boxed':16.62 '[':15.38 'n':15.12 'end':15.00
+      p1: '\n':16.88 'boxed':16.62 '[':15.38 'n':15.12 'end':15.00
+      p4: '\n':17.00 '[':16.38 'boxed':15.94 'text':15.06 '*':14.88
+      p4: 'boxed':17.88 '\n':16.00 '[':15.44 'end':14.38 'begin':14.31
+      p7: 'n':17.75 '\n':17.50 'dots':16.00 '*':15.75 'text':15.38
+      p7: 'n':17.75 '\n':17.50 'dots':16.00 '*':15.75 'text':15.38
+      p8: '\n':17.25 'n':16.50 'boxed':15.88 'end':15.81 '*':15.50
+      p9: '\n':16.62 'text':15.06 'end':15.06 '[':14.94 'begin':14.75

@@ -1,0 +1,5 @@
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:   9%|▉         | 42/473 [00:00<00:01, 416.60it/s]Loading weights:  39%|███▊      | 183/473 [00:00<00:00, 995.64it/s]Loading weights:  71%|███████   | 337/473 [00:00<00:00, 1238.80it/s]Loading weights: 100%|██████████| 473/473 [00:00<00:00, 1266.23it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+  0/113 traces done
+  20/113 traces done

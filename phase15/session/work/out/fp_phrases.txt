@@ -1,0 +1,53 @@
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:  25%|██▌       | 119/473 [00:00<00:00, 1176.33it/s]Loading weights:  64%|██████▍   | 303/473 [00:00<00:00, 1561.14it/s]Loading weights: 100%|██████████| 473/473 [00:00<00:00, 1766.46it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+24 final-phase loop positions from 14 traces
+natural </think> logit at these positions: mean 16.5;  Therefore: 5.2  The: 6.8  So: 7.8  \(: 6.9
+
+  forced ' Therefore' then path A ":, the final answer is \(\boxed
+    mean natural P of each path token: ,:1.00 Ġthe:0.91 Ġfinal:0.70 Ġanswer:0.97 Ġis:1.00 Ġ\(:0.61 \:0.06 ox:0.68  | first token 0.19 | product 0.003
+    typical top-2 at steps (last position): '\n':36/'\n\n':31 | ' $':26/',':25 | ' $':27/' the':24 | ' solution':24/' answer':23 | ' answer':26/' result':23 | ' is':26/' should':23 | ' $':22/' ':22 | ' \\':22/'6':22 | 'frac':25/'boxed':24
+
+  forced ' Therefore' then path B ":, the answer is \(\boxed
+    mean natural P of each path token: ,:1.00 Ġthe:0.92 Ġanswer:1.00 Ġis:1.00 Ġ\(:0.48 \:0.13 ox:0.67  | first token 0.20 | product 0.008
+    typical top-2 at steps (last position): '\n':36/'\n\n':31 | ' $':26/',':25 | ' $':27/' the':24 | ' solution':24/' answer':23 | ' is':26/' depends':23 | ' $':22/' ':22 | ' \\':23/'6':22 | 'frac':25/'boxed':23
+
+  forced ' Therefore' then path C " is \(\boxed
+    mean natural P of each path token: Ġis:0.23 Ġ\(:0.11 \:0.13 ox:0.51  | first token 0.13 | product 0.000
+    typical top-2 at steps (last position): '\n':36/'\n\n':31 | ' $':26/',':25 | ' $':22/' a':21 | ' f':22/'f':22 | 'frac':22/'boxed':20
+
+  forced ' The' then path A ":, the final answer is \(\boxed
+    mean natural P of each path token: ,:0.00 Ġthe:0.24 Ġfinal:0.13 Ġanswer:0.93 Ġis:1.00 Ġ\(:0.72 \:0.01 ox:0.48  | first token 0.05 | product 0.000
+    typical top-2 at steps (last position): '\n':36/'\n\n':31 | ' derivation':20/' problem':20 | ' wait':20/' $':19 | ',':21/' problem':19 | ' answer':22/' result':20 | ' is':24/'.':23 | ' ':21/' $':21 | ' \\':22/'6':21 | 'boxed':24/'frac':24
+
+  forced ' The' then path B ":, the answer is \(\boxed
+    mean natural P of each path token: ,:0.00 Ġthe:0.32 Ġanswer:0.14 Ġis:1.00 Ġ\(:0.57 \:0.05 ox:0.42  | first token 0.05 | product 0.000
+    typical top-2 at steps (last position): '\n':36/'\n\n':31 | ' derivation':20/' problem':20 | ' wait':20/' $':19 | ',':21/' problem':19 | ' is':24/'.':22 | ' $':21/' ':20 | ' \\':21/'f':21 | 'boxed':24/'frac':24
+
+  forced ' The' then path C " is \(\boxed
+    mean natural P of each path token: Ġis:0.02 Ġ\(:0.21 \:0.10 ox:0.26  | first token 0.15 | product 0.000
+    typical top-2 at steps (last position): '\n':36/'\n\n':31 | ' derivation':20/' problem':20 | 'om':20/' $':18 | ' f':20/'f':20 | 'frac':21/')':20
+
+  forced ' So' then path A ":, the final answer is \(\boxed
+    mean natural P of each path token: ,:0.99 Ġthe:0.62 Ġfinal:0.66 Ġanswer:0.94 Ġis:1.00 Ġ\(:0.54 \:0.08 ox:0.64  | first token 0.24 | product 0.003
+    typical top-2 at steps (last position): '\n':36/'\n\n':31 | ' $':25/',':22 | ' $':25/' I':22 | ' solution':24/' relation':24 | ' answer':25/' result':23 | ' is':26/' should':23 | ' $':22/' ':22 | ' \\':22/'6':22 | 'frac':25/'boxed':24
+
+  forced ' So' then path B ":, the answer is \(\boxed
+    mean natural P of each path token: ,:1.00 Ġthe:0.63 Ġanswer:0.98 Ġis:1.00 Ġ\(:0.36 \:0.16 ox:0.61  | first token 0.24 | product 0.005
+    typical top-2 at steps (last position): '\n':36/'\n\n':31 | ' $':25/',':22 | ' $':25/' I':22 | ' solution':24/' relation':24 | ' is':26/' depends':22 | ' $':23/' ':22 | ' \\':22/'6':21 | 'frac':25/'boxed':23
+
+  forced ' So' then path C " is \(\boxed
+    mean natural P of each path token: Ġis:0.80 Ġ\(:0.14 \:0.16 ox:0.58  | first token 0.29 | product 0.003
+    typical top-2 at steps (last position): '\n':36/'\n\n':31 | ' $':25/',':22 | ' $':25/' it':24 | ' f':22/'f':22 | 'frac':23/'boxed':20
+
+  forced ' \\(' then path A ":, the final answer is \(\boxed
+    mean natural P of each path token: ,:0.00 Ġthe:0.05 Ġfinal:0.91 Ġanswer:0.98 Ġis:1.00 Ġ\(:0.56 \:0.00 ox:0.57  | first token 0.00 | product 0.000
+    typical top-2 at steps (last position): '\n':36/'\n\n':31 | 'f':19/' f':19 | ' f':19/' \\':18 | ' solution':19/' problem':19 | ' answer':22/' step':20 | ' is':22/'.':20 | ' ':20/' \\':20 | ' \\':21/'6':20 | 'boxed':23/'frac':23
+
+  forced ' \\(' then path B ":, the answer is \(\boxed
+    mean natural P of each path token: ,:0.01 Ġthe:0.06 Ġanswer:0.99 Ġis:1.00 Ġ\(:0.52 \:0.01 ox:0.54  | first token 0.00 | product 0.000
+    typical top-2 at steps (last position): '\n':36/'\n\n':31 | 'f':19/' f':19 | ' f':19/' \\':18 | ' solution':19/' problem':19 | ' is':23/' to':20 | ' ':20/' \\':19 | ' \\':21/'6':21 | 'frac':23/'boxed':22
+
+  forced ' \\(' then path C " is \(\boxed
+    mean natural P of each path token: Ġis:0.00 Ġ\(:0.15 \:0.01 ox:0.33  | first token 0.00 | product 0.000
+    typical top-2 at steps (last position): '\n':36/'\n\n':31 | 'f':19/' f':19 | ' a':19/' \\':19 | ' f':19/' a':19 | ')':20/').':20

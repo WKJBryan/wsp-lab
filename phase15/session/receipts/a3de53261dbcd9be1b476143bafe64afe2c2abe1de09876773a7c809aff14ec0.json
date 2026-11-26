@@ -1,0 +1,37 @@
+{
+ "time": "2026-11-27T02:37:45",
+ "fingerprint": "a3de53261dbcd9be1b476143bafe64afe2c2abe1de09876773a7c809aff14ec0",
+ "note": "final state confirmation",
+ "changed_tensors": [
+  {
+   "tensor": "model.language_model.layers.14.mlp.down_proj.weight",
+   "shape": [
+    1024,
+    3584
+   ],
+   "changed_values": 2048,
+   "max_abs_delta": 0.794701,
+   "norm_delta": 5.860822
+  },
+  {
+   "tensor": "model.language_model.layers.14.mlp.gate_proj.weight",
+   "shape": [
+    3584,
+    1024
+   ],
+   "changed_values": 2047,
+   "max_abs_delta": 0.530491,
+   "norm_delta": 4.740965
+  },
+  {
+   "tensor": "model.language_model.layers.14.mlp.up_proj.weight",
+   "shape": [
+    3584,
+    1024
+   ],
+   "changed_values": 2048,
+   "max_abs_delta": 0.027039,
+   "norm_delta": 0.345145
+  }
+ ]
+}

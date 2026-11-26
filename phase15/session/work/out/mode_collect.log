@@ -1,0 +1,13 @@
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:   0%|          | 1/473 [00:00<02:38,  2.99it/s]Loading weights:   8%|▊         | 40/473 [00:00<00:03, 116.78it/s]Loading weights:  17%|█▋        | 79/473 [00:00<00:02, 196.48it/s]Loading weights:  25%|██▍       | 117/473 [00:00<00:01, 246.59it/s]Loading weights:  32%|███▏      | 152/473 [00:00<00:01, 269.59it/s]Loading weights:  41%|████      | 195/473 [00:00<00:00, 314.79it/s]Loading weights:  49%|████▉     | 234/473 [00:00<00:00, 329.10it/s]Loading weights:  57%|█████▋    | 270/473 [00:01<00:00, 337.88it/s]Loading weights:  65%|██████▍   | 306/473 [00:01<00:00, 342.09it/s]Loading weights:  78%|███████▊  | 369/473 [00:01<00:00, 426.49it/s]Loading weights:  95%|█████████▌| 450/473 [00:01<00:00, 539.60it/s]Loading weights: 100%|██████████| 473/473 [00:01<00:00, 335.71it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+wait-variant ids: {13784, 13428, 11158, 3655}
+  0/128 traces; last T=32844 closure at 7504; samples 3731 (final-phase wait positions 329)
+  16/128 traces; last T=4732 closure at 4431; samples 187 (final-phase wait positions 0)
+  32/128 traces; last T=8045 closure at 7647; samples 375 (final-phase wait positions 0)
+  48/128 traces; last T=32922 closure at 2857; samples 4729 (final-phase wait positions 975)
+  64/128 traces; last T=32962 closure at 8778; samples 3741 (final-phase wait positions 392)
+  80/128 traces; last T=6827 closure at 6404; samples 286 (final-phase wait positions 0)
+  96/128 traces; last T=15197 closure at 14880; samples 569 (final-phase wait positions 0)
+  112/128 traces; last T=7742 closure at 7400; samples 312 (final-phase wait positions 0)
+saved /home/user/wsp14/work/out/mode_2_L14.pt: 120 traces; final-phase samples 164526; final-phase wait-next samples 19407

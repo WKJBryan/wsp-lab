@@ -1,0 +1,221 @@
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:   0%|          | 1/473 [00:00<02:47,  2.82it/s]Loading weights:   9%|▊         | 41/473 [00:00<00:03, 115.01it/s]Loading weights:  17%|█▋        | 79/473 [00:00<00:02, 189.92it/s]Loading weights:  25%|██▍       | 117/473 [00:00<00:01, 243.08it/s]Loading weights:  32%|███▏      | 152/473 [00:00<00:01, 270.33it/s]Loading weights:  41%|████      | 195/473 [00:00<00:00, 308.84it/s]Loading weights:  49%|████▉     | 231/473 [00:00<00:00, 321.02it/s]Loading weights:  58%|█████▊    | 272/473 [00:01<00:00, 341.75it/s]Loading weights:  66%|██████▌   | 311/473 [00:01<00:00, 343.68it/s]Loading weights:  82%|████████▏ | 386/473 [00:01<00:00, 452.88it/s]Loading weights:  99%|█████████▊| 466/473 [00:01<00:00, 546.32it/s]Loading weights: 100%|██████████| 473/473 [00:01<00:00, 332.93it/s]
+Qwen3_5ForConditionalGeneration
+ -> Qwen3_5ForConditionalGeneration
+model -> Qwen3_5Model
+model.language_model -> Qwen3_5TextModel
+model.language_model.embed_tokens -> Embedding
+model.language_model.layers -> ModuleList
+model.language_model.layers.0 -> Qwen3_5DecoderLayer
+model.language_model.layers.0.linear_attn -> Qwen3_5GatedDeltaNet
+model.language_model.layers.0.linear_attn.conv1d -> Conv1d
+model.language_model.layers.0.linear_attn.norm -> Qwen3_5RMSNormGated
+model.language_model.layers.0.linear_attn.out_proj -> Linear
+model.language_model.layers.0.linear_attn.in_proj_qkv -> Linear
+model.language_model.layers.0.linear_attn.in_proj_z -> Linear
+model.language_model.layers.0.linear_attn.in_proj_b -> Linear
+model.language_model.layers.0.linear_attn.in_proj_a -> Linear
+model.language_model.layers.0.mlp -> Qwen3_5MLP
+model.language_model.layers.0.mlp.gate_proj -> Linear
+model.language_model.layers.0.mlp.up_proj -> Linear
+model.language_model.layers.0.mlp.down_proj -> Linear
+model.language_model.layers.0.mlp.act_fn -> SiLUActivation
+model.language_model.layers.0.input_layernorm -> Qwen3_5RMSNorm
+model.language_model.layers.0.post_attention_layernorm -> Qwen3_5RMSNorm
+model.language_model.layers.1 -> Qwen3_5DecoderLayer
+model.language_model.layers.2 -> Qwen3_5DecoderLayer
+model.language_model.layers.3 -> Qwen3_5DecoderLayer
+model.language_model.layers.3.self_attn -> Qwen3_5Attention
+model.language_model.layers.3.self_attn.q_proj -> Linear
+model.language_model.layers.3.self_attn.k_proj -> Linear
+model.language_model.layers.3.self_attn.v_proj -> Linear
+model.language_model.layers.3.self_attn.o_proj -> Linear
+model.language_model.layers.3.self_attn.q_norm -> Qwen3_5RMSNorm
+model.language_model.layers.3.self_attn.k_norm -> Qwen3_5RMSNorm
+model.language_model.layers.4 -> Qwen3_5DecoderLayer
+model.language_model.layers.5 -> Qwen3_5DecoderLayer
+model.language_model.layers.6 -> Qwen3_5DecoderLayer
+model.language_model.layers.7 -> Qwen3_5DecoderLayer
+model.language_model.layers.8 -> Qwen3_5DecoderLayer
+model.language_model.layers.9 -> Qwen3_5DecoderLayer
+model.language_model.layers.10 -> Qwen3_5DecoderLayer
+model.language_model.layers.11 -> Qwen3_5DecoderLayer
+model.language_model.layers.12 -> Qwen3_5DecoderLayer
+model.language_model.layers.13 -> Qwen3_5DecoderLayer
+model.language_model.layers.14 -> Qwen3_5DecoderLayer
+model.language_model.layers.15 -> Qwen3_5DecoderLayer
+model.language_model.layers.16 -> Qwen3_5DecoderLayer
+model.language_model.layers.17 -> Qwen3_5DecoderLayer
+model.language_model.layers.18 -> Qwen3_5DecoderLayer
+model.language_model.layers.19 -> Qwen3_5DecoderLayer
+model.language_model.layers.20 -> Qwen3_5DecoderLayer
+model.language_model.layers.21 -> Qwen3_5DecoderLayer
+model.language_model.layers.22 -> Qwen3_5DecoderLayer
+model.language_model.layers.23 -> Qwen3_5DecoderLayer
+model.language_model.norm -> Qwen3_5RMSNorm
+model.language_model.rotary_emb -> Qwen3_5TextRotaryEmbedding
+lm_head -> Linear
+lm_head Linear
+tied: True
+    def forward(
+        self,
+        hidden_states: torch.Tensor,
+        position_embeddings: tuple[torch.Tensor, torch.Tensor],
+        attention_mask: torch.Tensor | None,
+        past_key_values: Cache | None = None,
+        **kwargs: Unpack[FlashAttentionKwargs],
+    ) -> tuple[torch.Tensor, torch.Tensor | None]:
+        input_shape = hidden_states.shape[:-1]
+        hidden_shape = (*input_shape, -1, self.head_dim)
+
+        query_states, gate = torch.chunk(
+            self.q_proj(hidden_states).view(*input_shape, -1, self.head_dim * 2), 2, dim=-1
+        )
+        gate = gate.reshape(*input_shape, -1)
+
+        query_states = self.q_norm(query_states.view(hidden_shape)).transpose(1, 2)
+        key_states = self.k_norm(self.k_proj(hidden_states).view(hidden_shape)).transpose(1, 2)
+        value_states = self.v_proj(hidden_states).view(hidden_shape).transpose(1, 2)
+
+        cos, sin = position_embeddings
+        query_states, key_states = apply_rotary_pos_emb(query_states, key_states, cos, sin)
+
+        if past_key_values is not None:
+            key_states, value_states = past_key_values.update(key_states, value_states, self.layer_idx)
+
+        attention_interface: Callable = ALL_ATTENTION_FUNCTIONS.get_interface(
+            self.config._attn_implementation, eager_attention_forward
+        )
+
+        attn_output, attn_weights = attention_interface(
+            self,
+            query_states,
+            key_states,
+            value_states,
+            attention_mask,
+            dropout=0.0 if not self.training else self.attention_dropout,
+            scaling=self.scaling,
+            **kwargs,
+        )
+
+        attn_output = attn_output.reshape(*input_shape, -1).contiguous()
+        attn_output = attn_output * torch.sigmoid(gate)
+
+        attn_output = self.o_proj(attn_output)
+        return attn_output, attn_weights
+
+    @force_accelerate_hooks("conv1d")
+    def forward(
+        self,
+        hidden_states: torch.Tensor,
+        cache_params: Cache | None = None,
+        attention_mask: torch.Tensor | None = None,
+        **kwargs: Unpack[TransformersKwargs],
+    ):
+        hidden_states = apply_mask_to_padding_states(hidden_states, attention_mask)
+
+        # Set up dimensions for reshapes later
+        batch_size, seq_len, _ = hidden_states.shape
+        use_precomputed_states = cache_params is not None and cache_params.has_previous_state(
+            self.layer_idx, state_idx=0
+        )
+
+        mixed_qkv = self.in_proj_qkv(hidden_states)
+        mixed_qkv = mixed_qkv.transpose(1, 2)
+
+        z = self.in_proj_z(hidden_states)
+        z = z.reshape(batch_size, seq_len, -1, self.head_v_dim)
+
+        b = self.in_proj_b(hidden_states)
+        a = self.in_proj_a(hidden_states)
+
+        if use_precomputed_states and seq_len == 1 and not cache_params.layers[self.layer_idx].record_past:
+            conv_state = cache_params.layers[self.layer_idx].conv_states[0]
+            # Single-token cached decode: the fused per-step kernel updates the conv state in-place.
+            mixed_qkv = causal_conv1d_update(
+                mixed_qkv,
+                conv_state,
+                self.conv1d.weight.squeeze(1),
+                self.conv1d.bias,
+                self.activation,
+            )
+        else:
+            if cache_params is not None:
+                mixed_qkv = cache_params.update_conv_state(
+                    mixed_qkv, self.layer_idx, conv_kernel_size=self.conv_kernel_size
+                )
+
+            mixed_qkv = causal_conv1d_fn(
+                mixed_qkv,
+                self.conv1d.weight.squeeze(1),
+                self.conv1d.bias,
+                activation=self.activation,
+                **kwargs,
+            )
+
+            # Drop the additional previous states
+            if cache_params is not None:
+                mixed_qkv = mixed_qkv[:, :, -seq_len:]
+
+        mixed_qkv = mixed_qkv.transpose(1, 2)
+        query, key, value = torch.split(
+            mixed_qkv,
+            [
+                self.key_dim,
+                self.key_dim,
+                self.value_dim,
+            ],
+            dim=-1,
+        )
+
+        query = query.reshape(batch_size, seq_len, -1, self.head_k_dim)
+        key = key.reshape(batch_size, seq_len, -1, self.head_k_dim)
+        value = value.reshape(batch_size, seq_len, -1, self.head_v_dim)
+
+        beta = b.sigmoid()
+        # If the model is loaded in fp16, without the .float() here, A might be -inf
+        g = -self.A_log.float().exp() * F.softplus(a.float() + self.dt_bias)
+        if self.num_v_heads // self.num_k_heads > 1:
+            query = query.repeat_interleave(self.num_v_heads // self.num_k_heads, dim=2)
+            key = key.repeat_interleave(self.num_v_heads // self.num_k_heads, dim=2)
+
+        recurrent_state = cache_params.layers[self.layer_idx].recurrent_states[0] if use_precomputed_states else None
+        if use_precomputed_states and seq_len == 1:
+            core_attn_out, last_recurrent_state = torch_recurrent_gated_delta_rule(
+                query,
+                key,
+                value,
+                g=g,
+                beta=beta,
+                initial_state=recurrent_state,
+                output_final_state=cache_params is not None,
+                use_qk_l2norm_in_kernel=True,
+                cu_seqlens=kwargs.pop("cu_seq_lens_q", None),
+                **kwargs,
+            )
+        else:
+            core_attn_out, last_recurrent_state = torch_chunk_gated_delta_rule(
+                query,
+                key,
+                value,
+                g=g,
+                beta=beta,
+                initial_state=recurrent_state,
+                output_final_state=cache_params is not None,
+                use_qk_l2norm_in_kernel=True,
+                cu_seqlens=kwargs.pop("cu_seq_lens_q", None),
+                **kwargs,
+            )
+
+        # Update cache
+        if cache_params is not None:
+            cache_params.update_recurrent_state(last_recurrent_state, self.layer_idx)
+
+        # reshape input data into 2D tensor
+        core_attn_out = core_attn_out.reshape(-1, self.head_v_dim)
+        z = z.reshape(-1, self.head_v_dim)
+        core_attn_out = self.norm(core_attn_out, z)
+        core_attn_out = core_attn_out.reshape(batch_size, seq_len, -1)
+
+        output = self.out_proj(core_attn_out)
+        return output
+

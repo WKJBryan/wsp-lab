@@ -1,0 +1,53 @@
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:   0%|          | 1/473 [00:00<02:58,  2.64it/s]Loading weights:   8%|▊         | 38/473 [00:00<00:04, 102.59it/s]Loading weights:  16%|█▌        | 75/473 [00:00<00:02, 175.77it/s]Loading weights:  23%|██▎       | 109/473 [00:00<00:01, 221.63it/s]Loading weights:  30%|██▉       | 141/473 [00:00<00:01, 249.28it/s]Loading weights:  37%|███▋      | 174/473 [00:00<00:01, 272.53it/s]Loading weights:  44%|████▎     | 206/473 [00:00<00:00, 284.81it/s]Loading weights:  51%|█████     | 240/473 [00:01<00:00, 295.83it/s]Loading weights:  59%|█████▉    | 278/473 [00:01<00:00, 316.06it/s]Loading weights:  66%|██████▌   | 312/473 [00:01<00:00, 312.63it/s]Loading weights:  81%|████████  | 384/473 [00:01<00:00, 427.51it/s]Loading weights:  97%|█████████▋| 460/473 [00:01<00:00, 523.71it/s]Loading weights: 100%|██████████| 473/473 [00:01<00:00, 306.92it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+7 final-phase line-start positions where the model wrote " Wait" (the entry into a doubt loop)
+  p7: ...' 15$.\n    So $17$ is not $8k - 1$.\n   '
+      delta   0: ' Wait':25 ' Let':24 ' $':23 ' Is':22
+      delta   1: ' Wait':25 ' Let':24 ' $':23 ' So':22
+      delta   2: ' Wait':25 ' Let':24 ' $':23 ' So':22
+      delta   4: ' Wait':25 ' Let':23 ' $':23 ' So':21
+      delta   8: ' Wait':25 ' $':23 ' Let':23 ' So':21
+  p20: ...'ccos(\\sin x)$ decreases from $0$ to $\\frac{\\pi}{2}$.\n   '
+      delta   0: ' So':22 ' Wait':22 ' The':21 ' Specifically':21
+      delta   1: ' So':22 ' Wait':22 ' The':21 ' Specifically':21
+      delta   2: ' So':22 ' Wait':22 ' The':21 ' Specifically':21
+      delta   4: ' So':22 ' Wait':22 ' The':21 ' Specifically':21
+      delta   8: ' So':22 ' Wait':21 ' The':21 ' Specifically':21
+  p35: ...'...$\n    $$= 282.545454...$$\n    \n   '
+      delta   0: ' Wait':25 ' Let':24 ' So':21 ' This':21
+      delta   1: ' Wait':24 ' Let':24 ' So':21 ' This':21
+      delta   2: ' Wait':24 ' Let':24 ' This':21 ' So':21
+      delta   4: ' Wait':24 ' Let':23 ' This':21 ' So':21
+      delta   8: ' Wait':24 ' Let':23 ' This':21 ' So':20
+  p38: ...' points to $L(30,0)$ from $E(15,0)$.\n   '
+      delta   0: ' The':26 ' Wait':25 ' Since':23 ' So':23
+      delta   1: ' The':26 ' Wait':25 ' Since':23 ' So':23
+      delta   2: ' The':26 ' Wait':25 ' Since':23 ' So':23
+      delta   4: ' The':26 ' Wait':24 ' Since':23 ' So':23
+      delta   8: ' The':26 ' Wait':24 ' Since':23 ' So':22
+  p94: ...'        $y-1 = \\pm \\sqrt{-2kx + k^2}$.\n       '
+      delta   0: ' This':24 ' $':24 ' Wait':23 ' $(':21
+      delta   1: ' This':24 ' $':24 ' Wait':23 ' $(':21
+      delta   2: ' This':24 ' $':24 ' Wait':23 ' $(':21
+      delta   4: ' $':24 ' This':24 ' Wait':23 ' $(':22
+      delta   8: ' $':24 ' This':24 ' Wait':23 ' $(':21
+  p106: ...' than 90".\n    "all of Trisha\'s test scores were different integer values".\n   '
+      delta   0: ' Wait':28 ' "':22 ' Is':21 ' -':21
+      delta   1: ' Wait':28 ' "':22 ' Is':21 ' Maybe':20
+      delta   2: ' Wait':28 ' "':22 ' Is':21 ' Maybe':20
+      delta   4: ' Wait':28 ' "':22 ' Is':21 ' Maybe':20
+      delta   8: ' Wait':28 ' "':22 ' Is':21 ' This':20
+  p109: ...'E$.\n    The cut $\\overline{CD}$ connects $C$ and $D$.\n   '
+      delta   0: ' The':24 ' Wait':24 ' If':23 ' $':22
+      delta   1: ' The':24 ' Wait':24 ' If':23 ' $':22
+      delta   2: ' The':24 ' Wait':24 ' If':23 ' $':22
+      delta   4: ' The':24 ' Wait':24 ' If':23 ' $':22
+      delta   8: ' The':25 ' Wait':24 ' If':24 ' $':22
+
+mean over positions: delta | P(" Wait") | P(top) | P(</think>) | readout on the residual after layer 14
+     0 | 0.473 | 0.557 | 0.000 | +nan
+     1 | 0.455 | 0.553 | 0.000 | +1.81
+     2 | 0.455 | 0.556 | 0.000 | +2.66
+     4 | 0.443 | 0.565 | 0.000 | +4.32
+     8 | 0.423 | 0.575 | 0.000 | +7.40

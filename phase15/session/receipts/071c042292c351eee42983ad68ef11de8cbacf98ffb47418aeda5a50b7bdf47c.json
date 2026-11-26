@@ -1,0 +1,37 @@
+{
+ "time": "2026-11-27T01:02:00",
+ "fingerprint": "071c042292c351eee42983ad68ef11de8cbacf98ffb47418aeda5a50b7bdf47c",
+ "note": "Loop-breaker graft: MLP neuron 1439 of layer 14 converted into a conditional switch. Gate row = repetition-detector direction (mean difference of MLP inputs at in-loop vs fresh line starts, all practice traces) soft-thresholded at 425 (width 20) using a constant direction; up row = constant direction; down column = 5.5 x unit output direction of </think>. Writes 'close the thinking' only in verbatim-repeating contexts; silent elsewhere.",
+ "changed_tensors": [
+  {
+   "tensor": "model.language_model.layers.14.mlp.down_proj.weight",
+   "shape": [
+    1024,
+    3584
+   ],
+   "changed_values": 1024,
+   "max_abs_delta": 0.794701,
+   "norm_delta": 5.506779
+  },
+  {
+   "tensor": "model.language_model.layers.14.mlp.gate_proj.weight",
+   "shape": [
+    3584,
+    1024
+   ],
+   "changed_values": 1023,
+   "max_abs_delta": 0.512817,
+   "norm_delta": 2.205233
+  },
+  {
+   "tensor": "model.language_model.layers.14.mlp.up_proj.weight",
+   "shape": [
+    3584,
+    1024
+   ],
+   "changed_values": 1024,
+   "max_abs_delta": 0.023499,
+   "norm_delta": 0.244075
+  }
+ ]
+}

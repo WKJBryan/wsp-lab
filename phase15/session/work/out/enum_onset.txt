@@ -1,0 +1,33 @@
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:   0%|          | 1/473 [00:00<02:48,  2.80it/s]Loading weights:   8%|▊         | 40/473 [00:00<00:03, 112.95it/s]Loading weights:  16%|█▋        | 78/473 [00:00<00:02, 188.84it/s]Loading weights:  25%|██▍       | 118/473 [00:00<00:01, 248.42it/s]Loading weights:  32%|███▏      | 152/473 [00:00<00:01, 270.28it/s]Loading weights:  41%|████      | 195/473 [00:00<00:00, 307.84it/s]Loading weights:  49%|████▉     | 233/473 [00:00<00:00, 319.90it/s]Loading weights:  57%|█████▋    | 271/473 [00:01<00:00, 331.04it/s]Loading weights:  66%|██████▌   | 310/473 [00:01<00:00, 344.55it/s]Loading weights:  79%|███████▉  | 376/473 [00:01<00:00, 433.94it/s]Loading weights:  97%|█████████▋| 458/473 [00:01<00:00, 542.19it/s]Loading weights: 100%|██████████| 473/473 [00:01<00:00, 330.04it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+
+p44: 32768 tokens; median enumeration score per 1500-token bin from the start:
+   -227 -219 -207 -118 -61 -40 -26 -19 -13 -6 +3 +6 +14 +15 +19 +23 +22 +25 +24 +26 +25
+   first window of 40 lines with >= 25 same-template lines begins at generated token ~5448:  '$\\cos(5\\pi/6) = -\\sqrt{3}/2$.' | 'Wait, $\\phi \\in [2\\pi - \\pi/6, 2\\pi + \\pi/6]$ is wrong.' | 'Wait, $\\cos \\phi \\ge \\sqrt{3}/2$ is satisfied for $\\phi \\in '
+   score around the onset (+/-1500 tokens): median -107, max -39
+
+p123: 32768 tokens; median enumeration score per 1500-token bin from the start:
+   -216 -150 -96 -64 -49 -38 -27 -22 -10 -15 -9 -4 -23 -3 +6 +13 +13 +16 +22 +22 +29
+   first window of 40 lines with >= 25 same-template lines begins at generated token ~1592:  '*   Usually, when people ask for "the first year", they migh' | "*   Let's check the number 2000." | '*   Sum of digits = $2+0+0+0 = 2$.'
+   score around the onset (+/-1500 tokens): median -184, max -97
+
+p28: 32768 tokens; median enumeration score per 1500-token bin from the start:
+   -215 -120 -77 -55 -43 -28 -23 -14 -14 -6 -2 -0 -110 -59 -30 -10 +2 +13 +18 +24 +25
+   first window of 40 lines with >= 25 same-template lines begins at generated token ~1090:  "*   Let's just list all combinations:" | '*   1' | '*   2'
+   score around the onset (+/-1500 tokens): median -180, max -79
+
+p29: 32768 tokens; median enumeration score per 1500-token bin from the start:
+   -225 -212 -205 -203 -196 -156 -69 -46 -32 -22 -17 -10 -3 +4 +6 +11 +17 +20 +24 +23 +26
+   first window of 40 lines with >= 25 same-template lines begins at generated token ~8986:  'Wait, I am confusing myself.' | "Let's list integers from -7 to -3." | '-7, -6, -5, -4, -3.'
+   score around the onset (+/-1500 tokens): median -94, max -38
+
+p99: 32768 tokens; median enumeration score per 1500-token bin from the start:
+   -220 -209 -199 -103 -62 -38 -24 -16 -7 -1 +2 +6 +11 +10 +17 +21 +19 +24 +17 +24 +25
+   first window of 40 lines with >= 25 same-template lines begins at generated token ~5555:  "Let's verify again." | 'Integers $a, b$ with $a > b$.' | 'This implies $a \\ge b+1$.'
+   score around the onset (+/-1500 tokens): median -92, max -41
+
+p57: 32768 tokens; median enumeration score per 1500-token bin from the start:
+   -217 -201 -124 -85 -64 -49 -39 -28 -23 -22 -11 -4 +3 +7 +8 +12 +18 +21 +23 +22 +24
+   first window of 40 lines with >= 25 same-template lines begins at generated token ~2467:  '$1000 \\div 13 = 77$ rem 1.' | '$100 \\div 13 = 7$ rem 9.' | '$90 \\div 13 = 6$ rem 12.'
+   score around the onset (+/-1500 tokens): median -182, max -93

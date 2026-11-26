@@ -1,0 +1,60 @@
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:   0%|          | 1/473 [00:00<02:42,  2.91it/s]Loading weights:   8%|▊         | 40/473 [00:00<00:03, 115.01it/s]Loading weights:  17%|█▋        | 79/473 [00:00<00:02, 194.68it/s]Loading weights:  25%|██▍       | 118/473 [00:00<00:01, 248.86it/s]Loading weights:  32%|███▏      | 153/473 [00:00<00:01, 276.92it/s]Loading weights:  41%|████      | 193/473 [00:00<00:00, 305.19it/s]Loading weights:  48%|████▊     | 228/473 [00:00<00:00, 315.75it/s]Loading weights:  56%|█████▌    | 265/473 [00:01<00:00, 327.64it/s]Loading weights:  64%|██████▍   | 305/473 [00:01<00:00, 345.34it/s]Loading weights:  77%|███████▋  | 366/473 [00:01<00:00, 421.60it/s]Loading weights:  94%|█████████▍| 446/473 [00:01<00:00, 527.90it/s]Loading weights: 100%|██████████| 473/473 [00:01<00:00, 331.43it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+== (A) never-closed runaway enumerations (pass 2): base vs N1+N4 at three late positions
+  p28:  | -6000: enum score +26, P(</think>) base 0.000 -> N4 0.001  | -3000: enum score +29, P(</think>) base 0.000 -> N4 0.974  | -200: enum score +27, P(</think>) base 0.000 -> N4 0.676
+       ...' 0.18$\n    *   $32 / 772 = 0'
+       base : '.':32.2(1.00) '$':15.7(0.00) '\\.':15.2(0.00) [</think> 3.5 p=0.000]
+       N1+N4: '</think>':20.1(0.37) '.':20.1(0.37) '\n':19.6(0.23) [</think> 20.1 p=0.375]
+       N1+N4, after </think> + newlines: 'The':19.8(0.41) 'To':17.9(0.06) '   ':17.9(0.06) [</think> 15.6 p=0.006]
+  p29:  | -6000: enum score +16, P(</think>) base 0.000 -> N4 0.000  | -3000: enum score +22, P(</think>) base 0.000 -> N4 0.000  | -200: enum score +31, P(</think>) base 0.000 -> N4 1.000
+       ...'1971$ works.\n        $x = -1972$ works.\n'
+       base : '       ':38.5(1.00) '        \n':21.4(0.00) '0':20.0(0.00) [</think> 17.5 p=0.000]
+       N1+N4: '</think>':30.5(1.00) '\n':20.0(0.00) '<|endoftext|>':16.6(0.00) [</think> 30.5 p=1.000]
+       N1+N4, after </think> + newlines: 'To':25.0(0.57) 'The':24.6(0.39) 'We':20.9(0.01) [</think> 12.6 p=0.000]
+  p31:  | -6000: enum score +4, P(</think>) base 0.000 -> N4 0.000  | -3000: enum score +15, P(</think>) base 0.000 -> N4 0.000  | -200: enum score +33, P(</think>) base 0.000 -> N4 1.000
+       ...'0$.\n    Wait, if $d_2=-979$, then $d_3'
+       base : '=':34.5(1.00) '$':19.8(0.00) '=-':17.5(0.00) [</think> 3.5 p=0.000]
+       N1+N4: '</think>':27.8(1.00) '\n':19.2(0.00) '*-':16.8(0.00) [</think> 27.8 p=1.000]
+       N1+N4, after </think> + newlines: 'The':19.8(0.33) 'Let':18.1(0.06) '\\':18.1(0.06) [</think> 15.7 p=0.006]
+  p37:  | -6000: enum score +18, P(</think>) base 0.000 -> N4 0.000  | -3000: enum score +24, P(</think>) base 0.000 -> N4 0.003  | -200: enum score +29, P(</think>) base 0.000 -> N4 0.984
+       ...'2640$.\n                                    *   $30 \\times 1088 = '
+       base : '3':35.5(1.00) '2':20.4(0.00) '1':19.2(0.00) [</think> 4.0 p=0.000]
+       N1+N4: '</think>':25.8(0.98) '4':21.6(0.02) '5':19.4(0.00) [</think> 25.8 p=0.981]
+       N1+N4, after </think> + newlines: 'The':20.0(0.47) 'Let':18.2(0.08) '   ':18.0(0.06) [</think> 18.0 p=0.064]
+  p44:  | -6000: enum score +30, P(</think>) base 0.000 -> N4 0.947  | -3000: enum score +32, P(</think>) base 0.000 -> N4 1.000  | -200: enum score +22, P(</think>) base 0.000 -> N4 0.010
+       ...'$.\nWait, $\\cos(2483\\pi/6) = \\sqrt{3'
+       base : '}/':34.8(1.00) ')/':22.6(0.00) ']/':22.4(0.00) [</think> 1.7 p=0.000]
+       N1+N4: '}/':19.9(0.44) '}.':19.0(0.18) '}':18.9(0.16) [</think> 13.6 p=0.001]
+       N1+N4, after </think> + newlines: 'The':21.4(0.47) 'Let':20.9(0.28) '**':18.6(0.03) [</think> 16.1 p=0.002]
+  p57:  | -6000: enum score +22, P(</think>) base 0.000 -> N4 0.000  | -3000: enum score +12, P(</think>) base 0.000 -> N4 0.000  | -200: enum score +34, P(</think>) base 0.000 -> N4 1.000
+       ...'\n                        $120 \\div 13 = 9$ rem 3. Digit '
+       base : '1':32.8(1.00) '3':17.5(0.00) '5':17.4(0.00) [</think> 2.8 p=0.000]
+       N1+N4: '</think>':28.6(1.00) '\n':16.4(0.00) '0':15.9(0.00) [</think> 28.6 p=1.000]
+       N1+N4, after </think> + newlines: '</think>':19.4(0.37) '1':18.1(0.11) 'I':17.9(0.08) [</think> 19.4 p=0.373]
+  p99:  | -6000: enum score +19, P(</think>) base 0.000 -> N4 0.000  | -3000: enum score +21, P(</think>) base 0.000 -> N4 0.000  | -200: enum score +25, P(</think>) base 0.000 -> N4 0.050
+       ...', b=1220$, $a-b=1$.\nWait, if $a='
+       base : '1':34.5(1.00) '2':21.6(0.00) '3':19.6(0.00) [</think> 2.9 p=0.000]
+       N1+N4: '1':23.4(0.91) '</think>':20.4(0.05) '0':19.8(0.02) [</think> 20.4 p=0.045]
+       N1+N4, after </think> + newlines: 'Let':19.8(0.33) 'The':19.4(0.23) '#':17.8(0.04) [</think> 15.8 p=0.006]
+  p123:  | -6000: enum score +21, P(</think>) base 0.000 -> N4 0.223  | -3000: enum score +17, P(</think>) base 0.000 -> N4 0.000  | -200: enum score +41, P(</think>) base 0.000 -> N4 1.000
+       ...'$ -> Sum 3.\n        *   $2931$ -> Sum 4.'
+       base : '\n':36.5(1.00) '\n\n':21.5(0.00) ' ':16.1(0.00) [</think> 5.8 p=0.000]
+       N1+N4: '</think>':38.8(1.00) '\n':20.9(0.00) '\n\n\n':17.5(0.00) [</think> 38.8 p=1.000]
+       N1+N4, after </think> + newlines: 'The':21.2(0.63) 'To':19.4(0.10) 'Let':19.0(0.07) [</think> 14.7 p=0.001]
+
+== (B) cleanly ended traces: final-answer phase positions must be unchanged
+  p10: 17 final-phase positions, max |dlogit| 0.875, argmax agreement 1.000
+  p25: 321 final-phase positions, max |dlogit| 8.078, argmax agreement 0.997
+  p30: 9 final-phase positions, max |dlogit| 0.688, argmax agreement 1.000
+  p35: 29 final-phase positions, max |dlogit| 8.195, argmax agreement 1.000
+  p40: 34 final-phase positions, max |dlogit| 0.586, argmax agreement 1.000
+  p50: 9 final-phase positions, max |dlogit| 1.125, argmax agreement 1.000
+  p55: 181 final-phase positions, max |dlogit| 10.469, argmax agreement 1.000
+  p60: 134 final-phase positions, max |dlogit| 10.363, argmax agreement 1.000
+  p75: 234 final-phase positions, max |dlogit| 11.438, argmax agreement 0.991
+  p80: 11 final-phase positions, max |dlogit| 0.250, argmax agreement 1.000
+  p85: 87 final-phase positions, max |dlogit| 7.984, argmax agreement 1.000
+  p90: 16 final-phase positions, max |dlogit| 0.781, argmax agreement 1.000
+  p95: 9 final-phase positions, max |dlogit| 0.781, argmax agreement 1.000
+  checked 1091 positions; largest logit change anywhere 11.438

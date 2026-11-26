@@ -1,0 +1,12 @@
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:  21%|██        | 99/473 [00:00<00:00, 983.87it/s]Loading weights:  61%|██████    | 287/473 [00:00<00:00, 1503.61it/s]Loading weights: 100%|██████████| 473/473 [00:00<00:00, 1677.01it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+  0/128 traces; last: T=9748 307 line starts (111 loop, 96 late, 100 early)
+  16/128 traces; last: T=32816 722 line starts (0 loop, 622 late, 100 early)
+  32/128 traces; last: T=8744 321 line starts (113 loop, 108 late, 100 early)
+  48/128 traces; last: T=15353 352 line starts (132 loop, 120 late, 100 early)
+  64/128 traces; last: T=32947 284 line starts (0 loop, 184 late, 100 early)
+  80/128 traces; last: T=9342 299 line starts (83 loop, 116 late, 100 early)
+  96/128 traces; last: T=6136 235 line starts (97 loop, 103 late, 35 early)
+  112/128 traces; last: T=32827 242 line starts (0 loop, 142 late, 100 early)
+saved /home/user/wsp14/work/out/linestart_1.pt positions by region: {'early': 10754, 'late': 16652, 'loop': 14878}

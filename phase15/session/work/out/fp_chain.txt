@@ -1,0 +1,37 @@
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:   0%|          | 1/473 [00:00<02:41,  2.92it/s]Loading weights:   8%|▊         | 40/473 [00:00<00:03, 114.88it/s]Loading weights:  17%|█▋        | 79/473 [00:00<00:02, 192.61it/s]Loading weights:  25%|██▍       | 118/473 [00:00<00:01, 249.28it/s]Loading weights:  32%|███▏      | 152/473 [00:00<00:01, 273.81it/s]Loading weights:  41%|████      | 193/473 [00:00<00:00, 313.44it/s]Loading weights:  48%|████▊     | 229/473 [00:00<00:00, 316.35it/s]Loading weights:  56%|█████▌    | 265/473 [00:01<00:00, 326.57it/s]Loading weights:  64%|██████▍   | 305/473 [00:01<00:00, 346.87it/s]Loading weights:  77%|███████▋  | 362/473 [00:01<00:00, 410.19it/s]Loading weights:  93%|█████████▎| 442/473 [00:01<00:00, 524.75it/s]Loading weights: 100%|██████████| 473/473 [00:01<00:00, 331.55it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+  p0: at firing position  d_ls 444  d_enum -150 | after \\ (59): d_ls 208 d_enum -130 | after  \\ (1088): d_ls 202 d_enum -115 | after ĊĊ (271): d_ls 183 d_enum -129 | after </think>: d_ls 119 d_enum -148
+        after forced " \": '\n':0.27 '[':0.21 'n':0.06 '(\\':0.05 ']':0.04 ')':0.03
+  p4: at firing position  d_ls 462  d_enum -216 | after \\ (59): d_ls 158 d_enum -162 | after  \\ (1088): d_ls 156 d_enum -150 | after ĊĊ (271): d_ls 149 d_enum -169 | after </think>: d_ls 92 d_enum -180
+        after forced " \": '\n':0.26 '[':0.14 'boxed':0.09 'text':0.04 '*':0.03 'begin':0.03
+  p9: at firing position  d_ls 451  d_enum -163 | after \\ (59): d_ls 160 d_enum -145 | after  \\ (1088): d_ls 164 d_enum -137 | after ĊĊ (271): d_ls 158 d_enum -165 | after </think>: d_ls 115 d_enum -170
+        after forced " \": '\n':0.27 'text':0.06 'end':0.06 '[':0.05 'begin':0.04 'dots':0.03
+  p11: at firing position  d_ls 459  d_enum -167 | after \\ (59): d_ls 160 d_enum -149 | after  \\ (1088): d_ls 170 d_enum -134 | after ĊĊ (271): d_ls 163 d_enum -154 | after </think>: d_ls 76 d_enum -163
+        after forced " \": '\n':0.36 'n':0.10 'end':0.07 'boxed':0.03 'dots':0.02 '[':0.02
+  p12: at firing position  d_ls 446  d_enum -154 | after \\ (59): d_ls 150 d_enum -139 | after  \\ (1088): d_ls 159 d_enum -121 | after ĊĊ (271): d_ls 159 d_enum -146 | after </think>: d_ls 79 d_enum -167
+        after forced " \": '\n':0.18 'boxed':0.16 '[':0.10 'text':0.06 'begin':0.05 'end':0.04
+  p20: at firing position  d_ls 444  d_enum -127 | after \\ (59): d_ls 156 d_enum -114 | after  \\ (1088): d_ls 170 d_enum -102 | after ĊĊ (271): d_ls 164 d_enum -126 | after </think>: d_ls 84 d_enum -155
+        after forced " \": '\n':0.18 'sin':0.16 'boxed':0.07 'end':0.04 'n':0.03 'int':0.03
+  p22: at firing position  d_ls 458  d_enum -183 | after \\ (59): d_ls 187 d_enum -137 | after  \\ (1088): d_ls 185 d_enum -141 | after ĊĊ (271): d_ls 170 d_enum -165 | after </think>: d_ls 101 d_enum -167
+        after forced " \": '\n':0.36 'n':0.28 '\n\n':0.03 'end':0.03 'dots':0.03 '*':0.02
+  p36: at firing position  d_ls 449  d_enum -170 | after \\ (59): d_ls 148 d_enum -143 | after  \\ (1088): d_ls 152 d_enum -132 | after ĊĊ (271): d_ls 150 d_enum -153 | after </think>: d_ls 117 d_enum -148
+        after forced " \": '\n':0.21 '[':0.09 'boxed':0.07 'text':0.05 'begin':0.04 'n':0.04
+  p38: at firing position  d_ls 454  d_enum -195 | after \\ (59): d_ls 146 d_enum -157 | after  \\ (1088): d_ls 150 d_enum -147 | after ĊĊ (271): d_ls 151 d_enum -171 | after </think>: d_ls 73 d_enum -173
+        after forced " \": '\n':0.30 '[':0.10 'end':0.06 'boxed':0.04 'n':0.02 'text':0.02
+  p48: at firing position  d_ls 449  d_enum -221 | after \\ (59): d_ls 122 d_enum -176 | after  \\ (1088): d_ls 135 d_enum -161 | after ĊĊ (271): d_ls 155 d_enum -188 | after </think>: d_ls 81 d_enum -198
+        after forced " \": '\n':0.18 'boxed':0.09 '[':0.09 'text':0.08 'sqrt':0.05 'begin':0.04
+  p54: at firing position  d_ls 451  d_enum -164 | after \\ (59): d_ls 154 d_enum -140 | after  \\ (1088): d_ls 155 d_enum -131 | after ĊĊ (271): d_ls 171 d_enum -149 | after </think>: d_ls 92 d_enum -148
+        after forced " \": '\n':0.22 '[':0.13 ']':0.09 'dots':0.05 'text':0.03 'end':0.03
+  p62: at firing position  d_ls 443  d_enum -154 | after \\ (59): d_ls 160 d_enum -140 | after  \\ (1088): d_ls 170 d_enum -126 | after ĊĊ (271): d_ls 147 d_enum -151 | after </think>: d_ls 91 d_enum -163
+        after forced " \": '\n':0.27 'boxed':0.06 'end':0.05 'text':0.05 '[':0.04 'n':0.03
+  p63: at firing position  d_ls 449  d_enum -151 | after \\ (59): d_ls 128 d_enum -137 | after  \\ (1088): d_ls 151 d_enum -124 | after ĊĊ (271): d_ls 137 d_enum -147 | after </think>: d_ls 83 d_enum -157
+        after forced " \": '\n':0.17 'boxed':0.15 'n':0.05 '[':0.05 'text':0.04 'end':0.03
+  p64: at firing position  d_ls 442  d_enum -162 | after \\ (59): d_ls 147 d_enum -145 | after  \\ (1088): d_ls 164 d_enum -137 | after ĊĊ (271): d_ls 150 d_enum -155 | after </think>: d_ls 86 d_enum -157
+        after forced " \": '\n':0.33 'boxed':0.11 '[':0.11 'end':0.04 'text':0.03 '*':0.02
+  p65: at firing position  d_ls 456  d_enum -200 | after \\ (59): d_ls 158 d_enum -134 | after  \\ (1088): d_ls 163 d_enum -125 | after ĊĊ (271): d_ls 172 d_enum -131 | after </think>: d_ls 107 d_enum -145
+        after forced " \": '\n':0.26 'boxed':0.07 'end':0.06 '[':0.06 'text':0.05 'n':0.04
+  p70: at firing position  d_ls 443  d_enum -112 | after \\ (59): d_ls 161 d_enum -111 | after  \\ (1088): d_ls 166 d_enum -102 | after ĊĊ (271): d_ls 178 d_enum -103 | after </think>: d_ls 81 d_enum -122
+        after forced " \": '\n':0.40 '_':0.08 'n':0.05 '\n\n':0.04 '*':0.03 'end':0.03
+
+median at firing position: d_ls 449, d_enum -163

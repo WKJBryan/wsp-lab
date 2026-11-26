@@ -1,0 +1,17 @@
+layer 14: |d| = 20.27; fresh |x| mean 36.9; constant projection on fresh: p1 0.961 p99 1.032
+loop line-start score quantiles: q50=399 q60=424 q70=445 q75=454 q80=463 q85=471 q90=480 q95=495
+theta (quantile) | early positions above (traces with any) | pre-loop above | loop above (positions, traces with any of N looping)
+     399 (q50) |   4427 in  4 traces: p16:3611 p50:813 p27:2 p8:1 |   576 |  16250/92796 (17.5%), 109/114 traces
+     424 (q60) |    375 in  1 traces: p50:375 |   180 |   9016/92796 (9.7%), 106/114 traces
+     445 (q70) |    111 in  1 traces: p50:111 |    62 |   5514/92796 (5.9%), 100/114 traces
+     454 (q75) |     77 in  1 traces: p50:77 |    30 |   4466/92796 (4.8%), 94/114 traces
+     463 (q80) |     13 in  1 traces: p50:13 |     6 |   3491/92796 (3.8%), 80/114 traces
+     471 (q85) |      0 in  0 traces:  |     0 |   2537/92796 (2.7%), 70/114 traces
+     480 (q90) |      0 in  0 traces:  |     0 |   1583/92796 (1.7%), 54/114 traces
+     495 (q95) |      0 in  0 traces:  |     0 |    546/92796 (0.6%), 34/114 traces
+  constant projection early: p1 0.961 p50 1.001 p99 1.032 min 0.811 max 1.071
+  constant projection pre  : p1 0.967 p50 1.001 p99 1.031 min 0.789 max 1.072
+  constant projection loop : p1 0.969 p50 1.007 p99 1.040 min 0.933 max 1.057
+  exceedance over q75 threshold in loops: n=4466 q10 4 q50 19 q90 43 max 66
+  lowest in-loop maxima (trace:score): p57:355 p97:369 p83:372 p121:373 p15:379 p75:399 p37:409 p18:412 p71:427 p34:428 p122:429 p6:432 p93:443 p21:445 p12:446 p47:448
+saved out/graft_dirs_L14.pt

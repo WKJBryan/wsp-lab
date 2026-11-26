@@ -1,0 +1,340 @@
+== model.language_model.layers.L.input_layernorm.weight
+   layers.0.input_layernorm.weight                  mean   0.2376 std  0.1222 min   -0.115 max    1.000 zero 0.0000 kurt   11.8 row None col None sv None
+   layers.1.input_layernorm.weight                  mean   0.4284 std  0.0971 min   -0.062 max    0.789 zero 0.0000 kurt   11.8 row None col None sv None
+   layers.2.input_layernorm.weight                  mean   0.4397 std  0.1017 min   -0.043 max    0.918 zero 0.0000 kurt    8.5 row None col None sv None
+   layers.3.input_layernorm.weight                  mean   0.3442 std  0.0894 min   -0.035 max    0.840 zero 0.0000 kurt    8.1 row None col None sv None
+   layers.4.input_layernorm.weight                  mean   0.4877 std  0.1123 min   -0.010 max    0.840 zero 0.0000 kurt    8.8 row None col None sv None
+   layers.5.input_layernorm.weight                  mean   0.4340 std  0.1538 min   -0.188 max    0.773 zero 0.0000 kurt    8.3 row None col None sv None
+   layers.6.input_layernorm.weight                  mean   0.3683 std  0.1755 min   -0.305 max    0.684 zero 0.0000 kurt    7.3 row None col None sv None
+   layers.7.input_layernorm.weight                  mean   0.1308 std  0.1008 min   -0.377 max    0.523 zero 0.0000 kurt   11.1 row None col None sv None
+   layers.8.input_layernorm.weight                  mean   0.3719 std  0.2250 min   -0.422 max    0.648 zero 0.0000 kurt    5.8 row None col None sv None
+   layers.9.input_layernorm.weight                  mean   0.3502 std  0.2515 min   -0.445 max    0.664 zero 0.0000 kurt    4.8 row None col None sv None
+   layers.10.input_layernorm.weight                 mean   0.2939 std  0.2453 min   -0.494 max    0.644 zero 0.0000 kurt    4.6 row None col None sv None
+   layers.11.input_layernorm.weight                 mean   0.1422 std  0.1984 min   -0.606 max    0.699 zero 0.0000 kurt    6.5 row None col None sv None
+   layers.12.input_layernorm.weight                 mean   0.4827 std  0.2209 min   -0.250 max    0.848 zero 0.0000 kurt    5.0 row None col None sv None
+   layers.13.input_layernorm.weight                 mean   0.4220 std  0.2005 min   -0.264 max    0.836 zero 0.0000 kurt    5.2 row None col None sv None
+   layers.14.input_layernorm.weight                 mean   0.3844 std  0.1601 min   -0.198 max    0.699 zero 0.0000 kurt    5.7 row None col None sv None
+   layers.15.input_layernorm.weight                 mean   0.1991 std  0.0817 min   -0.173 max    0.676 zero 0.0000 kurt    7.5 row None col None sv None
+   layers.16.input_layernorm.weight                 mean   0.5617 std  0.1148 min    0.019 max    1.070 zero 0.0000 kurt    9.5 row None col None sv None
+   layers.17.input_layernorm.weight                 mean   0.6749 std  0.0798 min    0.289 max    1.086 zero 0.0000 kurt    8.3 row None col None sv None
+   layers.18.input_layernorm.weight                 mean   0.7324 std  0.0639 min    0.342 max    1.172 zero 0.0000 kurt    8.7 row None col None sv None
+   layers.19.input_layernorm.weight                 mean   0.2127 std  0.1024 min   -0.013 max    0.641 zero 0.0000 kurt    3.5 row None col None sv None
+   layers.20.input_layernorm.weight                 mean   0.6498 std  0.0804 min    0.185 max    1.195 zero 0.0000 kurt    7.2 row None col None sv None
+   layers.21.input_layernorm.weight                 mean   0.7217 std  0.0736 min    0.160 max    1.469 zero 0.0000 kurt   22.2 row None col None sv None
+   layers.22.input_layernorm.weight                 mean   0.5114 std  0.0716 min    0.124 max    1.086 zero 0.0000 kurt   12.3 row None col None sv None
+   layers.23.input_layernorm.weight                 mean   0.2670 std  0.1125 min    0.052 max    0.781 zero 0.0000 kurt    5.5 row None col None sv None
+== model.language_model.layers.L.linear_attn.A_log
+   layers.0.linear_attn.A_log                       mean  -1.9795 std  1.4952 min   -6.594 max    0.258 zero 0.0000 kurt    7.0 row None col None sv None
+   layers.1.linear_attn.A_log                       mean  -0.6374 std  1.2466 min   -2.250 max    2.359 zero 0.0000 kurt    3.1 row None col None sv None
+   layers.2.linear_attn.A_log                       mean  -1.1183 std  0.8828 min   -2.875 max    0.451 zero 0.0000 kurt    2.9 row None col None sv None
+   layers.4.linear_attn.A_log                       mean  -1.0323 std  1.0662 min   -2.984 max    0.602 zero 0.0000 kurt    2.5 row None col None sv None
+   layers.5.linear_attn.A_log                       mean  -1.0844 std  1.3793 min   -3.172 max    2.000 zero 0.0000 kurt    2.6 row None col None sv None
+   layers.6.linear_attn.A_log                       mean  -0.8672 std  0.7722 min   -2.453 max    0.449 zero 0.0000 kurt    2.8 row None col None sv None
+   layers.8.linear_attn.A_log                       mean  -1.2573 std  0.6765 min   -2.719 max   -0.144 zero 0.0000 kurt    2.9 row None col None sv None
+   layers.9.linear_attn.A_log                       mean  -1.5997 std  0.7006 min   -2.516 max    0.002 zero 0.0000 kurt    2.8 row None col None sv None
+   layers.10.linear_attn.A_log                      mean  -1.0546 std  0.8610 min   -1.875 max    1.758 zero 0.0000 kurt    8.3 row None col None sv None
+   layers.12.linear_attn.A_log                      mean  -1.4920 std  0.8402 min   -3.031 max    0.002 zero 0.0000 kurt    2.4 row None col None sv None
+   layers.13.linear_attn.A_log                      mean  -1.2285 std  0.5983 min   -2.203 max    0.141 zero 0.0000 kurt    3.0 row None col None sv None
+   layers.14.linear_attn.A_log                      mean  -0.9393 std  1.0585 min   -2.391 max    1.688 zero 0.0000 kurt    4.1 row None col None sv None
+   layers.16.linear_attn.A_log                      mean  -1.4255 std  0.5856 min   -2.172 max   -0.270 zero 0.0000 kurt    2.1 row None col None sv None
+   layers.17.linear_attn.A_log                      mean  -1.3513 std  0.3734 min   -1.938 max   -0.391 zero 0.0000 kurt    4.0 row None col None sv None
+   layers.18.linear_attn.A_log                      mean  -1.3581 std  0.2864 min   -1.797 max   -0.875 zero 0.0000 kurt    2.0 row None col None sv None
+   layers.20.linear_attn.A_log                      mean  -1.2942 std  0.3956 min   -1.773 max   -0.660 zero 0.0000 kurt    1.7 row None col None sv None
+   layers.21.linear_attn.A_log                      mean  -1.3745 std  0.3797 min   -1.906 max   -0.723 zero 0.0000 kurt    1.9 row None col None sv None
+   layers.22.linear_attn.A_log                      mean  -1.3035 std  0.3753 min   -1.688 max   -0.422 zero 0.0000 kurt    2.9 row None col None sv None
+== model.language_model.layers.L.linear_attn.conv1d.weight
+   layers.0.linear_attn.conv1d.weight               mean   0.0006 std  0.0728 min   -0.719 max    1.758 zero 0.0000 kurt   32.9 row None col None sv None
+   layers.1.linear_attn.conv1d.weight               mean   0.0003 std  0.0686 min   -1.172 max    1.820 zero 0.0000 kurt   51.5 row None col None sv None
+   layers.2.linear_attn.conv1d.weight               mean  -0.0010 std  0.0798 min   -1.180 max    1.359 zero 0.0000 kurt   29.8 row None col None sv None
+   layers.4.linear_attn.conv1d.weight               mean   0.0004 std  0.1027 min   -0.926 max    1.062 zero 0.0000 kurt   13.9 row None col None sv None
+   layers.5.linear_attn.conv1d.weight               mean   0.0003 std  0.0855 min   -0.828 max    1.398 zero 0.0000 kurt   21.2 row None col None sv None
+   layers.6.linear_attn.conv1d.weight               mean   0.0007 std  0.0778 min   -0.695 max    0.875 zero 0.0000 kurt   19.6 row None col None sv None
+   layers.8.linear_attn.conv1d.weight               mean  -0.0011 std  0.0750 min   -0.731 max    0.684 zero 0.0000 kurt   16.3 row None col None sv None
+   layers.9.linear_attn.conv1d.weight               mean  -0.0004 std  0.0684 min   -1.266 max    0.812 zero 0.0000 kurt   23.2 row None col None sv None
+   layers.10.linear_attn.conv1d.weight              mean  -0.0005 std  0.0700 min   -1.336 max    0.773 zero 0.0000 kurt   24.2 row None col None sv None
+   layers.12.linear_attn.conv1d.weight              mean   0.0005 std  0.1016 min   -1.219 max    1.258 zero 0.0000 kurt   18.0 row None col None sv None
+   layers.13.linear_attn.conv1d.weight              mean  -0.0012 std  0.0809 min   -0.746 max    0.766 zero 0.0000 kurt   15.0 row None col None sv None
+   layers.14.linear_attn.conv1d.weight              mean   0.0003 std  0.0854 min   -0.609 max    0.738 zero 0.0000 kurt   14.4 row None col None sv None
+   layers.16.linear_attn.conv1d.weight              mean  -0.0011 std  0.1274 min   -1.773 max    1.070 zero 0.0000 kurt   13.8 row None col None sv None
+   layers.17.linear_attn.conv1d.weight              mean  -0.0006 std  0.1552 min   -0.953 max    0.930 zero 0.0000 kurt    7.9 row None col None sv None
+   layers.18.linear_attn.conv1d.weight              mean   0.0002 std  0.1592 min   -1.195 max    0.981 zero 0.0000 kurt    7.3 row None col None sv None
+   layers.20.linear_attn.conv1d.weight              mean   0.0002 std  0.1770 min   -1.305 max    1.180 zero 0.0000 kurt    7.5 row None col None sv None
+   layers.21.linear_attn.conv1d.weight              mean   0.0010 std  0.1708 min   -1.234 max    1.211 zero 0.0000 kurt    7.6 row None col None sv None
+   layers.22.linear_attn.conv1d.weight              mean   0.0010 std  0.1527 min   -1.023 max    1.258 zero 0.0000 kurt    7.0 row None col None sv None
+== model.language_model.layers.L.linear_attn.dt_bias
+   layers.0.linear_attn.dt_bias                     mean  -1.8965 std  5.9508 min  -13.062 max    8.375 zero 0.0000 kurt    2.4 row None col None sv None
+   layers.1.linear_attn.dt_bias                     mean  -0.7689 std  3.1278 min   -6.000 max    2.516 zero 0.0000 kurt    1.7 row None col None sv None
+   layers.2.linear_attn.dt_bias                     mean  -1.3345 std  2.4659 min   -5.469 max    1.758 zero 0.0000 kurt    1.8 row None col None sv None
+   layers.4.linear_attn.dt_bias                     mean  -2.3120 std  2.8976 min   -5.531 max    2.250 zero 0.0000 kurt    1.5 row None col None sv None
+   layers.5.linear_attn.dt_bias                     mean  -2.7437 std  2.1265 min   -6.500 max    1.422 zero 0.0000 kurt    2.3 row None col None sv None
+   layers.6.linear_attn.dt_bias                     mean  -1.7594 std  2.3313 min   -6.000 max    2.031 zero 0.0000 kurt    2.6 row None col None sv None
+   layers.8.linear_attn.dt_bias                     mean  -2.2485 std  1.8593 min   -4.688 max    0.247 zero 0.0000 kurt    1.4 row None col None sv None
+   layers.9.linear_attn.dt_bias                     mean  -2.2910 std  1.9668 min   -4.719 max    1.609 zero 0.0000 kurt    2.4 row None col None sv None
+   layers.10.linear_attn.dt_bias                    mean  -2.0396 std  2.1993 min   -7.000 max    3.188 zero 0.0000 kurt    4.4 row None col None sv None
+   layers.12.linear_attn.dt_bias                    mean  -3.2290 std  1.8680 min   -6.656 max   -0.570 zero 0.0000 kurt    1.7 row None col None sv None
+   layers.13.linear_attn.dt_bias                    mean  -1.4963 std  1.7017 min   -5.344 max    2.188 zero 0.0000 kurt    3.7 row None col None sv None
+   layers.14.linear_attn.dt_bias                    mean  -2.2583 std  2.2841 min   -7.312 max    0.707 zero 0.0000 kurt    2.8 row None col None sv None
+   layers.16.linear_attn.dt_bias                    mean  -1.8708 std  2.6514 min   -5.250 max    2.156 zero 0.0000 kurt    1.3 row None col None sv None
+   layers.17.linear_attn.dt_bias                    mean  -1.8607 std  2.5203 min   -5.594 max    1.359 zero 0.0000 kurt    1.4 row None col None sv None
+   layers.18.linear_attn.dt_bias                    mean  -1.5230 std  3.8111 min   -6.219 max    4.469 zero 0.0000 kurt    1.6 row None col None sv None
+   layers.20.linear_attn.dt_bias                    mean  -1.4086 std  3.3358 min   -5.219 max    4.500 zero 0.0000 kurt    1.9 row None col None sv None
+   layers.21.linear_attn.dt_bias                    mean  -0.2905 std  3.5687 min   -5.625 max    5.125 zero 0.0000 kurt    1.7 row None col None sv None
+   layers.22.linear_attn.dt_bias                    mean  -0.2323 std  3.6243 min   -6.062 max    7.406 zero 0.0000 kurt    2.6 row None col None sv None
+== model.language_model.layers.L.linear_attn.in_proj_a.weight
+   layers.0.linear_attn.in_proj_a.weight            mean  -0.0007 std  0.0377 min   -0.182 max    0.165 zero 0.0000 kurt    3.6 row [0.45, 1.178, 1.544] col [0.054, 0.143, 0.415] sv [3.299, 0.397, 11.2]
+   layers.1.linear_attn.in_proj_a.weight            mean  -0.0005 std  0.0301 min   -0.175 max    0.200 zero 0.0000 kurt    4.9 row [0.473, 0.918, 1.677] col [0.03, 0.114, 0.354] sv [2.251, 0.306, 10.7]
+   layers.2.linear_attn.in_proj_a.weight            mean   0.0004 std  0.0274 min   -0.154 max    0.197 zero 0.0000 kurt    4.7 row [0.502, 0.855, 1.225] col [0.032, 0.104, 0.432] sv [1.935, 0.274, 11.7]
+   layers.4.linear_attn.in_proj_a.weight            mean   0.0001 std  0.0270 min   -0.130 max    0.172 zero 0.0000 kurt    4.4 row [0.524, 0.841, 1.318] col [0.034, 0.103, 0.425] sv [2.003, 0.349, 12.3]
+   layers.5.linear_attn.in_proj_a.weight            mean  -0.0002 std  0.0240 min   -0.126 max    0.147 zero 0.0000 kurt    4.1 row [0.389, 0.749, 1.038] col [0.034, 0.091, 0.346] sv [1.957, 0.197, 11.4]
+   layers.6.linear_attn.in_proj_a.weight            mean  -0.0003 std  0.0226 min   -0.122 max    0.157 zero 0.0000 kurt    4.4 row [0.515, 0.712, 1.007] col [0.024, 0.085, 0.321] sv [1.782, 0.255, 11.7]
+   layers.8.linear_attn.in_proj_a.weight            mean  -0.0001 std  0.0230 min   -0.139 max    0.150 zero 0.0000 kurt    4.4 row [0.484, 0.714, 1.22] col [0.035, 0.088, 0.312] sv [1.729, 0.208, 11.6]
+   layers.9.linear_attn.in_proj_a.weight            mean  -0.0002 std  0.0257 min   -0.116 max    0.247 zero 0.0000 kurt    4.6 row [0.337, 0.8, 1.103] col [0.038, 0.097, 0.373] sv [2.042, 0.286, 11.7]
+   layers.10.linear_attn.in_proj_a.weight           mean   0.0002 std  0.0241 min   -0.152 max    0.168 zero 0.0000 kurt    4.2 row [0.58, 0.754, 1.07] col [0.03, 0.091, 0.34] sv [1.931, 0.335, 12.0]
+   layers.12.linear_attn.in_proj_a.weight           mean   0.0001 std  0.0265 min   -0.166 max    0.163 zero 0.0000 kurt    4.5 row [0.473, 0.816, 1.396] col [0.032, 0.101, 0.372] sv [2.021, 0.294, 11.8]
+   layers.13.linear_attn.in_proj_a.weight           mean  -0.0002 std  0.0225 min   -0.142 max    0.160 zero 0.0000 kurt    4.3 row [0.411, 0.704, 0.998] col [0.027, 0.085, 0.306] sv [1.796, 0.213, 11.3]
+   layers.14.linear_attn.in_proj_a.weight           mean  -0.0001 std  0.0224 min   -0.201 max    0.142 zero 0.0000 kurt    4.8 row [0.42, 0.698, 1.107] col [0.033, 0.085, 0.306] sv [1.671, 0.313, 12.0]
+   layers.16.linear_attn.in_proj_a.weight           mean   0.0000 std  0.0253 min   -0.132 max    0.148 zero 0.0000 kurt    4.6 row [0.547, 0.783, 1.188] col [0.034, 0.095, 0.381] sv [1.978, 0.278, 11.9]
+   layers.17.linear_attn.in_proj_a.weight           mean   0.0002 std  0.0249 min   -0.216 max    0.189 zero 0.0000 kurt    6.2 row [0.54, 0.78, 1.233] col [0.034, 0.092, 0.434] sv [1.963, 0.267, 11.4]
+   layers.18.linear_attn.in_proj_a.weight           mean  -0.0002 std  0.0232 min   -0.152 max    0.203 zero 0.0000 kurt    5.7 row [0.497, 0.734, 0.973] col [0.035, 0.086, 0.39] sv [1.819, 0.266, 11.7]
+   layers.20.linear_attn.in_proj_a.weight           mean  -0.0000 std  0.0281 min   -0.192 max    0.199 zero 0.0000 kurt    5.8 row [0.691, 0.889, 1.259] col [0.039, 0.103, 0.471] sv [2.232, 0.213, 11.4]
+   layers.21.linear_attn.in_proj_a.weight           mean   0.0000 std  0.0275 min   -0.209 max    0.179 zero 0.0000 kurt    6.3 row [0.637, 0.874, 1.047] col [0.041, 0.1, 0.472] sv [2.259, 0.279, 11.5]
+   layers.22.linear_attn.in_proj_a.weight           mean  -0.0002 std  0.0307 min   -0.224 max    0.173 zero 0.0000 kurt    5.8 row [0.689, 0.974, 1.14] col [0.039, 0.111, 0.553] sv [2.562, 0.335, 11.2]
+== model.language_model.layers.L.linear_attn.in_proj_b.weight
+   layers.0.linear_attn.in_proj_b.weight            mean   0.0003 std  0.0175 min   -0.123 max    0.136 zero 0.0000 kurt    6.2 row [0.311, 0.536, 1.017] col [0.023, 0.065, 0.262] sv [1.32, 0.147, 10.2]
+   layers.1.linear_attn.in_proj_b.weight            mean  -0.0001 std  0.0186 min   -0.153 max    0.213 zero 0.0000 kurt    7.3 row [0.341, 0.579, 0.809] col [0.023, 0.068, 0.352] sv [1.495, 0.162, 10.2]
+   layers.2.linear_attn.in_proj_b.weight            mean  -0.0002 std  0.0185 min   -0.142 max    0.177 zero 0.0000 kurt    7.1 row [0.322, 0.572, 0.907] col [0.024, 0.067, 0.352] sv [1.313, 0.156, 10.4]
+   layers.4.linear_attn.in_proj_b.weight            mean  -0.0000 std  0.0153 min   -0.133 max    0.131 zero 0.0000 kurt    7.7 row [0.322, 0.481, 0.648] col [0.016, 0.055, 0.338] sv [1.195, 0.144, 10.5]
+   layers.5.linear_attn.in_proj_b.weight            mean   0.0001 std  0.0153 min   -0.101 max    0.147 zero 0.0000 kurt    6.3 row [0.292, 0.48, 0.666] col [0.017, 0.055, 0.314] sv [1.256, 0.12, 10.3]
+   layers.6.linear_attn.in_proj_b.weight            mean  -0.0000 std  0.0171 min   -0.122 max    0.144 zero 0.0000 kurt    5.8 row [0.349, 0.541, 0.712] col [0.018, 0.062, 0.281] sv [1.518, 0.17, 10.1]
+   layers.8.linear_attn.in_proj_b.weight            mean   0.0001 std  0.0139 min   -0.090 max    0.116 zero 0.0000 kurt    5.1 row [0.247, 0.438, 0.569] col [0.016, 0.051, 0.229] sv [1.203, 0.131, 10.2]
+   layers.9.linear_attn.in_proj_b.weight            mean   0.0001 std  0.0183 min   -0.139 max    0.143 zero 0.0000 kurt    5.9 row [0.318, 0.574, 0.827] col [0.022, 0.068, 0.319] sv [1.399, 0.151, 10.8]
+   layers.10.linear_attn.in_proj_b.weight           mean   0.0002 std  0.0181 min   -0.165 max    0.162 zero 0.0000 kurt    6.0 row [0.367, 0.567, 0.89] col [0.026, 0.067, 0.266] sv [1.462, 0.184, 10.5]
+   layers.12.linear_attn.in_proj_b.weight           mean   0.0001 std  0.0158 min   -0.092 max    0.116 zero 0.0000 kurt    5.0 row [0.289, 0.497, 0.691] col [0.016, 0.058, 0.277] sv [1.317, 0.144, 10.3]
+   layers.13.linear_attn.in_proj_b.weight           mean   0.0001 std  0.0159 min   -0.107 max    0.121 zero 0.0000 kurt    4.7 row [0.207, 0.494, 0.635] col [0.019, 0.058, 0.215] sv [1.451, 0.128, 9.1]
+   layers.14.linear_attn.in_proj_b.weight           mean   0.0001 std  0.0156 min   -0.148 max    0.145 zero 0.0000 kurt    5.8 row [0.286, 0.482, 0.698] col [0.018, 0.059, 0.191] sv [1.151, 0.159, 11.6]
+   layers.16.linear_attn.in_proj_b.weight           mean  -0.0001 std  0.0171 min   -0.112 max    0.152 zero 0.0000 kurt    6.1 row [0.223, 0.523, 0.914] col [0.023, 0.064, 0.223] sv [1.298, 0.138, 10.9]
+   layers.17.linear_attn.in_proj_b.weight           mean  -0.0002 std  0.0155 min   -0.111 max    0.118 zero 0.0000 kurt    5.8 row [0.34, 0.487, 0.696] col [0.022, 0.057, 0.249] sv [1.264, 0.13, 10.4]
+   layers.18.linear_attn.in_proj_b.weight           mean  -0.0003 std  0.0158 min   -0.131 max    0.123 zero 0.0000 kurt    5.5 row [0.366, 0.496, 0.681] col [0.022, 0.058, 0.239] sv [1.332, 0.062, 10.4]
+   layers.20.linear_attn.in_proj_b.weight           mean  -0.0004 std  0.0190 min   -0.131 max    0.119 zero 0.0000 kurt    5.2 row [0.402, 0.595, 0.917] col [0.024, 0.07, 0.262] sv [1.58, 0.112, 10.5]
+   layers.21.linear_attn.in_proj_b.weight           mean  -0.0004 std  0.0170 min   -0.093 max    0.123 zero 0.0000 kurt    4.7 row [0.383, 0.537, 0.697] col [0.023, 0.062, 0.225] sv [1.464, 0.113, 10.0]
+   layers.22.linear_attn.in_proj_b.weight           mean  -0.0005 std  0.0193 min   -0.131 max    0.203 zero 0.0000 kurt    6.1 row [0.338, 0.606, 0.773] col [0.026, 0.071, 0.323] sv [1.565, 0.14, 10.8]
+== model.language_model.layers.L.linear_attn.in_proj_qkv.weight
+   layers.0.linear_attn.in_proj_qkv.weight          mean  -0.0000 std  0.0166 min   -0.391 max    0.383 zero 0.0000 kurt    8.4 row [0.0, 0.499, 3.227] col [0.979, 1.285, 2.532] sv [16.691, 0.429, 707.8]
+   layers.1.linear_attn.in_proj_qkv.weight          mean  -0.0000 std  0.0166 min   -0.312 max    0.258 zero 0.0000 kurt    5.1 row [0.202, 0.513, 1.957] col [0.878, 1.303, 1.626] sv [5.24, 0.35, 892.9]
+   layers.2.linear_attn.in_proj_qkv.weight          mean  -0.0000 std  0.0173 min   -0.250 max    0.241 zero 0.0000 kurt    5.2 row [0.236, 0.528, 1.667] col [0.927, 1.35, 1.739] sv [5.834, 0.356, 874.8]
+   layers.4.linear_attn.in_proj_qkv.weight          mean  -0.0000 std  0.0189 min   -0.355 max    0.252 zero 0.0000 kurt    5.8 row [0.177, 0.571, 2.533] col [1.197, 1.479, 2.001] sv [7.895, 0.425, 870.1]
+   layers.5.linear_attn.in_proj_qkv.weight          mean   0.0000 std  0.0177 min   -0.342 max    0.324 zero 0.0000 kurt    5.4 row [0.194, 0.541, 1.741] col [1.026, 1.387, 1.707] sv [7.159, 0.37, 853.0]
+   layers.6.linear_attn.in_proj_qkv.weight          mean  -0.0000 std  0.0170 min   -0.223 max    0.223 zero 0.0000 kurt    5.3 row [0.201, 0.52, 1.929] col [0.791, 1.33, 1.57] sv [5.536, 0.324, 854.5]
+   layers.8.linear_attn.in_proj_qkv.weight          mean  -0.0000 std  0.0171 min   -0.236 max    0.236 zero 0.0000 kurt    5.8 row [0.15, 0.519, 2.153] col [0.908, 1.33, 1.561] sv [7.383, 0.257, 823.4]
+   layers.9.linear_attn.in_proj_qkv.weight          mean  -0.0000 std  0.0162 min   -0.238 max    0.273 zero 0.0000 kurt    5.8 row [0.163, 0.497, 1.771] col [0.739, 1.263, 1.513] sv [5.255, 0.252, 830.7]
+   layers.10.linear_attn.in_proj_qkv.weight         mean  -0.0000 std  0.0165 min   -0.215 max    0.254 zero 0.0000 kurt    6.0 row [0.166, 0.502, 1.788] col [0.713, 1.279, 1.624] sv [5.288, 0.245, 795.4]
+   layers.12.linear_attn.in_proj_qkv.weight         mean   0.0000 std  0.0184 min   -0.227 max    0.272 zero 0.0000 kurt    6.0 row [0.142, 0.552, 2.204] col [0.967, 1.437, 1.68] sv [7.569, 0.319, 822.9]
+   layers.13.linear_attn.in_proj_qkv.weight         mean  -0.0000 std  0.0174 min   -0.228 max    0.235 zero 0.0000 kurt    6.1 row [0.22, 0.525, 1.806] col [0.831, 1.36, 1.598] sv [6.635, 0.311, 821.7]
+   layers.14.linear_attn.in_proj_qkv.weight         mean   0.0000 std  0.0176 min   -0.369 max    0.441 zero 0.0000 kurt    6.5 row [0.144, 0.525, 2.031] col [0.832, 1.373, 1.584] sv [6.462, 0.325, 828.6]
+   layers.16.linear_attn.in_proj_qkv.weight         mean   0.0000 std  0.0212 min   -0.301 max    0.342 zero 0.0000 kurt    6.0 row [0.212, 0.633, 2.342] col [1.065, 1.661, 2.29] sv [10.324, 0.509, 851.9]
+   layers.17.linear_attn.in_proj_qkv.weight         mean  -0.0000 std  0.0226 min   -0.369 max    0.395 zero 0.0000 kurt    5.7 row [0.223, 0.688, 2.92] col [1.185, 1.774, 2.523] sv [11.67, 0.572, 875.9]
+   layers.18.linear_attn.in_proj_qkv.weight         mean   0.0000 std  0.0235 min   -0.363 max    0.367 zero 0.0000 kurt    6.1 row [0.224, 0.71, 2.304] col [1.282, 1.838, 2.789] sv [13.83, 0.604, 866.1]
+   layers.20.linear_attn.in_proj_qkv.weight         mean   0.0000 std  0.0236 min   -0.410 max    0.582 zero 0.0000 kurt    6.9 row [0.285, 0.715, 2.401] col [1.216, 1.845, 3.163] sv [13.799, 0.62, 858.4]
+   layers.21.linear_attn.in_proj_qkv.weight         mean   0.0000 std  0.0227 min   -0.363 max    0.496 zero 0.0000 kurt    6.2 row [0.272, 0.693, 2.933] col [1.245, 1.775, 2.884] sv [12.911, 0.652, 868.2]
+   layers.22.linear_attn.in_proj_qkv.weight         mean   0.0000 std  0.0200 min   -0.393 max    0.406 zero 0.0000 kurt    6.1 row [0.213, 0.607, 2.099] col [1.053, 1.566, 2.285] sv [11.649, 0.549, 874.4]
+== model.language_model.layers.L.linear_attn.in_proj_z.weight
+   layers.0.linear_attn.in_proj_z.weight            mean   0.0000 std  0.0173 min   -0.461 max    0.211 zero 0.0000 kurt    5.2 row [0.102, 0.533, 1.305] col [0.535, 0.781, 1.24] sv [5.39, 0.175, 803.9]
+   layers.1.linear_attn.in_proj_z.weight            mean  -0.0000 std  0.0192 min   -0.182 max    0.183 zero 0.0000 kurt    4.0 row [0.081, 0.591, 1.153] col [0.697, 0.867, 1.296] sv [5.107, 0.161, 811.1]
+   layers.2.linear_attn.in_proj_z.weight            mean   0.0000 std  0.0195 min   -0.166 max    0.193 zero 0.0000 kurt    4.5 row [0.122, 0.595, 1.283] col [0.674, 0.88, 1.577] sv [6.529, 0.168, 774.2]
+   layers.4.linear_attn.in_proj_z.weight            mean  -0.0001 std  0.0179 min   -0.175 max    0.168 zero 0.0000 kurt    5.0 row [0.086, 0.538, 1.272] col [0.611, 0.809, 1.401] sv [5.676, 0.136, 771.0]
+   layers.5.linear_attn.in_proj_z.weight            mean  -0.0001 std  0.0165 min   -0.209 max    0.211 zero 0.0000 kurt    4.9 row [0.097, 0.505, 1.227] col [0.53, 0.745, 1.078] sv [4.48, 0.127, 777.3]
+   layers.6.linear_attn.in_proj_z.weight            mean  -0.0000 std  0.0160 min   -0.194 max    0.208 zero 0.0000 kurt    5.0 row [0.063, 0.488, 1.341] col [0.46, 0.72, 1.066] sv [5.154, 0.111, 731.0]
+   layers.8.linear_attn.in_proj_z.weight            mean  -0.0001 std  0.0148 min   -0.352 max    0.238 zero 0.0000 kurt    5.9 row [0.076, 0.449, 1.472] col [0.458, 0.666, 1.047] sv [5.374, 0.087, 697.6]
+   layers.9.linear_attn.in_proj_z.weight            mean  -0.0000 std  0.0146 min   -0.385 max    0.183 zero 0.0000 kurt    5.2 row [0.079, 0.446, 1.505] col [0.363, 0.652, 0.883] sv [5.151, 0.069, 652.5]
+   layers.10.linear_attn.in_proj_z.weight           mean  -0.0001 std  0.0138 min   -0.161 max    0.165 zero 0.0000 kurt    4.5 row [0.107, 0.429, 1.381] col [0.374, 0.618, 1.065] sv [6.46, 0.075, 633.8]
+   layers.12.linear_attn.in_proj_z.weight           mean  -0.0000 std  0.0150 min   -0.192 max    0.180 zero 0.0000 kurt    6.0 row [0.093, 0.45, 1.401] col [0.46, 0.675, 1.072] sv [5.685, 0.09, 665.8]
+   layers.13.linear_attn.in_proj_z.weight           mean   0.0001 std  0.0145 min   -0.173 max    0.192 zero 0.0000 kurt    5.5 row [0.096, 0.441, 1.38] col [0.45, 0.651, 1.035] sv [5.0, 0.098, 670.5]
+   layers.14.linear_attn.in_proj_z.weight           mean   0.0001 std  0.0154 min   -0.196 max    0.194 zero 0.0000 kurt    6.1 row [0.075, 0.464, 1.265] col [0.496, 0.693, 1.589] sv [6.363, 0.095, 638.4]
+   layers.16.linear_attn.in_proj_z.weight           mean  -0.0000 std  0.0159 min   -0.192 max    0.210 zero 0.0000 kurt    5.8 row [0.09, 0.472, 1.352] col [0.464, 0.714, 1.243] sv [5.301, 0.079, 685.3]
+   layers.17.linear_attn.in_proj_z.weight           mean  -0.0001 std  0.0167 min   -0.160 max    0.160 zero 0.0000 kurt    5.1 row [0.092, 0.498, 1.285] col [0.387, 0.749, 1.381] sv [5.15, 0.104, 736.0]
+   layers.18.linear_attn.in_proj_z.weight           mean  -0.0000 std  0.0172 min   -0.224 max    0.190 zero 0.0000 kurt    5.4 row [0.112, 0.509, 1.289] col [0.396, 0.773, 1.366] sv [5.687, 0.11, 744.7]
+   layers.20.linear_attn.in_proj_z.weight           mean  -0.0001 std  0.0176 min   -0.309 max    0.222 zero 0.0000 kurt    5.7 row [0.102, 0.516, 1.404] col [0.439, 0.791, 1.294] sv [5.758, 0.087, 715.7]
+   layers.21.linear_attn.in_proj_z.weight           mean  -0.0001 std  0.0178 min   -0.289 max    0.197 zero 0.0000 kurt    4.7 row [0.114, 0.54, 1.274] col [0.385, 0.803, 1.229] sv [5.547, 0.106, 753.1]
+   layers.22.linear_attn.in_proj_z.weight           mean  -0.0001 std  0.0179 min   -0.379 max    0.320 zero 0.0000 kurt    5.8 row [0.131, 0.544, 1.577] col [0.476, 0.805, 1.711] sv [5.889, 0.151, 703.1]
+== model.language_model.layers.L.linear_attn.norm.weight
+   layers.0.linear_attn.norm.weight                 mean   0.9516 std  0.0858 min    0.523 max    1.060 zero 0.0000 kurt   10.2 row None col None sv None
+   layers.1.linear_attn.norm.weight                 mean   0.9262 std  0.0945 min    0.449 max    1.074 zero 0.0000 kurt    8.1 row None col None sv None
+   layers.2.linear_attn.norm.weight                 mean   0.9341 std  0.1140 min    0.355 max    1.089 zero 0.0000 kurt    8.2 row None col None sv None
+   layers.4.linear_attn.norm.weight                 mean   0.8822 std  0.1310 min    0.348 max    1.077 zero 0.0000 kurt    5.0 row None col None sv None
+   layers.5.linear_attn.norm.weight                 mean   0.9348 std  0.1119 min    0.473 max    1.119 zero 0.0000 kurt    6.5 row None col None sv None
+   layers.6.linear_attn.norm.weight                 mean   0.9789 std  0.0860 min    0.529 max    1.143 zero 0.0000 kurt    9.2 row None col None sv None
+   layers.8.linear_attn.norm.weight                 mean   0.9971 std  0.0959 min    0.615 max    1.152 zero 0.0000 kurt    8.1 row None col None sv None
+   layers.9.linear_attn.norm.weight                 mean   1.0168 std  0.0741 min    0.713 max    1.194 zero 0.0000 kurt    5.5 row None col None sv None
+   layers.10.linear_attn.norm.weight                mean   1.0416 std  0.0621 min    0.823 max    1.159 zero 0.0000 kurt    6.3 row None col None sv None
+   layers.12.linear_attn.norm.weight                mean   0.9939 std  0.0662 min    0.746 max    1.141 zero 0.0000 kurt    5.0 row None col None sv None
+   layers.13.linear_attn.norm.weight                mean   1.0335 std  0.0564 min    0.789 max    1.150 zero 0.0000 kurt    6.5 row None col None sv None
+   layers.14.linear_attn.norm.weight                mean   1.0130 std  0.0614 min    0.750 max    1.127 zero 0.0000 kurt    5.2 row None col None sv None
+   layers.16.linear_attn.norm.weight                mean   0.8975 std  0.0878 min    0.691 max    1.081 zero 0.0000 kurt    2.3 row None col None sv None
+   layers.17.linear_attn.norm.weight                mean   0.8156 std  0.0973 min    0.598 max    1.056 zero 0.0000 kurt    2.5 row None col None sv None
+   layers.18.linear_attn.norm.weight                mean   0.7904 std  0.0949 min    0.566 max    1.069 zero 0.0000 kurt    3.0 row None col None sv None
+   layers.20.linear_attn.norm.weight                mean   0.8167 std  0.0866 min    0.619 max    1.034 zero 0.0000 kurt    2.8 row None col None sv None
+   layers.21.linear_attn.norm.weight                mean   0.8853 std  0.0746 min    0.693 max    1.035 zero 0.0000 kurt    2.7 row None col None sv None
+   layers.22.linear_attn.norm.weight                mean   1.0353 std  0.0620 min    0.843 max    1.168 zero 0.0000 kurt    3.2 row None col None sv None
+== model.language_model.layers.L.linear_attn.out_proj.weight
+   layers.0.linear_attn.out_proj.weight             mean   0.0000 std  0.0124 min   -0.283 max    0.195 zero 0.0000 kurt    5.5 row [0.422, 0.557, 2.012] col [0.031, 0.391, 0.565] sv [2.481, 0.137, 906.1]
+   layers.1.linear_attn.out_proj.weight             mean  -0.0000 std  0.0127 min   -0.324 max    0.295 zero 0.0000 kurt    5.7 row [0.201, 0.563, 2.176] col [0.052, 0.4, 0.509] sv [2.781, 0.055, 796.4]
+   layers.2.linear_attn.out_proj.weight             mean   0.0000 std  0.0125 min   -0.297 max    0.285 zero 0.0000 kurt    5.5 row [0.183, 0.554, 2.086] col [0.035, 0.393, 0.62] sv [2.631, 0.07, 798.1]
+   layers.4.linear_attn.out_proj.weight             mean  -0.0000 std  0.0117 min   -0.242 max    0.185 zero 0.0000 kurt    4.8 row [0.147, 0.518, 1.774] col [0.023, 0.366, 0.717] sv [2.118, 0.038, 785.1]
+   layers.5.linear_attn.out_proj.weight             mean   0.0000 std  0.0118 min   -0.270 max    0.195 zero 0.0000 kurt    4.6 row [0.133, 0.523, 1.58] col [0.018, 0.372, 0.552] sv [1.801, 0.052, 801.6]
+   layers.6.linear_attn.out_proj.weight             mean   0.0000 std  0.0121 min   -0.223 max    0.220 zero 0.0000 kurt    4.4 row [0.107, 0.53, 1.53] col [0.053, 0.382, 0.655] sv [2.04, 0.029, 772.2]
+   layers.8.linear_attn.out_proj.weight             mean   0.0000 std  0.0115 min   -0.230 max    0.194 zero 0.0000 kurt    4.5 row [0.092, 0.498, 1.544] col [0.017, 0.362, 0.626] sv [1.966, 0.035, 731.8]
+   layers.9.linear_attn.out_proj.weight             mean  -0.0000 std  0.0113 min   -0.240 max    0.221 zero 0.0000 kurt    4.8 row [0.087, 0.484, 1.632] col [0.05, 0.356, 0.619] sv [2.42, 0.03, 648.9]
+   layers.10.linear_attn.out_proj.weight            mean  -0.0000 std  0.0117 min   -0.268 max    0.217 zero 0.0000 kurt    4.6 row [0.089, 0.505, 1.34] col [0.025, 0.369, 0.726] sv [2.476, 0.032, 700.0]
+   layers.12.linear_attn.out_proj.weight            mean  -0.0000 std  0.0112 min   -0.199 max    0.154 zero 0.0000 kurt    4.6 row [0.11, 0.49, 1.265] col [0.032, 0.35, 0.578] sv [2.229, 0.037, 697.7]
+   layers.13.linear_attn.out_proj.weight            mean   0.0000 std  0.0116 min   -0.217 max    0.312 zero 0.0000 kurt    4.6 row [0.096, 0.506, 1.279] col [0.04, 0.364, 0.576] sv [2.087, 0.034, 717.4]
+   layers.14.linear_attn.out_proj.weight            mean  -0.0000 std  0.0117 min   -0.138 max    0.170 zero 0.0000 kurt    4.8 row [0.104, 0.513, 1.195] col [0.032, 0.364, 0.989] sv [1.791, 0.035, 752.7]
+   layers.16.linear_attn.out_proj.weight            mean   0.0000 std  0.0111 min   -0.268 max    0.200 zero 0.0000 kurt    5.2 row [0.195, 0.494, 1.397] col [0.047, 0.341, 0.874] sv [1.922, 0.068, 807.9]
+   layers.17.linear_attn.out_proj.weight            mean   0.0000 std  0.0107 min   -0.176 max    0.154 zero 0.0000 kurt    4.9 row [0.2, 0.477, 1.332] col [0.066, 0.326, 0.928] sv [1.493, 0.055, 779.2]
+   layers.18.linear_attn.out_proj.weight            mean   0.0000 std  0.0101 min   -0.234 max    0.246 zero 0.0000 kurt    5.6 row [0.204, 0.451, 1.433] col [0.052, 0.31, 0.579] sv [1.536, 0.065, 797.8]
+   layers.20.linear_attn.out_proj.weight            mean   0.0000 std  0.0105 min   -0.268 max    0.222 zero 0.0000 kurt    5.3 row [0.263, 0.473, 1.358] col [0.061, 0.324, 0.697] sv [1.464, 0.067, 815.4]
+   layers.21.linear_attn.out_proj.weight            mean   0.0000 std  0.0116 min   -0.260 max    0.224 zero 0.0000 kurt    4.5 row [0.243, 0.52, 1.29] col [0.061, 0.357, 0.609] sv [1.421, 0.061, 825.0]
+   layers.22.linear_attn.out_proj.weight            mean   0.0000 std  0.0122 min   -0.324 max    0.262 zero 0.0000 kurt    5.4 row [0.372, 0.55, 1.441] col [0.066, 0.382, 0.676] sv [1.566, 0.11, 842.3]
+== model.language_model.layers.L.mlp.down_proj.weight
+   layers.0.mlp.down_proj.weight                    mean  -0.0000 std  0.0085 min   -0.268 max    0.192 zero 0.0000 kurt    4.3 row [0.267, 0.503, 1.685] col [0.157, 0.272, 0.302] sv [1.772, 0.11, 931.6]
+   layers.1.mlp.down_proj.weight                    mean   0.0000 std  0.0086 min   -0.173 max    0.185 zero 0.0000 kurt    4.2 row [0.178, 0.507, 1.636] col [0.134, 0.274, 0.324] sv [1.727, 0.062, 904.7]
+   layers.2.mlp.down_proj.weight                    mean  -0.0000 std  0.0082 min   -0.222 max    0.222 zero 0.0000 kurt    4.7 row [0.135, 0.484, 1.72] col [0.144, 0.263, 0.339] sv [1.791, 0.036, 899.3]
+   layers.3.mlp.down_proj.weight                    mean  -0.0000 std  0.0081 min   -0.226 max    0.170 zero 0.0000 kurt    4.2 row [0.137, 0.473, 1.321] col [0.151, 0.258, 0.323] sv [1.462, 0.035, 881.6]
+   layers.4.mlp.down_proj.weight                    mean   0.0000 std  0.0081 min   -0.215 max    0.210 zero 0.0000 kurt    4.2 row [0.149, 0.477, 1.327] col [0.139, 0.26, 0.379] sv [1.426, 0.036, 891.6]
+   layers.5.mlp.down_proj.weight                    mean  -0.0000 std  0.0083 min   -0.219 max    0.208 zero 0.0000 kurt    4.4 row [0.123, 0.481, 1.435] col [0.131, 0.263, 0.355] sv [1.571, 0.033, 870.4]
+   layers.6.mlp.down_proj.weight                    mean  -0.0000 std  0.0082 min   -0.116 max    0.137 zero 0.0000 kurt    4.0 row [0.119, 0.477, 1.141] col [0.13, 0.26, 0.454] sv [1.333, 0.034, 843.8]
+   layers.7.mlp.down_proj.weight                    mean  -0.0000 std  0.0082 min   -0.181 max    0.190 zero 0.0000 kurt    4.3 row [0.115, 0.478, 1.458] col [0.144, 0.262, 0.375] sv [1.644, 0.036, 847.6]
+   layers.8.mlp.down_proj.weight                    mean   0.0000 std  0.0080 min   -0.151 max    0.109 zero 0.0000 kurt    4.1 row [0.112, 0.467, 1.348] col [0.136, 0.256, 0.362] sv [1.534, 0.064, 839.7]
+   layers.9.mlp.down_proj.weight                    mean   0.0000 std  0.0081 min   -0.197 max    0.128 zero 0.0000 kurt    4.5 row [0.111, 0.47, 1.465] col [0.132, 0.258, 0.409] sv [1.703, 0.061, 823.8]
+   layers.10.mlp.down_proj.weight                   mean  -0.0000 std  0.0080 min   -0.162 max    0.131 zero 0.0000 kurt    4.6 row [0.116, 0.463, 1.442] col [0.13, 0.252, 0.475] sv [1.649, 0.057, 825.3]
+   layers.11.mlp.down_proj.weight                   mean  -0.0000 std  0.0081 min   -0.161 max    0.142 zero 0.0000 kurt    4.4 row [0.108, 0.469, 1.483] col [0.137, 0.257, 0.45] sv [1.699, 0.061, 821.5]
+   layers.12.mlp.down_proj.weight                   mean   0.0000 std  0.0080 min   -0.138 max    0.091 zero 0.0000 kurt    4.0 row [0.119, 0.462, 1.223] col [0.109, 0.252, 0.387] sv [1.433, 0.065, 824.6]
+   layers.13.mlp.down_proj.weight                   mean   0.0000 std  0.0080 min   -0.132 max    0.141 zero 0.0000 kurt    4.0 row [0.116, 0.467, 1.173] col [0.115, 0.254, 0.455] sv [1.329, 0.063, 819.8]
+   layers.14.mlp.down_proj.weight                   mean   0.0000 std  0.0079 min   -0.195 max    0.167 zero 0.0000 kurt    4.8 row [0.148, 0.468, 1.282] col [0.132, 0.25, 0.448] sv [1.392, 0.071, 860.9]
+   layers.15.mlp.down_proj.weight                   mean   0.0000 std  0.0086 min   -0.130 max    0.183 zero 0.0000 kurt    4.7 row [0.302, 0.507, 1.251] col [0.136, 0.271, 0.494] sv [1.467, 0.079, 874.8]
+   layers.16.mlp.down_proj.weight                   mean  -0.0000 std  0.0086 min   -0.239 max    0.158 zero 0.0000 kurt    4.0 row [0.227, 0.503, 1.161] col [0.133, 0.271, 0.47] sv [1.23, 0.068, 867.5]
+   layers.17.mlp.down_proj.weight                   mean  -0.0000 std  0.0086 min   -0.195 max    0.140 zero 0.0000 kurt    3.7 row [0.214, 0.503, 1.08] col [0.143, 0.272, 0.373] sv [1.167, 0.054, 855.7]
+   layers.18.mlp.down_proj.weight                   mean  -0.0000 std  0.0086 min   -0.272 max    0.107 zero 0.0000 kurt    3.9 row [0.225, 0.505, 1.147] col [0.146, 0.273, 0.362] sv [1.235, 0.052, 849.4]
+   layers.19.mlp.down_proj.weight                   mean  -0.0000 std  0.0090 min   -0.178 max    0.245 zero 0.0000 kurt    3.8 row [0.259, 0.534, 1.236] col [0.15, 0.286, 0.427] sv [1.324, 0.081, 887.8]
+   layers.20.mlp.down_proj.weight                   mean   0.0000 std  0.0091 min   -0.250 max    0.144 zero 0.0000 kurt    3.6 row [0.239, 0.542, 1.137] col [0.161, 0.291, 0.405] sv [1.23, 0.07, 885.7]
+   layers.21.mlp.down_proj.weight                   mean   0.0000 std  0.0092 min   -0.159 max    0.147 zero 0.0000 kurt    3.5 row [0.222, 0.548, 1.111] col [0.153, 0.294, 0.469] sv [1.221, 0.065, 884.9]
+   layers.22.mlp.down_proj.weight                   mean  -0.0000 std  0.0092 min   -0.205 max    0.201 zero 0.0000 kurt    3.9 row [0.268, 0.543, 1.165] col [0.163, 0.29, 0.453] sv [1.276, 0.061, 884.6]
+   layers.23.mlp.down_proj.weight                   mean  -0.0000 std  0.0086 min   -0.291 max    0.338 zero 0.0000 kurt    6.9 row [0.22, 0.51, 1.269] col [0.129, 0.269, 0.551] sv [1.327, 0.049, 876.0]
+== model.language_model.layers.L.mlp.gate_proj.weight
+   layers.0.mlp.gate_proj.weight                    mean   0.0001 std  0.0121 min   -0.130 max    0.182 zero 0.0000 kurt    3.5 row [0.235, 0.384, 0.987] col [0.461, 0.724, 0.985] sv [3.343, 0.164, 904.8]
+   layers.1.mlp.gate_proj.weight                    mean   0.0000 std  0.0133 min   -0.118 max    0.160 zero 0.0000 kurt    3.4 row [0.221, 0.421, 1.03] col [0.374, 0.795, 1.12] sv [3.479, 0.148, 905.5]
+   layers.2.mlp.gate_proj.weight                    mean   0.0001 std  0.0163 min   -0.152 max    0.127 zero 0.0000 kurt    3.5 row [0.164, 0.509, 1.047] col [0.407, 0.97, 1.532] sv [6.024, 0.168, 881.1]
+   layers.3.mlp.gate_proj.weight                    mean   0.0000 std  0.0163 min   -0.134 max    0.149 zero 0.0000 kurt    3.9 row [0.193, 0.507, 0.992] col [0.62, 0.974, 1.49] sv [5.833, 0.174, 865.3]
+   layers.4.mlp.gate_proj.weight                    mean  -0.0000 std  0.0156 min   -0.154 max    0.229 zero 0.0000 kurt    3.9 row [0.156, 0.485, 1.075] col [0.578, 0.929, 1.264] sv [5.198, 0.14, 870.8]
+   layers.5.mlp.gate_proj.weight                    mean  -0.0000 std  0.0146 min   -0.151 max    0.190 zero 0.0000 kurt    4.1 row [0.186, 0.454, 1.197] col [0.504, 0.87, 1.18] sv [4.546, 0.134, 857.2]
+   layers.6.mlp.gate_proj.weight                    mean  -0.0001 std  0.0138 min   -0.234 max    0.211 zero 0.0000 kurt    4.8 row [0.126, 0.423, 1.148] col [0.478, 0.823, 1.181] sv [4.38, 0.135, 834.2]
+   layers.7.mlp.gate_proj.weight                    mean  -0.0000 std  0.0125 min   -0.146 max    0.149 zero 0.0000 kurt    4.4 row [0.154, 0.385, 1.217] col [0.456, 0.743, 1.063] sv [3.813, 0.148, 834.2]
+   layers.8.mlp.gate_proj.weight                    mean  -0.0000 std  0.0116 min   -0.124 max    0.157 zero 0.0000 kurt    4.5 row [0.166, 0.359, 1.157] col [0.382, 0.69, 0.92] sv [3.308, 0.132, 832.6]
+   layers.9.mlp.gate_proj.weight                    mean  -0.0000 std  0.0106 min   -0.148 max    0.114 zero 0.0000 kurt    4.6 row [0.175, 0.33, 0.931] col [0.358, 0.633, 0.795] sv [2.768, 0.126, 830.1]
+   layers.10.mlp.gate_proj.weight                   mean  -0.0000 std  0.0111 min   -0.157 max    0.161 zero 0.0000 kurt    6.2 row [0.121, 0.333, 1.363] col [0.421, 0.659, 0.943] sv [3.348, 0.128, 800.7]
+   layers.11.mlp.gate_proj.weight                   mean  -0.0000 std  0.0110 min   -0.151 max    0.170 zero 0.0000 kurt    6.3 row [0.143, 0.332, 1.175] col [0.39, 0.654, 0.959] sv [3.265, 0.132, 804.4]
+   layers.12.mlp.gate_proj.weight                   mean  -0.0000 std  0.0120 min   -0.229 max    0.215 zero 0.0000 kurt    7.3 row [0.138, 0.359, 1.236] col [0.398, 0.718, 1.03] sv [3.808, 0.088, 811.8]
+   layers.13.mlp.gate_proj.weight                   mean  -0.0001 std  0.0124 min   -0.190 max    0.185 zero 0.0000 kurt    7.0 row [0.145, 0.37, 1.314] col [0.429, 0.743, 1.028] sv [4.131, 0.095, 813.4]
+   layers.14.mlp.gate_proj.weight                   mean  -0.0000 std  0.0137 min   -0.340 max    0.268 zero 0.0000 kurt   10.7 row [0.103, 0.395, 1.495] col [0.496, 0.817, 1.122] sv [4.9, 0.147, 799.3]
+   layers.15.mlp.gate_proj.weight                   mean  -0.0001 std  0.0142 min   -0.312 max    0.316 zero 0.0000 kurt    7.8 row [0.174, 0.426, 1.402] col [0.505, 0.848, 1.272] sv [5.564, 0.126, 809.8]
+   layers.16.mlp.gate_proj.weight                   mean  -0.0000 std  0.0154 min   -0.277 max    0.249 zero 0.0000 kurt    6.2 row [0.194, 0.467, 1.209] col [0.45, 0.921, 1.305] sv [5.64, 0.124, 835.1]
+   layers.17.mlp.gate_proj.weight                   mean  -0.0000 std  0.0168 min   -0.250 max    0.262 zero 0.0000 kurt    5.2 row [0.203, 0.516, 1.315] col [0.447, 1.003, 1.476] sv [6.227, 0.129, 844.7]
+   layers.18.mlp.gate_proj.weight                   mean   0.0000 std  0.0177 min   -0.367 max    0.336 zero 0.0000 kurt    4.9 row [0.2, 0.549, 1.251] col [0.509, 1.06, 1.559] sv [7.169, 0.141, 846.3]
+   layers.19.mlp.gate_proj.weight                   mean  -0.0000 std  0.0171 min   -0.471 max    0.334 zero 0.0000 kurt    5.2 row [0.217, 0.527, 1.527] col [0.404, 1.019, 1.525] sv [6.451, 0.131, 837.0]
+   layers.20.mlp.gate_proj.weight                   mean  -0.0000 std  0.0170 min   -0.272 max    0.247 zero 0.0000 kurt    4.5 row [0.258, 0.526, 1.426] col [0.408, 1.015, 1.41] sv [5.9, 0.131, 848.7]
+   layers.21.mlp.gate_proj.weight                   mean  -0.0000 std  0.0172 min   -0.336 max    0.373 zero 0.0000 kurt    5.0 row [0.24, 0.532, 1.238] col [0.448, 1.027, 1.517] sv [6.315, 0.159, 853.6]
+   layers.22.mlp.gate_proj.weight                   mean  -0.0000 std  0.0175 min   -0.395 max    0.408 zero 0.0000 kurt    6.4 row [0.242, 0.537, 1.519] col [0.457, 1.045, 1.631] sv [6.937, 0.179, 843.8]
+   layers.23.mlp.gate_proj.weight                   mean  -0.0000 std  0.0189 min   -0.512 max    0.441 zero 0.0000 kurt    7.0 row [0.238, 0.583, 1.5] col [0.657, 1.126, 1.617] sv [9.212, 0.201, 828.5]
+== model.language_model.layers.L.mlp.up_proj.weight
+   layers.0.mlp.up_proj.weight                      mean  -0.0000 std  0.0086 min   -0.083 max    0.084 zero 0.0000 kurt    3.2 row [0.168, 0.273, 0.621] col [0.146, 0.51, 0.565] sv [0.967, 0.11, 941.7]
+   layers.1.mlp.up_proj.weight                      mean  -0.0000 std  0.0086 min   -0.102 max    0.078 zero 0.0000 kurt    3.2 row [0.119, 0.273, 0.39] col [0.141, 0.51, 0.559] sv [1.446, 0.1, 930.9]
+   layers.2.mlp.up_proj.weight                      mean  -0.0000 std  0.0081 min   -0.108 max    0.088 zero 0.0000 kurt    3.3 row [0.159, 0.26, 0.48] col [0.163, 0.486, 0.537] sv [1.126, 0.117, 937.4]
+   layers.3.mlp.up_proj.weight                      mean  -0.0000 std  0.0080 min   -0.065 max    0.094 zero 0.0000 kurt    3.2 row [0.155, 0.256, 0.328] col [0.134, 0.476, 0.539] sv [0.884, 0.094, 927.4]
+   layers.4.mlp.up_proj.weight                      mean   0.0000 std  0.0081 min   -0.091 max    0.085 zero 0.0000 kurt    3.3 row [0.148, 0.259, 0.52] col [0.141, 0.482, 0.553] sv [0.973, 0.096, 924.9]
+   layers.5.mlp.up_proj.weight                      mean   0.0000 std  0.0083 min   -0.064 max    0.066 zero 0.0000 kurt    3.4 row [0.164, 0.265, 0.485] col [0.139, 0.491, 0.571] sv [0.997, 0.096, 913.2]
+   layers.6.mlp.up_proj.weight                      mean  -0.0000 std  0.0084 min   -0.084 max    0.112 zero 0.0000 kurt    3.7 row [0.153, 0.266, 0.59] col [0.147, 0.495, 0.593] sv [1.4, 0.098, 890.4]
+   layers.7.mlp.up_proj.weight                      mean  -0.0000 std  0.0084 min   -0.062 max    0.076 zero 0.0000 kurt    3.5 row [0.155, 0.268, 0.398] col [0.145, 0.499, 0.588] sv [1.06, 0.101, 897.3]
+   layers.8.mlp.up_proj.weight                      mean   0.0000 std  0.0083 min   -0.072 max    0.077 zero 0.0000 kurt    3.5 row [0.149, 0.266, 0.453] col [0.143, 0.493, 0.593] sv [1.096, 0.095, 884.1]
+   layers.9.mlp.up_proj.weight                      mean  -0.0000 std  0.0084 min   -0.077 max    0.072 zero 0.0000 kurt    3.6 row [0.161, 0.268, 0.567] col [0.143, 0.497, 0.609] sv [1.21, 0.096, 869.6]
+   layers.10.mlp.up_proj.weight                     mean   0.0000 std  0.0083 min   -0.082 max    0.075 zero 0.0000 kurt    3.7 row [0.158, 0.264, 0.553] col [0.145, 0.492, 0.585] sv [1.18, 0.101, 875.0]
+   layers.11.mlp.up_proj.weight                     mean  -0.0000 std  0.0084 min   -0.108 max    0.092 zero 0.0000 kurt    3.7 row [0.156, 0.267, 0.553] col [0.151, 0.499, 0.62] sv [1.425, 0.105, 872.9]
+   layers.12.mlp.up_proj.weight                     mean  -0.0000 std  0.0082 min   -0.091 max    0.070 zero 0.0000 kurt    3.6 row [0.145, 0.261, 0.411] col [0.159, 0.488, 0.593] sv [1.194, 0.066, 873.0]
+   layers.13.mlp.up_proj.weight                     mean  -0.0000 std  0.0083 min   -0.103 max    0.089 zero 0.0000 kurt    3.7 row [0.153, 0.263, 0.627] col [0.172, 0.494, 0.623] sv [1.232, 0.07, 876.5]
+   layers.14.mlp.up_proj.weight                     mean   0.0000 std  0.0084 min   -0.097 max    0.111 zero 0.0000 kurt    4.1 row [0.153, 0.267, 0.539] col [0.203, 0.502, 0.639] sv [1.813, 0.121, 874.8]
+   layers.15.mlp.up_proj.weight                     mean   0.0000 std  0.0089 min   -0.108 max    0.140 zero 0.0000 kurt    4.3 row [0.102, 0.282, 0.578] col [0.2, 0.534, 0.645] sv [1.264, 0.12, 893.5]
+   layers.16.mlp.up_proj.weight                     mean  -0.0000 std  0.0089 min   -0.083 max    0.069 zero 0.0000 kurt    3.4 row [0.161, 0.283, 0.464] col [0.207, 0.53, 0.629] sv [1.228, 0.093, 886.3]
+   layers.17.mlp.up_proj.weight                     mean  -0.0000 std  0.0089 min   -0.090 max    0.079 zero 0.0000 kurt    3.4 row [0.152, 0.284, 0.427] col [0.213, 0.532, 0.615] sv [1.286, 0.089, 889.4]
+   layers.18.mlp.up_proj.weight                     mean   0.0000 std  0.0091 min   -0.075 max    0.088 zero 0.0000 kurt    3.3 row [0.175, 0.289, 0.379] col [0.198, 0.54, 0.635] sv [1.572, 0.094, 891.1]
+   layers.19.mlp.up_proj.weight                     mean  -0.0000 std  0.0093 min   -0.081 max    0.082 zero 0.0000 kurt    3.3 row [0.155, 0.297, 0.459] col [0.187, 0.557, 0.652] sv [1.56, 0.09, 880.9]
+   layers.20.mlp.up_proj.weight                     mean  -0.0000 std  0.0095 min   -0.091 max    0.083 zero 0.0000 kurt    3.2 row [0.159, 0.304, 0.423] col [0.199, 0.569, 0.694] sv [1.683, 0.091, 883.7]
+   layers.21.mlp.up_proj.weight                     mean  -0.0000 std  0.0098 min   -0.137 max    0.113 zero 0.0000 kurt    3.3 row [0.191, 0.311, 0.514] col [0.216, 0.584, 0.684] sv [1.784, 0.108, 892.9]
+   layers.22.mlp.up_proj.weight                     mean   0.0000 std  0.0100 min   -0.169 max    0.125 zero 0.0000 kurt    3.5 row [0.178, 0.318, 0.545] col [0.231, 0.598, 0.905] sv [2.679, 0.124, 883.9]
+   layers.23.mlp.up_proj.weight                     mean   0.0000 std  0.0111 min   -0.177 max    0.222 zero 0.0000 kurt    4.2 row [0.159, 0.35, 0.904] col [0.299, 0.661, 1.486] sv [4.632, 0.153, 845.3]
+== model.language_model.layers.L.post_attention_layernorm.weight
+   layers.0.post_attention_layernorm.weight         mean   0.0853 std  0.0957 min   -0.357 max    0.275 zero 0.0000 kurt    7.3 row None col None sv None
+   layers.1.post_attention_layernorm.weight         mean   0.1670 std  0.0824 min   -0.273 max    0.478 zero 0.0000 kurt    9.3 row None col None sv None
+   layers.2.post_attention_layernorm.weight         mean   0.2501 std  0.0878 min   -0.218 max    0.629 zero 0.0000 kurt    9.7 row None col None sv None
+   layers.3.post_attention_layernorm.weight         mean   0.2216 std  0.1087 min   -0.204 max    0.463 zero 0.0000 kurt    6.1 row None col None sv None
+   layers.4.post_attention_layernorm.weight         mean   0.2091 std  0.1151 min   -0.262 max    0.373 zero 0.0000 kurt    6.8 row None col None sv None
+   layers.5.post_attention_layernorm.weight         mean   0.1833 std  0.1465 min   -0.355 max    0.365 zero 0.0000 kurt    5.8 row None col None sv None
+   layers.6.post_attention_layernorm.weight         mean   0.1487 std  0.1300 min   -0.391 max    0.293 zero 0.0000 kurt    7.6 row None col None sv None
+   layers.7.post_attention_layernorm.weight         mean   0.1309 std  0.1605 min   -0.447 max    0.309 zero 0.0000 kurt    6.1 row None col None sv None
+   layers.8.post_attention_layernorm.weight         mean   0.1090 std  0.1778 min   -0.496 max    0.309 zero 0.0000 kurt    5.5 row None col None sv None
+   layers.9.post_attention_layernorm.weight         mean   0.0956 std  0.1784 min   -0.516 max    0.299 zero 0.0000 kurt    5.2 row None col None sv None
+   layers.10.post_attention_layernorm.weight        mean   0.0665 std  0.1641 min   -0.516 max    0.248 zero 0.0000 kurt    6.0 row None col None sv None
+   layers.11.post_attention_layernorm.weight        mean   0.1040 std  0.1444 min   -0.435 max    0.309 zero 0.0000 kurt    6.1 row None col None sv None
+   layers.12.post_attention_layernorm.weight        mean   0.1356 std  0.1180 min   -0.322 max    0.338 zero 0.0000 kurt    5.8 row None col None sv None
+   layers.13.post_attention_layernorm.weight        mean   0.1547 std  0.0961 min   -0.231 max    0.369 zero 0.0000 kurt    6.5 row None col None sv None
+   layers.14.post_attention_layernorm.weight        mean   0.1825 std  0.0389 min   -0.096 max    0.340 zero 0.0000 kurt    7.8 row None col None sv None
+   layers.15.post_attention_layernorm.weight        mean   0.2414 std  0.0447 min   -0.146 max    0.393 zero 0.0000 kurt   17.3 row None col None sv None
+   layers.16.post_attention_layernorm.weight        mean   0.3035 std  0.0764 min   -0.179 max    0.477 zero 0.0000 kurt   10.8 row None col None sv None
+   layers.17.post_attention_layernorm.weight        mean   0.3578 std  0.0860 min   -0.207 max    0.621 zero 0.0000 kurt   10.2 row None col None sv None
+   layers.18.post_attention_layernorm.weight        mean   0.4067 std  0.0815 min   -0.093 max    0.617 zero 0.0000 kurt    8.8 row None col None sv None
+   layers.19.post_attention_layernorm.weight        mean   0.3629 std  0.0625 min   -0.048 max    0.498 zero 0.0000 kurt   12.2 row None col None sv None
+   layers.20.post_attention_layernorm.weight        mean   0.3957 std  0.0643 min   -0.164 max    0.586 zero 0.0000 kurt   16.4 row None col None sv None
+   layers.21.post_attention_layernorm.weight        mean   0.4154 std  0.0539 min   -0.144 max    0.574 zero 0.0000 kurt   20.3 row None col None sv None
+   layers.22.post_attention_layernorm.weight        mean   0.3927 std  0.0428 min   -0.012 max    0.590 zero 0.0000 kurt   16.3 row None col None sv None
+   layers.23.post_attention_layernorm.weight        mean   0.2543 std  0.0606 min    0.041 max    0.820 zero 0.0000 kurt   16.4 row None col None sv None
+== model.language_model.layers.L.self_attn.k_norm.weight
+   layers.3.self_attn.k_norm.weight                 mean   0.4167 std  0.2227 min   -0.898 max    1.633 zero 0.0000 kurt   14.0 row None col None sv None
+   layers.7.self_attn.k_norm.weight                 mean   0.4964 std  0.1540 min   -0.165 max    1.062 zero 0.0000 kurt    5.4 row None col None sv None
+   layers.11.self_attn.k_norm.weight                mean   0.6301 std  0.2210 min   -0.996 max    1.312 zero 0.0000 kurt   32.1 row None col None sv None
+   layers.15.self_attn.k_norm.weight                mean   0.6297 std  0.2635 min   -0.957 max    1.430 zero 0.0000 kurt   21.1 row None col None sv None
+   layers.19.self_attn.k_norm.weight                mean   0.4625 std  0.2793 min   -0.996 max    1.438 zero 0.0000 kurt   17.0 row None col None sv None
+   layers.23.self_attn.k_norm.weight                mean   0.3926 std  0.2712 min   -1.344 max    1.328 zero 0.0000 kurt   16.7 row None col None sv None
+== model.language_model.layers.L.self_attn.k_proj.weight
+   layers.3.self_attn.k_proj.weight                 mean   0.0000 std  0.0124 min   -0.107 max    0.114 zero 0.0000 kurt    4.8 row [0.119, 0.384, 0.778] col [0.121, 0.277, 0.5] sv [1.31, 0.031, 389.6]
+   layers.7.self_attn.k_proj.weight                 mean  -0.0000 std  0.0106 min   -0.096 max    0.102 zero 0.0000 kurt    4.3 row [0.112, 0.329, 0.508] col [0.113, 0.236, 0.371] sv [1.107, 0.019, 358.3]
+   layers.11.self_attn.k_proj.weight                mean   0.0000 std  0.0117 min   -0.113 max    0.107 zero 0.0000 kurt    4.9 row [0.075, 0.357, 0.596] col [0.114, 0.259, 0.467] sv [1.203, 0.014, 316.1]
+   layers.15.self_attn.k_proj.weight                mean  -0.0000 std  0.0115 min   -0.123 max    0.115 zero 0.0000 kurt    5.3 row [0.039, 0.349, 0.634] col [0.076, 0.254, 0.408] sv [1.081, 0.013, 322.4]
+   layers.19.self_attn.k_proj.weight                mean   0.0000 std  0.0112 min   -0.178 max    0.167 zero 0.0000 kurt    6.0 row [0.069, 0.344, 0.572] col [0.122, 0.245, 0.64] sv [1.561, 0.012, 272.5]
+   layers.23.self_attn.k_proj.weight                mean   0.0000 std  0.0101 min   -0.127 max    0.149 zero 0.0000 kurt    8.6 row [0.081, 0.313, 0.523] col [0.098, 0.215, 0.674] sv [1.11, 0.018, 296.2]
+== model.language_model.layers.L.self_attn.o_proj.weight
+   layers.3.self_attn.o_proj.weight                 mean   0.0000 std  0.0122 min   -0.163 max    0.326 zero 0.0000 kurt    4.8 row [0.162, 0.539, 1.783] col [0.134, 0.382, 0.752] sv [2.022, 0.055, 798.9]
+   layers.7.self_attn.o_proj.weight                 mean   0.0000 std  0.0112 min   -0.154 max    0.148 zero 0.0000 kurt    4.3 row [0.096, 0.485, 1.079] col [0.161, 0.353, 0.694] sv [2.029, 0.019, 663.2]
+   layers.11.self_attn.o_proj.weight                mean   0.0000 std  0.0116 min   -0.117 max    0.129 zero 0.0000 kurt    4.5 row [0.079, 0.505, 1.174] col [0.191, 0.366, 0.659] sv [2.171, 0.024, 641.0]
+   layers.15.self_attn.o_proj.weight                mean   0.0000 std  0.0138 min   -0.172 max    0.132 zero 0.0000 kurt    4.4 row [0.121, 0.61, 1.127] col [0.194, 0.433, 1.211] sv [2.054, 0.032, 707.2]
+   layers.19.self_attn.o_proj.weight                mean  -0.0000 std  0.0167 min   -0.196 max    0.223 zero 0.0000 kurt    4.2 row [0.295, 0.745, 1.545] col [0.179, 0.521, 0.929] sv [2.071, 0.054, 752.1]
+   layers.23.self_attn.o_proj.weight                mean  -0.0000 std  0.0139 min   -0.262 max    0.270 zero 0.0000 kurt    6.8 row [0.445, 0.624, 1.3] col [0.124, 0.409, 1.583] sv [2.691, 0.105, 748.1]
+== model.language_model.layers.L.self_attn.q_norm.weight
+   layers.3.self_attn.q_norm.weight                 mean   0.4269 std  0.1815 min   -0.211 max    1.227 zero 0.0000 kurt    5.6 row None col None sv None
+   layers.7.self_attn.q_norm.weight                 mean   0.5024 std  0.1289 min   -0.239 max    1.023 zero 0.0000 kurt    9.5 row None col None sv None
+   layers.11.self_attn.q_norm.weight                mean   0.6294 std  0.2129 min   -1.016 max    1.133 zero 0.0000 kurt   39.8 row None col None sv None
+   layers.15.self_attn.q_norm.weight                mean   0.6208 std  0.2648 min   -0.996 max    1.297 zero 0.0000 kurt   26.0 row None col None sv None
+   layers.19.self_attn.q_norm.weight                mean   0.4681 std  0.2733 min   -0.941 max    1.016 zero 0.0000 kurt   15.6 row None col None sv None
+   layers.23.self_attn.q_norm.weight                mean   0.3883 std  0.3024 min   -1.000 max    1.148 zero 0.0000 kurt   13.7 row None col None sv None
+== model.language_model.layers.L.self_attn.q_proj.weight
+   layers.3.self_attn.q_proj.weight                 mean  -0.0002 std  0.0198 min   -0.237 max    0.250 zero 0.0000 kurt    5.4 row [0.124, 0.583, 1.487] col [0.952, 1.263, 1.994] sv [10.969, 0.232, 823.7]
+   layers.7.self_attn.q_proj.weight                 mean  -0.0001 std  0.0154 min   -0.212 max    0.264 zero 0.0000 kurt    5.7 row [0.052, 0.461, 1.487] col [0.656, 0.979, 1.442] sv [8.481, 0.166, 751.8]
+   layers.11.self_attn.q_proj.weight                mean  -0.0000 std  0.0141 min   -0.196 max    0.181 zero 0.0000 kurt    5.2 row [0.143, 0.435, 1.588] col [0.573, 0.895, 1.661] sv [9.135, 0.123, 663.6]
+   layers.15.self_attn.q_proj.weight                mean   0.0001 std  0.0157 min   -0.252 max    0.268 zero 0.0000 kurt    5.4 row [0.112, 0.476, 2.012] col [0.457, 0.988, 2.026] sv [10.098, 0.152, 634.6]
+   layers.19.self_attn.q_proj.weight                mean   0.0001 std  0.0156 min   -0.206 max    0.172 zero 0.0000 kurt    5.5 row [0.116, 0.473, 1.335] col [0.387, 0.98, 2.75] sv [11.235, 0.14, 620.1]
+   layers.23.self_attn.q_proj.weight                mean   0.0001 std  0.0164 min   -0.400 max    0.324 zero 0.0000 kurt    6.9 row [0.035, 0.488, 1.556] col [0.692, 1.041, 2.526] sv [8.978, 0.276, 735.8]
+== model.language_model.layers.L.self_attn.v_proj.weight
+   layers.3.self_attn.v_proj.weight                 mean   0.0000 std  0.0128 min   -0.135 max    0.131 zero 0.0000 kurt    4.8 row [0.164, 0.4, 0.643] col [0.102, 0.287, 0.365] sv [0.947, 0.043, 410.4]
+   layers.7.self_attn.v_proj.weight                 mean   0.0000 std  0.0118 min   -0.127 max    0.131 zero 0.0000 kurt    5.3 row [0.203, 0.374, 0.661] col [0.083, 0.266, 0.341] sv [0.927, 0.028, 395.0]
+   layers.11.self_attn.v_proj.weight                mean  -0.0000 std  0.0145 min   -0.142 max    0.135 zero 0.0000 kurt    4.2 row [0.28, 0.458, 0.76] col [0.067, 0.322, 0.436] sv [1.044, 0.024, 385.9]
+   layers.15.self_attn.v_proj.weight                mean   0.0000 std  0.0165 min   -0.256 max    0.301 zero 0.0000 kurt    9.5 row [0.3, 0.521, 1.155] col [0.095, 0.366, 0.614] sv [1.398, 0.038, 399.4]
+   layers.19.self_attn.v_proj.weight                mean  -0.0000 std  0.0199 min   -0.381 max    0.342 zero 0.0000 kurt   11.8 row [0.342, 0.63, 0.942] col [0.15, 0.417, 0.962] sv [1.605, 0.039, 316.2]
+   layers.23.self_attn.v_proj.weight                mean   0.0000 std  0.0186 min   -0.258 max    0.539 zero 0.0000 kurt    9.1 row [0.274, 0.579, 1.165] col [0.223, 0.407, 0.824] sv [4.855, 0.034, 320.9]
+== model.language_model.norm.weight
+   norm.weight                                      mean   3.3091 std  0.6692 min   -0.777 max    5.312 zero 0.0000 kurt   10.9 row None col None sv None

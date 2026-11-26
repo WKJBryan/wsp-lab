@@ -1,0 +1,98 @@
+===== 1. MLP gate/up pairing =====
+L 0 diag cos mean -0.001 (frac>0.3 0.00, frac<0 0.50) | off-diag mean -0.000 max +0.31 | best-match-is-diagonal 0.07
+L 1 diag cos mean +0.003 (frac>0.3 0.01, frac<0 0.49) | off-diag mean +0.000 max +0.22 | best-match-is-diagonal 0.04
+L 2 diag cos mean +0.002 (frac>0.3 0.01, frac<0 0.50) | off-diag mean +0.000 max +0.33 | best-match-is-diagonal 0.17
+L 3 diag cos mean -0.002 (frac>0.3 0.00, frac<0 0.51) | off-diag mean -0.000 max +0.42 | best-match-is-diagonal 0.09
+L 4 diag cos mean +0.002 (frac>0.3 0.00, frac<0 0.49) | off-diag mean -0.000 max +0.40 | best-match-is-diagonal 0.09
+L 5 diag cos mean +0.000 (frac>0.3 0.00, frac<0 0.50) | off-diag mean -0.000 max +0.21 | best-match-is-diagonal 0.07
+L 6 diag cos mean -0.004 (frac>0.3 0.01, frac<0 0.51) | off-diag mean -0.000 max +0.42 | best-match-is-diagonal 0.14
+L 7 diag cos mean +0.001 (frac>0.3 0.01, frac<0 0.49) | off-diag mean +0.000 max +0.44 | best-match-is-diagonal 0.16
+L 8 diag cos mean +0.001 (frac>0.3 0.01, frac<0 0.50) | off-diag mean -0.000 max +0.43 | best-match-is-diagonal 0.14
+L 9 diag cos mean -0.001 (frac>0.3 0.01, frac<0 0.50) | off-diag mean +0.000 max +0.61 | best-match-is-diagonal 0.12
+L10 diag cos mean -0.004 (frac>0.3 0.01, frac<0 0.51) | off-diag mean -0.000 max +0.40 | best-match-is-diagonal 0.14
+L11 diag cos mean +0.002 (frac>0.3 0.01, frac<0 0.50) | off-diag mean +0.000 max +0.55 | best-match-is-diagonal 0.16
+L12 diag cos mean +0.000 (frac>0.3 0.01, frac<0 0.50) | off-diag mean +0.000 max +0.46 | best-match-is-diagonal 0.14
+L13 diag cos mean -0.002 (frac>0.3 0.01, frac<0 0.50) | off-diag mean +0.000 max +0.47 | best-match-is-diagonal 0.12
+L14 diag cos mean +0.002 (frac>0.3 0.03, frac<0 0.50) | off-diag mean -0.000 max +0.59 | best-match-is-diagonal 0.15
+L15 diag cos mean -0.005 (frac>0.3 0.02, frac<0 0.52) | off-diag mean -0.000 max +0.28 | best-match-is-diagonal 0.13
+L16 diag cos mean -0.002 (frac>0.3 0.02, frac<0 0.50) | off-diag mean +0.000 max +0.29 | best-match-is-diagonal 0.10
+L17 diag cos mean +0.005 (frac>0.3 0.02, frac<0 0.47) | off-diag mean +0.000 max +0.36 | best-match-is-diagonal 0.13
+L18 diag cos mean -0.003 (frac>0.3 0.01, frac<0 0.51) | off-diag mean -0.001 max +0.36 | best-match-is-diagonal 0.15
+L19 diag cos mean +0.003 (frac>0.3 0.02, frac<0 0.49) | off-diag mean +0.001 max +0.48 | best-match-is-diagonal 0.09
+L20 diag cos mean -0.001 (frac>0.3 0.02, frac<0 0.50) | off-diag mean -0.000 max +0.57 | best-match-is-diagonal 0.08
+L21 diag cos mean +0.000 (frac>0.3 0.02, frac<0 0.51) | off-diag mean +0.000 max +0.45 | best-match-is-diagonal 0.11
+L22 diag cos mean -0.005 (frac>0.3 0.03, frac<0 0.51) | off-diag mean +0.000 max +0.51 | best-match-is-diagonal 0.13
+L23 diag cos mean +0.004 (frac>0.3 0.10, frac<0 0.50) | off-diag mean -0.001 max +0.69 | best-match-is-diagonal 0.19
+
+===== 2. Full attention OV pairing (top real eigenvalue of W_o[:,b] @ W_v[a]) =====
+L 3 rows = o slice (query head), cols = kv head 0,1; expected kv = h//4
+       0.199   0.065   expected col 0:   0.199  other:   0.065
+       0.072   0.063   expected col 0:   0.072  other:   0.063
+       0.127   0.082   expected col 0:   0.127  other:   0.082
+       0.149   0.070   expected col 0:   0.149  other:   0.070
+       0.084   0.114   expected col 1:   0.114  other:   0.084
+       0.082   0.147   expected col 1:   0.147  other:   0.082
+       0.092   0.198   expected col 1:   0.198  other:   0.092
+       0.068   0.142   expected col 1:   0.142  other:   0.068
+L 7 rows = o slice (query head), cols = kv head 0,1; expected kv = h//4
+       0.007   0.088   expected col 0:   0.007  other:   0.088
+       0.214   0.118   expected col 0:   0.214  other:   0.118
+       0.228   0.124   expected col 0:   0.228  other:   0.124
+       0.048   0.127   expected col 0:   0.048  other:   0.127
+       0.066   0.087   expected col 1:   0.087  other:   0.066
+       0.058   0.076   expected col 1:   0.076  other:   0.058
+       0.088   0.115   expected col 1:   0.115  other:   0.088
+       0.228   0.135   expected col 1:   0.135  other:   0.228
+L11 rows = o slice (query head), cols = kv head 0,1; expected kv = h//4
+       0.086   0.141   expected col 0:   0.086  other:   0.141
+       0.142   0.069   expected col 0:   0.142  other:   0.069
+       0.099   0.067   expected col 0:   0.099  other:   0.067
+       0.251   0.109   expected col 0:   0.251  other:   0.109
+       0.109   0.261   expected col 1:   0.261  other:   0.109
+       0.092   0.144   expected col 1:   0.144  other:   0.092
+       0.144   0.020   expected col 1:   0.020  other:   0.144
+       0.096   0.211   expected col 1:   0.211  other:   0.096
+L15 rows = o slice (query head), cols = kv head 0,1; expected kv = h//4
+       0.104   0.086   expected col 0:   0.104  other:   0.086
+       0.251   0.097   expected col 0:   0.251  other:   0.097
+       0.201   0.083   expected col 0:   0.201  other:   0.083
+       0.316   0.091   expected col 0:   0.316  other:   0.091
+       0.142   0.165   expected col 1:   0.165  other:   0.142
+       0.125   0.146   expected col 1:   0.146  other:   0.125
+       0.119   0.096   expected col 1:   0.096  other:   0.119
+       0.119   0.125   expected col 1:   0.125  other:   0.119
+L19 rows = o slice (query head), cols = kv head 0,1; expected kv = h//4
+       0.205   0.122   expected col 0:   0.205  other:   0.122
+       0.271   0.167   expected col 0:   0.271  other:   0.167
+       0.143   0.129   expected col 0:   0.143  other:   0.129
+       0.227   0.140   expected col 0:   0.227  other:   0.140
+       0.188   0.384   expected col 1:   0.384  other:   0.188
+       0.130   0.165   expected col 1:   0.165  other:   0.130
+       0.139   0.148   expected col 1:   0.148  other:   0.139
+       0.157   0.157   expected col 1:   0.157  other:   0.157
+L23 rows = o slice (query head), cols = kv head 0,1; expected kv = h//4
+       0.152   0.122   expected col 0:   0.152  other:   0.122
+       0.215   0.113   expected col 0:   0.215  other:   0.113
+       0.020   0.114   expected col 0:   0.020  other:   0.114
+       0.095   0.096   expected col 0:   0.095  other:   0.096
+       0.118   0.117   expected col 1:   0.117  other:   0.118
+       0.141   0.144   expected col 1:   0.144  other:   0.141
+       0.106   0.231   expected col 1:   0.231  other:   0.106
+       0.129   0.212   expected col 1:   0.212  other:   0.129
+
+===== 3. Full attention q_proj: query part vs gate part, per head =====
+L 3 |q rows| by head 0.42 0.40 0.41 0.42 0.35 0.40 0.41 0.36 | gate rows 0.82 0.79 0.88 0.81 0.62 0.72 0.86 0.66
+      k live dims 256/256 (first live 0, last 255); query mass in live dims by head 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00
+L 7 |q rows| by head 0.31 0.37 0.35 0.34 0.40 0.30 0.34 0.35 | gate rows 0.44 0.62 0.52 0.54 0.66 0.65 0.62 0.58
+      k live dims 256/256 (first live 0, last 255); query mass in live dims by head 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00
+L11 |q rows| by head 0.35 0.39 0.39 0.39 0.38 0.40 0.32 0.38 | gate rows 0.47 0.57 0.53 0.51 0.45 0.57 0.40 0.45
+      k live dims 255/256 (first live 1, last 255); query mass in live dims by head 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00
+L15 |q rows| by head 0.37 0.38 0.37 0.32 0.40 0.40 0.39 0.39 | gate rows 0.57 0.54 0.51 0.44 0.68 0.61 0.62 0.63
+      k live dims 255/256 (first live 0, last 255); query mass in live dims by head 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00
+L19 |q rows| by head 0.39 0.37 0.38 0.39 0.35 0.38 0.36 0.40 | gate rows 0.52 0.50 0.54 0.52 0.52 0.64 0.73 0.59
+      k live dims 251/256 (first live 3, last 255); query mass in live dims by head 0.99 0.99 0.99 0.99 0.99 0.99 0.99 0.99
+L23 |q rows| by head 0.36 0.37 0.37 0.33 0.38 0.35 0.36 0.36 | gate rows 0.61 0.60 0.71 0.58 0.65 0.58 0.63 0.58
+      k live dims 254/256 (first live 0, last 255); query mass in live dims by head 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00
+
+===== 5. Exact zero rows / columns per tensor (language model only) =====
+(done)

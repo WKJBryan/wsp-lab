@@ -1,0 +1,25 @@
+layer 14; 114 looping traces; flip level for the deployed direction 448
+
+d_ls (deployed)
+   early max of the 4 highest non-quasi-loop traces: p27:403 p123:315 p21:313 p93:299  -> clean threshold 448
+   quasi-loop traces early max: p50:470 p16:422 p8:404 p52:334
+   loops caught within first 800 loop tokens at that threshold: 98/114; pre-loop hits: [('p8', 465), ('p50', 457), ('p67', 464), ('p113', 470)]
+   loop maxima of loops the deployed graft misses: p6:432 p12:446 p15:379 p18:412 p26:454 p34:428 p37:409 p47:448 p57:355 p71:427 p72:448 p75:399 p83:372 p93:443 p97:369 p121:373 p122:429
+
+d_all: all loop positions vs fresh
+   early max of the 4 highest non-quasi-loop traces: p27:396 p21:311 p123:309 p106:296  -> clean threshold 396
+   quasi-loop traces early max: p50:445 p16:404 p8:365 p52:343
+   loops caught within first 800 loop tokens at that threshold: 107/114; pre-loop hits: [('p8', 444), ('p50', 441), ('p67', 413), ('p90', 397), ('p113', 411)]
+   loop maxima of loops the deployed graft misses: p6:411 p12:415 p15:370 p18:402 p26:414 p34:403 p37:377 p47:429 p57:354 p71:416 p72:423 p75:377 p83:375 p93:413 p97:382 p121:369 p122:405
+
+d_wait: loop positions predicting " Wait" vs fresh
+   early max of the 4 highest non-quasi-loop traces: p27:640 p21:584 p106:536 p46:520  -> clean threshold 640
+   quasi-loop traces early max: p50:703 p8:682 p52:616 p16:560
+   loops caught within first 800 loop tokens at that threshold: 105/114; pre-loop hits: [('p1', 643), ('p8', 693), ('p9', 642), ('p14', 670), ('p19', 667), ('p31', 669), ('p46', 646), ('p50', 660), ('p52', 683), ('p67', 732), ('p71', 663), ('p84', 662), ('p86', 650), ('p89', 658), ('p90', 661), ('p100', 651), ('p111', 643), ('p113', 703)]
+   loop maxima of loops the deployed graft misses: p6:608 p12:669 p15:608 p18:639 p26:680 p34:647 p37:638 p47:706 p57:346 p71:691 p72:663 p75:604 p83:634 p93:646 p97:605 p121:588 p122:666
+
+d_ls+all
+   early max of the 4 highest non-quasi-loop traces: p27:42 p123:32 p21:32 p93:31  -> clean threshold 42
+   quasi-loop traces early max: p50:46 p16:43 p8:40 p52:33
+   loops caught within first 800 loop tokens at that threshold: 107/114; pre-loop hits: [('p8', 47), ('p50', 46), ('p67', 45), ('p90', 42), ('p113', 46)]
+   loop maxima of loops the deployed graft misses: p6:44 p12:45 p15:39 p18:43 p26:45 p34:44 p37:41 p47:45 p57:37 p71:43 p72:46 p75:40 p83:39 p93:45 p97:40 p121:39 p122:43

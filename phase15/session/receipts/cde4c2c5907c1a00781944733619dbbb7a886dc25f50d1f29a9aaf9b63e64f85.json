@@ -1,0 +1,37 @@
+{
+ "time": "2026-11-27T02:14:15",
+ "fingerprint": "cde4c2c5907c1a00781944733619dbbb7a886dc25f50d1f29a9aaf9b63e64f85",
+ "note": "Two conditional switches in layer 14 MLP (neurons 1439 and 2910), each writing the </think> output direction only when the MLP input lies in a detected direction: 1439 = verbatim-repetition direction (soft threshold 390, width 20, write 5.5); 2910 = runaway-enumeration direction (closed-form linear discriminant; soft threshold 5, width 10, write 2.0). Close the thinking when the reasoning repeats verbatim or runs away as an endless enumeration; silent elsewhere.",
+ "changed_tensors": [
+  {
+   "tensor": "model.language_model.layers.14.mlp.down_proj.weight",
+   "shape": [
+    1024,
+    3584
+   ],
+   "changed_values": 2048,
+   "max_abs_delta": 0.794701,
+   "norm_delta": 5.860822
+  },
+  {
+   "tensor": "model.language_model.layers.14.mlp.gate_proj.weight",
+   "shape": [
+    3584,
+    1024
+   ],
+   "changed_values": 2048,
+   "max_abs_delta": 0.530491,
+   "norm_delta": 4.679057
+  },
+  {
+   "tensor": "model.language_model.layers.14.mlp.up_proj.weight",
+   "shape": [
+    3584,
+    1024
+   ],
+   "changed_values": 2048,
+   "max_abs_delta": 0.027039,
+   "norm_delta": 0.345145
+  }
+ ]
+}

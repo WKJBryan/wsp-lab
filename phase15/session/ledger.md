@@ -1,0 +1,8 @@
+| 1 | 2026-11-26T23:00:54 | base model | n=128 | Baseline: the unmodified model on the 128 practice problems; this measures where it fails and how often. |
+| 1 | 2026-11-26T23:14:21 | MEASURED | accuracy_boxed 5.5, cap-hit 94.5 |
+| 2 | 2026-11-27T01:02:25 | 071c042292c351ee | n=128 | Grafted loop-breaker (layer 14 MLP neuron 1439 writes the </think> output direction only when the MLP input lies in the verbatim-repetition direction): generations that fall into a repetition loop should now close their thinking and give a boxed answer, so cap-hit rate should drop sharply and accuracy rise well above 5.5, while non-looping problems are unchanged. |
+| 2 | 2026-11-27T01:09:20 | MEASURED | accuracy_boxed 46.1, cap-hit 34.4 |
+| 3 | 2026-11-27T01:54:38 | a3de53261dbcd9be | n=128 | Second switch added for runaway enumerations (a linear direction that only becomes strong after about 20,000 tokens of an endless incrementing list): generations that never close their thinking should now close late and give an answer, so the 8 never-closed traces of pass 2 become closed ones; accuracy should stay near 46 and rise if some of those answers are right. |
+| 3 | 2026-11-27T02:01:13 | MEASURED | accuracy_boxed 53.1, cap-hit 25.0 |
+| 4 | 2026-11-27T02:26:00 | cde4c2c5907c1a00 | n=128 | Same two switches, but the verbatim-repetition switch has a lower soft threshold (390 instead of 425), so it closes weaker or later-forming loops earlier and leaves more room for the final answer; expect at least as many boxed answers as pass 3 (84), fewer closures after 20k tokens, and accuracy near or above 53 unless earlier closure costs maturity. |
+| 4 | 2026-11-27T02:31:37 | MEASURED | accuracy_boxed 53.9, cap-hit 12.5 |

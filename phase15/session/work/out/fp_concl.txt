@@ -1,0 +1,38 @@
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:   0%|          | 1/473 [00:00<02:46,  2.84it/s]Loading weights:   8%|▊         | 40/473 [00:00<00:03, 114.13it/s]Loading weights:  17%|█▋        | 79/473 [00:00<00:02, 193.20it/s]Loading weights:  25%|██▍       | 117/473 [00:00<00:01, 246.39it/s]Loading weights:  32%|███▏      | 152/473 [00:00<00:01, 267.44it/s]Loading weights:  41%|████      | 195/473 [00:00<00:00, 312.20it/s]Loading weights:  49%|████▉     | 233/473 [00:00<00:00, 323.76it/s]Loading weights:  57%|█████▋    | 271/473 [00:01<00:00, 339.89it/s]Loading weights:  65%|██████▌   | 308/473 [00:01<00:00, 343.28it/s]Loading weights:  79%|███████▉  | 374/473 [00:01<00:00, 435.21it/s]Loading weights:  97%|█████████▋| 458/473 [00:01<00:00, 552.98it/s]Loading weights: 100%|██████████| 473/473 [00:01<00:00, 333.88it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+30 final-phase loop positions (one per trace)
+path tokens: [' Therefore', ',', ' the', ' final', ' answer', ' is', ' $\\', 'boxed', '{']
+  p0   P(path after " Therefore") 0.00 | after "Therefore": ',':0.97 ' \\(':0.03 ' the':0.00 ':':0.00 | after "$\boxed{": '0':22.6 '4':22.6 '1':21.9 '2':21.2   (gold '0')
+  p1   P(path after " Therefore") 0.00 | after "Therefore": ',':0.99 ' the':0.01 ' $':0.00 ' $\\':0.00 | after "$\boxed{": '9':28.2 '8':22.1 '1':20.5 '6':19.2   (gold '9')
+  p4   P(path after " Therefore") 0.00 | after "Therefore": ',':0.97 ' $':0.03 ' the':0.01 ':':0.00 | after "$\boxed{": 'c':22.8 '0':22.6 '2':22.0 '1':21.9   (gold '-2')
+  p7   P(path after " Therefore") 0.00 | after "Therefore": ',':0.83 ' $':0.16 ':':0.00 '.':0.00 | after "$\boxed{": '1':23.0 '7':21.2 '2':20.1 '8':20.0   (gold '95')
+  p9   P(path after " Therefore") 0.00 | after "Therefore": ',':0.98 ' $':0.01 ':':0.01 ' the':0.01 | after "$\boxed{": '1':23.1 'm':22.8 '2':22.0 '3':21.9   (gold '937')
+  p11  P(path after " Therefore") 0.00 | after "Therefore": ',':0.83 ' $':0.16 ' ':0.00 ':':0.00 | after "$\boxed{": '1':24.2 '2':24.1 '0':23.6 '3':22.4   (gold '16')
+  p12  P(path after " Therefore") 0.00 | after "Therefore": ',':0.94 ' $':0.05 ':':0.01 ' the':0.00 | after "$\boxed{": '1':20.0 '0':19.8 'P':19.4 '2':18.2   (gold '(x^2 + x + 1)(x^8 - x^7 + x^5 - x^4 + x^3 - x + 1)')
+  p17  P(path after " Therefore") 0.00 | after "Therefore": ',':0.98 ':':0.02 ' the':0.00 '.':0.00 | after "$\boxed{": '0':21.8 '1':21.6 '6':20.8 '2':19.1   (gold '0.323')
+  p20  P(path after " Therefore") 0.00 | after "Therefore": ',':0.91 ' $\\':0.05 ':':0.02 ' the':0.00 | after "$\boxed{": '1':21.6 '2':21.6 '0':21.2 '3':20.9   (gold '\\pi^2')
+  p22  P(path after " Therefore") 0.00 | after "Therefore": ',':0.59 ' $':0.22 ' $\\':0.17 ' the':0.02 | after "$\boxed{": '1':23.0 '7':22.8 '4':21.4 '2':20.6   (gold '110')
+  p25  P(path after " Therefore") 0.00 | after "Therefore": ',':0.89 ' $':0.09 ':':0.01 ' the':0.00 | after "$\boxed{": '1':24.5 '0':23.4 '2':21.6 '5':20.9   (gold '125')
+  p36  P(path after " Therefore") 0.00 | after "Therefore": ',':0.72 ' $':0.23 ':':0.04 '\n':0.00 | after "$\boxed{": '1':24.4 'a':22.8 '0':22.5 '2':21.4   (gold '\\frac{21}{100}')
+  p38  P(path after " Therefore") 0.00 | after "Therefore": ',':0.90 ' $':0.05 ' $\\':0.04 ':':0.01 | after "$\boxed{": '1':23.9 '3':22.9 '2':22.6 '4':21.4   (gold '340')
+  p39  P(path after " Therefore") 0.00 | after "Therefore": ',':0.96 ' the':0.02 ' $':0.01 ':':0.00 | after "$\boxed{": '1':28.1 '5':20.4 '3':19.6 '9':19.6   (gold '110^\\circ')
+  p41  P(path after " Therefore") 0.00 | after "Therefore": ',':0.94 ' -':0.05 ' the':0.00 ':':0.00 | after "$\boxed{": '8':20.8 ' -':19.0 '9':18.4 '0':17.9   (gold '-72')
+  p43  P(path after " Therefore") 0.00 | after "Therefore": ',':0.76 ' $':0.10 ' side':0.06 ':':0.04 | after "$\boxed{": '1':22.2 '5':20.8 '2':20.8 'r':20.1   (gold '5(\\sqrt{3}-1)')
+  p48  P(path after " Therefore") 0.00 | after "Therefore": ',':1.00 ' the':0.00 ':':0.00 ' $\\':0.00 | after "$\boxed{": '5':23.8 'E':22.8 '1':21.2 '0':20.0   (gold '\\sqrt{13}')
+  p54  P(path after " Therefore") 0.00 | after "Therefore": ',':0.88 ' $':0.07 ':':0.04 ' the':0.00 | after "$\boxed{": '1':22.0 'F':21.8 '2':20.8 'a':20.5   (gold '(100,101)')
+  p55  P(path after " Therefore") 0.00 | after "Therefore": ',':0.93 ' $':0.05 ':':0.01 ' the':0.01 | after "$\boxed{": '2':23.0 '1':22.9 '3':22.1 'm':21.9   (gold '5371')
+  p56  P(path after " Therefore") 0.00 | after "Therefore": ',':0.94 ' $':0.05 ':':0.00 ' the':0.00 | after "$\boxed{": '1':21.6 'CD':21.5 '9':20.5 '6':19.8   (gold '4 \\sqrt{10}')
+  p60  P(path after " Therefore") 0.00 | after "Therefore": ',':1.00 ':':0.00 ' the':0.00 ' I':0.00 | after "$\boxed{": '2':28.4 '9':22.9 '3':21.8 '1':21.0   (gold '54')
+  p62  P(path after " Therefore") 0.00 | after "Therefore": ',':0.94 ':':0.04 ' $':0.02 ' the':0.00 | after "$\boxed{": '(-':20.8 'p':20.0 '0':19.8 '[':19.1   (gold '[0,3)')
+  p63  P(path after " Therefore") 0.00 | after "Therefore": ',':0.69 ' $':0.25 ' $\\':0.04 ':':0.01 | after "$\boxed{": '1':25.0 '3':22.8 '2':20.9 '9':19.8   (gold '101')
+  p64  P(path after " Therefore") 0.00 | after "Therefore": ',':1.00 ' the':0.00 ':':0.00 ' $':0.00 | after "$\boxed{": '4':23.5 '6':23.0 '1':22.8 '8':22.2   (gold '18')
+  p65  P(path after " Therefore") 0.00 | after "Therefore": ',':0.92 ' $':0.08 ':':0.00 ' the':0.00 | after "$\boxed{": '1':23.9 '0':23.9 '2':23.2 '4':22.5   (gold '12')
+  p70  P(path after " Therefore") 0.00 | after "Therefore": ',':0.96 ' `':0.02 ' the':0.01 ':':0.01 | after "$\boxed{": '0':24.8 '1':24.0 '2':22.9 '3':22.0   (gold '57')
+  p75  P(path after " Therefore") 0.00 | after "Therefore": ',':0.84 ' $':0.08 ':':0.06 ' the':0.01 | after "$\boxed{": '1':24.4 '0':24.2 '3':23.6 '2':23.1   (gold '4')
+  p76  P(path after " Therefore") 0.00 | after "Therefore": ',':0.76 ' $':0.15 ' the':0.04 ' product':0.03 | after "$\boxed{": '1':25.2 'a':24.8 '6':20.5 ' \\':20.2   (gold '12^{1/7}')
+  p84  P(path after " Therefore") 0.00 | after "Therefore": ',':0.87 ' $':0.09 ':':0.03 ' my':0.00 | after "$\boxed{": '1':23.8 '2':22.0 'AX':19.5 '3':18.8   (gold '18')
+  p88  P(path after " Therefore") 0.00 | after "Therefore": ',':0.48 '.':0.16 ' $':0.08 ' $(':0.08 | after "$\boxed{": '1':24.9 '3':21.5 '2':19.5 '9':19.4   (gold '11')
+
+mean natural P of each path token (after the forced " Therefore"): ',':0.88 ' the':0.35 ' final':0.00 ' answer':0.57 ' is':0.73 ' $\\':0.11 'boxed':0.60 '{':0.75
+mean product after the first word: 0.000; per-trace product: median 0.00, frac >= 0.3: 0.00
