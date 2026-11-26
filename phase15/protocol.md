@@ -8,7 +8,7 @@
 > then reset: the sandbox holds no pass, and the evidence is kept outside it. The phase-14 sandbox was
 > moved aside whole before the fresh one was built (renamed, not deleted).
 
-> **Note 2026-11-26, 22:59 (before the editor session; no rule, endpoint or prediction changed).** The
+> **Note 2026-11-26, 22:58 (before the editor session; no rule, endpoint or prediction changed).** The
 > editor type could not be used as registered. The harness fixes its list of helper types when a chat
 > starts, and `glm54-editor` was defined afterwards (a copy of the Flash editor's definition with only the
 > model changed), so it cannot be loaded into the chat that runs the session. The editor therefore runs as
