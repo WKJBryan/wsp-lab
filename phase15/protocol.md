@@ -1,5 +1,13 @@
 # Pre-registered protocol — Phase 15: the blind editor under the original authors' rules, with a stronger editor
 
+> **Technical check (2026-11-26, 22:51; run before the session, and its outcome sets nothing).** Four
+> practice problems on the unmodified model in the fresh sandbox, under the full protocol: exit status 0;
+> one pass charged; all four generations ran to the cap; the texts and the summary were written; the
+> summary's base fingerprint equals `phase15/sandbox_manifest.json` and its tools digest equals the
+> digest of the manifest's `harness` object (`36d3430c…`, `b57047ce50bc9935`). The ledger and counter were
+> then reset: the sandbox holds no pass, and the evidence is kept outside it. The phase-14 sandbox was
+> moved aside whole before the fresh one was built (renamed, not deleted).
+
 Phase 14 ran its experiment with the protocol's fallback editor, GLM-5.3-Flash, a small model, and that
 editor did not reach the published edit (11.0% against 54.2% on MATH-500). It left a question phase 14
 could not answer: is the gap a matter of the editor's strength, or of the hint and the bigger budget that
