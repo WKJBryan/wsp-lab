@@ -3,7 +3,7 @@
   "name": "a1_wound_topk8_practice_rerun",
   "n": 64,
   "accuracy": 0.0,
-  "answered": 95.3,
+  "answered": 42.2,
   "cap_hit_rate": 100.0,
   "mean_tokens": 8192.0,
   "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
@@ -15,7 +15,7 @@
    "admission_tested": false,
    "problems": []
   },
-  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#4a1b56a343a4 (ISSUES #19)"
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#d74fdebd340f (ISSUES #19, #30, #31)"
  },
  "rows": [
   {
@@ -25,7 +25,8 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m1",
@@ -34,7 +35,8 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m2",
@@ -43,7 +45,8 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m3",
@@ -52,16 +55,18 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m4",
    "gold": "\\text{Evelyn}",
-   "pred": "do",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m5",
@@ -70,7 +75,8 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m6",
@@ -79,16 +85,18 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m7",
    "gold": "90^\\circ",
-   "pred": "Step",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m8",
@@ -97,7 +105,8 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m9",
@@ -106,7 +115,8 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m10",
@@ -115,7 +125,8 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m11",
@@ -124,16 +135,18 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m12",
    "gold": "284",
-   "pred": "even",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m13",
@@ -142,7 +155,8 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m14",
@@ -151,25 +165,28 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m15",
    "gold": "6 - 5i",
-   "pred": "32",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m16",
    "gold": "-50",
-   "pred": "1-",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m17",
@@ -178,25 +195,28 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m18",
    "gold": "28",
-   "pred": "Step",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m19",
    "gold": "3",
-   "pred": "37",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m20",
@@ -205,7 +225,8 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m21",
@@ -214,16 +235,18 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m22",
    "gold": "5",
-   "pred": "by",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m23",
@@ -232,61 +255,68 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m24",
    "gold": "10",
-   "pred": "30",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m25",
    "gold": "1,-2",
-   "pred": "26",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m26",
    "gold": "144",
-   "pred": "m",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m27",
    "gold": "78",
-   "pred": "o",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m28",
    "gold": "-2 + 7i",
-   "pred": "1",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m29",
    "gold": "225",
-   "pred": "follows",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m30",
@@ -295,7 +325,8 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m31",
@@ -304,25 +335,28 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m32",
    "gold": "720",
-   "pred": "8",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m33",
    "gold": "\\frac{243}{625}",
-   "pred": "m",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m34",
@@ -331,25 +365,28 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m35",
    "gold": "3",
-   "pred": "is",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m36",
    "gold": "3, 5, 7",
-   "pred": "7",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m37",
@@ -358,7 +395,8 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m38",
@@ -367,34 +405,38 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m39",
    "gold": "23",
-   "pred": "1",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m40",
    "gold": "12",
-   "pred": "only",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m41",
    "gold": "17",
-   "pred": "that",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m42",
@@ -403,25 +445,28 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m43",
    "gold": "70 \\sqrt{2}",
-   "pred": "\\sqrt{x^2+400}+\\sqrt{y^2+900}+\\sqrt{x^2+y^2-80x",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m44",
    "gold": "1.25",
-   "pred": "35",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m45",
@@ -430,43 +475,48 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m46",
    "gold": "6",
-   "pred": "roots",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m47",
    "gold": "5",
-   "pred": "the",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m48",
    "gold": "\\frac{3}{2}",
-   "pred": "38",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m49",
    "gold": "83",
-   "pred": "---",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m50",
@@ -475,43 +525,48 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m51",
    "gold": "x^5 - x^4 + x^3 - x^2 + x - 1",
-   "pred": "by",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m52",
    "gold": "12",
-   "pred": "professional",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m53",
    "gold": "-\\frac{\\pi}{6}",
-   "pred": "(orifwefollowup,letthenotationbe",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m54",
    "gold": "0.15",
-   "pred": "step",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m55",
@@ -520,25 +575,28 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m56",
    "gold": "11",
-   "pred": "2",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m57",
    "gold": "16",
-   "pred": "R",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m58",
@@ -547,7 +605,8 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m59",
@@ -556,16 +615,18 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m60",
    "gold": "(6,31,-1)",
-   "pred": "step",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m61",
@@ -574,7 +635,8 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m62",
@@ -583,7 +645,8 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m63",
@@ -592,7 +655,8 @@
    "ok": false,
    "n_tokens": 8192,
    "finish": "length",
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   }
  ]
 }

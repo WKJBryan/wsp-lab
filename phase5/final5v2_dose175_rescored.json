@@ -4,15 +4,15 @@
   "n": 500,
   "samples": 4,
   "per_sample": [
-   43.0,
-   42.0,
-   42.4,
-   43.4
+   48.8,
+   47.2,
+   49.8,
+   49.2
   ],
-  "accuracy": 42.7,
+  "accuracy": 48.8,
   "accuracy_at_run_time": 35.4,
   "cap_hit_rate": 21.9,
-  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#4a1b56a343a4 (ISSUES #19)",
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#d74fdebd340f (ISSUES #19, #30, #31)",
   "validity": {
    "per_sample": {
     "s0": {
@@ -20,9 +20,9 @@
      "soup_judged": true,
      "admission_tested": true,
      "admission_correct": [
-      41.6,
-      44.4,
-      0.5879
+      46.8,
+      50.8,
+      0.4207
      ]
     },
     "s1": {
@@ -30,9 +30,9 @@
      "soup_judged": true,
      "admission_tested": true,
      "admission_correct": [
-      40.8,
-      43.2,
-      0.6506
+      45.6,
+      48.8,
+      0.5306
      ]
     },
     "s2": {
@@ -40,9 +40,9 @@
      "soup_judged": true,
      "admission_tested": true,
      "admission_correct": [
-      42.8,
-      42.0,
-      0.9279
+      48.8,
+      50.8,
+      0.7206
      ]
     },
     "s3": {
@@ -50,9 +50,9 @@
      "soup_judged": true,
      "admission_tested": true,
      "admission_correct": [
-      44.4,
-      42.4,
-      0.7182
+      49.2,
+      49.2,
+      1.0
      ]
     }
    },
@@ -65,15 +65,21 @@
    "gold": "\\left( 3, \\frac{\\pi}{2} \\right)",
    "pred_rescored": [
     "(3,\\frac{\\pi}{2})",
-    "(0,3)",
+    "(3,\\frac{\\pi}{2})",
     "(3,\\frac{\\pi}{2})",
     "(3,\\frac{\\pi}{2})"
    ],
    "ok_rescored": [
     true,
-    false,
+    true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -90,6 +96,12 @@
     false,
     true,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -106,6 +118,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -115,13 +133,19 @@
     "9",
     "9",
     "9",
-    "196"
+    "9"
    ],
    "ok_rescored": [
     true,
     true,
     true,
-    false
+    true
+   ],
+   "rule": [
+    "last line",
+    "last line",
+    "last line",
+    "last line"
    ]
   },
   {
@@ -138,13 +162,19 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "boxed",
+    "marked line"
    ]
   },
   {
    "id": "m5",
    "gold": "42",
    "pred_rescored": [
-    "TheedgesofthehexagonareV_1V_2,V_2V_3,\\dots",
+    null,
     null,
     null,
     null
@@ -154,6 +184,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -170,13 +206,19 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
    "id": "m7",
    "gold": "90^\\circ",
    "pred_rescored": [
-    "-",
+    null,
     "126^\\circ",
     "90",
     "n"
@@ -184,8 +226,14 @@
    "ok_rescored": [
     false,
     false,
-    false,
+    true,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -202,6 +250,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -218,6 +272,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -234,6 +294,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -250,6 +316,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "boxed",
+    "marked line"
    ]
   },
   {
@@ -266,6 +338,12 @@
     false,
     false,
     true
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -282,6 +360,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "boxed",
+    "marked line"
    ]
   },
   {
@@ -298,6 +382,12 @@
     false,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    null,
+    "boxed",
+    "marked line"
    ]
   },
   {
@@ -314,6 +404,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -330,6 +426,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -346,6 +448,12 @@
     true,
     false,
     true
+   ],
+   "rule": [
+    "boxed",
+    "marked line",
+    "boxed",
+    "marked line"
    ]
   },
   {
@@ -362,6 +470,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -378,6 +492,12 @@
     true,
     false,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    null,
+    "marked line"
    ]
   },
   {
@@ -387,13 +507,19 @@
     "6+9i",
     "6+9i",
     "6+9i",
-    "is"
+    "6+9i"
    ],
    "ok_rescored": [
     true,
     true,
     true,
-    false
+    true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -410,6 +536,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    "marked line"
    ]
   },
   {
@@ -426,6 +558,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -438,10 +576,16 @@
     "5"
    ],
    "ok_rescored": [
-    false,
-    false,
-    false,
-    false
+    true,
+    true,
+    true,
+    true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -458,13 +602,19 @@
     false,
     false,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
    "id": "m25",
    "gold": "1,-2",
    "pred_rescored": [
-    "x",
+    null,
     null,
     null,
     "Therefore"
@@ -474,6 +624,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    "last line"
    ]
   },
   {
@@ -490,6 +646,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    "marked line",
+    null
    ]
   },
   {
@@ -506,6 +668,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -522,6 +690,12 @@
     true,
     true,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -538,6 +712,12 @@
     false,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -554,6 +734,12 @@
     false,
     false,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "boxed",
+    "marked line"
    ]
   },
   {
@@ -566,10 +752,16 @@
     "11\\sqrt{2}"
    ],
    "ok_rescored": [
-    false,
-    false,
-    false,
-    false
+    true,
+    true,
+    true,
+    true
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -586,6 +778,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    "marked line",
+    "boxed"
    ]
   },
   {
@@ -602,6 +800,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -618,6 +822,12 @@
     false,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    null,
+    "boxed",
+    "marked line"
    ]
   },
   {
@@ -634,6 +844,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -650,6 +866,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    "marked line",
+    null
    ]
   },
   {
@@ -666,22 +888,34 @@
     false,
     false,
     true
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
    "id": "m38",
    "gold": "2000",
    "pred_rescored": [
-    "000",
-    "000",
-    "000",
+    "2,000",
+    "2,000",
+    "2,000",
     "2,000"
    ],
    "ok_rescored": [
-    false,
-    false,
-    false,
-    false
+    true,
+    true,
+    true,
+    true
+   ],
+   "rule": [
+    "last line",
+    "last line",
+    "last line",
+    "last line"
    ]
   },
   {
@@ -691,13 +925,19 @@
     "23",
     "23",
     "23",
-    "132)"
+    "132"
    ],
    "ok_rescored": [
     true,
     true,
     true,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -714,6 +954,12 @@
     false,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    null,
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -722,7 +968,7 @@
    "pred_rescored": [
     null,
     "-1",
-    "However",
+    null,
     null
    ],
    "ok_rescored": [
@@ -730,6 +976,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    null,
+    null
    ]
   },
   {
@@ -746,6 +998,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -762,6 +1020,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    null,
+    null
    ]
   },
   {
@@ -778,6 +1042,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -794,6 +1064,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    null,
+    null
    ]
   },
   {
@@ -810,6 +1086,12 @@
     false,
     true,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -826,6 +1108,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -842,6 +1130,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -858,6 +1152,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -874,6 +1174,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -890,6 +1196,12 @@
     false,
     false,
     true
+   ],
+   "rule": [
+    null,
+    null,
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -906,6 +1218,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -922,6 +1240,12 @@
     true,
     false,
     true
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    null,
+    "marked line"
    ]
   },
   {
@@ -938,6 +1262,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -954,6 +1284,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -970,6 +1306,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -986,6 +1328,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -1002,6 +1350,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -1018,6 +1372,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -1034,6 +1394,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -1050,6 +1416,12 @@
     false,
     false,
     true
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -1066,6 +1438,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -1082,6 +1460,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    null,
+    "marked line"
    ]
   },
   {
@@ -1091,13 +1475,19 @@
     "1",
     "1",
     null,
-    "d"
+    null
    ],
    "ok_rescored": [
     false,
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    null,
+    null
    ]
   },
   {
@@ -1114,6 +1504,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -1130,6 +1526,12 @@
     true,
     true,
     false
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "last line",
+    "last line"
    ]
   },
   {
@@ -1146,6 +1548,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -1162,6 +1570,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "boxed",
+    "marked line",
+    null,
+    null
    ]
   },
   {
@@ -1178,6 +1592,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -1194,6 +1614,12 @@
     false,
     true,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -1210,6 +1636,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "last line",
+    null,
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -1226,6 +1658,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -1242,6 +1680,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -1251,13 +1695,19 @@
     null,
     null,
     "\\cotx",
-    "\\frac{1}{\\sinx"
+    null
    ],
    "ok_rescored": [
     false,
     false,
     true,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    "last line",
+    null
    ]
   },
   {
@@ -1274,6 +1724,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    null,
+    "marked line"
    ]
   },
   {
@@ -1281,15 +1737,21 @@
    "gold": "0",
    "pred_rescored": [
     "-1",
-    "x\\neq0",
+    "0",
     "0",
     "0"
    ],
    "ok_rescored": [
     false,
-    false,
+    true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -1306,6 +1768,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "last line",
+    "last line"
    ]
   },
   {
@@ -1322,6 +1790,12 @@
     false,
     false,
     true
+   ],
+   "rule": [
+    "boxed",
+    "last line",
+    null,
+    "boxed"
    ]
   },
   {
@@ -1338,13 +1812,19 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
    "id": "m80",
    "gold": "501",
    "pred_rescored": [
-    ",",
+    null,
     null,
     "1",
     "1"
@@ -1354,6 +1834,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -1370,6 +1856,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "boxed",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -1386,6 +1878,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "boxed",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -1402,6 +1900,12 @@
     true,
     true,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -1418,6 +1922,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "boxed",
+    "marked line"
    ]
   },
   {
@@ -1434,6 +1944,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -1450,6 +1966,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "last line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -1466,6 +1988,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -1482,6 +2010,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -1498,6 +2032,12 @@
     false,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    null,
+    "last line",
+    "last line"
    ]
   },
   {
@@ -1514,6 +2054,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -1530,6 +2076,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -1537,15 +2089,21 @@
    "gold": "\\frac{448}{15625}",
    "pred_rescored": [
     null,
-    "formulation",
-    "decimal",
+    "\\frac{448}{15625}",
+    "0.028672",
     "0.028672"
    ],
    "ok_rescored": [
     false,
-    false,
-    false,
+    true,
+    true,
     true
+   ],
+   "rule": [
+    null,
+    "last line",
+    "last line",
+    "last line"
    ]
   },
   {
@@ -1562,6 +2120,12 @@
     true,
     false,
     true
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -1578,6 +2142,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -1594,6 +2164,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -1610,6 +2186,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -1626,6 +2208,12 @@
     false,
     false,
     true
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    "marked line"
    ]
   },
   {
@@ -1642,6 +2230,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "last line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -1658,6 +2252,12 @@
     false,
     true,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -1670,10 +2270,16 @@
     "135"
    ],
    "ok_rescored": [
-    false,
+    true,
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    null,
+    "marked line"
    ]
   },
   {
@@ -1682,7 +2288,7 @@
    "pred_rescored": [
     null,
     "1",
-    "10",
+    null,
     null
    ],
    "ok_rescored": [
@@ -1690,22 +2296,34 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    null,
+    null
    ]
   },
   {
    "id": "m102",
    "gold": "(a+5)(b+2)",
    "pred_rescored": [
-    "as",
+    "(a+5)(b+2)",
     "(a+5)(b+2)",
     "(a+5)(b+2)",
     "(a+5)(b+2)"
    ],
    "ok_rescored": [
-    false,
+    true,
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -1722,6 +2340,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    null,
+    null
    ]
   },
   {
@@ -1738,6 +2362,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -1754,6 +2384,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -1766,26 +2402,38 @@
     "\\frac{4}{3}"
    ],
    "ok_rescored": [
-    false,
-    false,
-    false,
-    false
+    true,
+    true,
+    true,
+    true
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
    "id": "m107",
    "gold": "9",
    "pred_rescored": [
-    "30",
+    "9",
     null,
     null,
     null
    ],
    "ok_rescored": [
-    false,
+    true,
     false,
     false,
     false
+   ],
+   "rule": [
+    "last line",
+    null,
+    null,
+    null
    ]
   },
   {
@@ -1802,6 +2450,12 @@
     true,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -1818,6 +2472,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -1834,6 +2494,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -1850,6 +2516,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "last line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -1866,6 +2538,12 @@
     true,
     true,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -1882,6 +2560,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "last line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -1898,6 +2582,12 @@
     false,
     false,
     true
+   ],
+   "rule": [
+    null,
+    "last line",
+    null,
+    "boxed"
    ]
   },
   {
@@ -1914,6 +2604,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    null,
+    null
    ]
   },
   {
@@ -1930,6 +2626,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -1946,6 +2648,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -1962,6 +2670,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "boxed",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -1978,6 +2692,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -1994,6 +2714,12 @@
     true,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -2010,6 +2736,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -2019,13 +2751,19 @@
     "9",
     "9",
     "9",
-    "2500"
+    "9"
    ],
    "ok_rescored": [
     true,
     true,
     true,
-    false
+    true
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "last line",
+    "last line"
    ]
   },
   {
@@ -2033,7 +2771,7 @@
    "gold": "8",
    "pred_rescored": [
     "16?",
-    "used",
+    null,
     null,
     "8"
    ],
@@ -2042,6 +2780,12 @@
     false,
     false,
     true
+   ],
+   "rule": [
+    "marked line",
+    null,
+    null,
+    "boxed"
    ]
   },
   {
@@ -2058,6 +2802,12 @@
     false,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    null,
+    "boxed",
+    "marked line"
    ]
   },
   {
@@ -2074,13 +2824,19 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
    "id": "m126",
    "gold": "1+274i",
    "pred_rescored": [
-    "\\frac{3}{2}+\\frac{5}{2}i",
+    null,
     null,
     null,
     null
@@ -2090,6 +2846,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -2102,10 +2864,16 @@
     "4210"
    ],
    "ok_rescored": [
+    true,
     false,
-    false,
-    false,
+    true,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -2122,6 +2890,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    null,
+    "marked line"
    ]
   },
   {
@@ -2138,6 +2912,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "last line",
+    null,
+    null
    ]
   },
   {
@@ -2154,6 +2934,12 @@
     true,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    null,
+    null
    ]
   },
   {
@@ -2170,6 +2956,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -2186,6 +2978,12 @@
     true,
     true,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -2202,6 +3000,12 @@
     true,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    null,
+    null
    ]
   },
   {
@@ -2218,6 +3022,12 @@
     false,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -2234,6 +3044,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    null,
+    "last line"
    ]
   },
   {
@@ -2243,13 +3059,19 @@
     null,
     "216",
     "216",
-    "1"
+    null
    ],
    "ok_rescored": [
     false,
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -2266,6 +3088,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -2282,6 +3110,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    "marked line"
    ]
   },
   {
@@ -2298,6 +3132,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -2314,6 +3154,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -2330,6 +3176,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -2346,6 +3198,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    "marked line",
+    null
    ]
   },
   {
@@ -2362,6 +3220,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "last line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -2378,6 +3242,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "last line",
+    "last line",
+    "last line"
    ]
   },
   {
@@ -2394,6 +3264,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -2410,6 +3286,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -2426,6 +3308,12 @@
     true,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "boxed",
+    null,
+    null
    ]
   },
   {
@@ -2442,6 +3330,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -2458,13 +3352,19 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    "marked line",
+    null
    ]
   },
   {
    "id": "m150",
    "gold": "1",
    "pred_rescored": [
-    "3",
+    null,
     "2",
     null,
     null
@@ -2474,14 +3374,20 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "boxed",
+    null,
+    null
    ]
   },
   {
    "id": "m151",
    "gold": "144",
    "pred_rescored": [
-    "1",
-    "Let'strytofindthedeterminantofthematrix\\begin{pmatrix}1&0&0\\0&1&",
+    null,
+    null,
     "is",
     null
    ],
@@ -2490,6 +3396,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    "marked line",
+    null
    ]
   },
   {
@@ -2497,7 +3409,7 @@
    "gold": "8",
    "pred_rescored": [
     null,
-    "to",
+    null,
     null,
     null
    ],
@@ -2506,6 +3418,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -2522,6 +3440,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    null,
+    null
    ]
   },
   {
@@ -2538,6 +3462,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -2554,6 +3484,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "boxed"
    ]
   },
   {
@@ -2570,6 +3506,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "boxed",
+    "marked line"
    ]
   },
   {
@@ -2582,10 +3524,16 @@
     null
    ],
    "ok_rescored": [
+    true,
     false,
-    false,
-    false,
+    true,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    "marked line",
+    null
    ]
   },
   {
@@ -2602,6 +3550,12 @@
     true,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    null,
+    "marked line"
    ]
   },
   {
@@ -2618,6 +3572,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -2634,6 +3594,12 @@
     false,
     true,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -2650,6 +3616,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -2657,15 +3629,21 @@
    "gold": "\\dfrac{17}{50}",
    "pred_rescored": [
     "34",
-    "x",
+    null,
     "17/50",
-    "5"
+    null
    ],
    "ok_rescored": [
     false,
     false,
-    false,
+    true,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    "marked line",
+    null
    ]
   },
   {
@@ -2682,6 +3660,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "boxed",
+    "marked line",
+    null,
+    null
    ]
   },
   {
@@ -2689,7 +3673,7 @@
    "gold": "-\\sqrt{3}",
    "pred_rescored": [
     null,
-    "Maybeusing10^\\",
+    null,
     null,
     null
    ],
@@ -2698,6 +3682,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -2714,6 +3704,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -2730,6 +3726,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    null,
+    "marked line"
    ]
   },
   {
@@ -2746,6 +3748,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -2762,6 +3770,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "boxed",
+    "boxed",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -2778,6 +3792,12 @@
     true,
     true,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -2794,6 +3814,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -2810,6 +3836,12 @@
     true,
     false,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -2826,6 +3858,12 @@
     false,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -2842,6 +3880,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    null,
+    null
    ]
   },
   {
@@ -2858,6 +3902,12 @@
     true,
     false,
     true
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -2874,6 +3924,12 @@
     true,
     false,
     true
+   ],
+   "rule": [
+    null,
+    "marked line",
+    null,
+    "marked line"
    ]
   },
   {
@@ -2890,6 +3946,12 @@
     false,
     false,
     true
+   ],
+   "rule": [
+    "last line",
+    "last line",
+    null,
+    "marked line"
    ]
   },
   {
@@ -2899,13 +3961,19 @@
     null,
     "30^\\circ",
     null,
-    "90^\\circ,30^\\circ,60^\\circ"
+    "30^\\circ"
    ],
    "ok_rescored": [
     false,
     true,
     false,
-    false
+    true
+   ],
+   "rule": [
+    null,
+    "marked line",
+    null,
+    "last line"
    ]
   },
   {
@@ -2922,13 +3990,19 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "last line",
+    "marked line"
    ]
   },
   {
    "id": "m179",
    "gold": "5x - 7y + 11z + 4 = 0",
    "pred_rescored": [
-    "0\\impliesk",
+    null,
     null,
     "0",
     null
@@ -2938,6 +4012,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    "marked line",
+    null
    ]
   },
   {
@@ -2954,6 +4034,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -2970,22 +4056,34 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "marked line",
+    "marked line"
    ]
   },
   {
    "id": "m182",
    "gold": "1251",
    "pred_rescored": [
-    "251",
-    "251",
-    "251",
+    "1,251",
+    "1,251",
+    "1,251",
     "1,251"
    ],
    "ok_rescored": [
-    false,
-    false,
-    false,
-    false
+    true,
+    true,
+    true,
+    true
+   ],
+   "rule": [
+    "last line",
+    "last line",
+    "last line",
+    "last line"
    ]
   },
   {
@@ -3002,6 +4100,12 @@
     false,
     false,
     true
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    "marked line"
    ]
   },
   {
@@ -3018,6 +4122,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -3034,6 +4144,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3050,6 +4166,12 @@
     true,
     true,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -3066,6 +4188,12 @@
     true,
     false,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3082,6 +4210,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3098,6 +4232,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "boxed",
+    null,
+    "marked line"
    ]
   },
   {
@@ -3114,6 +4254,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    null,
+    null
    ]
   },
   {
@@ -3130,6 +4276,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -3146,6 +4298,12 @@
     false,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "marked line",
+    "boxed"
    ]
   },
   {
@@ -3162,6 +4320,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -3178,6 +4342,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3194,6 +4364,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "boxed",
+    "marked line"
    ]
   },
   {
@@ -3210,6 +4386,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3218,7 +4400,7 @@
    "pred_rescored": [
     "a\\le1,b\\le1",
     "3628800",
-    "check",
+    null,
     "values"
    ],
    "ok_rescored": [
@@ -3226,6 +4408,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    null,
+    "marked line"
    ]
   },
   {
@@ -3242,6 +4430,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -3258,6 +4452,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3266,14 +4466,20 @@
    "pred_rescored": [
     "40",
     "40",
-    "42",
+    "40",
     "14.4"
    ],
    "ok_rescored": [
     true,
     true,
-    false,
+    true,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -3290,6 +4496,12 @@
     false,
     true,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3306,6 +4518,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "boxed",
+    "boxed",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3322,6 +4540,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "boxed",
+    "marked line"
    ]
   },
   {
@@ -3338,6 +4562,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    null,
+    "marked line"
    ]
   },
   {
@@ -3346,7 +4576,7 @@
    "pred_rescored": [
     "\\begin{pmatrix}2&0&0\\0&4&-3\\0&0&-3\\end{pmatrix}",
     "\\begin{pmatrix}2\\4\\-3\\end{p}",
-    "So\\",
+    null,
     "\\begin{pmatrix}2\\4\\-3\\end{pmatrix}"
    ],
    "ok_rescored": [
@@ -3354,6 +4584,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    null,
+    "marked line"
    ]
   },
   {
@@ -3363,13 +4599,19 @@
     "(3/2,-13)",
     "(\\frac{3}{2},-13)",
     "(1.5,-13)",
-    "-13"
+    "(\\frac{3}{2},-13)"
    ],
    "ok_rescored": [
-    false,
     true,
-    false,
-    false
+    true,
+    true,
+    true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "last line",
+    "last line"
    ]
   },
   {
@@ -3386,6 +4628,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3402,6 +4650,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3418,6 +4672,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3434,6 +4694,12 @@
     false,
     false,
     true
+   ],
+   "rule": [
+    "marked line",
+    null,
+    null,
+    "marked line"
    ]
   },
   {
@@ -3450,6 +4716,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3466,6 +4738,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "boxed",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3482,6 +4760,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "last line",
+    null,
+    "marked line"
    ]
   },
   {
@@ -3498,6 +4782,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    "marked line"
    ]
   },
   {
@@ -3514,6 +4804,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -3530,6 +4826,12 @@
     false,
     true,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3546,6 +4848,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3562,6 +4870,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "last line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3578,6 +4892,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -3594,6 +4914,12 @@
     true,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "boxed",
+    null,
+    "marked line"
    ]
   },
   {
@@ -3610,6 +4936,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    null,
+    "boxed",
+    "marked line",
+    "boxed"
    ]
   },
   {
@@ -3626,6 +4958,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -3642,6 +4980,12 @@
     false,
     true,
     true
+   ],
+   "rule": [
+    null,
+    null,
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3658,6 +5002,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -3674,6 +5024,12 @@
     false,
     false,
     true
+   ],
+   "rule": [
+    "marked line",
+    null,
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3690,6 +5046,12 @@
     false,
     false,
     true
+   ],
+   "rule": [
+    null,
+    null,
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3702,10 +5064,16 @@
     "c"
    ],
    "ok_rescored": [
-    false,
-    false,
-    false,
-    false
+    true,
+    true,
+    true,
+    true
+   ],
+   "rule": [
+    "marked line",
+    "boxed",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3722,6 +5090,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3738,6 +5112,12 @@
     false,
     true,
     false
+   ],
+   "rule": [
+    null,
+    "last line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -3754,6 +5134,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -3770,6 +5156,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3786,6 +5178,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    null,
+    "last line"
    ]
   },
   {
@@ -3798,10 +5196,16 @@
     "30^\\circ"
    ],
    "ok_rescored": [
-    false,
-    false,
-    false,
+    true,
+    true,
+    true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "boxed",
+    "boxed",
+    "marked line"
    ]
   },
   {
@@ -3818,6 +5222,12 @@
     false,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    null,
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3831,9 +5241,15 @@
    ],
    "ok_rescored": [
     false,
-    false,
-    false,
-    false
+    true,
+    true,
+    true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3850,6 +5266,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    null,
+    null
    ]
   },
   {
@@ -3866,6 +5288,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3882,6 +5310,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "boxed",
+    "marked line"
    ]
   },
   {
@@ -3898,6 +5332,12 @@
     false,
     true,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "boxed",
+    "marked line"
    ]
   },
   {
@@ -3914,6 +5354,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -3930,6 +5376,12 @@
     true,
     true,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "boxed",
+    "marked line"
    ]
   },
   {
@@ -3946,6 +5398,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3962,6 +5420,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3978,6 +5442,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -3994,6 +5464,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "boxed",
+    "last line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4010,6 +5486,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4017,15 +5499,21 @@
    "gold": "\\frac{10}{11}",
    "pred_rescored": [
     null,
-    "a",
+    "\\frac{10}{11}",
     null,
     "\\frac{10}{11}"
    ],
    "ok_rescored": [
     false,
-    false,
+    true,
     false,
     true
+   ],
+   "rule": [
+    null,
+    "last line",
+    null,
+    "marked line"
    ]
   },
   {
@@ -4035,13 +5523,19 @@
     null,
     null,
     "is",
-    "24"
+    null
    ],
    "ok_rescored": [
     false,
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    "marked line",
+    null
    ]
   },
   {
@@ -4058,6 +5552,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "boxed",
+    "marked line"
    ]
   },
   {
@@ -4074,6 +5574,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4090,6 +5596,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    "marked line",
+    null
    ]
   },
   {
@@ -4106,6 +5618,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4122,6 +5640,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4138,6 +5662,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4150,10 +5680,16 @@
     "E"
    ],
    "ok_rescored": [
-    false,
-    false,
-    false,
-    false
+    true,
+    true,
+    true,
+    true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -4170,6 +5706,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "boxed",
+    "marked line"
    ]
   },
   {
@@ -4182,10 +5724,16 @@
     "864"
    ],
    "ok_rescored": [
-    false,
-    false,
-    false,
-    false
+    true,
+    true,
+    true,
+    true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -4202,6 +5750,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4218,6 +5772,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4233,7 +5793,13 @@
     true,
     true,
     false,
-    false
+    true
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    null,
+    "boxed"
    ]
   },
   {
@@ -4242,14 +5808,20 @@
    "pred_rescored": [
     null,
     "76",
-    "\\angleb",
+    "76",
     "76"
    ],
    "ok_rescored": [
     false,
-    false,
-    false,
-    false
+    true,
+    true,
+    true
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -4266,6 +5838,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4282,6 +5860,12 @@
     false,
     false,
     true
+   ],
+   "rule": [
+    "marked line",
+    null,
+    null,
+    "marked line"
    ]
   },
   {
@@ -4298,22 +5882,34 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
    "id": "m265",
    "gold": "4005",
    "pred_rescored": [
-    "005",
-    "005",
+    "4,005",
+    "4,005",
     "4005",
     "4005"
    ],
    "ok_rescored": [
-    false,
-    false,
+    true,
+    true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "last line",
+    "last line",
+    "last line"
    ]
   },
   {
@@ -4326,10 +5922,16 @@
     "\\frac{33}{100}"
    ],
    "ok_rescored": [
-    false,
-    false,
-    false,
-    false
+    true,
+    true,
+    true,
+    true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4343,9 +5945,15 @@
    ],
    "ok_rescored": [
     false,
-    false,
+    true,
     false,
     false
+   ],
+   "rule": [
+    "boxed",
+    "boxed",
+    null,
+    "marked line"
    ]
   },
   {
@@ -4362,6 +5970,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "last line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4378,6 +5992,12 @@
     false,
     false,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    null,
+    "marked line"
    ]
   },
   {
@@ -4394,6 +6014,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -4402,7 +6028,7 @@
    "pred_rescored": [
     "1",
     null,
-    "33",
+    null,
     "1853020188851841"
    ],
    "ok_rescored": [
@@ -4410,6 +6036,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    null,
+    "last line"
    ]
   },
   {
@@ -4426,22 +6058,34 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    "marked line",
+    "marked line"
    ]
   },
   {
    "id": "m273",
    "gold": "1250",
    "pred_rescored": [
-    "000",
     "1,250",
-    "000",
-    "000"
+    "1,250",
+    "1,250",
+    "1,250"
    ],
    "ok_rescored": [
-    false,
-    false,
-    false,
-    false
+    true,
+    true,
+    true,
+    true
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "last line",
+    "last line"
    ]
   },
   {
@@ -4458,6 +6102,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4474,6 +6124,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4490,6 +6146,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4506,6 +6168,12 @@
     false,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -4522,6 +6190,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4538,6 +6212,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4554,6 +6234,12 @@
     false,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4570,6 +6256,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "boxed",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4586,6 +6278,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    "last line"
    ]
   },
   {
@@ -4602,6 +6300,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4618,6 +6322,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -4634,6 +6344,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    "marked line",
+    null
    ]
   },
   {
@@ -4650,6 +6366,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4666,6 +6388,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4682,6 +6410,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "boxed",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4698,6 +6432,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    null,
+    null
    ]
   },
   {
@@ -4714,6 +6454,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4730,6 +6476,12 @@
     false,
     true,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4746,6 +6498,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -4753,15 +6511,21 @@
    "gold": "\\left(\\frac{3}{5},\\frac{8}{3}\\right]",
    "pred_rescored": [
     "(\\frac{3}{5},\\frac{8}{3}]",
-    "is",
+    "(\\frac{3}{5},\\frac{8}{3}]",
     "(\\frac{3}{5},\\frac{8}{3}]",
     "(\\frac{3}{5},\\frac{8}{3}]"
    ],
    "ok_rescored": [
     true,
-    false,
+    true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "last line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -4778,6 +6542,12 @@
     true,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -4794,22 +6564,34 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
    "id": "m296",
    "gold": "\\text{(B)}",
    "pred_rescored": [
-    "x",
+    "B",
     "above",
     "ambiguous",
     "unsolvable"
    ],
    "ok_rescored": [
-    false,
+    true,
     false,
     false,
     false
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4826,6 +6608,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4842,6 +6630,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    null,
+    null
    ]
   },
   {
@@ -4858,6 +6652,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4874,6 +6674,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    null,
+    null
    ]
   },
   {
@@ -4890,6 +6696,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "boxed",
+    "marked line",
+    "boxed"
    ]
   },
   {
@@ -4906,6 +6718,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    null,
+    "marked line"
    ]
   },
   {
@@ -4922,6 +6740,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    "marked line",
+    null
    ]
   },
   {
@@ -4938,6 +6762,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -4950,10 +6780,16 @@
     "\\frac{9}{19}"
    ],
    "ok_rescored": [
-    false,
-    false,
-    false,
-    false
+    true,
+    true,
+    true,
+    true
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "last line",
+    "last line"
    ]
   },
   {
@@ -4970,6 +6806,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    "marked line",
+    null
    ]
   },
   {
@@ -4986,6 +6828,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -5002,6 +6850,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    null,
+    "marked line"
    ]
   },
   {
@@ -5018,6 +6872,12 @@
     true,
     false,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -5034,6 +6894,12 @@
     false,
     true,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -5050,6 +6916,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    null,
+    "last line"
    ]
   },
   {
@@ -5066,22 +6938,34 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "marked line",
+    "last line"
    ]
   },
   {
    "id": "m313",
    "gold": "12\\pi",
    "pred_rescored": [
-    "37.7",
+    "12\\pi",
     "12\\pi",
     "37.7",
     "12\\pi"
    ],
    "ok_rescored": [
-    false,
+    true,
     true,
     false,
     true
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -5098,6 +6982,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "boxed",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -5114,6 +7004,12 @@
     false,
     false,
     true
+   ],
+   "rule": [
+    "marked line",
+    null,
+    null,
+    "marked line"
    ]
   },
   {
@@ -5130,6 +7026,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -5137,7 +7039,7 @@
    "gold": "0",
    "pred_rescored": [
     null,
-    "have",
+    null,
     "0",
     "2"
    ],
@@ -5146,6 +7048,12 @@
     false,
     true,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -5154,14 +7062,20 @@
    "pred_rescored": [
     "\\frac{11+9a}{20}",
     "\\frac{9a+11}{20}",
-    "is",
+    "\\frac{11+9a}{20}",
     "\\frac{11+9a}{20}"
    ],
    "ok_rescored": [
     true,
     false,
-    false,
+    true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "last line",
+    "last line"
    ]
   },
   {
@@ -5178,6 +7092,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "last line",
+    "last line"
    ]
   },
   {
@@ -5194,6 +7114,12 @@
     false,
     false,
     true
+   ],
+   "rule": [
+    "marked line",
+    null,
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -5210,6 +7136,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -5226,13 +7158,19 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "boxed",
+    "marked line",
+    "marked line"
    ]
   },
   {
    "id": "m323",
    "gold": "\\frac{1}{3}",
    "pred_rescored": [
-    "intersect",
+    null,
     "1/4",
     "0",
     "1/4"
@@ -5242,6 +7180,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -5258,6 +7202,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -5274,6 +7224,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -5290,6 +7246,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -5306,6 +7268,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "boxed",
+    null,
+    "marked line"
    ]
   },
   {
@@ -5322,6 +7290,12 @@
     true,
     true,
     false
+   ],
+   "rule": [
+    "marked line",
+    "boxed",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -5338,6 +7312,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -5354,6 +7334,12 @@
     false,
     false,
     true
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -5367,9 +7353,15 @@
    ],
    "ok_rescored": [
     true,
-    false,
-    false,
+    true,
+    true,
     false
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -5386,6 +7378,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    null,
+    null
    ]
   },
   {
@@ -5402,6 +7400,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "boxed",
+    "boxed",
+    "boxed",
+    "boxed"
    ]
   },
   {
@@ -5418,6 +7422,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "boxed",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -5434,6 +7444,12 @@
     true,
     false,
     true
+   ],
+   "rule": [
+    "boxed",
+    "marked line",
+    null,
+    "marked line"
    ]
   },
   {
@@ -5446,10 +7462,16 @@
     "26000"
    ],
    "ok_rescored": [
-    false,
     true,
-    false,
+    true,
+    true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -5466,6 +7488,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -5482,6 +7510,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    null,
+    "marked line"
    ]
   },
   {
@@ -5498,6 +7532,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    "marked line",
+    "boxed"
    ]
   },
   {
@@ -5514,6 +7554,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -5530,6 +7576,12 @@
     true,
     false,
     false
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -5546,22 +7598,34 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "marked line",
+    "marked line"
    ]
   },
   {
    "id": "m343",
    "gold": "58,500",
    "pred_rescored": [
-    "500",
+    "58,500",
     "625",
     "625",
-    "500"
+    "58,500"
    ],
    "ok_rescored": [
+    true,
     false,
     false,
-    false,
-    false
+    true
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -5578,6 +7642,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -5594,6 +7664,12 @@
     true,
     true,
     false
+   ],
+   "rule": [
+    "last line",
+    "last line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -5610,6 +7686,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -5626,6 +7708,12 @@
     true,
     false,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -5642,6 +7730,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -5658,6 +7752,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "boxed",
+    null,
+    null
    ]
   },
   {
@@ -5674,6 +7774,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    null,
+    "last line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -5681,7 +7787,7 @@
    "gold": "\\frac{1}{16}",
    "pred_rescored": [
     "-\\frac{15}{2^{14}}",
-    "\\sin",
+    null,
     null,
     "-1"
    ],
@@ -5690,6 +7796,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    null,
+    "marked line"
    ]
   },
   {
@@ -5706,6 +7818,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -5722,6 +7840,12 @@
     true,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "boxed",
+    null,
+    null
    ]
   },
   {
@@ -5730,7 +7854,7 @@
    "pred_rescored": [
     null,
     "14",
-    ",",
+    null,
     null
    ],
    "ok_rescored": [
@@ -5738,6 +7862,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    null,
+    null
    ]
   },
   {
@@ -5754,6 +7884,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -5762,14 +7898,20 @@
    "pred_rescored": [
     "(-\\sqrt{3},\\sqrt{3})",
     "(-\\sqrt{3},\\sqrt{3})",
-    "is",
-    "x^2(x^2+4)"
+    "(-\\sqrt{3},\\sqrt{3})",
+    "(-\\sqrt{3},\\sqrt{3})"
    ],
    "ok_rescored": [
     true,
     true,
-    false,
-    false
+    true,
+    true
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "last line",
+    "last line"
    ]
   },
   {
@@ -5778,14 +7920,20 @@
    "pred_rescored": [
     "4",
     "4",
-    "x",
-    "2,3,6,and9"
+    "4",
+    "4"
    ],
    "ok_rescored": [
     true,
     true,
-    false,
-    false
+    true,
+    true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "last line",
+    "last line"
    ]
   },
   {
@@ -5802,6 +7950,12 @@
     false,
     true,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    "marked line",
+    null
    ]
   },
   {
@@ -5810,7 +7964,7 @@
    "pred_rescored": [
     "xy+yz+zx",
     "12",
-    "y",
+    null,
     null
    ],
    "ok_rescored": [
@@ -5818,6 +7972,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    null,
+    null
    ]
   },
   {
@@ -5834,6 +7994,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -5842,7 +8008,7 @@
    "pred_rescored": [
     "16\\sqrt{3}",
     null,
-    "A",
+    null,
     null
    ],
    "ok_rescored": [
@@ -5850,6 +8016,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    null,
+    null
    ]
   },
   {
@@ -5862,10 +8034,16 @@
     "1/4"
    ],
    "ok_rescored": [
+    true,
     false,
-    false,
-    false,
-    false
+    true,
+    true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -5882,6 +8060,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -5898,6 +8082,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -5914,6 +8104,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    null,
+    null
    ]
   },
   {
@@ -5930,6 +8126,12 @@
     true,
     false,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -5946,6 +8148,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -5962,6 +8170,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -5978,6 +8192,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    "marked line",
+    null
    ]
   },
   {
@@ -5994,6 +8214,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "last line",
+    "last line"
    ]
   },
   {
@@ -6010,6 +8236,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    "marked line",
+    null
    ]
   },
   {
@@ -6026,6 +8258,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    null,
+    "marked line"
    ]
   },
   {
@@ -6042,6 +8280,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "boxed",
+    "marked line",
+    "last line",
+    null
    ]
   },
   {
@@ -6050,14 +8294,20 @@
    "pred_rescored": [
     "4",
     "4",
-    "4.)",
+    "4",
     "4"
    ],
    "ok_rescored": [
     true,
     true,
-    false,
+    true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -6074,6 +8324,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -6090,6 +8346,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -6106,6 +8368,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    null,
+    "marked line"
    ]
   },
   {
@@ -6122,6 +8390,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "boxed",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -6138,6 +8412,12 @@
     false,
     true,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -6154,6 +8434,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -6170,6 +8456,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -6186,6 +8478,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -6194,14 +8492,20 @@
    "pred_rescored": [
     "[-2,7]",
     "[-2,7]",
-    "7",
-    "-2\\lex\\le7"
+    "[-2,7]",
+    "[-2,7]"
    ],
    "ok_rescored": [
-    false,
-    false,
-    false,
-    false
+    true,
+    true,
+    true,
+    true
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "last line",
+    "last line"
    ]
   },
   {
@@ -6218,6 +8522,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "last line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -6234,6 +8544,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -6250,6 +8566,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -6266,6 +8588,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -6282,6 +8610,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -6298,6 +8632,12 @@
     true,
     true,
     false
+   ],
+   "rule": [
+    "marked line",
+    "boxed",
+    "marked line",
+    null
    ]
   },
   {
@@ -6314,6 +8654,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -6330,6 +8676,12 @@
     true,
     false,
     true
+   ],
+   "rule": [
+    null,
+    "marked line",
+    null,
+    "marked line"
    ]
   },
   {
@@ -6346,6 +8698,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -6358,10 +8716,16 @@
     "3/4"
    ],
    "ok_rescored": [
-    false,
-    false,
-    false,
-    false
+    true,
+    true,
+    true,
+    true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -6378,6 +8742,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "boxed"
    ]
   },
   {
@@ -6394,6 +8764,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -6410,6 +8786,12 @@
     false,
     true,
     false
+   ],
+   "rule": [
+    "boxed",
+    null,
+    "marked line",
+    null
    ]
   },
   {
@@ -6426,6 +8808,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -6440,8 +8828,14 @@
    "ok_rescored": [
     false,
     false,
-    false,
-    false
+    true,
+    true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -6458,6 +8852,12 @@
     false,
     false,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -6474,6 +8874,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "boxed",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -6490,6 +8896,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    "marked line",
+    null
    ]
   },
   {
@@ -6506,6 +8918,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    null,
+    null
    ]
   },
   {
@@ -6522,6 +8940,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -6538,6 +8962,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "last line",
+    "last line",
+    "last line"
    ]
   },
   {
@@ -6554,6 +8984,12 @@
     true,
     false,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    null,
+    "marked line"
    ]
   },
   {
@@ -6570,6 +9006,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -6586,6 +9028,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -6602,13 +9050,19 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
    "id": "m409",
    "gold": "2 \\sqrt{5}",
    "pred_rescored": [
-    "Forthehyperbola\\frac",
+    null,
     null,
     "10",
     null
@@ -6618,6 +9072,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    "marked line",
+    null
    ]
   },
   {
@@ -6634,6 +9094,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -6650,6 +9116,12 @@
     false,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "boxed",
+    "boxed"
    ]
   },
   {
@@ -6666,6 +9138,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -6682,6 +9160,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -6698,6 +9182,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -6714,6 +9204,12 @@
     true,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "boxed",
+    "last line",
+    null
    ]
   },
   {
@@ -6730,6 +9226,12 @@
     true,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "boxed",
+    null,
+    null
    ]
   },
   {
@@ -6746,6 +9248,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    null,
+    "last line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -6762,6 +9270,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -6778,6 +9292,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    null,
+    "marked line"
    ]
   },
   {
@@ -6794,6 +9314,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -6810,6 +9336,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -6826,6 +9358,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    null,
+    null
    ]
   },
   {
@@ -6842,6 +9380,12 @@
     false,
     true,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    "marked line",
+    null
    ]
   },
   {
@@ -6858,6 +9402,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -6874,6 +9424,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -6890,6 +9446,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -6906,6 +9468,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -6922,6 +9490,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -6938,6 +9512,12 @@
     true,
     true,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -6954,6 +9534,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "last line",
+    "last line",
+    "last line"
    ]
   },
   {
@@ -6963,13 +9549,19 @@
     null,
     "[\\frac{\\pi^2}{4},\\frac{5\\pi^2}{4}]",
     "[\\frac{\\pi^2}{8},\\frac{5\\pi^2}{4}]",
-    "(\\arccosx)^2+(\\arcs"
+    null
    ],
    "ok_rescored": [
     false,
     false,
     true,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -6986,6 +9578,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -7002,6 +9600,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -7018,6 +9622,12 @@
     false,
     false,
     true
+   ],
+   "rule": [
+    "marked line",
+    null,
+    null,
+    "marked line"
    ]
   },
   {
@@ -7030,10 +9640,16 @@
     null
    ],
    "ok_rescored": [
-    false,
+    true,
     false,
     true,
     false
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -7043,13 +9659,19 @@
     "4",
     "2",
     "\\{1,2,3,6\\}",
-    "25"
+    null
    ],
    "ok_rescored": [
     true,
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -7066,6 +9688,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "boxed",
+    "boxed"
    ]
   },
   {
@@ -7082,6 +9710,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -7098,6 +9732,12 @@
     false,
     true,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -7114,6 +9754,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "last line",
+    "last line"
    ]
   },
   {
@@ -7130,6 +9776,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "last line",
+    "last line",
+    "last line"
    ]
   },
   {
@@ -7146,6 +9798,12 @@
     false,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -7162,13 +9820,19 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "last line",
+    "last line",
+    "marked line",
+    "marked line"
    ]
   },
   {
    "id": "m444",
    "gold": "\\frac{1}{2}",
    "pred_rescored": [
-    "AC",
+    null,
     null,
     "1/2",
     null
@@ -7178,6 +9842,12 @@
     false,
     true,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    "marked line",
+    null
    ]
   },
   {
@@ -7194,6 +9864,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -7210,6 +9886,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -7226,6 +9908,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -7242,6 +9930,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    null,
+    "last line"
    ]
   },
   {
@@ -7258,6 +9952,12 @@
     true,
     true,
     false
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -7274,6 +9974,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    null,
+    null
    ]
   },
   {
@@ -7283,13 +9989,19 @@
     "639/40",
     "\\frac{639}{40}",
     "\\frac{639}{40}",
-    "x"
+    null
    ],
    "ok_rescored": [
     true,
     true,
     true,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -7306,6 +10018,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -7322,6 +10040,12 @@
     true,
     false,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -7338,6 +10062,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -7346,14 +10076,20 @@
    "pred_rescored": [
     "6",
     "6",
-    "5",
+    "6",
     "6"
    ],
    "ok_rescored": [
     true,
     true,
-    false,
+    true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -7370,6 +10106,12 @@
     false,
     false,
     true
+   ],
+   "rule": [
+    "marked line",
+    null,
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -7386,6 +10128,12 @@
     true,
     true,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -7402,6 +10150,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -7418,6 +10172,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "last line",
+    "boxed"
    ]
   },
   {
@@ -7434,6 +10194,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    null,
+    "marked line"
    ]
   },
   {
@@ -7443,13 +10209,19 @@
     "12",
     "12",
     "12",
-    "1.047<4"
+    "12"
    ],
    "ok_rescored": [
     true,
     true,
     true,
-    false
+    true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -7466,22 +10238,34 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
    "id": "m463",
    "gold": "2",
    "pred_rescored": [
-    "x",
-    "x",
-    "x",
+    "2",
+    "2",
+    "2",
     "two"
    ],
    "ok_rescored": [
-    false,
-    false,
-    false,
+    true,
+    true,
+    true,
     false
+   ],
+   "rule": [
+    "last line",
+    "last line",
+    "last line",
+    "last line"
    ]
   },
   {
@@ -7498,6 +10282,12 @@
     false,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    null,
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -7514,6 +10304,12 @@
     true,
     true,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "last line",
+    null
    ]
   },
   {
@@ -7530,6 +10326,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -7542,10 +10344,16 @@
     "15"
    ],
    "ok_rescored": [
-    false,
-    false,
-    false,
-    false
+    true,
+    true,
+    true,
+    true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -7562,6 +10370,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -7578,6 +10392,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -7594,6 +10414,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    "marked line",
+    null
    ]
   },
   {
@@ -7610,6 +10436,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -7624,8 +10456,14 @@
    "ok_rescored": [
     true,
     true,
-    false,
+    true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -7642,13 +10480,19 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
    "id": "m474",
    "gold": "3",
    "pred_rescored": [
-    "\\frac{3}{\\ln2}\\cdot\\frac{4}{3}\\cdot\\frac{5}{",
+    null,
     "\\ln(k+1)",
     "\\frac{1}{7}",
     "3"
@@ -7658,6 +10502,12 @@
     false,
     false,
     true
+   ],
+   "rule": [
+    null,
+    "last line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -7674,6 +10524,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -7690,6 +10546,12 @@
     false,
     false,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -7706,6 +10568,12 @@
     true,
     false,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "last line",
+    "marked line"
    ]
   },
   {
@@ -7722,6 +10590,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    null,
+    "marked line"
    ]
   },
   {
@@ -7736,16 +10610,22 @@
    "ok_rescored": [
     true,
     true,
-    false,
+    true,
     true
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
    "id": "m480",
    "gold": "1",
    "pred_rescored": [
-    "is",
-    "1+\\",
+    null,
+    null,
     null,
     null
    ],
@@ -7754,6 +10634,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -7770,6 +10656,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -7786,6 +10678,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -7802,6 +10700,12 @@
     false,
     true,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    "marked line",
+    null
    ]
   },
   {
@@ -7818,6 +10722,12 @@
     true,
     true,
     false
+   ],
+   "rule": [
+    null,
+    "marked line",
+    "marked line",
+    null
    ]
   },
   {
@@ -7826,14 +10736,20 @@
    "pred_rescored": [
     "6",
     null,
-    "15",
+    "13",
     "18"
    ],
    "ok_rescored": [
     false,
     false,
-    false,
+    true,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    "last line",
+    "boxed"
    ]
   },
   {
@@ -7850,6 +10766,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -7859,13 +10781,19 @@
     "2",
     "2",
     "2",
-    "78"
+    "2"
    ],
    "ok_rescored": [
     true,
     true,
     true,
-    false
+    true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "last line"
    ]
   },
   {
@@ -7882,6 +10810,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -7898,6 +10832,12 @@
     true,
     true,
     true
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -7914,6 +10854,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -7930,6 +10876,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    null,
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -7946,6 +10898,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "last line",
+    "marked line",
+    "marked line",
+    "marked line"
    ]
   },
   {
@@ -7955,13 +10913,19 @@
     "11\\sqrt{2}+0\\sqrt{3}",
     null,
     "different",
-    "(\\sqrt{2}+\\sqrt"
+    null
    ],
    "ok_rescored": [
     false,
     false,
     false,
     false
+   ],
+   "rule": [
+    "last line",
+    null,
+    "marked line",
+    null
    ]
   },
   {
@@ -7978,6 +10942,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    "last line",
+    null
    ]
   },
   {
@@ -7994,6 +10964,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "marked line",
+    "marked line",
+    "boxed"
    ]
   },
   {
@@ -8010,6 +10986,12 @@
     true,
     true,
     false
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    "last line",
+    null
    ]
   },
   {
@@ -8018,7 +11000,7 @@
    "pred_rescored": [
     "2\\sqrt{2}",
     "coefficients",
-    "Thisgives4sidesoflength1and4sidesoflengths\\frac{\\",
+    null,
     "6"
    ],
    "ok_rescored": [
@@ -8026,6 +11008,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "marked line",
+    "last line",
+    null,
+    "marked line"
    ]
   },
   {
@@ -8042,6 +11030,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    null,
+    null,
+    null,
+    null
    ]
   },
   {
@@ -8058,6 +11052,12 @@
     false,
     false,
     false
+   ],
+   "rule": [
+    "last line",
+    null,
+    null,
+    null
    ]
   }
  ]

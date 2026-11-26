@@ -2,22 +2,22 @@
  "summary": {
   "name": "a0_full_final",
   "n": 500,
-  "accuracy": 76.4,
-  "answered": 100.0,
+  "accuracy": 86.0,
+  "answered": 99.6,
   "cap_hit_rate": 0.2,
   "mean_tokens": 669.3,
   "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
   "model": "/home/user/wsp11/gemma4-resharded",
   "fp8": true,
-  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#4a1b56a343a4 (ISSUES #19)",
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#d74fdebd340f (ISSUES #19, #30, #31)",
   "validity": {
    "soup_pct": 0.0,
    "soup_judged": false,
    "admission_tested": true,
    "admission_correct": [
-    74.4,
-    78.4,
-    0.3432
+    85.6,
+    86.4,
+    0.8975
    ],
    "problems": []
   }
@@ -29,7 +29,8 @@
    "pred": "(3,\\frac{\\pi}{2})",
    "ok": true,
    "n_tokens": 338,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m1",
@@ -37,7 +38,8 @@
    "pred": "q",
    "ok": false,
    "n_tokens": 620,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m2",
@@ -45,7 +47,8 @@
    "pred": "\\frac{14}{3}",
    "ok": true,
    "n_tokens": 383,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m3",
@@ -53,7 +56,8 @@
    "pred": "9",
    "ok": true,
    "n_tokens": 339,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m4",
@@ -61,7 +65,8 @@
    "pred": "speed",
    "ok": false,
    "n_tokens": 499,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m5",
@@ -69,7 +74,8 @@
    "pred": "42",
    "ok": true,
    "n_tokens": 300,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m6",
@@ -77,7 +83,8 @@
    "pred": "27",
    "ok": true,
    "n_tokens": 460,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m7",
@@ -85,7 +92,8 @@
    "pred": "90^\\circ",
    "ok": true,
    "n_tokens": 541,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m8",
@@ -93,7 +101,8 @@
    "pred": "3\\sqrt{13}",
    "ok": true,
    "n_tokens": 410,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m9",
@@ -101,7 +110,8 @@
    "pred": "\\{121,144,126,122\\}",
    "ok": false,
    "n_tokens": 2136,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m10",
@@ -109,7 +119,8 @@
    "pred": "2220",
    "ok": true,
    "n_tokens": 698,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m11",
@@ -117,15 +128,17 @@
    "pred": "\\frac{3}{56}",
    "ok": true,
    "n_tokens": 1305,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m12",
    "gold": "284",
-   "pred": "284.)",
-   "ok": false,
+   "pred": "284",
+   "ok": true,
    "n_tokens": 943,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m13",
@@ -133,7 +146,8 @@
    "pred": "5",
    "ok": true,
    "n_tokens": 231,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m14",
@@ -141,7 +155,8 @@
    "pred": "\\sqrt{51}",
    "ok": true,
    "n_tokens": 553,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m15",
@@ -149,7 +164,8 @@
    "pred": "5",
    "ok": false,
    "n_tokens": 643,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m16",
@@ -157,7 +173,8 @@
    "pred": "-50",
    "ok": true,
    "n_tokens": 297,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m17",
@@ -165,7 +182,8 @@
    "pred": "\\pi",
    "ok": true,
    "n_tokens": 742,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m18",
@@ -173,7 +191,8 @@
    "pred": "118",
    "ok": false,
    "n_tokens": 2619,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m19",
@@ -181,7 +200,8 @@
    "pred": "-1",
    "ok": false,
    "n_tokens": 531,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m20",
@@ -189,7 +209,8 @@
    "pred": "6+9i",
    "ok": true,
    "n_tokens": 145,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m21",
@@ -197,7 +218,8 @@
    "pred": "13535",
    "ok": true,
    "n_tokens": 1072,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m22",
@@ -205,15 +227,17 @@
    "pred": "5",
    "ok": true,
    "n_tokens": 566,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m23",
    "gold": "x=5",
    "pred": "5",
-   "ok": false,
+   "ok": true,
    "n_tokens": 566,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m24",
@@ -221,7 +245,8 @@
    "pred": "10",
    "ok": true,
    "n_tokens": 654,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m25",
@@ -229,7 +254,8 @@
    "pred": "1",
    "ok": false,
    "n_tokens": 970,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m26",
@@ -237,7 +263,8 @@
    "pred": "7",
    "ok": false,
    "n_tokens": 557,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m27",
@@ -245,7 +272,8 @@
    "pred": "78",
    "ok": true,
    "n_tokens": 259,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m28",
@@ -253,7 +281,8 @@
    "pred": "-2+7i",
    "ok": true,
    "n_tokens": 386,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m29",
@@ -261,7 +290,8 @@
    "pred": "225",
    "ok": true,
    "n_tokens": 406,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m30",
@@ -269,7 +299,8 @@
    "pred": "52_8",
    "ok": true,
    "n_tokens": 571,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m31",
@@ -277,15 +308,17 @@
    "pred": "\\mathbf{11\\sqrt{2}}",
    "ok": false,
    "n_tokens": 265,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m32",
    "gold": "720",
-   "pred": "8",
-   "ok": false,
+   "pred": "720",
+   "ok": true,
    "n_tokens": 378,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m33",
@@ -293,7 +326,8 @@
    "pred": "\\frac{243}{625}",
    "ok": true,
    "n_tokens": 575,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m34",
@@ -301,7 +335,8 @@
    "pred": "-125",
    "ok": true,
    "n_tokens": 703,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m35",
@@ -309,7 +344,8 @@
    "pred": "3",
    "ok": true,
    "n_tokens": 344,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m36",
@@ -317,23 +353,26 @@
    "pred": "3,5,7",
    "ok": true,
    "n_tokens": 517,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m37",
    "gold": "72",
    "pred": "72^\\circ",
-   "ok": false,
+   "ok": true,
    "n_tokens": 270,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m38",
    "gold": "2000",
    "pred": "2,000",
-   "ok": false,
+   "ok": true,
    "n_tokens": 231,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m39",
@@ -341,15 +380,17 @@
    "pred": "23",
    "ok": true,
    "n_tokens": 487,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m40",
    "gold": "12",
    "pred": "12cm",
-   "ok": false,
+   "ok": true,
    "n_tokens": 263,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m41",
@@ -357,7 +398,8 @@
    "pred": "17",
    "ok": true,
    "n_tokens": 606,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m42",
@@ -365,15 +407,17 @@
    "pred": "4",
    "ok": true,
    "n_tokens": 268,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m43",
    "gold": "70 \\sqrt{2}",
-   "pred": "\\sqrt{(x+0+40-x)^2+(20+y+50-y)^2}",
-   "ok": false,
+   "pred": "70\\sqrt{2}",
+   "ok": true,
    "n_tokens": 3599,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m44",
@@ -381,7 +425,8 @@
    "pred": "1.25",
    "ok": true,
    "n_tokens": 395,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m45",
@@ -389,7 +434,8 @@
    "pred": "2",
    "ok": true,
    "n_tokens": 311,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m46",
@@ -397,7 +443,8 @@
    "pred": "6",
    "ok": true,
    "n_tokens": 991,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m47",
@@ -405,7 +452,8 @@
    "pred": "5",
    "ok": true,
    "n_tokens": 469,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m48",
@@ -413,15 +461,17 @@
    "pred": "\\frac{3}{2}",
    "ok": true,
    "n_tokens": 194,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m49",
    "gold": "83",
-   "pred": "correct",
-   "ok": false,
+   "pred": "83",
+   "ok": true,
    "n_tokens": 442,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m50",
@@ -429,7 +479,8 @@
    "pred": "203",
    "ok": true,
    "n_tokens": 751,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m51",
@@ -437,7 +488,8 @@
    "pred": "x^5-x^4+x^3-x^2+x-1",
    "ok": true,
    "n_tokens": 1176,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m52",
@@ -445,7 +497,8 @@
    "pred": "12",
    "ok": true,
    "n_tokens": 385,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m53",
@@ -453,7 +506,8 @@
    "pred": "-\\frac{\\pi}{6}",
    "ok": true,
    "n_tokens": 424,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m54",
@@ -461,7 +515,8 @@
    "pred": "0.15",
    "ok": true,
    "n_tokens": 429,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m55",
@@ -469,7 +524,8 @@
    "pred": "3",
    "ok": true,
    "n_tokens": 467,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m56",
@@ -477,7 +533,8 @@
    "pred": "11",
    "ok": true,
    "n_tokens": 360,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m57",
@@ -485,15 +542,17 @@
    "pred": "16",
    "ok": true,
    "n_tokens": 389,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m58",
    "gold": "9901",
    "pred": "9,901",
-   "ok": false,
+   "ok": true,
    "n_tokens": 453,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m59",
@@ -501,7 +560,8 @@
    "pred": "5",
    "ok": true,
    "n_tokens": 337,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m60",
@@ -509,7 +569,8 @@
    "pred": "(6,31,-1)",
    "ok": true,
    "n_tokens": 1608,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m61",
@@ -517,7 +578,8 @@
    "pred": "-256",
    "ok": true,
    "n_tokens": 629,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m62",
@@ -525,7 +587,8 @@
    "pred": ".theoperatornorm",
    "ok": false,
    "n_tokens": 552,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m63",
@@ -533,7 +596,8 @@
    "pred": "10",
    "ok": true,
    "n_tokens": 968,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m64",
@@ -541,7 +605,8 @@
    "pred": "\\frac{35}{64}",
    "ok": true,
    "n_tokens": 903,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m65",
@@ -549,7 +614,8 @@
    "pred": "1",
    "ok": true,
    "n_tokens": 75,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m66",
@@ -557,7 +623,8 @@
    "pred": "x^3+3x-6",
    "ok": true,
    "n_tokens": 418,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m67",
@@ -565,7 +632,8 @@
    "pred": "10",
    "ok": true,
    "n_tokens": 408,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m68",
@@ -573,7 +641,8 @@
    "pred": "46",
    "ok": true,
    "n_tokens": 633,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m69",
@@ -581,7 +650,8 @@
    "pred": "-1",
    "ok": true,
    "n_tokens": 476,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m70",
@@ -589,15 +659,17 @@
    "pred": "40_9",
    "ok": true,
    "n_tokens": 445,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m71",
    "gold": "2516_8",
    "pred": "2516_{8}",
-   "ok": false,
+   "ok": true,
    "n_tokens": 583,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m72",
@@ -605,7 +677,8 @@
    "pred": "3",
    "ok": true,
    "n_tokens": 290,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m73",
@@ -613,7 +686,8 @@
    "pred": "simplified",
    "ok": false,
    "n_tokens": 298,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m74",
@@ -621,7 +695,8 @@
    "pred": "\\cotx",
    "ok": true,
    "n_tokens": 474,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m75",
@@ -629,7 +704,8 @@
    "pred": "\\frac{11}{36}",
    "ok": true,
    "n_tokens": 548,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m76",
@@ -637,7 +713,8 @@
    "pred": "0",
    "ok": true,
    "n_tokens": 369,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m77",
@@ -645,7 +722,8 @@
    "pred": "4",
    "ok": true,
    "n_tokens": 225,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m78",
@@ -653,7 +731,8 @@
    "pred": "(-2,1)",
    "ok": true,
    "n_tokens": 853,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m79",
@@ -661,7 +740,8 @@
    "pred": "2",
    "ok": true,
    "n_tokens": 259,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m80",
@@ -669,7 +749,8 @@
    "pred": "501",
    "ok": true,
    "n_tokens": 1363,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m81",
@@ -677,7 +758,8 @@
    "pred": "three",
    "ok": false,
    "n_tokens": 271,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m82",
@@ -685,7 +767,8 @@
    "pred": "achieved",
    "ok": false,
    "n_tokens": 636,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m83",
@@ -693,7 +776,8 @@
    "pred": "2",
    "ok": true,
    "n_tokens": 547,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m84",
@@ -701,7 +785,8 @@
    "pred": "-1",
    "ok": true,
    "n_tokens": 577,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m85",
@@ -709,7 +794,8 @@
    "pred": "\\sqrt{5}",
    "ok": true,
    "n_tokens": 379,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m86",
@@ -717,7 +803,8 @@
    "pred": "240",
    "ok": true,
    "n_tokens": 130,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m87",
@@ -725,7 +812,8 @@
    "pred": "1",
    "ok": true,
    "n_tokens": 506,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m88",
@@ -733,7 +821,8 @@
    "pred": "2",
    "ok": true,
    "n_tokens": 920,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m89",
@@ -741,7 +830,8 @@
    "pred": "21",
    "ok": true,
    "n_tokens": 641,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m90",
@@ -749,7 +839,8 @@
    "pred": "1.5",
    "ok": true,
    "n_tokens": 149,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m91",
@@ -757,7 +848,8 @@
    "pred": "1",
    "ok": true,
    "n_tokens": 356,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m92",
@@ -765,7 +857,8 @@
    "pred": "4",
    "ok": false,
    "n_tokens": 568,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m93",
@@ -773,15 +866,17 @@
    "pred": "33",
    "ok": true,
    "n_tokens": 547,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m94",
    "gold": "80",
    "pred": "80^\\circ",
-   "ok": false,
+   "ok": true,
    "n_tokens": 1642,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m95",
@@ -789,7 +884,8 @@
    "pred": "-4",
    "ok": true,
    "n_tokens": 443,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m96",
@@ -797,7 +893,8 @@
    "pred": "1+\\sqrt{19},1-\\sqrt{19}",
    "ok": false,
    "n_tokens": 1336,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m97",
@@ -805,7 +902,8 @@
    "pred": "east",
    "ok": true,
    "n_tokens": 276,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m98",
@@ -813,7 +911,8 @@
    "pred": "2k+2",
    "ok": true,
    "n_tokens": 170,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m99",
@@ -821,7 +920,8 @@
    "pred": "\\begin{pmatrix}-1/3\\2/3\\5/3\\end{pmatrix}",
    "ok": true,
    "n_tokens": 848,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m100",
@@ -829,7 +929,8 @@
    "pred": "145^\\circ",
    "ok": true,
    "n_tokens": 991,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m101",
@@ -837,15 +938,17 @@
    "pred": "850",
    "ok": true,
    "n_tokens": 917,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m102",
    "gold": "(a+5)(b+2)",
-   "pred": "is",
-   "ok": false,
+   "pred": "(a+5)(b+2)",
+   "ok": true,
    "n_tokens": 257,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m103",
@@ -853,7 +956,8 @@
    "pred": "\\lambda>3",
    "ok": false,
    "n_tokens": 1229,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m104",
@@ -861,7 +965,8 @@
    "pred": "40",
    "ok": true,
    "n_tokens": 1653,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m105",
@@ -869,15 +974,17 @@
    "pred": "29",
    "ok": true,
    "n_tokens": 362,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m106",
    "gold": "\\frac43",
    "pred": "\\frac{4}{3}",
-   "ok": false,
+   "ok": true,
    "n_tokens": 532,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m107",
@@ -885,7 +992,8 @@
    "pred": "9",
    "ok": true,
    "n_tokens": 559,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m108",
@@ -893,7 +1001,8 @@
    "pred": "tangent",
    "ok": false,
    "n_tokens": 1173,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m109",
@@ -901,7 +1010,8 @@
    "pred": "120^\\circ",
    "ok": true,
    "n_tokens": 838,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m110",
@@ -909,7 +1019,8 @@
    "pred": "504",
    "ok": true,
    "n_tokens": 7812,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m111",
@@ -917,7 +1028,8 @@
    "pred": "210",
    "ok": true,
    "n_tokens": 393,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m112",
@@ -925,7 +1037,8 @@
    "pred": "13",
    "ok": true,
    "n_tokens": 461,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m113",
@@ -933,7 +1046,8 @@
    "pred": "8000",
    "ok": true,
    "n_tokens": 430,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m114",
@@ -941,15 +1055,17 @@
    "pred": "-5",
    "ok": true,
    "n_tokens": 639,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m115",
    "gold": "1260",
-   "pred": "260",
-   "ok": false,
+   "pred": "1,260",
+   "ok": true,
    "n_tokens": 407,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m116",
@@ -957,7 +1073,8 @@
    "pred": "2",
    "ok": true,
    "n_tokens": 296,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m117",
@@ -965,7 +1082,8 @@
    "pred": "3",
    "ok": true,
    "n_tokens": 252,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m118",
@@ -973,7 +1091,8 @@
    "pred": "81",
    "ok": true,
    "n_tokens": 953,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m119",
@@ -981,7 +1100,8 @@
    "pred": "-9",
    "ok": true,
    "n_tokens": 816,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m120",
@@ -989,7 +1109,8 @@
    "pred": "even",
    "ok": true,
    "n_tokens": 986,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m121",
@@ -997,15 +1118,17 @@
    "pred": "6",
    "ok": true,
    "n_tokens": 371,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m122",
    "gold": "9",
-   "pred": "2500",
-   "ok": false,
+   "pred": "9",
+   "ok": true,
    "n_tokens": 325,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m123",
@@ -1013,7 +1136,8 @@
    "pred": "8",
    "ok": true,
    "n_tokens": 985,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m124",
@@ -1021,7 +1145,8 @@
    "pred": "\\frac{11}{2}",
    "ok": true,
    "n_tokens": 368,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m125",
@@ -1029,7 +1154,8 @@
    "pred": "-3",
    "ok": true,
    "n_tokens": 287,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m126",
@@ -1037,7 +1163,8 @@
    "pred": "274",
    "ok": false,
    "n_tokens": 1001,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m127",
@@ -1045,7 +1172,8 @@
    "pred": "4210_{5}",
    "ok": true,
    "n_tokens": 378,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m128",
@@ -1053,15 +1181,17 @@
    "pred": "36",
    "ok": true,
    "n_tokens": 466,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m129",
    "gold": "\\frac{3840}{289}",
-   "pred": "\\frac{3840}{289}.)",
-   "ok": false,
+   "pred": "\\frac{3840}{289}",
+   "ok": true,
    "n_tokens": 844,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m130",
@@ -1069,7 +1199,8 @@
    "pred": "13",
    "ok": true,
    "n_tokens": 615,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m131",
@@ -1077,7 +1208,8 @@
    "pred": "8",
    "ok": true,
    "n_tokens": 568,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m132",
@@ -1085,7 +1217,8 @@
    "pred": "4",
    "ok": true,
    "n_tokens": 450,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m133",
@@ -1093,7 +1226,8 @@
    "pred": "120",
    "ok": true,
    "n_tokens": 436,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m134",
@@ -1101,15 +1235,17 @@
    "pred": "16",
    "ok": true,
    "n_tokens": 604,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m135",
    "gold": "9",
-   "pred": "42!",
-   "ok": false,
+   "pred": "9",
+   "ok": true,
    "n_tokens": 553,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m136",
@@ -1117,7 +1253,8 @@
    "pred": "64",
    "ok": true,
    "n_tokens": 957,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m137",
@@ -1125,7 +1262,8 @@
    "pred": "204_5",
    "ok": true,
    "n_tokens": 782,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m138",
@@ -1133,7 +1271,8 @@
    "pred": "\\frac{1}{3}",
    "ok": true,
    "n_tokens": 616,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m139",
@@ -1141,7 +1280,8 @@
    "pred": "1",
    "ok": true,
    "n_tokens": 721,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m140",
@@ -1149,7 +1289,8 @@
    "pred": "13",
    "ok": true,
    "n_tokens": 492,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m141",
@@ -1157,15 +1298,17 @@
    "pred": "2",
    "ok": true,
    "n_tokens": 297,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m142",
    "gold": "28800",
-   "pred": "800",
-   "ok": false,
+   "pred": "28,800",
+   "ok": true,
    "n_tokens": 529,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m143",
@@ -1173,7 +1316,8 @@
    "pred": "3\\sqrt{5}",
    "ok": true,
    "n_tokens": 697,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m144",
@@ -1181,7 +1325,8 @@
    "pred": "(15,-29)",
    "ok": true,
    "n_tokens": 315,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m145",
@@ -1189,7 +1334,8 @@
    "pred": "-2",
    "ok": true,
    "n_tokens": 1009,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m146",
@@ -1197,7 +1343,8 @@
    "pred": "\\frac{\\sqrt{3}}{3}",
    "ok": true,
    "n_tokens": 282,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m147",
@@ -1205,7 +1352,8 @@
    "pred": "2",
    "ok": false,
    "n_tokens": 1320,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m148",
@@ -1213,7 +1361,8 @@
    "pred": "11",
    "ok": true,
    "n_tokens": 358,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m149",
@@ -1221,7 +1370,8 @@
    "pred": "49",
    "ok": true,
    "n_tokens": 632,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m150",
@@ -1229,7 +1379,8 @@
    "pred": "1",
    "ok": true,
    "n_tokens": 2344,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m151",
@@ -1237,15 +1388,17 @@
    "pred": "144",
    "ok": true,
    "n_tokens": 724,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m152",
    "gold": "8",
-   "pred": "(\\frac{1}{2},0,\\frac{1}{2})",
-   "ok": false,
+   "pred": "8",
+   "ok": true,
    "n_tokens": 1027,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m153",
@@ -1253,7 +1406,8 @@
    "pred": "\\frac{2}{21}",
    "ok": true,
    "n_tokens": 533,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m154",
@@ -1261,7 +1415,8 @@
    "pred": "2\\sqrt{106}",
    "ok": false,
    "n_tokens": 1930,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m155",
@@ -1269,7 +1424,8 @@
    "pred": "\\frac{1}{4}",
    "ok": true,
    "n_tokens": 576,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m156",
@@ -1277,23 +1433,26 @@
    "pred": "30^\\circ",
    "ok": true,
    "n_tokens": 791,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m157",
    "gold": "\\frac65",
    "pred": "1.2",
-   "ok": false,
+   "ok": true,
    "n_tokens": 410,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m158",
    "gold": "2107",
-   "pred": "107",
-   "ok": false,
+   "pred": "2,107",
+   "ok": true,
    "n_tokens": 497,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m159",
@@ -1301,7 +1460,8 @@
    "pred": "3.21",
    "ok": true,
    "n_tokens": 429,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m160",
@@ -1309,7 +1469,8 @@
    "pred": "18",
    "ok": true,
    "n_tokens": 460,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m161",
@@ -1317,15 +1478,17 @@
    "pred": "6",
    "ok": true,
    "n_tokens": 284,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m162",
    "gold": "\\dfrac{17}{50}",
    "pred": "\\frac{17}{50}",
-   "ok": false,
+   "ok": true,
    "n_tokens": 617,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m163",
@@ -1333,7 +1496,8 @@
    "pred": "-\\frac{35}{9}",
    "ok": true,
    "n_tokens": 717,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m164",
@@ -1341,7 +1505,8 @@
    "pred": "-\\sqrt{3}",
    "ok": true,
    "n_tokens": 991,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m165",
@@ -1349,7 +1514,8 @@
    "pred": "4/9",
    "ok": true,
    "n_tokens": 501,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m166",
@@ -1357,7 +1523,8 @@
    "pred": "\\frac{270}{7}",
    "ok": false,
    "n_tokens": 1007,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m167",
@@ -1365,7 +1532,8 @@
    "pred": "65",
    "ok": true,
    "n_tokens": 208,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m168",
@@ -1373,7 +1541,8 @@
    "pred": "70",
    "ok": false,
    "n_tokens": 870,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m169",
@@ -1381,7 +1550,8 @@
    "pred": "12",
    "ok": true,
    "n_tokens": 582,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m170",
@@ -1389,7 +1559,8 @@
    "pred": "1736",
    "ok": true,
    "n_tokens": 1597,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m171",
@@ -1397,7 +1568,8 @@
    "pred": "\\frac{13}{15}",
    "ok": true,
    "n_tokens": 246,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m172",
@@ -1405,7 +1577,8 @@
    "pred": "350",
    "ok": true,
    "n_tokens": 487,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m173",
@@ -1413,7 +1586,8 @@
    "pred": "4",
    "ok": true,
    "n_tokens": 594,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m174",
@@ -1421,7 +1595,8 @@
    "pred": "2",
    "ok": true,
    "n_tokens": 381,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m175",
@@ -1429,7 +1604,8 @@
    "pred": "3",
    "ok": true,
    "n_tokens": 794,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m176",
@@ -1437,7 +1613,8 @@
    "pred": "0.0000672",
    "ok": true,
    "n_tokens": 617,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m177",
@@ -1445,7 +1622,8 @@
    "pred": "30^\\circ",
    "ok": true,
    "n_tokens": 1157,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m178",
@@ -1453,7 +1631,8 @@
    "pred": "60",
    "ok": true,
    "n_tokens": 489,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m179",
@@ -1461,15 +1640,17 @@
    "pred": "0",
    "ok": false,
    "n_tokens": 821,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m180",
    "gold": "3",
-   "pred": "150",
-   "ok": false,
+   "pred": "3",
+   "ok": true,
    "n_tokens": 463,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m181",
@@ -1477,15 +1658,17 @@
    "pred": "\\frac{\\sqrt{3}}{3}",
    "ok": true,
    "n_tokens": 540,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m182",
    "gold": "1251",
-   "pred": "251",
-   "ok": false,
+   "pred": "1,251",
+   "ok": true,
    "n_tokens": 222,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m183",
@@ -1493,7 +1676,8 @@
    "pred": "23",
    "ok": true,
    "n_tokens": 712,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m184",
@@ -1501,7 +1685,8 @@
    "pred": "2",
    "ok": false,
    "n_tokens": 1186,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m185",
@@ -1509,7 +1694,8 @@
    "pred": "1",
    "ok": true,
    "n_tokens": 225,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m186",
@@ -1517,7 +1703,8 @@
    "pred": "n",
    "ok": false,
    "n_tokens": 448,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m187",
@@ -1525,7 +1712,8 @@
    "pred": "7",
    "ok": true,
    "n_tokens": 432,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m188",
@@ -1533,7 +1721,8 @@
    "pred": "6",
    "ok": true,
    "n_tokens": 658,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m189",
@@ -1541,7 +1730,8 @@
    "pred": "160",
    "ok": true,
    "n_tokens": 1340,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m190",
@@ -1549,7 +1739,8 @@
    "pred": "\\frac{13}{18}",
    "ok": true,
    "n_tokens": 460,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m191",
@@ -1557,7 +1748,8 @@
    "pred": "0",
    "ok": true,
    "n_tokens": 265,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m192",
@@ -1565,7 +1757,8 @@
    "pred": "30",
    "ok": true,
    "n_tokens": 392,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m193",
@@ -1573,7 +1766,8 @@
    "pred": "roots",
    "ok": false,
    "n_tokens": 1072,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m194",
@@ -1581,7 +1775,8 @@
    "pred": "\\frac{1}{4}",
    "ok": true,
    "n_tokens": 922,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m195",
@@ -1589,7 +1784,8 @@
    "pred": "24",
    "ok": true,
    "n_tokens": 463,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m196",
@@ -1597,7 +1793,8 @@
    "pred": "1600",
    "ok": true,
    "n_tokens": 421,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m197",
@@ -1605,15 +1802,17 @@
    "pred": "6",
    "ok": true,
    "n_tokens": 1092,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m198",
    "gold": "10,\\!080",
-   "pred": "080",
-   "ok": false,
+   "pred": "10,080",
+   "ok": true,
    "n_tokens": 394,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m199",
@@ -1621,7 +1820,8 @@
    "pred": "17",
    "ok": true,
    "n_tokens": 270,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m200",
@@ -1629,7 +1829,8 @@
    "pred": "42",
    "ok": false,
    "n_tokens": 361,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m201",
@@ -1637,7 +1838,8 @@
    "pred": "66",
    "ok": true,
    "n_tokens": 589,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m202",
@@ -1645,7 +1847,8 @@
    "pred": "\\frac{2}{3}",
    "ok": true,
    "n_tokens": 590,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m203",
@@ -1653,7 +1856,8 @@
    "pred": "12",
    "ok": true,
    "n_tokens": 522,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m204",
@@ -1661,7 +1865,8 @@
    "pred": "16",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m205",
@@ -1669,15 +1874,17 @@
    "pred": "\\begin{pmatrix}-2\\-14\\-7\\end{pmatrix}",
    "ok": true,
    "n_tokens": 762,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m206",
    "gold": "\\left( \\frac{3}{2}, -13 \\right)",
    "pred": "(3/2,-13)",
-   "ok": false,
+   "ok": true,
    "n_tokens": 333,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m207",
@@ -1685,7 +1892,8 @@
    "pred": "28",
    "ok": true,
    "n_tokens": 280,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m208",
@@ -1693,7 +1901,8 @@
    "pred": "1",
    "ok": true,
    "n_tokens": 356,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m209",
@@ -1701,7 +1910,8 @@
    "pred": "16",
    "ok": true,
    "n_tokens": 630,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m210",
@@ -1709,7 +1919,8 @@
    "pred": "10",
    "ok": true,
    "n_tokens": 1048,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m211",
@@ -1717,7 +1928,8 @@
    "pred": "5",
    "ok": true,
    "n_tokens": 412,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m212",
@@ -1725,7 +1937,8 @@
    "pred": "56",
    "ok": true,
    "n_tokens": 454,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m213",
@@ -1733,7 +1946,8 @@
    "pred": "2",
    "ok": true,
    "n_tokens": 793,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m214",
@@ -1741,7 +1955,8 @@
    "pred": "110",
    "ok": true,
    "n_tokens": 578,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m215",
@@ -1749,7 +1964,8 @@
    "pred": "2",
    "ok": true,
    "n_tokens": 468,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m216",
@@ -1757,7 +1973,8 @@
    "pred": "6",
    "ok": true,
    "n_tokens": 418,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m217",
@@ -1765,7 +1982,8 @@
    "pred": "11111111100",
    "ok": false,
    "n_tokens": 670,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m218",
@@ -1773,7 +1991,8 @@
    "pred": "(-1,6)",
    "ok": true,
    "n_tokens": 262,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m219",
@@ -1781,7 +2000,8 @@
    "pred": "\\frac{1}{2}",
    "ok": true,
    "n_tokens": 1108,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m220",
@@ -1789,7 +2009,8 @@
    "pred": "\\frac{16}{27}",
    "ok": true,
    "n_tokens": 531,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m221",
@@ -1797,7 +2018,8 @@
    "pred": "correct",
    "ok": false,
    "n_tokens": 670,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m222",
@@ -1805,7 +2027,8 @@
    "pred": "54",
    "ok": true,
    "n_tokens": 1235,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m223",
@@ -1813,7 +2036,8 @@
    "pred": "14",
    "ok": true,
    "n_tokens": 376,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m224",
@@ -1821,7 +2045,8 @@
    "pred": "\\frac{9}{256}",
    "ok": true,
    "n_tokens": 648,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m225",
@@ -1829,7 +2054,8 @@
    "pred": "11",
    "ok": true,
    "n_tokens": 434,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m226",
@@ -1837,15 +2063,17 @@
    "pred": "3",
    "ok": true,
    "n_tokens": 270,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m227",
    "gold": "\\text{(C)}",
    "pred": "C",
-   "ok": false,
+   "ok": true,
    "n_tokens": 361,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m228",
@@ -1853,7 +2081,8 @@
    "pred": "S",
    "ok": false,
    "n_tokens": 937,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m229",
@@ -1861,7 +2090,8 @@
    "pred": "90",
    "ok": true,
    "n_tokens": 314,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m230",
@@ -1869,7 +2099,8 @@
    "pred": "d",
    "ok": false,
    "n_tokens": 670,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m231",
@@ -1877,7 +2108,8 @@
    "pred": "10",
    "ok": true,
    "n_tokens": 702,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m232",
@@ -1885,7 +2117,8 @@
    "pred": "\\frac{1997}{2}",
    "ok": true,
    "n_tokens": 635,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m233",
@@ -1893,7 +2126,8 @@
    "pred": "30^\\circ",
    "ok": true,
    "n_tokens": 390,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m234",
@@ -1901,15 +2135,17 @@
    "pred": "34",
    "ok": true,
    "n_tokens": 720,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m235",
    "gold": "\\frac 59",
    "pred": "\\frac{5}{9}",
-   "ok": false,
+   "ok": true,
    "n_tokens": 297,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m236",
@@ -1917,7 +2153,8 @@
    "pred": "12",
    "ok": true,
    "n_tokens": 956,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m237",
@@ -1925,7 +2162,8 @@
    "pred": "22",
    "ok": true,
    "n_tokens": 821,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m238",
@@ -1933,7 +2171,8 @@
    "pred": "-4",
    "ok": true,
    "n_tokens": 530,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m239",
@@ -1941,7 +2180,8 @@
    "pred": "16",
    "ok": true,
    "n_tokens": 1234,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m240",
@@ -1949,7 +2189,8 @@
    "pred": "parallel",
    "ok": false,
    "n_tokens": 1262,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m241",
@@ -1957,7 +2198,8 @@
    "pred": "17",
    "ok": true,
    "n_tokens": 462,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m242",
@@ -1965,7 +2207,8 @@
    "pred": "32,348",
    "ok": true,
    "n_tokens": 413,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m243",
@@ -1973,7 +2216,8 @@
    "pred": "3",
    "ok": true,
    "n_tokens": 272,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m244",
@@ -1981,7 +2225,8 @@
    "pred": "8",
    "ok": true,
    "n_tokens": 518,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m245",
@@ -1989,7 +2234,8 @@
    "pred": "3",
    "ok": false,
    "n_tokens": 825,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m246",
@@ -1997,7 +2243,8 @@
    "pred": "12",
    "ok": false,
    "n_tokens": 82,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m247",
@@ -2005,7 +2252,8 @@
    "pred": "\\frac{10}{11}",
    "ok": true,
    "n_tokens": 548,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m248",
@@ -2013,7 +2261,8 @@
    "pred": "\\begin{pmatrix}-1&0\\0&-1\\end{pmatrix}",
    "ok": true,
    "n_tokens": 768,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m249",
@@ -2021,7 +2270,8 @@
    "pred": "323\\equiv1\\pmod{23}",
    "ok": false,
    "n_tokens": 827,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m250",
@@ -2029,7 +2279,8 @@
    "pred": "13",
    "ok": true,
    "n_tokens": 491,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m251",
@@ -2037,7 +2288,8 @@
    "pred": "540",
    "ok": true,
    "n_tokens": 552,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m252",
@@ -2045,7 +2297,8 @@
    "pred": "81",
    "ok": true,
    "n_tokens": 743,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m253",
@@ -2053,7 +2306,8 @@
    "pred": "1/8",
    "ok": true,
    "n_tokens": 184,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m254",
@@ -2061,15 +2315,17 @@
    "pred": "28",
    "ok": true,
    "n_tokens": 375,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m255",
    "gold": "\\text{(E)}",
    "pred": "E",
-   "ok": false,
+   "ok": true,
    "n_tokens": 380,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m256",
@@ -2077,15 +2333,17 @@
    "pred": "\\frac{8}{21}",
    "ok": true,
    "n_tokens": 355,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m257",
    "gold": "864 \\mbox{ inches}^2",
    "pred": "864",
-   "ok": false,
+   "ok": true,
    "n_tokens": 345,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m258",
@@ -2093,7 +2351,8 @@
    "pred": "16",
    "ok": true,
    "n_tokens": 490,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m259",
@@ -2101,7 +2360,8 @@
    "pred": "22",
    "ok": true,
    "n_tokens": 290,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m260",
@@ -2109,7 +2369,8 @@
    "pred": "120^\\circ",
    "ok": true,
    "n_tokens": 561,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m261",
@@ -2117,7 +2378,8 @@
    "pred": "76^\\circ",
    "ok": true,
    "n_tokens": 363,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m262",
@@ -2125,7 +2387,8 @@
    "pred": "4",
    "ok": true,
    "n_tokens": 241,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m263",
@@ -2133,7 +2396,8 @@
    "pred": "15",
    "ok": true,
    "n_tokens": 372,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m264",
@@ -2141,7 +2405,8 @@
    "pred": "1\\frac{1}{5}",
    "ok": false,
    "n_tokens": 2690,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m265",
@@ -2149,15 +2414,17 @@
    "pred": "4005",
    "ok": true,
    "n_tokens": 336,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m266",
    "gold": "\\dfrac{33}{100}",
    "pred": "\\frac{33}{100}",
-   "ok": false,
+   "ok": true,
    "n_tokens": 382,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m267",
@@ -2165,7 +2432,8 @@
    "pred": "180^\\circ",
    "ok": true,
    "n_tokens": 488,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m268",
@@ -2173,7 +2441,8 @@
    "pred": "1",
    "ok": true,
    "n_tokens": 455,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m269",
@@ -2181,7 +2450,8 @@
    "pred": "6",
    "ok": true,
    "n_tokens": 548,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m270",
@@ -2189,7 +2459,8 @@
    "pred": "10",
    "ok": true,
    "n_tokens": 315,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m271",
@@ -2197,7 +2468,8 @@
    "pred": "satisfied",
    "ok": false,
    "n_tokens": 350,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m272",
@@ -2205,15 +2477,17 @@
    "pred": "1030",
    "ok": true,
    "n_tokens": 618,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m273",
    "gold": "1250",
-   "pred": "250",
-   "ok": false,
+   "pred": "1,250",
+   "ok": true,
    "n_tokens": 375,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m274",
@@ -2221,7 +2495,8 @@
    "pred": "18+2\\pi",
    "ok": true,
    "n_tokens": 727,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m275",
@@ -2229,7 +2504,8 @@
    "pred": "7",
    "ok": true,
    "n_tokens": 277,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m276",
@@ -2237,7 +2513,8 @@
    "pred": "11",
    "ok": true,
    "n_tokens": 554,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m277",
@@ -2245,7 +2522,8 @@
    "pred": "\\sqrt{53}",
    "ok": true,
    "n_tokens": 320,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m278",
@@ -2253,7 +2531,8 @@
    "pred": "255",
    "ok": true,
    "n_tokens": 456,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m279",
@@ -2261,7 +2540,8 @@
    "pred": "7\\pi",
    "ok": true,
    "n_tokens": 480,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m280",
@@ -2269,7 +2549,8 @@
    "pred": "1,2,a,b,2a,2b,ab,2ab",
    "ok": false,
    "n_tokens": 461,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m281",
@@ -2277,7 +2558,8 @@
    "pred": "36^\\circ",
    "ok": true,
    "n_tokens": 771,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m282",
@@ -2285,7 +2567,8 @@
    "pred": "129",
    "ok": true,
    "n_tokens": 455,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m283",
@@ -2293,7 +2576,8 @@
    "pred": "1",
    "ok": true,
    "n_tokens": 374,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m284",
@@ -2301,7 +2585,8 @@
    "pred": "3+2\\sqrt{2},3-2\\sqrt{2},-3+2\\sqrt{2},-3-2\\sqrt{2}",
    "ok": false,
    "n_tokens": 1739,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m285",
@@ -2309,7 +2594,8 @@
    "pred": "440",
    "ok": true,
    "n_tokens": 1104,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m286",
@@ -2317,7 +2603,8 @@
    "pred": "\\frac{17}{21}",
    "ok": true,
    "n_tokens": 2007,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m287",
@@ -2325,7 +2612,8 @@
    "pred": "36",
    "ok": true,
    "n_tokens": 702,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m288",
@@ -2333,7 +2621,8 @@
    "pred": "7",
    "ok": true,
    "n_tokens": 800,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m289",
@@ -2341,7 +2630,8 @@
    "pred": "16",
    "ok": true,
    "n_tokens": 927,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m290",
@@ -2349,7 +2639,8 @@
    "pred": "4",
    "ok": true,
    "n_tokens": 548,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m291",
@@ -2357,7 +2648,8 @@
    "pred": "63",
    "ok": true,
    "n_tokens": 489,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m292",
@@ -2365,7 +2657,8 @@
    "pred": "898",
    "ok": true,
    "n_tokens": 1014,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m293",
@@ -2373,7 +2666,8 @@
    "pred": "(\\frac{3}{5},\\frac{8}{3}]",
    "ok": true,
    "n_tokens": 459,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m294",
@@ -2381,7 +2675,8 @@
    "pred": "58",
    "ok": true,
    "n_tokens": 848,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m295",
@@ -2389,15 +2684,17 @@
    "pred": "11",
    "ok": true,
    "n_tokens": 761,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m296",
    "gold": "\\text{(B)}",
    "pred": "b",
-   "ok": false,
+   "ok": true,
    "n_tokens": 660,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m297",
@@ -2405,7 +2702,8 @@
    "pred": "103",
    "ok": true,
    "n_tokens": 592,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m298",
@@ -2413,7 +2711,8 @@
    "pred": "\\begin{pmatrix}-18\\-49\\96\\end{pmatrix}",
    "ok": true,
    "n_tokens": 929,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m299",
@@ -2421,7 +2720,8 @@
    "pred": "63",
    "ok": true,
    "n_tokens": 478,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m300",
@@ -2429,15 +2729,17 @@
    "pred": "12",
    "ok": true,
    "n_tokens": 450,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m301",
    "gold": "5.4 \\text{ cents}",
    "pred": "5.4",
-   "ok": false,
+   "ok": true,
    "n_tokens": 476,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m302",
@@ -2445,7 +2747,8 @@
    "pred": "5",
    "ok": true,
    "n_tokens": 671,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m303",
@@ -2453,7 +2756,8 @@
    "pred": "28",
    "ok": true,
    "n_tokens": 791,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m304",
@@ -2461,15 +2765,17 @@
    "pred": "9",
    "ok": true,
    "n_tokens": 616,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m305",
    "gold": "\\frac9{19}",
    "pred": "\\frac{9}{19}",
-   "ok": false,
+   "ok": true,
    "n_tokens": 436,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m306",
@@ -2477,7 +2783,8 @@
    "pred": "6",
    "ok": true,
    "n_tokens": 1153,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m307",
@@ -2485,7 +2792,8 @@
    "pred": "(-\\infty,0]",
    "ok": true,
    "n_tokens": 483,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m308",
@@ -2493,7 +2801,8 @@
    "pred": "1+2\\sqrt{3}",
    "ok": true,
    "n_tokens": 1303,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m309",
@@ -2501,7 +2810,8 @@
    "pred": "14",
    "ok": true,
    "n_tokens": 851,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m310",
@@ -2509,7 +2819,8 @@
    "pred": "49",
    "ok": true,
    "n_tokens": 432,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m311",
@@ -2517,7 +2828,8 @@
    "pred": "3",
    "ok": true,
    "n_tokens": 585,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m312",
@@ -2525,15 +2837,17 @@
    "pred": "(5,\\infty)",
    "ok": true,
    "n_tokens": 295,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m313",
    "gold": "12\\pi",
-   "pred": "37.7",
-   "ok": false,
+   "pred": "12\\pi",
+   "ok": true,
    "n_tokens": 304,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m314",
@@ -2541,7 +2855,8 @@
    "pred": "(2,4)",
    "ok": true,
    "n_tokens": 322,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m315",
@@ -2549,7 +2864,8 @@
    "pred": "41",
    "ok": true,
    "n_tokens": 667,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m316",
@@ -2557,7 +2873,8 @@
    "pred": "12",
    "ok": true,
    "n_tokens": 597,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m317",
@@ -2565,7 +2882,8 @@
    "pred": "0",
    "ok": true,
    "n_tokens": 655,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m318",
@@ -2573,7 +2891,8 @@
    "pred": "\\frac{9a+11}{20}",
    "ok": false,
    "n_tokens": 395,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m319",
@@ -2581,7 +2900,8 @@
    "pred": "-128",
    "ok": true,
    "n_tokens": 284,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m320",
@@ -2589,7 +2909,8 @@
    "pred": "-\\frac{24}{25}",
    "ok": true,
    "n_tokens": 523,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m321",
@@ -2597,7 +2918,8 @@
    "pred": "10",
    "ok": true,
    "n_tokens": 347,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m322",
@@ -2605,7 +2927,8 @@
    "pred": "-1",
    "ok": true,
    "n_tokens": 339,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m323",
@@ -2613,7 +2936,8 @@
    "pred": "\\frac{1}{3}",
    "ok": true,
    "n_tokens": 910,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m324",
@@ -2621,7 +2945,8 @@
    "pred": "150^\\circ",
    "ok": false,
    "n_tokens": 1567,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m325",
@@ -2629,7 +2954,8 @@
    "pred": "4",
    "ok": true,
    "n_tokens": 455,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m326",
@@ -2637,7 +2963,8 @@
    "pred": "0.09",
    "ok": true,
    "n_tokens": 601,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m327",
@@ -2645,7 +2972,8 @@
    "pred": "15",
    "ok": true,
    "n_tokens": 1118,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m328",
@@ -2653,7 +2981,8 @@
    "pred": "3",
    "ok": true,
    "n_tokens": 1126,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m329",
@@ -2661,15 +2990,17 @@
    "pred": "4",
    "ok": true,
    "n_tokens": 266,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m330",
    "gold": "1940",
-   "pred": "940",
-   "ok": false,
+   "pred": "1,940",
+   "ok": true,
    "n_tokens": 468,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m331",
@@ -2677,7 +3008,8 @@
    "pred": "\\frac{13}{6}",
    "ok": true,
    "n_tokens": 630,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m332",
@@ -2685,7 +3017,8 @@
    "pred": "2",
    "ok": true,
    "n_tokens": 1017,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m333",
@@ -2693,7 +3026,8 @@
    "pred": "3",
    "ok": true,
    "n_tokens": 788,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m334",
@@ -2701,7 +3035,8 @@
    "pred": "-120",
    "ok": true,
    "n_tokens": 473,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m335",
@@ -2709,15 +3044,17 @@
    "pred": "F_{100}\\equiv3\\pmod{4}",
    "ok": false,
    "n_tokens": 540,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m336",
    "gold": "26000",
    "pred": "26,000",
-   "ok": false,
+   "ok": true,
    "n_tokens": 187,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m337",
@@ -2725,15 +3062,17 @@
    "pred": "6",
    "ok": true,
    "n_tokens": 529,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m338",
    "gold": "4343_6",
    "pred": "4343_{6}",
-   "ok": false,
+   "ok": true,
    "n_tokens": 409,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m339",
@@ -2741,7 +3080,8 @@
    "pred": "2",
    "ok": false,
    "n_tokens": 735,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m340",
@@ -2749,7 +3089,8 @@
    "pred": "55^\\circ",
    "ok": true,
    "n_tokens": 1245,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m341",
@@ -2757,7 +3098,8 @@
    "pred": "-2",
    "ok": true,
    "n_tokens": 446,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m342",
@@ -2765,15 +3107,17 @@
    "pred": "2",
    "ok": true,
    "n_tokens": 389,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m343",
    "gold": "58,500",
-   "pred": "500",
-   "ok": false,
+   "pred": "58,500",
+   "ok": true,
    "n_tokens": 313,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m344",
@@ -2781,7 +3125,8 @@
    "pred": "y",
    "ok": false,
    "n_tokens": 462,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m345",
@@ -2789,7 +3134,8 @@
    "pred": "1",
    "ok": true,
    "n_tokens": 298,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m346",
@@ -2797,7 +3143,8 @@
    "pred": "16",
    "ok": false,
    "n_tokens": 556,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m347",
@@ -2805,7 +3152,8 @@
    "pred": "6r^2-4r-24",
    "ok": true,
    "n_tokens": 447,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m348",
@@ -2813,15 +3161,17 @@
    "pred": "4495",
    "ok": true,
    "n_tokens": 487,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m349",
    "gold": "10080",
-   "pred": "8",
-   "ok": false,
+   "pred": "10,080",
+   "ok": true,
    "n_tokens": 337,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m350",
@@ -2829,7 +3179,8 @@
    "pred": "4",
    "ok": true,
    "n_tokens": 385,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m351",
@@ -2837,7 +3188,8 @@
    "pred": "\\frac{1}{16}",
    "ok": true,
    "n_tokens": 584,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m352",
@@ -2845,7 +3197,8 @@
    "pred": "11+11\\sqrt{5}",
    "ok": false,
    "n_tokens": 961,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m353",
@@ -2853,7 +3206,8 @@
    "pred": "480",
    "ok": true,
    "n_tokens": 572,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m354",
@@ -2861,7 +3215,8 @@
    "pred": "3^7",
    "ok": false,
    "n_tokens": 461,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m355",
@@ -2869,7 +3224,8 @@
    "pred": "2",
    "ok": false,
    "n_tokens": 1020,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m356",
@@ -2877,7 +3233,8 @@
    "pred": "(-\\sqrt{3},\\sqrt{3})",
    "ok": true,
    "n_tokens": 556,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m357",
@@ -2885,7 +3242,8 @@
    "pred": "x",
    "ok": false,
    "n_tokens": 525,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m358",
@@ -2893,7 +3251,8 @@
    "pred": "ellipse",
    "ok": true,
    "n_tokens": 421,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m359",
@@ -2901,7 +3260,8 @@
    "pred": "6",
    "ok": true,
    "n_tokens": 685,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m360",
@@ -2909,7 +3269,8 @@
    "pred": "1.75",
    "ok": true,
    "n_tokens": 467,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m361",
@@ -2917,23 +3278,26 @@
    "pred": "16\\sqrt{3}",
    "ok": true,
    "n_tokens": 670,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m362",
    "gold": "\\frac14",
    "pred": "\\frac{1}{4}",
-   "ok": false,
+   "ok": true,
    "n_tokens": 264,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m363",
    "gold": "2",
-   "pred": "\\frac{1}{2}",
-   "ok": false,
+   "pred": "2",
+   "ok": true,
    "n_tokens": 307,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m364",
@@ -2941,7 +3305,8 @@
    "pred": "(1,-16,-4,43)",
    "ok": true,
    "n_tokens": 497,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m365",
@@ -2949,7 +3314,8 @@
    "pred": "210",
    "ok": false,
    "n_tokens": 809,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m366",
@@ -2957,7 +3323,8 @@
    "pred": "4",
    "ok": true,
    "n_tokens": 550,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m367",
@@ -2965,7 +3332,8 @@
    "pred": "1",
    "ok": true,
    "n_tokens": 290,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m368",
@@ -2973,7 +3341,8 @@
    "pred": "31",
    "ok": true,
    "n_tokens": 316,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m369",
@@ -2981,7 +3350,8 @@
    "pred": "21",
    "ok": true,
    "n_tokens": 1264,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m370",
@@ -2989,7 +3359,8 @@
    "pred": "-41",
    "ok": true,
    "n_tokens": 215,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m371",
@@ -2997,7 +3368,8 @@
    "pred": "17",
    "ok": true,
    "n_tokens": 1837,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m372",
@@ -3005,7 +3377,8 @@
    "pred": "90^\\circ",
    "ok": true,
    "n_tokens": 536,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m373",
@@ -3013,7 +3386,8 @@
    "pred": "1+2i",
    "ok": true,
    "n_tokens": 630,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m374",
@@ -3021,7 +3395,8 @@
    "pred": "4",
    "ok": true,
    "n_tokens": 191,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m375",
@@ -3029,7 +3404,8 @@
    "pred": "25",
    "ok": true,
    "n_tokens": 653,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m376",
@@ -3037,7 +3413,8 @@
    "pred": "(8,-2)",
    "ok": true,
    "n_tokens": 605,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m377",
@@ -3045,7 +3422,8 @@
    "pred": "6",
    "ok": true,
    "n_tokens": 512,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m378",
@@ -3053,7 +3431,8 @@
    "pred": "3",
    "ok": true,
    "n_tokens": 448,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m379",
@@ -3061,15 +3440,17 @@
    "pred": "12",
    "ok": true,
    "n_tokens": 521,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m380",
    "gold": "(0,9) \\cup (9,36)",
-   "pred": "notation",
-   "ok": false,
+   "pred": "(0,9)\\cup(9,36)",
+   "ok": true,
    "n_tokens": 691,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m381",
@@ -3077,7 +3458,8 @@
    "pred": "\\frac{1}{2}",
    "ok": true,
    "n_tokens": 966,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m382",
@@ -3085,15 +3467,17 @@
    "pred": "\\frac{20000}{\\pi}",
    "ok": true,
    "n_tokens": 581,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m383",
    "gold": "x \\in [-2,7]",
    "pred": "[-2,7]",
-   "ok": false,
+   "ok": true,
    "n_tokens": 590,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m384",
@@ -3101,7 +3485,8 @@
    "pred": "15x-80",
    "ok": true,
    "n_tokens": 248,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m385",
@@ -3109,7 +3494,8 @@
    "pred": "22",
    "ok": true,
    "n_tokens": 329,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m386",
@@ -3117,7 +3503,8 @@
    "pred": "11",
    "ok": true,
    "n_tokens": 331,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m387",
@@ -3125,7 +3512,8 @@
    "pred": "18",
    "ok": true,
    "n_tokens": 211,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m388",
@@ -3133,7 +3521,8 @@
    "pred": "5.5",
    "ok": true,
    "n_tokens": 516,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m389",
@@ -3141,7 +3530,8 @@
    "pred": "\\frac{\\sqrt{21}}{5}",
    "ok": true,
    "n_tokens": 502,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m390",
@@ -3149,7 +3539,8 @@
    "pred": "12",
    "ok": true,
    "n_tokens": 623,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m391",
@@ -3157,7 +3548,8 @@
    "pred": "0",
    "ok": true,
    "n_tokens": 551,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m392",
@@ -3165,15 +3557,17 @@
    "pred": "\\sqrt{66}",
    "ok": true,
    "n_tokens": 1256,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m393",
    "gold": "\\frac 34",
    "pred": "\\frac{3}{4}",
-   "ok": false,
+   "ok": true,
    "n_tokens": 397,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m394",
@@ -3181,7 +3575,8 @@
    "pred": "-3/8",
    "ok": false,
    "n_tokens": 731,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m395",
@@ -3189,7 +3584,8 @@
    "pred": "4",
    "ok": true,
    "n_tokens": 298,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m396",
@@ -3197,7 +3593,8 @@
    "pred": "2",
    "ok": true,
    "n_tokens": 630,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m397",
@@ -3205,7 +3602,8 @@
    "pred": "23",
    "ok": true,
    "n_tokens": 253,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m398",
@@ -3213,7 +3611,8 @@
    "pred": "day",
    "ok": false,
    "n_tokens": 408,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m399",
@@ -3221,7 +3620,8 @@
    "pred": "326.5",
    "ok": true,
    "n_tokens": 81,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m400",
@@ -3229,7 +3629,8 @@
    "pred": "7/2",
    "ok": false,
    "n_tokens": 3008,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m401",
@@ -3237,7 +3638,8 @@
    "pred": "\\frac{13}{4}",
    "ok": true,
    "n_tokens": 875,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m402",
@@ -3245,7 +3647,8 @@
    "pred": "1-12i",
    "ok": true,
    "n_tokens": 450,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m403",
@@ -3253,7 +3656,8 @@
    "pred": "3",
    "ok": true,
    "n_tokens": 683,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m404",
@@ -3261,7 +3665,8 @@
    "pred": "3",
    "ok": true,
    "n_tokens": 288,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m405",
@@ -3269,7 +3674,8 @@
    "pred": "60",
    "ok": true,
    "n_tokens": 405,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m406",
@@ -3277,7 +3683,8 @@
    "pred": "0",
    "ok": true,
    "n_tokens": 329,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m407",
@@ -3285,7 +3692,8 @@
    "pred": "9",
    "ok": true,
    "n_tokens": 278,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m408",
@@ -3293,7 +3701,8 @@
    "pred": "\\begin{pmatrix}1/5\\-18/5\\end{pmatrix}",
    "ok": true,
    "n_tokens": 1048,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m409",
@@ -3301,7 +3710,8 @@
    "pred": "2\\sqrt{5}",
    "ok": true,
    "n_tokens": 645,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m410",
@@ -3309,7 +3719,8 @@
    "pred": "6",
    "ok": true,
    "n_tokens": 513,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m411",
@@ -3317,7 +3728,8 @@
    "pred": "60",
    "ok": true,
    "n_tokens": 175,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m412",
@@ -3325,7 +3737,8 @@
    "pred": "406",
    "ok": true,
    "n_tokens": 850,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m413",
@@ -3333,7 +3746,8 @@
    "pred": "5r^5",
    "ok": true,
    "n_tokens": 258,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m414",
@@ -3341,7 +3755,8 @@
    "pred": "10",
    "ok": true,
    "n_tokens": 453,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m415",
@@ -3349,7 +3764,8 @@
    "pred": "9",
    "ok": true,
    "n_tokens": 698,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m416",
@@ -3357,7 +3773,8 @@
    "pred": "\\frac{1}{8}",
    "ok": true,
    "n_tokens": 946,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m417",
@@ -3365,7 +3782,8 @@
    "pred": "-2",
    "ok": true,
    "n_tokens": 357,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m418",
@@ -3373,7 +3791,8 @@
    "pred": "2\\sqrt{5}",
    "ok": true,
    "n_tokens": 436,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m419",
@@ -3381,7 +3800,8 @@
    "pred": "0",
    "ok": false,
    "n_tokens": 1444,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m420",
@@ -3389,7 +3809,8 @@
    "pred": "\\begin{pmatrix}16/49\\48/49\\24/49\\end{pmatrix}",
    "ok": true,
    "n_tokens": 455,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m421",
@@ -3397,7 +3818,8 @@
    "pred": "1",
    "ok": false,
    "n_tokens": 898,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m422",
@@ -3405,7 +3827,8 @@
    "pred": "\\{-2,1+\\sqrt{5},1-\\sqrt{5}\\}",
    "ok": false,
    "n_tokens": 1345,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m423",
@@ -3413,7 +3836,8 @@
    "pred": "\\checkmark",
    "ok": false,
    "n_tokens": 839,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m424",
@@ -3421,7 +3845,8 @@
    "pred": "600",
    "ok": true,
    "n_tokens": 389,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m425",
@@ -3429,7 +3854,8 @@
    "pred": "3",
    "ok": false,
    "n_tokens": 2036,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m426",
@@ -3437,7 +3863,8 @@
    "pred": "6\\sqrt{2}",
    "ok": true,
    "n_tokens": 449,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m427",
@@ -3445,7 +3872,8 @@
    "pred": "29",
    "ok": true,
    "n_tokens": 447,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m428",
@@ -3453,7 +3881,8 @@
    "pred": "64",
    "ok": true,
    "n_tokens": 680,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m429",
@@ -3461,7 +3890,8 @@
    "pred": "50",
    "ok": true,
    "n_tokens": 572,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m430",
@@ -3469,7 +3899,8 @@
    "pred": "4.5",
    "ok": true,
    "n_tokens": 58,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m431",
@@ -3477,7 +3908,8 @@
    "pred": "g(u)",
    "ok": false,
    "n_tokens": 864,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m432",
@@ -3485,7 +3917,8 @@
    "pred": "331",
    "ok": true,
    "n_tokens": 708,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m433",
@@ -3493,7 +3926,8 @@
    "pred": "0.35625",
    "ok": true,
    "n_tokens": 741,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m434",
@@ -3501,15 +3935,17 @@
    "pred": "32",
    "ok": true,
    "n_tokens": 715,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m435",
    "gold": "(-\\infty, 2) \\cup (3, \\infty)",
-   "pred": "x>3",
-   "ok": false,
+   "pred": "(-\\infty,2)\\cup(3,\\infty)",
+   "ok": true,
    "n_tokens": 610,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m436",
@@ -3517,7 +3953,8 @@
    "pred": "satisfied",
    "ok": false,
    "n_tokens": 794,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m437",
@@ -3525,7 +3962,8 @@
    "pred": "3",
    "ok": true,
    "n_tokens": 606,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m438",
@@ -3533,7 +3971,8 @@
    "pred": "4",
    "ok": true,
    "n_tokens": 303,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m439",
@@ -3541,7 +3980,8 @@
    "pred": "x^8+x^7+x^6+x^5+x^4+x^3+x^2+x+1",
    "ok": true,
    "n_tokens": 822,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m440",
@@ -3549,7 +3989,8 @@
    "pred": "14",
    "ok": true,
    "n_tokens": 461,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m441",
@@ -3557,7 +3998,8 @@
    "pred": "550",
    "ok": true,
    "n_tokens": 240,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m442",
@@ -3565,7 +4007,8 @@
    "pred": "256",
    "ok": true,
    "n_tokens": 422,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m443",
@@ -3573,7 +4016,8 @@
    "pred": "45",
    "ok": true,
    "n_tokens": 348,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m444",
@@ -3581,7 +4025,8 @@
    "pred": "1/2",
    "ok": true,
    "n_tokens": 7405,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m445",
@@ -3589,7 +4034,8 @@
    "pred": "15",
    "ok": true,
    "n_tokens": 946,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m446",
@@ -3597,7 +4043,8 @@
    "pred": "8",
    "ok": true,
    "n_tokens": 736,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m447",
@@ -3605,7 +4052,8 @@
    "pred": "9",
    "ok": true,
    "n_tokens": 420,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m448",
@@ -3613,7 +4061,8 @@
    "pred": "44",
    "ok": true,
    "n_tokens": 801,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m449",
@@ -3621,7 +4070,8 @@
    "pred": "47",
    "ok": true,
    "n_tokens": 260,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m450",
@@ -3629,7 +4079,8 @@
    "pred": "64",
    "ok": true,
    "n_tokens": 804,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m451",
@@ -3637,7 +4088,8 @@
    "pred": "\\frac{639}{40}",
    "ok": true,
    "n_tokens": 474,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m452",
@@ -3645,7 +4097,8 @@
    "pred": "143",
    "ok": true,
    "n_tokens": 519,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m453",
@@ -3653,7 +4106,8 @@
    "pred": "10",
    "ok": true,
    "n_tokens": 294,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m454",
@@ -3661,7 +4115,8 @@
    "pred": "3",
    "ok": false,
    "n_tokens": 811,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m455",
@@ -3669,15 +4124,17 @@
    "pred": "6",
    "ok": true,
    "n_tokens": 369,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m456",
    "gold": "-2,1",
-   "pred": "1,-2",
+   "pred": null,
    "ok": false,
    "n_tokens": 832,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m457",
@@ -3685,7 +4142,8 @@
    "pred": "54\\equiv0\\pmod{6}",
    "ok": false,
    "n_tokens": 146,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m458",
@@ -3693,7 +4151,8 @@
    "pred": "41",
    "ok": true,
    "n_tokens": 535,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m459",
@@ -3701,7 +4160,8 @@
    "pred": "18.90",
    "ok": true,
    "n_tokens": 578,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m460",
@@ -3709,7 +4169,8 @@
    "pred": "105^\\circ",
    "ok": false,
    "n_tokens": 1266,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m461",
@@ -3717,7 +4178,8 @@
    "pred": "12",
    "ok": true,
    "n_tokens": 692,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m462",
@@ -3725,7 +4187,8 @@
    "pred": "59",
    "ok": true,
    "n_tokens": 325,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m463",
@@ -3733,7 +4196,8 @@
    "pred": "2",
    "ok": true,
    "n_tokens": 268,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m464",
@@ -3741,7 +4205,8 @@
    "pred": "9",
    "ok": true,
    "n_tokens": 744,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m465",
@@ -3749,7 +4214,8 @@
    "pred": "121",
    "ok": true,
    "n_tokens": 376,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m466",
@@ -3757,7 +4223,8 @@
    "pred": "[0,2\\pi)",
    "ok": false,
    "n_tokens": 896,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m467",
@@ -3765,7 +4232,8 @@
    "pred": "15cm^2",
    "ok": true,
    "n_tokens": 391,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m468",
@@ -3773,7 +4241,8 @@
    "pred": "8",
    "ok": true,
    "n_tokens": 342,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m469",
@@ -3781,7 +4250,8 @@
    "pred": "25",
    "ok": true,
    "n_tokens": 274,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m470",
@@ -3789,7 +4259,8 @@
    "pred": "4",
    "ok": false,
    "n_tokens": 935,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m471",
@@ -3797,7 +4268,8 @@
    "pred": "84",
    "ok": true,
    "n_tokens": 211,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m472",
@@ -3805,7 +4277,8 @@
    "pred": "137\\frac{1}{2}",
    "ok": true,
    "n_tokens": 355,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m473",
@@ -3813,7 +4286,8 @@
    "pred": "n",
    "ok": false,
    "n_tokens": 743,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m474",
@@ -3821,7 +4295,8 @@
    "pred": "3",
    "ok": true,
    "n_tokens": 612,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m475",
@@ -3829,7 +4304,8 @@
    "pred": "29",
    "ok": true,
    "n_tokens": 1085,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m476",
@@ -3837,7 +4313,8 @@
    "pred": "200",
    "ok": true,
    "n_tokens": 349,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m477",
@@ -3845,7 +4322,8 @@
    "pred": "2",
    "ok": true,
    "n_tokens": 371,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m478",
@@ -3853,7 +4331,8 @@
    "pred": "\\frac{2}{1005}",
    "ok": true,
    "n_tokens": 1192,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m479",
@@ -3861,7 +4340,8 @@
    "pred": "2",
    "ok": true,
    "n_tokens": 604,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m480",
@@ -3869,7 +4349,8 @@
    "pred": "1",
    "ok": true,
    "n_tokens": 844,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m481",
@@ -3877,7 +4358,8 @@
    "pred": "1",
    "ok": false,
    "n_tokens": 837,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m482",
@@ -3885,7 +4367,8 @@
    "pred": "202",
    "ok": true,
    "n_tokens": 653,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m483",
@@ -3893,7 +4376,8 @@
    "pred": "\\frac{8}{15}",
    "ok": true,
    "n_tokens": 1183,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m484",
@@ -3901,7 +4385,8 @@
    "pred": "10",
    "ok": true,
    "n_tokens": 802,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m485",
@@ -3909,7 +4394,8 @@
    "pred": "13",
    "ok": true,
    "n_tokens": 1541,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m486",
@@ -3917,7 +4403,8 @@
    "pred": "216",
    "ok": true,
    "n_tokens": 296,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m487",
@@ -3925,7 +4412,8 @@
    "pred": "2",
    "ok": true,
    "n_tokens": 451,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m488",
@@ -3933,7 +4421,8 @@
    "pred": "36.00",
    "ok": true,
    "n_tokens": 295,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m489",
@@ -3941,7 +4430,8 @@
    "pred": "15",
    "ok": true,
    "n_tokens": 668,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m490",
@@ -3949,7 +4439,8 @@
    "pred": "14",
    "ok": true,
    "n_tokens": 2676,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m491",
@@ -3957,15 +4448,17 @@
    "pred": "64",
    "ok": true,
    "n_tokens": 296,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m492",
    "gold": "y = -2x",
-   "pred": "-2",
+   "pred": null,
    "ok": false,
    "n_tokens": 390,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m493",
@@ -3973,7 +4466,8 @@
    "pred": "20",
    "ok": true,
    "n_tokens": 604,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m494",
@@ -3981,7 +4475,8 @@
    "pred": "1/4",
    "ok": true,
    "n_tokens": 1249,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m495",
@@ -3989,7 +4484,8 @@
    "pred": "(2,12)\\cup(12,102)",
    "ok": true,
    "n_tokens": 485,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m496",
@@ -3997,7 +4493,8 @@
    "pred": "\\frac{5}{13}",
    "ok": true,
    "n_tokens": 421,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m497",
@@ -4005,7 +4502,8 @@
    "pred": "3.5",
    "ok": true,
    "n_tokens": 723,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m498",
@@ -4013,15 +4511,17 @@
    "pred": "-1",
    "ok": true,
    "n_tokens": 704,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m499",
    "gold": "106^\\circ",
-   "pred": "106^\\circ.)",
-   "ok": false,
+   "pred": "106^\\circ",
+   "ok": true,
    "n_tokens": 748,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   }
  ]
 }

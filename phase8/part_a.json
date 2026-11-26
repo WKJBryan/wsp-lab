@@ -1,104 +1,104 @@
 {
  "S": {
   "run": "p3c_stock",
-  "accuracy": 8.4,
+  "accuracy": 9.4,
   "finished": 9.4,
-  "acc_finished": 89.4,
+  "acc_finished": 100.0,
   "acc_cutoff": 0.0,
   "points_from_cutoff": 0.0,
   "mean_tokens_finished": 4472,
   "grader2_accuracy": 21.2,
   "grader2_ungradable": 0,
-  "grader_agreement": 82.8
+  "grader_agreement": 83.4
  },
  "O": {
   "run": "p3c_c3_original",
-  "accuracy": 48.6,
+  "accuracy": 54.2,
   "finished": 73.6,
-  "acc_finished": 64.7,
+  "acc_finished": 72.3,
   "acc_cutoff": 0.0,
   "points_from_cutoff": 0.0,
   "mean_tokens_finished": 16297,
   "grader2_accuracy": 44.2,
   "grader2_ungradable": 1,
-  "grader_agreement": 82.4
+  "grader_agreement": 84.0
  },
  "E1": {
   "run": "p4_mimo_pro",
-  "accuracy": 35.2,
+  "accuracy": 40.6,
   "finished": 58.0,
-  "acc_finished": 60.0,
+  "acc_finished": 69.3,
   "acc_cutoff": 0.0,
   "points_from_cutoff": 0.0,
   "mean_tokens_finished": 3929,
   "grader2_accuracy": 34.8,
-  "grader2_ungradable": 1,
-  "grader_agreement": 90.0
+  "grader2_ungradable": 0,
+  "grader_agreement": 91.0
  },
  "E2": {
   "run": "p4_glmflash",
-  "accuracy": 31.6,
+  "accuracy": 37.2,
   "finished": 76.0,
-  "acc_finished": 40.0,
+  "acc_finished": 47.6,
   "acc_cutoff": 0.0,
   "points_from_cutoff": 0.0,
   "mean_tokens_finished": 3747,
   "grader2_accuracy": 31.0,
   "grader2_ungradable": 1,
-  "grader_agreement": 90.6
+  "grader_agreement": 91.4
  },
  "R": {
   "run": "p4_c2_random",
-  "accuracy": 3.8,
+  "accuracy": 4.0,
   "finished": 4.2,
-  "acc_finished": 90.5,
+  "acc_finished": 95.2,
   "acc_cutoff": 0.0,
   "points_from_cutoff": 0.0,
   "mean_tokens_finished": 5881,
   "grader2_accuracy": 19.8,
   "grader2_ungradable": 1,
-  "grader_agreement": 81.6
+  "grader_agreement": 81.8
  },
  "pairs": {
   "E1_vs_S": {
-   "delta": 26.8,
+   "delta": 31.2,
    "ci95": [
-    22.6,
-    31.0
+    27.0,
+    35.4
    ],
-   "only_first": 143,
-   "only_second": 9,
-   "mcnemar_p": 3.5e-32
+   "only_first": 162,
+   "only_second": 6,
+   "mcnemar_p": 1.58e-40
   },
   "E1_vs_O": {
-   "delta": -13.4,
+   "delta": -13.6,
    "ci95": [
-    -17.6,
-    -9.2
+    -18.2,
+    -9.0
    ],
-   "only_first": 31,
-   "only_second": 98,
-   "mcnemar_p": 2.72e-09
+   "only_first": 36,
+   "only_second": 104,
+   "mcnemar_p": 7.6e-09
   },
   "E2_vs_E1": {
-   "delta": -3.6,
+   "delta": -3.4,
    "ci95": [
     -7.8,
-    0.6
+    0.8
    ],
-   "only_first": 47,
-   "only_second": 65,
-   "mcnemar_p": 0.108
+   "only_first": 53,
+   "only_second": 70,
+   "mcnemar_p": 0.149
   },
   "O_vs_S": {
-   "delta": 40.2,
+   "delta": 44.8,
    "ci95": [
-    35.8,
-    44.6
+    40.6,
+    49.2
    ],
-   "only_first": 204,
-   "only_second": 3,
-   "mcnemar_p": 1.44e-56
+   "only_first": 225,
+   "only_second": 1,
+   "mcnemar_p": 4.21e-66
   }
  },
  "pairs_grader2": {

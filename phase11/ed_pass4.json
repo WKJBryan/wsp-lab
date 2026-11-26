@@ -3,13 +3,13 @@
   "name": "ed_pass4",
   "n": 64,
   "accuracy": 0.0,
-  "answered": 100.0,
+  "answered": 51.6,
   "cap_hit_rate": 9.4,
   "mean_tokens": 1827.5,
   "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
   "model": "/home/user/wsp11/sandbox/model",
   "fp8": false,
-  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#4a1b56a343a4 (ISSUES #19)",
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#d74fdebd340f (ISSUES #19, #30, #31)",
   "validity": {
    "soup_pct": 50.0,
    "soup_judged": false,
@@ -24,7 +24,8 @@
    "pred": "follows",
    "ok": false,
    "n_tokens": 477,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m1",
@@ -32,23 +33,26 @@
    "pred": "of",
    "ok": false,
    "n_tokens": 521,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m2",
    "gold": "\\frac{14}{3}",
-   "pred": "step",
+   "pred": null,
    "ok": false,
    "n_tokens": 1287,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m3",
    "gold": "9",
-   "pred": "factor",
+   "pred": null,
    "ok": false,
    "n_tokens": 508,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m4",
@@ -56,31 +60,35 @@
    "pred": "out",
    "ok": false,
    "n_tokens": 2408,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m5",
    "gold": "42",
-   "pred": "to",
+   "pred": null,
    "ok": false,
    "n_tokens": 710,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m6",
    "gold": "27",
-   "pred": "to",
+   "pred": null,
    "ok": false,
    "n_tokens": 869,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m7",
    "gold": "90^\\circ",
-   "pred": "LaTeX",
+   "pred": null,
    "ok": false,
    "n_tokens": 15,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m8",
@@ -88,7 +96,8 @@
    "pred": "\\sqrt{5}",
    "ok": false,
    "n_tokens": 175,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m9",
@@ -96,15 +105,17 @@
    "pred": "final",
    "ok": false,
    "n_tokens": 2611,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m10",
    "gold": "2220",
-   "pred": "of",
+   "pred": null,
    "ok": false,
    "n_tokens": 248,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m11",
@@ -112,7 +123,8 @@
    "pred": "p(8}",
    "ok": false,
    "n_tokens": 102,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m12",
@@ -120,7 +132,8 @@
    "pred": "calculation",
    "ok": false,
    "n_tokens": 4139,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m13",
@@ -128,7 +141,8 @@
    "pred": "}",
    "ok": false,
    "n_tokens": 1733,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m14",
@@ -136,31 +150,35 @@
    "pred": "theorem",
    "ok": false,
    "n_tokens": 4,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m15",
    "gold": "6 - 5i",
-   "pred": "w",
+   "pred": null,
    "ok": false,
    "n_tokens": 326,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m16",
    "gold": "-50",
-   "pred": "by",
+   "pred": null,
    "ok": false,
    "n_tokens": 1240,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m17",
    "gold": "\\pi",
-   "pred": "to",
+   "pred": null,
    "ok": false,
    "n_tokens": 641,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m18",
@@ -168,15 +186,17 @@
    "pred": "degree",
    "ok": false,
    "n_tokens": 230,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m19",
    "gold": "3",
-   "pred": "observer",
+   "pred": null,
    "ok": false,
    "n_tokens": 3958,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m20",
@@ -184,15 +204,17 @@
    "pred": "11",
    "ok": false,
    "n_tokens": 2263,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m21",
    "gold": "13535",
-   "pred": "(\\sqrt{7}+\\sqrt{5})^6",
+   "pred": null,
    "ok": false,
    "n_tokens": 646,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m22",
@@ -200,7 +222,8 @@
    "pred": "x",
    "ok": false,
    "n_tokens": 2908,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m23",
@@ -208,7 +231,8 @@
    "pred": "3.\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u9aa4\u6b65\u540e\u7684\u65b9\u5411\u6027\u7684\u6cd5\u7684-\u578b\u7684-\u578b\u7684-\u578b\u7684-\u578b\u7684-\u578b\u7684-\u7c7b\u578b\u7684-\u5f0f\u7684-\u578b\u7684-\u95ee\u9898\u7684-\u95ee\u9898\u7684-\u65b9\u6cd5\u7684-\u6781\u5176-\u5927\u7684-\u578b\u7684-\u95ee\u9898\u7684-\u65b9\u6cd5\u7684-\u6781\u5176-\u5927\u7684-\u578b\u7684-\u95ee\u9898\u7684-\u65b9\u6cd5\u7684-\u6781\u5176-\u5927\u7684-\u578b\u7684-\u95ee\u9898\u7684-\u65b9\u6cd5\u7684-\u6781\u5176-\u5927\u7684-\u578b\u7684-\u95ee\u9898\u7684-\u65b9\u6cd5\u7684-\u6781\u5176-\u5927\u7684-\u578b\u7684-\u95ee\u9898\u7684-\u65b9\u6cd5-\u6781\u5176-\u5927\u7684-\u578b\u7684-\u95ee\u9898\u7684-\u65b9\u6cd5-\u6781\u5176-\u5927\u7684-\u578b\u7684-\u95ee\u9898\u7684-\u65b9\u6cd5-\u6781\u5176-\u5927\u7684-\u578b\u306e-\u7684\u306a-\u95ee\u9898\u7684-\u65b9\u6cd5\u7684-\u6781\u5176-\u5927\u7684-\u578b\u306e-\u95ee\u9898\u7684-\u65b9\u6cd5-\u6781\u5176-\u5927\u7684-\u578b\u306e-\u95ee\u9898\u7684-\u65b9\u6cd5\u7684-\u6781\u5176-\u5927\u7684-\u578b\u306e-\u95ee\u9898\u7684-\u65b9\u6cd5-\u6781\u5176-\u5927\u7684-\u578b\u7684-\u95ee\u9898\u7684-\u65b9\u6cd5-\u6781\u5176-\u5927\u7684-\u578b\u306e-\u95ee\u9898\u7684-\u65b9\u6cd5-\u6781\u5176-\u5927\u7684-\u578b\u306e-\u95ee\u9898\u7684-\u65b9\u6cd5-\u6781\u5176-\u5927\u7684-\u578b\u306e-\u95ee\u9898\u7684-\u65b9\u6cd5-\u6781\u5176-\u5927\u7684-\u578b\u7684-\u95ee\u9898\u7684-\u65b9\u6cd5-\u6781\u5176-\u5927\u7684-\u578b\u7684-\u95ee\u9898\u7684-\u65b9\u6cd5--\u7531\u4e8e\u4e0a\u8ff0\u56de\u7b54\u56de\u7b54\u56de\u7b54",
    "ok": false,
    "n_tokens": 2161,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m24",
@@ -216,47 +240,53 @@
    "pred": "6\\%00\\%",
    "ok": false,
    "n_tokens": 64,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m25",
    "gold": "1,-2",
-   "pred": "own",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m26",
    "gold": "144",
-   "pred": "own",
+   "pred": null,
    "ok": false,
    "n_tokens": 89,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m27",
    "gold": "78",
-   "pred": "content",
+   "pred": null,
    "ok": false,
    "n_tokens": 133,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m28",
    "gold": "-2 + 7i",
-   "pred": "own",
+   "pred": null,
    "ok": false,
    "n_tokens": 221,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m29",
    "gold": "225",
-   "pred": "nd",
+   "pred": null,
    "ok": false,
    "n_tokens": 794,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m30",
@@ -264,7 +294,8 @@
    "pred": "8",
    "ok": false,
    "n_tokens": 25,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m31",
@@ -272,15 +303,17 @@
    "pred": "\\\u064a{\u6a21",
    "ok": false,
    "n_tokens": 192,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m32",
    "gold": "720",
-   "pred": "own",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m33",
@@ -288,15 +321,17 @@
    "pred": ")},",
    "ok": false,
    "n_tokens": 2891,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m34",
    "gold": "-125",
-   "pred": "Step",
+   "pred": null,
    "ok": false,
    "n_tokens": 790,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m35",
@@ -304,31 +339,35 @@
    "pred": "to",
    "ok": false,
    "n_tokens": 3846,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m36",
    "gold": "3, 5, 7",
-   "pred": "please",
+   "pred": null,
    "ok": false,
    "n_tokens": 1108,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m37",
    "gold": "72",
-   "pred": "entails",
+   "pred": null,
    "ok": false,
    "n_tokens": 839,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m38",
    "gold": "2000",
-   "pred": "nd",
+   "pred": null,
    "ok": false,
    "n_tokens": 513,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m39",
@@ -336,7 +375,8 @@
    "pred": "11",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m40",
@@ -344,7 +384,8 @@
    "pred": "indentalierm",
    "ok": false,
    "n_tokens": 6,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m41",
@@ -352,7 +393,8 @@
    "pred": "x>7",
    "ok": false,
    "n_tokens": 2523,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m42",
@@ -360,7 +402,8 @@
    "pred": "8",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m43",
@@ -368,7 +411,8 @@
    "pred": "step",
    "ok": false,
    "n_tokens": 1182,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m44",
@@ -376,15 +420,17 @@
    "pred": "---**\u064a`\uc624`",
    "ok": false,
    "n_tokens": 527,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m45",
    "gold": "2",
-   "pred": "A",
+   "pred": null,
    "ok": false,
    "n_tokens": 421,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m46",
@@ -392,15 +438,17 @@
    "pred": "thought",
    "ok": false,
    "n_tokens": 6,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m47",
    "gold": "5",
-   "pred": "we",
+   "pred": null,
    "ok": false,
    "n_tokens": 7,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m48",
@@ -408,7 +456,8 @@
    "pred": "\\frac{8}{4}",
    "ok": false,
    "n_tokens": 20,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m49",
@@ -416,63 +465,71 @@
    "pred": "y",
    "ok": false,
    "n_tokens": 1676,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m50",
    "gold": "203",
-   "pred": "total",
+   "pred": null,
    "ok": false,
    "n_tokens": 202,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m51",
    "gold": "x^5 - x^4 + x^3 - x^2 + x - 1",
-   "pred": "x+1",
+   "pred": null,
    "ok": false,
    "n_tokens": 1384,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m52",
    "gold": "12",
-   "pred": "own",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m53",
    "gold": "-\\frac{\\pi}{6}",
-   "pred": "own",
+   "pred": null,
    "ok": false,
    "n_tokens": 886,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m54",
    "gold": "0.15",
-   "pred": "\\text{",
+   "pred": null,
    "ok": false,
    "n_tokens": 3595,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m55",
    "gold": "3",
-   "pred": "ones",
+   "pred": null,
    "ok": false,
    "n_tokens": 323,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m56",
    "gold": "11",
-   "pred": "Lettheproblem-statementdescribeownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownown-10-10-infty^{\\mode)",
+   "pred": "Lettheproblem-statementdescribeownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownownown-10-10-infty^{\\mode",
    "ok": false,
    "n_tokens": 2888,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m57",
@@ -480,15 +537,17 @@
    "pred": "\uc73c\ub85c",
    "ok": false,
    "n_tokens": 2328,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m58",
    "gold": "9901",
-   "pred": "Applying",
+   "pred": null,
    "ok": false,
    "n_tokens": 2070,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   },
   {
    "id": "m59",
@@ -496,7 +555,8 @@
    "pred": "B",
    "ok": false,
    "n_tokens": 3456,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m60",
@@ -504,7 +564,8 @@
    "pred": "step",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m61",
@@ -512,7 +573,8 @@
    "pred": "a",
    "ok": false,
    "n_tokens": 1718,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "marked line"
   },
   {
    "id": "m62",
@@ -520,15 +582,17 @@
    "pred": "\\mathbf{v",
    "ok": false,
    "n_tokens": 564,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": "last line"
   },
   {
    "id": "m63",
    "gold": "10",
-   "pred": "4",
+   "pred": null,
    "ok": false,
    "n_tokens": 341,
-   "cap_hit": false
+   "cap_hit": false,
+   "rule": null
   }
  ]
 }

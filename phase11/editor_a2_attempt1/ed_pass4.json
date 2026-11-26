@@ -3,13 +3,13 @@
   "name": "ed_pass4",
   "n": 64,
   "accuracy": 0.0,
-  "answered": 89.1,
+  "answered": 37.5,
   "cap_hit_rate": 100.0,
   "mean_tokens": 8192.0,
   "decoding": "card: t=1.0 p=0.95 k=64 seed=20261116",
   "model": "/home/user/wsp11/sandbox/model",
   "fp8": false,
-  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#4a1b56a343a4 (ISSUES #19)",
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#d74fdebd340f (ISSUES #19, #30, #31)",
   "validity": {
    "soup_pct": 9.4,
    "soup_judged": false,
@@ -21,18 +21,20 @@
   {
    "id": "m0",
    "gold": "\\left( 3, \\frac{\\pi}{2} \\right)",
-   "pred": "y",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m1",
    "gold": "p - q",
-   "pred": "problem",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m2",
@@ -40,15 +42,17 @@
    "pred": "\\frac{3\\times(-2)-2}{-2-2}+\\frac{3\\times(-1)-2}{-1-2}+\\frac{3\\times(0)-2}{0-2}",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m3",
    "gold": "9",
-   "pred": "14",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m4",
@@ -56,7 +60,8 @@
    "pred": "I",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m5",
@@ -64,39 +69,44 @@
    "pred": "21",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m6",
    "gold": "27",
-   "pred": "s",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m7",
    "gold": "90^\\circ",
-   "pred": "better",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m8",
    "gold": "3\\sqrt{13}",
-   "pred": "-6-",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m9",
    "gold": "4",
-   "pred": "we",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m10",
@@ -104,7 +114,8 @@
    "pred": "666",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m11",
@@ -112,23 +123,26 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m12",
    "gold": "284",
-   "pred": "3",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m13",
    "gold": "5",
-   "pred": "\\pi\\cdot(3)^2\\cdothisactuallyerror)",
+   "pred": "\\pi\\cdot(3)^2\\cdothisactuallyerror",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m14",
@@ -136,15 +150,17 @@
    "pred": "user",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m15",
    "gold": "6 - 5i",
-   "pred": "6",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m16",
@@ -152,31 +168,35 @@
    "pred": "s",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m17",
    "gold": "\\pi",
-   "pred": "thought",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m18",
    "gold": "28",
-   "pred": "16",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m19",
    "gold": "3",
-   "pred": "2",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m20",
@@ -184,15 +204,17 @@
    "pred": "5",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m21",
    "gold": "13535",
-   "pred": "6",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m22",
@@ -200,31 +222,35 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m23",
    "gold": "x=5",
-   "pred": "21",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m24",
    "gold": "10",
-   "pred": "Step",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m25",
    "gold": "1,-2",
-   "pred": "26",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m26",
@@ -232,15 +258,17 @@
    "pred": "logic",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m27",
    "gold": "78",
-   "pred": "w",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m28",
@@ -248,23 +276,26 @@
    "pred": "21",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m29",
    "gold": "225",
-   "pred": "follows",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m30",
    "gold": "52_8",
-   "pred": "of",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m31",
@@ -272,23 +303,26 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m32",
    "gold": "720",
-   "pred": "answer",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m33",
    "gold": "\\frac{243}{625}",
-   "pred": "a_let",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m34",
@@ -296,7 +330,8 @@
    "pred": "10\\times10\\times10\\times10\\times10\\times10\\times10\\times10\\times10\\times10",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m35",
@@ -304,7 +339,8 @@
    "pred": "by",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m36",
@@ -312,7 +348,8 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m37",
@@ -320,7 +357,8 @@
    "pred": "1.0",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m38",
@@ -328,7 +366,8 @@
    "pred": "error",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m39",
@@ -336,7 +375,8 @@
    "pred": "100",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m40",
@@ -344,31 +384,35 @@
    "pred": "s",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m41",
    "gold": "17",
-   "pred": "2",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m42",
    "gold": "4",
-   "pred": "28",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m43",
    "gold": "70 \\sqrt{2}",
-   "pred": "Result",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m44",
@@ -376,23 +420,26 @@
    "pred": "8",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m45",
    "gold": "2",
-   "pred": "8",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m46",
    "gold": "6",
-   "pred": "3",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m47",
@@ -400,7 +447,8 @@
    "pred": "Ro",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m48",
@@ -408,7 +456,8 @@
    "pred": "38",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m49",
@@ -416,7 +465,8 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m50",
@@ -424,31 +474,35 @@
    "pred": "53",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "marked line"
   },
   {
    "id": "m51",
    "gold": "x^5 - x^4 + x^3 - x^2 + x - 1",
-   "pred": "step",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m52",
    "gold": "12",
-   "pred": "5",
+   "pred": "structure",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m53",
    "gold": "-\\frac{\\pi}{6}",
-   "pred": "Tofindthevalueof\\arcs\\sin(-\\",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m54",
@@ -456,15 +510,17 @@
    "pred": "step",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m55",
    "gold": "3",
-   "pred": "of",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m56",
@@ -472,7 +528,8 @@
    "pred": "12",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   },
   {
    "id": "m57",
@@ -480,39 +537,44 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m58",
    "gold": "9901",
-   "pred": "99^2+\u064a\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34\u0e34",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m59",
    "gold": "5",
-   "pred": "step",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m60",
    "gold": "(6,31,-1)",
-   "pred": "x^9+px^6+qx^3+r",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m61",
    "gold": "-256",
-   "pred": "2",
+   "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m62",
@@ -520,7 +582,8 @@
    "pred": null,
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": null
   },
   {
    "id": "m63",
@@ -528,7 +591,8 @@
    "pred": "###",
    "ok": false,
    "n_tokens": 8192,
-   "cap_hit": true
+   "cap_hit": true,
+   "rule": "last line"
   }
  ]
 }

@@ -16,12 +16,12 @@
   "force_from": "p3c_c3_original",
   "forced": 99,
   "reencode_mismatch_pct": 79.0,
-  "accuracy": 50.4,
-  "answered": 99.0,
+  "accuracy": 56.2,
+  "answered": 86.8,
   "finished": 75.8,
   "mean_tokens": 20620,
   "wall_s": 147.5,
-  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#4a1b56a343a4 (ISSUES #19)",
+  "rescored_with": "phase3c/rescore.py+phase3b/scorer.py#d74fdebd340f (ISSUES #19, #30, #31)",
   "validity": {
    "soup_pct": 0.0,
    "soup_judged": true,
@@ -37,9 +37,9 @@
     1.0
    ],
    "admission_correct": [
-    50.0,
-    50.8,
-    0.9287
+    55.6,
+    56.8,
+    0.857
    ],
    "problems": []
   }
@@ -54,7 +54,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "(3,\\frac{\\pi}{2})",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m1",
@@ -64,7 +65,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "q",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m2",
@@ -74,7 +76,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\frac{14}{3}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m3",
@@ -84,7 +87,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "9",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m4",
@@ -94,7 +98,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "evelyn",
-   "ok_rescored": false
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m5",
@@ -104,7 +109,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "M",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "last line"
   },
   {
    "id": "m6",
@@ -114,7 +120,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "27",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m7",
@@ -124,7 +131,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "79.1^\\circ",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "last line"
   },
   {
    "id": "m8",
@@ -134,7 +142,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "3\\sqrt{13}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m9",
@@ -144,7 +153,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m10",
@@ -154,7 +164,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "2220",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m11",
@@ -164,7 +175,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "n",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m12",
@@ -174,7 +186,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "493",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m13",
@@ -184,7 +197,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "5",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m14",
@@ -194,7 +208,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\sqrt{51}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m15",
@@ -204,7 +219,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "6-5i",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m16",
@@ -213,8 +229,9 @@
    "n_tokens": 16799,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "-1275",
-   "ok_rescored": false
+   "pred_rescored": "-50",
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m17",
@@ -224,7 +241,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\pi",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m18",
@@ -234,7 +252,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "0",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m19",
@@ -244,7 +263,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m20",
@@ -254,7 +274,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "6+9i",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m21",
@@ -264,7 +285,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "13532",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "last line"
   },
   {
    "id": "m22",
@@ -274,7 +296,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "x",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m23",
@@ -284,7 +307,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "5",
-   "ok_rescored": false
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m24",
@@ -294,7 +318,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "10",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m25",
@@ -303,8 +328,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "f(1)",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m26",
@@ -314,7 +340,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "3",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m27",
@@ -324,7 +351,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "114",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m28",
@@ -334,7 +362,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "-2+7i",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m29",
@@ -344,7 +373,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "225",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m30",
@@ -354,7 +384,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "5\\cdot8+2",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m31",
@@ -364,7 +395,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "11\\sqrt{2}",
-   "ok_rescored": false
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m32",
@@ -374,7 +406,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "c",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m33",
@@ -384,7 +417,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\frac{243}{625}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m34",
@@ -394,7 +428,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "-125",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m35",
@@ -404,7 +439,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "3",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m36",
@@ -414,7 +450,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "7",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "last line"
   },
   {
    "id": "m37",
@@ -424,7 +461,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "72",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m38",
@@ -433,8 +471,9 @@
    "n_tokens": 810,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "000",
-   "ok_rescored": false
+   "pred_rescored": "2,000",
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m39",
@@ -444,7 +483,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "23",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m40",
@@ -454,7 +494,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "12",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m41",
@@ -463,8 +504,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "\\frac{8+y}{2}\\impl",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m42",
@@ -474,7 +516,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "4",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m43",
@@ -483,8 +526,9 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "(0,10)",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m44",
@@ -494,7 +538,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1.25",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m45",
@@ -504,7 +549,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "2",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m46",
@@ -514,7 +560,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "6",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m47",
@@ -524,7 +571,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "5",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m48",
@@ -534,7 +582,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "3/2",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m49",
@@ -544,7 +593,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "83",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m50",
@@ -554,7 +604,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "53",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m51",
@@ -564,7 +615,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "-2",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m52",
@@ -574,7 +626,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "12",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m53",
@@ -584,7 +637,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "-\\frac{\\pi}{6}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m54",
@@ -594,7 +648,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "0.15",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m55",
@@ -604,7 +659,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "3",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m56",
@@ -614,7 +670,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "11",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m57",
@@ -624,7 +681,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "16",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m58",
@@ -634,7 +692,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "9901",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m59",
@@ -644,7 +703,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "5",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m60",
@@ -653,8 +713,9 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "Q(x)",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m61",
@@ -663,8 +724,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "a",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m62",
@@ -673,8 +735,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "are",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m63",
@@ -683,8 +746,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m64",
@@ -693,8 +757,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "\\frac{1",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m65",
@@ -704,7 +769,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m66",
@@ -714,7 +780,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\begin{align}",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m67",
@@ -723,8 +790,9 @@
    "n_tokens": 16947,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "10%",
-   "ok_rescored": false
+   "pred_rescored": "10",
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m68",
@@ -734,7 +802,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "46^\\circ",
-   "ok_rescored": false
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m69",
@@ -744,7 +813,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "independent",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m70",
@@ -754,7 +824,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "40",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m71",
@@ -764,7 +835,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "10101001",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "last line"
   },
   {
    "id": "m72",
@@ -774,7 +846,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "3",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m73",
@@ -784,7 +857,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\frac{3\\sqrt{3}}{4}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m74",
@@ -794,7 +868,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\cotx",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m75",
@@ -804,7 +879,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\frac{11}{36}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m76",
@@ -814,7 +890,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "0",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m77",
@@ -824,7 +901,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "4",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m78",
@@ -834,7 +912,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "x^2+3x+1",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m79",
@@ -844,7 +923,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "2",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m80",
@@ -854,7 +934,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m81",
@@ -864,7 +945,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "3",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m82",
@@ -874,7 +956,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "points",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m83",
@@ -884,7 +967,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "2",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m84",
@@ -894,7 +978,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "-1",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m85",
@@ -904,7 +989,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\sqrt{5}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m86",
@@ -914,7 +1000,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "240",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m87",
@@ -924,7 +1011,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m88",
@@ -934,7 +1022,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "a\\leq\\sqrt{3}",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m89",
@@ -944,7 +1033,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "21",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m90",
@@ -954,7 +1044,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\frac{3}{2}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m91",
@@ -964,7 +1055,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m92",
@@ -973,8 +1065,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "So\\",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m93",
@@ -984,7 +1077,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "33",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m94",
@@ -994,7 +1088,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "110",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m95",
@@ -1004,7 +1099,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "y",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "last line"
   },
   {
    "id": "m96",
@@ -1013,8 +1109,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "7",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m97",
@@ -1024,7 +1121,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "east",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m98",
@@ -1034,7 +1132,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "2k+2",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m99",
@@ -1044,7 +1143,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\begin{pmatrix}-1/3\\2/3\\5/3\\end{pmatrix}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m100",
@@ -1054,7 +1154,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "wrong",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m101",
@@ -1064,7 +1165,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "0",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m102",
@@ -1074,7 +1176,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "(a+5)(b+2)",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m103",
@@ -1083,8 +1186,9 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m104",
@@ -1093,8 +1197,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "and",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m105",
@@ -1104,7 +1209,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "22",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m106",
@@ -1114,7 +1220,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\frac{4}{3}",
-   "ok_rescored": false
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m107",
@@ -1124,7 +1231,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "7",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m108",
@@ -1134,7 +1242,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m109",
@@ -1144,7 +1253,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": null,
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m110",
@@ -1154,7 +1264,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "2016",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m111",
@@ -1164,7 +1275,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "210",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m112",
@@ -1174,7 +1286,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "13",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m113",
@@ -1184,7 +1297,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "8000",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m114",
@@ -1194,7 +1308,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "-5",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m115",
@@ -1204,7 +1319,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "```",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "last line"
   },
   {
    "id": "m116",
@@ -1214,7 +1330,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "2",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m117",
@@ -1224,7 +1341,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "3",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m118",
@@ -1233,8 +1351,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "2",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m119",
@@ -1244,7 +1363,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "13",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m120",
@@ -1253,8 +1373,9 @@
    "n_tokens": 20550,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m121",
@@ -1264,7 +1385,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "6",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m122",
@@ -1274,7 +1396,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "9",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m123",
@@ -1284,7 +1407,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "8",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m124",
@@ -1294,7 +1418,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\frac{11}{2}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m125",
@@ -1304,7 +1429,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "-3",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m126",
@@ -1314,7 +1440,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "Wait",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "last line"
   },
   {
    "id": "m127",
@@ -1324,7 +1451,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "4210_5",
-   "ok_rescored": false
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m128",
@@ -1334,7 +1462,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "5",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "last line"
   },
   {
    "id": "m129",
@@ -1343,8 +1472,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "me",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m130",
@@ -1353,8 +1483,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "11230326-",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m131",
@@ -1364,7 +1495,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "8",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m132",
@@ -1374,7 +1506,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "4",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m133",
@@ -1384,7 +1517,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "120",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m134",
@@ -1394,7 +1528,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "f_2",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m135",
@@ -1404,7 +1539,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "9",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m136",
@@ -1413,8 +1549,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "make",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m137",
@@ -1424,7 +1561,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "24_5",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m138",
@@ -1433,8 +1571,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m139",
@@ -1443,8 +1582,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "x",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m140",
@@ -1454,7 +1594,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "13",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m141",
@@ -1463,8 +1604,9 @@
    "n_tokens": 16981,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "unique",
-   "ok_rescored": false
+   "pred_rescored": "2",
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m142",
@@ -1473,8 +1615,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "least",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m143",
@@ -1484,7 +1627,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "3\\sqrt{5}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m144",
@@ -1494,7 +1638,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "(15,-29)",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m145",
@@ -1503,8 +1648,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "check",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m146",
@@ -1514,7 +1660,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\frac{\\sqrt{3}}{3}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m147",
@@ -1523,8 +1670,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "2^{",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m148",
@@ -1534,7 +1682,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "11",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m149",
@@ -1544,7 +1693,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "49",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m150",
@@ -1554,7 +1704,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "2",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m151",
@@ -1563,8 +1714,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "1",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m152",
@@ -1574,7 +1726,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "?",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "last line"
   },
   {
    "id": "m153",
@@ -1584,7 +1737,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1/3",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m154",
@@ -1594,7 +1748,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "(x,y,z)",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m155",
@@ -1604,7 +1759,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1/4",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m156",
@@ -1614,7 +1770,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "diagram",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m157",
@@ -1624,7 +1781,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "\\frac{6}{5}",
-   "ok_rescored": false
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m158",
@@ -1634,7 +1792,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "2107",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m159",
@@ -1644,7 +1803,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "1.9",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "last line"
   },
   {
    "id": "m160",
@@ -1654,7 +1814,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "16?",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m161",
@@ -1664,7 +1825,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "6",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m162",
@@ -1674,7 +1836,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "16",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m163",
@@ -1684,7 +1847,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "-3.96",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m164",
@@ -1694,7 +1858,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "-\\sqrt{3}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m165",
@@ -1704,7 +1869,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "4/9",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m166",
@@ -1713,8 +1879,9 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "360\\times",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m167",
@@ -1724,7 +1891,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "65",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m168",
@@ -1734,7 +1902,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "70",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m169",
@@ -1744,7 +1913,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "12",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m170",
@@ -1754,7 +1924,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "8",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m171",
@@ -1764,7 +1935,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\frac{13}{15}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m172",
@@ -1774,7 +1946,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "350",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m173",
@@ -1784,7 +1957,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "4",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m174",
@@ -1794,7 +1968,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "2",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m175",
@@ -1804,7 +1979,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "3",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m176",
@@ -1814,7 +1990,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "0.0000672",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m177",
@@ -1824,7 +2001,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "wrong",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m178",
@@ -1834,7 +2012,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "60",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m179",
@@ -1844,7 +2023,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "0",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m180",
@@ -1854,7 +2034,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "3",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m181",
@@ -1864,7 +2045,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "is",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m182",
@@ -1873,8 +2055,9 @@
    "n_tokens": 3695,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "251",
-   "ok_rescored": false
+   "pred_rescored": "1,251",
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m183",
@@ -1884,7 +2067,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "23",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m184",
@@ -1893,8 +2077,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "\\frac{k^2+2k+",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m185",
@@ -1904,7 +2089,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m186",
@@ -1914,7 +2100,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "7",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m187",
@@ -1924,7 +2111,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "7",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m188",
@@ -1934,7 +2122,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "functions",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m189",
@@ -1944,7 +2133,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "hp",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m190",
@@ -1954,7 +2144,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "13/18",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m191",
@@ -1964,7 +2155,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "0",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m192",
@@ -1974,7 +2166,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "30",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m193",
@@ -1984,7 +2177,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "4",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m194",
@@ -1994,7 +2188,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\infty",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m195",
@@ -2004,7 +2199,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "24",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m196",
@@ -2014,7 +2210,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "1600",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m197",
@@ -2024,7 +2221,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "270",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "last line"
   },
   {
    "id": "m198",
@@ -2034,7 +2232,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "\\frac{n!}{6!2!}",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m199",
@@ -2044,7 +2243,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "17",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m200",
@@ -2054,7 +2254,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "40",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m201",
@@ -2064,7 +2265,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "n\\equiv3\\pmod{6}",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m202",
@@ -2074,7 +2276,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "head",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m203",
@@ -2084,7 +2287,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": null,
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m204",
@@ -2094,7 +2298,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "64",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m205",
@@ -2103,8 +2308,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "Now,weneedtocalculateA\\mathbf",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m206",
@@ -2114,7 +2320,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "(\\frac{3}{2},-13)",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m207",
@@ -2124,7 +2331,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "28",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m208",
@@ -2134,7 +2342,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m209",
@@ -2144,7 +2353,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "16",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m210",
@@ -2154,7 +2364,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": null,
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m211",
@@ -2164,7 +2375,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "5",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m212",
@@ -2174,7 +2386,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "56",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "boxed"
   },
   {
    "id": "m213",
@@ -2184,7 +2397,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "3}^\\infty\\frac{1}{f_k},thenitmatchesthepattern",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m214",
@@ -2194,7 +2408,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "55",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m215",
@@ -2204,7 +2419,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "2",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m216",
@@ -2214,7 +2430,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "6",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m217",
@@ -2224,7 +2441,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "900",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m218",
@@ -2234,7 +2452,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "(-1,6)",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m219",
@@ -2244,7 +2463,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m220",
@@ -2254,7 +2474,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\frac{16}{27}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m221",
@@ -2264,7 +2485,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "900",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m222",
@@ -2274,7 +2496,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\frac{6}{25}",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "last line"
   },
   {
    "id": "m223",
@@ -2284,7 +2507,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "14",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m224",
@@ -2294,7 +2518,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\sin^220^\\circ\\sin^240^\\circ\\sin^260^\\circ\\sin^280^\\circ\\sin40^\\circ\\sin60^\\circ",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "last line"
   },
   {
    "id": "m225",
@@ -2304,7 +2529,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "3x-1",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m226",
@@ -2314,7 +2540,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "6",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m227",
@@ -2324,7 +2551,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "c",
-   "ok_rescored": false
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m228",
@@ -2334,7 +2562,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "48\\pi",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m229",
@@ -2344,7 +2573,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "45",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m230",
@@ -2353,8 +2583,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "16",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m231",
@@ -2363,8 +2594,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "T",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m232",
@@ -2374,7 +2606,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "0",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m233",
@@ -2383,8 +2616,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "\\frac{1}{2}[(\\mathbf{a}\\times\\mathbf{b})^2+\\",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m234",
@@ -2394,7 +2628,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "34",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m235",
@@ -2404,7 +2639,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "\\frac{26}{45}",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m236",
@@ -2414,7 +2650,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "12",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m237",
@@ -2423,8 +2660,9 @@
    "n_tokens": 12975,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "4",
-   "ok_rescored": false
+   "pred_rescored": "22",
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m238",
@@ -2434,7 +2672,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "-4",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m239",
@@ -2443,8 +2682,9 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "\\frac{",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m240",
@@ -2454,7 +2694,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "128",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m241",
@@ -2464,7 +2705,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "17",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m242",
@@ -2474,7 +2716,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "27044",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m243",
@@ -2484,7 +2727,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "3",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m244",
@@ -2494,7 +2738,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "8",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m245",
@@ -2503,8 +2748,9 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "4",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m246",
@@ -2514,7 +2760,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "18",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m247",
@@ -2524,7 +2771,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\frac{10}{11}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m248",
@@ -2534,7 +2782,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "-\\mathbf{I}",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "last line"
   },
   {
    "id": "m249",
@@ -2544,7 +2793,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "17",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m250",
@@ -2554,7 +2804,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "13",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m251",
@@ -2564,7 +2815,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "36",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m252",
@@ -2574,7 +2826,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "81",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m253",
@@ -2584,7 +2837,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1/8",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m254",
@@ -2594,7 +2848,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m255",
@@ -2604,7 +2859,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "E",
-   "ok_rescored": false
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m256",
@@ -2614,7 +2870,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\frac{8}{21}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m257",
@@ -2624,7 +2881,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "864",
-   "ok_rescored": false
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m258",
@@ -2634,7 +2892,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "16",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m259",
@@ -2644,7 +2903,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "22",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m260",
@@ -2654,7 +2914,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "120^\\circ",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m261",
@@ -2664,7 +2925,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "76",
-   "ok_rescored": false
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m262",
@@ -2674,7 +2936,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "4",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m263",
@@ -2684,7 +2947,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "15",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m264",
@@ -2693,8 +2957,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "0",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m265",
@@ -2704,7 +2969,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "4005",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m266",
@@ -2714,7 +2980,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\frac{33}{100}",
-   "ok_rescored": false
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m267",
@@ -2724,7 +2991,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "(6,0)",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m268",
@@ -2734,7 +3002,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m269",
@@ -2744,7 +3013,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "6",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m270",
@@ -2754,7 +3024,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "10",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m271",
@@ -2764,7 +3035,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "333",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m272",
@@ -2774,7 +3046,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "11330",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m273",
@@ -2783,8 +3056,9 @@
    "n_tokens": 14795,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "000",
-   "ok_rescored": false
+   "pred_rescored": "1,250",
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m274",
@@ -2793,8 +3067,9 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "calculate",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m275",
@@ -2804,7 +3079,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "7",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m276",
@@ -2814,7 +3090,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "11",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m277",
@@ -2824,7 +3101,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\sqrt{53}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m278",
@@ -2834,7 +3112,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "255",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m279",
@@ -2844,7 +3123,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "formulation",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m280",
@@ -2854,7 +3134,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "8",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m281",
@@ -2864,7 +3145,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "actually",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m282",
@@ -2873,8 +3155,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "a_{even}\\timesn",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m283",
@@ -2884,7 +3167,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m284",
@@ -2894,7 +3178,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "last line"
   },
   {
    "id": "m285",
@@ -2904,7 +3189,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "So",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "last line"
   },
   {
    "id": "m286",
@@ -2914,7 +3200,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m287",
@@ -2924,7 +3211,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "0",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m288",
@@ -2934,7 +3222,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "0",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m289",
@@ -2944,7 +3233,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "0",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m290",
@@ -2954,7 +3244,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "4",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m291",
@@ -2964,7 +3255,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "63",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m292",
@@ -2973,8 +3265,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "10",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m293",
@@ -2984,7 +3277,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "(\\frac{3}{5},\\frac{8}{3}]",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m294",
@@ -2994,7 +3288,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "38",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m295",
@@ -3003,8 +3298,9 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m296",
@@ -3014,7 +3310,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "defined",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m297",
@@ -3024,7 +3321,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "103",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m298",
@@ -3033,8 +3331,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "\\mathbf{a}",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m299",
@@ -3043,8 +3342,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "confused",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m300",
@@ -3054,7 +3354,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "6",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m301",
@@ -3063,8 +3364,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "50",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m302",
@@ -3074,7 +3376,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "2",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m303",
@@ -3083,8 +3386,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "2",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m304",
@@ -3094,7 +3398,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "9",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m305",
@@ -3104,7 +3409,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\frac{9}{19}",
-   "ok_rescored": false
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m306",
@@ -3114,7 +3420,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "So",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "last line"
   },
   {
    "id": "m307",
@@ -3124,7 +3431,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "(-\\infty,0]",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m308",
@@ -3134,7 +3442,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "0",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m309",
@@ -3144,7 +3453,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "14",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m310",
@@ -3154,7 +3464,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "49",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m311",
@@ -3164,7 +3475,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "Sum",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "last line"
   },
   {
    "id": "m312",
@@ -3174,7 +3486,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "(5,\\infty)",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m313",
@@ -3184,7 +3497,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "12\\pi",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m314",
@@ -3194,7 +3508,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "(2,4)",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m315",
@@ -3204,7 +3519,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "41",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m316",
@@ -3214,7 +3530,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "12",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m317",
@@ -3224,7 +3541,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "0",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m318",
@@ -3234,7 +3552,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\frac{11+9a}{20}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m319",
@@ -3244,7 +3563,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "-128",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m320",
@@ -3254,7 +3574,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "-24/25",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m321",
@@ -3264,7 +3585,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "10",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m322",
@@ -3274,7 +3596,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "-1",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m323",
@@ -3283,8 +3606,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "say",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m324",
@@ -3293,8 +3617,9 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "the",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m325",
@@ -3304,7 +3629,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "4",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m326",
@@ -3314,7 +3640,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "1",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m327",
@@ -3323,8 +3650,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "1",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m328",
@@ -3334,7 +3662,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "3",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m329",
@@ -3344,7 +3673,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "4",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m330",
@@ -3353,8 +3683,9 @@
    "n_tokens": 14856,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "940",
-   "ok_rescored": false
+   "pred_rescored": "1,940",
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m331",
@@ -3364,7 +3695,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\dfrac{13}{6}",
-   "ok_rescored": false
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m332",
@@ -3374,7 +3706,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "e_2+y^2",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m333",
@@ -3384,7 +3717,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "2",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m334",
@@ -3394,7 +3728,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "-120",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m335",
@@ -3404,7 +3739,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "3",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m336",
@@ -3414,7 +3750,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "26000",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m337",
@@ -3424,7 +3761,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "6",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m338",
@@ -3434,7 +3772,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "4343_6",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m339",
@@ -3443,8 +3782,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "2",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m340",
@@ -3453,8 +3793,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "\\mathbf{b}",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m341",
@@ -3464,7 +3805,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "2",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m342",
@@ -3474,7 +3816,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "2",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m343",
@@ -3484,7 +3827,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "500",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m344",
@@ -3494,7 +3838,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "5",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m345",
@@ -3504,7 +3849,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m346",
@@ -3514,7 +3860,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "66",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m347",
@@ -3524,7 +3871,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "24r^3+44r-6r^2-24",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m348",
@@ -3534,7 +3882,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "4495",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m349",
@@ -3544,7 +3893,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "formulation",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m350",
@@ -3554,7 +3904,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "4",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m351",
@@ -3564,7 +3915,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1/16",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m352",
@@ -3574,7 +3926,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "33",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m353",
@@ -3584,7 +3937,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "48",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m354",
@@ -3594,7 +3948,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "81",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m355",
@@ -3604,7 +3959,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": null,
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m356",
@@ -3614,7 +3970,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "(-\\sqrt{3},\\sqrt{3})",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m357",
@@ -3624,7 +3981,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "4",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m358",
@@ -3634,7 +3992,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "ellipse",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m359",
@@ -3643,8 +4002,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "sum",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m360",
@@ -3654,7 +4014,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\frac{7}{4}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m361",
@@ -3663,8 +4024,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "\\sqrt{768",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m362",
@@ -3674,7 +4036,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\frac{1}{4}",
-   "ok_rescored": false
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m363",
@@ -3684,7 +4047,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "2",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m364",
@@ -3694,7 +4058,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "25",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m365",
@@ -3704,7 +4069,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "44100-210^2",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m366",
@@ -3714,7 +4080,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "4",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m367",
@@ -3724,7 +4091,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m368",
@@ -3734,7 +4102,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "31",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m369",
@@ -3744,7 +4113,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "What",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "last line"
   },
   {
    "id": "m370",
@@ -3754,7 +4124,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "-41",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m371",
@@ -3764,7 +4135,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "-0.25",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m372",
@@ -3773,8 +4145,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "2\\",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m373",
@@ -3784,7 +4157,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "1+2i",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m374",
@@ -3794,7 +4168,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "4",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m375",
@@ -3804,7 +4179,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "25",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m376",
@@ -3814,7 +4190,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "(8,-2)",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m377",
@@ -3824,7 +4201,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "4",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m378",
@@ -3834,7 +4212,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "3",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m379",
@@ -3844,7 +4223,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "11",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m380",
@@ -3854,7 +4234,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "(0,9)\\cup(9,36)",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m381",
@@ -3863,8 +4244,9 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "is",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m382",
@@ -3873,8 +4255,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "are",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m383",
@@ -3884,7 +4267,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "[-2,7]",
-   "ok_rescored": false
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m384",
@@ -3894,7 +4278,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "15x-80",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m385",
@@ -3904,7 +4289,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "48",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m386",
@@ -3914,7 +4300,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "11",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m387",
@@ -3924,7 +4311,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "18",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m388",
@@ -3934,7 +4322,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "5.5",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m389",
@@ -3944,7 +4333,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m390",
@@ -3954,7 +4344,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "10",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m391",
@@ -3964,7 +4355,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "0",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m392",
@@ -3974,7 +4366,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\sqrt{2}",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m393",
@@ -3984,7 +4377,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\frac{3}{4}",
-   "ok_rescored": false
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m394",
@@ -3994,7 +4388,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "variable",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m395",
@@ -4004,7 +4399,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "4",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m396",
@@ -4014,7 +4410,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "16",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m397",
@@ -4024,7 +4421,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "23",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m398",
@@ -4034,7 +4432,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "navin",
-   "ok_rescored": false
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m399",
@@ -4044,7 +4443,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "326.5",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m400",
@@ -4054,7 +4454,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "perpendicular",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m401",
@@ -4063,8 +4464,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "|1-",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m402",
@@ -4074,7 +4476,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "-2+7i",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m403",
@@ -4084,7 +4487,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "3",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m404",
@@ -4094,7 +4498,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "3",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m405",
@@ -4103,8 +4508,9 @@
    "n_tokens": 17100,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "5",
-   "ok_rescored": false
+   "pred_rescored": "60",
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m406",
@@ -4114,7 +4520,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "0",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m407",
@@ -4124,7 +4531,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "9",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m408",
@@ -4134,7 +4542,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\begin{pmatrix}-2\\3\\end{pmatrix}",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m409",
@@ -4144,7 +4553,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "2c",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m410",
@@ -4154,7 +4564,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "formulation",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m411",
@@ -4164,7 +4575,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "0",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m412",
@@ -4174,7 +4586,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m413",
@@ -4184,7 +4597,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "5r^5",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m414",
@@ -4194,7 +4608,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "10",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m415",
@@ -4204,7 +4619,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "9",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m416",
@@ -4214,7 +4630,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\frac{1}{8}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m417",
@@ -4224,7 +4641,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "-2",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m418",
@@ -4234,7 +4652,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "2\\sqrt{5}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m419",
@@ -4244,7 +4663,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "(-\\frac{70}{13},\\frac{250}{13},-\\frac{40}{13})",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m420",
@@ -4254,7 +4674,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\mathbf{b}",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m421",
@@ -4264,7 +4685,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "0",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m422",
@@ -4274,7 +4696,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "0",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "last line"
   },
   {
    "id": "m423",
@@ -4283,8 +4706,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "1001",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m424",
@@ -4294,7 +4718,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "600",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m425",
@@ -4304,7 +4729,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\frac{1}{3}(a^2+b^2+c^2)",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m426",
@@ -4314,7 +4740,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "6\\sqrt{2}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m427",
@@ -4324,7 +4751,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "29",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m428",
@@ -4334,7 +4762,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "88",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m429",
@@ -4344,7 +4773,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "50",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m430",
@@ -4354,7 +4784,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "4.5",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m431",
@@ -4364,7 +4795,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "[\\frac{\\pi^2}{8},\\frac{5\\pi^2}{4}]",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m432",
@@ -4373,8 +4805,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "-1",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m433",
@@ -4384,7 +4817,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "0.35625",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m434",
@@ -4393,8 +4827,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "\\frac{L}{",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m435",
@@ -4404,7 +4839,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "(-\\infty,2)\\cup(3,\\infty)",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m436",
@@ -4414,7 +4850,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "4",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m437",
@@ -4424,7 +4861,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "contradictions",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m438",
@@ -4434,7 +4872,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "4",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m439",
@@ -4444,7 +4883,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "x^8+x^7+x^6+x^5+x^4+x^3+x^2+x+1",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m440",
@@ -4454,7 +4894,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "14",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m441",
@@ -4464,7 +4905,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "550",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m442",
@@ -4474,7 +4916,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "256",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m443",
@@ -4484,7 +4927,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "45",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m444",
@@ -4493,8 +4937,9 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "ABCD",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m445",
@@ -4504,7 +4949,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "abcd",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m446",
@@ -4514,7 +4960,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "129/256",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "last line"
   },
   {
    "id": "m447",
@@ -4524,7 +4971,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "9",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m448",
@@ -4534,7 +4982,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "44",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m449",
@@ -4544,7 +4993,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "47",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m450",
@@ -4554,7 +5004,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "64",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m451",
@@ -4564,7 +5015,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "177.5",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m452",
@@ -4574,7 +5026,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "143",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m453",
@@ -4584,7 +5037,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "8",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m454",
@@ -4593,8 +5047,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "\\begin{pmatrix}-",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m455",
@@ -4604,7 +5059,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "6",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m456",
@@ -4614,7 +5070,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": null,
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m457",
@@ -4624,7 +5081,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "0",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m458",
@@ -4634,7 +5092,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "7",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m459",
@@ -4644,7 +5103,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "18.9",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m460",
@@ -4654,7 +5114,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "q(0,0)",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m461",
@@ -4664,7 +5125,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "12",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m462",
@@ -4674,7 +5136,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "126.59",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m463",
@@ -4684,7 +5147,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "2",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m464",
@@ -4694,7 +5158,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "9",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m465",
@@ -4704,7 +5169,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "121",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m466",
@@ -4713,8 +5179,9 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "1-1+1-1+1-1+1-1+",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m467",
@@ -4724,7 +5191,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "15",
-   "ok_rescored": false
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m468",
@@ -4734,7 +5202,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "8",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m469",
@@ -4744,7 +5213,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "25",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m470",
@@ -4754,7 +5224,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "2.5^{10}",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m471",
@@ -4764,7 +5235,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "84",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m472",
@@ -4774,7 +5246,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "137\\frac{1}{2}",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m473",
@@ -4784,7 +5257,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "10",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m474",
@@ -4794,7 +5268,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "3",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m475",
@@ -4804,7 +5279,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "16",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m476",
@@ -4814,7 +5290,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "900",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m477",
@@ -4824,7 +5301,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "2",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m478",
@@ -4833,8 +5311,9 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "\\frac{-1.5}{",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m479",
@@ -4844,7 +5323,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "2",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m480",
@@ -4854,7 +5334,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m481",
@@ -4864,7 +5345,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "1",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m482",
@@ -4873,8 +5355,9 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "n",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m483",
@@ -4883,8 +5366,9 @@
    "n_tokens": 32793,
    "closed": true,
    "think_end_at": 30743,
-   "pred_rescored": "-42/17\\neq4",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m484",
@@ -4894,7 +5378,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "10",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "boxed"
   },
   {
    "id": "m485",
@@ -4904,7 +5389,8 @@
    "closed": true,
    "think_end_at": 28668,
    "pred_rescored": "significantly",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m486",
@@ -4914,7 +5400,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "216",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m487",
@@ -4924,7 +5411,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "2",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m488",
@@ -4934,7 +5422,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "36",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "last line"
   },
   {
    "id": "m489",
@@ -4944,7 +5433,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "p",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m490",
@@ -4954,7 +5444,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "15",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m491",
@@ -4964,7 +5455,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "48",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m492",
@@ -4974,7 +5466,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "-2",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "last line"
   },
   {
    "id": "m493",
@@ -4984,7 +5477,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "20",
-   "ok_rescored": true
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m494",
@@ -4993,8 +5487,9 @@
    "n_tokens": 32768,
    "closed": true,
    "think_end_at": null,
-   "pred_rescored": "1,",
-   "ok_rescored": false
+   "pred_rescored": null,
+   "ok_rescored": false,
+   "rule": null
   },
   {
    "id": "m495",
@@ -5004,7 +5499,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "(2,102)",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m496",
@@ -5014,7 +5510,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "\\dfrac{5}{13}",
-   "ok_rescored": false
+   "ok_rescored": true,
+   "rule": "marked line"
   },
   {
    "id": "m497",
@@ -5024,7 +5521,8 @@
    "closed": true,
    "think_end_at": null,
    "pred_rescored": "12",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "marked line"
   },
   {
    "id": "m498",
@@ -5034,7 +5532,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "dependon",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "last line"
   },
   {
    "id": "m499",
@@ -5044,7 +5543,8 @@
    "closed": true,
    "think_end_at": 30743,
    "pred_rescored": "AH",
-   "ok_rescored": false
+   "ok_rescored": false,
+   "rule": "last line"
   }
  ]
 }
