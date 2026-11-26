@@ -8,6 +8,19 @@
 > then reset: the sandbox holds no pass, and the evidence is kept outside it. The phase-14 sandbox was
 > moved aside whole before the fresh one was built (renamed, not deleted).
 
+> **Note 2026-11-26, 22:59 (before the editor session; no rule, endpoint or prediction changed).** The
+> editor type could not be used as registered. The harness fixes its list of helper types when a chat
+> starts, and `glm54-editor` was defined afterwards (a copy of the Flash editor's definition with only the
+> model changed), so it cannot be loaded into the chat that runs the session. The editor therefore runs as
+> the harness's built-in general helper, which takes the chat's model, GLM-5.4. Before the session a probe
+> of that helper (no tools used) showed what it is handed at its start: the user's general working rules,
+> which say nothing about this project, the fault or mathematics, and a list of tool names; no project
+> notes. To give it what the editor type would have given, its briefing starts with the four operating
+> rules of the editor types, word for word, and the sentence that its tools are exactly those of the editor
+> types (Read, Glob, Grep, Write, Edit and Bash; no web tools, no other helpers). The helper has more
+> tools than that, so the sentence is enforced by instruction and audited afterwards, like the rules of
+> the briefing. The first attempt to start the registered type was refused by the harness; nothing ran.
+
 Phase 14 ran its experiment with the protocol's fallback editor, GLM-5.3-Flash, a small model, and that
 editor did not reach the published edit (11.0% against 54.2% on MATH-500). It left a question phase 14
 could not answer: is the gap a matter of the editor's strength, or of the hint and the bigger budget that
@@ -41,10 +54,12 @@ checker.
 
 ## Setup
 
-- **Editor:** one context-sterile session of the `glm54-editor` agent type (GLM-5.4), briefed only with
-  the path of `phase14/EDITOR_PROMPT.md`. One autonomous session. The host sends no message unless a turn
-  ends before the finish condition; then it sends a neutral "continue" and nothing else, and each message
-  is recorded.
+- **Editor:** one context-sterile session on GLM-5.4, run through the harness's built-in general helper
+  because the registered `glm54-editor` type cannot be loaded into the running chat (the note above). It
+  is briefed with the editor types' four operating rules, their tool list, and the path of
+  `phase14/EDITOR_PROMPT.md`; nothing else. One autonomous session. The host sends no message unless a
+  turn ends before the finish condition; then it sends a neutral "continue" and nothing else, and each
+  message is recorded.
 - **Sandbox:** rebuilt with `phase14/make_sandbox.sh` at `~/wsp14/sandbox`, after the phase-14 sandbox
   has been moved aside whole (renamed, not deleted).
 - **Technical check:** as in phase 14. Four practice problems on the unmodified model before the session;
