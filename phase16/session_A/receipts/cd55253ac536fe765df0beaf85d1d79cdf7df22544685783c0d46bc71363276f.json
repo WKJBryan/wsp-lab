@@ -1,0 +1,17 @@
+{
+ "time": "2026-11-27T14:45:31",
+ "fingerprint": "cd55253ac536fe765df0beaf85d1d79cdf7df22544685783c0d46bc71363276f",
+ "note": "FINAL (re-checked): closing-gain edit k=2.1 on the 69 line-end closing neurons of the layer-23 MLP, along the </think> read-out direction; identical to the weights measured in passes 2 and 4",
+ "changed_tensors": [
+  {
+   "tensor": "model.language_model.layers.23.mlp.down_proj.weight",
+   "shape": [
+    1024,
+    3584
+   ],
+   "changed_values": 68246,
+   "max_abs_delta": 0.007153,
+   "norm_delta": 0.159488
+  }
+ ]
+}

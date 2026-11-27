@@ -1,0 +1,421 @@
+
+################ p0 (Level 4, Intermediate Algebra) gold=0 pred=None ok=False finish=length ntok=32768 closed=False
+PROBLEM: Compute the sum of the squares of the roots of the equation \[x^{2018} +44x^{2015} + 3x^3 + 404 = 0.\]
+--- tail (900 chars) ---
+a_{n-2} = 1$.
+    $a_{n-3} = 0$.
+    $a_{n-4} = 0$.
+    $e_1 = 2$.
+    $e_2 = 1$.
+    $e_3 = 0$.
+    $e_4 = 0$.
+    $e_5 = 0$.
+    So $e_k = a_{n-k}$ seems correct.
+    Let's check $x^2 + 2x + 1$ again.
+    $a_{n-1} = 2$.
+    $a_{n-2} = 1$.
+    $a_{n-3} = 0$.
+    $a_{n-4} = 0$.
+    $e_1 = 2$.
+    $e_2 = 1$.
+    $e_3 = 0$.
+    $e_4 = 0$.
+    $e_5 = 0$.
+    So $e_k = a_{n-k}$ seems correct.
+    Let's check $x^2 + 2x + 1$ again.
+    $a_{n-1} = 2$.
+    $a_{n-2} = 1$.
+    $a_{n-3} = 0$.
+    $a_{n-4} = 0$.
+    $e_1 = 2$.
+    $e_2 = 1$.
+    $e_3 = 0$.
+    $e_4 = 0$.
+    $e_5 = 0$.
+    So $e_k = a_{n-k}$ seems correct.
+    Let's check $x^2 + 2x + 1$ again.
+    $a_{n-1} = 2$.
+    $a_{n-2} = 1$.
+    $a_{n-3} = 0$.
+    $a_{n-4} = 0$.
+    $e_1 = 2$.
+    $e_2 = 1$.
+    $e_3 = 0$.
+    $e_4 = 0$.
+    $e_5 = 0$.
+    So $e_k = a_{n-k}$ seems correct.
+    Let's check $x^2 + 2x + 1$ again.
+    $a_{n-1} = 2
+
+################ p2 (Level 1, Algebra) gold=3 pred=3 ok=True finish=length ntok=32768 closed=False
+PROBLEM: Evaluate $\lfloor0.999\rfloor+\lceil2.001\rceil$.
+--- tail (900 chars) ---
+ng of 2.001 is 3.
+Sum is 3.
+
+I'll write the response now.
+The floor of 0.999 is 0.
+The ceiling of 2.001 is 3.
+Sum is 3.
+
+I'll write the response now.
+The floor of 0.999 is 0.
+The ceiling of 2.001 is 3.
+Sum is 3.
+
+I'll write the response now.
+The floor of 0.999 is 0.
+The ceiling of 2.001 is 3.
+Sum is 3.
+
+I'll write the response now.
+The floor of 0.999 is 0.
+The ceiling of 2.001 is 3.
+Sum is 3.
+
+I'll write the response now.
+The floor of 0.999 is 0.
+The ceiling of 2.001 is 3.
+Sum is 3.
+
+I'll write the response now.
+The floor of 0.999 is 0.
+The ceiling of 2.001 is 3.
+Sum is 3.
+
+I'll write the response now.
+The floor of 0.999 is 0.
+The ceiling of 2.001 is 3.
+Sum is 3.
+
+I'll write the response now.
+The floor of 0.999 is 0.
+The ceiling of 2.001 is 3.
+Sum is 3.
+
+I'll write the response now.
+The floor of 0.999 is 0.
+The ceiling of 2.001 is 3.
+Sum is 3.
+
+I'll write the response now.
+The floor of 0
+
+################ p4 (Level 5, Algebra) gold=-2 pred=None ok=False finish=length ntok=32768 closed=False
+PROBLEM: The red parabola shown is the graph of the equation $x = ay^2 + by + c$.  Find $c$.  (The grid lines are spaced one unit apart.)
+
+[asy]
+size(150);
+real ticklen=3;
+real tickspace=2;
+
+real ticklength=0.1cm;
+real axisarrowsize=0.14cm;
+pen axispen=black+1.3bp;
+real vectorarrowsize=0.2cm;
+real tickdown=-0.5;
+real tickdownlength=-0.15inch;
+real tickdownbase=0.3;
+real wholetickdown=tickdown;
+void rr_cartesian_axes(real xleft, real xright, real ybottom, real ytop, real xstep=1, real ystep=1, bool
+
+useticks=false, bool complexplane=false, bool usegrid=true) {
+
+import graph;
+
+real i;
+
+if(complexplane) {
+--- tail (900 chars) ---
+graph(f, lowery, uppery, operator ..)`?
+Actually, looking at the code, `operator` is not a variable.
+Maybe the code is `graph(f, lowery, uppery, operator ..)`?
+Actually, looking at the code, `operator` is not a variable.
+Maybe the code is `graph(f, lowery, uppery, operator ..)`?
+Actually, looking at the code, `operator` is not a variable.
+Maybe the code is `graph(f, lowery, uppery, operator ..)`?
+Actually, looking at the code, `operator` is not a variable.
+Maybe the code is `graph(f, lowery, uppery, operator ..)`?
+Actually, looking at the code, `operator` is not a variable.
+Maybe the code is `graph(f, lowery, uppery, operator ..)`?
+Actually, looking at the code, `operator` is not a variable.
+Maybe the code is `graph(f, lowery, uppery, operator ..)`?
+Actually, looking at the code, `operator` is not a variable.
+Maybe the code is `graph(f, lowery, uppery, operator ..)`?
+Actually, looking at
+
+################ p7 (Level 3, Number Theory) gold=95 pred=None ok=False finish=length ntok=32768 closed=False
+PROBLEM: Jo is thinking of a positive integer less than 100. It is one less than a multiple of 8, and it is three less than a multiple of 7. What is the greatest possible integer Jo could be thinking of?
+--- tail (900 chars) ---
+                                    *   This means $n = 8k - 1$ is not the case.
+                                    *   This means $n = 8k - 1$ is not the case.
+                                    *   This means $n = 8k - 1$ is not the case.
+                                    *   Okay, I think I've been stuck on this interpretation loop.
+                                    *   Let's try to parse the sentence literally.
+                                    *   "It is one less than a multiple of 8".
+                                    *   This means $n = 8k - 1$ is not the case.
+                                    *   This means $n = 8k - 1$ is not the case.
+                                    *   This means $n = 8k - 1$ is not the case.
+                                    *   This means $n = 8k - 1$ is not the case.
+                                    *   Okay, I think I've been stuck on
+
+################ p9 (Level 5, Geometry) gold=937 pred=None ok=False finish=length ntok=32768 closed=False
+PROBLEM: An equilateral triangle is inscribed in the ellipse whose equation is $x^2+4y^2=4$. One vertex of the triangle is $(0,1)$, one altitude is contained in the y-axis, and the square of the length of each side is $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
+
+--- tail (900 chars) ---
+$V_3 = (x, y)$.
+So $V_2$ and $V_3$ are on the ellipse.
+So $x^2 + 4y^2 = 4$.
+So $x^2 = 4 - 4y^2$.
+So $AB^2 = x^2 + (y-1)^2$.
+$BC^2 = 4x^2$.
+$AC^2 = x^2 + (y-1)^2$.
+So $AB^2 = 3x^2$ is NOT correct.
+This implies my deduction that $V_2$ and $V_3$ are symmetric about the y-axis is wrong.
+Why?
+Because $V_2$ and $V_3$ are vertices of the triangle.
+The altitude from $V_2$ to $V_3$ lies on the y-axis.
+This means the segment $V_2 V_3$ is perpendicular to the y-axis.
+So $V_2$ and $V_3$ are symmetric about the y-axis.
+So $V_2 = (-x, y)$ and $V_3 = (x, y)$.
+So $V_2$ and $V_3$ are on the ellipse.
+So $x^2 + 4y^2 = 4$.
+So $x^2 = 4 - 4y^2$.
+So $AB^2 = x^2 + (y-1)^2$.
+$BC^2 = 4x^2$.
+$AC^2 = x^2 + (y-1)^2$.
+So $AB^2 = 3x^2$ is NOT correct.
+This implies my deduction that $V_2$ and $V_3$ are symmetric about the y-axis is wrong.
+Why?
+Because $V_2$ and $V_3$ are vertices of the triangle.
+The altitude from $V_2
+
+################ p11 (Level 5, Number Theory) gold=16 pred=None ok=False finish=length ntok=32768 closed=False
+PROBLEM: Call an integer $n$ oddly powerful if there exist positive integers $a$ and $b$, where $b>1$, $b$ is odd, and $a^b = n$. How many oddly powerful integers are less than $2010$?
+--- tail (900 chars) ---
+e odd integer $a$.
+Let's check if $n$ can be oddly powerful.
+If $n$ is odd, $n$ is a perfect power of some odd integer $a$.
+If $n$ is odd, $n$ is a perfect power of some odd integer $a$.
+Let's check if $n$ can be oddly powerful.
+If $n$ is odd, $n$ is a perfect power of some odd integer $a$.
+If $n$ is odd, $n$ is a perfect power of some odd integer $a$.
+Let's check if $n$ can be oddly powerful.
+If $n$ is odd, $n$ is a perfect power of some odd integer $a$.
+If $n$ is odd, $n$ is a perfect power of some odd integer $a$.
+Let's check if $n$ can be oddly powerful.
+If $n$ is odd, $n$ is a perfect power of some odd integer $a$.
+If $n$ is odd, $n$ is a perfect power of some odd integer $a$.
+Let's check if $n$ can be oddly powerful.
+If $n$ is odd, $n$ is a perfect power of some odd integer $a$.
+If $n$ is odd, $n$ is a perfect power of some odd integer $a$.
+Let's check if $n$ can be oddly powerful.
+
+################ p12 (Level 5, Intermediate Algebra) gold=(x^2 + x + 1)(x^8 - x^7 + x^5 - x^4 + x^3 - x + 1) pred=None ok=False finish=length ntok=32768 closed=False
+PROBLEM: Write $x^{10} + x^5 + 1$ as the product of two polynomials with integer coefficients.
+--- tail (900 chars) ---
+s try to see if it factors into $(x^5+1)(x^5+1)$? No.
+    *   Let's try to see if it factors into $(x^5+1)(x^5+1)$? No.
+    *   Let's try to see if it factors into $(x^5+1)(x^5+1)$? No.
+    *   Let's try to see if it factors into $(x^5+1)(x^5+1)$? No.
+    *   Let's try to see if it factors into $(x^5+1)(x^5+1)$? No.
+    *   Let's try to see if it factors into $(x^5+1)(x^5+1)$? No.
+    *   Let's try to see if it factors into $(x^5+1)(x^5+1)$? No.
+    *   Let's try to see if it factors into $(x^5+1)(x^5+1)$? No.
+    *   Let's try to see if it factors into $(x^5+1)(x^5+1)$? No.
+    *   Let's try to see if it factors into $(x^5+1)(x^5+1)$? No.
+    *   Let's try to see if it factors into $(x^5+1)(x^5+1)$? No.
+    *   Let's try to see if it factors into $(x^5+1)(x^5+1)$? No.
+    *   Let's try to see if it factors into $(x^5+1)(x^5+1)$? No.
+    *   Let's try to see if it factors into $(x^5+1)(x
+
+################ p13 (Level 3, Intermediate Algebra) gold=-10 pred=None ok=False finish=length ntok=32768 closed=False
+PROBLEM: The polynomial equation \[x^3 + bx + c = 0,\]where $b$ and $c$ are rational numbers, has $5-\sqrt{2}$ as a root. It also has an integer root. What is it?
+--- tail (900 chars) ---
+
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So $bx$ is irrational.
+So
+
+################ p14 (Level 3, Algebra) gold=9 pred=None ok=False finish=length ntok=32768 closed=False
+PROBLEM: On a particular day in Salt Lake, UT, the temperature was given by $-t^2 +12t+50$ where $t$ is the time in hours past noon. What is the largest $t$ value at which the temperature was exactly 77 degrees?
+--- tail (900 chars) ---
+                                       *   This is consistent.
+                                            *   So why did I think the function must be decreasing from 3 to 6?
+                                            *   Because I assumed the minimum is at 6.
+                                            *   But if the minimum is at 6, and the roots are 3 and 9.
+                                            *   Then the function must be *greater* than 77 at all points except 3 and 9.
+                                            *   This is consistent.
+                                            *   So why did I think the function must be decreasing from 3 to 6?
+                                            *   Because I assumed the minimum is at 6.
+                                            *   But if the minimum is at 6, and the roots are 3 and 9.
+                                           
+
+################ p15 (Level 4, Intermediate Algebra) gold=11 pred=None ok=False finish=length ntok=32768 closed=False
+PROBLEM: Find the maximum of
+\[\sqrt{x + 27} + \sqrt{13 - x} + \sqrt{x}\]for $0 \le x \le 13.$
+--- tail (900 chars) ---
+ $x=0$.
+                    *   So $f(x)$ increases.
+                    *   But $f'(x)$ is positive at $x=0$.
+                    *   So $f(x)$ increases.
+                    *   But $f'(x)$ is positive at $x=0$.
+                    *   So $f(x)$ increases.
+                    *   But $f'(x)$ is positive at $x=0$.
+                    *   So $f(x)$ increases.
+                    *   But $f'(x)$ is positive at $x=0$.
+                    *   So $f(x)$ increases.
+                    *   But $f'(x)$ is positive at $x=0$.
+                    *   So $f(x)$ increases.
+                    *   But $f'(x)$ is positive at $x=0$.
+                    *   So $f(x)$ increases.
+                    *   But $f'(x)$ is positive at $x=0$.
+                    *   So $f(x)$ increases.
+                    *   But $f'(x)$ is positive at $x=0$.
+                    *   So $f(x)$ increases.
+                    *  
+
+################ p17 (Level 4, Counting & Probability) gold=0.323 pred=None ok=False finish=length ntok=32768 closed=False
+PROBLEM: Ten standard 6-sided dice are rolled.  What is the probability that exactly one of the dice shows a 1?  Express your answer as a decimal rounded to the nearest thousandth.
+--- tail (900 chars) ---
+1.
+            *   If I roll 10 dice, and I want exactly one 1.
+            *   This means there is exactly one die showing a 1.
+            *   So the number of 1s is 1.
+            *   This means the probability is $P(\text{Exactly one 1})$.
+            *   Let's re-evaluate $P(\text{Exactly one 1})$.
+            *   $P(\text{Exactly one 1}) = \binom{10}{1} \times (1/6) \times (5/6)^9$.
+            *   $= 10 \times 1/6 \times (5/6)^9$.
+            *   $= 10 \times 5^9 / 6^{19}$.
+            *   $= 10 \times 1.95 \times 10^6 / 6 \times 10^{19}$.
+            *   $= 3.25 \times 10^{-12}$.
+            *   So the probability is extremely small.
+            *   But wait, if I roll 10 dice, and I want exactly one 1.
+            *   This is $P(\text{Exactly one 1})$.
+            *   This is $P(\text{Exactly one 1})$.
+            *   So the probability is $10^{-12}$.
+            *   Let's check
+
+################ p18 (Level 3, Intermediate Algebra) gold=1 pred=None ok=False finish=length ntok=32768 closed=False
+PROBLEM: Find the number of functions $f : \mathbb{R} \to \mathbb{R}$ such that
+\[f(x + f(y)) = x + y\]for all real numbers $x$ and $y.$
+--- tail (900 chars) ---
+= (x^2+y^2)^2$.
+RHS: $x+y$.
+Not a solution.
+Let's try $f(x) = x^2$.
+$f(x+f(y)) = (x^2+y^2)^2$.
+RHS: $x+y$.
+Not a solution.
+Let's try $f(x) = x^2$.
+$f(x+f(y)) = (x^2+y^2)^2$.
+RHS: $x+y$.
+Not a solution.
+Let's try $f(x) = x^2$.
+$f(x+f(y)) = (x^2+y^2)^2$.
+RHS: $x+y$.
+Not a solution.
+Let's try $f(x) = x^2$.
+$f(x+f(y)) = (x^2+y^2)^2$.
+RHS: $x+y$.
+Not a solution.
+Let's try $f(x) = x^2$.
+$f(x+f(y)) = (x^2+y^2)^2$.
+RHS: $x+y$.
+Not a solution.
+Let's try $f(x) = x^2$.
+$f(x+f(y)) = (x^2+y^2)^2$.
+RHS: $x+y$.
+Not a solution.
+Let's try $f(x) = x^2$.
+$f(x+f(y)) = (x^2+y^2)^2$.
+RHS: $x+y$.
+Not a solution.
+Let's try $f(x) = x^2$.
+$f(x+f(y)) = (x^2+y^2)^2$.
+RHS: $x+y$.
+Not a solution.
+Let's try $f(x) = x^2$.
+$f(x+f(y)) = (x^2+y^2)^2$.
+RHS: $x+y$.
+Not a solution.
+Let's try $f(x) = x^2$.
+$f(x+f(y)) = (x^2+y^2)^2$.
+RHS: $x+y$.
+Not a solution.
+Let's try $f(x) = x^2$.
+$f(x+f(y)) = (x^2+y^2)^2$.
+RHS: $x+y$.
+Not
+
+################ p20 (Level 4, Precalculus) gold=\pi^2 pred=None ok=False finish=length ntok=32768 closed=False
+PROBLEM: Find the area bounded by the graph of $y = \arccos(\sin x)$ and the $x$-axis on the interval $\frac{\pi}{2} \le x \le \frac{5 \pi}{2}.$
+--- tail (900 chars) ---
+                           *   Let's check $y(3\pi/2)$.
+                                                                                                                  
+                                                                                                                *   $y(3\pi/2) = \arccos(-1) = \pi$.
+                                                                                                                  
+                                                                                                                *   Let's check $y(3\pi/2+\pi)$.
+                                                                                                                  
+                                                                                                                *   $y(3\pi/2+\pi) = \arccos(\sin(3\pi/2+\pi)) = \arccos(\sin(3\pi/2)) = \arccos(-1) = \pi$.
+
+
+################ p22 (Level 1, Geometry) gold=110 pred=None ok=False finish=length ntok=32768 closed=False
+PROBLEM: $\Delta ABC$ is isosceles with $AC = BC$. If $m\angle C = 40^{\circ}$, what is the number of degrees in $m\angle CBD$? [asy] pair A,B,C,D,E;
+C = dir(65); B = C + dir(-65); D = (1.5,0); E = (2,0);
+draw(B--C--A--E); dot(D);
+label("$A$",A,S); label("$B$",B,S); label("$D$",D,S); label("$C$",C,N);
+[/asy]
+--- tail (900 chars) ---
+from $CA$ and $CB$.
+            *   So the altitude is at $20^\circ$ from $CA$? No.
+            *   The altitude is at $20^\circ$ from $CA$ and $CB$.
+            *   So the altitude is at $20^\circ$ from $CA$? No.
+            *   The altitude is at $20^\circ$ from $CA$ and $CB$.
+            *   So the altitude is at $20^\circ$ from $CA$? No.
+            *   The altitude is at $20^\circ$ from $CA$ and $CB$.
+            *   So the altitude is at $20^\circ$ from $CA$? No.
+            *   The altitude is at $20^\circ$ from $CA$ and $CB$.
+            *   So the altitude is at $20^\circ$ from $CA$? No.
+            *   The altitude is at $20^\circ$ from $CA$ and $CB$.
+            *   So the altitude is at $20^\circ$ from $CA$? No.
+            *   The altitude is at $20^\circ$ from $CA$ and $CB$.
+            *   So the altitude is at $20^\circ$ from $CA$? No.
+            *   The altitude is at $

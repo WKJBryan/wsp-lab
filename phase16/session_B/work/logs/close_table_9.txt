@@ -1,0 +1,65 @@
+p2    L1 ok=1 CLEAN ntok=  5465 think_tok~  3864 boxed='3'                        | 'I will formulate the response now.'
+p5    L3 ok=1 CLEAN ntok=  6517 think_tok~  4871 boxed='\\frac{7}{10}'            | '*   So the answer should be $7/10$.'
+p7    L3 ok=0 LEAKY ntok= 32768 think_tok~  3721 boxed=None                       | '*   The answer is 95.'
+p10   L4 ok=1 CLEAN ntok=  5267 think_tok~  2402 boxed='7'                        | 'There is no other integer in that range.'
+p13   L3 ok=0 LEAKY ntok= 32768 think_tok~  2770 boxed=None                       | '*   This is impossible for integers.'
+p14   L3 ok=1 CLEAN ntok= 25998 think_tok~ 16236 boxed='9'                        | 'So the answer is 9.'
+p15   L4 ok=0 LEAKY ntok= 32768 think_tok~  5165 boxed=None                       | '*   So max is at $x=13$.'
+p16   L1 ok=1 CLEAN ntok=  8770 think_tok~  4703 boxed='1102'                     | '\\boxed{1102}'
+p20   L4 ok=0 LEAKY ntok= 32768 think_tok~  7594 boxed=None                       | 'W'
+p21   L2 ok=1 CLEAN ntok=  3202 think_tok~  1310 boxed='2010'                     | '*   So $2010$ is the closest multiple.'
+p24   L3 ok=1 CLEAN ntok=  2855 think_tok~  1642 boxed='\\frac{1}{6}'             | 'Probability = 1/6.'
+p26   L1 ok=1 CLEAN ntok=  2122 think_tok~  1178 boxed='7'                        | '*   Largest is 7.'
+p29   L4 ok=1 CLEAN ntok= 20914 think_tok~ 14219 boxed='-4'                       | 'The largest integer is $-4$.'
+p30   L1 ok=1 CLEAN ntok=  2703 think_tok~  1615 boxed='\\frac{\\pi}{6}'          | '*   So, $\\arccos(\\frac{\\sqrt{3}}{2}) = \\frac{\\pi}{6}$.'
+p31   L2 ok=1 CLEAN ntok=  7372 think_tok~  4633 boxed='\\frac{1}{216}'           | '*   This seems robust.'
+p32   L2 ok=1 CLEAN ntok=  5488 think_tok~  4022 boxed='2'                        | '*   So the minimum is 2.'
+p37   L2 ok=1 CLEAN ntok=  4263 think_tok~  2065 boxed='15'                       | '*   Greatest common factor is 15.'
+p41   L2 ok=0 CLEAN ntok= 11677 think_tok~  3449 boxed='-81'                      | '*   So -72 is the answer.'
+p46   L3 ok=1 CLEAN ntok=  6512 think_tok~  3456 boxed='60'                       | '$\\theta = 60^\\circ$.'
+p49   L4 ok=0 LEAKY ntok= 32768 think_tok~  2048 boxed=None                       | 'So the solution seems to be $x < 5$.'
+p50   L2 ok=1 CLEAN ntok=  2390 think_tok~  1554 boxed='70'                       | '*   Result: 70.'
+p51   L2 ok=1 CLEAN ntok=  1839 think_tok~  1011 boxed='2'                        | 'There are 2 real solutions.'
+p52   L5 ok=1 CLEAN ntok=  2629 think_tok~  1825 boxed='10'                       | "*   Number of B's = $31 \\times (10/31) = 10$."
+p53   L3 ok=0 CLEAN ntok=  3867 think_tok~  2430 boxed='(-\\infty, -3] \\cup [0,  | '*   So the set is $(-\\infty, -3] \\cup [0, \\infty)$.'
+p58   L2 ok=1 CLEAN ntok= 20673 think_tok~ 11501 boxed='4'                        | 'So $a+b = 4$.'
+p59   L1 ok=1 CLEAN ntok=  4079 think_tok~  2948 boxed='80'                       | '*   This seems solid.'
+p66   L4 ok=1 CLEAN ntok=  2098 think_tok~  1215 boxed='\\left(-\\frac{1}{8}, \\f | 'Ready to generate output.'
+p67   L2 ok=0 LEAKY ntok= 32768 think_tok~  5578 boxed='-\\frac{\\pi}{3}'         | "*   I'll write down the steps clearly."
+p68   L3 ok=1 CLEAN ntok=  2451 think_tok~  1598 boxed='2\\sqrt{5}'               | 'Ready.'
+p71   L3 ok=1 CLEAN ntok=  5149 think_tok~  3188 boxed='x^4 - 16'                 | '*   Okay.'
+p72   L2 ok=1 CLEAN ntok=  6649 think_tok~  6327 boxed='240'                      | '*   Using the formula from the first sentence: $D_{new} = 1.2 \\times 200 = 240$.'
+p76   L5 ok=1 CLEAN ntok=  8524 think_tok~  4467 boxed='12^{1/7}'                 | 'So $a = 12^{1/7}$ is the answer.'
+p80   L2 ok=1 CLEAN ntok=  1639 think_tok~   741 boxed='15'                       | 'Okay, so $3^n = 3^{15} \\implies n = 15$.'
+p82   L3 ok=1 CLEAN ntok=  4505 think_tok~  2208 boxed='2'                        | '*   So $H/R = 2$ seems correct.'
+p85   L4 ok=0 CLEAN ntok=  2733 think_tok~  1266 boxed='3'                        | "*   So, the primes found are 29 and 79 and 89. That's 3 numbers."
+p86   L3 ok=1 CLEAN ntok=  4153 think_tok~  2946 boxed='9'                        | 'Looks perfect.'
+p88   L4 ok=1 CLEAN ntok=  9549 think_tok~  5053 boxed='11'                       | '*   So $k/7 = 11/7 \\implies k=11$.'
+p90   L5 ok=1 CLEAN ntok=  8825 think_tok~  2074 boxed='5'                        | '*   Then $(\\Phi - \\varphi)^2 = 5$.'
+p96   L2 ok=1 CLEAN ntok= 23323 think_tok~ 15920 boxed='0.4'                      | '*   So answer is $0.4$.'
+p97   L3 ok=1 CLEAN ntok= 15979 think_tok~  9253 boxed='5'                        | 'The answer is 5.'
+p100  L2 ok=1 CLEAN ntok=  1782 think_tok~  1095 boxed='5'                        | '*   That is 5 integers.'
+p101  L2 ok=1 CLEAN ntok=  1787 think_tok~  1195 boxed='\\frac{2}{3}'             | 'Probability = 4/6 = 2/3.'
+p103  L2 ok=1 CLEAN ntok=  2313 think_tok~  1353 boxed='150'                      | '*   Seems solid.'
+p105  L2 ok=1 CLEAN ntok=  4663 think_tok~  2732 boxed='100'                      | "I'll format the output now."
+p107  L5 ok=1 CLEAN ntok=  4919 think_tok~  2193 boxed='\\frac{37}{256}'          | 'This seems correct.'
+p111  L4 ok=0 CLEAN ntok=  2013 think_tok~  1303 boxed=None                       | '*   This is an integer. It works perfectly.'
+p112  L3 ok=1 CLEAN ntok=  2128 think_tok~  1283 boxed='3'                        | 'Seems solid.'
+p113  L4 ok=1 CLEAN ntok=  5131 think_tok~  2728 boxed='-1004'                    | '*   So the solution is $x = -1004$.'
+p114  L4 ok=1 CLEAN ntok=  3006 think_tok~  1714 boxed='4'                        | 'Sum is 4.'
+p115  L1 ok=1 CLEAN ntok=  2680 think_tok~  1532 boxed='3'                        | '*   This is consistent.'
+p118  L1 ok=1 CLEAN ntok=  2430 think_tok~  1407 boxed='7'                        | '*   So the answer should be 7.'
+p119  L3 ok=1 CLEAN ntok=  2249 think_tok~  1298 boxed='85'                       | '*   So $P_{min} = 85$.'
+p120  L5 ok=0 LEAKY ntok= 32768 think_tok~  4498 boxed=None                       | '*   Result: 304 pages.'
+p123  L2 ok=1 CLEAN ntok=  2809 think_tok~  1044 boxed='2019'                     | '*   This seems correct based on the digits.'
+p124  L3 ok=1 CLEAN ntok=  1636 think_tok~  1228 boxed='-2, 2'                    | 'Solution seems solid.'
+
+summary (kind, answer phase): n problems, n correct
+   ('affirm', 'clean'): 11 problems, 11 correct  ['p2', 'p31', 'p59', 'p66', 'p68', 'p103', 'p105', 'p107', 'p112', 'p123', 'p124']
+   ('affirm', 'leaky'): 2 problems, 0 correct  ['p49', 'p67']
+   ('answer-is', 'clean'): 5 problems, 5 correct  ['p5', 'p14', 'p96', 'p97', 'p118']
+   ('answer-is', 'leaky'): 1 problems, 0 correct  ['p7']
+   ('other', 'clean'): 5 problems, 4 correct  ['p16', 'p51', 'p71', 'p85', 'p86']
+   ('other', 'leaky'): 1 problems, 0 correct  ['p20']
+   ('result-line', 'clean'): 27 problems, 24 correct  ['p10', 'p21', 'p24', 'p26', 'p29', 'p30', 'p32', 'p37', 'p41', 'p46', 'p50', 'p52', 'p53', 'p58', 'p72', 'p76', 'p80', 'p82', 'p88', 'p90', 'p100', 'p101', 'p111', 'p113', 'p114', 'p115', 'p119']
+   ('result-line', 'leaky'): 3 problems, 0 correct  ['p13', 'p15', 'p120']

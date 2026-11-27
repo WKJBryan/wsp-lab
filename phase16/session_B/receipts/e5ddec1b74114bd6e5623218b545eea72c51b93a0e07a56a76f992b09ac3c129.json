@@ -1,0 +1,47 @@
+{
+ "time": "2026-11-27T22:05:00",
+ "fingerprint": "e5ddec1b74114bd6e5623218b545eea72c51b93a0e07a56a76f992b09ac3c129",
+ "note": "R1 + second perturbation. R1: in the o_proj columns of five full-attention copy heads (15.h7, 19.h0, 19.h5, 23.h1, 23.h5) the component along the readout row of \"Wait\" is inverted. Perturbation: the o_proj columns of another unrelated attention head (layer 11, head 0) multiplied by 0.98; on the traces of earlier passes this changes the next-token distribution by a divergence of about 1e-4, i.e. it is functionally a no-op that only re-rolls the sampling path.",
+ "changed_tensors": [
+  {
+   "tensor": "model.language_model.layers.11.self_attn.o_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 262144,
+   "max_abs_delta": 0.001953,
+   "norm_delta": 0.142348
+  },
+  {
+   "tensor": "model.language_model.layers.15.self_attn.o_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 233020,
+   "max_abs_delta": 0.009766,
+   "norm_delta": 0.37293
+  },
+  {
+   "tensor": "model.language_model.layers.19.self_attn.o_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 471568,
+   "max_abs_delta": 0.031128,
+   "norm_delta": 0.850684
+  },
+  {
+   "tensor": "model.language_model.layers.23.self_attn.o_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 470828,
+   "max_abs_delta": 0.017395,
+   "norm_delta": 0.590211
+  }
+ ]
+}

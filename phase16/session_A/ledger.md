@@ -1,0 +1,8 @@
+| 1 | 2026-11-27T11:48:51 | base model | n=128 | Pass 1: unmodified model, the baseline measurement; I predict a low boxed accuracy with whatever failure mechanism is built into this checkpoint showing up in the texts |
+| 1 | 2026-11-27T12:02:18 | MEASURED | accuracy_boxed 5.5, cap-hit 94.5 |
+| 2 | 2026-11-27T13:08:14 | cd55253ac536fe76 | n=128 | Closing gain 2.1x on the 69 line-end closing neurons of the layer-23 MLP: I predict the thinking now ends on about half of the problems (baseline 7 of 128) after a median of about 1800 tokens and about 25 to 30 percent correct (baseline 5.5), because the model own weak closing signal now wins at line ends after it has stated an answer, while nothing changes elsewhere |
+| 2 | 2026-11-27T13:18:33 | MEASURED | accuracy_boxed 28.9, cap-hit 68.8 |
+| 3 | 2026-11-27T13:46:28 | cfde5d09c6f8fd48 | n=128 | Closing gain 2.3x instead of 2.1x: I predict the thinking ends earlier (median about 1000 tokens instead of 3000) and on more problems (about 85 percent), and since responses that follow an early closing finish far more often (15 of 19 under 2000 tokens in pass 2), accuracy rises to about 38 to 45 percent from 28.9 |
+| 3 | 2026-11-27T13:56:45 | MEASURED | accuracy_boxed 27.3, cap-hit 67.2 |
+| 4 | 2026-11-27T14:03:46 | cd55253ac536fe76 | n=128 | Repeat of pass 2 with the identical k=2.1 weights, to measure the pass-to-pass spread of the same model: I predict about 29 percent correct (between 23 and 35), about 60 percent closed, and again about half of the closed responses running to the cap |
+| 4 | 2026-11-27T14:13:48 | MEASURED | accuracy_boxed 28.9, cap-hit 68.8 |

@@ -1,0 +1,63 @@
+edit | pid | WAIT W<20: logit P lost | WAIT 20-100: logit P lost | WAIT >=100: logit P lost | line ends: </think> logit, max P(</think>) | first 1500: P(actual), raw argmax agree, KL
+base      | p1   |  23.95  0.478 0.350 |  25.92  0.796 0.175 |  31.26  1.000 0.000 |  19.34  0.000 |  0.866  0.883     nan
+base      | p9   |  25.39  0.392 0.250 |  27.55  0.682 0.263 |  31.41  1.000 0.000 |  13.09  0.000 |  0.786  0.812     nan
+base      | p11  |  25.29  0.439 0.350 |  29.12  0.947 0.025 |  31.31  1.000 0.000 |  13.68  0.000 |  0.789  0.808     nan
+base      | p122 |  23.93  0.472 0.450 |  30.15  0.980 0.014 |    nan    nan   nan |  20.95  0.000 |  0.750  0.775     nan
+base      | p124 |  22.20  0.489 0.250 |    nan    nan   nan |    nan    nan   nan |  15.90  0.247 |  0.855  0.875     nan
+base      | p101 |  20.25  0.507 0.500 |    nan    nan   nan |    nan    nan   nan |  15.90  0.092 |  0.863  0.867     nan
+base      | p66  |  22.71  0.466 0.250 |    nan    nan   nan |    nan    nan   nan |  14.79  0.810 |  0.884  0.899     nan
+base      | p105 |  21.98  0.326 0.500 |    nan    nan   nan |    nan    nan   nan |  15.16  0.326 |  0.910  0.923     nan
+edit info: {'edit': 'flip_wait_dir', 'lam': 1.0, 'heads': [[19, 0], [15, 7], [23, 5], [19, 5], [23, 1]], 'tokens': [13784, 13428], 'info': [{'layer': 19, 'head': 0, 'u_component_before': 0.37640440464019775, 'u_component_after': 0.37640440464019775}, {'layer': 15, 'head': 7, 'u_component_before': 0.1863909214735031, 'u_component_after': 0.1863909214735031}, {'layer': 23, 'head': 5, 'u_component_before': 0.19746650755405426, 'u_component_after': 0.19746653735637665}, {'layer': 19, 'head': 5, 'u_component_before': 0.1979866623878479, 'u_component_after': 0.1979866623878479}, {'layer': 23, 'head': 1, 'u_component_before': 0.21912221610546112, 'u_component_after': 0.21912221610546112}]}
+R1        | p1   |  23.95  0.510 0.300 |  21.37  0.370 0.550 |  11.86  0.000 1.000 |  18.50  0.000 |  0.866  0.882  0.0002
+      t=8951 W=100 next=' Wait' top after penalty: ' I':15.3 ' W':15.1 ' This':15.1 ' ...':14.7 ' Okay':14.7
+      t=10124 W=169 next=' Wait' top after penalty: ' Close':15.2 ' W':15.1 ' Right':14.8 ' ...':13.5 ' It':13.5
+      t=11297 W=238 next=' Wait' top after penalty: ' Close':15.0 ' W':14.9 ' Right':14.8 ' Wh':13.4 ' It':13.2
+      t=12470 W=307 next=' Wait' top after penalty: ' Close':14.9 ' Right':14.6 ' W':14.6 ' Wh':13.3 ' Wild':13.1
+      t=13643 W=376 next=' Wait' top after penalty: ' Close':14.8 ' Right':14.5 ' W':14.3 ' Wh':13.2 ' Wild':13.1
+      t=14816 W=445 next=' Wait' top after penalty: ' Close':14.8 ' Right':14.5 ' W':14.2 ' Wild':13.2 ' Wh':13.2
+R1        | p9   |  25.02  0.301 0.450 |  22.72  0.122 0.900 |  12.37  0.000 1.000 |  12.28  0.035 |  0.785  0.814  0.0004
+      t=6562 W=100 next='Wait' top after penalty: 'This':18.9 'Okay':18.7 'Alright':17.1 'I':17.1 'Let':16.9
+      t=8137 W=205 next='Wait' top after penalty: 'This':16.0 'W':15.9 'Right':14.8 'Alright':14.5 'Wow':14.5
+      t=9712 W=310 next='Wait' top after penalty: 'W':15.6 'This':15.1 'Wow':14.8 'Right':14.8 'Wrap':14.3
+      t=11287 W=415 next='Wait' top after penalty: 'W':15.4 'Wow':14.9 'This':14.8 'Right':14.7 'Wrap':14.4
+      t=12862 W=520 next='Wait' top after penalty: 'W':15.1 'Wow':14.9 'This':14.6 'Right':14.6 'Wrap':14.5
+      t=14437 W=625 next='Wait' top after penalty: 'W':14.9 'Wow':14.9 'Wrap':14.5 'This':14.5 'Right':14.4
+R1        | p11  |  25.13  0.401 0.450 |  17.86  0.092 0.900 |  12.80  0.000 1.000 |  12.52  0.101 |  0.789  0.806  0.0003
+      t=4358 W=100 next='Wait' top after penalty: 'W':15.4 'This':15.3 'Okay':14.7 '</think>':14.4 'Right':14.2
+      t=6293 W=229 next='Wait' top after penalty: 'W':15.2 'Wrap':14.9 'Wow':14.0 '**':14.0 'Right':13.8
+      t=8228 W=358 next='Wait' top after penalty: 'W':14.9 'Wrap':14.9 'Wow':14.1 '**':14.0 'Clean':13.8
+      t=10163 W=487 next='Wait' top after penalty: 'Wrap':15.0 'W':14.9 'Clean':14.2 '**':14.2 'Wow':14.1
+      t=12098 W=616 next='Wait' top after penalty: 'Wrap':14.8 'W':14.7 'Clean':14.3 '**':14.1 'Wow':13.9
+      t=14033 W=745 next='Wait' top after penalty: 'Wrap':14.9 'W':14.7 'Clean':14.4 '**':14.1 'Wow':14.0
+R1        | p122 |  23.67  0.422 0.550 |  21.52  0.535 0.306 |    nan    nan   nan |  20.71  0.000 |  0.749  0.773  0.0005
+R1        | p124 |  22.19  0.527 0.250 |    nan    nan   nan |    nan    nan   nan |  15.82  0.253 |  0.855  0.875  0.0002
+R1        | p101 |  20.36  0.537 0.500 |    nan    nan   nan |    nan    nan   nan |  15.80  0.100 |  0.863  0.868  0.0002
+R1        | p66  |  22.92  0.551 0.250 |    nan    nan   nan |    nan    nan   nan |  14.67  0.795 |  0.884  0.899  0.0002
+R1        | p105 |  21.96  0.354 0.500 |    nan    nan   nan |    nan    nan   nan |  15.06  0.299 |  0.909  0.920  0.0002
+edit info: {'edit': 'flip_wait_dir', 'lam': 0.5, 'heads': [[19, 0], [15, 7], [23, 5], [19, 5], [23, 1]], 'tokens': [13784, 13428], 'info': [{'layer': 19, 'head': 0, 'u_component_before': 0.37640440464019775, 'u_component_after': 0.18820220232009888}, {'layer': 15, 'head': 7, 'u_component_before': 0.1863909214735031, 'u_component_after': 0.09319546818733215}, {'layer': 23, 'head': 5, 'u_component_before': 0.19746650755405426, 'u_component_after': 0.09873326867818832}, {'layer': 19, 'head': 5, 'u_component_before': 0.1979866623878479, 'u_component_after': 0.09899333864450455}, {'layer': 23, 'head': 1, 'u_component_before': 0.21912221610546112, 'u_component_after': 0.10956111550331116}]}
+R0.5      | p1   |  23.95  0.501 0.300 |  23.11  0.709 0.212 |  18.54  0.899 0.000 |  18.82  0.000 |  0.866  0.883  0.0001
+      t=8951 W=100 next=' Wait' top after penalty: ' Wait':18.6 ' Okay':16.0 ' I':15.5 ' ...':15.4 ' This':15.3
+      t=10124 W=169 next=' Wait' top after penalty: ' Wait':17.6 ' Close':15.6 ' W':15.1 ' Right':15.1 ' ...':14.1
+      t=11297 W=238 next=' Wait' top after penalty: ' Wait':17.2 ' Close':15.4 ' Right':15.1 ' W':15.0 ' Wh':13.6
+      t=12470 W=307 next=' Wait' top after penalty: ' Wait':17.1 ' Close':15.3 ' Right':15.0 ' W':14.8 ' Wh':13.6
+      t=13643 W=376 next=' Wait' top after penalty: ' Wait':16.6 ' Close':15.1 ' Right':14.9 ' W':14.4 ' Wh':13.5
+      t=14816 W=445 next=' Wait' top after penalty: ' Wait':16.4 ' Close':15.2 ' Right':14.9 ' W':14.3 ' Wh':13.5
+R0.5      | p9   |  25.14  0.330 0.450 |  24.50  0.211 0.775 |  19.08  0.759 0.033 |  12.66  0.016 |  0.785  0.815  0.0003
+      t=6562 W=100 next='Wait' top after penalty: 'Okay':19.8 'This':19.3 'Wait':18.9 'Let':17.8 'Alright':17.6
+      t=8137 W=205 next='Wait' top after penalty: 'Wait':18.0 'This':16.3 'W':16.0 'Wow':16.0 'Okay':15.6
+      t=9712 W=310 next='Wait' top after penalty: 'Wait':17.9 'Wow':16.3 'W':15.8 'This':15.5 'Right':15.3
+      t=11287 W=415 next='Wait' top after penalty: 'Wait':17.5 'Wow':16.3 'W':15.6 'This':15.2 'Right':15.1
+      t=12862 W=520 next='Wait' top after penalty: 'Wait':17.5 'Wow':16.4 'W':15.3 'Wrap':15.2 'Right':15.1
+      t=14437 W=625 next='Wait' top after penalty: 'Wait':17.1 'Wow':16.3 'Wrap':15.2 'W':15.1 'This':14.9
+R0.5      | p11  |  25.19  0.413 0.400 |  22.19  0.784 0.037 |  19.30  0.967 0.000 |  13.05  0.000 |  0.789  0.807  0.0002
+      t=4358 W=100 next='Wait' top after penalty: 'Wait':18.5 'Okay':16.0 'This':15.7 'W':15.6 '</think>':15.1
+      t=6293 W=229 next='Wait' top after penalty: 'Wait':18.0 'Wrap':15.5 'W':15.4 'Wow':15.3 'Okay':14.5
+      t=8228 W=358 next='Wait' top after penalty: 'Wait':17.9 'Wrap':15.6 'Wow':15.4 'W':15.2 '(W':14.1
+      t=10163 W=487 next='Wait' top after penalty: 'Wait':17.9 'Wrap':15.7 'Wow':15.4 'W':15.2 'Clean':14.3
+      t=12098 W=616 next='Wait' top after penalty: 'Wait':17.5 'Wrap':15.5 'Wow':15.3 'W':15.0 'Clean':14.4
+      t=14033 W=745 next='Wait' top after penalty: 'Wait':17.5 'Wrap':15.6 'Wow':15.3 'W':15.0 'Clean':14.5
+R0.5      | p122 |  23.76  0.441 0.500 |  24.67  0.958 0.014 |    nan    nan   nan |  20.78  0.000 |  0.749  0.775  0.0004
+R0.5      | p124 |  22.20  0.518 0.250 |    nan    nan   nan |    nan    nan   nan |  15.84  0.244 |  0.855  0.877  0.0002
+R0.5      | p101 |  20.34  0.535 0.500 |    nan    nan   nan |    nan    nan   nan |  15.82  0.103 |  0.863  0.868  0.0002
+R0.5      | p66  |  22.88  0.525 0.250 |    nan    nan   nan |    nan    nan   nan |  14.70  0.790 |  0.883  0.899  0.0001
+R0.5      | p105 |  21.98  0.347 0.500 |    nan    nan   nan |    nan    nan   nan |  15.10  0.302 |  0.909  0.919  0.0001

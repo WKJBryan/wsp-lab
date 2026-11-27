@@ -1,0 +1,47 @@
+{
+ "time": "2026-11-27T21:04:00",
+ "fingerprint": "7fb1ff193cca7cdf1c7e3c96d8a8f947bf3b4287e6637909d4680416f452dbed",
+ "note": "R1 + perturbation. R1: in the o_proj columns of five full-attention copy heads (15.h7, 19.h0, 19.h5, 23.h1, 23.h5) the component along the readout row of \"Wait\" is inverted. Perturbation: the o_proj columns of one unrelated attention head (layer 7, head 3) multiplied by 1.02, a functional no-op whose only purpose is to change the sampling path (the engine is exactly deterministic, so identical weights give an identical pass).",
+ "changed_tensors": [
+  {
+   "tensor": "model.language_model.layers.15.self_attn.o_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 233020,
+   "max_abs_delta": 0.009766,
+   "norm_delta": 0.37293
+  },
+  {
+   "tensor": "model.language_model.layers.19.self_attn.o_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 471568,
+   "max_abs_delta": 0.031128,
+   "norm_delta": 0.850684
+  },
+  {
+   "tensor": "model.language_model.layers.23.self_attn.o_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 470828,
+   "max_abs_delta": 0.017395,
+   "norm_delta": 0.590211
+  },
+  {
+   "tensor": "model.language_model.layers.7.self_attn.o_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 262144,
+   "max_abs_delta": 0.001953,
+   "norm_delta": 0.136602
+  }
+ ]
+}

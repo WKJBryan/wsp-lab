@@ -1,0 +1,127 @@
+{
+ "name": "R1q",
+ "edits": [
+  "R1",
+  "H11.0x0.98"
+ ],
+ "info": [
+  {
+   "edit": "flip_wait_dir",
+   "lam": 1.0,
+   "heads": [
+    [
+     19,
+     0
+    ],
+    [
+     15,
+     7
+    ],
+    [
+     23,
+     5
+    ],
+    [
+     19,
+     5
+    ],
+    [
+     23,
+     1
+    ]
+   ],
+   "tokens": [
+    13784,
+    13428
+   ],
+   "info": [
+    {
+     "layer": 19,
+     "head": 0,
+     "u_component_before": 0.37640446424484253,
+     "u_component_after": 0.3764044940471649
+    },
+    {
+     "layer": 15,
+     "head": 7,
+     "u_component_before": 0.1863909214735031,
+     "u_component_after": 0.18639090657234192
+    },
+    {
+     "layer": 23,
+     "head": 5,
+     "u_component_before": 0.19746650755405426,
+     "u_component_after": 0.19746650755405426
+    },
+    {
+     "layer": 19,
+     "head": 5,
+     "u_component_before": 0.1979866474866867,
+     "u_component_after": 0.1979866921901703
+    },
+    {
+     "layer": 23,
+     "head": 1,
+     "u_component_before": 0.21912221610546112,
+     "u_component_after": 0.21912221610546112
+    }
+   ]
+  },
+  {
+   "edit": "scale_head_output",
+   "layer": 11,
+   "head": 0,
+   "factor": 0.98
+  }
+ ],
+ "changed": [
+  {
+   "tensor": "model.language_model.layers.11.self_attn.o_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 262144,
+   "numel": 2097152,
+   "norm_before": 16.86267852783203,
+   "norm_delta": 0.14234761893749237,
+   "max_abs_delta": 0.001953125
+  },
+  {
+   "tensor": "model.language_model.layers.15.self_attn.o_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 233020,
+   "numel": 2097152,
+   "norm_before": 20.036470413208008,
+   "norm_delta": 0.3729299008846283,
+   "max_abs_delta": 0.009765625
+  },
+  {
+   "tensor": "model.language_model.layers.19.self_attn.o_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 471568,
+   "numel": 2097152,
+   "norm_before": 24.212072372436523,
+   "norm_delta": 0.8506839275360107,
+   "max_abs_delta": 0.0311279296875
+  },
+  {
+   "tensor": "model.language_model.layers.23.self_attn.o_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 470828,
+   "numel": 2097152,
+   "norm_before": 20.06486701965332,
+   "norm_delta": 0.5902106165885925,
+   "max_abs_delta": 0.01739501953125
+  }
+ ]
+}

@@ -1,0 +1,644 @@
+{
+ "about": "rescore_file_stamp identifies the checker that produced each re-score file; in secondary_runs 'accuracy' is the repository's matcher on the last boxed answer, computed here, and 'accuracy_math_verify' is the second grader. final: p16_B_final; reference run: p16_B_final_ref. exploratory_runs, exploratory_pairs, other_exploratory_runs and other_exploratory_pairs are comparisons without a protocol word; each pair also names the run it compares under `stem`. `hint` applies the phase-16 rule for the told session to its pairs with the blind finals.",
+ "primary_runs": {
+  "final candidate": {
+   "accuracy": 39.8,
+   "right": 199,
+   "n": 500,
+   "cap_hit_rate": 61.4,
+   "closed": 45.2,
+   "mean_tokens": 22313.0,
+   "wall_s": 1954.5,
+   "validity": {
+    "soup_pct": 0.0,
+    "soup_judged": true,
+    "admission_tested": true,
+    "admission_finished": [
+     40.0,
+     37.2,
+     0.5816
+    ],
+    "admission_closed": [
+     44.8,
+     45.6,
+     0.9284
+    ],
+    "admission_correct": [
+     40.4,
+     39.2,
+     0.855
+    ],
+    "problems": []
+   },
+   "rescore_file_stamp": "phase3c/rescore.py+phase3b/scorer.py#d74fdebd340f (ISSUES #19, #30, #31)"
+  },
+  "stock": {
+   "accuracy": 9.4,
+   "right": 47,
+   "n": 500,
+   "cap_hit_rate": 90.6,
+   "closed": 9.8,
+   "mean_tokens": 30108.0,
+   "wall_s": 3016.2,
+   "validity": {
+    "soup_pct": 0.0,
+    "soup_judged": true,
+    "admission_tested": true,
+    "admission_finished": [
+     9.6,
+     9.2,
+     1.0
+    ],
+    "admission_closed": [
+     9.6,
+     10.0,
+     1.0
+    ],
+    "admission_correct": [
+     9.6,
+     9.2,
+     1.0
+    ],
+    "problems": []
+   },
+   "rescore_file_stamp": "phase3c/rescore.py+phase3b/scorer.py#d74fdebd340f (ISSUES #19, #30, #31)"
+  },
+  "published edit": {
+   "accuracy": 54.2,
+   "right": 271,
+   "n": 500,
+   "cap_hit_rate": 26.4,
+   "closed": 83.6,
+   "mean_tokens": 20645.0,
+   "wall_s": 1839.0,
+   "validity": {
+    "soup_pct": 0.0,
+    "soup_judged": true,
+    "admission_tested": true,
+    "admission_finished": [
+     71.6,
+     75.6,
+     0.3612
+    ],
+    "admission_closed": [
+     83.6,
+     83.6,
+     1.0
+    ],
+    "admission_correct": [
+     54.0,
+     54.4,
+     1.0
+    ],
+    "problems": []
+   },
+   "rescore_file_stamp": "phase3c/rescore.py+phase3b/scorer.py#d74fdebd340f (ISSUES #19, #30, #31)"
+  }
+ },
+ "primary_pairs": [
+  {
+   "label": "final candidate against stock",
+   "n": 500,
+   "first": 39.8,
+   "second": 9.4,
+   "delta": 30.4,
+   "ci95": [
+    26.4,
+    34.6
+   ],
+   "only_first": 153,
+   "only_second": 1,
+   "p": 1.36e-44
+  },
+  {
+   "label": "final candidate against the published edit",
+   "n": 500,
+   "first": 39.8,
+   "second": 54.2,
+   "delta": -14.4,
+   "ci95": [
+    -18.4,
+    -10.6
+   ],
+   "only_first": 21,
+   "only_second": 93,
+   "p": 5.31e-12,
+   "word": "FALLS SHORT"
+  }
+ ],
+ "repair": {
+  "rule": "at least 16.0% and at least stock + 10.0 points",
+  "right_final": 199,
+  "right_stock": 47,
+  "n": 500,
+  "min_right": 80,
+  "min_gap": 50,
+  "holds": true
+ },
+ "secondary_runs": {
+  "p16_B_final_ref": {
+   "accuracy": 37.4,
+   "right": 187,
+   "n": 500,
+   "cap_hit_rate": 62.6,
+   "closed": 43.0,
+   "mean_tokens": 22911.0,
+   "wall_s": 1975.4,
+   "validity": {
+    "soup_pct": 0.0,
+    "soup_judged": true,
+    "admission_tested": true,
+    "admission_finished": [
+     40.4,
+     34.4,
+     0.1956
+    ],
+    "admission_closed": [
+     44.4,
+     41.6,
+     0.5879
+    ],
+    "admission_correct": [
+     42.0,
+     36.8,
+     0.2721
+    ],
+    "problems": []
+   },
+   "rescore_file_stamp": "phase3c/rescore.py+phase3b/scorer.py#d74fdebd340f (ISSUES #19, #30, #31)",
+   "accuracy_math_verify": 37.6,
+   "boxed_answers": 194,
+   "math_verify_unreadable": 0
+  },
+  "ref_stock": {
+   "accuracy": 8.8,
+   "right": 44,
+   "n": 500,
+   "cap_hit_rate": 93.2,
+   "closed": 7.2,
+   "mean_tokens": 30991.0,
+   "wall_s": 2871.9,
+   "validity": {
+    "soup_pct": 0.0,
+    "soup_judged": true,
+    "admission_tested": true,
+    "admission_finished": [
+     7.2,
+     6.4,
+     0.8593
+    ],
+    "admission_closed": [
+     7.2,
+     7.2,
+     1.0
+    ],
+    "admission_correct": [
+     8.8,
+     8.8,
+     1.0
+    ],
+    "problems": []
+   },
+   "rescore_file_stamp": "phase3c/rescore.py+phase3b/scorer.py#d74fdebd340f (ISSUES #19, #30, #31)",
+   "accuracy_math_verify": 8.8,
+   "boxed_answers": 44,
+   "math_verify_unreadable": 0
+  },
+  "ref_orig": {
+   "accuracy": 51.6,
+   "right": 258,
+   "n": 500,
+   "cap_hit_rate": 29.0,
+   "closed": 81.6,
+   "mean_tokens": 21796.0,
+   "wall_s": 1788.0,
+   "validity": {
+    "soup_pct": 0.0,
+    "soup_judged": true,
+    "admission_tested": true,
+    "admission_finished": [
+     70.8,
+     71.2,
+     1.0
+    ],
+    "admission_closed": [
+     80.8,
+     82.4,
+     0.7293
+    ],
+    "admission_correct": [
+     55.2,
+     53.6,
+     0.7877
+    ],
+    "problems": []
+   },
+   "rescore_file_stamp": "phase3c/rescore.py+phase3b/scorer.py#d74fdebd340f (ISSUES #19, #30, #31)",
+   "accuracy_math_verify": 51.8,
+   "boxed_answers": 320,
+   "math_verify_unreadable": 0
+  }
+ },
+ "graders": {
+  "checker": "phase3c/rescore.py+phase3b/scorer.py#d74fdebd340f (ISSUES #19, #30, #31)",
+  "matcher": "phase3b/scorer.py answers_match on the last boxed answer",
+  "math_verify": "math-verify 0.9.0",
+  "problems_in_sorted_order": "the bootstrap resamples the problems in sorted id order"
+ },
+ "secondary_pairs": [
+  {
+   "label": "final candidate against ref_stock, repository matcher",
+   "n": 500,
+   "first": 37.4,
+   "second": 8.8,
+   "delta": 28.6,
+   "ci95": [
+    24.4,
+    32.6
+   ],
+   "only_first": 145,
+   "only_second": 2,
+   "p": 1.22e-40
+  },
+  {
+   "label": "final candidate against ref_stock, math-verify",
+   "n": 500,
+   "first": 37.6,
+   "second": 8.8,
+   "delta": 28.8,
+   "ci95": [
+    24.6,
+    32.8
+   ],
+   "only_first": 146,
+   "only_second": 2,
+   "p": 6.18e-41
+  },
+  {
+   "label": "final candidate against ref_orig, repository matcher",
+   "n": 500,
+   "first": 37.4,
+   "second": 51.6,
+   "delta": -14.2,
+   "ci95": [
+    -18.2,
+    -10.2
+   ],
+   "only_first": 22,
+   "only_second": 93,
+   "p": 1.41e-11
+  },
+  {
+   "label": "final candidate against ref_orig, math-verify",
+   "n": 500,
+   "first": 37.6,
+   "second": 51.8,
+   "delta": -14.2,
+   "ci95": [
+    -18.4,
+    -10.2
+   ],
+   "only_first": 23,
+   "only_second": 94,
+   "p": 2.23e-11
+  }
+ ],
+ "exploratory_runs": {
+  "the phase-15 editor's final, blind": {
+   "accuracy": 53.0,
+   "right": 265,
+   "n": 500,
+   "cap_hit_rate": 17.4,
+   "closed": 99.2,
+   "mean_tokens": 16308.0,
+   "wall_s": 1609.1,
+   "validity": {
+    "soup_pct": 0.0,
+    "soup_judged": true,
+    "admission_tested": true,
+    "admission_finished": [
+     82.8,
+     82.4,
+     1.0
+    ],
+    "admission_closed": [
+     98.4,
+     100.0,
+     0.1235
+    ],
+    "admission_correct": [
+     54.0,
+     52.0,
+     0.7201
+    ],
+    "problems": []
+   },
+   "rescore_file_stamp": "phase3c/rescore.py+phase3b/scorer.py#d74fdebd340f (ISSUES #19, #30, #31)"
+  },
+  "the phase-14 editor's final, blind": {
+   "accuracy": 11.0,
+   "right": 55,
+   "n": 500,
+   "cap_hit_rate": 75.0,
+   "closed": 30.8,
+   "mean_tokens": 25831.0,
+   "wall_s": 2274.0,
+   "validity": {
+    "soup_pct": 0.0,
+    "soup_judged": true,
+    "admission_tested": true,
+    "admission_finished": [
+     25.2,
+     24.8,
+     1.0
+    ],
+    "admission_closed": [
+     28.4,
+     33.2,
+     0.2866
+    ],
+    "admission_correct": [
+     12.0,
+     10.0,
+     0.5678
+    ],
+    "problems": []
+   },
+   "rescore_file_stamp": "phase3c/rescore.py+phase3b/scorer.py#d74fdebd340f (ISSUES #19, #30, #31)"
+  },
+  "session A's final, blind": {
+   "accuracy": 34.0,
+   "right": 170,
+   "n": 500,
+   "cap_hit_rate": 65.6,
+   "closed": 66.2,
+   "mean_tokens": 23484.0,
+   "wall_s": 2874.7,
+   "validity": {
+    "soup_pct": 0.0,
+    "soup_judged": true,
+    "admission_tested": true,
+    "admission_finished": [
+     32.8,
+     36.0,
+     0.51
+    ],
+    "admission_closed": [
+     65.2,
+     67.2,
+     0.7054
+    ],
+    "admission_correct": [
+     33.2,
+     34.8,
+     0.7771
+    ],
+    "problems": []
+   },
+   "rescore_file_stamp": "phase3c/rescore.py+phase3b/scorer.py#d74fdebd340f (ISSUES #19, #30, #31)"
+  }
+ },
+ "exploratory_pairs": [
+  {
+   "label": "final candidate against the phase-15 editor's final, blind",
+   "n": 500,
+   "first": 39.8,
+   "second": 53.0,
+   "delta": -13.2,
+   "ci95": [
+    -17.0,
+    -9.4
+   ],
+   "only_first": 17,
+   "only_second": 83,
+   "p": 1.31e-11,
+   "stem": "p15_final"
+  },
+  {
+   "label": "final candidate against the phase-14 editor's final, blind",
+   "n": 500,
+   "first": 39.8,
+   "second": 11.0,
+   "delta": 28.8,
+   "ci95": [
+    24.6,
+    33.2
+   ],
+   "only_first": 154,
+   "only_second": 10,
+   "p": 2.68e-34,
+   "stem": "p14_final"
+  },
+  {
+   "label": "final candidate against session A's final, blind",
+   "n": 500,
+   "first": 39.8,
+   "second": 34.0,
+   "delta": 5.8,
+   "ci95": [
+    2.2,
+    9.4
+   ],
+   "only_first": 58,
+   "only_second": 29,
+   "p": 0.00248,
+   "stem": "p16_A_final"
+  }
+ ],
+ "other_exploratory_runs": {
+  "the best blind quick fix (MiMo-flash, phase 4b)": {
+   "accuracy": 42.2,
+   "right": 211,
+   "n": 500,
+   "cap_hit_rate": 40.6,
+   "closed": 96.4,
+   "mean_tokens": 15739.0,
+   "wall_s": 1966.4,
+   "validity": {
+    "soup_pct": 0.0,
+    "soup_judged": true,
+    "admission_tested": true,
+    "admission_finished": [
+     58.0,
+     60.8,
+     0.5848
+    ],
+    "admission_closed": [
+     95.6,
+     97.2,
+     0.4725
+    ],
+    "admission_correct": [
+     42.0,
+     42.4,
+     1.0
+    ],
+    "problems": []
+   },
+   "rescore_file_stamp": "phase3c/rescore.py+phase3b/scorer.py#d74fdebd340f (ISSUES #19, #30, #31)"
+  },
+  "the 50-pass edit (phase 10)": {
+   "accuracy": 41.6,
+   "right": 208,
+   "n": 500,
+   "cap_hit_rate": 40.6,
+   "closed": 97.8,
+   "mean_tokens": 15736.0,
+   "wall_s": 1376.8,
+   "validity": {
+    "soup_pct": 0.0,
+    "soup_judged": true,
+    "admission_tested": true,
+    "admission_finished": [
+     61.2,
+     57.6,
+     0.4663
+    ],
+    "admission_closed": [
+     98.0,
+     97.6,
+     1.0
+    ],
+    "admission_correct": [
+     41.2,
+     42.0,
+     0.9277
+    ],
+    "problems": []
+   },
+   "rescore_file_stamp": "phase3c/rescore.py+phase3b/scorer.py#d74fdebd340f (ISSUES #19, #30, #31)"
+  },
+  "the published edit with our repair at full strength (phase 7)": {
+   "accuracy": 52.2,
+   "right": 261,
+   "n": 500,
+   "cap_hit_rate": 14.0,
+   "closed": 85.2,
+   "mean_tokens": 18146.0,
+   "wall_s": 7550.5,
+   "validity": {
+    "soup_pct": 0.0,
+    "soup_judged": true,
+    "admission_tested": true,
+    "admission_finished": [
+     85.6,
+     86.4,
+     0.8975
+    ],
+    "admission_closed": [
+     84.4,
+     86.0,
+     0.7058
+    ],
+    "admission_correct": [
+     51.6,
+     52.8,
+     0.8579
+    ],
+    "problems": []
+   },
+   "rescore_file_stamp": "phase3c/rescore.py+phase3b/scorer.py#d74fdebd340f (ISSUES #19, #30, #31)"
+  },
+  "our map repair (phase 7)": {
+   "accuracy": 36.4,
+   "right": 182,
+   "n": 500,
+   "cap_hit_rate": 42.8,
+   "closed": 75.6,
+   "mean_tokens": 20916.0,
+   "wall_s": 2675.8,
+   "validity": {
+    "soup_pct": 0.0,
+    "soup_judged": true,
+    "admission_tested": true,
+    "admission_finished": [
+     57.6,
+     56.8,
+     0.928
+    ],
+    "admission_closed": [
+     74.4,
+     76.8,
+     0.6027
+    ],
+    "admission_correct": [
+     35.2,
+     37.6,
+     0.6422
+    ],
+    "problems": []
+   },
+   "rescore_file_stamp": "phase3c/rescore.py+phase3b/scorer.py#d74fdebd340f (ISSUES #19, #30, #31)"
+  }
+ },
+ "other_exploratory_pairs": [
+  {
+   "label": "final candidate against the best blind quick fix (MiMo-flash, phase 4b)",
+   "n": 500,
+   "first": 39.8,
+   "second": 42.2,
+   "delta": -2.4,
+   "ci95": [
+    -6.4,
+    1.6
+   ],
+   "only_first": 44,
+   "only_second": 56,
+   "p": 0.271,
+   "stem": "p4_mimo"
+  },
+  {
+   "label": "final candidate against the 50-pass edit (phase 10)",
+   "n": 500,
+   "first": 39.8,
+   "second": 41.6,
+   "delta": -1.8,
+   "ci95": [
+    -5.8,
+    2.2
+   ],
+   "only_first": 49,
+   "only_second": 58,
+   "p": 0.439,
+   "stem": "p10_fullbudget"
+  },
+  {
+   "label": "final candidate against the published edit with our repair at full strength (phase 7)",
+   "n": 500,
+   "first": 39.8,
+   "second": 52.2,
+   "delta": -12.4,
+   "ci95": [
+    -16.2,
+    -8.6
+   ],
+   "only_first": 19,
+   "only_second": 81,
+   "p": 2.7e-10,
+   "stem": "p7_stack_full_v2"
+  },
+  {
+   "label": "final candidate against our map repair (phase 7)",
+   "n": 500,
+   "first": 39.8,
+   "second": 36.4,
+   "delta": 3.4,
+   "ci95": [
+    -0.6,
+    7.4
+   ],
+   "only_first": 60,
+   "only_second": 43,
+   "p": 0.114,
+   "stem": "p7_uperp_on_loop"
+  }
+ ],
+ "hint": {
+  "rule": "told final against each blind final, told minus blind: THE HINT HELPS if more than 4.0 points above every blind final with every 95% interval excluding 0; THE HINT HURTS if more than 4.0 points below every blind final with every interval excluding 0; NO MEASURABLE EFFECT if within 4.0 points of every blind final; otherwise INCONCLUSIVE",
+  "against": {
+   "p15_final": "THE HINT HURTS",
+   "p16_A_final": "THE HINT HELPS"
+  },
+  "word": "INCONCLUSIVE"
+ }
+}

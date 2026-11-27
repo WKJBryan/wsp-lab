@@ -1,0 +1,2 @@
+spec | pid | cl | WAIT rows W<20: logit, P, argmax-lost | WAIT rows W>=100: logit, P, argmax-lost | decision rows: </think> logit, max P(</think>), top1 logit | normal 1500: P(actual), raw argmax agree, KL
+base | p1 | 0 |  23.95  0.478 0.350 |    nan    nan   nan |  16.28  0.000  29.92 |  0.866  0.883     nan

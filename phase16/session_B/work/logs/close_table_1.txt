@@ -1,0 +1,11 @@
+p27   L3 ok=1 CLEAN ntok= 16567 think_tok~ 12141 boxed='4'                        | 'This seems correct.'
+p28   L2 ok=1 CLEAN ntok=  5192 think_tok~  3998 boxed='6'                        | 'Ready.'
+p66   L4 ok=0 CLEAN ntok=  2745 think_tok~  1688 boxed='(-1/8, 1/2)'              | '*   Final output generation.'
+p101  L2 ok=1 CLEAN ntok=  2119 think_tok~  1411 boxed='\\frac{2}{3}'             | 'Final Answer: 2/3.'
+p103  L2 ok=1 CLEAN ntok=  7891 think_tok~  5783 boxed='150'                      | '*   I will formulate the response based on this.'
+p105  L2 ok=1 CLEAN ntok=  3513 think_tok~  1977 boxed='100'                      | "I'll write out the solution now."
+p124  L3 ok=1 CLEAN ntok=  1717 think_tok~  1330 boxed='-2, 2'                    | 'The final answer is -2, 2.'
+
+summary (kind, answer phase): n problems, n correct
+   ('affirm', 'clean'): 5 problems, 4 correct  ['p27', 'p28', 'p66', 'p103', 'p105']
+   ('answer-is', 'clean'): 2 problems, 2 correct  ['p101', 'p124']

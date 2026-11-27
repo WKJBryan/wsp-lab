@@ -1,11 +1,12 @@
 """Token timeline page: where each edited model departs from stock, closes thinking and ends.
 
-Reads the saved MATH-500 generations (same 500 problems, same seed) of twenty runs and packs
+Reads the saved MATH-500 generations (same 500 problems, same seed) of twenty-two runs and packs
 one row per problem per run into phase7/timeline.html, built from phase7/timeline_template.html.
 The full-dose stacked arm is the clean rerun of 2026-11-24; the first run of that model was a
-corrupted run and is not shown (ISSUES #20). The phase-14 and phase-15 arms are the blind edits
-made under the original authors' rules by two editors of different strength (phase14/results.md,
-phase15/results.md).
+corrupted run and is not shown (ISSUES #20). The phase-14 arm and the three phase-15/16 arms are the
+edits made under the original authors' rules by two editors of different strength: GLM-5.3-Flash once,
+then GLM-5.4 in three sessions (its first, a blind repeat and one told the fault) — phase14/results.md,
+phase15/results.md, phase16/results.md.
 
 Usage: uv run python phase7/build_timeline.py
 """
@@ -37,6 +38,8 @@ ARMS = [
     ("s_glm", "GLM-5.3 alone: conditional boost + 5 format rows", "solo", "phase3c/p9_glm_single"),
     ("p14", "Blind edit by GLM-5.3-Flash under the original researchers' rules (one table in layer 0)", "solo", "phase3c/p14_final"),
     ("p15", "Blind edit by GLM-5.4 under the original researchers' rules (two switches in layer 14)", "solo", "phase3c/p15_final"),
+    ("p16A", "Blind edit by GLM-5.4 again, same briefing (a closing gain on 69 units of layer 23)", "solo", "phase3c/p16_A_final"),
+    ("p16B", "Edit by GLM-5.4 told the fault (five copy units flipped, plus a stop detector in layer 23)", "solo", "phase3c/p16_B_final"),
     ("t_glm", "GLM-5.3 team of six: row × 1.35", "team", "phase3c/p9_glm_team"),
     ("t_mix", "Mixed team, four models: row × 1.35", "team", "phase3c/p9_mixed_team"),
     ("t_gf", "GLM-5.3-Flash team of six: gentle add-on to the row", "team", "phase3c/p9_glmflash_team"),
@@ -87,11 +90,11 @@ for key, name, group, p in ARMS:
     print(f"{key:6s} acc {acc:5.1f}%  closed {sum(x[1] >= 0 for x in packed)}  finished {sum(x[3] for x in packed)}")
     out.append(dict(key=key, name=name, group=group, rows=packed))
 
-# self-check against the numbers in the record (phase 3c / phase 8 / phase 14 / addendum 10), as
+# self-check against the numbers in the record (phase 3c / phase 8 / phase 14 / phase 15 / phase 16 / addendum 10), as
 # re-scored with the final answer checker (ISSUES #19, #30, #31)
 want = dict(stock=9.4, orig=54.2, e1=42.2, c1=44.8, dout=41.0, din=10.0, map=36.4, half=50.8, full=52.2,
-            s_mpro=40.6, s_gf50=41.6, s_gf=37.2, s_glm=31.8, p14=11.0, p15=53.0, t_glm=35.2, t_mix=33.2, t_gf=17.0, t_live=13.0,
-            t_mimo=9.2)
+            s_mpro=40.6, s_gf50=41.6, s_gf=37.2, s_glm=31.8, p14=11.0, p15=53.0, p16A=34.0, p16B=39.8, t_glm=35.2, t_mix=33.2,
+            t_gf=17.0, t_live=13.0, t_mimo=9.2)
 for a in out:
     got = sum(x[4] for x in a["rows"]) / 5
     assert abs(got - want[a["key"]]) < 0.05, (a["key"], got)

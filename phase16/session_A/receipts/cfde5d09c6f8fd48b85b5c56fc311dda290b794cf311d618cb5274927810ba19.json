@@ -1,0 +1,17 @@
+{
+ "time": "2026-11-27T13:46:11",
+ "fingerprint": "cfde5d09c6f8fd48b85b5c56fc311dda290b794cf311d618cb5274927810ba19",
+ "note": "Closing-gain edit k=2.3 (same mechanism as pass 2 with k=2.1): in layers.23.mlp.down_proj.weight, for the 69 line-end-specific closing neurons, add (k-1) times their own component along the </think> read-out direction to each neuron output vector. Meant to end the thinking earlier, before the doubt loops set in, so that more responses finish",
+ "changed_tensors": [
+  {
+   "tensor": "model.language_model.layers.23.mlp.down_proj.weight",
+   "shape": [
+    1024,
+    3584
+   ],
+   "changed_values": 68608,
+   "max_abs_delta": 0.008455,
+   "norm_delta": 0.188507
+  }
+ ]
+}

@@ -1,0 +1,189 @@
+edit: {'edit': 'graft_neuron', 'layer': 23, 'neuron': 1998, 'gate_norm': 1.2324055433273315, 'up_norm': 1.1772133111953735, 'down_norm': 0.35536256432533264, 'name': 'E2', 'theta': 25.0, 'delta': 2.0, 'gamma': 1.0, 'b1': 5.0, 'b2': 0.35536254172053655}
+
+pid | cl ok lvl | actual closed at | simulated first close (E): row, P, top token | answer stated by then -> match | same for reference (no E) | ref P(actual) first 1500 -> E
+p0   | 0 0 L4 |      - |   None 0.00 ''       |                         None -> - |   None | 0.823 -> 0.823
+p1   | 1 1 L2 |  13600 |   3353 0.72 '</think>' |                          '9' -> 1 |  12539 | 0.875 -> 0.875
+       E first close after line: 'So the answer is 9.'
+p2   | 1 1 L1 |   3102 |   2717 0.59 '</think>' |                         None -> 0 |   2717 | 0.857 -> 0.857
+       E first close after line: 'I will write the solution now.'
+p3   | 1 1 L4 |  14608 |  13864 0.75 '</think>' |                     '63/400' -> 1 |  13864 | 0.832 -> 0.832
+       E first close after line: 'Final Answer: 63/400.'
+p4   | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.772 -> 0.772
+p5   | 0 0 L3 |      - |   None 0.00 ''       |                         None -> - |   None | 0.859 -> 0.859
+p6   | 1 1 L2 |  17310 |   None 0.00 ''       |                         None -> - |   None | 0.886 -> 0.886
+p7   | 0 0 L3 |      - |   None 0.00 ''       |                         None -> - |   None | 0.846 -> 0.846
+p8   | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.885 -> 0.885
+p9   | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.800 -> 0.800
+p10  | 0 0 L4 |      - |   4075 1.00 '</think>' |                         None -> 0 |   None | 0.876 -> 0.876
+       E first close after line: 'Okay, so $n=7$.'
+p11  | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.807 -> 0.807
+p12  | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.840 -> 0.840
+p13  | 0 0 L3 |      - |  17479 1.00 '</think>' |                        '-10' -> 1 |   None | 0.854 -> 0.854
+       E first close after line: 'So the answer is $-10$.'
+p14  | 0 0 L3 |      - |   5181 0.68 '</think>' |                          '9' -> 1 |   None | 0.889 -> 0.889
+       E first close after line: '*   The largest is 9.'
+p15  | 0 0 L4 |      - |   None 0.00 ''       |                         None -> - |   None | 0.891 -> 0.891
+p16  | 1 1 L1 |   9053 |   None 0.00 ''       |                         None -> - |   None | 0.836 -> 0.836
+p17  | 0 0 L4 |      - |   None 0.00 ''       |                         None -> - |   None | 0.785 -> 0.785
+p18  | 0 0 L3 |      - |   None 0.00 ''       |                         None -> - |   None | 0.801 -> 0.801
+p19  | 0 0 L4 |      - |   None 0.00 ''       |                         None -> - |   None | 0.886 -> 0.886
+p20  | 0 0 L4 |      - |   None 0.00 ''       |                         None -> - |   None | 0.885 -> 0.885
+p21  | 1 1 L2 |  10249 |   2769 1.00 '</think>' |                       '2010' -> 1 |   9826 | 0.871 -> 0.871
+       E first close after line: 'Seems straightforward.'
+p22  | 0 0 L1 |      - |   None 0.00 ''       |                         None -> - |   None | 0.817 -> 0.817
+p23  | 0 0 L3 |      - |   None 0.00 ''       |                         None -> - |   None | 0.815 -> 0.815
+p24  | 0 0 L3 |      - |   None 0.00 ''       |                         None -> - |   None | 0.837 -> 0.837
+p25  | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.788 -> 0.789
+p26  | 1 1 L1 |  11486 |   1438 1.00 '</think>' |                         None -> 0 |  10778 | 0.904 -> 0.904
+       E first close after line: '*   This seems correct.'
+p27  | 0 0 L3 |      - |   8445 1.00 '</think>' |                         None -> 0 |   None | 0.897 -> 0.896
+       E first close after line: 'This implies the system is inconsistent.'
+p28  | 1 1 L2 |  11124 |   1134 0.37 '   '    |                         None -> 0 |  10137 | 0.887 -> 0.886
+       E first close after line: '*   Count is 6.'
+p29  | 0 1 L4 |      - |   1851 1.00 '</think>' |                         None -> 0 |   None | 0.870 -> 0.870
+       E first close after line: 'Looks solid.'
+p30  | 1 1 L1 |  14481 |   1515 0.92 '</think>' |                         None -> 0 |  13970 | 0.804 -> 0.804
+       E first close after line: 'e cosine is $\\sqrt{3}/2$. That angle is $30^\\circ$ or $\\pi/6$ radians.'
+p31  | 0 0 L2 |      - |   5547 1.00 '</think>' |                         '0?' -> 0 |   None | 0.835 -> 0.835
+       E first close after line: 'nd the only combination is $(6,6,6)$, then the probability is $1/216$.'
+p32  | 1 1 L2 |  17664 |   3592 0.51 '</think>' |                          '2' -> 1 |  16977 | 0.841 -> 0.841
+       E first close after line: '*   So the answer should be 2.'
+p33  | 1 0 L2 |   7918 |   4086 0.89 '</think>' |                         None -> 0 |   7417 | 0.869 -> 0.869
+       E first close after line: 'So $\\{1, -1, \\sqrt{3}, -\\sqrt{3}\\}$.'
+p34  | 0 0 L4 |      - |   None 0.00 ''       |                         None -> - |   None | 0.864 -> 0.864
+p35  | 0 0 L2 |      - |   None 0.00 ''       |                         None -> - |   None | 0.889 -> 0.889
+p36  | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.848 -> 0.848
+p37  | 0 0 L2 |      - |   None 0.00 ''       |                         None -> - |   None | 0.880 -> 0.880
+p38  | 0 0 L3 |      - |   None 0.00 ''       |                         None -> - |   None | 0.838 -> 0.838
+p39  | 0 0 L4 |      - |   3720 1.00 '</think>' |                         None -> 0 |   None | 0.838 -> 0.838
+       E first close after line: '*   My solution seems consistent.'
+p40  | 0 0 L3 |      - |   None 0.00 ''       |                         None -> - |   None | 0.869 -> 0.869
+p41  | 0 0 L2 |      - |   None 0.00 ''       |                         None -> - |   None | 0.813 -> 0.813
+p42  | 0 0 L2 |      - |   None 0.00 ''       |                         None -> - |   None | 0.847 -> 0.847
+p43  | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.847 -> 0.847
+p44  | 0 0 L4 |      - |   None 0.00 ''       |                         None -> - |   None | 0.816 -> 0.816
+p45  | 0 0 L3 |      - |   None 0.00 ''       |                         None -> - |   None | 0.813 -> 0.813
+p46  | 1 1 L3 |  23668 |   2317 0.81 '</think>' |                         None -> 0 |   None | 0.945 -> 0.945
+       E first close after line: 'Does this satisfy the condition? Yes.'
+p47  | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.757 -> 0.757
+p48  | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.742 -> 0.742
+p49  | 0 0 L4 |      - |   None 0.00 ''       |                         None -> - |   None | 0.826 -> 0.826
+p50  | 1 1 L2 |   4753 |   2284 1.00 '</think>' |                         None -> 0 |   4302 | 0.859 -> 0.859
+       E first close after line: '*   The result is 70.'
+p51  | 0 0 L2 |      - |    767 0.90 '</think>' |                          '2' -> 1 |   None | 0.847 -> 0.846
+       E first close after line: 'So the answer should be 2.'
+p52  | 1 1 L5 |  14449 |   2332 1.00 '</think>' |                         '10' -> 1 |  13912 | 0.826 -> 0.826
+       E first close after line: '*   So the answer is 10.'
+p53  | 0 0 L3 |      - |   5079 1.00 '</think>' |                         None -> 0 |   None | 0.871 -> 0.871
+       E first close after line: '*   So the solution is indeed $(-\\infty, -3) \\cup [0, \\infty)$.'
+p54  | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.910 -> 0.910
+p55  | 0 0 L4 |      - |   None 0.00 ''       |                         None -> - |   None | 0.827 -> 0.827
+p56  | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.798 -> 0.798
+p57  | 0 0 L3 |      - |   None 0.00 ''       |                         None -> - |   None | 0.884 -> 0.884
+p58  | 0 0 L2 |      - |  17032 1.00 '</think>' |                         None -> 0 |   None | 0.856 -> 0.856
+       E first close after line: 'Then $a+b = 4$.'
+p59  | 0 0 L1 |      - |   1689 1.00 '</think>' |                         '80' -> 1 |  19080 | 0.871 -> 0.871
+       E first close after line: '*   The answer would be 80.'
+p60  | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.900 -> 0.900
+p61  | 0 0 L4 |      - |   None 0.00 ''       |                         None -> - |   None | 0.859 -> 0.859
+p62  | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.879 -> 0.879
+p63  | 0 0 L4 |      - |   None 0.00 ''       |                         None -> - |   None | 0.848 -> 0.848
+p64  | 0 0 L3 |      - |   None 0.00 ''       |                         None -> - |   None | 0.848 -> 0.848
+p65  | 0 0 L4 |      - |   None 0.00 ''       |                         None -> - |   None | 0.798 -> 0.798
+p66  | 1 1 L4 |   3863 |   1148 0.65 '</think>' |                         None -> 0 |   1148 | 0.883 -> 0.883
+       E first close after line: 'Okay, proceeding.'
+p67  | 1 0 L2 |  16509 |   4264 0.88 '</think>' |                         None -> 0 |  15983 | 0.843 -> 0.843
+       E first close after line: '4.  Write the final exponential form: $2 e^{-i \\pi / 3}$.'
+p68  | 1 1 L3 |  10030 |   2009 0.56 '</think>' |                         None -> 0 |   None | 0.854 -> 0.854
+       E first close after line: 'Okay, the solution seems solid.'
+p69  | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.828 -> 0.828
+p70  | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.785 -> 0.785
+p71  | 1 1 L3 |  11305 |   1240 1.00 '</think>' |                         None -> 0 |   None | 0.844 -> 0.843
+       E first close after line: 'Okay, so the calculation holds up.'
+p72  | 1 1 L2 |  11350 |   1806 1.00 '</think>' |                         None -> 0 |  10934 | 0.829 -> 0.829
+       E first close after line: '*   Answer: 240.'
+p73  | 1 1 L4 |  19684 |  13195 1.00 '</think>' |                    '(-6, 1)' -> 1 |  19012 | 0.851 -> 0.851
+       E first close after line: '*   So the solution is $(-6, 1)$.'
+p74  | 0 0 L1 |      - |   None 0.00 ''       |                         None -> - |   None | 0.872 -> 0.872
+p75  | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.865 -> 0.865
+p76  | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.881 -> 0.881
+p77  | 0 0 L4 |      - |   None 0.00 ''       |                         None -> - |   None | 0.816 -> 0.816
+p78  | 0 0 L4 |      - |   None 0.00 ''       |                         None -> - |   None | 0.847 -> 0.847
+p79  | 1 1 L4 |  13684 |  12946 0.69 '</think>' |                        '312' -> 1 |  12946 | 0.880 -> 0.880
+       E first close after line: 'Therefore, the number of natural-number factors is 312.'
+p80  | 0 0 L2 |      - |   None 0.00 ''       |                         None -> - |   None | 0.853 -> 0.853
+p81  | 0 0 L4 |      - |   None 0.00 ''       |                         None -> - |   None | 0.831 -> 0.831
+p82  | 1 1 L3 |  22201 |   2816 0.54 '</think>' |                         None -> 0 |   None | 0.888 -> 0.888
+       E first close after line: '*   $H/R = \\frac{V}{\\pi (V/2\\pi)} = \\frac{V}{V/2} = 2$.'
+p83  | 0 0 L4 |      - |   2353 0.72 '</think>' |                         None -> 0 |   None | 0.950 -> 0.950
+       E first close after line: 'Then $a+b = 2+10 = 12$.'
+p84  | 0 0 L3 |      - |   None 0.00 ''       |                         None -> - |   None | 0.820 -> 0.820
+p85  | 1 1 L4 |  16610 |  15423 0.33 '          ' |                          '4' -> 1 |  15423 | 0.899 -> 0.898
+       E first close after line: "I'll stop here."
+p86  | 1 1 L3 |   5669 |   1910 1.00 '</think>' |                         None -> 0 |   None | 0.866 -> 0.866
+       E first close after line: 'Looks good.'
+p87  | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.831 -> 0.831
+p88  | 1 1 L4 |  23482 |  22477 1.00 '</think>' |                         None -> 0 |  22477 | 0.906 -> 0.906
+       E first close after line: 'Final Answer seems to be 11.'
+p89  | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.789 -> 0.789
+p90  | 1 1 L5 |  20668 |  19301 0.53 '</think>' |                 'usually $5' -> 0 |  19301 | 0.879 -> 0.879
+       E first close after line: 'The value is 5.'
+p91  | 0 0 L1 |      - |   None 0.00 ''       |                         None -> - |   None | 0.804 -> 0.804
+p92  | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.872 -> 0.872
+p93  | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.874 -> 0.874
+p94  | 0 0 L4 |      - |   None 0.00 ''       |                         None -> - |   None | 0.816 -> 0.816
+p95  | 1 1 L1 |   2859 |   2437 0.63 '</think>' |                        '512' -> 1 |   2437 | 0.836 -> 0.836
+       E first close after line: 'Ready.'
+p96  | 0 0 L2 |      - |   None 0.00 ''       |                         None -> - |   None | 0.876 -> 0.876
+p97  | 1 1 L3 |  18061 |  17285 0.33 'Wait'   |                          '5' -> 1 |  17285 | 0.905 -> 0.905
+       E first close after line: "Okay, I'll stick with 5."
+p98  | 0 0 L4 |      - |   None 0.00 ''       |                         None -> - |   None | 0.907 -> 0.907
+p99  | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.810 -> 0.810
+p100 | 0 0 L2 |      - |   2225 1.00 '</think>' |                         None -> 0 |   None | 0.884 -> 0.884
+       E first close after line: 'My logic holds.'
+p101 | 1 1 L2 |   4168 |   None 0.00 ''       |                         None -> - |   3626 | 0.873 -> 0.873
+p102 | 0 0 L4 |      - |   None 0.00 ''       |                         None -> - |   None | 0.885 -> 0.885
+p103 | 1 1 L2 |   6204 |   1269 1.00 '</think>' |                         None -> 0 |   5503 | 0.845 -> 0.844
+       E first close after line: '*   Result: 150.'
+p104 | 0 0 L4 |      - |   None 0.00 ''       |                         None -> - |   None | 0.846 -> 0.846
+p105 | 1 1 L2 |   4947 |   3346 1.00 '</think>' |                         None -> 0 |   4513 | 0.896 -> 0.896
+       E first close after line: '*   Seems robust.'
+p106 | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.862 -> 0.862
+p107 | 1 1 L5 |  11960 |   7766 1.00 '</think>' |                         None -> 0 |  11288 | 0.848 -> 0.848
+       E first close after line: '*   Okay, so the result is $37/256$.'
+p108 | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.827 -> 0.827
+p109 | 0 0 L4 |      - |   None 0.00 ''       |                         None -> - |   None | 0.845 -> 0.845
+p110 | 0 0 L3 |      - |   None 0.00 ''       |                         None -> - |   None | 0.821 -> 0.821
+p111 | 1 1 L4 |  13838 |   2397 0.74 '</think>' |                         None -> 0 |  13519 | 0.858 -> 0.859
+       E first close after line: '*   This matches.'
+p112 | 1 1 L3 |   2076 |   1698 0.52 '</think>' |                         None -> 0 |   1698 | 0.873 -> 0.873
+       E first close after line: 'Final check complete. Proceed to output.'
+p113 | 1 1 L4 |  14198 |   None 0.00 ''       |                         None -> - |   None | 0.905 -> 0.905
+p114 | 1 1 L4 |   9148 |   1672 1.00 '</think>' |                         None -> 0 |   8340 | 0.852 -> 0.852
+       E first close after line: '*   Sum of y-coords: $10 + (-6) = 4$.'
+p115 | 1 1 L1 |   1545 |   1207 0.90 '</think>' |                         None -> 0 |   1207 | 0.874 -> 0.874
+       E first close after line: 'Ready to generate output.'
+p116 | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.824 -> 0.824
+p117 | 0 0 L3 |      - |   None 0.00 ''       |                         None -> - |   None | 0.825 -> 0.825
+p118 | 1 1 L1 |  11364 |   1691 1.00 '</think>' |                         None -> 0 |   None | 0.834 -> 0.834
+       E first close after line: 'So the max missed is 7.'
+p119 | 1 1 L3 |   8890 |   1674 1.00 '</think>' |                         '85' -> 1 |   None | 0.859 -> 0.859
+       E first close after line: 'Result: 85.'
+p120 | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.798 -> 0.798
+p121 | 1 0 L5 |  32768 |  17798 0.41 '   '    |                      '|S_3|' -> 0 |  19279 | 0.878 -> 0.878
+       E first close after line: '*   This seems correct.'
+p122 | 0 0 L3 |      - |   1736 0.32 '   '    |                         '7!' -> 0 |   None | 0.715 -> 0.715
+       E first close after line: "ut since the titles are distinct, it's safer to assume distinct items."
+p123 | 1 1 L2 |  15459 |   3400 1.00 '</think>' |                       '2028' -> 0 |   None | 0.819 -> 0.819
+       E first close after line: 'So the answer is 2028.'
+p124 | 1 1 L3 |   3331 |   1068 0.37 '   '    |                '\\{-2, 2\\}' -> 1 |   3042 | 0.809 -> 0.808
+       E first close after line: 'Sorted list: $-2, 2$.'
+p125 | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.819 -> 0.819
+p126 | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.829 -> 0.829
+p127 | 0 0 L5 |      - |   None 0.00 ''       |                         None -> - |   None | 0.794 -> 0.794
+
+threshold P(</think>) >= 0.3. Groups: [n, n with a simulated close, n whose stated answer at that point matches gold]
+   cut          : [86, 14, 4]
+   closed_ok    : [39, 35, 12]
+   closed_wrong : [3, 3, 0]
+non-line-end thinking positions: max |P_E - P_ref| = 1.0000; answer phase: max P_E(</think>) = 0.0000

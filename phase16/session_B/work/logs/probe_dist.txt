@@ -1,0 +1,123 @@
+threshold | commit line ends above | other line ends above | non-line-end thinking positions above
+    18   |     85 / 91 |  15777 / 49556 (31.837%) |      0 / 946690 (0.0000%)
+    20   |     82 / 91 |  10181 / 49556 (20.544%) |      0 / 946690 (0.0000%)
+    21   |     79 / 91 |   7585 / 49556 (15.306%) |      0 / 946690 (0.0000%)
+    22   |     77 / 91 |   5426 / 49556 (10.949%) |      0 / 946690 (0.0000%)
+    23   |     74 / 91 |   3676 / 49556 (7.418%) |      0 / 946690 (0.0000%)
+    24   |     74 / 91 |   2253 / 49556 (4.546%) |      0 / 946690 (0.0000%)
+    25   |     69 / 91 |   1266 / 49556 (2.555%) |      0 / 946690 (0.0000%)
+    26   |     62 / 91 |    686 / 49556 (1.384%) |      0 / 946690 (0.0000%)
+    28   |     32 / 91 |    211 / 49556 (0.426%) |      0 / 946690 (0.0000%)
+    30   |      7 / 91 |      4 / 49556 (0.008%) |      0 / 946690 (0.0000%)
+
+sequences with a thinking position scoring >= 24 within 8000 tokens: 71/128; first such position (tokens): [223, 381, 405, 462, 479, 490, 490, 491, 492, 506, 509, 544, 566, 573, 647, 650, 670, 697, 704, 711, 733, 742, 742, 772, 776, 812, 855, 856, 864, 875, 902, 917, 943, 950, 982, 988, 1012, 1056, 1079, 1094, 1125, 1156, 1162, 1184, 1195, 1225, 1254, 1255, 1276, 1301, 1301, 1350, 1373, 1389, 1401, 1406, 1575, 1631, 1665, 1709, 1814, 1816, 1880, 1912, 1968, 2266, 2509, 2772, 3259, 3921, 4500]
+
+sample other line ends with score in [22, 23):
+   22.30 p0: '$a_0=404$'
+   22.96 p1: 'So it is very close to 9.'
+   22.43 p2: "*   Let's double check standard definitions. Ceiling(2.5) = 3. Ceiling(2.001) = 3."
+   22.61 p4: "*   Here, it's an inverse function $x = y^2 + \\dots$."
+   22.61 p5: ': "Two distinct numbers are selected simultaneously and at random from the set $\\{1, 2, 3, 4, 5\\}$."'
+   22.83 p7: '2.  $n \\equiv 3 \\pmod 7$'
+   22.43 p10: '3. Find the residue in the given interval $[0, 7]$.'
+   22.48 p12: '*   We need to find factors of degree 10 and 5? Or degree 6?'
+   22.48 p14: '*   The solutions are $t = 3$ and $t = 9$.'
+   22.85 p15: '*   We want to maximize $y_1 + y_2 + y_3$.'
+   22.59 p17: "e showing '1' on any specific die, but across all 10 dice, we must count how many times '1' appears."
+   22.30 p18: "Let's test $f(x)=x$. It works."
+   22.95 p19: 'Not obvious.'
+   22.37 p20: '*   Let $g(x) = \\arccos(\\sin x)$. We want to calculate Area(Area) over the given interval.'
+   22.46 p21: '*   $2009 - 1995 = 14$. Correct.'
+   22.39 p22: '$ means the triangle is isosceles with vertex $C$. But wait, if $AC=BC$, then $\\angle A = \\angle B$.'
+   22.09 p23: 'Yes, this is always true.'
+   22.72 p24: '*   So, for $xy$ to be divisible by 9, it must contain the factor 3 twice.'
+   22.23 p26: '*   Goal: Find its prime factors and determine the largest one.'
+   23.00 p27: 'Provide the final boxed answer.'
+   22.15 p28: '*   $32$ itself.'
+   22.44 p29: '$x < -3$'
+   22.35 p30: '*   So, $\\frac{\\sqrt{3}}{2}$ corresponds to $\\cos(30^\\circ)$.'
+   22.39 p31: 'If $d_1=6$, then $d_2+d_3 = 12$.'
+   22.06 p32: "*   **Total Group C:** Mrs. Stephenson's class has 30 students. So, $N_{total} = 30$."
+
+sample other line ends with score in [23, 24):
+   23.06 p0: 'Not obvious.'
+   23.05 p1: 'Could it be $\\sqrt[3]{6^3 \\text{ of } 8^3}$? No.'
+   23.42 p2: '*   So, the ceiling is $3$.'
+   23.29 p5: 'ment". Also, if they were distinct indices, order doesn\'t matter for the set $\\{x,y\\}$ vs $\\{y,x\\}$.'
+   23.33 p8: '*   If $a = 9$: $90 + b > 65 \\implies b > -15$. Even number fits here? $90+0=90$. Yes.'
+   23.79 p10: 'And $-1 \\equiv 7 \\pmod{8}$.'
+   23.19 p12: "= (x^5)^2$. So $P(x) = (x^5)^2 + x^5 + 1$. This doesn't look immediately factorable using $y^2+y+1$."
+   23.70 p14: ' have a specific constraint like $t \\ge 0$ (time cannot be negative). Both 3 and 9 are non-negative.'
+   23.22 p17: 'hows a 1"? Yes. If I roll three dice and want exactly one to show a 1, that is a different scenario.'
+   23.60 p18: 'Therefore, there are no solutions of the form $f(x)=x+c$ if $c \\neq 0$.'
+   23.19 p19: 'So $r = 85$.'
+   23.23 p20: '*   Wait, this suggests the maximum value is at $x=3\\pi/2$ where $\\sin x = -1$.'
+   23.45 p21: 'f $k=134$, $15 \\times 134 = 15 \\times 133 + 15 = 1995 + 15 = 2010$. Difference is $2010 - 2009 = 1$.'
+   23.12 p22: '*   Therefore, $\\angle B = 70^{\\circ}$.'
+   23.29 p24: 'er $a$ or $b$ is a multiple of 9 (impossible here, max is 6) or both $a$ and $b$ are multiples of 3.'
+   23.08 p26: '*   So, $840 = 2^3 \\times 3^1 \\times 5^1 \\times 7^1$.'
+   23.08 p27: 'So, $C_{small} = 2P$.'
+   23.07 p28: '*   Calculate result: 6.'
+   23.52 p29: '$x < -3$'
+   23.20 p30: "people might confuse $\\cos(60^\\circ) = 1/2$ with $\\cos(30^\\circ) = \\sqrt{3}/2$. Yes, that's correct."
+   23.08 p31: 'Maybe the user meant "What is the probability that the sum is 18 *given that the sum is 18*"? No.'
+   23.70 p32: 'e class have a lunch box." -> $|L|=20$. "Of Mrs. Stephenson\'s 30 students..." -> Total count $N=30$.'
+   23.33 p33: '{3}, -\\sqrt{3}$ or similar. Since the prompt asks for "all the solutions", providing the set is key.'
+   23.15 p35: "on interpretation: $x = \\frac{28}{999}$? No, that's for a repeating decimal with one pair of digits."
+   23.01 p37: '*   Ah, the question asks for the GCF of 30, 90, and 75.'
+
+sample other line ends with score in [24, 25):
+   24.32 p0: "This doesn't seem to lead to a nice factorization immediately."
+   24.33 p1: "Is it possible the question meant $\\sqrt[3]{6^3+8^3}$? Yes, that's what I calculated."
+   24.32 p2: '*   "Evaluate $\\lfloor0.999\\rfloor+\\lceil2.001\\rceil$."'
+   24.93 p10: 'The only integer in $[0, 7]$ congruent to 7 mod 8 is 7 itself.'
+   24.08 p12: '*   However, maybe I can factor it as a difference of squares? No.'
+   24.62 p14: 'out "past noon"? No, it defines the domain $t \\in [0, \\infty)$. Both roots are valid in this domain.'
+   24.32 p17: '*   This phrasing is often used to mean "Exactly one die shows a 1".'
+   24.32 p20: '*   Wait, $\\arccos(\\sin x)$ is not symmetric around $x = \\pi/2$.'
+   24.10 p21: 'tive unless specified otherwise, but even if negative allowed, $|-15(-1)| = 15$ vs $15(134) = 2010$.'
+   24.32 p22: 'ng through $C$ and perpendicular bisector of $AB$. Wait, no. If $AC=BC$, then $\\angle A = \\angle B$.'
+   24.54 p24: '6.  $(5, 6) \\rightarrow 30$ (No)'
+   24.55 p26: '*   The largest is 7.'
+   24.43 p27: '$P = 4$.'
+   24.25 p28: 'Seems solid.'
+   24.13 p29: '*   Or maybe $5 - 4x \\le 17$? Then $x \\ge -3$. Largest integer is $-3$.'
+   24.26 p30: " Why did I doubt myself? Because $\\cos(60^\\circ) = 1/2$. That's easy. $\\cos(30^\\circ) = \\sqrt{3}/2$."
+   24.65 p31: 'Wait, I found that $(6, 6, 6)$ is the only solution.'
+   24.24 p32: '*   Is it possible that the student list is defined as a union? No, we need the *intersection*.'
+   24.43 p33: '$z = 1, -1, \\sqrt{3}, -\\sqrt{3}$.'
+   24.09 p37: '*   The greatest common factor is 15.'
+   24.38 p39: "angles of any convex polygon is fixed at $(N-2) \\times 180^\\circ$. For a pentagon, it's $540^\\circ$."
+   24.07 p40: '$576^{1/4} \\cdot 216^{1/2} = 72$.'
+   24.93 p41: '*   The largest number in this list is $-81$.'
+   24.60 p46: '*   $\\theta = 60^\\circ$.'
+   24.57 p50: '*   If it were $451_6$, usually the order is left-to-right.'
+
+sample other line ends with score in [25, 26):
+   25.32 p0: "This doesn't simplify to $x^3 = \\dots$ directly."
+   25.02 p1: 'Thus, the closest integer is 9.'
+   25.07 p2: '*   Okay, so Term 1 is 0. Term 2 is 3. Sum is 3.'
+   25.21 p5: '*   Total favorable outcomes: $1 + 6 = 7$.'
+   25.15 p10: 'Could it be that $-3737$ is actually $-3737$? Yes.'
+   25.27 p18: 'So $f(x)=x$ is the only solution derived from $f(x+c)=x$.'
+   25.05 p19: 'Okay, calculation seems correct.'
+   25.47 p20: '*   So $\\arccos(\\sin x)$ is always positive.'
+   25.14 p21: '*   But here it asks for a multiple of 15.'
+   25.02 p22: ' the exact shape of the triangle $ABC$ relative to the coordinates, but rather setting up variables.'
+   25.53 p24: '*   Only one favorable outcome: $(3, 6)$.'
+   25.93 p27: 'This logic holds up.'
+   25.54 p28: 'Looks perfect.'
+   25.99 p29: '*   However, maybe the question is asking for the smallest integer? No, "largest".'
+   25.69 p30: '*   $30^\\circ$ in radians is $\\frac{\\pi}{6}$.'
+   25.13 p31: 'So the only triple is $(6, 6, 6)$.'
+   25.37 p32: "that the student list is fixed? No, it's about finding the *least possible number* given the counts."
+   25.36 p33: 'These seem correct.'
+   25.92 p37: '*   Since 15 divides all three, it is the answer.'
+   25.32 p39: '*   Okay, I interpreted this correctly.'
+   25.46 p40: '$= 72$.'
+   25.80 p41: '*   So $-72$ is the largest multiple of 9 less than -70.'
+   25.51 p46: '$\\theta = 60^\\circ$.'
+   25.14 p50: '*   Sum: $36 + 30 + 4 = 70$.'
+   25.39 p53: '*   So the solution set is $(-\\infty, -3] \\cup [0, \\infty)$.'
+
+sample non-line-end thinking positions with score >= 24:

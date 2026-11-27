@@ -1,0 +1,13 @@
+{
+ "_about": "The phase-16 sandbox of session A as built before its editor session (phase14/make_sandbox.sh, 2026-11-27): the base model's weight fingerprint and the digests of the tools the editor runs. Every pass summary carries both (`base_fingerprint`, a digest of the `harness` object below as `harness_digest`), so the session can be audited against this file. Committed before any pass of the session. The base model and the tools are those of phase 15.",
+ "base_fingerprint": "36d3430c9c2c7ed54bc65c4ec9a62690ed4a464ae05b784aae670d213a24ec90",
+ "harness": {
+  "benchmark.py": "7bb1f4d03f36b523742a0ce9a1e65ea6bf4a1a00fd1911557bad210864aa695e",
+  "eval_pass.py": "aae55a5ea666fdbbf653479dc1e0f092c79478706e820568f793457d4a1ea28d",
+  "gpulock.py": "927ceef18ccbbd8e93a651752ebfe8908e43ecc0089b996fedf47254a858617a",
+  "rescore.py": "1b9e21dd06bcb9d969c2c6940a69ed3b4e46a84254decbcd2516c14150ec8c0b",
+  "runcheck.py": "89d5a817b5a8e35eec0349d0ce64c86e62830f6cbfc5764857a6e68748a0409f",
+  "save_edit.py": "9d493624e658076f41765f4b14d0fc571cc915ca31c5b7feaa12db0ce8d51300",
+  "scorer.py": "b6d98c8a5c4bb9f7e26bdc6b53390a5534c87f6e45f49f0bc3e595246b020baf"
+ }
+}

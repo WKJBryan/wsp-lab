@@ -1,0 +1,63 @@
+p2    L1 ok=1 CLEAN ntok=  2578 think_tok~  1767 boxed='3'                        | 'Result is 3.'
+p5    L3 ok=1 CLEAN ntok=  5599 think_tok~  3544 boxed='\\frac{7}{10}'            | '*   Probability = $\\frac{7}{10}$.'
+p10   L4 ok=1 CLEAN ntok=  8776 think_tok~  5167 boxed='7'                        | 'So the answer is 7.'
+p14   L3 ok=1 CLEAN ntok=  4647 think_tok~  2842 boxed='9'                        | 'Largest is 9.'
+p15   L4 ok=0 LEAKY ntok= 32768 think_tok~ 10881 boxed=None                       | "I'll stick with this."
+p16   L1 ok=1 CLEAN ntok=  3821 think_tok~  2582 boxed='1102'                     | 'I will write the solution now.'
+p17   L4 ok=0 CLEAN ntok=  6211 think_tok~  4428 boxed='0.324'                    | '$0.324$.'
+p21   L2 ok=1 CLEAN ntok=  2893 think_tok~  1773 boxed='2010'                     | '*   So 2010 is indeed the closest.'
+p24   L3 ok=1 CLEAN ntok=  4787 think_tok~  3496 boxed='1/6'                      | '*   So the answer is 1/6.'
+p26   L1 ok=1 CLEAN ntok=  1114 think_tok~   471 boxed='7'                        | '*   Largest prime factor is 7.'
+p27   L3 ok=1 CLEAN ntok=  4154 think_tok~  2277 boxed='4'                        | 'Result: 4.'
+p28   L2 ok=1 CLEAN ntok=  2661 think_tok~  1468 boxed='6'                        | '*   Set size is 6.'
+p29   L4 ok=1 CLEAN ntok=  2977 think_tok~  1965 boxed='-4'                       | 'Okay, that seems consistent.'
+p30   L1 ok=1 CLEAN ntok=  3488 think_tok~  2520 boxed='\\frac{\\pi}{6}'          | '*   Ready to write the response.'
+p31   L2 ok=1 CLEAN ntok=  6688 think_tok~  3868 boxed='\\frac{1}{216}'           | 'So the answer should be $1/216$.'
+p32   L2 ok=1 CLEAN ntok= 12923 think_tok~ 15550 boxed='2'                        | 'I will write down the solution based on the logic that $|A \\cap B| \\ge 2$.'
+p37   L2 ok=1 CLEAN ntok= 11875 think_tok~  7268 boxed='15'                       | '*   So the answer is 15.'
+p46   L3 ok=1 CLEAN ntok=  9121 think_tok~  5847 boxed='60'                       | '*   This seems correct.'
+p50   L2 ok=1 CLEAN ntok=  3363 think_tok~  2253 boxed='70'                       | '$= 70$.'
+p51   L2 ok=1 CLEAN ntok=  1946 think_tok~  1102 boxed='2'                        | 'So there are two real values.'
+p52   L5 ok=1 CLEAN ntok=  2109 think_tok~  1549 boxed='10'                       | "*   So, $10$ students are B's."
+p53   L3 ok=0 CLEAN ntok=  5624 think_tok~  4061 boxed='(-\\infty, -3) \\cup (0,  | '*   So the answer is $(-\\infty, -3) \\cup (0, \\infty)$.'
+p60   L5 ok=0 LEAKY ntok= 32768 think_tok~  4666 boxed=None                       | '*   So all digits are non-zero.'
+p66   L4 ok=1 CLEAN ntok=  3533 think_tok~  2165 boxed='\\left(-\\frac{1}{8}, \\f | "I'll write out the solution now."
+p67   L2 ok=0 CLEAN ntok=  9819 think_tok~  7314 boxed='-\\frac{\\pi}{3}'         | "*   I'll write $-\\pi/3$ as the primary answer."
+p68   L3 ok=1 CLEAN ntok=  2884 think_tok~  1911 boxed='2\\sqrt{5}'               | 'Result is $2\\sqrt{5}$.'
+p71   L3 ok=1 CLEAN ntok=  2580 think_tok~  1634 boxed='x^4 - 16'                 | 'This seems correct and robust.'
+p72   L2 ok=1 CLEAN ntok=  1736 think_tok~  1194 boxed='240'                      | 'Distance = 200 * 1.2 = 240.'
+p73   L4 ok=1 CLEAN ntok= 14046 think_tok~  9440 boxed='(-6, 1)'                  | '*   Everything seems straightforward.'
+p75   L5 ok=0 LEAKY ntok= 32768 think_tok~ 14532 boxed=None                       | 'And $rs+st+rt = 0`.'
+p76   L5 ok=1 CLEAN ntok=  5103 think_tok~  2912 boxed='12^{1/7}'                 | '*   $a = 12^{1/7}$.'
+p80   L2 ok=1 CLEAN ntok=  2607 think_tok~  1440 boxed='15'                       | 'Ready to write.'
+p82   L3 ok=0 LEAKY ntok= 32768 think_tok~  4060 boxed=None                       | 'So $H/R = 2\\pi^{2/3}$.'
+p83   L4 ok=0 CLEAN ntok=  3776 think_tok~  1821 boxed='7'                        | 'Sum $a+b = 5+2 = 7$.'
+p86   L3 ok=1 CLEAN ntok=  2009 think_tok~  1286 boxed='9'                        | '*   Ready to write.'
+p90   L5 ok=1 LEAKY ntok= 32768 think_tok~  1515 boxed='5'                        | '*   Yes, it matches.'
+p91   L1 ok=0 CLEAN ntok= 17964 think_tok~ 19473 boxed='10'                       | 'I will output 10.'
+p95   L1 ok=1 CLEAN ntok=  1452 think_tok~   793 boxed='512'                      | '*   So the answer is 512.'
+p96   L2 ok=1 CLEAN ntok=  4679 think_tok~  2859 boxed='\\frac{2}{5}'             | '*   $\\sec x - \\tan x = 2/5$.'
+p100  L2 ok=1 CLEAN ntok=  1498 think_tok~   923 boxed='5'                        | '*   Number of solutions = 5.'
+p101  L2 ok=1 CLEAN ntok=  2268 think_tok~  1427 boxed='\\frac{2}{3}'             | 'Looks solid.'
+p103  L2 ok=1 CLEAN ntok=  2663 think_tok~  1721 boxed='150'                      | 'The total time is 150 seconds.'
+p105  L2 ok=1 CLEAN ntok=  5316 think_tok~  3076 boxed='100'                      | 'Okay, I am confident.'
+p107  L5 ok=1 CLEAN ntok=  2446 think_tok~  1728 boxed='\\frac{37}{256}'          | 'Seems solid.'
+p111  L4 ok=0 LEAKY ntok= 32768 think_tok~  1449 boxed=None                       | '*   If so, the math holds up.'
+p112  L3 ok=1 CLEAN ntok=  1514 think_tok~   790 boxed='3'                        | '$$ \\text{Average} = \\frac{9}{3} = 3 $$'
+p113  L4 ok=1 CLEAN ntok=  3367 think_tok~  1689 boxed='-1004'                    | '*   So $x = -1004$ is the unique real solution.'
+p114  L4 ok=1 CLEAN ntok=  2659 think_tok~  1550 boxed='4'                        | '*   Seems straightforward.'
+p115  L1 ok=1 CLEAN ntok=  5334 think_tok~  3560 boxed='3'                        | 'Boxed: \\boxed{3}.'
+p118  L1 ok=1 CLEAN ntok=  6721 think_tok~  6628 boxed='7'                        | '*   I will write down the steps clearly.'
+p119  L3 ok=1 CLEAN ntok=  5362 think_tok~  2339 boxed='85'                       | '*   So the minimal perimeter is $33 + 42 + 10 = 85$.'
+p122  L3 ok=1 CLEAN ntok=  9945 think_tok~ 10064 boxed='35'                       | '*   So the answer is 35.'
+p123  L2 ok=1 CLEAN ntok= 18674 think_tok~  1875 boxed='2019'                     | '*   It seems correct.'
+p126  L5 ok=1 CLEAN ntok= 21972 think_tok~ 15534 boxed='24 - 8\\sqrt{5}'          | "I'll stick with this."
+
+summary (kind, answer phase): n problems, n correct
+   ('affirm', 'clean'): 19 problems, 17 correct  ['p16', 'p29', 'p30', 'p32', 'p46', 'p66', 'p67', 'p71', 'p73', 'p80', 'p86', 'p91', 'p101', 'p105', 'p107', 'p114', 'p118', 'p123', 'p126']
+   ('affirm', 'leaky'): 2 problems, 0 correct  ['p15', 'p111']
+   ('answer-is', 'clean'): 7 problems, 6 correct  ['p10', 'p24', 'p31', 'p37', 'p53', 'p95', 'p122']
+   ('other', 'clean'): 5 problems, 4 correct  ['p17', 'p50', 'p51', 'p52', 'p115']
+   ('other', 'leaky'): 2 problems, 1 correct  ['p60', 'p90']
+   ('result-line', 'clean'): 17 problems, 16 correct  ['p2', 'p5', 'p14', 'p21', 'p26', 'p27', 'p28', 'p68', 'p72', 'p76', 'p83', 'p96', 'p100', 'p103', 'p112', 'p113', 'p119']
+   ('result-line', 'leaky'): 2 problems, 0 correct  ['p75', 'p82']

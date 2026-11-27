@@ -1,0 +1,5 @@
+pass 3 traces, base edits ['R1', 'G:E2'], perturbation H7.3x1.02
+closed traces (n=58): P(</think>) at the closing row  base mean 0.860 median 1.000 | perturbed mean 0.857 median 1.000; traces where it falls below 0.1: base 0, perturbed 0
+ordinary text, first 1500 tokens: KL(base || perturbed) mean nan (pert rows) / 0.00013; protocol probability of the generated token base nan
+line-start rows after >= 10 Waits: mean top-1 probability base 0.950 perturbed 0.950; probability of the generated token base 0.933 perturbed 0.933
+Wait rows after >= 10 Waits: raw Wait logit base 24.24 perturbed 24.25; protocol P(Wait) base 0.476 perturbed 0.475

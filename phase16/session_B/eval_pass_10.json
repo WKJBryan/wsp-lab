@@ -1,0 +1,59 @@
+{
+ "remaining": 6,
+ "passes_spent": 9,
+ "n": 128,
+ "accuracy_boxed": 35.9,
+ "accuracy_rescore": 35.9,
+ "closed": 44.5,
+ "cap_hit_rate": 60.2,
+ "mean_tokens": 21794,
+ "by_level": {
+  "Level 4": [
+   9,
+   33
+  ],
+  "Level 2": [
+   14,
+   23
+  ],
+  "Level 1": [
+   9,
+   11
+  ],
+  "Level 5": [
+   3,
+   34
+  ],
+  "Level 3": [
+   11,
+   27
+  ]
+ },
+ "candidate": "00bc87ba7c56d89e",
+ "wall_s": 529.0,
+ "texts": "gen_10.jsonl",
+ "harness_digest": "b57047ce50bc9935",
+ "base_fingerprint": "36d3430c9c2c7ed54bc65c4ec9a62690ed4a464ae05b784aae670d213a24ec90",
+ "validity": {
+  "soup_pct": 0.0,
+  "soup_judged": true,
+  "admission_tested": true,
+  "admission_finished": [
+   40.6,
+   39.1,
+   1.0
+  ],
+  "admission_closed": [
+   45.3,
+   43.8,
+   1.0
+  ],
+  "admission_correct": [
+   34.4,
+   37.5,
+   0.854
+  ]
+ },
+ "failed_checks": [],
+ "pass": 10
+}
