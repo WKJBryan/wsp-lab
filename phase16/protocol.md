@@ -7,6 +7,15 @@
 > the sandbox holds no pass. The base model and the seven tools are those of phase 15 (same digests). The
 > sandbox of phase 15 was moved aside whole before this one was built (renamed, not deleted).
 
+> **Technical check of session B (2026-11-27, 16:36; before the session, and its outcome sets nothing).**
+> The same check in the fresh sandbox, built after session A's scored runs had ended so that the two
+> sessions never shared the graphics card: exit status 0; one pass charged; all four generations ran to
+> the cap; the summary's base fingerprint equals `sandbox_manifest_B.json` and its tools digest equals the
+> digest of the manifest's `harness` object. The ledger and counter were then reset: the sandbox holds no
+> pass. The base model and the seven tools are those of phase 15 (same digests). Session A's sandbox was
+> moved aside whole before this one was built (renamed, not deleted). Written before session B began; no
+> rule, endpoint or prediction of this file was changed.
+
 Phase 15's one blind session of the stronger editor reached the published edit (265 of 500 against 271).
 Two things are still unknown. First, how much one session of that editor differs from another: the
 result rests on a single session and a single seed of the editor's choices. Second, whether being told
