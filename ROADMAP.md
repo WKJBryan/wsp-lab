@@ -159,7 +159,47 @@ record: `phase15/results.md`; deviations: ISSUES #35–#38.
   50 of up to 512), of which the editor used 4; the edit is a conditional loop-breaker (two
   conditional switches in layer 14), a different mechanism from the published edit's, and it
   still leaves a sixth of the problems without an answer; the author's predictions P2 and P3
-  were wrong.
+  were wrong. Phase 16 (below) repeats this editor blind and scores 170 of 500 (34.0%), so this
+  session's result is one of three.
+
+## Phase 16 — two more sessions of the stronger editor: the blind repeat and the told session (COMPLETE 2026-11-27; INCONCLUSIVE by the registered rule for the hint)
+
+Phase 15 rested on one session of the stronger editor (GLM-5.4), and the hint had not been
+put to a strong editor: the original authors' editor was told the fault, ours was not. Phase 16
+ran the same editor twice more under the same rules, practice set and budget — session A blind,
+with the same briefing file byte for byte (the repeat), and session B told, with the original
+authors' three sentences naming the fault restored. Protocol: `phase16/protocol.md`, registered
+before either session. Full record: `phase16/results.md`; deviations and corrections:
+ISSUES #39–#46.
+- Result (MATH-500, one sample per problem; the three sessions of the same editor, in order):
+  the first session, blind (phase 15) — 265 of 500 (53.0%); REACHES IT (−1.2 points against the
+  published edit's 271, 54.2%; 95% interval −5.0 to 2.6); REPAIR met (+43.6 points over stock's
+  47, 9.4%; interval 39.2 to 48.0). The blind repeat (session A) — 170 of 500 (34.0%); REPAIR
+  met (+24.6 points over stock; interval 20.8 to 28.6); FALLS SHORT of the published edit
+  (−20.2 points; interval −24.2 to −16.2); 19.0 points below the first session (interval −23.0
+  to −15.0). The told session (session B) — 199 of 500 (39.8%); REPAIR met (+30.4 points over
+  stock; interval 26.4 to 34.6); FALLS SHORT (−14.4 points; interval −18.4 to −10.6).
+  By the rule registered before the sessions the hint's effect is INCONCLUSIVE: the told
+  session is 13.2 points below the first blind session (95% interval −17.0 to −9.4) and 5.8
+  points above the blind repeat (interval 2.2 to 9.4) — inside the blind range, and more than
+  4 points from each blind final, in opposite directions. One session of even a strong editor
+  is not a measurement: phase 15's result was one draw. Nothing in three sessions shows that
+  being told lifts the score above what the same editor reaches blind, and one told session
+  cannot show a smaller effect either way.
+- The ten registered predictions (`phase16/protocol.md`): four hold — A1 and B1, REPAIR is met
+  in both sessions; B4, the told session's first edited pass under 110 minutes (72); B5, its
+  final edit attacks the repetition at its source — and six are wrong (A2, A3, A4, B2, B3,
+  B3′): both later sessions were expected to land near the published edit, and the blind repeat
+  to repeat the first session; neither happened. B3 (NO MEASURABLE EFFECT) could not hold once
+  the two blind finals were 19.0 points apart (ISSUES #44). B4 and B5 hold, but each is one
+  observation from one told session, not a measurement.
+- Limits: one told session against two blind ones, each with one seed, and one sample per
+  problem for every scored run; the three sessions end with three different edits (a
+  conditional loop-breaker; a closing gain; a repetition repair plus a stop repair); the stop
+  repair changes when the thinking ends, and whether it is in the original researchers' scope
+  is theirs to say (ISSUES #45); "blind" is relative to the briefing — the checkpoint's own
+  model card names the fault (ISSUES #43); and the edits of the two later sessions leave about
+  two thirds of the problems cut at the cap (328 of 500, 65.6%, and 307 of 500, 61.4%).
 
 ## Honest framing
 
