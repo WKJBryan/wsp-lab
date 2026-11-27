@@ -1,5 +1,12 @@
 # Pre-registered protocol — Phase 16: the hint and the session (two more GLM-5.4 sessions)
 
+> **Technical check of session A (2026-11-27, 11:46; before the session, and its outcome sets nothing).**
+> Four practice problems on the unedited model in the fresh sandbox: exit status 0; one pass charged; all
+> four generations ran to the cap; the summary's base fingerprint equals `sandbox_manifest_A.json` and its
+> tools digest equals the digest of the manifest's `harness` object. The ledger and counter were then reset:
+> the sandbox holds no pass. The base model and the seven tools are those of phase 15 (same digests). The
+> sandbox of phase 15 was moved aside whole before this one was built (renamed, not deleted).
+
 Phase 15's one blind session of the stronger editor reached the published edit (265 of 500 against 271).
 Two things are still unknown. First, how much one session of that editor differs from another: the
 result rests on a single session and a single seed of the editor's choices. Second, whether being told
