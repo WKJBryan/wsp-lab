@@ -1,0 +1,40 @@
+p2    L1 ok=1 CLEAN ntok=  6573 think_tok~  4353 boxed='3'                        | 'Final Answer is 3.'
+p24   L3 ok=1 CLEAN ntok= 13674 think_tok~ 11170 boxed='\\frac{1}{6}'             | "*   I'm done."
+p27   L3 ok=1 CLEAN ntok= 13040 think_tok~  8595 boxed='4'                        | 'Final Answer: 4.'
+p30   L1 ok=1 CLEAN ntok= 13127 think_tok~  8581 boxed='\\frac{\\pi}{6}'          | "*   I'll write the response."
+p37   L2 ok=1 CLEAN ntok= 25640 think_tok~ 12937 boxed='15'                       | 'Answer: 15.'
+p49   L4 ok=0 CLEAN ntok= 24635 think_tok~ 15776 boxed='x < 5'                    | "I think I'm good."
+p50   L2 ok=1 CLEAN ntok= 11679 think_tok~  8529 boxed='70'                       | "I'll output 70."
+p59   L1 ok=1 CLEAN ntok= 10722 think_tok~  7920 boxed='80'                       | '*   W'
+p60   L5 ok=1 CLEAN ntok= 17942 think_tok~ 12997 boxed='54'                       | '*   The calculation yields 54.'
+p61   L4 ok=1 CLEAN ntok= 23091 think_tok~ 13119 boxed='1/2'                      | 'Okay, I am confident.'
+p66   L4 ok=1 CLEAN ntok=  9824 think_tok~  6088 boxed='\\left(-\\frac{1}{8}, \\f | 'The result is $(-1/8, 1/2)$.'
+p67   L2 ok=0 CLEAN ntok= 14909 think_tok~ 10170 boxed='-\\frac{\\pi}{3}'         | "*   Okay, I'm ready."
+p68   L3 ok=1 CLEAN ntok= 14593 think_tok~ 11638 boxed='2\\sqrt{5}'               | 'Done.'
+p71   L3 ok=1 CLEAN ntok= 14700 think_tok~  8749 boxed='x^4 - 16'                 | '*   I will output the solution now.'
+p73   L4 ok=1 CLEAN ntok= 16752 think_tok~ 11911 boxed='(-6, 1)'                  | '*   **Final Answer:** $(-6, 1)$.'
+p76   L5 ok=0 CLEAN ntok= 20251 think_tok~ 13159 boxed='\\sqrt[7]{12}'            | 'Okay, ready to write the solution.'
+p80   L2 ok=1 CLEAN ntok= 10428 think_tok~  5841 boxed='15'                       | 'I will generate the response now.'
+p82   L3 ok=1 CLEAN ntok= 15844 think_tok~  9922 boxed='2'                        | '*   The reasoning is sound.'
+p85   L4 ok=1 CLEAN ntok= 16964 think_tok~ 12225 boxed='4'                        | '*   **I am confident.**'
+p86   L3 ok=1 LEAKY ntok= 32768 think_tok~  3065 boxed='9'                        | 'Okay, writing the response now.'
+p90   L5 ok=1 CLEAN ntok= 13745 think_tok~  9457 boxed='5'                        | '$(\\Phi - \\varphi)^2 = 5$.'
+p95   L1 ok=1 CLEAN ntok=  3408 think_tok~  2329 boxed='512'                      | 'Boxed: \\boxed{512}.'
+p96   L2 ok=1 CLEAN ntok= 17390 think_tok~ 11598 boxed='\\frac{2}{5}'             | '*   Final Answer seems to be $2/5$.'
+p97   L3 ok=1 CLEAN ntok= 18710 think_tok~ 11248 boxed='5'                        | 'Final Answer is 5.'
+p101  L2 ok=1 CLEAN ntok=  1455 think_tok~   877 boxed='\\frac{2}{3}'             | 'The logic holds up. Ready to generate the output.'
+p105  L2 ok=1 CLEAN ntok=  5239 think_tok~  3080 boxed='100'                      | '*   Okay, ready to write the solution.'
+p107  L5 ok=1 CLEAN ntok= 17136 think_tok~ 10304 boxed='\\frac{37}{256}'          | '*   I will proceed with 37/256.'
+p112  L3 ok=1 CLEAN ntok=  4862 think_tok~  3549 boxed='3'                        | '*   Okay, done thinking. Proceeding to generate response.'
+p113  L4 ok=1 CLEAN ntok= 18396 think_tok~ 11830 boxed='-1004'                    | '*   So the answer is $x = -1004$.'
+p115  L1 ok=1 CLEAN ntok=  2550 think_tok~  1575 boxed='3'                        | 'Looks solid. Ready to generate output.'
+p118  L1 ok=1 CLEAN ntok=  8524 think_tok~  6699 boxed='7'                        | "*   Okay, I'm done checking. The answer is 7."
+p122  L3 ok=0 CLEAN ntok= 10728 think_tok~ 10300 boxed='144'                      | '*   *Final Answer:* 144.'
+p124  L3 ok=1 CLEAN ntok=  4702 think_tok~  3758 boxed='-2, 2'                    | '*   Final Answer: `-2, 2`.'
+
+summary (kind, answer phase): n problems, n correct
+   ('affirm', 'clean'): 16 problems, 13 correct  ['p24', 'p30', 'p49', 'p50', 'p61', 'p67', 'p68', 'p71', 'p76', 'p80', 'p85', 'p101', 'p105', 'p107', 'p112', 'p115']
+   ('affirm', 'leaky'): 1 problems, 1 correct  ['p86']
+   ('answer-is', 'clean'): 10 problems, 9 correct  ['p2', 'p27', 'p37', 'p73', 'p96', 'p97', 'p113', 'p118', 'p122', 'p124']
+   ('other', 'clean'): 3 problems, 3 correct  ['p59', 'p60', 'p95']
+   ('result-line', 'clean'): 3 problems, 3 correct  ['p66', 'p82', 'p90']

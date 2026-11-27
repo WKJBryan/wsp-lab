@@ -1,0 +1,379 @@
+pass 1: n=128
+  121  cut@cap, thinking never closed
+    6  closed, correct
+    1  closed, wrong
+tokens: min 1717 median 32768 max 32768 closed median 3513
+
+id | lvl | ok | finish | closed | ntok | char-loop(period,len) | category
+p0    | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p1    | 2 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p2    | 1 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p3    | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p4    | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p5    | 3 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p6    | 2 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p7    | 3 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p8    | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p9    | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p10   | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p11   | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p12   | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p13   | 3 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p14   | 3 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p15   | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p16   | 1 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p17   | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p18   | 3 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p19   | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p20   | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p21   | 2 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p22   | 1 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p23   | 3 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p24   | 3 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p25   | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p26   | 1 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p27   | 3 | 1 | stop   | 1 |  16567 | -                | closed, correct
+p28   | 2 | 1 | stop   | 1 |   5192 | -                | closed, correct
+p29   | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p30   | 1 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p31   | 2 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p32   | 2 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p33   | 2 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p34   | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p35   | 2 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p36   | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p37   | 2 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p38   | 3 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p39   | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p40   | 3 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p41   | 2 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p42   | 2 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p43   | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p44   | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p45   | 3 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p46   | 3 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p47   | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p48   | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p49   | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p50   | 2 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p51   | 2 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p52   | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p53   | 3 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p54   | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p55   | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p56   | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p57   | 3 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p58   | 2 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p59   | 1 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p60   | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p61   | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p62   | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p63   | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p64   | 3 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p65   | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p66   | 4 | 0 | stop   | 1 |   2745 | -                | closed, wrong
+p67   | 2 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p68   | 3 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p69   | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p70   | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p71   | 3 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p72   | 2 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p73   | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p74   | 1 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p75   | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p76   | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p77   | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p78   | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p79   | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p80   | 2 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p81   | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p82   | 3 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p83   | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p84   | 3 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p85   | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p86   | 3 | 1 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p87   | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p88   | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p89   | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p90   | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p91   | 1 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p92   | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p93   | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p94   | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p95   | 1 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p96   | 2 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p97   | 3 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p98   | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p99   | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p100  | 2 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p101  | 2 | 1 | stop   | 1 |   2119 | -                | closed, correct
+p102  | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p103  | 2 | 1 | stop   | 1 |   7891 | -                | closed, correct
+p104  | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p105  | 2 | 1 | stop   | 1 |   3513 | -                | closed, correct
+p106  | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p107  | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p108  | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p109  | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p110  | 3 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p111  | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p112  | 3 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p113  | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p114  | 4 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p115  | 1 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p116  | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p117  | 3 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p118  | 1 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p119  | 3 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p120  | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p121  | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p122  | 3 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p123  | 2 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p124  | 3 | 1 | stop   | 1 |   1717 | -                | closed, correct
+p125  | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p126  | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+p127  | 5 | 0 | length | 0 |  32768 | -                | cut@cap, thinking never closed
+
+=== generations cut at the cap ===
+--- p0 (Level 4, Intermediate Algebra), ntok=32768, closed=False, gold=0, boxed=None, ok=False
+    no exact character loop; repeated lines: 563 x '    Wait, $x^{2018} = x^{2015} \\cdot x^3$.\n    So $x^{2018}$ is divisible by $x^3$.\n    Wait, $x^{2018} = x^{2015} \\cdot x^3$.\n    So $x^{2018}$ is divisible by $x^3$.\n    Wait, $x^{2018} = x^{2015} \\'
+--- p1 (Level 2, Algebra), ntok=32768, closed=False, gold=9, boxed=None, ok=False
+    no exact character loop; repeated lines: 1420 x '    Wait, $728$ is closer to 729.\n    Wait, $728$ is closer to 729.\n    Wait, $728$ is closer to 729.\n    Wait, $728$ is closer to 729.\n    Wait, $728$ is closer to 729.\n    Wait, $728$ is closer to 7'
+--- p2 (Level 1, Algebra), ntok=32768, closed=False, gold=3, boxed=None, ok=False
+    no exact character loop; repeated lines: 777 x '    *   Wait, is it possible that the user meant $\\lfloor0.999\\rfloor + \\lceil2.001\\rceil$?\n    *   Wait, is it possible that the user meant $\\lfloor0.999\\rfloor + \\lceil2.001\\rceil$?\n    *   Wait, is'
+--- p3 (Level 4, Counting & Probability), ntok=32768, closed=False, gold=\frac{63}{400}, boxed=None, ok=False
+    no exact character loop; repeated lines: 733 x 'Wait, if $k=6$, $x$ exponent is 2.\nWait, if $k=6$, $y$ exponent is 6.\nWait, if $k=6$, $x$ exponent is 2.\nWait, if $k=6$, $y$ exponent is 6.\nWait, if $k=6$, $x$ exponent is 2.\nWait, if $k=6$, $y$ expon'
+--- p4 (Level 5, Algebra), ntok=32768, closed=False, gold=-2, boxed=None, ok=False
+    no exact character loop; repeated lines: 219 x "                    *   Wait, maybe the equation is $x = ay^2 + by + c$ and the parabola is $x = ay^2 + by + c$.\n                    *   Wait, let's look at the code again.\n                    *   Wai"
+--- p5 (Level 3, Counting & Probability), ntok=32768, closed=False, gold=\frac{7}{10}, boxed=None, ok=False
+    no exact character loop; repeated lines: 597 x '                    *   Wait, I see 7 even pairs.\n                    *   Wait, I see 3 odd pairs.\n                    *   Wait, 3+7 = 10.\n                    *   Wait, I see 7 even pairs.\n           '
+--- p6 (Level 2, Prealgebra), ntok=32768, closed=False, gold=37, boxed=None, ok=False
+    no exact character loop; repeated lines: 114 x 'Wait, $42 + 5 = 47$.\n$47 - 12 = 35$.\nWait, $48 - 12 = 36$.\nWait, $43 + 5 = 48$.\n$48 - 12 = 36$.\nOkay, so $36$ is correct.\nWait, $36 + 2 - 1 = 37$.\nWait, $36 + 2 = 38$.\n$38 - 1 = 37$.\nOkay, so the resu'
+--- p7 (Level 3, Number Theory), ntok=32768, closed=False, gold=95, boxed=None, ok=False
+    no exact character loop; repeated lines: 895 x '                                        *   Wait, $n=17$ works.\n                                        *   Wait, $n=73$ works.\n                                        *   Wait, $n=17$ works.\n        '
+--- p8 (Level 5, Prealgebra), ntok=32768, closed=False, gold=\frac{1}{10}, boxed=None, ok=False
+    no exact character loop; repeated lines: 84 x '        For $a=7$, $70+b > 65 \\implies b > -5$.\n        For $a=9$, $90+b > 65 \\implies b > -15$.\n        \n        Wait, what if the user meant "greater than 65" but actually meant "greater than 65"?\n '
+--- p9 (Level 5, Geometry), ntok=32768, closed=False, gold=937, boxed=None, ok=False
+    no exact character loop; repeated lines: 1763 x 'Wait, if the altitude is vertical, then the base is horizontal.\nWait, if the altitude is vertical, then the base is horizontal.\nWait, if the altitude is vertical, then the base is horizontal.\nWait, if'
+--- p10 (Level 4, Number Theory), ntok=32768, closed=False, gold=7, boxed=None, ok=False
+    no exact character loop; repeated lines: 1299 x '    $3737 = 3737$.\n    $3737 = 3737$.\n    $3737 = 3737$.\n    $3737 = 3737$.\n    $3737 = 3737$.\n    $3737 = 3737$.\n    $3737 = 3737$.\n    $3737 = 3737$.\n    $3737 = 3737$.\n    $3737 = 3737$.\n    $3737 '
+--- p11 (Level 5, Number Theory), ntok=32768, closed=False, gold=16, boxed=None, ok=False
+    no exact character loop; repeated lines: 1950 x 'Wait, $n$ is a perfect power of an odd number.\nWait, $n$ is a perfect power of an odd number.\nWait, $n$ is a perfect power of an odd number.\nWait, $n$ is a perfect power of an odd number.\nWait, $n$ is'
+--- p12 (Level 5, Intermediate Algebra), ntok=32768, closed=False, gold=(x^2 + x + 1)(x^8 - x^7 + x^5 - x^4 + x^3 - x + 1), boxed=None, ok=False
+    no exact character loop; repeated lines: 482 x "    *   Let's try to factor $x^{10} + x^5 + 1$ using the identity $x^{10} + x^5 + 1 = (x^5+1)(x^5+1) - x^5$? No.\n    *   Let's try to factor $x^{10} + x^5 + 1$ using the identity $x^{10} + x^5 + 1 = ("
+--- p13 (Level 3, Intermediate Algebra), ntok=32768, closed=False, gold=-10, boxed=None, ok=False
+    no exact character loop; repeated lines: 141 x 'Wait, but I need to check if $r_1^3$ is rational.\n$r_1^3 = 155 - 77\\sqrt{2}$.\nThis is irrational.\nSo $r_1^3 + b r_1 + c = 0$ implies $r_1^3$ is irrational.\nSo $r_1^3 = -b r_1 - c$.\nThis is consistent.'
+--- p14 (Level 3, Algebra), ntok=32768, closed=False, gold=9, boxed=None, ok=False
+    no exact character loop; repeated lines: 311 x '                    *   Wait, $T(6) > T(3)$ and $T(6) > T(9)$.\n                    *   Wait, $T(6)$ is the maximum.\n                    *   Wait, $T(6) = 86$.\n                    *   Wait, $T(3) = 77$'
+--- p15 (Level 4, Intermediate Algebra), ntok=32768, closed=False, gold=11, boxed=None, ok=False
+    no exact character loop; repeated lines: 129 x '        Wait, $c^2 = a^2+b^2+c^2 - 40$.\n        This implies $b^2 = a^2+b^2+c^2 - 40 - c^2 = a^2 - 40$.\n        Wait, $b^2 = 13-x$.\n        $a^2 = x+27$.\n        $c^2 = x$.\n        Sum $a^2+b^2+c^2 = '
+--- p16 (Level 1, Prealgebra), ntok=32768, closed=False, gold=1102, boxed=None, ok=False
+    no exact character loop; repeated lines: 7946 x '      1\n      1\n      1\n      1\n      1\n      1\n      1\n      1\n      1\n      1\n      1\n      1'
+--- p17 (Level 4, Counting & Probability), ntok=32768, closed=False, gold=0.323, boxed=None, ok=False
+    no exact character loop; repeated lines: 733 x '                        *   Wait, if I have a sequence where exactly one die shows a 1.\n                        *   This implies that for all other dice, they are not 1.\n                        *   Wa'
+--- p18 (Level 3, Intermediate Algebra), ntok=32768, closed=False, gold=1, boxed=None, ok=False
+    no exact character loop; repeated lines: 171 x '    Wait, $f(x) = -x$ for $x < 0$ is a solution?\n    $f(x+f(y)) = f(x+y)$.\n    If $x+y < 0$, $f(x+y) = -x-y$.\n    So $f(x+f(y)) = -(x+y)$.\n    We need $-(x+y) = x+y$.\n    So $x+y=0$.\n    So $f(x) = -x'
+--- p19 (Level 4, Intermediate Algebra), ntok=32768, closed=False, gold=2 - 9i, -2 + 9i, boxed=None, ok=False
+    no exact character loop; repeated lines: 1545 x '            Wait, $\\tan(205^\\circ)$ is positive.\n            Wait, $\\tan(205^\\circ)$ is positive.\n            Wait, $\\tan(205^\\circ)$ is positive.\n            Wait, $\\tan(205^\\circ)$ is positive.\n    '
+--- p20 (Level 4, Precalculus), ntok=32768, closed=False, gold=\pi^2, boxed=None, ok=False
+    no exact character loop; repeated lines: 1141 x '    *   Wait, $\\sin x$ is positive in $[\\pi/2, \\pi]$.\n    *   Wait, $\\sin x$ is positive in $[\\pi/2, \\pi]$.\n    *   Wait, $\\sin x$ is positive in $[\\pi/2, \\pi]$.\n    *   Wait, $\\sin x$ is positive in '
+--- p21 (Level 2, Number Theory), ntok=32768, closed=False, gold=2010, boxed=None, ok=False
+    no exact character loop; repeated lines: 99 x '    *   Wait, is there any chance the question is asking for the multiple of 15 closest to 2009?\n    *   Wait, I\'m just repeating myself.\n    *   Let\'s check the problem again.\n    *   "What multiple '
+--- p22 (Level 1, Geometry), ntok=32768, closed=False, gold=110, boxed=None, ok=False
+    no exact character loop; repeated lines: 686 x '    *   Wait, if $C$ and $B$ are symmetric wrt the y-axis, then $A$ is on the y-axis.\n    *   Wait, if $C$ and $B$ are symmetric wrt the y-axis, then $A$ is on the y-axis.\n    *   Wait, if $C$ and $B$'
+--- p23 (Level 3, Intermediate Algebra), ntok=32768, closed=False, gold=6, boxed=None, ok=False
+    no exact character loop; repeated lines: 761 x '    Wait, $f(1) = 1^2 f(1)$ means $f(1) = f(1)$.\n    Wait, $f(1) = 1^2 f(1)$ means $f(1) = f(1)$.\n    Wait, $f(1) = 1^2 f(1)$ means $f(1) = f(1)$.\n    Wait, $f(1) = 1^2 f(1)$ means $f(1) = f(1)$.\n    '
+--- p24 (Level 3, Counting & Probability), ntok=32768, closed=False, gold=\frac{1}{6}, boxed=None, ok=False
+    no exact character loop; repeated lines: 531 x '    *   Wait, if $xy$ is divisible by 9, it is divisible by 3.\n    *   Wait, if $xy$ is divisible by 3, it is divisible by 9? No.\n    *   Wait, if $xy$ is divisible by 9, it is divisible by 3.\n    *  '
+--- p25 (Level 5, Intermediate Algebra), ntok=32768, closed=False, gold=125, boxed=None, ok=False
+    no exact character loop; repeated lines: 1797 x 'Wait, $E(1) = 125$.\nWait, $E(1) = 125$.\nWait, $E(1) = 125$.\nWait, $E(1) = 125$.\nWait, $E(1) = 125$.\nWait, $E(1) = 125$.\nWait, $E(1) = 125$.\nWait, $E(1) = 125$.\nWait, $E(1) = 125$.\nWait, $E(1) = 125$.\n'
+--- p26 (Level 1, Counting & Probability), ntok=32768, closed=False, gold=7, boxed=None, ok=False
+    no exact character loop; repeated lines: 1592 x '    $86400 / 2 = 43200$.\n    $86400 / 2 = 43200$.\n    $86400 / 2 = 43200$.\n    $86400 / 2 = 43200$.\n    $86400 / 2 = 43200$.\n    $86400 / 2 = 43200$.\n    $86400 / 2 = 43200$.\n    $86400 / 2 = 43200$.\n'
+--- p29 (Level 4, Prealgebra), ntok=32768, closed=False, gold=-4, boxed=None, ok=False
+    no exact character loop; repeated lines: 1114 x '    *   Wait, if $x < -3$, then $x$ can be $-4$.\n    *   Wait, if $x < -3$, then $x$ can be $-4$.\n    *   Wait, if $x < -3$, then $x$ can be $-4$.\n    *   Wait, if $x < -3$, then $x$ can be $-4$.\n    '
+--- p30 (Level 1, Precalculus), ntok=32768, closed=False, gold=\frac{\pi}{6}, boxed=None, ok=False
+    no exact character loop; repeated lines: 1011 x '    *   Wait, $\\cos(30^\\circ) = \\frac{\\sqrt{3}}{2}$.\n    *   Wait, $\\cos(30^\\circ) = \\frac{\\sqrt{3}}{2}$.\n    *   Wait, $\\cos(30^\\circ) = \\frac{\\sqrt{3}}{2}$.\n    *   Wait, $\\cos(30^\\circ) = \\frac{\\sq'
+--- p31 (Level 2, Counting & Probability), ntok=32768, closed=False, gold=\frac{1}{216}, boxed=None, ok=False
+    no exact character loop; repeated lines: 203 x '    Wait, I found that $(6, 6, 6)$ is the only solution.\n    Wait, I found that $(6, 6, 6)$ is the only solution.\n    Wait, I found that $(6, 6, 6)$ is the only solution.\n    Wait, I found that $(6, 6'
+--- p32 (Level 2, Prealgebra), ntok=32768, closed=False, gold=2, boxed=None, ok=False
+    no exact character loop; repeated lines: 399 x '    *   Wait, if $E$ and $L$ are disjoint, then $|E \\cup L| = 32$.\n    *   But $|E \\cup L| \\le 30$.\n    *   This implies that $E$ and $L$ cannot be disjoint.\n    *   Wait, if $E$ and $L$ are disjoint,'
+--- p33 (Level 2, Intermediate Algebra), ntok=32768, closed=False, gold=-\sqrt{3},-1,1,\sqrt{3}, boxed=None, ok=False
+    no exact character loop; repeated lines: 214 x '    Wait, $1$ vs $\\sqrt{3}$.\n    $1 < \\sqrt{3}$.\n    So $1$ comes before $\\sqrt{3}$.\n    So $-1, 1, \\sqrt{3}$.\n    Wait, $-1$ vs $1$.\n    $-1 < 1$.\n    So $-1$ comes before $1$.\n    So $-1, 1$.\n    Wa'
+--- p34 (Level 4, Geometry), ntok=32768, closed=False, gold=8.6, boxed=None, ok=False
+    no exact character loop; repeated lines: 107 x '                                            - Maybe the vertices are arranged such that the polygon is divided into 4 regions by the circles?\n                                            - Or maybe the'
+--- p35 (Level 2, Number Theory), ntok=32768, closed=False, gold=\frac{28}{99}, boxed=None, ok=False
+    no exact character loop; repeated lines: 1049 x '                                    *   Wait, $28/99 = 0.2828282828...$\n                                    *   Wait, $28/99 = 0.2828282828...$\n                                    *   Wait, $28/99 = 0'
+--- p36 (Level 5, Intermediate Algebra), ntok=32768, closed=False, gold=\frac{21}{100}, boxed=None, ok=False
+    no exact character loop; repeated lines: 421 x 'Wait, $121 a_1 - 25$ is $121 a_1 - 25$.\nWait, $121 a_1 - 5$ is $121 a_1 - 5$.\nWait, $121 a_1 - 25$ is $121 a_1 - 25$.\nWait, $121 a_1 - 5$ is $121 a_1 - 5$.\nWait, $121 a_1 - 25$ is $121 a_1 - 25$.\nWait'
+--- p37 (Level 2, Prealgebra), ntok=32768, closed=False, gold=15, boxed=None, ok=False
+    no exact character loop; repeated lines: 78 x '    *   So 30 is not a common factor.\n    *   Wait, I need to check if 30 divides 75.\n    *   Wait, $75 / 30 = 2.5$.\n    *   Wait, is 30 a common factor?\n    *   Wait, I need to check if 30 divides 75'
+--- p38 (Level 3, Prealgebra), ntok=32768, closed=False, gold=340, boxed=None, ok=False
+    no exact character loop; repeated lines: 813 x 'Wait, if $G$ is at $(17,20)$, then $G$ is at $(17,20)$.\nWait, if $G$ is at $(17,20)$, then $G$ is at $(17,20)$.\nWait, if $G$ is at $(17,20)$, then $G$ is at $(17,20)$.\nWait, if $G$ is at $(17,20)$, th'
+--- p39 (Level 4, Prealgebra), ntok=32768, closed=False, gold=110^\circ, boxed=None, ok=False
+    no exact character loop; repeated lines: 373 x '    *   Is it possible that the sum is not 540?\n    *   Wait.\n    *   Let me check the sum again.\n    *   Wait.\n    *   Is it possible that the question implies that the pentagon is a *convex* pentago'
+--- p40 (Level 3, Algebra), ntok=32768, closed=False, gold=72, boxed=None, ok=False
+    no exact character loop; repeated lines: 533 x '        Wait, $2\\sqrt{6} \\cdot 6\\sqrt{6} = 12 \\cdot 6 = 72$.\n        Wait, $2\\sqrt{6} \\cdot 6\\sqrt{6} = 12 \\cdot 6 = 72$.\n        Wait, $2\\sqrt{6} \\cdot 6\\sqrt{6} = 12 \\cdot 6 = 72$.\n        Wait, $2\\'
+--- p41 (Level 2, Prealgebra), ntok=32768, closed=False, gold=-72, boxed=None, ok=False
+    no exact character loop; repeated lines: 1378 x '    *   Wait, $-70$ is smaller than $-54$.\n    *   Wait, $-70$ is smaller than $-54$.\n    *   Wait, $-70$ is smaller than $-54$.\n    *   Wait, $-70$ is smaller than $-54$.\n    *   Wait, $-70$ is small'
+--- p42 (Level 2, Geometry), ntok=32768, closed=False, gold=\frac47, boxed=None, ok=False
+    no exact character loop; repeated lines: 633 x '                Wait, $AC$ is adjacent to $A$.\n                Wait, $AB$ is adjacent to $A$.\n                Wait, $BC$ is the hypotenuse.\n                Wait, $AC$ is adjacent to $A$.\n             '
+--- p43 (Level 5, Geometry), ntok=32768, closed=False, gold=5(\sqrt{3}-1), boxed=None, ok=False
+    no exact character loop; repeated lines: 2177 x '    Wait, side $AC$ is opposite to B?\n    Wait, side $AC$ is opposite to B?\n    Wait, side $AC$ is opposite to B?\n    Wait, side $AC$ is opposite to B?\n    Wait, side $AC$ is opposite to B?\n    Wait, '
+--- p44 (Level 4, Precalculus), ntok=32768, closed=False, gold=\frac{83}{499}, boxed=None, ok=False
+    no exact character loop; repeated lines: 241 x 'Wait, $\\cos(2\\pi - 3\\pi/6) = \\cos(\\pi/2) = 0$.\nWait, $\\cos(2\\pi - 5\\pi/6) = \\cos(\\pi/6) = \\frac{\\sqrt{3}}{2}$.\nWait, $\\cos(2\\pi - 11\\pi/6) = \\cos(\\pi/6) = \\frac{\\sqrt{3}}{2}$.\nWait, $\\cos(2\\pi - 3\\pi/'
+--- p45 (Level 3, Counting & Probability), ntok=32768, closed=False, gold=1, boxed=None, ok=False
+    no exact character loop; repeated lines: 764 x 'Wait, if the sum of sizes is 39, then the sum of sizes is greater than 32.\nThis means the sets are not disjoint.\nWait, if the sum of sizes is 39, then the sum of sizes is greater than 32.\nThis means t'
+--- p46 (Level 3, Precalculus), ntok=32768, closed=False, gold=60^\circ, boxed=None, ok=False
+    no exact character loop; repeated lines: 289 x '    Wait, $5\\cos \\theta - 4\\cos \\theta = 5\\cos \\theta - 4\\cos \\theta$.\n    Wait, $5\\cos \\theta - 4\\cos \\theta = 5\\cos \\theta - 4\\cos \\theta$.\n    Wait, $5\\cos \\theta - 4\\cos \\theta = 5\\cos \\theta - 4\\'
+--- p47 (Level 5, Counting & Probability), ntok=32768, closed=False, gold=504, boxed=None, ok=False
+    no exact character loop; repeated lines: 407 x '                            *   Wait, if he skips 3 consecutive houses, he misses 3 houses.\n                            *   If he skips 2 consecutive houses, he misses 2 houses.\n                      '
+--- p48 (Level 5, Geometry), ntok=32768, closed=False, gold=\sqrt{13}, boxed=None, ok=False
+    no exact character loop; repeated lines: 1045 x 'Wait, $V_1$ to $V_6$ distance is 2.\nWait, $V_1$ to $V_6$ distance is 2.\nWait, $V_1$ to $V_6$ distance is 2.\nWait, $V_1$ to $V_6$ distance is 2.\nWait, $V_1$ to $V_6$ distance is 2.\nWait, $V_1$ to $V_6$'
+--- p49 (Level 4, Intermediate Algebra), ntok=32768, closed=False, gold=(-\infty,-5) \cup (-5,5), boxed=None, ok=False
+    no exact character loop; repeated lines: 532 x '    $(-\\infty, -5) \\cup (-5, 5)$ is the set of all $x < 5$ except $x=-5$.\n    Wait, no.\n    $(-\\infty, -5) \\cup (-5, 5)$ is the set of all $x < 5$ except $x=-5$.\n    Wait, no.\n    $(-\\infty, -5) \\cup '
+--- p50 (Level 2, Number Theory), ntok=32768, closed=False, gold=70, boxed=None, ok=False
+    no exact character loop; repeated lines: 660 x '    *   Wait, if the string is $154`, then the digits are $1, 5, 4`.\n    *   Wait, if the string is $154`, then the digits are $1, 5, 4`.\n    *   Wait, if the string is $154`, then the digits are $1, '
+--- p51 (Level 2, Intermediate Algebra), ntok=32768, closed=False, gold=2, boxed=None, ok=False
+    no exact character loop; repeated lines: 2755 x '    Wait, $-c$ is real.\n    Wait, $-c$ is real.\n    Wait, $-c$ is real.\n    Wait, $-c$ is real.\n    Wait, $-c$ is real.\n    Wait, $-c$ is real.\n    Wait, $-c$ is real.\n    Wait, $-c$ is real.\n    Wait'
+--- p52 (Level 5, Prealgebra), ntok=32768, closed=False, gold=10, boxed=None, ok=False
+    no exact character loop; repeated lines: 386 x "                    *   Wait, I'm going to check if there's any other interpretation.\n                    *   What if the question implies that the probabilities are $P(A) = 0.7 P(B)$ and $P(C) = 1.4 "
+--- p53 (Level 3, Intermediate Algebra), ntok=32768, closed=False, gold=(-\infty,-3) \cup [0,\infty), boxed=None, ok=False
+    no exact character loop; repeated lines: 292 x '    *   Wait, $x=-2$ is NOT in $(-\\infty, -3]$.\n    *   So $x \\le -3$ is NOT the solution set.\n    *   Wait, $x=-2$ is in $(-3, 0)$.\n    *   Wait, $x=-2$ is in $(-3, 0)$.\n    *   Wait, $x=-2$ is NOT i'
+--- p54 (Level 5, Intermediate Algebra), ntok=32768, closed=False, gold=(100,101), boxed=None, ok=False
+    no exact character loop; repeated lines: 830 x 'Wait, $F_2$ is in denominator of $T_2$?\nWait, $F_2$ is in numerator of $T_2$.\nWait, $F_2$ is in denominator of $T_2$?\nWait, $F_2$ is in numerator of $T_2$.\nWait, $F_2$ is in denominator of $T_2$?\nWait'
+--- p55 (Level 4, Precalculus), ntok=32768, closed=False, gold=5371, boxed=None, ok=False
+    no exact character loop; repeated lines: 2245 x 'Wait, $m^{-1} = 1/m$.\nWait, $m^{-1} = 1/m$.\nWait, $m^{-1} = 1/m$.\nWait, $m^{-1} = 1/m$.\nWait, $m^{-1} = 1/m$.\nWait, $m^{-1} = 1/m$.\nWait, $m^{-1} = 1/m$.\nWait, $m^{-1} = 1/m$.\nWait, $m^{-1} = 1/m$.\nWa'
+--- p56 (Level 5, Geometry), ntok=32768, closed=False, gold=4 \sqrt{10}, boxed=None, ok=False
+    no exact character loop; repeated lines: 1091 x '            Wait, $a^2 + b^2 - c^2 = 2ab \\cos C$.\n            Wait, $a^2 + b^2 - c^2 = 2ab \\cos C$.\n            Wait, $a^2 + b^2 - c^2 = 2ab \\cos C$.\n            Wait, $a^2 + b^2 - c^2 = 2ab \\cos C$.\n'
+--- p57 (Level 3, Number Theory), ntok=32768, closed=False, gold=0, boxed=None, ok=False
+    no exact character loop; repeated lines: 0 x ''
+--- p58 (Level 2, Precalculus), ntok=32768, closed=False, gold=4, boxed=None, ok=False
+    no exact character loop; repeated lines: 893 x '    Wait, $P_3 - P_2 = (0, 1, 0)$.\n    Wait, $P_3 - P_2 = (0, 1, 0)$.\n    Wait, $P_3 - P_2 = (0, 1, 0)$.\n    Wait, $P_3 - P_2 = (0, 1, 0)$.\n    Wait, $P_3 - P_2 = (0, 1, 0)$.\n    Wait, $P_3 - P_2 = (0'
+--- p59 (Level 1, Geometry), ntok=32768, closed=False, gold=80, boxed=None, ok=False
+    no exact character loop; repeated lines: 429 x "                                                                                                                                                *   Let's check the opposite sides again.\n              "
+--- p60 (Level 5, Prealgebra), ntok=32768, closed=False, gold=54, boxed=None, ok=False
+    no exact character loop; repeated lines: 190 x "            *   Wait, I think I'm confusing myself with the set of digits.\n            *   Let's assume the constraints are:\n                *   $d_1 \\in \\{1, 4, 5\\}$\n                *   $d_2 \\in \\{1,"
+--- p61 (Level 4, Geometry), ntok=32768, closed=False, gold=\frac{1}{2}, boxed=None, ok=False
+    no exact character loop; repeated lines: 505 x 'Wait, $DA$ is vertical.\nWait, $AB$ is horizontal.\nWait, $BC$ is vertical.\nWait, $CD$ is horizontal.\nWait, $DA$ is vertical.\nWait, $AB$ is horizontal.\nWait, $BC$ is vertical.\nWait, $CD$ is horizontal.\n'
+--- p62 (Level 5, Algebra), ntok=32768, closed=False, gold=[0,3), boxed=None, ok=False
+    no exact character loop; repeated lines: 1469 x 'Wait, $3pq^2$ is $3p q^2$.\nWait, $3pq^2$ is $3p q^2$.\nWait, $3pq^2$ is $3p q^2$.\nWait, $3pq^2$ is $3p q^2$.\nWait, $3pq^2$ is $3p q^2$.\nWait, $3pq^2$ is $3p q^2$.\nWait, $3pq^2$ is $3p q^2$.\nWait, $3pq^'
+--- p63 (Level 4, Counting & Probability), ntok=32768, closed=False, gold=101, boxed=None, ok=False
+    no exact character loop; repeated lines: 705 x '$200080008 = 200000000 + 80000000$? No.\n$200080008 = 200000000 + 80000000$? No.\n$200080008 = 200000000 + 80000000$? No.\n$200080008 = 200000000 + 80000000$? No.\n$200080008 = 200000000 + 80000000$? No.\n'
+--- p64 (Level 3, Geometry), ntok=32768, closed=False, gold=18, boxed=None, ok=False
+    no exact character loop; repeated lines: 61 x '            *   Wait, $C_1$ and $C_3$?\n                $C_1(-2,0)$, $C_3(-1, \\sqrt{3})$.\n                $dist = 2$.\n                $2r = 2$.\n                Yes, tangent.\n            *   Wait, $C_3$'
+--- p65 (Level 4, Precalculus), ntok=32768, closed=False, gold=12, boxed=None, ok=False
+    no exact character loop; repeated lines: 430 x "    Wait, if $x(t)$ is not periodic, it can't intersect itself.\n    Wait, maybe the question is asking for the number of intersections of the curve $x(t)$ with the line $x=1$?\n    Wait, if $x(t)$ is n"
+--- p67 (Level 2, Precalculus), ntok=32768, closed=False, gold=\frac{5\pi}{3}, boxed=None, ok=False
+    no exact character loop; repeated lines: 1343 x '        Wait, $300^\\circ$ is in Q4.\n        Wait, $300^\\circ$ is in Q4.\n        Wait, $300^\\circ$ is in Q4.\n        Wait, $300^\\circ$ is in Q4.\n        Wait, $300^\\circ$ is in Q4.\n        Wait, $300^\\'
+--- p68 (Level 3, Precalculus), ntok=32768, closed=False, gold=2 \sqrt{5}, boxed=None, ok=False
+    no exact character loop; repeated lines: 670 x "    Wait, $y(t)$ is increasing?\n    Wait, $y(t) = 4t - 13$.\n    $y'(t) = 4$.\n    Wait, $y(t)$ is increasing?\n    Wait, $y(t) = 4t - 13$.\n    $y'(t) = 4$.\n    Wait, $y(t)$ is increasing?\n    Wait, $y(t"
+--- p69 (Level 5, Number Theory), ntok=32768, closed=False, gold=181, boxed=None, ok=False
+    no exact character loop; repeated lines: 923 x 'Wait, $x^3 - (x-1)^3 = 3x^2 - 3x + 1$.\nWait, $x^3 - (x-1)^3 = 3x^2 - 3x + 1$.\nWait, $x^3 - (x-1)^3 = 3x^2 - 3x + 1$.\nWait, $x^3 - (x-1)^3 = 3x^2 - 3x + 1$.\nWait, $x^3 - (x-1)^3 = 3x^2 - 3x + 1$.\nWait,'
+--- p70 (Level 5, Prealgebra), ntok=32768, closed=False, gold=57, boxed=None, ok=False
+    no exact character loop; repeated lines: 927 x '            *   Wait, but the clock also has 12 hours.\n            *   Wait, but the clock also has 60 minutes.\n            *   Wait, but the clock also has 12 hours.\n            *   Wait, but the clo'
+--- p71 (Level 3, Algebra), ntok=32768, closed=False, gold=x^4-16, boxed=None, ok=False
+    no exact character loop; repeated lines: 371 x "\n    *   Wait, I'll stick with the straightforward algebraic expansion.\n    *   Step 1: $(x-2)(x+2) = x^2 - 4$.\n    *   Step 2: $(x^2 - 4)(x^2 + 4) = x^4 - 16$.\n\n    *   Wait, I'll stick with the stra"
+--- p72 (Level 2, Prealgebra), ntok=32768, closed=False, gold=240, boxed=None, ok=False
+    no exact character loop; repeated lines: 262 x "    *Wait, let's check if the problem implies the new train is going 20% *faster*.*\n    - If the new train goes 20% faster, it means $v_{new} = 1.2 v_{old}$.\n    - Then $D_{new} = 1.2 D_{old}$.\n    - "
+--- p73 (Level 4, Algebra), ntok=32768, closed=False, gold=(-6, 1), boxed=None, ok=False
+    no exact character loop; repeated lines: 385 x '    *   Wait.\n    *   $x(x+6) = x^2 + 6x$.\n    *   $-1(x+6) = -x - 6$.\n    *   Sum: $x^2 + 5x - 6$.\n    *   Wait.\n    *   $x(x+6) = x^2 + 6x$.\n    *   $-1(x+6) = -x - 6$.\n    *   Sum: $x^2 + 5x - 6$.\n'
+--- p74 (Level 1, Precalculus), ntok=32768, closed=False, gold=16, boxed=None, ok=False
+    no exact character loop; repeated lines: 754 x '    Wait, $\\det(\\mathbf{M}^k) = \\det(\\mathbf{M})^k$.\n    Wait, $\\det(\\mathbf{M}^k) = \\det(\\mathbf{M})^k$.\n    Wait, $\\det(\\mathbf{M}^k) = \\det(\\mathbf{M})^k$.\n    Wait, $\\det(\\mathbf{M}^k) = \\det(\\mat'
+--- p75 (Level 5, Intermediate Algebra), ntok=32768, closed=False, gold=4, boxed=None, ok=False
+    no exact character loop; repeated lines: 856 x '$= z^3 - c(r+s)z^2 + c^2rsz - c(r+s)ctz + c^2rsct$\n$= z^3 - c(r+s)z^2 + c^2rsz - c(r+s)ctz + c^2rsct$\n$= z^3 - c(r+s)z^2 + c^2rsz - c(r+s)ctz + c^2rsct$\n$= z^3 - c(r+s)z^2 + c^2rsz - c(r+s)ctz + c^2rs'
+--- p76 (Level 5, Algebra), ntok=32768, closed=False, gold=12^{1/7}, boxed=None, ok=False
+    no exact character loop; repeated lines: 247 x '    *   $c^2/a = 3$.\n    *   $1/12 = 3$.\n    *   So $a^7 = 12$ is inconsistent.\n    *   Wait, $c^2/a = 12^{-1}$ implies $c^2/a = 1/12$.\n    *   $c^2/a = 3$.\n    *   $1/12 = 3$.\n    *   So $a^7 = 12$ i'
+--- p77 (Level 4, Number Theory), ntok=32768, closed=False, gold=67, boxed=None, ok=False
+    no exact character loop; repeated lines: 1303 x 'Wait, $67 = 1 + 6(10)$ is $61$.\nWait, $67 = 1 + 6(10)$ is $61$.\nWait, $67 = 1 + 6(10)$ is $61$.\nWait, $67 = 1 + 6(10)$ is $61$.\nWait, $67 = 1 + 6(10)$ is $61$.\nWait, $67 = 1 + 6(10)$ is $61$.\nWait, $6'
+--- p78 (Level 4, Intermediate Algebra), ntok=32768, closed=False, gold=4, boxed=None, ok=False
+    no exact character loop; repeated lines: 1693 x 'Wait, $M_{32}$ is coeff of $yz$.\nWait, $M_{32}$ is coeff of $yz$.\nWait, $M_{32}$ is coeff of $yz$.\nWait, $M_{32}$ is coeff of $yz$.\nWait, $M_{32}$ is coeff of $yz$.\nWait, $M_{32}$ is coeff of $yz$.\nWa'
+--- p79 (Level 4, Number Theory), ntok=32768, closed=False, gold=312, boxed=None, ok=False
+    no exact character loop; repeated lines: 390 x 'Wait, $4^6 \\cdot 6^7 = 2^{12} \\cdot 2^7 \\cdot 3^7$.\nWait, $2^4 \\cdot 3^5 \\cdot 2^{12} \\cdot 2^7 \\cdot 3^7$.\nWait, $4^6 \\cdot 6^7 = 2^{12} \\cdot 2^7 \\cdot 3^7$.\nWait, $2^4 \\cdot 3^5 \\cdot 2^{12} \\cdot '
+--- p80 (Level 2, Algebra), ntok=32768, closed=False, gold=15, boxed=None, ok=False
+    no exact character loop; repeated lines: 854 x '    Wait, what if the problem is $3^n = 3 \\cdot 9^3 \\cdot 81^2$?\n    Wait, what if the problem is $3^n = 3 \\cdot 9^3 \\cdot 81^2$?\n    Wait, what if the problem is $3^n = 3 \\cdot 9^3 \\cdot 81^2$?\n    W'
+--- p81 (Level 4, Intermediate Algebra), ntok=32768, closed=False, gold=20, boxed=None, ok=False
+    no exact character loop; repeated lines: 436 x 'Wait, $A = 19 + B$.\nSo $\\sum |x_i| \\ge 19 + B$.\nWait, $A - B = 19$.\nSo $\\sum |x_i| \\ge 19 + B$.\nWait, $A = 19 + B$.\nSo $\\sum |x_i| \\ge 19 + B$.\nWait, $A - B = 19$.\nSo $\\sum |x_i| \\ge 19 + B$.\nWait, $A'
+--- p82 (Level 3, Intermediate Algebra), ntok=32768, closed=False, gold=2, boxed=None, ok=False
+    no exact character loop; repeated lines: 693 x '    *   Wait, if $S$ is convex, then $S$ is minimized at the vertex.\n    *   Wait, if $S$ is convex, then $S$ is minimized at the vertex.\n    *   Wait, if $S$ is convex, then $S$ is minimized at the v'
+--- p83 (Level 4, Algebra), ntok=32768, closed=False, gold=12, boxed=None, ok=False
+    no exact character loop; repeated lines: 56 x '    Wait, I think I might have made a mistake in the calculation of $BC$.\n    $B=(2,5)$, $C=(5,2)$.\n    $x$ diff = 3.\n    $y$ diff = -3.\n    $BC^2 = 18$.\n    $BC = 3\\sqrt{2}$.\n    \n    Wait, I think I'
+--- p84 (Level 3, Geometry), ntok=32768, closed=False, gold=18, boxed=None, ok=False
+    no exact character loop; repeated lines: 1062 x '          - Wait, if $X$ is on $AB$, then $B+X$ is just a point.\n          - Wait, if $X$ is on $AB$, then $B+X$ is just a point.\n          - Wait, if $X$ is on $AB$, then $B+X$ is just a point.\n     '
+--- p85 (Level 4, Prealgebra), ntok=32768, closed=False, gold=4, boxed=None, ok=False
+    no exact character loop; repeated lines: 200 x '        Wait, I listed 97 before.\n        Wait, I listed 92 before.\n        Wait, I listed 98 before.\n        Wait, I listed 82 before.\n        Wait, I listed 72 before.\n        Wait, I listed 78 befo'
+--- p86 (Level 3, Prealgebra), ntok=32768, closed=False, gold=9, boxed=9, ok=True
+    no exact character loop; repeated lines: 95 x '    Wait, I might have been thinking of a different problem.\n    Is it possible that "sum of the greatest common factor of 3 and 6" refers to the GCF of 3 and 6? Yes.\n    Is it possible that "the leas'
+--- p87 (Level 5, Precalculus), ntok=32768, closed=False, gold=\begin{pmatrix} 2 & 4 \\ 1 & 2 \end{pmatrix}, boxed=None, ok=False
+    no exact character loop; repeated lines: 1111 x '    Wait, $\\lambda_1^2 + \\lambda_2^2 = 400$.\n    Wait, $\\lambda_1^2 + \\lambda_2^2 = 400$.\n    Wait, $\\lambda_1^2 + \\lambda_2^2 = 400$.\n    Wait, $\\lambda_1^2 + \\lambda_2^2 = 400$.\n    Wait, $\\lambda_1'
+--- p88 (Level 4, Algebra), ntok=32768, closed=False, gold=11, boxed=None, ok=False
+    no exact character loop; repeated lines: 567 x '        *   $x_1 x_2 = \\frac{(-3)^2 - (i\\sqrt{299})^2}{14^2}$.\n        *   Wait.\n        *   $x_1 x_2 = \\frac{(-3)^2 - (i\\sqrt{299})^2}{14^2}$.\n        *   Wait.\n        *   $x_1 x_2 = \\frac{(-3)^2 - '
+--- p89 (Level 5, Geometry), ntok=32768, closed=False, gold=.2, boxed=None, ok=False
+    no exact character loop; repeated lines: 171 x '                *   Wait, if the sphere is tangent to the face, the center of the sphere is at distance $r$ from the face.\n                *   If the point of tangency is the center of the face, then '
+--- p90 (Level 5, Algebra), ntok=32768, closed=False, gold=5, boxed=None, ok=False
+    no exact character loop; repeated lines: 267 x "        Wait, maybe $\\Phi$ and $\\varphi$ are roots of $x^2 - x - 1 = 0$?\n        Wait, I'm just repeating myself.\n        Let's assume the question is valid.\n        The answer is 5.\n\n        Wait, I "
+--- p91 (Level 1, Geometry), ntok=32768, closed=False, gold=6, boxed=None, ok=False
+    no exact character loop; repeated lines: 1355 x '                                                                        *   Wait, if 5 is hypotenuse, 4 is a leg.\n                                                                        *   Wait, if 5'
+--- p92 (Level 5, Intermediate Algebra), ntok=32768, closed=False, gold=-330,90, boxed=None, ok=False
+    no exact character loop; repeated lines: 652 x 'Wait, $-3s^2 + 9s + 71 = -3(s^2 - 3s - 23.66)$.\nWait, $-3s^2 + 9s + 71 = -3(s^2 - 3s - 23.66)$.\nWait, $-3s^2 + 9s + 71 = -3(s^2 - 3s - 23.66)$.\nWait, $-3s^2 + 9s + 71 = -3(s^2 - 3s - 23.66)$.\nWait, $-'
+--- p93 (Level 5, Intermediate Algebra), ntok=32768, closed=False, gold=-(ab + ac + bc), boxed=None, ok=False
+    no exact character loop; repeated lines: 387 x '$= -a^2 c^2 + c^2 a^2 - c^2 b^2 + b^2 c^2$\n$= c^2 (a^2 - b^2) - c^2 (a^2 - b^2)$? No.\n$= -a^2 c^2 + c^2 a^2 - c^2 b^2 + b^2 c^2$\n$= c^2 (a^2 - b^2) - c^2 (a^2 - b^2)$? No.\n$= -a^2 c^2 + c^2 a^2 - c^2 '
+--- p94 (Level 4, Intermediate Algebra), ntok=32768, closed=False, gold=(20,100), boxed=None, ok=False
+    no exact character loop; repeated lines: 1926 x '            *   Wait, $VF = 2a$.\n            *   Wait, $VF = 2a$.\n            *   Wait, $VF = 2a$.\n            *   Wait, $VF = 2a$.\n            *   Wait, $VF = 2a$.\n            *   Wait, $VF = 2a$.\n  '
+--- p95 (Level 1, Prealgebra), ntok=32768, closed=False, gold=512, boxed=None, ok=False
+    no exact character loop; repeated lines: 1083 x '    Wait, $2^3 \\cdot 2^3 = 2^3 \\cdot 2^3$.\n    Wait, $2^3 \\cdot 2^3 = 2^3 \\cdot 2^3$.\n    Wait, $2^3 \\cdot 2^3 = 2^3 \\cdot 2^3$.\n    Wait, $2^3 \\cdot 2^3 = 2^3 \\cdot 2^3$.\n    Wait, $2^3 \\cdot 2^3 = 2'
+--- p96 (Level 2, Precalculus), ntok=32768, closed=False, gold=\frac{2}{5}, boxed=None, ok=False
+    no exact character loop; repeated lines: 556 x '    Wait, $\\sec^2 x$ is $1 + \\tan^2 x$.\n    So $u^2 = 1 + \\tan^2 x + 2\\sec x \\tan x + \\tan^2 x$.\n    Wait, $\\sec^2 x$ is $1 + \\tan^2 x$.\n    So $u^2 = 1 + \\tan^2 x + 2\\sec x \\tan x + \\tan^2 x$.\n    Wa'
+--- p97 (Level 3, Algebra), ntok=32768, closed=False, gold=5, boxed=None, ok=False
+    no exact character loop; repeated lines: 74 x 'Wait, I think I am confusing myself with the condition for $p(2, -1)$.\n$x=2, y=-1$.\n$x \\ge 0$ is true.\n$y \\ge 0$ is false.\nSo Case 1 is false.\n$x < 0$ is false.\nSo Case 2 is false.\nSo Case 3 applies.\n'
+--- p98 (Level 4, Intermediate Algebra), ntok=32768, closed=False, gold=521, boxed=None, ok=False
+    no exact character loop; repeated lines: 530 x 'Wait, $\\frac{1}{x^2-4} = \\frac{1}{4}(\\frac{1}{x-2} - \\frac{1}{x+2})$.\nWait, $\\frac{1}{x^2-4} = \\frac{1}{4}(\\frac{1}{x-2} - \\frac{1}{x+2})$.\nWait, $\\frac{1}{x^2-4} = \\frac{1}{4}(\\frac{1}{x-2} - \\frac{1'
+--- p99 (Level 5, Algebra), ntok=32768, closed=False, gold=2, boxed=None, ok=False
+    no exact character loop; repeated lines: 3 x '$E = \\frac{a+b}{a-b} + \\frac{a-b}{a+b}$.'
+--- p100 (Level 2, Geometry), ntok=32768, closed=False, gold=5, boxed=None, ok=False
+    no exact character loop; repeated lines: 118 x '    *   Maybe the question implies that the sides are 6 and 3, and we need to find the number of integer *sides*?\n    *   If the sides are 6 and 3, the "other sides" are 6 and 3.\n    *   Wait, maybe t'
+--- p102 (Level 4, Prealgebra), ntok=32768, closed=False, gold=4, boxed=None, ok=False
+    no exact character loop; repeated lines: 622 x '    *   $0.\\overline{6} = \\frac{6}{99}$ is wrong.\n    *   Wait, $0.\\overline{6} = \\frac{6}{99}$ is wrong.\n    *   $0.\\overline{6} = \\frac{6}{99}$ is wrong.\n    *   Wait, $0.\\overline{6} = \\frac{6}{99}'
+--- p104 (Level 4, Intermediate Algebra), ntok=32768, closed=False, gold=\frac{1}{2}, boxed=None, ok=False
+    no exact character loop; repeated lines: 3307 x 'Wait, $a+b=1$.\nWait, $a+b=1$.\nWait, $a+b=1$.\nWait, $a+b=1$.\nWait, $a+b=1$.\nWait, $a+b=1$.\nWait, $a+b=1$.\nWait, $a+b=1$.\nWait, $a+b=1$.\nWait, $a+b=1$.\nWait, $a+b=1$.\nWait, $a+b=1$.'
+--- p106 (Level 5, Prealgebra), ntok=32768, closed=False, gold=89, 88, 85, 73, 70, boxed=None, ok=False
+    no exact character loop; repeated lines: 110 x '            *   Wait, if $x_4 = 86$, then $x_5 = 88$.\n            *   Then $x_5$ is 88.\n            *   But $x_5$ must be distinct from $x_1, x_2, x_3$.\n            *   $x_1 = 88$.\n            *   So '
+--- p107 (Level 5, Counting & Probability), ntok=32768, closed=False, gold=\dfrac{37}{256}, boxed=None, ok=False
+    no exact character loop; repeated lines: 1136 x '    *   Wait, $28/256 = 0.109375$.\n    *   Wait, $28/256 = 0.109375$.\n    *   Wait, $28/256 = 0.109375$.\n    *   Wait, $28/256 = 0.109375$.\n    *   Wait, $28/256 = 0.109375$.\n    *   Wait, $28/256 = 0'
+--- p108 (Level 5, Intermediate Algebra), ntok=32768, closed=False, gold=(-\infty,-\frac{4}{3}) \cup (-\frac{4}{3},\infty), boxed=None, ok=False
+    no exact character loop; repeated lines: 923 x '                                                                                                    *   Wait, $f^{-1}(f(x)) = x$ implies $f(x) = f^{-1}(x)$?\n                                           '
+--- p109 (Level 4, Geometry), ntok=32768, closed=False, gold=5, boxed=None, ok=False
+    no exact character loop; repeated lines: 796 x '                                        *   Wait, if $C$ and $D$ are on the boundary, then the polygon is the remaining part.\n                                        *   Wait, if $C$ and $D$ are on th'
+--- p110 (Level 3, Intermediate Algebra), ntok=32768, closed=False, gold=\text{B,C}, boxed=None, ok=False
+    no exact character loop; repeated lines: 597 x "            Wait, $f'(-10/3) = 0$.\n            So $f'(x)$ is negative for $x < -10/3$.\n            Wait, $f'(-10/3) = 0$.\n            So $f'(x)$ is negative for $x < -10/3$.\n            Wait, $f'(-10/"
+--- p111 (Level 4, Prealgebra), ntok=32768, closed=False, gold=33, boxed=None, ok=False
+    no exact character loop; repeated lines: 700 x '    *   Wait, is it possible that the problem meant "The jar contains nickels, dimes, and quarters. The total value is $$13.20."\n    *   Wait, is it possible that the problem meant "The jar contains n'
+--- p112 (Level 3, Prealgebra), ntok=32768, closed=False, gold=3, boxed=None, ok=False
+    no exact character loop; repeated lines: 85 x '\n    Wait, I\'m checking if the question meant "If $\\frac{4}{3}(r+s+t) = 12$, what is the average of $r, s, t$?"\n    Wait, I think I might have hallucinated a typo.\n    Let\'s check the prompt again.\n  '
+--- p113 (Level 4, Algebra), ntok=32768, closed=False, gold=-1004, boxed=None, ok=False
+    no exact character loop; repeated lines: 912 x '        Wait, $x^2$ is the term in the expansion.\n        Wait, $x^2$ is the term in the expansion.\n        Wait, $x^2$ is the term in the expansion.\n        Wait, $x^2$ is the term in the expansion.\n'
+--- p114 (Level 4, Geometry), ntok=32768, closed=False, gold=4, boxed=None, ok=False
+    no exact character loop; repeated lines: 1928 x '    *   Wait, I am checking the text again.\n    *   Wait, I am checking the text again.\n    *   Wait, I am checking the text again.\n    *   Wait, I am checking the text again.\n    *   Wait, I am check'
+--- p115 (Level 1, Intermediate Algebra), ntok=32768, closed=False, gold=3, boxed=None, ok=False
+    no exact character loop; repeated lines: 1565 x '    Wait, $4 \\times 25 = 100$.\n    Wait, $4 \\times 25 = 100$.\n    Wait, $4 \\times 25 = 100$.\n    Wait, $4 \\times 25 = 100$.\n    Wait, $4 \\times 25 = 100$.\n    Wait, $4 \\times 25 = 100$.\n    Wait, $4 \\'
+--- p116 (Level 5, Counting & Probability), ntok=32768, closed=False, gold=129, boxed=None, ok=False
+    no exact character loop; repeated lines: 345 x '                                                                                                          *   So it is invalid.\n                                                                        '
+--- p117 (Level 3, Number Theory), ntok=32768, closed=False, gold=135, boxed=None, ok=False
+    no exact character loop; repeated lines: 1581 x '        *   Wait, $k^6 = (k^2)^3$?\n        *   Wait, $k^6 = (k^2)^3$?\n        *   Wait, $k^6 = (k^2)^3$?\n        *   Wait, $k^6 = (k^2)^3$?\n        *   Wait, $k^6 = (k^2)^3$?\n        *   Wait, $k^6 = '
+--- p118 (Level 1, Algebra), ntok=32768, closed=False, gold=7, boxed=None, ok=False
+    no exact character loop; repeated lines: 214 x '    *   Wait, I think I\'m just repeating myself. The logic is sound.\n    *   Let\'s check if there\'s any possibility that "miss" refers to "not answering"?\n    *   If you miss 7, you answer 28.\n    *  '
+--- p119 (Level 3, Geometry), ntok=32768, closed=False, gold=85, boxed=None, ok=False
+    no exact character loop; repeated lines: 1770 x '    *   Wait, $33+9 = 42$.\n    *   Wait, $33+9 = 42$.\n    *   Wait, $33+9 = 42$.\n    *   Wait, $33+9 = 42$.\n    *   Wait, $33+9 = 42$.\n    *   Wait, $33+9 = 42$.\n    *   Wait, $33+9 = 42$.\n    *   Wai'
+--- p120 (Level 5, Prealgebra), ntok=32768, closed=False, gold=456, boxed=None, ok=False
+    no exact character loop; repeated lines: 462 x '    *   Wait, $30$ vs $45$. Chandra is slower than Bob.\n    *   Wait, $20$ vs $30$. Alice is slower than Chandra.\n    *   Wait, $20$ vs $45$. Alice is slower than Bob.\n    *   Wait, $30$ vs $45$. Chan'
+--- p121 (Level 5, Number Theory), ntok=32768, closed=False, gold=32, boxed=None, ok=False
+    no exact character loop; repeated lines: 132 x '    *   Wait, $3240$ is divisible by 5.\n    *   $3240 / 5 = 648$.\n    *   $648$ is divisible by 2.\n    *   $648 / 2 = 324$.\n    *   $324 / 2 = 162$.\n    *   $162 / 2 = 81$.\n    *   $81$ is divisible b'
+--- p122 (Level 3, Counting & Probability), ntok=32768, closed=False, gold=35, boxed=None, ok=False
+    no exact character loop; repeated lines: 184 x '    *   *Let\'s check if the question implies the types are identical.*\n    *   "Introduction to Geometry" and "Introduction to Number Theory" are distinct topics.\n    *   If they are distinct, the ans'
+--- p123 (Level 2, Number Theory), ntok=32768, closed=False, gold=2019, boxed=None, ok=False
+    no exact character loop; repeated lines: 0 x ''
+--- p125 (Level 5, Algebra), ntok=32768, closed=False, gold=2, boxed=None, ok=False
+    no exact character loop; repeated lines: 315 x "            Wait, $r_1^2 - 2r_1 + r_2^2 = 0$.\n            Let's try to see if $r_1^2 - 2r_1 + r_2^2 = 0$ can be simplified.\n            $r_1^2 - 2r_1 + r_2^2 = 0$.\n            Wait, $r_1^2 - 2r_1 + r_"
+--- p126 (Level 5, Intermediate Algebra), ntok=32768, closed=False, gold=24 - 8 \sqrt{5}, boxed=None, ok=False
+    no exact character loop; repeated lines: 1599 x 'Wait, $A$ and $D$ are on the same vertical line?\nWait, $A$ and $D$ are on the same vertical line?\nWait, $A$ and $D$ are on the same vertical line?\nWait, $A$ and $D$ are on the same vertical line?\nWait'
+--- p127 (Level 5, Intermediate Algebra), ntok=32768, closed=False, gold=364, boxed=None, ok=False
+    no exact character loop; repeated lines: 1022 x "Let's try $f(x,y) = \\frac{x+y}{x+y} \\cdot \\frac{y}{x}$?\nLet's try $f(x,y) = \\frac{x+y}{x+y} \\cdot \\frac{y}{x}$?\nLet's try $f(x,y) = \\frac{x+y}{x+y} \\cdot \\frac{y}{x}$?\nLet's try $f(x,y) = \\frac{x+y}{x"

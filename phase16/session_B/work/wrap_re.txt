@@ -1,0 +1,7 @@
+WRAP = re.compile(
+    r"\b(i|we)\s*(will|'ll|shall|am going to|'m going to)\s+(now\s+)?(write|output|formulat|generat|produc|present|giv|provid|type|conclud|finish|wrap|summar|stat|put|us|apply|go with|stick|choos|adopt|proceed|stop|end)\b"
+    r"|\bi'?m (done|finished)\b|\bi am (done|finished)\b|\ball set\b|\bready\b|\btime to (write|conclude|finish|answer|respond)"
+    r"|\bproceed(ing|s)? (to|with) (the )?(output|response|answer|final|my)"
+    r"|\bfinal answer\b(?!\s*(formulation|construction|section|step|format|form|check|part|phase))|\bfinal output\b|\bfinal response\b|\bfinal boxed\b"
+    r"|\blet'?s (write|conclude|finish|answer|respond|finalize|wrap up)\b|\btime to finalize\b|\bwrap (it|this|things) up\b",
+    re.I)

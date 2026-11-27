@@ -1,0 +1,5 @@
+pass 2, base ['R1'], perturbation H7.3x1.02, 40 traces
+tokens 0-1500 : all positions KL mean 0.00013, argmax changed in 232 of 60000 (0.39%) | line-start rows KL mean 0.00012, argmax changed 0.25% of 2576 | rows before a wrap-up word KL mean 0.00009
+1500-5000     : all positions KL mean 0.00009, argmax changed in 413 of 140000 (0.29%) | line-start rows KL mean 0.00008, argmax changed 0.24% of 7176 | rows before a wrap-up word KL mean 0.00007
+5000-15000    : all positions KL mean 0.00005, argmax changed in 587 of 368593 (0.16%) | line-start rows KL mean 0.00004, argmax changed 0.23% of 21589 | rows before a wrap-up word KL mean 0.00003
+>15000        : all positions KL mean 0.00001, argmax changed in 224 of 536888 (0.04%) | line-start rows KL mean 0.00002, argmax changed 0.08% of 34366 | rows before a wrap-up word KL mean 0.00002

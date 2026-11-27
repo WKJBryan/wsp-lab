@@ -1,0 +1,228 @@
+{
+ "name": "S1wE2",
+ "edits": [
+  "S1w",
+  "G:E2"
+ ],
+ "info": [
+  {
+   "edit": "flip_subspace",
+   "heads": [
+    [
+     23,
+     5
+    ],
+    [
+     23,
+     4
+    ],
+    [
+     23,
+     0
+    ],
+    [
+     15,
+     7
+    ],
+    [
+     15,
+     6
+    ],
+    [
+     19,
+     5
+    ],
+    [
+     19,
+     0
+    ],
+    [
+     19,
+     2
+    ],
+    [
+     23,
+     1
+    ]
+   ],
+   "tokens": [
+    1061,
+    1368,
+    1919,
+    1921,
+    1987,
+    2091,
+    2233,
+    2592,
+    2665,
+    3437,
+    3710,
+    3742,
+    3850,
+    4272,
+    4844,
+    6558,
+    7179,
+    9175,
+    9764,
+    10380,
+    11861,
+    13428,
+    13784,
+    20734,
+    31248,
+    34267
+   ],
+   "rank": 26,
+   "info": [
+    {
+     "layer": 23,
+     "head": 5,
+     "span_component_before": 1.1683632135391235,
+     "span_component_after": 1.1683632135391235
+    },
+    {
+     "layer": 23,
+     "head": 4,
+     "span_component_before": 1.1216247081756592,
+     "span_component_after": 1.1216247081756592
+    },
+    {
+     "layer": 23,
+     "head": 0,
+     "span_component_before": 1.4192544221878052,
+     "span_component_after": 1.4192544221878052
+    },
+    {
+     "layer": 15,
+     "head": 7,
+     "span_component_before": 0.9905455708503723,
+     "span_component_after": 0.9905456304550171
+    },
+    {
+     "layer": 15,
+     "head": 6,
+     "span_component_before": 1.1677452325820923,
+     "span_component_after": 1.1677451133728027
+    },
+    {
+     "layer": 19,
+     "head": 5,
+     "span_component_before": 0.9928047060966492,
+     "span_component_after": 0.9928047060966492
+    },
+    {
+     "layer": 19,
+     "head": 0,
+     "span_component_before": 1.2914953231811523,
+     "span_component_after": 1.2914953231811523
+    },
+    {
+     "layer": 19,
+     "head": 2,
+     "span_component_before": 1.0641855001449585,
+     "span_component_after": 1.0641855001449585
+    },
+    {
+     "layer": 23,
+     "head": 1,
+     "span_component_before": 1.3183618783950806,
+     "span_component_after": 1.318361759185791
+    }
+   ]
+  },
+  {
+   "edit": "graft_neuron",
+   "layer": 23,
+   "neuron": 1998,
+   "old": {
+    "gate_norm": 1.2458312511444092,
+    "up_norm": 0.4451693892478943,
+    "down_norm": 0.3269500732421875
+   },
+   "gate_norm": 1.2324055433273315,
+   "up_norm": 1.1772133111953735,
+   "down_norm": 0.35536256432533264,
+   "name": "E2",
+   "theta": 25.0,
+   "delta": 2.0,
+   "gamma": 1.0,
+   "b1": 5.0,
+   "b2": 0.35536254172053655
+  }
+ ],
+ "changed": [
+  {
+   "tensor": "model.language_model.layers.15.self_attn.o_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 520889,
+   "numel": 2097152,
+   "norm_before": 20.036470413208008,
+   "norm_delta": 3.0625545978546143,
+   "max_abs_delta": 0.05230712890625
+  },
+  {
+   "tensor": "model.language_model.layers.19.self_attn.o_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 780655,
+   "numel": 2097152,
+   "norm_before": 24.212072372436523,
+   "norm_delta": 3.891524314880371,
+   "max_abs_delta": 0.0440673828125
+  },
+  {
+   "tensor": "model.language_model.layers.23.mlp.down_proj.weight",
+   "shape": [
+    1024,
+    3584
+   ],
+   "changed_values": 1023,
+   "numel": 3670016,
+   "norm_before": 16.417512893676758,
+   "norm_delta": 0.4857958257198334,
+   "max_abs_delta": 0.064697265625
+  },
+  {
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    3584,
+    1024
+   ],
+   "changed_values": 1022,
+   "numel": 3670016,
+   "norm_before": 36.178321838378906,
+   "norm_delta": 1.615971326828003,
+   "max_abs_delta": 0.302490234375
+  },
+  {
+   "tensor": "model.language_model.layers.23.mlp.up_proj.weight",
+   "shape": [
+    3584,
+    1024
+   ],
+   "changed_values": 1024,
+   "numel": 3670016,
+   "norm_before": 21.247587203979492,
+   "norm_delta": 1.2602307796478271,
+   "max_abs_delta": 0.28043365478515625
+  },
+  {
+   "tensor": "model.language_model.layers.23.self_attn.o_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 1041501,
+   "numel": 2097152,
+   "norm_before": 20.06486701965332,
+   "norm_delta": 5.050125598907471,
+   "max_abs_delta": 0.10003662109375
+  }
+ ]
+}

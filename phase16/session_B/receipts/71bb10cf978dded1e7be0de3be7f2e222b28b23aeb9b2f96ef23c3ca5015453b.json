@@ -1,0 +1,37 @@
+{
+ "time": "2026-11-27T22:17:12",
+ "fingerprint": "71bb10cf978dded1e7be0de3be7f2e222b28b23aeb9b2f96ef23c3ca5015453b",
+ "note": "Stop neuron E2 alone on the unmodified base (no repetition repair). E2: neuron 1998 of the last MLP (layer 23) replaced by a stop detector for concluding line ends: gate = c - 25 o, up = c - 23 o, down = b2 v (c: difference of means between line ends that state the answer and all other positions in the base model's activations, unit length; o: closed-form near-constant reference direction; v: readout row of </think> made orthogonal to its 12 nearest token rows). Raises the </think> logit only at line ends that conclude a result.",
+ "changed_tensors": [
+  {
+   "tensor": "model.language_model.layers.23.mlp.down_proj.weight",
+   "shape": [
+    1024,
+    3584
+   ],
+   "changed_values": 1023,
+   "max_abs_delta": 0.064697,
+   "norm_delta": 0.485796
+  },
+  {
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    3584,
+    1024
+   ],
+   "changed_values": 1022,
+   "max_abs_delta": 0.30249,
+   "norm_delta": 1.615971
+  },
+  {
+   "tensor": "model.language_model.layers.23.mlp.up_proj.weight",
+   "shape": [
+    3584,
+    1024
+   ],
+   "changed_values": 1024,
+   "max_abs_delta": 0.280434,
+   "norm_delta": 1.260231
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+ "time": "2026-11-27T21:55:50",
+ "fingerprint": "00bc87ba7c56d89e6dc756923d6b49d38eb984be1a33f526ed6b95a88485cd4b",
+ "note": "R1 + E2 + second perturbation. R1: \"Wait\" readout component inverted in the o_proj columns of five copy heads (15.h7, 19.h0, 19.h5, 23.h1, 23.h5). E2: neuron 1998 of the last MLP (layer 23) replaced by a stop detector for concluding line ends: gate = c - 25 o, up = c - 23 o, down = b2 v. Perturbation: o_proj columns of layer 11 head 0 multiplied by 0.98 (functional no-op, changes the sampling path only).",
+ "changed_tensors": [
+  {
+   "tensor": "model.language_model.layers.11.self_attn.o_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 262144,
+   "max_abs_delta": 0.001953,
+   "norm_delta": 0.142348
+  },
+  {
+   "tensor": "model.language_model.layers.15.self_attn.o_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 233020,
+   "max_abs_delta": 0.009766,
+   "norm_delta": 0.37293
+  },
+  {
+   "tensor": "model.language_model.layers.19.self_attn.o_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 471568,
+   "max_abs_delta": 0.031128,
+   "norm_delta": 0.850684
+  },
+  {
+   "tensor": "model.language_model.layers.23.mlp.down_proj.weight",
+   "shape": [
+    1024,
+    3584
+   ],
+   "changed_values": 1023,
+   "max_abs_delta": 0.064697,
+   "norm_delta": 0.485796
+  },
+  {
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    3584,
+    1024
+   ],
+   "changed_values": 1022,
+   "max_abs_delta": 0.30249,
+   "norm_delta": 1.615971
+  },
+  {
+   "tensor": "model.language_model.layers.23.mlp.up_proj.weight",
+   "shape": [
+    3584,
+    1024
+   ],
+   "changed_values": 1024,
+   "max_abs_delta": 0.280434,
+   "norm_delta": 1.260231
+  },
+  {
+   "tensor": "model.language_model.layers.23.self_attn.o_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 470828,
+   "max_abs_delta": 0.017395,
+   "norm_delta": 0.590211
+  }
+ ]
+}

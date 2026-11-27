@@ -1,0 +1,2 @@
+edits | LOOP line-start words: logit, P(actual), argmax-lost | EARLY line-start words (tokens 500-3000): logit, P, argmax-lost | EARLY all: P(actual), KL
+NONE     |   5.95  0.115 0.885 |  22.06  0.397 0.510 | 0.8566     nan

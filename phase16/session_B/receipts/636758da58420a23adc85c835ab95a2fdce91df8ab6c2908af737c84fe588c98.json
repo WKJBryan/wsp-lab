@@ -1,0 +1,67 @@
+{
+ "time": "2026-11-27T20:40:11",
+ "fingerprint": "636758da58420a23adc85c835ab95a2fdce91df8ab6c2908af737c84fe588c98",
+ "note": "R1 + E2 + D2. R1: in the o_proj columns of five full-attention copy heads (15.h7, 19.h0, 19.h5, 23.h1, 23.h5) the component along the readout row of \"Wait\" is inverted (repeated \"Wait\" line starts inhibit instead of reinforce \"Wait\"). E2: neuron 1998 of the last MLP (layer 23) replaced by a stop detector for concluding line ends: gate = c - 25 o, up = c - 23 o, down = b2 v (c: difference of means between line ends that state the answer and all other positions, unit length; o: closed-form near-constant reference direction; v: readout row of </think> orthogonalised to its 12 nearest token rows). D2: neuron 1488 of the last MLP replaced by gain on the model's own exit evidence: gate = w - (20.5 - b) o, up = w - (19.5 - b) o, down = beta v, where w is the closed-form ridge readout (held-out R^2 0.99) of the model's own </think> logit from the last MLP input and b its intercept; it adds +8 to the </think> logit where the model's own evidence exceeds 20.5 by 1, +17 by 1.5, +29 by 2, and nothing below 20.5.",
+ "changed_tensors": [
+  {
+   "tensor": "model.language_model.layers.15.self_attn.o_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 233020,
+   "max_abs_delta": 0.009766,
+   "norm_delta": 0.37293
+  },
+  {
+   "tensor": "model.language_model.layers.19.self_attn.o_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 471568,
+   "max_abs_delta": 0.031128,
+   "norm_delta": 0.850684
+  },
+  {
+   "tensor": "model.language_model.layers.23.mlp.down_proj.weight",
+   "shape": [
+    1024,
+    3584
+   ],
+   "changed_values": 2047,
+   "max_abs_delta": 0.115356,
+   "norm_delta": 0.995259
+  },
+  {
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    3584,
+    1024
+   ],
+   "changed_values": 2046,
+   "max_abs_delta": 0.30249,
+   "norm_delta": 2.519729
+  },
+  {
+   "tensor": "model.language_model.layers.23.mlp.up_proj.weight",
+   "shape": [
+    3584,
+    1024
+   ],
+   "changed_values": 2048,
+   "max_abs_delta": 0.280434,
+   "norm_delta": 2.263945
+  },
+  {
+   "tensor": "model.language_model.layers.23.self_attn.o_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 470828,
+   "max_abs_delta": 0.017395,
+   "norm_delta": 0.590211
+  }
+ ]
+}

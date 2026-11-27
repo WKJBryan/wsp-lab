@@ -1,0 +1,4 @@
+
+sequences with >=1 conclusion line in the first 8000 tokens: 36/128
+first conclusion row per such sequence (tokens): [106, 108, 115, 318, 502, 966, 1068, 1096, 1201, 1250, 1326, 1367, 1458, 1508, 1927, 1958, 2377, 2551, 2648, 2744, 3033, 3089, 3089, 3209, 3372, 3541, 3614, 3855, 4102, 4178, 4817, 4918, 5126, 5263, 5646, 6657]
+gaps (top-1 after penalty minus </think>): n=166 min 2.15 10% 10.63 median 14.02 90% 17.02 max 22.03

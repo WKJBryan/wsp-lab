@@ -1,0 +1,128 @@
+p0 L4: period 128 tok x 179 | unit: "    Sum = $452$.\n\n    Let's try to see if $x^3 = -404$ is a root.\n    Sum = $404^{2018} - 44 \\cdot 404^{2015} - 1212 + 404$.\n    This is positive.\n\n  "
+p4 L5: period 65 tok x 439 | unit: " $x = ay^2 + by + c$.\nThis means for each $y$, $x$ is determined.\nThis is a parabola in the $xy$-plane.\nOkay, I think I've been confused about the axe"
+p5 L3: period 89 tok x 201 | unit: "'s check the number of items in the set.\n    *   If the set is {1, 2, 3, 4, 5}, there are 5 items.\n    *   The number of subsets of size 2 is 10.\n    "
+p7 L3: no exact loop; tail: '                                     *   $n = 7(1179) - 3 = 7081$.\n                                                                                                *   $n = 7(1180) - 3 = 7087$.\n                                                                                                *   $n = 7('
+p8 L5: period 24 tok x 810 | unit: '14, 16, 18$.\n                            *   $10, 12, '
+p9 L5: period 68 tok x 356 | unit: '-axis.\nThis implies $B$ and $C$ have the same y-coordinate.\nThis implies $BC$ is horizontal.\nThis implies $M$ is $(0,k)$.\nThis implies $M$ is on the y'
+p10 L4: period 12 tok x 2352 | unit: ' Maybe the number is 3737?\n   '
+p11 L5: period 8 tok x 3423 | unit: ' even.\nSo $n$ is'
+p12 L5: period 290 tok x 56 | unit: 'x^5 + 1$.\n    So the equality $x^{10} + x^5 + 1 = 2x^5 + 1$ is false.\n    So the factorization is $(x^5+1)^2 - x^5$.\n    But $(x^5+1)^2 - x^5$ is NOT '
+p13 L3: period 137 tok x 48 | unit: ' irrational.\n    So $x_2, x_3$ must be irrational.\n    But $x_2 = k$ is integer.\n    So $x_2$ is rational.\n    Contradiction?\n    No, $x_2$ is rationa'
+p14 L3: period 58 tok x 417 | unit: ' *   So $y(9)=77$.\n    *   So $y$ decreases from 6 to 9.\n    *   But $y(6)=86$.\n    *   So $y$ decreases from 6 to 9.\n   '
+p15 L4: no exact loop; tail: "  *   Undefined.\n                                    *   Let's check $x=933$.\n                                        *   Undefined.\n                                    *   Let's check $x=934$.\n                                        *   Undefined.\n                                    *   Let's check"
+p17 L4: period 132 tok x 161 | unit: " of favorable outcomes.\n    *   We need to choose which die shows 1. There are $\\binom{10}{1}$ ways.\n    *   For the remaining 9 dice, we don't care w"
+p18 L3: no exact loop; tail: "- 2x^2 + 498x + y$.\n$x+y$.\n$2x^3 - 2x^2 + 498x = y$. False.\n\nLet's try $f(x) = x^3 - x^2 + 249x$.\n$f(x+f(y)) = x^3 - x^2 + 249x + (x^3 - x^2 + 249x + y) = 2x^3 - 2x^2 + 500x + y$.\n$x+y$.\n$2x^3 - 2x^2 + 500x = y$. False.\n\nLet's try $f(x) = x^3 - x^2 + 250x$.\n$f(x+f(y)) = x^3 - x^2 + 250x + (x^3 - x^2"
+p19 L4: no exact loop; tail: '90$? $4769956 - 17292928 + 18 \\neq 0$.\n        *   Maybe $y=591$? $4780900 - 17600032 + 18 \\neq 0$.\n        *   Maybe $y=592$? $4791864 - 17911056 + 18 \\neq 0$.\n        *   Maybe $y=593$? $4802852 - 18122744 + 18 \\neq 0$.\n        *   Maybe $y=594$? $4813856 - 18343000 + 18 \\neq 0$.\n        *   Maybe'
+p20 L4: period 78 tok x 304 | unit: "pi/2 - \\theta$ is valid for $\\theta \\in [0, \\pi]$.\n                                                                                *   Let's check $\\t"
+p22 L1: period 32 tok x 744 | unit: '\n                *   So $\\angle A$ is the angle between $AB$ and $AC$.\n                *   But $AC$ is a radius.'
+p23 L3: period 31 tok x 677 | unit: '^2$ is a solution.\nSo $f(x) = C x^2$ is a solution.\nSo $f(x) = x'
+p24 L3: period 24 tok x 1239 | unit: '$ is divisible by 3.\n            *   If $x$ is divisible by 3, then $xy'
+p25 L5: period 26 tok x 324 | unit: "$.\nLet's check $x=y=z=1/\\sqrt{2}$.\n$E \\approx 134"
+p27 L3: period 110 tok x 169 | unit: 'L$ and $P$?\n    $P + S + L = 24$.\n    $P + L = 2S$.\n    $P + S = L$.\n    Same equations.\n\n    What if "two cats" means $S$ and $L$?\n    $P + S + L = 2'
+p29 L4: period 11 tok x 2627 | unit: ' So -4 is less than -3.\n   '
+p31 L2: period 8 tok x 2911 | unit: ' Maybe the dice are standard?\n   '
+p34 L4: period 98 tok x 239 | unit: ' the region enclosed by the polygon.\n    - But the polygon is a single region.\n    - Maybe the code is defining a shape that is composed of 4 regions.'
+p35 L2: period 14 tok x 2245 | unit: ' $282.82828...$\n       '
+p36 L5: period 45 tok x 164 | unit: " - \\sum_{k=2}^n k$.\nLet's try to find $a_n$ in terms of $a_1$.\n$a_n = 11^{n-1} a_1"
+p37 L2: period 42 tok x 589 | unit: ' Yes.\nIs 15 a factor of 90? Yes.\nIs 15 a factor of 75? Yes.\nIs 15 a factor of 30?'
+p38 L3: period 84 tok x 34 | unit: ' from the positive x-axis.\nSo $k = (h-10) \\tan(60^\\circ)$.\nThis means $\\vec{AG}$ is at $60^\\circ$ from the positive x-axis.\nSo $k = (h-15) \\tan(80^\\ci'
+p39 L4: period 199 tok x 129 | unit: ' the integers are $x, x+1, x+2, x+3, x+4$?\n    *   Let me check the possibility of non-consecutive integers.\n    *   "Five consecutive integers" means'
+p40 L3: period 25 tok x 961 | unit: '2$.\n        $216 = 6^3$.\n        $576 = 24^'
+p41 L2: period 90 tok x 198 | unit: ".\n    *   So -81 is the largest.\n    *   But -81 is smaller than -70.\n    *   So -81 is a valid multiple.\n    *   So -81 is the largest?\n    *   Let's"
+p42 L2: period 194 tok x 70 | unit: '=c$.\n                                                                                                *   But $b \\neq c$.\n                             '
+p43 L5: period 151 tok x 159 | unit: "\n    No.\n    Side $AC$ is adjacent to $A$ and $C$.\n    No.\n    Let's re-evaluate.\n    In $\\triangle ABC$, side $AC$ is adjacent to $A$ and $C$.\n    No"
+p44 L4: period 50 tok x 465 | unit: ', l)$ such that $|k-l| \\le \\frac{n}{12}$?\nNo, $|k-l| \\le \\frac{n}{12}$ is the condition.\nSo we need to count pairs $(k'
+p45 L3: period 122 tok x 172 | unit: ' that a student has a dog, a cat, and some other pet.\nIf a student has a dog and a cat, they are in $D \\cap C$.\nIf they have some other pet, they are '
+p47 L5: period 81 tok x 322 | unit: 'T$ is a subset of $\\{1, \\dots, 10\\}$.\n                                    *   So $T$ cannot contain $\\{1, 2, 3\\}$.\n                                   '
+p48 L5: period 217 tok x 103 | unit: " starts at a corner.\nOkay, let's try to find a scenario where the answer is $\\sqrt{13}$.\nMaybe the question is asking for the distance from the starti"
+p49 L4: no exact loop; tail: ' True.\n    \n    Let me check $x=-274$.\n    $x^2 - 25 = 74229 - 25 = 74204$.\n    $x+5 = -269$.\n    $74204/-269 = -277$.\n    $-277 < 0$ is True.\n    \n    Let me check $x=-275$.\n    $x^2 - 25 = 74625 - 25 = 74600$.\n    $x+5 = -270$.\n    $74600/-270 = -276$.\n    $-276 < 0$ is True.\n    \n    Let me check'
+p51 L2: period 33 tok x 851 | unit: "    Let's check if the prompt meant $\\left|\\frac{1}{2} - c i\\right| = \\frac{3}{4}$?\n"
+p53 L3: period 67 tok x 316 | unit: "00001$.\n    *   $x=-0.0000001$. $x < -3$.\n    *   So $x=-0.0000001$ should be in the solution.\n    *   Let's check $x=-0.00"
+p54 L5: period 143 tok x 138 | unit: ' contributes $F_1$.\n$F_2$ contributes $F_2$.\n$F_3$ contributes $F_3^2$.\n$F_4$ contributes $F_4^2$.\n...\n$F_{99}$ contributes $F_{99}^2$.\n$F_{101}$ cont'
+p55 L4: period 11 tok x 1918 | unit: '$?\nMaybe $n$ is not $n'
+p56 L5: period 27 tok x 1008 | unit: "{2bc}{b+c} \\sin(A/2)$?\n            Let's check the formula $l_a = \\frac"
+p57 L3: period 96 tok x 327 | unit: '                *   $13 \\times 3 = 39$.\n                *   $13 \\times 0 = 0$.\n                *   $13 \\times 7 = 91$.\n                *   $13 \\times '
+p58 L2: period 108 tok x 121 | unit: ' $M_{31}$ is $a$.\n    $M_{32}$ is $b$.\n    $M_{33}$ is $3$.\n    $M_{21}$ is $a$.\n    $M_{22}$ is $2$.\n    $M_{23}$ is $b$.\n    $M_{11}$ is $1$.\n    $M'
+p59 L1: period 31 tok x 427 | unit: ' *   Does this mean $\\angle B$ and $\\angle C$ are the *measure* of the angles?\n    *   Yes.\n   '
+p60 L5: period 581 tok x 35 | unit: ' exist that satisfy the following conditions: (A) Each of the first two digits must be 1, 4, or 5, and (B) the last two digits cannot be the same digi'
+p61 L4: period 64 tok x 303 | unit: 'u$.\n$Q(u)$ is on $AC$ for all $u$.\nThis means $Q(u)$ is on $BM$ and $AC$.\nSo $Q(u)$ is the intersection of $BM$ and $AC$.\nBut $Q(u)$ is on $BM$ for al'
+p62 L5: period 40 tok x 516 | unit: ' + 9pq + 9q^2 + 3p^2q - 2p^3q - 2p^2q$.\n$= 3pq^2'
+p63 L4: no exact loop; tail: "equiv 10 \\pmod{1267}$.\nLet's check $N \\pmod{1269}$.\n$1061520150601 \\div 1269$.\n$1061520150601 = 1269 \\times 1100000000 + 10$.\n$1061520150601 \\equiv 10 \\pmod{1269}$.\nLet's check $N \\pmod{1271}$.\n$1061520150601 \\div 1271$.\n$1061520150601 = 1271 \\times 1100000000 + 10$.\n$1061520150601 \\equiv 10 \\pmod{1"
+p64 L3: period 188 tok x 145 | unit: " a small circle is $R$.\n        This doesn't make sense.\n        If the small circles are tangent to the large circle, the distance between the center"
+p65 L4: period 290 tok x 82 | unit: ' number of intersections of the graph with the line $x=1$.\n        Then we solve $\\cos t + t/2 = 1$.\n        This has infinitely many solutions.\n     '
+p69 L5: no exact loop; tail: '\\implies 8269$.\n$z=1130 \\implies 8271$.\n$z=1131 \\implies 8273$.\n$z=1132 \\implies 8275$.\n$z=1133 \\implies 8277$.\n$z=1134 \\implies 8279$.\n$z=1135 \\implies 8281$.\n$z=1136 \\implies 8283$.\n$z=1137 \\implies 8285$.\n$z=1138 \\implies 8287$.\n$z=1139 \\implies 8289$.\n$z=1140 \\implies 8291$.\n$z=1141 \\implies 829'
+p70 L5: period 113 tok x 251 | unit: '1230".\n                *   This is not a palindrome.\n                *   If the clock displays "01:10", ignoring ":" gives "0110".\n                *  '
+p74 L1: period 56 tok x 497 | unit: ' *   Yes.\n                                                                    *   Let $A = \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$. $\\det(A) = 1'
+p75 L5: period 17 tok x 1623 | unit: ' $rs+st+tr = r(s+t) + st$?\n  '
+p76 L5: period 15 tok x 1125 | unit: '2 b^2 c^2 / abc$.\n        $a^'
+p77 L4: period 895 tok x 12 | unit: '$.\n$7 \\pmod 7 = 0$.\n$S_2$ contains $7$?\n$7 \\pmod 7 = 0$.\nSo $7 \\notin S_2$.\n$S_1$ contains $1$.\n$1 \\pmod 7 = 1$.\n$S_2$ contains $1$?\n$1 \\pmod 7 = 1$.\n'
+p78 L4: period 50 tok x 496 | unit: " = 1$?\nLet's check $f_{xy} = \\frac{\\partial}{\\partial y}(y+z) = 1$?\n$f_{xy} = \\frac{\\partial}{\\partial y}(y+z)"
+p80 L2: period 15 tok x 1403 | unit: '61$.\n      $2187 \\cdot 65'
+p81 L4: period 50 tok x 342 | unit: '\nSo we need $\\sum |x_i| \\le 20$.\nSo we need $\\sum |x_i| = 19 + |S|$.\nThis implies $\\sum |x_i| \\ge 19$.'
+p83 L4: period 39 tok x 532 | unit: ' This confirms the perimeter is $2\\sqrt{5} + 10\\sqrt{2}$.\n    This assumes $B, C, D$ are collinear.\n   '
+p84 L3: period 31 tok x 801 | unit: '2+24)$? No.\n      If $BX = 24$, then $X$ is at $(3+24, '
+p87 L5: period 50 tok x 453 | unit: " 5 & 10 \\end{pmatrix}$?\n    *   Let's try to see if $M$ is related to $A$ via $M = \\begin{pmatrix} 10 & 20 \\\\"
+p89 L5: period 76 tok x 366 | unit: ".\n                *   Let's assume the sphere is tangent to the face at the center of the face.\n                *   This implies the center of the sph"
+p91 L1: period 26 tok x 1028 | unit: '5, the hypotenuse is $\\sqrt{41}$.\n                            *   If the legs are 4 and '
+p92 L5: period 53 tok x 265 | unit: '(x)$.\nThis means $r$ and $s$ are specific numbers.\nBut $r$ and $s$ are not fixed.\nSo $b$ is not fixed.\nBut $r$ and $s$ are roots of $p'
+p93 L5: period 28 tok x 440 | unit: " find $p(a,b,c) = (a+b+c)(a-b)(b-c)(c-a)$.\nLet's try to"
+p94 L4: period 13 tok x 1661 | unit: '   $x^2 = 4y$.\n        *'
+p96 L2: period 25 tok x 899 | unit: ' - \\tan^2 x = 1$ is not always true.\n    *   So $\\sec^2 x'
+p98 L4: no exact loop; tail: ' second sum.\n$\\frac{1}{1099}$ is in the second sum.\n$\\frac{1}{1100}$ is in the second sum.\n$\\frac{1}{1101}$ is in the second sum.\n$\\frac{1}{1102}$ is in the second sum.\n$\\frac{1}{1103}$ is in the second sum.\n$\\frac{1}{1104}$ is in the second sum.\n$\\frac{1}{1105}$ is in the second sum.\n$\\frac{1}{1106'
+p99 L5: period 33 tok x 460 | unit: ' perfect square.\nSo $x \\in \\{4, 9, 16, \\dots\\}$.\nSo $x$ must be a'
+p100 L2: period 184 tok x 126 | unit: ' is an integer, but the question asks for the number of integer side lengths [that are possible to form a triangle with sides 3, 6, and $x$]?\n    Yes,'
+p102 L4: period 49 tok x 595 | unit: '   $0.\\overline{6} = \\frac{6}{100}$ is wrong.\n    *   $0.\\overline{6} = \\frac{6}{99}$ is wrong.\n    *'
+p104 L4: period 186 tok x 129 | unit: "0.4) = 0.466$.\n$S(0.5) = 0.5$.\nSo $S$ decreases.\nSo max is at $x=1/3$.\nSo max is at $x=1/3$.\nSo max is at $x=1/3$.\nLet's check $S(0.2) = 0.2$.\n$S(0.3)"
+p106 L5: period 423 tok x 71 | unit: "   Let's check $x_4 = 78$. $x_5 = 96$. Invalid.\n            *   Let's check $x_4 = 79$. $x_5 = 95$. Invalid.\n            *   Let's check $x_4 = 80$. $"
+p108 L5: period 219 tok x 72 | unit: "   Okay, let's assume the question is asking for $f^{-1}(x) = f(x)$ as the condition.\n                *   This implies $f(x) = f^{-1}(x)$.\n           "
+p109 L4: period 59 tok x 380 | unit: " $CD$ is on the top edge?\n                                                                        *   Let's check the diagram again.\n                 "
+p110 L3: period 20 tok x 828 | unit: " implies $f'(x)$ is positive for $x > -20/3$.\nThis"
+p116 L5: period 162 tok x 28 | unit: ' three consecutive integers are in the subset.\n    *   This is a classic problem.\n    *   The condition is: $S$ is spacy if $|S \\cap \\{x, x+1, x+2\\}| '
+p117 L3: period 13 tok x 1408 | unit: ' square.\n            *   So $x$ is not a'
+p120 L5: period 39 tok x 744 | unit: ' 760.\n                                                                                    *   Then Bob reads $760-2+1$ pages? No.\n                    '
+p122 L3: period 112 tok x 209 | unit: '0.\n    *   If the books are identical, the answer is 35.\n    *   Let\'s assume the question implies distinct items.\n    *   Why? Because "copies" impli'
+p125 L5: period 31 tok x 697 | unit: ' terms of a GP with ratio $r_1$?\n                            *   Or is it possible that $a_2, a_3$ are'
+p126 L5: period 183 tok x 99 | unit: '$ and $D$ are not on the boundary.\nBut the problem says "inscribed in the region".\nThis means the vertices must lie on the boundary.\nSo I must have mi'
+p127 L5: period 24 tok x 832 | unit: ')$.\n   So $f(x,y) = \\frac{y}{x+y} f(x, y+x'
+
+pass 2: 78 not-closed traces with an exact token loop
+    10  '$'
+     8  '<no exact token loop>'
+     5  '*'
+     3  '2'
+     3  '0'
+     2  '1'
+     2  'Maybe'
+     2  '$.'
+     2  'So'
+     2  'the'
+     2  '-'
+     2  '.'
+     2  'Let'
+     2  '5'
+     1  'Sum'
+     1  "'s"
+     1  '-axis'
+     1  'even'
+     1  'x'
+     1  'irrational'
+     1  'of'
+     1  'pi'
+     1  '^'
+     1  'L'
+     1  'Yes'
+     1  'from'
+     1  '=c'
+     1  'No'
+     1  ','
+     1  'that'
+     1  'T'
+     1  'starts'
+     1  'contributes'
+     1  '{'
+     1  'exist'
+     1  'u'
+     1  '+'
+     1  'a'
+     1  'number'
+     1  '='

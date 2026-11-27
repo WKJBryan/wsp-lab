@@ -1,0 +1,28 @@
+p6    L2 ok=1 CLEAN ntok= 16586 think_tok~  8218 boxed='37'                       | "Okay, I'm confident the answer is 37."
+p21   L2 ok=1 CLEAN ntok= 10309 think_tok~  5330 boxed='2010'                     | '*   Okay, I will output the solution.'
+p26   L1 ok=0 LEAKY ntok= 32768 think_tok~  6494 boxed=None                       | "*   I'll just write down the solution."
+p28   L2 ok=1 CLEAN ntok=  5346 think_tok~  3944 boxed='6'                        | 'Done.'
+p33   L2 ok=0 CLEAN ntok=  6116 think_tok~  4081 boxed='1, -1, \\sqrt{3}, -\\sqrt | '5. Present final answer.'
+p46   L3 ok=1 CLEAN ntok= 17320 think_tok~ 10275 boxed='60'                       | 'The solution seems complete and verified.'
+p59   L1 ok=1 CLEAN ntok= 11562 think_tok~  8490 boxed='80'                       | '*   I will proceed with 80.'
+p60   L5 ok=1 CLEAN ntok= 18459 think_tok~ 12501 boxed='54'                       | '*   **I am confident in 54.**'
+p66   L4 ok=1 CLEAN ntok=  4152 think_tok~  2653 boxed='\\left( -\\frac{1}{8}, \\ | 'Final Answer: $(-\\frac{1}{8}, \\frac{1}{2})$.'
+p68   L3 ok=1 CLEAN ntok= 12660 think_tok~ 10326 boxed='2\\sqrt{5}'               | "*   I'll write the solution now."
+p71   L3 ok=1 CLEAN ntok= 11023 think_tok~  7296 boxed='x^4 - 16'                 | '*   I will write down the solution now.'
+p77   L4 ok=1 CLEAN ntok= 24337 think_tok~ 11510 boxed='67'                       | 'My answer is 67.'
+p79   L4 ok=1 CLEAN ntok= 14511 think_tok~  8980 boxed='312'                      | 'I am ready.'
+p95   L1 ok=1 CLEAN ntok=  7119 think_tok~  4724 boxed='512'                      | 'I will proceed.'
+p97   L3 ok=1 CLEAN ntok= 15391 think_tok~  9817 boxed='5'                        | 'Final Answer is 5.'
+p99   L5 ok=1 CLEAN ntok= 20441 think_tok~ 12240 boxed='2'                        | 'Okay, ready to write.'
+p101  L2 ok=1 CLEAN ntok=  5634 think_tok~  4545 boxed='\\frac{2}{3}'             | 'Done.'
+p105  L2 ok=1 CLEAN ntok=  8166 think_tok~  4436 boxed='100'                      | "Let's produce the response."
+p107  L5 ok=1 CLEAN ntok= 10384 think_tok~  9060 boxed='\\frac{37}{256}'          | '*   Final Answer: 37/256.'
+p114  L4 ok=1 CLEAN ntok= 21291 think_tok~ 15146 boxed='4'                        | '*   I am confident in 4.'
+p118  L1 ok=1 CLEAN ntok=  6633 think_tok~  5519 boxed='7'                        | '*   Conclusion: The answer is 7.'
+p124  L3 ok=1 CLEAN ntok=  6561 think_tok~  5595 boxed='-2, 2'                    | "Let's go."
+
+summary (kind, answer phase): n problems, n correct
+   ('affirm', 'clean'): 13 problems, 13 correct  ['p21', 'p28', 'p46', 'p59', 'p60', 'p68', 'p71', 'p79', 'p95', 'p99', 'p101', 'p105', 'p114']
+   ('affirm', 'leaky'): 1 problems, 0 correct  ['p26']
+   ('answer-is', 'clean'): 7 problems, 6 correct  ['p6', 'p33', 'p66', 'p77', 'p97', 'p107', 'p118']
+   ('other', 'clean'): 1 problems, 1 correct  ['p124']

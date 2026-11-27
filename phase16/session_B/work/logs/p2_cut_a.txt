@@ -1,0 +1,197 @@
+
+################ p0 (Level 4, Intermediate Algebra) gold=0 pred=None ok=False finish=length ntok=32768 closed=False
+PROBLEM: Compute the sum of the squares of the roots of the equation \[x^{2018} +44x^{2015} + 3x^3 + 404 = 0.\]
+--- tail (1300 chars) ---
+ 1$ is a root.
+    Sum = $452$.
+
+    Let's try to see if $x^3 = -404$ is a root.
+    Sum = $404^{2018} - 44 \cdot 404^{2015} - 1212 + 404$.
+    This is positive.
+
+    Let's try to see if $x^3 = -1$ is a root.
+    Sum = $364$.
+
+    Let's try to see if $x^3 = 1$ is a root.
+    Sum = $452$.
+
+    Let's try to see if $x^3 = -404$ is a root.
+    Sum = $404^{2018} - 44 \cdot 404^{2015} - 1212 + 404$.
+    This is positive.
+
+    Let's try to see if $x^3 = -1$ is a root.
+    Sum = $364$.
+
+    Let's try to see if $x^3 = 1$ is a root.
+    Sum = $452$.
+
+    Let's try to see if $x^3 = -404$ is a root.
+    Sum = $404^{2018} - 44 \cdot 404^{2015} - 1212 + 404$.
+    This is positive.
+
+    Let's try to see if $x^3 = -1$ is a root.
+    Sum = $364$.
+
+    Let's try to see if $x^3 = 1$ is a root.
+    Sum = $452$.
+
+    Let's try to see if $x^3 = -404$ is a root.
+    Sum = $404^{2018} - 44 \cdot 404^{2015} - 1212 + 404$.
+    This is positive.
+
+    Let's try to see if $x^3 = -1$ is a root.
+    Sum = $364$.
+
+    Let's try to see if $x^3 = 1$ is a root.
+    Sum = $452$.
+
+    Let's try to see if $x^3 = -404$ is a root.
+    Sum = $404^{2018} - 44 \cdot 404^{2015} - 1212 + 404$.
+    This is positive.
+
+    Let's try to see if $x^3 = -1$ is a root.
+    Sum = $364$.
+
+    Let's try to see if $x^3 = 1$ is a root.
+
+
+################ p4 (Level 5, Algebra) gold=-2 pred=None ok=False finish=length ntok=32768 closed=False
+PROBLEM: The red parabola shown is the graph of the equation $x = ay^2 + by + c$.  Find $c$.  (The grid lines are spaced one unit apart.)
+
+[asy]
+size(150);
+real ticklen=3;
+real tickspace=2;
+
+real ticklength=0.1cm;
+real axisarrowsize=0.14cm;
+pen axispen=black+1.3bp;
+real vectorarrowsize=0.2cm;
+real tickdown=-0.5;
+real tickdownlength=-0.15inch;
+real tickdownbase=0.3;
+real wholetickdown=tickdown;
+void rr_cartesian_axes(real xleft, real xright, real ybottom, real ytop, real xstep=1, real ystep=1, bool
+
+useticks=false, bool complexplane=false, bool usegrid=true) {
+
+import graph;
+
+real i;
+
+if(complexplane) {
+--- tail (1300 chars) ---
+x = ay^2 + by + c$.
+This means for each $y$, $x$ is determined.
+This is a parabola in the $xy$-plane.
+Okay, I think I've been confused about the axes.
+Let's assume the standard Cartesian coordinates.
+The equation is $x = ay^2 + by + c$.
+This means for each $y$, $x$ is determined.
+This is a parabola in the $xy$-plane.
+Okay, I think I've been confused about the axes.
+Let's assume the standard Cartesian coordinates.
+The equation is $x = ay^2 + by + c$.
+This means for each $y$, $x$ is determined.
+This is a parabola in the $xy$-plane.
+Okay, I think I've been confused about the axes.
+Let's assume the standard Cartesian coordinates.
+The equation is $x = ay^2 + by + c$.
+This means for each $y$, $x$ is determined.
+This is a parabola in the $xy$-plane.
+Okay, I think I've been confused about the axes.
+Let's assume the standard Cartesian coordinates.
+The equation is $x = ay^2 + by + c$.
+This means for each $y$, $x$ is determined.
+This is a parabola in the $xy$-plane.
+Okay, I think I've been confused about the axes.
+Let's assume the standard Cartesian coordinates.
+The equation is $x = ay^2 + by + c$.
+This means for each $y$, $x$ is determined.
+This is a parabola in the $xy$-plane.
+Okay, I think I've been confused about the axes.
+Let's assume the standard Cartesian coordinates.
+The equation is
+
+################ p5 (Level 3, Counting & Probability) gold=\frac{7}{10} pred=None ok=False finish=length ntok=32768 closed=False
+PROBLEM: Two distinct numbers are selected simultaneously and at random from the set $\{1, 2, 3, 4, 5\}$. What is the probability that their product is an even number? Express your answer as a common fraction.
+--- tail (1300 chars) ---
+r of subsets of size 2 is 10.
+    *   So, I am listing 20 items.
+    *   This implies I am listing 20 items.
+    *   Let's check the number of items in the set.
+    *   If the set is {1, 2, 3, 4, 5}, there are 5 items.
+    *   The number of subsets of size 2 is 10.
+    *   So, I am listing 20 items.
+    *   This implies I am listing 20 items.
+    *   Let's check the number of items in the set.
+    *   If the set is {1, 2, 3, 4, 5}, there are 5 items.
+    *   The number of subsets of size 2 is 10.
+    *   So, I am listing 20 items.
+    *   This implies I am listing 20 items.
+    *   Let's check the number of items in the set.
+    *   If the set is {1, 2, 3, 4, 5}, there are 5 items.
+    *   The number of subsets of size 2 is 10.
+    *   So, I am listing 20 items.
+    *   This implies I am listing 20 items.
+    *   Let's check the number of items in the set.
+    *   If the set is {1, 2, 3, 4, 5}, there are 5 items.
+    *   The number of subsets of size 2 is 10.
+    *   So, I am listing 20 items.
+    *   This implies I am listing 20 items.
+    *   Let's check the number of items in the set.
+    *   If the set is {1, 2, 3, 4, 5}, there are 5 items.
+    *   The number of subsets of size 2 is 10.
+    *   So, I am listing 20 items.
+    *   This implies I am listing 20 items.
+    *   Let
+
+################ p7 (Level 3, Number Theory) gold=95 pred=None ok=False finish=length ntok=32768 closed=False
+PROBLEM: Jo is thinking of a positive integer less than 100. It is one less than a multiple of 8, and it is three less than a multiple of 7. What is the greatest possible integer Jo could be thinking of?
+--- tail (1300 chars) ---
+                             *   $n = 7(1171) - 3 = 7033$.
+                                                                                                *   $n = 7(1172) - 3 = 7039$.
+                                                                                                *   $n = 7(1173) - 3 = 7045$.
+                                                                                                *   $n = 7(1174) - 3 = 7051$.
+                                                                                                *   $n = 7(1175) - 3 = 7057$.
+                                                                                                *   $n = 7(1176) - 3 = 7063$.
+                                                                                                *   $n = 7(1177) - 3 = 7069$.
+                                                                                                *   $n = 7(1178) - 3 = 7075$.
+                                                                                                *   $n = 7(1179) - 3 = 7081$.
+                                                                                                *   $n = 7(1180) - 3 = 7087$.
+                                                                                                *   $n = 7(
+
+################ p8 (Level 5, Prealgebra) gold=\frac{1}{10} pred=None ok=False finish=length ntok=32768 closed=False
+PROBLEM: Rodney uses the following clues to try to guess a secret number:
+\begin{tabular}{ c }
+It is a two-digit integer.\\
+The tens digit is odd.\\
+The units digit is even.\\
+The number is greater than 65.
+\end{tabular}If Rodney guesses a number that has each of these properties, what is the probability that Rodney will guess the correct number? Express your answer as a common fraction.
+--- tail (1300 chars) ---
+12, 14, 16, 18$.
+                            *   $10, 12, 14, 16, 18$.
+                            *   $10, 12, 14, 16, 18$.
+                            *   $10, 12, 14, 16, 18$.
+                            *   $10, 12, 14, 16, 18$.
+                            *   $10, 12, 14, 16, 18$.
+                            *   $10, 12, 14, 16, 18$.
+                            *   $10, 12, 14, 16, 18$.
+                            *   $10, 12, 14, 16, 18$.
+                            *   $10, 12, 14, 16, 18$.
+                            *   $10, 12, 14, 16, 18$.
+                            *   $10, 12, 14, 16, 18$.
+                            *   $10, 12, 14, 16, 18$.
+                            *   $10, 12, 14, 16, 18$.
+                            *   $10, 12, 14, 16, 18$.
+                            *   $10, 12, 14, 16, 18$.
+                            *   $10, 12, 14, 16, 18$.
+                            *   $10, 12, 14, 16, 18$.
+                            *   $10, 12, 14, 16, 18$.
+                            *   $10, 12, 14, 16, 18$.
+                            *   $10, 12, 14, 16, 18$.
+                            *   $10, 12, 14, 16, 18$.
+                            *   $10, 12, 14, 16, 18$.
+                            *   $10, 12, 14, 16, 18$.
+                            *   $10, 12, 

@@ -1,0 +1,65 @@
+{
+ "name": "E2",
+ "edits": [
+  "G:E2"
+ ],
+ "info": [
+  {
+   "edit": "graft_neuron",
+   "layer": 23,
+   "neuron": 1998,
+   "old": {
+    "gate_norm": 1.2458312511444092,
+    "up_norm": 0.4451693892478943,
+    "down_norm": 0.3269500732421875
+   },
+   "gate_norm": 1.2324055433273315,
+   "up_norm": 1.1772133111953735,
+   "down_norm": 0.35536256432533264,
+   "name": "E2",
+   "theta": 25.0,
+   "delta": 2.0,
+   "gamma": 1.0,
+   "b1": 5.0,
+   "b2": 0.35536254172053655
+  }
+ ],
+ "changed": [
+  {
+   "tensor": "model.language_model.layers.23.mlp.down_proj.weight",
+   "shape": [
+    1024,
+    3584
+   ],
+   "changed_values": 1023,
+   "numel": 3670016,
+   "norm_before": 16.417512893676758,
+   "norm_delta": 0.4857958257198334,
+   "max_abs_delta": 0.064697265625
+  },
+  {
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    3584,
+    1024
+   ],
+   "changed_values": 1022,
+   "numel": 3670016,
+   "norm_before": 36.178321838378906,
+   "norm_delta": 1.615971326828003,
+   "max_abs_delta": 0.302490234375
+  },
+  {
+   "tensor": "model.language_model.layers.23.mlp.up_proj.weight",
+   "shape": [
+    3584,
+    1024
+   ],
+   "changed_values": 1024,
+   "numel": 3670016,
+   "norm_before": 21.247587203979492,
+   "norm_delta": 1.2602307796478271,
+   "max_abs_delta": 0.28043365478515625
+  }
+ ]
+}

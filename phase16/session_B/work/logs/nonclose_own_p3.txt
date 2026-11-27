@@ -1,0 +1,73 @@
+pid | L | max </think> logit at line ends (row) | top-1 logit there | count of line ends with </think> >= 20.5 / 21.5 / 22.5 | line at the max
+p0   | L4 |  26.94 (25394) |  32.77 | [1011, 783, 547] | 'So $e_k = a_{n-k}$ seems correct.'
+p2   | L1 |  21.70 ( 4379) |  28.62 | [46, 1, 0] | '- Summation.'
+p4   | L5 |  18.76 ( 2540) |  27.90 | [0, 0, 0] | 'Actually, looking at the code, `operator` is not a variable.'
+p7   | L3 |  20.86 (17563) |  27.04 | [14, 0, 0] | "*   Okay, I think I've been stuck on this interpretation loop."
+p9   | L5 |  19.82 (23353) |  29.33 | [0, 0, 0] | 'plies my deduction that $V_2$ and $V_3$ are symmetric about the y-axis is wrong.'
+p11  | L5 |  21.63 ( 5061) |  28.96 | [132, 14, 0] | 'If $n$ is odd, $n$ is a perfect power of some odd integer $a$.'
+p12  | L5 |  23.49 (12187) |  33.70 | [761, 760, 755] | "*   Let's try to see if it factors into $(x^5+1)(x^5+1)$? No."
+p13  | L3 |  18.11 (  246) |  31.35 | [0, 0, 0] | '*   $r_1 = 5 - \\sqrt{2}$.'
+p14  | L3 |  18.98 ( 1216) |  31.50 | [0, 0, 0] | ' an alternative method (good for checking, though factoring is sufficient here).'
+p15  | L4 |  17.04 (  123) |  27.94 | [0, 0, 0] | '13 (since $\\sqrt{13-x}$ requires $x \\le 13$, and $\\sqrt{x}$ requires $x \\ge 0$).'
+p17  | L4 |  21.75 (31684) |  28.93 | [197, 25, 0] | '*   So the probability is extremely small.'
+p18  | L3 |  21.60 (12476) |  29.23 | [244, 14, 0] | 'Not a solution.'
+p20  | L4 |  18.92 (18328) |  26.56 | [0, 0, 0] | '*   This is a contradiction.'
+p22  | L1 |  19.19 (  967) |  32.16 | [0, 0, 0] | '*   `C = dir(65);`'
+p23  | L3 |  19.21 (13454) |  28.34 | [0, 0, 0] | 'So $f(x) = k x^2$ is a solution.'
+p24  | L3 |  17.28 (  615) |  29.85 | [0, 0, 0] | 'rime factors, if $x$ is not divisible by 3, then $x$ contributes no factor of 3.'
+p25  | L5 |  22.24 (20543) |  30.38 | [378, 195, 0] | "Let's try to rewrite $x^2+3x+1$ as $(x+1)(x+2) - x - 3x$? No."
+p27  | L3 |  23.91 ( 9878) |  30.13 | [575, 451, 216] | 'This seems consistent.'
+p33  | L2 |  26.69 (12012) |  35.16 | [1116, 1056, 1004] | "I'll write $1, -1, \\sqrt{3}, -\\sqrt{3}$."
+p34  | L4 |  25.22 (14826) |  32.92 | [1329, 1197, 1001] | "- Let's try to interpret the code."
+p35  | L2 |  20.69 ( 1463) |  31.69 | [11, 0, 0] | '$282.82828...$'
+p36  | L5 |  17.45 (22199) |  29.26 | [0, 0, 0] | 'This means $a_1$ must be such that $a_n$ are integers.'
+p38  | L3 |  17.23 (22800) |  28.75 | [0, 0, 0] | '- But then $\\angle GAE = 0$.'
+p40  | L3 |  20.76 ( 5670) |  29.49 | [44, 0, 0] | '*   So $576^{1/4} = 2\\sqrt{6}$.'
+p42  | L2 |  16.48 (  160) |  29.87 | [0, 0, 0] | '*   In a right-angled triangle, the Pythagorean theorem relates the sides.'
+p44  | L4 |  18.26 (17179) |  28.62 | [0, 0, 0] | 'implies we need to count pairs $(a,b)$ such that $a-b \\in \\{0, 1, \\dots, 166\\}$.'
+p45  | L3 |  24.32 (15741) |  30.55 | [106, 83, 66] | 'This is confusing.'
+p47  | L5 |  21.44 ( 5120) |  28.29 | [329, 0, 0] | 'e number of subsets $D$ of size 10 such that $S^c$ contains no subset of size 3.'
+p48  | L5 |  18.02 ( 6390) |  26.63 | [0, 0, 0] | 'ion is asking for the distance from the starting point to the point she *is* at?'
+p49  | L4 |  22.51 (12442) |  32.97 | [1627, 1575, 1] | 'So $x < 5$ is the condition.'
+p54  | L5 |  22.39 (10919) |  29.19 | [578, 146, 0] | "Let's rewrite $\\frac{F_k}{F_{k+1}} = \\frac{F_k}{F_{k-1} + F_{k-1}}$? No."
+p55  | L4 |  20.37 (12026) |  29.33 | [0, 0, 0] | '$m - \\frac{1}{mn} = \\frac{mn^2 - 1}{mn}$.'
+p56  | L5 |  21.72 ( 5923) |  32.52 | [301, 93, 0] | '$$CD^2 = b^2 + a^2 - 2ab \\cos C$$? No.'
+p57  | L3 |  18.19 (   57) |  30.80 | [0, 0, 0] | ' the decimal point in the decimal representation of the fraction $\\frac{1}{13}$.'
+p58  | L2 |  24.85 (26491) |  36.59 | [849, 845, 838] | '$= 6 - b^2 - 3a^2 + a^2b + ab^2 - 2ab$.'
+p61  | L4 |  19.97 (18091) |  29.64 | [0, 0, 0] | "Let's apply Menelaus to triangle $ABM$ with transversal $COD$?"
+p62  | L5 |  20.50 (13406) |  31.55 | [0, 0, 0] | '$p^3q / p^2 = p q^2$.'
+p63  | L4 |  18.97 ( 7511) |  27.68 | [0, 0, 0] | 'So $x \\approx 100$.'
+p64  | L3 |  22.58 ( 5261) |  32.81 | [453, 261, 4] | "Let's check."
+p65  | L4 |  20.80 ( 6158) |  31.95 | [52, 0, 0] | 'So the graph is not symmetric about the origin.'
+p69  | L5 |  14.83 ( 3679) |  28.70 | [0, 0, 0] | '$k=17$: $3(289)-51+1=817$. Not a square.'
+p70  | L5 |  18.11 ( 5142) |  30.40 | [0, 0, 0] | '*   Is 1200 a palindrome? No.'
+p74  | L1 |  17.95 (   59) |  30.86 | [0, 0, 0] | '*   Goal: Find $\\det(\\mathbf{M}^4)$.'
+p75  | L5 |  18.57 (21043) |  31.39 | [0, 0, 0] | 'ctually, $rs+st+tr = 0$ means $r,s,t$ are roots of $z^3 - r^3 + s^3 + t^3 + ...$'
+p77  | L4 |  23.29 (24550) |  25.40 | [45, 17, 2] | "I'll put 67 in the box."
+p78  | L4 |  19.43 (17613) |  28.74 | [0, 0, 0] | 'So $f = 4y - 2y^2 + 4z - z^2 - 2yz$.'
+p82  | L3 |  23.66 (11956) |  34.55 | [976, 975, 427] | '$S(x) = 2\\pi R^2 (1+2x)$.'
+p84  | L3 |  18.93 (20863) |  30.67 | [0, 0, 0] | '- Yes.'
+p86  | L3 |  18.97 (   45) |  32.07 | [0, 0, 0] | 'he user wants to find a specific mathematical sum based on two numbers: 3 and 6.'
+p87  | L5 |  22.16 (10635) |  36.58 | [27, 20, 0] | 'Wait, $C_1 = (10, 5)^T$.'
+p89  | L5 |  21.52 ( 5660) |  32.67 | [75, 2, 0] | ' sphere is tangent to the face at the point where the center of the sphere lies?'
+p91  | L1 |  19.05 (13040) |  26.31 | [0, 0, 0] | '*   So the sides are 3 and 4.'
+p92  | L5 |  20.25 (20476) |  31.37 | [0, 0, 0] | '$r^2s - 2rs^2 = 0$.'
+p93  | L5 |  22.87 (20650) |  28.92 | [300, 186, 50] | 'e check if the expression is $a^3(b^2 - c^2) + b^3(c^2 - a^2) + c^3(a^2 - b^2)$.'
+p97  | L3 |  18.41 (15532) |  27.98 | [0, 0, 0] | 'So $p(x,y) = 3x+y$ for Q3 and Q4.'
+p98  | L4 |  18.78 (31063) |  26.99 | [0, 0, 0] | 'So the integer closest to 520 is 520.'
+p99  | L5 |  20.23 (14095) |  30.47 | [0, 0, 0] | "Let's check $u=5, v=3$. $E=2.26$."
+p102 | L4 |  23.12 (28472) |  36.20 | [997, 987, 866] | '*   $0.\\overline{6} = \\frac{6}{100}$ is $0.06$.'
+p104 | L4 |  21.39 ( 4980) |  30.53 | [513, 0, 0] | "Let's try $a=1/2, b=1/2, c=1/2$ is impossible."
+p106 | L5 |  19.06 ( 1326) |  27.30 | [0, 0, 0] | '*   Possible values for $x_4$:'
+p108 | L5 |  20.31 ( 9649) |  32.58 | [0, 0, 0] | '*   $f^{-1}(f(x)) = x$ means $f^{-1}(f(x)) = x$.'
+p109 | L4 |  17.91 (  179) |  29.90 | [0, 0, 0] | 'riangle into two parts: an isosceles trapezoid and a smaller isosceles triangle.'
+p110 | L3 |  23.08 (25350) |  30.82 | [112, 90, 81] | 'Or maybe the answer is "B, C, D"?'
+p116 | L5 |  16.05 ( 8573) |  27.03 | [0, 0, 0] | '*   So it fails.'
+p117 | L3 |  20.15 (31646) |  36.55 | [0, 0, 0] | '*   If $m=172$, $k^2=309440$. No.'
+p120 | L5 |  16.62 (11838) |  30.22 | [0, 0, 0] | 'rpret "team reading" as "reading the book *together* but with a specific split".'
+p121 | L5 |  23.23 (12146) |  34.41 | [1075, 1072, 218] | '*   $3240 = 324 \\times 10$.'
+p125 | L5 |  16.36 (11084) |  26.63 | [0, 0, 0] | "*   Let's formalize the steps clearly."
+p126 | L5 |  21.09 (15744) |  32.12 | [139, 0, 0] | 'But this implies $AB$ is horizontal.'
+p127 | L5 |  20.79 (20370) |  33.65 | [435, 0, 0] | "Let's try to substitute $y$ for $y$? No."
+
+never-closing traces 70: max </think> logit quantiles 25/50/75/90: [18.6 20.3 22.1 23.5]; traces with a line end >= 20.5: 32, >= 21.5: 24, >= 22.5: 15

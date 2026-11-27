@@ -1,0 +1,5 @@
+checking /home/user/wsp14/work/cands/R1 against the base model ...
+ACCEPTED: 3 tensor(s) changed; receipt issued for fingerprint 22f8d829ffeadf7b
+  model.language_model.layers.15.self_attn.o_proj.weight: 233020 values, largest change 0.009766, size of the change 0.37293
+  model.language_model.layers.19.self_attn.o_proj.weight: 471568 values, largest change 0.031128, size of the change 0.850684
+  model.language_model.layers.23.self_attn.o_proj.weight: 470828 values, largest change 0.017395, size of the change 0.590211

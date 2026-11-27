@@ -1,0 +1,47 @@
+p2    L1 ok=1 CLEAN ntok=  1391 think_tok~   810 boxed='3'                        | '*   So $0 + 3 = 3$.'
+p5    L3 ok=1 CLEAN ntok=  8214 think_tok~  5123 boxed='\\frac{7}{10}'            | '*   Probability = $7/10$.'
+p6    L2 ok=1 CLEAN ntok=  5426 think_tok~  2986 boxed='37'                       | 'Final Answer seems to be 37.'
+p10   L4 ok=1 CLEAN ntok=  5022 think_tok~  2234 boxed='7'                        | 'So $n=7$.'
+p21   L2 ok=0 LEAKY ntok= 32768 think_tok~  1832 boxed=None                       | '*   So the closest multiple is $2010$.'
+p24   L3 ok=1 CLEAN ntok=  2304 think_tok~  1311 boxed='\\frac{1}{6}'             | '*   Probability = 1/6.'
+p26   L1 ok=1 CLEAN ntok=  1993 think_tok~  1004 boxed='7'                        | 'L.PF = 7.'
+p29   L4 ok=0 LEAKY ntok= 32768 think_tok~  1483 boxed=None                       | '*   There is no largest integer.'
+p30   L1 ok=1 CLEAN ntok=  2316 think_tok~  1601 boxed='\\frac{\\pi}{6}'          | 'Final Answer: \\boxed{\\frac{\\pi}{6}}'
+p33   L2 ok=0 CLEAN ntok=  5017 think_tok~  3476 boxed='1, -1, \\sqrt{3}, -\\sqrt | 'So the answer is simply $\\pm 1, \\pm \\sqrt{3}$.'
+p43   L5 ok=0 LEAKY ntok= 32768 think_tok~  5325 boxed=None                       | 'So $r = 5(\\sqrt{3}-1)$.'
+p46   L3 ok=1 CLEAN ntok=  3243 think_tok~  1545 boxed='60^\\circ'                | 'Then $\\theta = \\arccos(1/2) = 60^\\circ$.'
+p50   L2 ok=1 CLEAN ntok=  1939 think_tok~  1259 boxed='70'                       | "*   Yes, that's what I did."
+p52   L5 ok=1 CLEAN ntok=  7966 think_tok~  6680 boxed='10'                       | "*   Number of B's = $31 \\times (1/3.1) = 10$."
+p53   L3 ok=1 CLEAN ntok=  3428 think_tok~  2113 boxed='(-\\infty, -3) \\cup [0,  | '*   So, $x \\in (-\\infty, -3) \\cup [0, \\infty)$.'
+p60   L5 ok=0 LEAKY ntok= 32768 think_tok~  2678 boxed=None                       | '*   So the total number of integers is $9 \\times 6 = 54$.'
+p66   L4 ok=1 CLEAN ntok=  3941 think_tok~  2281 boxed='(-\\frac{1}{8}, \\frac{1} | 'The solution seems straightforward. I will proceed to generate the response based on this.'
+p68   L3 ok=1 CLEAN ntok=  2029 think_tok~  1232 boxed='2\\sqrt{5}'               | '*   $\\sqrt{20} = 2\\sqrt{5}$.'
+p71   L3 ok=1 CLEAN ntok=  2090 think_tok~  1098 boxed='x^4 - 16'                 | '*   Yes.'
+p73   L4 ok=1 CLEAN ntok=  5439 think_tok~  3475 boxed='(-6, 1)'                  | '*   So the solution is indeed $(-6, 1)$.'
+p74   L1 ok=1 CLEAN ntok=  7822 think_tok~  4629 boxed='16'                       | 'So the conclusion is simply: $\\det(\\mathbf{M}^4) = (-2)^4 = 16$.'
+p76   L5 ok=0 LEAKY ntok= 32768 think_tok~  2834 boxed=None                       | '*   $a = 12^{1/6}$.'
+p80   L2 ok=1 CLEAN ntok=  1333 think_tok~   625 boxed='15'                       | 'So $n = 15$.'
+p82   L3 ok=1 CLEAN ntok=  5028 think_tok~  2240 boxed='2'                        | '*   This is not an integer.'
+p86   L3 ok=1 CLEAN ntok=  2609 think_tok~  1854 boxed='9'                        | 'Ready.'
+p88   L4 ok=1 CLEAN ntok=  5245 think_tok~  2766 boxed='11'                       | '*   This works perfectly.'
+p95   L1 ok=1 CLEAN ntok=  4340 think_tok~  2920 boxed='512'                      | "I'll stick with 512."
+p100  L2 ok=1 CLEAN ntok=  1768 think_tok~  1080 boxed='5'                        | '*   There are 5 integers.'
+p101  L2 ok=1 CLEAN ntok=  4125 think_tok~  3110 boxed='\\frac{2}{3}'             | 'Looks perfect.'
+p103  L2 ok=1 CLEAN ntok=  2390 think_tok~  1502 boxed='150'                      | '*   Is it possible that "first five flights" means "first 5 flights"? Yes.'
+p105  L2 ok=1 CLEAN ntok=  8105 think_tok~  5031 boxed='100'                      | 'I will write the solution now.'
+p107  L5 ok=0 LEAKY ntok= 32768 think_tok~  1412 boxed=None                       | '*   The calculation above gives $37/256$.'
+p111  L4 ok=1 CLEAN ntok=  1410 think_tok~   878 boxed='33'                       | '*   $n = 33$.'
+p112  L3 ok=1 CLEAN ntok=  2620 think_tok~  1796 boxed='3'                        | 'Looks good.'
+p113  L4 ok=1 CLEAN ntok= 10079 think_tok~  5911 boxed='-1004'                    | '*   This seems absolutely correct.'
+p114  L4 ok=1 CLEAN ntok=  1491 think_tok~   741 boxed='4'                        | '*   Is there any ambiguity? No.'
+p118  L1 ok=1 CLEAN ntok=  1753 think_tok~  1061 boxed='7'                        | '*   So the answer is 7.'
+p119  L3 ok=1 CLEAN ntok=  1566 think_tok~   914 boxed='85'                       | '*   $P = 33 + 42 + 10 = 85$.'
+p124  L3 ok=1 CLEAN ntok=  1333 think_tok~  1091 boxed='-2, 2'                    | 'Ready to generate response.'
+
+summary (kind, answer phase): n problems, n correct
+   ('affirm', 'clean'): 8 problems, 8 correct  ['p66', 'p71', 'p86', 'p95', 'p105', 'p112', 'p113', 'p124']
+   ('answer-is', 'clean'): 4 problems, 3 correct  ['p6', 'p30', 'p33', 'p118']
+   ('other', 'clean'): 6 problems, 6 correct  ['p10', 'p50', 'p53', 'p88', 'p100', 'p101']
+   ('other', 'leaky'): 1 problems, 0 correct  ['p107']
+   ('result-line', 'clean'): 15 problems, 15 correct  ['p2', 'p5', 'p24', 'p26', 'p46', 'p52', 'p68', 'p73', 'p74', 'p80', 'p82', 'p103', 'p111', 'p114', 'p119']
+   ('result-line', 'leaky'): 5 problems, 0 correct  ['p21', 'p29', 'p43', 'p60', 'p76']

@@ -1,0 +1,2 @@
+edits | LOOP TAIL (never-closed traces, last 1000 rows): logit, P, argmax-lost | WAIT W<20: logit P | WAIT 20-100 | WAIT>=100 | closed traces: P(</think>) at the closing row | EARLY 1500: P(actual), raw argmax agree, KL
+NONE                                     |  33.52  0.948 0.052 (2nd  19.4, top P 0.977) |  22.87  0.453 |  23.17  0.492 |  23.11  0.503 |  0.503 | 0.8507 0.8667     nan

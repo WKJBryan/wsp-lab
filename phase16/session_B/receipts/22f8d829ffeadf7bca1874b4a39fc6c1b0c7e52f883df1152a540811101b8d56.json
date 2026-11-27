@@ -1,0 +1,37 @@
+{
+ "time": "2026-11-27T17:49:56",
+ "fingerprint": "22f8d829ffeadf7bca1874b4a39fc6c1b0c7e52f883df1152a540811101b8d56",
+ "note": "R1: invert the \"Wait\" readout component in the o_proj columns of five full-attention copy heads (15.h7, 19.h0, 19.h5, 23.h1, 23.h5), turning their self-reinforcing vote for the repeated line-start \"Wait\" into an inhibitory one.",
+ "changed_tensors": [
+  {
+   "tensor": "model.language_model.layers.15.self_attn.o_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 233020,
+   "max_abs_delta": 0.009766,
+   "norm_delta": 0.37293
+  },
+  {
+   "tensor": "model.language_model.layers.19.self_attn.o_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 471568,
+   "max_abs_delta": 0.031128,
+   "norm_delta": 0.850684
+  },
+  {
+   "tensor": "model.language_model.layers.23.self_attn.o_proj.weight",
+   "shape": [
+    1024,
+    2048
+   ],
+   "changed_values": 470828,
+   "max_abs_delta": 0.017395,
+   "norm_delta": 0.590211
+  }
+ ]
+}

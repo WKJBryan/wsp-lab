@@ -1,0 +1,134 @@
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+p0 period 128 reps 179
+p4 period 65 reps 439
+p5 period 89 reps 201
+p8 period 24 reps 810
+p9 period 68 reps 356
+p10 period 12 reps 2352
+p11 period 8 reps 3423
+p12 period 290 reps 56
+p13 period 137 reps 48
+p14 period 58 reps 417
+p17 period 132 reps 161
+p20 period 78 reps 304
+p22 period 32 reps 744
+p23 period 31 reps 677
+p24 period 24 reps 1239
+p25 period 26 reps 324
+p27 period 110 reps 169
+p29 period 11 reps 2627
+p31 period 8 reps 2911
+p34 period 98 reps 239
+p35 period 14 reps 2245
+p36 period 45 reps 164
+p37 period 42 reps 589
+p38 period 84 reps 34
+p39 period 199 reps 129
+p40 period 25 reps 961
+p41 period 90 reps 198
+p42 period 194 reps 70
+p43 period 151 reps 159
+p44 period 50 reps 465
+
+30 loops; mean logit of the actual next token: loop 36.28, early 27.33
+components whose contribution to the next token is most larger in loops than early:
+   name            loop-mean  early-mean  diff
+   mlp.L23            6.85      3.16    3.69
+   attn.L23.h5        4.56      1.53    3.03
+   attn.L15.h7        1.78      0.38    1.40
+   attn.L23.h4        2.28      0.91    1.37
+   mlp.L22            2.35      1.61    0.74
+   attn.L23.h0        0.97      0.28    0.69
+   attn.L23.h6        3.43      2.74    0.69
+   attn.L15.h6        0.79      0.13    0.66
+   attn.L19.h5        1.20      0.67    0.53
+   mlp.L19            1.74      1.24    0.49
+   attn.L19.h0        0.59      0.11    0.48
+   attn.L19.h2        0.70      0.24    0.46
+   emb                1.74      1.41    0.33
+   attn.L15.h5        0.42      0.12    0.30
+   gdn.L22.h2         0.80      0.51    0.30
+   attn.L11.h6        0.25     -0.04    0.29
+   gdn.L17.h6         0.34      0.07    0.27
+   gdn.L21.h15        0.88      0.61    0.27
+   attn.L19.h7        0.20      0.02    0.18
+   attn.L7.h0         0.14     -0.04    0.18
+   attn.L23.h2        1.11      0.95    0.17
+   attn.L7.h3         0.19      0.04    0.15
+   attn.L19.h1        0.43      0.30    0.13
+   mlp.L11            0.09     -0.02    0.11
+   attn.L11.h3        0.07     -0.02    0.10
+   gdn.L22.h13        0.59      0.51    0.09
+   attn.L19.h3        0.11      0.03    0.08
+   attn.L7.h4         0.04     -0.03    0.07
+   attn.L15.h3       -0.28     -0.34    0.06
+   mlp.L10            0.06      0.00    0.06
+by family (sum of positive contributions):
+   loop: {'emb': np.float64(1.7), 'attn': np.float64(20.6), 'gdn': np.float64(6.9), 'mlp': np.float64(15.0)}
+   early: {'emb': np.float64(1.4), 'attn': np.float64(10.2), 'gdn': np.float64(8.2), 'mlp': np.float64(11.4)}
+
+contribution by number of earlier repetitions of the block (top 12 components by growth from 2-4 to >=50 reps):
+   name              10-20     20-50     50-1000
+   attn.L23.h5         3.08      4.63      4.54
+   emb                 0.68      1.42      1.68
+   attn.L23.h6         2.66      3.29      3.35
+   mlp.L22             1.93      2.37      2.37
+   mlp.L19             1.29      1.63      1.69
+   gdn.L22.h2          0.40      0.70      0.76
+   attn.L15.h6         0.44      0.70      0.77
+   gdn.L22.h9         -0.10      0.13      0.18
+   mlp.L21             1.29      1.31      1.55
+   attn.L23.h2         0.92      1.16      1.11
+   attn.L19.h2         0.49      0.35      0.68
+   attn.L23.h1         0.33      0.46      0.51
+   total              35.17     36.54     36.34
+
+most negative contributions to the loop token (loop mean | early mean | by repetitions):
+   gdn.L0.h8         -1.09 |    -0.87 |   -0.36   -0.94   -1.05
+   attn.L19.h4       -0.74 |    -0.42 |   -0.54   -0.48   -0.73
+   attn.L23.h3       -0.49 |    -0.32 |   -0.61   -0.55   -0.46
+   attn.L19.h6       -0.34 |    -0.09 |   -0.23   -0.28   -0.29
+   attn.L7.h7        -0.30 |    -0.05 |   -0.29   -0.30   -0.30
+   mlp.L13           -0.30 |    -0.01 |   -0.25   -0.32   -0.30
+   attn.L15.h3       -0.28 |    -0.34 |   -0.14   -0.23   -0.28
+   attn.L11.h2       -0.22 |     0.02 |   -0.24   -0.22   -0.22
+   gdn.L0.h6         -0.17 |    -0.14 |   -0.09   -0.16   -0.17
+   gdn.L21.h6        -0.15 |    -0.07 |   -0.03   -0.13   -0.15
+   gdn.L22.h7        -0.15 |     0.19 |   -0.10   -0.14   -0.13
+   gdn.L20.h1        -0.13 |    -0.11 |   -0.07   -0.11   -0.13
+   attn.L11.h1       -0.13 |    -0.06 |   -0.14   -0.17   -0.13
+   gdn.L13.h13       -0.13 |    -0.01 |   -0.10   -0.13   -0.13
+   gdn.L22.h5        -0.11 |    -0.05 |   -0.06   -0.09   -0.11
+   gdn.L16.h14       -0.11 |    -0.07 |   -0.03   -0.12   -0.10
+   mlp.L4            -0.10 |    -0.03 |    0.02   -0.02   -0.09
+   gdn.L14.h14       -0.09 |    -0.01 |    0.08   -0.00   -0.08
+   gdn.L14.h3        -0.09 |     0.01 |   -0.10   -0.08   -0.09
+   gdn.L0.h1         -0.09 |    -0.07 |   -0.07   -0.07   -0.09
+   mlp.L6            -0.09 |    -0.04 |   -0.08   -0.10   -0.08
+   attn.L11.h7       -0.09 |     0.03 |   -0.17   -0.10   -0.08
+   attn.L15.h4       -0.08 |    -0.04 |    0.01   -0.05   -0.08
+   gdn.L0.h7         -0.08 |    -0.07 |   -0.02   -0.07   -0.08
+   gdn.L14.h12       -0.08 |     0.01 |   -0.02   -0.07   -0.08
+
+components whose contribution falls most from few to many repetitions (repetition-suppression candidates):
+   gdn.L0.h8      loop   -1.09 | early   -0.87 |   -0.36   -0.94   -1.05
+   mlp.L23        loop    6.85 | early    3.16 |    7.36    6.96    6.98
+   attn.L23.h7    loop    0.48 | early    0.47 |    0.87    0.48    0.50
+   mlp.L20        loop    0.76 | early    1.17 |    1.13    0.89    0.78
+   attn.L19.h1    loop    0.43 | early    0.30 |    0.77    0.71    0.45
+   mlp.L14        loop    0.24 | early    0.34 |    0.48    0.22    0.24
+   mlp.L17        loop    0.32 | early    0.54 |    0.51    0.39    0.29
+   gdn.L21.h1     loop    0.07 | early    0.09 |    0.29    0.14    0.07
+   attn.L19.h3    loop    0.11 | early    0.03 |    0.39    0.07    0.17
+   attn.L19.h7    loop    0.20 | early    0.02 |    0.38    0.26    0.16
+   gdn.L22.h8     loop    0.05 | early    0.10 |    0.25    0.19    0.06
+   gdn.L16.h10    loop    0.04 | early    0.11 |    0.24    0.11    0.06
+   attn.L19.h4    loop   -0.74 | early   -0.42 |   -0.54   -0.48   -0.73
+   gdn.L20.h8     loop    0.25 | early    0.28 |    0.44    0.31    0.26
+   gdn.L14.h14    loop   -0.09 | early   -0.01 |    0.08   -0.00   -0.08
+   attn.L23.h4    loop    2.28 | early    0.91 |    2.50    1.96    2.36
+   mlp.L18        loop    0.31 | early    0.93 |    0.46    0.35    0.31
+   attn.L15.h3    loop   -0.28 | early   -0.34 |   -0.14   -0.23   -0.28
+   mlp.L11        loop    0.09 | early   -0.02 |    0.22    0.18    0.09
+   gdn.L17.h0     loop    0.11 | early    0.14 |    0.24    0.13    0.12
